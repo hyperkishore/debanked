@@ -1,4 +1,4 @@
-const CACHE = 'debanked-v1';
+const CACHE = 'debanked-v2';
 const ASSETS = ['./', './index.html'];
 
 self.addEventListener('install', e => {
