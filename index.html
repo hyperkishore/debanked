@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f0f14">
+<title>DeBanked Connect 2026</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0c0c12;--surface:#161620;--surface2:#1e1e2a;--border:#2a2a38;
+  --text:#e8e8f0;--dim:#8080a0;--accent:#5b8def;
+  --sqo:#ef4444;--client:#f59e0b;--icp:#22c55e;
+  --sqo-bg:rgba(239,68,68,.08);--client-bg:rgba(245,158,11,.08);--icp-bg:rgba(34,197,94,.08);
+  --hdr:52px;--search:48px;--nav:60px;
+  --sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px);
+}
+html{background:var(--bg);height:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro","Segoe UI",Roboto,sans-serif;
+  background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;
+  overscroll-behavior:none;-webkit-user-select:none;user-select:none;min-height:100%}
+
+/* Header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:100;
+  height:calc(var(--hdr) + var(--sat));padding-top:var(--sat);
+  background:var(--surface);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;flex-direction:column}
+.hdr-title{font-size:16px;font-weight:700;letter-spacing:.5px}
+.hdr-sub{font-size:11px;color:var(--dim);margin-top:1px}
+
+/* Search */
+.search{position:fixed;top:calc(var(--hdr) + var(--sat));left:0;right:0;z-index:99;
+  height:var(--search);padding:6px 16px;background:var(--bg);display:flex;align-items:center;gap:8px}
+.search input{flex:1;height:36px;background:var(--surface);border:1px solid var(--border);
+  border-radius:10px;padding:0 12px 0 36px;color:var(--text);font-size:14px;outline:none;
+  -webkit-appearance:none;appearance:none}
+.search input::placeholder{color:var(--dim)}
+.search input:focus{border-color:var(--accent)}
+.search-icon{position:absolute;left:28px;width:16px;height:16px;pointer-events:none}
+.search-icon svg{width:16px;height:16px;fill:none;stroke:var(--dim);stroke-width:2}
+.search-clear{width:28px;height:28px;border:none;background:var(--surface2);border-radius:50%;
+  color:var(--dim);font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;
+  flex-shrink:0}
+.search-clear.show{display:flex}
+
+/* Main */
+main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
+  padding-bottom:calc(var(--nav) + var(--sab) + 20px);min-height:100vh}
+.tab-panel{display:none;padding:12px 16px}
+.tab-panel.active{display:block}
+
+/* Bottom Nav */
+.nav{position:fixed;bottom:0;left:0;right:0;z-index:100;
+  height:calc(var(--nav) + var(--sab));padding-bottom:var(--sab);
+  background:var(--surface);border-top:1px solid var(--border);display:flex}
+.nav-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:3px;border:none;background:none;color:var(--dim);cursor:pointer;
+  -webkit-tap-highlight-color:transparent;padding:0;min-height:48px}
+.nav-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nav-btn span{font-size:10px;font-weight:600;letter-spacing:.3px}
+.nav-btn.active{color:var(--accent)}
+.nav-btn.active svg{stroke:var(--accent)}
+
+/* Pitch Tab */
+.pitch-card{background:var(--surface);border-radius:14px;padding:18px;margin-bottom:16px;
+  border-left:3px solid var(--accent)}
+.pitch-card h3{font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
+.pitch-text{font-size:15px;line-height:1.55;color:var(--text)}
+.pitch-text em{color:var(--accent);font-style:normal;font-weight:600}
+.section-label{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;
+  margin:20px 0 10px;font-weight:600}
+.vp-table{width:100%;border-collapse:collapse}
+.vp-table td{padding:10px 8px;border-bottom:1px solid var(--border);font-size:13px;vertical-align:top}
+.vp-table td:first-child{color:var(--dim);width:40%}
+.vp-table td:nth-child(2){color:var(--text);font-weight:500}
+.vp-table td:last-child{color:var(--icp);text-align:right;white-space:nowrap;font-weight:600;width:auto}
+.proof-list{list-style:none;padding:0}
+.proof-list li{padding:10px 0;border-bottom:1px solid var(--border);font-size:14px;
+  padding-left:20px;position:relative;line-height:1.4}
+.proof-list li::before{content:"";position:absolute;left:0;top:16px;width:8px;height:8px;
+  border-radius:50%;background:var(--accent)}
+
+/* Schedule Tab */
+.phase{background:var(--surface);border-radius:14px;padding:16px;margin-bottom:12px;
+  border-left:3px solid var(--border);transition:border-color .3s}
+.phase.current{border-left-color:var(--accent);background:var(--surface2)}
+.phase-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.phase-time{font-size:12px;color:var(--dim);font-weight:600;font-variant-numeric:tabular-nums}
+.phase-now{font-size:10px;font-weight:700;color:var(--accent);background:rgba(91,141,239,.15);
+  padding:2px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:.5px;
+  animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.phase h3{font-size:15px;font-weight:700;margin-bottom:4px}
+.phase-desc{font-size:12px;color:var(--dim);margin-bottom:12px}
+.phase-list{display:flex;flex-direction:column;gap:6px}
+.phase-item{display:flex;align-items:center;gap:8px;padding:8px 10px;
+  background:var(--bg);border-radius:8px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.phase-item:active{background:var(--surface2)}
+.phase-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.phase-dot.sqo{background:var(--sqo)}.phase-dot.client{background:var(--client)}.phase-dot.icp{background:var(--icp)}
+.phase-co{font-size:13px;font-weight:600;flex:1;min-width:0}
+.phase-contact{font-size:11px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45%}
+
+/* Companies Tab */
+.filters{display:flex;gap:8px;margin-bottom:14px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2px 0}
+.pill{height:32px;padding:0 14px;border-radius:16px;border:1px solid var(--border);
+  background:none;color:var(--dim);font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;
+  -webkit-tap-highlight-color:transparent;transition:all .2s}
+.pill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pill[data-f="SQO"].active{background:var(--sqo);border-color:var(--sqo)}
+.pill[data-f="Client"].active{background:var(--client);border-color:var(--client)}
+.pill[data-f="ICP"].active{background:var(--icp);border-color:var(--icp)}
+.co-count{font-size:12px;color:var(--dim);margin-bottom:12px}
+
+/* Company Cards */
+.card{background:var(--surface);border-radius:12px;margin-bottom:8px;overflow:hidden;
+  border-left:3px solid var(--border);transition:all .2s}
+.card.sqo{border-left-color:var(--sqo)}.card.client{border-left-color:var(--client)}.card.icp{border-left-color:var(--icp)}
+.card-head{padding:14px 14px;cursor:pointer;-webkit-tap-highlight-color:transparent;display:flex;align-items:flex-start;gap:10px}
+.card-head:active{background:var(--surface2)}
+.card-info{flex:1;min-width:0}
+.card-top{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.card-name{font-size:15px;font-weight:700}
+.card-name mark{background:rgba(91,141,239,.3);color:var(--text);border-radius:2px;padding:0 1px}
+.card-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;text-transform:uppercase;letter-spacing:.5px;flex-shrink:0}
+.card-badge.sqo{background:var(--sqo-bg);color:var(--sqo)}
+.card-badge.client{background:var(--client-bg);color:var(--client)}
+.card-badge.icp{background:var(--icp-bg);color:var(--icp)}
+.card-contacts{font-size:12px;color:var(--dim);margin-bottom:4px}
+.card-contacts mark{background:rgba(91,141,239,.3);color:var(--dim);border-radius:2px;padding:0 1px}
+.card-preview{font-size:12px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-chev{color:var(--dim);font-size:18px;transition:transform .2s;flex-shrink:0;margin-top:4px;width:20px;text-align:center}
+.card.open .card-chev{transform:rotate(90deg)}
+
+/* Card Expanded */
+.card-body{display:none;padding:0 14px 16px;border-top:1px solid var(--border);margin-top:0}
+.card.open .card-body{display:block}
+.card-section{margin-top:14px}
+.card-section-title{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--accent);font-weight:700;margin-bottom:6px}
+.card-desc{font-size:13px;line-height:1.5;color:var(--text);opacity:.9}
+.card-ice{font-size:13px;line-height:1.5;color:var(--text);font-style:italic;
+  background:var(--surface2);padding:10px 12px;border-radius:8px;border-left:2px solid var(--accent)}
+.card-tp{list-style:none;padding:0}
+.card-tp li{font-size:13px;line-height:1.5;padding:6px 0;padding-left:16px;position:relative;
+  border-bottom:1px solid rgba(42,42,56,.5);color:var(--text);opacity:.9}
+.card-tp li:last-child{border:none}
+.card-tp li::before{content:"\2022";position:absolute;left:0;color:var(--accent)}
+.card-ask{font-size:13px;line-height:1.5;color:var(--icp);font-weight:600;
+  background:rgba(34,197,94,.08);padding:10px 12px;border-radius:8px}
+
+/* Checklist Tab */
+.check-item{display:flex;align-items:flex-start;gap:12px;padding:14px 0;
+  border-bottom:1px solid var(--border);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.check-item:last-child{border:none}
+.check-box{width:24px;height:24px;border:2px solid var(--border);border-radius:6px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;transition:all .2s;margin-top:1px}
+.check-item.done .check-box{background:var(--icp);border-color:var(--icp)}
+.check-item.done .check-box::after{content:"";width:6px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);margin-top:-2px}
+.check-label{font-size:14px;line-height:1.5;flex:1}
+.check-item.done .check-label{color:var(--dim);text-decoration:line-through}
+
+/* Search Results */
+#search-results{display:none;padding:12px 16px}
+#search-results.show{display:block}
+.search-hint{text-align:center;color:var(--dim);font-size:13px;padding:40px 0}
+.search-count{font-size:12px;color:var(--dim);margin-bottom:10px}
+
+/* Misc */
+.empty{text-align:center;color:var(--dim);font-size:14px;padding:40px 0}
+.highlight{background:rgba(91,141,239,.2);padding:0 2px;border-radius:2px}
+@media(min-width:500px){main{max-width:500px;margin:0 auto}
+  .nav{justify-content:center}.nav-btn{max-width:120px}}
+</style>
+</head>
+<body>
+<!-- Header -->
+<header class="hdr">
+  <div class="hdr-title">DeBanked Connect</div>
+  <div class="hdr-sub">Feb 12, 2026 &middot; 11 AM &ndash; 5 PM</div>
+</header>
+
+<!-- Search -->
+<div class="search">
+  <div class="search-icon"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16l5 5"/></svg></div>
+  <input type="text" id="searchInput" placeholder="Search companies or contacts..." autocomplete="off" autocorrect="off" spellcheck="false">
+  <button class="search-clear" id="searchClear">&times;</button>
+</div>
+
+<!-- Main Content -->
+<main>
+  <div id="search-results"></div>
+
+  <!-- PITCH TAB -->
+  <div id="tab-pitch" class="tab-panel">
+    <div class="pitch-card">
+      <h3>30-Second Pitch</h3>
+      <p class="pitch-text">"We're <em>HyperVerge</em> &mdash; we built an AI Co-Pilot that cuts small business underwriting from <em>40 minutes to under 5</em>. We automate application intake, cash flow analysis, risk/CLEAR report review, and industry classification. Already deployed with <em>450+ financial services enterprises</em>. We're working with <em>PIRS Capital</em> in the MCA space and seeing incredible results."</p>
+    </div>
+    <p class="section-label">Value Propositions</p>
+    <table class="vp-table">
+      <tr><td>Manual bank statement review</td><td>AI cash flow analysis</td><td>15m &rarr; sec</td></tr>
+      <tr><td>50+ page CLEAR report</td><td>AI risk report parsing</td><td>15m &rarr; sec</td></tr>
+      <tr><td>Inconsistent ISO apps</td><td>Automated intake &amp; classification</td><td>5m &rarr; sec</td></tr>
+      <tr><td>Subjective industry tags</td><td>AI SIC/NAICS classification</td><td>5m &rarr; sec</td></tr>
+      <tr><td>Stips collection delays</td><td>Automated verification</td><td>Days &rarr; hrs</td></tr>
+      <tr><td>Scaling = hiring</td><td>AI Co-Pilot multiplies capacity</td><td>5-8x</td></tr>
+    </table>
+    <p class="section-label">Social Proof</p>
+    <ul class="proof-list">
+      <li>450+ banking &amp; financial services enterprises across 10+ countries</li>
+      <li>Already partnered with PIRS Capital in the MCA space</li>
+      <li>Working with Fundfi &amp; FundKite as existing clients</li>
+      <li>SOC 2 compliant, enterprise-grade data security</li>
+    </ul>
+  </div>
+
+  <!-- SCHEDULE TAB -->
+  <div id="tab-schedule" class="tab-panel active">
+    <div class="phase" id="phase1" data-start="11:00" data-end="13:00">
+      <div class="phase-top">
+        <span class="phase-time">11:00 AM &ndash; 1:00 PM</span>
+        <span class="phase-now" style="display:none">NOW</span>
+      </div>
+      <h3>High-Value Booth Visits</h3>
+      <p class="phase-desc">SQOs, Clients &amp; Funder Panel speakers with booths</p>
+      <div class="phase-list">
+        <div class="phase-item" onclick="jumpTo('Bitty')"><span class="phase-dot sqo"></span><span class="phase-co">Bitty</span><span class="phase-contact">Daniel Dames, VP Ops</span></div>
+        <div class="phase-item" onclick="jumpTo('Fundfi')"><span class="phase-dot client"></span><span class="phase-co">Fundfi</span><span class="phase-contact">Brian Kandinov &amp; Natasha Dillon</span></div>
+        <div class="phase-item" onclick="jumpTo('FundKite')"><span class="phase-dot client"></span><span class="phase-co">FundKite</span><span class="phase-contact">Alex Shvarts, CEO</span></div>
+        <div class="phase-item" onclick="jumpTo('BriteCap Financial')"><span class="phase-dot sqo"></span><span class="phase-co">BriteCap Financial</span><span class="phase-contact">Jim Noel, VP Strategic</span></div>
+        <div class="phase-item" onclick="jumpTo('Vox Funding')"><span class="phase-dot icp"></span><span class="phase-co">Vox Funding</span><span class="phase-contact">Louis Calderone, CEO</span></div>
+        <div class="phase-item" onclick="jumpTo('PIRS Capital')"><span class="phase-dot sqo"></span><span class="phase-co">PIRS Capital</span><span class="phase-contact">Partner &mdash; align messaging</span></div>
+      </div>
+    </div>
+    <div class="phase" id="phase2" data-start="13:00" data-end="14:30">
+      <div class="phase-top">
+        <span class="phase-time">1:00 PM &ndash; 2:30 PM</span>
+        <span class="phase-now" style="display:none">NOW</span>
+      </div>
+      <h3>Named-Contact Booth Visits</h3>
+      <p class="phase-desc">Hit booths with known decision-makers</p>
+      <div class="phase-list">
+        <div class="phase-item" onclick="jumpTo('CAN Capital')"><span class="phase-dot icp"></span><span class="phase-co">CAN Capital</span><span class="phase-contact">Mark Cisco &amp; Chris Holland</span></div>
+        <div class="phase-item" onclick="jumpTo('Dexly Finance')"><span class="phase-dot icp"></span><span class="phase-co">Dexly Finance</span><span class="phase-contact">Burkay Kaplan, CEO</span></div>
+        <div class="phase-item" onclick="jumpTo('Aspire Funding Platform')"><span class="phase-dot icp"></span><span class="phase-co">Aspire Funding</span><span class="phase-contact">Daniel Lenefsky, CEO</span></div>
+        <div class="phase-item" onclick="jumpTo('Simply Funding')"><span class="phase-dot icp"></span><span class="phase-co">Simply Funding</span><span class="phase-contact">Jacob Kleinberger, Head Ops</span></div>
+        <div class="phase-item" onclick="jumpTo('MonetaFi')"><span class="phase-dot icp"></span><span class="phase-co">MonetaFi</span><span class="phase-contact">Steve Kahmi, Exec Dir</span></div>
+        <div class="phase-item" onclick="jumpTo('Elevate Funding')"><span class="phase-dot icp"></span><span class="phase-co">Elevate Funding</span><span class="phase-contact">Ken P., Dir BD</span></div>
+      </div>
+    </div>
+    <div class="phase" id="phase3" data-start="14:30" data-end="15:30">
+      <div class="phase-top">
+        <span class="phase-time">2:30 PM &ndash; 3:30 PM</span>
+        <span class="phase-now" style="display:none">NOW</span>
+      </div>
+      <h3>Additional Booth Sweep</h3>
+      <p class="phase-desc">Named contacts + walk-in intros at remaining booths</p>
+      <div class="phase-list">
+        <div class="phase-item" onclick="jumpTo('idea Financial')"><span class="phase-dot icp"></span><span class="phase-co">idea Financial</span><span class="phase-contact">Christopher Ryan</span></div>
+        <div class="phase-item" onclick="jumpTo('Gulf Coast Business Credit')"><span class="phase-dot icp"></span><span class="phase-co">Gulf Coast Biz Credit</span><span class="phase-contact">Stuart Wrba</span></div>
+        <div class="phase-item" onclick="jumpTo('Spartan Capital')"><span class="phase-dot icp"></span><span class="phase-co">Spartan Capital</span><span class="phase-contact">Ask for Frank</span></div>
+        <div class="phase-item" onclick="jumpTo('Biz2Credit')"><span class="phase-dot icp"></span><span class="phase-co">+ 16 walk-in booths</span><span class="phase-contact">Quick intros, collect cards</span></div>
+      </div>
+    </div>
+    <div class="phase" id="phase4" data-start="15:30" data-end="16:30">
+      <div class="phase-top">
+        <span class="phase-time">3:30 PM &ndash; 4:30 PM</span>
+        <span class="phase-now" style="display:none">NOW</span>
+      </div>
+      <h3>Hunt Attendees</h3>
+      <p class="phase-desc">No booths &mdash; find them on the floor</p>
+      <div class="phase-list">
+        <div class="phase-item" onclick="jumpTo('Wing Lake Capital Partners')"><span class="phase-dot sqo"></span><span class="phase-co">Wing Lake Capital</span><span class="phase-contact">Angelina, Natasha, Sara</span></div>
+        <div class="phase-item" onclick="jumpTo('Rapid Finance')"><span class="phase-dot icp"></span><span class="phase-co">Rapid Finance</span><span class="phase-contact">Mark Cerminaro, CRO</span></div>
+        <div class="phase-item" onclick="jumpTo('Forward Financing')"><span class="phase-dot icp"></span><span class="phase-co">Forward Financing</span><span class="phase-contact">Jill Capadanno</span></div>
+        <div class="phase-item" onclick="jumpTo('Likety')"><span class="phase-dot icp"></span><span class="phase-co">Likety</span><span class="phase-contact">Nima Shamsili, CEO</span></div>
+        <div class="phase-item" onclick="jumpTo('United Capital Source')"><span class="phase-dot icp"></span><span class="phase-co">United Capital Source</span><span class="phase-contact">Jared Weitz, CEO</span></div>
+        <div class="phase-item" onclick="jumpTo('Big Think Capital')"><span class="phase-dot icp"></span><span class="phase-co">Big Think Capital</span><span class="phase-contact">Tom Forsberg, CRO</span></div>
+      </div>
+    </div>
+    <div class="phase" id="phase5" data-start="16:30" data-end="17:00">
+      <div class="phase-top">
+        <span class="phase-time">4:30 PM &ndash; 5:00 PM</span>
+        <span class="phase-now" style="display:none">NOW</span>
+      </div>
+      <h3>Dinner Roundtable Prep</h3>
+      <p class="phase-desc">Prepare for evening networking</p>
+      <div class="phase-list">
+        <div class="phase-item" onclick="jumpTo('Velocity Capital Group')"><span class="phase-dot icp"></span><span class="phase-co">Velocity Capital Group</span><span class="phase-contact">Jay Avigdor, CEO</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPANIES TAB -->
+  <div id="tab-companies" class="tab-panel">
+    <div class="filters">
+      <button class="pill active" data-f="all" onclick="setFilter('all')">All</button>
+      <button class="pill" data-f="SQO" onclick="setFilter('SQO')">SQO</button>
+      <button class="pill" data-f="Client" onclick="setFilter('Client')">Client</button>
+      <button class="pill" data-f="ICP" onclick="setFilter('ICP')">ICP</button>
+    </div>
+    <div class="co-count" id="coCount"></div>
+    <div id="coList"></div>
+  </div>
+
+  <!-- CHECKLIST TAB -->
+  <div id="tab-checklist" class="tab-panel">
+    <p class="section-label">End-of-Day Checklist</p>
+    <div id="checklistItems">
+      <div class="check-item" data-key="chk1" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <span class="check-label">Collect business cards / scan LinkedIn QR codes</span>
+      </div>
+      <div class="check-item" data-key="chk2" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <span class="check-label">Note key follow-ups for each conversation</span>
+      </div>
+      <div class="check-item" data-key="chk3" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <span class="check-label">Send same-day "great meeting you" emails to top 5</span>
+      </div>
+      <div class="check-item" data-key="chk4" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <span class="check-label">Schedule demo calls for interested prospects within 48h</span>
+      </div>
+      <div class="check-item" data-key="chk5" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <span class="check-label">Debrief with team on strongest-interest companies</span>
+      </div>
+      <div class="check-item" data-key="chk6" onclick="toggleCheck(this)">
+        <div class="check-box"></div>
+        <span class="check-label">Update CRM with all new contacts &amp; conversation notes</span>
+      </div>
+    </div>
+    <p class="section-label" style="margin-top:28px">Quick Notes</p>
+    <textarea id="quickNotes" style="width:100%;height:120px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px;color:var(--text);font-size:14px;resize:vertical;font-family:inherit;outline:none" placeholder="Jot down notes during the event..."></textarea>
+  </div>
+</main>
+
+<!-- Bottom Nav -->
+<nav class="nav">
+  <button class="nav-btn" data-tab="pitch" onclick="switchTab('pitch')">
+    <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    <span>Pitch</span>
+  </button>
+  <button class="nav-btn active" data-tab="schedule" onclick="switchTab('schedule')">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <span>Schedule</span>
+  </button>
+  <button class="nav-btn" data-tab="companies" onclick="switchTab('companies')">
+    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+    <span>Companies</span>
+  </button>
+  <button class="nav-btn" data-tab="checklist" onclick="switchTab('checklist')">
+    <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+    <span>Checklist</span>
+  </button>
+</nav>
+
+<script>
+// ============================================================
+// COMPANY DATA
+// ============================================================
+const CO = [
+  // --- SQOs ---
+  {
+    id:1, name:"Bitty", type:"SQO", priority:1, phase:1, booth:true,
+    contacts:[{n:"Daniel Dames",t:"VP of Ops"}],
+    desc:"Small business funder and MCA provider. Daniel is speaking on the Funder Panel at this event.",
+    notes:"Funder Panel speaker \u2014 warm lead, high priority.",
+    ice:"Looking forward to your Funder Panel session, Daniel \u2014 what\u2019s the most surprising trend you\u2019re seeing in small business funding right now?",
+    tp:[
+      "How are you handling underwriting volume as you scale? We\u2019re seeing funders your size hitting a wall at 40 min per deal manually.",
+      "We cut that to under 5 minutes \u2014 application intake, cash flow analysis, CLEAR report review, all automated with explainable decisions.",
+      "We\u2019re already working with PIRS Capital in this space. Happy to share what we\u2019ve seen work."
+    ],
+    ask:"Would it be worth a 20-minute demo next week to show you the platform?"
+  },
+  {
+    id:2, name:"BriteCap Financial", type:"SQO", priority:1, phase:1, booth:true,
+    contacts:[{n:"Jim Noel",t:"VP Strategic Partnerships"}],
+    desc:"ISO/broker firm that just launched BriteLine, an on-demand capital product. Closed a $150M credit facility. Jim previously at CAN Capital. Speaking on Broker Panel.",
+    notes:"Broker Panel speaker. Just raised $150M facility.",
+    ice:"Congrats on the $150M facility and BriteLine launch, Jim \u2014 on-demand capital is a bold move. How\u2019s the market responding?",
+    tp:[
+      "An on-demand capital product needs near-instant underwriting \u2014 how are you handling that?",
+      "With your broker network sending in deals, consistency is key. Our AI ensures every application gets the same rigorous, fast review regardless of source.",
+      "Jim, with your CAN Capital background, you\u2019ve seen what happens when underwriting can\u2019t keep up with capital availability. We solve that."
+    ],
+    ask:"With BriteLine scaling, would it make sense to explore how AI underwriting could support that growth?"
+  },
+  {
+    id:3, name:"PIRS Capital", type:"SQO", priority:1, phase:1, booth:true,
+    contacts:[{n:"Partner Team",t:""}],
+    desc:"Alternative funder focused on eCommerce and Amazon seller financing. Uses their proprietary PIRScore model. Already partnered with HyperVerge.",
+    notes:"Your existing partner \u2014 align messaging and get referrals.",
+    ice:"Great to see you! Let\u2019s align on messaging for today \u2014 what\u2019s been resonating in your conversations so far?",
+    tp:[
+      "Touch base on joint messaging for the event.",
+      "Ask for a specific success metric or quote to use in other conversations today.",
+      "Discuss new opportunities in their eCommerce vertical.",
+      "Align on warm referral introductions at the event."
+    ],
+    ask:"Can you share a specific metric from our partnership I can use in conversations today?"
+  },
+  {
+    id:4, name:"Wing Lake Capital Partners", type:"SQO", priority:1, phase:4, booth:false,
+    contacts:[{n:"Angelina Fletcher",t:""},{n:"Natasha Nemcek",t:""},{n:"Sara Hoski",t:""}],
+    desc:"Specialize in MCA debt consolidation (Franklin Fund) and growth capital (Capstone Fund). ~16 employees, based in Farmington Hills, MI.",
+    notes:"SQO! Debt consolidation = complex underwriting = perfect fit.",
+    ice:"I\u2019ve been wanting to connect \u2014 debt consolidation underwriting is one of the most complex niches in this space, and that\u2019s exactly where our AI shines.",
+    tp:[
+      "Debt consolidation underwriting is uniquely complex \u2014 analyzing a merchant\u2019s existing MCA stack with multiple advances and factor rates. Our AI parses bank statements and automatically identifies all MCA repayments.",
+      "With two funds needing different risk models, you need configurable underwriting workflows. That\u2019s exactly what we do.",
+      "For a 16-person team, going from 40 min to 5 min per deal is transformative. That\u2019s like adding 5 more underwriters without the headcount."
+    ],
+    ask:"Would you be open to a quick call next week to explore how this could work for your consolidation underwriting?"
+  },
+  // --- CLIENTS ---
+  {
+    id:5, name:"Fundfi", type:"Client", priority:2, phase:1, booth:true,
+    contacts:[{n:"Brian Kandinov",t:"CEO"},{n:"Natasha Dillon",t:"CFO/COO"}],
+    desc:"Revenue-based financing, MCAs, traditional loans, and credit splits across US and Canada. Just opened Alabama office and expanded their credit facility twice in 2025.",
+    notes:"Existing client \u2014 get testimonial + upsell new products.",
+    ice:"Brian, Natasha \u2014 congrats on the Alabama expansion! How\u2019s the new office shaping up?",
+    tp:[
+      "How is the traditional loan product\u2019s underwriting workflow different from MCA?",
+      "With the credit facility doubling, are you feeling the underwriting throughput pressure?",
+      "We can configure product-specific workflows for your new traditional loan and credit splits products."
+    ],
+    ask:"Would you be willing to be a reference for us? Even a quick quote about the impact would be huge."
+  },
+  {
+    id:6, name:"FundKite", type:"Client", priority:2, phase:1, booth:true,
+    contacts:[{n:"Alex Shvarts",t:"CEO"}],
+    desc:"Leading fintech MCA funder. $70M revenue, 91 employees, $900M+ total funding. Alex built their proprietary tech stack. Recently launched a Merchant Services division. Speaking on Funder Panel.",
+    notes:"Existing client. Tech-savvy CEO/Founder \u2014 talk tech-to-tech.",
+    ice:"Alex, I\u2019m impressed by what you\u2019ve built from the tech side \u2014 I\u2019d love to talk architecture and how we can complement your stack.",
+    tp:[
+      "Talk tech-to-tech \u2014 discuss architecture, API integration, ML model accuracy.",
+      "We\u2019re not here to replace your proprietary stack \u2014 we complement it. Bank statement OCR, CLEAR report parsing, stips verification \u2014 the extraction work that feeds your scoring algorithms.",
+      "With the new Merchant Services division, you\u2019re creating cross-analysis opportunities between payment and funding data."
+    ],
+    ask:"Alex, given your tech credibility in the space, a mention from FundKite carries weight. Would you be open to that?"
+  },
+  // --- ICPs (Detailed) ---
+  {
+    id:7, name:"Vox Funding", type:"ICP", priority:3, phase:1, booth:true,
+    contacts:[{n:"Louis Calderone",t:"CEO"}],
+    desc:"NYC-based MCA funder established in 2018. Just closed a $150M credit facility with Raven Capital. 11-50 employees. Louis is speaking on the Funder Panel.",
+    notes:"Funder Panel speaker. $150M new facility = need to deploy capital faster.",
+    ice:"Louis, congrats on the $150M facility with Raven Capital \u2014 that\u2019s a massive vote of confidence. How are you planning to deploy it?",
+    tp:[
+      "$150M in new capital with a small team. The bottleneck is now underwriting, not capital.",
+      "AI isn\u2019t a luxury \u2014 it\u2019s a necessity to deploy that capital profitably at speed."
+    ],
+    ask:"What would it mean for Vox if you could double your underwriting throughput without adding headcount?"
+  },
+  {
+    id:8, name:"CAN Capital", type:"ICP", priority:3, phase:2, booth:true,
+    contacts:[{n:"Mark Cisco",t:"VP Business Development"},{n:"Chris Holland",t:"Dir Partner BD"}],
+    desc:"Pioneer of the MCA industry, founded in 1998. Over $6B in total capital deployed. Extensive broker network. Legacy technology systems.",
+    notes:"Industry pioneer with 25+ year track record. Legacy systems = opportunity.",
+    ice:"Mark, CAN Capital pioneered this entire industry \u2014 25+ years and $6B deployed. How\u2019s the tech kept up with that growth?",
+    tp:[
+      "With $6B in historical data and a 25+ year track record, our AI can overlay on your existing systems without rip-and-replace.",
+      "We help reduce underwriting time on deals you\u2019d ultimately decline \u2014 saving your team\u2019s most valuable resource.",
+      "Are your legacy systems keeping up with the speed your broker partners expect?"
+    ],
+    ask:"Would it be worth exploring how AI can enhance your existing systems without disrupting what works?"
+  },
+  {
+    id:9, name:"Dexly Finance", type:"ICP", priority:3, phase:2, booth:true,
+    contacts:[{n:"Burkay Kaplan",t:"CEO"}],
+    desc:"Direct capital provider with ISO-first positioning. CEO attended Harvard Business School and is an active angel investor with 70+ investments.",
+    notes:"Harvard MBA, 70+ angel investments \u2014 frame as ROI opportunity.",
+    ice:"Burkay, with 70+ angel investments, you clearly have an eye for operational efficiency. I\u2019d love your perspective on AI in underwriting.",
+    tp:[
+      "Present as an investment in operational efficiency.",
+      "ISOs send deals to the funder that responds fastest. We make you that funder.",
+      "As an investor yourself, what ROI metrics would matter most for a technology investment like this?"
+    ],
+    ask:"Could we schedule a focused 20-minute ROI analysis specific to Dexly\u2019s deal volume?"
+  },
+  {
+    id:10, name:"Aspire Funding Platform", type:"ICP", priority:3, phase:2, booth:true,
+    contacts:[{n:"Daniel Lenefsky",t:"CEO"}],
+    desc:"MCA funder already using API/OCR technology alongside veteran underwriters. Offers same-day and 24-hour funding with up to 17-point ISO commissions.",
+    notes:"Already tech-forward with API/OCR \u2014 position as the next evolution.",
+    ice:"Daniel, I like that Aspire is already investing in API/OCR automation. You\u2019re clearly ahead of most funders on tech adoption.",
+    tp:[
+      "You\u2019ve already bought into automation with API/OCR. We\u2019re the next evolution \u2014 not just extraction but AI-powered analysis and decisioning assistance.",
+      "Your veteran underwriters are expensive and scarce. What if junior underwriters could perform at veteran levels with AI assistance?"
+    ],
+    ask:"Would you be interested in seeing how we take your existing OCR investment to the next level?"
+  },
+  {
+    id:11, name:"Simply Funding", type:"ICP", priority:3, phase:2, booth:true,
+    contacts:[{n:"Jacob Kleinberger",t:"Head of Ops"}],
+    desc:"Direct MCA funder with 28 employees. Doubled funding volume in consecutive years. ISO-only model. Obsessive about data security.",
+    notes:"Doubled volume twice with 28 people \u2014 unsustainable without AI. Mention SOC 2.",
+    ice:"Jacob, doubling volume two years running with 28 people is impressive. How are you pulling that off operationally?",
+    tp:[
+      "Doubling volume with 28 people is impressive but unsustainable without automation. The next doubling either requires 56 employees or AI.",
+      "We\u2019re SOC 2 compliant with enterprise-grade data handling \u2014 your data security standards won\u2019t be compromised."
+    ],
+    ask:"Want to see how AI could support your next volume doubling without doubling your headcount?"
+  },
+  {
+    id:12, name:"MonetaFi", type:"ICP", priority:3, phase:2, booth:true,
+    contacts:[{n:"Steve Kahmi",t:"Exec Dir Strategic Partnerships"}],
+    desc:"Brand new MCA funder launched in May 2025. Offers same-day funding with approvals up to $2M. Has a white-label platform for partners.",
+    notes:"New funder = no legacy systems. Build AI-first from day one.",
+    ice:"Steve, launching a new funder with a white-label platform is ambitious. Building from scratch is actually the perfect time to go AI-first.",
+    tp:[
+      "You don\u2019t have legacy systems to replace. Build AI-first from day one.",
+      "Every other funder on this floor is retrofitting \u2014 you can lead with it.",
+      "HyperVerge\u2019s AI can be embedded as a differentiating feature for your white-label clients."
+    ],
+    ask:"Would you be interested in embedding AI underwriting as a differentiator in your white-label platform?"
+  },
+  {
+    id:13, name:"Elevate Funding", type:"ICP", priority:3, phase:2, booth:true,
+    contacts:[{n:"Ken Peng",t:"Dir of Business Dev & Marketing"}],
+    desc:"True direct funder in Revenue-Based Finance (MCA) since 2015, based in Gainesville, FL. Leadership team has 30+ years of industry experience. Specializes in urgent business needs like staffing, equipment, and payroll.",
+    notes:"BD & Marketing lead. UF Gator. Featured in FunderIntel interview. Direct funder since 2015.",
+    ice:"Ken, I caught your FunderIntel interview \u2014 championing Elevate\u2019s direct-funder model since 2015 is nearly a decade of building in this space. How are you handling underwriting throughput as deal flow scales?",
+    tp:[
+      "Speed is everything in the MCA space \u2014 brokers send deals to the fastest responder.",
+      "Our AI can cut underwriting time from 40 minutes to under 5, making Elevate the fastest funder in your brokers\u2019 rotation."
+    ],
+    ask:"Would a quick demo showing the speed difference be worth 20 minutes of your time?"
+  },
+  {
+    id:14, name:"Velocity Capital Group", type:"ICP", priority:3, phase:5, booth:false,
+    contacts:[{n:"Jay Avigdor",t:"CEO"}],
+    desc:"Same-day MCA funding up to $1M. $50M facility. 40K+ broker relationships. Jay has $850M in career sales. Attending the dinner roundtable.",
+    notes:"Dinner roundtable \u2014 frame in terms of cost-per-funded-deal.",
+    ice:"Jay, $850M in career sales and 40K broker relationships \u2014 that\u2019s incredible deal flow. How do you maintain same-day funding at that scale?",
+    tp:[
+      "How do you maintain same-day funding at scale? As your broker network generates more deal flow, what\u2019s the biggest bottleneck?",
+      "Frame in terms of cost-per-funded-deal. He knows the economics cold."
+    ],
+    ask:"What would it mean for Velocity if your underwriting cost-per-deal dropped by 60%?"
+  },
+  {
+    id:15, name:"Rapid Finance", type:"ICP", priority:3, phase:4, booth:false,
+    contacts:[{n:"Mark Cerminaro",t:"CRO"}],
+    desc:"Full-service lender with $4.5B+ in total financing. 200+ employees. Offers MCAs, term loans, lines of credit, and SBA loans. Mark has been there 16 years.",
+    notes:"Multi-product lender. 200+ employees. 16-year CRO tenure.",
+    ice:"Mark, 16 years at Rapid Finance \u2014 you\u2019ve seen the industry transform. How\u2019s the multi-product underwriting challenge evolving?",
+    tp:[
+      "Multi-product underwriting is our sweet spot. MCA, term loans, LOC, SBA \u2014 each needs different analysis. One platform, configurable for every product.",
+      "If you have 30-50 underwriters each saving 35 min per deal, that\u2019s massive capacity gain."
+    ],
+    ask:"Would a multi-product demo make sense? We can show MCA, term loan, and SBA workflows side by side."
+  },
+  {
+    id:16, name:"Forward Financing", type:"ICP", priority:3, phase:4, booth:false,
+    contacts:[{n:"Jill Capadanno",t:"Sr Manager New Sales"}],
+    desc:"Boston-based fintech lender. $4.1B+ in total funding with a $450M credit facility. Already uses TensorFlow and DataRobot for ML-driven underwriting.",
+    notes:"Already tech-forward \u2014 don\u2019t lead with \u2018automate underwriting.\u2019 Position around upstream data extraction.",
+    ice:"Jill, Forward Financing is clearly tech-forward with TensorFlow and DataRobot already in your stack. We complement that \u2014 handling upstream data extraction.",
+    tp:[
+      "Don\u2019t lead with \u2018we\u2019ll automate your underwriting\u2019 \u2014 they already have ML. Position around document intake, stips collection, contract generation.",
+      "We handle the upstream data extraction that feeds your models.",
+      "Your sales team closes faster when applications move through underwriting faster."
+    ],
+    ask:"Could we show you how faster document intake could accelerate your sales team\u2019s close rate?"
+  },
+  {
+    id:17, name:"idea Financial", type:"ICP", priority:3, phase:3, booth:true,
+    contacts:[{n:"Christopher Ryan",t:"Director of Sales Operations"}],
+    desc:"Leading non-bank provider of small business lines of credit and term loans. Just surpassed $1B in total funding and served 10,000+ businesses. Secured a $20M corporate term loan from EverBank in Jan 2026 to fuel expansion. Founded by two Miami trial lawyers in 2017.",
+    notes:"$1B+ funded milestone. $20M EverBank facility in Jan 2026. Lines of credit, not just MCA.",
+    ice:"Chris, congrats on idea Financial crossing the $1B funded milestone and the recent $20M EverBank facility \u2014 that\u2019s serious momentum. How are you scaling ops to keep up?",
+    tp:[
+      "With $1B+ funded and rapid growth fueled by the EverBank facility, your underwriting pipeline is scaling faster than your ops team. AI automation can handle application intake, cash flow analysis, and risk review.",
+      "As a lines-of-credit lender, you have repeat underwriting on renewals and draws \u2014 AI automation compounds time savings across the entire customer lifecycle, not just origination."
+    ],
+    ask:"Would you be open to seeing how we could streamline your operations workflow?"
+  },
+  {
+    id:18, name:"Gulf Coast Business Credit", type:"ICP", priority:3, phase:3, booth:true,
+    contacts:[{n:"Stuart Wrba",t:"VP, Business Development"}],
+    desc:"Division of Gulf Coast Bank & Trust Co. One of the largest AR finance and asset-based lending firms in the US. Finances $3B+ annually. 20+ years in business. Provides factoring, freight finance, staffing finance, and working capital to SMBs.",
+    notes:"$3B+ annually. Stuart is VP BD based in Atlanta. Recently closed $7M staffing facility, $1.25M oilfield deal.",
+    ice:"Stuart, I saw your recent deal flow \u2014 the $7M staffing facility, the oilfield transportation deal \u2014 you\u2019re clearly closing across a wide range of industries from Atlanta. That cross-sector underwriting expertise is impressive.",
+    tp:[
+      "Our AI handles bank statement analysis, cash flow review, and risk assessment \u2014 the heavy lifting of underwriting.",
+      "We\u2019re already working with funders in the MCA space and seeing 5-8x throughput improvements."
+    ],
+    ask:"Could we schedule a call to explore how AI could help Gulf Coast scale?"
+  },
+  {
+    id:19, name:"Spartan Capital", type:"ICP", priority:3, phase:3, booth:true,
+    contacts:[{n:"Frank Ebanks",t:"CEO & Founder"}],
+    desc:"Prominent MCA and revenue-based funder founded in 2015 in Middletown, NY. Key originators process $100M+ in funded deals annually across healthcare, restaurants, and construction. Asset-based loans, SBA loans, and MCAs.",
+    notes:"Need to reconnect. Frank Ebanks is CEO/Founder. Originators doing $10M/month individually. Featured in deBanked and FunderIntel.",
+    ice:"Frank, great to reconnect! I saw the deBanked feature on Spartan \u2014 originators doing $10M/month in RBF volume is a testament to the machine you\u2019ve built.",
+    tp:[
+      "With originators each processing $10M/month, your underwriting team is likely the bottleneck. AI automation that cuts review time from 40 min to under 5 could let your existing ops team support even higher origination volume.",
+      "Spartan works across MCA, asset-based, and SBA products \u2014 AI underwriting can route applications to the right product automatically based on cash flow patterns and risk profile."
+    ],
+    ask:"Would it be worth catching up over a call next week to discuss how we could help?"
+  },
+  {
+    id:20, name:"Likety", type:"ICP", priority:3, phase:4, booth:false,
+    contacts:[{n:"Nima Shamsili",t:"Co-Founder & CEO"}],
+    desc:"Fintech-enabled funding company for small businesses, especially eCommerce. Founded by Nima after his own experience running an eCommerce brand. Approves businesses traditional lenders deny. Same-day approval capability. Based in West Hollywood, CA.",
+    notes:"Founder-who-lived-the-pain story. eCommerce focus. Underserved borrower niche.",
+    ice:"Nima, your path from running your own eCommerce brand to building Likety is a founder story that resonates \u2014 you lived the pain of being an underserved borrower and built the solution.",
+    tp:[
+      "Likety approves businesses others deny \u2014 which means underwriting thinner files with less traditional data. Our AI extracts signal from bank statements and payment processor data that manual reviewers miss.",
+      "As a fintech-enabled lender, your borrowers expect a digital-first, fast experience. AI ensures your same-day approval promise scales without ops becoming the bottleneck."
+    ],
+    ask:"Would a quick demo make sense to show you the platform?"
+  },
+  {
+    id:21, name:"United Capital Source", type:"ICP", priority:3, phase:4, booth:false,
+    contacts:[{n:"Jared Weitz",t:"CEO & Founder"}],
+    desc:"One of the fastest-growing business financing brokerages in the US, connecting SMBs with 75+ lenders. Matched $1.5B+ in small business loans. Jared is co-chairman of the Small Business Finance Association and Forbes Finance Council member. Inc. 5000 in 2015 and 2017.",
+    notes:"$1.5B+ matched. 75+ lender network. Forbes Finance Council. SBFA co-chairman. Inc. 5000.",
+    ice:"Jared, between the Forbes Finance Council, co-chairing the SBFA, and building UCS into a $1.5B+ matching platform with 75+ lenders \u2014 you\u2019re clearly one of the most plugged-in leaders in small business finance.",
+    tp:[
+      "As a marketplace connecting businesses with lenders, speed of matching and underwriting is your competitive edge.",
+      "Our AI can help your lending partners underwrite faster, improving the entire marketplace experience."
+    ],
+    ask:"Would you be interested in exploring AI underwriting as a value-add for your lending partners?"
+  },
+  {
+    id:22, name:"Big Think Capital", type:"ICP", priority:3, phase:4, booth:false,
+    contacts:[{n:"Tom Forsberg",t:"CRO"}],
+    desc:"Direct lender and financial services marketplace. $1B+ funded to 25,000+ businesses since 2017. Based in NY with FL offices. Offers term loans, LOC, SBA, MCAs. Also operates a syndication investment platform. Every file is reviewed by a funding professional.",
+    notes:"$1B+ funded. Syndication platform. D-1 All-American lacrosse captain at Bryant. Revenue + syndication angles.",
+    ice:"Tom, driving $1B+ in funded deals at Big Think while building the syndication platform on top shows real strategic vision on the revenue side.",
+    tp:[
+      "Big Think prides itself on funding professionals reviewing every file \u2014 but at $1B+ funded, manual review creates a throughput ceiling. AI handles the 80% routine analysis so your team focuses on the 20% needing human judgment.",
+      "For the syndication platform, AI-automated underwriting creates standardized risk assessments that give investors more confidence and transparency."
+    ],
+    ask:"Would you be open to a conversation about how AI impacts your revenue-per-underwriter metric?"
+  },
+  // --- Secondary Attendees ---
+  {
+    id:23, name:"LoanGeek", type:"ICP", priority:4, phase:4, booth:false,
+    contacts:[{n:"Christopher Pepe",t:"Co-Founder & CEO"}],
+    desc:"Technology-driven commercial real estate finance platform connecting investors with non-bank lending solutions. Their LiveDeal portal lets lenders filter/evaluate deals in real-time. Won 2025 NPLA Broker of the Year. Note: CRE lending, not MCA \u2014 but tech-forward and in alternative lending.",
+    notes:"CRE focus, not MCA. 2025 NPLA Broker of the Year. LiveDeal portal. Adjacent ICP \u2014 tech partnership angle.",
+    ice:"Chris, winning NPLA Broker of the Year in 2025 just two years after founding LoanGeek is remarkable execution. The LiveDeal portal concept shows you think about lending as a technology problem first.",
+    tp:["While LoanGeek focuses on CRE, the LiveDeal portal shows a tech-first approach. AI-powered underwriting could add an intelligent scoring layer to LiveDeal. Frame as a technology partnership conversation."],
+    ask:"Would you be interested in seeing our AI in action?"
+  },
+  {
+    id:24, name:"Fund My Biz", type:"ICP", priority:4, phase:4, booth:false,
+    contacts:[{n:"John Baron DiCanio",t:"Managing Partner & Founder"}],
+    desc:"MCA-focused funding company founded in 2022, based in NY. Same-day funding with rates starting at 2.5% APR. John is a veteran MCA serial founder \u2014 previously founded Direct Merchant Funding and First Premier Funding. Active in deBanked community.",
+    notes:"Serial MCA founder. Same-day funding. Attended deBanked Miami 2025. Active in community.",
+    ice:"John, I saw your deBanked Miami appearance \u2014 you\u2019ve been building in MCA across multiple ventures from Direct Merchant Funding to now Fund My Biz. That serial founder energy in alternative finance is rare.",
+    tp:["Same-day funding means underwriting has to be fast. AI cuts deal review from 40 min to under 5, protecting that promise as volume grows without hiring more underwriters."],
+    ask:"Would a quick call next week make sense to explore the fit?"
+  },
+  {
+    id:25, name:"CapFlow Funding Group", type:"ICP", priority:4, phase:4, booth:false,
+    contacts:[{n:"Joseph Spiegel",t:"Sales Manager"}],
+    desc:"Private commercial lending platform founded 2009 in NJ. Specializes in factoring, AR financing, inventory financing, and PO funding. $1B+ in working capital provided. Clients generating $75K-$25M monthly revenue. Recently launched FactorLOC product. 60+ years of combined institutional experience.",
+    notes:"$1B+ working capital. Joseph won IFA NEXGEN Rookie of the Year. FactorLOC new product. Factoring focus.",
+    ice:"Joseph, congrats on winning the IFA NEXGEN Rookie of the Year \u2014 that\u2019s serious recognition in the factoring world. Building that kind of impact at CapFlow so quickly caught the industry\u2019s attention.",
+    tp:["CapFlow\u2019s factoring requires continuous credit evaluation of both client AND debtors. AI can analyze debtor creditworthiness, concentration risk, and payment patterns across your entire portfolio in real-time."],
+    ask:"Would you be interested in seeing how faster underwriting could help your sales numbers?"
+  },
+  {
+    id:26, name:"Bridgeport Capital Services", type:"ICP", priority:4, phase:4, booth:false,
+    contacts:[{n:"Darin McMahon",t:"VP / Financial Strategist"}],
+    desc:"Coral Springs, FL-based factoring company providing AR factoring, PO financing, and bookkeeping services to SMBs in staffing, manufacturing, and transportation. Focus on fast, scalable credit solutions.",
+    notes:"Factoring company. Darin authored 30+ blog articles \u2014 passionate about education. Correct spelling: McMahon.",
+    ice:"Darin, I noticed you\u2019ve authored over 30 articles on the Bridgeport Capital blog \u2014 clearly you\u2019re passionate about educating businesses on working capital options. How is automation changing your factoring workflow?",
+    tp:["AI in underwriting isn\u2019t just about speed \u2014 it\u2019s about consistency and risk reduction across every deal."],
+    ask:"Would you be open to a conversation about AI-driven underwriting strategy?"
+  },
+  {
+    id:27, name:"Fratello Capital", type:"ICP", priority:4, phase:4, booth:false,
+    contacts:[{n:"Federico Urraca",t:"ISO Relations Manager"}],
+    desc:"New York-based direct MCA funder providing working capital to SMBs. Heavy ISO broker channel. Maintains a dedicated underwriting portal (fratellocapitalportal.com).",
+    notes:"Direct MCA funder. ISO channel focus. Dedicated underwriting portal. Federico is the ISO bridge.",
+    ice:"Federico, as someone managing ISO relationships, you\u2019re the bridge between deal flow and approvals \u2014 how are you balancing the pressure ISOs put on you for faster funding decisions?",
+    tp:["ISO brokers shop deals to whichever funder approves fastest. AI cuts approval time from 40 min to under 5, helping Fratello win more ISO submissions by being first to fund.", "Automated bank statement analysis reduces the manual bottleneck in your underwriting portal, letting your team process higher deal volume."],
+    ask:"Would you be interested in seeing how AI could make Fratello the fastest funder in your ISOs\u2019 rotation?"
+  },
+  {
+    id:28, name:"Spring Funding", type:"ICP", priority:4, phase:4, booth:false,
+    contacts:[{n:"Harry Haywood",t:"Owner"}],
+    desc:"Direct MCA funder and ISO-focused platform showcasing applications across 75+ lenders. 1-hour approvals, funding $5K-$500K. Flexible remittance structures. Same-day commissions to ISO partners.",
+    notes:"75+ lender platform. 1-hour approvals. Harry is the owner/decision-maker. Same-day ISO commissions.",
+    ice:"Harry, building Spring Funding into a platform serving 75+ lenders is impressive. I\u2019d love to hear what your biggest operational bottleneck is right now \u2014 deal volume or underwriting throughput?",
+    tp:["You\u2019re already promising 1-hour approvals, which means your underwriting team is under intense pressure. AI automates the bank statement analysis, cash flow scoring, and risk review that consume most of that hour.", "With 75+ lenders, AI-powered intake and industry classification can intelligently route deals to the right lender match faster."],
+    ask:"Would a quick demo make sense to show you what\u2019s possible?"
+  },
+  // --- Walk-in Booth Companies ---
+  {
+    id:29, name:"Biz2Credit", type:"ICP", priority:5, phase:3, booth:true,
+    contacts:[{n:"Rohit Arora",t:"CEO & Co-Founder"}],
+    desc:"Major fintech lender founded 2007, $8B+ in small business financing facilitated. 500-800 employees. Also operates Biz2X, a white-label SaaS lending platform with its OWN AI-powered underwriting agent. Rohit is a prominent industry voice (NYT, WSJ, Bloomberg).",
+    notes:"STRATEGIC \u2014 NOT a standard prospect. They have their own AI underwriting (Biz2X). Approach as peer/thought-leader conversation or partnership, not a direct sales pitch.",
+    ice:"Rohit, congratulations on the Biz2X AI underwriting launch. As someone who\u2019s shaped small business lending for nearly two decades, I\u2019d value your perspective on where AI underwriting is headed next.",
+    tp:["IMPORTANT: Biz2Credit already has their own AI solution (Biz2X). HyperVerge\u2019s MCA-specific workflows (CLEAR reports, stacking detection, daily ACH patterns) go deeper than general SMB AI. There may be a partnership angle.", "Approach as a peer conversation about AI in underwriting. Building a relationship could open doors to referrals or co-marketing even if they\u2019re not a buyer."],
+    ask:"NOT a standard sales ask. Approach as peer conversation. Explore whether HyperVerge\u2019s MCA-specific capabilities complement what Biz2X offers for their bank clients."
+  },
+  {
+    id:30, name:"CFG Merchant Solutions", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Andrew Coon",t:"CEO"},{n:"Bill Gallagher",t:"Founder & President"}],
+    desc:"NYC-headquartered direct MCA funder. Surpassed $2B in total funding. 50-200 employees. Great Place to Work certified 2024-2025. Closed $100M+ senior credit facility in May 2024. Funded $500M+ through ISO partners in 2024 alone.",
+    notes:"$2B+ funded. Great Place to Work. $500M+ via ISOs in 2024. $100M+ credit facility. Major player.",
+    ice:"Congrats on the Great Place to Work certification and crossing $2B in total funding \u2014 scaling that fast while keeping 92% employee satisfaction is rare. That ISO volume must put serious pressure on underwriting throughput.",
+    tp:["At $500M+ funded through ISOs in a single year, AI underwriting automation can cut each deal\u2019s review from 40 min to under 5 \u2014 your existing team handles significantly more volume without proportional headcount growth."],
+    ask:"Request a demo call with the CRO or VP of Underwriting to show how AI-driven cash flow analysis handles ISO deal flow at scale."
+  },
+  {
+    id:31, name:"Newity", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"David Cody",t:"Co-CEO"},{n:"Luke LaHaie",t:"Co-CEO"}],
+    desc:"The #1 SBA 7(a) loan facilitator in the US. Helped 125,000+ businesses access $11.8B+ in capital. Founded 2020, Chicago. Inc. 5000 #596 and Deloitte Fast 500. Partners with Northeast Bank. Already uses Biz2X for origination workflows.",
+    notes:"#1 SBA 7(a) facilitator. $11.8B+. Already uses Biz2X. Position as complement to existing tech stack. Inc. 5000.",
+    ice:"Being named to American Banker\u2019s \u201825 people who will change banking\u2019 is a big deal \u2014 and $11.8B facilitated for 125K+ businesses through SBA channels is impressive given how documentation-heavy SBA underwriting can be.",
+    tp:["SBA 7(a) underwriting is notoriously document-intensive. Even with Biz2X handling origination, the actual analysis (cash flow verification, risk scoring, NAICS classification) is still manual. HyperVerge sits alongside your existing stack to automate the analytical layer."],
+    ask:"Request a meeting with their COO or tech team to discuss how AI complements their existing Biz2X platform for SBA decisioning."
+  },
+  {
+    id:32, name:"Thoro Corp", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[],
+    desc:"Hallandale Beach, FL-based direct MCA funder specializing in B-C paper merchants (higher-risk profiles) with no industry restrictions. Funds up to $5M with terms up to 24 weeks. Emphasizes trust, transparency, and technology-driven solutions.",
+    notes:"B-C paper specialist = complex underwriting. No industry restrictions. Up to $5M.",
+    ice:"Your focus on B-C paper merchants is a bold niche \u2014 most funders avoid it. I\u2019m curious what your tech stack looks like on the underwriting side.",
+    tp:["B-C paper underwriting is inherently more complex \u2014 riskier merchants where traditional signals fail. AI-powered cash flow analysis and risk report automation can surface hidden patterns in bank statements that manual reviewers might miss."],
+    ask:"Ask for whoever oversees underwriting operations. Position around scaling the B-C paper niche without proportionally increasing risk or headcount."
+  },
+  {
+    id:33, name:"Rowan Advance", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[],
+    desc:"MCA funder with ~200 employees. Funded $98M+ in a single quarter. Revenue-based financing $10K-$5M. Factor rates starting at 1.28. Same-day commissions and early prepay discounts. Heavy ISO broker focus.",
+    notes:"$98M+/quarter. 200 employees. Significant scale \u2014 AI ROI is massive at this volume.",
+    ice:"Rowan\u2019s growth is impressive \u2014 $98M funded in a single quarter speaks to serious operational scale. At that volume, every minute saved in underwriting translates to real dollars.",
+    tp:["At $98M+ per quarter, manual underwriting becomes the bottleneck to growth. AI cuts review to under 5 min per deal, enabling volume scaling without linearly scaling the underwriting team.", "Your messaging emphasizes \u2018real people, not algorithms\u2019 \u2014 HyperVerge augments your underwriters. The AI handles data-heavy analysis so your people focus on judgment calls."],
+    ask:"Request a meeting with whoever leads underwriting operations. Even a 50% reduction in per-deal time could translate to millions in additional funded volume per quarter."
+  },
+  {
+    id:34, name:"Bizfund", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[],
+    desc:"Brooklyn, NY-based MCA funder established ~2014 with global offices. Revenue $10-25M, 21-50 employees. 90%+ approval rate with 24-48 hour funding turnaround. Min requirements: 6 months in business, $10K monthly revenue.",
+    notes:"90%+ approval rate. 24-48 hr turnaround. Global offices. $10-25M revenue.",
+    ice:"With a 90%+ approval rate and 24-48 hour turnaround, Bizfund has clearly optimized for saying \u2018yes\u2019 fast. Is the bottleneck now processing speed or finding the 10% to decline?",
+    tp:["A 90%+ approval rate means your team reviews many deals that will be approved \u2014 that\u2019s a lot of manual effort on obvious approvals. AI can auto-approve clear-cut deals and flag only borderline cases, cutting 24-48 hours to same-day."],
+    ask:"Ask to speak with the head of underwriting. Position around compressing 24-48 hour turnaround to under 1 hour."
+  },
+  {
+    id:35, name:"Fenix Capital Funding", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Sergey Sprikut",t:"Managing Partner"}],
+    desc:"Brooklyn, NY-based direct MCA funder established 2021. Only ~9 employees. BBB A-rated. MCAs from $7,500-$150,000 with 4-12 month terms. Also runs an MCA consolidation program. Approves within 4 hours, funds same day.",
+    notes:"Only 9 employees = highest AI ROI. BBB A-rated. MCA consolidation program. Sergey Sprikut is Managing Partner.",
+    ice:"For a company that\u2019s only been around since 2021, earning a BBB A-rating and offering same-day funding is impressive execution. With ~9 people, every efficiency gain has an outsized impact.",
+    tp:["With only ~9 employees, Fenix is exactly where AI delivers highest ROI. Automate bank statements, cash flow, and risk reports so your underwriters focus only on final decisions.", "Your MCA consolidation program requires evaluating multiple existing advances \u2014 complex manual work. Our AI automatically parses stacking positions, obligations, and remaining balances."],
+    ask:"Pitch the ROI angle hard: AI underwriting lets Fenix compete with funders 10x their size without hiring 10x the underwriters."
+  },
+  {
+    id:36, name:"Fox Funding", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[],
+    desc:"Business funding and MCA provider.",
+    notes:"Walk-in booth. Quick intro.",
+    ice:"How\u2019s Fox Funding approaching growth? Are you finding underwriting to be the bottleneck?",
+    tp:["Most funders tell us underwriting is their biggest bottleneck. We cut it from 40 minutes to under 5 with AI."],
+    ask:"Would a quick conversation with your ops team make sense?"
+  },
+  {
+    id:37, name:"800Funding", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[],
+    desc:"MCA and business funding provider.",
+    notes:"Walk-in booth. Quick intro.",
+    ice:"What types of deals is 800Funding seeing the most demand for right now?",
+    tp:["Whatever your deal mix, our AI adapts \u2014 configurable workflows for MCAs, term loans, lines of credit, and more."],
+    ask:"Would your team be open to seeing a quick demo?"
+  },
+  {
+    id:38, name:"Lendini", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"David Frascella",t:"Founder & Chairman"}],
+    desc:"Analytics-driven fintech (parent: Funding Metrics, LLC). Uses proprietary risk models and real-time cash flow data. Revenue-based financing $5K-$300K. Founded 2014, PA-based. $500M+ funded to 9,500+ businesses. $100M revolving credit facility. Also operates QuickFix Capital.",
+    notes:"$500M+ funded. Analytics-first company. David Frascella previously founded BizLender. Proprietary risk models.",
+    ice:"The $100M credit facility you secured and $500M+ funded to 9,500+ businesses shows the proprietary risk models are working. Being analytics-first in MCA puts you in a different league.",
+    tp:["Given you already think in terms of data models and analytics-driven decisioning, HyperVerge automates the manual gap between data collection and model application \u2014 intake, bank statement parsing, CLEAR reports, NAICS classification \u2014 letting your analysts focus on edge cases."],
+    ask:"Request a technical conversation with David or head of risk/analytics to explore how AI-automated document intake feeds directly into their proprietary risk models."
+  },
+  {
+    id:39, name:"Accelerant", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[],
+    desc:"Business funding and lending company.",
+    notes:"Walk-in booth. Quick intro.",
+    ice:"What\u2019s driving Accelerant\u2019s growth right now? How\u2019s the underwriting team keeping up?",
+    tp:["We help lending companies scale without proportionally scaling their underwriting teams. 5-8x throughput improvement."],
+    ask:"Would a quick demo be worth 15 minutes?"
+  },
+  {
+    id:40, name:"Lendmate", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[],
+    desc:"Small business lending solutions.",
+    notes:"Walk-in booth. Quick intro.",
+    ice:"How\u2019s Lendmate differentiating in the market? Speed, rates, or service?",
+    tp:["If speed is part of your value prop, AI underwriting is a game-changer. Under 5 minutes per application."],
+    ask:"Would your team be interested in exploring AI-powered underwriting?"
+  },
+  {
+    id:41, name:"Stellar Capital", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[],
+    desc:"Business funding and capital provider.",
+    notes:"Walk-in booth. Quick intro.",
+    ice:"What\u2019s Stellar Capital\u2019s focus right now? I\u2019d love to hear about your underwriting approach.",
+    tp:["Our AI Co-Pilot handles the heavy lifting \u2014 bank statements, cash flow, risk reports \u2014 so your underwriters can focus on decision-making."],
+    ask:"Would a brief call make sense to explore the fit?"
+  },
+  {
+    id:42, name:"Parkview Advance", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Matthew Walsh",t:"Founder & CEO"}],
+    desc:"Stamford, CT-based alternative lender founded 2018. Offers business LOC, receivables-based financing, SBA products, equipment financing, and asset-based loans. Growing rapidly and earned recognition as one of America\u2019s top small business lenders.",
+    notes:"Multi-product (LOC, AR, SBA, equipment, ABL). Matthew Walsh is Founder/CEO. ~$4M revenue.",
+    ice:"Building Parkview from scratch in 2018 and growing it into a recognized name across five product lines shows real ambition. The move from pure MCA into SBA, equipment, and asset-based lending is smart diversification.",
+    tp:["With five different product lines, your underwriting team juggles very different evaluation criteria per deal type. AI automates the universal pain points \u2014 intake, cash flow analysis, risk/CLEAR reports, industry classification \u2014 in under 5 min."],
+    ask:"Request a call with Matthew Walsh to show how AI helps Parkview scale multi-product underwriting without adding headcount."
+  },
+  {
+    id:43, name:"Maverick Funding", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Igor Davidov",t:"CEO"}],
+    desc:"Fresh Meadows, NY direct MCA funder using their own capital. Fast, unsecured working capital to small businesses across logistics, retail, and medical. $5K-$1M funding. Approvals in as little as 1 business day. Minimal paperwork (application + 3 months bank statements).",
+    notes:"Direct funder with own capital. Igor Davidov is CEO. 1-day approvals. Minimal paperwork.",
+    ice:"Being a direct funder with your own capital gives you full control over underwriting \u2014 that\u2019s a real competitive advantage in speed-to-funding. Approving deals across logistics, retail, and medical in one day is impressive.",
+    tp:["Since Maverick is a direct funder promising 1-day approvals, every minute saved in underwriting directly improves your competitive position. AI processes those 3 months of bank statements in under 5 minutes with consistent accuracy."],
+    ask:"Request a demo call with Igor or his head of underwriting to show a live walkthrough of how HyperVerge processes a real MCA application in under 5 minutes."
+  }
+];
+
+// ============================================================
+// APP STATE
+// ============================================================
+let activeTab = 'schedule';
+let activeFilter = 'all';
+let openCardId = null;
+let searchTimeout = null;
+
+// ============================================================
+// TAB MANAGEMENT
+// ============================================================
+function switchTab(tab) {
+  activeTab = tab;
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).classList.add('active');
+  document.querySelector('.nav-btn[data-tab="' + tab + '"]').classList.add('active');
+  // Hide search results when switching tabs
+  const sr = document.getElementById('search-results');
+  if (sr.classList.contains('show') && !document.getElementById('searchInput').value.trim()) {
+    sr.classList.remove('show');
+  }
+  // Render companies if needed
+  if (tab === 'companies') renderCompanies();
+}
+
+// ============================================================
+// COMPANY RENDERING
+// ============================================================
+function renderCompanies(query) {
+  const list = document.getElementById('coList');
+  const countEl = document.getElementById('coCount');
+  let filtered = CO.filter(c => activeFilter === 'all' || c.type === activeFilter);
+  if (query) {
+    const q = query.toLowerCase();
+    filtered = filtered.filter(c =>
+      c.name.toLowerCase().includes(q) ||
+      c.contacts.some(ct => ct.n.toLowerCase().includes(q))
+    );
+  }
+  filtered.sort((a, b) => a.priority - b.priority || a.phase - b.phase || a.id - b.id);
+  countEl.textContent = filtered.length + ' companies';
+  if (!filtered.length) {
+    list.innerHTML = '<div class="empty">No companies match your filter</div>';
+    return;
+  }
+  list.innerHTML = filtered.map(c => buildCard(c, query)).join('');
+}
+
+function buildCard(c, query) {
+  const t = c.type.toLowerCase();
+  const isOpen = openCardId === c.id;
+  const contactStr = c.contacts.map(ct => ct.t ? ct.n + ', ' + ct.t : ct.n).join(' \u00b7 ');
+  const highlightedName = query ? highlightText(c.name, query) : esc(c.name);
+  const highlightedContact = query ? highlightText(contactStr, query) : esc(contactStr);
+  let html = '<div class="card ' + t + (isOpen ? ' open' : '') + '" data-id="' + c.id + '">';
+  html += '<div class="card-head" onclick="toggleCard(' + c.id + ')">';
+  html += '<div class="card-info">';
+  html += '<div class="card-top"><span class="card-name">' + highlightedName + '</span>';
+  html += '<span class="card-badge ' + t + '">' + c.type + '</span></div>';
+  if (contactStr) html += '<div class="card-contacts">' + highlightedContact + '</div>';
+  html += '<div class="card-preview">' + esc(c.ice) + '</div>';
+  html += '</div><div class="card-chev">\u203A</div></div>';
+  // Expanded body
+  html += '<div class="card-body">';
+  html += '<div class="card-section"><div class="card-section-title">About</div>';
+  html += '<div class="card-desc">' + esc(c.desc) + '</div></div>';
+  if (c.notes) {
+    html += '<div class="card-section"><div class="card-section-title">Notes</div>';
+    html += '<div class="card-desc">' + esc(c.notes) + '</div></div>';
+  }
+  html += '<div class="card-section"><div class="card-section-title">Icebreaker</div>';
+  html += '<div class="card-ice">\u201C' + esc(c.ice) + '\u201D</div></div>';
+  if (c.tp.length) {
+    html += '<div class="card-section"><div class="card-section-title">Talking Points</div>';
+    html += '<ul class="card-tp">' + c.tp.map(p => '<li>' + esc(p) + '</li>').join('') + '</ul></div>';
+  }
+  if (c.ask) {
+    html += '<div class="card-section"><div class="card-section-title">The Ask</div>';
+    html += '<div class="card-ask">' + esc(c.ask) + '</div></div>';
+  }
+  html += '</div></div>';
+  return html;
+}
+
+function toggleCard(id) {
+  openCardId = openCardId === id ? null : id;
+  renderCompanies(document.getElementById('searchInput').value.trim());
+  if (openCardId) {
+    setTimeout(() => {
+      const card = document.querySelector('.card[data-id="' + id + '"]');
+      if (card) card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 50);
+  }
+}
+
+function esc(s) {
+  if (!s) return '';
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function highlightText(text, query) {
+  if (!query) return esc(text);
+  const escaped = esc(text);
+  const q = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return escaped.replace(new RegExp('(' + q + ')', 'gi'), '<mark>$1</mark>');
+}
+
+// ============================================================
+// FILTERS
+// ============================================================
+function setFilter(f) {
+  activeFilter = f;
+  document.querySelectorAll('.pill').forEach(p => p.classList.toggle('active', p.dataset.f === f));
+  openCardId = null;
+  renderCompanies(document.getElementById('searchInput').value.trim());
+}
+
+// ============================================================
+// SEARCH
+// ============================================================
+function initSearch() {
+  const input = document.getElementById('searchInput');
+  const clear = document.getElementById('searchClear');
+  const sr = document.getElementById('search-results');
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim();
+    clear.classList.toggle('show', q.length > 0);
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      if (q.length > 0) {
+        showSearchResults(q);
+      } else {
+        sr.classList.remove('show');
+        document.getElementById('tab-' + activeTab).classList.add('active');
+      }
+    }, 150);
+  });
+
+  clear.addEventListener('click', () => {
+    input.value = '';
+    clear.classList.remove('show');
+    sr.classList.remove('show');
+    document.getElementById('tab-' + activeTab).classList.add('active');
+    input.blur();
+  });
+}
+
+function showSearchResults(query) {
+  const sr = document.getElementById('search-results');
+  const q = query.toLowerCase();
+  const matches = CO.filter(c =>
+    c.name.toLowerCase().includes(q) ||
+    c.contacts.some(ct => ct.n.toLowerCase().includes(q))
+  ).sort((a, b) => a.priority - b.priority || a.id - b.id);
+
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  sr.classList.add('show');
+
+  if (!matches.length) {
+    sr.innerHTML = '<div class="search-hint">No results for \u201C' + esc(query) + '\u201D</div>';
+    return;
+  }
+  sr.innerHTML = '<div class="search-count">' + matches.length + ' result' + (matches.length > 1 ? 's' : '') + '</div>' +
+    matches.map(c => buildCard(c, query)).join('');
+}
+
+// ============================================================
+// JUMP TO COMPANY (from schedule)
+// ============================================================
+function jumpTo(name) {
+  document.getElementById('searchInput').value = name;
+  document.getElementById('searchClear').classList.add('show');
+  showSearchResults(name);
+}
+
+// ============================================================
+// CHECKLIST
+// ============================================================
+function initChecklist() {
+  const items = document.querySelectorAll('.check-item');
+  const saved = JSON.parse(localStorage.getItem('debanked_checklist') || '{}');
+  items.forEach(item => {
+    if (saved[item.dataset.key]) item.classList.add('done');
+  });
+  // Load notes
+  const notes = document.getElementById('quickNotes');
+  notes.value = localStorage.getItem('debanked_notes') || '';
+  notes.addEventListener('input', () => {
+    localStorage.setItem('debanked_notes', notes.value);
+  });
+}
+
+function toggleCheck(el) {
+  el.classList.toggle('done');
+  const saved = {};
+  document.querySelectorAll('.check-item').forEach(item => {
+    if (item.classList.contains('done')) saved[item.dataset.key] = true;
+  });
+  localStorage.setItem('debanked_checklist', JSON.stringify(saved));
+}
+
+// ============================================================
+// SCHEDULE PHASE HIGHLIGHTING
+// ============================================================
+function highlightPhase() {
+  const now = new Date();
+  // For testing: use current time. Event date is Feb 12, 2026
+  const h = now.getHours();
+  const m = now.getMinutes();
+  const mins = h * 60 + m;
+  const phases = [
+    { id: 'phase1', start: 660, end: 780 },  // 11:00-13:00
+    { id: 'phase2', start: 780, end: 870 },  // 13:00-14:30
+    { id: 'phase3', start: 870, end: 930 },  // 14:30-15:30
+    { id: 'phase4', start: 930, end: 990 },  // 15:30-16:30
+    { id: 'phase5', start: 990, end: 1020 }  // 16:30-17:00
+  ];
+  phases.forEach(p => {
+    const el = document.getElementById(p.id);
+    const badge = el.querySelector('.phase-now');
+    if (mins >= p.start && mins < p.end) {
+      el.classList.add('current');
+      badge.style.display = 'inline-block';
+    } else {
+      el.classList.remove('current');
+      badge.style.display = 'none';
+    }
+  });
+}
+
+// ============================================================
+// SERVICE WORKER REGISTRATION
+// ============================================================
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}
+
+// ============================================================
+// INIT
+// ============================================================
+function init() {
+  renderCompanies();
+  initSearch();
+  initChecklist();
+  highlightPhase();
+  setInterval(highlightPhase, 60000); // Update every minute
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
