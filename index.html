@@ -154,6 +154,8 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .ice-shuffle:active{background:var(--accent);color:#fff}
 .news-item{font-size:12px;line-height:1.5;padding:8px 10px;background:var(--bg);border-radius:8px;margin-bottom:6px}
 .news-headline{color:var(--text);font-weight:600;margin-bottom:2px}
+.news-headline a{color:var(--accent);text-decoration:none;font-weight:600}
+.news-headline a:active{text-decoration:underline}
 .news-source{color:var(--dim);font-size:11px}
 .news-summary{color:var(--dim);margin-top:2px}
 .card-tp{list-style:none;padding:0}
@@ -451,7 +453,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 <!-- Header -->
 <header class="hdr">
   <div class="hdr-title">DeBanked Connect</div>
-  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.08</span></div>
+  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.09</span></div>
 </header>
 
 <!-- Search -->
@@ -1592,7 +1594,8 @@ function buildCard(c, query) {
   if (c.news && c.news.length) {
     html += '<div class="card-section"><div class="card-section-title">Recent News</div>';
     c.news.forEach(function(n) {
-      html += '<div class="news-item"><div class="news-headline">' + esc(n.h) + '</div>';
+      var nurl = newsUrl(n);
+      html += '<div class="news-item"><div class="news-headline"><a href="' + nurl + '" target="_blank" rel="noopener">' + esc(n.h) + '</a></div>';
       if (n.s) html += '<div class="news-source">' + esc(n.s) + '</div>';
       if (n.d) html += '<div class="news-summary">' + esc(n.d) + '</div>';
       html += '</div>';
@@ -1981,6 +1984,11 @@ function glanceOpenCard() {
 // ============================================================
 var detailId = null;
 
+function newsUrl(n) {
+  var q = n.h + (n.s ? ' ' + n.s.split(',')[0] : '');
+  return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+}
+
 function extractHooks(bg) {
   if (!bg) return [];
   var hooks = [];
@@ -2097,7 +2105,8 @@ function showDetail(id) {
   if (c.news && c.news.length) {
     html += '<div class="detail-section"><div class="detail-section-title">Recent News</div>';
     c.news.forEach(function(n) {
-      html += '<div class="news-item"><div class="news-headline">' + esc(n.h) + '</div>';
+      var nurl = newsUrl(n);
+      html += '<div class="news-item"><div class="news-headline"><a href="' + nurl + '" target="_blank" rel="noopener">' + esc(n.h) + '</a></div>';
       if (n.s) html += '<div class="news-source">' + esc(n.s) + '</div>';
       if (n.d) html += '<div class="news-summary">' + esc(n.d) + '</div>';
       html += '</div>';
