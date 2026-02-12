@@ -333,7 +333,11 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .tag-panel{background:rgba(168,85,247,.15);color:#a855f7}
 .tag-keynote{background:rgba(91,141,239,.15);color:var(--accent)}
 .tag-demo{background:rgba(34,197,94,.15);color:var(--icp)}
-.program-speaker{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px}
+.program-speaker{display:flex;align-items:center;gap:8px;padding:6px 8px;font-size:12px;
+  border-radius:6px;margin:0 -8px;-webkit-tap-highlight-color:transparent}
+.program-speaker.clickable{cursor:pointer}
+.program-speaker.clickable:active{background:var(--surface2)}
+.program-speaker .chevron{margin-left:auto;color:var(--dim);font-size:10px;opacity:.4;flex-shrink:0}
 .program-speaker-name{font-weight:600;color:var(--text)}
 .program-speaker-co{color:var(--dim)}
 .program-speaker .in-list{font-size:9px;padding:1px 5px;border-radius:3px;font-weight:700;
@@ -356,7 +360,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 <!-- Header -->
 <header class="hdr">
   <div class="hdr-title">DeBanked Connect</div>
-  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.05</span></div>
+  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.06</span></div>
 </header>
 
 <!-- Search -->
@@ -451,16 +455,16 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
       </div>
       <div class="program-session">
         <div class="program-session-title"><span class="tag tag-panel">Panel</span> Funder &amp; Broker Panel</div>
-        <div class="program-speaker"><span class="program-speaker-name">Louis Calderone</span><span class="program-speaker-co">&middot; President, Vox Funding</span><span class="in-list icp">ICP</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Daniel Dames</span><span class="program-speaker-co">&middot; VP Ops, Bitty</span><span class="in-list sqo">SQO</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Seth Denison</span><span class="program-speaker-co">&middot; MD Investor Relations, Optimum Bank</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Frankie DiAntonio</span><span class="program-speaker-co">&middot; CEO, Lexington Capital Holdings</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Steven Edisis</span><span class="program-speaker-co">&middot; CEO, Dynamic Capital</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Efraim Kandinov</span><span class="program-speaker-co">&middot; CEO, Fundfi</span><span class="in-list client">CLIENT</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Arieh Kaplan</span><span class="program-speaker-co">&middot; Head ISO Relations, Barclays Advance</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Jim Noel</span><span class="program-speaker-co">&middot; VP Strategic Partnerships, BriteCap</span><span class="in-list sqo">SQO</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Vinnie Rodriguez</span><span class="program-speaker-co">&middot; Chairman, Tip Top Capital</span></div>
-        <div class="program-speaker"><span class="program-speaker-name">Alex Shvarts</span><span class="program-speaker-co">&middot; CEO, FundKite</span><span class="in-list client">CLIENT</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Vox Funding')"><span class="program-speaker-name">Louis Calderone</span><span class="program-speaker-co">&middot; President, Vox Funding</span><span class="in-list icp">ICP</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Bitty')"><span class="program-speaker-name">Daniel Dames</span><span class="program-speaker-co">&middot; VP Ops, Bitty</span><span class="in-list sqo">SQO</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Optimum Bank')"><span class="program-speaker-name">Seth Denison</span><span class="program-speaker-co">&middot; MD Investor Relations, Optimum Bank</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Lexington Capital Holdings')"><span class="program-speaker-name">Frankie DiAntonio</span><span class="program-speaker-co">&middot; CEO, Lexington Capital Holdings</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Dynamic Capital')"><span class="program-speaker-name">Steven Edisis</span><span class="program-speaker-co">&middot; CEO, Dynamic Capital</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Fundfi')"><span class="program-speaker-name">Efraim Kandinov</span><span class="program-speaker-co">&middot; CEO, Fundfi</span><span class="in-list client">CLIENT</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Barclays Advance')"><span class="program-speaker-name">Arieh Kaplan</span><span class="program-speaker-co">&middot; Head ISO Relations, Barclays Advance</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('BriteCap Financial')"><span class="program-speaker-name">Jim Noel</span><span class="program-speaker-co">&middot; VP Strategic Partnerships, BriteCap</span><span class="in-list sqo">SQO</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Tip Top Capital')"><span class="program-speaker-name">Vinnie Rodriguez</span><span class="program-speaker-co">&middot; Chairman, Tip Top Capital</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('FundKite')"><span class="program-speaker-name">Alex Shvarts</span><span class="program-speaker-co">&middot; CEO, FundKite</span><span class="in-list client">CLIENT</span><span class="chevron">&rsaquo;</span></div>
       </div>
       <div class="program-session">
         <div class="program-session-title"><span class="tag tag-demo">Tech Demo</span> Show Floor Tech Demos</div>
