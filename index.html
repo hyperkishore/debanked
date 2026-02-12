@@ -131,7 +131,9 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .card-contacts{font-size:12px;color:var(--dim);margin-bottom:4px}
 .card-contacts mark{background:rgba(91,141,239,.3);color:var(--dim);border-radius:2px;padding:0 1px}
 .card-preview{font-size:12px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.card-chev{color:var(--dim);font-size:18px;transition:transform .2s;flex-shrink:0;margin-top:4px;width:20px;text-align:center}
+.card-chev{color:var(--dim);font-size:18px;transition:transform .2s;flex-shrink:0;
+  width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;
+  margin:-14px -14px -14px 0;-webkit-tap-highlight-color:transparent}
 .card.open .card-chev{transform:rotate(90deg)}
 
 /* Card Expanded */
@@ -214,8 +216,10 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .met-stats-count{color:var(--icp);font-weight:700}
 
 /* Contact Links */
-.contact-link{color:var(--dim);text-decoration:none;-webkit-tap-highlight-color:transparent}
-.contact-link:active{color:var(--accent)}
+.contact-name{color:var(--dim)}
+.contact-li-btn{color:var(--dim);text-decoration:none;-webkit-tap-highlight-color:transparent;
+  display:inline-flex;align-items:center;padding:4px;margin:-4px -2px}
+.contact-li-btn:active{color:var(--accent)}
 .li-icon{display:inline-block;background:rgba(10,102,194,.2);color:#0a66c2;font-size:9px;
   font-weight:800;padding:1px 3px;border-radius:2px;margin-left:2px;vertical-align:middle;
   font-family:serif;letter-spacing:-.5px}
@@ -995,7 +999,7 @@ function buildCard(c, query) {
       const q = encodeURIComponent(ct.n + ' ' + c.name);
       const url = 'https://www.linkedin.com/search/results/all/?keywords=' + q;
       const display = query ? highlightText(ct.t ? ct.n + ', ' + ct.t : ct.n, query) : esc(ct.t ? ct.n + ', ' + ct.t : ct.n);
-      return '<a class="contact-link" href="' + url + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">' + display + ' <span class="li-icon">in</span></a>';
+      return '<span class="contact-name">' + display + '</span> <a class="contact-li-btn" href="' + url + '" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="li-icon">in</span></a>';
     }).join(' \u00b7 ');
     html += '</div>';
   }
@@ -1004,7 +1008,7 @@ function buildCard(c, query) {
     html += '<div class="met-time">\u2713 Met at ' + d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) + '</div>';
   }
   html += '<div class="card-preview">' + esc(c.ice) + '</div>';
-  html += '</div><div class="card-chev">\u203A</div></div>';
+  html += '</div><div class="card-chev" onclick="event.stopPropagation();toggleCard(' + c.id + ')">\u203A</div></div>';
   html += '<div class="card-body">';
   html += '<div class="card-section"><div class="card-section-title">About</div>';
   html += '<div class="card-desc">' + esc(c.desc) + '</div></div>';
@@ -1048,6 +1052,7 @@ function buildCard(c, query) {
 }
 
 function toggleCard(id) {
+  document.getElementById('searchInput').blur();
   openCardId = openCardId === id ? null : id;
   const sr = document.getElementById('search-results');
   if (sr.classList.contains('show')) {
