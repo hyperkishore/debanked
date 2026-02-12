@@ -145,6 +145,16 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .card-desc{font-size:13px;line-height:1.5;color:var(--text);opacity:.9}
 .card-ice{font-size:13px;line-height:1.5;color:var(--text);font-style:italic;
   background:var(--surface2);padding:10px 12px;border-radius:8px;border-left:2px solid var(--accent)}
+.ice-nav{display:flex;align-items:center;justify-content:space-between;margin-top:6px}
+.ice-dots{display:flex;gap:5px}.ice-dot{width:6px;height:6px;border-radius:50%;background:var(--border)}
+.ice-dot.active{background:var(--accent)}
+.ice-shuffle{font-size:11px;color:var(--accent);background:none;border:1px solid var(--accent);
+  border-radius:12px;padding:3px 10px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ice-shuffle:active{background:var(--accent);color:#fff}
+.news-item{font-size:12px;line-height:1.5;padding:8px 10px;background:var(--bg);border-radius:8px;margin-bottom:6px}
+.news-headline{color:var(--text);font-weight:600;margin-bottom:2px}
+.news-source{color:var(--dim);font-size:11px}
+.news-summary{color:var(--dim);margin-top:2px}
 .card-tp{list-style:none;padding:0}
 .card-tp li{font-size:13px;line-height:1.5;padding:6px 0;padding-left:16px;position:relative;
   border-bottom:1px solid rgba(42,42,56,.5);color:var(--text);opacity:.9}
@@ -230,7 +240,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 <!-- Header -->
 <header class="hdr">
   <div class="hdr-title">DeBanked Connect</div>
-  <div class="hdr-sub">Feb 12, 2026 &middot; 11 AM &ndash; 5 PM &middot; <span class="hdr-ver">v1.1.02</span></div>
+  <div class="hdr-sub">Feb 12, 2026 &middot; 11 AM &ndash; 5 PM &middot; <span class="hdr-ver">v1.1.03</span></div>
 </header>
 
 <!-- Search -->
@@ -422,7 +432,9 @@ const CO = [
     contacts:[{n:"Craig Hecker",t:"CEO"},{n:"Daniel Dames",t:"VP of Ops"}],
     desc:"Fort Lauderdale-based MCA funder (est. 2018). 29K+ small businesses funded, ~$165M originated in 2023. OppFi holds 35% equity ($15.25M, Aug 2024) with option for full ownership by 2030. CEO Craig Hecker is industry veteran who founded/sold Rapid Capital Funding. Daniel Dames (VP Ops) speaking on Funder Panel.",
     notes:"Funder Panel speaker \u2014 warm lead, high priority.",
+    news:[{h:"OppFi acquires 35% equity stake in Bitty for ~$18M",s:"BusinessWire, Aug 2024",d:"OppFi paid $15.25M cash + $2.7M stock for 35% stake. Options to increase to full ownership by 2030."},{h:"Bitty launches fixed-term small business loan program",s:"deBanked, Aug 2025",d:"New installment-style loan rolling out Sept 2025, starting in Texas. Complements existing revenue-based financing."},{h:"Cloudsquare CRM integrates with Bitty Advance via API",s:"deBanked, Jan 2025",d:"Salesforce-powered broker CRM added direct API for automated submissions and same-day approvals."}],
     ice:"Craig, Daniel -- congrats on the OppFi partnership and 29K+ businesses funded. How are you scaling underwriting to keep up with OppFi\u2019s growth ambitions? \u2014 what\u2019s the most surprising trend you\u2019re seeing in small business funding right now?",
+    icebreakers:["I saw OppFi took a 35% stake at a 6x multiple on your net income -- that is a strong endorsement. Now with the path to full ownership by 2030, how is that partnership shaping your product roadmap?","Congrats on launching the fixed-term loan product in September. Expanding from pure revenue-based financing into installment loans is a big shift -- are brokers sending you a different borrower profile now?","The Cloudsquare API integration in January is a big deal for broker workflow. Has automated submission changed the volume or quality of deals coming through your ISO channel?","With $420M funded to 29K+ merchants and OppFi backing you with public-company resources, what is the biggest bottleneck to scaling from here -- capital, distribution, or something else?"],
     tp:[
       "How are you handling underwriting volume as you scale? We\u2019re seeing funders your size hitting a wall at 40 min per deal manually.",
       "We cut that to under 5 minutes \u2014 application intake, cash flow analysis, CLEAR report review, all automated with explainable decisions.",
@@ -436,7 +448,9 @@ const CO = [
     contacts:[{n:"Richard Henderson",t:"CEO"},{n:"Dave Lafferty",t:"Chief Credit Officer"},{n:"Jim Noel",t:"VP Strategic Partnerships"}],
     desc:"Non-bank lender (formerly ForwardLine, est. 2003) in Carlsbad, CA. Surpassed $1B total originations Dec 2025. 55% YoY origination growth. $150M credit facility (Aug 2024). New CEO Richard Henderson (Sep 2024, prev CRO at CAN Capital). CCO Dave Lafferty (30yr credit veteran, prev CCO at CAN Capital). Launched BriteLine on-demand capital May 2025.",
     notes:"Broker Panel speaker. Just raised $150M facility.",
+    news:[{h:"Surpasses $1 billion in total originations",s:"PR Newswire, Feb 2026",d:"Crossed $1B in Dec 2025 with 55% YoY origination growth -- strongest year in company history."},{h:"Launches BriteLine for on-demand business capital",s:"PR Newswire, May 2025",d:"Single approval unlocks future draws based on performance -- revolving line concept for alt lending."},{h:"Jim Noel hired as VP Strategic Partnerships + $150M facility",s:"PR Newswire, Aug-Oct 2024",d:"20+ year vet from CAN Capital joins. $150M 3-year revolving receivable financing facility secured."}],
     ice:"Richard, hitting $1B total originations with 55% YoY growth is impressive. With BriteLine scaling, how\u2019s the underwriting infrastructure keeping up? \u2014 on-demand capital is a bold move. How\u2019s the market responding?",
+    icebreakers:["Congrats on crossing a billion in originations with 55% YoY growth. You mentioned exciting innovations for 2026 -- can you give us a preview?","BriteLine is an interesting concept -- single approval with performance-based draws. How are brokers positioning it compared to a standard advance?","Bringing Jim from CAN Capital right after the $150M facility looks like a deliberate one-two punch for scaling. How has the partner network grown since Jim came on?","Growing originations 55% while strengthening credit discipline is not easy. What operational changes made it possible to grow faster and tighten underwriting simultaneously?"],
     tp:[
       "An on-demand capital product needs near-instant underwriting \u2014 how are you handling that?",
       "With your broker network sending in deals, consistency is key. Our AI ensures every application gets the same rigorous, fast review regardless of source.",
@@ -450,7 +464,9 @@ const CO = [
     contacts:[{n:"Andrew Mallinger",t:"COO"},{n:"Alexander Parsol",t:"Partner/Co-Founder"}],
     desc:"Founded 2012. Specializes in eCommerce seller MCAs (Amazon, Walmart, Shopify, eBay). Proprietary PIRScore credit model. Inc. 5000 #1770 (230% revenue growth). COO Andrew Mallinger scaled two fintechs. Already partnered with HyperVerge.",
     notes:"Your existing partner \u2014 align messaging and get referrals.",
+    news:[{h:"Crain's NY Fast 50 + Inc. 5000 recognition",s:"Crain's/Inc., 2024",d:"230% three-year revenue growth. Opportunities Fund returned 20% net for 2024."},{h:"PIRScore proprietary credit scoring model",s:"PYMNTS, 2024",d:"ML model analyzing 50+ algorithms and hundreds of proprietary data points for merchant risk."},{h:"Andrew Mallinger on FunderIntel podcast",s:"FunderIntel, 2024",d:"COO discussed revenue-based financing strategy. PIRS at RBFC golf outing showing industry engagement."}],
     ice:"Great to see you! Let\u2019s align on messaging for today \u2014 what\u2019s been resonating in your conversations so far?",
+    icebreakers:["Your Opportunities Fund posted 20% net returns for 2024 -- PIRScore is doing its job on risk. How has the model evolved as eCommerce has changed?","With Amazon launching its own MCA program via Parafin, how do you see the eCommerce lending landscape shifting for PIRS?","230% three-year growth on Crain's Fast 50 is impressive. Is the plan to stay specialized in eCommerce or expand PIRScore into other verticals?","PIRScore analyzing 50+ algorithms sets you apart from generic FICO analysis. For an Amazon FBA seller, what does PIRScore see that a traditional underwriter would miss?"],
     tp:[
       "Touch base on joint messaging for the event.",
       "Ask for a specific success metric or quote to use in other conversations today.",
@@ -465,7 +481,9 @@ const CO = [
     contacts:[{n:"Shaya Baum",t:"CEO & Managing Partner"},{n:"Eli Golshteyn",t:"Dir of Underwriting"},{n:"Sarah Annas",t:"Managing Partner"},{n:"Angelina Fletcher",t:"Dir Business Dev"}],
     desc:"MCA debt consolidation (Franklin Fund ~$100M) and growth capital (Capstone Fund $50M). ~13 employees, Farmington Hills MI. CEO Shaya Baum was EY Entrepreneur of the Year 2022 finalist. Dir of Underwriting Eli Golshteyn is THE buyer (audit background). Sarah Annas hosts Back to Business podcast.",
     notes:"SQO! Debt consolidation = complex underwriting = perfect fit.",
+    news:[{h:"Capstone Fund launched with $50M+ for growth-stage businesses",s:"deBanked/Crain's Detroit",d:"Targets businesses emerged from distress, offering lower-rate 3-year term loans."},{h:"deBanked CONNECT Miami 2025 sponsorship",s:"LinkedIn, Jan-Feb 2025",d:"Sarah Annas and Angelina Fletcher represented Wing Lake. Sponsored RBFC drink cart."},{h:"Back to Business podcast launch",s:"Wing Lake Capital, ongoing",d:"Thought leadership platform featuring team members on leadership and remote work."}],
     ice:"Shaya, I\u2019ve been wanting to connect \u2014 debt consolidation underwriting is one of the most complex niches in this space, and that\u2019s exactly where our AI shines.",
+    icebreakers:["The Franklin/Capstone two-fund model is smart -- clean up the MCA stack, then step in with growth capital. How often does a merchant graduate from one fund to the other?","I saw Sarah and the team at deBanked CONNECT Miami sponsoring the RBFC drink cart. Operating outside the typical NY funding corridor, does that give you a different perspective?","Your Capstone Fund targets businesses through distress into growth but still outside traditional bank eligibility. What does your qualification process focus on that banks miss?","I have been listening to your Back to Business podcast. Is it bringing inbound deal flow or more of a culture and recruiting play?"],
     tp:[
       "Debt consolidation underwriting is uniquely complex \u2014 analyzing a merchant\u2019s existing MCA stack with multiple advances and factor rates. Our AI parses bank statements and automatically identifies all MCA repayments.",
       "With two funds needing different risk models, you need configurable underwriting workflows. That\u2019s exactly what we do.",
@@ -480,7 +498,9 @@ const CO = [
     contacts:[{n:"Brian Kandinov",t:"CEO"},{n:"Natasha Dillon",t:"CFO/COO"}],
     desc:"Revenue-based financing, MCAs, traditional loans, and credit splits across US + Canada. Founded 2020. Expanded credit facility TWICE in 2025. Launched two new products (loans + credit splits) Dec 2025. Active cross-border financing amid US-Canada tariff dynamics.",
     notes:"Existing client \u2014 get testimonial + upsell new products.",
+    news:[{h:"Fundfi expands credit facility twice in 2025",s:"deBanked, Apr & Sep 2025",d:"Doubled credit facility twice in one year to support record origination volumes across North America."},{h:"Two new product launches: loan product & credit splits",s:"deBanked, Dec 2025",d:"Launched traditional loan product and credit splits program letting businesses allocate card processing revenues toward repayment."},{h:"New Alabama office + US-Canada cross-border positioning",s:"Yahoo Finance, Jul 2025",d:"Opened Southeast regional hub in Alabama, positioned as cross-border specialist amid evolving US-Canada trade dynamics."}],
     ice:"Brian, Natasha \u2014 congrats on the Alabama expansion! How\u2019s the new office shaping up?",
+    icebreakers:["You doubled your credit facility twice in one year -- April and September. That capital acceleration usually signals the origination engine is really humming. What is driving that record merchant demand?","The credit splits product is a clever concept -- directing card processing revenue toward repayment. How has broker adoption been so far?","Opening Alabama as a Southeast hub while leaning into US-Canada cross-border expertise is interesting. Are Canadian merchants coming to you with different needs than a year ago?","Going from revenue-based financing into traditional loans and credit splits in the same quarter shows serious product ambition. Is the vision to become a full-stack platform?"],
     tp:[
       "How is the traditional loan product\u2019s underwriting workflow different from MCA?",
       "With the credit facility doubling, are you feeling the underwriting throughput pressure?",
@@ -494,7 +514,9 @@ const CO = [
     contacts:[{n:"Alex Shvarts",t:"CEO"}],
     desc:"Leading fintech MCA funder. $70M revenue, 91 employees, $900M+ funded to 200K+ businesses. Alex Shvarts personally coded proprietary daily reconciliation platform. COO Rick Kuci is former CEO of Grove Bank & Trust. Forbes Tech Council member. Just launched manufacturing-specific loans (Jan 2026). Funder Panel speaker.",
     notes:"Existing client. Tech-savvy CEO/Founder \u2014 talk tech-to-tech.",
+    news:[{h:"FundKite launches Merchant Services division",s:"deBanked, Jul 2024",d:"New payment processing division supporting all major cards, ACH, digital wallets. Surcharging options lower fees 10-20%."},{h:"$900M+ total funding milestone with $70M revenue",s:"GetLatka, 2024",d:"Crossed $900M deployed since 2015. $70M annual revenue with lean 91-person team shows strong unit economics."},{h:"Alex Shvarts featured on Fintech Newscast",s:"Fintech Newscast, May 2024",d:"CEO discussed proprietary tech enabling daily MCA reconciliation vs industry standard monthly."}],
     ice:"Alex, I\u2019m impressed by what you\u2019ve built from the tech side \u2014 I\u2019d love to talk architecture and how we can complement your stack.",
+    icebreakers:["The Merchant Services division is smart -- turning FundKite into both processor and funder creates real stickiness. Are merchants converting from processing to funding or the other way?","Hitting $70M revenue with 91 people is remarkable efficiency. How much of that edge comes from the homegrown tech stack versus the underwriting model?","You have crossed $900M in total funding. At this rate the billion-dollar milestone is within reach. Is the Merchant Services division changing how you acquire and retain merchants?","Alex built FundKite's technology from scratch -- rare in a space where most buy off-the-shelf. What is the next major capability you are building internally?"],
     tp:[
       "Talk tech-to-tech \u2014 discuss architecture, API integration, ML model accuracy.",
       "We\u2019re not here to replace your proprietary stack \u2014 we complement it. Bank statement OCR, CLEAR report parsing, stips verification \u2014 the extraction work that feeds your scoring algorithms.",
@@ -509,7 +531,9 @@ const CO = [
     contacts:[{n:"Louis Calderone",t:"President & Co-Founder"},{n:"Adam Benowitz",t:"CEO"}],
     desc:"NYC-based MCA funder established in 2018. Just closed a $150M credit facility with Raven Capital. 11-50 employees. CEO Adam Benowitz led the deal. Louis Calderone (President/Co-Founder) is speaking on the Funder Panel.",
     notes:"Funder Panel speaker. $150M new facility = need to deploy capital faster.",
+    news:[{h:"Secures $150M credit facility from Raven Capital",s:"BusinessWire, May 2025",d:"Expanded flexible financing for US businesses. Over $750M funded since 2018 founding."},{h:"CEO Adam Benowitz launches BRIX Funding for construction",s:"EINPresswire, 2025",d:"Sister venture reducing contractor payment from 83 days to 24 hours. $20M pre-money seed round."},{h:"VOX team at deBanked CONNECT 2026",s:"citybiz, Feb 2026",d:"Adam Benowitz joined Funding Deals panel. Louis Calderone serves as President & Co-Founder."}],
     ice:"Congrats on the $150M facility with Raven Capital \u2014 that\u2019s a massive vote of confidence. How are you planning to deploy it?",
+    icebreakers:["Congrats on the $150M facility with Raven Capital -- major confidence signal. With $750M+ funded since 2018, what areas will the extra capital unlock?","I noticed Adam is also building BRIX Funding for construction -- reducing payment from 83 days to 24 hours. How does VOX experience inform what you are building there?","VOX has been on a strong trajectory since 2018 with institutional backing now. What separates VOX for ISOs evaluating funding partners in this crowded market?","I saw the team was at deBanked CONNECT -- those events surface real conversations. What themes are you hearing most from brokers and merchants right now?"],
     tp:[
       "$150M in new capital with a small team. The bottleneck is now underwriting, not capital.",
       "AI isn\u2019t a luxury \u2014 it\u2019s a necessity to deploy that capital profitably at speed."
@@ -522,7 +546,9 @@ const CO = [
     contacts:[{n:"Mark Cisco",t:"VP Business Development"},{n:"Chris Holland",t:"Dir Partner BD"}],
     desc:"Pioneer of the MCA industry, founded 1998. Over $8B in total capital deployed to 85K+ merchants. CEO Ed Siciliano (prev Marlin Business Services COO). Completed 2-year tech modernization in 2023 including cloud migration.",
     notes:"Industry pioneer with 25+ year track record. Legacy systems = opportunity.",
+    news:[{h:"Completes $175M term debt securitization",s:"PR Newswire, Jun 2024",d:"First securitization since 2014. $50M VFN + $125M ABS rated A/BBB/BB- by KBRA. Guggenheim advised."},{h:"Over $8B deployed across 200K+ transactions",s:"CAN Capital, ongoing",d:"Industry pioneer since 1998 continues expanding into term loans and equipment financing alongside core MCA."},{h:"2-year tech modernization completed",s:"CAN Capital Blog, 2024",d:"Cloud migration and risk model modernization under CEO Ed Siciliano positions 26-year-old company for next phase."}],
     ice:"Mark, CAN Capital pioneered this entire industry \u2014 25+ years and $6B deployed. How\u2019s the tech kept up with that growth?",
+    icebreakers:["Landing a $175M securitization with investment-grade ratings -- your first since 2014 -- is huge credibility for the whole MCA space. How has institutional appetite for alt lending paper changed?","CAN Capital invented the MCA category in 1998. Now with the tech modernization done, how is the new infrastructure changing underwriting speed and quality?","Over $8B across 200K+ transactions is an unmatched track record. With the stack modernized under Ed Siciliano, what does the next chapter look like?","Adding equipment financing alongside your core MCA -- is that in response to merchant demand or about broadening the relationship in the CAN ecosystem?"],
     tp:[
       "With $6B in historical data and a 25+ year track record, our AI can overlay on your existing systems without rip-and-replace.",
       "We help reduce underwriting time on deals you\u2019d ultimately decline \u2014 saving your team\u2019s most valuable resource.",
@@ -536,7 +562,9 @@ const CO = [
     contacts:[{n:"Burkay Kaplan",t:"CEO"}],
     desc:"Direct capital provider with ISO-first positioning. CEO Burkay Kaplan studied at Harvard Business School, Stanford GSB (Venture Capital), and Wharton. Angel investor with 70+ investments incl. Polygon, Chainlink, Dfinity. Small team -- CEO is likely sole decision-maker.",
     notes:"Harvard MBA, 70+ angel investments \u2014 frame as ROI opportunity.",
+    news:[{h:"Positions as ISO-first direct capital provider",s:"Dexly Finance, 2024-2025",d:"Launched with explicitly ISO-first approach emphasizing speed, certainty, and broker-protected relationships."},{h:"CEO Burkay Kaplan brings unique angel investor background",s:"burkaykaplan.com",d:"Harvard Business School alum, 70+ angel investments including Chainlink & Polygon. Member of $6B+ Blockchain Investors Consortium."},{h:"Dexly differentiates through clean execution model",s:"Dexly Finance, 2025",d:"Emphasizes certainty of close, transparent deal structures, and ISO relationship protection."}],
     ice:"Burkay, with 70+ angel investments, you clearly have an eye for operational efficiency. I\u2019d love your perspective on AI in underwriting.",
+    icebreakers:["Burkay, 70+ angel investments including Chainlink and Polygon, HBS, and now running a direct funder. What made you bring that tech and venture lens into merchant cash advance?","The ISO-first positioning is bold. A lot of funders say broker-friendly but you made it core identity. What specifically are you doing differently to protect broker relationships?","With your experience investing in blockchain at the earliest stages, where is tech actually moving the needle in MCA underwriting versus where it is still hype?","Dexly emphasizes clean execution and certainty of close -- the exact pain points ISOs complain about most. How are you structuring operations to deliver consistently?"],
     tp:[
       "Present as an investment in operational efficiency.",
       "ISOs send deals to the funder that responds fastest. We make you that funder.",
@@ -550,7 +578,9 @@ const CO = [
     contacts:[{n:"Daniel Lenefsky",t:"CEO"}],
     desc:"MCA funder already using API/OCR technology alongside veteran underwriters. Offers same-day and 24-hour funding with up to 17-point ISO commissions.",
     notes:"Already tech-forward with API/OCR \u2014 position as the next evolution.",
+    news:[{h:"CEO Daniel Lenefsky at deBanked Broker Fair 2025",s:"deBanked, 2025",d:"Represented Aspire at premier broker event and B2B Finance Expo."},{h:"Team expansion: Ricky Singh as Ops & Marketing Manager",s:"ZoomInfo, Feb 2025",d:"Signaling investment in operational capacity and go-to-market efforts."},{h:"Aspire model: API/OCR + veteran underwriters",s:"deBanked TV, 2025",d:"Same-day/24hr funding with up to 17-point ISO commissions."}],
     ice:"Daniel, I like that Aspire is already investing in API/OCR automation. You\u2019re clearly ahead of most funders on tech adoption.",
+    icebreakers:["I saw you at both Broker Fair 2025 and B2B Finance Expo -- strong event presence. How is the reception from ISOs on the 17-point commission structure?","Combining API/OCR tech with veteran human underwriters is an interesting hybrid. What made you decide the sweet spot is in the middle rather than going all-in on automation?","Congrats on bringing Ricky Singh aboard for Ops & Marketing. Investing in both simultaneously usually signals a scaling inflection point -- is that what you are seeing?","Same-day funding is table stakes in MCA, but delivering consistently is another story. What does Aspire's process look like under the hood to reliably hit those timelines?"],
     tp:[
       "You\u2019ve already bought into automation with API/OCR. We\u2019re the next evolution \u2014 not just extraction but AI-powered analysis and decisioning assistance.",
       "Your veteran underwriters are expensive and scarce. What if junior underwriters could perform at veteran levels with AI assistance?"
@@ -563,7 +593,9 @@ const CO = [
     contacts:[{n:"Jacob Kleinberger",t:"Head of Ops"}],
     desc:"Direct MCA funder founded 2017 by Bernard Mittelman. 28 employees, relocated from Manhattan to Jersey City. Doubled funding volume consecutive years. ISO-only model (no inside sales). A/B paper shop, weekly payments. Partnered with ACHWorks and Onyx IQ.",
     notes:"Doubled volume twice with 28 people \u2014 unsustainable without AI. Mention SOC 2.",
+    news:[{h:"deBanked feature: A Glimpse at Simply Funding",s:"deBanked, Jan 2025",d:"Doubled funding volume in consecutive years since Jacob Kleinberger joined as partner in 2021. Pure ISO-only model."},{h:"ACHWorks and Onyx IQ power Simply Funding's ops",s:"PR Newswire, 2023",d:"Integrated wiring, ACH, syndicator debiting, and commission payments. New ISOs fund in 2-4 weeks."},{h:"Ethical standards and transparency emphasized",s:"deBanked, Jan 2025",d:"Own capital at risk, not outside investors -- transparency and ethics are non-negotiable."}],
     ice:"Jacob, doubling volume two years running with 28 people is impressive. How are you pulling that off operationally?",
+    icebreakers:["The deBanked profile was a great read -- doubling volume two years running is impressive. What is the key driver: more ISOs, better approval rates, or larger deal sizes?","I like the pure ISO-only shop with no inside sales competing for deals. How do ISOs react when they realize there is zero channel conflict?","Jacob, the Onyx IQ and ACHWorks integration powering your back office is a strong stack for 28 people. How much of the ability to double volume comes from that infrastructure versus relationships?","Putting your own capital at risk rather than outside investors gives you a different perspective on underwriting quality. How does that ownership structure shape your risk appetite?"],
     tp:[
       "Doubling volume with 28 people is impressive but unsustainable without automation. The next doubling either requires 56 employees or AI.",
       "We\u2019re SOC 2 compliant with enterprise-grade data handling \u2014 your data security standards won\u2019t be compromised."
@@ -576,7 +608,9 @@ const CO = [
     contacts:[{n:"Steve Kamhi",t:"Exec Dir Strategic Partnerships"}],
     desc:"Brand new MCA funder launched May 2025 by industry veterans. Same-day funding (apply before 2PM ET), approvals up to $750K. White-label platform for partners. Based in Miami, FL.",
     notes:"New funder = no legacy systems. Build AI-first from day one.",
+    news:[{h:"MonetaFi launches May 2025 with industry veterans",s:"EINPresswire, May 2025",d:"New MCA funder with Steve Kamhi bringing decades of experience helping ISOs close deals faster."},{h:"Lending-as-a-Service white-label platform",s:"MonetaFi, 2025",d:"Partners can white-label the lending platform with own branding without building in-house lending team."},{h:"Same-day funding with approvals up to $750K in all 50 states",s:"MonetaFi, 2025",d:"Soft-pull pre-approvals, real-time status updates, minimal docs, flexible underwriting."}],
     ice:"Steve, launching a new funder with a white-label platform is ambitious. Building from scratch is actually the perfect time to go AI-first.",
+    icebreakers:["Launching a new MCA funder in 2025 takes conviction -- what gap did the MonetaFi team see that made you say now is the time with so many funders already?","The Lending-as-a-Service white-label model is genuinely differentiated. What is the reaction from ISOs when they realize they can put their own brand on the entire experience?","Same-day funding with soft-pull pre-approvals sounds like it was designed by someone who has lived the ISO pain points. How much of the roadmap came directly from broker feedback?","Building partner-first from day one rather than retrofitting -- what does that let you do structurally that established funders cannot easily replicate?"],
     tp:[
       "You don\u2019t have legacy systems to replace. Build AI-first from day one.",
       "Every other funder on this floor is retrofitting \u2014 you can lead with it.",
@@ -590,7 +624,9 @@ const CO = [
     contacts:[{n:"Heather Francis",t:"CEO & Founder"},{n:"Ken Peng",t:"Dir of Business Dev & Marketing"}],
     desc:"True direct funder in Revenue-Based Finance (MCA) since 2015, Gainesville FL. Founded by Heather Francis (CEO). ~20 employees. Already investing in deepfake detection tech and compliance monitoring (PerformLine). Launched proprietary merchant portal \"Elevate View.\" Featured in American Banker for fraud prevention innovation.",
     notes:"BD & Marketing lead. UF Gator. Featured in FunderIntel interview. Direct funder since 2015.",
+    news:[{h:"CEO Heather Francis serves on SBFA Board",s:"FunderIntel, ongoing",d:"Actively working with state and federal regulators to shape MCA industry best practices."},{h:"MCA Myths Debunked content series with Ken Peng",s:"FunderIntel/Elevate Blog, 2023-2025",d:"Multi-part educational series addressing common MCA misconceptions, positioning Elevate as thought leader."},{h:"Operational expansion: online checkout, underwriting team growth",s:"Elevate Funding, 2024",d:"Implementing online checkout, expanding partner resources with video walkthroughs, growing UW team."}],
     ice:"Ken, I caught your FunderIntel interview \u2014 championing Elevate\u2019s direct-funder model since 2015 is nearly a decade of building in this space. How are you handling underwriting throughput as deal flow scales?",
+    icebreakers:["Heather, your SBFA board work is shaping how the entire MCA industry gets regulated. With states like Texas introducing new disclosure requirements, where is the regulatory landscape headed in 2026?","Ken Peng's MCA Myths Debunked series is some of the best educational content in the space. Has that thought leadership translated into ISO partner acquisition?","Elevate has been deliberate about not condoning stacking and focusing on merchant health. How do you balance that principle with growth targets?","You expanded the underwriting team and rolled out online checkout in 2024 -- the moves of a company preparing to scale. What does the next year look like for Elevate?"],
     tp:[
       "Speed is everything in the MCA space \u2014 brokers send deals to the fastest responder.",
       "Our AI can cut underwriting time from 40 minutes to under 5, making Elevate the fastest funder in your brokers\u2019 rotation."
@@ -603,7 +639,9 @@ const CO = [
     contacts:[{n:"Jay Avigdor",t:"President & CEO"},{n:"Jesse Guzman",t:"CRO"},{n:"David Slepoy",t:"VP Risk"}],
     desc:"Cedarhurst, NY MCA funder. Same-day funding up to $1M. $50M Arena Investors facility. 40K+ broker relationships. Jay has $850M+ career sales over 13 years. Hired CRO Jesse Guzman (Aug 2024, ex-Nexi). Attending dinner roundtable.",
     notes:"Dinner roundtable \u2014 frame in terms of cost-per-funded-deal.",
+    news:[{h:"Jesse Guzman hired as Chief Revenue Officer",s:"deBanked, Aug 2024",d:"From Nexi where he led growth through major rebranding. Focus on expanding funding and ISO support."},{h:"Jay Avigdor featured on industry podcasts",s:"Cobalt Intelligence/Authority Magazine, 2024-2025",d:"Career exceeding $850M in sales, AI-driven underwriting claiming 93% accuracy in default prediction."},{h:"Advanced analytics for underwriting",s:"TechBullion",d:"AI examining business owner characteristics, deposit patterns, and transaction history."}],
     ice:"Jay, $850M in career sales and 40K broker relationships \u2014 that\u2019s incredible deal flow. How do you maintain same-day funding at that scale?",
+    icebreakers:["Bringing Jesse Guzman as CRO from Nexi looks like a move to professionalize revenue. With 40K broker relationships, is the focus on getting more from existing ISOs or expanding the network?","Jay, your $850M career sales story is compelling. Now with a seasoned CRO handling revenue, has that freed you to focus more on strategy?","The 93% accuracy claim on AI default prediction is bold. What data inputs give Velocity that edge -- deposit patterns or something else?","Same-day funding up to $1M with AI decisioning is strong for brokers. How much competitive advantage comes from tech versus the 40K ISO relationships?"],
     tp:[
       "How do you maintain same-day funding at scale? As your broker network generates more deal flow, what\u2019s the biggest bottleneck?",
       "Frame in terms of cost-per-funded-deal. He knows the economics cold."
@@ -616,7 +654,9 @@ const CO = [
     contacts:[{n:"Will Tumulty",t:"CEO"},{n:"Mark Cerminaro",t:"CRO"},{n:"Terry Thornton",t:"Chief Credit Officer"}],
     desc:"Bethesda, MD full-service lender (est. 2005). $4.5B+ total financing. 200+ employees. MCAs, term loans, LOC, SBA. CEO Will Tumulty is ex-Navy SEAL, Stanford MBA. CAUTION: Launched SPADE AI tool (June 2025) that cuts doc processing from 20 min to 20 sec. Also launched integrated LOS for community banks (March 2025). Position as complementary, not competitive.",
     notes:"Multi-product lender. 200+ employees. 16-year CRO tenure.",
+    news:[{h:"Launches SPADE AI tool cutting processing 95%",s:"Business Wire, Jun 2025",d:"Smart Processing and Data Extraction module goes from 20 minutes to 20 seconds per application."},{h:"Mark Cerminaro at Q2Connect25 on embedded lending",s:"CU Broadcast, 2025",d:"CRO discusses credit union partnerships for SMB financing without balance sheet risk."},{h:"SMB Disclosure Service for Missouri compliance",s:"Rapid Finance, Feb 2025",d:"Standalone Regtech SaaS module for Missouri commercial disclosure requirements."}],
     ice:"Mark, 16 years at Rapid Finance \u2014 you\u2019ve seen the industry transform. How\u2019s the multi-product underwriting challenge evolving?",
+    icebreakers:["SPADE going from 20 minutes to 20 seconds is not incremental -- that is fundamental rethinking. Is accuracy holding up at that speed, or is there still a human-in-the-loop for edge cases?","Mark's Q2Connect25 pitch on embedded lending for credit unions is a big strategic bet. How much traction is that channel getting compared to direct origination?","With $5B deployed and now building compliance SaaS tools, Rapid is evolving from a lender into a lending infrastructure company. Is that a fair read of where Will Tumulty is steering things?","Lynx + SPADE + embedded API is starting to look like a full-stack lending OS. Are you positioning as the technology layer that powers SMB lending nationally?"],
     tp:[
       "Multi-product underwriting is our sweet spot. MCA, term loans, LOC, SBA \u2014 each needs different analysis. One platform, configurable for every product.",
       "If you have 30-50 underwriters each saving 35 min per deal, that\u2019s massive capacity gain."
@@ -629,7 +669,9 @@ const CO = [
     contacts:[{n:"Jill Capadanno",t:"Sr Manager New Sales"},{n:"Jason Mullins",t:"CEO"},{n:"Ohi Akhigbe",t:"Chief Data & Analytics Officer"}],
     desc:"Boston fintech (est. 2012). $4.1B+ total funding. $620M in credit facilities. New CEO Jason Mullins (Jan 2025, ex-CEO goeasy Ltd Canada). $170M inaugural securitization (Dec 2025, 2x oversubscribed). New CRO Tyler Thielmann (July 2025). Already uses TensorFlow/DataRobot. 5 Built In 2026 awards. Position around upstream data extraction, not replacing their ML.",
     notes:"Already tech-forward \u2014 don\u2019t lead with \u2018automate underwriting.\u2019 Position around upstream data extraction.",
+    news:[{h:"Jason Mullins named President and CEO",s:"PR Newswire, Jan 2025",d:"Previously CEO of goeasy Ltd where he grew portfolio 5x and revenue 3x. Justin Bakes became Executive Chairman."},{h:"Credit facility expanded to $450M",s:"Fintech Global, Sep 2024",d:"Nearly doubled from $250M, substantially increasing funding capacity."},{h:"Multiple industry awards and recognition",s:"Boston Business Journal, 2024-2025",d:"Silver Stevie Awards, Great Place to Work, six Built In Best Places lists, named largest MA fintech."}],
     ice:"Jill, Forward Financing is clearly tech-forward with TensorFlow and DataRobot already in your stack. We complement that \u2014 handling upstream data extraction.",
+    icebreakers:["Bringing in Jason Mullins from goeasy -- where he grew portfolio 5x -- combined with doubling the facility to $450M signals a serious scale-up phase. What is the strategic vision under new leadership?","Being 100% employee-owned with 500+ people across three countries is genuinely distinctive. How does that ownership structure affect culture in a high-volume sales environment?","Jill, with the facility at $450M, is the expanded capacity translating into larger deal sizes or more volume at the same ticket?","Stevie Awards for both CSR and Customer Service is unusual. What is Forward doing on the social responsibility side that earned recognition alongside the service win?"],
     tp:[
       "Don\u2019t lead with \u2018we\u2019ll automate your underwriting\u2019 \u2014 they already have ML. Position around document intake, stips collection, contract generation.",
       "We handle the upstream data extraction that feeds your models.",
@@ -643,7 +685,9 @@ const CO = [
     contacts:[{n:"Justin Leto",t:"Co-Founder & CEO"},{n:"Christopher Ryan",t:"Dir Sales Ops"},{n:"Julian Hernandez",t:"Dir Revenue"}],
     desc:"Miami-based non-bank LOC/term loan provider (est. 2017). Surpassed $1B funded, 10K+ businesses. $20M EverBank term loan (Jan 2026). $50M warehouse facility (Oct 2024). Founded by two trial lawyers. Expanding into legal lending (case financing for law firms).",
     notes:"$1B+ funded milestone. $20M EverBank facility in Jan 2026. Lines of credit, not just MCA.",
+    news:[{h:"Secures $20M corporate term loan from EverBank",s:"PR Newswire, Jan 2026",d:"Accelerating growth in SMB lending and legal financing. Surpassed $1B in total originations."},{h:"Secures $50M warehouse facility with Performance Trust",s:"deBanked, Oct 2024",d:"Max line of credit raised from $250K to $350K per borrower."},{h:"CEO Justin Leto interview on fintech strategy",s:"EKMH Innovators",d:"Discusses origin story as attorneys-turned-fintech entrepreneurs, LevelEsq litigation platform."}],
     ice:"Chris, congrats on idea Financial crossing the $1B funded milestone and the recent $20M EverBank facility \u2014 that\u2019s serious momentum. How are you scaling ops to keep up?",
+    icebreakers:["Congrats on crossing the $1B origination milestone -- serious inflection point in eight years. Is the priority deepening LevelEsq or expanding the core SMB credit line further?","The Performance Trust facility bumped your max to $350K -- meaningful jump. Are you seeing demand from merchants who were capped at $250K needing extra headroom?","Justin's background from practicing attorney to fintech CEO is unique in alt lending. Has that legal training shaped how idea Financial approaches underwriting or compliance differently?","Back-to-back capital raises -- $50M warehouse and $20M term loan -- signal institutional confidence. What has the growth trajectory looked like operationally?"],
     tp:[
       "With $1B+ funded and rapid growth fueled by the EverBank facility, your underwriting pipeline is scaling faster than your ops team. AI automation can handle application intake, cash flow analysis, and risk review.",
       "As a lines-of-credit lender, you have repeat underwriting on renewals and draws \u2014 AI automation compounds time savings across the entire customer lifecycle, not just origination."
@@ -656,7 +700,9 @@ const CO = [
     contacts:[{n:"Wade Hladky",t:"President & CEO"},{n:"Stuart Wrba",t:"VP Business Development"},{n:"Meg Roberson",t:"SVP National Sales"}],
     desc:"Division of Gulf Coast Bank & Trust (est. 2000). Covington, LA + offices in TX, GA, AR, AL, AZ. AR factoring and asset-based lending. $3B+ financed annually. 250-499 employees. Serves trucking, freight, staffing, oil & gas, manufacturing. Meg Roberson appointed to IFA Advisory Board.",
     notes:"$3B+ annually. Stuart is VP BD based in Atlanta. Recently closed $7M staffing facility, $1.25M oilfield deal.",
+    news:[{h:"Celebrates 25th anniversary in 2025",s:"GCBC, 2025",d:"Founded 2000 as division of Gulf Coast Bank & Trust. Now finances over $3B annually."},{h:"Strong 2024 performance across all divisions",s:"GCBC, 2024",d:"Growth in deposits, loans, trust assets, and mortgage. Reflects strength of $1.8B parent bank."},{h:"Stuart Wrba active in staffing & transportation deals",s:"GCBC News",d:"Closing notable deals including $7M facility for California staffing company."}],
     ice:"Stuart, I saw your recent deal flow \u2014 the $7M staffing facility, the oilfield transportation deal \u2014 you\u2019re clearly closing across a wide range of industries from Atlanta. That cross-sector underwriting expertise is impressive.",
+    icebreakers:["Congrats on GCBC hitting 25 years -- that is a remarkable run, especially growing to $3B in annual financing. What has been the biggest evolution in AR finance since 2000?","Stuart, that $7M facility for the California staffing company stood out. Are staffing and transportation where you see the most growth, or is oil and gas picking back up?","Being backed by a $1.8B FDIC-insured bank gives you a stability story independent factoring shops cannot match. How much does that come up in competitive situations?","With growth across every division at the parent bank in 2024, the wind is at your back. Is GCBC expanding geographically or deepening existing verticals?"],
     tp:[
       "Our AI handles bank statement analysis, cash flow review, and risk assessment \u2014 the heavy lifting of underwriting.",
       "We\u2019re already working with funders in the MCA space and seeing 5-8x throughput improvements."
@@ -669,7 +715,9 @@ const CO = [
     contacts:[{n:"Frank Ebanks",t:"CEO & Founder"},{n:"Connor Leppzer",t:"Dir Underwriting"},{n:"Terence Walsh",t:"CFO"}],
     desc:"Middletown, NY MCA/revenue-based funder (est. 2015). $10M+/month originations. Bootstrapped with no VC funding. Rapidly building C-suite: CFO Terence Walsh (Apr 2025, ex-Fora Financial), Dir Underwriting Connor Leppzer (May 2025, ex-Forward Financing). Launched Texas installment loan product (Aug 2025).",
     notes:"Need to reconnect. Frank Ebanks is CEO/Founder. Originators doing $10M/month individually. Featured in deBanked and FunderIntel.",
+    news:[{h:"Appoints Terence Walsh as CFO",s:"Yahoo Finance, Apr 2025",d:"Previously VP Finance at Fora Financial helping originate $1B+ in debt capital."},{h:"Daniela Cano & Nicole Paliobeis profiled for $100M+ origination",s:"deBanked, Dec 2025",d:"Top two ISO managers originate $10M/month, showcasing broker-driven model."},{h:"Frank Ebanks interview on The Spartan Way",s:"FunderIntel",d:"CEO discusses accessible leadership, API submissions, and scaling strategy."}],
     ice:"Frank, great to reconnect! I saw the deBanked feature on Spartan \u2014 originators doing $10M/month in RBF volume is a testament to the machine you\u2019ve built.",
+    icebreakers:["The Terence Walsh CFO hire is a strong signal -- his Fora Financial track record originating $1B+ means he knows the playbook. Is the plan to pursue larger facilities or a bigger strategic move?","That deBanked piece on Daniela and Nicole was impressive -- $10M/month between two people. What is it about Spartan's model that lets individual RMs produce at that volume?","Frank, I have heard you described as the CEO who picks up the phone at 6 AM or 11 PM. How much of Spartan's growth comes from that hands-on culture versus the tech?","Growing to $100M+ originations without outside VC is rare. Now with a CFO from institutional capital markets, does that signal bringing in outside capital to accelerate?"],
     tp:[
       "With originators each processing $10M/month, your underwriting team is likely the bottleneck. AI automation that cuts review time from 40 min to under 5 could let your existing ops team support even higher origination volume.",
       "Spartan works across MCA, asset-based, and SBA products \u2014 AI underwriting can route applications to the right product automatically based on cash flow patterns and risk profile."
@@ -682,7 +730,9 @@ const CO = [
     contacts:[{n:"Nima Shamsili",t:"Co-Founder & CEO"},{n:"Taufiq Mithani",t:"Co-Founder"}],
     desc:"West Hollywood, CA fintech for small business funding, especially eCommerce (est. ~2020). Same-day approvals. Founded by eCommerce operator who lived the borrower pain. Smaller team (~10-25). Active in Rebuy eCommerce community. May be price-sensitive but nimble.",
     notes:"Founder-who-lived-the-pain story. eCommerce focus. Underserved borrower niche.",
+    news:[{h:"Nima Shamsili AMA with Rebuy Ecommerce Community",s:"Rebuy Engine, Dec 2024",d:"Fielded questions about inventory capital, ad spend, and working capital for ecommerce founders."},{h:"Community spotlight on Rebuy Engine",s:"Rebuy, 2024",d:"Highlighted how Nima helps ecommerce founders navigate funding, drawing on own wellness brand experience."},{h:"Head of Community hired",s:"LinkedIn, Jan 2025",d:"Nahal Garakani joins as Head of Community, signaling push beyond just funding."}],
     ice:"Nima, your path from running your own eCommerce brand to building Likety is a founder story that resonates \u2014 you lived the pain of being an underserved borrower and built the solution.",
+    icebreakers:["I saw your AMA with the Rebuy community -- the questions founders asked about inventory financing were telling. Are you seeing the same pain points or is it shifting as ecommerce matures?","Going from running your own ecommerce brand to building Likety gives you a perspective most fintech CEOs do not have. How much does that founder experience shape your underwriting?","Hiring a Head of Community is a deliberate move -- building Likety into more than just capital. What is the vision behind that investment?","A lot of ecommerce brands say banks still do not understand their model -- no collateral, seasonal spend, fast turns. Is that disconnect still as wide as when you started Likety?"],
     tp:[
       "Likety approves businesses others deny \u2014 which means underwriting thinner files with less traditional data. Our AI extracts signal from bank statements and payment processor data that manual reviewers miss.",
       "As a fintech-enabled lender, your borrowers expect a digital-first, fast experience. AI ensures your same-day approval promise scales without ops becoming the bottleneck."
@@ -695,7 +745,9 @@ const CO = [
     contacts:[{n:"Jared Weitz",t:"CEO & Founder"},{n:"Jonathan Torres",t:"COO"}],
     desc:"One of the fastest-growing biz finance brokerages. $1.2B+ matched across 75+ lenders. Jared is co-chairman SBFA Broker Council, Forbes Finance Council member, frequent media voice (Forbes, LegalZoom). Inc. 5000 in 2015 and 2017. Lean team but massive deal flow.",
     notes:"$1.5B+ matched. 75+ lender network. Forbes Finance Council. SBFA co-chairman. Inc. 5000.",
+    news:[{h:"Jared Weitz featured in LegalZoom interview",s:"LegalZoom, 2025",d:"Discussed AI and alternative underwriting closing the capital access gap."},{h:"Forbes Finance Council and YEC thought leadership",s:"Forbes/YEC, 2024-2025",d:"Board member publishing on fintech trends, digital wallets, and SMB financing strategy."},{h:"SBFA Broker Council Chairman",s:"deBanked, ongoing",d:"Co-chairs council focused on transparency, responsibility, fairness, and security standards for brokers."}],
     ice:"Jared, between the Forbes Finance Council, co-chairing the SBFA, and building UCS into a $1.5B+ matching platform with 75+ lenders \u2014 you\u2019re clearly one of the most plugged-in leaders in small business finance.",
+    icebreakers:["Jared, your LegalZoom interview on AI-driven underwriting closing the capital gap was interesting. Where is AI making the biggest practical difference -- origination, underwriting, or post-funding?","Between Forbes Finance Council, YEC, and SBFA Broker Council chairmanship, you have one of the most visible brands in SMB finance. How much does that thought leadership directly drive deal flow?","You have been vocal about the consultative sale model -- educating clients on all options. How do you maintain that philosophy at scale without sacrificing speed?","The SBFA Broker Council work on transparency is especially relevant with more states rolling out disclosure requirements. Is the priority keeping ahead of state-by-state rules or building a national framework?"],
     tp:[
       "As a marketplace connecting businesses with lenders, speed of matching and underwriting is your competitive edge.",
       "Our AI can help your lending partners underwrite faster, improving the entire marketplace experience."
@@ -708,7 +760,9 @@ const CO = [
     contacts:[{n:"Tom Forsberg",t:"CRO"},{n:"David A. Brown",t:"President & Founder"},{n:"Brian Weiss",t:"VP Technology"}],
     desc:"Direct lender & marketplace. $1B+ funded to 25K+ businesses. Melville, NY + FL. 110 employees, $19.3M revenue. Syndication investment platform. Fortune Best Small Workplaces 2025 (#19). VP Tech Brian Weiss is ALREADY building AI/ML pipelines for underwriting. CMO Ami Dviri ex-NY Life/JPMorgan/Deutsche Bank.",
     notes:"$1B+ funded. Syndication platform. D-1 All-American lacrosse captain at Bryant. Revenue + syndication angles.",
+    news:[{h:"Named Top Business Lending Firm 2024",s:"Financial Services Review, 2024",d:"Recognized for growth since 2017 founding."},{h:"Surpasses $1B in business financing",s:"B2B Reviews, 2024-2025",d:"25,000+ clients served, $1B+ arranged through marketplace platform."},{h:"Tom Forsberg at NY Bankers Association Forum",s:"LinkedIn, 2025",d:"CRO represented syndication investment platform at institutional event in Palm Beach."}],
     ice:"Tom, driving $1B+ in funded deals at Big Think while building the syndication platform on top shows real strategic vision on the revenue side.",
+    icebreakers:["Congrats on Top Business Lending Firm recognition and crossing the $1B mark. What has been the biggest driver of growth on the syndication side?","The NY Bankers Association Forum is a more institutional crowd than typical alt lending events. Are traditional banks looking to partner with marketplace lenders like Big Think?","Seven years from launch to a billion dollars is a serious trajectory. Where do you see the next leg of growth coming from?","Managing a marketplace spanning SBA to revenue-based financing is a wide spectrum. How do you balance product breadth with syndication investor risk profiles?"],
     tp:[
       "Big Think prides itself on funding professionals reviewing every file \u2014 but at $1B+ funded, manual review creates a throughput ceiling. AI handles the 80% routine analysis so your team focuses on the 20% needing human judgment.",
       "For the syndication platform, AI-automated underwriting creates standardized risk assessments that give investors more confidence and transparency."
@@ -722,7 +776,9 @@ const CO = [
     contacts:[{n:"Christopher Pepe",t:"Co-Founder & CEO"},{n:"Kunal Bhasin",t:"Co-Founder"}],
     desc:"Tech-driven CRE finance platform (est. Apr 2023). LiveDeal portal connects real estate investors with 250+ private non-bank lenders. 2025 NPLA Broker of the Year. Red Bank, NJ. ~21 employees. Also NPLA Broker Certification instructor. Note: CRE focus, not MCA.",
     notes:"CRE focus, not MCA. 2025 NPLA Broker of the Year. LiveDeal portal. Adjacent ICP \u2014 tech partnership angle.",
+    news:[{h:"Named 2025 Broker of the Year by NPLA",s:"Yahoo Finance, Oct 2025",d:"Recognized for excellence in broker leadership, client outcomes, and lender partnerships."},{h:"Launched LiveDeal portal for CRE lenders",s:"deBanked, Sep 2024",d:"Gives lenders real-time access to qualified deals filtered by type, amount, property, geography."},{h:"CEO Chris Pepe interview on transforming CRE lending",s:"TechBullion, Nov 2024",d:"250+ lending partners, mission to help RE investors find optimal non-bank financing."}],
     ice:"Chris, winning NPLA Broker of the Year in 2025 just two years after founding LoanGeek is remarkable execution. The LiveDeal portal concept shows you think about lending as a technology problem first.",
+    icebreakers:["Broker of the Year from NPLA with 250+ lending partners is well-earned. What set LoanGeek apart from other nominees in Scottsdale?","LiveDeal letting lenders filter deals by geography and type in real time solves a lot of friction. How has adoption been since the September launch?","The idea that RE investors overpay for capital just because they do not know what is available is a problem worth solving. How do you keep the lender network growing without sacrificing quality?","From 13 years managing originations to building an award-winning platform -- what is the next big milestone you are pushing toward?"],
     tp:["While LoanGeek focuses on CRE, the LiveDeal portal shows a tech-first approach. AI-powered underwriting could add an intelligent scoring layer to LiveDeal. Frame as a technology partnership conversation."],
     leaders:[{n:"Christopher Pepe",t:"Co-Founder & CEO",bg:"20 years in RE-secured lending. Hofstra Univ. Ex-Deutsche Bank. Ex-Head ISO Relations at World Business Lenders."},{n:"Kunal Bhasin",t:"Co-Founder",bg:"Also CEO at 1West.com. Univ of Arizona, Eller College. Ex-VP BD at Seek Business Capital."},{n:"Scott Kronzek",t:"Director of Partnerships",bg:"MBA. Deep RE tech partnership experience. Ex-Privy, CoStar Group, 42Floors."}],
     ask:"Would you be interested in seeing our AI in action?"
@@ -732,7 +788,9 @@ const CO = [
     contacts:[{n:"John Baron DiCanio",t:"Managing Partner & Founder"}],
     desc:"MCA-focused funding company founded in 2022, based in NY. Same-day funding with rates starting at 2.5% APR. John is a veteran MCA serial founder \u2014 previously founded Direct Merchant Funding and First Premier Funding. Active in deBanked community.",
     notes:"Serial MCA founder. Same-day funding. Attended deBanked Miami 2025. Active in community.",
+    news:[{h:"Continued growth as MCA platform since 2022 launch",s:"FundMyBiz/BBB, 2024",d:"Same-day funding with automatic daily/weekly repayment. Based in Woodmere, NY."},{h:"John Baron DiCanio active in industry networking",s:"LinkedIn, 2024-2025",d:"Prior experience at Direct Merchant Funding, First Premier Funding, Imperial Advance."},{h:"Business in a Box ISO model expansion",s:"LinkedIn/Fund My Biz, 2024",d:"Turnkey platform for ISOs and brokers entering the MCA space."}],
     ice:"John, I saw your deBanked Miami appearance \u2014 you\u2019ve been building in MCA across multiple ventures from Direct Merchant Funding to now Fund My Biz. That serial founder energy in alternative finance is rare.",
+    icebreakers:["The Business in a Box concept is interesting -- are you seeing first-time brokers enter MCA because of that turnkey approach, or mostly experienced ISOs looking for a new home?","You have deep background -- Direct Merchant Funding, First Premier, Imperial Advance. How has that journey shaped how you built Fund My Biz?","A lot of MCA shops launched around 2022 and have already closed. The fact that Fund My Biz is still growing -- what separates companies that make it?","Same-day funding is harder than it sounds to deliver consistently. What has been the key to making that work operationally?"],
     tp:["Same-day funding means underwriting has to be fast. AI cuts deal review from 40 min to under 5, protecting that promise as volume grows without hiring more underwriters."],
     leaders:[{n:"John Baron DiCanio",t:"Managing Partner & Founder",bg:"Serial MCA founder. Previously founded Direct Merchant Funding and First Premier Funding. Active LinkedIn content creator."}],
     ask:"Would a quick call next week make sense to explore the fit?"
@@ -742,7 +800,9 @@ const CO = [
     contacts:[{n:"Andrew Coon",t:"CEO"},{n:"Thomas Ingrassia",t:"Chief Risk Officer"},{n:"Joseph Spiegel",t:"Sales Manager"}],
     desc:"Private commercial lender (est. 2009) in NJ. Specializes in factoring, AR, inventory, PO funding. $1B+ working capital provided. Sister company to CFG Merchant Solutions (same founders: Andrew Coon, Bill Gallagher). New FactorLOC product (Sep 2024). Thomas Ingrassia hired as CRO (2024, ex-Goldman Sachs/Capstone). Joseph Spiegel won IFA NEXGEN Rookie of the Year.",
     notes:"$1B+ working capital. Joseph won IFA NEXGEN Rookie of the Year. FactorLOC new product. Factoring focus.",
+    news:[{h:"Joseph Spiegel wins IFA NEXGEN Rookie of the Year",s:"IFA, 2025",d:"Recognized for rapid impact since joining CapFlow in October 2022."},{h:"Launched FactorOne spot-factoring product",s:"IFA/ABL Advisor, Nov 2025",d:"No-contract, no-minimum: fund a single invoice and get capital in 24-48 hours."},{h:"Active at DeBanked Connect Miami 2025",s:"CapFlow Blog, Feb 2025",d:"Joseph Spiegel representing company, building broker and funder partnerships."}],
     ice:"Joseph, congrats on winning the IFA NEXGEN Rookie of the Year \u2014 that\u2019s serious recognition in the factoring world. Building that kind of impact at CapFlow so quickly caught the industry\u2019s attention.",
+    icebreakers:["Congrats on the NEXGEN Rookie of the Year from the IFA -- real recognition of your impact at CapFlow. What has been the biggest lesson since getting into factoring?","FactorOne is clever -- factor one invoice with no contract or minimums. That removes a lot of friction from traditional factoring. How are you positioning it relative to full facilities?","You had a busy start to 2025 between DeBanked Miami and IFA. What is the pulse of the factoring market right now?","Winning an industry award this early is a strong signal. What is the biggest opportunity you are going after at CapFlow this year?"],
     tp:["CapFlow\u2019s factoring requires continuous credit evaluation of both client AND debtors. AI can analyze debtor creditworthiness, concentration risk, and payment patterns across your entire portfolio in real-time."],
     leaders:[{n:"Andrew Coon",t:"CEO",bg:"Also CEO of CFG Merchant Solutions. Brown Univ BA, WashU MBA. 30+ yrs. Ex-Morgan Stanley, Merrill Lynch, S&P. Sell to one = sell to both."},{n:"Thomas Ingrassia",t:"Chief Risk Officer",bg:"Hired 2024 to optimize FactorLOC. 17+ yrs in factoring. Ex-Goldman Sachs Prime Brokerage. Ex-VP at Capstone (15 yrs). THE buyer."},{n:"Joseph Spiegel",t:"Sales Manager",bg:"IFA NEXGEN Rookie of the Year. At CapFlow since Oct 2022. Hungry for tools that give him a competitive edge."},{n:"Richard Polgar",t:"CFO",bg:"CFO of both CapFlow and CFG Merchant Solutions. Forbes Finance Council member. Controls the purse strings."},{n:"Karl Lewis",t:"CIO",bg:"CIO of both CapFlow and CFGMS. Ex-CEO AllTrust Networks, ex-COO Treater. Tech decision-maker for both entities."}],
     ask:"Would you be interested in seeing how faster underwriting could help your sales numbers?"
@@ -752,7 +812,9 @@ const CO = [
     contacts:[{n:"Mark Rosenstein",t:"CEO"},{n:"Darin McMahon",t:"VP / Financial Strategist"}],
     desc:"Coral Springs, FL factoring company (est. 1999). AR factoring, PO financing, bookkeeping. Serves staffing, manufacturing, transportation. 5-person leadership team. Publishing thought leadership on AI-driven factoring solutions in 2025.",
     notes:"Factoring company. Darin authored 30+ blog articles \u2014 passionate about education. Correct spelling: McMahon.",
+    news:[{h:"5 Game-Changing Factoring Trends in 2025 article",s:"BridgeportCapital.com, 2025",d:"Darin McMahon authored analysis on real-time capital delivery and industry-specific factoring."},{h:"AR financing shifts article",s:"BridgeportCapital.com, 2025",d:"Emphasizing transparency, 24/7 data access, and smarter underwriting as differentiators."},{h:"Multi-industry factoring specialization expansion",s:"BridgeportCapital.com, 2024-2025",d:"Deepening in staffing, oilfield, manufacturing, and business services since 1999."}],
     ice:"Darin, I noticed you\u2019ve authored over 30 articles on the Bridgeport Capital blog \u2014 clearly you\u2019re passionate about educating businesses on working capital options. How is automation changing your factoring workflow?",
+    icebreakers:["Your blog on factoring trends 2025 stood out -- especially AR financing becoming a growth tool not just a lifeline. Are clients shifting that mindset, or does it still take convincing?","Bridgeport has been in factoring since 1999 -- over 25 years. How does that long track record shape underwriting in staffing and oilfield today?","You have written 30+ articles on factoring strategy -- serious market education commitment. What topics generate the most prospect engagement right now?","Industry-specific factoring tailored to billing cycles of staffing versus oilfield versus manufacturing -- how granular do you get with that customization?"],
     tp:["AI in underwriting isn\u2019t just about speed \u2014 it\u2019s about consistency and risk reduction across every deal."],
     leaders:[{n:"Mark Rosenstein",t:"CEO",bg:"Leads Bridgeport Capital. Oversees all operations and strategic direction."},{n:"Jason Rosenstein",t:"President",bg:"Runs day-to-day operations. Helps refine underwriting for factoring clients."},{n:"Max M. Toledo",t:"EVP / CMO",bg:"Since Dec 2008. Ex-Capital Factors VP, ex-Westgate Financial. Highly connected in factoring/ABL industry."},{n:"Larry Powali",t:"EVP / COO",bg:"Ex-Merchant Capital Services, Capital Business Credit, Bibby Financial Services. Cares about operational throughput."},{n:"Darin McMahon",t:"VP / Financial Strategist",bg:"Miami-Fort Lauderdale based. Active content creator on factoring topics. BD-focused."}],
     ask:"Would you be open to a conversation about AI-driven underwriting strategy?"
@@ -762,7 +824,9 @@ const CO = [
     contacts:[{n:"Russell Kimyagarov",t:"CEO"},{n:"Federico Urraca",t:"ISO Relations Manager"}],
     desc:"NYC direct MCA funder with heavy ISO broker channel. Dedicated underwriting portal (fratellocapitalportal.com). Founded by Russell Kimyagarov (Yeshiva Univ, ex-Meridian Capital).",
     notes:"Direct MCA funder. ISO channel focus. Dedicated underwriting portal. Federico is the ISO bridge.",
+    news:[{h:"Active ISO partnership program expansion",s:"LinkedIn, 2024-2025",d:"Building out broker network with portal-based platform for merchants."},{h:"Participation in deBanked Miami events",s:"LinkedIn/deBanked, 2024-2025",d:"Connecting with top brokers and expanding relationships in small business funding."},{h:"Continued direct funding operations",s:"Fratello Capital, 2024",d:"Focused as direct capital provider for SMBs."}],
     ice:"Federico, as someone managing ISO relationships, you\u2019re the bridge between deal flow and approvals \u2014 how are you balancing the pressure ISOs put on you for faster funding decisions?",
+    icebreakers:["I noticed Fratello has been at deBanked Miami -- those events bring out the most active players. What kind of ISO partnerships have been most productive coming out of conferences?","The portal-based approach for ISOs streamlines deal submission. How has that tech investment changed the volume and quality of deals?","ISO relations can make or break a funding company. What do you think ISOs are looking for most from funder partners right now -- speed, approvals, commissions, or something else?","The MCA space has gotten incredibly competitive. How is Fratello differentiating when an ISO has a dozen funders to choose from?"],
     tp:["ISO brokers shop deals to whichever funder approves fastest. AI cuts approval time from 40 min to under 5, helping Fratello win more ISO submissions by being first to fund.", "Automated bank statement analysis reduces the manual bottleneck in your underwriting portal, letting your team process higher deal volume."],
     leaders:[{n:"Russell Kimyagarov",t:"Founder & CEO",bg:"BA Psychology/Business from Yeshiva Univ. Ex-Deerwood Real Estate, Fairmont Capital, Meridian Capital. Also Managing Partner at Integra RE Capital."},{n:"Ben Khaimov",t:"COO",bg:"Queens College. Runs operations. May have been elevated to CEO role. Key operations decision-maker."},{n:"Federico Urraca",t:"ISO Relations Manager",bg:"Manages ISO partnerships and broker channel. Front-line contact for deal flow."}],
     ask:"Would you be interested in seeing how AI could make Fratello the fastest funder in your ISOs\u2019 rotation?"
@@ -772,7 +836,9 @@ const CO = [
     contacts:[{n:"Harry Haywood",t:"Owner"}],
     desc:"Direct MCA funder and ISO-focused platform showcasing applications across 75+ lenders. 1-hour approvals, funding $5K-$500K. Flexible remittance structures. Same-day commissions to ISO partners.",
     notes:"75+ lender platform. 1-hour approvals. Harry is the owner/decision-maker. Same-day ISO commissions.",
+    news:[{h:"Operating as direct MCA funder with ISO program",s:"SpringFund/FunderIntel, 2024-2025",d:"$5K-$500K funding, approvals in as little as one hour, flexible remittance."},{h:"Competitive commission and rapid approval model",s:"Spring Funding, 2024-2025",d:"Emphasizing reliable commission payouts and rapid approvals to attract ISOs."}],
     ice:"Harry, building Spring Funding into a platform serving 75+ lenders is impressive. I\u2019d love to hear what your biggest operational bottleneck is right now \u2014 deal volume or underwriting throughput?",
+    icebreakers:["One-hour approvals and same-day funding is bold -- what does your process look like on the back end to make that speed possible?","As a direct funder competing for ISO attention against well-capitalized players, what is the feedback on why ISOs choose Spring Funding over bigger shops?","The MCA market has seen a lot of new entrants and shakeout. As an owner-operator, what is your read on where the industry is heading?","Reliable commission payouts might sound basic, but every ISO has a horror story about late payments. How important has that reliability been to building your broker network?"],
     tp:["You\u2019re already promising 1-hour approvals, which means your underwriting team is under intense pressure. AI automates the bank statement analysis, cash flow scoring, and risk review that consume most of that hour.", "With 75+ lenders, AI-powered intake and industry classification can intelligently route deals to the right lender match faster."],
     leaders:[{n:"Harry Haywood",t:"Owner / Founder",bg:"Founded Spring Funding as direct MCA provider. Built ISO platform connecting with 75+ lenders. Emphasizes rapid approvals."}],
     ask:"Would a quick demo make sense to show you what\u2019s possible?"
@@ -783,7 +849,9 @@ const CO = [
     contacts:[{n:"Rohit Arora",t:"CEO & Co-Founder"},{n:"Ramit Arora",t:"President & Co-Founder"}],
     desc:"Major fintech lender (est. 2007). $8B+ SMB financing. 500-800 employees. Operates Biz2X white-label SaaS lending platform with AI underwriting. $312M raised. Columbia University AI partnership (Sep 2025) targeting $750B unlocked financing. FTC $33M settlement (Mar 2024). APPROACH AS PEER/PARTNERSHIP, NOT SALES.",
     notes:"STRATEGIC \u2014 NOT a standard prospect. They have their own AI underwriting (Biz2X). Approach as peer/thought-leader conversation or partnership, not a direct sales pitch.",
+    news:[{h:"Partners with Columbia University on AI initiative",s:"GlobeNewsWire, Sep 2025",d:"Applying AI to transform SMB loan portfolios into mainstream investable asset class for private credit."},{h:"Named to Deloitte Technology Fast 500",s:"GlobeNewsWire, Dec 2025",d:"203% revenue growth over three years. Seven consecutive years of expansion. $8B+ in SMB financing."},{h:"$33M FTC settlement over PPP processing",s:"FTC/Banking Dive, Mar 2024",d:"Settled charges related to PPP loan processing timeline advertising."}],
     ice:"Rohit, congratulations on the Biz2X AI underwriting launch. As someone who\u2019s shaped small business lending for nearly two decades, I\u2019d value your perspective on where AI underwriting is headed next.",
+    icebreakers:["Congrats on Deloitte Fast 500 -- 203% growth is a serious track record. How are you channeling that momentum into 2026, especially on Biz2X platform partnerships?","The Columbia University AI partnership is fascinating -- making SMB portfolios investable for private credit. What early traction are you seeing from institutional investors?","With $8B+ funded and seven consecutive years of expansion, Biz2Credit has real scale. What is the biggest opportunity in the SMB lending market that you think is still underserved?","I noticed a lot of thought leadership on small-dollar SBA loans and startup lending. Are you seeing a real shift in demand from early-stage businesses?"],
     tp:["IMPORTANT: Biz2Credit already has their own AI solution (Biz2X). HyperVerge\u2019s MCA-specific workflows (CLEAR reports, stacking detection, daily ACH patterns) go deeper than general SMB AI. There may be a partnership angle.", "Approach as a peer conversation about AI in underwriting. Building a relationship could open doors to referrals or co-marketing even if they\u2019re not a buyer."],
     leaders:[{n:"Rohit Arora",t:"CEO & Co-Founder",bg:"Columbia Intl Business. Crain NY Entrepreneur of Year 2011. Quoted by NYT, Bloomberg, WSJ. Building Biz2X AI platform."},{n:"Ramit Arora",t:"President & Co-Founder",bg:"10+ yrs Citibank/Xerox in financial services and risk. Heads credit and sales ops. Meets with Fed and SBA regularly."},{n:"Vineet Tyagi",t:"Global CTO",bg:"25+ yrs digital transformation, AI, Big Data. Ex-CTO Impetus Technologies. BITS Pilani. Heads India ops for Biz2X."},{n:"Brad Rosenfeld",t:"CMO & CSO",bg:"20+ yrs B2B SaaS/fintech. Columbia Business School (also lectures). Driving AI-powered fintech strategy."}],
     ask:"NOT a standard sales ask. Approach as peer conversation. Explore whether HyperVerge\u2019s MCA-specific capabilities complement what Biz2X offers for their bank clients."
@@ -793,7 +861,9 @@ const CO = [
     contacts:[{n:"Andrew Coon",t:"CEO"},{n:"Bill Gallagher",t:"Founder & President"}],
     desc:"NYC direct MCA funder (est. 2015). $2B+ total funded. 50-200 employees. Great Place to Work 2024-2025. $145M credit facility (May 2024). $500M+ through ISOs in 2024. Launched Texas fixed-term loan (Aug 2025). CA SB 362 compliant. Sister company to CapFlow. Forbes Business Council members. Congressional visit by Rep. Dan Meuser (Apr 2025).",
     notes:"$2B+ funded. Great Place to Work. $500M+ via ISOs in 2024. $100M+ credit facility. Major player.",
+    news:[{h:"Closes $145M credit facility",s:"Yahoo Finance/deBanked, May 2024",d:"$100M senior facility expandable to $145M, plus $30M BBB-rated corporate note."},{h:"Surpasses $2B in total funded capital",s:"CFGMerchantSolutions, 2025",d:"$104M+ funded in Q1 2025 alone with ISO partners."},{h:"Proactively prepares for California SB 362",s:"deBanked, Dec 2025",d:"Full operational readiness, trained all teams, opened direct compliance hotline for ISOs."}],
     ice:"Congrats on the Great Place to Work certification and crossing $2B in total funding \u2014 scaling that fast while keeping 92% employee satisfaction is rare. That ISO volume must put serious pressure on underwriting throughput.",
+    icebreakers:["Crossing $2B in total fundings with $104M in Q1 alone shows real acceleration. Is growth from new ISO partnerships or deeper penetration with existing ones?","Getting ahead of California SB 362 proactively, even opening an ISO compliance hotline -- what made you decide to lead rather than react?","The $145M facility and BBB-rated note are strong capital market signals. How is that institutional backing changing conversations with ISOs and merchants?","With Great Place to Work certification and 92% employee satisfaction, CFG is investing in culture as competitive advantage. How are you retaining top talent in a high-turnover industry?"],
     tp:["At $500M+ funded through ISOs in a single year, AI underwriting automation can cut each deal\u2019s review from 40 min to under 5 \u2014 your existing team handles significantly more volume without proportional headcount growth."],
     leaders:[{n:"Andrew Coon",t:"CEO",bg:"Also CEO of CapFlow. Brown Univ BA, WashU MBA. 30+ yrs. Ex-Morgan Stanley, Merrill Lynch, S&P. Most institutional background in MCA."},{n:"Bill Gallagher",t:"Founder & President",bg:"25+ yrs. Villanova economics. Ex-Lehman Brothers (13 yrs), Barclays Capital, Hudson Castle. Forbes Business Council. Former CCO at CapFlow."},{n:"Richard Polgar",t:"CFO",bg:"CFO since 2015. Forbes Finance Council member. Understands unit economics deeply."},{n:"Karl Lewis",t:"CIO",bg:"Ex-CEO AllTrust Networks. Ex-COO Treater. Specialist in launching tech-driven businesses. Technical decision-maker."},{n:"Michael Kevitch",t:"Senior Underwriter & Portfolio Manager",bg:"Ex-Bloomberg LP (Team Leader). Daily user of underwriting tools. Demo the product to him for endorsement."}],
     ask:"Request a demo call with the CRO or VP of Underwriting to show how AI-driven cash flow analysis handles ISO deal flow at scale."
@@ -803,7 +873,9 @@ const CO = [
     contacts:[{n:"David Cody",t:"Co-CEO"},{n:"Luke LaHaie",t:"Co-CEO"}],
     desc:"#1 SBA 7(a) facilitator in the US. 125K+ businesses, $11.8B+ capital deployed. Founded 2020 in Chicago. Inc. 5000 #596, Deloitte Fast 500. Partners with Northeast Bank. Already uses Biz2X. Co-CEOs named American Banker Top 25 Visionaries 2025. Navigating major SBA SOP rule changes (June 2025).",
     notes:"#1 SBA 7(a) facilitator. $11.8B+. Already uses Biz2X. Position as complement to existing tech stack. Inc. 5000.",
+    news:[{h:"Co-CEOs named to American Banker 25 People Who Will Change Banking",s:"American Banker, Jan 2025",d:"David Cody and Luke LaHaie recognized for streamlining SBA capital access."},{h:"Ranks No. 596 on Inc. 5000 with 695% growth",s:"Inc., Aug 2025",d:"First appearance reflecting explosive growth since 2020 founding."},{h:"Helps Northeast Bank become #1 SBA 7(a) lender by volume",s:"American Banker, 2025",d:"7,800 loans valued at $1.3B in SBA fiscal year 2025."}],
     ice:"Being named to American Banker\u2019s \u201825 people who will change banking\u2019 is a big deal \u2014 and $11.8B facilitated for 125K+ businesses through SBA channels is impressive given how documentation-heavy SBA underwriting can be.",
+    icebreakers:["Zero to #1 SBA 7(a) lender by volume in under five years is extraordinary. With 7,800 loans and $1.3B originated, what does the next phase look like?","Congrats on Inc. 5000 at No. 596 -- 695% growth is remarkable. How are you navigating the 2025 SBA SOP changes while maintaining velocity?","Both co-CEOs on American Banker's top 25 changemakers is a strong signal. How are David and Luke thinking about Newity's role as more states add disclosure laws?","Answering 19,000+ member support calls in 2025 shows real service commitment. How important has that human touch been to your growth?"],
     tp:["SBA 7(a) underwriting is notoriously document-intensive. Even with Biz2X handling origination, the actual analysis (cash flow verification, risk scoring, NAICS classification) is still manual. HyperVerge sits alongside your existing stack to automate the analytical layer."],
     leaders:[{n:"David Cody",t:"Co-Founder / Co-CEO",bg:"30+ yrs asset management. Ex-CEO MatlinPatterson. Early partner at Fortress (grew AUM to $40B+). Colby College. Wall Street veteran."},{n:"Luke LaHaie",t:"Co-Founder / Co-CEO",bg:"CPA. Big Four background (EY, PwC). Co-founded during COVID 2020. Compliance and accounting mindset."}],
     ask:"Request a meeting with their COO or tech team to discuss how AI complements their existing Biz2X platform for SBA decisioning."
@@ -813,7 +885,9 @@ const CO = [
     contacts:[{n:"Jacquelline Bogdanov",t:"Director of Partnerships"}],
     desc:"Hallandale Beach, FL direct MCA funder. B-C paper specialist (higher-risk profiles). Up to $5M, no industry restrictions. Terms up to 24 weeks. Backed by private investors. Ownership through Yamazu LLC. Currently hiring MCA underwriters.",
     notes:"B-C paper specialist = complex underwriting. No industry restrictions. Up to $5M.",
+    news:[{h:"Direct MCA funder backed by $18.8M private investment",s:"ThoroCorp/PitchBook, 2024-2025",d:"Founded 2019 in Florida. Focus on trust, transparency, customized solutions."},{h:"Same-day commissions and early payoff discounts",s:"DailyFunder/ThoroCorp, 2024-2025",d:"No early payoff penalties, Early Payment Discount program differentiator."}],
     ice:"Your focus on B-C paper merchants is a bold niche \u2014 most funders avoid it. I\u2019m curious what your tech stack looks like on the underwriting side.",
+    icebreakers:["Thoro's early payoff discount is a differentiator -- most funders want merchants to stay the full term. How does that approach impact renewal rates?","Raising $18.8M from private investors shows confidence. As everyone becomes a direct funder, how is Thoro maintaining its edge?","Same-day commissions for ISOs is strong. How much does commission speed actually influence which funder an ISO chooses versus rate and approval rate?","Founded in 2019 and grew through the pandemic -- a wild time for SMB lending. How did that formative period shape your underwriting philosophy?"],
     tp:["B-C paper underwriting is inherently more complex \u2014 riskier merchants where traditional signals fail. AI-powered cash flow analysis and risk report automation can surface hidden patterns in bank statements that manual reviewers might miss."],
     leaders:[{n:"Jacquelline Bogdanov",t:"Director of Partnerships",bg:"Accounting background. Career in international finance. Manages ISO partnerships. Featured in FunderIntel Q&A."}],
     ask:"Ask for whoever oversees underwriting operations. Position around scaling the B-C paper niche without proportionally increasing risk or headcount."
@@ -823,7 +897,9 @@ const CO = [
     contacts:[{n:"Zalman Arnow",t:"Owner"}],
     desc:"NYC-area MCA funder. ~200 employees. $98M+ funded per quarter. Revenue-based financing $10K-$5M. Factor rates from 1.28. Same-day commissions. Specializes in 6-10 month deals in 2nd-4th positions. ISO broker focus.",
     notes:"$98M+/quarter. 200 employees. Significant scale \u2014 AI ROI is massive at this volume.",
+    news:[{h:"ISO-focused MCA with factor rates from 1.28",s:"RowanAdvance.co, 2024-2025",d:"$10K-$5M deals, commissions up to 12 points, same-day approvals, matches competitor offers."},{h:"AI and bank-linking for real-time underwriting",s:"RowanAdvance.co blog, 2025",d:"Plug into verified bank data for real-time evaluation beyond static PDFs."},{h:"$8B+ in asset-based finance at parent level",s:"LinkedIn, 2024-2025",d:"Broader Rowan Capital team brings deep commercial finance experience."}],
     ice:"Rowan\u2019s growth is impressive \u2014 $98M funded in a single quarter speaks to serious operational scale. At that volume, every minute saved in underwriting translates to real dollars.",
+    icebreakers:["Rowan's move to AI and bank-linking for real-time underwriting is smart. What impact on approval and default rates since implementing?","Commissions up to 12 points and same-day payouts is aggressive. How do you balance ISO incentives with healthy margins as rates get competitive?","With $8B in asset-based finance at the corporate level, Rowan brings institutional credibility. Does that help competing for larger $1M-$5M deals?","Matching competitor offers is a bold stance. Does that pricing flexibility come from better capital costs or winning long-term ISO relationships?"],
     tp:["At $98M+ per quarter, manual underwriting becomes the bottleneck to growth. AI cuts review to under 5 min per deal, enabling volume scaling without linearly scaling the underwriting team.", "Your messaging emphasizes \u2018real people, not algorithms\u2019 \u2014 HyperVerge augments your underwriters. The AI handles data-heavy analysis so your people focus on judgment calls."],
     leaders:[{n:"Zalman Arnow",t:"Owner / Founder",bg:"Ex-Partner at Capital Express. Yeshiva University. NYC metro. Built Rowan to 200 employees and $98M+/quarter."},{n:"Brocha Arnow",t:"Director, Finance & Operations",bg:"Manages financial operations and reporting. Key operational decision-maker."}],
     ask:"Request a meeting with whoever leads underwriting operations. Even a 50% reduction in per-deal time could translate to millions in additional funded volume per quarter."
@@ -833,7 +909,9 @@ const CO = [
     contacts:[{n:"Danny Koshanfar",t:"CEO"}],
     desc:"Brooklyn, NY MCA funder (est. ~2014). Global offices. 21-50 employees, $10-25M revenue. 90%+ approval rate. 24-48 hour turnaround. Min 6 months in business, $10K monthly revenue. CEO Danny Koshanfar previously founded Pearl Capital (2009-2012).",
     notes:"90%+ approval rate. 24-48 hr turnaround. Global offices. $10-25M revenue.",
+    news:[{h:"Participates in Funders Forum + Brokers Expo 2024",s:"LinkedIn, 2024",d:"Connecting with ISOs, expanding broker relationships. 10 years of MCA experience."},{h:"Expands into Canadian market",s:"BizFund.ca, 2024-2025",d:"Bringing US-based MCA expertise to help Canadian small businesses access working capital."}],
     ice:"With a 90%+ approval rate and 24-48 hour turnaround, Bizfund has clearly optimized for saying \u2018yes\u2019 fast. Is the bottleneck now processing speed or finding the 10% to decline?",
+    icebreakers:["Expanding into Canada is significant -- different regulations and borrower expectations. What has been the biggest surprise adapting the US model for Canadian merchants?","Ten years in MCA gives BizFund real staying power. How are you leveraging that experience to win deals newer funders cannot?","I saw BizFund at the Funders Forum + Brokers Expo. How important is the broker channel versus direct merchant acquisition for your growth?","The banking relationship challenge is real for MCA companies. How is BizFund managing that risk as compliance requirements increase?"],
     tp:["A 90%+ approval rate means your team reviews many deals that will be approved \u2014 that\u2019s a lot of manual effort on obvious approvals. AI can auto-approve clear-cut deals and flag only borderline cases, cutting 24-48 hours to same-day."],
     leaders:[{n:"Danny Koshanfar",t:"CEO",bg:"Previously President & Founder of Pearl Capital (2009-2012). Ex-New Era Lending. Based in Miami/Brooklyn. Deep MCA experience."},{n:"Rikki Kopfstein",t:"VP of ISO Relations",bg:"Based in Miami. Manages ISO partnerships and broker relationships."},{n:"Jeff Engel",t:"ISO Relations Manager",bg:"Manages day-to-day ISO broker relationships and deal flow."}],
     ask:"Ask to speak with the head of underwriting. Position around compressing 24-48 hour turnaround to under 1 hour."
@@ -843,7 +921,9 @@ const CO = [
     contacts:[{n:"Sergey Sprikut",t:"Managing Partner"}],
     desc:"Brooklyn, NY direct MCA funder (est. 2021). ~9 employees. BBB A-rated. MCAs $7,500-$150,000 with 4-12 month terms. MCA consolidation program. Approves within 4 hours, funds same day. Managing Partner Sergey Sprikut has JPMorgan/CIBC background.",
     notes:"Only 9 employees = highest AI ROI. BBB A-rated. MCA consolidation program. Sergey Sprikut is Managing Partner.",
+    news:[{h:"John Bulnes featured on deBanked CONNECT",s:"deBanked",d:"Raising company profile in alternative funding community."},{h:"MCA industry faces expanding state disclosure laws",s:"Multiple sources, 2024-2025",d:"Kansas, Connecticut, Missouri, California SB 362 adding compliance burden to funders."}],
     ice:"For a company that\u2019s only been around since 2021, earning a BBB A-rating and offering same-day funding is impressive execution. With ~9 people, every efficiency gain has an outsized impact.",
+    icebreakers:["With all the new state disclosure laws -- Kansas, Connecticut, Missouri, California SB 362 -- how is Fenix adapting its compliance infrastructure?","I saw John Bulnes on deBanked CONNECT -- great visibility. How are you thinking about differentiation as competition gets tighter and margins squeeze?","The SBA banning 7(a) loans from refinancing MCA debt could drive more volume to direct funders like Fenix. Are you seeing early impact?","The MCA market is projected to hit $32B by 2032. How is Fenix positioning to capture a bigger slice of that growth?"],
     tp:["With only ~9 employees, Fenix is exactly where AI delivers highest ROI. Automate bank statements, cash flow, and risk reports so your underwriters focus only on final decisions.", "Your MCA consolidation program requires evaluating multiple existing advances \u2014 complex manual work. Our AI automatically parses stacking positions, obligations, and remaining balances."],
     leaders:[{n:"Sergey Sprikut",t:"Managing Partner",bg:"NYU Polytechnic BS. Ex-JPMorgan Chase, CIBC World Markets, Premier Capital Funding. Institutional risk management background."},{n:"Alexander Ryvkin",t:"Chief Legal Officer",bg:"Brooklyn-based. Manages legal and compliance. AI creates better documentation trails for MCA contracts."}],
     ask:"Pitch the ROI angle hard: AI underwriting lets Fenix compete with funders 10x their size without hiring 10x the underwriters."
@@ -853,7 +933,9 @@ const CO = [
     contacts:[{n:"Joseph Rapoport",t:"President"}],
     desc:"Hollywood, FL / NYC business MCA provider (est. 2012). ~35 employees. ACH advances and MCA in 1st and 2nd positions. Funding up to $1M with 24-48 hour disbursement. President Joseph Rapoport is a former underwriter.",
     notes:"Walk-in booth. Quick intro.",
+    news:[{h:"Continues operations since 2012 with expanded digital applications",s:"FoxBusinessFunding, 2024-2025",d:"Founded after 2008 crisis. Thousands of businesses assisted with alternative financing up to $1M."},{h:"MCA industry shifts toward full digital and POS integrations",s:"Industry sources, 2025",d:"Fully digital applications in minutes, POS system integrations for automatic collection."}],
     ice:"How\u2019s Fox Funding approaching growth? Are you finding underwriting to be the bottleneck?",
+    icebreakers:["Fox Funding has been in the game since 2012 -- long tenure in alt lending. How has the competitive landscape changed with so many new funders entering?","I am curious how Fox is approaching fully digital underwriting and POS-integrated collections -- building in-house or partnering?","Customer experience seems to be the new battleground in MCA. What is Fox doing differently on servicing compared to five years ago?","The SBA now prohibits 7(a) refinancing of MCA debt, keeping businesses in the MCA ecosystem longer. Is Fox seeing that dynamic play out?"],
     tp:["Most funders tell us underwriting is their biggest bottleneck. We cut it from 40 minutes to under 5 with AI."],
     leaders:[{n:"Joseph Rapoport",t:"President",bg:"MS Accounting, Fairleigh Dickinson. Ex-underwriter at Funding For Merchants. Understands underwriting pain firsthand."},{n:"Joshua Amir",t:"Chief Strategy Officer",bg:"Based in Miami. Strategy and competitive positioning."}],
     ask:"Would a quick conversation with your ops team make sense?"
@@ -863,7 +945,9 @@ const CO = [
     contacts:[{n:"Mark D.",t:"CEO"}],
     desc:"Miami, FL MCA and business funding provider. Direct funder. Programs include invoice factoring, PO funding, AR lines of credit. Emphasizes adaptive modern technologies. Finance-educated CEO (Hofstra). Seasoned team with decades of corporate finance/tech experience.",
     notes:"Walk-in booth. Quick intro.",
+    news:[{h:"MCA market projected to reach $32.7B by 2032",s:"Allied Market Research, 2024",d:"Valued at $17.9B in 2023, growing at 7.2% CAGR."}],
     ice:"What types of deals is 800Funding seeing the most demand for right now?",
+    icebreakers:["The MCA market is on track to nearly double to $32B by 2032. How is 800Funding positioning to capture that growth?","With the MyPillow lawsuits bringing MCA into mainstream news, the industry is getting more public scrutiny. How do you think about reputation management?","The new SBA rule banning MCA refinancing through 7(a) keeps merchants in the ecosystem. Are you seeing that translate into different deal flow?","One in five business funding applicants got denied last year -- a huge underserved market. How does 800Funding think about capturing those borrowers?"],
     tp:["Whatever your deal mix, our AI adapts \u2014 configurable workflows for MCAs, term loans, lines of credit, and more."],
     leaders:[{n:"Mark D.",t:"CEO",bg:"Hofstra University Finance degree. Leads overall strategy. Emphasizes technology-driven efficiency in small business funding."}],
     ask:"Would your team be open to seeing a quick demo?"
@@ -873,7 +957,9 @@ const CO = [
     contacts:[{n:"David Frascella",t:"Founder & Chairman"}],
     desc:"Analytics-driven fintech (parent: Funding Metrics LLC, est. 2014). Bensalem, PA. Proprietary risk models + real-time cash flow data. $500M+ funded to 9,500+ businesses. $100M revolving credit facility. Also operates QuickFix Capital. Has Sr. Data Scientist on staff (Domenico Frascella).",
     notes:"$500M+ funded. Analytics-first company. David Frascella previously founded BizLender. Proprietary risk models.",
+    news:[{h:"Revenue-based financing provider across all 50 states",s:"UnitedCapitalSource/SuperMoney, 2024-2025",d:"$5.1K to $300K in as little as one business day through Funding Metrics LLC."},{h:"Fintech lenders capture 28% of new SMB originations",s:"Industry sources, 2025",d:"Gaining share against community banks by leveraging real-time data analytics."}],
     ice:"The $100M credit facility you secured and $500M+ funded to 9,500+ businesses shows the proprietary risk models are working. Being analytics-first in MCA puts you in a different league.",
+    icebreakers:["Fintechs now capture 28% of new SMB originations. Operating in all 50 states, how is Lendini standing out in an increasingly crowded field?","Revenue-based financing is clearly resonating with non-traditional borrowers. What industries are you seeing the strongest demand from?","The CFPB is paying closer attention to alt lending servicing. How is Lendini proactively addressing the borrower experience during repayment?","With the LendTech market projected to hit $145B by 2034, there is massive runway. Is Lendini investing more in tech automation or distribution expansion?"],
     tp:["Given you already think in terms of data models and analytics-driven decisioning, HyperVerge automates the manual gap between data collection and model application \u2014 intake, bank statement parsing, CLEAR reports, NAICS classification \u2014 letting your analysts focus on edge cases."],
     leaders:[{n:"David Frascella",t:"Co-Founder & Chairman",bg:"Founded Funding Metrics 2013. Built proprietary risk models and online platform. Analytics-first approach."},{n:"Jim Carnes",t:"President / CEO",bg:"Runs day-to-day operations alongside Frascella. Key operational decision-maker."},{n:"Domenico Frascella",t:"Sr. Data Scientist",bg:"Works on proprietary risk models and analytics. Technical decision-influencer. Deep ML/data pipeline conversation."},{n:"Gianna Frascella",t:"ISO Manager",bg:"Manages ISO relationships. Pitch faster approvals through AI for her ISO partners."}],
     ask:"Request a technical conversation with David or head of risk/analytics to explore how AI-automated document intake feeds directly into their proprietary risk models."
@@ -883,7 +969,9 @@ const CO = [
     contacts:[],
     desc:"Capital markets advisory firm. Not the insurtech Accelerant Holdings (NYSE: ACHL). Limited public info available.",
     notes:"Walk-in booth. Quick intro.",
+    news:[{h:"Operates as capital markets advisory firm",s:"Accelerant.capital, 2024-2025",d:"Tailored services helping clients navigate complex financial landscapes in alt funding."},{h:"Banks tightening lending drives alt funding surge",s:"BusinessCapital.com, 2025",d:"Lower bank approval rates creating massive shift toward alternative providers."}],
     ice:"What\u2019s driving Accelerant\u2019s growth right now? How\u2019s the underwriting team keeping up?",
+    icebreakers:["With banks tightening SMB lending in 2025, alternative funders are seeing a wave. How is Accelerant advising clients on navigating this shift?","The capital markets side of alt lending is evolving fast with more institutional interest in MCA portfolios. What trends in structuring and securitization?","State regulation is reshaping MCA -- California SB 362, NY APR disclosures, SBA MCA ban. How is Accelerant helping clients stay ahead of compliance?","The MCA market projected to hit $32B by 2032 -- as an advisory firm, what is the biggest opportunity you are telling clients to watch?"],
     tp:["We help lending companies scale without proportionally scaling their underwriting teams. 5-8x throughput improvement."],
     leaders:[{n:"Sylvania Harrod",t:"Fund Manager / Principal",bg:"22+ years leadership and PE expertise. Army veteran. Bridges funding needs with growth opportunities."}],
     ask:"Would a quick demo be worth 15 minutes?"
@@ -893,7 +981,9 @@ const CO = [
     contacts:[],
     desc:"NYC small business lending solutions (est. 2023). Business loan matching and capital structuring. Helps companies break free from daily payment cycles. MCA consolidation solutions. Building partnerships through Business Loan Partner Program.",
     notes:"Walk-in booth. Quick intro.",
+    news:[{h:"Bank-focused business funding and capital structuring",s:"LendmateCapital.com, 2024-2025",d:"Helps businesses break free from daily MCA payments by matching with bank solutions."},{h:"Fed rate trajectory creates refinancing opportunities",s:"Multiple sources, 2025",d:"Potential rate cuts making bank borrowing more affordable versus MCA."}],
     ice:"How\u2019s Lendmate differentiating in the market? Speed, rates, or service?",
+    icebreakers:["Lendmate's focus on transitioning businesses from daily MCA payments to bank funding is compelling. How do you approach that conversation with a merchant stuck in the MCA cycle?","A lot of businesses do not realize there is a path from MCA to traditional lending. What does that journey typically look like for a Lendmate client?","With the Fed potentially cutting rates, bank lending becomes more competitive. Are more merchants ready for the transition, or is awareness still the challenge?","The SBA banning MCA refinancing through 7(a) creates a gap. How is Lendmate thinking about alternative pathways for merchants wanting to exit MCA?"],
     tp:["If speed is part of your value prop, AI underwriting is a game-changer. Under 5 minutes per application."],
     leaders:[{n:"Luckens Victor",t:"Business Credit Advisor",bg:"Front-line advisor matching businesses with funding products."}],
     ask:"Would your team be interested in exploring AI-powered underwriting?"
@@ -903,7 +993,9 @@ const CO = [
     contacts:[],
     desc:"Smithtown, NY (Long Island) business funding. MCA, real estate lending, equipment finance, SBA, LOC. Up to $50M. 50+ years combined team experience. First position loans from $75K starting at 6.99%.",
     notes:"Walk-in booth. Quick intro.",
+    news:[{h:"Diversified funding: MCA, invoice financing, CRE",s:"StellarCapSolutions.com, 2024-2025",d:"First position loans $75K-$50M at 6.99%, MCA, invoice financing at 85% advance rates."},{h:"Yellowstone Capital $1B settlement",s:"Industry, Jan 2025",d:"Landmark settlement for rates allegedly over 800% APR sent shockwaves through MCA industry."}],
     ice:"What\u2019s Stellar Capital\u2019s focus right now? I\u2019d love to hear about your underwriting approach.",
+    icebreakers:["Stellar's diversification across MCA, invoice financing, and CRE gives multiple revenue streams. How do you decide which product to lead with for a new merchant?","The Yellowstone Capital settlement was a wake-up call for the MCA industry. How is Stellar thinking about compliance and pricing transparency in light of that?","With NY full APR disclosure now in effect, how has that changed Stellar's sales conversations with merchants?","Your team has 50+ years combined experience. In a market where many funders are new, how does that experience translate into better outcomes?"],
     tp:["Our AI Co-Pilot handles the heavy lifting \u2014 bank statements, cash flow, risk reports \u2014 so your underwriters can focus on decision-making."],
     leaders:[{n:"Shannon Harris",t:"Chief Funding Advisor",bg:"In commercial equipment finance since 1997. Expanded to MCA, SBA, LOC in 2008. Deep industry veteran."}],
     ask:"Would a brief call make sense to explore the fit?"
@@ -913,7 +1005,9 @@ const CO = [
     contacts:[{n:"Matthew Walsh",t:"Founder & CEO"}],
     desc:"Stamford, CT alt lender (est. 2018). ~20 employees. LOC, AR financing, SBA, equipment financing, ABL. Founder Matthew Walsh previously at Premium Merchant Funding. UConn grad. Growing rapidly, recognized as top small business lender.",
     notes:"Multi-product (LOC, AR, SBA, equipment, ABL). Matthew Walsh is Founder/CEO. ~$4M revenue.",
+    news:[{h:"Multi-product business financing platform from Stamford, CT",s:"ParkviewAdvance.com/BBB, 2024-2025",d:"Founded 2018. LOC, term loans, MCA, equipment financing, ABL through lending partner network."},{h:"Connecticut implements commercial financing disclosure laws",s:"Industry, Jul 2024",d:"New disclosure requirements directly impacting CT-headquartered funders."}],
     ice:"Building Parkview from scratch in 2018 and growing it into a recognized name across five product lines shows real ambition. The move from pure MCA into SBA, equipment, and asset-based lending is smart diversification.",
+    icebreakers:["Being in Connecticut puts you at the center of new commercial financing disclosure laws. Has that been a competitive advantage or compliance headache?","Parkview's model of matching businesses with the right lending partner rather than direct funding is interesting. How do you maintain quality across your network?","With products spanning MCA, equipment financing, and ABL, you have real versatility. What percentage of deal flow starts as one product inquiry but ends up in another?","I see Parkview is actively growing the team. In a competitive hiring market, what attracts people to a Stamford operation versus the bigger NYC shops?"],
     tp:["With five different product lines, your underwriting team juggles very different evaluation criteria per deal type. AI automates the universal pain points \u2014 intake, cash flow analysis, risk/CLEAR reports, industry classification \u2014 in under 5 min."],
     leaders:[{n:"Matthew Walsh",t:"Founder & CEO",bg:"UConn grad. Ex-Funding Specialist at Premium Merchant Funding. Built Parkview from scratch into multi-product lender."}],
     ask:"Request a call with Matthew Walsh to show how AI helps Parkview scale multi-product underwriting without adding headcount."
@@ -923,7 +1017,9 @@ const CO = [
     contacts:[{n:"Igor Davidov",t:"CEO"}],
     desc:"Fresh Meadows, NY direct MCA funder using own capital (est. 2020). 1-10 employees. $5K-$1M funding. 1-day approvals. Minimal paperwork (app + 3 months bank statements). Serves logistics, retail, medical. CEO Igor Davidov (John Jay College CUNY).",
     notes:"Direct funder with own capital. Igor Davidov is CEO. 1-day approvals. Minimal paperwork.",
+    news:[{h:"Integrates Visa Acceptance Platform for direct VisaNet processing",s:"PYMNTS/Digital Transactions, Q3 2024",d:"Network tokens, 3D Secure, ML acceptance enhancements for merchants and ISVs."},{h:"White-labeled payment stack for ISVs",s:"Digital Transactions, 2025",d:"Proprietary gateway, ACH, fraud tools, analytics for ISVs to monetize payments."},{h:"Specializes in high-risk merchant processing",s:"MaverickPayments.com, 2024-2025",d:"Accepts businesses most banks reject with experienced underwriting and risk teams."}],
     ice:"Being a direct funder with your own capital gives you full control over underwriting \u2014 that\u2019s a real competitive advantage in speed-to-funding. Approving deals across logistics, retail, and medical in one day is impressive.",
+    icebreakers:["The direct Visa Acceptance Platform integration is a big deal. How has that changed conversations with ISV partners evaluating processors?","The white-label payment stack for ISVs is perfectly timed as more SaaS companies monetize payments. What types of ISVs show the most interest?","Being willing to take high-risk merchants others avoid is a real differentiator. How does your underwriting allow you to serve those verticals profitably?","As a family-owned business since 2000, Maverick has outlasted many processors. What is the key to longevity while balancing entrepreneurial DNA with institutional demands?"],
     tp:["Since Maverick is a direct funder promising 1-day approvals, every minute saved in underwriting directly improves your competitive position. AI processes those 3 months of bank statements in under 5 minutes with consistent accuracy."],
     leaders:[{n:"Igor Davidov",t:"Founder & CEO",bg:"John Jay College (CUNY). Founded 2020. Passionate about helping entrepreneurs of all credit types. Actively growing ISO partnerships."}],
     ask:"Request a demo call with Igor or his head of underwriting to show a live walkthrough of how HyperVerge processes a real MCA application in under 5 minutes."
@@ -939,6 +1035,7 @@ let openCardId = null;
 let searchTimeout = null;
 let metState = JSON.parse(localStorage.getItem('debanked_met') || '{}');
 let cardNotes = JSON.parse(localStorage.getItem('debanked_card_notes') || '{}');
+let iceState = {};
 
 // ============================================================
 // TAB MANAGEMENT
@@ -1008,7 +1105,7 @@ function buildCard(c, query) {
     const d = new Date(metState[c.id]);
     html += '<div class="met-time">\u2713 Met at ' + d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}) + '</div>';
   }
-  html += '<div class="card-preview">' + esc(c.ice) + '</div>';
+  html += '<div class="card-preview">' + esc(c.icebreakers ? c.icebreakers[0] : c.ice) + '</div>';
   html += '</div><div class="card-chev" onclick="event.stopPropagation();toggleCard(' + c.id + ')">\u203A</div></div>';
   html += '<div class="card-body">';
   html += '<div class="card-section"><div class="card-section-title">About</div>';
@@ -1030,8 +1127,27 @@ function buildCard(c, query) {
     });
     html += '</div>';
   }
-  html += '<div class="card-section"><div class="card-section-title">Icebreaker</div>';
-  html += '<div class="card-ice">\u201C' + esc(c.ice) + '\u201D</div></div>';
+  if (c.news && c.news.length) {
+    html += '<div class="card-section"><div class="card-section-title">Recent News</div>';
+    c.news.forEach(function(n) {
+      html += '<div class="news-item"><div class="news-headline">' + esc(n.h) + '</div>';
+      if (n.s) html += '<div class="news-source">' + esc(n.s) + '</div>';
+      if (n.d) html += '<div class="news-summary">' + esc(n.d) + '</div>';
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+  var iceArr = c.icebreakers || [c.ice];
+  var iceIdx = iceState[c.id] || 0;
+  if (iceIdx >= iceArr.length) iceIdx = 0;
+  html += '<div class="card-section"><div class="card-section-title">Icebreakers (' + (iceIdx+1) + '/' + iceArr.length + ')</div>';
+  html += '<div class="card-ice">\u201C' + esc(iceArr[iceIdx]) + '\u201D</div>';
+  if (iceArr.length > 1) {
+    html += '<div class="ice-nav"><div class="ice-dots">';
+    for (var di = 0; di < iceArr.length; di++) html += '<span class="ice-dot' + (di === iceIdx ? ' active' : '') + '"></span>';
+    html += '</div><button class="ice-shuffle" onclick="event.stopPropagation();shuffleIce(' + c.id + ',' + iceArr.length + ')">Next opener \u203A</button></div>';
+  }
+  html += '</div>';
   if (c.tp.length) {
     html += '<div class="card-section"><div class="card-section-title">Talking Points</div>';
     html += '<ul class="card-tp">' + c.tp.map(p => '<li>' + esc(p) + '</li>').join('') + '</ul></div>';
@@ -1102,6 +1218,23 @@ function saveCardNote(id, val) {
     delete cardNotes[id];
   }
   localStorage.setItem('debanked_card_notes', JSON.stringify(cardNotes));
+}
+
+// ============================================================
+// ICEBREAKER ROTATION
+// ============================================================
+function shuffleIce(id, total) {
+  iceState[id] = ((iceState[id] || 0) + 1) % total;
+  var sr = document.getElementById('search-results');
+  if (sr.classList.contains('show')) {
+    showSearchResults(document.getElementById('searchInput').value.trim());
+  } else {
+    renderCompanies(document.getElementById('searchInput').value.trim());
+  }
+  setTimeout(function() {
+    var card = document.querySelector('.card[data-id="' + id + '"]');
+    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 50);
 }
 
 // ============================================================
