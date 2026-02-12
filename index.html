@@ -335,15 +335,18 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .tag-panel{background:rgba(168,85,247,.15);color:#a855f7}
 .tag-keynote{background:rgba(91,141,239,.15);color:var(--accent)}
 .tag-demo{background:rgba(34,197,94,.15);color:var(--icp)}
-.program-speaker{display:flex;align-items:center;gap:8px;padding:6px 8px;font-size:12px;
-  border-radius:6px;margin:0 -8px;-webkit-tap-highlight-color:transparent}
+.program-speaker{display:flex;align-items:center;gap:8px;padding:8px;font-size:12px;
+  border-radius:8px;margin:0 -8px;-webkit-tap-highlight-color:transparent;
+  border-bottom:1px solid rgba(42,42,56,.5)}
+.program-speaker:last-child{border-bottom:none}
 .program-speaker.clickable{cursor:pointer}
 .program-speaker.clickable:active{background:var(--surface2)}
-.program-speaker .chevron{margin-left:auto;color:var(--dim);font-size:10px;opacity:.4;flex-shrink:0}
-.program-speaker-name{font-weight:600;color:var(--text)}
-.program-speaker-co{color:var(--dim)}
+.program-speaker-info{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1}
+.program-speaker .chevron{color:var(--dim);font-size:12px;opacity:.4;flex-shrink:0}
+.program-speaker-name{font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.program-speaker-co{color:var(--dim);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .program-speaker .in-list{font-size:9px;padding:1px 5px;border-radius:3px;font-weight:700;
-  margin-left:4px;flex-shrink:0}
+  flex-shrink:0;align-self:center}
 .in-list.sqo{background:var(--sqo-bg);color:var(--sqo)}
 .in-list.client{background:var(--client-bg);color:var(--client)}
 .in-list.icp{background:var(--icp-bg);color:var(--icp)}
@@ -455,7 +458,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 <!-- Header -->
 <header class="hdr">
   <div class="hdr-title">DeBanked Connect</div>
-  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.13</span></div>
+  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.14</span></div>
 </header>
 
 <!-- Search -->
@@ -624,29 +627,29 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
       <p class="phase-desc">deBanked CONNECT panels &amp; demos &mdash; speakers you should catch</p>
       <div class="program-session">
         <div class="program-session-title"><span class="tag tag-keynote">Keynote</span> Guest Speakers</div>
-        <div class="program-speaker clickable" onclick="jumpTo('Greenspoon Marder')"><span class="program-speaker-name">Robby Birnbaum</span><span class="program-speaker-co">&middot; Partner, Greenspoon Marder PA</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Commercial Capital Connect')"><span class="program-speaker-name">Cheryl Tibbs</span><span class="program-speaker-co">&middot; Business Funding Expert</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Greenspoon Marder')"><div class="program-speaker-info"><span class="program-speaker-name">Robby Birnbaum</span><span class="program-speaker-co">Partner, Greenspoon Marder PA</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Commercial Capital Connect')"><div class="program-speaker-info"><span class="program-speaker-name">Cheryl Tibbs</span><span class="program-speaker-co">Business Funding Expert</span></div><span class="chevron">&rsaquo;</span></div>
       </div>
       <div class="program-session">
         <div class="program-session-title"><span class="tag tag-panel">Panel</span> Funder &amp; Broker Panel</div>
-        <div class="program-speaker clickable" onclick="jumpTo('Vox Funding')"><span class="program-speaker-name">Louis Calderone</span><span class="program-speaker-co">&middot; President, Vox Funding</span><span class="in-list icp">ICP</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Bitty')"><span class="program-speaker-name">Daniel Dames</span><span class="program-speaker-co">&middot; VP Ops, Bitty</span><span class="in-list sqo">SQO</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Optimum Bank')"><span class="program-speaker-name">Seth Denison</span><span class="program-speaker-co">&middot; MD Investor Relations, Optimum Bank</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Lexington Capital Holdings')"><span class="program-speaker-name">Frankie DiAntonio</span><span class="program-speaker-co">&middot; CEO, Lexington Capital Holdings</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Dynamic Capital')"><span class="program-speaker-name">Steven Edisis</span><span class="program-speaker-co">&middot; CEO, Dynamic Capital</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Fundfi')"><span class="program-speaker-name">Efraim Kandinov</span><span class="program-speaker-co">&middot; CEO, Fundfi</span><span class="in-list client">CLIENT</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Barclays Advance')"><span class="program-speaker-name">Arieh Kaplan</span><span class="program-speaker-co">&middot; Head ISO Relations, Barclays Advance</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('BriteCap Financial')"><span class="program-speaker-name">Jim Noel</span><span class="program-speaker-co">&middot; VP Strategic Partnerships, BriteCap</span><span class="in-list sqo">SQO</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Tip Top Capital')"><span class="program-speaker-name">Vinnie Rodriguez</span><span class="program-speaker-co">&middot; Chairman, Tip Top Capital</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('FundKite')"><span class="program-speaker-name">Alex Shvarts</span><span class="program-speaker-co">&middot; CEO, FundKite</span><span class="in-list client">CLIENT</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Vox Funding')"><div class="program-speaker-info"><span class="program-speaker-name">Louis Calderone</span><span class="program-speaker-co">President, Vox Funding</span></div><span class="in-list icp">ICP</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Bitty')"><div class="program-speaker-info"><span class="program-speaker-name">Daniel Dames</span><span class="program-speaker-co">VP Ops, Bitty</span></div><span class="in-list sqo">SQO</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Optimum Bank')"><div class="program-speaker-info"><span class="program-speaker-name">Seth Denison</span><span class="program-speaker-co">MD Investor Relations, Optimum Bank</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Lexington Capital Holdings')"><div class="program-speaker-info"><span class="program-speaker-name">Frankie DiAntonio</span><span class="program-speaker-co">CEO, Lexington Capital Holdings</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Dynamic Capital')"><div class="program-speaker-info"><span class="program-speaker-name">Steven Edisis</span><span class="program-speaker-co">CEO, Dynamic Capital</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Fundfi')"><div class="program-speaker-info"><span class="program-speaker-name">Efraim Kandinov</span><span class="program-speaker-co">CEO, Fundfi</span></div><span class="in-list client">CLIENT</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Barclays Advance')"><div class="program-speaker-info"><span class="program-speaker-name">Arieh Kaplan</span><span class="program-speaker-co">Head ISO Relations, Barclays Advance</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('BriteCap Financial')"><div class="program-speaker-info"><span class="program-speaker-name">Jim Noel</span><span class="program-speaker-co">VP Strategic Partnerships, BriteCap</span></div><span class="in-list sqo">SQO</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Tip Top Capital')"><div class="program-speaker-info"><span class="program-speaker-name">Vinnie Rodriguez</span><span class="program-speaker-co">Chairman, Tip Top Capital</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('FundKite')"><div class="program-speaker-info"><span class="program-speaker-name">Alex Shvarts</span><span class="program-speaker-co">CEO, FundKite</span></div><span class="in-list client">CLIENT</span><span class="chevron">&rsaquo;</span></div>
       </div>
       <div class="program-session">
         <div class="program-session-title"><span class="tag tag-demo">Tech Demo</span> Show Floor Tech Demos</div>
-        <div class="program-speaker clickable" onclick="jumpTo('Smart MCA')"><span class="program-speaker-name">Motti Dahan</span><span class="program-speaker-co">&middot; President, Smart MCA</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Figure')"><span class="program-speaker-name">Matt Donofrio</span><span class="program-speaker-co">&middot; Dir Partnerships, Figure</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('OnyxIQ')"><span class="program-speaker-name">Garrett Kuhlman</span><span class="program-speaker-co">&middot; Customer Success, OnyxIQ</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Cloudsquare')"><span class="program-speaker-name">Dennis Mikhailov</span><span class="program-speaker-co">&middot; CRO, Cloudsquare</span><span class="chevron">&rsaquo;</span></div>
-        <div class="program-speaker clickable" onclick="jumpTo('Ocrolus')"><span class="program-speaker-name">David Snitkof</span><span class="program-speaker-co">&middot; GM of SMB, Ocrolus</span><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Smart MCA')"><div class="program-speaker-info"><span class="program-speaker-name">Motti Dahan</span><span class="program-speaker-co">President, Smart MCA</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Figure')"><div class="program-speaker-info"><span class="program-speaker-name">Matt Donofrio</span><span class="program-speaker-co">Dir Partnerships, Figure</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('OnyxIQ')"><div class="program-speaker-info"><span class="program-speaker-name">Garrett Kuhlman</span><span class="program-speaker-co">Customer Success, OnyxIQ</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Cloudsquare')"><div class="program-speaker-info"><span class="program-speaker-name">Dennis Mikhailov</span><span class="program-speaker-co">CRO, Cloudsquare</span></div><span class="chevron">&rsaquo;</span></div>
+        <div class="program-speaker clickable" onclick="jumpTo('Ocrolus')"><div class="program-speaker-info"><span class="program-speaker-name">David Snitkof</span><span class="program-speaker-co">GM of SMB, Ocrolus</span></div><span class="chevron">&rsaquo;</span></div>
       </div>
     </div>
 
