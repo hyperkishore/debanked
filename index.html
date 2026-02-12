@@ -455,7 +455,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 <!-- Header -->
 <header class="hdr">
   <div class="hdr-title">DeBanked Connect</div>
-  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.12</span></div>
+  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.13</span></div>
 </header>
 
 <!-- Search -->
@@ -694,7 +694,10 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
         <div class="phase-item" onclick="jumpTo('idea Financial')"><span class="phase-dot icp"></span><span class="phase-co">idea Financial</span><span class="phase-contact">Justin Leto (CEO), Chris Ryan</span></div>
         <div class="phase-item" onclick="jumpTo('Gulf Coast Business Credit')"><span class="phase-dot icp"></span><span class="phase-co">Gulf Coast Biz Credit</span><span class="phase-contact">Hladky (CEO), Wrba (VP BD)</span></div>
         <div class="phase-item" onclick="jumpTo('Spartan Capital')"><span class="phase-dot icp"></span><span class="phase-co">Spartan Capital</span><span class="phase-contact">Frank Ebanks (CEO), Connor Leppzer (UW)</span></div>
-        <div class="phase-item" onclick="jumpTo('Biz2Credit')"><span class="phase-dot icp"></span><span class="phase-co">+ 16 walk-in booths</span><span class="phase-contact">Quick intros, collect cards</span></div>
+        <div class="phase-item" onclick="jumpTo('The LCF Group / Reliant Funding')"><span class="phase-dot icp"></span><span class="phase-co">LCF / Reliant</span><span class="phase-contact">Andy Parker (CEO), Kerri Brancato (VP UW)</span></div>
+        <div class="phase-item" onclick="jumpTo('World Business Lenders')"><span class="phase-dot icp"></span><span class="phase-co">World Biz Lenders</span><span class="phase-contact">Doug Naidus (CEO), Reilly (SVP Ops)</span></div>
+        <div class="phase-item" onclick="jumpTo('Reliance Financial')"><span class="phase-dot icp"></span><span class="phase-co">Reliance Financial</span><span class="phase-contact">Aryeh Miller, CEO</span></div>
+        <div class="phase-item" onclick="jumpTo('Biz2Credit')"><span class="phase-dot icp"></span><span class="phase-co">+ 13 walk-in booths</span><span class="phase-contact">Quick intros, collect cards</span></div>
       </div>
     </div>
     <div class="phase" id="phase4" data-start="15:30" data-end="16:30">
@@ -1555,6 +1558,127 @@ const CO = [
     tp:["COMPETITOR: Do not pitch HyperVerge directly. Gather intelligence.","Watch his Encore demo closely. Note what funders respond to \u2014 tells you what pain points to address.","For conversations with OTHER attendees: \u201COcrolus focuses on document extraction and data sharing. HyperVerge covers the full underwriting stack without data-sharing lock-in.\u201D"],
     leaders:[{n:"David Snitkof",t:"GM of SMB",bg:"Brown Univ (Economics). Co-founded Orchard Platform (acquired by Kabbage). Previously at Amex, Citigroup, Kabbage (Head of Analytics). Writes Fintech AI Review newsletter on Substack. Conference regular (Money 20/20, deBanked).",hooks:["Brown Univ","Co-founded Orchard","Kabbage alum","Amex + Citi","*Newsletter writer","*Thought leader"],li:"https://www.linkedin.com/in/davidsnitkof/"}],
     ask:"COMPETITOR \u2014 keep it professional. Watch Encore demo for competitive intel. If chatting: \u201CWhat trends are you seeing in SMB lending AI adoption?\u201D"
+  },
+  // --- New Companies (from sponsor/exhibitor list) ---
+  {
+    id:56, name:"The LCF Group / Reliant Funding", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Andy Parker",t:"CEO, The LCF Group"},{n:"Steve Kietz",t:"CEO, Reliant Funding"},{n:"Kerri Brancato",t:"VP of Underwriting"}],
+    desc:"Direct MCA funder since 2011 (as Last Chance Funding). West Hempstead, NY. ~75 employees. Acquired Reliant Funding assets Sep 2023 ($3B+ total funded, $125M securitization facility). Reliant is LCF\u2019s \u201Cprime paper\u201D arm. Factor rates 1.10-1.40, up to $2M. COO John Merturi (ex-DFC Global, ex-NASDAQ).",
+    notes:"LCF and Reliant are same company. VP Underwriting (Kerri Brancato) is the direct buyer. \u201CPrime paper\u201D = underwriting quality matters.",
+    news:[{h:"LCF acquires Reliant Funding strategic assets",s:"deBanked, Sep 2023",d:"Sets course for record-breaking year. Reliant brand positioned as prime paper funding arm."},{h:"Reliant\u2019s $125M securitization facility",s:"PR Newswire, Oct 2022",d:"Upsized from $75M. Facilitated through Ares Management."},{h:"From A to D: How LCF is Aiming High",s:"deBanked, Oct 2023",d:"Profile on LCF\u2019s growth strategy and risk segmentation across paper grades."}],
+    ice:"Andy, the Reliant acquisition and pivot to prime paper is a smart segmentation play. How\u2019s the underwriting workflow different between LCF\u2019s standard paper and Reliant\u2019s prime deals?",
+    icebreakers:["Acquiring Reliant\u2019s $3B+ track record and $125M facility is a bold move. How are you integrating the two underwriting cultures?","Running A through D paper grades means you need different risk models for each tier. How much of that is automated vs. manual judgment calls?","Steve, moving from CMO to CEO at Reliant shows the business side is as important as marketing now. What\u2019s the biggest operational challenge?","With Kerri Brancato running underwriting, what does the typical deal review look like? Are you feeling the throughput pressure?"],
+    tp:[
+      "With A-D paper grades, each tier needs different underwriting rigor. AI automates the analysis while your team focuses on judgment calls.",
+      "Reliant\u2019s prime paper focus means underwriting quality directly affects portfolio performance. AI reduces human error on routine analysis."
+    ],
+    leaders:[{n:"Andy Parker",t:"CEO, The LCF Group",bg:"Leads overall strategy. Built LCF from 2011 into multi-brand funder. Acquired Reliant assets 2023."},{n:"Steve Kietz",t:"CEO, Reliant Funding",bg:"Named CEO Aug 2021 (formerly CMO). Runs the Reliant prime paper division."},{n:"John Merturi",t:"COO",bg:"Previously CFO for 3.5 years. 15+ yrs finance. Ex-DFC Global, ex-NASDAQ listed firms."},{n:"Kerri Brancato",t:"VP of Underwriting",bg:"Heads the underwriting department. DIRECT BUYER for underwriting automation tools."},{n:"Yoel Wagschal",t:"CFO",bg:"CFO since Oct 2018. Oversees financial strategy and portfolio performance."}],
+    ask:"Kerri, would your underwriting team benefit from seeing how AI handles bank statement analysis and risk scoring across different paper grades?"
+  },
+  {
+    id:57, name:"World Business Lenders", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Doug Naidus",t:"Founder, Chairman & CEO"},{n:"Terence Reilly",t:"SVP Loan Operations"}],
+    desc:"Direct lender specializing in real estate-secured short-term business loans (est. 2011). Elmsford, NY. 300+ employees. ~$37.8M revenue. Loans $5K-$2M, 3-24 months, 13%+ rates. All loans collateralized by real property. Founded by Doug Naidus (ex-Deutsche Bank MD, founded MortgageIT \u2192 NYSE IPO \u2192 sold to Deutsche Bank). Resumed full operations Apr 2023 after pause.",
+    notes:"300+ employees = serious scale. SVP Terence Reilly oversees Underwriting dept. RE-secured lending (not MCA) but same document processing pain. Founded by an ex-Deutsche Bank MD.",
+    news:[{h:"WBL secures anchor institutional financing, resumes full operations",s:"deBanked, Apr 2023",d:"Resumed funding after operational pause. New institutional capital backing."},{h:"WBL hits the Express Lane",s:"deBanked, Aug 2023",d:"Launched Express processing lane for faster loan turnarounds."},{h:"$30M facility from Asia-based investor consortium",s:"PR Newswire, 2018",d:"Plans to upsize to $100M. Signaling international capital appetite."}],
+    ice:"Doug, taking MortgageIT from startup to NYSE IPO and then building WBL into a 300-person operation \u2014 that\u2019s a track record few in alt lending can match. How\u2019s the Express lane performing?",
+    icebreakers:["Resuming full operations in 2023 with new institutional backing shows real resilience. What did the pause teach you about operational efficiency?","RE-secured lending at this scale means massive document volumes \u2014 appraisals, title reports, tax returns, bank statements. What\u2019s the biggest processing bottleneck?","The Express lane is a smart move. How much faster is it, and what was the key to speeding things up without compromising underwriting quality?","With 300+ employees, you\u2019re one of the largest alt lenders at this event. At that scale, even small per-deal time savings compound into huge gains."],
+    tp:[
+      "RE-secured lending generates massive document volumes. Our AI handles bank statement analysis, tax return extraction, and financial document OCR at scale.",
+      "At 300+ employees, even saving 10 minutes per deal across your pipeline translates to millions in operational savings annually."
+    ],
+    leaders:[{n:"Doug Naidus",t:"Founder, Chairman & CEO",bg:"28+ yrs financial services. Founded MortgageIT (NYSE IPO, sold to Deutsche Bank 2007). Previously Deutsche Bank MD."},{n:"Terence Reilly",t:"SVP Loan Operations",bg:"Oversees Processing, Valuation, Underwriting, and Closing. 12+ yrs RE investing. Joined 2021. KEY BUYER."},{n:"Andy Occhino",t:"MD, General Counsel & CCO",bg:"30+ years financial services. Legal and compliance oversight."},{n:"John O\u2019Donaghue",t:"SVP Wholesale",bg:"Manages referral partner relations and originations. 20+ years sales. Joined 2013."},{n:"Stephanie Hamilton",t:"MD, Chief Admin Officer",bg:"Senior operational leadership. Oversees administration."}],
+    ask:"Terence, would your underwriting team benefit from AI that processes bank statements, tax returns, and financial documents in seconds instead of minutes?"
+  },
+  {
+    id:58, name:"Reliance Financial", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Aryeh Miller",t:"CEO & Managing Partner"}],
+    desc:"Revenue-based financing provider, Farmingdale, NJ. Up to $5M per transaction. Record origination month Nov 2025. Secured strategic capital partnership with specialty finance firm (May 2025). Launched new business lending platform for UT and TX merchants (Sep 2025). Hired new Head of Underwriting and VP Sales (Dec 2025). Growing rapidly.",
+    notes:"FAST GROWING \u2014 record originations, new capital partnership, platform expansion, strategic hires all in 2025. Perfect timing for AI underwriting.",
+    news:[{h:"Record origination month, platform expansion, strategic hires",s:"BusinessWire, Dec 2025",d:"November was record month. Hired new Head of Underwriting and VP of Sales. New states added."},{h:"Secures strategic capital partnership",s:"BusinessWire, May 2025",d:"Partnership with specialty finance firm unlocks capacity to scale origination engine."},{h:"Launches lending platform in Utah and Texas",s:"Reliance Financial, Sep 2025",d:"Platform expansion giving new state merchants access to working capital."}],
+    ice:"Aryeh, a record origination month in November, new capital partnership, platform expansion into Utah and Texas, and hiring a Head of Underwriting \u2014 all in one year. That\u2019s serious momentum.",
+    icebreakers:["Hiring a Head of Underwriting and VP Sales simultaneously tells me you\u2019re scaling both pipeline and processing. How are you making sure underwriting keeps pace with sales?","The strategic capital partnership in May unlocked capacity. Now the question becomes: can your ops engine deploy that capital fast enough?","Expanding into Utah and Texas with a new lending platform \u2014 is the plan to go state by state, or was there something specific about those markets?","Revenue-based financing up to $5M per transaction is a higher ticket than most MCA. Does the underwriting complexity scale with deal size?"],
+    tp:[
+      "You\u2019re scaling everything at once \u2014 capital, states, team. AI underwriting is how you scale throughput without proportionally scaling headcount.",
+      "With a new Head of Underwriting coming on board, now is the perfect time to set them up with AI tools from day one."
+    ],
+    leaders:[{n:"Aryeh Miller",t:"CEO & Managing Partner",bg:"Industry veteran. Founded and leads Reliance Financial. Based in Farmingdale, NJ. Driving rapid growth."}],
+    ask:"Aryeh, with a new Head of Underwriting on board and record origination volume, would it make sense to explore AI underwriting automation before the next growth spike?"
+  },
+  {
+    id:59, name:"Blade Funding", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Sam Charlop",t:"CEO"},{n:"Fred Friedland",t:"Chief Underwriting Officer"}],
+    desc:"MCA funder and small business lender, Aventura, FL. Short-term loans up to $250K, LOC up to $100K. Funds as fast as 24 hours. Focused on small-to-mid market businesses. Lanyard sponsor at deBanked Connect.",
+    notes:"Has a Chief Underwriting Officer (Fred Friedland) \u2014 direct buyer for UW automation. Small but has dedicated UW leadership.",
+    news:[{h:"Attending deBanked Connect Miami 2026 as lanyard sponsor",s:"deBanked, Feb 2026",d:"Sponsoring the event alongside Novac Equities and ODD Recovery."},{h:"Active in B2B Finance Expo circuit",s:"deBanked, Nov 2025",d:"Regular presence at industry events."}],
+    ice:"Sam, Blade Funding\u2019s mission of making funding easier for small-to-mid market businesses resonates. How are you handling underwriting speed with Fred\u2019s team?",
+    icebreakers:["Having a dedicated Chief Underwriting Officer is smart for a funder your size. What does Fred\u2019s workflow look like on a typical deal?","24-hour funding is a strong promise. What\u2019s the biggest bottleneck between application and funding?","Sponsoring deBanked as a lanyard sponsor shows you\u2019re investing in brand visibility. How are ISOs finding Blade?"],
+    tp:[
+      "With a dedicated Chief Underwriting Officer, Blade clearly values the underwriting function. AI can multiply Fred\u2019s team\u2019s capacity.",
+      "24-hour funding requires fast underwriting. Our AI cuts bank statement review from 15 minutes to seconds."
+    ],
+    leaders:[{n:"Sam Charlop",t:"CEO & President",bg:"Founder and operator. Based in Aventura, FL."},{n:"Fred Friedland",t:"Chief Underwriting Officer",bg:"Heads underwriting decisions. DIRECT BUYER for AI underwriting tools."},{n:"Mark Goldberg",t:"ISO Relations Manager",bg:"Manages broker relationships and deal flow."}],
+    ask:"Fred, would you be interested in seeing how AI handles bank statement analysis? It could significantly speed up your underwriting pipeline."
+  },
+  {
+    id:60, name:"Novac Equities", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Jake D\u2019Amelio",t:"Founder & CEO"}],
+    desc:"Direct MCA funder, Miami, FL (est. Nov 2021). Two tiers: B-C Paper up to $3M ($75K+ monthly rev) and MICRO platform ($10K+ monthly rev). Same-day funding. BBB accredited Dec 2024 (A+ rating). 2-10 employees. Jake is also invested in professional padel (Novac WPR Road to Miami Circuit).",
+    notes:"Small but growing. Two-tier product (B-C paper + micro) shows structured approach. Miami-based, lanyard sponsor.",
+    news:[{h:"BBB Accreditation obtained",s:"BBB, Dec 2024",d:"A+ rating. Signals maturation and legitimacy-building."},{h:"Active on DailyFunder forums",s:"DailyFunder, ongoing",d:"Regular presence posting about funding availability and deal appetite."}],
+    ice:"Jake, building Novac from scratch in 2021 and earning a BBB A+ rating in three years shows you\u2019re building this the right way. How\u2019s the B-C paper tier performing?",
+    icebreakers:["Two tiers \u2014 B-C paper up to $3M and a micro platform \u2014 is smart segmentation for a young funder. Which tier is seeing more volume?","I hear you\u2019re also investing in professional padel. That\u2019s an interesting parallel \u2014 building both a funding business and a sports brand at the same time.","BBB A+ rating in year three sends a strong signal to ISOs. Has that accreditation noticeably impacted deal flow?"],
+    tp:[
+      "Two product tiers mean two different underwriting workflows. AI handles the analysis consistently across both.",
+      "As you scale from a small team, AI lets you grow deal volume without proportionally growing headcount."
+    ],
+    leaders:[{n:"Jake D\u2019Amelio",t:"Founder & CEO",bg:"Started as loan broker in NYC. Founded Novac Nov 2021. Also invests in professional padel (Novac WPR circuit)."},{n:"Thomas Klemser",t:"Operations Manager",bg:"Day-to-day operations management."},{n:"BriAnna Montesano",t:"ISO Relations Manager",bg:"Manages broker relationships and deal sourcing."}],
+    ask:"Jake, as you scale Novac\u2019s two-tier model, would AI underwriting help you process more deals without adding headcount?"
+  },
+  {
+    id:61, name:"Diesel Funding", type:"ICP", priority:4, phase:3, booth:true,
+    contacts:[{n:"Ari Mandel",t:"Principal"}],
+    desc:"Direct MCA funder, North Miami Beach, FL (est. 2017). Known for funding complex and higher-risk deals that other funders won\u2019t touch. Same-day capability. Performance-based funding decisions tied to actual business revenue. Small team (2-10).",
+    notes:"Small boutique funder. Handles complex deals \u2014 AI could help with the harder underwriting analysis.",
+    news:[{h:"Active on DailyFunder forums",s:"DailyFunder, ongoing",d:"Posts about funding availability and appetite for complex deals."}],
+    ice:"Ari, Diesel Funding\u2019s reputation for taking on complex deals others won\u2019t touch is interesting. What makes you comfortable with deals other funders pass on?",
+    icebreakers:["Taking on deals other funders decline requires either superior risk assessment or higher risk tolerance. Which is it for Diesel?","Running a focused MCA shop in North Miami Beach since 2017 \u2014 what\u2019s kept you in the game through the industry\u2019s ups and downs?"],
+    tp:[
+      "Complex deals need deeper analysis. Our AI can parse bank statements and identify patterns that manual review might miss.",
+      "When you\u2019re funding deals others won\u2019t, having AI-powered risk analysis gives you confidence in your decisions."
+    ],
+    leaders:[{n:"Ari Mandel",t:"Principal / Manager",bg:"Founder and primary operator. Based in North Miami Beach, FL. Runs underwriting and operations."}],
+    ask:"Ari, would you be interested in seeing how AI handles the complex bank statement analysis that makes your deals different?"
+  },
+  {
+    id:62, name:"Loanworx", type:"ICP", priority:5, phase:3, booth:true,
+    contacts:[],
+    desc:"End-to-end pre-funding technology platform for MCA industry. Family-run, focused purely on tech (not a funder). Modernizes every step from application intake to contract signing. Potential integration partner or partial competitor.",
+    notes:"TECH PLATFORM, not a funder. Potential integration partner \u2014 HyperVerge AI could plug into Loanworx. Similar play to OnyxIQ/SmartMCA.",
+    news:[{h:"MCA operations platform",s:"loanworx.com, 2025",d:"End-to-end pre-funding platform handling application intake, underwriting workflow, and contract generation."}],
+    ice:"Tell me about Loanworx \u2014 what\u2019s the biggest pain point you\u2019re solving for MCA funders right now?",
+    icebreakers:["As a family-run tech business in MCA, you\u2019re in a unique position. What drove the decision to build a platform rather than fund deals?","How are your MCA funder clients handling the underwriting analysis step within Loanworx? Is that a gap you\u2019re looking to fill?"],
+    tp:[
+      "Loanworx handles the workflow; HyperVerge handles the intelligence. Together, funders get workflow automation AND AI-powered analysis.",
+      "Ask what their funders\u2019 biggest pain points are \u2014 competitive intel on what the market needs."
+    ],
+    leaders:[],
+    ask:"Would your MCA funder clients benefit from AI-powered bank statement analysis and risk scoring integrated into the Loanworx workflow?"
+  },
+  {
+    id:63, name:"APP Funding", type:"ICP", priority:5, phase:3, booth:true,
+    contacts:[{n:"Ben Sanders",t:"CEO"},{n:"Yosef Zavulunov",t:"COO"}],
+    desc:"Direct MCA funder, NYC (29 W 36th St). MCAs $10K-$5M. No collateral required. Repayment tied to daily credit card sales. BBB accredited Jul 2023. Very small team (~3 employees). Claims 500+ brands funded.",
+    notes:"Very small operation. Lower priority but worth a quick hello if nearby.",
+    news:[{h:"BBB Accreditation",s:"BBB, Jul 2023",d:"Accredited with the Better Business Bureau."}],
+    ice:"Ben, how\u2019s APP Funding\u2019s deal flow looking? What types of businesses are you seeing the most demand from?",
+    icebreakers:["MCAs up to $5M is a wide range for a focused shop. Where does most of your volume concentrate?"],
+    tp:[
+      "Even small funders benefit from AI bank statement analysis \u2014 faster decisions, fewer manual errors.",
+      "Lower priority \u2014 quick intro only unless they show strong interest."
+    ],
+    leaders:[{n:"Ben Sanders",t:"CEO",bg:"Leads APP Funding operations."},{n:"Yosef Zavulunov",t:"COO",bg:"Previously ISO Manager. Now handles operations and deal evaluation."}],
+    ask:"Would you be interested in a quick demo of AI-powered bank statement analysis?"
   }
 ];
 
@@ -2259,7 +2383,7 @@ function toggleMetFromDetail(id) {
 var SCHEDULE = [
   { phase: 1, start: 660, end: 780, companies: ['Bitty','Fundfi','FundKite','BriteCap Financial','Vox Funding','PIRS Capital'] },
   { phase: 2, start: 780, end: 870, companies: ['CAN Capital','Dexly Finance','Aspire Funding Platform','Simply Funding','MonetaFi','Elevate Funding'] },
-  { phase: 3, start: 870, end: 930, companies: ['idea Financial','Gulf Coast Business Credit','Spartan Capital'] },
+  { phase: 3, start: 870, end: 930, companies: ['idea Financial','Gulf Coast Business Credit','Spartan Capital','The LCF Group / Reliant Funding','World Business Lenders','Reliance Financial','Blade Funding','Novac Equities','Diesel Funding','Loanworx','APP Funding'] },
   { phase: 4, start: 930, end: 990, companies: ['Wing Lake Capital Partners','Rapid Finance','Forward Financing','Likety','United Capital Source','Big Think Capital'] },
   { phase: 5, start: 990, end: 1020, companies: ['Velocity Capital Group'] }
 ];
