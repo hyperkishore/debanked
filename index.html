@@ -388,6 +388,55 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .detail-notes:focus{border-color:var(--accent)}
 .detail-notes::placeholder{color:var(--dim)}
 
+/* Post-Met Capture Fields */
+.rate-capture{text-align:left;margin-bottom:14px}
+.rate-capture-label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;
+  margin-bottom:4px;font-weight:600}
+.rate-capture-input{width:100%;height:36px;background:var(--bg);border:1px solid var(--border);
+  border-radius:8px;padding:0 10px;color:var(--text);font-size:13px;margin-bottom:8px;
+  font-family:inherit;outline:none;-webkit-user-select:text;user-select:text}
+.rate-capture-input:focus{border-color:var(--accent)}
+.rate-capture-input::placeholder{color:var(--dim);font-size:12px}
+
+/* Objection Cards */
+.objection-card{background:var(--surface);border-radius:10px;margin-bottom:8px;overflow:hidden}
+.objection-q{padding:12px 14px;cursor:pointer;-webkit-tap-highlight-color:transparent;
+  display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--sqo)}
+.objection-q:active{background:var(--surface2)}
+.objection-q .obj-icon{width:20px;height:20px;border-radius:50%;background:rgba(239,68,68,.1);
+  display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0}
+.objection-q .obj-text{flex:1}
+.objection-q .obj-chev{color:var(--dim);font-size:14px;transition:transform .2s;flex-shrink:0}
+.objection-card.open .obj-chev{transform:rotate(90deg)}
+.objection-a{display:none;padding:0 14px 12px;font-size:13px;line-height:1.6;color:var(--text);
+  border-top:1px solid var(--border)}
+.objection-card.open .objection-a{display:block;padding-top:10px}
+
+/* Referral Map */
+.ref-card{background:var(--surface);border-radius:10px;padding:12px 14px;margin-bottom:8px;
+  display:flex;align-items:center;gap:10px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ref-card:active{background:var(--surface2)}
+.ref-from{text-align:right;min-width:0;flex:1}
+.ref-from-name{font-size:13px;font-weight:700;color:var(--icp)}
+.ref-from-co{font-size:10px;color:var(--dim)}
+.ref-arrow{color:var(--accent);font-size:18px;flex-shrink:0;opacity:.6}
+.ref-to{min-width:0;flex:1}
+.ref-to-name{font-size:13px;font-weight:700;color:var(--text)}
+.ref-to-co{font-size:10px;color:var(--dim)}
+.ref-reason{font-size:11px;color:var(--dim);font-style:italic;margin-top:2px}
+
+/* Personal Hooks */
+.detail-hook{display:inline-block;font-size:11px;padding:3px 8px;border-radius:6px;
+  background:rgba(168,85,247,.12);color:#c084fc;margin:2px 2px 0 0;font-weight:600}
+.detail-hooks-row{margin-top:6px;display:flex;flex-wrap:wrap;gap:3px}
+
+/* Met Capture Display in Detail View */
+.detail-capture{background:var(--surface);border-radius:10px;padding:12px;margin-bottom:8px;
+  border-left:3px solid #8b5cf6}
+.detail-capture-label{font-size:10px;text-transform:uppercase;letter-spacing:.5px;
+  color:#8b5cf6;font-weight:700;margin-bottom:3px}
+.detail-capture-val{font-size:13px;color:var(--text);line-height:1.4}
+
 /* Contact Links */
 .contact-name{color:var(--dim)}
 .contact-li-btn{color:var(--dim);text-decoration:none;-webkit-tap-highlight-color:transparent;
@@ -402,7 +451,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 <!-- Header -->
 <header class="hdr">
   <div class="hdr-title">DeBanked Connect</div>
-  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.07</span></div>
+  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.08</span></div>
 </header>
 
 <!-- Search -->
@@ -449,6 +498,14 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
       <button class="rate-tag" data-t="intro" onclick="toggleFollowUp('intro')">Got Intro</button>
       <button class="rate-tag" data-t="none" onclick="toggleFollowUp('none')">No Action</button>
     </div>
+    <div class="rate-capture">
+      <div class="rate-capture-label">What do they care about?</div>
+      <input class="rate-capture-input" id="capCare" placeholder="e.g. speed, cost, scaling..." autocomplete="off">
+      <div class="rate-capture-label">What did you promise?</div>
+      <input class="rate-capture-input" id="capPromise" placeholder="e.g. send demo link, intro to..." autocomplete="off">
+      <div class="rate-capture-label">Personal detail learned?</div>
+      <input class="rate-capture-input" id="capPersonal" placeholder="e.g. has 2 kids, loves golf..." autocomplete="off" style="margin-bottom:0">
+    </div>
     <button class="rate-done" onclick="saveRating()">Save</button>
   </div>
 </div>
@@ -493,6 +550,66 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
       <li>Working with Fundfi &amp; FundKite as existing clients</li>
       <li>SOC 2 compliant, enterprise-grade data security</li>
     </ul>
+
+    <p class="section-label">Objection Responses</p>
+    <div class="objection-card" onclick="this.classList.toggle('open')">
+      <div class="objection-q"><span class="obj-icon">!</span><span class="obj-text">"We built our own system"</span><span class="obj-chev">&rsaquo;</span></div>
+      <div class="objection-a">That&rsquo;s great &mdash; we&rsquo;re not here to replace it. We complement proprietary systems by handling the upstream extraction work: bank statement parsing, CLEAR report analysis, stips verification. Your scoring model stays yours &mdash; we just feed it cleaner data, faster. FundKite built their own stack too and uses us for exactly this.</div>
+    </div>
+    <div class="objection-card" onclick="this.classList.toggle('open')">
+      <div class="objection-q"><span class="obj-icon">!</span><span class="obj-text">"We&rsquo;re not ready for AI yet"</span><span class="obj-chev">&rsaquo;</span></div>
+      <div class="objection-a">That&rsquo;s what most of our 450+ clients said initially. The beauty is there&rsquo;s no rip-and-replace &mdash; we sit alongside your existing workflow. Your underwriters still make the final call, they just get there 8x faster. Think of it as giving them a co-pilot, not replacing the pilot.</div>
+    </div>
+    <div class="objection-card" onclick="this.classList.toggle('open')">
+      <div class="objection-q"><span class="obj-icon">!</span><span class="obj-text">"What does it cost?"</span><span class="obj-chev">&rsaquo;</span></div>
+      <div class="objection-a">We price per application processed, so it scales with your volume. For most funders doing 50+ deals/day, the ROI is 10-20x within the first month &mdash; you&rsquo;re saving 35 min of underwriter time per deal. Happy to run a specific ROI calculation for your volume in a quick demo call.</div>
+    </div>
+    <div class="objection-card" onclick="this.classList.toggle('open')">
+      <div class="objection-q"><span class="obj-icon">!</span><span class="obj-text">"We tried AI before and it didn&rsquo;t work"</span><span class="obj-chev">&rsaquo;</span></div>
+      <div class="objection-a">I hear that a lot &mdash; usually from funders who tried generic OCR or chatbot tools. We&rsquo;re purpose-built for MCA/lending underwriting. Our models are trained on millions of bank statements, CLEAR reports, and applications specifically in this industry. That&rsquo;s why we have 450+ financial enterprises using us, not 450 failed pilots.</div>
+    </div>
+    <div class="objection-card" onclick="this.classList.toggle('open')">
+      <div class="objection-q"><span class="obj-icon">!</span><span class="obj-text">"Our underwriters are fast enough"</span><span class="obj-chev">&rsaquo;</span></div>
+      <div class="objection-a">Fast is relative &mdash; if your competitors are closing deals in 2 hours and you&rsquo;re at 4, ISOs route deals to them first. But it&rsquo;s not just speed. It&rsquo;s also consistency: our AI catches things human reviewers miss at 4 PM on a Friday. And it never calls in sick. How many deals per day are your underwriters handling right now?</div>
+    </div>
+
+    <p class="section-label">Referral Map</p>
+    <p style="font-size:12px;color:var(--dim);margin-bottom:10px">Warm contacts who can introduce you to cold targets</p>
+    <div class="ref-card" onclick="jumpTo('Vox Funding')">
+      <div class="ref-from"><div class="ref-from-name">Alex Shvarts</div><div class="ref-from-co">FundKite (Client)</div></div>
+      <div class="ref-arrow">&rarr;</div>
+      <div class="ref-to"><div class="ref-to-name">Louis Calderone</div><div class="ref-to-co">Vox Funding</div><div class="ref-reason">Both on Funder Panel together</div></div>
+    </div>
+    <div class="ref-card" onclick="jumpTo('CAN Capital')">
+      <div class="ref-from"><div class="ref-from-name">Jim Noel</div><div class="ref-from-co">BriteCap (SQO)</div></div>
+      <div class="ref-arrow">&rarr;</div>
+      <div class="ref-to"><div class="ref-to-name">Mark Cisco</div><div class="ref-to-co">CAN Capital</div><div class="ref-reason">Jim was VP at CAN Capital previously</div></div>
+    </div>
+    <div class="ref-card" onclick="jumpTo('Dynamic Capital')">
+      <div class="ref-from"><div class="ref-from-name">Brian Kandinov</div><div class="ref-from-co">Fundfi (Client)</div></div>
+      <div class="ref-arrow">&rarr;</div>
+      <div class="ref-to"><div class="ref-to-name">Steven Edisis</div><div class="ref-to-co">Dynamic Capital</div><div class="ref-reason">Both on Funder Panel, NYC funders</div></div>
+    </div>
+    <div class="ref-card" onclick="jumpTo('Rapid Finance')">
+      <div class="ref-from"><div class="ref-from-name">Richard Henderson</div><div class="ref-from-co">BriteCap (SQO)</div></div>
+      <div class="ref-arrow">&rarr;</div>
+      <div class="ref-to"><div class="ref-to-name">Mark Cerminaro</div><div class="ref-to-co">Rapid Finance</div><div class="ref-reason">Henderson was CRO at CAN, Cerminaro CRO at Rapid &mdash; same circles</div></div>
+    </div>
+    <div class="ref-card" onclick="jumpTo('Wing Lake Capital Partners')">
+      <div class="ref-from"><div class="ref-from-name">Andrew Mallinger</div><div class="ref-from-co">PIRS Capital (Partner)</div></div>
+      <div class="ref-arrow">&rarr;</div>
+      <div class="ref-to"><div class="ref-to-name">Shaya Baum</div><div class="ref-to-co">Wing Lake Capital</div><div class="ref-reason">Both MCA-focused, PIRS can vouch for HyperVerge</div></div>
+    </div>
+    <div class="ref-card" onclick="jumpTo('Velocity Capital Group')">
+      <div class="ref-from"><div class="ref-from-name">Alex Shvarts</div><div class="ref-from-co">FundKite (Client)</div></div>
+      <div class="ref-arrow">&rarr;</div>
+      <div class="ref-to"><div class="ref-to-name">Jay Avigdor</div><div class="ref-to-co">Velocity Capital Group</div><div class="ref-reason">Both NYC MCA veterans, dinner roundtable tonight</div></div>
+    </div>
+    <div class="ref-card" onclick="jumpTo('Forward Financing')">
+      <div class="ref-from"><div class="ref-from-name">Andrew Mallinger</div><div class="ref-from-co">PIRS Capital (Partner)</div></div>
+      <div class="ref-arrow">&rarr;</div>
+      <div class="ref-to"><div class="ref-to-name">Jill Capadanno</div><div class="ref-to-co">Forward Financing</div><div class="ref-reason">PIRS partnership validates AI underwriting for enterprise funders</div></div>
+    </div>
   </div>
 
   <!-- SCHEDULE TAB -->
@@ -710,7 +827,7 @@ const CO = [
       "We cut that to under 5 minutes \u2014 application intake, cash flow analysis, CLEAR report review, all automated with explainable decisions.",
       "We\u2019re already working with PIRS Capital in this space. Happy to share what we\u2019ve seen work."
     ],
-    leaders:[{n:"Craig Hecker",t:"CEO",bg:"Industry veteran. Founded and sold Rapid Capital Funding. Acquired Bitty in 2020. OppFi holds 35% equity with path to full ownership."},{n:"Daniel Dames",t:"VP of Operations",bg:"UPitt CS + Psychology. Previously at PNC, Compunetix. Tech background makes him receptive to automation. Funder Panel speaker."},{n:"Brian Bastio",t:"Director of Marketing",bg:"8+ years consulting in consumer/business finance. Oversees all digital marketing."}],
+    leaders:[{n:"Craig Hecker",t:"CEO",bg:"Industry veteran. Founded and sold Rapid Capital Funding. Acquired Bitty in 2020. OppFi holds 35% equity with path to full ownership.",hooks:["Serial entrepreneur","Built & sold Rapid Capital"]},{n:"Daniel Dames",t:"VP of Operations",bg:"UPitt CS + Psychology. Previously at PNC, Compunetix. Tech background makes him receptive to automation. Funder Panel speaker.",hooks:["UPitt CS grad","Tech-turned-ops","PNC alum"]},{n:"Brian Bastio",t:"Director of Marketing",bg:"8+ years consulting in consumer/business finance. Oversees all digital marketing."}],
     ask:"Would it be worth a 20-minute demo next week to show you the platform?"
   },
   {
@@ -726,7 +843,7 @@ const CO = [
       "With your broker network sending in deals, consistency is key. Our AI ensures every application gets the same rigorous, fast review regardless of source.",
       "Jim, with your CAN Capital background, you\u2019ve seen what happens when underwriting can\u2019t keep up with capital availability. We solve that."
     ],
-    leaders:[{n:"Richard Henderson",t:"CEO",bg:"23+ yrs in equipment leasing/SMB lending. Previously CRO at CAN Capital, senior roles at Marlin Capital. Appointed Sep 2024."},{n:"Dave Lafferty",t:"Chief Credit Officer",bg:"30 yrs in credit, risk, underwriting. Previously CCO at CAN Capital. Penn State. THE key buyer for underwriting tech."},{n:"Jim Noel",t:"VP Strategic Partnerships",bg:"20+ yrs in business lending. Previously VP Vendor Finance at CAN Capital. La Salle Univ. Broker Panel speaker."},{n:"Molly Coleman",t:"CAO & General Counsel",bg:"14+ yrs at BriteCap. Georgetown Law (magna cum laude). Brown Univ. Promoted Aug 2025."},{n:"David Lee",t:"VP Sales & Origination",bg:"26 yrs BD/sales experience. Led ForwardLine sales transformation. Previously at Apple. UC Santa Barbara."}],
+    leaders:[{n:"Richard Henderson",t:"CEO",bg:"23+ yrs in equipment leasing/SMB lending. Previously CRO at CAN Capital, senior roles at Marlin Capital. Appointed Sep 2024."},{n:"Dave Lafferty",t:"Chief Credit Officer",bg:"30 yrs in credit, risk, underwriting. Previously CCO at CAN Capital. Penn State. THE key buyer for underwriting tech.",hooks:["Penn State","30yr credit veteran","CAN Capital CCO alum","KEY BUYER"]},{n:"Jim Noel",t:"VP Strategic Partnerships",bg:"20+ yrs in business lending. Previously VP Vendor Finance at CAN Capital. La Salle Univ. Broker Panel speaker.",hooks:["La Salle Univ","CAN Capital alum","Panelist"]},{n:"Molly Coleman",t:"CAO & General Counsel",bg:"14+ yrs at BriteCap. Georgetown Law (magna cum laude). Brown Univ. Promoted Aug 2025.",hooks:["Georgetown Law","Brown Univ","Magna cum laude","14yr tenure"]},{n:"David Lee",t:"VP Sales & Origination",bg:"26 yrs BD/sales experience. Led ForwardLine sales transformation. Previously at Apple. UC Santa Barbara."}],
     ask:"With BriteLine scaling, would it make sense to explore how AI underwriting could support that growth?"
   },
   {
@@ -759,7 +876,7 @@ const CO = [
       "With two funds needing different risk models, you need configurable underwriting workflows. That\u2019s exactly what we do.",
       "For a 16-person team, going from 40 min to 5 min per deal is transformative. That\u2019s like adding 5 more underwriters without the headcount."
     ],
-    leaders:[{n:"Shaya Baum",t:"CEO & Managing Partner",bg:"Wayne State accounting. Founded/sold tax prep company at 19. Acquired Franklin Capital 2004. EY Entrepreneur of Year 2022 finalist."},{n:"Eli Golshteyn",t:"Director of Underwriting",bg:"THE primary buyer. Prev internal audit at Veoneer and Masco. Values data accuracy. Feels daily pain of manual underwriting."},{n:"Sarah (Piteo) Annas",t:"Managing Partner",bg:"Miami Univ (Marketing). Hosts Back to Business podcast. Previously at Insight Global."},{n:"Angelina Fletcher",t:"Dir of Business Development",bg:"Michigan State (Marketing). Manages broker relationships. Entered business lending 2019."}],
+    leaders:[{n:"Shaya Baum",t:"CEO & Managing Partner",bg:"Wayne State accounting. Founded/sold tax prep company at 19. Acquired Franklin Capital 2004. EY Entrepreneur of Year 2022 finalist.",hooks:["Started at 19","Wayne State","EY Entrepreneur finalist"]},{n:"Eli Golshteyn",t:"Director of Underwriting",bg:"THE primary buyer. Prev internal audit at Veoneer and Masco. Values data accuracy. Feels daily pain of manual underwriting.",hooks:["KEY BUYER","Audit background","Data accuracy obsessed"]},{n:"Sarah (Piteo) Annas",t:"Managing Partner",bg:"Miami Univ (Marketing). Hosts Back to Business podcast. Previously at Insight Global.",hooks:["Miami Univ","Podcaster","Marketing background"]},{n:"Angelina Fletcher",t:"Dir of Business Development",bg:"Michigan State (Marketing). Manages broker relationships. Entered business lending 2019."}],
     ask:"Would you be open to a quick call next week to explore how this could work for your consolidation underwriting?"
   },
   // --- CLIENTS ---
@@ -776,7 +893,7 @@ const CO = [
       "With the credit facility doubling, are you feeling the underwriting throughput pressure?",
       "We can configure product-specific workflows for your new traditional loan and credit splits products."
     ],
-    leaders:[{n:"Efraim (Brian) Kandinov",t:"Co-Founder & CEO",bg:"Indiana Univ Kelley School of Business (Finance). Leading rapid North American expansion with 2x facility expansion + 2 new products in 2025."},{n:"Natasha Dillon",t:"Co-Founder & CFO",bg:"Pace Univ MBA. Previously CIO at Radlett Capital (alt investments). Former CEO of Dillon Strategic Solutions."}],
+    leaders:[{n:"Efraim (Brian) Kandinov",t:"Co-Founder & CEO",bg:"Indiana Univ Kelley School of Business (Finance). Leading rapid North American expansion with 2x facility expansion + 2 new products in 2025.",hooks:["Indiana Kelley School","Finance major","Rapid scaler"]},{n:"Natasha Dillon",t:"Co-Founder & CFO",bg:"Pace Univ MBA. Previously CIO at Radlett Capital (alt investments). Former CEO of Dillon Strategic Solutions."}],
     ask:"Would you be willing to be a reference for us? Even a quick quote about the impact would be huge."
   },
   {
@@ -792,7 +909,7 @@ const CO = [
       "We\u2019re not here to replace your proprietary stack \u2014 we complement it. Bank statement OCR, CLEAR report parsing, stips verification \u2014 the extraction work that feeds your scoring algorithms.",
       "With the new Merchant Services division, you\u2019re creating cross-analysis opportunities between payment and funding data."
     ],
-    leaders:[{n:"Alex Shvarts",t:"Founder & CEO",bg:"30+ yrs building businesses. Personally coded FundKite platform. Forbes Technology Council (2019). Talk tech-to-tech."},{n:"Rick Kuci",t:"COO",bg:"Former Chairman/CEO of Grove Bank & Trust. Promoted Sep 2023. Brings banking rigor to fintech speed."},{n:"Gene Zeitlin",t:"VP, Channel Partner Relations",bg:"Decade+ in fintech. Manages ISO/broker channel. Speed-to-approval is his competitive weapon."},{n:"Justin Verger",t:"VP, Treasury",bg:"CUNY Brooklyn College. Manages capital deployment and risk."}],
+    leaders:[{n:"Alex Shvarts",t:"Founder & CEO",bg:"30+ yrs building businesses. Personally coded FundKite platform. Forbes Technology Council (2019). Talk tech-to-tech.",hooks:["Self-taught coder","Forbes Tech Council","Talk tech-to-tech"]},{n:"Rick Kuci",t:"COO",bg:"Former Chairman/CEO of Grove Bank & Trust. Promoted Sep 2023. Brings banking rigor to fintech speed."},{n:"Gene Zeitlin",t:"VP, Channel Partner Relations",bg:"Decade+ in fintech. Manages ISO/broker channel. Speed-to-approval is his competitive weapon."},{n:"Justin Verger",t:"VP, Treasury",bg:"CUNY Brooklyn College. Manages capital deployment and risk."}],
     ask:"Alex, given your tech credibility in the space, a mention from FundKite carries weight. Would you be open to that?"
   },
   // --- ICPs (Detailed) ---
@@ -808,7 +925,7 @@ const CO = [
       "$150M in new capital with a small team. The bottleneck is now underwriting, not capital.",
       "AI isn\u2019t a luxury \u2014 it\u2019s a necessity to deploy that capital profitably at speed."
     ],
-    leaders:[{n:"Adam Benowitz",t:"CEO",bg:"UC Berkeley. Former trader, co-founded Vision Capital Advisors (150+ portfolio cos). Led $150M Raven Capital facility."},{n:"Louis Calderone",t:"President & Co-Founder",bg:"Hofstra Univ. 25+ yrs exp. Former President at Aegis Capital Corp. Speaking on Funder Panel."},{n:"Brian Mullins",t:"CTO, Head of Technology & Data",bg:"Leads tech, data analytics, and marketing. Primary technology buyer."},{n:"Peter Reilly",t:"CFO",bg:"Oversees financial operations. Focused on ROI and portfolio performance."},{n:"Michael Mosiello",t:"General Counsel",bg:"Oversees legal and compliance for VOX alternative financing operations."}],
+    leaders:[{n:"Adam Benowitz",t:"CEO",bg:"UC Berkeley. Former trader, co-founded Vision Capital Advisors (150+ portfolio cos). Led $150M Raven Capital facility.",hooks:["UC Berkeley","Ex-Wall St trader","150+ portfolio cos"]},{n:"Louis Calderone",t:"President & Co-Founder",bg:"Hofstra Univ. 25+ yrs exp. Former President at Aegis Capital Corp. Speaking on Funder Panel.",hooks:["Hofstra alum","25yr veteran","Ex-Aegis Capital Pres","Panelist"]},{n:"Brian Mullins",t:"CTO, Head of Technology & Data",bg:"Leads tech, data analytics, and marketing. Primary technology buyer."},{n:"Peter Reilly",t:"CFO",bg:"Oversees financial operations. Focused on ROI and portfolio performance."},{n:"Michael Mosiello",t:"General Counsel",bg:"Oversees legal and compliance for VOX alternative financing operations."}],
     ask:"What would it mean for Vox if you could double your underwriting throughput without adding headcount?"
   },
   {
@@ -824,7 +941,7 @@ const CO = [
       "We help reduce underwriting time on deals you\u2019d ultimately decline \u2014 saving your team\u2019s most valuable resource.",
       "Are your legacy systems keeping up with the speed your broker partners expect?"
     ],
-    leaders:[{n:"Edward Siciliano",t:"CEO",bg:"Rutgers. 30+ yrs in commercial financing. Prev COO/Interim CEO at Marlin Business Services, drove 5x origination growth."},{n:"Richard Irwin",t:"CFO (CFA)",bg:"Rutgers Business School. 30 yrs in finance. Appointed CFO Oct 2023."},{n:"Kevin Duffy",t:"SVP Sales & Business Development",bg:"At CAN Capital 20+ years since 2003. Manages ISO/broker partner program."},{n:"Mark Cisco",t:"VP Business Development",bg:"Columbia Univ. Previously at Capgemini (Banking & Capital Markets), Kapitus."},{n:"Christopher Holland",t:"Dir Partner Business Development",bg:"UVA. Previously at Marlin Capital Solutions and Direct Capital/CIT Bank."}],
+    leaders:[{n:"Edward Siciliano",t:"CEO",bg:"Rutgers. 30+ yrs in commercial financing. Prev COO/Interim CEO at Marlin Business Services, drove 5x origination growth."},{n:"Richard Irwin",t:"CFO (CFA)",bg:"Rutgers Business School. 30 yrs in finance. Appointed CFO Oct 2023."},{n:"Kevin Duffy",t:"SVP Sales & Business Development",bg:"At CAN Capital 20+ years since 2003. Manages ISO/broker partner program."},{n:"Mark Cisco",t:"VP Business Development",bg:"Columbia Univ. Previously at Capgemini (Banking & Capital Markets), Kapitus.",hooks:["Columbia Univ","Capgemini alum","Banking & Cap Markets"]},{n:"Christopher Holland",t:"Dir Partner Business Development",bg:"UVA. Previously at Marlin Capital Solutions and Direct Capital/CIT Bank."}],
     ask:"Would it be worth exploring how AI can enhance your existing systems without disrupting what works?"
   },
   {
@@ -840,7 +957,7 @@ const CO = [
       "ISOs send deals to the funder that responds fastest. We make you that funder.",
       "As an investor yourself, what ROI metrics would matter most for a technology investment like this?"
     ],
-    leaders:[{n:"Burkay Kaplan",t:"CEO",bg:"William Paterson Univ (Finance + Sales). Harvard Business School, Stanford GSB, Wharton. 70+ angel investments. 32+ countries experience."}],
+    leaders:[{n:"Burkay Kaplan",t:"CEO",bg:"William Paterson Univ (Finance + Sales). Harvard Business School, Stanford GSB, Wharton. 70+ angel investments. 32+ countries experience.",hooks:["HBS + Stanford + Wharton","70+ angel investments","32 countries","Crypto investor"]}],
     ask:"Could we schedule a focused 20-minute ROI analysis specific to Dexly\u2019s deal volume?"
   },
   {
@@ -1347,7 +1464,7 @@ const CO = [
     news:[{h:"Record Q4 2025: $4.85M net income",s:"GlobeNewsWire, Feb 2026",d:"Best year in company history. Total assets $1.11B, deposits $931.75M."},{h:"Launching HUD/FHA lending subsidiary",s:"Press Release, 2025-2026",d:"New subsidiary for bridge-to-HUD and FHA-insured lending for multifamily and healthcare."},{h:"SBA Preferred Lender status achieved",s:"OptimumBank, 2025",d:"Achieved PLP status in record time, accelerating SBA loan approvals."}],
     icebreakers:["Seth, crossing a billion in assets with record earnings is impressive. How is the SBA lending volume scaling now that you have Preferred Lender status?","The new HUD/FHA subsidiary for multifamily and healthcare is a smart adjacency. How complex is the underwriting for bridge-to-HUD loans?","I noticed OptimumBank is rolling out a new API-based core banking platform. How does that change the way you approach lending technology partnerships?","Going from zero to SBA Preferred Lender in record time suggests aggressive scaling. What\u2019s the bottleneck now \u2014 deal sourcing or processing capacity?"],
     tp:["OptimumBank is a regulated bank, not typical MCA, but they\u2019re scaling SBA lending rapidly. AI could help with SBA underwriting automation.","Seth is Investor Relations, not operations \u2014 he\u2019s a strategic connector. Ask him to introduce you to the head of lending or credit.","The new HUD/FHA subsidiary launching in 2026 will need underwriting infrastructure. Position as a partner for the new venture."],
-    leaders:[{n:"Seth Denison",t:"MD, Investor & Corporate Relations",bg:"JD from FIU (2010). Former SEC Legal Intern. Restructured $5B in CMBS debt. Previously at Lee & Associates and Hart Advisors. Partner in fund managing 60+ manufactured housing communities. DeBanked panelist."}],
+    leaders:[{n:"Seth Denison",t:"MD, Investor & Corporate Relations",bg:"JD from FIU (2010). Former SEC Legal Intern. Restructured $5B in CMBS debt. Previously at Lee & Associates and Hart Advisors. Partner in fund managing 60+ manufactured housing communities. DeBanked panelist.",hooks:["FIU Law","Ex-SEC intern","$5B CMBS experience","60+ housing communities"]}],
     ask:"Seth, who on your team is leading the SBA and HUD lending operations? I\u2019d love to connect with them about how AI underwriting could support the scaling."
   }
 ];
@@ -1764,11 +1881,15 @@ var pendingFollowUps = [];
 function showRatingModal(id) {
   pendingRateId = id;
   var c = CO.find(x => x.id === id);
-  pendingRating = ratingState[id] ? ratingState[id].rating || '' : '';
-  pendingFollowUps = ratingState[id] ? (ratingState[id].followUps || []).slice() : [];
+  var rs = ratingState[id] || {};
+  pendingRating = rs.rating || '';
+  pendingFollowUps = rs.followUps ? rs.followUps.slice() : [];
   document.getElementById('rateSub').textContent = c ? c.name : '';
   document.querySelectorAll('.rate-btn').forEach(b => b.classList.toggle('sel', b.dataset.r === pendingRating));
   document.querySelectorAll('.rate-tag').forEach(t => t.classList.toggle('sel', pendingFollowUps.indexOf(t.dataset.t) > -1));
+  document.getElementById('capCare').value = rs.care || '';
+  document.getElementById('capPromise').value = rs.promise || '';
+  document.getElementById('capPersonal').value = rs.personal || '';
   document.getElementById('rateOverlay').classList.add('show');
 }
 
@@ -1785,8 +1906,18 @@ function toggleFollowUp(t) {
 }
 
 function saveRating() {
-  if (pendingRateId && pendingRating) {
-    ratingState[pendingRateId] = { rating: pendingRating, followUps: pendingFollowUps, ts: Date.now() };
+  if (pendingRateId) {
+    var care = document.getElementById('capCare').value.trim();
+    var promise = document.getElementById('capPromise').value.trim();
+    var personal = document.getElementById('capPersonal').value.trim();
+    var entry = ratingState[pendingRateId] || {};
+    entry.rating = pendingRating || entry.rating || '';
+    entry.followUps = pendingFollowUps;
+    entry.ts = Date.now();
+    if (care) entry.care = care;
+    if (promise) entry.promise = promise;
+    if (personal) entry.personal = personal;
+    ratingState[pendingRateId] = entry;
     localStorage.setItem('debanked_ratings', JSON.stringify(ratingState));
   }
   document.getElementById('rateOverlay').classList.remove('show');
@@ -1797,6 +1928,8 @@ function saveRating() {
   } else {
     renderCompanies(document.getElementById('searchInput').value.trim());
   }
+  // Refresh detail view if open
+  if (detailId) showDetail(detailId);
 }
 
 // ============================================================
@@ -1848,6 +1981,37 @@ function glanceOpenCard() {
 // ============================================================
 var detailId = null;
 
+function extractHooks(bg) {
+  if (!bg) return [];
+  var hooks = [];
+  // Schools
+  var schoolPatterns = [
+    /\b(Harvard|Stanford|Wharton|MIT|Columbia|Georgetown|Yale|Princeton|Cornell|NYU|UC Berkeley|Rutgers|Penn State|Hofstra|Wayne State|Indiana|Pace|La Salle|Miami Univ|Brown|FIU|CUNY|UVA|UPitt|William Paterson|Michigan State|Kelley School)\b/gi
+  ];
+  schoolPatterns.forEach(function(re) {
+    var m;
+    while ((m = re.exec(bg)) !== null) {
+      var s = m[1].trim();
+      if (hooks.indexOf(s + ' alum') === -1) hooks.push(s + ' alum');
+    }
+  });
+  if (/\bMBA\b/.test(bg) && hooks.length === 0) hooks.push('MBA');
+  if (/\bJD\b/.test(bg)) hooks.push('Law degree');
+  if (/\bCFA\b/.test(bg)) hooks.push('CFA');
+  if (/\bForbes\b/i.test(bg)) hooks.push('Forbes member');
+  if (/\bEY Entrepreneur\b/i.test(bg)) hooks.push('EY Entrepreneur finalist');
+  if (/\bFounded|founded\b/.test(bg)) hooks.push('Founder/entrepreneur');
+  if (/podcast/i.test(bg)) hooks.push('Podcaster');
+  if (/\b(\d{2,3})\+?\s*yr/i.test(bg)) hooks.push(RegExp.$1 + '+ yr veteran');
+  // Previous notable companies
+  var prevMatch = bg.match(/Previously (?:at|CEO|CRO|COO|VP|CIO|CCO|SVP|Dir)?\s*(?:at\s+)?([\w\s&]+?)(?:\.|,|\(|$)/i);
+  if (prevMatch) {
+    var co = prevMatch[1].trim();
+    if (co.length > 2 && co.length < 30) hooks.push('Ex-' + co);
+  }
+  return hooks.slice(0, 4); // Max 4 hooks
+}
+
 function showDetail(id) {
   var c = CO.find(x => x.id === id);
   if (!c) return;
@@ -1865,6 +2029,17 @@ function showDetail(id) {
   if (isMet) metBtn.parentElement.querySelector('.detail-hdr-name').closest('.detail-hdr').classList.add('met-hdr');
 
   var html = '';
+
+  // Post-Met Capture data (if met and has capture data)
+  var rs = ratingState[c.id];
+  if (isMet && rs && (rs.care || rs.promise || rs.personal)) {
+    html += '<div class="detail-section"><div class="detail-section-title">Conversation Intel</div>';
+    if (rs.care) html += '<div class="detail-capture"><div class="detail-capture-label">They care about</div><div class="detail-capture-val">' + esc(rs.care) + '</div></div>';
+    if (rs.promise) html += '<div class="detail-capture"><div class="detail-capture-label">You promised</div><div class="detail-capture-val">' + esc(rs.promise) + '</div></div>';
+    if (rs.personal) html += '<div class="detail-capture"><div class="detail-capture-label">Personal detail</div><div class="detail-capture-val">' + esc(rs.personal) + '</div></div>';
+    html += '</div>';
+  }
+
   // Key People section
   if (c.leaders && c.leaders.length) {
     html += '<div class="detail-section"><div class="detail-section-title">Key People</div>';
@@ -1877,6 +2052,15 @@ function showDetail(id) {
       html += '<div class="detail-person-title">' + esc(l.t) + '</div></div>';
       html += '<a class="detail-person-li" href="' + liUrl + '" target="_blank" rel="noopener">in LinkedIn</a>';
       html += '</div>';
+      // Personal hooks
+      var hooks = (l.hooks || []).concat(extractHooks(l.bg));
+      var seen = {};
+      hooks = hooks.filter(function(h) { var k = h.toLowerCase(); if (seen[k]) return false; seen[k] = true; return true; });
+      if (hooks.length) {
+        html += '<div class="detail-hooks-row">';
+        hooks.forEach(function(h) { html += '<span class="detail-hook">' + esc(h) + '</span>'; });
+        html += '</div>';
+      }
       if (l.bg) html += '<div class="detail-person-bg">' + esc(l.bg) + '</div>';
       html += '</div>';
     });
@@ -2066,6 +2250,10 @@ function exportNotes() {
       lines.push('  Type: ' + c.type);
       lines.push('  Contacts: ' + c.contacts.map(ct => ct.n + (ct.t ? ' (' + ct.t + ')' : '')).join(', '));
       if (followUps) lines.push('  Follow-up: ' + followUps);
+      var rs = ratingState[c.id];
+      if (rs && rs.care) lines.push('  They care about: ' + rs.care);
+      if (rs && rs.promise) lines.push('  You promised: ' + rs.promise);
+      if (rs && rs.personal) lines.push('  Personal detail: ' + rs.personal);
       if (cardNotes[c.id]) lines.push('  Notes: ' + cardNotes[c.id]);
     });
   }
