@@ -84,6 +84,20 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .proof-list li::before{content:"";position:absolute;left:0;top:16px;width:8px;height:8px;
   border-radius:50%;background:var(--accent)}
 
+/* Collateral Links */
+.collateral-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.collateral-link{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface);
+  border-radius:10px;border:1px solid var(--border);text-decoration:none;color:var(--text);
+  -webkit-tap-highlight-color:transparent;transition:border-color .15s}
+.collateral-link:active{border-color:var(--accent);background:var(--surface2)}
+.collateral-link-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;
+  justify-content:center;font-size:14px;flex-shrink:0}
+.cl-video{background:rgba(239,68,68,.12);color:#ef4444}
+.cl-deck{background:rgba(91,141,239,.12);color:var(--accent)}
+.collateral-link-text{display:flex;flex-direction:column;gap:1px;min-width:0}
+.collateral-link-title{font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.collateral-link-sub{font-size:10px;color:var(--dim)}
+
 /* Schedule Tab */
 .phase{background:var(--surface);border-radius:14px;padding:16px;margin-bottom:12px;
   border-left:3px solid var(--border);transition:border-color .3s}
@@ -114,6 +128,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .pill[data-f="SQO"].active{background:var(--sqo);border-color:var(--sqo)}
 .pill[data-f="Client"].active{background:var(--client);border-color:var(--client)}
 .pill[data-f="ICP"].active{background:var(--icp);border-color:var(--icp)}
+.pill[data-f="CLEAR"].active{background:#f59e0b;border-color:#f59e0b;color:#000}
 .co-count{font-size:12px;color:var(--dim);margin-bottom:12px}
 
 /* Company Cards */
@@ -130,6 +145,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .card-badge.sqo{background:var(--sqo-bg);color:var(--sqo)}
 .card-badge.client{background:var(--client-bg);color:var(--client)}
 .card-badge.icp{background:var(--icp-bg);color:var(--icp)}
+.clear-badge{background:rgba(255,165,0,.12);color:#f59e0b;font-size:8px!important;padding:1px 5px!important}
 .card-contacts{font-size:12px;color:var(--dim);margin-bottom:4px}
 .card-contacts mark{background:rgba(91,141,239,.3);color:var(--dim);border-radius:2px;padding:0 1px}
 .card-preview{font-size:12px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -458,7 +474,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 <!-- Header -->
 <header class="hdr">
   <div class="hdr-title">DeBanked Connect</div>
-  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.14</span></div>
+  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.15</span></div>
 </header>
 
 <!-- Search -->
@@ -578,6 +594,17 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
     <div class="objection-card" onclick="this.classList.toggle('open')">
       <div class="objection-q"><span class="obj-icon">!</span><span class="obj-text">"Our underwriters are fast enough"</span><span class="obj-chev">&rsaquo;</span></div>
       <div class="objection-a">Fast is relative &mdash; if your competitors are closing deals in 2 hours and you&rsquo;re at 4, ISOs route deals to them first. But it&rsquo;s not just speed. It&rsquo;s also consistency: our AI catches things human reviewers miss at 4 PM on a Friday. And it never calls in sick. How many deals per day are your underwriters handling right now?</div>
+    </div>
+
+    <p class="section-label">Demo Videos &amp; Collateral</p>
+    <div class="collateral-grid">
+      <a class="collateral-link" href="https://drive.google.com/file/d/16sW_NUacuxh-xmTbPpoGDVWH2CW0tewD/view" target="_blank" rel="noopener"><span class="collateral-link-icon cl-video">&#9654;</span><div class="collateral-link-text"><span class="collateral-link-title">CLEAR Report</span><span class="collateral-link-sub">High level</span></div></a>
+      <a class="collateral-link" href="https://drive.google.com/file/d/1LLfcCXV4PeDHESEgdj_EyCRh1x8MKU0B/view" target="_blank" rel="noopener"><span class="collateral-link-icon cl-video">&#9654;</span><div class="collateral-link-text"><span class="collateral-link-title">CLEAR Report</span><span class="collateral-link-sub">Detailed</span></div></a>
+      <a class="collateral-link" href="https://drive.google.com/file/d/1pzREwBBB2c3yf8jUTc3Td-esxpZXwtY1/view" target="_blank" rel="noopener"><span class="collateral-link-icon cl-video">&#9654;</span><div class="collateral-link-text"><span class="collateral-link-title">Cashflow Analysis</span><span class="collateral-link-sub">Demo video</span></div></a>
+      <a class="collateral-link" href="https://drive.google.com/file/d/1fPsXDfd3PDNN49kyHRj4GGTF2SJlPPga/view" target="_blank" rel="noopener"><span class="collateral-link-icon cl-video">&#9654;</span><div class="collateral-link-text"><span class="collateral-link-title">Industry Classification</span><span class="collateral-link-sub">Demo video</span></div></a>
+      <a class="collateral-link" href="https://drive.google.com/file/d/1UNxRWYTAIG7YK0ZOdV7i88PeMLkNSW3g/view" target="_blank" rel="noopener"><span class="collateral-link-icon cl-video">&#9654;</span><div class="collateral-link-text"><span class="collateral-link-title">Email to CRM</span><span class="collateral-link-sub">High level</span></div></a>
+      <a class="collateral-link" href="https://drive.google.com/file/d/1Jdluk9TQlY56k3bES4aCMdFT5TY29Zyl/view" target="_blank" rel="noopener"><span class="collateral-link-icon cl-video">&#9654;</span><div class="collateral-link-text"><span class="collateral-link-title">Email to CRM</span><span class="collateral-link-sub">Detailed</span></div></a>
+      <a class="collateral-link" href="https://www.youtube.com/watch?v=fLbtk4uty-s" target="_blank" rel="noopener"><span class="collateral-link-icon cl-video">&#9654;</span><div class="collateral-link-text"><span class="collateral-link-title">Builder Demo</span><span class="collateral-link-sub">YouTube</span></div></a>
     </div>
 
     <p class="section-label">Referral Map</p>
@@ -700,6 +727,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
         <div class="phase-item" onclick="jumpTo('The LCF Group / Reliant Funding')"><span class="phase-dot icp"></span><span class="phase-co">LCF / Reliant</span><span class="phase-contact">Andy Parker (CEO), Kerri Brancato (VP UW)</span></div>
         <div class="phase-item" onclick="jumpTo('World Business Lenders')"><span class="phase-dot icp"></span><span class="phase-co">World Biz Lenders</span><span class="phase-contact">Doug Naidus (CEO), Reilly (SVP Ops)</span></div>
         <div class="phase-item" onclick="jumpTo('Reliance Financial')"><span class="phase-dot icp"></span><span class="phase-co">Reliance Financial</span><span class="phase-contact">Aryeh Miller, CEO</span></div>
+        <div class="phase-item" onclick="jumpTo('Credibly')"><span class="phase-dot icp"></span><span class="phase-co">Credibly</span><span class="phase-contact">Ryan Rosett &amp; Edan King (Co-CEOs)</span></div>
         <div class="phase-item" onclick="jumpTo('Biz2Credit')"><span class="phase-dot icp"></span><span class="phase-co">+ 13 walk-in booths</span><span class="phase-contact">Quick intros, collect cards</span></div>
       </div>
     </div>
@@ -740,6 +768,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
       <button class="pill" data-f="Client" onclick="setFilter('Client')">Client</button>
       <button class="pill" data-f="ICP" onclick="setFilter('ICP')">ICP</button>
       <button class="pill" data-f="Met" onclick="setFilter('Met')">Met</button>
+      <button class="pill" data-f="CLEAR" onclick="setFilter('CLEAR')">CLEAR</button>
     </div>
     <div class="co-count" id="coCount"></div>
     <div id="coList"></div>
@@ -841,7 +870,7 @@ const CO = [
     ask:"Would it be worth a 20-minute demo next week to show you the platform?"
   },
   {
-    id:2, name:"BriteCap Financial", type:"SQO", priority:1, phase:1, booth:true,
+    id:2, name:"BriteCap Financial", type:"SQO", priority:1, phase:1, booth:true, clear:true,
     contacts:[{n:"Richard Henderson",t:"CEO"},{n:"Dave Lafferty",t:"Chief Credit Officer"},{n:"Jim Noel",t:"VP Strategic Partnerships"}],
     desc:"Non-bank lender (formerly ForwardLine, est. 2003) in Carlsbad, CA. Surpassed $1B total originations Dec 2025. 55% YoY origination growth. $150M credit facility (Aug 2024). New CEO Richard Henderson (Sep 2024, prev CRO at CAN Capital). CCO Dave Lafferty (30yr credit veteran, prev CCO at CAN Capital). Launched BriteLine on-demand capital May 2025.",
     notes:"Broker Panel speaker. Just raised $150M facility.",
@@ -1108,7 +1137,7 @@ const CO = [
     ask:"Could we schedule a call to explore how AI could help Gulf Coast scale?"
   },
   {
-    id:19, name:"Spartan Capital", type:"ICP", priority:3, phase:3, booth:true,
+    id:19, name:"Spartan Capital", type:"ICP", priority:3, phase:3, booth:true, clear:true,
     contacts:[{n:"Frank Ebanks",t:"CEO & Founder"},{n:"Connor Leppzer",t:"Dir Underwriting"},{n:"Terence Walsh",t:"CFO"}],
     desc:"Middletown, NY MCA/revenue-based funder (est. 2015). $10M+/month originations. Bootstrapped with no VC funding. Rapidly building C-suite: CFO Terence Walsh (Apr 2025, ex-Fora Financial), Dir Underwriting Connor Leppzer (May 2025, ex-Forward Financing). Launched Texas installment loan product (Aug 2025).",
     notes:"Need to reconnect. Frank Ebanks is CEO/Founder. Originators doing $10M/month individually. Featured in deBanked and FunderIntel.",
@@ -1326,7 +1355,7 @@ const CO = [
     ask:"Pitch the ROI angle hard: AI underwriting lets Fenix compete with funders 10x their size without hiring 10x the underwriters."
   },
   {
-    id:36, name:"Fox Funding", type:"ICP", priority:4, phase:3, booth:true,
+    id:36, name:"Fox Funding", type:"ICP", priority:4, phase:3, booth:true, clear:true,
     contacts:[{n:"Joseph Rapoport",t:"President"}],
     desc:"Hollywood, FL / NYC business MCA provider (est. 2012). ~35 employees. ACH advances and MCA in 1st and 2nd positions. Funding up to $1M with 24-48 hour disbursement. President Joseph Rapoport is a former underwriter.",
     notes:"Walk-in booth. Quick intro.",
@@ -1350,7 +1379,7 @@ const CO = [
     ask:"Would your team be open to seeing a quick demo?"
   },
   {
-    id:38, name:"Lendini", type:"ICP", priority:4, phase:3, booth:true,
+    id:38, name:"Lendini", type:"ICP", priority:4, phase:3, booth:true, clear:true,
     contacts:[{n:"David Frascella",t:"Founder & Chairman"}],
     desc:"Analytics-driven fintech (parent: Funding Metrics LLC, est. 2014). Bensalem, PA. Proprietary risk models + real-time cash flow data. $500M+ funded to 9,500+ businesses. $100M revolving credit facility. Also operates QuickFix Capital. Has Sr. Data Scientist on staff (Domenico Frascella).",
     notes:"$500M+ funded. Analytics-first company. David Frascella previously founded BizLender. Proprietary risk models.",
@@ -1564,7 +1593,7 @@ const CO = [
   },
   // --- New Companies (from sponsor/exhibitor list) ---
   {
-    id:56, name:"The LCF Group / Reliant Funding", type:"ICP", priority:4, phase:3, booth:true,
+    id:56, name:"The LCF Group / Reliant Funding", type:"ICP", priority:4, phase:3, booth:true, clear:true,
     contacts:[{n:"Andy Parker",t:"CEO, The LCF Group"},{n:"Steve Kietz",t:"CEO, Reliant Funding"},{n:"Kerri Brancato",t:"VP of Underwriting"}],
     desc:"Direct MCA funder since 2011 (as Last Chance Funding). West Hempstead, NY. ~75 employees. Acquired Reliant Funding assets Sep 2023 ($3B+ total funded, $125M securitization facility). Reliant is LCF\u2019s \u201Cprime paper\u201D arm. Factor rates 1.10-1.40, up to $2M. COO John Merturi (ex-DFC Global, ex-NASDAQ).",
     notes:"LCF and Reliant are same company. VP Underwriting (Kerri Brancato) is the direct buyer. \u201CPrime paper\u201D = underwriting quality matters.",
@@ -1682,6 +1711,29 @@ const CO = [
     ],
     leaders:[{n:"Ben Sanders",t:"CEO",bg:"Leads APP Funding operations."},{n:"Yosef Zavulunov",t:"COO",bg:"Previously ISO Manager. Now handles operations and deal evaluation."}],
     ask:"Would you be interested in a quick demo of AI-powered bank statement analysis?"
+  },
+  {
+    id:64, name:"Credibly", type:"ICP", priority:3, phase:3, booth:true, clear:true,
+    contacts:[{n:"Ryan Rosett",t:"Co-CEO"},{n:"Edan King",t:"Co-CEO"}],
+    desc:"Formerly Retail Capital (rebranded 2016). Southfield, MI fintech lender offering working capital, MCAs, lines of credit, and SBA loans to SMBs. ~180 employees, ~$61.8M revenue. $3B+ total capital deployed to 60K+ small businesses. Management buyout Aug 2023. Launched Credibly.ai (Apr 2025) showcasing AI innovation. Uses CLEAR reports for underwriting.",
+    notes:"HIGH RELEVANCE. Large operation with multiple products and explicit CLEAR usage. Launched Credibly.ai \u2014 clearly investing in AI. Good fit for HyperVerge\u2019s full suite. Sukanya flagged as a CLEAR user.",
+    news:[{h:"Credibly.ai Launch",s:"credibly.ai, Apr 2025",d:"Launched AI innovation showcase platform, signaling investment in AI-powered lending."},{h:"Management Buyout",s:"PitchBook, Aug 2023",d:"Completed management buyout, giving leadership full control of strategic direction."},{h:"$3B+ Milestone",s:"Credibly, 2024",d:"Surpassed $3 billion in total capital deployed to 60,000+ small businesses."}],
+    ice:"Ryan, the Credibly.ai launch caught my eye \u2014 what\u2019s the vision for AI in your underwriting workflow?",
+    icebreakers:["$3B deployed to 60K businesses is serious scale. How has underwriting evolved as you\u2019ve grown?","The management buyout must have freed up strategic flexibility. What changes have you prioritized since?","With multiple products \u2014 MCAs, LOC, SBA \u2014 how do you handle the different underwriting requirements for each?"],
+    tp:[
+      "Multi-product lender (MCA, LOC, SBA) \u2014 HyperVerge\u2019s configurable workflows handle each product\u2019s unique underwriting needs in one platform.",
+      "Already investing in AI with Credibly.ai launch. Position HyperVerge as the production-grade AI underwriting engine behind that vision.",
+      "CLEAR report user \u2014 demo the CLEAR report AI parsing to show instant risk analysis from their existing data.",
+      "At 180 employees and $61.8M revenue, ROI math is compelling: even modest underwriting time savings multiply across their volume."
+    ],
+    leaders:[
+      {n:"Ryan Rosett",t:"Co-CEO",bg:"Co-leads Credibly. Drove growth from startup to $3B+ deployed. Strategic vision and partnerships."},
+      {n:"Edan King",t:"Co-CEO",bg:"Co-leads Credibly alongside Rosett. Operational leadership through management buyout and scaling."},
+      {n:"Chris Roe",t:"CTO",bg:"Leads technology and engineering. Key decision-maker for AI/tech integrations like HyperVerge."},
+      {n:"Jim Murray",t:"CFO",bg:"Oversees financial strategy. Important for ROI-based conversations about technology investments."},
+      {n:"Minyang Jiang",t:"CSO",bg:"Chief Strategy Officer. Drives strategic initiatives including the Credibly.ai innovation platform."}
+    ],
+    ask:"Would a 20-minute demo of AI-powered CLEAR report parsing and multi-product underwriting automation be worth exploring?"
   }
 ];
 
@@ -1722,6 +1774,8 @@ function renderCompanies(query) {
   const countEl = document.getElementById('coCount');
   let filtered = activeFilter === 'Met'
     ? CO.filter(c => metState[c.id])
+    : activeFilter === 'CLEAR'
+    ? CO.filter(c => c.clear)
     : CO.filter(c => activeFilter === 'all' || c.type === activeFilter);
   if (query) {
     const q = query.toLowerCase();
@@ -1759,6 +1813,7 @@ function buildCard(c, query) {
   html += '<div class="card-info">';
   html += '<div class="card-top"><span class="card-name">' + highlightedName + '</span>';
   html += '<span class="card-badge ' + t + '">' + c.type + '</span>';
+  if (c.clear) html += '<span class="card-badge clear-badge">CLEAR</span>';
   html += '<button class="met-btn" onclick="event.stopPropagation();toggleMet(' + c.id + ')">' + (isMet ? '\u2713 Met' : '\u25cb') + '</button>';
   html += '</div>';
   if (c.contacts.length) {
@@ -1912,6 +1967,8 @@ function shuffleIce(id, total) {
 function getVisibleCompanies() {
   let filtered = activeFilter === 'Met'
     ? CO.filter(c => metState[c.id])
+    : activeFilter === 'CLEAR'
+    ? CO.filter(c => c.clear)
     : CO.filter(c => activeFilter === 'all' || c.type === activeFilter);
   const q = document.getElementById('searchInput').value.trim().toLowerCase();
   if (q) {
@@ -2386,7 +2443,7 @@ function toggleMetFromDetail(id) {
 var SCHEDULE = [
   { phase: 1, start: 660, end: 780, companies: ['Bitty','Fundfi','FundKite','BriteCap Financial','Vox Funding','PIRS Capital'] },
   { phase: 2, start: 780, end: 870, companies: ['CAN Capital','Dexly Finance','Aspire Funding Platform','Simply Funding','MonetaFi','Elevate Funding'] },
-  { phase: 3, start: 870, end: 930, companies: ['idea Financial','Gulf Coast Business Credit','Spartan Capital','The LCF Group / Reliant Funding','World Business Lenders','Reliance Financial','Blade Funding','Novac Equities','Diesel Funding','Loanworx','APP Funding'] },
+  { phase: 3, start: 870, end: 930, companies: ['idea Financial','Gulf Coast Business Credit','Spartan Capital','The LCF Group / Reliant Funding','World Business Lenders','Reliance Financial','Credibly','Blade Funding','Novac Equities','Diesel Funding','Loanworx','APP Funding'] },
   { phase: 4, start: 930, end: 990, companies: ['Wing Lake Capital Partners','Rapid Finance','Forward Financing','Likety','United Capital Source','Big Think Capital'] },
   { phase: 5, start: 990, end: 1020, companies: ['Velocity Capital Group'] }
 ];
