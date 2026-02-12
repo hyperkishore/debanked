@@ -1,4 +1,4 @@
-const CACHE = 'debanked-v5';
+const CACHE = 'debanked-v6';
 
 self.addEventListener('install', e => {
   self.skipWaiting();
