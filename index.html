@@ -60,8 +60,8 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 .nav-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:3px;border:none;background:none;color:var(--dim);cursor:pointer;
   -webkit-tap-highlight-color:transparent;padding:0;min-height:48px}
-.nav-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.nav-btn span{font-size:10px;font-weight:600;letter-spacing:.3px}
+.nav-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nav-btn span{font-size:9px;font-weight:600;letter-spacing:.3px}
 .nav-btn.active{color:var(--accent)}
 .nav-btn.active svg{stroke:var(--accent)}
 
@@ -305,6 +305,43 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 /* Met pill */
 .pill[data-f="Met"].active{background:#8b5cf6;border-color:#8b5cf6}
 
+/* Deck Tab */
+.deck-container{position:relative;width:100%;padding-top:56.25%;background:var(--surface);
+  border-radius:14px;overflow:hidden;margin-bottom:16px}
+.deck-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.deck-fallback{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  text-align:center;color:var(--dim);font-size:13px;padding:20px}
+.deck-fallback a{color:var(--accent);text-decoration:none;font-weight:600}
+.deck-hint{font-size:11px;color:var(--dim);text-align:center;margin-top:8px;line-height:1.4}
+.deck-open-btn{display:block;width:100%;height:44px;border-radius:10px;border:1px solid var(--accent);
+  background:none;color:var(--accent);font-size:14px;font-weight:600;cursor:pointer;
+  margin-top:12px;-webkit-tap-highlight-color:transparent;text-decoration:none;
+  display:flex;align-items:center;justify-content:center;gap:6px}
+.deck-open-btn:active{background:var(--accent);color:#fff}
+
+/* Event Program */
+.event-program{background:var(--surface);border-radius:14px;padding:16px;margin-bottom:16px;
+  border-left:3px solid #a855f7}
+.event-program h3{font-size:15px;font-weight:700;margin-bottom:4px;color:#a855f7}
+.event-program .phase-desc{margin-bottom:12px}
+.program-session{background:var(--bg);border-radius:10px;padding:12px;margin-bottom:10px}
+.program-session:last-child{margin-bottom:0}
+.program-session-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px;
+  display:flex;align-items:center;gap:6px}
+.program-session-title .tag{font-size:9px;padding:2px 6px;border-radius:4px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.5px}
+.tag-panel{background:rgba(168,85,247,.15);color:#a855f7}
+.tag-keynote{background:rgba(91,141,239,.15);color:var(--accent)}
+.tag-demo{background:rgba(34,197,94,.15);color:var(--icp)}
+.program-speaker{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px}
+.program-speaker-name{font-weight:600;color:var(--text)}
+.program-speaker-co{color:var(--dim)}
+.program-speaker .in-list{font-size:9px;padding:1px 5px;border-radius:3px;font-weight:700;
+  margin-left:4px;flex-shrink:0}
+.in-list.sqo{background:var(--sqo-bg);color:var(--sqo)}
+.in-list.client{background:var(--client-bg);color:var(--client)}
+.in-list.icp{background:var(--icp-bg);color:var(--icp)}
+
 /* Contact Links */
 .contact-name{color:var(--dim)}
 .contact-li-btn{color:var(--dim);text-decoration:none;-webkit-tap-highlight-color:transparent;
@@ -319,7 +356,7 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 <!-- Header -->
 <header class="hdr">
   <div class="hdr-title">DeBanked Connect</div>
-  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.04</span></div>
+  <div class="hdr-sub"><span class="hdr-clock" id="hdrClock"></span><span>Feb 12 &middot; 11 AM&ndash;5 PM</span><span class="hdr-ver">v1.1.05</span></div>
 </header>
 
 <!-- Search -->
@@ -403,6 +440,39 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
 
   <!-- SCHEDULE TAB -->
   <div id="tab-schedule" class="tab-panel active">
+    <!-- Event Program -->
+    <div class="event-program">
+      <h3>Official Event Program</h3>
+      <p class="phase-desc">deBanked CONNECT panels &amp; demos &mdash; speakers you should catch</p>
+      <div class="program-session">
+        <div class="program-session-title"><span class="tag tag-keynote">Keynote</span> Guest Speakers</div>
+        <div class="program-speaker"><span class="program-speaker-name">Robby Birnbaum</span><span class="program-speaker-co">&middot; Partner, Greenspoon Marder PA</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Cheryl Tibbs</span><span class="program-speaker-co">&middot; Business Funding Expert</span></div>
+      </div>
+      <div class="program-session">
+        <div class="program-session-title"><span class="tag tag-panel">Panel</span> Funder &amp; Broker Panel</div>
+        <div class="program-speaker"><span class="program-speaker-name">Louis Calderone</span><span class="program-speaker-co">&middot; President, Vox Funding</span><span class="in-list icp">ICP</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Daniel Dames</span><span class="program-speaker-co">&middot; VP Ops, Bitty</span><span class="in-list sqo">SQO</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Seth Denison</span><span class="program-speaker-co">&middot; MD Investor Relations, Optimum Bank</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Frankie DiAntonio</span><span class="program-speaker-co">&middot; CEO, Lexington Capital Holdings</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Steven Edisis</span><span class="program-speaker-co">&middot; CEO, Dynamic Capital</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Efraim Kandinov</span><span class="program-speaker-co">&middot; CEO, Fundfi</span><span class="in-list client">CLIENT</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Arieh Kaplan</span><span class="program-speaker-co">&middot; Head ISO Relations, Barclays Advance</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Jim Noel</span><span class="program-speaker-co">&middot; VP Strategic Partnerships, BriteCap</span><span class="in-list sqo">SQO</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Vinnie Rodriguez</span><span class="program-speaker-co">&middot; Chairman, Tip Top Capital</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Alex Shvarts</span><span class="program-speaker-co">&middot; CEO, FundKite</span><span class="in-list client">CLIENT</span></div>
+      </div>
+      <div class="program-session">
+        <div class="program-session-title"><span class="tag tag-demo">Tech Demo</span> Show Floor Tech Demos</div>
+        <div class="program-speaker"><span class="program-speaker-name">Motti Dahan</span><span class="program-speaker-co">&middot; President, Smart MCA</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Matt Donofrio</span><span class="program-speaker-co">&middot; Dir Partnerships, Figure</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Garrett Kuhlman</span><span class="program-speaker-co">&middot; Customer Success, OnyxIQ</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">Dennis Mikhailov</span><span class="program-speaker-co">&middot; CRO, Cloudsquare</span></div>
+        <div class="program-speaker"><span class="program-speaker-name">David Snitkof</span><span class="program-speaker-co">&middot; GM of SMB, Ocrolus</span></div>
+      </div>
+    </div>
+
+    <p class="section-label">Your Booth Visit Plan</p>
     <div class="phase" id="phase1" data-start="11:00" data-end="13:00">
       <div class="phase-top">
         <span class="phase-time">11:00 AM &ndash; 1:00 PM</span>
@@ -525,6 +595,19 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
     <p class="section-label" style="margin-top:28px">Export</p>
     <button class="export-btn" onclick="exportNotes()">Copy All Notes to Clipboard</button>
   </div>
+
+  <!-- DECK TAB -->
+  <div id="tab-deck" class="tab-panel">
+    <p class="section-label">HyperVerge Deck</p>
+    <div class="deck-container">
+      <iframe id="deckFrame" src="https://docs.google.com/presentation/d/19gyWBbDqOwW8Ca8Ee4_meqsW2az9IIJDXeHKi4xWdz0/embed?start=false&loop=false&delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    <div class="deck-hint">Swipe slides or use arrows &middot; Tap fullscreen for best view</div>
+    <a class="deck-open-btn" href="https://docs.google.com/presentation/d/19gyWBbDqOwW8Ca8Ee4_meqsW2az9IIJDXeHKi4xWdz0/present" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      Open in Presenter Mode
+    </a>
+  </div>
 </main>
 
 <!-- Bottom Nav -->
@@ -544,6 +627,10 @@ main{padding-top:calc(var(--hdr) + var(--sat) + var(--search));
   <button class="nav-btn" data-tab="checklist" onclick="switchTab('checklist')">
     <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
     <span>Checklist</span>
+  </button>
+  <button class="nav-btn" data-tab="deck" onclick="switchTab('deck')">
+    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+    <span>Deck</span>
   </button>
 </nav>
 
@@ -1149,6 +1236,62 @@ const CO = [
     tp:["Since Maverick is a direct funder promising 1-day approvals, every minute saved in underwriting directly improves your competitive position. AI processes those 3 months of bank statements in under 5 minutes with consistent accuracy."],
     leaders:[{n:"Igor Davidov",t:"Founder & CEO",bg:"John Jay College (CUNY). Founded 2020. Passionate about helping entrepreneurs of all credit types. Actively growing ISO partnerships."}],
     ask:"Request a demo call with Igor or his head of underwriting to show a live walkthrough of how HyperVerge processes a real MCA application in under 5 minutes."
+  },
+  // --- Event Panelists (New) ---
+  {
+    id:44, name:"Dynamic Capital", type:"ICP", priority:2, phase:4, booth:false,
+    contacts:[{n:"Steven Edisis",t:"CEO & COO"}],
+    desc:"Miami-based direct MCA funder (est. 2013). ~84 employees, $7.9M revenue, 64% headcount growth last year. Handles everything from underwriting to funding in-house. Secured $55M debt facility from Mitsubishi HC Capital America (Jul 2023). Offers MCAs, working capital, LOC, revenue-based financing up to $5M. 95% CEO approval on Glassdoor. Steven Edisis is both CEO and COO, deeply involved in operations. He is a panelist at DeBanked Connect.",
+    ice:"Steven, building Dynamic Capital as a direct funder doing everything under one roof since 2013 is impressive \u2014 and the Mitsubishi backing shows serious institutional confidence. I\u2019d love to hear how you\u2019re thinking about scaling the underwriting operation with that growth trajectory.",
+    news:[{h:"$55M debt facility from Mitsubishi HC Capital America",s:"Crunchbase/PR, Jul 2023",d:"Institutional backing enabling significant funding capacity expansion."},{h:"64% employee headcount growth",s:"ZoomInfo/Growjo, 2024-2025",d:"Rapid scaling from ~50 to ~84 employees as deal volume increases."},{h:"Speaking on DeBanked Connect 2026 Funder Panel",s:"DeBanked Miami, Feb 2026",d:"Recognized industry voice as panelist at major alt-lending event."}],
+    icebreakers:["Steven, building a direct funder that does everything in-house since 2013 and landing Mitsubishi backing is a strong signal. How are you thinking about scaling underwriting as volume grows?","With 84 employees and 64% growth, you must be feeling the underwriting throughput pressure. What\u2019s the biggest bottleneck in your deal flow right now?","Your 95% CEO approval on Glassdoor is almost unheard of in this space. How does that culture translate into how your underwriting team operates?","The move into revenue-based financing up to $5M alongside MCAs is interesting. Does that require a fundamentally different underwriting approach?"],
+    tp:["Dynamic Capital does all underwriting in-house, making them ideal for AI automation. With 64% headcount growth, they need scalable solutions.","The $55M Mitsubishi facility means capital is not the bottleneck \u2014 underwriting throughput is. AI reduces processing from 40 min to under 5.","Multi-product offering (MCA, working capital, LOC, revenue-based) means complex, configurable underwriting workflows \u2014 exactly what HyperVerge provides."],
+    leaders:[{n:"Steven Edisis",t:"CEO & COO",bg:"University of South Florida. Founded Dynamic Capital in 2013. Handles both strategy and operations. Known for training zero-experience hires into full-cycle funding professionals. DeBanked panelist."}],
+    ask:"Steven, would it make sense to schedule a 20-minute demo next week? I can show you exactly how AI handles the bank statement analysis and risk review for a live MCA application."
+  },
+  {
+    id:45, name:"Tip Top Capital", type:"ICP", priority:2, phase:4, booth:false,
+    contacts:[{n:"Vinnie Rodriguez",t:"Chairman & Dir of Conventional Lending"}],
+    desc:"NYC-based MCA funder and alternative lender (est. 2016). Offers MCAs, working capital, LOC, and asset-based loans. Chairman Vinnie Rodriguez has personally arranged $400M+ in funding since 2018. Notably expanding into conventional/term lending (Rodriguez holds dual title of Chairman & Director of Conventional Lending). Credit-flexible approach, works with all credit scores. Panelist at DeBanked Connect 2026.",
+    ice:"Vinnie, I noticed you\u2019re leading the conventional lending expansion at Tip Top \u2014 that\u2019s a smart move. The underwriting requirements for term loans are a different game compared to MCA. How\u2019s that transition going?",
+    news:[{h:"Strategic expansion into conventional lending",s:"LinkedIn/DeBanked, 2025-2026",d:"Chairman Rodriguez leading push beyond MCA into term loans and conventional products."},{h:"$400M+ in personal deal origination",s:"LinkedIn/Wiza, 2018-2025",d:"Rodriguez has personally arranged over $400M in funding, indicating deep market relationships."},{h:"DeBanked Connect 2026 panelist",s:"DeBanked Miami, Feb 2026",d:"Speaking on panel, investing in industry visibility."}],
+    icebreakers:["Vinnie, leading the conventional lending push at Tip Top while maintaining the MCA business is an ambitious dual strategy. How are you building out the underwriting for term loans?","Arranging $400M+ in funding personally since 2018 shows deep relationships. As you expand into conventional lending, how does the underwriting complexity compare to MCA?","The credit-flexible approach is a great differentiator. As you add conventional products, does that require a fundamentally different risk assessment framework?","Moving from MCA to conventional lending is exactly the transition where AI underwriting adds the most value. What\u2019s been the biggest challenge in that expansion?"],
+    tp:["The expansion into conventional lending from MCA is where AI underwriting adds the most value \u2014 complex credit analysis, financial spreading, compliance requirements.","Tip Top doesn\u2019t need to build a full traditional credit department to do term loans. AI can bridge that gap, letting existing team handle new product underwriting.","For a Chairman personally originating $400M+ in deals, every minute saved in underwriting means more capacity for revenue-generating activity."],
+    leaders:[{n:"Vinnie Rodriguez",t:"Chairman & Director of Conventional Lending",bg:"Wentworth Institute of Technology. Founded Tip Top Capital ~2016. Personally arranged $400M+ in funding. Leading strategic expansion into conventional lending products. DeBanked panelist."}],
+    ask:"Vinnie, would it be worth a quick call next week to explore how AI underwriting could support the conventional lending buildout without needing to hire a full credit department?"
+  },
+  {
+    id:46, name:"Barclays Advance", type:"ICP", priority:3, phase:4, booth:false,
+    contacts:[{n:"Arieh Kaplan",t:"Head of ISO Relations"}],
+    desc:"Boca Raton-based direct MCA funder (not affiliated with Barclays bank). Sources deals through ISO/broker channel. Currently hiring for ISO Relations roles, indicating growth. Arieh Kaplan manages broker relationships as Head of ISO Relations. Panelist at DeBanked Connect 2026. Lower online profile typical of smaller funders.",
+    ice:"Arieh, managing ISO relationships is all about speed and consistency on approvals. What\u2019s the biggest bottleneck you see between when an ISO submits a deal and when you can give them an answer?",
+    news:[{h:"Active hiring for ISO Relations in Boca Raton",s:"LinkedIn Jobs, 2025-2026",d:"Expanding team to manage growing broker relationships and deal flow."},{h:"DeBanked Connect 2026 panelist",s:"DeBanked Miami, Feb 2026",d:"Investing in industry visibility and ISO recruitment at major event."}],
+    icebreakers:["Arieh, managing ISO relationships is all about giving brokers fast, consistent answers. What\u2019s the current turnaround from deal submission to approval?","ISOs shop deals to whichever funder responds fastest. How are you making sure Barclays Advance is first in their rotation?","I see you\u2019re hiring more ISO Relations staff in Boca Raton \u2014 that\u2019s a great sign of growth. What\u2019s driving the expansion?","The best ISO managers I\u2019ve met think of underwriting speed as their secret weapon. How does your team currently handle the review process?"],
+    tp:["ISOs send deals to the fastest funder. AI underwriting cuts approval from 40 min to under 5, making Barclays Advance the first responder in every ISO\u2019s rotation.","Growing ISO relationships means growing deal volume \u2014 and underwriting becomes the bottleneck. AI scales that without proportional headcount."],
+    leaders:[{n:"Arieh Kaplan",t:"Head of ISO Relations",bg:"Previously Funding Specialist at Barclays Advance. Now leads ISO/broker relationship management. DeBanked panelist."}],
+    ask:"Arieh, would it make sense to see how AI underwriting could help you respond to ISO submissions faster than any other funder?"
+  },
+  {
+    id:47, name:"Lexington Capital Holdings", type:"ICP", priority:3, phase:4, booth:false,
+    contacts:[{n:"Frankie DiAntonio",t:"CEO"}],
+    desc:"Long Island-based alternative financing brokerage/ISO (est. ~2022). ~60 employees (avg age ~25), making it one of the fastest-growing brokerages in the space. CEO Frankie DiAntonio is ~26 years old with MBA from Stony Brook. Broker, not direct funder \u2014 maintains relationships with dozens of lenders. $50M+ in loan originations. Products: MCAs, LOC, SBA, AR financing, equipment financing, startup funding. Recently launched The Lexington Foundation nonprofit. Panelist at DeBanked Connect 2026.",
+    ice:"Frankie, the CFO.com piece on building Lexington to 60 people in under 4 years at your age is seriously impressive. I\u2019d love to hear what you\u2019re seeing from the funder side in terms of deal turnaround times.",
+    news:[{h:"Profiled by CFO.com for workplace culture",s:"CFO.com, 2025",d:"Recognized for building distinctive workplace culture at Long Island brokerage."},{h:"Launched The Lexington Foundation nonprofit",s:"DeBanked, Dec 2025",d:"New nonprofit dedicated to supporting families in need."},{h:"Rapid growth to ~60 employees",s:"CFO.com/LinkedIn, 2024-2025",d:"Grown from startup to 60-person brokerage in under 4 years."}],
+    icebreakers:["Frankie, growing to 60 people in under four years at your age is remarkable execution. What\u2019s the secret sauce for building that kind of culture?","The Lexington Foundation launch shows you\u2019re thinking beyond just business. How do your employees respond to that mission-driven approach?","As a broker working with dozens of funders, which ones give you the fastest turnaround on approvals? That\u2019s usually the biggest factor for ISO success.","With $50M+ in originations across MCAs, SBA, and equipment financing, you have incredible insight into what funders need. What\u2019s their biggest pain point?"],
+    tp:["Lexington is a broker/ISO, not a direct funder \u2014 they don\u2019t underwrite. But DiAntonio is extremely well-connected and can refer HyperVerge to the funders in his network.","Frame as: \u2018The funders you send deals to \u2014 if they could approve in 5 minutes instead of 40, your brokers would close more deals.\u2019","Ask for specific introductions to funders who struggle with underwriting speed."],
+    leaders:[{n:"Frankie DiAntonio",t:"Founder & CEO",bg:"~26 years old. MBA from Stony Brook University. Lifelong serial entrepreneur. Profiled by CFO.com. Founded The Lexington Foundation. DeBanked panelist."}],
+    ask:"Frankie, who are the top 2-3 funders you work with that you think could benefit from faster underwriting? I\u2019d love an introduction."
+  },
+  {
+    id:48, name:"Optimum Bank", type:"ICP", priority:4, phase:4, booth:false,
+    contacts:[{n:"Seth Denison",t:"MD, Investor & Corporate Relations"}],
+    desc:"Fort Lauderdale community bank (NYSE American: OPHC). Record 2025: $1.11B assets (19% growth), $16.64M net earnings. SBA Preferred Lender status. $700M CRE mortgage portfolio. Launching HUD/FHA lending subsidiary for multifamily and healthcare in 2026. New API-based core banking platform. Panelist Seth Denison oversees investor relations \u2014 he\u2019s a strategic contact, not operations. Serves Broward, Miami-Dade, Palm Beach counties.",
+    ice:"Seth, congratulations on the record 2025 results \u2014 crossing a billion in assets is a big milestone. I\u2019m curious how the SBA lending buildout is going since you got Preferred Lender status.",
+    news:[{h:"Record Q4 2025: $4.85M net income",s:"GlobeNewsWire, Feb 2026",d:"Best year in company history. Total assets $1.11B, deposits $931.75M."},{h:"Launching HUD/FHA lending subsidiary",s:"Press Release, 2025-2026",d:"New subsidiary for bridge-to-HUD and FHA-insured lending for multifamily and healthcare."},{h:"SBA Preferred Lender status achieved",s:"OptimumBank, 2025",d:"Achieved PLP status in record time, accelerating SBA loan approvals."}],
+    icebreakers:["Seth, crossing a billion in assets with record earnings is impressive. How is the SBA lending volume scaling now that you have Preferred Lender status?","The new HUD/FHA subsidiary for multifamily and healthcare is a smart adjacency. How complex is the underwriting for bridge-to-HUD loans?","I noticed OptimumBank is rolling out a new API-based core banking platform. How does that change the way you approach lending technology partnerships?","Going from zero to SBA Preferred Lender in record time suggests aggressive scaling. What\u2019s the bottleneck now \u2014 deal sourcing or processing capacity?"],
+    tp:["OptimumBank is a regulated bank, not typical MCA, but they\u2019re scaling SBA lending rapidly. AI could help with SBA underwriting automation.","Seth is Investor Relations, not operations \u2014 he\u2019s a strategic connector. Ask him to introduce you to the head of lending or credit.","The new HUD/FHA subsidiary launching in 2026 will need underwriting infrastructure. Position as a partner for the new venture."],
+    leaders:[{n:"Seth Denison",t:"MD, Investor & Corporate Relations",bg:"JD from FIU (2010). Former SEC Legal Intern. Restructured $5B in CMBS debt. Previously at Lee & Associates and Hart Advisors. Partner in fund managing 60+ manufactured housing communities. DeBanked panelist."}],
+    ask:"Seth, who on your team is leading the SBA and HUD lending operations? I\u2019d love to connect with them about how AI underwriting could support the scaling."
   }
 ];
 
