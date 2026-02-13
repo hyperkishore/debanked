@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-sqo: var(--sqo);
+  --color-client: var(--client);
+  --color-icp: var(--icp);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+}
+
+:root {
+  --radius: 0.625rem;
+  /* Dark-first app — these are the dark theme values */
+  --background: oklch(0.13 0.01 270);
+  --foreground: oklch(0.93 0.01 270);
+  --card: oklch(0.17 0.01 270);
+  --card-foreground: oklch(0.93 0.01 270);
+  --popover: oklch(0.17 0.01 270);
+  --popover-foreground: oklch(0.93 0.01 270);
+  --primary: oklch(0.65 0.15 250);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.22 0.01 270);
+  --secondary-foreground: oklch(0.93 0.01 270);
+  --muted: oklch(0.22 0.01 270);
+  --muted-foreground: oklch(0.55 0.03 270);
+  --accent: oklch(0.65 0.15 250);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.58 0.22 25);
+  --border: oklch(0.25 0.01 270);
+  --input: oklch(0.25 0.01 270);
+  --ring: oklch(0.65 0.15 250);
+  --chart-1: oklch(0.65 0.15 250);
+  --chart-2: oklch(0.58 0.22 25);
+  --chart-3: oklch(0.72 0.19 85);
+  --chart-4: oklch(0.65 0.17 145);
+  --chart-5: oklch(0.55 0.20 300);
+  --sidebar: oklch(0.15 0.01 270);
+  --sidebar-foreground: oklch(0.93 0.01 270);
+  --sidebar-primary: oklch(0.65 0.15 250);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.22 0.01 270);
+  --sidebar-accent-foreground: oklch(0.93 0.01 270);
+  --sidebar-border: oklch(0.25 0.01 270);
+  --sidebar-ring: oklch(0.65 0.15 250);
+  /* Custom colors for company types */
+  --sqo: oklch(0.58 0.22 25);
+  --client: oklch(0.72 0.19 85);
+  --icp: oklch(0.65 0.17 145);
+  --warning: oklch(0.72 0.19 85);
+  --success: oklch(0.65 0.17 145);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Type color utilities */
+.type-sqo { color: var(--sqo); }
+.type-client { color: var(--client); }
+.type-icp { color: var(--icp); }
+.border-type-sqo { border-color: var(--sqo); }
+.border-type-client { border-color: var(--client); }
+.border-type-icp { border-color: var(--icp); }
+.bg-type-sqo { background-color: oklch(0.58 0.22 25 / 0.1); }
+.bg-type-client { background-color: oklch(0.72 0.19 85 / 0.1); }
+.bg-type-icp { background-color: oklch(0.65 0.17 145 / 0.1); }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.3 0.01 270);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.4 0.01 270);
+}
+
+/* Hide scrollbar utility */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
