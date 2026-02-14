@@ -1,0 +1,292 @@
+[
+  {
+    "companyId": 1,
+    "leaderName": "Brian Bastio",
+    "hooks": ["8yr finance consultant", "Digital marketing lead"]
+  },
+  {
+    "companyId": 2,
+    "leaderName": "Richard Henderson",
+    "hooks": ["23yr equipment leasing vet", "Ex-CRO CAN Capital", "Ex-Marlin Capital"]
+  },
+  {
+    "companyId": 2,
+    "leaderName": "David Lee",
+    "hooks": ["UC Santa Barbara", "*Ex-Apple", "26yr sales veteran"]
+  },
+  {
+    "companyId": 3,
+    "leaderName": "Alexander Parsol",
+    "hooks": ["PIRS co-founder", "Decade in lending"]
+  },
+  {
+    "companyId": 3,
+    "leaderName": "Andrew Mallinger",
+    "hooks": ["Penn State", "*CLFP certified", "Two fintech founding teams", "230% revenue growth driver"]
+  },
+  {
+    "companyId": 3,
+    "leaderName": "Mitchell Rubin",
+    "hooks": ["CFO capital strategist"]
+  },
+  {
+    "companyId": 3,
+    "leaderName": "Jacob Shimon",
+    "hooks": ["20yr tech veteran", "PIRS co-founder"]
+  },
+  {
+    "companyId": 3,
+    "leaderName": "Igor Shliosberg",
+    "hooks": ["Dual compliance + credit role", "Miami Beach based", "Ex-Argus Merchant Services"]
+  },
+  {
+    "companyId": 4,
+    "leaderName": "Angelina Fletcher",
+    "hooks": ["Michigan State Marketing", "Entered lending 2019"]
+  },
+  {
+    "companyId": 5,
+    "leaderName": "Natasha Dillon",
+    "hooks": ["Pace Univ MBA", "*Former CIO Radlett Capital", "Founded Dillon Strategic"]
+  },
+  {
+    "companyId": 6,
+    "leaderName": "Rick Kuci",
+    "hooks": ["*Former bank CEO", "Ex-Grove Bank chairman", "Banking-to-fintech crossover"]
+  },
+  {
+    "companyId": 6,
+    "leaderName": "Gene Zeitlin",
+    "hooks": ["Decade in fintech", "Speed-to-approval evangelist"]
+  },
+  {
+    "companyId": 6,
+    "leaderName": "Justin Verger",
+    "hooks": ["CUNY Brooklyn College", "Treasury & risk manager"]
+  },
+  {
+    "companyId": 7,
+    "leaderName": "Brian Mullins",
+    "hooks": ["CTO + data + marketing", "Triple-hat tech leader"]
+  },
+  {
+    "companyId": 7,
+    "leaderName": "Peter Reilly",
+    "hooks": ["ROI-obsessed CFO", "Portfolio performance focused"]
+  },
+  {
+    "companyId": 7,
+    "leaderName": "Michael Mosiello",
+    "hooks": ["Alt-finance legal counsel"]
+  },
+  {
+    "companyId": 8,
+    "leaderName": "Edward Siciliano",
+    "hooks": ["Rutgers", "*30yr commercial finance vet", "Drove 5x origination growth", "Ex-Marlin COO"]
+  },
+  {
+    "companyId": 8,
+    "leaderName": "Richard Irwin",
+    "hooks": ["Rutgers Business School", "CFA charterholder", "30yr finance career"]
+  },
+  {
+    "companyId": 8,
+    "leaderName": "Kevin Duffy",
+    "hooks": ["*20+ years at CAN Capital", "ISO channel veteran"]
+  },
+  {
+    "companyId": 8,
+    "leaderName": "Christopher Holland",
+    "hooks": ["UVA", "Ex-Marlin Capital", "Ex-Direct Capital/CIT Bank"]
+  },
+  {
+    "companyId": 10,
+    "leaderName": "Daniel Lenefsky",
+    "hooks": ["CUNY Brooklyn College", "API/OCR early adopter", "Ex-All-Star Capital"]
+  },
+  {
+    "companyId": 10,
+    "leaderName": "Ricky Singh",
+    "hooks": ["Dual ops + marketing role"]
+  },
+  {
+    "companyId": 10,
+    "leaderName": "Austin Zak",
+    "hooks": ["Underwriting team lead", "Direct tool buyer"]
+  },
+  {
+    "companyId": 10,
+    "leaderName": "Bernard Aquino",
+    "hooks": ["Hands-on underwriter", "Daily pain point expert"]
+  },
+  {
+    "companyId": 11,
+    "leaderName": "Bernard Mittelman",
+    "hooks": ["Simply Funding founder", "Founded 2017, still involved"]
+  },
+  {
+    "companyId": 11,
+    "leaderName": "Jacob Kleinberger",
+    "hooks": ["Ex-Shield Funding ops lead", "Ex-VP Venture Credit", "Joined as partner 2021"]
+  },
+  {
+    "companyId": 11,
+    "leaderName": "Marc Elias",
+    "hooks": ["CFO risk strategist"]
+  },
+  {
+    "companyId": 11,
+    "leaderName": "Joy Alhalab",
+    "hooks": ["Sole ISO channel owner", "All broker relationships"]
+  },
+  {
+    "companyId": 11,
+    "leaderName": "Shimon Wein",
+    "hooks": ["*Also CEO Radiance Funding", "deBanked event regular"]
+  },
+  {
+    "companyId": 12,
+    "leaderName": "Steve Kamhi",
+    "hooks": ["*8yr FundKite veteran", "Founded ClickPay Services", "Miami based", "Decades in MCA"]
+  },
+  {
+    "companyId": 13,
+    "leaderName": "Heather Francis",
+    "hooks": ["UF grad", "*In MCA since 2009", "YEC member", "Deepfake detection investor"]
+  },
+  {
+    "companyId": 13,
+    "leaderName": "Ken Peng",
+    "hooks": ["UF Business", "*Runs food blog", "FunderIntel featured", "At Elevate since day one"]
+  },
+  {
+    "companyId": 13,
+    "leaderName": "Mackenzie Mead",
+    "hooks": ["Rose through Elevate ranks", "Underwriter to manager"]
+  },
+  {
+    "companyId": 13,
+    "leaderName": "Liam Donahue",
+    "hooks": ["New hire Feb 2025"]
+  },
+  {
+    "companyId": 14,
+    "leaderName": "Jay Avigdor",
+    "hooks": ["Touro University", "*$850M+ career sales", "40K broker relationships"]
+  },
+  {
+    "companyId": 14,
+    "leaderName": "Jesse Guzman",
+    "hooks": ["Univ of Maryland", "Ex-Nexi", "Hired Aug 2024"]
+  },
+  {
+    "companyId": 14,
+    "leaderName": "David Shensky",
+    "hooks": ["Drexel University", "Ex-Swift Financial", "Ex-Legend Advance"]
+  },
+  {
+    "companyId": 14,
+    "leaderName": "David Slepoy",
+    "hooks": ["*Ex-EY accountant", "Ex-RSM US", "Risk management specialist"]
+  },
+  {
+    "companyId": 14,
+    "leaderName": "Bogdan Klubuk",
+    "hooks": ["Baruch College", "Digital marketing background"]
+  },
+  {
+    "companyId": 15,
+    "leaderName": "Will Tumulty",
+    "hooks": ["*Former Navy SEAL", "Stanford MBA", "Ex-Capital One"]
+  },
+  {
+    "companyId": 15,
+    "leaderName": "Mark Cerminaro",
+    "hooks": ["Georgetown", "*Ex-Morgan Stanley", "16yr Rapid Finance lifer"]
+  },
+  {
+    "companyId": 15,
+    "leaderName": "Jeremy Brown",
+    "hooks": ["Duke Economics", "CPA", "Co-founded Rapid 2005"]
+  },
+  {
+    "companyId": 15,
+    "leaderName": "Terry Thornton",
+    "hooks": ["UVA Economics", "Ex-Capital One", "20yr credit risk veteran"]
+  },
+  {
+    "companyId": 15,
+    "leaderName": "Bogdan Nastea",
+    "hooks": ["UMD Computer Science", "*Founded 2 tech ventures", "Built SPADE AI platform"]
+  },
+  {
+    "companyId": 16,
+    "leaderName": "Jason Mullins",
+    "hooks": ["*Ex-CEO goeasy Ltd Canada", "Appointed Jan 2025", "New leader seeking wins"]
+  },
+  {
+    "companyId": 16,
+    "leaderName": "Justin Bakes",
+    "hooks": ["Boston College", "Ex-UBS Investment Bank", "12yr CEO before chairman"]
+  },
+  {
+    "companyId": 16,
+    "leaderName": "Tyler Thielmann",
+    "hooks": ["*Spring Financial founding team", "Scaled to 1M applicants/yr"]
+  },
+  {
+    "companyId": 16,
+    "leaderName": "Ohi Akhigbe",
+    "hooks": ["Kellogg MBA", "*Ex-Goldman Sachs", "TensorFlow/DataRobot user"]
+  },
+  {
+    "companyId": 16,
+    "leaderName": "Raj Kolluri",
+    "hooks": ["*Built ODX at OnDeck", "Ex-Amount CTO", "25yr lending tech veteran"]
+  },
+  {
+    "companyId": 17,
+    "leaderName": "Justin Leto",
+    "hooks": ["*Trial lawyer turned CEO", "UM Law cum laude", "$11M malpractice verdict"]
+  },
+  {
+    "companyId": 17,
+    "leaderName": "Larry Bassuk",
+    "hooks": ["UF Law", "*Commercial litigator turned fintech", "Compliance-first mindset"]
+  },
+  {
+    "companyId": 17,
+    "leaderName": "Christopher Ryan",
+    "hooks": ["*ICE trading floor alum", "Ex-CSO UpWise"]
+  },
+  {
+    "companyId": 17,
+    "leaderName": "Julian Hernandez",
+    "hooks": ["*Entry-level to director", "deBanked featured Nov 2025", "Face-to-face networker"]
+  },
+  {
+    "companyId": 18,
+    "leaderName": "Wade Hladky",
+    "hooks": ["Ole Miss Banking", "GCBC co-founder 2000", "*24yr company builder"]
+  },
+  {
+    "companyId": 18,
+    "leaderName": "Meg Roberson",
+    "hooks": ["Texas A&M", "*IFA Advisory Board", "25yr factoring veteran"]
+  },
+  {
+    "companyId": 18,
+    "leaderName": "Stuart Wrba",
+    "hooks": ["Atlanta based", "15yr GCBC veteran", "Staffing/transport specialist"]
+  },
+  {
+    "companyId": 18,
+    "leaderName": "Joseph Jimenez",
+    "hooks": ["San Antonio based", "Ex-VP Bank of San Antonio", "Texas market builder"]
+  },
+  {
+    "companyId": 18,
+    "leaderName": "Matthew Stewart",
+    "hooks": ["Credit analysis lead", "Direct underwriting tool buyer"]
+  }
+]

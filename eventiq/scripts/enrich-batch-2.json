@@ -1,0 +1,695 @@
+[
+  {
+    "id": 1051,
+    "name": "Cuallix",
+    "website": "http://www.cuallix.com",
+    "linkedinUrl": "https://www.linkedin.com/company/financiera-cuallix/about/",
+    "leaders": [
+      {
+        "n": "Executive Team",
+        "t": "C-Suite",
+        "li": "https://www.linkedin.com/company/financiera-cuallix/about/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1052,
+    "name": "Knight Capital Funding",
+    "website": "https://www.knightcapitalfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/knight-capital-funding/",
+    "leaders": [
+      {
+        "n": "Justin Levy",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/company/knight-capital-funding/",
+        "hasHooks": false
+      },
+      {
+        "n": "Chris McCay",
+        "t": "Marketing Director",
+        "li": "https://www.linkedin.com/company/knight-capital-funding/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1053,
+    "name": "Ualett",
+    "website": "https://ualett.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ualett",
+    "leaders": [
+      {
+        "n": "Ricky Michel Presbot",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/company/ualett",
+        "hasHooks": false
+      },
+      {
+        "n": "Jay Millard",
+        "t": "Chief Revenue Officer",
+        "li": "https://www.linkedin.com/in/jaymillard/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1054,
+    "name": "Dakota Financial",
+    "website": "https://www.dakotafinancial.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/dakota-financial-llc",
+    "leaders": [
+      {
+        "n": "Michael Green",
+        "t": "Chairman",
+        "li": "https://www.linkedin.com/company/dakota-financial-llc",
+        "hasHooks": false
+      },
+      {
+        "n": "Christopher Park",
+        "t": "CFO",
+        "li": "https://www.linkedin.com/company/dakota-financial-llc",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1055,
+    "name": "Fundura Capital",
+    "website": "https://www.fundera.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/fundera/people/",
+    "leaders": [
+      {
+        "n": "Jared Hecht",
+        "t": "Founder",
+        "li": "https://www.linkedin.com/company/fundera/people/",
+        "hasHooks": false
+      },
+      {
+        "n": "Andres Moran",
+        "t": "Co-Founder",
+        "li": "https://www.linkedin.com/company/fundera/people/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1056,
+    "name": "Business Capital LLC",
+    "website": "https://www.businesscapitalllc.com/",
+    "linkedinUrl": "https://www.businesscapitalllc.com/",
+    "leaders": [
+      {
+        "n": "Henry Pershin",
+        "t": "Founder",
+        "li": "https://www.businesscapitalllc.com/",
+        "hasHooks": false
+      },
+      {
+        "n": "Jack Berger",
+        "t": "President",
+        "li": "https://www.linkedin.com/in/jack-berger-91a16b14/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1057,
+    "name": "SouthStar Capital",
+    "website": "https://www.southstarcapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/southstar-capital-llc/",
+    "leaders": [
+      {
+        "n": "Bernard Linney",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/bernard-linney-666ba26/",
+        "hasHooks": false
+      },
+      {
+        "n": "Michael Haddad",
+        "t": "President",
+        "li": "https://www.linkedin.com/company/southstar-capital-llc/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1058,
+    "name": "Swift Capital",
+    "website": "https://www.swiftcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/swift-financial",
+    "leaders": [
+      {
+        "n": "PayPal Business Lending",
+        "t": "Parent Company",
+        "li": "https://www.linkedin.com/company/swift-financial",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1059,
+    "name": "Swift Financial Corporation",
+    "website": "https://www.swiftfinancial.com//index.html",
+    "linkedinUrl": "https://www.linkedin.com/company/swift-financial",
+    "leaders": [
+      {
+        "n": "PayPal Business Lending",
+        "t": "Parent Company",
+        "li": "https://www.linkedin.com/company/swift-financial",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1060,
+    "name": "US Business Funding",
+    "website": "https://www.usbfund.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/us-business-funding/",
+    "leaders": [
+      {
+        "n": "Peter Ribeiro",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/company/us-business-funding/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1061,
+    "name": "BusinessLoans.com",
+    "website": "http://businessloans.com",
+    "linkedinUrl": "https://www.linkedin.com/company/businessloans/",
+    "leaders": [
+      {
+        "n": "Leadership Team",
+        "t": "Management",
+        "li": "https://www.linkedin.com/company/businessloans/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1062,
+    "name": "QuickBridge Funding, LLC",
+    "website": "https://www.quickbridge.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/quick-bridge-funding",
+    "leaders": [
+      {
+        "n": "Ben Gold",
+        "t": "Founding President",
+        "li": "https://www.linkedin.com/company/quick-bridge-funding",
+        "hasHooks": false
+      },
+      {
+        "n": "Dave Gilbert",
+        "t": "CEO, National Funding",
+        "li": "https://www.linkedin.com/company/quick-bridge-funding",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1063,
+    "name": "CoFi Lending",
+    "website": "https://cofilending.com",
+    "linkedinUrl": "https://www.linkedin.com/company/cofilending/",
+    "leaders": [
+      {
+        "n": "Cameron Harris",
+        "t": "Co-Founder & Co-CEO",
+        "li": "https://www.linkedin.com/company/cofilending/",
+        "hasHooks": false
+      },
+      {
+        "n": "Mike Lacey",
+        "t": "Co-Founder & Co-CEO",
+        "li": "https://www.linkedin.com/company/cofilending/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1064,
+    "name": "Novel Capital",
+    "website": "https://novelcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/novelcapital",
+    "leaders": [
+      {
+        "n": "Carlos Antequera",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/company/novelcapital",
+        "hasHooks": false
+      },
+      {
+        "n": "Keith Harrington",
+        "t": "Co-Founder & COO",
+        "li": "https://www.linkedin.com/in/keithharringtonkansas",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1065,
+    "name": "The Fundworks",
+    "website": "https://thefundworks.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/linkedin.comthefundworksllc/?trk=public_post_feed-actor-image",
+    "leaders": [
+      {
+        "n": "Bradley Smiedt",
+        "t": "Co-Founder & Chairman",
+        "li": "https://www.linkedin.com/company/linkedin.comthefundworksllc/",
+        "hasHooks": false
+      },
+      {
+        "n": "Evan Smiedt",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/company/linkedin.comthefundworksllc/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1066,
+    "name": "Capital Infusion LLC",
+    "website": "https://www.capital-infusion.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/capital-infusion/",
+    "leaders": [
+      {
+        "n": "Matthew Birnholz",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/matthew-birnholz-1731bb65/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1067,
+    "name": "Kalamata Capital Group",
+    "website": "https://kalamata.com",
+    "linkedinUrl": "https://www.linkedin.com/company/kalamata-capital-group/",
+    "leaders": [
+      {
+        "n": "Steven Mandis",
+        "t": "Founder & Chairman",
+        "li": "https://www.linkedin.com/company/kalamata-capital-group/",
+        "hasHooks": false
+      },
+      {
+        "n": "Brandon Laks",
+        "t": "Co-President",
+        "li": "https://www.linkedin.com/in/brandonlaks23/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1068,
+    "name": "Capital Crossing",
+    "website": "https://capitalcrossing.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/capital-crossing-servicing-company-llc/",
+    "leaders": [
+      {
+        "n": "Ted F Mehm",
+        "t": "Manager",
+        "li": "https://www.linkedin.com/company/capital-crossing-servicing-company-llc/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1069,
+    "name": "Bizfund LLC",
+    "website": "https://bizfund.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/new-era-lending/people/",
+    "leaders": [
+      {
+        "n": "Danny Koshanfar",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/danny-koshanfar-0576a485/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1070,
+    "name": "Republic Business Credit",
+    "website": "https://republicbc.com",
+    "linkedinUrl": "https://www.linkedin.com/company/1735791",
+    "leaders": [
+      {
+        "n": "Stewart Chesters",
+        "t": "CEO & Founder",
+        "li": "https://www.linkedin.com/in/stewartchesters/",
+        "hasHooks": false
+      },
+      {
+        "n": "Robert Meyers",
+        "t": "President",
+        "li": "https://www.linkedin.com/company/1735791",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1071,
+    "name": "Ampla Technologies Inc.",
+    "website": "https://www.getampla.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/getampla/about/",
+    "leaders": [
+      {
+        "n": "Anthony Santomo",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/company/getampla/about/",
+        "hasHooks": false
+      },
+      {
+        "n": "Steven Uster",
+        "t": "CEO, FundThrough (Acquirer)",
+        "li": "https://www.linkedin.com/company/getampla/about/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1072,
+    "name": "Northern Initiatives",
+    "website": "https://northerninitiatives.org",
+    "linkedinUrl": "https://www.linkedin.com/company/northern-initiatives/",
+    "leaders": [
+      {
+        "n": "Elissa Sangalli",
+        "t": "CEO/President",
+        "li": "https://www.linkedin.com/company/northern-initiatives/",
+        "hasHooks": false
+      },
+      {
+        "n": "Chuck Hurst",
+        "t": "VP of Lending",
+        "li": "https://www.linkedin.com/company/northern-initiatives/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1073,
+    "name": "Porter Capital",
+    "website": "https://portercap.com",
+    "linkedinUrl": "https://www.linkedin.com/company/porter-capital",
+    "leaders": [
+      {
+        "n": "Marc Porter",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/marc-porter/",
+        "hasHooks": false
+      },
+      {
+        "n": "Scott Romanowski",
+        "t": "CFO",
+        "li": "https://www.linkedin.com/company/porter-capital",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1074,
+    "name": "CoreTech Leasing",
+    "website": "https://www.coretechleasing.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/coretech-leasing-inc-/",
+    "leaders": [
+      {
+        "n": "Scott McFetters",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/scott-mcfetters-a8a6454",
+        "hasHooks": false
+      },
+      {
+        "n": "Candace J. Reinhart",
+        "t": "COO/CXO",
+        "li": "https://www.linkedin.com/company/coretech-leasing-inc-/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1075,
+    "name": "TwinFold Capital",
+    "website": "https://twinfoldcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/twinfold-capital/",
+    "leaders": [
+      {
+        "n": "Leadership Team",
+        "t": "Family Ownership",
+        "li": "https://www.linkedin.com/company/twinfold-capital/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1076,
+    "name": "Monet Capital",
+    "website": "https://www.monetcap.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/monet-cap/",
+    "leaders": [
+      {
+        "n": "Freddy Fernandez",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/company/monet-cap/",
+        "hasHooks": false
+      },
+      {
+        "n": "Jay Waters",
+        "t": "Partner",
+        "li": "https://www.linkedin.com/company/monet-cap/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1077,
+    "name": "Sutton Funding",
+    "website": "https://suttonfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/sutton-funding/",
+    "leaders": [
+      {
+        "n": "Leadership Team",
+        "t": "Management",
+        "li": "https://www.linkedin.com/company/sutton-funding/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1078,
+    "name": "Bitty Advance",
+    "website": "https://bittyadvance.com",
+    "linkedinUrl": "https://www.linkedin.com/company/bitty-advance/",
+    "leaders": [
+      {
+        "n": "Craig Hecker",
+        "t": "CEO & Owner",
+        "li": "https://www.linkedin.com/in/craig-hecker-59b6b171/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1079,
+    "name": "Fundomate Technologies, Inc.",
+    "website": "https://fundomate.com",
+    "linkedinUrl": "https://www.linkedin.com/company/fundomate",
+    "leaders": [
+      {
+        "n": "Sam Schapiro",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/sam-schapiro-59393127/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1080,
+    "name": "QuickSpark Financial",
+    "website": "https://quickspark.com",
+    "linkedinUrl": "https://www.linkedin.com/company/quickspark-financial/",
+    "leaders": [
+      {
+        "n": "QuickSpark SBU Leadership",
+        "t": "Strategic Business Unit within TimePayment",
+        "li": "https://www.linkedin.com/company/quickspark-financial/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1081,
+    "name": "Braavo Capital",
+    "website": "https://www.getbraavo.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/braavocapital",
+    "leaders": [
+      {
+        "n": "Mark Loranger",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/company/braavocapital",
+        "hasHooks": false
+      },
+      {
+        "n": "Sergei Kovalenko",
+        "t": "Co-Founder",
+        "li": "https://www.linkedin.com/company/braavocapital",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1082,
+    "name": "Gemini Business Funding",
+    "website": "https://geminibusinessfunding.com/en",
+    "linkedinUrl": "https://www.linkedin.com/company/gemini-business-funding/",
+    "leaders": [
+      {
+        "n": "Leadership Team",
+        "t": "Management",
+        "li": "https://www.linkedin.com/company/gemini-business-funding/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1083,
+    "name": "SG Credit Partners",
+    "website": "https://sgcreditpartners.com",
+    "linkedinUrl": "https://www.linkedin.com/company/sg-credit-partners/",
+    "leaders": [
+      {
+        "n": "Marc Cole",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/in/marc-cole-1569609/",
+        "hasHooks": false
+      },
+      {
+        "n": "Charlie Perer",
+        "t": "Co-Founder",
+        "li": "https://www.linkedin.com/company/sg-credit-partners/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1084,
+    "name": "Wingspire Capital",
+    "website": "https://wingspirecapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/wingspire-capital",
+    "leaders": [
+      {
+        "n": "David Wisen",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/david-wisen-6b44a2b/",
+        "hasHooks": false
+      },
+      {
+        "n": "Eric Freeman",
+        "t": "Co-Founder, Head of Equipment Finance",
+        "li": "https://www.linkedin.com/company/wingspire-capital",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1085,
+    "name": "The Business Backer",
+    "website": "https://businessbacker.com",
+    "linkedinUrl": "https://www.linkedin.com/company/the-business-backer/people/",
+    "leaders": [
+      {
+        "n": "Jim Salters",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/company/the-business-backer/people/",
+        "hasHooks": false
+      },
+      {
+        "n": "Scott Avera",
+        "t": "Founder",
+        "li": "https://www.linkedin.com/company/the-business-backer/people/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1086,
+    "name": "Trustfi",
+    "website": "https://www.trustfi.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/trustfilending/",
+    "leaders": [
+      {
+        "n": "Bryan Morales",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/company/trustfilending/",
+        "hasHooks": false
+      },
+      {
+        "n": "William Kassar",
+        "t": "President",
+        "li": "https://www.linkedin.com/company/trustfilending/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1087,
+    "name": "QFS Capital",
+    "website": "https://www.qfscapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/qfs-capital/",
+    "leaders": [
+      {
+        "n": "Benjamin Hinke",
+        "t": "Manager/CFO",
+        "li": "https://www.linkedin.com/company/qfs-capital/",
+        "hasHooks": false
+      },
+      {
+        "n": "Evan Samlin",
+        "t": "Member",
+        "li": "https://www.linkedin.com/company/qfs-capital/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  }
+]

@@ -1,0 +1,657 @@
+[
+  {
+    "id": 1088,
+    "name": "Ansley Park Capital",
+    "website": "https://ansleyparkcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ansley-park-capital",
+    "leaders": [
+      {
+        "n": "Eric Miller",
+        "t": "President & CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Mark Trollinger",
+        "t": "CIO & Head of Capital Markets",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Robert Seltzer",
+        "t": "EVP, Head of Direct Originations",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1089,
+    "name": "LeasePoint Funding Group",
+    "website": "https://www.leasepointfg.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/leasepoint-funding-group",
+    "leaders": [
+      {
+        "n": "Jeffrey Markim",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/jeffmarkim/",
+        "hasHooks": false
+      },
+      {
+        "n": "Jessi Roesch",
+        "t": "Director of Operations",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1090,
+    "name": "Broadway Advance llc",
+    "website": "https://www.broadwayadvance.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/broadway-advance-funding/",
+    "leaders": [
+      {
+        "n": "Philip Defonte",
+        "t": "Managing Director",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1091,
+    "name": "nFusion Capital LLC",
+    "website": "http://www.nfusioncapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/nfusion-capital-llc/",
+    "leaders": [
+      {
+        "n": "Jason Lippman",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/jason-lippman/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1092,
+    "name": "Select Funding",
+    "website": "https://selectfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/select-funding/",
+    "leaders": [
+      {
+        "n": "Brian Spratt",
+        "t": "CEO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1093,
+    "name": "Amerifi",
+    "website": "https://amerificapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/amerifi-capital/",
+    "leaders": [
+      {
+        "n": "Amit",
+        "t": "Principal",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1094,
+    "name": "BlueTape",
+    "website": "https://bluetape.com",
+    "linkedinUrl": "https://www.linkedin.com/company/bluetapepay/",
+    "leaders": [
+      {
+        "n": "Yaser Masoudnia",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/in/yasermasoudnia/",
+        "hasHooks": false
+      },
+      {
+        "n": "Patrick Gannon",
+        "t": "Co-Founder & COO",
+        "li": "https://www.linkedin.com/in/patrickgannon/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1095,
+    "name": "GFE",
+    "website": "https://www.globalfundingexperts.com",
+    "linkedinUrl": "https://www.linkedin.com/company/global-funding-experts-gfe/",
+    "leaders": [
+      {
+        "n": "Boris Musheyev",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/boris-musheyev-8a4800244/",
+        "hasHooks": false
+      },
+      {
+        "n": "Boris Shakhmurov",
+        "t": "COO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1096,
+    "name": "Tongo Financial, Inc.",
+    "website": "https://www.gettongo.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/tongofinancial/",
+    "leaders": [
+      {
+        "n": "Brandon Wright",
+        "t": "Co-Founder & CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Luis Scull",
+        "t": "Co-Founder & CFO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Anna Kinney",
+        "t": "Chief Product Officer",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1097,
+    "name": "TVT Capital",
+    "website": "https://www.tvtcapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/tvt-capital-llc/",
+    "leaders": [
+      {
+        "n": "Andrew Fellus",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/andrew-fellus-3a5a0587/",
+        "hasHooks": false
+      },
+      {
+        "n": "John F. Porcello",
+        "t": "Principal",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1098,
+    "name": "Good Funding",
+    "website": "https://www.goodfunding.com/about",
+    "linkedinUrl": "https://www.linkedin.com/company/good-funding/",
+    "leaders": [
+      {
+        "n": "Ben Gold",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
+        "hasHooks": false
+      },
+      {
+        "n": "Jason Osiecki",
+        "t": "Co-Founder & President",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1099,
+    "name": "Targeted Lending Co., LLC",
+    "website": "https://www.targetedlending.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/targeted-lending-co/mycompany/",
+    "leaders": [
+      {
+        "n": "Brian Gallo",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/bgallo/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1100,
+    "name": "Advantage Merchant Funding",
+    "website": "https://advantagemerchantfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/advantagecapitalfunding/",
+    "leaders": [
+      {
+        "n": "Anthony Lodati",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/anthony-lodati-429628170/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1101,
+    "name": "Aztec Financial",
+    "website": "https://aztecfinancial.com",
+    "linkedinUrl": "https://www.linkedin.com/company/aztec-financial",
+    "leaders": [
+      {
+        "n": "John Sirrine",
+        "t": "President & CFO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1102,
+    "name": "Blueline Capital Group",
+    "website": "https://www.bluelinecapitalgrp.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/blueline-capital-group",
+    "leaders": [
+      {
+        "n": "Steve Humpfle",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/steve-humpfle-b7b7266/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1103,
+    "name": "Centra Funding, LLC",
+    "website": "https://centrafunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/centra-funding",
+    "leaders": [
+      {
+        "n": "John Boettigheimer",
+        "t": "President & Founder",
+        "li": "https://www.linkedin.com/in/john-boettigheimer-a87b158/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1104,
+    "name": "Funderial LLC",
+    "website": "https://www.funderial.com",
+    "linkedinUrl": "https://www.linkedin.com/company/funderial/",
+    "leaders": [
+      {
+        "n": "Oleg Rud",
+        "t": "Managing Member",
+        "li": "https://www.linkedin.com/in/oleg-rud-3a4a553/",
+        "hasHooks": false
+      },
+      {
+        "n": "Michael Pennartz",
+        "t": "Executive Vice President",
+        "li": "https://www.linkedin.com/in/michaelpennartz/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1105,
+    "name": "GoKapital",
+    "website": "https://www.gokapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/gokapital",
+    "leaders": [
+      {
+        "n": "Chris Moreno",
+        "t": "CEO & Founder",
+        "li": "https://www.linkedin.com/in/chrmoreno/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1106,
+    "name": "InterNex Capital",
+    "website": "https://internexcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/internex-capital/",
+    "leaders": [
+      {
+        "n": "Paul DeDomenico",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/in/pdedomenico",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1107,
+    "name": "Lendinero",
+    "website": "http://lendinero.com",
+    "linkedinUrl": "https://www.linkedin.com/company/lendinero",
+    "leaders": [
+      {
+        "n": "Gil Zapata",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/gilzapata/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1108,
+    "name": "Mr Advance",
+    "website": "https://www.mradvancellc.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/mr-advance/",
+    "leaders": [
+      {
+        "n": "Michael Kay",
+        "t": "CEO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1109,
+    "name": "Par Funding",
+    "website": "http://parfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/par-funding",
+    "leaders": [
+      {
+        "n": "Joseph LaForte",
+        "t": "Former Co-Founder",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Lisa McElhone",
+        "t": "Former Co-Founder",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1110,
+    "name": "TMC Community Capital",
+    "website": "https://tmccommunitycapital.org",
+    "linkedinUrl": "https://www.linkedin.com/company/tmc-community-capital/",
+    "leaders": [
+      {
+        "n": "Barbara Morrison",
+        "t": "Founder",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Daniel Fernandez",
+        "t": "CEO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1111,
+    "name": "Wall Street Funding",
+    "website": "https://wallfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/wall-street-funding/",
+    "leaders": [
+      {
+        "n": "Jay Keller",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/jay-keller-ceo/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1112,
+    "name": "Zip Capital Group",
+    "website": "https://zipcapitalgroup.com",
+    "linkedinUrl": "https://www.linkedin.com/company/zip-capital-group",
+    "leaders": [],
+    "newsCount": 1
+  },
+  {
+    "id": 1113,
+    "name": "LiftForward, Inc.",
+    "website": "https://www.liftforward.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/5033971",
+    "leaders": [
+      {
+        "n": "Jeffrey Rogers",
+        "t": "President & CEO",
+        "li": "https://www.linkedin.com/in/jeffreyrogersliftforward/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1114,
+    "name": "Regium Funding",
+    "website": "https://regiumfunding.com/en/business-funding/",
+    "linkedinUrl": "https://www.linkedin.com/company/regium-funding-business-finance/",
+    "leaders": [
+      {
+        "n": "Mike Manovo",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/mike-manovo-a0a37a90/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1116,
+    "name": "Prime Financial Technologies",
+    "website": "http://primeft.com",
+    "linkedinUrl": "https://www.linkedin.com/company/primeft/",
+    "leaders": [
+      {
+        "n": "Hicham Oudghiri",
+        "t": "Co-Founder & Board Member",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1459,
+    "name": "Big Think Capital Inc.",
+    "website": "https://bigthinkcapital.com",
+    "linkedinUrl": "bigthinkcapital.com",
+    "leaders": [
+      {
+        "n": "David Brown",
+        "t": "President & Founder",
+        "li": "https://www.linkedin.com/in/david-a-brown-54941a20/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1462,
+    "name": "CLARIFY CAPITAL II LLC d/b/a Clarify Capital",
+    "website": "https://www.clarifycapital.com",
+    "linkedinUrl": "www.clarifycapital.com",
+    "leaders": [
+      {
+        "n": "Michael Baynes",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/michael-baynes-94000a26/",
+        "hasHooks": false
+      },
+      {
+        "n": "Bryan Gerson",
+        "t": "Co-Founder & President",
+        "li": "https://www.linkedin.com/in/bryan-gerson-5b4b2020/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1470,
+    "name": "Direct Funding Now LLC",
+    "website": "https://directfundingnow.net",
+    "linkedinUrl": "directfundingnow.net",
+    "leaders": [
+      {
+        "n": "Kenneth Manesse",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/kenneth-m-313a99a9/",
+        "hasHooks": false
+      },
+      {
+        "n": "Robert Lawson",
+        "t": "Chief Revenue Officer",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Carlos Miranda",
+        "t": "COO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1472,
+    "name": "Duke & Co, LLC d/b/a Dynamic Capital",
+    "website": "https://dynamic-capital.com",
+    "linkedinUrl": "dynamic-capital.com",
+    "leaders": [
+      {
+        "n": "Steven Edisis",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/steven-edisis/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1489,
+    "name": "NATIONAL BIZ LLC d/b/a National Business Capital",
+    "website": "https://www.nationalbusinesscapital.com",
+    "linkedinUrl": "www.nationalbusinesscapital.com",
+    "leaders": [
+      {
+        "n": "Joe Camberato",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/growbyjoe/",
+        "hasHooks": false
+      },
+      {
+        "n": "Phil Fernandes",
+        "t": "COO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Glenn Reed",
+        "t": "CFO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1491,
+    "name": "PEARL ALPHA FUNDING, LLC",
+    "website": "https://No official operational website for PEARL ALPHA FUNDING, LLC was found.",
+    "linkedinUrl": "No official operational website for PEARL ALPHA FUNDING, LLC was found.",
+    "leaders": [],
+    "newsCount": 0
+  },
+  {
+    "id": 1493,
+    "name": "Premium Merchant Funding 18, LLC",
+    "website": "https://www.pmfus.com",
+    "linkedinUrl": "www.pmfus.com",
+    "leaders": [
+      {
+        "n": "Nasher Alex Fabregas",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/nasher-a-fabregas",
+        "hasHooks": false
+      },
+      {
+        "n": "Abe Burger",
+        "t": "COO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1495,
+    "name": "RIVERPOINT FINANCIAL GROUP INC. d/b/a Redwood Capital Solutions d/b/a Express Capital Group",
+    "website": "https://riverpointcapital.com",
+    "linkedinUrl": "riverpointcapital.com",
+    "leaders": [
+      {
+        "n": "Yisrael Anatian",
+        "t": "President",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 1
+  },
+  {
+    "id": 1501,
+    "name": "Shore Funding Solutions Inc.",
+    "website": "https://shorefundingsolutions.com",
+    "linkedinUrl": "https://shorefundingsolutions.com",
+    "leaders": [
+      {
+        "n": "Philip Teseo",
+        "t": "Co-CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Lauretta Teseo",
+        "t": "President",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  }
+]
