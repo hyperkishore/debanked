@@ -10,7 +10,7 @@ import {
   RatingData,
   EngagementEntry,
 } from "@/lib/types";
-import companiesData from "@/data/companies.json";
+import companiesData from "@/data/all-companies.json";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import {
   ResizablePanelGroup,
@@ -29,6 +29,7 @@ import { MobileNav } from "@/components/mobile-nav";
 import { PitchTab } from "@/components/pitch-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
 import { ChecklistTab } from "@/components/checklist-tab";
+import { DashboardTab } from "@/components/dashboard-tab";
 import { useLocalStorage } from "@/hooks/use-local-storage";
 import { useKeyboard } from "@/hooks/use-keyboard";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -257,6 +258,8 @@ export default function Home() {
   // Content rendering based on active tab
   const renderContent = () => {
     switch (activeTab) {
+      case "dashboard":
+        return <DashboardTab companies={companies} metState={metState} />;
       case "schedule":
         return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
       case "pitch":
@@ -320,7 +323,7 @@ export default function Home() {
         </div>
 
         {/* Main content area */}
-        <div className="flex-1 overflow-hidden">
+        <div className="flex-1 min-h-0 overflow-hidden">
           {activeTab === "companies" ? (
             <>
               {/* Desktop: Resizable panels */}
@@ -428,7 +431,7 @@ export default function Home() {
             </>
           ) : (
             /* Non-company tabs */
-            <div className="h-full pb-14 md:pb-0">{renderContent()}</div>
+            <div className="h-full pb-14 md:pb-0 overflow-auto">{renderContent()}</div>
           )}
         </div>
 

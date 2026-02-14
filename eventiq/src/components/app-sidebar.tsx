@@ -13,8 +13,7 @@ import {
   SidebarMenuItem,
   SidebarHeader,
 } from "@/components/ui/sidebar";
-import { Building2, Clock, Layers, CheckSquare, Search } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Building2, Clock, Layers, CheckSquare, Search, BarChart3 } from "lucide-react";
 
 interface AppSidebarProps {
   activeTab: TabType;
@@ -26,6 +25,7 @@ interface AppSidebarProps {
 
 const navItems: { id: TabType; label: string; icon: React.ComponentType<{ className?: string }>; shortcut: string }[] = [
   { id: "companies", label: "Companies", icon: Building2, shortcut: "1" },
+  { id: "dashboard", label: "Dashboard", icon: BarChart3, shortcut: "5" },
   { id: "schedule", label: "Schedule", icon: Clock, shortcut: "2" },
   { id: "pitch", label: "Pitch", icon: Layers, shortcut: "3" },
   { id: "checklist", label: "Checklist", icon: CheckSquare, shortcut: "4" },
@@ -127,7 +127,7 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.1.00</span>
+          <span className="opacity-50">v2.2.00</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

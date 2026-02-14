@@ -2,7 +2,7 @@
 
 import { TabType } from "@/lib/types";
 import { cn } from "@/lib/utils";
-import { Building2, Clock, Layers, CheckSquare } from "lucide-react";
+import { Building2, Clock, Layers, CheckSquare, BarChart3 } from "lucide-react";
 
 interface MobileNavProps {
   activeTab: TabType;
@@ -13,6 +13,7 @@ interface MobileNavProps {
 
 const tabs: { id: TabType; label: string; icon: React.ComponentType<{ className?: string }> }[] = [
   { id: "companies", label: "Companies", icon: Building2 },
+  { id: "dashboard", label: "Dashboard", icon: BarChart3 },
   { id: "schedule", label: "Schedule", icon: Clock },
   { id: "pitch", label: "Pitch", icon: Layers },
   { id: "checklist", label: "Checklist", icon: CheckSquare },

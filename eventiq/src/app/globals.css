@@ -48,6 +48,7 @@
   --color-sqo: var(--sqo);
   --color-client: var(--client);
   --color-icp: var(--icp);
+  --color-tam: var(--tam);
   --color-warning: var(--warning);
   --color-success: var(--success);
 }
@@ -90,6 +91,7 @@
   --sqo: oklch(0.58 0.22 25);
   --client: oklch(0.72 0.19 85);
   --icp: oklch(0.65 0.17 145);
+  --tam: oklch(0.55 0.05 250);
   --warning: oklch(0.72 0.19 85);
   --success: oklch(0.65 0.17 145);
 }
@@ -115,6 +117,9 @@
 .bg-type-sqo { background-color: oklch(0.58 0.22 25 / 0.1); }
 .bg-type-client { background-color: oklch(0.72 0.19 85 / 0.1); }
 .bg-type-icp { background-color: oklch(0.65 0.17 145 / 0.1); }
+.type-tam { color: var(--tam); }
+.border-type-tam { border-color: var(--tam); }
+.bg-type-tam { background-color: oklch(0.55 0.05 250 / 0.1); }
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {

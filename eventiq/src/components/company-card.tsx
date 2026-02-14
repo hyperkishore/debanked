@@ -31,17 +31,19 @@ function highlightText(text: string, query: string) {
   );
 }
 
-const typeColorMap = {
+const typeColorMap: Record<string, string> = {
   SQO: "border-l-[var(--sqo)]",
   Client: "border-l-[var(--client)]",
   ICP: "border-l-[var(--icp)]",
-} as const;
+  TAM: "border-l-[var(--tam)]",
+};
 
-const typeBadgeMap = {
+const typeBadgeMap: Record<string, string> = {
   SQO: "bg-[var(--sqo)]/10 text-[var(--sqo)] hover:bg-[var(--sqo)]/20",
   Client: "bg-[var(--client)]/10 text-[var(--client)] hover:bg-[var(--client)]/20",
   ICP: "bg-[var(--icp)]/10 text-[var(--icp)] hover:bg-[var(--icp)]/20",
-} as const;
+  TAM: "bg-[var(--tam)]/10 text-[var(--tam)] hover:bg-[var(--tam)]/20",
+};
 
 export function CompanyCard({
   company,
@@ -54,12 +56,13 @@ export function CompanyCard({
   query = "",
 }: CompanyCardProps) {
   const contactNames = company.contacts.map((c) => c.n).join(", ");
+  const subtitle = contactNames || company.location || "";
 
   return (
     <div
       className={cn(
         "group relative cursor-pointer border-l-[3px] rounded-lg bg-card p-3 transition-all hover:bg-secondary/50",
-        typeColorMap[company.type],
+        typeColorMap[company.type] || "border-l-muted",
         isSelected && "ring-1 ring-primary bg-secondary/50"
       )}
       onClick={() => onSelect(company.id)}
@@ -77,7 +80,7 @@ export function CompanyCard({
             </h3>
             <Badge
               variant="outline"
-              className={cn("text-[10px] px-1.5 py-0 h-4 font-semibold shrink-0", typeBadgeMap[company.type])}
+              className={cn("text-[10px] px-1.5 py-0 h-4 font-semibold shrink-0", typeBadgeMap[company.type] || "")}
             >
               {company.type}
             </Badge>
@@ -88,8 +91,13 @@ export function CompanyCard({
             )}
           </div>
           <p className="text-xs text-muted-foreground mt-1 truncate">
-            {highlightText(contactNames, query)}
+            {highlightText(subtitle, query)}
           </p>
+          {company.employees && company.employees > 0 && (
+            <span className="text-[10px] text-muted-foreground/60">
+              {company.employees} employees
+            </span>
+          )}
           {company.ice && (
             <p className="text-xs text-muted-foreground/70 mt-1 line-clamp-1">
               {company.ice.substring(0, 80)}...

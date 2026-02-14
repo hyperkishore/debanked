@@ -1,0 +1,298 @@
+[
+  {
+    "id": 1014,
+    "name": "BHG Financial",
+    "website": "https://bhgfinancial.com",
+    "linkedinUrl": "https://www.linkedin.com/company/bhgfinancial/",
+    "location": "Florida",
+    "employees": 1003
+  },
+  {
+    "id": 1015,
+    "name": "Biz2Credit (Itria Ventures)",
+    "website": "https://biz2credit.com",
+    "linkedinUrl": "https://www.linkedin.com/company/biz2credit-inc/",
+    "location": "New York",
+    "employees": 591
+  },
+  {
+    "id": 1016,
+    "name": "CapitaLand Group",
+    "website": "https://ecapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ecapitalcorp",
+    "location": "Florida",
+    "employees": 466
+  },
+  {
+    "id": 1017,
+    "name": "OnDeck",
+    "website": "https://ondeck.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ondeck/people/",
+    "location": "Chicago",
+    "employees": 388
+  },
+  {
+    "id": 1018,
+    "name": "Ascentium Capital",
+    "website": "https://ascentiumcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ascentium-capital",
+    "location": "West Virginia",
+    "employees": 363
+  },
+  {
+    "id": 1019,
+    "name": "Drip Capital",
+    "website": "https://www.dripcapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/dripcapital",
+    "location": "California",
+    "employees": 333
+  },
+  {
+    "id": 1020,
+    "name": "iBusiness Funding",
+    "website": "https://ibusinessfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/ibusiness-funding/",
+    "location": "Florida",
+    "employees": 294
+  },
+  {
+    "id": 1021,
+    "name": "Balboa Capital",
+    "website": "https://www.balboacapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/balboa-capital/",
+    "location": "California",
+    "employees": 258
+  },
+  {
+    "id": 1022,
+    "name": "ClickLease, LLC",
+    "website": "https://www.clicklease.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/clicklease-llc",
+    "location": "Utah",
+    "employees": 243
+  },
+  {
+    "id": 1023,
+    "name": "TimePayment Corp.",
+    "website": "https://timepayment.com",
+    "linkedinUrl": "https://www.linkedin.com/company/timepayment/",
+    "location": "Massachusetts",
+    "employees": 163
+  },
+  {
+    "id": 1024,
+    "name": "Mundi Trade, Inc.",
+    "website": "https://mundi.io/es",
+    "linkedinUrl": "https://www.linkedin.com/company/munditrade",
+    "location": "New York",
+    "employees": 152
+  },
+  {
+    "id": 1025,
+    "name": "Quantum Lending",
+    "website": "https://www.quantumlends.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/quantumlendingsolutions/",
+    "location": "Virginia",
+    "employees": 151
+  },
+  {
+    "id": 1026,
+    "name": "David Allen Capital, Inc.",
+    "website": "https://davidallencapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/official-davidallencapital",
+    "location": "Michigan",
+    "employees": 144
+  },
+  {
+    "id": 1027,
+    "name": "Marco",
+    "website": "https://www.marcofi.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/marcofi/",
+    "location": "Florida",
+    "employees": 134
+  },
+  {
+    "id": 1028,
+    "name": "North Mill Equipment Finance LLC",
+    "website": "https://nmef.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/north-mill-equipment-finance/",
+    "location": "Connecticut",
+    "employees": 133
+  },
+  {
+    "id": 1029,
+    "name": "inKind",
+    "website": "https://inkind.com",
+    "linkedinUrl": "https://www.linkedin.com/company/inkindcapital",
+    "location": "Texas",
+    "employees": 128
+  },
+  {
+    "id": 1030,
+    "name": "Raistone",
+    "website": "https://raistone.com",
+    "linkedinUrl": "https://www.linkedin.com/company/raistone-capital/",
+    "location": "New York",
+    "employees": 121
+  },
+  {
+    "id": 1031,
+    "name": "Kabbage",
+    "website": "http://www.kabbage.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/kabbage-american-express/people/",
+    "location": "Georgia",
+    "employees": 120
+  },
+  {
+    "id": 1032,
+    "name": "Aspiria",
+    "website": "https://www.aspiria.mx",
+    "linkedinUrl": "https://www.linkedin.com/company/aspiria/",
+    "location": "Jalisco",
+    "employees": 118
+  },
+  {
+    "id": 1033,
+    "name": "Capchase",
+    "website": "https://www.capchase.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/capchase/",
+    "location": "Massachusetts",
+    "employees": 116
+  },
+  {
+    "id": 1034,
+    "name": "Whetstone Holdings",
+    "website": "https://whetstoneholdings.com",
+    "linkedinUrl": "https://www.linkedin.com/company/whetstone-holdings/",
+    "location": "Florida",
+    "employees": 113
+  },
+  {
+    "id": 1035,
+    "name": "IOU Financial",
+    "website": "https://ioufinancial.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/iou-financial-inc-/",
+    "location": "Georgia",
+    "employees": 110
+  },
+  {
+    "id": 1036,
+    "name": "LiftFund",
+    "website": "https://www.liftfund.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/liftfund",
+    "location": "Texas",
+    "employees": 110
+  },
+  {
+    "id": 1037,
+    "name": "Pursuit Lending",
+    "website": "https://pursuitlending.com",
+    "linkedinUrl": "https://www.linkedin.com/company/pursuitlending/",
+    "location": "New York",
+    "employees": 110
+  },
+  {
+    "id": 1038,
+    "name": "Driven (formerly Thinking Capital)",
+    "website": "http://thinkingcapital.ca",
+    "linkedinUrl": "https://www.linkedin.com/company/drivenfinancialca",
+    "location": "Canada",
+    "employees": 103
+  },
+  {
+    "id": 1039,
+    "name": "Mission Capital",
+    "website": "https://www.missioncapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/sbg-funding-social/people/",
+    "location": "New York",
+    "employees": 98
+  },
+  {
+    "id": 1040,
+    "name": "GoCurrency",
+    "website": "https://www.gocurrency.com/",
+    "linkedinUrl": "http://www.linkedin.com/company/gocurrency",
+    "location": "California",
+    "employees": 97
+  },
+  {
+    "id": 1041,
+    "name": "Interface Financial Group",
+    "website": "https://www.interfacefinancial.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/the-interface-financial-group/",
+    "location": "Maryland",
+    "employees": 96
+  },
+  {
+    "id": 1042,
+    "name": "Libertas",
+    "website": "https://libertasfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/libertas-funding/people/",
+    "location": "Connecticut",
+    "employees": 94
+  },
+  {
+    "id": 1043,
+    "name": "BasePoint Capital LLC",
+    "website": "https://www.basepointcapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/basepoint-capital-llc/",
+    "location": "New York",
+    "employees": 92
+  },
+  {
+    "id": 1044,
+    "name": "The LCF Group",
+    "website": "https://www.thelcfgroup.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/the-lcf-group-inc/",
+    "location": "New York",
+    "employees": 91
+  },
+  {
+    "id": 1045,
+    "name": "Avtech Capital",
+    "website": "https://avtechcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/avtech-capital/",
+    "location": "Utah",
+    "employees": 77
+  },
+  {
+    "id": 1046,
+    "name": "Newity LLC",
+    "website": "https://newitymarket.com",
+    "linkedinUrl": "https://www.linkedin.com/company/newitymarket/",
+    "location": "Illinois",
+    "employees": 77
+  },
+  {
+    "id": 1047,
+    "name": "Hello Alice",
+    "website": "https://www.HelloAlice.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/helloalice/",
+    "location": "Texas",
+    "employees": 76
+  },
+  {
+    "id": 1048,
+    "name": "Purpose Unlimited",
+    "website": "https://www.purpose-unlimited.com/home",
+    "linkedinUrl": "https://www.linkedin.com/company/purpose-unlmtd/",
+    "location": "Toronto",
+    "employees": 74
+  },
+  {
+    "id": 1049,
+    "name": "Westwood Funding",
+    "website": "https://www.westwoodfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/westwood-funding/",
+    "location": "Florida",
+    "employees": 74
+  },
+  {
+    "id": 1050,
+    "name": "Commercial Funding Inc.",
+    "website": "https://www.commercialfund.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/commercial-fund/",
+    "location": "Utah",
+    "employees": 65
+  }
+]

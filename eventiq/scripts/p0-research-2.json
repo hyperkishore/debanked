@@ -1,0 +1,1110 @@
+[
+  {
+    "id": 1051,
+    "name": "Cuallix",
+    "desc": "Monterrey-based fintech with 25+ years in credit and payment processing across Mexico, US, and Hong Kong. Operates multiple platforms including Cuallet (digital banking) and Payllix (global payments/transfers).",
+    "contacts": [
+      {"n": "Executive Team", "t": "Leadership (specific names not publicly listed)"}
+    ],
+    "leaders": [
+      {"n": "Executive Team", "t": "C-Suite", "bg": "Cuallix leadership oversees a $514M revenue fintech operation spanning three countries with 60+ employees.", "li": "https://www.linkedin.com/company/financiera-cuallix/about/"}
+    ],
+    "news": [
+      {"h": "Cuallix Expands Payllix Global Payments Platform", "s": "Company Website, 2024", "d": "Payllix provides international bill payments, money transfers, and mobile top-ups across 100+ carriers."},
+      {"h": "Cuallix Integrates Technology into Traditional Financial Services", "s": "CBInsights, 2024", "d": "The company continues to blend technology with credit and savings products for individuals and businesses."}
+    ],
+    "ice": "Cuallix has built an impressive multi-country fintech operation spanning Mexico, the US, and Hong Kong. How are you managing underwriting consistency across such diverse markets?",
+    "icebreakers": [
+      "Your Payllix platform handles payments across 100+ carriers globally -- how do you manage risk assessment at that scale?",
+      "With 25+ years in the market, Cuallix has seen the full evolution of fintech. What's the biggest underwriting challenge you face today?",
+      "Operating across Mexico, US, and Hong Kong gives you unique cross-border insight. Are you looking to automate more of your credit decisioning?",
+      "Cuallix's blend of traditional finance and technology is impressive. How much of your underwriting process is still manual?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting automation could help Cuallix standardize credit decisions across its multi-country operations, reducing review time from 40 minutes to under 5.",
+      "With 450+ MCA companies already using HyperVerge, we understand the nuances of alternative lending underwriting that Cuallix handles.",
+      "Automating document verification and fraud detection would help Cuallix scale its Cuallet and Payllix platforms more efficiently."
+    ],
+    "ask": "Given Cuallix's cross-border operations, I'd love to show you how HyperVerge can standardize and accelerate your underwriting across all three markets. Can we schedule a 20-minute demo?"
+  },
+  {
+    "id": 1052,
+    "name": "Knight Capital Funding",
+    "desc": "Fort Lauderdale-based direct MCA funder specializing in merchant cash advances for small businesses across the US, with funding decisions in under 72 hours.",
+    "contacts": [
+      {"n": "Justin Levy", "t": "Co-Founder & CEO"},
+      {"n": "Martin", "t": "SVP of Sales & Marketing"},
+      {"n": "Jared Gaitan", "t": "Asset Manager"}
+    ],
+    "leaders": [
+      {"n": "Justin Levy", "t": "Co-Founder & CEO", "bg": "Founded Knight Capital Funding in 2013; attended University of Miami Herbert Business School.", "li": "https://www.linkedin.com/company/knight-capital-funding/"},
+      {"n": "Chris McCay", "t": "Marketing Director", "bg": "Manages Knight Capital's branding, marketing, affiliate onboarding, and web development.", "li": "https://www.linkedin.com/company/knight-capital-funding/"}
+    ],
+    "news": [
+      {"h": "Knight Capital Funding Continues MCA Industry Leadership", "s": "Company Website, 2025", "d": "Knight Capital has established itself as a leading MCA specialist with 72-hour funding decisions."},
+      {"h": "Knight Capital Expands Service to Construction, Retail, Restaurant Sectors", "s": "BBB Profile, 2025", "d": "The company serves businesses in construction, retail, restaurant, salon, manufacturing, and automotive."}
+    ],
+    "ice": "Knight Capital has been a leader in the MCA space since 2013 -- with the volume of deals you process, how are you handling the underwriting workload?",
+    "icebreakers": [
+      "Your 72-hour funding promise is impressive. How much of that timeline is spent on underwriting vs. operations?",
+      "Knight Capital serves a diverse range of industries. Does that create complexity in your risk assessment process?",
+      "As an MCA industry leader since 2013, you've seen the market evolve. Are you exploring AI-driven underwriting tools?",
+      "With deals coming in across construction, retail, and restaurants, how do you maintain consistency in your credit decisions?"
+    ],
+    "tp": [
+      "HyperVerge could help Knight Capital cut its underwriting review from 40 minutes to under 5, making that 72-hour funding promise even faster.",
+      "With 450+ MCA companies served, HyperVerge understands the specific underwriting challenges Knight Capital faces across multiple industries.",
+      "Our AI platform, trusted by PIRS Capital and other leading MCA funders, can automate document verification and bank statement analysis to improve deal throughput."
+    ],
+    "ask": "Knight Capital's growth in the MCA space means more deals to underwrite. Let me show you how we've helped similar funders 8x their review speed -- can we do a quick demo this week?"
+  },
+  {
+    "id": 1053,
+    "name": "Ualett",
+    "desc": "Delaware-based fintech providing cash advances to gig economy workers (rideshare drivers, couriers, 1099 workers) via a mobile app, using real-time earnings verification instead of credit checks.",
+    "contacts": [
+      {"n": "Ricky Michel Presbot", "t": "CEO & Co-Founder"},
+      {"n": "Jay Millard", "t": "Chief Revenue Officer"}
+    ],
+    "leaders": [
+      {"n": "Ricky Michel Presbot", "t": "CEO & Co-Founder", "bg": "Dominican-led founder who launched Ualett in 2018 to serve the underbanked gig economy.", "li": "https://www.linkedin.com/company/ualett"},
+      {"n": "Jay Millard", "t": "Chief Revenue Officer", "bg": "20+ years driving revenue growth across tech and real estate; formerly SVP Revenue at Dwolla.", "li": "https://www.linkedin.com/in/jaymillard/"}
+    ],
+    "news": [
+      {"h": "Ualett Secures $150M Debt Facility from Thiele Capital", "s": "Fintech Global, Sep 2025", "d": "Three-year credit line to expand go-to-market strategy and broaden gig economy customer base."},
+      {"h": "Ualett Celebrates 7th Anniversary with Hiring Push", "s": "PR Newswire, 2025", "d": "Major expansion with new hires and plans to deepen presence in underserved regions."},
+      {"h": "35% YoY Revenue Increase Under New CRO", "s": "The Fintech Magazine, 2025", "d": "Jay Millard's leadership drives significant revenue growth and 25% customer satisfaction improvement."}
+    ],
+    "ice": "Congratulations on securing that $150M debt facility -- that's a massive vote of confidence. As you scale lending to more gig workers, how are you planning to handle the increased underwriting volume?",
+    "icebreakers": [
+      "Your $150M facility from Thiele Capital is impressive. How are you preparing your underwriting infrastructure for that scale?",
+      "Ualett's 35% revenue growth is remarkable. Are you looking at AI tools to maintain underwriting quality as you scale?",
+      "Serving gig workers with real-time earnings verification is innovative. How automated is your current approval process?",
+      "As you expand into underserved regions, how do you plan to handle the increased complexity in risk assessment?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting automation could help Ualett handle the surge in applications that comes with a $150M facility, cutting review time from 40 minutes to under 5.",
+      "With 450+ alternative lending companies using HyperVerge, we've built expertise in real-time income verification workflows like Ualett uses.",
+      "As Ualett scales into new regions, HyperVerge can ensure consistent, fast underwriting decisions without proportionally scaling headcount."
+    ],
+    "ask": "With $150M in new capital to deploy, speed and accuracy in underwriting become critical. Can we show you how HyperVerge helps lenders like you scale 8x faster? 15 minutes is all we need."
+  },
+  {
+    "id": 1054,
+    "name": "Dakota Financial",
+    "desc": "Los Angeles-based asset-based direct funder specializing in equipment financing for trucking, construction, agriculture, and manufacturing, serving clients with challenging credit histories since 2002.",
+    "contacts": [
+      {"n": "Michael Green", "t": "Chairman"},
+      {"n": "Christopher Park", "t": "CFO"},
+      {"n": "Erin Smith", "t": "Customer Relations Manager"}
+    ],
+    "leaders": [
+      {"n": "Michael Green", "t": "Chairman", "bg": "Leads Dakota Financial's strategy, overseeing equipment financing operations that have served 15,000+ customers across all 50 states.", "li": "https://www.linkedin.com/company/dakota-financial-llc"},
+      {"n": "Christopher Park", "t": "CFO", "bg": "Manages financial operations for Dakota Financial's asset-based lending programs ranging from $15K to $400K.", "li": "https://www.linkedin.com/company/dakota-financial-llc"}
+    ],
+    "news": [
+      {"h": "Dakota Financial Named Inc. Best Workplaces 2022 Honoree", "s": "Inc. Magazine, 2022", "d": "Dakota Financial recognized for workplace culture and employee satisfaction."},
+      {"h": "Dakota Financial Continues National Equipment Financing Programs", "s": "MonitorDaily, 2024", "d": "Ongoing focus on funding for clients with bankruptcies, tax liens, and challenging credit profiles."}
+    ],
+    "ice": "Dakota Financial has been funding equipment deals for 20+ years, even for the toughest credit profiles. How are you currently assessing risk on those complex applications?",
+    "icebreakers": [
+      "Serving 15,000+ customers across all 50 states is impressive. How much of your underwriting is still manual?",
+      "Funding clients with bankruptcies and tax liens requires deep risk assessment. Are you using any AI tools for that?",
+      "Dakota Financial's niche in challenging credit profiles is unique. What's your biggest bottleneck in the approval process?",
+      "Being named an Inc. Best Workplace shows great culture. How is your team handling the volume of equipment financing applications?"
+    ],
+    "tp": [
+      "HyperVerge's AI can help Dakota Financial accelerate underwriting for equipment financing applications, cutting review time from 40 minutes to under 5 minutes.",
+      "With 450+ alternative lending companies served, HyperVerge has deep expertise in assessing complex credit profiles like Dakota Financial encounters daily.",
+      "Automating bank statement analysis and document verification would help Dakota Financial scale its national equipment financing programs without adding headcount."
+    ],
+    "ask": "Dakota Financial's specialty in complex credit profiles means thorough underwriting is essential. Let me show you how HyperVerge automates that process while maintaining your risk standards. Can we set up a demo?"
+  },
+  {
+    "id": 1055,
+    "name": "Fundura Capital",
+    "desc": "Online small business lending marketplace (operating as Fundera, now owned by NerdWallet) that connects entrepreneurs with multiple lenders for term loans, SBA loans, lines of credit, and equipment financing.",
+    "contacts": [
+      {"n": "Jared Hecht", "t": "Founder (now at USV)"},
+      {"n": "Andres Moran", "t": "Co-Founder"}
+    ],
+    "leaders": [
+      {"n": "Jared Hecht", "t": "Founder", "bg": "Serial entrepreneur who co-founded GroupMe (sold to Microsoft) before launching Fundera in 2013; now Venture Partner at Union Square Ventures.", "li": "https://www.linkedin.com/company/fundera/people/"},
+      {"n": "Andres Moran", "t": "Co-Founder", "bg": "Technology entrepreneur who co-founded Fundera to bring transparency to online lending.", "li": "https://www.linkedin.com/company/fundera/people/"}
+    ],
+    "news": [
+      {"h": "NerdWallet Acquires Fundera for Undisclosed Sum", "s": "TechCrunch, Nov 2020", "d": "NerdWallet expanded its small business offerings by acquiring the lending marketplace."},
+      {"h": "Fundera Continues Operating as NerdWallet Subsidiary", "s": "Finder, 2025", "d": "Fundera by NerdWallet continues matching businesses with lenders for up to $5M in funding."}
+    ],
+    "ice": "Fundera's marketplace model connecting businesses with lenders is a great concept. How are the lenders in your network handling underwriting speed and consistency?",
+    "icebreakers": [
+      "As a lending marketplace, you see deal flow from thousands of businesses. Are any of your lending partners using AI underwriting?",
+      "Fundera's transparency mission is commendable. How do you help your lender partners streamline their approval processes?",
+      "With NerdWallet's backing, Fundera has massive reach. What's the biggest friction point you see between applicants and lender approvals?",
+      "Jared Hecht built something impressive with Fundera. How is the platform evolving its lender matching algorithms?"
+    ],
+    "tp": [
+      "HyperVerge works with 450+ MCA and alternative lending companies -- the same types of lenders in Fundera's network -- to automate underwriting.",
+      "Lenders using HyperVerge cut review time from 40 minutes to under 5, which could dramatically improve approval speeds across Fundera's marketplace.",
+      "Recommending HyperVerge to your lending partners could improve the overall borrower experience on Fundera's platform."
+    ],
+    "ask": "Fundera's lender partners would benefit from faster, AI-powered underwriting. Could we explore a partnership where HyperVerge helps your network lenders approve deals faster?"
+  },
+  {
+    "id": 1056,
+    "name": "Business Capital LLC",
+    "desc": "Hallandale Beach, FL-based direct funder providing same-day merchant cash advances, revenue-based financing, and working capital to businesses nationwide, recently rebranded as BusinessCapital.com.",
+    "contacts": [
+      {"n": "Henry Pershin", "t": "Founder"},
+      {"n": "Jack Berger", "t": "President"}
+    ],
+    "leaders": [
+      {"n": "Henry Pershin", "t": "Founder", "bg": "Founded Business Capital LLC as a direct funder; recently led rebrand to BusinessCapital.com with real-time underwriting platform.", "li": "https://www.businesscapitalllc.com/"},
+      {"n": "Jack Berger", "t": "President", "bg": "Leads day-to-day operations at Business Capital with focus on same-day funding capabilities.", "li": "https://www.linkedin.com/in/jack-berger-91a16b14/"}
+    ],
+    "news": [
+      {"h": "Business Capital LLC Rebrands as BusinessCapital.com", "s": "CBS42/PR, Apr 2025", "d": "Launched new business funding platform with same-day funding and real-time underwriting capabilities."},
+      {"h": "BusinessCapital.com Introduces Real-Time Underwriting Platform", "s": "Company Website, 2025", "d": "New platform promises faster funding decisions with modernized technology stack."}
+    ],
+    "ice": "Congrats on the BusinessCapital.com rebrand and new real-time underwriting platform! What technology are you using to power those same-day funding decisions?",
+    "icebreakers": [
+      "Your recent rebrand to BusinessCapital.com with real-time underwriting is exciting. How are you handling the tech behind it?",
+      "Same-day MCA funding requires fast underwriting. What's your current review time per application?",
+      "The rebrand signals growth. Are you looking to further automate your underwriting to handle more deal volume?",
+      "As a direct funder, speed is your competitive advantage. How much of your underwriting is still manual?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could complement BusinessCapital.com's new real-time platform, cutting review time from 40 minutes to under 5.",
+      "With 450+ MCA companies using HyperVerge, including PIRS Capital, we understand exactly what direct funders like Business Capital need.",
+      "Automating document verification and bank statement analysis would help Business Capital deliver on its same-day funding promise consistently."
+    ],
+    "ask": "Your new real-time underwriting platform is the perfect foundation for HyperVerge's AI. Can we show you how we could supercharge your same-day funding capability in a quick demo?"
+  },
+  {
+    "id": 1057,
+    "name": "SouthStar Capital",
+    "desc": "Mount Pleasant, SC-based specialty finance company providing invoice factoring, accounts receivable financing, asset-based lending, and purchase order financing to businesses nationwide.",
+    "contacts": [
+      {"n": "Bernard Linney", "t": "CEO"},
+      {"n": "Michael Haddad", "t": "President"}
+    ],
+    "leaders": [
+      {"n": "Bernard Linney", "t": "CEO", "bg": "25+ years in financial services; built multiple companies exceeding $20M/year revenue in under 5 years; began career in commercial banking.", "li": "https://www.linkedin.com/in/bernard-linney-666ba26/"},
+      {"n": "Michael Haddad", "t": "President", "bg": "Leads operational strategy at SouthStar Capital's specialty finance operations.", "li": "https://www.linkedin.com/company/southstar-capital-llc/"}
+    ],
+    "news": [
+      {"h": "SouthStar Capital Provides $1.5M Factoring Facility for Health Apparel Company", "s": "Company Blog, 2024", "d": "Continued expansion of factoring services to support growing businesses."},
+      {"h": "SouthStar Capital Funds $2M Facility for Lighting Solutions Company", "s": "Company Blog, 2024", "d": "Asset-based lending deal supporting business expansion in the lighting industry."}
+    ],
+    "ice": "SouthStar has built an impressive factoring and ABL operation since 2008. With deals ranging across industries, how are you managing the underwriting workload?",
+    "icebreakers": [
+      "Your recent $2M facility for a lighting company shows SouthStar's range. How do you handle risk assessment across diverse industries?",
+      "SouthStar's 90% advance rate on invoices is competitive. How automated is your invoice verification process?",
+      "Bernard, your track record of building $20M+ companies is impressive. What's the biggest operational bottleneck at SouthStar today?",
+      "With factoring, ABL, and PO financing all under one roof, consistency in underwriting must be a challenge. How do you manage it?"
+    ],
+    "tp": [
+      "HyperVerge's AI could help SouthStar automate document verification across its factoring, ABL, and PO financing products, cutting review time from 40 minutes to under 5.",
+      "With 450+ alternative lending companies served, HyperVerge understands the unique underwriting needs of specialty finance companies like SouthStar.",
+      "Automating bank statement analysis and invoice verification would help SouthStar maintain its 24-hour funding promise while scaling operations."
+    ],
+    "ask": "SouthStar's multi-product approach requires versatile underwriting. Can we show you how HyperVerge handles factoring, ABL, and PO financing workflows in a single platform? Quick 15-minute demo?"
+  },
+  {
+    "id": 1058,
+    "name": "Swift Capital",
+    "desc": "Small business lending company (acquired by PayPal in 2017 for $183M) that provided working capital loans up to $500K, now integrated into PayPal's business lending operations.",
+    "contacts": [
+      {"n": "PayPal Business Lending Team", "t": "Post-Acquisition Leadership"}
+    ],
+    "leaders": [
+      {"n": "PayPal Business Lending", "t": "Parent Company", "bg": "PayPal acquired Swift Capital in 2017 to expand its small business lending capabilities and increase loan amounts to $500K.", "li": "https://www.linkedin.com/company/swift-financial"}
+    ],
+    "news": [
+      {"h": "PayPal Acquired Swift Capital for $183M", "s": "deBanked, Oct 2017", "d": "PayPal purchased Swift Financial to bolster its small business lending and underwriting capabilities."},
+      {"h": "Swift Capital Integration Into PayPal Working Capital", "s": "TechCrunch, 2017", "d": "The acquisition expanded PayPal's loan offerings to businesses beyond its payment processing customers."}
+    ],
+    "ice": "Swift Capital's integration into PayPal was a landmark deal in the alternative lending space. How has the PayPal ecosystem evolved your lending approach?",
+    "icebreakers": [
+      "The $183M acquisition by PayPal validated Swift Capital's model. How has the lending technology evolved since?",
+      "Swift Capital pioneered fast business lending. Now within PayPal, what's the biggest underwriting challenge at scale?",
+      "PayPal's data advantage combined with Swift's lending expertise is powerful. Are you exploring AI-driven underwriting?",
+      "Swift Capital's journey from startup to PayPal acquisition is fascinating. What innovations in underwriting drove that success?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting automation works at the scale PayPal/Swift Capital operates, processing applications in under 5 minutes vs. 40 minutes manually.",
+      "With 450+ MCA and lending companies served, HyperVerge has proven technology that could enhance Swift Capital's loan processing within the PayPal ecosystem.",
+      "PIRS Capital and other leading funders trust HyperVerge for fast, accurate underwriting decisions."
+    ],
+    "ask": "Even within PayPal's infrastructure, underwriting automation can unlock more volume. Let me show you how HyperVerge could enhance your lending workflow."
+  },
+  {
+    "id": 1059,
+    "name": "Swift Financial Corporation",
+    "desc": "Delaware-based small business lending company (now part of PayPal after 2017 acquisition) that pioneered fast working capital solutions for SMBs with loans up to $500K.",
+    "contacts": [
+      {"n": "PayPal Business Lending Team", "t": "Post-Acquisition Leadership"}
+    ],
+    "leaders": [
+      {"n": "PayPal Business Lending", "t": "Parent Company", "bg": "Swift Financial was established in 2006 in Wilmington, DE, and acquired by PayPal in 2017 for $183M to enhance SMB lending.", "li": "https://www.linkedin.com/company/swift-financial"}
+    ],
+    "news": [
+      {"h": "PayPal Acquires Swift Financial to Expand SMB Lending", "s": "PYMNTS, 2017", "d": "PayPal expanded its working capital business with the acquisition of Swift Financial."},
+      {"h": "Swift Financial Processed Loans Up to $500K Pre-Acquisition", "s": "FT Partners, 2017", "d": "Swift's higher loan limits complemented PayPal's existing $125K cap."}
+    ],
+    "ice": "Swift Financial was a pioneer in fast SMB lending before the PayPal acquisition. How has the integration shaped your underwriting capabilities?",
+    "icebreakers": [
+      "Swift Financial's $500K loan capability was a major asset for PayPal. How has the underwriting technology evolved?",
+      "The PayPal acquisition validated Swift's approach to fast business lending. What's changed in the underwriting process since?",
+      "Swift Financial's journey from Delaware startup to PayPal powerhouse is impressive. What role does automation play now?",
+      "As part of PayPal, Swift Financial has unmatched data access. Are you leveraging AI for underwriting decisions?"
+    ],
+    "tp": [
+      "HyperVerge reduces underwriting review time from 40 minutes to under 5, complementing Swift Financial's fast-funding DNA.",
+      "450+ MCA companies trust HyperVerge for AI-powered underwriting -- technology that could scale within PayPal's lending operations.",
+      "Automating document verification and bank statement analysis could help process more applications without increasing headcount."
+    ],
+    "ask": "Swift Financial's legacy of fast lending aligns perfectly with HyperVerge's mission. Can we explore how our AI underwriting fits within your current workflow?"
+  },
+  {
+    "id": 1060,
+    "name": "US Business Funding",
+    "desc": "Santa Ana, CA-based small business lender (est. 2008) providing working capital loans, merchant cash advances, SBA loans, and flexible business loans to SMBs nationwide.",
+    "contacts": [
+      {"n": "Peter Ribeiro", "t": "Founder & CEO"}
+    ],
+    "leaders": [
+      {"n": "Peter Ribeiro", "t": "Founder & CEO", "bg": "Founded US Business Funding in 2008; featured in deBanked discussing growth strategies and industry success.", "li": "https://www.linkedin.com/company/us-business-funding/"}
+    ],
+    "news": [
+      {"h": "Peter Ribeiro Talks Experience and Success in 2020", "s": "deBanked, Sep 2020", "d": "CEO discusses US Business Funding's growth strategies and navigating the lending landscape."},
+      {"h": "US Business Funding Expands SBA and Working Capital Programs", "s": "Company Website, 2025", "d": "Continued growth in SBA 7(a) and Express program offerings for small business owners."}
+    ],
+    "ice": "US Business Funding has been helping SMBs for over 15 years. With the volume of applications you see, how are you managing underwriting efficiency?",
+    "icebreakers": [
+      "Peter, your longevity in the business lending space since 2008 is impressive. How has your underwriting process evolved?",
+      "Offering MCAs, SBA loans, and working capital under one roof creates complexity. How do you handle risk assessment across products?",
+      "US Business Funding's approach of not requiring collateral or high credit scores is unique. What technology supports those decisions?",
+      "Being in the business for 15+ years, you've seen the rise of fintech. Are you exploring AI for underwriting automation?"
+    ],
+    "tp": [
+      "HyperVerge could help US Business Funding cut underwriting review from 40 minutes to under 5 across all its product lines -- MCAs, SBA, and working capital.",
+      "With 450+ MCA companies served, HyperVerge has proven AI underwriting technology that fits US Business Funding's multi-product model.",
+      "Automating bank statement analysis and document verification would help US Business Funding approve more applications faster."
+    ],
+    "ask": "With 15+ years of experience, you know that faster underwriting means more funded deals. Let me show you how HyperVerge achieves 8x faster reviews -- quick 15-minute demo?"
+  },
+  {
+    "id": 1061,
+    "name": "BusinessLoans.com",
+    "desc": "Charleston, SC-based online lending marketplace (est. 2020) that matches small business borrowers with lenders for short-term loans, long-term loans, lines of credit, and merchant cash advances.",
+    "contacts": [
+      {"n": "Leadership Team", "t": "Charleston, SC Office"}
+    ],
+    "leaders": [
+      {"n": "Leadership Team", "t": "Management", "bg": "BusinessLoans.com has helped over 100,000 small businesses prequalify since its 2020 founding in Charleston, SC.", "li": "https://www.linkedin.com/company/businessloans/"}
+    ],
+    "news": [
+      {"h": "BusinessLoans.com Surpasses 100,000 Business Prequalifications", "s": "Company Profile, 2025", "d": "The marketplace has scaled rapidly since 2020, connecting borrowers with lenders nationwide."},
+      {"h": "BusinessLoans.com Offers All 50 State Coverage", "s": "BBB Profile, 2025", "d": "Online services expanded to cover businesses in every US state."}
+    ],
+    "ice": "BusinessLoans.com has prequalified over 100,000 businesses in just a few years -- that's incredible growth. How are your lending partners handling the volume of applications?",
+    "icebreakers": [
+      "100,000+ prequalifications since 2020 is remarkable growth. Are your lending partners keeping up with the deal flow?",
+      "As a marketplace, you see borrower friction points firsthand. What's the biggest bottleneck in the approval process?",
+      "BusinessLoans.com's rapid scale in 50 states is impressive. How do you ensure lending partners maintain fast turnaround?",
+      "Connecting borrowers with MCA lenders requires speed. Are you exploring technology to help partners underwrite faster?"
+    ],
+    "tp": [
+      "HyperVerge works with 450+ MCA companies -- the same lenders in BusinessLoans.com's network -- to cut underwriting from 40 minutes to under 5.",
+      "Recommending HyperVerge to your lending partners could improve approval speed and the overall borrower experience on your marketplace.",
+      "PIRS Capital and other top MCA funders trust HyperVerge, creating a natural fit with BusinessLoans.com's lender network."
+    ],
+    "ask": "Your lending partners' underwriting speed directly impacts your marketplace conversion. Can we discuss how HyperVerge helps MCA funders in your network close deals faster?"
+  },
+  {
+    "id": 1062,
+    "name": "QuickBridge Funding, LLC",
+    "desc": "Irvine, CA-based alternative small business lender (subsidiary of National Funding) providing fast working capital loans up to $400K with A+ BBB rating and 4.8-star Trustpilot reviews.",
+    "contacts": [
+      {"n": "Ben Gold", "t": "Founding President"},
+      {"n": "Dave Gilbert", "t": "CEO, National Funding (Parent)"}
+    ],
+    "leaders": [
+      {"n": "Ben Gold", "t": "Founding President", "bg": "Founded QuickBridge in 2011; continued leadership after National Funding acquisition in 2018.", "li": "https://www.linkedin.com/company/quick-bridge-funding"},
+      {"n": "Dave Gilbert", "t": "CEO, National Funding", "bg": "Founder of National Funding who acquired QuickBridge to expand the company's alternative lending portfolio.", "li": "https://www.linkedin.com/company/quick-bridge-funding"}
+    ],
+    "news": [
+      {"h": "QuickBridge Earns Top 3 Customer Satisfaction Award from LendingTree", "s": "LendingTree, 2024", "d": "Recognition for outstanding customer experience in small business lending."},
+      {"h": "QuickBridge Maintains A+ BBB Rating with 4.8 Trustpilot Score", "s": "BBB/Trustpilot, 2025", "d": "Consistently high ratings demonstrate strong borrower satisfaction."},
+      {"h": "QuickBridge Ranks on Inc. 500 Two Consecutive Years", "s": "Inc. Magazine, 2024", "d": "Rapid growth recognized in America's fastest-growing companies list."}
+    ],
+    "ice": "QuickBridge's Top 3 customer satisfaction award from LendingTree is well-deserved. How are you maintaining that quality as you scale lending volume?",
+    "icebreakers": [
+      "That LendingTree Top 3 customer satisfaction award is impressive. How much does fast underwriting contribute to that score?",
+      "Two consecutive Inc. 500 rankings show incredible growth. Is your underwriting infrastructure keeping pace?",
+      "QuickBridge's 4.8 Trustpilot rating is rare in lending. What role does your approval speed play in customer satisfaction?",
+      "As part of National Funding, QuickBridge has scale. Are you looking at AI tools to further accelerate approvals?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help QuickBridge maintain its top customer satisfaction scores by cutting review time from 40 minutes to under 5.",
+      "With 450+ MCA companies served, HyperVerge helps lenders like QuickBridge process more applications without sacrificing quality.",
+      "Automating bank statement analysis and document verification aligns with QuickBridge's reputation for speed and reliability."
+    ],
+    "ask": "QuickBridge's commitment to fast, quality lending is exactly what HyperVerge supports. Can we show you how our AI maintains your high standards while 8x-ing throughput?"
+  },
+  {
+    "id": 1063,
+    "name": "CoFi Lending",
+    "desc": "Utah-based fintech specializing in construction finance with a proprietary software platform that streamlines the draw process, serving small-to-mid-size builders with loans from $250K to $60M.",
+    "contacts": [
+      {"n": "Cameron Harris", "t": "Co-Founder & Co-CEO"},
+      {"n": "Mike Lacey", "t": "Co-Founder & Co-CEO"},
+      {"n": "David Rockwood", "t": "Co-Founder"}
+    ],
+    "leaders": [
+      {"n": "Cameron Harris", "t": "Co-Founder & Co-CEO", "bg": "Former residential real estate developer who experienced construction loan pain points firsthand before co-founding CoFi.", "li": "https://www.linkedin.com/company/cofilending/"},
+      {"n": "Mike Lacey", "t": "Co-Founder & Co-CEO", "bg": "Former residential developer with 30+ years construction and lending experience; built CoFi's proprietary payment platform.", "li": "https://www.linkedin.com/company/cofilending/"}
+    ],
+    "news": [
+      {"h": "CoFi Announces $7M Seed to Transform Construction Financing", "s": "PR Newswire, Mar 2022", "d": "Seed round to build out construction loan marketplace and digital lending platform."},
+      {"h": "CoFi Streamlines Construction Financing for Small Builders", "s": "Utah Business, 2022", "d": "Platform automates the construction draw process to expedite payments to subcontractors."}
+    ],
+    "ice": "CoFi's approach to streamlining construction finance is solving a real pain point. How are you handling underwriting for the diverse range of builder profiles?",
+    "icebreakers": [
+      "Your $7M seed to transform construction financing shows strong investor confidence. How automated is your lending process?",
+      "As former developers, you understand construction loan pain points firsthand. What's the biggest underwriting bottleneck?",
+      "CoFi's proprietary payment platform is innovative. Are you exploring AI for the underwriting side of the equation?",
+      "Serving loans from $250K to $60M covers a wide range. How do you maintain consistent underwriting across that spectrum?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could complement CoFi's proprietary construction finance platform, cutting borrower review time from 40 minutes to under 5.",
+      "With 450+ alternative lending companies served, HyperVerge brings proven automation that could help CoFi scale its construction loan marketplace.",
+      "Automating document verification for construction loan applications would help CoFi expedite the entire financing process."
+    ],
+    "ask": "CoFi's tech-first approach to construction lending makes you an ideal fit for AI-powered underwriting. Can we show you how HyperVerge integrates with innovative platforms like yours?"
+  },
+  {
+    "id": 1064,
+    "name": "Novel Capital",
+    "desc": "Kansas City-based fintech providing non-dilutive, revenue-based financing to B2B SaaS companies, with $90M+ deployed to hundreds of tech companies through its Capital Intelligence platform.",
+    "contacts": [
+      {"n": "Carlos Antequera", "t": "Co-Founder & CEO"},
+      {"n": "Keith Harrington", "t": "Co-Founder & COO"}
+    ],
+    "leaders": [
+      {"n": "Carlos Antequera", "t": "Co-Founder & CEO", "bg": "Previously co-founded EdTech startup Netchemia (sold to Vista Equity Partners); MBA from University of Kansas; originally from Bolivia.", "li": "https://www.linkedin.com/company/novelcapital"},
+      {"n": "Keith Harrington", "t": "Co-Founder & COO", "bg": "Former Managing Director at KBA leading $591M fund investments in digital health and biotech.", "li": "https://www.linkedin.com/in/keithharringtonkansas"}
+    ],
+    "news": [
+      {"h": "Novel Capital Secures $15M Oversubscribed Pre-Series A", "s": "Startland News, May 2024", "d": "Round co-led by IGNIA Partners and Ulu Ventures to expand Capital Intelligence platform."},
+      {"h": "Novel Capital Surpasses $90M in Non-Dilutive Capital Deployed", "s": "KCRise Fund, 2024", "d": "Hundreds of SaaS companies funded through revenue-based financing model."}
+    ],
+    "ice": "Congratulations on the $15M oversubscribed round -- that's strong investor confidence. As you scale your Capital Intelligence platform, how are you handling the increased underwriting volume?",
+    "icebreakers": [
+      "Your oversubscribed $15M round shows strong demand for revenue-based financing. How automated is your underwriting today?",
+      "Novel Capital's focus on SaaS companies is smart. What's unique about underwriting recurring revenue businesses?",
+      "Carlos, your journey from Netchemia to Novel Capital shows deep entrepreneurial instinct. What drove you to revenue-based financing?",
+      "With $90M+ deployed, you've proven the model. How is your Capital Intelligence platform evolving for faster decisions?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could enhance Novel Capital's Capital Intelligence platform, cutting review time from 40 minutes to under 5 minutes.",
+      "With 450+ lending companies served, HyperVerge has proven technology for automating financial document analysis that Novel Capital could leverage.",
+      "As Novel scales its SaaS lending, HyperVerge can ensure consistent, fast underwriting decisions without proportionally scaling the team."
+    ],
+    "ask": "Novel's Capital Intelligence platform is the perfect foundation for HyperVerge's AI underwriting. Can we explore how our technology could accelerate your SaaS lending decisions?"
+  },
+  {
+    "id": 1065,
+    "name": "The Fundworks",
+    "desc": "Salt Lake City-based direct MCA funder providing revenue-based financing to small businesses, with funding in as little as one business day and terms up to 180 days.",
+    "contacts": [
+      {"n": "Bradley Smiedt", "t": "Co-Founder & Chairman"},
+      {"n": "Evan Smiedt", "t": "CEO"}
+    ],
+    "leaders": [
+      {"n": "Bradley Smiedt", "t": "Co-Founder & Chairman", "bg": "Founded The Fundworks in 2015 as a direct MCA funder focused on revenue-based financing.", "li": "https://www.linkedin.com/company/linkedin.comthefundworksllc/"},
+      {"n": "Evan Smiedt", "t": "CEO", "bg": "Leads day-to-day operations at The Fundworks, managing the company's direct funding and merchant relationships.", "li": "https://www.linkedin.com/company/linkedin.comthefundworksllc/"}
+    ],
+    "news": [
+      {"h": "The Fundworks Maintains A+ BBB Rating", "s": "BBB, 2025", "d": "Strong business bureau standing with positive customer reviews for MCA services."},
+      {"h": "Utah Enacts MCA Regulation Requiring Provider Registration", "s": "Industry News, 2024", "d": "New state regulations require MCA lenders like The Fundworks to register with Utah Department of Financial Institutions."}
+    ],
+    "ice": "The Fundworks has built a solid reputation as a direct MCA funder with an A+ BBB rating. How are you handling the underwriting volume as a direct funder?",
+    "icebreakers": [
+      "Your A+ BBB rating and 4.6 Google rating show strong customer trust. How fast is your current underwriting process?",
+      "As a direct MCA funder, speed is everything. What's your biggest bottleneck in getting merchants funded?",
+      "Utah's new MCA regulations add compliance complexity. Are you looking at technology to manage both compliance and speed?",
+      "The Fundworks' direct funding model means you own the full underwriting process. How automated is it today?"
+    ],
+    "tp": [
+      "HyperVerge could help The Fundworks cut MCA underwriting from 40 minutes to under 5, directly accelerating your one-day funding promise.",
+      "With 450+ MCA companies served, including PIRS Capital, HyperVerge is the trusted AI underwriting platform for direct funders like The Fundworks.",
+      "Automating bank statement analysis and document verification would help The Fundworks process more deals without adding headcount."
+    ],
+    "ask": "As a direct MCA funder, faster underwriting means more funded deals. Let me show you how HyperVerge helps funders like you 8x their review speed. 15 minutes?"
+  },
+  {
+    "id": 1066,
+    "name": "Capital Infusion LLC",
+    "desc": "Miami-based alternative business lender providing working capital loans, revolving lines of credit, equipment financing, SBA loans, and merchant cash advances from $5K to $5M+ since 2019.",
+    "contacts": [
+      {"n": "Matthew Birnholz", "t": "Founder & CEO"}
+    ],
+    "leaders": [
+      {"n": "Matthew Birnholz", "t": "Founder & CEO", "bg": "Decades of industry experience; previously Regional Director at ForwardLine Financial and Area Sales Manager at CAN Capital; began career at JPMorgan Chase.", "li": "https://www.linkedin.com/in/matthew-birnholz-1731bb65/"}
+    ],
+    "news": [
+      {"h": "Capital Infusion Expands Funding Solutions to US, Canada, and Puerto Rico", "s": "Company Website, 2025", "d": "Broadened geographic reach serving small businesses across North America."},
+      {"h": "Capital Infusion Offers 4-Hour Working Capital Funding", "s": "Company Website, 2025", "d": "Working capital loans between $5K-$500K funded in as little as 4 hours."}
+    ],
+    "ice": "Matthew, your background at ForwardLine, CAN Capital, and JPMorgan gives you incredible industry perspective. How are you leveraging that experience to differentiate Capital Infusion's underwriting?",
+    "icebreakers": [
+      "4-hour funding is incredibly fast. What technology is powering Capital Infusion's underwriting to achieve that speed?",
+      "Your experience at CAN Capital and ForwardLine gives you unique insight. What's the biggest underwriting challenge at Capital Infusion?",
+      "Expanding to Canada and Puerto Rico adds complexity. How are you maintaining underwriting consistency across markets?",
+      "Matthew, you've seen the lending industry from all angles. What would make your underwriting process even better?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting would complement Capital Infusion's 4-hour funding speed, cutting review time from 40 minutes to under 5.",
+      "With 450+ MCA and lending companies served, HyperVerge has proven technology that fits Capital Infusion's multi-product model.",
+      "As Capital Infusion expands to Canada and Puerto Rico, HyperVerge can ensure consistent, fast underwriting across all markets."
+    ],
+    "ask": "Your 4-hour funding promise requires best-in-class underwriting speed. Can we show you how HyperVerge's AI makes that sustainable at scale? Quick demo?"
+  },
+  {
+    "id": 1067,
+    "name": "Kalamata Capital Group",
+    "desc": "Bethesda, MD-based MCA funder providing revenue-based financing up to $750K with same-day funding, backed by a $500M+ securitization facility and proprietary Kalamata Cash platform.",
+    "contacts": [
+      {"n": "Steven Mandis", "t": "Founder & Chairman"},
+      {"n": "Brandon Laks", "t": "Co-President"},
+      {"n": "Connor Phillips", "t": "Co-President"}
+    ],
+    "leaders": [
+      {"n": "Steven Mandis", "t": "Founder & Chairman", "bg": "Previously owned Rapid Financial Services (sold to Rockbridge Growth Equity in 2013); founded Kalamata named after his Greek heritage.", "li": "https://www.linkedin.com/company/kalamata-capital-group/"},
+      {"n": "Brandon Laks", "t": "Co-President", "bg": "One of Kalamata's first employees; now leads co-presidential team managing $1B+ in funding operations.", "li": "https://www.linkedin.com/in/brandonlaks23/"}
+    ],
+    "news": [
+      {"h": "Kalamata Closes $500M Securitization for Small Business Financing", "s": "BusinessWire, Apr 2024", "d": "KBRA-rated BBB securitization with Guggenheim Securities as sole structuring advisor."},
+      {"h": "Kalamata Upsizes 2024 Securitization by 25%", "s": "PR Newswire, Jul 2025", "d": "Strong growth from proprietary Kalamata Cash platform drives securitization expansion."},
+      {"h": "Kalamata Surpasses $1 Billion in Total Funding", "s": "Company Profile, 2024", "d": "Over 13,000 loans and MCAs funded since founding in 2013."}
+    ],
+    "ice": "Kalamata's $500M securitization with a BBB rating from KBRA is a huge milestone. As you deploy that capital through the Kalamata Cash platform, how are you scaling underwriting?",
+    "icebreakers": [
+      "The 25% upsize on your securitization shows incredible demand. How is your underwriting keeping pace with that growth?",
+      "Steven, your journey from Rapid Financial to building Kalamata to $1B+ in funding is impressive. What's the biggest challenge now?",
+      "Kalamata Cash is an innovative proprietary platform. How much of the underwriting is automated vs. manual?",
+      "With 13,000+ deals funded and a BBB-rated securitization, you've proven institutional-grade quality. How do you maintain that at scale?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Kalamata deploy its $500M+ facility faster by cutting review time from 40 minutes to under 5.",
+      "With 450+ MCA companies served, HyperVerge is the trusted platform for funders at Kalamata's scale -- including PIRS Capital.",
+      "Automating document verification and bank statement analysis would complement Kalamata Cash and help maintain that BBB-rated portfolio quality."
+    ],
+    "ask": "Kalamata's institutional-grade securitization demands consistent underwriting quality at speed. Can we show you how HyperVerge delivers both in a quick demo?"
+  },
+  {
+    "id": 1068,
+    "name": "Capital Crossing",
+    "desc": "Boston-based commercial loan acquirer and servicer (est. 1987) specializing in underwriting and investing in small balance commercial real estate and C&I loans under $20M.",
+    "contacts": [
+      {"n": "Ted F Mehm", "t": "Manager"}
+    ],
+    "leaders": [
+      {"n": "Ted F Mehm", "t": "Manager", "bg": "Manages Capital Crossing's operations in acquiring and servicing discounted commercial loan pools nationwide for 25+ years.", "li": "https://www.linkedin.com/company/capital-crossing-servicing-company-llc/"}
+    ],
+    "news": [
+      {"h": "Capital Crossing Continues Small Balance Commercial Loan Acquisitions", "s": "Bloomberg, 2024", "d": "Ongoing focus on pools with $15M to $1B+ in total unpaid principal balance."},
+      {"h": "Capital Crossing Expands National Loan Servicing Operations", "s": "Company Profile, 2024", "d": "Serving customers across all US markets including suburban, rural, and exurban locations."}
+    ],
+    "ice": "Capital Crossing has been in the commercial loan acquisition space for over 35 years. How are you managing underwriting on those large loan pools?",
+    "icebreakers": [
+      "Acquiring and servicing loan pools from $15M to $1B+ requires sophisticated underwriting. How automated is your process?",
+      "35 years in commercial loan acquisitions gives you incredible market insight. What's changed most in your underwriting approach?",
+      "Capital Crossing's expertise in distressed commercial loans is unique. How do you assess risk on discounted loan pools?",
+      "Serving all US markets from suburban to rural requires versatile underwriting. What technology supports your decisions?"
+    ],
+    "tp": [
+      "HyperVerge's AI could help Capital Crossing accelerate loan pool underwriting, cutting individual review time from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge has proven document analysis technology ideal for Capital Crossing's pool acquisitions.",
+      "Automating the due diligence process for commercial loan portfolios would help Capital Crossing close acquisitions faster."
+    ],
+    "ask": "Capital Crossing's loan pool acquisitions require thorough but fast underwriting. Can we show you how HyperVerge automates that analysis? Quick 15-minute demo?"
+  },
+  {
+    "id": 1069,
+    "name": "Bizfund LLC",
+    "desc": "Delaware-based MCA funder (operating as New Era Lending) providing merchant cash advances and short-term funding to small businesses with 6+ months operating history and $10K+ monthly revenue.",
+    "contacts": [
+      {"n": "Danny Koshanfar", "t": "CEO"}
+    ],
+    "leaders": [
+      {"n": "Danny Koshanfar", "t": "CEO", "bg": "Former President and founder of Pearl Capital (2009-2012); previously led New Era Lending before BizFund.", "li": "https://www.linkedin.com/in/danny-koshanfar-0576a485/"}
+    ],
+    "news": [
+      {"h": "BizFund Continues MCA Funding Operations Under New Era Brand", "s": "Industry Profile, 2024", "d": "BizFund operates as a direct MCA funder with $18M in estimated revenue."},
+      {"h": "BizFund Serves Businesses That Don't Qualify for Traditional Loans", "s": "Company Profile, 2025", "d": "Funding available for businesses with limited credit history, various industries, and flexible requirements."}
+    ],
+    "ice": "Danny, your experience founding Pearl Capital and building BizFund shows deep MCA expertise. How are you scaling underwriting as deal volume grows?",
+    "icebreakers": [
+      "BizFund's focus on businesses that don't qualify for traditional loans is a big market. How automated is your approval process?",
+      "Danny, your journey from Pearl Capital to BizFund shows entrepreneurial grit. What's the biggest operational challenge today?",
+      "Funding businesses with limited credit history requires sophisticated risk assessment. What tools are you using?",
+      "BizFund's $10K minimum revenue threshold means high volume. How fast is your current underwriting turnaround?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help BizFund cut MCA review time from 40 minutes to under 5, processing more deals daily.",
+      "With 450+ MCA companies served, HyperVerge understands the specific challenges of funding businesses with limited credit history.",
+      "Automating bank statement analysis would help BizFund maintain underwriting quality while scaling volume."
+    ],
+    "ask": "BizFund's MCA volume would benefit from faster underwriting. Can we show you how HyperVerge helps similar funders 8x their review speed? Quick demo this week?"
+  },
+  {
+    "id": 1070,
+    "name": "Republic Business Credit",
+    "desc": "New Orleans-based specialty lender (subsidiary of Renasant Bank) providing asset-based lending, factoring, and e-commerce lending to entrepreneurial and PE-owned businesses nationwide since 2011.",
+    "contacts": [
+      {"n": "Stewart Chesters", "t": "CEO & Founder"},
+      {"n": "Robert Meyers", "t": "President"},
+      {"n": "Matthew Begley", "t": "COO"}
+    ],
+    "leaders": [
+      {"n": "Stewart Chesters", "t": "CEO & Founder", "bg": "20+ years of commercial finance experience across two continents; built Republic from startup to national lender.", "li": "https://www.linkedin.com/in/stewartchesters/"},
+      {"n": "Robert Meyers", "t": "President", "bg": "Appointed President in 2016; leads national sales team building and business development.", "li": "https://www.linkedin.com/company/1735791"}
+    ],
+    "news": [
+      {"h": "Republic Business Credit Celebrates 15th Anniversary", "s": "PR Newswire, Jan 2026", "d": "Marking 15 years of client-focused growth with 5+ offices and 40+ employees nationwide."},
+      {"h": "Republic Provides $15M ABL for Gulf Coast Food Manufacturer", "s": "IFA Commercial Factor, 2025", "d": "Major asset-based loan supporting growth in food manufacturing sector."},
+      {"h": "Republic Acquires Continental Business Credit and Fast A/R Funding", "s": "SFNet, 2019", "d": "Strategic acquisitions expanded Republic's reach to Los Angeles market."}
+    ],
+    "ice": "Congratulations on Republic's 15th anniversary -- growing from a New Orleans startup to a national lender is remarkable. How are you scaling underwriting across your expanding office network?",
+    "icebreakers": [
+      "Your 15th anniversary shows incredible staying power. How has Republic's underwriting evolved over those years?",
+      "That $15M ABL for the Gulf Coast manufacturer is a big deal. How automated is your due diligence process?",
+      "Stewart, building Republic across two continents of experience is impressive. What's your vision for the next 15 years?",
+      "With factoring, ABL, and e-commerce lending, Republic needs versatile underwriting. How do you maintain consistency?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Republic Business Credit scale across its 5+ offices, cutting review time from 40 minutes to under 5.",
+      "With 450+ alternative lending companies served, HyperVerge has proven technology for factoring, ABL, and other products Republic offers.",
+      "As Republic celebrates 15 years and plans growth, HyperVerge can ensure consistent underwriting quality without proportionally scaling headcount."
+    ],
+    "ask": "Republic's 15th anniversary is the perfect time to invest in next-gen underwriting. Can we show you how HyperVerge supports multi-product lenders like Republic?"
+  },
+  {
+    "id": 1071,
+    "name": "Ampla Technologies Inc.",
+    "desc": "New York-based fintech (acquired by FundThrough in 2025) that provided tech-enabled financing to consumer brands with $2B+ in originations, including lines of credit, corporate cards, and extended payment terms.",
+    "contacts": [
+      {"n": "Anthony Santomo", "t": "Founder & CEO (now Strategic Advisor)"},
+      {"n": "Jim Cummings", "t": "Chief Operations Officer"},
+      {"n": "Zachary Goodwin", "t": "Chief Revenue Officer"}
+    ],
+    "leaders": [
+      {"n": "Anthony Santomo", "t": "Founder & CEO", "bg": "Founded Ampla in 2019; grew it to $2B+ in originations before FundThrough acquisition; now serves as strategic advisor.", "li": "https://www.linkedin.com/company/getampla/about/"},
+      {"n": "Steven Uster", "t": "CEO, FundThrough (Acquirer)", "bg": "Co-founded FundThrough and led the acquisition of Ampla in April 2025 alongside $25M Series B.", "li": "https://www.linkedin.com/company/getampla/about/"}
+    ],
+    "news": [
+      {"h": "FundThrough Acquires Ampla Technologies", "s": "TechCrunch/PR, Apr 2025", "d": "FundThrough acquired Ampla to strengthen its digital-first invoice funding solution."},
+      {"h": "Ampla Surpasses $2B in Loan Originations", "s": "Company Profile, 2025", "d": "Major milestone in consumer brand financing with $5T+ in transaction volume processed."},
+      {"h": "FundThrough Raises $25M Series B Alongside Ampla Acquisition", "s": "BetaKit, Apr 2025", "d": "Klister Credit Corp led the equity investment to fuel combined platform growth."}
+    ],
+    "ice": "Ampla's $2B+ in originations before the FundThrough acquisition is incredible. How is the combined platform approaching underwriting for consumer brands?",
+    "icebreakers": [
+      "The FundThrough acquisition gives Ampla even more scale. How are you handling underwriting integration across both platforms?",
+      "Anthony, growing Ampla to $2B in originations in 6 years is remarkable. What drove that growth?",
+      "$5 trillion in transaction volume gives you incredible data. How are you leveraging that for better underwriting?",
+      "The FundThrough combination creates a powerhouse in invoice funding. What's the biggest underwriting challenge in the transition?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help the combined Ampla/FundThrough platform process consumer brand applications faster, cutting review from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge has proven technology for the high-volume invoice financing that Ampla specializes in.",
+      "Automating document verification post-acquisition would help unify underwriting standards across both legacy platforms."
+    ],
+    "ask": "Post-acquisition is the perfect time to optimize underwriting. Can we show you how HyperVerge helps unified platforms maintain speed and quality?"
+  },
+  {
+    "id": 1072,
+    "name": "Northern Initiatives",
+    "desc": "Michigan-based nonprofit CDFI providing affordable small business loans ($1K-$500K) across all 73 Michigan counties, with coaching and resources for entrepreneurs who don't qualify for traditional banks.",
+    "contacts": [
+      {"n": "Elissa Sangalli", "t": "CEO/President"},
+      {"n": "Amanda Blondeau", "t": "Chief Strategy Officer"},
+      {"n": "Chuck Hurst", "t": "VP of Lending"}
+    ],
+    "leaders": [
+      {"n": "Elissa Sangalli", "t": "CEO/President", "bg": "Third president of Northern Initiatives; previously spent 13 years directing Local First, a nonprofit working with 1,000+ businesses in west Michigan.", "li": "https://www.linkedin.com/company/northern-initiatives/"},
+      {"n": "Chuck Hurst", "t": "VP of Lending", "bg": "Oversees all lending operations across Northern Initiatives' 7 offices statewide.", "li": "https://www.linkedin.com/company/northern-initiatives/"}
+    ],
+    "news": [
+      {"h": "Michigan CDFIs Form Coalition for Collaborative Lending", "s": "MiBiz, 2022", "d": "Northern Initiatives helps lead new Michigan CDFI coalition to improve lending solutions."},
+      {"h": "CDFI Leaders Testify in Lansing on Small Business Lending", "s": "Northern Initiatives Blog, Mar 2024", "d": "Northern Initiatives leadership advocates for community lending at state level."},
+      {"h": "Northern Initiatives Deploys More Business Loans Than Any Michigan CDFI", "s": "Company Profile, 2025", "d": "30+ years of serving underinvested communities across 73 counties."}
+    ],
+    "ice": "Northern Initiatives deploys more business loans than any other Michigan CDFI. How are you managing the underwriting workload across 73 counties with a lean team?",
+    "icebreakers": [
+      "Leading the Michigan CDFI coalition shows your commitment to community lending. How can technology help your mission?",
+      "Elissa, transitioning from Local First to Northern Initiatives gives you unique perspective. What's the biggest lending challenge?",
+      "Serving 73 counties with 7 offices requires efficient processes. How automated is your loan underwriting?",
+      "Northern Initiatives' impact on underinvested communities is admirable. Could faster underwriting help you serve more businesses?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Northern Initiatives process more applications across its 73-county service area, cutting review time from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge has affordable automation technology that fits a CDFI's mission-driven model.",
+      "Faster underwriting means Northern Initiatives can serve more underinvested communities without proportionally scaling staff."
+    ],
+    "ask": "Northern Initiatives' mission to serve 73 Michigan counties deserves efficient technology. Can we show you how HyperVerge helps mission-driven lenders serve more businesses faster?"
+  },
+  {
+    "id": 1073,
+    "name": "Porter Capital",
+    "desc": "Birmingham, AL-based family-owned invoice factoring company (est. 1991) providing credit lines from $25K to $25M, approaching $15B in cumulative funding with $1.7B funded in 2025 alone.",
+    "contacts": [
+      {"n": "Marc Porter", "t": "CEO & Co-Founder"},
+      {"n": "Scott Romanowski", "t": "CFO"}
+    ],
+    "leaders": [
+      {"n": "Marc Porter", "t": "CEO & Co-Founder", "bg": "Founded Porter Capital in 1991 with brother Donald; Auburn University business degree; named Small Business Person of the Year by Birmingham Chamber.", "li": "https://www.linkedin.com/in/marc-porter/"},
+      {"n": "Scott Romanowski", "t": "CFO", "bg": "23-year veteran at Porter Capital managing financial operations as the company approaches $15B in cumulative funding.", "li": "https://www.linkedin.com/company/porter-capital"}
+    ],
+    "news": [
+      {"h": "Porter Capital Marks 35 Years and Progress Toward $15B Milestone", "s": "PR Newswire, Feb 2026", "d": "Family-owned factoring company celebrates 35 years with $1.7B funded in 2025."},
+      {"h": "Porter Capital Named to Inc. 5000 for Five Years", "s": "Inc. Magazine, 2024", "d": "Consistent recognition among America's fastest-growing companies."},
+      {"h": "Porter Capital Provides $15M Financing for Transportation Startup", "s": "PR Newswire, 2024", "d": "Major factoring facility supporting growth in the transportation sector."}
+    ],
+    "ice": "Congratulations on 35 years and approaching $15 billion in cumulative funding -- that's extraordinary. With $1.7B funded in 2025 alone, how are you managing the underwriting at that volume?",
+    "icebreakers": [
+      "35 years and nearly $15B funded is a remarkable legacy. How has your underwriting technology evolved over the decades?",
+      "Marc, funding $1.7B in 2025 alone shows incredible momentum. What's the biggest operational challenge at this scale?",
+      "Five years on the Inc. 5000 proves sustained growth. Is AI-powered underwriting part of your next chapter?",
+      "That $15M transportation startup deal shows Porter's range. How do you maintain underwriting consistency across industries?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Porter Capital maintain its growth trajectory by cutting review time from 40 minutes to under 5.",
+      "With 450+ lending companies served and a specialty in invoice-based financing, HyperVerge is built for the volume Porter Capital processes.",
+      "As Porter approaches $15B in cumulative funding, automating document verification would help sustain growth without proportionally scaling the team."
+    ],
+    "ask": "Porter's 35-year legacy of growth deserves next-gen technology. Can we show you how HyperVerge helps high-volume factoring companies like Porter maintain quality at scale?"
+  },
+  {
+    "id": 1074,
+    "name": "CoreTech Leasing",
+    "desc": "Newport Beach, CA-based independent technology and equipment lessor specializing in leasing for law firms, corporations, medical/educational institutions, and manufacturing enterprises since 2008.",
+    "contacts": [
+      {"n": "Scott McFetters", "t": "Founder & CEO"},
+      {"n": "Candace J. Reinhart", "t": "COO/CXO"},
+      {"n": "Reza Saffarian", "t": "SVP Asset & Portfolio Management"}
+    ],
+    "leaders": [
+      {"n": "Scott McFetters", "t": "Founder & CEO", "bg": "Previously VP Legal Services at U.S. Bank Oliver-Allen Technology Leasing for 13 years before founding CoreTech in 2008.", "li": "https://www.linkedin.com/in/scott-mcfetters-a8a6454"},
+      {"n": "Candace J. Reinhart", "t": "COO/CXO", "bg": "25+ year career dedicated to best practices in the finance industry; oversees operations and customer experience.", "li": "https://www.linkedin.com/company/coretech-leasing-inc-/"}
+    ],
+    "news": [
+      {"h": "CoreTech Leasing Expands Executive Sales Team with 6 Major Hires", "s": "ELFA, Oct 2021", "d": "Significant expansion signaling growth in technology and equipment leasing market."},
+      {"h": "CoreTech Recognized for 'Gold Standard' Master Lease Agreement", "s": "Industry Profile, 2024", "d": "Widely regarded for relationship-oriented approach and premium lease documentation."}
+    ],
+    "ice": "CoreTech's 'gold standard' master lease agreement is well-known in the industry. How are you managing the credit assessment process for your diverse client base?",
+    "icebreakers": [
+      "Scott, your 13 years at U.S. Bank before founding CoreTech gave you deep leasing expertise. What's changed most since 2008?",
+      "Serving 100+ top law firms requires premium service. How does your underwriting process match that quality standard?",
+      "CoreTech's expansion with 6 major sales hires shows growth. Is your underwriting infrastructure keeping pace?",
+      "Your focus on relationship over transactions is refreshing. How does technology help maintain that personal touch at scale?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help CoreTech process lease applications faster, cutting review time from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge has proven technology for the credit assessment CoreTech performs on law firms and corporations.",
+      "Automating financial document analysis would help CoreTech maintain its 'gold standard' quality while handling more volume."
+    ],
+    "ask": "CoreTech's premium reputation deserves premium technology. Can we show you how HyperVerge automates lease underwriting while maintaining your quality standards?"
+  },
+  {
+    "id": 1075,
+    "name": "TwinFold Capital",
+    "desc": "Los Angeles-based family-owned business financing company (est. 2008) providing working capital and merchant financing up to $1M to SMBs across all industries with fast 24-72 hour funding.",
+    "contacts": [
+      {"n": "Leadership Team", "t": "Los Angeles Office"}
+    ],
+    "leaders": [
+      {"n": "Leadership Team", "t": "Family Ownership", "bg": "TwinFold Capital has been privately held and family-owned since 2008, putting integrity at the forefront of operations.", "li": "https://www.linkedin.com/company/twinfold-capital/"}
+    ],
+    "news": [
+      {"h": "TwinFold Capital Continues 15+ Year Run as LA-Based Business Funder", "s": "Company Profile, 2025", "d": "Family-owned company maintains focus on integrity and client-first approach."},
+      {"h": "TwinFold Capital Offers Funding with No Hidden Fees and Bad Credit Accepted", "s": "Company Website, 2025", "d": "Differentiated by accepting clients with challenging credit profiles."}
+    ],
+    "ice": "TwinFold Capital's 15+ years as a family-owned funder in LA shows real staying power. How are you managing underwriting for the high volume of diverse applications?",
+    "icebreakers": [
+      "Being family-owned for 15+ years in alternative lending is rare. What's your secret to longevity?",
+      "Accepting bad credit clients requires sophisticated risk assessment. What tools are you using for underwriting?",
+      "24-72 hour funding across all industries is a bold promise. How automated is your approval process?",
+      "TwinFold's integrity-first approach is refreshing. How do you balance speed with thorough risk assessment?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help TwinFold Capital cut review time from 40 minutes to under 5, supporting your 24-72 hour funding promise.",
+      "With 450+ MCA companies served, HyperVerge understands the challenges of underwriting clients with challenging credit profiles.",
+      "Automating bank statement analysis would help TwinFold scale without compromising the integrity-first approach that defines your brand."
+    ],
+    "ask": "TwinFold's commitment to fast, honest funding deserves efficient technology. Can we show you how HyperVerge supports family-owned funders like you?"
+  },
+  {
+    "id": 1076,
+    "name": "Monet Capital",
+    "desc": "Brooklyn, NY-based fintech lender (est. 2017) providing SBA loans, working capital, term loans, lines of credit, and real estate funding, with 20,000+ businesses funded and $1B+ deployed.",
+    "contacts": [
+      {"n": "Freddy Fernandez", "t": "Founder & CEO"},
+      {"n": "Jay Waters", "t": "Partner"},
+      {"n": "Daniel Sachs", "t": "Partner"}
+    ],
+    "leaders": [
+      {"n": "Freddy Fernandez", "t": "Founder & CEO", "bg": "Founded Monet Capital in 2017; built the company to $1B+ in funding across 700+ industries.", "li": "https://www.linkedin.com/company/monet-cap/"},
+      {"n": "Jay Waters", "t": "Partner", "bg": "Leads business development and lending operations at Monet Capital.", "li": "https://www.linkedin.com/company/monet-cap/"}
+    ],
+    "news": [
+      {"h": "Monet Capital Surpasses $1 Billion in Total Funding", "s": "Company Profile, 2025", "d": "Major milestone with over 20,000 businesses funded across 700+ industries."},
+      {"h": "Monet Capital Uses Cutting-Edge Technology for Credit Assessment", "s": "Company Website, 2025", "d": "Evaluating businesses on actual performance rather than just personal credit scores."}
+    ],
+    "ice": "Hitting $1 billion in funding across 20,000 businesses is a massive achievement. How is Monet Capital's technology keeping up with that growth?",
+    "icebreakers": [
+      "$1B funded across 700+ industries requires versatile underwriting. How automated is your process?",
+      "Freddy, building Monet to $1B in under 8 years is incredible. What technology is driving that velocity?",
+      "Using actual business performance for credit decisions is smart. How much of that analysis is AI-powered?",
+      "20,000+ businesses funded means you've seen every type of application. What's your biggest underwriting bottleneck?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Monet Capital maintain its rapid growth by cutting review time from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge's technology aligns with Monet's approach of evaluating actual business performance.",
+      "Automating bank statement analysis and document verification would help Monet scale beyond $1B without proportionally scaling the team."
+    ],
+    "ask": "Monet's $1B milestone is just the beginning. Let me show you how HyperVerge helps fast-growing lenders like you maintain quality at 10x the volume. Quick demo?"
+  },
+  {
+    "id": 1077,
+    "name": "Sutton Funding",
+    "desc": "New York-based alternative lender using proprietary AI technology to provide merchant cash advances, term loans, lines of credit, and equipment financing up to $2M with fast approval.",
+    "contacts": [
+      {"n": "Leadership Team", "t": "New York Office"}
+    ],
+    "leaders": [
+      {"n": "Leadership Team", "t": "Management", "bg": "Sutton Funding operates from Madison Avenue in NYC, offering AI-powered lending approvals up to $2M.", "li": "https://www.linkedin.com/company/sutton-funding/"}
+    ],
+    "news": [
+      {"h": "Sutton Funding Deploys Proprietary AI for Lending Decisions", "s": "Company Website, 2025", "d": "AI technology evaluates business potential rather than just credit history for approvals up to $2M."},
+      {"h": "Sutton Funding Expands Multi-Product Lending Platform", "s": "Company Profile, 2025", "d": "Offerings include MCAs, term loans, AR financing, equipment financing, and SBA loans."}
+    ],
+    "ice": "Sutton Funding's proprietary AI for lending decisions is forward-thinking. How are you finding the balance between AI-driven approvals and risk management?",
+    "icebreakers": [
+      "Your proprietary AI for lending is impressive. How does it handle the nuances of MCA underwriting specifically?",
+      "Approving up to $2M using AI is bold. What data signals drive your underwriting decisions?",
+      "Sutton's multi-product platform requires versatile underwriting. How consistent is your AI across different loan types?",
+      "Being on Madison Avenue in the heart of NYC's finance district fits your ambition. What's next for Sutton's AI platform?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting, used by 450+ MCA companies, could complement Sutton's proprietary AI for even faster, more accurate decisions.",
+      "Our platform cuts underwriting from 40 minutes to under 5, which could enhance Sutton's already-fast AI-powered approvals.",
+      "PIRS Capital and other leading funders combine their own technology with HyperVerge's specialized underwriting AI for best results."
+    ],
+    "ask": "Sutton's AI-first approach makes you a natural fit for HyperVerge's specialized underwriting AI. Can we explore how our technology could enhance your platform?"
+  },
+  {
+    "id": 1078,
+    "name": "Bitty Advance",
+    "desc": "Florida-based MCA funder specializing in micro-advances ($2,000-$250,000) for small businesses under $100K annual revenue, with OppFi acquiring a 35% equity stake in 2024.",
+    "contacts": [
+      {"n": "Craig Hecker", "t": "CEO & Owner"},
+      {"n": "OppFi Inc.", "t": "Strategic Investor (35% stake)"}
+    ],
+    "leaders": [
+      {"n": "Craig Hecker", "t": "CEO & Owner", "bg": "Serial entrepreneur who founded, grew, and sold Rapid Capital Funding before acquiring Bitty Advance; acquired full ownership in 2020.", "li": "https://www.linkedin.com/in/craig-hecker-59b6b171/"}
+    ],
+    "news": [
+      {"h": "OppFi Acquires 35% Equity in Bitty Advance for $18M", "s": "BusinessWire, Aug 2024", "d": "Strategic investment with options for majority and total ownership; expected to be immediately accretive."},
+      {"h": "Bitty Advance Has Funded 29,000+ Small Businesses Since 2020", "s": "OppFi Press Release, 2024", "d": "Products ranging from $2,000 to $250,000 across the United States."},
+      {"h": "Craig Hecker Acquires Full Ownership of Bitty Advance", "s": "deBanked, Jul 2020", "d": "Industry veteran took sole ownership to scale micro-advance market segment."}
+    ],
+    "ice": "Craig, the OppFi investment validates what you've built at Bitty. With 29,000+ businesses funded, how are you scaling the underwriting to meet growing demand?",
+    "icebreakers": [
+      "The OppFi deal at $18M is a strong validation. How is Bitty preparing for the next phase of growth?",
+      "29,000+ funded businesses in the micro-advance space is impressive volume. How automated is your underwriting?",
+      "Craig, your track record from Rapid Capital to Bitty shows serial success. What's the biggest opportunity in micro-advances?",
+      "With OppFi's backing and options for majority ownership, Bitty is positioned for growth. What technology investments are you prioritizing?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting is perfect for Bitty's high-volume micro-advance model, cutting review time from 40 minutes to under 5.",
+      "With 450+ MCA companies served, HyperVerge understands the unique challenges of the micro-advance segment Bitty operates in.",
+      "As OppFi's involvement scales Bitty's operations, HyperVerge can ensure consistent underwriting quality without proportionally scaling headcount."
+    ],
+    "ask": "Craig, Bitty's micro-advance model at 29,000+ deals is exactly where HyperVerge shines. Can we show you how we handle high-volume MCA underwriting? 15 minutes?"
+  },
+  {
+    "id": 1079,
+    "name": "Fundomate Technologies, Inc.",
+    "desc": "Los Angeles-based fintech operating the first MCA-specific search engine platform, providing white-labeled turnkey funding solutions to merchant-facing businesses with 20+ pre-approved lenders.",
+    "contacts": [
+      {"n": "Sam Schapiro", "t": "Founder & CEO"}
+    ],
+    "leaders": [
+      {"n": "Sam Schapiro", "t": "Founder & CEO", "bg": "Built Fundomate as the first search engine platform specifically designed for the merchant cash advance industry.", "li": "https://www.linkedin.com/in/sam-schapiro-59393127/"}
+    ],
+    "news": [
+      {"h": "Fundomate Partners with Poynt to Launch Poynt Capital", "s": "PR Newswire, 2020", "d": "Partnership brings automated business funding to US small businesses through Poynt's POS platform."},
+      {"h": "Fundomate Launches OEM White-Label MCA Platform", "s": "Company Website, 2025", "d": "Enabling merchant-facing businesses to offer financing and banking services under their own brand."}
+    ],
+    "ice": "Sam, Fundomate's MCA search engine concept is unique in the market. How are you helping your partner lenders optimize their underwriting speed?",
+    "icebreakers": [
+      "Building the first MCA-specific search engine is innovative. How do your 20+ lender partners handle underwriting volume?",
+      "The Poynt partnership brings MCA to POS platforms. How fast are lenders on your platform underwriting deals?",
+      "Fundomate's white-label approach is smart for scaling. Are your partner lenders using AI for underwriting?",
+      "Sam, as the MCA industry's first search engine, you see deal flow trends before anyone. What's the biggest bottleneck?"
+    ],
+    "tp": [
+      "HyperVerge works with 450+ MCA companies -- the same type of lenders on Fundomate's platform -- to automate underwriting from 40 minutes to under 5.",
+      "Recommending HyperVerge to Fundomate's 20+ lender partners could improve approval speed across the entire platform.",
+      "As an MCA platform provider, integrating HyperVerge's API would give all Fundomate partners instant access to AI-powered underwriting."
+    ],
+    "ask": "Fundomate's 20+ lender partners would all benefit from faster underwriting. Could we explore integrating HyperVerge's AI into your platform? Let's discuss."
+  },
+  {
+    "id": 1080,
+    "name": "QuickSpark Financial",
+    "desc": "Arizona-based equipment financing and working capital company (acquired by TimePayment in 2022) serving businesses of all credit profiles with FICO scores as low as 550.",
+    "contacts": [
+      {"n": "TimePayment Leadership", "t": "Post-Acquisition"},
+      {"n": "QuickSpark Team", "t": "Strategic Business Unit"}
+    ],
+    "leaders": [
+      {"n": "QuickSpark SBU Leadership", "t": "Strategic Business Unit within TimePayment", "bg": "QuickSpark was founded in 2010 in Phoenix, AZ; acquired by TimePayment in 2022 with 30+ employees forming a dedicated SBU.", "li": "https://www.linkedin.com/company/quickspark-financial/"}
+    ],
+    "news": [
+      {"h": "TimePayment Acquires QuickSpark Financial", "s": "TimePayment Press, Sep 2022", "d": "30+ QuickSpark employees joined TimePayment to operate a dedicated strategic business unit."},
+      {"h": "QuickSpark Maintains BBB A+ Rating Post-Acquisition", "s": "BBB, 2025", "d": "Continued high rating for equipment financing services in Tempe, Arizona."}
+    ],
+    "ice": "QuickSpark's integration into TimePayment creates interesting scale opportunities. How are you managing underwriting for equipment financing across all credit profiles?",
+    "icebreakers": [
+      "The TimePayment acquisition gives QuickSpark more resources. How has your underwriting technology evolved since?",
+      "Approving FICO scores as low as 550 requires sophisticated risk assessment. What technology supports those decisions?",
+      "QuickSpark serves startups to established businesses. How do you maintain underwriting consistency across that range?",
+      "As a strategic business unit within TimePayment, what's QuickSpark's biggest operational priority?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help QuickSpark assess challenging credit profiles faster, cutting review time from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge has proven technology for the equipment financing risk assessment QuickSpark performs.",
+      "Automating document verification for low-FICO applicants would help QuickSpark scale within the TimePayment ecosystem."
+    ],
+    "ask": "QuickSpark's challenging credit profiles require thorough but fast underwriting. Can we show you how HyperVerge automates that process? Quick demo?"
+  },
+  {
+    "id": 1081,
+    "name": "Braavo Capital",
+    "desc": "New York-based fintech providing equity-free financing to mobile app developers and publishers, with $2B+ deployed over 10 years and 8,000+ apps funded worldwide.",
+    "contacts": [
+      {"n": "Mark Loranger", "t": "Co-Founder & CEO"},
+      {"n": "Sergei Kovalenko", "t": "Co-Founder"}
+    ],
+    "leaders": [
+      {"n": "Mark Loranger", "t": "Co-Founder & CEO", "bg": "Serial entrepreneur who co-founded Braavo in 2015 to provide non-dilutive, performance-based funding for mobile app businesses.", "li": "https://www.linkedin.com/company/braavocapital"},
+      {"n": "Sergei Kovalenko", "t": "Co-Founder", "bg": "Co-founded Braavo Capital and helped build its technology-driven financing platform for the app economy.", "li": "https://www.linkedin.com/company/braavocapital"}
+    ],
+    "news": [
+      {"h": "Braavo Capital Celebrates 10 Years and $2B in Financing Deployed", "s": "PR Newswire, Sep 2025", "d": "Decade-long milestone with 8,000+ apps funded worldwide through equity-free financing."},
+      {"h": "Braavo Growth Ventures Reaches Profitability", "s": "PR Newswire, 2025", "d": "Web2app subscriber acquisition platform achieves profitability underscoring financial discipline."},
+      {"h": "Braavo Closes $5M Series B for Web2App Subscriber Acquisition", "s": "PR Newswire, 2024", "d": "Investment to accelerate growth in direct web subscription strategies for app businesses."}
+    ],
+    "ice": "Congratulations on 10 years and $2B deployed -- that's a remarkable run. As Braavo finances 8,000+ apps, how are you handling the unique underwriting challenges of app-based revenue?",
+    "icebreakers": [
+      "10 years and $2B funded is an incredible milestone. How has your underwriting evolved for app-based businesses?",
+      "Mark, Braavo Growth Ventures reaching profitability shows great discipline. How automated is your app revenue underwriting?",
+      "Funding 8,000+ apps worldwide requires scalable underwriting. What technology powers those decisions?",
+      "The web2app trend is reshaping how apps monetize. How does that change your financing and underwriting approach?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Braavo process more app financing applications faster, cutting review time from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge has proven automation technology that fits Braavo's high-volume, data-driven model.",
+      "As Braavo expands into web2app financing, HyperVerge can ensure consistent underwriting quality across new product lines."
+    ],
+    "ask": "Braavo's data-driven approach to app financing aligns with HyperVerge's AI philosophy. Can we explore how our underwriting automation fits your platform?"
+  },
+  {
+    "id": 1082,
+    "name": "Gemini Business Funding",
+    "desc": "Clearwater, FL-based MCA funder providing same-day or next-day merchant cash advances to businesses based on performance rather than credit scores, with a simple 1-page application.",
+    "contacts": [
+      {"n": "Leadership Team", "t": "Clearwater, FL Office"}
+    ],
+    "leaders": [
+      {"n": "Leadership Team", "t": "Management", "bg": "Gemini Business Funding was established in 2017 in Clearwater, Florida with approximately 32 employees.", "li": "https://www.linkedin.com/company/gemini-business-funding/"}
+    ],
+    "news": [
+      {"h": "Gemini Business Funding Offers Same-Day MCA Funding", "s": "Company Website, 2025", "d": "Performance-based funding with no collateral required and minimal documentation."},
+      {"h": "Gemini Expands Revenue-Based Financing Options", "s": "Company Profile, 2025", "d": "Flexible qualification based on business performance rather than credit scores."}
+    ],
+    "ice": "Gemini's same-day funding with just a 1-page application is a compelling value prop. How are you managing the underwriting behind those fast approvals?",
+    "icebreakers": [
+      "Same-day MCA funding with a 1-page app is impressively fast. How much of the underwriting is automated?",
+      "Approving based on business performance rather than credit scores is forward-thinking. What technology drives those decisions?",
+      "Gemini's minimal documentation approach is attractive to merchants. How do you manage risk with less data?",
+      "No collateral, no credit score focus -- that's a bold model. What's your biggest underwriting challenge?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could supercharge Gemini's same-day funding by cutting review time from 40 minutes to under 5.",
+      "With 450+ MCA companies served, HyperVerge specializes in the performance-based underwriting model Gemini uses.",
+      "Automating bank statement analysis would help Gemini make faster funding decisions while maintaining its minimal documentation approach."
+    ],
+    "ask": "Gemini's same-day funding promise deserves same-day underwriting. Can we show you how HyperVerge achieves that for MCA funders? Quick 15-minute demo?"
+  },
+  {
+    "id": 1083,
+    "name": "SG Credit Partners",
+    "desc": "Southern California-based family-office backed lender providing $1-$10M+ in situational capital to lower middle market businesses through asset-based revolvers and term loans, with $350M+ deployed.",
+    "contacts": [
+      {"n": "Marc Cole", "t": "Co-Founder & CEO"},
+      {"n": "Charlie Perer", "t": "Co-Founder"}
+    ],
+    "leaders": [
+      {"n": "Marc Cole", "t": "Co-Founder & CEO", "bg": "20 years in tech and finance investing; co-founded Bluefin Payment Systems in 2007; previously CFO at Super G Capital before spinning out SGCP in 2018.", "li": "https://www.linkedin.com/in/marc-cole-1569609/"},
+      {"n": "Charlie Perer", "t": "Co-Founder", "bg": "Co-led the spin-out of Super G Capital's cash flow and technology division to form SG Credit Partners.", "li": "https://www.linkedin.com/company/sg-credit-partners/"}
+    ],
+    "news": [
+      {"h": "SG Credit Partners Acquires Stonegate Capital", "s": "SFNet, Nov 2021", "d": "Entry into asset-based lending with focus on high-growth consumer products."},
+      {"h": "SG Credit Partners Extends Credit Platform with New Website", "s": "SFNet, 2023", "d": "Expanded platform covering cash flow, technology, and special situations lending."},
+      {"h": "SG Credit Partners Surpasses $350M Deployed", "s": "Company Profile, 2025", "d": "Growing from Super G Capital spinoff to comprehensive credit platform in 7 years."}
+    ],
+    "ice": "Marc, SG Credit Partners' evolution from Super G Capital spinoff to $350M+ deployed is impressive. How are you handling underwriting for your diverse situational capital deals?",
+    "icebreakers": [
+      "The Stonegate Capital acquisition expanded SGCP into asset-based lending. How has that changed your underwriting needs?",
+      "Marc, your Bluefin Payment Systems background shows deep fintech DNA. How does that influence SGCP's technology approach?",
+      "$350M+ deployed across situational capital deals requires versatile underwriting. What tools support your decisions?",
+      "SGCP's focus on lower middle market is a sweet spot. Are you exploring AI to handle the complexity of situational lending?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help SG Credit Partners process situational capital deals faster, cutting review time from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge has proven technology for the diverse deal types SGCP handles.",
+      "As SGCP scales beyond $350M deployed, HyperVerge can ensure consistent underwriting quality across cash flow, ABL, and special situations."
+    ],
+    "ask": "SGCP's situational lending model requires flexible, fast underwriting. Can we show you how HyperVerge supports multi-product lenders like you?"
+  },
+  {
+    "id": 1084,
+    "name": "Wingspire Capital",
+    "desc": "Atlanta-area (Alpharetta, GA) senior secured ABL lender providing $20-$200M credit facilities to middle-market businesses, backed by Blue Owl Capital with $3B in capital commitments and $1.6B AUM.",
+    "contacts": [
+      {"n": "David Wisen", "t": "Founder & CEO"},
+      {"n": "Eric Freeman", "t": "Co-Founder, Head of Equipment Finance"},
+      {"n": "Ray De Palma", "t": "COO"}
+    ],
+    "leaders": [
+      {"n": "David Wisen", "t": "Founder & CEO", "bg": "Co-founded Wingspire in 2019 to provide diversified ABL solutions to middle-market businesses; backed by Blue Owl Capital.", "li": "https://www.linkedin.com/in/david-wisen-6b44a2b/"},
+      {"n": "Eric Freeman", "t": "Co-Founder, Head of Equipment Finance", "bg": "Equipment financing veteran who founded Liberty Commercial Finance (acquired by Wingspire); leads Wingspire Equipment Finance.", "li": "https://www.linkedin.com/company/wingspire-capital"}
+    ],
+    "news": [
+      {"h": "Wingspire Announces $3B in Capital Commitments and $1.6B AUM", "s": "Company Blog, Jan 2026", "d": "Major milestone demonstrating institutional-scale growth in senior secured lending."},
+      {"h": "Wingspire Promotes James Garlick and Ray De Palma in Organizational Changes", "s": "SFNet, Jan 2024", "d": "Leadership restructuring to support continued growth and expansion."},
+      {"h": "Wingspire Acquires Liberty Commercial Finance", "s": "Company Blog, Jun 2022", "d": "Added equipment financing capabilities to diversify lending platform."}
+    ],
+    "ice": "Wingspire's $3B in capital commitments and $1.6B AUM is remarkable growth since 2019. How are you managing underwriting at that scale across corporate and equipment finance?",
+    "icebreakers": [
+      "$3B in capital commitments in just 7 years is extraordinary. How automated is your underwriting process?",
+      "David, building Wingspire from launch to $1.6B AUM shows incredible execution. What's the biggest operational challenge now?",
+      "Operating two divisions -- Corporate Finance and Equipment Finance -- requires consistent underwriting. How do you manage that?",
+      "With Blue Owl Capital backing, Wingspire has serious capital. Is AI-powered underwriting part of your scaling strategy?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Wingspire process large ABL deals faster, cutting review time from 40 minutes to under 5.",
+      "With 450+ lending companies served, HyperVerge has proven technology for the institutional-grade underwriting Wingspire performs.",
+      "As Wingspire scales toward its $3B capacity, automating document analysis would maintain quality without proportionally scaling the team."
+    ],
+    "ask": "Wingspire's institutional scale demands institutional-grade underwriting technology. Can we show you how HyperVerge supports lenders at your level of volume and complexity?"
+  },
+  {
+    "id": 1085,
+    "name": "The Business Backer",
+    "desc": "Cincinnati, OH-based small business funding company (subsidiary of Enova International/NYSE:ENVA since 2015) providing working capital, receivable financing, and installment loans through funding advisors.",
+    "contacts": [
+      {"n": "Jim Salters", "t": "CEO"},
+      {"n": "Stephen Tosh", "t": "COO"}
+    ],
+    "leaders": [
+      {"n": "Jim Salters", "t": "CEO", "bg": "Turnaround consultant who joined Business Backer in 2009; leads the company as part of Enova International's small business portfolio.", "li": "https://www.linkedin.com/company/the-business-backer/people/"},
+      {"n": "Scott Avera", "t": "Founder", "bg": "Software and business services entrepreneur who founded The Business Backer in 2007 in Cincinnati.", "li": "https://www.linkedin.com/company/the-business-backer/people/"}
+    ],
+    "news": [
+      {"h": "Enova to Acquire Grasshopper Bank for $369M", "s": "Finovate, Dec 2025", "d": "Parent company Enova expanding to full-stack digital financial services with banking capabilities."},
+      {"h": "94% of Small Businesses Expect 2026 Growth per Enova Report", "s": "StockTitan, 2026", "d": "Enova's annual survey shows record-high business confidence heading into 2026."},
+      {"h": "The Business Backer Operates as Part of Enova's 7-Brand Portfolio", "s": "Enova Blog, 2025", "d": "Alongside OnDeck, Headway Capital, CashNetUSA, NetCredit, Simplic, and Pangea."}
+    ],
+    "ice": "The Business Backer's position within Enova's portfolio gives you incredible resources, especially with the Grasshopper Bank acquisition. How are you leveraging that for faster underwriting?",
+    "icebreakers": [
+      "Enova's Grasshopper Bank acquisition creates a full-stack platform. How does that impact Business Backer's underwriting?",
+      "94% of small businesses expect growth in 2026 -- that means more funding demand. Is your underwriting ready for the surge?",
+      "Being part of Enova's 7-brand portfolio gives you scale. Are you sharing underwriting technology across brands?",
+      "Jim, your turnaround expertise must inform how you think about risk. What's the biggest underwriting challenge today?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help The Business Backer process more applications as small business demand surges, cutting review from 40 minutes to under 5.",
+      "With 450+ MCA companies served, HyperVerge has proven technology that fits within Enova's technology-forward approach.",
+      "Automating document analysis would help The Business Backer maintain quality across its working capital and receivable financing products."
+    ],
+    "ask": "With small business confidence at record highs, underwriting demand will surge. Can we show you how HyperVerge helps Enova-portfolio companies handle that volume?"
+  },
+  {
+    "id": 1086,
+    "name": "Trustfi",
+    "desc": "New York-based business funding marketplace matching businesses with 50+ vetted lenders for MCAs, term loans, lines of credit, SBA loans, and equipment financing, with $500M+ facilitated.",
+    "contacts": [
+      {"n": "Bryan Morales", "t": "CEO"},
+      {"n": "William Kassar", "t": "President"},
+      {"n": "Frank Romano", "t": "Co-Founder"}
+    ],
+    "leaders": [
+      {"n": "Bryan Morales", "t": "CEO", "bg": "Leads TrustFi's operations connecting businesses with a network of 50+ vetted lending partners.", "li": "https://www.linkedin.com/company/trustfilending/"},
+      {"n": "William Kassar", "t": "President", "bg": "Background in architecture and finance; brings unique perspective to TrustFi's lending platform operations.", "li": "https://www.linkedin.com/company/trustfilending/"}
+    ],
+    "news": [
+      {"h": "TrustFi Surpasses $500M in Facilitated Funding", "s": "Company Website, 2025", "d": "Major milestone with 10,000+ businesses served across the United States."},
+      {"h": "TrustFi Grows to 100+ Lending Experts", "s": "Company Profile, 2025", "d": "Team expansion to handle growing demand for small business funding."}
+    ],
+    "ice": "TrustFi's $500M in facilitated funding across 10,000+ businesses is impressive growth. How are your 50+ lending partners handling the underwriting volume?",
+    "icebreakers": [
+      "$500M facilitated through 50+ lenders shows great marketplace traction. What's the biggest bottleneck for your partners?",
+      "Bryan, growing TrustFi to 100+ lending experts shows strong demand. Are your lender partners keeping pace?",
+      "Matching businesses with 50+ lenders requires speed. How fast are your partners typically underwriting deals?",
+      "TrustFi's marketplace model means faster lender underwriting benefits everyone. Are you exploring AI tools for your network?"
+    ],
+    "tp": [
+      "HyperVerge works with 450+ MCA and lending companies -- the same types of lenders in TrustFi's network -- cutting underwriting from 40 minutes to under 5.",
+      "Recommending HyperVerge to TrustFi's 50+ lending partners could improve approval speed and borrower conversion across the platform.",
+      "As a marketplace, faster partner underwriting means better metrics for TrustFi. HyperVerge can deliver that competitive advantage."
+    ],
+    "ask": "TrustFi's lending partners' speed directly impacts your marketplace success. Can we discuss how HyperVerge helps your network underwrite faster?"
+  },
+  {
+    "id": 1087,
+    "name": "QFS Capital",
+    "desc": "Fort Lauderdale, FL-based small business lender (est. 2019) specializing in cash flow relief, reverse debt consolidation, and merchant cash advances with approvals in under 3 hours.",
+    "contacts": [
+      {"n": "Benjamin Hinke", "t": "Manager/CFO"},
+      {"n": "Evan Samlin", "t": "Member"},
+      {"n": "Josh Ross", "t": "Decision Maker"}
+    ],
+    "leaders": [
+      {"n": "Benjamin Hinke", "t": "Manager/CFO", "bg": "Registered agent and financial manager at QFS Capital; oversees operations from Fort Lauderdale office.", "li": "https://www.linkedin.com/company/qfs-capital/"},
+      {"n": "Evan Samlin", "t": "Member", "bg": "Key decision maker in QFS Capital's lending and business development operations.", "li": "https://www.linkedin.com/company/qfs-capital/"}
+    ],
+    "news": [
+      {"h": "QFS Capital Offers 3-Hour Approvals and Same-Day Funding", "s": "Company Website, 2025", "d": "Digital workflow with electronic signatures enables fast MCA funding."},
+      {"h": "QFS Capital Specializes in Reverse Debt Consolidation", "s": "United Capital Source, 2026", "d": "Unique focus on helping businesses restructure existing MCA debt."}
+    ],
+    "ice": "QFS Capital's 3-hour approvals and reverse debt consolidation specialty are great differentiators. How are you managing the underwriting speed behind those fast approvals?",
+    "icebreakers": [
+      "3-hour approvals require blazing-fast underwriting. How automated is your process?",
+      "Reverse debt consolidation is a unique niche. How does that change your underwriting approach compared to standard MCAs?",
+      "QFS's digital workflow with e-signatures shows tech savvy. Are you using AI for the underwriting itself?",
+      "Since 2019, QFS has grown quickly. What's the biggest operational challenge as you scale?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help QFS Capital maintain its 3-hour approval promise by cutting review time from 40 minutes to under 5.",
+      "With 450+ MCA companies served, HyperVerge has proven technology for the fast-paced underwriting QFS Capital requires.",
+      "Automating bank statement analysis and document verification would help QFS scale its reverse debt consolidation and MCA products."
+    ],
+    "ask": "QFS's 3-hour approval promise demands the fastest underwriting technology. Can we show you how HyperVerge delivers that? Quick 15-minute demo?"
+  }
+]

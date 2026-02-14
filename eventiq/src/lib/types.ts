@@ -17,7 +17,7 @@ export interface Leader {
   li?: string;
 }
 
-export type CompanyType = 'SQO' | 'Client' | 'ICP';
+export type CompanyType = 'SQO' | 'Client' | 'ICP' | 'TAM';
 
 export interface Company {
   id: number;
@@ -36,12 +36,21 @@ export interface Company {
   tp: string[];
   leaders?: Leader[];
   ask: string;
+  location?: string;
+  employees?: number;
+  website?: string;
+  linkedinUrl?: string;
+  source: string[];
 }
 
-export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'Met' | 'CLEAR' | 'FollowUp';
-export type SortType = 'name' | 'type' | 'priority' | 'phase';
+export function isResearched(c: Company): boolean {
+  return c.desc.length > 0 && c.contacts.length > 0;
+}
+
+export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'Researched' | 'Unresearched';
+export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees';
 export type ViewType = 'cards' | 'table';
-export type TabType = 'companies' | 'schedule' | 'pitch' | 'checklist';
+export type TabType = 'companies' | 'schedule' | 'pitch' | 'checklist' | 'dashboard';
 
 export type Rating = 'hot' | 'warm' | 'cold' | '';
 export type FollowUp = 'demo' | 'email' | 'intro' | 'none';
