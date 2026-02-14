@@ -1,0 +1,96 @@
+{
+  "id": 1,
+  "name": "Bitty",
+  "website": "https://bittyadvance.com",
+  "linkedinUrl": "https://www.linkedin.com/company/bitty-advance",
+  "desc": "Bitty (formerly Bitty Advance) is a Fort Lauderdale-based MCA funder established in 2018, now led by serial entrepreneur Craig Hecker who acquired the company in 2020 after founding and selling Rapid Capital Funding. Since Hecker's acquisition, Bitty has facilitated over $420M in cumulative funding to 29,000+ small businesses with products ranging from $2,000 to $250,000. In 2023, Bitty originated approximately $165M in revenue-based financing. The company generated $8.5M in adjusted net income for the trailing 12 months ending March 2024, attracting a strategic 35% equity investment from publicly traded OppFi (NYSE: OPFI) in August 2024 for $15.25M cash plus $2.7M in stock. OppFi has options to acquire majority ownership by 2027 and full ownership by 2030. In Q3 2025, Bitty generated $1.4M in equity income for OppFi alone. Bitty self-identifies as a 'tech company first' and recently launched a fixed-term installment loan product in Texas (Sept 2025) to comply with new state MCA regulations, integrated with Cloudsquare's Salesforce-based broker CRM for API submissions (Jan 2025), and was a Platinum Sponsor at the B2B Finance Expo 2025 in Las Vegas.",
+  "news": [
+    {
+      "h": "Bitty Launches Fixed-Term Loan Program Starting in Texas",
+      "s": "deBanked, Aug 2025",
+      "d": "Beginning September 1, 2025, Bitty rolled out a fixed-term installment-style loan product in Texas, responding to new state law prohibiting ACH debits by MCA providers. CEO Craig Hecker called it 'another exciting milestone.'"
+    },
+    {
+      "h": "OppFi Reports Bitty as 'Great Partner' in Q3 2025",
+      "s": "deBanked, Oct 2025",
+      "d": "OppFi CEO Todd Schwartz praised Bitty's performance, noting $1.4M in equity income for Q3. Said both companies 'consistently use technology to enhance operations and the customer experience.'"
+    },
+    {
+      "h": "Cloudsquare Broker CRM Integrates with Bitty for API Submissions",
+      "s": "deBanked, Jan 2025",
+      "d": "Cloudsquare's Salesforce-powered MCA lending platform integrated with Bitty, enabling automated application submissions, bulk file uploads, instant offer generation, and same-day approvals."
+    },
+    {
+      "h": "Bitty Performs Well in Q1 2025 Per OppFi Earnings",
+      "s": "deBanked, May 2025",
+      "d": "OppFi reported that Bitty 'continued to drive accretive profitability and cash flow,' projecting over $4M in pre-tax earnings contribution for 2025."
+    },
+    {
+      "h": "OppFi Acquires 35% Equity Interest in Bitty",
+      "s": "BusinessWire / Nasdaq, Aug 2024",
+      "d": "OppFi paid $15.25M cash + $2.7M stock for 35% of Bitty at a 6x multiple of $8.5M adjusted net income. Options for majority by 2027, full ownership by 2030."
+    },
+    {
+      "h": "Bitty Platinum Sponsor at B2B Finance Expo 2025",
+      "s": "deBanked, Oct 2025",
+      "d": "Bitty was a Platinum Sponsor at the B2B Finance Expo at Wynn Las Vegas, alongside Rapid Finance, Kapitus, and Ocrolus."
+    }
+  ],
+  "leaders": [
+    {
+      "n": "Craig Hecker",
+      "t": "CEO",
+      "bg": "Serial entrepreneur and MCA industry veteran. University of Michigan grad (1993), Detroit native. Started career on the Chicago Board Options Exchange, then built a $10M/year dry cleaning and garment restoration business before founding Rapid Capital Funding in 2007, which he grew to $78M annual run rate and sold to North American Bancard. Acquired Bitty in 2020, bringing his Rapid Capital management team with him. Describes Bitty as 'a tech company first' focused on using technology to revolutionize MCA. Secured OppFi's $18M strategic investment in 2024. Regular deBanked event sponsor (Broker Fair, CONNECT, B2B Finance Expo). Active on deBanked TV discussing revenue-based financing and industry regulation.",
+      "li": "https://www.linkedin.com/in/craig-hecker-59b6b171/",
+      "hooks": [
+        "*CBOE trading floor to dry cleaning empire to MCA pioneer",
+        "*$10M/year garment biz before fintech",
+        "University of Michigan 1993 grad, Detroit native",
+        "Sold Rapid Capital to NAB, bought Bitty",
+        "OppFi path to full ownership by 2030",
+        "Signature deBanked event sponsor"
+      ]
+    },
+    {
+      "n": "Daniel Dames",
+      "t": "VP of Operations",
+      "bg": "University of Pittsburgh BS in Computer Science and Psychology. Has been with Bitty since its inception in 2018, helping create core programs and underwriting guidelines. Previously held roles at PNC (banking), Compunetix (Pittsburgh-based teleconferencing tech company), Vista Host, and Education Management. Draws on coaching experience to lead daily operations. Launched 'Big Bitty' product (deals $20K-$125K) in 2023. Regular deBanked conference speaker -- judged the Broker Battle at deBanked CONNECT Miami, moderated 'Let's Talk Big Deals' panel, and appeared on deBanked TV at Miami 2024. Tech background spanning telecom and finance makes him receptive to automation and platform integrations.",
+      "li": "https://www.linkedin.com/in/daniel-dames-b7153318/",
+      "hooks": [
+        "*UPitt CS + Psychology dual degree",
+        "*Broker Battle judge at deBanked Miami",
+        "Compunetix telecom tech background",
+        "Built Bitty's underwriting from scratch",
+        "Moderated 'Let's Talk Big Deals' panel",
+        "Coaching background applied to ops leadership"
+      ]
+    },
+    {
+      "n": "Brian Bastio",
+      "t": "Director of Marketing",
+      "bg": "Atlanta-based marketing professional with two decades of experience in software sales, digital marketing, lead generation, data management, and attribution. Co-founded Bastio Consulting Group with wife Serena in 2019, both having held roles in the performance marketing industry including at CAKE (performance marketing software platform). Featured in CAKE's Spotlight Q&A on performance marketing agencies. Previous roles at RevLifter, Lead Economy LLC, and Trend Capital Holdings. Over eight years consulting specifically in consumer and business finance industries. At Bitty, oversees all digital marketing including demand generation, content creation, marketing automation, partner communications, and data analysis.",
+      "li": "https://www.linkedin.com/in/brianbastio/",
+      "hooks": [
+        "*Co-founded consulting firm with wife Serena",
+        "*CAKE performance marketing platform alumnus",
+        "20 years in digital marketing and lead gen",
+        "Atlanta-based, works remote for Fort Lauderdale HQ",
+        "Featured in CAKE Spotlight Q&A series"
+      ]
+    }
+  ],
+  "ice": "Craig, saw Bitty launched the new installment loan product in Texas to stay ahead of the ACH regulation changes -- and OppFi calling Bitty a 'great partner' generating $1.4M equity income in Q3 alone is impressive. With that kind of origination velocity and your push to be a 'tech company first,' curious if you've looked at how HyperVerge could cut your bank statement and ID verification time from minutes to seconds -- especially as you scale Big Bitty deals.",
+  "icebreakers": [
+    "Bitty's new Texas installment loan launch shows you're proactively adapting to state-by-state regulation -- automation that handles compliance across multiple product types could be a force multiplier.",
+    "With $165M originated in 2023, $420M cumulative, and OppFi projecting $4M+ pre-tax from Bitty in 2025 -- that throughput demands underwriting speed that matches your growth rate.",
+    "Craig describes Bitty as 'a tech company first' and just integrated with Cloudsquare for API submissions -- HyperVerge's API-first approach to document verification would plug right into that automation-first philosophy.",
+    "As OppFi's 2027 majority ownership option approaches, proving scalable tech infrastructure will be key to maximizing Bitty's valuation -- automated KYC/KYB is table stakes for institutional-grade operations."
+  ],
+  "tp": [
+    "At $165M+ annual originations and growing, every minute saved per deal compounds -- HyperVerge takes bank statement analysis and ID verification from 40+ minutes to under 5 minutes.",
+    "HyperVerge serves 450+ MCA companies including many funders of Bitty's scale -- we understand the revenue-based financing workflow from application to renewal.",
+    "With your Cloudsquare API integration and self-described tech-first approach, HyperVerge's API plugs directly into your existing Salesforce-based broker pipeline for seamless document verification.",
+    "As OppFi brings data analytics capabilities to Bitty, enhanced document intelligence from HyperVerge gives your underwriting team richer, faster data extraction from bank statements."
+  ],
+  "ask": "Craig, Daniel -- would love 20 minutes to show you how HyperVerge's bank statement OCR and ID verification could plug into Bitty's tech-first platform and help your team keep pace with the growth OppFi is banking on. Open to a quick demo next week?"
+}

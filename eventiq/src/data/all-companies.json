@@ -16,73 +16,103 @@
         "t": "VP of Ops"
       }
     ],
-    "desc": "Fort Lauderdale-based MCA funder (est. 2018). 29K+ small businesses funded, ~$165M originated in 2023. OppFi holds 35% equity ($15.25M, Aug 2024) with option for full ownership by 2030. CEO Craig Hecker is industry veteran who founded/sold Rapid Capital Funding. Daniel Dames (VP Ops) speaking on Funder Panel.",
+    "desc": "Bitty (formerly Bitty Advance) is a Fort Lauderdale-based MCA funder established in 2018, now led by serial entrepreneur Craig Hecker who acquired the company in 2020 after founding and selling Rapid Capital Funding. Since Hecker's acquisition, Bitty has facilitated over $420M in cumulative funding to 29,000+ small businesses with products ranging from $2,000 to $250,000. In 2023, Bitty originated approximately $165M in revenue-based financing. The company generated $8.5M in adjusted net income for the trailing 12 months ending March 2024, attracting a strategic 35% equity investment from publicly traded OppFi (NYSE: OPFI) in August 2024 for $15.25M cash plus $2.7M in stock. OppFi has options to acquire majority ownership by 2027 and full ownership by 2030. In Q3 2025, Bitty generated $1.4M in equity income for OppFi alone. Bitty self-identifies as a 'tech company first' and recently launched a fixed-term installment loan product in Texas (Sept 2025) to comply with new state MCA regulations, integrated with Cloudsquare's Salesforce-based broker CRM for API submissions (Jan 2025), and was a Platinum Sponsor at the B2B Finance Expo 2025 in Las Vegas.",
     "notes": "Funder Panel speaker — warm lead, high priority.",
     "news": [
       {
-        "h": "OppFi acquires 35% equity stake in Bitty for ~$18M",
-        "s": "BusinessWire, Aug 2024",
-        "d": "OppFi paid $15.25M cash + $2.7M stock for 35% stake. Options to increase to full ownership by 2030."
-      },
-      {
-        "h": "Bitty launches fixed-term small business loan program",
+        "h": "Bitty Launches Fixed-Term Loan Program Starting in Texas",
         "s": "deBanked, Aug 2025",
-        "d": "New installment-style loan rolling out Sept 2025, starting in Texas. Complements existing revenue-based financing."
+        "d": "Beginning September 1, 2025, Bitty rolled out a fixed-term installment-style loan product in Texas, responding to new state law prohibiting ACH debits by MCA providers. CEO Craig Hecker called it 'another exciting milestone.'"
       },
       {
-        "h": "Cloudsquare CRM integrates with Bitty Advance via API",
+        "h": "OppFi Reports Bitty as 'Great Partner' in Q3 2025",
+        "s": "deBanked, Oct 2025",
+        "d": "OppFi CEO Todd Schwartz praised Bitty's performance, noting $1.4M in equity income for Q3. Said both companies 'consistently use technology to enhance operations and the customer experience.'"
+      },
+      {
+        "h": "Cloudsquare Broker CRM Integrates with Bitty for API Submissions",
         "s": "deBanked, Jan 2025",
-        "d": "Salesforce-powered broker CRM added direct API for automated submissions and same-day approvals."
+        "d": "Cloudsquare's Salesforce-powered MCA lending platform integrated with Bitty, enabling automated application submissions, bulk file uploads, instant offer generation, and same-day approvals."
+      },
+      {
+        "h": "Bitty Performs Well in Q1 2025 Per OppFi Earnings",
+        "s": "deBanked, May 2025",
+        "d": "OppFi reported that Bitty 'continued to drive accretive profitability and cash flow,' projecting over $4M in pre-tax earnings contribution for 2025."
+      },
+      {
+        "h": "OppFi Acquires 35% Equity Interest in Bitty",
+        "s": "BusinessWire / Nasdaq, Aug 2024",
+        "d": "OppFi paid $15.25M cash + $2.7M stock for 35% of Bitty at a 6x multiple of $8.5M adjusted net income. Options for majority by 2027, full ownership by 2030."
+      },
+      {
+        "h": "Bitty Platinum Sponsor at B2B Finance Expo 2025",
+        "s": "deBanked, Oct 2025",
+        "d": "Bitty was a Platinum Sponsor at the B2B Finance Expo at Wynn Las Vegas, alongside Rapid Finance, Kapitus, and Ocrolus."
       }
     ],
-    "ice": "Craig, Daniel -- congrats on the OppFi partnership and 29K+ businesses funded. How are you scaling underwriting to keep up with OppFi’s growth ambitions? — what’s the most surprising trend you’re seeing in small business funding right now?",
+    "ice": "Craig, saw Bitty launched the new installment loan product in Texas to stay ahead of the ACH regulation changes -- and OppFi calling Bitty a 'great partner' generating $1.4M equity income in Q3 alone is impressive. With that kind of origination velocity and your push to be a 'tech company first,' curious if you've looked at how HyperVerge could cut your bank statement and ID verification time from minutes to seconds -- especially as you scale Big Bitty deals.",
     "icebreakers": [
-      "I saw OppFi took a 35% stake at a 6x multiple on your net income -- that is a strong endorsement. Now with the path to full ownership by 2030, how is that partnership shaping your product roadmap?",
-      "Congrats on launching the fixed-term loan product in September. Expanding from pure revenue-based financing into installment loans is a big shift -- are brokers sending you a different borrower profile now?",
-      "The Cloudsquare API integration in January is a big deal for broker workflow. Has automated submission changed the volume or quality of deals coming through your ISO channel?",
-      "With $420M funded to 29K+ merchants and OppFi backing you with public-company resources, what is the biggest bottleneck to scaling from here -- capital, distribution, or something else?"
+      "Bitty's new Texas installment loan launch shows you're proactively adapting to state-by-state regulation -- automation that handles compliance across multiple product types could be a force multiplier.",
+      "With $165M originated in 2023, $420M cumulative, and OppFi projecting $4M+ pre-tax from Bitty in 2025 -- that throughput demands underwriting speed that matches your growth rate.",
+      "Craig describes Bitty as 'a tech company first' and just integrated with Cloudsquare for API submissions -- HyperVerge's API-first approach to document verification would plug right into that automation-first philosophy.",
+      "As OppFi's 2027 majority ownership option approaches, proving scalable tech infrastructure will be key to maximizing Bitty's valuation -- automated KYC/KYB is table stakes for institutional-grade operations."
     ],
     "tp": [
-      "How are you handling underwriting volume as you scale? We’re seeing funders your size hitting a wall at 40 min per deal manually.",
-      "We cut that to under 5 minutes — application intake, cash flow analysis, CLEAR report review, all automated with explainable decisions.",
-      "We’re already working with PIRS Capital in this space. Happy to share what we’ve seen work."
+      "At $165M+ annual originations and growing, every minute saved per deal compounds -- HyperVerge takes bank statement analysis and ID verification from 40+ minutes to under 5 minutes.",
+      "HyperVerge serves 450+ MCA companies including many funders of Bitty's scale -- we understand the revenue-based financing workflow from application to renewal.",
+      "With your Cloudsquare API integration and self-described tech-first approach, HyperVerge's API plugs directly into your existing Salesforce-based broker pipeline for seamless document verification.",
+      "As OppFi brings data analytics capabilities to Bitty, enhanced document intelligence from HyperVerge gives your underwriting team richer, faster data extraction from bank statements."
     ],
     "leaders": [
       {
         "n": "Craig Hecker",
         "t": "CEO",
-        "bg": "Industry veteran. Founded and sold Rapid Capital Funding. Acquired Bitty in 2020. OppFi holds 35% equity with path to full ownership.",
+        "bg": "Serial entrepreneur and MCA industry veteran. University of Michigan grad (1993), Detroit native. Started career on the Chicago Board Options Exchange, then built a $10M/year dry cleaning and garment restoration business before founding Rapid Capital Funding in 2007, which he grew to $78M annual run rate and sold to North American Bancard. Acquired Bitty in 2020, bringing his Rapid Capital management team with him. Describes Bitty as 'a tech company first' focused on using technology to revolutionize MCA. Secured OppFi's $18M strategic investment in 2024. Regular deBanked event sponsor (Broker Fair, CONNECT, B2B Finance Expo). Active on deBanked TV discussing revenue-based financing and industry regulation.",
         "hooks": [
-          "Serial entrepreneur",
-          "Built & sold Rapid Capital"
+          "*CBOE trading floor to dry cleaning empire to MCA pioneer",
+          "*$10M/year garment biz before fintech",
+          "University of Michigan 1993 grad, Detroit native",
+          "Sold Rapid Capital to NAB, bought Bitty",
+          "OppFi path to full ownership by 2030",
+          "Signature deBanked event sponsor"
         ],
         "li": "https://www.linkedin.com/in/craig-hecker-59b6b171/"
       },
       {
         "n": "Daniel Dames",
         "t": "VP of Operations",
-        "bg": "UPitt CS + Psychology. Previously at PNC, Compunetix. Tech background makes him receptive to automation. Funder Panel speaker.",
+        "bg": "University of Pittsburgh BS in Computer Science and Psychology. Has been with Bitty since its inception in 2018, helping create core programs and underwriting guidelines. Previously held roles at PNC (banking), Compunetix (Pittsburgh-based teleconferencing tech company), Vista Host, and Education Management. Draws on coaching experience to lead daily operations. Launched 'Big Bitty' product (deals $20K-$125K) in 2023. Regular deBanked conference speaker -- judged the Broker Battle at deBanked CONNECT Miami, moderated 'Let's Talk Big Deals' panel, and appeared on deBanked TV at Miami 2024. Tech background spanning telecom and finance makes him receptive to automation and platform integrations.",
         "hooks": [
-          "UPitt CS grad",
-          "Tech-turned-ops",
-          "PNC alum"
+          "*UPitt CS + Psychology dual degree",
+          "*Broker Battle judge at deBanked Miami",
+          "Compunetix telecom tech background",
+          "Built Bitty's underwriting from scratch",
+          "Moderated 'Let's Talk Big Deals' panel",
+          "Coaching background applied to ops leadership"
         ],
         "li": "https://www.linkedin.com/in/daniel-dames-b7153318/"
       },
       {
         "n": "Brian Bastio",
         "t": "Director of Marketing",
-        "bg": "8+ years consulting in consumer/business finance. Oversees all digital marketing.",
+        "bg": "Atlanta-based marketing professional with two decades of experience in software sales, digital marketing, lead generation, data management, and attribution. Co-founded Bastio Consulting Group with wife Serena in 2019, both having held roles in the performance marketing industry including at CAKE (performance marketing software platform). Featured in CAKE's Spotlight Q&A on performance marketing agencies. Previous roles at RevLifter, Lead Economy LLC, and Trend Capital Holdings. Over eight years consulting specifically in consumer and business finance industries. At Bitty, oversees all digital marketing including demand generation, content creation, marketing automation, partner communications, and data analysis.",
         "hooks": [
-          "8yr finance consultant",
-          "Digital marketing lead"
-        ]
+          "*Co-founded consulting firm with wife Serena",
+          "*CAKE performance marketing platform alumnus",
+          "20 years in digital marketing and lead gen",
+          "Atlanta-based, works remote for Fort Lauderdale HQ",
+          "Featured in CAKE Spotlight Q&A series"
+        ],
+        "li": "https://www.linkedin.com/in/brianbastio/"
       }
     ],
-    "ask": "Would it be worth a 20-minute demo next week to show you the platform?",
+    "ask": "Craig, Daniel -- would love 20 minutes to show you how HyperVerge's bank statement OCR and ID verification could plug into Bitty's tech-first platform and help your team keep pace with the growth OppFi is banking on. Open to a quick demo next week?",
     "source": [
-      "eventiq"
-    ]
+      "eventiq",
+      "deep-researched"
+    ],
+    "website": "https://bittyadvance.com",
+    "linkedinUrl": "https://www.linkedin.com/company/bitty-advance"
   },
   {
     "id": 2,
@@ -106,98 +136,133 @@
         "t": "VP Strategic Partnerships"
       }
     ],
-    "desc": "Non-bank lender (formerly ForwardLine, est. 2003) in Carlsbad, CA. Surpassed $1B total originations Dec 2025. 55% YoY origination growth. $150M credit facility (Aug 2024). New CEO Richard Henderson (Sep 2024, prev CRO at CAN Capital). CCO Dave Lafferty (30yr credit veteran, prev CCO at CAN Capital). Launched BriteLine on-demand capital May 2025.",
+    "desc": "BriteCap Financial (formerly ForwardLine Financial, est. 2003) is a technology-enabled non-bank SMB lender majority-owned by an affiliate of North Mill Equipment Finance (NMEF/InterVest Capital Partners). Headquartered with offices in North Hollywood, CA and Las Vegas, NV, BriteCap surpassed $1 billion in total originations in December 2025, delivering 55% YoY growth — the strongest year in company history. The company secured a $150M receivable financing facility from One William Street Capital Management in 2024 and launched BriteLine, a revolving line of credit product, in May 2025. Under CEO Richard Henderson (appointed Sep 2024), BriteCap has invested heavily in underwriting intelligence, data-driven technology, and partner enablement, positioning for continued expansion into 2026.",
     "notes": "Broker Panel speaker. Just raised $150M facility.",
     "news": [
       {
-        "h": "Surpasses $1 billion in total originations",
-        "s": "PR Newswire, Feb 2026",
-        "d": "Crossed $1B in Dec 2025 with 55% YoY origination growth -- strongest year in company history."
+        "h": "BriteCap Financial Surpasses $1 Billion in Total Originations",
+        "s": "PR Newswire, Jan 2026",
+        "d": "BriteCap crossed the $1B origination milestone in Dec 2025, delivering 55% YoY growth. CEO Henderson credited disciplined execution, strong partnerships, and investment in underwriting intelligence."
       },
       {
-        "h": "Launches BriteLine for on-demand business capital",
+        "h": "BriteCap Launches BriteLine for On-Demand Business Capital",
         "s": "PR Newswire, May 2025",
-        "d": "Single approval unlocks future draws based on performance -- revolving line concept for alt lending."
+        "d": "BriteCap launched BriteLine, a next-gen revolving line of credit giving SMB owners on-demand access to capital drawn only when needed based on business performance."
       },
       {
-        "h": "Jim Noel hired as VP Strategic Partnerships + $150M facility",
-        "s": "PR Newswire, Aug-Oct 2024",
-        "d": "20+ year vet from CAN Capital joins. $150M 3-year revolving receivable financing facility secured."
+        "h": "BriteCap Promotes Coleman to CAO & General Counsel",
+        "s": "PR Newswire, Aug 2025",
+        "d": "Molly Coleman promoted to Chief Administrative Officer & General Counsel after 14+ years at BriteCap, overseeing Legal, Compliance, HR, and BPO strategy."
+      },
+      {
+        "h": "BriteCap Financial Expands Team to Support Growth",
+        "s": "PR Newswire / deBanked, Mar 2025",
+        "d": "BriteCap added three key hires: Director of Collections, Senior Accountant, and Digital Brand Manager to support continued scaling after securing $150M credit facility."
+      },
+      {
+        "h": "BriteCap Financial Secures $150M Credit Facility",
+        "s": "PR Newswire, Aug 2024",
+        "d": "Established a new receivable financing facility from One William Street Capital Management providing up to $150M over a three-year revolving period."
+      },
+      {
+        "h": "BriteCap Financial Announces New CEO Richard Henderson",
+        "s": "PR Newswire / deBanked, Sep 2024",
+        "d": "Richard Henderson appointed CEO, bringing 23+ years of equipment finance and SMB lending experience from CAN Capital, Marlin Capital, and Direct Capital."
+      },
+      {
+        "h": "BriteCap Ramps Up Team, Ready For Growth",
+        "s": "deBanked, Dec 2024",
+        "d": "Henderson discussed selective broker onboarding strategy and bullish economic outlook. Added CCO Dave Lafferty and CFO Pushkar Choudhuri to leadership team."
       }
     ],
-    "ice": "Richard, hitting $1B total originations with 55% YoY growth is impressive. With BriteLine scaling, how’s the underwriting infrastructure keeping up? — on-demand capital is a bold move. How’s the market responding?",
+    "ice": "Congratulations on crossing $1B in originations with 55% YoY growth — that's remarkable execution. With that kind of volume scaling, underwriting speed and consistency become critical bottlenecks. HyperVerge's document AI can compress the underwriting cycle from 40 minutes to under 5 minutes per application, which at BriteCap's trajectory could mean processing thousands more applications per month without adding headcount.",
     "icebreakers": [
-      "Congrats on crossing a billion in originations with 55% YoY growth. You mentioned exciting innovations for 2026 -- can you give us a preview?",
-      "BriteLine is an interesting concept -- single approval with performance-based draws. How are brokers positioning it compared to a standard advance?",
-      "Bringing Jim from CAN Capital right after the $150M facility looks like a deliberate one-two punch for scaling. How has the partner network grown since Jim came on?",
-      "Growing originations 55% while strengthening credit discipline is not easy. What operational changes made it possible to grow faster and tighten underwriting simultaneously?"
+      "Your $1B origination milestone and 55% YoY growth signal massive throughput — how is your underwriting infrastructure keeping pace with that volume?",
+      "With BriteLine launching as a revolving credit product, the re-underwriting and ongoing monitoring requirements multiply — is that creating new operational complexity?",
+      "Henderson mentioned investing in 'underwriting intelligence and data-driven technology' — curious what the biggest remaining friction points are in your document review pipeline?",
+      "As you selectively onboard brokers and scale partner submissions, how are you maintaining consistent decision speed and accuracy across the growing volume?"
     ],
     "tp": [
-      "An on-demand capital product needs near-instant underwriting — how are you handling that?",
-      "With your broker network sending in deals, consistency is key. Our AI ensures every application gets the same rigorous, fast review regardless of source.",
-      "Jim, with your CAN Capital background, you’ve seen what happens when underwriting can’t keep up with capital availability. We solve that."
+      "At 55% YoY growth and $1B+ originated, BriteCap is processing enormous application volume — HyperVerge's document AI handles bank statement and financial document extraction in seconds, not minutes, directly impacting throughput capacity.",
+      "HyperVerge serves 450+ MCA and SMB lending companies. We understand the specific document types and fraud patterns in this space — bank statements, tax returns, merchant processing statements — with purpose-built models, not generic OCR.",
+      "Our platform compresses underwriting document review from 40 minutes to under 5 minutes per application. At BriteCap's scale, that could translate to recovering hundreds of analyst-hours per month while improving consistency and reducing human error in credit decisions."
     ],
     "leaders": [
       {
         "n": "Richard Henderson",
         "t": "CEO",
-        "bg": "23+ yrs in equipment leasing/SMB lending. Previously CRO at CAN Capital, senior roles at Marlin Capital. Appointed Sep 2024.",
-        "li": "https://www.linkedin.com/in/richardhendersonceo/",
+        "bg": "23+ years in equipment leasing, finance, and SMB lending. Appointed BriteCap CEO Sep 2024. Previously CRO at CAN Capital, Head of Direct Originations & Franchise Finance at Marlin Capital Solutions (2017-2020) where he pioneered the Franchise Finance business achieving asset losses under 0.5%. SVP Franchise & Hospitality Finance at Direct Capital (2013-2015) where he launched LendEdge digital lending platform. President of EquipmentEngine (online auction platform). Saint Anselm College (BA Sociology, Business & Human Relations). Studied at MIT. Lean Six Sigma certified. Based in Portsmouth, NH. Personal interests include philosophy, theoretical physics, and theology.",
+        "li": "https://www.linkedin.com/in/richardhendersonjr/",
         "hooks": [
-          "23yr equipment leasing vet",
-          "Ex-CRO CAN Capital",
-          "Ex-Marlin Capital"
+          "*Pioneered franchise finance at Marlin with <0.5% asset losses",
+          "Launched LendEdge digital lending at Direct Capital",
+          "Philosophy & theoretical physics enthusiast",
+          "Saint Anselm + MIT educated",
+          "Built EquipmentEngine online auction platform",
+          "Lean Six Sigma practitioner",
+          "Quoted: 'selective on who we onboard' (broker strategy)"
         ]
       },
       {
         "n": "Dave Lafferty",
         "t": "Chief Credit Officer",
-        "bg": "30 yrs in credit, risk, underwriting. Previously CCO at CAN Capital. Penn State. THE key buyer for underwriting tech.",
+        "bg": "30 years in credit, risk, underwriting, and portfolio management. Joined BriteCap Dec 2024. Previously CCO at CAN Capital where he worked with Henderson for over a decade. Earlier career at Advanta Business Services as Senior Credit Analyst, and Dun & Bradstreet as Information Consultant. Penn State (1990-1994). Based in Punta Gorda, FL. Expertise spans equipment finance and working capital lending credit risk and capital markets navigation. THE key buyer for underwriting technology — Henderson specifically cited his role in 'leveraging cutting-edge technology' for credit decisions.",
         "hooks": [
-          "Penn State",
-          "30yr credit veteran",
-          "CAN Capital CCO alum",
-          "KEY BUYER"
+          "*Henderson worked with him 10+ years — deep trust",
+          "Dun & Bradstreet data roots (Information Consultant)",
+          "Penn State grad, Punta Gorda FL based",
+          "Advanta Business Services credit analyst background",
+          "Quoted: 'well-positioned to become a leader in commercial finance'"
         ],
         "li": "https://www.linkedin.com/in/david-lafferty-23707b7/"
       },
       {
         "n": "Jim Noel",
         "t": "VP Strategic Partnerships",
-        "bg": "20+ yrs in business lending. Previously VP Vendor Finance at CAN Capital. La Salle Univ. Broker Panel speaker.",
+        "bg": "20+ years in business lending. Joined BriteCap Oct 2024. Previously VP Vendor Finance at CAN Capital where he built the vendor finance channel. Earlier career at Marlin Capital Solutions, Navitas Lease Corp, and Advanta Leasing. La Salle University. Based in Las Vegas, NV. Responsible for cultivating strategic partnerships with brokers, alternative lenders, and financial services providers. Henderson described a 'strong working relationship over the years' with Noel.",
         "hooks": [
-          "La Salle Univ",
-          "CAN Capital alum",
-          "Panelist"
+          "*Reunited CAN Capital trio (Henderson + Lafferty + Noel)",
+          "Broker/partner relationship builder",
+          "Marlin + Navitas + Advanta leasing background",
+          "La Salle University grad, Las Vegas based",
+          "Vendor finance channel specialist"
         ],
         "li": "https://www.linkedin.com/in/jim-noel-1975594/"
       },
       {
         "n": "Molly Coleman",
         "t": "CAO & General Counsel",
-        "bg": "14+ yrs at BriteCap. Georgetown Law (magna cum laude). Brown Univ. Promoted Aug 2025.",
+        "bg": "14+ years at BriteCap/ForwardLine, promoted to CAO & GC Aug 2025. Georgetown Law (magna cum laude, Order of the Coif, Executive Editor of Georgetown Law Journal). Brown University (BA History). Clerked for Hon. Joseph M. McLaughlin, U.S. Court of Appeals Second Circuit. Practiced at Irell & Manella and Brobeck Phleger & Harrison (now Morgan Lewis). Adjunct Professor at Loyola Law School (2002-2008). Oversees Legal, Compliance, HR, Contract Administration, Customer Service, and BPO strategy. Longest-tenured executive at BriteCap.",
         "hooks": [
-          "Georgetown Law",
-          "Brown Univ",
-          "Magna cum laude",
-          "14yr tenure"
-        ]
+          "*Georgetown Law magna cum laude + Order of the Coif",
+          "Federal appellate court clerk (2nd Circuit)",
+          "Former Loyola Law School adjunct professor",
+          "Brown University history major",
+          "Longest-tenured BriteCap exec (14+ years)",
+          "Oversees BPO/offshoring strategy"
+        ],
+        "li": "https://www.linkedin.com/in/molly-macisaac-coleman-2988336/"
       },
       {
         "n": "David Lee",
         "t": "VP Sales & Origination",
-        "bg": "26 yrs BD/sales experience. Led ForwardLine sales transformation. Previously at Apple. UC Santa Barbara.",
+        "bg": "26+ years BD and sales experience. VP Sales & Origination at BriteCap/ForwardLine since 2017, starting as Director of Sales then promoted. Led the sales transformation — personally coached each team member as organization grew into multiple offices and sites. Previously Senior Manager at Apple (2011-2013). District Manager at Robbins Brothers luxury jewelry retail (2002-2011). UC Santa Barbara (BA English Language & Literature, 1995-1998). Licensed Loan Originator (2020). Based in Montebello, CA.",
         "hooks": [
-          "UC Santa Barbara",
-          "*Ex-Apple",
-          "26yr sales veteran"
-        ]
+          "*Apple Senior Manager turned SMB lending leader",
+          "Personally coached every sales team member",
+          "Robbins Brothers luxury retail leadership (9 years)",
+          "UC Santa Barbara English major",
+          "Licensed Loan Originator since 2020",
+          "Multi-site sales transformation architect"
+        ],
+        "li": "https://www.linkedin.com/in/davidslee915/"
       }
     ],
-    "ask": "With BriteLine scaling, would it make sense to explore how AI underwriting could support that growth?",
+    "ask": "Richard, given BriteCap's momentum and your stated focus on underwriting intelligence — would you or Dave Lafferty be open to a 20-minute walkthrough of how HyperVerge accelerates document-heavy underwriting for high-volume SMB lenders like BriteCap?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "deep-researched"
     ],
     "location": "California",
     "employees": 97,
@@ -221,97 +286,126 @@
         "t": "Partner/Co-Founder"
       }
     ],
-    "desc": "Founded 2012. Specializes in eCommerce seller MCAs (Amazon, Walmart, Shopify, eBay). Proprietary PIRScore credit model. Inc. 5000 #1770 (230% revenue growth). COO Andrew Mallinger scaled two fintechs. Already partnered with HyperVerge.",
+    "desc": "PIRS Capital is a Miami Beach-headquartered fintech alternative lender founded in 2012, specializing in Merchant Cash Advances for eCommerce sellers across Amazon FBA, Walmart Marketplace, Shopify, eBay, and Newegg. The company's proprietary PIRScore credit model uses machine learning and 50+ statistical algorithms with hundreds of proprietary data points to deliver predictive behavioral analytics for underwriting. PIRS has secured credit facilities up to $35M (with plans for $50M), earned Inc. 5000 #1770 recognition (230% three-year revenue growth), Crain's New York Fast 50 #45, and Inc. 5000 Regionals NYC Metro #65. The company offers up to $1M per business entity with 24-hour approvals, holds a 4.7/5 Trustpilot rating (570+ reviews) and an A+ BBB rating, and employs approximately 17 people generating ~$11.9M in revenue.",
     "notes": "Your existing partner — align messaging and get referrals.",
     "news": [
       {
-        "h": "Crain's NY Fast 50 + Inc. 5000 recognition",
-        "s": "Crain's/Inc., 2024",
-        "d": "230% three-year revenue growth. Opportunities Fund returned 20% net for 2024."
+        "h": "PIRS Capital Increases Credit Facility to $35M, Targets $50M",
+        "s": "PRWeb, January 2022",
+        "d": "PIRS Capital expanded its credit facility to $35M following record 2021 top and bottom-line growth, with plans to reach $50M. Also hired industry veteran Salvatore Morreale as Director of Business Development."
       },
       {
-        "h": "PIRScore proprietary credit scoring model",
-        "s": "PYMNTS, 2024",
-        "d": "ML model analyzing 50+ algorithms and hundreds of proprietary data points for merchant risk."
+        "h": "COO Andrew Mallinger Featured on FunderIntel Live Podcast",
+        "s": "FunderIntel, June 2024",
+        "d": "Andrew Mallinger appeared on FunderIntel's live podcast series discussing revenue-based financing strategies and PIRS Capital's position as a top-volume lender in the RBF space."
       },
       {
-        "h": "Andrew Mallinger on FunderIntel podcast",
-        "s": "FunderIntel, 2024",
-        "d": "COO discussed revenue-based financing strategy. PIRS at RBFC golf outing showing industry engagement."
+        "h": "PIRS Capital Secures $20M Financing Following Landmark 2019",
+        "s": "PRWeb, January 2020",
+        "d": "Following 73% funding growth, 57% revenue growth, and 53% submission volume growth in 2019, PIRS secured a $20M credit facility increase to fund technology and credit model upgrades."
+      },
+      {
+        "h": "PIRS Capital Ranks #65 on Inc. 5000 Regionals NYC Metro",
+        "s": "Inc. Magazine, 2021",
+        "d": "PIRS Capital ranked among elite NYC metro companies alongside WeWork, Peloton, and Payoneer as one of the few direct MCA lenders on the regional list."
+      },
+      {
+        "h": "PYMNTS Features PIRS Capital on Rethinking MCA Reputation",
+        "s": "PYMNTS.com, 2018",
+        "d": "COO Andrew Mallinger discussed how PIRScore's machine learning re-teaches itself daily to find new trends, and argued MCAs no longer mean sky-high rates as institutional players enter the space."
+      },
+      {
+        "h": "PIRS Capital Named to Crain's New York Fast 50 (#45)",
+        "s": "Crain's New York Business / deBanked, 2019-2021",
+        "d": "PIRS was recognized on the Crain's Fast 50 list multiple times, qualifying with 230% three-year growth and $10M+ annual revenue from the NY metro area."
       }
     ],
-    "ice": "Great to see you! Let’s align on messaging for today — what’s been resonating in your conversations so far?",
+    "ice": "Andrew, congrats on the FunderIntel podcast feature last year — your point about PIRS becoming a power player in MCA really resonated. With your PIRScore model analyzing 50+ algorithms in real time, I'd love to explore how HyperVerge's document verification could further compress your 24-hour approval window and reduce manual touchpoints as you scale toward that $50M facility target.",
     "icebreakers": [
-      "Your Opportunities Fund posted 20% net returns for 2024 -- PIRScore is doing its job on risk. How has the model evolved as eCommerce has changed?",
-      "With Amazon launching its own MCA program via Parafin, how do you see the eCommerce lending landscape shifting for PIRS?",
-      "230% three-year growth on Crain's Fast 50 is impressive. Is the plan to stay specialized in eCommerce or expand PIRScore into other verticals?",
-      "PIRScore analyzing 50+ algorithms sets you apart from generic FICO analysis. For an Amazon FBA seller, what does PIRScore see that a traditional underwriter would miss?"
+      "Reference Andrew's FunderIntel podcast on revenue-based financing (June 2024) and ask how the RBF landscape has shifted since then — tie to HyperVerge automating the document intake bottleneck.",
+      "Cite PIRS's credit facility growth trajectory ($10M -> $20M -> $35M -> $50M target) and discuss how faster, more accurate identity/bank statement verification helps de-risk the portfolio at scale.",
+      "Note PIRScore's 50+ algorithm ML model and position HyperVerge's AI-powered document extraction as a complementary data layer — faster inputs mean PIRScore can score deals even faster.",
+      "Mention PIRS's 4.7/5 Trustpilot rating and 570+ reviews as proof of customer obsession — position HyperVerge's seamless onboarding as protecting that NPS as they scale volume."
     ],
     "tp": [
-      "Touch base on joint messaging for the event.",
-      "Ask for a specific success metric or quote to use in other conversations today.",
-      "Discuss new opportunities in their eCommerce vertical.",
-      "Align on warm referral introductions at the event."
+      "PIRS funds up to $1M per entity across 5 eCommerce platforms (Amazon, Walmart, Shopify, eBay, Newegg) — each platform has different document types. HyperVerge's multi-format extraction handles marketplace-specific statements, bank docs, and seller dashboards automatically, critical as PIRS scales to $50M in facilities.",
+      "As an existing HyperVerge client, PIRS already benefits from automated verification. Deepening the integration — adding bank statement analysis, income verification, and fraud detection layers — could further reduce the 24-hour approval window while maintaining PIRScore's credit model accuracy.",
+      "PIRS processes hundreds of eCommerce seller applications monthly across diverse platforms. HyperVerge's AI reduces manual document review from 40+ minutes to under 5 minutes per application, directly supporting PIRS's growth from $35M to $50M+ without proportionally scaling the 17-person team."
     ],
     "leaders": [
       {
         "n": "Alexander Parsol",
         "t": "Partner / Co-Founder",
-        "bg": "Decade+ in financial services. Founding member specializing in lending and brokerage.",
+        "bg": "Co-founding member and former Managing Partner of PIRS Capital with 10+ years in financial services specializing in lending and brokerage. Expertise spans portfolio management, financial modeling, risk assessment, deal structuring, and data analysis. Drove PIRS's early strategic vision and growth from founding in 2012. Note: Court records from 2016 reference a departure, though ZoomInfo still lists him as Partner. His current involvement may be more advisory or ownership-focused rather than day-to-day operational.",
         "hooks": [
-          "PIRS co-founder",
-          "Decade in lending"
-        ]
+          "*Co-founded PIRS in 2012",
+          "Financial modeling & deal structuring specialist",
+          "Lending and brokerage background"
+        ],
+        "li": "https://www.linkedin.com/in/alex-parsol-947043120"
       },
       {
         "n": "Andrew Mallinger",
         "t": "COO",
-        "bg": "15+ yrs in SMB lending/fintech. Among first 5 at two fintechs (one had PE exit). Penn State. CLFP certified. Driving 230% revenue growth.",
+        "bg": "Leader in SMB lending/fintech since 2010 with 15+ years of experience. Among first 5 employees at two fintechs: built Fora Financial's ISO/partner channel from scratch to 50%+ of total fundings as VP of Strategic Partnerships (2010-2015), then joined PIRS Capital to drive hyper-growth. One of the earliest professionals in the working capital space to earn the Certified Lease & Finance Professional (CLFP) designation (only 223 CLPs worldwide at the time). Penn State BA in History and Labor Studies. Featured on PYMNTS.com discussing PIRScore's ML capabilities and on FunderIntel's live podcast on revenue-based financing (June 2024). Quoted saying PIRS is 'turning into a power player within the MCA industry.' Drove 230% revenue growth, $35M credit facility expansion, and positioned PIRS among top RBF lenders by volume.",
         "li": "https://www.linkedin.com/in/andrew-mallinger/",
         "hooks": [
-          "Penn State",
-          "*CLFP certified",
-          "Two fintech founding teams",
-          "230% revenue growth driver"
+          "*FunderIntel podcast guest (June 2024)",
+          "*CLFP certified — 1 of only 223 worldwide",
+          "Built Fora Financial's ISO channel from zero",
+          "First 5 employees at two fintechs",
+          "Penn State — History & Labor Studies",
+          "PYMNTS.com featured on MCA evolution"
         ]
       },
       {
         "n": "Mitchell Rubin",
         "t": "CFO",
-        "bg": "Oversees financial strategy and capital management.",
+        "bg": "Seasoned fractional CFO and CPA who founded CFO ON-DEMAND in 2002. Drexel University BS graduate who began career at a regional CPA firm in Bala Cynwyd, PA, making Partner in only four years. Has held CFO/COO roles at both public and private companies: CFO at AeroGrow International (2006-2008, publicly traded indoor garden company), COO/CFO at InterFACE Holdings Group (2010-2014, grew from 2 to 5 locations, increased revenues 100%+, brought accounting to GAAP standards). Specialist in early-stage and high-growth entrepreneurial companies across diverse industries. At PIRS, oversees financial strategy, capital management, and secured key credit facilities including $10M (2018), $20M (2020), and $35M (2022) expansions.",
         "hooks": [
-          "CFO capital strategist"
-        ]
+          "*Founded CFO ON-DEMAND in 2002",
+          "CPA who made Partner in 4 years",
+          "Drexel University graduate",
+          "Former CFO of public company AeroGrow",
+          "Grew InterFACE from 2 to 5 locations"
+        ],
+        "li": "https://www.linkedin.com/in/mitchellrubin/"
       },
       {
         "n": "Jacob Shimon",
         "t": "CMO",
-        "bg": "20+ yrs in tech. Co-founding member. Drives brand and marketing.",
+        "bg": "Senior IT executive turned marketing leader with 20+ years of management experience in consumer and B2B finance. Co-founding member of PIRS Capital and co-founder of WOW Brand (branding/creative agency). Career spans fintech and merchant processing: Managing Partner at Argus Merchant Services (2011+), Consultant at Merchant Processing Services (2008-2010), VP of Technology & Data Management at Acies Corp (2006-2008), VP of Merchant Operations at Acies Inc (2004-2006), CIO-level role at Digital Wireless Universe (2000-2003), and earlier developer roles at Speedus Corp, Tekmark, IBM Global Services, Lucent Technologies, and Interworld. Rare blend of deep tech infrastructure background with marketing leadership.",
         "hooks": [
-          "20yr tech veteran",
-          "PIRS co-founder"
-        ]
+          "*Co-founder of WOW Brand agency",
+          "IBM, Lucent, Interworld alumnus",
+          "Tech exec turned CMO — rare profile",
+          "Managing Partner at Argus Merchant Services",
+          "CIO at Digital Wireless Universe"
+        ],
+        "li": "https://www.linkedin.com/in/jacob-shimon-451167304/"
       },
       {
         "n": "Igor Shliosberg",
         "t": "CCO & Director of Credit",
-        "bg": "Dual compliance + credit role. Previously at Argus Merchant Services. Based in Miami Beach.",
+        "bg": "Dual compliance and credit leadership role at PIRS Capital, overseeing both regulatory compliance standards and credit risk assessment. Based in Miami Beach, FL. Previously Manager of Back Office at Argus Merchant Services (where he worked alongside Jacob Shimon), and held positions at DeSola Group and Speedus Corp. His dual CCO/Director of Credit role is unusual in the MCA space — most companies separate compliance from credit decisioning. Works closely with the data science team led by Director Sergey Kalika (ex-Thomson Reuters) to maintain PIRScore model integrity and compliance standards.",
         "hooks": [
-          "Dual compliance + credit role",
+          "*Dual CCO + Credit Director role",
+          "Argus Merchant Services alumnus (with Shimon)",
           "Miami Beach based",
-          "Ex-Argus Merchant Services"
+          "DeSola Group and Speedus Corp background"
         ]
       }
     ],
-    "ask": "Can you share a specific metric from our partnership I can use in conversations today?",
+    "ask": "Andrew, since PIRS already uses HyperVerge for verification, I'd love to do a 20-minute deep-dive on how our newer bank statement analysis and fraud detection modules could accelerate PIRScore decisioning — especially as you push toward the $50M facility. Would next Tuesday or Thursday work?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "deep-researched"
     ],
     "location": "New York",
     "employees": 18,
     "website": "https://pirscapital.com",
-    "linkedinUrl": "https://www.linkedin.com/company/pirs-capital-llc/people/"
+    "linkedinUrl": "https://www.linkedin.com/company/pirs-capital-llc/"
   },
   {
     "id": 4,
@@ -338,84 +432,114 @@
         "t": "Dir Business Dev"
       }
     ],
-    "desc": "MCA debt consolidation (Franklin Fund ~$100M) and growth capital (Capstone Fund $50M). ~13 employees, Farmington Hills MI. CEO Shaya Baum was EY Entrepreneur of the Year 2022 finalist. Dir of Underwriting Eli Golshteyn is THE buyer (audit background). Sarah Annas hosts Back to Business podcast.",
+    "desc": "Wing Lake Capital Partners is a Farmington Hills, MI-based alternative lending and business advisory firm specializing in MCA debt consolidation and growth capital. Founded by Shaya Baum, the firm evolved from Franklin Capital (est. 2004) and operates two funds: the Franklin Fund (~$100M, focused on restructuring distressed MCA debt) and the Capstone Fund ($50M, growth capital for businesses graduating out of MCA dependency). Wing Lake receives approximately 800 referrals weekly from MCA companies, has funded 75+ companies totaling $100M+, and reports ~$25M in annual revenue. The firm partnered with Rocky Mountain Bank (Wyoming) in 2020, expanding its lending capabilities. Wing Lake claims a 90% success rate in helping client companies avoid bankruptcy. The team of ~13 employees spans Farmington Hills HQ and remote positions, with active presence at deBanked CONNECT conferences and the Revenue Based Finance Coalition.",
     "notes": "SQO! Debt consolidation = complex underwriting = perfect fit.",
     "news": [
       {
-        "h": "Capstone Fund launched with $50M+ for growth-stage businesses",
-        "s": "deBanked/Crain's Detroit",
-        "d": "Targets businesses emerged from distress, offering lower-rate 3-year term loans."
+        "h": "Wing Lake Team at deBanked CONNECT Miami 2025",
+        "s": "LinkedIn / deBanked, Jan 2025",
+        "d": "Wing Lake Capital sent a team to deBanked CONNECT Miami 2025 and sponsored the drink cart for the Revenue Based Finance Coalition, signaling active industry engagement."
       },
       {
-        "h": "deBanked CONNECT Miami 2025 sponsorship",
-        "s": "LinkedIn, Jan-Feb 2025",
-        "d": "Sarah Annas and Angelina Fletcher represented Wing Lake. Sponsored RBFC drink cart."
+        "h": "Back to Business Podcast Season 2 Launch",
+        "s": "Wing Lake Capital / Buzzsprout, 2024-2025",
+        "d": "Sarah Annas launched new episodes of the Back to Business podcast including an interview with Emmy-winning news anchor turned PR exec Robin Schwartz, covering storytelling in business."
       },
       {
-        "h": "Back to Business podcast launch",
-        "s": "Wing Lake Capital, ongoing",
-        "d": "Thought leadership platform featuring team members on leadership and remote work."
+        "h": "Devotion Hospice: From MCA Debt to Successful Exit",
+        "s": "winglakecp.com, 2024",
+        "d": "Wing Lake published a case study showing how they helped Devotion Hospice resolve financial challenges, scale to 800 patients and 165 employees, and achieve a successful acquisition exit."
+      },
+      {
+        "h": "Shaya Baum Co-founds Tents of Two Brothers Coalition",
+        "s": "Detroit Jewish News, 2024",
+        "d": "Baum co-founded the Tents of Two Brothers Coalition with Mike Kassab, a nonprofit leading trips to Israel to foster peace and bridge cultural divides across the Middle East."
+      },
+      {
+        "h": "Shaya Baum Named EY Entrepreneur of the Year Michigan & NW Ohio",
+        "s": "DBusiness Magazine / EY, 2022",
+        "d": "Baum won the EY Entrepreneur of the Year for Michigan and Northwest Ohio and was named a national finalist, recognized for disrupting the MCA restructuring industry."
+      },
+      {
+        "h": "Wing Lake Capital Launches $50M Capstone Growth Fund",
+        "s": "deBanked, Nov 2021",
+        "d": "Wing Lake announced the Capstone Fund with $50M from existing Franklin Fund investors, shifting focus from distressed restructuring to growth capital for businesses ready to scale."
       }
     ],
-    "ice": "Shaya, I’ve been wanting to connect — debt consolidation underwriting is one of the most complex niches in this space, and that’s exactly where our AI shines.",
+    "ice": "Shaya, saw Wing Lake's team at deBanked CONNECT Miami — with 800 MCA referrals hitting your desk weekly, curious how much of Eli's underwriting time goes to manual doc verification versus actual credit analysis. HyperVerge automates the document intake piece so underwriters can focus on what matters.",
     "icebreakers": [
-      "The Franklin/Capstone two-fund model is smart -- clean up the MCA stack, then step in with growth capital. How often does a merchant graduate from one fund to the other?",
-      "I saw Sarah and the team at deBanked CONNECT Miami sponsoring the RBFC drink cart. Operating outside the typical NY funding corridor, does that give you a different perspective?",
-      "Your Capstone Fund targets businesses through distress into growth but still outside traditional bank eligibility. What does your qualification process focus on that banks miss?",
-      "I have been listening to your Back to Business podcast. Is it bringing inbound deal flow or more of a culture and recruiting play?"
+      "Reference the Devotion Hospice case study exit — ask how document verification scales when onboarding healthcare clients with complex financials",
+      "Mention the Back to Business podcast — Sarah's episode with Robin Schwartz on storytelling could tie into how HyperVerge helps Wing Lake tell a faster, data-driven underwriting story to brokers",
+      "Note the 800 weekly referrals figure from deBanked — at that volume, even 10 minutes saved per file review compounds to hundreds of hours monthly",
+      "Reference the Capstone Fund's growth capital focus — as Wing Lake graduates clients from Franklin to Capstone, faster re-underwriting with automated verification keeps the pipeline moving"
     ],
     "tp": [
-      "Debt consolidation underwriting is uniquely complex — analyzing a merchant’s existing MCA stack with multiple advances and factor rates. Our AI parses bank statements and automatically identifies all MCA repayments.",
-      "With two funds needing different risk models, you need configurable underwriting workflows. That’s exactly what we do.",
-      "For a 16-person team, going from 40 min to 5 min per deal is transformative. That’s like adding 5 more underwriters without the headcount."
+      "At 800 MCA referrals per week, even a 5-minute reduction in document verification per file saves Wing Lake 65+ hours weekly — HyperVerge automates bank statement, ID, and business doc extraction in under 60 seconds",
+      "HyperVerge serves 450+ MCA/alternative lending companies including consolidation firms like Wing Lake — our models are trained on the exact document types (stacked MCA contracts, bank statements, tax returns) that Eli's team reviews daily",
+      "Wing Lake's dual-fund model (Franklin for restructuring, Capstone for growth) means underwriting the same merchant twice — HyperVerge's persistent document profiles eliminate redundant re-verification when clients graduate between funds"
     ],
     "leaders": [
       {
         "n": "Shaya Baum",
         "t": "CEO & Managing Partner",
-        "bg": "Wayne State accounting. Founded/sold tax prep company at 19. Acquired Franklin Capital 2004. EY Entrepreneur of Year 2022 finalist.",
+        "bg": "Wayne State University accounting graduate (2006-2009). Co-founded and sold a NY-based tax prep company at age 19. Joined Franklin Capital as accountant in 2004, became CEO by 2010. Launched debt fund in 2017, merged into Wing Lake Capital Partners in 2019. Won EY Entrepreneur of the Year Michigan/NW Ohio 2022 and was national finalist. Named Detroit Jewish News 36 Under 36 (2021). Featured in Authority Magazine's 'Meet the Disruptors' series. Co-founded Tents of Two Brothers Coalition (Israel peacebuilding nonprofit) and Firefly Advocates (wrongful conviction innocence project that freed a man after 12 years). Involved in 100+ company restructurings. Receives ~800 MCA referrals per week. Describes Wing Lake as a 'restructuring firm that also writes a check.'",
         "hooks": [
-          "Started at 19",
-          "Wayne State",
-          "EY Entrepreneur finalist"
+          "*Founded innocence project (Firefly Advocates)",
+          "*EY Entrepreneur of Year national finalist",
+          "Co-founded Israel peacebuilding nonprofit",
+          "Sold first company at age 19",
+          "800 MCA referrals per week",
+          "Authority Magazine 'Disruptor' feature"
         ],
         "li": "https://www.linkedin.com/in/shaya-b-34533a21"
       },
       {
         "n": "Eli Golshteyn",
         "t": "Director of Underwriting",
-        "bg": "THE primary buyer. Prev internal audit at Veoneer and Masco. Values data accuracy and process rigor.",
+        "bg": "University of Michigan graduate (Finance, Financial Accounting & Reporting, Controllership). Soviet Jewish immigrant from Novosibirsk, Siberia — came to Metro Detroit in 1995 at age 6 with parents (father held PhD in mechanical engineering, mother MS in civil engineering). Career path: Masco Corporation (2011+, roles in corporate tax, internal audit, corporate development, rising to Senior Auditor), then Veoneer (Manager, Internal Audit). Also founded an IT support company that grew to 11 employees serving 500+ clients daily. Board member of Garrett's Space (youth mental health/suicide prevention nonprofit) and Hebrew Free Loan of Metro Detroit (youngest board member at 32, joined 2018). Values data accuracy and process rigor in underwriting.",
         "hooks": [
-          "KEY BUYER",
-          "Audit background",
-          "*Data-driven"
+          "*Immigrated from Siberia at age 6",
+          "*Board member, Garrett's Space (youth mental health)",
+          "U of Michigan finance graduate",
+          "Founded IT company (11 employees)",
+          "Youngest Hebrew Free Loan board member",
+          "Parents both engineers (PhD + MS)"
         ],
         "li": "https://www.linkedin.com/in/eli-ilya-golshteyn-0282a957"
       },
       {
         "n": "Sarah (Piteo) Annas",
         "t": "Managing Partner",
-        "bg": "Miami Univ (Marketing). Hosts Back to Business podcast. Previously at Insight Global.",
+        "bg": "Miami University Farmer School of Business graduate (Marketing & Interactive Media Studies). Previously Account Manager at Insight Global (IT/finance staffing). Hosts Wing Lake's 'Back to Business' podcast on Buzzsprout/Apple Podcasts — features business leaders in regulated industries with guests including Emmy-winning journalist Robin Schwartz and Wing Lake's own leadership team. Appeared on deBanked TV red carpet interview representing Wing Lake. Also a Certified Yoga Instructor (Chagrin Yoga Studio). Focused on building broker relationships and empowering entrepreneurs through content.",
         "hooks": [
-          "Miami Univ",
-          "*Podcaster",
-          "Marketing background"
-        ]
+          "*Hosts 'Back to Business' podcast",
+          "*Certified yoga instructor",
+          "deBanked TV red carpet appearance",
+          "Miami University marketing grad",
+          "Interactive Media Studies background"
+        ],
+        "li": "https://www.linkedin.com/in/sarah-piteo/"
       },
       {
         "n": "Angelina Fletcher",
-        "t": "Dir of Business Development",
-        "bg": "Michigan State (Marketing). Manages broker relationships. Entered business lending 2019.",
+        "t": "Director of Business Development",
+        "bg": "Michigan State University graduate (Marketing). Midwest transplant now based in Southern California. Career spanned video production, fine arts, and real estate before entering business lending in 2019. Joined Wing Lake in May 2020 as Director of Business Development, managing and growing broker relationships. Featured on Wing Lake's Back to Business podcast (Episode 4) discussing remote work, team dynamics, and work-life balance. Represents Wing Lake at deBanked CONNECT conferences (Las Vegas, Miami). Active in growing Wing Lake's ISO/broker channel.",
         "hooks": [
-          "Michigan State Marketing",
-          "Entered lending 2019"
+          "*Video production & fine arts background",
+          "Midwest transplant in SoCal",
+          "Featured on Back to Business podcast",
+          "deBanked CONNECT conference regular",
+          "Entered lending industry 2019"
         ]
       }
     ],
-    "ask": "Would you be open to a quick call next week to explore how this could work for your consolidation underwriting?",
+    "ask": "Shaya, would it make sense to show Eli a 15-minute demo of how HyperVerge handles bank statement extraction and MCA contract verification? Happy to tailor it to Wing Lake's consolidation workflow with real document types your team sees daily.",
     "source": [
-      "eventiq"
-    ]
+      "eventiq",
+      "deep-researched"
+    ],
+    "website": "https://www.winglakecp.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/winglakecp"
   },
   {
     "id": 5,

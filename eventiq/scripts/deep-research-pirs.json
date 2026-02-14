@@ -1,0 +1,117 @@
+{
+  "id": 3,
+  "name": "PIRS Capital",
+  "website": "https://pirscapital.com",
+  "linkedinUrl": "https://www.linkedin.com/company/pirs-capital-llc/",
+  "desc": "PIRS Capital is a Miami Beach-headquartered fintech alternative lender founded in 2012, specializing in Merchant Cash Advances for eCommerce sellers across Amazon FBA, Walmart Marketplace, Shopify, eBay, and Newegg. The company's proprietary PIRScore credit model uses machine learning and 50+ statistical algorithms with hundreds of proprietary data points to deliver predictive behavioral analytics for underwriting. PIRS has secured credit facilities up to $35M (with plans for $50M), earned Inc. 5000 #1770 recognition (230% three-year revenue growth), Crain's New York Fast 50 #45, and Inc. 5000 Regionals NYC Metro #65. The company offers up to $1M per business entity with 24-hour approvals, holds a 4.7/5 Trustpilot rating (570+ reviews) and an A+ BBB rating, and employs approximately 17 people generating ~$11.9M in revenue.",
+  "news": [
+    {
+      "h": "PIRS Capital Increases Credit Facility to $35M, Targets $50M",
+      "s": "PRWeb, January 2022",
+      "d": "PIRS Capital expanded its credit facility to $35M following record 2021 top and bottom-line growth, with plans to reach $50M. Also hired industry veteran Salvatore Morreale as Director of Business Development."
+    },
+    {
+      "h": "COO Andrew Mallinger Featured on FunderIntel Live Podcast",
+      "s": "FunderIntel, June 2024",
+      "d": "Andrew Mallinger appeared on FunderIntel's live podcast series discussing revenue-based financing strategies and PIRS Capital's position as a top-volume lender in the RBF space."
+    },
+    {
+      "h": "PIRS Capital Secures $20M Financing Following Landmark 2019",
+      "s": "PRWeb, January 2020",
+      "d": "Following 73% funding growth, 57% revenue growth, and 53% submission volume growth in 2019, PIRS secured a $20M credit facility increase to fund technology and credit model upgrades."
+    },
+    {
+      "h": "PIRS Capital Ranks #65 on Inc. 5000 Regionals NYC Metro",
+      "s": "Inc. Magazine, 2021",
+      "d": "PIRS Capital ranked among elite NYC metro companies alongside WeWork, Peloton, and Payoneer as one of the few direct MCA lenders on the regional list."
+    },
+    {
+      "h": "PYMNTS Features PIRS Capital on Rethinking MCA Reputation",
+      "s": "PYMNTS.com, 2018",
+      "d": "COO Andrew Mallinger discussed how PIRScore's machine learning re-teaches itself daily to find new trends, and argued MCAs no longer mean sky-high rates as institutional players enter the space."
+    },
+    {
+      "h": "PIRS Capital Named to Crain's New York Fast 50 (#45)",
+      "s": "Crain's New York Business / deBanked, 2019-2021",
+      "d": "PIRS was recognized on the Crain's Fast 50 list multiple times, qualifying with 230% three-year growth and $10M+ annual revenue from the NY metro area."
+    }
+  ],
+  "leaders": [
+    {
+      "n": "Alexander Parsol",
+      "t": "Partner / Co-Founder",
+      "bg": "Co-founding member and former Managing Partner of PIRS Capital with 10+ years in financial services specializing in lending and brokerage. Expertise spans portfolio management, financial modeling, risk assessment, deal structuring, and data analysis. Drove PIRS's early strategic vision and growth from founding in 2012. Note: Court records from 2016 reference a departure, though ZoomInfo still lists him as Partner. His current involvement may be more advisory or ownership-focused rather than day-to-day operational.",
+      "li": "https://www.linkedin.com/in/alex-parsol-947043120",
+      "hooks": [
+        "*Co-founded PIRS in 2012",
+        "Financial modeling & deal structuring specialist",
+        "Lending and brokerage background"
+      ]
+    },
+    {
+      "n": "Andrew Mallinger",
+      "t": "COO",
+      "bg": "Leader in SMB lending/fintech since 2010 with 15+ years of experience. Among first 5 employees at two fintechs: built Fora Financial's ISO/partner channel from scratch to 50%+ of total fundings as VP of Strategic Partnerships (2010-2015), then joined PIRS Capital to drive hyper-growth. One of the earliest professionals in the working capital space to earn the Certified Lease & Finance Professional (CLFP) designation (only 223 CLPs worldwide at the time). Penn State BA in History and Labor Studies. Featured on PYMNTS.com discussing PIRScore's ML capabilities and on FunderIntel's live podcast on revenue-based financing (June 2024). Quoted saying PIRS is 'turning into a power player within the MCA industry.' Drove 230% revenue growth, $35M credit facility expansion, and positioned PIRS among top RBF lenders by volume.",
+      "li": "https://www.linkedin.com/in/andrew-mallinger/",
+      "hooks": [
+        "*FunderIntel podcast guest (June 2024)",
+        "*CLFP certified — 1 of only 223 worldwide",
+        "Built Fora Financial's ISO channel from zero",
+        "First 5 employees at two fintechs",
+        "Penn State — History & Labor Studies",
+        "PYMNTS.com featured on MCA evolution"
+      ]
+    },
+    {
+      "n": "Mitchell Rubin",
+      "t": "CFO",
+      "bg": "Seasoned fractional CFO and CPA who founded CFO ON-DEMAND in 2002. Drexel University BS graduate who began career at a regional CPA firm in Bala Cynwyd, PA, making Partner in only four years. Has held CFO/COO roles at both public and private companies: CFO at AeroGrow International (2006-2008, publicly traded indoor garden company), COO/CFO at InterFACE Holdings Group (2010-2014, grew from 2 to 5 locations, increased revenues 100%+, brought accounting to GAAP standards). Specialist in early-stage and high-growth entrepreneurial companies across diverse industries. At PIRS, oversees financial strategy, capital management, and secured key credit facilities including $10M (2018), $20M (2020), and $35M (2022) expansions.",
+      "li": "https://www.linkedin.com/in/mitchellrubin/",
+      "hooks": [
+        "*Founded CFO ON-DEMAND in 2002",
+        "CPA who made Partner in 4 years",
+        "Drexel University graduate",
+        "Former CFO of public company AeroGrow",
+        "Grew InterFACE from 2 to 5 locations"
+      ]
+    },
+    {
+      "n": "Jacob Shimon",
+      "t": "CMO",
+      "bg": "Senior IT executive turned marketing leader with 20+ years of management experience in consumer and B2B finance. Co-founding member of PIRS Capital and co-founder of WOW Brand (branding/creative agency). Career spans fintech and merchant processing: Managing Partner at Argus Merchant Services (2011+), Consultant at Merchant Processing Services (2008-2010), VP of Technology & Data Management at Acies Corp (2006-2008), VP of Merchant Operations at Acies Inc (2004-2006), CIO-level role at Digital Wireless Universe (2000-2003), and earlier developer roles at Speedus Corp, Tekmark, IBM Global Services, Lucent Technologies, and Interworld. Rare blend of deep tech infrastructure background with marketing leadership.",
+      "li": "https://www.linkedin.com/in/jacob-shimon-451167304/",
+      "hooks": [
+        "*Co-founder of WOW Brand agency",
+        "IBM, Lucent, Interworld alumnus",
+        "Tech exec turned CMO — rare profile",
+        "Managing Partner at Argus Merchant Services",
+        "CIO at Digital Wireless Universe"
+      ]
+    },
+    {
+      "n": "Igor Shliosberg",
+      "t": "CCO & Director of Credit",
+      "bg": "Dual compliance and credit leadership role at PIRS Capital, overseeing both regulatory compliance standards and credit risk assessment. Based in Miami Beach, FL. Previously Manager of Back Office at Argus Merchant Services (where he worked alongside Jacob Shimon), and held positions at DeSola Group and Speedus Corp. His dual CCO/Director of Credit role is unusual in the MCA space — most companies separate compliance from credit decisioning. Works closely with the data science team led by Director Sergey Kalika (ex-Thomson Reuters) to maintain PIRScore model integrity and compliance standards.",
+      "li": null,
+      "hooks": [
+        "*Dual CCO + Credit Director role",
+        "Argus Merchant Services alumnus (with Shimon)",
+        "Miami Beach based",
+        "DeSola Group and Speedus Corp background"
+      ]
+    }
+  ],
+  "ice": "Andrew, congrats on the FunderIntel podcast feature last year — your point about PIRS becoming a power player in MCA really resonated. With your PIRScore model analyzing 50+ algorithms in real time, I'd love to explore how HyperVerge's document verification could further compress your 24-hour approval window and reduce manual touchpoints as you scale toward that $50M facility target.",
+  "icebreakers": [
+    "Reference Andrew's FunderIntel podcast on revenue-based financing (June 2024) and ask how the RBF landscape has shifted since then — tie to HyperVerge automating the document intake bottleneck.",
+    "Cite PIRS's credit facility growth trajectory ($10M -> $20M -> $35M -> $50M target) and discuss how faster, more accurate identity/bank statement verification helps de-risk the portfolio at scale.",
+    "Note PIRScore's 50+ algorithm ML model and position HyperVerge's AI-powered document extraction as a complementary data layer — faster inputs mean PIRScore can score deals even faster.",
+    "Mention PIRS's 4.7/5 Trustpilot rating and 570+ reviews as proof of customer obsession — position HyperVerge's seamless onboarding as protecting that NPS as they scale volume."
+  ],
+  "tp": [
+    "PIRS funds up to $1M per entity across 5 eCommerce platforms (Amazon, Walmart, Shopify, eBay, Newegg) — each platform has different document types. HyperVerge's multi-format extraction handles marketplace-specific statements, bank docs, and seller dashboards automatically, critical as PIRS scales to $50M in facilities.",
+    "As an existing HyperVerge client, PIRS already benefits from automated verification. Deepening the integration — adding bank statement analysis, income verification, and fraud detection layers — could further reduce the 24-hour approval window while maintaining PIRScore's credit model accuracy.",
+    "PIRS processes hundreds of eCommerce seller applications monthly across diverse platforms. HyperVerge's AI reduces manual document review from 40+ minutes to under 5 minutes per application, directly supporting PIRS's growth from $35M to $50M+ without proportionally scaling the 17-person team."
+  ],
+  "ask": "Andrew, since PIRS already uses HyperVerge for verification, I'd love to do a 20-minute deep-dive on how our newer bank statement analysis and fraud detection modules could accelerate PIRScore decisioning — especially as you push toward the $50M facility. Would next Tuesday or Thursday work?"
+}

@@ -3,164 +3,236 @@
 ## Project Overview
 Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge's BD team. Internal tool for MCA market intelligence at events like DeBanked CONNECT 2026.
 
-**Version:** 2.1.00
+**Version:** 2.2.01
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 
 ---
 
-## Testing Checklist
+## Data Architecture
 
-### 1. Dev Server Startup
-- [ ] `npm run dev` starts without errors
-- [ ] http://localhost:3000 loads the app
-- [ ] No console errors on initial load
+### Data Files
+- **`src/data/all-companies.json`** — Canonical dataset: 1,021 companies (4 SQO + 2 Client + 238 ICP + 575 TAM + others)
+- **`src/data/tam-companies.json`** — 895 TAM companies (broader addressable market)
+- **`src/data/companies.json`** — Legacy file (225 companies), kept for backward compat
 
-### 2. Desktop Layout (viewport > 900px)
-- [ ] Left sidebar visible with nav items: Companies, Schedule, Pitch, Checklist
-- [ ] Sidebar shows "EventIQ" branding, met count, progress bar
-- [ ] Sidebar has keyboard shortcut hints section
-- [ ] 3-column layout: Sidebar | Company List | Detail Panel
-- [ ] ResizableHandle between list and detail panels — drag to resize
-- [ ] "Select a company to view details" placeholder in right panel when nothing selected
-- [ ] Sidebar collapses/expands properly
+### Company Priority Tiers
+| Priority | Label | Companies | Leaders | Description |
+|----------|-------|-----------|---------|-------------|
+| 1 | P0 / SQO | 4 | 17 | Strategic accounts: Bitty, BriteCap, PIRS Capital, Wing Lake |
+| 2 | P1 / ICP | 238 | 370 | Ideal customer profile — primary targets |
+| 3 | P2 | 9 | 30 | Secondary targets |
+| 4 | TAM | 575 | 45 | Broader addressable market |
+| 5-6 | Other | 134 | 13 | Lower priority / informational |
 
-### 3. Company List (Left Panel)
-- [ ] All 225 companies render in card view (default)
-- [ ] Cards show: company name, type badge (SQO=red, Client=gold, ICP=green), contact names, icebreaker preview
-- [ ] Color-coded left border on cards: SQO=red, Client=gold, ICP=green
-- [ ] CLEAR badge shows on companies with `clear: true` (BriteCap, Spartan Capital, Fox Funding, Lendini, LCF Group, Credibly)
-- [ ] Booth indicator dot on companies with booths
-- [ ] Count text shows "225 of 225 companies"
-- [ ] Clicking a card highlights it and opens detail in right panel
+### Company Data Schema
+```typescript
+interface Company {
+  id: number;
+  name: string;
+  type: 'SQO' | 'Client' | 'ICP' | 'TAM';
+  priority: number;          // 1=P0, 2=P1, 3=P2, 4=TAM
+  phase: number;
+  booth: boolean;
+  clear?: boolean;
+  contacts: Contact[];       // Quick reference: {n, t}
+  leaders?: Leader[];        // Deep profiles: {n, t, bg, hooks, li}
+  desc: string;              // Company description paragraph
+  notes: string;             // Internal notes
+  news: NewsItem[];          // {h: headline, s: source, d: description}
+  ice: string;               // Primary icebreaker
+  icebreakers?: string[];    // 4 rotation variants
+  tp: string[];              // 3 talking points tied to HyperVerge value prop
+  ask: string;               // Personalized CTA
+  location?: string;
+  employees?: number;
+  website?: string;
+  linkedinUrl?: string;
+  source: string[];          // Tags: ["researched", "enriched", etc.]
+}
+```
 
-### 4. Filter Bar
-- [ ] Toggle filters: All / SQO / Client / ICP / Met / CLEAR
-- [ ] SQO filter shows 4 companies (Bitty, BriteCap, PIRS Capital, Wing Lake)
-- [ ] Client filter shows 2 companies (Fundfi, FundKite)
-- [ ] ICP filter shows 219 companies
-- [ ] CLEAR filter shows 6 companies
-- [ ] Met filter shows only companies marked as met (initially empty)
-- [ ] Sort button cycles: Priority → Name → Type → Phase
-- [ ] View toggle switches between cards and table view
-- [ ] Count updates correctly when filtering
+### Leader Data Schema
+```typescript
+interface Leader {
+  n: string;    // Full name
+  t: string;    // Title
+  bg: string;   // Background paragraph (career, education, achievements)
+  hooks?: string[];  // 2-4 short conversation starters (2-5 words each)
+  li?: string;       // LinkedIn profile URL
+}
+```
 
-### 5. Table View
-- [ ] Toggle to table view with the table icon button
-- [ ] Columns: Company, Type, Contacts, News count, Met
-- [ ] Clicking a row opens detail panel
-- [ ] Met button in table toggles met status
+### Leader Stats (as of v2.2.01)
+- **Total leaders:** 475
+- **With hooks:** 475 (100%)
+- **With LinkedIn URLs:** 241 (50.7%)
+- **With bg field:** 475 (100%)
 
-### 6. Company Detail Panel (Right Panel on Desktop)
-- [ ] Header: Company name, type badge, CLEAR badge, BOOTH badge
-- [ ] "Mark Met" button toggles to "Met" state
-- [ ] Contacts section: Shows leaders with LinkedIn links, title, background, hooks
-- [ ] Icebreakers section: Shows first icebreaker, "Next icebreaker" button shuffles
-- [ ] About section: Company description and internal notes
-- [ ] Recent News section: News headlines with source and description
-- [ ] Talking Points section: Bullet points for conversation
-- [ ] The Ask section: Blue-highlighted ask prompt
-- [ ] Your Notes section: Editable textarea that persists in localStorage
-- [ ] All sections scroll within the panel via ScrollArea
+---
 
-### 7. Search / Command Palette (Cmd+K)
-- [ ] Pressing Cmd+K (or Ctrl+K) opens command palette overlay
-- [ ] Pressing "/" key also opens search
-- [ ] Search bar at top of palette
-- [ ] Typing filters companies by name AND contact names
-- [ ] Results grouped by type (SQO, Client, ICP)
-- [ ] Selecting a result opens the company detail
-- [ ] Escape closes the palette
-- [ ] Searching "Craig" should find Bitty (contact: Craig Hecker)
-- [ ] Searching "Harvard" should NOT match (searches name/contacts only, not descriptions)
+## Research Methodology — MANDATORY STANDARD
 
-### 8. Rating Dialog
-- [ ] Clicking "Mark Met" on an un-met company opens the rating dialog
-- [ ] Dialog shows company name in title
-- [ ] Temperature selection: Hot / Warm / Cold (color-coded)
-- [ ] Follow-up actions: Schedule Demo / Send Email / Got Intro / No Action (multi-select)
-- [ ] Capture fields: What they care about, What you promised, Personal detail
-- [ ] "Save" persists rating data to localStorage
-- [ ] "Skip" closes without saving rating but keeps met status
-- [ ] Met badge updates to show rating (e.g., "MET·HOT")
+**CRITICAL: Every company and person added to the dataset MUST go through deep web research. No shortcuts. No text extraction from existing fields. This is the quality bar.**
 
-### 9. Keyboard Navigation
-- [ ] `j` or `ArrowDown` — move selection down in company list
-- [ ] `k` or `ArrowUp` — move selection up
-- [ ] `Enter` — open detail (on mobile opens Sheet)
-- [ ] `Escape` — close detail/search/deselect
-- [ ] `/` — focus search / open command palette
-- [ ] `Cmd+K` — open command palette
-- [ ] `m` — toggle met status on selected company
-- [ ] Keys don't trigger when typing in an input/textarea
+### Required Research Per Company
+Every company entry must have ALL of the following populated via real web research:
 
-### 10. Schedule Tab
-- [ ] Click "Schedule" in sidebar (desktop) or bottom nav (mobile)
-- [ ] Official Event Program section with 3 sessions: Keynote, Panel, Tech Demo
-- [ ] Each speaker row is clickable → jumps to that company in Companies tab
-- [ ] Type badges (SQO/Client/ICP) on relevant speakers
-- [ ] Booth Visit Plan with 5 phases (11AM–5PM)
-- [ ] Phase items clickable → jumps to company
-- [ ] Color-coded dots on phase items by company type
+1. **`desc`** — 1-2 paragraphs with real metrics (AUM, origination volume, funding rounds, customer count, growth %). Source from company website, press releases, LinkedIn About, Crunchbase (free tier), news articles.
 
-### 11. Pitch Tab
-- [ ] Click "Pitch" in sidebar/nav
-- [ ] 30-Second Pitch card with blue accent border
-- [ ] HyperVerge keywords highlighted in blue (HyperVerge, 40 minutes to under 5, 450+, PIRS Capital)
-- [ ] Value Propositions table (6 rows)
-- [ ] Social Proof bullet list (4 items)
-- [ ] Objection Responses: 5 expandable cards (click to toggle open/close)
-- [ ] Demo Videos & Collateral: 7 items in 2-column grid with links
-- [ ] Referral Map: 7 referral cards showing from→to connections
+2. **`contacts`** — 2-3 key decision-makers with name + title. Source from company website team page, LinkedIn company page.
 
-### 12. Checklist Tab
-- [ ] 6 end-of-day checklist items with checkboxes
-- [ ] Clicking toggles checkbox with strikethrough + dimming
-- [ ] Completion counter updates (e.g., "3/6")
-- [ ] Check state persists in localStorage across refreshes
-- [ ] Quick Notes textarea — persists in localStorage
-- [ ] "Copy All Notes to Clipboard" button — copies all met companies + notes + quick notes
-- [ ] Toast notification appears on successful copy
+3. **`leaders`** — Deep profiles for 2-4 key executives. Each leader MUST have:
+   - **`n`**: Full name
+   - **`t`**: Title (with context if useful, e.g. "CEO, Co-Founder")
+   - **`bg`**: 30-100 word background paragraph from web research covering:
+     - Career history and prior roles (search LinkedIn, company bios)
+     - Educational background (university, degree)
+     - Key accomplishments and milestones
+     - Personal details if publicly available (hobbies, podcasts, speaking)
+   - **`li`**: LinkedIn profile URL (search `site:linkedin.com/in/ "Person Name" "Company"`)
+   - **`hooks`**: 2-4 conversation starters based on RESEARCHED facts, not generic phrases
 
-### 13. Mobile Layout (viewport < 768px)
-- [ ] Sidebar hidden, bottom tab nav visible (Companies, Schedule, Pitch, Checklist)
-- [ ] Mobile header shows "EventIQ" + met count + search button
-- [ ] Clicking search button opens command palette
-- [ ] Company list fills screen with bottom padding for nav
-- [ ] Clicking a company opens a Sheet (slides up from bottom, 85vh height)
-- [ ] Sheet shows full company detail with close button
-- [ ] All tabs (Schedule, Pitch, Checklist) render in single column
-- [ ] Bottom nav highlights active tab
+4. **`news`** — 3-4 most recent headlines with:
+   - **`h`**: Headline text
+   - **`s`**: Source publication + date (e.g. "Yahoo Finance, Dec 2025")
+   - **`d`**: 1-2 sentence description of impact/relevance
 
-### 14. Data Persistence (localStorage)
-- [ ] Mark a company as met → refresh page → still marked
-- [ ] Add notes to a company → refresh → notes persist
-- [ ] Rate a company → refresh → rating persists
-- [ ] Check checklist items → refresh → still checked
-- [ ] Quick notes → refresh → text persists
-- [ ] LocalStorage keys: `eventiq_met`, `eventiq_ratings`, `eventiq_notes`, `eventiq_checks`, `eventiq_quick_notes`
+5. **`ice`** — One carefully crafted primary icebreaker that:
+   - References specific recent news or achievement
+   - Asks a strategic question tied to HyperVerge's value prop
+   - Shows genuine understanding of their challenges
 
-### 15. PWA / Offline
-- [ ] `public/manifest.json` exists with correct app metadata
-- [ ] `public/sw.js` service worker exists
-- [ ] Static build (`npm run build`) produces `out/` directory
-- [ ] `out/index.html` contains full app + embedded company data
+6. **`icebreakers`** — 4 rotation variants covering different angles:
+   - News-based angle (references recent announcement)
+   - Metrics/milestone angle (celebrates accomplishment)
+   - Challenge/pain angle (acknowledges scaling problem)
+   - Competitive/trend angle (industry positioning)
 
-### 16. Data Integrity
-- [ ] 225 companies total (4 SQO + 2 Client + 219 ICP)
-- [ ] All companies have: id, name, type, priority, phase, contacts, desc, ice, tp, ask
-- [ ] Leaders with LinkedIn links open in new tab
-- [ ] News items have headline, source, description
-- [ ] Icebreakers array present on all detailed companies (ids 1-22)
+7. **`tp`** — 3 talking points tied to HyperVerge's underwriting product:
+   - Volume/scaling argument referencing their specific scale
+   - Proven platform argument with "450+ MCA companies" social proof
+   - Efficiency argument with specific time/cost savings
 
-### 17. Visual / Theme
-- [ ] Dark theme by default (dark background #0c0c12-ish)
-- [ ] SQO = red/destructive accent
-- [ ] Client = gold/amber accent
-- [ ] ICP = green accent
-- [ ] Primary/accent = blue (#5b8def-ish)
-- [ ] Custom scrollbars (thin, dark)
-- [ ] No white flash on load
+8. **`ask`** — Personalized CTA that names the decision-maker by first name, references their specific trigger event, and proposes a concrete next step
+
+### Required Research Per Leader (hooks quality standard)
+Hooks must come from ACTUAL web research, not rephrasing existing text:
+
+**Research sources for each person:**
+- Web search: `"Person Name" "Company Name"` — find news mentions, quotes, interviews
+- Web search: `"Person Name" LinkedIn` — find profile details, career history
+- Web search: `"Person Name" podcast OR conference OR panel OR speaking` — find public appearances
+- Company website team/about page — find official bio
+- Industry publications (deBanked, BusinessWire, Yahoo Finance) — find quotes and features
+
+**Quality standard for hooks:**
+- GOOD: `"*Former Navy SEAL"`, `"UC Berkeley"`, `"*Sold company to Microsoft"`, `"Runs food blog"`, `"*D-1 lacrosse All-American"`
+- BAD: `"MCA expert"`, `"Industry veteran"`, `"Sales leader"`, `"Finance professional"`
+- Use `*` prefix for truly standout/memorable items
+- Each hook must be traceable to a specific fact found via research
+
+### Web Research Sources (free, public)
+- LinkedIn public profiles and company pages
+- Company websites (team pages, press rooms, about pages)
+- Press releases (PR Newswire, BusinessWire, GlobeNewswire)
+- Industry publications (deBanked, Lending Times, Fintech Nexus)
+- General news (Yahoo Finance, Bloomberg, TechCrunch, Forbes)
+- SEC/regulatory filings (for public companies)
+- Inc. 5000, Deloitte Fast 500, other ranking lists
+- Conference/event speaker lists and agendas
+- Podcast directories (for speaking appearances)
+
+### What NOT to Do
+- NEVER generate hooks by reformatting existing `bg` text — that's circular, not research
+- NEVER use paid APIs (Crunchbase Pro, ZoomInfo, PitchBook) without explicit approval
+- NEVER scrape LinkedIn programmatically (violates ToS)
+- NEVER fabricate or hallucinate facts — if research finds nothing, say so
+- NEVER use generic filler ("experienced leader", "industry expert")
+
+### Research Workflow for New Companies
+```
+1. Web search company name → find website, LinkedIn, recent news
+2. Read company website (about page, team page, press room)
+3. For each leader: web search name + company → LinkedIn, bios, news mentions
+4. Compile desc, contacts, leaders (with bg + hooks + li), news
+5. Craft icebreakers (4 variants) tied to recent findings
+6. Write 3 talking points connecting their challenges to HyperVerge
+7. Write personalized ask naming the key decision-maker
+8. Output as JSON matching the Company schema
+```
+
+---
+
+## Enrichment Pipeline
+
+### Scripts (`eventiq/scripts/`)
+| Script | Purpose |
+|--------|---------|
+| `refresh.js` | Generate batch files for research agents (split by priority/count) |
+| `merge-research.js` | Merge deep research results into all-companies.json |
+| `merge-enrichment.js` | Merge enrichment results (hooks, LinkedIn, news) |
+| `merge-hooks.js` | Merge standalone hooks-result files |
+| `merge-tam.js` | Merge TAM company data |
+| `refresh-orchestrate.sh` | End-to-end orchestration (batch → agents → merge → build) |
+| `refresh-poller.sh` | Poll GitHub issues for refresh signals |
+
+### Batch Research Workflow
+```
+1. Generate batches:  node scripts/refresh.js --priority P0
+2. Spawn 5 parallel Claude agents, each processing one batch
+3. Agents produce: scripts/refresh-result-{1..5}.json
+4. Merge results:    node scripts/merge-enrichment.js scripts/refresh-result-*.json
+5. Verify build:     npm run build
+```
+
+### Research Agent Prompt Template
+Each agent receives a batch of companies and should:
+- Search the web for each company + leader
+- Find latest news (2-3 headlines with source + date)
+- Find missing LinkedIn URLs
+- Generate 2-4 conversation hooks per leader based on REAL research
+- Update leader backgrounds with fresh information
+- Output as JSON array matching the enrichment schema
+
+### GitHub Actions Integration
+- `.github/workflows/refresh-news.yml` — Weekly cron trigger (Monday 8AM UTC)
+- Creates a GitHub issue with `refresh-news` label
+- `refresh-poller.sh` watches for these issues and triggers local orchestration
+
+---
+
+## Decisions Log
+
+### Research Quality Standard (2026-02-13) — PERMANENT POLICY
+- **Decision**: All companies and leaders MUST go through deep web research before being added
+- **Rationale**: Surface-level text extraction produces generic, unhelpful hooks. Real web research finds the specific personal details that make conversations work.
+- **Applies to**: All new companies, all new leaders, all enrichment refreshes
+- **Enforced by**: Research Methodology section above is the mandatory standard
+
+### v2.2.01 (2026-02-13) — Leader Hooks Enrichment
+- **Decision**: Generate hooks for all 475 leaders to reach 100% coverage
+- **Approach**: Merged existing enrich-result-3/4/5 (165 hooks), then spawned 5 parallel agents to generate hooks from existing `bg` data for remaining 288 leaders
+- **Limitation**: Hooks were text-extracted from existing bg fields, NOT from new web research
+- **TODO**: Re-research all 475 leaders with deep web research to replace shallow hooks
+
+### v2.1.00 (2026-02-13) — Engagement Tracking
+- **Decision**: Add contact-level engagement tracking system
+- **Components**: EngagementLog dialog, EngagementTimeline display, engagement-helpers.ts
+- **Channels**: email, linkedin, imessage, call, meeting, note
+- **Storage**: localStorage (`eventiq_engagements`)
+- **Architecture ready for**: Gmail sync, LinkedIn extension, Chrome extension (source field)
+
+### v2.0.01 — Dataset Expansion
+- **Decision**: Expand from 225 companies to 1,021 (added TAM companies)
+- **Data files**: all-companies.json (canonical), tam-companies.json (TAM source)
+- **Researched**: 408 of 1,021 companies (39.9%) have deep research
+
+### v1.x — Core App
+- **Stack choice**: Next.js 16 + static export (no backend needed)
+- **Data choice**: All data embedded at build time, user state in localStorage
+- **Offline**: PWA with service worker for offline use at events
+- **Priority system**: SQO (red) > Client (gold) > ICP (green) > TAM (default)
 
 ---
 
@@ -185,15 +257,21 @@ src/
 │   ├── mobile-nav.tsx      # Bottom tab navigation (mobile)
 │   ├── pitch-tab.tsx       # HyperVerge pitch content
 │   ├── schedule-tab.tsx    # Event schedule + booth plan
-│   └── checklist-tab.tsx   # End-of-day checklist
+│   ├── checklist-tab.tsx   # End-of-day checklist
+│   ├── dashboard-tab.tsx   # Analytics dashboard
+│   ├── engagement-log.tsx  # Engagement logging dialog
+│   └── engagement-timeline.tsx  # Engagement history display
 ├── data/
-│   └── companies.json      # 225 companies (64 original + 161 researched)
+│   ├── all-companies.json  # 1,021 companies (canonical)
+│   ├── tam-companies.json  # 895 TAM companies
+│   └── companies.json      # 225 companies (legacy)
 ├── hooks/
 │   ├── use-keyboard.ts     # Keyboard shortcut handler
 │   ├── use-local-storage.ts # Persistent state hook
-│   └── use-mobile.ts       # Mobile breakpoint detection (shadcn)
+│   └── use-mobile.ts       # Mobile breakpoint detection
 └── lib/
     ├── types.ts            # TypeScript interfaces
+    ├── engagement-helpers.ts # Engagement utility functions
     └── utils.ts            # cn() utility (shadcn)
 ```
 
@@ -201,6 +279,38 @@ src/
 Sidebar, Card, Command, Sheet, Dialog, Tabs, Badge, ScrollArea, Resizable, ToggleGroup, Input, Tooltip, Sonner, Button, Toggle, Separator, Skeleton
 
 ## Data Flow
-- All company data: `src/data/companies.json` → imported at build time
-- User state (met/notes/ratings/checks): localStorage via `useLocalStorage` hook
+- All company data: `src/data/all-companies.json` → imported at build time
+- User state (met/notes/ratings/checks/engagements): localStorage via `useLocalStorage` hook
 - No backend/API — fully static, offline-capable
+
+## LocalStorage Keys
+- `eventiq_met` — Set of met company IDs
+- `eventiq_ratings` — Rating data per company
+- `eventiq_notes` — User notes per company
+- `eventiq_checks` — Checklist state
+- `eventiq_quick_notes` — Quick notes text
+- `eventiq_engagements` — Engagement entries array
+
+---
+
+## Testing Checklist
+
+### Quick Smoke Test
+```bash
+npm run build    # Must succeed with zero errors
+npm run dev      # Dev server at localhost:3000
+```
+
+### Key Validations
+- 1,021 companies load (or 225 if using legacy companies.json)
+- SQO filter: 4 companies (Bitty, BriteCap, PIRS Capital, Wing Lake)
+- Client filter: 2 companies (Fundfi, FundKite)
+- Cmd+K search works across company names AND contact names
+- Met/rating state persists across page refresh
+- Mobile layout: bottom nav, sheet-based detail panel
+- Engagement logging: `e` key shortcut, multi-channel support
+
+### Visual Theme
+- Dark theme default (#0c0c12 background)
+- SQO = red, Client = gold, ICP = green, Primary = blue (#5b8def)
+- No white flash on load
