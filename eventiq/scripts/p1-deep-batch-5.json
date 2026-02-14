@@ -1,0 +1,1066 @@
+[
+  {
+    "id": 1607,
+    "name": "CAP FLOW",
+    "type": "TAM",
+    "website": "https://capflow.com",
+    "linkedinUrl": "https://capflow.com",
+    "location": "Arizona",
+    "employees": 27,
+    "desc": "Glen Rock, NJ-based private commercial lending platform specializing in invoice factoring, accounts receivable financing, inventory funding, and purchase order financing. Over $1B in working capital provided since 2009.",
+    "leaders": [
+      {
+        "n": "Andrew Coon",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded CapFlow Funding Group in 2009. The three managing partners bring 60+ years of institutional investment banking experience in credit and ABL markets.",
+        "li": "https://www.linkedin.com/in/andrew-j-coon/",
+        "currentHooks": [
+          "*Ex-Morgan Stanley & Merrill Lynch",
+          "Brown & Wash U MBA",
+          "*$1B+ in working capital"
+        ]
+      },
+      {
+        "n": "William Gallagher",
+        "t": "Co-Founder",
+        "bg": "Co-founded CapFlow Funding Group bringing institutional investment banking experience to the factoring and ABL space.",
+        "li": "https://www.linkedin.com/in/william-gallagher-5b699524/",
+        "currentHooks": [
+          "*Ex-Lehman Brothers trader",
+          "Now President of CFG MS",
+          "Villanova grad"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1614,
+    "name": "CLEARBANC",
+    "type": "TAM",
+    "website": "https://clearbanc.com/",
+    "linkedinUrl": "https://clearbanc.com/",
+    "location": "Ontario",
+    "employees": 165,
+    "desc": "Toronto-based fintech (now Clearco) providing non-dilutive, revenue-based financing for DTC e-commerce brands. Has deployed $8B+ to 8,000+ businesses. Offers fixed and rolling funding capacity plus invoice funding.",
+    "leaders": [
+      {
+        "n": "Michele Romanow",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Clearco (formerly Clearbanc), deploying $8B+ in non-dilutive funding to 8,000+ e-commerce businesses. Dragon on CBC's Dragons' Den.",
+        "li": "https://www.linkedin.com/in/micheleromanow/",
+        "currentHooks": [
+          "*Dragons' Den star",
+          "*$3B deployed to 10K brands",
+          "Serial entrepreneur"
+        ]
+      },
+      {
+        "n": "Andrew D'Souza",
+        "t": "Executive Chairman & Co-Founder",
+        "bg": "Co-founded Clearco and served as original CEO before transitioning to Executive Chairman to focus on strategic direction.",
+        "li": "https://www.linkedin.com/in/andrewdsouza/",
+        "currentHooks": [
+          "Executive Co-Chairman",
+          "Strategy & fundraising focus",
+          "Canadian tech leader"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1615,
+    "name": "COAST FUNDING",
+    "type": "TAM",
+    "website": "https://www.coastfunding.com",
+    "linkedinUrl": "https://www.coastfunding.com",
+    "location": "California",
+    "employees": 36,
+    "desc": "San Diego, CA-based non-bank funding source founded in 2020, providing business lines of credit, revenue-based financing, short-term loans, equipment financing, and receivables financing from $10K to $500K.",
+    "leaders": [
+      {
+        "n": "Matt Price",
+        "t": "CEO",
+        "bg": "CEO of Coast Funding, leading the San Diego-based non-bank funder committed to responsible lending with rates starting at 2.99%.",
+        "li": "https://www.linkedin.com/in/matt-price-a3180353/",
+        "currentHooks": [
+          "*$1.8B financed, 60K businesses",
+          "Ex-Reliant Funding CSO",
+          "Healthcare vertical focus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1621,
+    "name": "CREST CAPITAL",
+    "type": "TAM",
+    "website": "https://www.crestcapital.com",
+    "linkedinUrl": "https://www.crestcapital.com",
+    "location": "Georgia",
+    "employees": 36,
+    "desc": "Equipment financing and leasing company based in Alpharetta, Georgia, founded in 1989. Specializes in providing equipment leasing and financing solutions up to $500K for small and medium-sized businesses.",
+    "leaders": [
+      {
+        "n": "Mark French",
+        "t": "CEO",
+        "bg": "Leads Crest Capital's equipment financing operations serving SMBs nationwide since 1989.",
+        "li": "https://www.linkedin.com/in/markfrench42/",
+        "currentHooks": [
+          "*Founded Crest Capital 1989",
+          "35+ years equipment finance",
+          "Built national lending platform"
+        ]
+      },
+      {
+        "n": "Michael Marcin",
+        "t": "CFO",
+        "bg": "Oversees financial operations for one of the top-rated equipment financing companies in the US.",
+        "li": "https://www.linkedin.com/in/mike-marcin-516b7074/",
+        "currentHooks": [
+          "Ex-Phoenixcor",
+          "Clarion University alum",
+          "Equipment finance CFO"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1626,
+    "name": "DEXT CAPITAL",
+    "type": "TAM",
+    "website": "https://dextcapital.com",
+    "linkedinUrl": "dextcapital.com",
+    "location": "Oregon",
+    "employees": 123,
+    "desc": "Independent equipment finance company specializing in healthcare financing, headquartered in Lake Oswego, Oregon. Backed by Sightway Capital (Two Sigma) and has surpassed $2 billion in originations.",
+    "leaders": [
+      {
+        "n": "Kyin Lok",
+        "t": "CEO & Founder",
+        "bg": "25-year veteran in equipment leasing, previously Chief Corporate Officer at TCF Financial and held positions at US Bank and GE Capital.",
+        "li": "https://www.linkedin.com/in/kyin-lok-19a6504/",
+        "currentHooks": [
+          "*25-year equipment leasing veteran",
+          "Ex-GE Capital, US Bank, TCF Bank",
+          "Healthcare finance specialist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1630,
+    "name": "EAGLE CAPITAL",
+    "type": "TAM",
+    "website": "https://quick-capital.fund",
+    "linkedinUrl": "quick-capital.fund",
+    "location": "New York",
+    "employees": 45,
+    "desc": "MCA and business funding company operating under the Quick Capital Fund brand in New York, providing merchant cash advances and working capital to small businesses.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Operates as Quick Capital Fund providing MCA and business funding solutions in New York.",
+        "li": "",
+        "currentHooks": [
+          "Alternative business funding",
+          "Quick Capital brand"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1632,
+    "name": "EASTERN FUNDING",
+    "type": "TAM",
+    "website": "https://easternfunding.com",
+    "linkedinUrl": "easternfunding.com",
+    "location": "New York",
+    "employees": 66,
+    "desc": "Leading equipment finance company serving laundry, car wash, grocery, and specialty vehicle industries, founded in 1997. Subsidiary of Brookline Bank with Nancy Robles recently promoted to CEO.",
+    "leaders": [
+      {
+        "n": "Nancy Robles",
+        "t": "CEO & President",
+        "bg": "Promoted to CEO in 2025 after long tenure managing operations, compliance, documentation, and technology. Recognized as 2025 Champion of Inclusivity by Monitor.",
+        "li": "https://www.linkedin.com/in/nancy-robles-27240535/",
+        "currentHooks": [
+          "*Promoted to CEO in 2025",
+          "2025 Champion of Inclusivity",
+          "20+ years at Eastern Funding"
+        ]
+      },
+      {
+        "n": "Michael Fanger",
+        "t": "Founder & Managing Member",
+        "bg": "Founded Eastern Funding in 1997, now focusing on relationship cultivation and mentoring sales and leadership teams.",
+        "li": "https://www.linkedin.com/in/michael-fanger-98562b162/",
+        "currentHooks": [
+          "*Founded Eastern Funding 1997",
+          "Ex-Medallion Financial EVP",
+          "LaundryCares Foundation board"
+        ]
+      },
+      {
+        "n": "Falencia Prime",
+        "t": "COO",
+        "bg": "Recently joined Eastern Funding to drive operational excellence and enhance customer experience.",
+        "li": "https://www.linkedin.com/in/falencia-prime-60876ab/",
+        "currentHooks": [
+          "*30+ years banking/finance",
+          "Ex-Pitney Bowes loan ops director",
+          "Hired as COO in 2025"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1633,
+    "name": "EBF HOLDINGS LLC",
+    "type": "TAM",
+    "website": "https://everestbusinessfunding.com/",
+    "linkedinUrl": "https://everestbusinessfunding.com/",
+    "location": "Florida",
+    "employees": 81,
+    "desc": "Revenue-based financing provider operating as Everest Business Funding, founded in 2013 in Miami, Florida by serial entrepreneur Scott Crockett. Provides fast working capital to small businesses.",
+    "leaders": [
+      {
+        "n": "Scott Crockett",
+        "t": "CEO & Founder",
+        "bg": "Serial entrepreneur who raised over $250M in capital and created thousands of jobs over 20+ year career. Previously founded Allied Cash Holdings with 250+ stores generating $60M+ in annual revenue. Tulane University graduate.",
+        "li": "",
+        "currentHooks": [
+          "*Founded Allied Cash (250+ stores)",
+          "Raised $500M+ in capital",
+          "Ex-NationsBanc investment banker"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1636,
+    "name": "EIN CAPITAL",
+    "type": "TAM",
+    "website": "https://eincap.com",
+    "linkedinUrl": "eincap.com",
+    "location": "New York",
+    "employees": 25,
+    "desc": "New York City-based MCA direct funder established in 2008, specializing in merchant cash advances for small and medium-sized businesses across North America. Provides funding up to 4th position.",
+    "leaders": [
+      {
+        "n": "John Mayne",
+        "t": "CEO",
+        "bg": "Leads Ein Cap's operations as a direct MCA funder serving thousands of small businesses nationwide.",
+        "li": "https://www.linkedin.com/in/john-mayne-59a794113/",
+        "currentHooks": [
+          "CEO since 2015",
+          "Brooklyn-based MCA leader",
+          "Small business capital specialist"
+        ]
+      },
+      {
+        "n": "Russell Naftali",
+        "t": "Founder & President",
+        "bg": "Founded Ein Cap to provide merchant cash advances to underserved small businesses, building a multi-million dollar funding operation.",
+        "li": "https://www.linkedin.com/in/russell-naftali",
+        "currentHooks": [
+          "*Founded EIN Capital",
+          "Direct funder up to $1M",
+          "Miami-based entrepreneur"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1637,
+    "name": "ELEVATION CAPITAL",
+    "type": "TAM",
+    "website": "https://www.elevationcapitalllc.com",
+    "linkedinUrl": "https://www.elevationcapitalllc.com",
+    "location": "Haryana",
+    "employees": 86,
+    "desc": "Direct funder providing alternative financing options for small to medium-sized businesses, based in Bel Air, Maryland. Founded in 2010, has provided over $150 million to 2,500+ businesses through MCAs and other products.",
+    "leaders": [
+      {
+        "n": "Larry Schiavi",
+        "t": "Owner & President",
+        "bg": "Leads Elevation Capital Group as both owner and president, overseeing MCA and alternative business financing operations that have funded $150M+ to 2,500+ businesses.",
+        "li": "https://www.linkedin.com/in/lawrenceschiavi",
+        "currentHooks": [
+          "*Ex-HSBC SVP",
+          "Ex-Greater Buffalo Savings Bank president",
+          "$150M+ funded since 2010"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1641,
+    "name": "EVERLASTING CAPITAL",
+    "type": "TAM",
+    "website": "https://www.everlastingcapital.com/",
+    "linkedinUrl": "https://www.everlastingcapital.com/",
+    "location": "New Hampshire",
+    "employees": 27,
+    "desc": "National business finance solutions provider in Rochester, New Hampshire, co-founded in 2012 by Josh Feinberg and Will Murphy. Ranked on the Inc. 500 and #1 fastest-growing company in New Hampshire. Offers equipment financing and working capital.",
+    "leaders": [
+      {
+        "n": "Josh Feinberg",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Everlasting Capital in 2012 from his basement, grew it to Inc. 500 ranking and #1 fastest-growing company in New Hampshire. Hands-on in day-to-day operations.",
+        "li": "https://www.linkedin.com/in/josh-feinberg-45407432/",
+        "currentHooks": [
+          "*Inc. 500 #323 fastest growing",
+          "Started company at age 20",
+          "Equipment Broker School founder"
+        ]
+      },
+      {
+        "n": "Will Murphy",
+        "t": "COO & Co-Founder",
+        "bg": "Co-founded Everlasting Capital with Josh Feinberg, oversees day-to-day operations and financial strategy. Certified Equipment Broker School graduate.",
+        "li": "https://www.linkedin.com/in/will-murphy-ebsc-8099a95b/",
+        "currentHooks": [
+          "Co-founded at age 20",
+          "Equipment finance trainer",
+          "$50M+ in business loans"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1642,
+    "name": "EXPRESS CAPITAL FUNDING",
+    "type": "TAM",
+    "website": "https://www.expresscapital.com",
+    "linkedinUrl": "www.expresscapital.com",
+    "location": "California",
+    "employees": 46,
+    "desc": "Direct lender in Anaheim, California providing working capital loans and equipment financing to specialty contractors, manufacturing companies, government contractors, and trucking companies. Founded in 2013.",
+    "leaders": [
+      {
+        "n": "Scott Redfox",
+        "t": "President",
+        "bg": "Founded Express Capital Funding in 2013, brings 20+ years in the financial sector. Cal State University Long Beach graduate.",
+        "li": "https://www.linkedin.com/in/scott-redfox-84664519/",
+        "currentHooks": [
+          "Direct lender president",
+          "Contractor financing specialist",
+          "Anaheim-based"
+        ]
+      },
+      {
+        "n": "Robert Longobardy",
+        "t": "Vice President",
+        "bg": "Vice President at Express Capital Funding overseeing lending operations for contractors and small businesses.",
+        "li": "https://www.linkedin.com/in/robert-longobardy-4a861413",
+        "currentHooks": [
+          "Ex-Alliance Funding Group",
+          "UCLA Economics graduate",
+          "Ex-Liberty Commercial Credit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1644,
+    "name": "FAST CASH FUNDING",
+    "type": "TAM",
+    "website": "https://fastcashfunding.com",
+    "linkedinUrl": "https://fastcashfunding.com",
+    "location": "Florida",
+    "employees": 46,
+    "desc": "Florida-based MCA provider offering merchant cash advances and business funding up to $1 million. Specializes in same-day approvals with no credit requirement, helping merchants across all industries.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Fast Cash Funding's MCA operations providing up to $1M in same-day funding across all industries.",
+        "li": "",
+        "currentHooks": [
+          "Fast business capital provider"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1651,
+    "name": "FLEXIBILITY CAPITAL (website blocked)",
+    "type": "TAM",
+    "website": "https://flexibilitycapital.com",
+    "linkedinUrl": "flexibilitycapital.com",
+    "location": "",
+    "employees": 29,
+    "desc": "New York-based alternative financing company founded in 2018, providing small business loans and MCAs. Ranked on Inc. 5000 in 2022, 2024, and 2025. Has secured over $1 billion in funding for thousands of businesses.",
+    "leaders": [
+      {
+        "n": "Michael Peeler",
+        "t": "Founder & CEO",
+        "bg": "Founded Flexibility Capital in 2018 with 20+ years of industry experience. Led the company to Inc. 5000 ranking three times and surpassed $1 billion in total funding.",
+        "li": "https://www.linkedin.com/in/michael-peeler-88488461/",
+        "currentHooks": [
+          "*$1B+ funded since 2018",
+          "Ex-Kapitus VP",
+          "2x Inc. 5000 honoree"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1656,
+    "name": "FUSION CAPITAL",
+    "type": "TAM",
+    "website": "https://www.fusionfunding.com",
+    "linkedinUrl": "https://www.fusionfunding.com",
+    "location": "South Carolina",
+    "employees": 23,
+    "desc": "Business funding company based in North Myrtle Beach, South Carolina, providing small business loans, working capital financing, and business lines of credit through fusionfunding.com.",
+    "leaders": [
+      {
+        "n": "Christian Reynolds",
+        "t": "Director",
+        "bg": "Leads Fusion Capital's business funding operations serving small businesses with working capital and lines of credit.",
+        "li": "",
+        "currentHooks": [
+          "*Ex-Tesla Manufacturing Director",
+          "Ex-Lotus Cars, MG Rover",
+          "Serial startup co-director"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1661,
+    "name": "GOOD FUNDING LLC\nGOTORRO",
+    "type": "TAM",
+    "website": "https://www.goodfunding.com",
+    "linkedinUrl": "www.goodfunding.com",
+    "location": "",
+    "employees": 36,
+    "desc": "Privately-held alternative business funding firm in Tustin, California, founded in 2020. CEO Ben Gold and President Jason Osiecki have grown it to $100M+ in fundings, ranking #2 on OCBJ's fastest-growing list with 650% revenue growth.",
+    "leaders": [
+      {
+        "n": "Ben Gold",
+        "t": "CEO",
+        "bg": "Leads Good Funding's rapid growth as CEO, achieving 650% revenue growth and #2 ranking on Orange County Business Journal's fastest-growing companies list.",
+        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
+        "currentHooks": [
+          "Co-founded Good Funding 2020",
+          "Alternative finance CEO",
+          "Tustin, CA based"
+        ]
+      },
+      {
+        "n": "Jason Osiecki",
+        "t": "Co-Founder & President",
+        "bg": "Co-founded Good Funding in 2020 and serves as President, overseeing business development and strategic growth.",
+        "li": "https://www.linkedin.com/in/jason-osiecki-4867474",
+        "currentHooks": [
+          "*Ex-National Funding, Quick Bridge",
+          "Ex-Five Point Capital",
+          "Co-founded Good Funding"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1673,
+    "name": "Idea 247, Inc.",
+    "type": "TAM",
+    "website": "https://www.ideafinancial.com",
+    "linkedinUrl": "www.ideafinancial.com",
+    "location": "Florida",
+    "employees": 76,
+    "desc": "Miami-based fintech providing small business lines of credit and term loans, founded in 2017. Surpassed $1 billion in total funding in 2025 and recently secured $50M warehouse facility and $20M term loan from EverBank.",
+    "leaders": [
+      {
+        "n": "Justin Leto",
+        "t": "CEO & Co-Founder",
+        "bg": "Florida licensed trial lawyer, also founded a boutique law firm and insurance startup Level Insurance. BS from University of Arizona, JD from University of Miami School of Law.",
+        "li": "https://www.linkedin.com/in/justincleto/",
+        "currentHooks": [
+          "*Attorney turned fintech founder",
+          "Surpassed $1B in originations",
+          "Founded Level Insurance"
+        ]
+      },
+      {
+        "n": "Larry Bassuk",
+        "t": "President & Co-Founder",
+        "bg": "Florida licensed trial lawyer who co-developed Level Insurance before co-founding Idea Financial with Justin Leto.",
+        "li": "https://www.linkedin.com/in/larrybassukidea/",
+        "currentHooks": [
+          "*Trial lawyer turned lender",
+          "UF law graduate",
+          "Co-founded insurance startup"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1676,
+    "name": "INFINITY CAPITAL",
+    "type": "TAM",
+    "website": "https://infinitythe1.com/",
+    "linkedinUrl": "https://infinitythe1.com/",
+    "location": "Oklahoma",
+    "employees": 37,
+    "desc": "Technology-driven business lender providing merchant cash advances, small business loans, and cash flow loans. Offers 24-hour funding decisions and positions itself as a leader in the cash advance industry.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Infinity Capital's technology-driven MCA and business lending operations with 24-hour decision-making.",
+        "li": "",
+        "currentHooks": [
+          "Alternative business funding"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1692,
+    "name": "LENDZI/DH & RK INVESTMENTS/LNDZI",
+    "type": "TAM",
+    "website": "https://lendzi.com",
+    "linkedinUrl": "lendzi.com",
+    "location": "",
+    "employees": 26,
+    "desc": "Financial consulting firm based in Boca Raton, Florida, with 60+ lending partnerships and $500M+ raised for entrepreneurs. Provides MCA, SBA loans, equipment financing, and business term loans through a marketplace model.",
+    "leaders": [
+      {
+        "n": "David Halverson",
+        "t": "CEO",
+        "bg": "Leads Lendzi with 10+ years of direct experience in the lending space, overseeing 60+ lending partnerships and $500M+ in entrepreneur funding.",
+        "li": "https://www.linkedin.com/in/david-halverson-034a0714/",
+        "currentHooks": [
+          "10+ years lending experience",
+          "$500M+ raised for entrepreneurs",
+          "Fintech marketplace builder"
+        ]
+      },
+      {
+        "n": "Ryan Kelly",
+        "t": "Owner",
+        "bg": "Owner of Lendzi, driving the company's growth and strategic partnerships with top lending institutions.",
+        "li": "https://www.linkedin.com/in/ryanekelly1/",
+        "currentHooks": [
+          "*Forbes Business Council member",
+          "Co-founded Lendzi",
+          "60+ lending partnerships"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1708,
+    "name": "NETFUNDING",
+    "type": "TAM",
+    "website": "https://www.netfunding.com/",
+    "linkedinUrl": "https://www.netfunding.com/",
+    "location": "Texas",
+    "employees": 430,
+    "desc": "Business funding company based in Texas with approximately 430 employees, providing business loans and financing solutions to small and medium-sized businesses.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads NetFunding's operations with approximately 430 employees in Texas, providing business funding solutions.",
+        "li": "",
+        "currentHooks": [
+          "Online business funding"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1712,
+    "name": "NRS FUNDING",
+    "type": "TAM",
+    "website": "https://www.getnrsfunding.com",
+    "linkedinUrl": "www.getnrsfunding.com",
+    "location": "New Jersey",
+    "employees": 230,
+    "desc": "Merchant cash advance division of National Retail Solutions (NRS), a subsidiary of IDT Corporation. Provides cash advances from $2,500 to $500K to merchants using the NRS POS system. Parent company has 23,000+ active POS terminals nationwide.",
+    "leaders": [
+      {
+        "n": "Elie Y. Katz",
+        "t": "Founder, President & CEO",
+        "bg": "Founded National Retail Solutions in 2015, former Mayor of Teaneck NJ. Built NRS to 23,000+ POS terminals with funding, payments, advertising, and data analytics divisions.",
+        "li": "https://www.linkedin.com/in/katz07666",
+        "currentHooks": [
+          "*Founded NRS (IDT subsidiary)",
+          "Former Mayor of Teaneck, NJ",
+          "Built nationwide POS network"
+        ]
+      },
+      {
+        "n": "Eli Korn",
+        "t": "COO",
+        "bg": "Chief Operating Officer overseeing day-to-day operations across NRS divisions including NRS Funding.",
+        "li": "https://www.linkedin.com/in/eli-korn-42155945/",
+        "currentHooks": [
+          "15+ years grocery/wholesale",
+          "Touro University MBA",
+          "NRS digital media leader"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1727,
+    "name": "PROSPERUM",
+    "type": "TAM",
+    "website": "https://prosperumfunding.com",
+    "linkedinUrl": "prosperumfunding.com",
+    "location": "New York",
+    "employees": 32,
+    "desc": "New York City-based MCA funder since 2014, providing merchant cash advances, business lines of credit, inventory financing, and long-term financing. Located at 57 W 38th St in Manhattan.",
+    "leaders": [
+      {
+        "n": "Gabriella Gorobets",
+        "t": "Manager, ISO Relations",
+        "bg": "Manages ISO relationships at Prosperum Funding, previously founded Prime Choice Solutions and served as Senior Funding Specialist at Merchant Industry.",
+        "li": "https://www.linkedin.com/in/gabriella-gorobets/",
+        "currentHooks": [
+          "Founded Prime Choice Solutions",
+          "Ex-Merchant Industry specialist",
+          "ISO relationship expert"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1737,
+    "name": "ROYAL FUNDING",
+    "type": "TAM",
+    "website": "https://royalfunding.net",
+    "linkedinUrl": "https://royalfunding.net",
+    "location": "New York",
+    "employees": 48,
+    "desc": "New York City-based business funding company at 180 Maiden Lane, providing accelerated funding solutions with 15+ financing options. Has funded over $1 billion with amounts from $5K to $2M in as little as one hour.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Royal Funding Group's operations at 180 Maiden Lane in NYC, with over $1B funded and 15+ financing products.",
+        "li": "",
+        "currentHooks": [
+          "Business capital provider"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1746,
+    "name": "SMALL BUSINESS FUNDING",
+    "type": "TAM",
+    "website": "https://smallbusinessfunding.com",
+    "linkedinUrl": "smallbusinessfunding.com",
+    "location": "Pennsylvania",
+    "employees": 25,
+    "desc": "Pennsylvania-based business funding provider in King of Prussia, serving small businesses nationwide for 12+ years. Offers fast approvals within 24 hours and funding up to $500K within 48-72 hours.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Small Business Funding's operations from King of Prussia, PA, providing fast business funding nationwide for over 12 years.",
+        "li": "",
+        "currentHooks": [
+          "Small business capital provider"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1757,
+    "name": "TBF Group",
+    "type": "TAM",
+    "website": "https://tbfgrp.com/",
+    "linkedinUrl": "https://tbfgrp.com/",
+    "location": "",
+    "employees": 61,
+    "desc": "Leading purchaser of non-performing commercial debt in the US, founded in 1998 by the Boehm family. Buys charged-off equipment leases, commercial bank loans, MCA portfolios, and small business loans from major financial institutions.",
+    "leaders": [
+      {
+        "n": "Brett Boehm",
+        "t": "CEO",
+        "bg": "Took over as CEO in 2010 from his father Robert, focusing on business development and marketing to expand TBF's national footprint.",
+        "li": "https://www.linkedin.com/in/brettboehm/",
+        "currentHooks": [
+          "*27+ years commercial debt buying",
+          "Indiana U grad, UIC law degree",
+          "Pioneered equipment lease debt buying"
+        ]
+      },
+      {
+        "n": "Adam Boehm",
+        "t": "CFO",
+        "bg": "Created TBF's proprietary Data Driven, True Market Pricing algorithm and oversees the company's financial health.",
+        "li": "",
+        "currentHooks": [
+          "Created proprietary pricing algorithm",
+          "Indiana U finance degree",
+          "CFO since 2022"
+        ]
+      },
+      {
+        "n": "Robert Boehm",
+        "t": "Co-Founder",
+        "bg": "Retired attorney who founded TBF in 1998 after representing 30+ banks and financial institutions. CEO until 2010.",
+        "li": "https://www.linkedin.com/in/robert-boehm-a786029/",
+        "currentHooks": [
+          "*DePaul Law, career in banking law",
+          "Former CEO of TBF",
+          "Co-founded with sons in 1998"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1759,
+    "name": "THRIVE FUNDING",
+    "type": "TAM",
+    "website": "https://www.thrivefunding.com",
+    "linkedinUrl": "https://www.thrivefunding.com",
+    "location": "Utah",
+    "employees": 25,
+    "desc": "Institutional private credit firm based in Utah, providing middle market lending solutions. Focuses on delivering fast, flexible capital solutions to businesses.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Thrive Funding's institutional private credit operations serving the middle market from Utah.",
+        "li": "",
+        "currentHooks": [
+          "Business funding provider"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1760,
+    "name": "THRYVE CAPITAL",
+    "type": "TAM",
+    "website": "https://www.thryvecapital.com/",
+    "linkedinUrl": "https://www.thryvecapital.com/",
+    "location": "New York",
+    "employees": 109,
+    "desc": "One of the country's largest MCA lenders and ISOs, headquartered in Lower Manhattan. Founded by Steve Weinrib, has funded over $1 billion since inception. Both a direct source of capital and a large ISO, funding the full merchant credit spectrum.",
+    "leaders": [
+      {
+        "n": "Steve Weinrib",
+        "t": "Founder & CEO",
+        "bg": "Founded Thryve Capital and built it into one of the country's largest MCA lenders with over $1 billion funded. Also serves as Principal at L2 Investments.",
+        "li": "https://www.linkedin.com/in/steveweinrib/",
+        "currentHooks": [
+          "*$1B+ funded since inception",
+          "Hofstra Business School alum",
+          "Also runs L2 Investments RE"
+        ]
+      },
+      {
+        "n": "Fritz Desir",
+        "t": "Director, ISO Relations",
+        "bg": "Manages ISO partnerships and deal flow for Thryve Capital, one of the largest MCA operations in the country.",
+        "li": "https://www.linkedin.com/in/fritz-desir-477747142/",
+        "currentHooks": [
+          "ISO relations director",
+          "Fundry brand leader",
+          "MCA industry veteran"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1761,
+    "name": "TIGER CAPITAL",
+    "type": "TAM",
+    "website": "https://tigercapitalfunding.com",
+    "linkedinUrl": "tigercapitalfunding.com",
+    "location": "New York",
+    "employees": 277,
+    "desc": "Direct funder providing unsecured business financing without collateral, founded in 2016 and headquartered at 88 Pine St in Lower Manhattan. Has helped over 5,000 businesses nationwide with fast 24-hour decisions.",
+    "leaders": [
+      {
+        "n": "Dov L.",
+        "t": "CEO",
+        "bg": "Leads Tiger Capital Funding's unsecured business financing operations, serving 5,000+ businesses nationwide since 2016.",
+        "li": "",
+        "currentHooks": [
+          "Founded Tiger Capital 2016",
+          "Miami-based direct funder",
+          "Unsecured MCA specialist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1766,
+    "name": "TRUST CAPITAL",
+    "type": "TAM",
+    "website": "https://www.TrustCapitalUSA.com",
+    "linkedinUrl": "www.TrustCapitalUSA.com",
+    "location": "Limassol",
+    "employees": 32,
+    "desc": "National equipment financing and business working capital company based in San Diego, California, founded in 2013. Specializes in transactions from $25K to $50M+ for manufacturers, vendors, and dealers. CEO is Paul Kendall.",
+    "leaders": [
+      {
+        "n": "Paul Kendall",
+        "t": "Founder, CEO & President",
+        "bg": "Founded Trust Capital in 2013, brings 15+ years of equipment financing experience. Specializes in both small-market and large-ticket transactions up to $50M+.",
+        "li": "https://www.linkedin.com/in/pauldkendall/",
+        "currentHooks": [
+          "*Rags-to-riches founder story",
+          "15+ years equipment finance",
+          "Handles $25K to $50M deals"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1767,
+    "name": "UFS",
+    "type": "TAM",
+    "website": "https://uniquefundingsolutions.com",
+    "linkedinUrl": "uniquefundingsolutions.com",
+    "location": "Free State",
+    "employees": 9000,
+    "desc": "Unique Funding Solutions, founded in 2016 in Brooklyn, New York. MCA and alternative financing direct funder serving diverse industries including automotive repair, medical practices, construction, and retail. Known for fast 24-hour funding.",
+    "leaders": [
+      {
+        "n": "Jake Winograd",
+        "t": "Partner",
+        "bg": "Partner at Unique Funding Solutions managing funding operations and deal flow for the Brooklyn-based MCA funder.",
+        "li": "https://www.linkedin.com/in/jake-winograd-69202249/",
+        "currentHooks": [
+          "*Serial entrepreneur since age 20",
+          "Also Managing Partner at K20 Fund",
+          "$500M+ funded nationwide"
+        ]
+      },
+      {
+        "n": "Irving Winograd",
+        "t": "Head of Business Development",
+        "bg": "Leads business development and ISO relationships at UFS, driving deal flow across diverse industries.",
+        "li": "https://www.linkedin.com/in/irving-winograd-9bb30112b/",
+        "currentHooks": [
+          "Business development leader",
+          "10+ years alternative finance",
+          "Family business partnership"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1769,
+    "name": "UNITED FIRST FUNDING",
+    "type": "TAM",
+    "website": "https://www.unitedfundings.com",
+    "linkedinUrl": "https://www.unitedfundings.com",
+    "location": "",
+    "employees": 37,
+    "desc": "Privately owned specialty finance and alternative funding platform at 800 Third Ave, New York. Founded by investment banking, commercial banking, and mortgage banking experts. Provides MCAs, business loans, invoice factoring, and equipment financing.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Founded by a group of investment banking, commercial banking, and mortgage banking experts who wanted to provide alternative funding solutions for underserved businesses.",
+        "li": "",
+        "currentHooks": [
+          "Business funding provider"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1776,
+    "name": "Finstro",
+    "type": "TAM",
+    "website": "https://finstro.com",
+    "linkedinUrl": "finstro.com",
+    "location": "New South Wales",
+    "employees": 110,
+    "desc": "Australian-founded fintech providing technology-powered trade credit and B2B payment solutions, established in 2014. Has supported 7,000+ SMBs with AUD $1B+ in capital. Expanding to the US market under CEO Brad Prout.",
+    "leaders": [
+      {
+        "n": "Brad Prout",
+        "t": "Founder & CEO",
+        "bg": "Founded Finstro in Sydney in 2014, relocated to the US to oversee expansion into the $26 trillion B2B market. Has grown the platform to 7,000+ SMBs and AUD $1B+ in capital deployed.",
+        "li": "https://www.linkedin.com/in/brad-prout-552b6112/",
+        "currentHooks": [
+          "*30+ years financial markets",
+          "Ex-Bankers Trust SVP",
+          "Founded ASX-listed Ethane Pipeline"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1777,
+    "name": "General Merchant Funding",
+    "type": "TAM",
+    "website": "https://generalmerchantfunding.com",
+    "linkedinUrl": "generalmerchantfunding.com",
+    "location": "Connecticut",
+    "employees": 20,
+    "desc": "Hartford, Connecticut-based MCA and business lending company, providing merchant cash advances, SBA loans, unsecured loans, and equipment financing to small and medium businesses since 2009.",
+    "leaders": [
+      {
+        "n": "Craig Clark",
+        "t": "President & Key Principal",
+        "bg": "Leads General Merchant Funding's operations since 2009, providing MCA and business lending solutions to SMBs across the United States.",
+        "li": "https://www.linkedin.com/in/craig-clark-b17ba4148/",
+        "currentHooks": [
+          "*Founded in 2009",
+          "$200M+ in unsecured capital",
+          "Entrepreneur turned lender"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1778,
+    "name": "Imperial Advance",
+    "type": "TAM",
+    "website": "https://imperialadvance.com",
+    "linkedinUrl": "imperialadvance.com",
+    "location": "New York",
+    "employees": 26,
+    "desc": "New York-based MCA and alternative lending company, now rebranded as Funderial. Established in 2010 with offices near Wall Street. Has funded over $2 billion in business loans nationwide with 30+ years of combined leadership experience.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Executives with 30+ years of combined experience in lending and financial services, built Funderial (formerly Imperial Advance) to $2B+ in fundings.",
+        "li": "",
+        "currentHooks": [
+          "Business cash advance provider"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1779,
+    "name": "Imperial Funding",
+    "type": "TAM",
+    "website": "https://imperialcapital.com",
+    "linkedinUrl": "imperialcapital.com",
+    "location": "California",
+    "employees": 168,
+    "desc": "Full-service investment bank headquartered in Los Angeles, California, co-founded in 1997 by Randall Wooster. Offers capital markets, advisory services, institutional sales and trading, and research capabilities to middle market companies. 150+ professionals across global offices.",
+    "leaders": [
+      {
+        "n": "Randall Wooster",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Imperial Capital in 1997 after serving as Managing Director at predecessor firm managing sales and trading. Nationally recognized in investment banking.",
+        "li": "https://www.linkedin.com/in/randy-wooster-626700106/",
+        "currentHooks": [
+          "*Co-founded Imperial Capital 1997",
+          "Ex-Arthur Andersen CPA",
+          "NYU & Duke MBA"
+        ]
+      },
+      {
+        "n": "Christopher Shepard",
+        "t": "Head of Investment Banking & Capital Markets",
+        "bg": "Leads Imperial Capital's investment banking division and capital markets operations across multiple global offices.",
+        "li": "",
+        "currentHooks": [
+          "*25+ years M&A experience",
+          "Ex-Milbank Tweed attorney",
+          "U of Michigan BS/MBA/JD"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1781,
+    "name": "Revenue Funding",
+    "type": "TAM",
+    "website": "",
+    "linkedinUrl": "N/A",
+    "location": "Florida",
+    "employees": 36,
+    "desc": "Florida-based MCA and revenue-based financing company providing merchant cash advances and business funding to small businesses. Operates as a direct funder in the alternative lending space.",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Revenue Funding's MCA and revenue-based financing operations in Florida.",
+        "li": "",
+        "currentHooks": [
+          "Revenue-based funding"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1782,
+    "name": "Smartbiz",
+    "type": "TAM",
+    "website": "https://smartbizbank.com",
+    "linkedinUrl": "smartbizbank.com",
+    "location": "Illinois",
+    "employees": 184,
+    "desc": "Fintech-turned-bank that acquired Centrust Bank in March 2025 to become SmartBiz Bank. First fintech to become a bank in Trump's second term. Has facilitated 230,000+ loans for $9B+, specializing in SBA and small business lending. CEO Evan Singer.",
+    "leaders": [
+      {
+        "n": "Evan Singer",
+        "t": "CEO & Chair of the Board",
+        "bg": "CEO of SmartBiz since 2013, led the landmark acquisition of Centrust Bank making SmartBiz the first fintech to become a bank in the current administration. Oversees 230,000+ loans totaling $9B+.",
+        "li": "https://www.linkedin.com/in/evan1singer/",
+        "currentHooks": [
+          "*Stanford honors graduate",
+          "Ex-P&G, Align Technology",
+          "$9B+ in SBA loans connected"
+        ]
+      },
+      {
+        "n": "Gerard Buccino",
+        "t": "President",
+        "bg": "Former CEO of Centrust Bank, now serves as President of SmartBiz Bank following the acquisition.",
+        "li": "https://www.linkedin.com/in/gerard-buccino-38b1999/",
+        "currentHooks": [
+          "*Former Centrust Bank CEO",
+          "Community banking veteran",
+          "Became president via acquisition"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1785,
+    "name": "YELLOWSTONE CAPITAL",
+    "type": "TAM",
+    "website": "https://yellowstonecapital.com",
+    "linkedinUrl": "yellowstonecapital.com",
+    "location": "Texas",
+    "employees": 56,
+    "desc": "Former major MCA lender based in Houston, Texas, now defunct following a $1.065 billion settlement with the NY Attorney General in January 2025. CEO Isaac Stern and President Jeffrey Reece were permanently banned from the MCA industry.",
+    "leaders": [
+      {
+        "n": "Isaac Stern",
+        "t": "Former CEO",
+        "bg": "Founded Yellowstone Capital, settled with NY Attorney General for $1.065B in January 2025. Permanently banned from the MCA industry.",
+        "li": "",
+        "currentHooks": [
+          "*Banned from MCA industry",
+          "$1B settlement with NY AG",
+          "Co-founded Yellowstone 2009"
+        ]
+      },
+      {
+        "n": "Jeffrey Reece",
+        "t": "Former President",
+        "bg": "Former Director of Cogent Partners who joined Yellowstone as President. Settled with NY AG and permanently banned from MCA industry.",
+        "li": "https://www.linkedin.com/in/jeff-reece-096b36/",
+        "currentHooks": [
+          "*Banned from MCA industry",
+          "Ex-Cogent Partners director",
+          "Part of $1B NY AG settlement"
+        ]
+      }
+    ]
+  }
+]

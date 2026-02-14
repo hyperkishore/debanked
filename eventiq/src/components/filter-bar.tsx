@@ -22,9 +22,12 @@ const filters: { value: FilterType; label: string }[] = [
   { value: "SQO", label: "SQO" },
   { value: "Client", label: "Client" },
   { value: "ICP", label: "ICP" },
+  { value: "TAM", label: "TAM" },
   { value: "Met", label: "Met" },
   { value: "CLEAR", label: "CLEAR" },
   { value: "FollowUp", label: "Follow-up" },
+  { value: "Researched", label: "Researched" },
+  { value: "Unresearched", label: "Unresearched" },
 ];
 
 export function FilterBar({
@@ -43,6 +46,7 @@ export function FilterBar({
     { value: "name", label: "Name" },
     { value: "type", label: "Type" },
     { value: "phase", label: "Phase" },
+    { value: "employees", label: "Employees" },
   ];
 
   const currentSortIdx = sortOptions.findIndex((s) => s.value === activeSort);

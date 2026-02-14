@@ -13,11 +13,12 @@ interface CompanyTableProps {
   onToggleMet: (id: number) => void;
 }
 
-const typeBadgeStyles = {
+const typeBadgeStyles: Record<string, string> = {
   SQO: "text-[var(--sqo)] border-[var(--sqo)]/30 bg-[var(--sqo)]/10",
   Client: "text-[var(--client)] border-[var(--client)]/30 bg-[var(--client)]/10",
   ICP: "text-[var(--icp)] border-[var(--icp)]/30 bg-[var(--icp)]/10",
-} as const;
+  TAM: "text-[var(--tam)] border-[var(--tam)]/30 bg-[var(--tam)]/10",
+};
 
 export function CompanyTable({
   companies,
@@ -27,6 +28,9 @@ export function CompanyTable({
   onSelect,
   onToggleMet,
 }: CompanyTableProps) {
+  const displayed = companies.slice(0, 200);
+  const hasMore = companies.length > 200;
+
   return (
     <div className="w-full">
       <table className="w-full text-sm">
@@ -35,12 +39,13 @@ export function CompanyTable({
             <th className="text-left py-2 px-3 font-medium">Company</th>
             <th className="text-left py-2 px-2 font-medium w-16">Type</th>
             <th className="text-left py-2 px-2 font-medium hidden md:table-cell">Contacts</th>
-            <th className="text-left py-2 px-2 font-medium hidden lg:table-cell w-16">News</th>
+            <th className="text-left py-2 px-2 font-medium hidden lg:table-cell w-24">Location</th>
+            <th className="text-right py-2 px-2 font-medium hidden lg:table-cell w-16">Size</th>
             <th className="text-center py-2 px-2 font-medium w-14">Met</th>
           </tr>
         </thead>
         <tbody>
-          {companies.map((company) => {
+          {displayed.map((company) => {
             const isMet = !!metState[company.id];
             return (
               <tr
@@ -62,15 +67,18 @@ export function CompanyTable({
                   </div>
                 </td>
                 <td className="py-2 px-2">
-                  <Badge variant="outline" className={cn("text-[10px] px-1.5 py-0 h-4", typeBadgeStyles[company.type])}>
+                  <Badge variant="outline" className={cn("text-[10px] px-1.5 py-0 h-4", typeBadgeStyles[company.type] || "")}>
                     {company.type}
                   </Badge>
                 </td>
                 <td className="py-2 px-2 text-muted-foreground text-xs hidden md:table-cell truncate max-w-[200px]">
-                  {company.contacts.map((c) => c.n).join(", ")}
+                  {company.contacts.map((c) => c.n).join(", ") || company.location || "—"}
                 </td>
-                <td className="py-2 px-2 text-center text-xs text-muted-foreground hidden lg:table-cell">
-                  {company.news?.length || 0}
+                <td className="py-2 px-2 text-muted-foreground text-xs hidden lg:table-cell truncate">
+                  {company.location || "—"}
+                </td>
+                <td className="py-2 px-2 text-right text-xs text-muted-foreground hidden lg:table-cell">
+                  {company.employees ? company.employees : "—"}
                 </td>
                 <td className="py-2 px-2 text-center">
                   <button
@@ -93,6 +101,11 @@ export function CompanyTable({
           })}
         </tbody>
       </table>
+      {hasMore && (
+        <div className="text-center py-3 text-xs text-muted-foreground">
+          Showing 200 of {companies.length} companies. Use card view for full virtual scrolling.
+        </div>
+      )}
     </div>
   );
 }

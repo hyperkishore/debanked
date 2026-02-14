@@ -148,11 +148,12 @@ const tagStyles = {
   demo: "bg-[var(--icp)]/20 text-[var(--icp)]",
 } as const;
 
-const dotStyles = {
+const dotStyles: Record<string, string> = {
   SQO: "bg-[var(--sqo)]",
   Client: "bg-[var(--client)]",
   ICP: "bg-[var(--icp)]",
-} as const;
+  TAM: "bg-[var(--tam)]",
+};
 
 export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
   return (

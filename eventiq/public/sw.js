@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eventiq-v2.1.00';
+const CACHE_NAME = 'eventiq-v2.2.00';
 const BASE_PATH = '/debanked';
 
 self.addEventListener('install', (event) => {
