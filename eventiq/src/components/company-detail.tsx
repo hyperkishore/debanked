@@ -1,11 +1,12 @@
 "use client";
 
-import { Company, RatingData } from "@/lib/types";
+import { Company, RatingData, EngagementEntry } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
+import { EngagementTimeline } from "@/components/engagement-timeline";
 import { cn } from "@/lib/utils";
 import {
   ExternalLink,
@@ -27,10 +28,13 @@ interface CompanyDetailProps {
   isMet: boolean;
   rating: RatingData | null;
   notes: string;
+  engagements: EngagementEntry[];
   onToggleMet: (id: number) => void;
   onSaveNotes: (id: number, notes: string) => void;
   onClose?: () => void;
   onOpenRating: (id: number) => void;
+  onAddEngagement: () => void;
+  onDeleteEngagement: (id: string) => void;
 }
 
 const typeBadgeStyles = {
@@ -44,10 +48,13 @@ export function CompanyDetail({
   isMet,
   rating,
   notes,
+  engagements,
   onToggleMet,
   onSaveNotes,
   onClose,
   onOpenRating,
+  onAddEngagement,
+  onDeleteEngagement,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [iceIndex, setIceIndex] = useState(0);
@@ -235,6 +242,13 @@ export function CompanyDetail({
             </div>
           </Section>
         )}
+
+        {/* Engagement Timeline */}
+        <EngagementTimeline
+          engagements={engagements}
+          onAdd={onAddEngagement}
+          onDelete={onDeleteEngagement}
+        />
 
         {/* Notes */}
         <Section icon={MessageSquare} title="Your Notes">

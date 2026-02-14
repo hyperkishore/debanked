@@ -9,6 +9,7 @@ interface KeyboardShortcuts {
   onEscape?: () => void;
   onSearch?: () => void;
   onToggleMet?: () => void;
+  onLogEngagement?: () => void;
 }
 
 export function useKeyboard(shortcuts: KeyboardShortcuts) {
@@ -23,6 +24,12 @@ export function useKeyboard(shortcuts: KeyboardShortcuts) {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         shortcuts.onSearch?.();
+        return;
+      }
+
+      if (e.key === "e" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        shortcuts.onLogEngagement?.();
         return;
       }
 
@@ -54,6 +61,9 @@ export function useKeyboard(shortcuts: KeyboardShortcuts) {
           break;
         case "m":
           shortcuts.onToggleMet?.();
+          break;
+        case "e":
+          shortcuts.onLogEngagement?.();
           break;
       }
     }

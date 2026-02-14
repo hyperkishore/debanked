@@ -8,6 +8,7 @@ import {
   ViewType,
   TabType,
   RatingData,
+  EngagementEntry,
 } from "@/lib/types";
 import companiesData from "@/data/companies.json";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
@@ -22,6 +23,8 @@ import { CompanyList } from "@/components/company-list";
 import { CompanyDetail } from "@/components/company-detail";
 import { SearchCommand } from "@/components/search-command";
 import { RatingDialog } from "@/components/rating-dialog";
+import { EngagementLog } from "@/components/engagement-log";
+import { getCompanyEngagements } from "@/lib/engagement-helpers";
 import { MobileNav } from "@/components/mobile-nav";
 import { PitchTab } from "@/components/pitch-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
@@ -67,6 +70,11 @@ export default function Home() {
     "eventiq_quick_notes",
     ""
   );
+  const [engagements, setEngagements] = useLocalStorage<EngagementEntry[]>(
+    "eventiq_engagements",
+    []
+  );
+  const [engagementDialogOpen, setEngagementDialogOpen] = useState(false);
 
   // Register service worker
   useEffect(() => {
@@ -149,13 +157,33 @@ export default function Home() {
     [handleSelect]
   );
 
+  const selectedCompanyEngagements = useMemo(
+    () => (selectedId ? getCompanyEngagements(engagements, selectedId) : []),
+    [engagements, selectedId]
+  );
+
+  const handleAddEngagement = useCallback(
+    (entry: EngagementEntry) => {
+      setEngagements((prev) => [...prev, entry]);
+    },
+    [setEngagements]
+  );
+
+  const handleDeleteEngagement = useCallback(
+    (id: string) => {
+      setEngagements((prev) => prev.filter((e) => e.id !== id));
+    },
+    [setEngagements]
+  );
+
   const allNotesExport = useMemo(() => {
     const lines: string[] = ["EventIQ Notes Export", "=".repeat(40), ""];
     companies.forEach((c) => {
       const met = metState[c.id];
       const rating = ratingState[c.id];
       const notes = notesState[c.id];
-      if (met || notes) {
+      const companyEngagements = getCompanyEngagements(engagements, c.id);
+      if (met || notes || companyEngagements.length > 0) {
         lines.push(`## ${c.name} (${c.type})`);
         if (met)
           lines.push(
@@ -167,6 +195,15 @@ export default function Home() {
         if (rating?.promised) lines.push(`Promised: ${rating.promised}`);
         if (rating?.personal) lines.push(`Personal: ${rating.personal}`);
         if (notes) lines.push(`Notes: ${notes}`);
+        if (companyEngagements.length > 0) {
+          lines.push("Engagement Log:");
+          companyEngagements.forEach((e) => {
+            const date = new Date(e.timestamp).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+            const action = e.action.split("_").join(" ");
+            const detail = e.notes ? ` — ${e.notes}` : "";
+            lines.push(`- ${date}: ${e.channel} / ${action} with ${e.contactName}${detail}`);
+          });
+        }
         lines.push("");
       }
     });
@@ -174,7 +211,7 @@ export default function Home() {
       lines.push("## Quick Notes", quickNotes, "");
     }
     return lines.join("\n");
-  }, [metState, ratingState, notesState, quickNotes]);
+  }, [metState, ratingState, notesState, quickNotes, engagements]);
 
   // Keyboard navigation
   const sortedCompanyIds = useMemo(() => {
@@ -211,6 +248,9 @@ export default function Home() {
     onSearch: () => setSearchOpen(true),
     onToggleMet: () => {
       if (selectedId) handleToggleMet(selectedId);
+    },
+    onLogEngagement: () => {
+      if (selectedId) setEngagementDialogOpen(true);
     },
   });
 
@@ -300,6 +340,7 @@ export default function Home() {
                       selectedId={selectedId}
                       metState={metState}
                       ratingState={ratingState}
+                      engagements={engagements}
                       activeFilter={activeFilter}
                       activeSort={activeSort}
                       activeView={activeView}
@@ -319,12 +360,15 @@ export default function Home() {
                         isMet={!!metState[selectedCompany.id]}
                         rating={ratingState[selectedCompany.id] || null}
                         notes={notesState[selectedCompany.id] || ""}
+                        engagements={selectedCompanyEngagements}
                         onToggleMet={handleToggleMet}
                         onSaveNotes={handleSaveNotes}
                         onOpenRating={(id) => {
                           setRatingCompanyId(id);
                           setRatingDialogOpen(true);
                         }}
+                        onAddEngagement={() => setEngagementDialogOpen(true)}
+                        onDeleteEngagement={handleDeleteEngagement}
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
@@ -342,6 +386,7 @@ export default function Home() {
                   selectedId={selectedId}
                   metState={metState}
                   ratingState={ratingState}
+                  engagements={engagements}
                   activeFilter={activeFilter}
                   activeSort={activeSort}
                   activeView={activeView}
@@ -366,6 +411,7 @@ export default function Home() {
                       isMet={!!metState[selectedCompany.id]}
                       rating={ratingState[selectedCompany.id] || null}
                       notes={notesState[selectedCompany.id] || ""}
+                      engagements={selectedCompanyEngagements}
                       onToggleMet={handleToggleMet}
                       onSaveNotes={handleSaveNotes}
                       onClose={() => setMobileDetailOpen(false)}
@@ -373,6 +419,8 @@ export default function Home() {
                         setRatingCompanyId(id);
                         setRatingDialogOpen(true);
                       }}
+                      onAddEngagement={() => setEngagementDialogOpen(true)}
+                      onDeleteEngagement={handleDeleteEngagement}
                     />
                   )}
                 </SheetContent>
@@ -410,6 +458,15 @@ export default function Home() {
         }}
         onSave={handleSaveRating}
       />
+
+      {selectedCompany && (
+        <EngagementLog
+          open={engagementDialogOpen}
+          company={selectedCompany}
+          onClose={() => setEngagementDialogOpen(false)}
+          onSave={handleAddEngagement}
+        />
+      )}
     </SidebarProvider>
   );
 }

@@ -24,6 +24,7 @@ const filters: { value: FilterType; label: string }[] = [
   { value: "ICP", label: "ICP" },
   { value: "Met", label: "Met" },
   { value: "CLEAR", label: "CLEAR" },
+  { value: "FollowUp", label: "Follow-up" },
 ];
 
 export function FilterBar({
