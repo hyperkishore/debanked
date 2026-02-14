@@ -38,7 +38,7 @@ export interface Company {
   ask: string;
 }
 
-export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'Met' | 'CLEAR';
+export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'Met' | 'CLEAR' | 'FollowUp';
 export type SortType = 'name' | 'type' | 'priority' | 'phase';
 export type ViewType = 'cards' | 'table';
 export type TabType = 'companies' | 'schedule' | 'pitch' | 'checklist';
@@ -104,4 +104,20 @@ export interface ReferralMap {
 export interface ChecklistItem {
   key: string;
   label: string;
+}
+
+// Engagement tracking types
+export type EngagementChannel = 'email' | 'linkedin' | 'imessage' | 'call' | 'meeting' | 'note';
+export type EngagementSource = 'manual' | 'gmail' | 'linkedin-ext' | 'chrome-ext';
+
+export interface EngagementEntry {
+  id: string;
+  companyId: number;
+  contactName: string;
+  channel: EngagementChannel;
+  action: string;
+  timestamp: string;
+  notes: string;
+  source: EngagementSource;
+  metadata?: Record<string, unknown>;
 }

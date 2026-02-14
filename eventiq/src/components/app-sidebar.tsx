@@ -113,6 +113,10 @@ export function AppSidebar({
                 <span>Toggle met</span>
                 <span className="font-mono text-[10px]">m</span>
               </div>
+              <div className="flex justify-between">
+                <span>Log engagement</span>
+                <span className="font-mono text-[10px]">e or ⌘E</span>
+              </div>
             </div>
           </SidebarGroupContent>
         </SidebarGroup>
@@ -123,7 +127,7 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.0.01</span>
+          <span className="opacity-50">v2.1.00</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

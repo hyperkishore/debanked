@@ -3,12 +3,14 @@
 import { Company } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { formatEngagementTime } from "@/lib/engagement-helpers";
 
 interface CompanyCardProps {
   company: Company;
   isSelected: boolean;
   isMet: boolean;
   rating?: string;
+  lastEngagementTime?: string | null;
   onSelect: (id: number) => void;
   onToggleMet: (id: number) => void;
   query?: string;
@@ -46,6 +48,7 @@ export function CompanyCard({
   isSelected,
   isMet,
   rating,
+  lastEngagementTime,
   onSelect,
   onToggleMet,
   query = "",
@@ -90,6 +93,11 @@ export function CompanyCard({
           {company.ice && (
             <p className="text-xs text-muted-foreground/70 mt-1 line-clamp-1">
               {company.ice.substring(0, 80)}...
+            </p>
+          )}
+          {lastEngagementTime && (
+            <p className="text-[10px] text-primary/60 mt-0.5">
+              Last contact: {formatEngagementTime(lastEngagementTime)}
             </p>
           )}
         </div>

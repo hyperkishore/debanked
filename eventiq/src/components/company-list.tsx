@@ -1,6 +1,7 @@
 "use client";
 
-import { Company, FilterType, SortType, ViewType, RatingData } from "@/lib/types";
+import { Company, FilterType, SortType, ViewType, RatingData, EngagementEntry } from "@/lib/types";
+import { getLastEngagement, needsFollowUp } from "@/lib/engagement-helpers";
 import { CompanyCard } from "./company-card";
 import { CompanyTable } from "./company-table";
 import { FilterBar } from "./filter-bar";
@@ -12,6 +13,7 @@ interface CompanyListProps {
   selectedId: number | null;
   metState: Record<string, boolean>;
   ratingState: Record<string, RatingData>;
+  engagements: EngagementEntry[];
   activeFilter: FilterType;
   activeSort: SortType;
   activeView: ViewType;
@@ -27,7 +29,8 @@ function filterCompanies(
   companies: Company[],
   filter: FilterType,
   metState: Record<string, boolean>,
-  searchQuery: string
+  searchQuery: string,
+  engagements: EngagementEntry[]
 ): Company[] {
   let filtered = companies;
 
@@ -36,6 +39,7 @@ function filterCompanies(
   else if (filter === "ICP") filtered = filtered.filter((c) => c.type === "ICP");
   else if (filter === "Met") filtered = filtered.filter((c) => metState[c.id]);
   else if (filter === "CLEAR") filtered = filtered.filter((c) => c.clear);
+  else if (filter === "FollowUp") filtered = filtered.filter((c) => metState[c.id] && needsFollowUp(engagements, c.id));
 
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
@@ -74,6 +78,7 @@ export function CompanyList({
   selectedId,
   metState,
   ratingState,
+  engagements,
   activeFilter,
   activeSort,
   activeView,
@@ -90,8 +95,8 @@ export function CompanyList({
   );
 
   const filtered = useMemo(
-    () => filterCompanies(companies, activeFilter, metState, searchQuery),
-    [companies, activeFilter, metState, searchQuery]
+    () => filterCompanies(companies, activeFilter, metState, searchQuery, engagements),
+    [companies, activeFilter, metState, searchQuery, engagements]
   );
 
   const sorted = useMemo(
@@ -122,6 +127,7 @@ export function CompanyList({
                 isSelected={selectedId === company.id}
                 isMet={!!metState[company.id]}
                 rating={ratingState[company.id]?.rating}
+                lastEngagementTime={getLastEngagement(engagements, company.id)?.timestamp ?? null}
                 onSelect={onSelect}
                 onToggleMet={onToggleMet}
                 query={searchQuery}

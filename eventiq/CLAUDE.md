@@ -3,7 +3,7 @@
 ## Project Overview
 Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge's BD team. Internal tool for MCA market intelligence at events like DeBanked CONNECT 2026.
 
-**Version:** 2.0.01
+**Version:** 2.1.00
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 

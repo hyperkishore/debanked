@@ -18,6 +18,21 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
     setIsHydrated(true);
   }, [key]);
 
+  // Cross-tab sync: pick up changes from other tabs / Chrome extension
+  useEffect(() => {
+    function handleStorage(e: StorageEvent) {
+      if (e.key === key && e.newValue !== null) {
+        try {
+          setStoredValue(JSON.parse(e.newValue));
+        } catch {
+          // ignore parse errors from external writes
+        }
+      }
+    }
+    window.addEventListener("storage", handleStorage);
+    return () => window.removeEventListener("storage", handleStorage);
+  }, [key]);
+
   const setValue = useCallback(
     (value: T | ((val: T) => T)) => {
       try {
