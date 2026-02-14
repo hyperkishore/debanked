@@ -1,6 +1,6 @@
 {
   "name": "eventiq",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tanstack/react-virtual": "^3.13.18",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
