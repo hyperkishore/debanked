@@ -1,0 +1,108 @@
+{
+  "id": 4,
+  "name": "Wing Lake Capital Partners",
+  "website": "https://www.winglakecp.com/",
+  "linkedinUrl": "https://www.linkedin.com/company/winglakecp",
+  "desc": "Wing Lake Capital Partners is a Farmington Hills, MI-based alternative lending and business advisory firm specializing in MCA debt consolidation and growth capital. Founded by Shaya Baum, the firm evolved from Franklin Capital (est. 2004) and operates two funds: the Franklin Fund (~$100M, focused on restructuring distressed MCA debt) and the Capstone Fund ($50M, growth capital for businesses graduating out of MCA dependency). Wing Lake receives approximately 800 referrals weekly from MCA companies, has funded 75+ companies totaling $100M+, and reports ~$25M in annual revenue. The firm partnered with Rocky Mountain Bank (Wyoming) in 2020, expanding its lending capabilities. Wing Lake claims a 90% success rate in helping client companies avoid bankruptcy. The team of ~13 employees spans Farmington Hills HQ and remote positions, with active presence at deBanked CONNECT conferences and the Revenue Based Finance Coalition.",
+  "news": [
+    {
+      "h": "Wing Lake Team at deBanked CONNECT Miami 2025",
+      "s": "LinkedIn / deBanked, Jan 2025",
+      "d": "Wing Lake Capital sent a team to deBanked CONNECT Miami 2025 and sponsored the drink cart for the Revenue Based Finance Coalition, signaling active industry engagement."
+    },
+    {
+      "h": "Back to Business Podcast Season 2 Launch",
+      "s": "Wing Lake Capital / Buzzsprout, 2024-2025",
+      "d": "Sarah Annas launched new episodes of the Back to Business podcast including an interview with Emmy-winning news anchor turned PR exec Robin Schwartz, covering storytelling in business."
+    },
+    {
+      "h": "Devotion Hospice: From MCA Debt to Successful Exit",
+      "s": "winglakecp.com, 2024",
+      "d": "Wing Lake published a case study showing how they helped Devotion Hospice resolve financial challenges, scale to 800 patients and 165 employees, and achieve a successful acquisition exit."
+    },
+    {
+      "h": "Shaya Baum Co-founds Tents of Two Brothers Coalition",
+      "s": "Detroit Jewish News, 2024",
+      "d": "Baum co-founded the Tents of Two Brothers Coalition with Mike Kassab, a nonprofit leading trips to Israel to foster peace and bridge cultural divides across the Middle East."
+    },
+    {
+      "h": "Shaya Baum Named EY Entrepreneur of the Year Michigan & NW Ohio",
+      "s": "DBusiness Magazine / EY, 2022",
+      "d": "Baum won the EY Entrepreneur of the Year for Michigan and Northwest Ohio and was named a national finalist, recognized for disrupting the MCA restructuring industry."
+    },
+    {
+      "h": "Wing Lake Capital Launches $50M Capstone Growth Fund",
+      "s": "deBanked, Nov 2021",
+      "d": "Wing Lake announced the Capstone Fund with $50M from existing Franklin Fund investors, shifting focus from distressed restructuring to growth capital for businesses ready to scale."
+    }
+  ],
+  "leaders": [
+    {
+      "n": "Shaya Baum",
+      "t": "CEO & Managing Partner",
+      "bg": "Wayne State University accounting graduate (2006-2009). Co-founded and sold a NY-based tax prep company at age 19. Joined Franklin Capital as accountant in 2004, became CEO by 2010. Launched debt fund in 2017, merged into Wing Lake Capital Partners in 2019. Won EY Entrepreneur of the Year Michigan/NW Ohio 2022 and was national finalist. Named Detroit Jewish News 36 Under 36 (2021). Featured in Authority Magazine's 'Meet the Disruptors' series. Co-founded Tents of Two Brothers Coalition (Israel peacebuilding nonprofit) and Firefly Advocates (wrongful conviction innocence project that freed a man after 12 years). Involved in 100+ company restructurings. Receives ~800 MCA referrals per week. Describes Wing Lake as a 'restructuring firm that also writes a check.'",
+      "li": "https://www.linkedin.com/in/shaya-b-34533a21",
+      "hooks": [
+        "*Founded innocence project (Firefly Advocates)",
+        "*EY Entrepreneur of Year national finalist",
+        "Co-founded Israel peacebuilding nonprofit",
+        "Sold first company at age 19",
+        "800 MCA referrals per week",
+        "Authority Magazine 'Disruptor' feature"
+      ]
+    },
+    {
+      "n": "Eli Golshteyn",
+      "t": "Director of Underwriting",
+      "bg": "University of Michigan graduate (Finance, Financial Accounting & Reporting, Controllership). Soviet Jewish immigrant from Novosibirsk, Siberia — came to Metro Detroit in 1995 at age 6 with parents (father held PhD in mechanical engineering, mother MS in civil engineering). Career path: Masco Corporation (2011+, roles in corporate tax, internal audit, corporate development, rising to Senior Auditor), then Veoneer (Manager, Internal Audit). Also founded an IT support company that grew to 11 employees serving 500+ clients daily. Board member of Garrett's Space (youth mental health/suicide prevention nonprofit) and Hebrew Free Loan of Metro Detroit (youngest board member at 32, joined 2018). Values data accuracy and process rigor in underwriting.",
+      "li": "https://www.linkedin.com/in/eli-ilya-golshteyn-0282a957",
+      "hooks": [
+        "*Immigrated from Siberia at age 6",
+        "*Board member, Garrett's Space (youth mental health)",
+        "U of Michigan finance graduate",
+        "Founded IT company (11 employees)",
+        "Youngest Hebrew Free Loan board member",
+        "Parents both engineers (PhD + MS)"
+      ]
+    },
+    {
+      "n": "Sarah (Piteo) Annas",
+      "t": "Managing Partner",
+      "bg": "Miami University Farmer School of Business graduate (Marketing & Interactive Media Studies). Previously Account Manager at Insight Global (IT/finance staffing). Hosts Wing Lake's 'Back to Business' podcast on Buzzsprout/Apple Podcasts — features business leaders in regulated industries with guests including Emmy-winning journalist Robin Schwartz and Wing Lake's own leadership team. Appeared on deBanked TV red carpet interview representing Wing Lake. Also a Certified Yoga Instructor (Chagrin Yoga Studio). Focused on building broker relationships and empowering entrepreneurs through content.",
+      "li": "https://www.linkedin.com/in/sarah-piteo/",
+      "hooks": [
+        "*Hosts 'Back to Business' podcast",
+        "*Certified yoga instructor",
+        "deBanked TV red carpet appearance",
+        "Miami University marketing grad",
+        "Interactive Media Studies background"
+      ]
+    },
+    {
+      "n": "Angelina Fletcher",
+      "t": "Director of Business Development",
+      "bg": "Michigan State University graduate (Marketing). Midwest transplant now based in Southern California. Career spanned video production, fine arts, and real estate before entering business lending in 2019. Joined Wing Lake in May 2020 as Director of Business Development, managing and growing broker relationships. Featured on Wing Lake's Back to Business podcast (Episode 4) discussing remote work, team dynamics, and work-life balance. Represents Wing Lake at deBanked CONNECT conferences (Las Vegas, Miami). Active in growing Wing Lake's ISO/broker channel.",
+      "li": "",
+      "hooks": [
+        "*Video production & fine arts background",
+        "Midwest transplant in SoCal",
+        "Featured on Back to Business podcast",
+        "deBanked CONNECT conference regular",
+        "Entered lending industry 2019"
+      ]
+    }
+  ],
+  "ice": "Shaya, saw Wing Lake's team at deBanked CONNECT Miami — with 800 MCA referrals hitting your desk weekly, curious how much of Eli's underwriting time goes to manual doc verification versus actual credit analysis. HyperVerge automates the document intake piece so underwriters can focus on what matters.",
+  "icebreakers": [
+    "Reference the Devotion Hospice case study exit — ask how document verification scales when onboarding healthcare clients with complex financials",
+    "Mention the Back to Business podcast — Sarah's episode with Robin Schwartz on storytelling could tie into how HyperVerge helps Wing Lake tell a faster, data-driven underwriting story to brokers",
+    "Note the 800 weekly referrals figure from deBanked — at that volume, even 10 minutes saved per file review compounds to hundreds of hours monthly",
+    "Reference the Capstone Fund's growth capital focus — as Wing Lake graduates clients from Franklin to Capstone, faster re-underwriting with automated verification keeps the pipeline moving"
+  ],
+  "tp": [
+    "At 800 MCA referrals per week, even a 5-minute reduction in document verification per file saves Wing Lake 65+ hours weekly — HyperVerge automates bank statement, ID, and business doc extraction in under 60 seconds",
+    "HyperVerge serves 450+ MCA/alternative lending companies including consolidation firms like Wing Lake — our models are trained on the exact document types (stacked MCA contracts, bank statements, tax returns) that Eli's team reviews daily",
+    "Wing Lake's dual-fund model (Franklin for restructuring, Capstone for growth) means underwriting the same merchant twice — HyperVerge's persistent document profiles eliminate redundant re-verification when clients graduate between funds"
+  ],
+  "ask": "Shaya, would it make sense to show Eli a 15-minute demo of how HyperVerge handles bank statement extraction and MCA contract verification? Happy to tailor it to Wing Lake's consolidation workflow with real document types your team sees daily."
+}

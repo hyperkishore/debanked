@@ -1,0 +1,128 @@
+{
+  "id": 2,
+  "name": "BriteCap Financial",
+  "website": "https://www.britecap.com/",
+  "linkedinUrl": "https://www.linkedin.com/company/britecap-financial/",
+  "desc": "BriteCap Financial (formerly ForwardLine Financial, est. 2003) is a technology-enabled non-bank SMB lender majority-owned by an affiliate of North Mill Equipment Finance (NMEF/InterVest Capital Partners). Headquartered with offices in North Hollywood, CA and Las Vegas, NV, BriteCap surpassed $1 billion in total originations in December 2025, delivering 55% YoY growth — the strongest year in company history. The company secured a $150M receivable financing facility from One William Street Capital Management in 2024 and launched BriteLine, a revolving line of credit product, in May 2025. Under CEO Richard Henderson (appointed Sep 2024), BriteCap has invested heavily in underwriting intelligence, data-driven technology, and partner enablement, positioning for continued expansion into 2026.",
+  "news": [
+    {
+      "h": "BriteCap Financial Surpasses $1 Billion in Total Originations",
+      "s": "PR Newswire, Jan 2026",
+      "d": "BriteCap crossed the $1B origination milestone in Dec 2025, delivering 55% YoY growth. CEO Henderson credited disciplined execution, strong partnerships, and investment in underwriting intelligence."
+    },
+    {
+      "h": "BriteCap Launches BriteLine for On-Demand Business Capital",
+      "s": "PR Newswire, May 2025",
+      "d": "BriteCap launched BriteLine, a next-gen revolving line of credit giving SMB owners on-demand access to capital drawn only when needed based on business performance."
+    },
+    {
+      "h": "BriteCap Promotes Coleman to CAO & General Counsel",
+      "s": "PR Newswire, Aug 2025",
+      "d": "Molly Coleman promoted to Chief Administrative Officer & General Counsel after 14+ years at BriteCap, overseeing Legal, Compliance, HR, and BPO strategy."
+    },
+    {
+      "h": "BriteCap Financial Expands Team to Support Growth",
+      "s": "PR Newswire / deBanked, Mar 2025",
+      "d": "BriteCap added three key hires: Director of Collections, Senior Accountant, and Digital Brand Manager to support continued scaling after securing $150M credit facility."
+    },
+    {
+      "h": "BriteCap Financial Secures $150M Credit Facility",
+      "s": "PR Newswire, Aug 2024",
+      "d": "Established a new receivable financing facility from One William Street Capital Management providing up to $150M over a three-year revolving period."
+    },
+    {
+      "h": "BriteCap Financial Announces New CEO Richard Henderson",
+      "s": "PR Newswire / deBanked, Sep 2024",
+      "d": "Richard Henderson appointed CEO, bringing 23+ years of equipment finance and SMB lending experience from CAN Capital, Marlin Capital, and Direct Capital."
+    },
+    {
+      "h": "BriteCap Ramps Up Team, Ready For Growth",
+      "s": "deBanked, Dec 2024",
+      "d": "Henderson discussed selective broker onboarding strategy and bullish economic outlook. Added CCO Dave Lafferty and CFO Pushkar Choudhuri to leadership team."
+    }
+  ],
+  "leaders": [
+    {
+      "n": "Richard Henderson",
+      "t": "CEO",
+      "bg": "23+ years in equipment leasing, finance, and SMB lending. Appointed BriteCap CEO Sep 2024. Previously CRO at CAN Capital, Head of Direct Originations & Franchise Finance at Marlin Capital Solutions (2017-2020) where he pioneered the Franchise Finance business achieving asset losses under 0.5%. SVP Franchise & Hospitality Finance at Direct Capital (2013-2015) where he launched LendEdge digital lending platform. President of EquipmentEngine (online auction platform). Saint Anselm College (BA Sociology, Business & Human Relations). Studied at MIT. Lean Six Sigma certified. Based in Portsmouth, NH. Personal interests include philosophy, theoretical physics, and theology.",
+      "li": "https://www.linkedin.com/in/richardhendersonjr/",
+      "hooks": [
+        "*Pioneered franchise finance at Marlin with <0.5% asset losses",
+        "Launched LendEdge digital lending at Direct Capital",
+        "Philosophy & theoretical physics enthusiast",
+        "Saint Anselm + MIT educated",
+        "Built EquipmentEngine online auction platform",
+        "Lean Six Sigma practitioner",
+        "Quoted: 'selective on who we onboard' (broker strategy)"
+      ]
+    },
+    {
+      "n": "Dave Lafferty",
+      "t": "Chief Credit Officer",
+      "bg": "30 years in credit, risk, underwriting, and portfolio management. Joined BriteCap Dec 2024. Previously CCO at CAN Capital where he worked with Henderson for over a decade. Earlier career at Advanta Business Services as Senior Credit Analyst, and Dun & Bradstreet as Information Consultant. Penn State (1990-1994). Based in Punta Gorda, FL. Expertise spans equipment finance and working capital lending credit risk and capital markets navigation. THE key buyer for underwriting technology — Henderson specifically cited his role in 'leveraging cutting-edge technology' for credit decisions.",
+      "li": "https://www.linkedin.com/in/david-lafferty-23707b7/",
+      "hooks": [
+        "*Henderson worked with him 10+ years — deep trust",
+        "Dun & Bradstreet data roots (Information Consultant)",
+        "Penn State grad, Punta Gorda FL based",
+        "Advanta Business Services credit analyst background",
+        "Quoted: 'well-positioned to become a leader in commercial finance'"
+      ]
+    },
+    {
+      "n": "Jim Noel",
+      "t": "VP Strategic Partnerships",
+      "bg": "20+ years in business lending. Joined BriteCap Oct 2024. Previously VP Vendor Finance at CAN Capital where he built the vendor finance channel. Earlier career at Marlin Capital Solutions, Navitas Lease Corp, and Advanta Leasing. La Salle University. Based in Las Vegas, NV. Responsible for cultivating strategic partnerships with brokers, alternative lenders, and financial services providers. Henderson described a 'strong working relationship over the years' with Noel.",
+      "li": "https://www.linkedin.com/in/jim-noel-1975594/",
+      "hooks": [
+        "*Reunited CAN Capital trio (Henderson + Lafferty + Noel)",
+        "Broker/partner relationship builder",
+        "Marlin + Navitas + Advanta leasing background",
+        "La Salle University grad, Las Vegas based",
+        "Vendor finance channel specialist"
+      ]
+    },
+    {
+      "n": "Molly Coleman",
+      "t": "CAO & General Counsel",
+      "bg": "14+ years at BriteCap/ForwardLine, promoted to CAO & GC Aug 2025. Georgetown Law (magna cum laude, Order of the Coif, Executive Editor of Georgetown Law Journal). Brown University (BA History). Clerked for Hon. Joseph M. McLaughlin, U.S. Court of Appeals Second Circuit. Practiced at Irell & Manella and Brobeck Phleger & Harrison (now Morgan Lewis). Adjunct Professor at Loyola Law School (2002-2008). Oversees Legal, Compliance, HR, Contract Administration, Customer Service, and BPO strategy. Longest-tenured executive at BriteCap.",
+      "li": "https://www.linkedin.com/in/molly-macisaac-coleman-2988336/",
+      "hooks": [
+        "*Georgetown Law magna cum laude + Order of the Coif",
+        "Federal appellate court clerk (2nd Circuit)",
+        "Former Loyola Law School adjunct professor",
+        "Brown University history major",
+        "Longest-tenured BriteCap exec (14+ years)",
+        "Oversees BPO/offshoring strategy"
+      ]
+    },
+    {
+      "n": "David Lee",
+      "t": "VP Sales & Origination",
+      "bg": "26+ years BD and sales experience. VP Sales & Origination at BriteCap/ForwardLine since 2017, starting as Director of Sales then promoted. Led the sales transformation — personally coached each team member as organization grew into multiple offices and sites. Previously Senior Manager at Apple (2011-2013). District Manager at Robbins Brothers luxury jewelry retail (2002-2011). UC Santa Barbara (BA English Language & Literature, 1995-1998). Licensed Loan Originator (2020). Based in Montebello, CA.",
+      "li": "https://www.linkedin.com/in/davidslee915/",
+      "hooks": [
+        "*Apple Senior Manager turned SMB lending leader",
+        "Personally coached every sales team member",
+        "Robbins Brothers luxury retail leadership (9 years)",
+        "UC Santa Barbara English major",
+        "Licensed Loan Originator since 2020",
+        "Multi-site sales transformation architect"
+      ]
+    }
+  ],
+  "ice": "Congratulations on crossing $1B in originations with 55% YoY growth — that's remarkable execution. With that kind of volume scaling, underwriting speed and consistency become critical bottlenecks. HyperVerge's document AI can compress the underwriting cycle from 40 minutes to under 5 minutes per application, which at BriteCap's trajectory could mean processing thousands more applications per month without adding headcount.",
+  "icebreakers": [
+    "Your $1B origination milestone and 55% YoY growth signal massive throughput — how is your underwriting infrastructure keeping pace with that volume?",
+    "With BriteLine launching as a revolving credit product, the re-underwriting and ongoing monitoring requirements multiply — is that creating new operational complexity?",
+    "Henderson mentioned investing in 'underwriting intelligence and data-driven technology' — curious what the biggest remaining friction points are in your document review pipeline?",
+    "As you selectively onboard brokers and scale partner submissions, how are you maintaining consistent decision speed and accuracy across the growing volume?"
+  ],
+  "tp": [
+    "At 55% YoY growth and $1B+ originated, BriteCap is processing enormous application volume — HyperVerge's document AI handles bank statement and financial document extraction in seconds, not minutes, directly impacting throughput capacity.",
+    "HyperVerge serves 450+ MCA and SMB lending companies. We understand the specific document types and fraud patterns in this space — bank statements, tax returns, merchant processing statements — with purpose-built models, not generic OCR.",
+    "Our platform compresses underwriting document review from 40 minutes to under 5 minutes per application. At BriteCap's scale, that could translate to recovering hundreds of analyst-hours per month while improving consistency and reducing human error in credit decisions."
+  ],
+  "ask": "Richard, given BriteCap's momentum and your stated focus on underwriting intelligence — would you or Dave Lafferty be open to a 20-minute walkthrough of how HyperVerge accelerates document-heavy underwriting for high-volume SMB lenders like BriteCap?"
+}
