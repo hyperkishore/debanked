@@ -1,0 +1,905 @@
+[
+  {
+    "id": 9,
+    "name": "Dexly Finance",
+    "type": "ICP",
+    "priority": 3,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Direct capital provider with ISO-first positioning. CEO Burkay Kaplan studied at Harvard Business School, Stanford GSB (Venture Capital), and Wharton. Angel investor with 70+ investments incl. Polygon, Chainlink, Dfinity. Small team -- CEO is likely sole decision-maker.",
+    "leaders": [
+      {
+        "n": "Burkay Kaplan",
+        "t": "CEO",
+        "bg": "William Paterson Univ (Finance + Sales). Harvard Business School, Stanford GSB, Wharton. 70+ angel investments. 32+ countries experience.",
+        "li": "https://www.linkedin.com/in/burkaykaplan/",
+        "currentHooks": [
+          "HBS + Stanford + Wharton",
+          "70+ angel investments",
+          "*32 countries",
+          "*Crypto investor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Aspire Funding Platform",
+    "type": "ICP",
+    "priority": 3,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "MCA funder already using API/OCR technology alongside veteran underwriters. Offers same-day and 24-hour funding with up to 17-point ISO commissions.",
+    "leaders": [
+      {
+        "n": "Daniel Lenefsky",
+        "t": "CEO",
+        "bg": "CUNY Brooklyn College. MCA industry veteran. Previously associated with All-Star Capital. Built Aspire with API/OCR-forward approach.",
+        "li": "https://www.linkedin.com/in/daniel-lenefsky-aa20b0a1/",
+        "currentHooks": [
+          "CUNY Brooklyn College",
+          "API/OCR early adopter",
+          "Ex-All-Star Capital"
+        ]
+      },
+      {
+        "n": "Ricky Singh",
+        "t": "Manager, Operations & Marketing",
+        "bg": "Dual-role managing ops and marketing. Oversees day-to-day workflow and ISO partner attraction.",
+        "li": "",
+        "currentHooks": [
+          "Dual ops + marketing role"
+        ]
+      },
+      {
+        "n": "Austin Zak",
+        "t": "Manager, Underwriting",
+        "bg": "Leads underwriting team. Oversees deal evaluation and approval processes. Direct buyer for underwriting tools.",
+        "li": "",
+        "currentHooks": [
+          "Underwriting team lead",
+          "Direct tool buyer"
+        ]
+      },
+      {
+        "n": "Bernard Aquino",
+        "t": "Senior Underwriting Specialist",
+        "bg": "Hands-on underwriter handling deal evaluations. Can speak to daily pain points.",
+        "li": "",
+        "currentHooks": [
+          "Hands-on underwriter",
+          "Daily pain point expert"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Simply Funding",
+    "type": "ICP",
+    "priority": 3,
+    "website": "https://simplyfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/simplyfunding/people/",
+    "location": "New York",
+    "employees": 16,
+    "desc": "Direct MCA funder founded 2017 by Bernard Mittelman. 28 employees, relocated from Manhattan to Jersey City. Doubled funding volume consecutive years. ISO-only model (no inside sales). A/B paper shop, weekly payments. Partnered with ACHWorks and Onyx IQ.",
+    "leaders": [
+      {
+        "n": "Bernard Mittelman",
+        "t": "Founder",
+        "bg": "Founded Simply Funding in 2017. Now in operational role but maintains founder equity and influence.",
+        "li": "",
+        "currentHooks": [
+          "Simply Funding founder",
+          "Founded 2017, still involved"
+        ]
+      },
+      {
+        "n": "Jacob Kleinberger",
+        "t": "Head of Operations",
+        "bg": "Joined as partner 2021. Previously Head of Ops at Shield Funding, VP BD at Venture Credit Solutions.",
+        "li": "https://www.linkedin.com/in/jacob-kleinberger-a1b947163/",
+        "currentHooks": [
+          "Ex-Shield Funding ops lead",
+          "Ex-VP Venture Credit",
+          "Joined as partner 2021"
+        ]
+      },
+      {
+        "n": "Marc Elias",
+        "t": "CFO",
+        "bg": "Oversees financial strategy, portfolio management, and risk assessment.",
+        "li": "",
+        "currentHooks": [
+          "CFO risk strategist"
+        ]
+      },
+      {
+        "n": "Joy Alhalab",
+        "t": "ISO Relations Manager",
+        "bg": "Manages all ISO/broker relationships -- Simply's sole distribution channel.",
+        "li": "",
+        "currentHooks": [
+          "Sole ISO channel owner",
+          "All broker relationships"
+        ]
+      },
+      {
+        "n": "Shimon Wein",
+        "t": "Sr Manager, Funding & BD",
+        "bg": "Represented Simply at deBanked events. Also Founder/CEO of Radiance Funding.",
+        "li": "",
+        "currentHooks": [
+          "*Also CEO Radiance Funding",
+          "deBanked event regular"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "MonetaFi",
+    "type": "ICP",
+    "priority": 3,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Brand new MCA funder launched May 2025 by industry veterans. Same-day funding (apply before 2PM ET), approvals up to $750K. White-label platform for partners. Based in Miami, FL.",
+    "leaders": [
+      {
+        "n": "Steve Kamhi",
+        "t": "Exec Dir Strategic Partnerships",
+        "bg": "Decades in MCA. Previously Dir of Partner Relations at FundKite for 8 years (2017-2025). Founded ClickPayRent/ClickPay Services. Based in Miami.",
+        "li": "https://www.linkedin.com/in/steven-kamhi-916527/",
+        "currentHooks": [
+          "*8yr FundKite veteran",
+          "Founded ClickPay Services",
+          "Miami based",
+          "Decades in MCA"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Gulf Coast Business Credit",
+    "type": "ICP",
+    "priority": 3,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Division of Gulf Coast Bank & Trust (est. 2000). Covington, LA + offices in TX, GA, AR, AL, AZ. AR factoring and asset-based lending. $3B+ financed annually. 250-499 employees. Serves trucking, freight, staffing, oil & gas, manufacturing. Meg Roberson appointed to IFA Advisory Board.",
+    "leaders": [
+      {
+        "n": "Wade Hladky",
+        "t": "President & CEO",
+        "bg": "Co-founded GCBC in 2000. Ole Miss Banking & Finance. Progressed COO to CCO to CEO. 24 years building the company.",
+        "li": "",
+        "currentHooks": [
+          "Ole Miss Banking",
+          "GCBC co-founder 2000",
+          "*24yr company builder"
+        ]
+      },
+      {
+        "n": "Meg Roberson",
+        "t": "SVP & National Sales Manager",
+        "bg": "25+ years in sales, factoring, ABL. Texas A&M. IFA Advisory Board member. Manages national sales/underwriting team.",
+        "li": "",
+        "currentHooks": [
+          "Texas A&M",
+          "*IFA Advisory Board",
+          "25yr factoring veteran"
+        ]
+      },
+      {
+        "n": "Stuart Wrba",
+        "t": "VP Business Development",
+        "bg": "At GCBC since 2009. Based in Atlanta. Specializes in staffing and transportation factoring deals.",
+        "li": "",
+        "currentHooks": [
+          "Atlanta based",
+          "15yr GCBC veteran",
+          "Staffing/transport specialist"
+        ]
+      },
+      {
+        "n": "Joseph Jimenez",
+        "t": "VP Business Development",
+        "bg": "Based in San Antonio. Ex-VP at Bank of San Antonio. Expanding GCBC Texas footprint.",
+        "li": "",
+        "currentHooks": [
+          "San Antonio based",
+          "Ex-VP Bank of San Antonio",
+          "Texas market builder"
+        ]
+      },
+      {
+        "n": "Matthew Stewart",
+        "t": "VP Credit Analysis",
+        "bg": "Leads credit analysis and underwriting team. THE direct buyer for underwriting automation tools.",
+        "li": "",
+        "currentHooks": [
+          "Credit analysis lead",
+          "Direct underwriting tool buyer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Likety",
+    "type": "ICP",
+    "priority": 3,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "West Hollywood, CA fintech for small business funding, especially eCommerce (est. ~2020). Same-day approvals. Founded by eCommerce operator who lived the borrower pain. Smaller team (~10-25). Active in Rebuy eCommerce community. May be price-sensitive but nimble.",
+    "leaders": [
+      {
+        "n": "Nima Shamsili",
+        "t": "Co-Founder & CEO",
+        "bg": "Ex-eCommerce founder (wellness brand). Ex-Cashbloom CEO. Built Likety around speed. AMA with Rebuy community Dec 2024.",
+        "li": "",
+        "currentHooks": [
+          "*Ex-eCommerce founder",
+          "Ex-Cashbloom CEO",
+          "Rebuy community AMA"
+        ]
+      },
+      {
+        "n": "Taufiq Mithani",
+        "t": "Co-Founder",
+        "bg": "Founder of Hubwallet. CEO of The Merchant Solutions (payments). Deep merchant services and payment processing expertise.",
+        "li": "",
+        "currentHooks": [
+          "Hubwallet founder",
+          "Payments processing vet",
+          "Merchant Solutions CEO"
+        ]
+      },
+      {
+        "n": "David Cavarra",
+        "t": "Co-Founder",
+        "bg": "Also associated with Peak Finance. Handles BD and operations.",
+        "li": "",
+        "currentHooks": [
+          "Also at Peak Finance",
+          "BD and ops focus"
+        ]
+      },
+      {
+        "n": "Ray Felts",
+        "t": "Partner Development",
+        "bg": "3+ years American Merchant Services. Ex-Rair Capital. Manages broker/partner relationships.",
+        "li": "",
+        "currentHooks": [
+          "Ex-Rair Capital",
+          "3+ yrs American Merchant"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "United Capital Source",
+    "type": "ICP",
+    "priority": 3,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "One of the fastest-growing biz finance brokerages. $1.5B+ matched across 75+ lenders. Jared is co-chairman SBFA Broker Council, Forbes Finance Council member, frequent media voice (Forbes, LegalZoom). Inc. 5000 in 2015 and 2017. Lean team but massive deal flow.",
+    "leaders": [
+      {
+        "n": "Jared Weitz",
+        "t": "CEO & Founder",
+        "bg": "Co-chairman SBFA Broker Council. Forbes Finance Council member. 15+ years in business financing. Industry thought leader.",
+        "li": "https://www.linkedin.com/in/jared-weitz-83a661117/",
+        "currentHooks": [
+          "*SBFA Broker Council co-chair",
+          "*Forbes Finance Council",
+          "15+ yr industry veteran",
+          "NYT/Bloomberg/WSJ quoted"
+        ]
+      },
+      {
+        "n": "Jonathan Torres",
+        "t": "COO",
+        "bg": "Runs day-to-day operations at UCS. Key operational decision-maker.",
+        "li": "",
+        "currentHooks": [
+          "Ops leader at UCS"
+        ]
+      },
+      {
+        "n": "Danielle Conti",
+        "t": "CMO",
+        "bg": "Leads marketing strategy and brand positioning for UCS.",
+        "li": "",
+        "currentHooks": [
+          "Brand strategist at UCS"
+        ]
+      },
+      {
+        "n": "Lacey James",
+        "t": "Head of Strategy",
+        "bg": "Drives strategic initiatives and business development partnerships.",
+        "li": "",
+        "currentHooks": [
+          "Strategy and BD focus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Big Think Capital",
+    "type": "ICP",
+    "priority": 3,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Direct lender & marketplace. $1B+ funded to 25K+ businesses. Melville, NY + FL. 110 employees, $19.3M revenue. Syndication investment platform. Fortune Best Small Workplaces 2025 (#19). VP Tech Brian Weiss is ALREADY building AI/ML pipelines for underwriting. CMO Ami Dviri ex-NY Life/JPMorgan/Deutsc",
+    "leaders": [
+      {
+        "n": "David A. Brown",
+        "t": "President & Founder",
+        "bg": "JD Brooklyn Law. Michigan economics (Magna Cum Laude). Previously led $3B US mortgage firm. Ex-SVP at Lendio.",
+        "li": "",
+        "currentHooks": [
+          "*Brooklyn Law JD",
+          "Michigan econ Magna Cum Laude",
+          "Ran $3B mortgage firm",
+          "Ex-SVP Lendio"
+        ]
+      },
+      {
+        "n": "Tom Forsberg",
+        "t": "CRO",
+        "bg": "Bryant University (D-1 lacrosse All-American). With Big Think since inception. Drives revenue + syndication platform.",
+        "li": "https://www.linkedin.com/in/tom-forsberg-0b829090/",
+        "currentHooks": [
+          "*D-1 lacrosse All-American",
+          "Bryant University",
+          "Big Think since day one"
+        ]
+      },
+      {
+        "n": "Salvatore Vitale",
+        "t": "CSO",
+        "bg": "Marquette University Finance. Evaluates technology investments and strategic partnerships. Key decision-maker for new tech.",
+        "li": "",
+        "currentHooks": [
+          "Marquette University Finance",
+          "Tech investment evaluator"
+        ]
+      },
+      {
+        "n": "Brian Weiss",
+        "t": "VP Technology",
+        "bg": "InfoSec background. Already building AI/ML pipelines for underwriting. Leads Salesforce architecture. WARMEST technical lead.",
+        "li": "",
+        "currentHooks": [
+          "InfoSec background",
+          "Building AI/ML pipelines",
+          "Salesforce architecture lead"
+        ]
+      },
+      {
+        "n": "Ami Dviri",
+        "t": "CMO",
+        "bg": "20 years Fortune 100 marketing. Ex-NY Life VP, JPMorgan Chase, Deutsche Bank. Joined March 2024.",
+        "li": "",
+        "currentHooks": [
+          "*20yr Fortune 100 marketer",
+          "Ex-NY Life VP",
+          "Ex-JPMorgan Chase",
+          "Ex-Deutsche Bank"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "LoanGeek",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Tech-driven CRE finance platform (est. Apr 2023). LiveDeal portal connects real estate investors with 250+ private non-bank lenders. 2025 NPLA Broker of the Year. Red Bank, NJ. ~21 employees. Also NPLA Broker Certification instructor. Note: CRE focus, not MCA.",
+    "leaders": [
+      {
+        "n": "Christopher Pepe",
+        "t": "Co-Founder & CEO",
+        "bg": "20 years in RE-secured lending. Hofstra Univ. Ex-Deutsche Bank. Ex-Head ISO Relations at World Business Lenders.",
+        "li": "",
+        "currentHooks": [
+          "Hofstra University",
+          "Ex-Deutsche Bank",
+          "20yr RE lending vet",
+          "Ex-World Business Lenders"
+        ]
+      },
+      {
+        "n": "Kunal Bhasin",
+        "t": "Co-Founder",
+        "bg": "Also CEO at 1West.com. Univ of Arizona, Eller College. Ex-VP BD at Seek Business Capital.",
+        "li": "",
+        "currentHooks": [
+          "Arizona Eller College",
+          "Also CEO at 1West.com",
+          "Ex-Seek Business Capital"
+        ]
+      },
+      {
+        "n": "Scott Kronzek",
+        "t": "Director of Partnerships",
+        "bg": "MBA. Deep RE tech partnership experience. Ex-Privy, CoStar Group, 42Floors.",
+        "li": "",
+        "currentHooks": [
+          "MBA holder",
+          "Ex-CoStar Group",
+          "Ex-Privy, 42Floors",
+          "RE tech partnerships"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Fund My Biz",
+    "type": "ICP",
+    "priority": 4,
+    "website": "https://fundmybiz.com",
+    "linkedinUrl": "https://www.linkedin.com/company/fund-my-biz-official",
+    "location": "New York",
+    "employees": 5,
+    "desc": "MCA-focused funding company founded in 2022, based in NY. Same-day funding with rates starting at 2.5% APR. John is a veteran MCA serial founder — previously founded Direct Merchant Funding and First Premier Funding. Active in deBanked community.",
+    "leaders": [
+      {
+        "n": "John Baron DiCanio",
+        "t": "Managing Partner & Founder",
+        "bg": "Serial MCA founder. Previously founded Direct Merchant Funding and First Premier Funding. Active LinkedIn content creator.",
+        "li": "",
+        "currentHooks": [
+          "*Serial MCA founder",
+          "Founded Direct Merchant Funding",
+          "Founded First Premier Funding",
+          "*Active LinkedIn creator"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Bridgeport Capital Services",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Coral Springs, FL factoring company (est. 1999). AR factoring, PO financing, bookkeeping. Serves staffing, manufacturing, transportation. 5-person leadership team. Publishing thought leadership on AI-driven factoring solutions in 2025.",
+    "leaders": [
+      {
+        "n": "Mark Rosenstein",
+        "t": "CEO",
+        "bg": "Leads Bridgeport Capital. Oversees all operations and strategic direction.",
+        "li": "",
+        "currentHooks": [
+          "25+ yr factoring leader",
+          "Coral Springs based"
+        ]
+      },
+      {
+        "n": "Jason Rosenstein",
+        "t": "President",
+        "bg": "Runs day-to-day operations. Helps refine underwriting for factoring clients.",
+        "li": "",
+        "currentHooks": [
+          "Family business operator",
+          "Underwriting process refiner"
+        ]
+      },
+      {
+        "n": "Max M. Toledo",
+        "t": "EVP / CMO",
+        "bg": "Since Dec 2008. Ex-Capital Factors VP, ex-Westgate Financial. Highly connected in factoring/ABL industry.",
+        "li": "",
+        "currentHooks": [
+          "17+ yrs at Bridgeport",
+          "Ex-Capital Factors VP",
+          "Ex-Westgate Financial"
+        ]
+      },
+      {
+        "n": "Larry Powali",
+        "t": "EVP / COO",
+        "bg": "Ex-Merchant Capital Services, Capital Business Credit, Bibby Financial Services. Cares about operational throughput.",
+        "li": "",
+        "currentHooks": [
+          "Ex-Bibby Financial Services",
+          "Ex-Capital Business Credit",
+          "Ops throughput focused"
+        ]
+      },
+      {
+        "n": "Darin McMahon",
+        "t": "VP / Financial Strategist",
+        "bg": "Miami-Fort Lauderdale based. Active content creator on factoring topics. BD-focused.",
+        "li": "",
+        "currentHooks": [
+          "*Factoring content creator",
+          "South Florida based",
+          "BD-focused strategist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Fratello Capital",
+    "type": "ICP",
+    "priority": 4,
+    "website": "https://Not found",
+    "linkedinUrl": "Not found",
+    "location": "",
+    "employees": 7,
+    "desc": "NYC direct MCA funder with heavy ISO broker channel. Dedicated underwriting portal (fratellocapitalportal.com). Founded by Russell Kimyagarov (Yeshiva Univ, ex-Meridian Capital).",
+    "leaders": [
+      {
+        "n": "Russell Kimyagarov",
+        "t": "Founder & CEO",
+        "bg": "BA Psychology/Business from Yeshiva Univ. Ex-Deerwood Real Estate, Fairmont Capital, Meridian Capital. Also Managing Partner at Integra RE Capital.",
+        "li": "",
+        "currentHooks": [
+          "Yeshiva Univ psychology",
+          "Ex-Meridian Capital",
+          "*Integra RE Capital partner",
+          "Ex-Deerwood Real Estate"
+        ]
+      },
+      {
+        "n": "Ben Khaimov",
+        "t": "COO",
+        "bg": "Queens College. Runs operations. May have been elevated to CEO role. Key operations decision-maker.",
+        "li": "",
+        "currentHooks": [
+          "Queens College alum",
+          "Elevated to CEO role"
+        ]
+      },
+      {
+        "n": "Federico Urraca",
+        "t": "ISO Relations Manager",
+        "bg": "Manages ISO partnerships and broker channel. Front-line contact for deal flow.",
+        "li": "",
+        "currentHooks": [
+          "ISO channel gatekeeper",
+          "Front-line deal flow"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Spring Funding",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Direct MCA funder and ISO-focused platform showcasing applications across 75+ lenders. 1-hour approvals, funding $5K-$500K. Flexible remittance structures. Same-day commissions to ISO partners.",
+    "leaders": [
+      {
+        "n": "Harry Haywood",
+        "t": "Owner / Founder",
+        "bg": "Founded Spring Funding as direct MCA provider. Built ISO platform connecting with 75+ lenders. Emphasizes rapid approvals.",
+        "li": "",
+        "currentHooks": [
+          "Built 75+ lender platform",
+          "1-hour approval pioneer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Biz2Credit",
+    "type": "ICP",
+    "priority": 5,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Major fintech lender (est. 2007). $8B+ SMB financing. 500-800 employees. Operates Biz2X white-label SaaS lending platform with AI underwriting. $312M raised. Columbia University AI partnership (Sep 2025) targeting $750B unlocked financing. FTC $33M settlement (Mar 2024). APPROACH AS PEER/PARTNERSHIP",
+    "leaders": [
+      {
+        "n": "Rohit Arora",
+        "t": "CEO & Co-Founder",
+        "bg": "Columbia Intl Business. Crain NY Entrepreneur of Year 2011. Quoted by NYT, Bloomberg, WSJ. Building Biz2X AI platform.",
+        "li": "",
+        "currentHooks": [
+          "Columbia Intl Business",
+          "*Crain's Entrepreneur of Year",
+          "Quoted in NYT/Bloomberg/WSJ",
+          "Building Biz2X AI platform"
+        ]
+      },
+      {
+        "n": "Ramit Arora",
+        "t": "President & Co-Founder",
+        "bg": "10+ yrs Citibank/Xerox in financial services and risk. Heads credit and sales ops. Meets with Fed and SBA regularly.",
+        "li": "",
+        "currentHooks": [
+          "10+ yrs Citibank/Xerox",
+          "Meets with Fed and SBA",
+          "Credit and risk specialist"
+        ]
+      },
+      {
+        "n": "Vineet Tyagi",
+        "t": "Global CTO",
+        "bg": "25+ yrs digital transformation, AI, Big Data. Ex-CTO Impetus Technologies. BITS Pilani. Heads India ops for Biz2X.",
+        "li": "",
+        "currentHooks": [
+          "*BITS Pilani alum",
+          "25+ yr digital transformation",
+          "Ex-CTO Impetus Technologies",
+          "AI and Big Data leader"
+        ]
+      },
+      {
+        "n": "Brad Rosenfeld",
+        "t": "CMO & CSO",
+        "bg": "20+ yrs B2B SaaS/fintech. Columbia Business School (also lectures). Driving AI-powered fintech strategy.",
+        "li": "",
+        "currentHooks": [
+          "*Columbia Business School lecturer",
+          "20+ yr B2B SaaS veteran",
+          "AI-powered fintech strategist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Newity",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "#1 SBA 7(a) facilitator in the US. 125K+ businesses, $11.8B+ capital deployed. Founded 2020 in Chicago. Inc. 5000 #596, Deloitte Fast 500. Partners with Northeast Bank. Already uses Biz2X. Co-CEOs named American Banker Top 25 Visionaries 2025. Navigating major SBA SOP rule changes (June 2025).",
+    "leaders": [
+      {
+        "n": "David Cody",
+        "t": "Co-Founder / Co-CEO",
+        "bg": "30+ yrs asset management. Ex-CEO MatlinPatterson. Early partner at Fortress (grew AUM to $40B+). Colby College. Wall Street veteran.",
+        "li": "",
+        "currentHooks": [
+          "Colby College",
+          "*Early Fortress partner",
+          "Grew AUM to $40B+",
+          "Ex-CEO MatlinPatterson"
+        ]
+      },
+      {
+        "n": "Luke LaHaie",
+        "t": "Co-Founder / Co-CEO",
+        "bg": "CPA. Big Four background (EY, PwC). Co-founded during COVID 2020. Compliance and accounting mindset.",
+        "li": "",
+        "currentHooks": [
+          "CPA certified",
+          "Big Four alum (EY, PwC)",
+          "*Founded during COVID 2020"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Thoro Corp",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "https://www.linkedin.com/company/thorocorp/",
+    "location": "Florida",
+    "employees": 7,
+    "desc": "Hallandale Beach, FL direct MCA funder. B-C paper specialist (higher-risk profiles). Up to $5M, no industry restrictions. Terms up to 24 weeks. Backed by private investors. Ownership through Yamazu LLC. Currently hiring MCA underwriters.",
+    "leaders": [
+      {
+        "n": "Jacquelline Bogdanov",
+        "t": "Director of Partnerships",
+        "bg": "Accounting background. Career in international finance. Manages ISO partnerships. Featured in FunderIntel Q&A.",
+        "li": "",
+        "currentHooks": [
+          "Accounting background",
+          "Intl finance career",
+          "*FunderIntel Q&A featured"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Rowan Advance",
+    "type": "ICP",
+    "priority": 4,
+    "website": "https://www.rowanadvance.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/rowan-advance/",
+    "location": "New Jersey",
+    "employees": 5,
+    "desc": "NYC-area MCA funder. ~200 employees. $98M+ funded per quarter. Revenue-based financing $10K-$5M. Factor rates from 1.28. Same-day commissions. Specializes in 6-10 month deals in 2nd-4th positions. ISO broker focus.",
+    "leaders": [
+      {
+        "n": "Zalman Arnow",
+        "t": "Owner / Founder",
+        "bg": "Ex-Partner at Capital Express. Yeshiva University. NYC metro. Built Rowan to 200 employees and $98M+/quarter.",
+        "li": "",
+        "currentHooks": [
+          "Yeshiva University",
+          "Ex-Capital Express partner",
+          "*Built to 200 employees"
+        ]
+      },
+      {
+        "n": "Brocha Arnow",
+        "t": "Director, Finance & Operations",
+        "bg": "Manages financial operations and reporting. Key operational decision-maker.",
+        "li": "",
+        "currentHooks": [
+          "Finance and ops leader",
+          "Family business operator"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Bizfund",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Brooklyn, NY MCA funder (est. ~2014). Global offices. 21-50 employees, $10-25M revenue. 90%+ approval rate. 24-48 hour turnaround. Min 6 months in business, $10K monthly revenue. CEO Danny Koshanfar previously founded Pearl Capital (2009-2012).",
+    "leaders": [
+      {
+        "n": "Danny Koshanfar",
+        "t": "CEO",
+        "bg": "Previously President & Founder of Pearl Capital (2009-2012). Ex-New Era Lending. Based in Miami/Brooklyn. Deep MCA experience.",
+        "li": "",
+        "currentHooks": [
+          "*Founded Pearl Capital 2009",
+          "Ex-New Era Lending",
+          "Miami/Brooklyn dual base"
+        ]
+      },
+      {
+        "n": "Rikki Kopfstein",
+        "t": "VP of ISO Relations",
+        "bg": "Based in Miami. Manages ISO partnerships and broker relationships.",
+        "li": "",
+        "currentHooks": [
+          "Miami-based ISO leader"
+        ]
+      },
+      {
+        "n": "Jeff Engel",
+        "t": "ISO Relations Manager",
+        "bg": "Manages day-to-day ISO broker relationships and deal flow.",
+        "li": "",
+        "currentHooks": [
+          "ISO relations manager",
+          "Deal flow coordinator"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Fenix Capital Funding",
+    "type": "ICP",
+    "priority": 4,
+    "website": "https://fenixcapitalfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/fenix-capital-funding/",
+    "location": "New York",
+    "employees": 10,
+    "desc": "Brooklyn, NY direct MCA funder (est. 2021). ~9 employees. BBB A-rated. MCAs $7,500-$150,000 with 4-12 month terms. MCA consolidation program. Approves within 4 hours, funds same day. Managing Partner Sergey Sprikut has JPMorgan/CIBC background.",
+    "leaders": [
+      {
+        "n": "Sergey Sprikut",
+        "t": "Managing Partner",
+        "bg": "NYU Polytechnic BS. Ex-JPMorgan Chase, CIBC World Markets, Premier Capital Funding. Institutional risk management background.",
+        "li": "",
+        "currentHooks": [
+          "NYU Polytechnic BS",
+          "*Ex-JPMorgan Chase",
+          "Ex-CIBC World Markets",
+          "Institutional risk background"
+        ]
+      },
+      {
+        "n": "Alexander Ryvkin",
+        "t": "Chief Legal Officer",
+        "bg": "Brooklyn-based. Manages legal and compliance. AI creates better documentation trails for MCA contracts.",
+        "li": "",
+        "currentHooks": [
+          "Brooklyn-based attorney",
+          "Legal and compliance lead"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Fox Funding",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Hollywood, FL / NYC business MCA provider (est. 2012). ~35 employees. ACH advances and MCA in 1st and 2nd positions. Funding up to $1M with 24-48 hour disbursement. President Joseph Rapoport is a former underwriter.",
+    "leaders": [
+      {
+        "n": "Joseph Rapoport",
+        "t": "President",
+        "bg": "MS Accounting, Fairleigh Dickinson. Ex-underwriter at Funding For Merchants. Understands underwriting pain firsthand.",
+        "li": "",
+        "currentHooks": [
+          "MS Accounting Fairleigh Dickinson",
+          "*Ex-underwriter turned president",
+          "Knows underwriting pain firsthand"
+        ]
+      },
+      {
+        "n": "Joshua Amir",
+        "t": "Chief Strategy Officer",
+        "bg": "Based in Miami. Strategy and competitive positioning.",
+        "li": "",
+        "currentHooks": [
+          "Miami-based strategist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "800Funding",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Miami, FL MCA and business funding provider. Direct funder. Programs include invoice factoring, PO funding, AR lines of credit. Emphasizes adaptive modern technologies. Finance-educated CEO (Hofstra). Seasoned team with decades of corporate finance/tech experience.",
+    "leaders": [
+      {
+        "n": "Mark D.",
+        "t": "CEO",
+        "bg": "Hofstra University Finance degree. Leads overall strategy. Emphasizes technology-driven efficiency in small business funding.",
+        "li": "",
+        "currentHooks": [
+          "Hofstra University Finance",
+          "Tech-driven funding advocate"
+        ]
+      }
+    ]
+  }
+]
