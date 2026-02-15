@@ -1,0 +1,724 @@
+[
+  {
+    "id": 1607,
+    "name": "CAP FLOW",
+    "leaders": [
+      {
+        "n": "Andrew Coon",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded CapFlow Funding Group in 2009 and CFG Merchant Solutions in 2015. Career includes Managing Director at Morgan Stanley (2007-2009), Managing Director at Merrill Lynch (2000-2007), and Director at Standard & Poor's (1994-1996). MBA from Washington University in St. Louis, BA from Brown University.",
+        "li": "https://www.linkedin.com/in/andrew-j-coon/",
+        "hooks": ["*Ex-Morgan Stanley & Merrill Lynch MD", "Brown University BA", "*$1B+ working capital deployed"]
+      },
+      {
+        "n": "William Gallagher",
+        "t": "Co-Founder & President, CFGMS",
+        "bg": "Co-founded CapFlow Funding Group, now President of CFG Merchant Solutions (CFGMS). Spent 1991-2004 at Lehman Brothers as Senior VP in Fixed Income Division, leading high-grade credit and commercial paper trading desks. Previously Chief Credit Officer at CapFlow. BA in Economics from Villanova University (1989).",
+        "li": "https://www.linkedin.com/in/william-gallagher-5b699524/",
+        "hooks": ["*13 years at Lehman Brothers trader", "Villanova Economics grad", "CFGMS President"]
+      }
+    ],
+    "news": [
+      {"h": "CapFlow Funding Group Profiled by Forbes", "s": "Forbes/LinkedIn, Dec 2024", "d": "CEO Andrew Coon featured in Forbes-related content highlighting CapFlow's growth and lending model."},
+      {"h": "CapFlow Surpasses $1 Billion in Working Capital Provided", "s": "CapFlow Funding Group, 2024", "d": "Company milestone reached after 15 years of providing factoring and ABL solutions to thousands of American businesses."}
+    ]
+  },
+  {
+    "id": 1614,
+    "name": "CLEARBANC",
+    "leaders": [
+      {
+        "n": "Michele Romanow",
+        "t": "Co-Founder & Executive Co-Chair",
+        "bg": "Co-founded Clearco (formerly Clearbanc). Served as CEO from Feb 2022 to Jan 2023 before stepping down during 30% staff reduction. Dragon on CBC's Dragons' Den. Remains on board and invested in the company's $25M promissory note round. Serial entrepreneur now exploring new ventures.",
+        "li": "https://www.linkedin.com/in/micheleromanow/",
+        "hooks": ["*CBC Dragons' Den star", "*Stepped down as CEO Jan 2023", "Serial tech entrepreneur"]
+      },
+      {
+        "n": "Andrew D'Souza",
+        "t": "Co-Founder & Director",
+        "bg": "Co-founded Clearco and served as original CEO before transitioning to Executive Chair in 2022. Now Founder/CEO of Boardy, an AI super-connector platform that has facilitated 10+ multimillion-dollar deals. Boardy helps founders, fund managers, and executives network via AI across voice, chat, and email.",
+        "li": "https://www.linkedin.com/in/andrewdsouza/",
+        "hooks": ["*Founded Boardy AI platform", "*Boardy drove 10+ multi-M deals", "Clearco co-founder"]
+      }
+    ],
+    "news": [
+      {"h": "Clearco Launches Most Flexible Growth Funding Suite", "s": "BusinessWire, Sep 2025", "d": "Clearco launched comprehensive product suite with Cash Advance, Rolling Funding, Invoice Funding, and improved capacity/pricing for e-commerce brands."},
+      {"h": "Clearco Growing Again After Years of Turmoil", "s": "The Logic, 2025", "d": "In 2024 Clearco tripled capital deployed and is on track for 50% growth in 2025 under CEO Andrew Curtis."},
+      {"h": "Clearco Completes $60M Series D and $100M Financing Facility", "s": "Fintech Futures, Oct 2023", "d": "Completed recapitalization with $60M equity from Inovia Capital and Founders Circle, plus $100M asset-backed facility from Pollen Street Capital."}
+    ]
+  },
+  {
+    "id": 1615,
+    "name": "COAST FUNDING",
+    "leaders": [
+      {
+        "n": "Matt Price",
+        "t": "CEO",
+        "bg": "CEO of Coast Funding in San Diego. Previously Chief Sales Officer at Reliant Funding where he helped provide $1.8B in financing to nearly 60,000 American businesses. Champions an old-school relationship-based approach in modern financial technology. Based in Del Mar, CA.",
+        "li": "https://www.linkedin.com/in/matt-price-a3180353/",
+        "hooks": ["*$1.8B financed at Reliant Funding", "Ex-Reliant Funding CSO", "Del Mar, CA based"]
+      }
+    ],
+    "news": [
+      {"h": "Coast Funding Review 2026", "s": "United Capital Source, 2026", "d": "Coast Funding reviewed positively for fast approvals within 24 hours, multiple funding programs up to $5M, and strong Trustpilot reviews."}
+    ]
+  },
+  {
+    "id": 1621,
+    "name": "CREST CAPITAL",
+    "leaders": [
+      {
+        "n": "Mark French",
+        "t": "Founder, President & CEO",
+        "bg": "Founded Crest Capital in 1989 in Atlanta, growing it from a startup with a 30-month survival goal to a national equipment financing leader for 35+ years. Auburn University graduate. Entrepreneurship runs in his family — his father and both grandfathers built successful businesses from scratch.",
+        "li": "https://www.linkedin.com/in/markfrench42/",
+        "hooks": ["*Founded Crest Capital 1989", "Auburn University grad", "3rd-gen entrepreneur"]
+      },
+      {
+        "n": "Michael Marcin",
+        "t": "CFO",
+        "bg": "CFO at Crest Capital since September 1998, spanning 26+ years. Previously held multiple positions at Phoenixcor Inc. BS in Communications/Journalism from Clarion University of Pennsylvania (1983-1987). Listed as registered agent for Crest Capital Inc. in Georgia.",
+        "li": "https://www.linkedin.com/in/mike-marcin-516b7074/",
+        "hooks": ["26+ years at Crest Capital", "Clarion University alum", "Ex-Phoenixcor"]
+      }
+    ],
+    "news": [
+      {"h": "Crest Capital Celebrates 35+ Years in Equipment Financing", "s": "Crest Capital, 2024", "d": "Company celebrated milestone of over three decades providing equipment financing to SMBs nationwide with hassle-free 100% financing up to $500K."}
+    ]
+  },
+  {
+    "id": 1626,
+    "name": "DEXT CAPITAL",
+    "leaders": [
+      {
+        "n": "Kyin Lok",
+        "t": "CEO & Founder",
+        "bg": "25-year equipment leasing veteran. Career includes Asia Pacific Region Leader at GE Healthcare Financial Services (2003-2005), VP at GE Vendor Financial Services (1998-2003), SVP at U.S. Bank managing Healthcare & Technology groups (2005-2013), and Chief Corporate Officer at TCF Bank (2016-2018). MBA from Columbia Business School, BS from Northeastern University.",
+        "li": "https://www.linkedin.com/in/kyin-lok-19a6504/",
+        "hooks": ["*Columbia Business School MBA", "*Ex-GE Capital Asia Pacific leader", "Northeastern University undergrad"]
+      }
+    ],
+    "news": [
+      {"h": "Dext Capital Closes Sixth ABS Transaction (2025-2)", "s": "MonitorDaily, 2025", "d": "Closed sixth asset-backed securitization with orders from 29 unique investors across six investment-grade bond classes rated by Moody's and S&P."},
+      {"h": "Honour Capital Team Joins Forces with Dext Capital", "s": "ELFA Online, Jan 2025", "d": "Dext acquired Honour Capital's equipment finance team, unifying under shared commitment for innovation and purpose-driven financial services."},
+      {"h": "Dext Capital Commences $200M Deutsche Bank Revolving Facility", "s": "ABL Advisor, 2025", "d": "New $200M revolving credit facility with Deutsche Bank increased total facility capacity to $750M, supporting continued origination growth."},
+      {"h": "Dext Capital Surpasses $2 Billion in Originations", "s": "Dext Capital, 2025", "d": "After 100%+ origination growth in fiscal Q1 2025, Dext surpassed $2B in total originations and continued aggressive expansion."}
+    ]
+  },
+  {
+    "id": 1630,
+    "name": "EAGLE CAPITAL",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Operates as Quick Capital Fund providing MCA and business funding solutions in New York. Limited public information available about leadership team.",
+        "li": "",
+        "hooks": ["Quick Capital Fund brand", "NY-based MCA funder"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1632,
+    "name": "EASTERN FUNDING",
+    "leaders": [
+      {
+        "n": "Nancy Robles",
+        "t": "CEO & President",
+        "bg": "Promoted to CEO in December 2025 after serving as President and COO. Recognized as 2025 Champion of Inclusivity by Monitor magazine. 20+ year tenure at Eastern Funding managing credit policy, risk management, governance, and organizational strategy. Board Trustee at Berkeley College Foundation, Equipment Finance Cares Foundation, Equipment Finance Leasing Foundation, and Monitor Editorial Board.",
+        "li": "https://www.linkedin.com/in/nancy-robles-27240535/",
+        "hooks": ["*Promoted to CEO Dec 2025", "*2025 Champion of Inclusivity", "4 board trustee positions"]
+      },
+      {
+        "n": "Michael Fanger",
+        "t": "Founder & Managing Member",
+        "bg": "Founded Eastern Funding in 1997 after serving as EVP and President of Transportation Capital Corp at Medallion Financial (1987-1997). Banking career began at Shawmut Bank Boston (1981-1986) as VP. Raised $25M to start Eastern Funding, targeting coin laundromats and dry cleaners. Company acquired by Brookline Bank in 2005 for $16M. Joined LaundryCares Foundation board.",
+        "li": "https://www.linkedin.com/in/michael-fanger-98562b162/",
+        "hooks": ["*Founded Eastern Funding 1997", "*Ex-Medallion Financial EVP", "LaundryCares Foundation board"]
+      },
+      {
+        "n": "Falencia Prime",
+        "t": "COO",
+        "bg": "Hired as COO in 2025 to oversee operations, technology, and compliance functions. 30+ years in financing and banking industry in senior leadership roles, focused on Enterprise Credit Policy and Quality Assurance. Previously Director of Loan Operations at Pitney Bowes Global Financial Services Division.",
+        "li": "https://www.linkedin.com/in/falencia-prime-60876ab/",
+        "hooks": ["*30+ years banking/finance", "Ex-Pitney Bowes loan ops director", "Hired as COO in 2025"]
+      }
+    ],
+    "news": [
+      {"h": "Eastern Funding Promotes Nancy Robles to CEO", "s": "Eastern Funding, Dec 2025", "d": "Nancy Robles promoted to CEO while retaining President title, as founder Michael Fanger transitions to mentoring and relationship cultivation."},
+      {"h": "Nancy Robles Recognized as 2025 Champion of Inclusivity", "s": "Monitor, 2025", "d": "Eastern Funding President and CEO Nancy Robles honored by Monitor magazine for leadership and advocacy of inclusivity in equipment finance."},
+      {"h": "Eastern Funding Hires Falencia Prime as COO", "s": "ELFA Online, May 2025", "d": "30-year banking veteran Falencia Prime joined Eastern Funding to oversee operations, technology, and compliance functions."},
+      {"h": "Eastern Funding Winds Down Specialty Vehicles Division", "s": "ELFA Online, Jul 2024", "d": "Eastern Funding LLC announced wind-down of its Specialty Vehicles & Equipment Funding Group to focus on core laundry, carwash, and grocery verticals."}
+    ]
+  },
+  {
+    "id": 1633,
+    "name": "EBF HOLDINGS LLC",
+    "leaders": [
+      {
+        "n": "Scott Crockett",
+        "t": "CEO & Founder",
+        "bg": "Serial entrepreneur who founded Everest Business Funding (originally Whetstone Holdings LLC) in Miami. Previously founded Allied Cash Holdings in 1999, growing it to 250+ stores with $60M+ annual revenue and 700 employees before successful buyout in 2009. Began career at NationsBanc Montgomery Securities. BA from Tulane University. Raised $500M+ in capital across career. Company won 2025 Best and Brightest Workplace award.",
+        "li": "",
+        "hooks": ["*Founded Allied Cash (250+ stores)", "Tulane University grad", "*2025 Best & Brightest Workplace"]
+      }
+    ],
+    "news": [
+      {"h": "Everest Business Funding Wins Best and Brightest Award", "s": "EIN Presswire, 2025", "d": "Company earned national recognition for Best and Brightest Workplace under CEO Scott Crockett's leadership."},
+      {"h": "Everest Business Funding Becomes BBB Accredited", "s": "BBB, Oct 2025", "d": "Company received BBB accreditation after 13 years in business, reinforcing commitment to transparency and ethical practices."},
+      {"h": "Everest Business Funding at World of Concrete 2026", "s": "Everest Business Funding, Jan 2026", "d": "Company exhibited at World of Concrete conference in Las Vegas (Jan 19-22, 2026) to reach construction industry businesses."}
+    ]
+  },
+  {
+    "id": 1636,
+    "name": "EIN CAPITAL",
+    "leaders": [
+      {
+        "n": "John Mayne",
+        "t": "CEO",
+        "bg": "Leads Ein Cap's operations as a direct MCA funder from Brooklyn, NY office at 3374 Shore Pkwy. Company has been providing merchant cash advances to small businesses across America since 2008. Limited additional public information available.",
+        "li": "https://www.linkedin.com/in/john-mayne-59a794113/",
+        "hooks": ["Brooklyn-based MCA CEO", "Direct funder since 2008", "ISO broker partnerships"]
+      },
+      {
+        "n": "Russell Naftali",
+        "t": "Founder & President",
+        "bg": "Founded Ein Cap Inc. to provide merchant cash advances to underserved small businesses. Built the company into an established direct MCA funder operating since 2008 from Brooklyn, New York. Limited additional public background information available.",
+        "li": "https://www.linkedin.com/in/russell-naftali",
+        "hooks": ["*Founded EIN Capital 2008", "Direct funder up to 4th position", "Brooklyn, NY based"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1637,
+    "name": "ELEVATION CAPITAL",
+    "leaders": [
+      {
+        "n": "Larry Schiavi",
+        "t": "Owner & Managing Partner",
+        "bg": "Leads Elevation Capital Group from Bel Air, Maryland. Previously SVP of National Production at HSBC, and President of Mortgage Division at Greater Buffalo Savings Bank. Also served as Division SVP of Retail at American Pacific Mortgage. Has funded $150M+ to 2,500+ businesses since founding Elevation Capital in 2010.",
+        "li": "https://www.linkedin.com/in/lawrenceschiavi",
+        "hooks": ["*Ex-HSBC SVP National Production", "Ex-Greater Buffalo Savings Bank pres", "$150M+ funded since 2010"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1641,
+    "name": "EVERLASTING CAPITAL",
+    "leaders": [
+      {
+        "n": "Josh Feinberg",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Everlasting Capital in 2012 from the basement of a pawn shop in Rochester, NH. First year: $110K in commissions and $3.5M in volume. Grew to Inc. 500 ranking (#323) and #1 fastest-growing company in New Hampshire. Co-created Equipment Broker School, an online equipment finance training platform. Social media influencer and industry speaker.",
+        "li": "https://www.linkedin.com/in/josh-feinberg-45407432/",
+        "hooks": ["*Started from pawn shop basement", "*Inc. 500 #323 fastest growing", "Equipment Broker School co-founder"]
+      },
+      {
+        "n": "Will Murphy",
+        "t": "COO & Co-Founder",
+        "bg": "Co-founded Everlasting Capital with Josh Feinberg in 2012 after running a landscape company and a pawn shop since 2004. Handles day-to-day operations. Co-founded Equipment Broker School (equipmentbrokerschool.com). Together with Feinberg, built brand with 9-figure funding volume, 8-figure commissions, and 2,500+ clients. EBSC certified.",
+        "li": "https://www.linkedin.com/in/will-murphy-ebsc-8099a95b/",
+        "hooks": ["*9-figure funding volume built", "Equipment Broker School co-founder", "Serial entrepreneur since 2004"]
+      }
+    ],
+    "news": [
+      {"h": "Everlasting Capital Founders Launch Equipment Broker School", "s": "PRWeb/MonitorDaily, 2021", "d": "Josh Feinberg and Will Murphy launched EquipmentBrokerSchool.com, an online training platform for equipment finance brokers that saw 200%+ signup surge."}
+    ]
+  },
+  {
+    "id": 1642,
+    "name": "EXPRESS CAPITAL FUNDING",
+    "leaders": [
+      {
+        "n": "Scott Redfox",
+        "t": "President",
+        "bg": "Founded Express Capital Funding in 2013 in Anaheim, California. 20+ years in the financial sector. Built Express Capital into a direct lender serving specialty contractors, manufacturing companies, government contractors, and trucking companies nationwide with same-day funding.",
+        "li": "https://www.linkedin.com/in/scott-redfox-84664519/",
+        "hooks": ["Founded Express Capital 2013", "Contractor financing specialist", "Anaheim-based direct lender"]
+      },
+      {
+        "n": "Robert Longobardy",
+        "t": "CFO",
+        "bg": "Chief Financial Officer at Express Capital Funding. Previously held positions at Liberty Commercial Credit LLC and Alliance Funding Group. Oversees financial operations for the Anaheim-based direct lender serving contractors and small businesses.",
+        "li": "https://www.linkedin.com/in/robert-longobardy-4a861413",
+        "hooks": ["Ex-Alliance Funding Group", "Ex-Liberty Commercial Credit", "Express Capital CFO"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1644,
+    "name": "FAST CASH FUNDING",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Fast Cash Funding's MCA operations providing up to $1M in same-day funding across all industries in Florida. Limited public information available about specific leadership.",
+        "li": "",
+        "hooks": ["Florida-based MCA funder"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1651,
+    "name": "FLEXIBILITY CAPITAL",
+    "leaders": [
+      {
+        "n": "Michael Peeler",
+        "t": "Founder & CEO",
+        "bg": "Founded Flexibility Capital in 2018 after serving as VP of Business Development at Kapitus (formerly Strategic Funding Source). Penn State University graduate. Led company to Inc. 5000 ranking in 2022 (#4284) and 2024 (#1513, #92 in Financial Services). Surpassed $1B in total funding and 1,000+ Trustpilot reviews with 4.9 star rating.",
+        "li": "https://www.linkedin.com/in/michael-peeler-88488461/",
+        "hooks": ["*$1B+ funded since 2018", "*Ex-Kapitus VP", "2x Inc. 5000 honoree (2022, 2024)"]
+      }
+    ],
+    "news": [
+      {"h": "Flexibility Capital Ranked Inc. 5000 #92 Financial Services", "s": "PR Newswire, Aug 2024", "d": "Ranked #1513 overall and #92 in Financial Services on the 2024 Inc. 5000 list, its second time on the prestigious list."},
+      {"h": "Flexibility Capital Celebrates 1,000 Trustpilot Reviews", "s": "PR Newswire, Jan 2025", "d": "Company reached milestone of 1,000+ Trustpilot reviews with outstanding 4.9 TrustScore, reinforcing position as trusted SMB financing partner."}
+    ]
+  },
+  {
+    "id": 1656,
+    "name": "FUSION CAPITAL",
+    "leaders": [
+      {
+        "n": "Christian Reynolds",
+        "t": "Director",
+        "bg": "Director of Fusion Capital based in North Myrtle Beach, South Carolina. Company is BBB accredited since 2010 and generated ~$6M annual revenue in 2023. Provides small business loans, working capital financing, and business lines of credit. Limited additional public background information on Reynolds specifically.",
+        "li": "",
+        "hooks": ["BBB accredited since 2010", "SC-based business funder", "~$6M annual revenue"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1661,
+    "name": "GOOD FUNDING LLC\nGOTORRO",
+    "leaders": [
+      {
+        "n": "Ben Gold",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO and co-founder of Good Funding (2020). Previously co-founded Quick Bridge Funding in 2011 with Jason Osiecki, growing it from 2 employees to 70+ and lending $200M+ in 3 years. Earlier was VP of Operations at Alliance Funding Group (2003-2011). BA in Marketing and MBA from Cal State Fullerton. Serves as Treasurer of CSUF Mihaylo College Executive Council. Provides annual internships to CSUF students.",
+        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
+        "hooks": ["*CSUF MBA, Executive Council treasurer", "*Co-founded Quick Bridge ($200M+)", "OCBJ #2 fastest growing"]
+      },
+      {
+        "n": "Jason Osiecki",
+        "t": "Co-Founder & President",
+        "bg": "Co-founded Good Funding in 2020 with Ben Gold. Previously VP Strategic Partnerships at National Funding (2018-2020), VP of Sales at Quick Bridge Funding (2011-2018) which he co-founded, and Director of Sales at Five Point Capital (2003-2010). BS in Finance from University of Maryland Robert H. Smith School of Business.",
+        "li": "https://www.linkedin.com/in/jason-osiecki-4867474",
+        "hooks": ["*U of Maryland Finance grad", "*Ex-National Funding, Quick Bridge", "Ex-Five Point Capital director"]
+      }
+    ],
+    "news": [
+      {"h": "Good Funding Ranked #2 on OCBJ Fastest-Growing List", "s": "Orange County Business Journal, 2023", "d": "Good Funding achieved 650% two-year revenue growth, ranking #2 on the Orange County Business Journal's fastest-growing midsize private companies list."},
+      {"h": "Good Funding Secures $20MM Revolving Credit Facility", "s": "ABF Journal, 2021", "d": "Closed inaugural institutional financing: $20M senior revolving credit facility with accordion option to $30M from U.S.-based credit-focused asset manager."}
+    ]
+  },
+  {
+    "id": 1673,
+    "name": "Idea 247, Inc.",
+    "leaders": [
+      {
+        "n": "Justin Leto",
+        "t": "CEO & Co-Founder",
+        "bg": "Florida licensed trial lawyer who co-founded Idea Financial in 2017 from his law firm conference room. Also co-founded Leto | Bassuk law firm and insurance startup Level Insurance (now LevelEsq litigation financing). BS from University of Arizona, JD from University of Miami School of Law. Led company past $1B in total funding as of July 2025 across 10,000+ businesses.",
+        "li": "https://www.linkedin.com/in/justincleto/",
+        "hooks": ["*Attorney turned fintech founder", "*Surpassed $1B in originations", "U of Miami JD"]
+      },
+      {
+        "n": "Larry Bassuk",
+        "t": "President & Co-Founder",
+        "bg": "Florida trial lawyer who co-founded Idea Financial with Justin Leto after meeting in the same office building. Spent nearly a decade as commercial litigator before pivoting to fintech. Undergraduate and JD from University of Florida. Co-founded Leto | Bassuk law firm and Level Insurance. Miami native active in philanthropy, serving on and chairing several boards.",
+        "li": "https://www.linkedin.com/in/larrybassukidea/",
+        "hooks": ["*UF law grad, trial attorney", "Co-founded Leto|Bassuk law firm", "Miami philanthropy board chair"]
+      }
+    ],
+    "news": [
+      {"h": "Idea Financial Surpasses $1 Billion in Business Funding", "s": "PR Newswire/Yahoo Finance, Jul 2025", "d": "Crossed $1B milestone since 2017 inception, supporting 10,000+ businesses with revolving lines of credit up to $350K."},
+      {"h": "Idea Financial Secures $20M Corporate Term Loan from EverBank", "s": "PR Newswire, Jan 2026", "d": "Closed $20M corporate term loan to accelerate growth in core small business lending and legal financing through LevelEsq platform."},
+      {"h": "Idea Financial Secures $50M Warehouse Facility", "s": "BusinessWire, Sep 2024", "d": "Closed new $50M warehouse facility led by Performance Trust Capital Partners, increasing maximum SMB lending limit to $350K."}
+    ]
+  },
+  {
+    "id": 1676,
+    "name": "INFINITY CAPITAL",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Infinity Capital's technology-driven MCA and business lending operations with 24-hour decision-making from Oklahoma. Limited public information available about specific leadership.",
+        "li": "",
+        "hooks": ["Tech-driven MCA funder"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1692,
+    "name": "LENDZI/DH & RK INVESTMENTS/LNDZI",
+    "leaders": [
+      {
+        "n": "David Halverson",
+        "t": "CEO",
+        "bg": "CEO of Lendzi. Previously held roles at FAM Capital Group, Rapid Armored Corp, and Patriot Courier Service Inc. BS in Business Administration from Fordham University (2004-2008). Based in Los Angeles, CA. Oversees 60+ lending partnerships and $500M+ raised for entrepreneurs.",
+        "li": "https://www.linkedin.com/in/david-halverson-034a0714/",
+        "hooks": ["Fordham University grad", "$500M+ raised for entrepreneurs", "LA-based fintech CEO"]
+      },
+      {
+        "n": "Ryan Kelly",
+        "t": "Co-Founder & Partner",
+        "bg": "Co-founded Lendzi in July 2020 from Boca Raton, FL. Forbes Business Council official member since December 2021. Bachelor's degree from Iona College (2001-2005). Background in sales management, business development, banking, credit analysis, and investment banking.",
+        "li": "https://www.linkedin.com/in/ryanekelly1/",
+        "hooks": ["*Forbes Business Council member", "Iona College grad", "Boca Raton-based co-founder"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1708,
+    "name": "NETFUNDING",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads NetFunding's operations with approximately 430 employees in Texas, providing business funding solutions. Limited public information available about specific leadership.",
+        "li": "",
+        "hooks": ["Texas-based, 430 employees"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1712,
+    "name": "NRS FUNDING",
+    "leaders": [
+      {
+        "n": "Elie Y. Katz",
+        "t": "Founder, President & CEO",
+        "bg": "Founded National Retail Solutions in 2015. Owns multiple independent businesses. Served as Mayor of Teaneck, New Jersey (2006-2008). Built NRS to 23,000+ POS terminals nationwide with divisions including POS, Digital Media, NRS Pay, NRS Insights, NRS Funding, NRS Petro, and NRS EBT. Led company to win 2025 Visionary Spotlight Award.",
+        "li": "https://www.linkedin.com/in/katz07666",
+        "hooks": ["*Former Mayor of Teaneck NJ", "*2025 Visionary Spotlight Award", "Built 23K+ POS terminal network"]
+      },
+      {
+        "n": "Eli Korn",
+        "t": "COO",
+        "bg": "COO at National Retail Solutions since October 2018, previously VP from 2015-2018. 15+ years experience in grocery, wholesale, and CPG industries. Manages NRS Digital Media division for on-screen advertising sales and retail scan data. MBA in Finance from Touro University California (2013-2015). Previously at Restaurant Depot, Rainbow Paper Sales, and Supersol Supermarkets.",
+        "li": "https://www.linkedin.com/in/eli-korn-42155945/",
+        "hooks": ["*15+ years grocery/wholesale CPG", "Touro University MBA Finance", "NRS digital media & data leader"]
+      }
+    ],
+    "news": [
+      {"h": "NRS Wins 2025 Visionary Spotlight Award", "s": "NRS, 2025", "d": "National Retail Solutions recognized with 2025 Visionary Spotlight Award for Best Emerging Technology Breakthrough."},
+      {"h": "NRS Deploys Altria Tier 4 Program Across POS Network", "s": "The Indian Eye, Dec 2025", "d": "Integrated Altria's Tier 4 loyalty program directly into NRS POS systems, enabling independent retailers to compete with larger chains on digital trade incentives."},
+      {"h": "NRS Partners with NationsBenefits for OTC Card Acceptance", "s": "NRS, 2025", "d": "Partnership enables 'One Tap' OTC card acceptance for independent retailers nationwide through NRS POS terminals."}
+    ]
+  },
+  {
+    "id": 1727,
+    "name": "PROSPERUM",
+    "leaders": [
+      {
+        "n": "Gabriella Gorobets",
+        "t": "Manager, ISO Relations",
+        "bg": "Manages ISO relationships at Prosperum Funding in New York. Previously founded Prime Choice Solutions Inc. Earlier career includes Senior Funding Specialist at Merchant Industry and Senior Account Executive at Merchant Processing Services where she introduced cash advance programs to business owners.",
+        "li": "https://www.linkedin.com/in/gabriella-gorobets/",
+        "hooks": ["Founded Prime Choice Solutions", "Ex-Merchant Industry specialist", "ISO relationship manager"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1737,
+    "name": "ROYAL FUNDING",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Royal Funding Group's operations at 180 Maiden Lane in NYC, with over $1B funded and 15+ financing products. Limited public information available about specific leadership.",
+        "li": "",
+        "hooks": ["$1B+ funded", "180 Maiden Lane NYC"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1746,
+    "name": "SMALL BUSINESS FUNDING",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Small Business Funding's operations from King of Prussia, PA, providing fast business funding nationwide for over 12 years. Limited public information available about specific leadership.",
+        "li": "",
+        "hooks": ["King of Prussia PA based", "12+ years in business"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1757,
+    "name": "TBF Group",
+    "leaders": [
+      {
+        "n": "Brett Boehm",
+        "t": "CEO",
+        "bg": "Co-founded TBF Financial in 1998 with his father Robert and brother Adam. Took over as CEO in 2010, focusing on business development and marketing to expand TBF's national footprint. 27+ years in commercial debt buying, pioneering the purchase of non-performing equipment leases. BA from Indiana University, JD from UIC (formerly John Marshall) Law School.",
+        "li": "https://www.linkedin.com/in/brettboehm/",
+        "hooks": ["*27+ years commercial debt buying", "Indiana U grad, UIC law degree", "*Pioneered equipment lease debt buying"]
+      },
+      {
+        "n": "Adam Boehm",
+        "t": "CFO",
+        "bg": "Co-founded TBF Financial in 1998 with father and brother. Took over as CFO from his father Robert in 2022. Created and maintains TBF's proprietary Data Driven True Market Pricing algorithm using 27+ years of debt recovery data. Recently launched MarkTrue, upgraded pricing algorithm for greater accuracy and speed. Indiana University finance degree.",
+        "li": "",
+        "hooks": ["*Created MarkTrue pricing algorithm", "Indiana U finance degree", "CFO since 2022"]
+      },
+      {
+        "n": "Robert Boehm",
+        "t": "Co-Founder",
+        "bg": "Retired attorney who co-founded TBF in 1998 after a career representing 30+ banks and financial institutions in the Chicago area. Graduated from DePaul University Law School in 1966, admitted to Illinois bar. Served as TBF's CFO until 2022 when son Adam took over. Principally responsible for overseeing TBF's finances.",
+        "li": "https://www.linkedin.com/in/robert-boehm-a786029/",
+        "hooks": ["*DePaul Law 1966, banking attorney", "Founded TBF with sons 1998", "Represented 30+ banks"]
+      }
+    ],
+    "news": [
+      {"h": "TBF Announces Development of Commercial Debt Pricing Algorithm", "s": "deBanked/ELFA, Mar 2025", "d": "Launched MarkTrue proprietary pricing algorithm based on 27+ years of debt recovery data covering all types and grades of commercial paper."},
+      {"h": "TBF Financial Quarterly Update: PE, Debt & 2026 Market", "s": "TBF Financial, 2025", "d": "CEO Brett Boehm provided insights on commercial debt buying trends, private equity activity, and 2026 market outlook."}
+    ]
+  },
+  {
+    "id": 1759,
+    "name": "THRIVE FUNDING",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Thrive Funding's institutional private credit operations serving the middle market from Utah. Limited public information available about specific leadership.",
+        "li": "",
+        "hooks": ["Utah-based private credit"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1760,
+    "name": "THRYVE CAPITAL",
+    "leaders": [
+      {
+        "n": "Steve Weinrib",
+        "t": "Founder & CEO",
+        "bg": "Founded Thryve Capital in 2015, building it into one of the country's largest MCA lenders with $1B+ funded. MBA in Finance from Hofstra University Frank Zarb School of Business (2001-2004). Previously Director of eCommerce at ABC Carpet & Home (2005-2015). Also Principal at L2 Investments (real estate, since 2020) and Chief Everything Officer at Lynks Capital (since 2024).",
+        "li": "https://www.linkedin.com/in/steveweinrib/",
+        "hooks": ["*Hofstra MBA Finance", "*Also runs Lynks Capital & L2 Investments", "Ex-ABC Carpet eCommerce director"]
+      },
+      {
+        "n": "Fritz Desir",
+        "t": "Director, ISO Relations",
+        "bg": "Director of ISO Relations at Thryve Capital (a Fundry Brand), managing ISO partnerships and deal flow for one of the largest MCA operations in the country. Limited additional public background information available.",
+        "li": "https://www.linkedin.com/in/fritz-desir-477747142/",
+        "hooks": ["ISO relations director", "Fundry brand leader", "Thryve Capital deal flow mgr"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1761,
+    "name": "TIGER CAPITAL",
+    "leaders": [
+      {
+        "n": "Dov L.",
+        "t": "CEO",
+        "bg": "Leads Tiger Capital Funding's unsecured business financing operations. Company founded in 2016 and has served 5,000+ businesses nationwide with fast 24-hour decisions. Provides bridge loans, lines of credit, debt consolidations, inventory financing, and revenue-based advances. Miami-based. Limited additional public background information available.",
+        "li": "",
+        "hooks": ["Founded Tiger Capital 2016", "5,000+ businesses served", "Unsecured MCA specialist"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1766,
+    "name": "TRUST CAPITAL",
+    "leaders": [
+      {
+        "n": "Paul Kendall",
+        "t": "Founder, CEO & President",
+        "bg": "Founded Trust Capital in 2013 in San Diego. Self-made entrepreneur who entered equipment financing while homeless and living out of his Ford Tempo. Dropped out of high school, came back to finish but did not attend college. First job in the industry found through a penny saver ad at US Capital. Worked at Equi-Capital in Newport Beach before founding Trust Capital. Specializes in 20+ verticals including cannabis equipment, tow trucks, medical equipment, and construction.",
+        "li": "https://www.linkedin.com/in/pauldkendall/",
+        "hooks": ["*Rags-to-riches: homeless to CEO", "*Dominates cannabis equipment finance", "$25K to $50M deal range"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1767,
+    "name": "UFS",
+    "leaders": [
+      {
+        "n": "Jake Winograd",
+        "t": "Partner",
+        "bg": "Partner at Unique Funding Solutions. Currently Managing Partner at K20 Fund (investment fund). Serial entrepreneur who launched his first DTC startup at age 20, growing it to several million in annual sales before successfully exiting to a large chain. Background spans retail, vitamins, and eyewear ventures.",
+        "li": "https://www.linkedin.com/in/jake-winograd-69202249/",
+        "hooks": ["*Serial entrepreneur since age 20", "*Managing Partner at K20 Fund", "Exited DTC startup to large chain"]
+      },
+      {
+        "n": "Irving Winograd",
+        "t": "Head of Business Development",
+        "bg": "Leads business development and ISO relationships at Unique Funding Solutions in Brooklyn, NY. Drives deal flow across diverse industries. Company offers funding up to $800K with terms up to 9 months and buy rates as low as 1.30%. Has 500+ LinkedIn connections in the alternative finance space.",
+        "li": "https://www.linkedin.com/in/irving-winograd-9bb30112b/",
+        "hooks": ["Brooklyn-based BD leader", "Alternative finance network builder", "UFS deal flow driver"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1769,
+    "name": "UNITED FIRST FUNDING",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Founded by a group of investment banking, commercial banking, and mortgage banking experts at 800 Third Ave, New York. Provides MCAs, business loans, invoice factoring, and equipment financing. Limited public information available about specific leadership.",
+        "li": "",
+        "hooks": ["800 Third Ave NYC", "Founded by banking experts"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1776,
+    "name": "Finstro",
+    "leaders": [
+      {
+        "n": "Brad Prout",
+        "t": "Founder & CEO",
+        "bg": "Founded Finstro in Sydney in 2014, relocated to the US to oversee expansion into the $26T B2B market. 30+ years in financial markets. Previously SVP at Bankers Trust Australia on Structured Finance Team. Founded and served as Managing Director of ASX-listed Ethane Pipeline Trust. Also CEO of FC Capital Holdings and Business Cash Flow Solutions. Grew Finstro to 7,000+ SMBs and AUD $1B+ in capital deployed. Increased global team by 25% for US rollout.",
+        "li": "https://www.linkedin.com/in/brad-prout-552b6112/",
+        "hooks": ["*Ex-Bankers Trust SVP", "*Founded ASX-listed Ethane Pipeline", "30+ years financial markets"]
+      }
+    ],
+    "news": [
+      {"h": "Finstro Launches U.S.-Based Trade Credit Solution", "s": "BusinessWire, Jun 2021", "d": "Finstro announced intent to launch technology-driven trade credit and payment solution in the US $26T B2B market, with CEO Brad Prout relocating to oversee expansion."},
+      {"h": "Finstro Debuts Corporate Card and API Integration in US", "s": "PYMNTS, 2021", "d": "Launched B2B card and ERP integration solutions for the US market, leveraging proprietary data-driven credit engine."}
+    ]
+  },
+  {
+    "id": 1777,
+    "name": "General Merchant Funding",
+    "leaders": [
+      {
+        "n": "Craig Clark",
+        "t": "President & Key Principal",
+        "bg": "Founded General Merchant Funding in 2009 in Hartford, Connecticut. Background as an entrepreneur who shaped his vision to provide tailored financing for SMBs. Has facilitated over $200M in unsecured capital. Team includes Isaiah Clark (ISO Relations Manager since 2015) and Mason Loots (Technology Director since 2020). Located at 150 Trumbull St, Hartford.",
+        "li": "https://www.linkedin.com/in/craig-clark-b17ba4148/",
+        "hooks": ["*Founded in 2009, Hartford CT", "$200M+ in unsecured capital", "Entrepreneur turned lender"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1778,
+    "name": "Imperial Advance",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Executives with 30+ years of combined experience in lending. Now operating as Funderial from 65 W 36th St, Suite 901, New York. Over $2B in business loans funded nationwide. Rebranded from Imperial Advance to Funderial. Offers financing from 160+ lending partners including lines of credit, SBA loans, and MCAs. Minimum credit score 500 accepted.",
+        "li": "",
+        "hooks": ["*Rebranded to Funderial", "$2B+ in business loans funded", "160+ lending partners"]
+      }
+    ],
+    "news": [
+      {"h": "Funderial Business Loans 2025 Review", "s": "Bankrate, 2025", "d": "Funderial (formerly Imperial Advance) reviewed as direct lender and marketplace with 40+ partners, focusing on short-term loans for borrowers of all credit types."}
+    ]
+  },
+  {
+    "id": 1779,
+    "name": "Imperial Funding",
+    "leaders": [
+      {
+        "n": "Randall Wooster",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Imperial Capital in 1997. Previously Managing Director at Dabney/Resnick/Imperial managing sales and trading, head trader at Canyon Partners, and trader/analyst at R.D. Smith & Co. focusing on distressed securities. Began career in Tax Department at Arthur Andersen & Co. as a licensed CPA. BS in Accounting and Economics from NYU, MBA from Duke University. Named to LA500 by LA Business Journal.",
+        "li": "https://www.linkedin.com/in/randy-wooster-626700106/",
+        "hooks": ["*Ex-Arthur Andersen CPA", "*NYU BS & Duke MBA", "LA500 Business Journal honoree"]
+      },
+      {
+        "n": "Christopher Shepard",
+        "t": "EVP, Head of Investment Banking & Capital Markets",
+        "bg": "Executive Vice President leading Imperial Capital's investment banking and capital markets divisions. 25+ years experience in financings, M&A, and restructurings. Previously Associate at Milbank Tweed Hadley & McCloy (NYC-based law firm) specializing in public securities and M&A transactions. BS in Accounting, MBA, and JD all from University of Michigan.",
+        "li": "",
+        "hooks": ["*BS/MBA/JD from U of Michigan", "Ex-Milbank Tweed attorney", "25+ years M&A experience"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1781,
+    "name": "Revenue Funding",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Leads Revenue Funding's MCA and revenue-based financing operations in Florida. Limited public information available about specific leadership.",
+        "li": "",
+        "hooks": ["Florida-based revenue funder"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1782,
+    "name": "Smartbiz",
+    "leaders": [
+      {
+        "n": "Evan Singer",
+        "t": "CEO & Chair of the Board",
+        "bg": "CEO of SmartBiz since 2013. Led landmark acquisition of Centrust Bank in March 2025, making SmartBiz the first fintech to become a bank during Trump's second term and first OCC fintech approval since 2021. BA with honors from Stanford University in Public Policy. Career began at Procter & Gamble (1993-1998) in customer business development. Also served as GM at Align Technology, President at Purity Organic, and CRO at Milton's Baking. Oversees 230,000+ loans totaling $9B+.",
+        "li": "https://www.linkedin.com/in/evan1singer/",
+        "hooks": ["*Stanford honors graduate", "*First fintech-to-bank in Trump era", "Ex-P&G, Align Technology"]
+      },
+      {
+        "n": "Gerard Buccino",
+        "t": "President",
+        "bg": "Former CEO of Centrust Bank, a Chicago-based community bank founded in 2006 focused on business lending to SMBs. Became President of SmartBiz Bank following the March 2025 acquisition. Continues to serve on the SmartBiz Board. Centrust's Northbrook branch and branding remain as a division of SmartBiz Bank in the Chicago area.",
+        "li": "https://www.linkedin.com/in/gerard-buccino-38b1999/",
+        "hooks": ["*Former Centrust Bank CEO", "Community banking veteran", "Became president via acquisition"]
+      }
+    ],
+    "news": [
+      {"h": "SmartBiz Acquires Centrust Bank, Becomes Federally Chartered Bank", "s": "BusinessWire/Banking Dive, Mar 2025", "d": "SmartBiz completed acquisition of Centrust Bank N.A. with approval from Federal Reserve and OCC, becoming the first fintech-to-bank transition in the current administration."},
+      {"h": "SmartBiz Bank Announces Official Board and Organizational Structure", "s": "Yahoo Finance, 2025", "d": "Announced post-acquisition leadership with Evan Singer as CEO/Chair, Gerard Buccino as President, and full board composition."},
+      {"h": "SmartBiz Acquisition Holds Promise for More Fintech-Bank Tie-Ups", "s": "The Financial Brand, 2025", "d": "Industry analysis suggests SmartBiz deal could restart the race for bank charters among fintechs under the new regulatory environment."}
+    ]
+  },
+  {
+    "id": 1785,
+    "name": "YELLOWSTONE CAPITAL",
+    "leaders": [
+      {
+        "n": "Isaac Stern",
+        "t": "Former CEO",
+        "bg": "Co-founded Yellowstone Capital in 2009. In January 2025, settled with NY Attorney General for $1.065B — one of the largest predatory lending settlements in history. Permanently banned from the merchant cash advance industry. Company found to have exploited small businesses with fraudulent loans disguised as MCAs at interest rates up to 820% per year. Settlement delivered $534M in debt relief and $16.1M in restitution to 18,000+ affected businesses nationwide.",
+        "li": "",
+        "hooks": ["*Permanently banned from MCA", "*$1.065B NY AG settlement", "Interest rates up to 820%"]
+      },
+      {
+        "n": "Jeffrey Reece",
+        "t": "Former President",
+        "bg": "Former Director at Cogent Partners (PE-focused investment bank) in Shanghai, covering Asian clients. Prior roles: VP at Ewing Management Group (Carlyle affiliate) for China growth equity, and Associate at Oliver Wyman Consulting. Joined Yellowstone as President in 2015 and became part owner. BS in Economics from Utah State University. Conversational in Russian and Mandarin. Permanently banned from MCA industry as part of the 2025 settlement.",
+        "li": "https://www.linkedin.com/in/jeff-reece-096b36/",
+        "hooks": ["*Banned from MCA industry", "*Ex-Cogent Partners Shanghai director", "Speaks Russian & Mandarin"]
+      }
+    ],
+    "news": [
+      {"h": "NY AG Announces $1.065 Billion Settlement with Yellowstone Capital", "s": "NY Attorney General, Jan 2025", "d": "AG Letitia James announced settlement with 25 predatory lending entities controlled by Yellowstone, delivering $534M in debt relief and $16.1M restitution to 18,000+ businesses."},
+      {"h": "Yellowstone Capital Principals Permanently Barred from MCA Industry", "s": "Hudson Cook/FindLaw, Jan 2025", "d": "CEO Isaac Stern and President Jeffrey Reece permanently banned from sales-based financing business after investigation found loans with up to 820% annual interest rates."},
+      {"h": "Hundreds of Yellowstone Judgments to Be Vacated by Court", "s": "Rockland County Business Journal, Apr 2025", "d": "Rockland County Court began vacating hundreds of judgments held by Yellowstone's predatory lending entities following the settlement."}
+    ]
+  }
+]
