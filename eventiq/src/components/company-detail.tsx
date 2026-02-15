@@ -67,6 +67,7 @@ export function CompanyDetail({
   const [localNotes, setLocalNotes] = useState(notes);
   const [iceIndex, setIceIndex] = useState(0);
   const [copiedLeader, setCopiedLeader] = useState<string | null>(null);
+  const [expandedMessage, setExpandedMessage] = useState<string | null>(null);
   const researched = isResearched(company);
   const quickLinks = generateQuickLinks(company);
 
@@ -220,20 +221,19 @@ export function CompanyDetail({
                       </div>
                       <div className="flex items-center gap-1.5">
                         <button
-                          onClick={(e) => { e.stopPropagation(); copyMessage(leader); }}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setExpandedMessage(expandedMessage === leader.n ? null : leader.n);
+                          }}
                           className={cn(
                             "flex items-center gap-1 text-[10px] px-2 py-1 rounded-md transition-colors",
-                            copiedLeader === leader.n
-                              ? "bg-[var(--icp)]/20 text-[var(--icp)]"
+                            expandedMessage === leader.n
+                              ? "bg-primary/20 text-primary"
                               : "bg-primary/10 text-primary hover:bg-primary/20"
                           )}
-                          title="Copy outreach message"
+                          title="View outreach message"
                         >
-                          {copiedLeader === leader.n ? (
-                            <><Check className="h-3 w-3" /> Copied</>
-                          ) : (
-                            <><Mail className="h-3 w-3" /> Message</>
-                          )}
+                          <Mail className="h-3 w-3" /> Message
                         </button>
                         {leader.li && (
                           <a
@@ -264,6 +264,32 @@ export function CompanyDetail({
                             {hook.startsWith("*") ? hook.slice(1) : hook}
                           </span>
                         ))}
+                      </div>
+                    )}
+                    {/* Expanded message preview */}
+                    {expandedMessage === leader.n && (
+                      <div className="mt-2 rounded-md border border-primary/20 bg-primary/5 p-3">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-[10px] uppercase tracking-wider text-primary/70 font-semibold">Outreach Message</span>
+                          <button
+                            onClick={(e) => { e.stopPropagation(); copyMessage(leader); }}
+                            className={cn(
+                              "flex items-center gap-1 text-xs px-3 py-1.5 rounded-md font-medium transition-colors",
+                              copiedLeader === leader.n
+                                ? "bg-[var(--icp)] text-white"
+                                : "bg-primary text-white hover:bg-primary/90"
+                            )}
+                          >
+                            {copiedLeader === leader.n ? (
+                              <><Check className="h-3.5 w-3.5" /> Copied!</>
+                            ) : (
+                              <><Copy className="h-3.5 w-3.5" /> Copy</>
+                            )}
+                          </button>
+                        </div>
+                        <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">
+                          {generateOutreachMessage(leader, company)}
+                        </pre>
                       </div>
                     )}
                   </div>
