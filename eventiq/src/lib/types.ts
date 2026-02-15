@@ -17,6 +17,95 @@ export interface Leader {
   li?: string;
 }
 
+export function generateOutreachMessage(leader: Leader, company: Company): string {
+  const firstName = leader.n.split(' ')[0];
+  const companyName = company.name;
+
+  // Pick the best hook (prefer starred ones)
+  const starredHook = leader.hooks?.find(h => h.startsWith('*'));
+  const hookText = starredHook
+    ? starredHook.slice(1).trim()
+    : leader.hooks?.[0] || '';
+
+  // Build personalized opener from hook
+  let opener = '';
+  if (hookText) {
+    opener = `I came across your background — ${hookText.toLowerCase()} caught my eye.`;
+  } else if (leader.bg && leader.bg.length > 20) {
+    // Extract first meaningful detail from bg
+    const bgFirst = leader.bg.split('.')[0];
+    opener = `I came across your work at ${companyName} — impressive background.`;
+    if (bgFirst.length < 100) {
+      opener = `I noticed your profile — ${bgFirst.toLowerCase().includes(firstName.toLowerCase()) ? 'impressive trajectory' : bgFirst}.`;
+    }
+  }
+
+  // Company-relevant value prop
+  let valueProp = '';
+  if (company.tp && company.tp.length > 0) {
+    // Use the shortest talking point
+    const shortest = company.tp.reduce((a, b) => a.length < b.length ? a : b);
+    valueProp = shortest;
+  } else {
+    valueProp = `We help companies like ${companyName} automate underwriting decisions — currently powering 450+ lenders.`;
+  }
+
+  // CTA
+  const cta = company.ask
+    ? company.ask
+    : `Would love to show you how we can help ${companyName}. Open to a quick chat?`;
+
+  return `Hi ${firstName},
+
+${opener}
+
+${valueProp}
+
+${cta}
+
+Best,
+[Your Name]
+HyperVerge`;
+}
+
+export function generateQuickLinks(company: Company): { label: string; url: string; icon: 'globe' | 'linkedin' | 'search' | 'news' }[] {
+  const links: { label: string; url: string; icon: 'globe' | 'linkedin' | 'search' | 'news' }[] = [];
+  const encodedName = encodeURIComponent(company.name);
+
+  if (company.website) {
+    links.push({ label: 'Website', url: company.website, icon: 'globe' });
+  }
+  if (company.linkedinUrl) {
+    links.push({ label: 'LinkedIn', url: company.linkedinUrl, icon: 'linkedin' });
+  }
+  // Google search
+  links.push({
+    label: 'Google',
+    url: `https://www.google.com/search?q=${encodedName}+small+business+lending`,
+    icon: 'search',
+  });
+  // LinkedIn search
+  links.push({
+    label: 'LinkedIn Search',
+    url: `https://www.linkedin.com/search/results/companies/?keywords=${encodedName}`,
+    icon: 'linkedin',
+  });
+  // deBanked search
+  links.push({
+    label: 'deBanked',
+    url: `https://debanked.com/?s=${encodedName}`,
+    icon: 'news',
+  });
+  // Crunchbase search
+  links.push({
+    label: 'Crunchbase',
+    url: `https://www.crunchbase.com/textsearch?q=${encodedName}`,
+    icon: 'search',
+  });
+
+  return links;
+}
+
 export type CompanyType = 'SQO' | 'Client' | 'ICP' | 'TAM';
 
 export interface Company {

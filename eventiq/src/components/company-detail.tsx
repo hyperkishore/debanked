@@ -1,7 +1,7 @@
 "use client";
 
-import { Company, RatingData, EngagementEntry } from "@/lib/types";
-import { isResearched } from "@/lib/types";
+import { Company, Leader, RatingData, EngagementEntry } from "@/lib/types";
+import { isResearched, generateOutreachMessage, generateQuickLinks } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -23,6 +23,10 @@ import {
   MapPin,
   Globe,
   Building2,
+  Copy,
+  Link,
+  Search,
+  Mail,
 } from "lucide-react";
 import { useState, useCallback } from "react";
 
@@ -62,7 +66,9 @@ export function CompanyDetail({
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [iceIndex, setIceIndex] = useState(0);
+  const [copiedLeader, setCopiedLeader] = useState<string | null>(null);
   const researched = isResearched(company);
+  const quickLinks = generateQuickLinks(company);
 
   const shuffleIce = useCallback(() => {
     if (company.icebreakers && company.icebreakers.length > 0) {
@@ -74,6 +80,14 @@ export function CompanyDetail({
     setLocalNotes(value);
     onSaveNotes(company.id, value);
   };
+
+  const copyMessage = useCallback((leader: Leader) => {
+    const msg = generateOutreachMessage(leader, company);
+    navigator.clipboard.writeText(msg).then(() => {
+      setCopiedLeader(leader.n);
+      setTimeout(() => setCopiedLeader(null), 2000);
+    });
+  }, [company]);
 
   return (
     <ScrollArea className="h-full">
@@ -204,17 +218,35 @@ export function CompanyDetail({
                         <span className="text-sm font-medium">{leader.n}</span>
                         <span className="text-xs text-muted-foreground ml-2">{leader.t}</span>
                       </div>
-                      {leader.li && (
-                        <a
-                          href={leader.li}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-primary hover:text-primary/80"
-                          onClick={(e) => e.stopPropagation()}
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={(e) => { e.stopPropagation(); copyMessage(leader); }}
+                          className={cn(
+                            "flex items-center gap-1 text-[10px] px-2 py-1 rounded-md transition-colors",
+                            copiedLeader === leader.n
+                              ? "bg-[var(--icp)]/20 text-[var(--icp)]"
+                              : "bg-primary/10 text-primary hover:bg-primary/20"
+                          )}
+                          title="Copy outreach message"
                         >
-                          <Linkedin className="h-3.5 w-3.5" />
-                        </a>
-                      )}
+                          {copiedLeader === leader.n ? (
+                            <><Check className="h-3 w-3" /> Copied</>
+                          ) : (
+                            <><Mail className="h-3 w-3" /> Message</>
+                          )}
+                        </button>
+                        {leader.li && (
+                          <a
+                            href={leader.li}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:text-primary/80"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <Linkedin className="h-3.5 w-3.5" />
+                          </a>
+                        )}
+                      </div>
                     </div>
                     <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{leader.bg}</p>
                     {leader.hooks && leader.hooks.length > 0 && (
@@ -285,6 +317,28 @@ export function CompanyDetail({
                 </div>
               </Section>
             )}
+
+            {/* Sources / Quick Links */}
+            <Section icon={Link} title="Sources">
+              <div className="flex flex-wrap gap-1.5">
+                {quickLinks.map((link, i) => (
+                  <a
+                    key={i}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-[11px] px-2 py-1 rounded-md bg-secondary/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                  >
+                    {link.icon === 'globe' && <Globe className="h-3 w-3" />}
+                    {link.icon === 'linkedin' && <Linkedin className="h-3 w-3" />}
+                    {link.icon === 'search' && <Search className="h-3 w-3" />}
+                    {link.icon === 'news' && <Newspaper className="h-3 w-3" />}
+                    {link.label}
+                    <ExternalLink className="h-2.5 w-2.5 opacity-50" />
+                  </a>
+                ))}
+              </div>
+            </Section>
 
             {/* Talking Points */}
             {company.tp && company.tp.length > 0 && (
