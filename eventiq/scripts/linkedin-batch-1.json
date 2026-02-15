@@ -1,0 +1,212 @@
+[
+  {
+    "companyId": 3,
+    "companyName": "PIRS Capital",
+    "leaderName": "Igor Shliosberg",
+    "leaderTitle": "CCO & Director of Credit",
+    "leaderBg": "Dual compliance and credit leadership role at PIRS Capital, overseeing both regulatory compliance standards and credit risk assessment. Based in Miami Beach, FL. Previously Manager of Back Office at Argus Merchant Services (where he worked alongside Jacob Shimon), and held positions at DeSola Group and Speedus Corp. His dual CCO/Director of Credit role is unusual in the MCA space — most companies separate compliance from credit decisioning. Works closely with the data science team led by Director Sergey Kalika (ex-Thomson Reuters) to maintain PIRScore model integrity and compliance standards."
+  },
+  {
+    "companyId": 4,
+    "companyName": "Wing Lake Capital Partners",
+    "leaderName": "Angelina Fletcher",
+    "leaderTitle": "Director of Business Development",
+    "leaderBg": "Michigan State University graduate (Marketing). Midwest transplant now based in Southern California. Career spanned video production, fine arts, and real estate before entering business lending in 2019. Joined Wing Lake in May 2020 as Director of Business Development, managing and growing broker relationships. Featured on Wing Lake's Back to Business podcast (Episode 4) discussing remote work, team dynamics, and work-life balance. Represents Wing Lake at deBanked CONNECT conferences (Las Vegas, Miami). Active in growing Wing Lake's ISO/broker channel."
+  },
+  {
+    "companyId": 6,
+    "companyName": "FundKite",
+    "leaderName": "Gene Zeitlin",
+    "leaderTitle": "VP, Channel Partner Relations",
+    "leaderBg": "Decade+ in fintech. Manages ISO/broker channel partnerships. Focused on speed-to-approval as competitive differentiator for FundKite's partner network."
+  },
+  {
+    "companyId": 6,
+    "companyName": "FundKite",
+    "leaderName": "Justin Verger",
+    "leaderTitle": "VP, Treasury",
+    "leaderBg": "CUNY Brooklyn College. Manages capital deployment and risk at FundKite. Oversees treasury operations for the $900M+ funding platform."
+  },
+  {
+    "companyId": 7,
+    "companyName": "Vox Funding",
+    "leaderName": "Brian Mullins",
+    "leaderTitle": "CTO, Head of Technology & Data",
+    "leaderBg": "Leads technology, data analytics, and marketing at VOX Funding. Built the SYNQ API that powers VOX's integration with Cloudsquare's Salesforce-native platform. Primary technology buyer for the company."
+  },
+  {
+    "companyId": 7,
+    "companyName": "Vox Funding",
+    "leaderName": "Peter Reilly",
+    "leaderTitle": "CFO",
+    "leaderBg": "Oversees financial operations at VOX Funding. Focused on ROI and portfolio performance across the company's $750M+ in total funding."
+  },
+  {
+    "companyId": 7,
+    "companyName": "Vox Funding",
+    "leaderName": "Michael Mosiello",
+    "leaderTitle": "General Counsel",
+    "leaderBg": "Oversees legal and compliance for VOX Funding's alternative financing operations."
+  },
+  {
+    "companyId": 8,
+    "companyName": "CAN Capital",
+    "leaderName": "Edward Siciliano",
+    "leaderTitle": "CEO",
+    "leaderBg": "Rutgers University. 30+ years in commercial financing. Previously COO and Interim CEO at Marlin Business Services, where he drove 5x origination growth. Leads CAN Capital, the pioneer of the MCA industry (founded 1998) with $8B+ total capital deployed to 85K+ merchants."
+  },
+  {
+    "companyId": 8,
+    "companyName": "CAN Capital",
+    "leaderName": "Richard Irwin",
+    "leaderTitle": "CFO (CFA)",
+    "leaderBg": "Rutgers Business School. CFA charterholder. 30 years in finance. Appointed CFO at CAN Capital in October 2023. Oversees financial operations for the $8B+ deployed platform."
+  },
+  {
+    "companyId": 8,
+    "companyName": "CAN Capital",
+    "leaderName": "Kevin Duffy",
+    "leaderTitle": "SVP Sales & Business Development",
+    "leaderBg": "At CAN Capital for 20+ years since 2003. Manages ISO/broker partner program. One of the longest-tenured employees at the MCA industry pioneer."
+  },
+  {
+    "companyId": 8,
+    "companyName": "CAN Capital",
+    "leaderName": "Christopher Holland",
+    "leaderTitle": "Dir Partner Business Development",
+    "leaderBg": "University of Virginia. Previously at Marlin Capital Solutions and Direct Capital/CIT Bank. Builds and manages partner relationships for CAN Capital."
+  },
+  {
+    "companyId": 10,
+    "companyName": "Aspire Funding Platform",
+    "leaderName": "Ricky Singh",
+    "leaderTitle": "Manager, Operations & Marketing",
+    "leaderBg": "Dual-role managing operations and marketing at Aspire Funding Platform. Oversees day-to-day workflow and ISO partner attraction for the Woodcliff Lake, NJ-based funder."
+  },
+  {
+    "companyId": 10,
+    "companyName": "Aspire Funding Platform",
+    "leaderName": "Austin Zak",
+    "leaderTitle": "Manager, Underwriting",
+    "leaderBg": "Leads underwriting team at Aspire Funding Platform. Oversees deal evaluation and approval processes utilizing API and OCR technology for faster decisions."
+  },
+  {
+    "companyId": 10,
+    "companyName": "Aspire Funding Platform",
+    "leaderName": "Bernard Aquino",
+    "leaderTitle": "Senior Underwriting Specialist",
+    "leaderBg": "Hands-on underwriter at Aspire Funding Platform handling daily deal evaluations using the company's API/OCR technology stack."
+  },
+  {
+    "companyId": 11,
+    "companyName": "Simply Funding",
+    "leaderName": "Bernard Mittelman",
+    "leaderTitle": "Founder",
+    "leaderBg": "Founded Simply Funding in 2017 as a direct MCA funder in Manhattan's financial district. Company has since relocated to Jersey City and grown to 28 employees. Built the company from scratch with ISO-only distribution model, now doing A/B paper with weekly payments."
+  },
+  {
+    "companyId": 11,
+    "companyName": "Simply Funding",
+    "leaderName": "Marc Elias",
+    "leaderTitle": "CFO",
+    "leaderBg": "Oversees financial strategy, portfolio management, and risk assessment at Simply Funding. Key financial decision-maker for the 28-person Jersey City operation."
+  },
+  {
+    "companyId": 11,
+    "companyName": "Simply Funding",
+    "leaderName": "Joy Alhalab",
+    "leaderTitle": "ISO Relations Manager",
+    "leaderBg": "Manages all ISO and broker relationships at Simply Funding, which operates exclusively through an ISO distribution channel with no inside sales team."
+  },
+  {
+    "companyId": 13,
+    "companyName": "Elevate Funding",
+    "leaderName": "Mackenzie Mead",
+    "leaderTitle": "Manager, Underwriting",
+    "leaderBg": "Rose through ranks at Elevate from Underwriter to Senior to Manager. Deep knowledge of risk criteria and deal evaluation at Elevate Funding."
+  },
+  {
+    "companyId": 13,
+    "companyName": "Elevate Funding",
+    "leaderName": "Liam Donahue",
+    "leaderTitle": "Underwriter",
+    "leaderBg": "Joined Elevate Funding in February 2025. New hire indicates growing underwriting capacity at the firm."
+  },
+  {
+    "companyId": 14,
+    "companyName": "Velocity Capital Group",
+    "leaderName": "David Shensky",
+    "leaderTitle": "SVP Business Development",
+    "leaderBg": "Drexel University. Previously at Swift Financial and Legend Advance Funding. Drives business development for Velocity Capital Group."
+  },
+  {
+    "companyId": 14,
+    "companyName": "Velocity Capital Group",
+    "leaderName": "David Slepoy",
+    "leaderTitle": "VP Risk Management",
+    "leaderBg": "Background at EY and RSM US in accounting and risk. Oversees risk assessment and portfolio quality at Velocity Capital Group."
+  },
+  {
+    "companyId": 14,
+    "companyName": "Velocity Capital Group",
+    "leaderName": "Bogdan Klubuk",
+    "leaderTitle": "CMO",
+    "leaderBg": "Baruch College. Digital marketing background. Leads brand and growth strategy at Velocity Capital Group."
+  },
+  {
+    "companyId": 15,
+    "companyName": "Rapid Finance",
+    "leaderName": "Will Tumulty",
+    "leaderTitle": "CEO",
+    "leaderBg": "Former Navy SEAL — completed BUD/S training in Coronado, CA, and served 5 years active duty with SEAL Teams ONE and FOUR. BS in Aerospace Engineering from US Naval Academy. MS in Manufacturing Systems Engineering and MBA from Stanford University. 20+ years in banking and payments. Previous roles at Capital One, AccountNow (COO), and founded Ready Financial Group. Named CEO of Rapid Finance in 2015."
+  },
+  {
+    "companyId": 15,
+    "companyName": "Rapid Finance",
+    "leaderName": "Jeremy Brown",
+    "leaderTitle": "Executive Chairman & Co-Founder",
+    "leaderBg": "CPA. Duke University economics degree. Co-founded Rapid Finance in 2005. Board-level decision maker who helped build the company to $4.5B+ in total financing."
+  },
+  {
+    "companyId": 15,
+    "companyName": "Rapid Finance",
+    "leaderName": "Terry Thornton",
+    "leaderTitle": "Chief Credit & Analysis Officer",
+    "leaderBg": "20+ years in credit risk. Ex-Capital One. UVA economics. Key buyer for underwriting technology decisions at Rapid Finance."
+  },
+  {
+    "companyId": 16,
+    "companyName": "Forward Financing",
+    "leaderName": "Justin Bakes",
+    "leaderTitle": "Co-Founder & Executive Chairman",
+    "leaderBg": "12 years as CEO before transitioning to Executive Chairman. Ex-UBS Investment Bank (Associate Director in Madrid, Analyst in NYC), where he advised on M&A for financial institutions. Previously Director of M&A at Watsco, Inc. Boston College graduate. Co-founded Forward Financing in 2012. Also serves as Director at Camp Harbor View."
+  },
+  {
+    "companyId": 17,
+    "companyName": "idea Financial",
+    "leaderName": "Larry Bassuk",
+    "leaderTitle": "Co-Founder & President",
+    "leaderBg": "Commercial litigator. University of Florida law degree. Co-founded idea Financial with Leto. Handles operations and strategy. Values compliance and risk management — unusual backgrounds as two trial lawyers running a fintech."
+  },
+  {
+    "companyId": 17,
+    "companyName": "idea Financial",
+    "leaderName": "Christopher Ryan",
+    "leaderTitle": "Director of Sales Operations",
+    "leaderBg": "Previously CSO at UpWise. ICE (Intercontinental Exchange) trading floor background. Manages operational metrics at idea Financial."
+  },
+  {
+    "companyId": 17,
+    "companyName": "idea Financial",
+    "leaderName": "Julian Hernandez",
+    "leaderTitle": "Director of Revenue",
+    "leaderBg": "Rose from entry-level position during COVID to overseeing all sales and marketing at idea Financial. Featured in deBanked November 2025 profile. Known as a face-to-face networker who builds relationships at industry events."
+  },
+  {
+    "companyId": 18,
+    "companyName": "Gulf Coast Business Credit",
+    "leaderName": "Meg Roberson",
+    "leaderTitle": "SVP & National Sales Manager",
+    "leaderBg": "25+ years in sales, factoring, and asset-based lending. Texas A&M graduate. Appointed to International Factoring Association (IFA) Advisory Board for a two-year term. Manages national team of sales, underwriting, and marketing leaders. Responsible for new, organic, and acquisition originations. Wade Hladky praised her for 14 years of industry knowledge and unmatched work ethic at GCBC."
+  }
+]

@@ -1,11 +1,19 @@
-# EventIQ — MCA Market Intelligence Tool
+# EventIQ — Small Business Lending Market Intelligence Platform
 
 ## Project Overview
-Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge's BD team. Internal tool for MCA market intelligence at events like DeBanked CONNECT 2026.
+Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge's GTM and Product teams. Market intelligence platform for HyperVerge's expansion into the small business lending space — covering MCA, equipment finance, SBA lending, revenue-based financing, and adjacent verticals.
 
-**Version:** 2.2.01
+**Purpose:** Comprehensive intelligence on 1,000+ companies and their leaders in the small business lending ecosystem. Used by:
+- **BD/Sales** — Account research, conversation prep, engagement tracking, outreach prioritization
+- **Product** — Market landscape analysis, competitor feature mapping, trend identification
+- **Leadership** — TAM sizing, market segmentation, strategic planning
+
+**Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
+
+**Version:** 2.2.05
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
+**Live:** GitHub Pages (auto-deploy on push to main)
 
 ---
 
@@ -63,11 +71,12 @@ interface Leader {
 }
 ```
 
-### Leader Stats (as of v2.2.01)
-- **Total leaders:** 475
-- **With hooks:** 475 (100%)
-- **With LinkedIn URLs:** 241 (50.7%)
-- **With bg field:** 475 (100%)
+### Leader Stats (as of v2.2.05)
+- **Total leaders:** 476
+- **With hooks:** 476 (100%)
+- **With LinkedIn URLs:** 327 (68.7%)
+- **With bg field:** 476 (100%)
+- **Deep-researched companies:** 243/243 with leaders (100%)
 
 ---
 
@@ -210,11 +219,20 @@ Each agent receives a batch of companies and should:
 - **Applies to**: All new companies, all new leaders, all enrichment refreshes
 - **Enforced by**: Research Methodology section above is the mandatory standard
 
+### Strategic Pivot (2026-02-15) — From Event Tool to GTM Platform
+- **Decision**: EventIQ is no longer scoped to a single event (DeBanked CONNECT 2026). It is now the persistent market intelligence platform for HyperVerge's expansion into small business lending.
+- **Users**: BD/Sales (account research, engagement tracking), Product (market landscape, competitor analysis), Leadership (TAM sizing, strategy)
+- **Implications**: Features should serve ongoing GTM workflows, not just event prep. Data freshness, engagement analytics, and export/reporting matter more than event schedules and checklists.
+
+### v2.2.05 (2026-02-15) — 100% Deep Research Coverage
+- **Decision**: Deep web research completed for ALL 243 companies with leaders (P0, P1, P2, TAM)
+- **Stats**: 476 leaders, 327 LinkedIn URLs, 243 companies deep-researched
+- **Pipeline**: P0 (4 companies) → P1 (198 companies, 5 parallel agents) → P2+TAM (41 companies, 2 agents)
+
 ### v2.2.01 (2026-02-13) — Leader Hooks Enrichment
 - **Decision**: Generate hooks for all 475 leaders to reach 100% coverage
 - **Approach**: Merged existing enrich-result-3/4/5 (165 hooks), then spawned 5 parallel agents to generate hooks from existing `bg` data for remaining 288 leaders
-- **Limitation**: Hooks were text-extracted from existing bg fields, NOT from new web research
-- **TODO**: Re-research all 475 leaders with deep web research to replace shallow hooks
+- **Superseded by**: v2.2.02-v2.2.05 deep research replaced all shallow hooks with real web-researched hooks
 
 ### v2.1.00 (2026-02-13) — Engagement Tracking
 - **Decision**: Add contact-level engagement tracking system

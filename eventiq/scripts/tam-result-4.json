@@ -1,0 +1,863 @@
+[
+  {
+    "id": 1475,
+    "desc": "Flexibility Capital is a leading provider of small business loans and merchant cash advances with 20+ years of experience and Inc 5000 recognition. Offers working capital loans, equipment financing, SBA loans, lines of credit, and invoice factoring from $10K to $5M with 24-hour funding.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://flexibilitycapital.com"
+  },
+  {
+    "id": 1476,
+    "desc": "Symplifi Capital (d/b/a Fundonatic, 24 Capital) is a direct MCA funder offering 1st-5th position advances for small and medium-sized businesses. Powered by Funders App as its backend platform, offers up to $1M in quick capital with 24-hour funding and up to 16 points broker commission.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/symplifi-capital",
+    "website": "https://symplificapital.com"
+  },
+  {
+    "id": 1477,
+    "desc": "Quick Fi Capital (d/b/a Hardwick Investors Group) provides tailored financial solutions for small businesses including merchant cash advances, business lines of credit, and SBA loans. Based in Holtsville, NY with fast approval and minimal paperwork.",
+    "contacts": [{"n": "Daniel Hardwick", "t": "CEO"}],
+    "linkedinUrl": "",
+    "website": "https://www.quickficapital.com"
+  },
+  {
+    "id": 1478,
+    "desc": "IFS Capital is a Denver-based direct business financing company pioneering solutions since 1999. Provides tailored financing with expert loan advisors, serving as a direct source without middlemen or delays.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.ifscapital.com"
+  },
+  {
+    "id": 1479,
+    "desc": "InVision Funding Solutions provides business funding, financing, and merchant credit card processing services since 2014. Offers cash advances, lines of credit, term loans, and business financing to clients nationwide across various industries.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.InVisionFundingSolutions.com"
+  },
+  {
+    "id": 1480,
+    "desc": "Levo Funding is a San Diego-based fintech business lending provider founded by financial industry veterans with over three decades of combined expertise. Offers flexible funding options with streamlined application processes, focused on filling gaps in the market for small and medium-sized businesses.",
+    "contacts": [{"n": "Christopher Ives", "t": "CEO & Co-Founder"}, {"n": "Wendy Peza", "t": "COO & Co-Founder"}],
+    "linkedinUrl": "https://www.linkedin.com/company/levo-funding",
+    "website": "https://levofunding.com"
+  },
+  {
+    "id": 1481,
+    "desc": "LG Funding is a Brooklyn-based merchant cash advance provider offering funding to businesses through MCAs. Operates from 1218 Union St in Brooklyn, NY, serving small businesses with quick access to capital based on future credit card sales.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.lgfunding.com"
+  },
+  {
+    "id": 1482,
+    "desc": "Liberis is a global embedded finance platform founded in 2007, providing over $1.5B in funding across 70,000+ transactions to small businesses via 30+ strategic partners. Offers Business Cash Advance and Flexible Financing products through a fully automated API-driven platform in 13+ markets.",
+    "contacts": [{"n": "Rob Fairfield", "t": "CEO"}, {"n": "Trang Tran", "t": "Chief Commercial Officer"}],
+    "linkedinUrl": "https://www.linkedin.com/company/liberis1",
+    "website": "https://www.liberis.com/"
+  },
+  {
+    "id": 1483,
+    "desc": "Likety Capital is a Woodland Hills, CA-based alternative financing provider offering flexible funding solutions for business growth. Committed to transforming business financing by making capital access faster, more flexible, and personal through technology-enhanced services.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://Likety.com"
+  },
+  {
+    "id": 1484,
+    "desc": "LiteFund Solutions is a New York-based merchant cash advance company operating from 99 Wall Street. Provides business lending and MCA products to small businesses seeking working capital.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.litefund.co"
+  },
+  {
+    "id": 1485,
+    "desc": "Small business lending company based in Pennsylvania. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.loanability.com"
+  },
+  {
+    "id": 1486,
+    "desc": "Madison Advance is a New Jersey-based provider of small business financing through merchant cash advances. Purchases a percentage of future credit card sales and provides immediate cash advances to businesses.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://madisonadvance.com"
+  },
+  {
+    "id": 1487,
+    "desc": "Main Street Merchant Services provides business funding solutions to small businesses through cash advances. Based in Hauppauge, NY, offers easy and fast cash advances with repayment based on daily credit and debit card sales.",
+    "contacts": [{"n": "Joseph Massaro", "t": "Owner"}, {"n": "John Anthony", "t": "Operations Manager"}],
+    "linkedinUrl": "",
+    "website": "https://www.mainstreetcash.com"
+  },
+  {
+    "id": 1488,
+    "desc": "MicroAdvance Funding specializes in fast, flexible merchant cash advances up to $35,000 with 6-month terms, founded in 2021. Offers unsecured MCAs with approval in 24 hours, no collateral required, and no prepayment penalties.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://microadvance.com"
+  },
+  {
+    "id": 1490,
+    "desc": "PBT Assets (d/b/a Staten Finance Group) is a Florida-based sales-based financing provider registered in Virginia. Operates from St. Petersburg, FL providing merchant cash advance products to small businesses.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://statenfinance.com"
+  },
+  {
+    "id": 1492,
+    "desc": "Pinnacle Business Funding (d/b/a Custom Capital USA, EnN OD Capital) is a Baltimore-based MCA provider offering funding from $5,000 to $10M+ with funds available in days. Operates multiple brand names in the merchant cash advance space.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://pinnaclebusinessfunding.com"
+  },
+  {
+    "id": 1494,
+    "desc": "Small business lending company based in New York providing merchant cash advances. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://reliablefunding.source"
+  },
+  {
+    "id": 1496,
+    "desc": "ROC Funding Group is an NYC-based commercial financing company and one of the top private direct lending sources, offering MCAs, equipment leasing, and short-term loan products to businesses and franchise owners nationwide. Provides funding within 24-72 hours with reverse consolidation MCA programs.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/roc-funding-group-llc",
+    "website": "https://www.rocfundinggroup.com"
+  },
+  {
+    "id": 1497,
+    "desc": "Rocket Capital NY is a merchant cash advance provider offering a direct and hassle-free avenue to secure upfront capital for businesses. Based in Florida, provides MCA funding to small businesses nationwide.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://rocketcapllc.com"
+  },
+  {
+    "id": 1498,
+    "desc": "Ruby Capital Group offers AI-powered business funding with no credit score required, having served 13,500+ businesses. Provides lines of credit, term loans, MCAs, equipment financing, and SBA loans with funding in as little as 24 hours.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://rubycapitalgroup.com"
+  },
+  {
+    "id": 1499,
+    "desc": "Small business lending company based in New Jersey providing merchant cash advances and related financing products. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://securecapitalsolutions.com"
+  },
+  {
+    "id": 1500,
+    "desc": "Shine Capital Group provides funding and liquidity for small businesses, incorporated in Delaware with foreign qualifications in New York and Virginia. Also operates under DBAs Merchant Capital and Creditline Capital Group in New York.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://shinecapitalgroup.com"
+  },
+  {
+    "id": 1504,
+    "desc": "Sunrise Funding Group is a boutique business funding company and leading provider of funding solutions for small businesses. Offers MCA, short-term funding, working capital, A/R factoring, bridge financing, and expansion financing with 24-hour funding capability.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/sunrisefundinggroup",
+    "website": "https://sunrisefundinggrp.com"
+  },
+  {
+    "id": 1505,
+    "desc": "Traditions Funding has been helping businesses succeed for 15+ years, offering MCAs from $5,000 to $1M. Also provides equipment financing, credit card processing, and works with manufacturing, construction, commerce, and automotive industries.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.traditionsfunding.com"
+  },
+  {
+    "id": 1506,
+    "desc": "Vault Capital (d/b/a Vault 26 Capital) is a Miami, FL-based MCA provider combining capital, consulting, and credit. Offers merchant cash advances up to $200K per business location with 4-10 month terms and funding within 1 business day.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://vaultcapitalllc.com"
+  },
+  {
+    "id": 1507,
+    "desc": "Vivian Capital Group is a Newark, NJ-based MCA provider helping businesses access capital in 24 hours or less. Offers merchant cash advances with a 15-second application, 1-hour review, and same-day funding.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/vivian-capital-group",
+    "website": "https://viviancapitalgrp.com"
+  },
+  {
+    "id": 1508,
+    "desc": "Small business lending company based in New York providing merchant cash advances. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://XCapitalGrp.com"
+  },
+  {
+    "id": 1509,
+    "desc": "Zahav Asset Management is a New York-based provider of alternative financing to small businesses and merchants nationwide. Also offers syndicate partners high-yielding MCA investment opportunities with same-day funding and flexible guidelines.",
+    "contacts": [{"n": "Mike Zahav", "t": "Founder"}],
+    "linkedinUrl": "https://www.linkedin.com/company/zahav-asset-management",
+    "website": "https://zahavassetmgmt.com"
+  },
+  {
+    "id": 1510,
+    "desc": "ZLUR Funding is a Miami, FL-based merchant cash advance provider established in January 2024. Offers instant business funding with same-day capabilities, providing cash advances in exchange for a portion of future business deposits.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.zlur.com"
+  },
+  {
+    "id": 1512,
+    "desc": "American Financial Partners (AFP) is a nationally recognized independent equipment finance company headquartered in Gary, South Dakota since 2004. Specializes in equipment financing for construction, woodworking, machinery, quilting, embroidery, and creative services industries.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/american-financial-partners-inc.",
+    "website": "https://financewithafp.com"
+  },
+  {
+    "id": 1514,
+    "desc": "Belltower Funding is a merchant cash advance company based in Jersey City, NJ at 111 Town Square Place, Suite 1238. Provides MCA products to small businesses.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://belltowerfunding.com"
+  },
+  {
+    "id": 1515,
+    "desc": "BH Capital Funding is a Garden City, NY-based BBB-accredited provider of merchant cash advances up to $20M, term loans, and lines of credit. Also offers life insurance, annuities, and financial planning for businesses and individuals.",
+    "contacts": [{"n": "Eyal Yerushalmi", "t": "CEO"}],
+    "linkedinUrl": "",
+    "website": "https://bhcapitalfunding.com"
+  },
+  {
+    "id": 1518,
+    "desc": "CapEx Resources is a full-service business lending firm based in Massachusetts that secures competitive financing for small and medium-sized businesses. Offers working capital loans, lines of credit, business advances, term loans, SBA, and equipment financing with approvals from $10K to $300K.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://capexresources.com"
+  },
+  {
+    "id": 1520,
+    "desc": "Cardinal Business Financing is a Southbury, CT-based commercial financing company affiliated with over 100 lenders and underwriters. Provides equipment leasing, commercial real estate financing, accounts receivable financing, SBA loans, unsecured business loans, and debt restructuring.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://cardinalbusinessfinancing.com"
+  },
+  {
+    "id": 1521,
+    "desc": "Cashable Funding is a high-risk direct MCA funder for small business owners seeking immediate cash flow, with 10+ years underwriting experience. Offers daily, weekly, and hybrid repayment options with same-day funding, no FICO requirement, and 50% fee refund on completion.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://cashablefund.com"
+  },
+  {
+    "id": 1524,
+    "desc": "Enrado Capital is a Colorado-based funding provider with over a decade of experience, offering cash advances based on credit card sales and revolving lines of credit. Emphasizes honest, tailored funding solutions with a family background of small business ownership.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://enradocapital.com/"
+  },
+  {
+    "id": 1526,
+    "desc": "Financial Advantage Group provides working capital to small businesses in the US, Canada, and UK through term loans, merchant cash advances, and business lines of credit. Offers unsecured financing programs with funding in 1-2 business days.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/financial-advantage-group",
+    "website": "https://finadv.org"
+  },
+  {
+    "id": 1528,
+    "desc": "FT3 Capital is an Alpharetta, Georgia-based business funding company offering equipment financing, working capital, and term loans across industries including healthcare, real estate, and e-commerce. Team of funding advisors comprises seasoned entrepreneurs focused on small business success.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://ft3cap.com"
+  },
+  {
+    "id": 1529,
+    "desc": "Globelend Capital is a Miami-based business lending firm founded in 2013, specializing in business loans up to $5M including working capital, equipment financing, MCAs, SBA loans, and revolving lines of credit. BBB-accredited with no application fees or points.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/globelendcapitalmiami",
+    "website": "https://globelend.com/"
+  },
+  {
+    "id": 1530,
+    "desc": "GreenBridge Loans is a Hoboken, NJ-based direct lender specializing in asset-based business loans secured by real estate. Offers secured startup business loans up to $6M with 30-year terms, no minimum credit score, no income verification, and rates starting at 5.49%.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/greenbridge-loans",
+    "website": "https://www.greenbridgeloans.com"
+  },
+  {
+    "id": 1531,
+    "desc": "Greenvest Funding is a nationwide provider of alternative business financing with over 100 years of combined industry experience. Specializes in same-day funding approvals and personalized client relationships for small to medium-sized businesses.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://greenvestfunding.com"
+  },
+  {
+    "id": 1533,
+    "desc": "Small business lending company based in Florida. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://labocapital.com"
+  },
+  {
+    "id": 1534,
+    "desc": "Small business lending company. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://lafcalifornia.com/"
+  },
+  {
+    "id": 1537,
+    "desc": "LendSpark is a Carlsbad, CA-based national licensed direct lender focused on equipment financing and working capital for small, middle market, and public companies. Executives have arranged over $500M in business loans, offering equipment financing, lines of credit, term loans, factoring, and commercial real estate loans.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/lendspark/",
+    "website": "https://lendspark.com/"
+  },
+  {
+    "id": 1538,
+    "desc": "Logic Advance Group has been providing small business lending since 2015, offering fast, fair, and transparent funding solutions from $5K to $500K. Based in Queens, NY, offers MCAs, lines of credit, equipment financing, and revenue-based financing with 24-hour approval.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/logicadvancegroup",
+    "website": "https://logicadvancegroup.com"
+  },
+  {
+    "id": 1541,
+    "desc": "Small business lending company. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": ""
+  },
+  {
+    "id": 1542,
+    "desc": "Small business lending company providing merchant cash advances and working capital. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.owlfunding.com"
+  },
+  {
+    "id": 1546,
+    "desc": "Small business lending company providing merchant cash advances. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://starcadecapital.com/"
+  },
+  {
+    "id": 1547,
+    "desc": "Stocks2Cash Corp (d/b/a S2C Capital Group) specializes in stock-secured loans and lines of credit, founded in 2008 on Wall Street, New York. Provides leveraged repurchases and stock-secured lending rather than traditional MCA products.",
+    "contacts": [{"n": "James Waltman", "t": "President & CEO"}],
+    "linkedinUrl": "",
+    "website": "https://s2ccapital.com"
+  },
+  {
+    "id": 1548,
+    "desc": "Surfside Capital offers lending solutions with variable payment options, providing approval within hours and funding within 24 hours. No obligation, collateral, or down payment required.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://surfside-capital.com"
+  },
+  {
+    "id": 1549,
+    "desc": "Tic Tok Capital offers merchant cash advance solutions that transform established revenue streams into immediate working capital with repayment aligned to sales performance. Based in England.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://tictokcap.com/"
+  },
+  {
+    "id": 1550,
+    "desc": "TRAM Funding is a New York-based business loan broker with a 75+ lender marketplace, specializing in MCAs and small business financing. Offers funding in 24 hours through a fully digital application for restaurants, retail shops, salons, and contractors.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://tramfunding.com/"
+  },
+  {
+    "id": 1552,
+    "desc": "Merchant Cash Group is headquartered in Gainesville, FL, offering merchant cash advances up to $250K with 24-hour turnaround. Provides upfront funding by purchasing future receivables with daily payment structure and no interest.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://merchantcashgroup.com"
+  },
+  {
+    "id": 1553,
+    "desc": "Coastal Capital Group provides full-service business financing including MCAs from $1K to $1M+, serving all 50 states. Strong focus on the restaurant industry with payment terms based on future anticipated volume and own underwriting capabilities.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/coastal-capital-group-inc",
+    "website": "https://coastalcapitalgroupinc.com"
+  },
+  {
+    "id": 1554,
+    "desc": "ML Factors is a Cedarhurst, NY-based direct MCA funder specializing in 2nd-6th position deals. Funds same day with competitive terms for merchants with multiple positions, offering daily, weekly, or monthly payment structures.",
+    "contacts": [{"n": "Jay Katz", "t": "Executive Director"}],
+    "linkedinUrl": "",
+    "website": "https://MLFactors.com"
+  },
+  {
+    "id": 1555,
+    "desc": "Silverline Capital is a New York-based MCA provider funding anywhere from $2,500 to $2.5M with approval within 24 hours. Known for going all-in on partnerships and keeping the funding process fast and smooth.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://silverlinecapitalllc.com"
+  },
+  {
+    "id": 1556,
+    "desc": "Eagle Business Credit provides small business funding from Woodstock, GA through invoice factoring and purchase order finance. Offers recourse full service factoring with 85% typical advance rates and 48-hour first funding setup.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/eagle-business-credit",
+    "website": "https://eaglebusinesscredit.com/"
+  },
+  {
+    "id": 1559,
+    "desc": "Slate Advance provides fast cash advances to business owners with the lowest rates available, helping businesses improve cash flow. Offers merchant cash advances up to $250K per location with 60-day minimum processing requirement.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.slateadvance.com/"
+  },
+  {
+    "id": 1560,
+    "desc": "Snap Advances is a Salt Lake City, UT-based MCA provider founded in 2009, specializing in quick working capital access for small businesses. Offers purchase-and-sell agreements on future credit/debit card transactions with flexible sales-based repayment and no collateral required.",
+    "contacts": [{"n": "Bart Longson", "t": "CEO"}],
+    "linkedinUrl": "https://www.linkedin.com/company/snap-advances",
+    "website": "https://snapadvances.com"
+  },
+  {
+    "id": 1562,
+    "desc": "Elevation Capital offers MCAs, factoring, accounts receivable financing, inventory/purchase order financing, and payment processing. BBB A+ rated since 2018, provides advances from $10K-$3M with 1-3 day funding and factor rates of 1.12-1.24.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://elevationcapitalllc.com/"
+  },
+  {
+    "id": 1563,
+    "desc": "Alpha Capital Source is a direct MCA funder providing cash advances from $5,000 to $500,000 to businesses with bad credit across 48 continental states. Offers lenient guidelines with 5x monthly debit withdrawals and consideration for all credit types.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://alphacapitalsource.com"
+  },
+  {
+    "id": 1564,
+    "desc": "Jet Capital Funding is a New York-based alternative financing provider established in 2019, offering diverse working capital products. Majority of products are non-secured with 24-hour financing capability, requiring minimum 6 months in business and $10K monthly gross revenue.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.jetcapitalfunding.net/"
+  },
+  {
+    "id": 1565,
+    "desc": "Family Business Fund is a Boca Raton, FL-based SEC Reg. D 506C private placement fund providing revenue-based financing and MCAs to small businesses while offering high-yield investment opportunities to accredited investors. Founded by Douglas Muir, funds advances of $5K-$50K with max 6-month terms.",
+    "contacts": [{"n": "Douglas Muir", "t": "Founder & CEO"}],
+    "linkedinUrl": "https://www.linkedin.com/company/family-business-funding",
+    "website": "https://familybusinessfund.com"
+  },
+  {
+    "id": 1566,
+    "desc": "NextWave Funding provides small businesses with $10K to $2M in merchant cash advances and commercial funding within 24-72 hours. Offers high approval rates, zero spending restrictions, flexible options, and minimal paperwork with no collateral needed.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://NextwaveFunding.com"
+  },
+  {
+    "id": 1567,
+    "desc": "American Business Funding offers quick and transparent small business loans with no broker fees, featuring working capital, cash advances, SBA loans, and more. Provides flexible loan options with minimal documentation and dedicated customer support.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://americanbusinessfunding.com"
+  },
+  {
+    "id": 1568,
+    "desc": "Spin Capital Financial has provided more than $1B in financing since 2007 to over 350 small and mid-size businesses across the US, Canada, Europe, and Latin America. Offers MCAs, purchase order financing, inventory loans, and leverages 1,500+ lender relationships.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/spin.capital",
+    "website": "https://spincapfund.com"
+  },
+  {
+    "id": 1570,
+    "desc": "Kingdom Kapital is a New York-based MCA provider offering fast and flexible financing including merchant cash advances, flex programs, and fix-and-flip real estate financing. Builds lasting partnerships with personalized financial guidance.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://kingdomkapital.com"
+  },
+  {
+    "id": 1571,
+    "desc": "Panthers Capital is a Cedarhurst, NY-based provider of working capital solutions for small and medium businesses. Offers MCAs up to $1M with no collateral required, 80% approval rate, and 24-hour qualification, targeting businesses with $100K+ annual revenue.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.pantherscapital.com"
+  },
+  {
+    "id": 1572,
+    "desc": "Main Street Funding Group provides SBA loans and business funding coast to coast. Offers business cash advances, small business loans, MCAs, equipment leasing, receivable factoring, and lines of credit with funding in as little as 24 hours.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/mainstreetfundinggroup",
+    "website": "https://mainstreetfundinggroup.com"
+  },
+  {
+    "id": 1573,
+    "desc": "Wise Advances (Wise Capital) provides fast, flexible financing solutions from its New York office at 42 Broadway. Offers revenue-based funding, MCAs, business lines of credit, term loans, equipment financing, and debt consolidation, having served over 500 businesses.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://wiseadvances.com"
+  },
+  {
+    "id": 1574,
+    "desc": "Capital Advances is a Fort Lauderdale, FL-based company specializing in small business lending and merchant cash advances. Founded by industry-leading professionals passionate about growing small businesses, offers a 5-minute application with funding in hours.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/capital-advances-llc",
+    "website": "https://capitaladvances.com"
+  },
+  {
+    "id": 1576,
+    "desc": "M&D Capital NY provides business owners with working capital through merchant cash advances for buying inventory, marketing, equipment, hiring, and renovations. Fast and easy funding process from New York.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://mdcapitalny.com"
+  },
+  {
+    "id": 1577,
+    "desc": "RAM Capital Inc is a small business lending broker providing business loans, lines of credit, equipment leasing, and MCAs specifically to the restaurant and retail industry. Note: RAM Capital Funding LLC (separate entity) was banned by FTC for deceptive practices.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": ""
+  },
+  {
+    "id": 1578,
+    "desc": "RAM Capital Solutions reaches out to small businesses that don't have the collateral necessary to achieve bank loans. Offers merchant cash advances, purchase order financing, unsecured business lines of credit, and marketing solutions.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": ""
+  },
+  {
+    "id": 1581,
+    "desc": "RDM Capital Funding is a technology-enabled specialty finance company launched in 2015, providing easy-to-access capital to small businesses through a quick, efficient, and transparent process. Secured a $7.5M credit facility from Charleston Capital and focuses on 2nd and 3rd position MCA deals.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://rdmcapitalfunding.com"
+  },
+  {
+    "id": 1582,
+    "desc": "1st Global Capital was a Hallandale Beach, FL-based MCA lender that raised $330M+ from 3,600+ investors before declaring bankruptcy in July 2018. Founder Alan G. Heide was sentenced to 5 years imprisonment for fraud. Company is defunct.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.1stglobalcapital.com"
+  },
+  {
+    "id": 1586,
+    "desc": "Accountable Capital provides merchant cash advance programs designed for small businesses with fast 24-hour funding. Offers collateral-free advances with repayment linked to Visa/MasterCard receipts, also provides SBA loans and other financing options.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://accountablecapital.com"
+  },
+  {
+    "id": 1587,
+    "desc": "The ACF Group (American Capital Funding) provides transparent and affordable MCA and consolidation services to merchants nationwide. Founded by Solomon & Judah, emphasizes integrity and loyalty as a direct funder and syndication company serving small and medium businesses.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://theacfgroup.com"
+  },
+  {
+    "id": 1589,
+    "desc": "Alliance Funding Group (AFG) was founded in 1998 and has grown to be one of the largest privately held equipment finance companies in the US, having funded over $3B in equipment. Also offers working capital, business loans, and lines of credit for small and medium businesses.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.afg.com"
+  },
+  {
+    "id": 1590,
+    "desc": "AJ Equity Group is a Brooklyn, NY-based high-risk MCA funder offering expedited business funding from $10K to $1M. Provides MCAs, flex programs, and debt consolidation services through its ISO network with funding within 3 hours and no application fees.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/aj-equity-group-llc",
+    "website": ""
+  },
+  {
+    "id": 1591,
+    "desc": "Small business lending company providing merchant cash advances and business funding services. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://AmericanFundingServices.com"
+  },
+  {
+    "id": 1593,
+    "desc": "Amsterdam Capital Group is one of Manhattan's fastest-growing fintech companies providing comprehensive custom-made funding solutions. Founded by Brian Corso in 2014, who previously built Advantage Capital Funding to 70 employees distributing $500M+ in specialty financing within 36 months.",
+    "contacts": [{"n": "Brian Corso", "t": "Founder & CEO"}],
+    "linkedinUrl": "",
+    "website": "https://acgroupinc.com"
+  },
+  {
+    "id": 1594,
+    "desc": "Approved Funding Group is a Deerfield Beach, FL-based company providing fast small business funding from $15K to $650K through revenue-based financing. Targets small businesses that may not meet strict bank criteria with repayment linked to future receipts.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://approvedfundinggroup.com"
+  },
+  {
+    "id": 1595,
+    "desc": "Arcadia Servicing (d/b/a Arcadia Advance, Arcadia Group) provides merchant cash advances to small and medium-sized businesses. Purchases a fixed portion of future sales at a discount with no interest rate, no fixed payment term, and no maturity date.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://arcadiaservicing.com"
+  },
+  {
+    "id": 1596,
+    "desc": "Arcarius Funding is a Fort Lee, NJ-based funding and business development company providing MCAs, payment processing, and business loans. Serves business owners, real estate, retail, restaurants, construction, and small businesses with fast working capital access.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.arcariusfunding.com"
+  },
+  {
+    "id": 1598,
+    "desc": "Atlantis Capital provides MCA funding and financial services to small and medium businesses, offering up to $5M in funding delivered within 1-3 days. Purchases future credit card transactions with no collateral required and no fixed payment plans.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/atlantis-capital-llc",
+    "website": "https://www.atlantiscapitalllc.com/"
+  },
+  {
+    "id": 1599,
+    "desc": "Avanza Capital provides business funding solutions including MCAs from $10K to $500K with 4-12 month terms and daily, weekly, or monthly payment options. Based in Staten Island, NY, processes applications in 24-72 hours with 6-month minimum business history.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://avanzacapitalllc.com/"
+  },
+  {
+    "id": 1600,
+    "desc": "Small business lending company. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": ""
+  },
+  {
+    "id": 1601,
+    "desc": "Blackbridge Investment Group (BIG) is a trusted provider of revenue-based financing to small businesses nationwide, founded in 2023. Combines innovative fintech tools with customer-focused service, requiring 1+ year in business and $10K+ monthly revenue with same-day funding and no interest charges.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/big-blackbridge-investment-group",
+    "website": "https://www.bbigm.com"
+  },
+  {
+    "id": 1602,
+    "desc": "BMF Capital is a high-risk MCA lender providing funding up to $1M quickly to small businesses, often within hours. Offers MCAs as a purchase of future sales with no collateral or upfront fees required, payment only when merchants make sales.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.bmfcapitalllc.com"
+  },
+  {
+    "id": 1603,
+    "desc": "BrookWater Capital has over 8 years of experience deploying more than $750M in working capital to thousands of businesses. Offers MCAs, merchant lines of credit, revenue-based financing, and factor advances with next-day funding capability.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://brookwatercapital.net"
+  },
+  {
+    "id": 1604,
+    "desc": "Business Advance Funding is a Wilmington, DE-based company specializing in MCAs and business loans for small businesses in retail, restaurants, and medical practices. Offers financing up to $2M with collateral-free lending and higher approval rates than traditional banks.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://businessadvancefunding.com"
+  },
+  {
+    "id": 1606,
+    "desc": "Small business lending company. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": ""
+  },
+  {
+    "id": 1608,
+    "desc": "Small business lending company providing merchant cash advance services. Limited public information available.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://carpecap.com"
+  },
+  {
+    "id": 1609,
+    "desc": "Cash Buoy is a Chicago, IL-based direct MCA funder providing capital advances from $2,500 to $250K. Requires only 3 months in business with $5K/month gross revenues, has no credit score requirement, and excludes no industries.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://cashbuoy.biz"
+  },
+  {
+    "id": 1610,
+    "desc": "Cash Village Funding provides merchant cash advances, asset-based lending, and invoice factoring services with deal sizes ranging from $50K to $35M. Funds advances to businesses and syndicates them to investor base for diversification and efficient capital deployment.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://cashvillagefunding.com"
+  },
+  {
+    "id": 1611,
+    "desc": "CashFund is a Denver, CO-based merchant processing firm providing small business loans, equipment leasing, financing, and business cash advances up to $500K. Offers 24-hour funding with 93% applicant qualification rate and no early payment penalties.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://cashfund.com"
+  },
+  {
+    "id": 1612,
+    "desc": "Caymus Funding is a Georgia-based MCA funder with over 76 years of combined industry expertise across 5 senior executives. Evaluates businesses based on overall performance rather than credit scores, providing capital to help small businesses exceed financial goals.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://caymusfunding.com"
+  },
+  {
+    "id": 1613,
+    "desc": "Chrome Advance (Chrome Capital) specializes in merchant cash advance solutions offering fast and flexible funding to help businesses manage cash flow and capitalize on growth opportunities. Based in Arizona.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://chromeadvance.com"
+  },
+  {
+    "id": 1616,
+    "desc": "Coconut Funding is a Newport Beach, CA-based company specializing in alternative business finance including credit card processing and merchant cash advances for small to medium-sized businesses nationwide.",
+    "contacts": [{"n": "Jacob Pearlman", "t": "CEO/Owner"}],
+    "linkedinUrl": "",
+    "website": "https://www.coconutfunding.com/"
+  },
+  {
+    "id": 1617,
+    "desc": "Coolidge Capital is a locally owned MCA provider in Carle Place, NY, offering finalization within 24 hours and same-day funding. Provides flexible repayment plans based on cash flow and considers overall business health, industry type, and projected future profits.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://coolidgecapital.com"
+  },
+  {
+    "id": 1618,
+    "desc": "Cooper Asset is a direct MCA funder focused on high-risk C/D paper deals with sub-500 FICO scores. Funds ACH/bank-only deals with same-day funding and minimal paperwork, committed to small and mid-size ISOs as an outlet for B/C/D paper.",
+    "contacts": [{"n": "Robert S Bloink", "t": "EVP of ISO Partnerships"}],
+    "linkedinUrl": "",
+    "website": "https://www.cooperasset.com"
+  },
+  {
+    "id": 1619,
+    "desc": "Core Capital Lenders provides business financing solutions from North Carolina. Also associated with Core Capital Group in Charlotte focusing on real estate-based funding solutions for clients unable to procure traditional bank financing.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/core-capital-group-llc",
+    "website": "https://corecapitallenders.com"
+  },
+  {
+    "id": 1620,
+    "desc": "Credit Line Capital offers merchant cash advance programs with up to $5M in working capital available immediately. Provides fast 24-hour funding without collateral through a network of 75+ lenders, offering various terms and options for small businesses.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://creditlinecap.com"
+  },
+  {
+    "id": 1622,
+    "desc": "Crystal Springs Capital is a Nassau County, NY-based MCA lender. Notable for a New York Appellate Court ruling that found their MCA agreement constituted a criminally usurious loan, which vacated a default judgment and dismissed the complaint.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://crystalspringscapital.com"
+  },
+  {
+    "id": 1623,
+    "desc": "Cucumber Capital is a provider of business funding solutions for small businesses through merchant cash advances. Strives to provide fast and transparent financing options to help businesses grow and succeed.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/cucumber-capital",
+    "website": "https://www.cucumbercapital.com"
+  },
+  {
+    "id": 1624,
+    "desc": "Daka Capital Group offers cash advances from $5,000 to $500,000 to small-to-mid-sized businesses in as little as 24 hours. Considers all credit types with no collateral needed and a simple application process.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.dakacapitalgroup.com"
+  },
+  {
+    "id": 1625,
+    "desc": "Dependance Platinum is a Florida-based MCA company founded in November 2017, providing efficient funding for growing businesses. Offers 2-minute applications with funds available as fast as 1 hour without impacting credit scores.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://dependancep.com"
+  },
+  {
+    "id": 1627,
+    "desc": "Diamond Advances is America's leading cash advance and small business financing firm headquartered in Lake Success, NY. BBB-accredited since 2024, requires minimal paperwork with next-day fund deposits into business accounts.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/diamond-advances-llc",
+    "website": "https://www.diamondadvances.com"
+  },
+  {
+    "id": 1628,
+    "desc": "Diverse Capital is a rapidly evolving direct lending firm providing immediate working capital from $10K to $2M+ for small and moderate-sized businesses. Offers same-day funding within 2 hours through their working cash advance program, also serves real estate investors and commercial contractors.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/diverse-capital-llc",
+    "website": "https://diverse-capital.com"
+  },
+  {
+    "id": 1629,
+    "desc": "Dynasty Ventures is a New York City-based direct business capital funding company at 200 Vesey St. Offers startup lending $15K-$150K, commercial lending $75K-$5M, project funding $10M-$3B, and MCAs $10K-$1M for businesses in the US and internationally.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://www.dynastyventuresllc.com"
+  },
+  {
+    "id": 1631,
+    "desc": "East Shore Equities is a Massapequa, NY-based direct MCA funder offering fast funding with no credit checks and high ISO commissions. Provides approval to cash delivery in 24-48 hours with daily or weekly payment options, including approvals for previously defaulted merchants.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://EastShoreEquities.com"
+  },
+  {
+    "id": 1634,
+    "desc": "Edge Capital operates multiple entities in the business financing space. Edge Capital Funding provides merchant funding regardless of FICO with 2-day approvals. Edge Capital Lending (specialty finance) is a family office-backed company with 50 professionals providing working capital solutions since 2013.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/edgecl",
+    "website": "https://www.edgecapital.com"
+  },
+  {
+    "id": 1635,
+    "desc": "eFinancial Tree is a Stamford, CT-based private financial company offering fast working capital up to $500K with flexible underwriting and no hard credit pulls. Funds 92% of signed contracts with individual analysis of each submission rather than strict underwriting guidelines.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/e-financial-tree",
+    "website": "https://www.efinancialtree.com"
+  },
+  {
+    "id": 1638,
+    "desc": "Elixir Funding provides business cash advances working directly with one source. Requires minimum 2 months in business with $10K monthly gross revenues for their MCA products.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://elixirfunding.com"
+  },
+  {
+    "id": 1639,
+    "desc": "Emmy Capital Group is a New York-based MCA provider using merchant cash advances to help new and existing businesses access quick lump-sum capital. Positions as an alternative to traditional bank loans with reliable and flexible funding solutions.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://emmycapitalgroup.com"
+  },
+  {
+    "id": 1640,
+    "desc": "EPIC Advance provides alternative financing to business owners through merchant cash advances from $5K to $500K based on monthly sales. Works with business cash flow rather than credit scores, partnering with many funding partners to fund unconventional deals.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://epic-advance.com"
+  },
+  {
+    "id": 1643,
+    "desc": "Factor Funding is a nationwide factoring company that has been providing cash flow solutions for over two decades to manufacturers, wholesalers, distributors, and service companies. Offers MCAs, invoice factoring, purchase order funding, equipment financing, and asset-based loans up to $10M/month.",
+    "contacts": [],
+    "linkedinUrl": "https://www.linkedin.com/company/factor-funding-company",
+    "website": "https://factorfunding.com"
+  },
+  {
+    "id": 1645,
+    "desc": "Favo Funding offers specialized funding options including MCAs and invoice financing tailored to individual business situations. Provides a fast application and approval process with same-day funding upon transaction completion.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://favofunding.com"
+  },
+  {
+    "id": 1646,
+    "desc": "FBF Capital offers merchant cash advance programs with payments determined by a fixed percentage of business sales. Provides unrestricted capital to support entrepreneurs with managing cash flow and business growth.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://fbfcap.com"
+  },
+  {
+    "id": 1647,
+    "desc": "FinPoint Funding provides cash advances up to $500K in as little as 24 hours with no collateral or personal guarantees required. Offers hassle-free application and same-day fund transfer upon approval, serving all states and all industries.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://finpointfunding.com"
+  },
+  {
+    "id": 1648,
+    "desc": "First US Funding is the market share leader in alternative small business loans, offering MCAs as effective working capital solutions with daily remittance-based repayment. Provides fast approval and funding for small businesses nationwide.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://firstusfunding.com"
+  },
+  {
+    "id": 1649,
+    "desc": "Firstline Advance offers a wide range of business financing products custom-tailored to each business with a high approval rating regardless of credit history. Provides merchant cash advances and alternative lending products.",
+    "contacts": [],
+    "linkedinUrl": "",
+    "website": "https://firstlineadvance.com"
+  }
+]
