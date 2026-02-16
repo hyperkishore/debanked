@@ -24,7 +24,8 @@ import { CompanyDetail } from "@/components/company-detail";
 import { SearchCommand } from "@/components/search-command";
 import { RatingDialog } from "@/components/rating-dialog";
 import { EngagementLog } from "@/components/engagement-log";
-import { getCompanyEngagements } from "@/lib/engagement-helpers";
+import { getCompanyEngagements, deduplicateEngagements } from "@/lib/engagement-helpers";
+import { ImportDialog } from "@/components/import-dialog";
 import { MobileNav } from "@/components/mobile-nav";
 import { PitchTab } from "@/components/pitch-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
@@ -34,7 +35,7 @@ import { useLocalStorage } from "@/hooks/use-local-storage";
 import { useKeyboard } from "@/hooks/use-keyboard";
 import { useIsMobile } from "@/hooks/use-mobile";
 
-const companies = companiesData as Company[];
+const buildTimeCompanies = companiesData as Company[];
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -76,6 +77,43 @@ export default function Home() {
     []
   );
   const [engagementDialogOpen, setEngagementDialogOpen] = useState(false);
+  const [importDialogOpen, setImportDialogOpen] = useState(false);
+
+  // Imported companies from localStorage (merged at runtime with build-time data)
+  const [importedCompanies, setImportedCompanies] = useLocalStorage<Company[]>(
+    "eventiq_imported_companies",
+    []
+  );
+
+  // Merge build-time + imported companies (imported updates override build-time fields)
+  const companies = useMemo(() => {
+    if (importedCompanies.length === 0) return buildTimeCompanies;
+
+    const merged = [...buildTimeCompanies];
+    const existingById = new Map(merged.map((c, idx) => [c.id, idx]));
+
+    for (const imp of importedCompanies) {
+      const existingIdx = existingById.get(imp.id);
+      if (existingIdx !== undefined) {
+        // Merge: imported fields override existing empty fields
+        const existing = merged[existingIdx];
+        merged[existingIdx] = {
+          ...existing,
+          desc: imp.desc || existing.desc,
+          website: imp.website || existing.website,
+          linkedinUrl: imp.linkedinUrl || existing.linkedinUrl,
+          location: imp.location || existing.location,
+          employees: imp.employees || existing.employees,
+          contacts: imp.contacts.length > existing.contacts.length ? imp.contacts : existing.contacts,
+          notes: imp.notes || existing.notes,
+          source: Array.from(new Set([...(existing.source || []), ...(imp.source || [])])),
+        };
+      } else {
+        merged.push(imp);
+      }
+    }
+    return merged;
+  }, [importedCompanies]);
 
   // Register service worker
   useEffect(() => {
@@ -175,6 +213,33 @@ export default function Home() {
       setEngagements((prev) => prev.filter((e) => e.id !== id));
     },
     [setEngagements]
+  );
+
+  const handleImportCompanies = useCallback(
+    (newCompanies: Company[], updatedCompanies: Company[]) => {
+      setImportedCompanies((prev) => {
+        const all = [...prev];
+        const existingById = new Map(all.map((c, idx) => [c.id, idx]));
+
+        // Add/update updated companies
+        for (const u of updatedCompanies) {
+          const idx = existingById.get(u.id);
+          if (idx !== undefined) {
+            all[idx] = u;
+          } else {
+            all.push(u);
+          }
+        }
+
+        // Add new companies
+        for (const n of newCompanies) {
+          all.push(n);
+        }
+
+        return all;
+      });
+    },
+    [setImportedCompanies]
   );
 
   const allNotesExport = useMemo(() => {
@@ -289,6 +354,7 @@ export default function Home() {
           activeTab={activeTab}
           onTabChange={setActiveTab}
           onOpenSearch={() => setSearchOpen(true)}
+          onOpenImport={() => setImportDialogOpen(true)}
           metCount={metCount}
           totalCount={companies.length}
         />
@@ -470,6 +536,13 @@ export default function Home() {
           onSave={handleAddEngagement}
         />
       )}
+
+      <ImportDialog
+        open={importDialogOpen}
+        onClose={() => setImportDialogOpen(false)}
+        companies={companies}
+        onImport={handleImportCompanies}
+      />
     </SidebarProvider>
   );
 }

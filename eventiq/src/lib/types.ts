@@ -206,7 +206,7 @@ export interface ChecklistItem {
 
 // Engagement tracking types
 export type EngagementChannel = 'email' | 'linkedin' | 'imessage' | 'call' | 'meeting' | 'note';
-export type EngagementSource = 'manual' | 'gmail' | 'linkedin-ext' | 'chrome-ext';
+export type EngagementSource = 'manual' | 'gmail' | 'linkedin-ext' | 'chrome-ext' | 'hubspot' | 'import';
 
 export interface EngagementEntry {
   id: string;

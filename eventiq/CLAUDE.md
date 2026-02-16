@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 2.2.05
+**Version:** 2.3.00
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 **Live:** GitHub Pages (auto-deploy on push to main)
@@ -183,8 +183,32 @@ Hooks must come from ACTUAL web research, not rephrasing existing text:
 | `merge-enrichment.js` | Merge enrichment results (hooks, LinkedIn, news) |
 | `merge-hooks.js` | Merge standalone hooks-result files |
 | `merge-tam.js` | Merge TAM company data |
+| `import.js` | CLI import tool — CSV/JSON → field mapping → fuzzy match → merge |
+| `hubspot-sync.js` | Pull companies, contacts, deals, engagements from HubSpot CRM |
+| `hubspot-import-engagements.js` | Convert HubSpot engagements to EventIQ localStorage format |
 | `refresh-orchestrate.sh` | End-to-end orchestration (batch → agents → merge → build) |
 | `refresh-poller.sh` | Poll GitHub issues for refresh signals |
+
+### Shared Libraries (`eventiq/scripts/lib/`)
+| Module | Purpose |
+|--------|---------|
+| `fuzzy-match.js` | Company name normalization + Levenshtein fuzzy matching |
+| `csv-parser.js` | Lightweight CSV/TSV/JSON parser with auto-detect |
+| `field-mapper.js` | Heuristic + Claude API field mapping (columns → schema) |
+
+### Import Workflow
+```
+# CLI import (supports Claude API for smart field mapping)
+node scripts/import.js hubspot-export.csv
+node scripts/import.js contacts.json --dry-run --no-ai
+
+# HubSpot sync
+HUBSPOT_API_KEY=xxx node scripts/hubspot-sync.js
+node scripts/hubspot-import-engagements.js
+
+# In-app import (no CLI needed)
+# Click "Import Data" in sidebar → paste CSV/JSON → map fields → preview → import
+```
 
 ### Batch Research Workflow
 ```
@@ -212,6 +236,13 @@ Each agent receives a batch of companies and should:
 ---
 
 ## Decisions Log
+
+### v2.3.00 (2026-02-15) — Import + HubSpot Sync
+- **Decision**: Add data import pipeline (CLI + in-app) and HubSpot CRM sync
+- **Components**: `scripts/lib/` shared infrastructure (fuzzy-match, csv-parser, field-mapper), CLI import script, in-app import dialog, HubSpot sync scripts
+- **Architecture**: CLI scripts handle API keys (Claude API, HubSpot), in-app uses heuristic mapping, both share fuzzy company name matching
+- **Storage**: In-app imports stored in localStorage (`eventiq_imported_companies`), merged at runtime with build-time data
+- **New EngagementSource values**: `'hubspot'` and `'import'` added to type union
 
 ### Research Quality Standard (2026-02-13) — PERMANENT POLICY
 - **Decision**: All companies and leaders MUST go through deep web research before being added
@@ -308,6 +339,7 @@ Sidebar, Card, Command, Sheet, Dialog, Tabs, Badge, ScrollArea, Resizable, Toggl
 - `eventiq_checks` — Checklist state
 - `eventiq_quick_notes` — Quick notes text
 - `eventiq_engagements` — Engagement entries array
+- `eventiq_imported_companies` — Companies imported via in-app dialog (merged at runtime)
 
 ---
 

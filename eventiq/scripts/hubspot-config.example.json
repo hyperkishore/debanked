@@ -1,0 +1,22 @@
+{
+  "_comment": "Copy this file to hubspot-config.json and fill in your values",
+  "apiKey": "pat-na1-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "portalId": "your-portal-id",
+  "syncOptions": {
+    "pullCompanies": true,
+    "pullContacts": true,
+    "pullDeals": true,
+    "pullEngagements": true,
+    "matchThreshold": 0.75,
+    "dryRun": false
+  },
+  "_setup": {
+    "steps": [
+      "1. Go to https://app.hubspot.com/private-apps/",
+      "2. Create a new private app",
+      "3. Add scopes: crm.objects.companies.read, crm.objects.contacts.read, crm.objects.deals.read",
+      "4. Copy the access token to the apiKey field above",
+      "5. Run: HUBSPOT_API_KEY=<your-token> node scripts/hubspot-sync.js"
+    ]
+  }
+}

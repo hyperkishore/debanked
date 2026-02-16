@@ -13,12 +13,13 @@ import {
   SidebarMenuItem,
   SidebarHeader,
 } from "@/components/ui/sidebar";
-import { Building2, Clock, Layers, CheckSquare, Search, BarChart3 } from "lucide-react";
+import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload } from "lucide-react";
 
 interface AppSidebarProps {
   activeTab: TabType;
   onTabChange: (tab: TabType) => void;
   onOpenSearch: () => void;
+  onOpenImport: () => void;
   metCount: number;
   totalCount: number;
 }
@@ -35,6 +36,7 @@ export function AppSidebar({
   activeTab,
   onTabChange,
   onOpenSearch,
+  onOpenImport,
   metCount,
   totalCount,
 }: AppSidebarProps) {
@@ -68,6 +70,17 @@ export function AppSidebar({
                   <kbd className="ml-auto text-[10px] bg-muted/50 px-1.5 py-0.5 rounded text-muted-foreground font-mono">
                     ⌘K
                   </kbd>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+
+              {/* Import */}
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  onClick={onOpenImport}
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  <Upload className="h-4 w-4" />
+                  <span>Import Data</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
@@ -127,7 +140,7 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.2.00</span>
+          <span className="opacity-50">v2.3.00</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

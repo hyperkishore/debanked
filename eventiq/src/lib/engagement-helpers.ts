@@ -152,3 +152,26 @@ export function formatActionLabel(action: string): string {
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(" ");
 }
+
+/**
+ * Deduplicate engagements by id, or by companyId+contactName+channel+action+timestamp
+ */
+export function deduplicateEngagements(engagements: EngagementEntry[]): EngagementEntry[] {
+  const seen = new Set<string>();
+  const result: EngagementEntry[] = [];
+
+  for (const e of engagements) {
+    // Primary dedup key: id
+    if (seen.has(e.id)) continue;
+    seen.add(e.id);
+
+    // Secondary dedup: composite key (catches imports of same data with different ids)
+    const compositeKey = `${e.companyId}::${e.contactName}::${e.channel}::${e.action}::${e.timestamp}`;
+    if (seen.has(compositeKey)) continue;
+    seen.add(compositeKey);
+
+    result.push(e);
+  }
+
+  return result;
+}
