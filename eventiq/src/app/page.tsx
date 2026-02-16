@@ -324,7 +324,7 @@ export default function Home() {
   const renderContent = () => {
     switch (activeTab) {
       case "dashboard":
-        return <DashboardTab companies={companies} metState={metState} />;
+        return <DashboardTab companies={companies} metState={metState} engagements={engagements} ratingState={ratingState} />;
       case "schedule":
         return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
       case "pitch":

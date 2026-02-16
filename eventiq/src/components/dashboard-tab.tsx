@@ -1,13 +1,17 @@
 "use client";
 
-import { Company } from "@/lib/types";
-import { isResearched } from "@/lib/types";
+import { Company, RatingData, EngagementEntry } from "@/lib/types";
+import { isResearched, getResearchScore, getResearchTier } from "@/lib/types";
+import { getLastEngagement, getChannelConfig, formatEngagementTime } from "@/lib/engagement-helpers";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
 import { useMemo } from "react";
 
 interface DashboardTabProps {
   companies: Company[];
   metState: Record<string, boolean>;
+  engagements: EngagementEntry[];
+  ratingState: Record<string, RatingData>;
 }
 
 // --- Reusable sub-components ---
@@ -120,7 +124,7 @@ function ProgressRow({ label, done, total, color }: { label: string; done: numbe
 
 // --- Main component ---
 
-export function DashboardTab({ companies, metState }: DashboardTabProps) {
+export function DashboardTab({ companies, metState, engagements, ratingState }: DashboardTabProps) {
   const stats = useMemo(() => {
     const total = companies.length;
     const p0 = companies.filter((c) => c.priority <= 2);
@@ -172,6 +176,17 @@ export function DashboardTab({ companies, metState }: DashboardTabProps) {
     const p1Companies = companies.filter((c) => c.priority === 3 || c.priority === 4);
     const p1Researched = p1Companies.filter(isResearched).length;
 
+    // Data quality distribution
+    const qualitySegments = [
+      { label: "Complete (80+)", value: companies.filter(c => getResearchScore(c) >= 80).length, color: "oklch(0.65 0.17 145)" },
+      { label: "Good (50-79)", value: companies.filter(c => { const s = getResearchScore(c); return s >= 50 && s < 80; }).length, color: "oklch(0.65 0.15 250)" },
+      { label: "Partial (25-49)", value: companies.filter(c => { const s = getResearchScore(c); return s >= 25 && s < 50; }).length, color: "oklch(0.72 0.19 85)" },
+      { label: "Minimal (<25)", value: companies.filter(c => getResearchScore(c) < 25).length, color: "oklch(0.58 0.22 25)" },
+    ];
+    const avgQuality = total > 0
+      ? Math.round(companies.reduce((s, c) => s + getResearchScore(c), 0) / total)
+      : 0;
+
     return {
       total,
       p0Count: p0.length,
@@ -188,23 +203,124 @@ export function DashboardTab({ companies, metState }: DashboardTabProps) {
       p1Researched,
       p1Total: p1Companies.length,
       overallResearched: researched.length,
+      qualitySegments,
+      avgQuality,
     };
   }, [companies, metState]);
+
+  // Engagement analytics
+  const engagementStats = useMemo(() => {
+    const totalEngagements = engagements.length;
+
+    // Unique companies engaged
+    const engagedCompanyIds = new Set(engagements.map(e => e.companyId));
+    const companiesEngaged = engagedCompanyIds.size;
+
+    // Channel breakdown
+    const channelCounts: Record<string, number> = {};
+    for (const e of engagements) {
+      channelCounts[e.channel] = (channelCounts[e.channel] || 0) + 1;
+    }
+    const channelItems = Object.entries(channelCounts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([channel, count]) => {
+        const config = getChannelConfig(channel as EngagementEntry["channel"]);
+        return { label: config.label, value: count, color: channelToColor(channel) };
+      });
+
+    // Hottest prospects: companies with most engagements (top 8)
+    const companyEngagementCounts: Record<number, number> = {};
+    for (const e of engagements) {
+      companyEngagementCounts[e.companyId] = (companyEngagementCounts[e.companyId] || 0) + 1;
+    }
+    const hottestProspects = Object.entries(companyEngagementCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 8)
+      .map(([id, count]) => {
+        const company = companies.find(c => c.id === parseInt(id));
+        const last = getLastEngagement(engagements, parseInt(id));
+        return {
+          id: parseInt(id),
+          name: company?.name || `Company #${id}`,
+          type: company?.type || "TAM",
+          count,
+          lastTouch: last ? formatEngagementTime(last.timestamp) : "never",
+          rating: ratingState[id]?.rating || "",
+        };
+      });
+
+    // Needs follow-up: companies with engagements but last touch > 3 days ago
+    const threeDaysMs = 3 * 24 * 60 * 60 * 1000;
+    const now = Date.now();
+    const needsFollowUp = Object.entries(companyEngagementCounts)
+      .filter(([id]) => {
+        const last = getLastEngagement(engagements, parseInt(id));
+        return last && (now - new Date(last.timestamp).getTime()) > threeDaysMs;
+      })
+      .sort((a, b) => {
+        const lastA = getLastEngagement(engagements, parseInt(a[0]));
+        const lastB = getLastEngagement(engagements, parseInt(b[0]));
+        return (lastA ? new Date(lastA.timestamp).getTime() : 0) - (lastB ? new Date(lastB.timestamp).getTime() : 0);
+      })
+      .slice(0, 6)
+      .map(([id, count]) => {
+        const company = companies.find(c => c.id === parseInt(id));
+        const last = getLastEngagement(engagements, parseInt(id));
+        const daysSince = last ? Math.floor((now - new Date(last.timestamp).getTime()) / 86400000) : 999;
+        return {
+          id: parseInt(id),
+          name: company?.name || `Company #${id}`,
+          type: company?.type || "TAM",
+          count,
+          daysSince,
+          lastChannel: last?.channel || "unknown",
+        };
+      });
+
+    // Recent activity (last 10)
+    const recentActivity = [...engagements]
+      .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())
+      .slice(0, 10)
+      .map(e => {
+        const company = companies.find(c => c.id === e.companyId);
+        return {
+          ...e,
+          companyName: company?.name || `Company #${e.companyId}`,
+          companyType: company?.type || "TAM",
+        };
+      });
+
+    return {
+      totalEngagements,
+      companiesEngaged,
+      channelItems,
+      hottestProspects,
+      needsFollowUp,
+      recentActivity,
+    };
+  }, [engagements, companies, ratingState]);
+
+  const typeColorDot: Record<string, string> = {
+    SQO: "bg-[var(--sqo)]",
+    Client: "bg-[var(--client)]",
+    ICP: "bg-[var(--icp)]",
+    TAM: "bg-[var(--tam)]",
+  };
 
   return (
     <ScrollArea className="h-full">
       <div className="p-4 md:p-6 max-w-4xl mx-auto space-y-6">
         <div>
           <h2 className="text-lg font-bold">Dashboard</h2>
-          <p className="text-xs text-muted-foreground mt-0.5">TAM overview and research progress</p>
+          <p className="text-xs text-muted-foreground mt-0.5">Market intelligence overview</p>
         </div>
 
         {/* Stat cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <StatCard label="Total Companies" value={stats.total} />
           <StatCard label="P0 (Largest)" value={stats.p0Count} sub={`${stats.p0Researched} researched`} />
-          <StatCard label="Researched" value={stats.researchedCount} sub={`${((stats.researchedCount / stats.total) * 100).toFixed(0)}% coverage`} />
-          <StatCard label="Avg Employees" value={stats.avgEmployees} sub="where known" />
+          <StatCard label="Avg Quality" value={`${stats.avgQuality}%`} sub="research completeness" />
+          <StatCard label="Engagements" value={engagementStats.totalEngagements} sub={`${engagementStats.companiesEngaged} companies touched`} />
         </div>
 
         {/* Priority breakdown */}
@@ -213,15 +329,13 @@ export function DashboardTab({ companies, metState }: DashboardTabProps) {
           <StackedBar segments={stats.prioritySegments} />
         </div>
 
-        {/* Two column grid */}
+        {/* Data Quality + Research Progress */}
         <div className="grid md:grid-cols-2 gap-4">
-          {/* Source breakdown */}
           <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Data Source</h3>
-            <HorizontalBar items={stats.sourceItems} total={stats.total} />
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Data Quality</h3>
+            <StackedBar segments={stats.qualitySegments} />
           </div>
 
-          {/* Research progress */}
           <div className="rounded-lg bg-card border border-border p-4 space-y-3">
             <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Research Progress</h3>
             <div className="space-y-2.5">
@@ -232,10 +346,111 @@ export function DashboardTab({ companies, metState }: DashboardTabProps) {
           </div>
         </div>
 
-        {/* Company size distribution */}
-        <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Company Size Distribution</h3>
-          <VerticalBarChart buckets={stats.sizeBuckets} />
+        {/* Engagement Analytics Section */}
+        {engagementStats.totalEngagements > 0 && (
+          <>
+            <Separator />
+            <div>
+              <h2 className="text-lg font-bold">Engagement Analytics</h2>
+              <p className="text-xs text-muted-foreground mt-0.5">Outreach activity and follow-up tracking</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              {/* Channel breakdown */}
+              <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">By Channel</h3>
+                <HorizontalBar items={engagementStats.channelItems} total={engagementStats.totalEngagements} />
+              </div>
+
+              {/* Hottest prospects */}
+              <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Hottest Prospects</h3>
+                <div className="space-y-1.5">
+                  {engagementStats.hottestProspects.map((p) => (
+                    <div key={p.id} className="flex items-center justify-between text-xs">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <div className={`w-1.5 h-1.5 rounded-full shrink-0 ${typeColorDot[p.type] || "bg-muted"}`} />
+                        <span className="truncate">{p.name}</span>
+                      </div>
+                      <div className="flex items-center gap-2 shrink-0">
+                        {p.rating && (
+                          <span className={`text-[10px] font-medium ${
+                            p.rating === "hot" ? "text-[var(--sqo)]" :
+                            p.rating === "warm" ? "text-[var(--client)]" : "text-primary"
+                          }`}>
+                            {p.rating.toUpperCase()}
+                          </span>
+                        )}
+                        <span className="font-medium">{p.count}</span>
+                        <span className="text-muted-foreground/60">{p.lastTouch}</span>
+                      </div>
+                    </div>
+                  ))}
+                  {engagementStats.hottestProspects.length === 0 && (
+                    <p className="text-xs text-muted-foreground">No engagements yet</p>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Needs Follow-up */}
+            {engagementStats.needsFollowUp.length > 0 && (
+              <div className="rounded-lg bg-card border border-amber-500/20 p-4 space-y-3">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-amber-400">Needs Follow-up</h3>
+                <p className="text-[11px] text-muted-foreground">Companies with no outreach in 3+ days</p>
+                <div className="grid md:grid-cols-2 gap-2">
+                  {engagementStats.needsFollowUp.map((c) => (
+                    <div key={c.id} className="flex items-center justify-between text-xs p-2 rounded-md bg-muted/20">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <div className={`w-1.5 h-1.5 rounded-full shrink-0 ${typeColorDot[c.type] || "bg-muted"}`} />
+                        <span className="truncate font-medium">{c.name}</span>
+                      </div>
+                      <span className="text-amber-400/80 shrink-0">{c.daysSince}d ago</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Recent Activity */}
+            <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Recent Activity</h3>
+              <div className="space-y-2">
+                {engagementStats.recentActivity.map((e) => {
+                  const config = getChannelConfig(e.channel);
+                  return (
+                    <div key={e.id} className="flex items-center gap-2 text-xs">
+                      <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded ${config.colorClass}`}>
+                        {config.label}
+                      </span>
+                      <div className="flex items-center gap-1 min-w-0 flex-1">
+                        <span className="font-medium truncate">{e.companyName}</span>
+                        {e.contactName && (
+                          <span className="text-muted-foreground truncate">with {e.contactName}</span>
+                        )}
+                      </div>
+                      <span className="text-muted-foreground/60 shrink-0">{formatEngagementTime(e.timestamp)}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </>
+        )}
+
+        <Separator />
+
+        {/* Source + Size charts */}
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Data Source</h3>
+            <HorizontalBar items={stats.sourceItems} total={stats.total} />
+          </div>
+
+          <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Company Size Distribution</h3>
+            <VerticalBarChart buckets={stats.sizeBuckets} />
+          </div>
         </div>
 
         {/* Top locations */}
@@ -246,4 +461,16 @@ export function DashboardTab({ companies, metState }: DashboardTabProps) {
       </div>
     </ScrollArea>
   );
+}
+
+function channelToColor(channel: string): string {
+  const colors: Record<string, string> = {
+    email: "oklch(0.65 0.15 250)",
+    linkedin: "oklch(0.65 0.17 220)",
+    imessage: "oklch(0.65 0.17 145)",
+    call: "oklch(0.72 0.19 85)",
+    meeting: "oklch(0.6 0.17 300)",
+    note: "oklch(0.5 0.05 270)",
+  };
+  return colors[channel] || "oklch(0.55 0.05 250)";
 }

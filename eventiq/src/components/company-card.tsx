@@ -1,6 +1,6 @@
 "use client";
 
-import { Company } from "@/lib/types";
+import { Company, getResearchScore, getResearchTier } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
@@ -28,6 +28,29 @@ function highlightText(text: string, query: string) {
     ) : (
       part
     )
+  );
+}
+
+const qualityColors: Record<string, string> = {
+  complete: "bg-green-500",
+  good: "bg-blue-500",
+  partial: "bg-amber-500",
+  minimal: "bg-red-500/60",
+};
+
+function QualityBar({ company }: { company: Company }) {
+  const score = getResearchScore(company);
+  const tier = getResearchTier(score);
+  return (
+    <div className="mt-2 flex items-center gap-1.5">
+      <div className="flex-1 h-1 rounded-full bg-muted/30 overflow-hidden">
+        <div
+          className={cn("h-full rounded-full transition-all", qualityColors[tier])}
+          style={{ width: `${score}%` }}
+        />
+      </div>
+      <span className="text-[9px] text-muted-foreground/60 shrink-0 w-6 text-right">{score}%</span>
+    </div>
   );
 }
 
@@ -141,6 +164,8 @@ export function CompanyCard({
       {company.booth && (
         <div className="absolute top-1 right-1 w-1.5 h-1.5 rounded-full bg-primary/40" title="Has booth" />
       )}
+      {/* Research quality bar */}
+      <QualityBar company={company} />
     </div>
   );
 }

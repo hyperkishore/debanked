@@ -1,7 +1,7 @@
 "use client";
 
 import { Company, FilterType, SortType, ViewType, RatingData, EngagementEntry } from "@/lib/types";
-import { isResearched } from "@/lib/types";
+import { isResearched, getResearchScore } from "@/lib/types";
 import { getLastEngagement, needsFollowUp } from "@/lib/engagement-helpers";
 import { CompanyCard } from "./company-card";
 import { CompanyTable } from "./company-table";
@@ -74,6 +74,8 @@ function sortCompanies(companies: Company[], sort: SortType): Company[] {
         return a.phase - b.phase || a.priority - b.priority;
       case "employees":
         return (b.employees || 0) - (a.employees || 0);
+      case "quality":
+        return getResearchScore(b) - getResearchScore(a);
       default:
         return 0;
     }

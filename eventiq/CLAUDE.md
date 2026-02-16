@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 2.3.01
+**Version:** 2.3.02
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 **Live:** GitHub Pages (auto-deploy on push to main)
@@ -280,6 +280,12 @@ Each agent receives a batch of companies and should:
 ---
 
 ## Decisions Log
+
+### v2.3.02 (2026-02-15) — Full-Text Search, Data Quality, Engagement Analytics
+- **Full-text search**: Cmd+K now searches across ALL company fields (name, contacts, leaders, bios, location, desc, news, icebreakers, talking points, notes, website) with contextual snippets showing where the match was found
+- **Data quality indicators**: Research completeness score (0-100) with colored quality bars on every company card. Sort by "Quality" to find under-researched companies. Score based on weighted field presence.
+- **Engagement analytics dashboard**: Channel breakdown, hottest prospects ranking, needs-follow-up detection (3+ day stale), recent activity feed. Dashboard now shows data quality distribution chart.
+- **Files changed**: `search-command.tsx`, `types.ts`, `company-card.tsx`, `filter-bar.tsx`, `company-list.tsx`, `dashboard-tab.tsx`, `page.tsx`
 
 ### v2.3.01 (2026-02-15) — Agent-Driven Import Architecture
 - **Decision**: Refactor import pipeline from heuristic+API to agent-driven architecture

@@ -136,8 +136,45 @@ export function isResearched(c: Company): boolean {
   return c.desc.length > 0 && c.contacts.length > 0;
 }
 
+/**
+ * Research completeness score (0-100).
+ * Weights: desc 15, contacts 10, leaders 15, news 10, ice 10, icebreakers 5,
+ *          tp 10, ask 5, location 5, website 5, linkedinUrl 5, employees 5
+ */
+export function getResearchScore(c: Company): number {
+  let score = 0;
+  if (c.desc && c.desc.length > 20) score += 15;
+  else if (c.desc && c.desc.length > 0) score += 7;
+  if (c.contacts.length >= 2) score += 10;
+  else if (c.contacts.length === 1) score += 5;
+  const leaders = c.leaders || [];
+  if (leaders.length >= 2 && leaders.some(l => l.bg && l.bg.length > 20)) score += 15;
+  else if (leaders.length >= 1) score += 7;
+  if ((c.news || []).length >= 2) score += 10;
+  else if ((c.news || []).length === 1) score += 5;
+  if (c.ice && c.ice.length > 10) score += 10;
+  if ((c.icebreakers || []).length >= 2) score += 5;
+  if ((c.tp || []).length >= 2) score += 10;
+  else if ((c.tp || []).length === 1) score += 5;
+  if (c.ask && c.ask.length > 10) score += 5;
+  if (c.location) score += 5;
+  if (c.website) score += 5;
+  if (c.linkedinUrl) score += 5;
+  if (c.employees && c.employees > 0) score += 5; // extra partial point for employees
+  return Math.min(score, 100);
+}
+
+export type ResearchTier = 'complete' | 'good' | 'partial' | 'minimal';
+
+export function getResearchTier(score: number): ResearchTier {
+  if (score >= 80) return 'complete';
+  if (score >= 50) return 'good';
+  if (score >= 25) return 'partial';
+  return 'minimal';
+}
+
 export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'Researched' | 'Unresearched';
-export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees';
+export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees' | 'quality';
 export type ViewType = 'cards' | 'table';
 export type TabType = 'companies' | 'schedule' | 'pitch' | 'checklist' | 'dashboard';
 
