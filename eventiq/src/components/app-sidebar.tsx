@@ -1,6 +1,7 @@
 "use client";
 
 import { TabType } from "@/lib/types";
+import { StreakData } from "@/lib/streak-helpers";
 import {
   Sidebar,
   SidebarContent,
@@ -13,7 +14,7 @@ import {
   SidebarMenuItem,
   SidebarHeader,
 } from "@/components/ui/sidebar";
-import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload } from "lucide-react";
+import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban } from "lucide-react";
 
 interface AppSidebarProps {
   activeTab: TabType;
@@ -22,11 +23,13 @@ interface AppSidebarProps {
   onOpenImport: () => void;
   metCount: number;
   totalCount: number;
+  streakData: StreakData;
 }
 
 const navItems: { id: TabType; label: string; icon: React.ComponentType<{ className?: string }>; shortcut: string }[] = [
   { id: "companies", label: "Companies", icon: Building2, shortcut: "1" },
   { id: "dashboard", label: "Dashboard", icon: BarChart3, shortcut: "5" },
+  { id: "pipeline", label: "Pipeline", icon: Kanban, shortcut: "6" },
   { id: "schedule", label: "Schedule", icon: Clock, shortcut: "2" },
   { id: "pitch", label: "Pitch", icon: Layers, shortcut: "3" },
   { id: "checklist", label: "Checklist", icon: CheckSquare, shortcut: "4" },
@@ -39,6 +42,7 @@ export function AppSidebar({
   onOpenImport,
   metCount,
   totalCount,
+  streakData,
 }: AppSidebarProps) {
   return (
     <Sidebar className="border-r border-sidebar-border">
@@ -68,7 +72,7 @@ export function AppSidebar({
                   <Search className="h-4 w-4" />
                   <span>Search</span>
                   <kbd className="ml-auto text-[10px] bg-muted/50 px-1.5 py-0.5 rounded text-muted-foreground font-mono">
-                    ⌘K
+                    &#x2318;K
                   </kbd>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -120,7 +124,7 @@ export function AppSidebar({
               </div>
               <div className="flex justify-between">
                 <span>Search</span>
-                <span className="font-mono text-[10px]">/ or ⌘K</span>
+                <span className="font-mono text-[10px]">/ or &#x2318;K</span>
               </div>
               <div className="flex justify-between">
                 <span>Toggle met</span>
@@ -128,7 +132,7 @@ export function AppSidebar({
               </div>
               <div className="flex justify-between">
                 <span>Log engagement</span>
-                <span className="font-mono text-[10px]">e or ⌘E</span>
+                <span className="font-mono text-[10px]">e or &#x2318;E</span>
               </div>
             </div>
           </SidebarGroupContent>
@@ -136,11 +140,27 @@ export function AppSidebar({
       </SidebarContent>
 
       <SidebarFooter className="p-4">
+        {/* Streak display */}
+        {streakData.currentStreak > 0 && (
+          <div className="flex items-center gap-2 mb-2" title={`Longest streak: ${streakData.longestStreak} days`}>
+            <span className="streak-flame text-sm">&#x1F525;</span>
+            <span className="text-xs font-semibold text-foreground">{streakData.currentStreak}d streak</span>
+            <div className="flex-1 bg-muted/30 rounded-full h-1.5">
+              <div
+                className="h-1.5 rounded-full transition-all"
+                style={{
+                  width: `${Math.min((streakData.currentStreak / 30) * 100, 100)}%`,
+                  backgroundColor: streakData.currentStreak >= 14 ? "var(--icp)" : streakData.currentStreak >= 7 ? "var(--client)" : "var(--primary)",
+                }}
+              />
+            </div>
+          </div>
+        )}
         <div className="flex items-center justify-between text-xs text-muted-foreground">
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.3.00</span>
+          <span className="opacity-50">v2.4.00</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

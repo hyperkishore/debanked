@@ -3,6 +3,8 @@
 import { Company, RatingData, EngagementEntry } from "@/lib/types";
 import { isResearched, getResearchScore, getResearchTier } from "@/lib/types";
 import { getLastEngagement, getChannelConfig, formatEngagementTime } from "@/lib/engagement-helpers";
+import { StreakData } from "@/lib/streak-helpers";
+import { ActionFeed } from "@/components/action-feed";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { useMemo } from "react";
@@ -12,6 +14,8 @@ interface DashboardTabProps {
   metState: Record<string, boolean>;
   engagements: EngagementEntry[];
   ratingState: Record<string, RatingData>;
+  streakData: StreakData;
+  onOpenEngagement: (companyId: number) => void;
 }
 
 // --- Reusable sub-components ---
@@ -124,7 +128,7 @@ function ProgressRow({ label, done, total, color }: { label: string; done: numbe
 
 // --- Main component ---
 
-export function DashboardTab({ companies, metState, engagements, ratingState }: DashboardTabProps) {
+export function DashboardTab({ companies, metState, engagements, ratingState, streakData, onOpenEngagement }: DashboardTabProps) {
   const stats = useMemo(() => {
     const total = companies.length;
     const p0 = companies.filter((c) => c.priority <= 2);
@@ -314,6 +318,16 @@ export function DashboardTab({ companies, metState, engagements, ratingState }: 
           <h2 className="text-lg font-bold">Dashboard</h2>
           <p className="text-xs text-muted-foreground mt-0.5">Market intelligence overview</p>
         </div>
+
+        {/* Action Feed */}
+        <ActionFeed
+          companies={companies}
+          metState={metState}
+          ratingState={ratingState}
+          engagements={engagements}
+          streakData={streakData}
+          onOpenEngagement={onOpenEngagement}
+        />
 
         {/* Stat cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">

@@ -10,6 +10,8 @@ import {
   RatingData,
   EngagementEntry,
 } from "@/lib/types";
+import { computeStreak, checkMilestone, checkStreakMilestone, StreakData, DEFAULT_STREAK } from "@/lib/streak-helpers";
+import { PipelineStage, PipelineRecord, inferStage } from "@/lib/pipeline-helpers";
 import companiesData from "@/data/all-companies.json";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import {
@@ -31,9 +33,11 @@ import { PitchTab } from "@/components/pitch-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
 import { ChecklistTab } from "@/components/checklist-tab";
 import { DashboardTab } from "@/components/dashboard-tab";
+import { PipelineTab } from "@/components/pipeline-tab";
 import { useLocalStorage } from "@/hooks/use-local-storage";
 import { useKeyboard } from "@/hooks/use-keyboard";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { toast } from "sonner";
 
 const buildTimeCompanies = companiesData as Company[];
 
@@ -79,6 +83,12 @@ export default function Home() {
   const [engagementDialogOpen, setEngagementDialogOpen] = useState(false);
   const [importDialogOpen, setImportDialogOpen] = useState(false);
 
+  // Pipeline state
+  const [pipelineState, setPipelineState] = useLocalStorage<Record<string, PipelineRecord>>(
+    "eventiq_pipeline",
+    {}
+  );
+
   // Imported companies from localStorage (merged at runtime with build-time data)
   const [importedCompanies, setImportedCompanies] = useLocalStorage<Company[]>(
     "eventiq_imported_companies",
@@ -114,6 +124,22 @@ export default function Home() {
     }
     return merged;
   }, [importedCompanies]);
+
+  // Compute streak data from engagements
+  const streakData = useMemo<StreakData>(() => computeStreak(engagements), [engagements]);
+
+  // Auto-infer pipeline stages on first load (only if pipeline state is empty)
+  useEffect(() => {
+    if (Object.keys(pipelineState).length > 0) return;
+    const inferred: Record<string, PipelineRecord> = {};
+    for (const c of companies) {
+      inferred[c.id] = {
+        stage: inferStage(c, metState, ratingState, engagements),
+        movedAt: new Date().toISOString(),
+      };
+    }
+    setPipelineState(inferred);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Register service worker
   useEffect(() => {
@@ -203,9 +229,32 @@ export default function Home() {
 
   const handleAddEngagement = useCallback(
     (entry: EngagementEntry) => {
+      const prevTotal = engagements.length;
+      const prevStreak = streakData.currentStreak;
+
       setEngagements((prev) => [...prev, entry]);
+
+      // Check milestones after adding
+      const newTotal = prevTotal + 1;
+      const milestone = checkMilestone(prevTotal, newTotal);
+      if (milestone) {
+        toast.success(`${milestone.emoji} ${milestone.label}`, {
+          duration: 4000,
+        });
+      }
+
+      // Check streak milestones after a brief delay (streak recomputes async)
+      setTimeout(() => {
+        const newStreak = computeStreak([...engagements, entry]);
+        const streakMilestone = checkStreakMilestone(prevStreak, newStreak.currentStreak);
+        if (streakMilestone) {
+          toast.success(`${streakMilestone.emoji} ${streakMilestone.label}`, {
+            duration: 4000,
+          });
+        }
+      }, 100);
     },
-    [setEngagements]
+    [setEngagements, engagements, streakData]
   );
 
   const handleDeleteEngagement = useCallback(
@@ -240,6 +289,31 @@ export default function Home() {
       });
     },
     [setImportedCompanies]
+  );
+
+  // Pipeline move handler
+  const handlePipelineMove = useCallback(
+    (companyId: number, newStage: PipelineStage) => {
+      setPipelineState((prev) => ({
+        ...prev,
+        [companyId]: { stage: newStage, movedAt: new Date().toISOString() },
+      }));
+    },
+    [setPipelineState]
+  );
+
+  // Open engagement from action feed (select company first, then open dialog)
+  const handleOpenEngagementForCompany = useCallback(
+    (companyId: number) => {
+      setSelectedId(companyId);
+      setActiveTab("companies");
+      if (isMobile) {
+        setMobileDetailOpen(true);
+      }
+      // Slight delay so company selection propagates
+      setTimeout(() => setEngagementDialogOpen(true), 100);
+    },
+    [isMobile]
   );
 
   const allNotesExport = useMemo(() => {
@@ -324,7 +398,16 @@ export default function Home() {
   const renderContent = () => {
     switch (activeTab) {
       case "dashboard":
-        return <DashboardTab companies={companies} metState={metState} engagements={engagements} ratingState={ratingState} />;
+        return (
+          <DashboardTab
+            companies={companies}
+            metState={metState}
+            engagements={engagements}
+            ratingState={ratingState}
+            streakData={streakData}
+            onOpenEngagement={handleOpenEngagementForCompany}
+          />
+        );
       case "schedule":
         return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
       case "pitch":
@@ -337,6 +420,17 @@ export default function Home() {
             quickNotes={quickNotes}
             onQuickNotesChange={setQuickNotes}
             allNotes={allNotesExport}
+          />
+        );
+      case "pipeline":
+        return (
+          <PipelineTab
+            companies={companies}
+            pipelineState={pipelineState}
+            ratingState={ratingState}
+            engagements={engagements}
+            onPipelineMove={handlePipelineMove}
+            onOpenCompany={handleSelect}
           />
         );
       default:
@@ -357,6 +451,7 @@ export default function Home() {
           onOpenImport={() => setImportDialogOpen(true)}
           metCount={metCount}
           totalCount={companies.length}
+          streakData={streakData}
         />
       </div>
 
@@ -507,6 +602,7 @@ export default function Home() {
           onTabChange={setActiveTab}
           metCount={metCount}
           totalCount={companies.length}
+          streakCount={streakData.currentStreak}
         />
       </SidebarInset>
 

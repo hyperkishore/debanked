@@ -2,11 +2,13 @@
 
 import { Company, Leader, RatingData, EngagementEntry } from "@/lib/types";
 import { isResearched, generateOutreachMessage, generateQuickLinks } from "@/lib/types";
+import { generateMessageVariants, MessageVariant } from "@/lib/message-variants";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { EngagementTimeline } from "@/components/engagement-timeline";
+import { CopyButton } from "@/components/copy-button";
 import { cn } from "@/lib/utils";
 import {
   ExternalLink,
@@ -28,7 +30,7 @@ import {
   Search,
   Mail,
 } from "lucide-react";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 
 interface CompanyDetailProps {
   company: Company;
@@ -51,6 +53,12 @@ const typeBadgeStyles: Record<string, string> = {
   TAM: "bg-[var(--tam)]/10 text-[var(--tam)] border-[var(--tam)]/30",
 };
 
+const VARIANT_LABELS: Record<MessageVariant["style"], string> = {
+  formal: "Formal",
+  casual: "Casual",
+  "news-hook": "News Hook",
+};
+
 export function CompanyDetail({
   company,
   isMet,
@@ -66,8 +74,8 @@ export function CompanyDetail({
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [iceIndex, setIceIndex] = useState(0);
-  const [copiedLeader, setCopiedLeader] = useState<string | null>(null);
-  const [expandedMessage, setExpandedMessage] = useState<string | null>(null);
+  const [expandedLeader, setExpandedLeader] = useState<string | null>(null);
+  const [activeVariant, setActiveVariant] = useState<MessageVariant["style"]>("casual");
   const researched = isResearched(company);
   const quickLinks = generateQuickLinks(company);
 
@@ -82,13 +90,13 @@ export function CompanyDetail({
     onSaveNotes(company.id, value);
   };
 
-  const copyMessage = useCallback((leader: Leader) => {
-    const msg = generateOutreachMessage(leader, company);
-    navigator.clipboard.writeText(msg).then(() => {
-      setCopiedLeader(leader.n);
-      setTimeout(() => setCopiedLeader(null), 2000);
-    });
-  }, [company]);
+  // Current icebreaker text for copy
+  const currentIcebreaker = company.icebreakers && company.icebreakers.length > 0
+    ? company.icebreakers[iceIndex % company.icebreakers.length]
+    : company.ice || "";
+
+  // All talking points as copyable text
+  const allTalkingPoints = (company.tp || []).join("\n\n");
 
   return (
     <ScrollArea className="h-full">
@@ -213,86 +221,17 @@ export function CompanyDetail({
             <Section icon={Users} title="Contacts">
               <div className="space-y-2">
                 {(company.leaders || []).map((leader, i) => (
-                  <div key={i} className="rounded-lg bg-secondary/30 p-2.5">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <span className="text-sm font-medium">{leader.n}</span>
-                        <span className="text-xs text-muted-foreground ml-2">{leader.t}</span>
-                      </div>
-                      <div className="flex items-center gap-1.5">
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setExpandedMessage(expandedMessage === leader.n ? null : leader.n);
-                          }}
-                          className={cn(
-                            "flex items-center gap-1 text-[10px] px-2 py-1 rounded-md transition-colors",
-                            expandedMessage === leader.n
-                              ? "bg-primary/20 text-primary"
-                              : "bg-primary/10 text-primary hover:bg-primary/20"
-                          )}
-                          title="View outreach message"
-                        >
-                          <Mail className="h-3 w-3" /> Message
-                        </button>
-                        {leader.li && (
-                          <a
-                            href={leader.li}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary hover:text-primary/80"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <Linkedin className="h-3.5 w-3.5" />
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{leader.bg}</p>
-                    {leader.hooks && leader.hooks.length > 0 && (
-                      <div className="flex flex-wrap gap-1 mt-1.5">
-                        {leader.hooks.map((hook, j) => (
-                          <span
-                            key={j}
-                            className={cn(
-                              "text-[10px] px-1.5 py-0.5 rounded-full",
-                              hook.startsWith("*")
-                                ? "bg-primary/15 text-primary"
-                                : "bg-muted/50 text-muted-foreground"
-                            )}
-                          >
-                            {hook.startsWith("*") ? hook.slice(1) : hook}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    {/* Expanded message preview */}
-                    {expandedMessage === leader.n && (
-                      <div className="mt-2 rounded-md border border-primary/20 bg-primary/5 p-3">
-                        <div className="flex items-center justify-between mb-2">
-                          <span className="text-[10px] uppercase tracking-wider text-primary/70 font-semibold">Outreach Message</span>
-                          <button
-                            onClick={(e) => { e.stopPropagation(); copyMessage(leader); }}
-                            className={cn(
-                              "flex items-center gap-1 text-xs px-3 py-1.5 rounded-md font-medium transition-colors",
-                              copiedLeader === leader.n
-                                ? "bg-[var(--icp)] text-white"
-                                : "bg-primary text-white hover:bg-primary/90"
-                            )}
-                          >
-                            {copiedLeader === leader.n ? (
-                              <><Check className="h-3.5 w-3.5" /> Copied!</>
-                            ) : (
-                              <><Copy className="h-3.5 w-3.5" /> Copy</>
-                            )}
-                          </button>
-                        </div>
-                        <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">
-                          {generateOutreachMessage(leader, company)}
-                        </pre>
-                      </div>
-                    )}
-                  </div>
+                  <LeaderCard
+                    key={i}
+                    leader={leader}
+                    company={company}
+                    isExpanded={expandedLeader === leader.n}
+                    onToggleExpand={() =>
+                      setExpandedLeader(expandedLeader === leader.n ? null : leader.n)
+                    }
+                    activeVariant={activeVariant}
+                    onVariantChange={setActiveVariant}
+                  />
                 ))}
                 {(!company.leaders || company.leaders.length === 0) &&
                   company.contacts.map((c, i) => (
@@ -307,10 +246,11 @@ export function CompanyDetail({
             {/* Icebreakers */}
             <Section icon={Lightbulb} title="Icebreakers">
               <div className="space-y-2">
-                <div className="text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
-                  {company.icebreakers && company.icebreakers.length > 0
-                    ? company.icebreakers[iceIndex % company.icebreakers.length]
-                    : company.ice || "No icebreakers available"}
+                <div className="flex items-start gap-2">
+                  <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
+                    {currentIcebreaker || "No icebreakers available"}
+                  </div>
+                  {currentIcebreaker && <CopyButton text={currentIcebreaker} />}
                 </div>
                 {company.icebreakers && company.icebreakers.length > 1 && (
                   <Button variant="ghost" size="sm" className="h-7 text-xs text-muted-foreground" onClick={shuffleIce}>
@@ -323,10 +263,15 @@ export function CompanyDetail({
 
             {/* About */}
             <Section icon={Info} title="About">
-              <p className="text-sm leading-relaxed text-muted-foreground">{company.desc}</p>
-              {company.notes && (
-                <p className="text-xs text-primary/80 mt-2 italic">{company.notes}</p>
-              )}
+              <div className="flex items-start gap-2">
+                <div className="flex-1">
+                  <p className="text-sm leading-relaxed text-muted-foreground">{company.desc}</p>
+                  {company.notes && (
+                    <p className="text-xs text-primary/80 mt-2 italic">{company.notes}</p>
+                  )}
+                </div>
+                {company.desc && <CopyButton text={company.desc} />}
+              </div>
             </Section>
 
             {/* News */}
@@ -368,12 +313,15 @@ export function CompanyDetail({
 
             {/* Talking Points */}
             {company.tp && company.tp.length > 0 && (
-              <Section icon={MessageSquare} title="Talking Points">
+              <Section icon={MessageSquare} title="Talking Points" action={
+                allTalkingPoints ? <CopyButton text={allTalkingPoints} variant="button" label="Copy All" /> : undefined
+              }>
                 <div className="space-y-1.5">
                   {company.tp.map((point, i) => (
-                    <div key={i} className="flex gap-2 text-sm">
-                      <span className="text-primary shrink-0 mt-0.5">•</span>
-                      <span className="text-muted-foreground leading-relaxed">{point}</span>
+                    <div key={i} className="flex items-start gap-2 text-sm group">
+                      <span className="text-primary shrink-0 mt-0.5">&bull;</span>
+                      <span className="text-muted-foreground leading-relaxed flex-1">{point}</span>
+                      <CopyButton text={point} className="opacity-0 group-hover:opacity-100" />
                     </div>
                   ))}
                 </div>
@@ -383,8 +331,11 @@ export function CompanyDetail({
             {/* The Ask */}
             {company.ask && (
               <Section icon={Target} title="The Ask">
-                <div className="text-sm bg-primary/5 border border-primary/20 rounded-lg p-3 leading-relaxed">
-                  {company.ask}
+                <div className="flex items-start gap-2">
+                  <div className="flex-1 text-sm bg-primary/5 border border-primary/20 rounded-lg p-3 leading-relaxed">
+                    {company.ask}
+                  </div>
+                  <CopyButton text={company.ask} />
                 </div>
               </Section>
             )}
@@ -412,20 +363,143 @@ export function CompanyDetail({
   );
 }
 
+// --- Leader Card with message variants ---
+
+function LeaderCard({
+  leader,
+  company,
+  isExpanded,
+  onToggleExpand,
+  activeVariant,
+  onVariantChange,
+}: {
+  leader: Leader;
+  company: Company;
+  isExpanded: boolean;
+  onToggleExpand: () => void;
+  activeVariant: MessageVariant["style"];
+  onVariantChange: (style: MessageVariant["style"]) => void;
+}) {
+  const variants = useMemo(() => generateMessageVariants(leader, company), [leader, company]);
+  const current = variants.find((v) => v.style === activeVariant) || variants[0];
+
+  return (
+    <div className="rounded-lg bg-secondary/30 p-2.5">
+      <div className="flex items-center justify-between">
+        <div>
+          <span className="text-sm font-medium">{leader.n}</span>
+          <span className="text-xs text-muted-foreground ml-2">{leader.t}</span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleExpand();
+            }}
+            className={cn(
+              "flex items-center gap-1 text-[10px] px-2 py-1 rounded-md transition-colors",
+              isExpanded
+                ? "bg-primary/20 text-primary"
+                : "bg-primary/10 text-primary hover:bg-primary/20"
+            )}
+            title="View outreach messages"
+          >
+            <Mail className="h-3 w-3" /> Message
+          </button>
+          {leader.li && (
+            <a
+              href={leader.li}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Linkedin className="h-3.5 w-3.5" />
+            </a>
+          )}
+        </div>
+      </div>
+      <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{leader.bg}</p>
+      {leader.hooks && leader.hooks.length > 0 && (
+        <div className="flex flex-wrap gap-1 mt-1.5">
+          {leader.hooks.map((hook, j) => (
+            <span
+              key={j}
+              className={cn(
+                "text-[10px] px-1.5 py-0.5 rounded-full inline-flex items-center gap-1 group/hook",
+                hook.startsWith("*")
+                  ? "bg-primary/15 text-primary"
+                  : "bg-muted/50 text-muted-foreground"
+              )}
+            >
+              {hook.startsWith("*") ? hook.slice(1) : hook}
+              <CopyButton
+                text={hook.startsWith("*") ? hook.slice(1) : hook}
+                size="sm"
+                className="opacity-0 group-hover/hook:opacity-100 !p-0"
+              />
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Expanded message variants */}
+      {isExpanded && (
+        <div className="mt-2 rounded-md border border-primary/20 bg-primary/5 p-3">
+          {/* Variant tabs */}
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex gap-1">
+              {(["formal", "casual", "news-hook"] as const).map((style) => (
+                <button
+                  key={style}
+                  onClick={() => onVariantChange(style)}
+                  className={cn(
+                    "text-[10px] px-2 py-1 rounded-md transition-colors font-medium",
+                    activeVariant === style
+                      ? "bg-primary text-white"
+                      : "bg-primary/10 text-primary/70 hover:bg-primary/20"
+                  )}
+                >
+                  {VARIANT_LABELS[style]}
+                </button>
+              ))}
+            </div>
+            <CopyButton
+              text={`Subject: ${current.subject}\n\n${current.body}`}
+              variant="button"
+              label="Copy"
+              size="sm"
+            />
+          </div>
+          <div className="text-[10px] text-primary/60 mb-1 font-medium">
+            Subject: {current.subject}
+          </div>
+          <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">
+            {current.body}
+          </pre>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Section({
   icon: Icon,
   title,
   children,
+  action,
 }: {
   icon: React.ComponentType<{ className?: string }>;
   title: string;
   children: React.ReactNode;
+  action?: React.ReactNode;
 }) {
   return (
     <div>
       <div className="flex items-center gap-2 mb-2">
         <Icon className="h-4 w-4 text-muted-foreground" />
-        <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{title}</h3>
+        <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground flex-1">{title}</h3>
+        {action}
       </div>
       {children}
     </div>

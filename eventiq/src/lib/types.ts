@@ -176,7 +176,7 @@ export function getResearchTier(score: number): ResearchTier {
 export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'Researched' | 'Unresearched';
 export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees' | 'quality';
 export type ViewType = 'cards' | 'table';
-export type TabType = 'companies' | 'schedule' | 'pitch' | 'checklist' | 'dashboard';
+export type TabType = 'companies' | 'schedule' | 'pitch' | 'checklist' | 'dashboard' | 'pipeline';
 
 export type Rating = 'hot' | 'warm' | 'cold' | '';
 export type FollowUp = 'demo' | 'email' | 'intro' | 'none';
