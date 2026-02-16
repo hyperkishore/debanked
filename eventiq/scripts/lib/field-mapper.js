@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * Field mapping for EventIQ imports
- * Maps incoming column headers to EventIQ Company schema fields
- * Supports heuristic mapping (for in-app) and Claude API mapping (for CLI)
+ * Maps incoming column headers to EventIQ Company schema fields using heuristics.
+ * For messy data, the Claude Code agent handles intelligent mapping directly.
  */
 
 // EventIQ Company schema fields with descriptions
@@ -128,97 +128,6 @@ function heuristicMap(headers) {
 }
 
 /**
- * Build prompt for Claude API field mapping
- * @param {string[]} headers - Column headers
- * @param {object[]} sampleRows - 3 sample data rows
- * @returns {string} Prompt text
- */
-function buildClaudePrompt(headers, sampleRows) {
-  const schemaDesc = Object.entries(SCHEMA_FIELDS)
-    .map(([key, info]) => `  "${key}": ${info.label} (${info.type})`)
-    .join('\n');
-
-  const sampleText = sampleRows.slice(0, 3).map((row, i) => {
-    return `Row ${i + 1}: ${JSON.stringify(row)}`;
-  }).join('\n');
-
-  return `Map these CSV columns to the EventIQ company schema.
-
-Available schema fields:
-${schemaDesc}
-
-CSV Headers: ${JSON.stringify(headers)}
-
-Sample data:
-${sampleText}
-
-Respond with ONLY a JSON object mapping each header to the best matching schema field.
-Use "_skip" for columns that don't map to any field.
-Example: {"Company Name": "name", "Website": "website", "ID": "_skip"}`;
-}
-
-/**
- * Call Claude API for intelligent field mapping
- * @param {string[]} headers - Column headers
- * @param {object[]} sampleRows - Sample data rows
- * @returns {Promise<Object<string, string>>} Map of header → schema field
- */
-async function claudeMap(headers, sampleRows) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.warn('ANTHROPIC_API_KEY not set, falling back to heuristic mapping');
-    return heuristicMap(headers);
-  }
-
-  const prompt = buildClaudePrompt(headers, sampleRows);
-
-  const response = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01',
-    },
-    body: JSON.stringify({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 1024,
-      messages: [{
-        role: 'user',
-        content: prompt,
-      }],
-    }),
-  });
-
-  if (!response.ok) {
-    console.warn(`Claude API error: ${response.status}, falling back to heuristic mapping`);
-    return heuristicMap(headers);
-  }
-
-  const data = await response.json();
-  const text = data.content?.[0]?.text || '';
-
-  try {
-    // Extract JSON from response (may be wrapped in markdown code block)
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
-    if (jsonMatch) {
-      const mapping = JSON.parse(jsonMatch[0]);
-      // Validate all values are valid schema fields
-      for (const [key, value] of Object.entries(mapping)) {
-        if (!SCHEMA_FIELDS[value]) {
-          mapping[key] = '_skip';
-        }
-      }
-      return mapping;
-    }
-  } catch {
-    // Fall through
-  }
-
-  console.warn('Could not parse Claude API response, falling back to heuristic mapping');
-  return heuristicMap(headers);
-}
-
-/**
  * Convert mapped rows into EventIQ Company objects
  * @param {object[]} rows - Parsed data rows
  * @param {Object<string, string>} mapping - Header → schema field mapping
@@ -226,7 +135,6 @@ async function claudeMap(headers, sampleRows) {
  * @returns {object[]} Array of Company-shaped objects
  */
 function rowsToCompanies(rows, mapping, startId = 2000) {
-  const companies = [];
   // Group by company name (multiple contacts per company)
   const companyMap = new Map();
 
@@ -270,13 +178,6 @@ function rowsToCompanies(rows, mapping, startId = 2000) {
         website: normalizeWebsite(getValue('website')),
         linkedinUrl: getValue('linkedinUrl'),
         source: ['import'],
-        _importMeta: {
-          contactEmail: null,
-          contactPhone: null,
-          lastActivity: getValue('last_activity'),
-          dealStage: getValue('deal_stage'),
-          dealAmount: getValue('deal_amount'),
-        },
       });
     }
 
@@ -299,12 +200,6 @@ function rowsToCompanies(rows, mapping, startId = 2000) {
           li: getValue('contact_linkedin') || undefined,
         });
       }
-
-      // Track email/phone in meta
-      const email = getValue('contact_email');
-      const phone = getValue('contact_phone');
-      if (email) company._importMeta.contactEmail = email;
-      if (phone) company._importMeta.contactPhone = phone;
     }
 
     // Merge notes if row has different notes
@@ -353,9 +248,10 @@ function getSchemaFields() {
 
 module.exports = {
   SCHEMA_FIELDS,
+  HEURISTIC_PATTERNS,
   heuristicMap,
-  claudeMap,
-  buildClaudePrompt,
   rowsToCompanies,
+  normalizeType,
+  normalizeWebsite,
   getSchemaFields,
 };

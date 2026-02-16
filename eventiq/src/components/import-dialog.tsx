@@ -18,15 +18,15 @@ import {
   ChevronRight,
   ChevronLeft,
   Check,
-  AlertCircle,
-  ArrowRight,
   Plus,
   RefreshCw,
+  Copy,
+  Terminal,
 } from "lucide-react";
 import { Company } from "@/lib/types";
 import { toast } from "sonner";
 
-// --- Inline heuristic field mapper (browser-safe, no Node.js) ---
+// --- Heuristic field mapper (browser-safe, shared logic with scripts/lib/field-mapper.js) ---
 
 const SCHEMA_FIELDS: Record<string, { label: string; type: string }> = {
   name: { label: "Company Name", type: "string" },
@@ -91,7 +91,7 @@ function heuristicMap(headers: string[]): Record<string, string> {
   return mapping;
 }
 
-// --- Inline CSV/JSON parser (browser-safe) ---
+// --- CSV/JSON parser (browser-safe) ---
 
 function autoParse(text: string): { headers: string[]; rows: Record<string, string>[]; format: string } {
   const trimmed = text.trim();
@@ -111,7 +111,6 @@ function autoParse(text: string): { headers: string[]; rows: Record<string, stri
     }
   }
 
-  // CSV parse
   let csv = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
   if (csv.charCodeAt(0) === 0xfeff) csv = csv.slice(1);
 
@@ -184,7 +183,7 @@ function fuzzyScore(a: string, b: string): number {
 
 // --- Types ---
 
-type ImportStep = "paste" | "map" | "preview" | "done";
+type ImportStep = "paste" | "preview" | "agent" | "done";
 
 interface ImportedCompany {
   name: string;
@@ -211,19 +210,11 @@ interface ImportDialogProps {
 export function ImportDialog({ open, onClose, companies, onImport }: ImportDialogProps) {
   const [step, setStep] = useState<ImportStep>("paste");
   const [rawInput, setRawInput] = useState("");
-  const [parsedHeaders, setParsedHeaders] = useState<string[]>([]);
-  const [parsedRows, setParsedRows] = useState<Record<string, string>[]>([]);
-  const [format, setFormat] = useState("");
-  const [mapping, setMapping] = useState<Record<string, string>>({});
   const [importResult, setImportResult] = useState<ImportedCompany[]>([]);
 
   const resetState = useCallback(() => {
     setStep("paste");
     setRawInput("");
-    setParsedHeaders([]);
-    setParsedRows([]);
-    setFormat("");
-    setMapping({});
     setImportResult([]);
   }, []);
 
@@ -232,108 +223,102 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
     onClose();
   }, [onClose, resetState]);
 
-  // Step 1 → 2: Parse input
+  // Step 1: Parse, map, and decide path
   const handleParse = useCallback(() => {
     if (!rawInput.trim()) return;
     try {
-      const { headers, rows, format: fmt } = autoParse(rawInput);
+      const { headers, rows } = autoParse(rawInput);
       if (headers.length === 0 || rows.length === 0) {
         toast.error("No data found. Check your input format.");
         return;
       }
-      setParsedHeaders(headers);
-      setParsedRows(rows);
-      setFormat(fmt);
-      setMapping(heuristicMap(headers));
-      setStep("map");
+
+      const mapping = heuristicMap(headers);
+      const hasName = Object.values(mapping).includes("name");
+      const mappedCount = Object.values(mapping).filter(v => v !== "_skip").length;
+      const mappedRatio = mappedCount / headers.length;
+
+      // Messy data: no name column or less than 30% of columns mapped
+      if (!hasName || mappedRatio < 0.3) {
+        setStep("agent");
+        return;
+      }
+
+      // Clean data: auto-map and preview
+      const reverseMap: Record<string, string> = {};
+      for (const [header, field] of Object.entries(mapping)) {
+        if (field !== "_skip") reverseMap[field] = header;
+      }
+      const getValue = (row: Record<string, string>, field: string) => {
+        const header = reverseMap[field];
+        return header ? (row[header] || "").trim() : "";
+      };
+
+      const companyMap = new Map<string, ImportedCompany>();
+      for (const row of rows) {
+        const companyName = getValue(row, "name");
+        if (!companyName) continue;
+
+        if (!companyMap.has(companyName)) {
+          companyMap.set(companyName, {
+            name: companyName,
+            type: getValue(row, "type") || "TAM",
+            desc: getValue(row, "desc"),
+            website: getValue(row, "website"),
+            linkedinUrl: getValue(row, "linkedinUrl"),
+            location: getValue(row, "location"),
+            employees: parseInt(getValue(row, "employees")) || 0,
+            notes: getValue(row, "notes"),
+            contacts: [],
+          });
+        }
+
+        const company = companyMap.get(companyName)!;
+        const contactName = getValue(row, "contact_name");
+        if (contactName && !company.contacts.some(c => c.n === contactName)) {
+          company.contacts.push({
+            n: contactName,
+            t: getValue(row, "contact_title") || "",
+            li: getValue(row, "contact_linkedin") || undefined,
+          });
+        }
+      }
+
+      // Fuzzy match against existing
+      const results = Array.from(companyMap.values());
+      for (const imp of results) {
+        const normImp = normalizeCompanyName(imp.name);
+        let bestScore = 0;
+        let bestMatch: Company | null = null;
+
+        for (const existing of companies) {
+          const score = fuzzyScore(imp.name, existing.name);
+          if (score > bestScore) {
+            bestScore = score;
+            bestMatch = existing;
+          }
+          if (normalizeCompanyName(existing.name) === normImp) {
+            bestScore = 1;
+            bestMatch = existing;
+            break;
+          }
+        }
+
+        if (bestMatch && bestScore >= 0.75) {
+          imp._matchedExistingId = bestMatch.id;
+          imp._matchedExistingName = bestMatch.name;
+          imp._matchScore = bestScore;
+        }
+      }
+
+      setImportResult(results);
+      setStep("preview");
     } catch {
       toast.error("Failed to parse input. Check your format.");
     }
-  }, [rawInput]);
+  }, [rawInput, companies]);
 
-  // Step 2 → 3: Convert and match
-  const handlePreview = useCallback(() => {
-    const hasName = Object.values(mapping).includes("name");
-    if (!hasName) {
-      toast.error("You must map at least one column to 'Company Name'.");
-      return;
-    }
-
-    // Build reverse map
-    const reverseMap: Record<string, string> = {};
-    for (const [header, field] of Object.entries(mapping)) {
-      if (field !== "_skip") reverseMap[field] = header;
-    }
-
-    const getValue = (row: Record<string, string>, field: string) => {
-      const header = reverseMap[field];
-      return header ? (row[header] || "").trim() : "";
-    };
-
-    // Group by company name
-    const companyMap = new Map<string, ImportedCompany>();
-    for (const row of parsedRows) {
-      const companyName = getValue(row, "name");
-      if (!companyName) continue;
-
-      if (!companyMap.has(companyName)) {
-        companyMap.set(companyName, {
-          name: companyName,
-          type: getValue(row, "type") || "TAM",
-          desc: getValue(row, "desc"),
-          website: getValue(row, "website"),
-          linkedinUrl: getValue(row, "linkedinUrl"),
-          location: getValue(row, "location"),
-          employees: parseInt(getValue(row, "employees")) || 0,
-          notes: getValue(row, "notes"),
-          contacts: [],
-        });
-      }
-
-      const company = companyMap.get(companyName)!;
-      const contactName = getValue(row, "contact_name");
-      if (contactName && !company.contacts.some(c => c.n === contactName)) {
-        company.contacts.push({
-          n: contactName,
-          t: getValue(row, "contact_title") || "",
-          li: getValue(row, "contact_linkedin") || undefined,
-        });
-      }
-    }
-
-    // Fuzzy match against existing
-    const results = Array.from(companyMap.values());
-    for (const imp of results) {
-      const normImp = normalizeCompanyName(imp.name);
-      let bestScore = 0;
-      let bestMatch: Company | null = null;
-
-      for (const existing of companies) {
-        const score = fuzzyScore(imp.name, existing.name);
-        if (score > bestScore) {
-          bestScore = score;
-          bestMatch = existing;
-        }
-        // Also check normalized exact
-        if (normalizeCompanyName(existing.name) === normImp) {
-          bestScore = 1;
-          bestMatch = existing;
-          break;
-        }
-      }
-
-      if (bestMatch && bestScore >= 0.75) {
-        imp._matchedExistingId = bestMatch.id;
-        imp._matchedExistingName = bestMatch.name;
-        imp._matchScore = bestScore;
-      }
-    }
-
-    setImportResult(results);
-    setStep("preview");
-  }, [mapping, parsedRows, companies]);
-
-  // Step 3 → 4: Confirm import
+  // Preview → Done: Confirm import
   const handleConfirmImport = useCallback(() => {
     const maxExistingId = companies.reduce((max, c) => Math.max(max, c.id), 0);
     const newCompanies: Company[] = [];
@@ -342,7 +327,6 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
 
     for (const imp of importResult) {
       if (imp._matchedExistingId) {
-        // Update existing — only fill empty fields
         const existing = companies.find(c => c.id === imp._matchedExistingId);
         if (existing) {
           const updated = { ...existing };
@@ -353,7 +337,6 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
           if (imp.location && !existing.location) { updated.location = imp.location; changed = true; }
           if (imp.employees && !existing.employees) { updated.employees = imp.employees; changed = true; }
 
-          // Add new contacts
           const updatedContacts = [...(existing.contacts || [])];
           for (const c of imp.contacts) {
             if (!updatedContacts.some(ec => ec.n.toLowerCase() === c.n.toLowerCase())) {
@@ -377,7 +360,6 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
           if (changed) updatedCompanies.push(updated);
         }
       } else {
-        // New company
         newCompanies.push({
           id: nextId++,
           name: imp.name,
@@ -413,7 +395,11 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
     setStep("done");
   }, [importResult, companies, onImport]);
 
-  // Derived counts for preview
+  const handleCopyData = useCallback(() => {
+    navigator.clipboard.writeText(rawInput);
+    toast.success("Data copied to clipboard");
+  }, [rawInput]);
+
   const previewStats = useMemo(() => {
     const updates = importResult.filter(r => r._matchedExistingId);
     const newOnes = importResult.filter(r => !r._matchedExistingId);
@@ -430,27 +416,14 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
           </DialogTitle>
           <DialogDescription>
             {step === "paste" && "Paste CSV, TSV, or JSON data to import companies and contacts."}
-            {step === "map" && "Review field mapping. Adjust any incorrect mappings below."}
             {step === "preview" && `Preview: ${previewStats.new} new, ${previewStats.updates} updates out of ${previewStats.total} companies.`}
+            {step === "agent" && "This data needs intelligent mapping."}
             {step === "done" && "Import complete!"}
           </DialogDescription>
         </DialogHeader>
 
-        {/* Step indicators */}
-        <div className="flex items-center gap-1 text-xs text-muted-foreground px-1">
-          {(["paste", "map", "preview", "done"] as ImportStep[]).map((s, i) => (
-            <div key={s} className="flex items-center gap-1">
-              {i > 0 && <ChevronRight className="h-3 w-3" />}
-              <span className={step === s ? "text-primary font-medium" : s === "done" && step === "done" ? "text-green-400 font-medium" : ""}>
-                {i + 1}. {s === "paste" ? "Paste" : s === "map" ? "Map" : s === "preview" ? "Preview" : "Done"}
-              </span>
-            </div>
-          ))}
-        </div>
-
         <Separator />
 
-        {/* Step content */}
         <div className="flex-1 min-h-0 overflow-auto">
           {step === "paste" && (
             <div className="space-y-3">
@@ -461,44 +434,7 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
                 onChange={(e) => setRawInput(e.target.value)}
               />
               <div className="text-xs text-muted-foreground">
-                Tip: Export from HubSpot, Google Sheets, or any CRM as CSV.
-              </div>
-            </div>
-          )}
-
-          {step === "map" && (
-            <div className="space-y-3">
-              <div className="text-xs text-muted-foreground">
-                {format.toUpperCase()} detected. {parsedRows.length} rows, {parsedHeaders.length} columns.
-              </div>
-              <ScrollArea className="h-64">
-                <div className="space-y-2">
-                  {parsedHeaders.map((header) => (
-                    <div key={header} className="flex items-center gap-3 text-sm">
-                      <span className="w-40 truncate font-mono text-xs text-muted-foreground" title={header}>
-                        {header}
-                      </span>
-                      <ArrowRight className="h-3 w-3 text-muted-foreground shrink-0" />
-                      <select
-                        className="flex-1 bg-muted/30 border border-border rounded-md px-2 py-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
-                        value={mapping[header] || "_skip"}
-                        onChange={(e) => setMapping(prev => ({ ...prev, [header]: e.target.value }))}
-                      >
-                        {Object.entries(SCHEMA_FIELDS).map(([key, info]) => (
-                          <option key={key} value={key}>{info.label}</option>
-                        ))}
-                      </select>
-                    </div>
-                  ))}
-                </div>
-              </ScrollArea>
-              {/* Sample data preview */}
-              <div className="text-xs text-muted-foreground">
-                Sample: {parsedRows.slice(0, 2).map((row, i) => {
-                  const nameField = Object.keys(mapping).find(k => mapping[k] === "name");
-                  const name = nameField ? row[nameField] : "(no name mapped)";
-                  return <Badge key={i} variant="outline" className="mr-1">{name}</Badge>;
-                })}
+                Clean data (standard column names) imports directly. Messy data gets routed to Claude Code for intelligent mapping.
               </div>
             </div>
           )}
@@ -536,6 +472,35 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
             </ScrollArea>
           )}
 
+          {step === "agent" && (
+            <div className="space-y-4 py-4">
+              <div className="flex items-center gap-3 p-3 rounded-md bg-amber-500/10 border border-amber-500/20">
+                <Terminal className="h-5 w-5 text-amber-400 shrink-0" />
+                <div className="text-sm">
+                  <div className="font-medium text-amber-400">Column headers don&apos;t match standard fields</div>
+                  <div className="text-muted-foreground mt-1">
+                    Claude Code can intelligently map your data. Copy it and paste it in your Claude Code chat.
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <div className="text-sm font-medium">Steps:</div>
+                <ol className="text-sm text-muted-foreground space-y-1 list-decimal list-inside">
+                  <li>Click &quot;Copy Data&quot; below</li>
+                  <li>In Claude Code, say: &quot;Import this data into EventIQ&quot;</li>
+                  <li>Paste the data when prompted</li>
+                  <li>Claude will map fields, produce JSON, and run the merge</li>
+                </ol>
+              </div>
+
+              <Button onClick={handleCopyData} className="w-full">
+                <Copy className="mr-2 h-4 w-4" />
+                Copy Data to Clipboard
+              </Button>
+            </div>
+          )}
+
           {step === "done" && (
             <div className="flex flex-col items-center justify-center py-12 text-center space-y-3">
               <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center">
@@ -555,22 +520,12 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
         <DialogFooter>
           {step === "paste" && (
             <Button onClick={handleParse} disabled={!rawInput.trim()}>
-              Parse Data <ChevronRight className="ml-1 h-4 w-4" />
+              Import <ChevronRight className="ml-1 h-4 w-4" />
             </Button>
-          )}
-          {step === "map" && (
-            <>
-              <Button variant="outline" onClick={() => setStep("paste")}>
-                <ChevronLeft className="mr-1 h-4 w-4" /> Back
-              </Button>
-              <Button onClick={handlePreview}>
-                Preview Import <ChevronRight className="ml-1 h-4 w-4" />
-              </Button>
-            </>
           )}
           {step === "preview" && (
             <>
-              <Button variant="outline" onClick={() => setStep("map")}>
+              <Button variant="outline" onClick={() => { setStep("paste"); setImportResult([]); }}>
                 <ChevronLeft className="mr-1 h-4 w-4" /> Back
               </Button>
               <Button onClick={handleConfirmImport} disabled={importResult.length === 0}>
@@ -578,6 +533,11 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
                 Import {previewStats.total} Companies
               </Button>
             </>
+          )}
+          {step === "agent" && (
+            <Button variant="outline" onClick={() => setStep("paste")}>
+              <ChevronLeft className="mr-1 h-4 w-4" /> Back
+            </Button>
           )}
           {step === "done" && (
             <Button onClick={handleClose}>Close</Button>

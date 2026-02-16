@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 2.3.00
+**Version:** 2.3.01
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 **Live:** GitHub Pages (auto-deploy on push to main)
@@ -183,9 +183,8 @@ Hooks must come from ACTUAL web research, not rephrasing existing text:
 | `merge-enrichment.js` | Merge enrichment results (hooks, LinkedIn, news) |
 | `merge-hooks.js` | Merge standalone hooks-result files |
 | `merge-tam.js` | Merge TAM company data |
-| `import.js` | CLI import tool — CSV/JSON → field mapping → fuzzy match → merge |
+| `import-merge.js` | Mechanical merge — takes pre-mapped JSON → fuzzy match → merge into all-companies.json |
 | `hubspot-sync.js` | Pull companies, contacts, deals, engagements from HubSpot CRM |
-| `hubspot-import-engagements.js` | Convert HubSpot engagements to EventIQ localStorage format |
 | `refresh-orchestrate.sh` | End-to-end orchestration (batch → agents → merge → build) |
 | `refresh-poller.sh` | Poll GitHub issues for refresh signals |
 
@@ -194,20 +193,65 @@ Hooks must come from ACTUAL web research, not rephrasing existing text:
 |--------|---------|
 | `fuzzy-match.js` | Company name normalization + Levenshtein fuzzy matching |
 | `csv-parser.js` | Lightweight CSV/TSV/JSON parser with auto-detect |
-| `field-mapper.js` | Heuristic + Claude API field mapping (columns → schema) |
+| `field-mapper.js` | Heuristic field mapping (columns → schema) — used by in-app import |
 
-### Import Workflow
+### Import Drop Zone (`eventiq/scripts/imports/`)
+Raw data files go here. Agent reads them, maps fields, produces JSON, runs `import-merge.js`.
+- `*.csv`, `*.tsv`, `*.xlsx` — gitignored (may contain PII)
+- `import-mapped-*.json` — Agent-produced mapped data (committed)
+- `import-log-*.json` — Merge logs (committed)
+
+### Import Workflow — Agent-Driven Architecture
+
+**Key insight:** When a user tells Claude Code "import this data", the agent IS Claude. No separate API call needed. The agent reads raw data, reasons about field mapping, produces clean JSON, and calls the mechanical merge script.
+
+**Two paths:**
+
+1. **In-app (clean data):** Paste CSV → heuristic auto-map → preview → confirm → localStorage
+2. **Agent (messy data):** User drops file in `scripts/imports/` or pastes in chat → agent maps → `import-merge.js`
+
+**Agent import workflow:**
 ```
-# CLI import (supports Claude API for smart field mapping)
-node scripts/import.js hubspot-export.csv
-node scripts/import.js contacts.json --dry-run --no-ai
+1. Read the raw file (CSV/TSV/JSON) from scripts/imports/ or from chat paste
+2. Examine headers and sample data rows
+3. Reason about field mapping: which columns → which Company schema fields
+4. Produce a JSON array of Company-shaped objects
+5. Save to scripts/imports/import-mapped-YYYY-MM-DD.json
+6. Run: node scripts/import-merge.js scripts/imports/import-mapped-YYYY-MM-DD.json --dry-run
+7. Review dry-run output, verify matches look correct
+8. Run: node scripts/import-merge.js scripts/imports/import-mapped-YYYY-MM-DD.json
+9. Run: npm run build (verify no errors)
+```
 
-# HubSpot sync
+**Common HubSpot/CRM column mappings for agent reference:**
+| CRM Column | → Schema Field |
+|------------|----------------|
+| Company name, Account Name, Organization | `name` |
+| Company Domain Name, Website URL | `website` |
+| City, State/Region, Country | `location` (combine) |
+| Number of Employees, Company size | `employees` |
+| About Us, Company Description | `desc` |
+| LinkedIn Company Page | `linkedinUrl` |
+| First Name + Last Name | `contacts[].n` |
+| Job Title, Title | `contacts[].t` |
+| Email, Email Address | (store in notes, not in schema) |
+| Phone Number | (store in notes, not in schema) |
+| Industry, Type, Lifecycle Stage | `type` (map to SQO/Client/ICP/TAM) |
+| Deal Stage, Pipeline | (store in notes) |
+| Last Activity Date | (store in notes) |
+| Notes, Description | `notes` |
+
+**import-merge.js flags:**
+```
+node scripts/import-merge.js <file>              # Merge mapped JSON
+node scripts/import-merge.js <file> --dry-run    # Preview only
+node scripts/import-merge.js <file> --threshold 0.8  # Fuzzy match threshold
+node scripts/import-merge.js <file> --overwrite  # Overwrite non-empty fields
+```
+
+**HubSpot CRM sync (still available):**
+```
 HUBSPOT_API_KEY=xxx node scripts/hubspot-sync.js
-node scripts/hubspot-import-engagements.js
-
-# In-app import (no CLI needed)
-# Click "Import Data" in sidebar → paste CSV/JSON → map fields → preview → import
 ```
 
 ### Batch Research Workflow
@@ -237,10 +281,17 @@ Each agent receives a batch of companies and should:
 
 ## Decisions Log
 
+### v2.3.01 (2026-02-15) — Agent-Driven Import Architecture
+- **Decision**: Refactor import pipeline from heuristic+API to agent-driven architecture
+- **Key insight**: When user tells Claude Code "import this data", the agent IS Claude — no separate API call needed
+- **Created**: `scripts/import-merge.js` (mechanical merge), `scripts/imports/` (drop zone)
+- **Simplified**: `scripts/lib/field-mapper.js` (removed claudeMap, buildClaudePrompt), `src/components/import-dialog.tsx` (removed map step, added agent path)
+- **Deleted**: `scripts/import.js` (replaced by agent + import-merge.js), `scripts/hubspot-import-engagements.js` (broken, agent handles directly)
+- **Two paths**: Clean data → in-app heuristic auto-map → preview → localStorage. Messy data → agent maps fields → import-merge.js → all-companies.json
+
 ### v2.3.00 (2026-02-15) — Import + HubSpot Sync
 - **Decision**: Add data import pipeline (CLI + in-app) and HubSpot CRM sync
-- **Components**: `scripts/lib/` shared infrastructure (fuzzy-match, csv-parser, field-mapper), CLI import script, in-app import dialog, HubSpot sync scripts
-- **Architecture**: CLI scripts handle API keys (Claude API, HubSpot), in-app uses heuristic mapping, both share fuzzy company name matching
+- **Superseded by**: v2.3.01 agent-driven architecture
 - **Storage**: In-app imports stored in localStorage (`eventiq_imported_companies`), merged at runtime with build-time data
 - **New EngagementSource values**: `'hubspot'` and `'import'` added to type union
 

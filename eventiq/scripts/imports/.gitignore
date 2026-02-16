@@ -1,0 +1,10 @@
+# Raw data files (may contain PII)
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.tmp
+
+# Keep mapped files and logs
+!import-mapped-*.json
+!import-log-*.json
