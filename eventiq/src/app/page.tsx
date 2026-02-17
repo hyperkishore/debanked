@@ -19,7 +19,7 @@ import {
   ResizablePanel,
   ResizableHandle,
 } from "@/components/ui/resizable";
-import { Sheet, SheetContent } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { AppSidebar } from "@/components/app-sidebar";
 import { CompanyList } from "@/components/company-list";
 import { CompanyDetail } from "@/components/company-detail";
@@ -28,6 +28,15 @@ import { RatingDialog } from "@/components/rating-dialog";
 import { EngagementLog } from "@/components/engagement-log";
 import { getCompanyEngagements, deduplicateEngagements } from "@/lib/engagement-helpers";
 import { ImportDialog } from "@/components/import-dialog";
+import { ChatWidget, ChatFab } from "@/components/chat-widget";
+import {
+  ChatMessage,
+  InputContext,
+  detectCategory,
+  generateBotResponse,
+  generateId,
+  getPendingCount,
+} from "@/lib/chat-helpers";
 import { MobileNav } from "@/components/mobile-nav";
 import { PitchTab } from "@/components/pitch-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
@@ -82,6 +91,13 @@ export default function Home() {
   );
   const [engagementDialogOpen, setEngagementDialogOpen] = useState(false);
   const [importDialogOpen, setImportDialogOpen] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
+
+  // Chat widget state
+  const [chatMessages, setChatMessages] = useLocalStorage<ChatMessage[]>(
+    "eventiq_user_inputs",
+    []
+  );
 
   // Pipeline state
   const [pipelineState, setPipelineState] = useLocalStorage<Record<string, PipelineRecord>>(
@@ -139,6 +155,13 @@ export default function Home() {
       };
     }
     setPipelineState(inferred);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Auto-select first company on initial load (avoid empty right panel)
+  useEffect(() => {
+    if (selectedId === null && companies.length > 0) {
+      setSelectedId(companies[0].id);
+    }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Register service worker
@@ -290,6 +313,49 @@ export default function Home() {
     },
     [setImportedCompanies]
   );
+
+  // Chat widget handlers
+  const chatContext = useMemo<InputContext>(
+    () => ({
+      tab: activeTab,
+      companyId: selectedCompany?.id,
+      companyName: selectedCompany?.name,
+      companyType: selectedCompany?.type,
+    }),
+    [activeTab, selectedCompany]
+  );
+
+  const handleSendChatMessage = useCallback(
+    (content: string) => {
+      const category = detectCategory(content);
+      const userMsg: ChatMessage = {
+        id: generateId(),
+        role: "user",
+        content,
+        timestamp: new Date().toISOString(),
+        category,
+        context: { ...chatContext },
+        resolved: false,
+      };
+
+      // Count pending including this new message
+      const newPending = getPendingCount(chatMessages) + 1;
+
+      const botMsg: ChatMessage = {
+        id: generateId(),
+        role: "assistant",
+        content: generateBotResponse(content, category, chatContext, newPending),
+        timestamp: new Date().toISOString(),
+      };
+
+      setChatMessages((prev) => [...prev, userMsg, botMsg]);
+    },
+    [chatContext, chatMessages, setChatMessages]
+  );
+
+  const handleClearChat = useCallback(() => {
+    setChatMessages([]);
+  }, [setChatMessages]);
 
   // Pipeline move handler
   const handlePipelineMove = useCallback(
@@ -494,10 +560,8 @@ export default function Home() {
                   className="h-full"
                 >
                   <ResizablePanel
-                    defaultSize={35}
+                    defaultSize={40}
                     minSize={25}
-                    maxSize={50}
-                    style={{ minWidth: 320 }}
                   >
                     <CompanyList
                       companies={companies}
@@ -517,7 +581,7 @@ export default function Home() {
                     />
                   </ResizablePanel>
                   <ResizableHandle withHandle />
-                  <ResizablePanel defaultSize={65} minSize={35}>
+                  <ResizablePanel defaultSize={60} minSize={30}>
                     {selectedCompany ? (
                       <CompanyDetail
                         company={selectedCompany}
@@ -569,6 +633,10 @@ export default function Home() {
                 onOpenChange={setMobileDetailOpen}
               >
                 <SheetContent side="bottom" className="h-[85vh] p-0">
+                  <SheetTitle className="sr-only">Company Detail</SheetTitle>
+                  <SheetDescription className="sr-only">
+                    View detailed company information, contacts, and engagement tools.
+                  </SheetDescription>
                   {selectedCompany && (
                     <CompanyDetail
                       company={selectedCompany}
@@ -638,6 +706,20 @@ export default function Home() {
         onClose={() => setImportDialogOpen(false)}
         companies={companies}
         onImport={handleImportCompanies}
+      />
+
+      {/* Chat widget — floating input capture */}
+      <ChatFab
+        pendingCount={getPendingCount(chatMessages)}
+        onClick={() => setChatOpen(true)}
+      />
+      <ChatWidget
+        open={chatOpen}
+        onOpenChange={setChatOpen}
+        messages={chatMessages}
+        onSendMessage={handleSendChatMessage}
+        onClearMessages={handleClearChat}
+        currentContext={chatContext}
       />
     </SidebarProvider>
   );

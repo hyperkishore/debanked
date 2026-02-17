@@ -30,7 +30,7 @@ import {
   Search,
   Mail,
 } from "lucide-react";
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
 interface CompanyDetailProps {
   company: Company;
@@ -382,15 +382,30 @@ function LeaderCard({
 }) {
   const variants = useMemo(() => generateMessageVariants(leader, company), [leader, company]);
   const current = variants.find((v) => v.style === activeVariant) || variants[0];
+  const [bioExpanded, setBioExpanded] = useState(false);
+  const [hooksExpanded, setHooksExpanded] = useState(false);
+  const bioRef = useRef<HTMLParagraphElement>(null);
+  const [bioTruncated, setBioTruncated] = useState(false);
+
+  useEffect(() => {
+    if (bioRef.current) {
+      setBioTruncated(bioRef.current.scrollHeight > bioRef.current.clientHeight + 2);
+    }
+  }, [leader.bg]);
+
+  const MAX_VISIBLE_HOOKS = 3;
+  const hooks = leader.hooks || [];
+  const visibleHooks = hooksExpanded ? hooks : hooks.slice(0, MAX_VISIBLE_HOOKS);
+  const hiddenHookCount = hooks.length - MAX_VISIBLE_HOOKS;
 
   return (
     <div className="rounded-lg bg-secondary/30 p-2.5">
       <div className="flex items-center justify-between">
-        <div>
+        <div className="min-w-0 flex-1">
           <span className="text-sm font-medium">{leader.n}</span>
           <span className="text-xs text-muted-foreground ml-2">{leader.t}</span>
         </div>
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1.5 shrink-0">
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -419,10 +434,30 @@ function LeaderCard({
           )}
         </div>
       </div>
-      <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{leader.bg}</p>
-      {leader.hooks && leader.hooks.length > 0 && (
-        <div className="flex flex-wrap gap-1 mt-1.5">
-          {leader.hooks.map((hook, j) => (
+      {leader.bg && (
+        <div>
+          <p
+            ref={bioRef}
+            className={cn(
+              "text-xs text-muted-foreground mt-1 leading-relaxed",
+              !bioExpanded && "line-clamp-2"
+            )}
+          >
+            {leader.bg}
+          </p>
+          {bioTruncated && (
+            <button
+              onClick={() => setBioExpanded(!bioExpanded)}
+              className="text-[10px] text-primary/70 hover:text-primary mt-0.5"
+            >
+              {bioExpanded ? "Show less" : "Show more"}
+            </button>
+          )}
+        </div>
+      )}
+      {hooks.length > 0 && (
+        <div className="flex flex-wrap items-center gap-1 mt-1.5">
+          {visibleHooks.map((hook, j) => (
             <span
               key={j}
               className={cn(
@@ -440,6 +475,22 @@ function LeaderCard({
               />
             </span>
           ))}
+          {!hooksExpanded && hiddenHookCount > 0 && (
+            <button
+              onClick={() => setHooksExpanded(true)}
+              className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-primary transition-colors"
+            >
+              +{hiddenHookCount} more
+            </button>
+          )}
+          {hooksExpanded && hiddenHookCount > 0 && (
+            <button
+              onClick={() => setHooksExpanded(false)}
+              className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-primary transition-colors"
+            >
+              Show less
+            </button>
+          )}
         </div>
       )}
 

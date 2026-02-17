@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 2.4.00
+**Version:** 2.5.00
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 **Live:** GitHub Pages (auto-deploy on push to main)
@@ -421,3 +421,9 @@ npm run dev      # Dev server at localhost:3000
 - Dark theme default (#0c0c12 background)
 - SQO = red, Client = gold, ICP = green, Primary = blue (#5b8def)
 - No white flash on load
+
+---
+
+## Browser Automation Preferences
+
+**Chrome Profile:** Always use the **kishore** Chrome profile when using Claude in Chrome (`mcp__claude-in-chrome__*`) for browser automation and testing. This profile has the necessary extensions and logged-in sessions.
