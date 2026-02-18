@@ -14,7 +14,8 @@ import {
 import { computeStreak, checkMilestone, checkStreakMilestone, StreakData, DEFAULT_STREAK } from "@/lib/streak-helpers";
 import { PipelineStage, PipelineRecord, inferStage } from "@/lib/pipeline-helpers";
 import { FollowUpReminder } from "@/lib/follow-up-helpers";
-import { FollowUpData } from "@/components/engagement-log";
+import { FollowUpData, SentimentData } from "@/components/engagement-log";
+import { SequenceProgress } from "@/lib/sequence-helpers";
 import companiesData from "@/data/all-companies.json";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import {
@@ -112,6 +113,12 @@ export default function Home() {
   const [followUps, setFollowUps] = useLocalStorage<FollowUpReminder[]>(
     "eventiq_follow_ups",
     []
+  );
+
+  // Sequence progress state
+  const [sequences, setSequences] = useLocalStorage<Record<number, SequenceProgress>>(
+    "eventiq_sequences",
+    {}
   );
 
   // Imported companies from localStorage (merged at runtime with build-time data)
@@ -253,7 +260,7 @@ export default function Home() {
   );
 
   const handleAddEngagement = useCallback(
-    (entry: EngagementEntry, followUp?: FollowUpData) => {
+    (entry: EngagementEntry, followUp?: FollowUpData, sentimentData?: SentimentData) => {
       const prevTotal = engagements.length;
       const prevStreak = streakData.currentStreak;
 
@@ -270,6 +277,22 @@ export default function Home() {
           createdAt: new Date().toISOString(),
         };
         setFollowUps((prev) => [...prev, reminder]);
+      }
+
+      // Auto-advance pipeline stage from sentiment
+      if (sentimentData) {
+        const currentRecord = pipelineState[entry.companyId];
+        const currentStage = currentRecord?.stage || 'researched';
+        const stageOrder = ['researched', 'contacted', 'engaged', 'demo', 'proposal', 'won', 'lost'];
+        const currentIdx = stageOrder.indexOf(currentStage);
+        const newIdx = stageOrder.indexOf(sentimentData.pipelineStage);
+        // Only advance forward, never go backward
+        if (newIdx > currentIdx) {
+          setPipelineState((prev) => ({
+            ...prev,
+            [entry.companyId]: { stage: sentimentData.pipelineStage as PipelineStage, movedAt: new Date().toISOString() },
+          }));
+        }
       }
 
       // Check milestones after adding
@@ -320,6 +343,44 @@ export default function Home() {
       toast.success("Engagement logged");
     },
     [selectedId, handleAddEngagement]
+  );
+
+  // Sequence step handler
+  const handleSequenceStep = useCallback(
+    (companyId: number, stepId: string, channel: EngagementChannel, action: string) => {
+      // Mark step complete in sequence progress
+      setSequences((prev) => {
+        const existing = prev[companyId];
+        const completedSteps = existing?.completedSteps || [];
+        if (completedSteps.includes(stepId)) return prev;
+        return {
+          ...prev,
+          [companyId]: {
+            companyId,
+            sequenceType: existing?.sequenceType || 'cold',
+            startedAt: existing?.startedAt || new Date().toISOString(),
+            completedSteps: [...completedSteps, stepId],
+          },
+        };
+      });
+
+      // Auto-log engagement
+      const company = companies.find((c) => c.id === companyId);
+      const contactName = company?.leaders?.[0]?.n || company?.contacts?.[0]?.n || 'Unknown';
+      const entry: EngagementEntry = {
+        id: crypto.randomUUID(),
+        companyId,
+        contactName,
+        channel,
+        action,
+        timestamp: new Date().toISOString(),
+        notes: `Sequence step: ${stepId}`,
+        source: 'manual',
+      };
+      handleAddEngagement(entry);
+      toast.success("Step completed + engagement logged");
+    },
+    [setSequences, companies, handleAddEngagement]
   );
 
   // Follow-up handlers
@@ -650,6 +711,8 @@ export default function Home() {
                         rating={ratingState[selectedCompany.id] || null}
                         notes={notesState[selectedCompany.id] || ""}
                         engagements={selectedCompanyEngagements}
+                        pipelineState={pipelineState}
+                        sequenceProgress={sequences[selectedCompany.id]}
                         onToggleMet={handleToggleMet}
                         onSaveNotes={handleSaveNotes}
                         onOpenRating={(id) => {
@@ -659,6 +722,7 @@ export default function Home() {
                         onAddEngagement={() => setEngagementDialogOpen(true)}
                         onDeleteEngagement={handleDeleteEngagement}
                         onQuickLog={handleQuickLog}
+                        onSequenceStep={handleSequenceStep}
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
@@ -711,6 +775,8 @@ export default function Home() {
                       rating={ratingState[selectedCompany.id] || null}
                       notes={notesState[selectedCompany.id] || ""}
                       engagements={selectedCompanyEngagements}
+                      pipelineState={pipelineState}
+                      sequenceProgress={sequences[selectedCompany.id]}
                       onToggleMet={handleToggleMet}
                       onSaveNotes={handleSaveNotes}
                       onClose={() => setMobileDetailOpen(false)}
@@ -721,6 +787,7 @@ export default function Home() {
                       onAddEngagement={() => setEngagementDialogOpen(true)}
                       onDeleteEngagement={handleDeleteEngagement}
                       onQuickLog={handleQuickLog}
+                      onSequenceStep={handleSequenceStep}
                     />
                   )}
                 </SheetContent>

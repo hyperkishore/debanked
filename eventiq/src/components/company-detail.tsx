@@ -4,12 +4,19 @@ import { Company, Leader, RatingData, EngagementEntry, EngagementChannel } from 
 import { isResearched, generateOutreachMessage, generateQuickLinks } from "@/lib/types";
 import { generateMessageVariants, MessageVariant } from "@/lib/message-variants";
 import { generateLinkedInVariants, LinkedInVariant } from "@/lib/linkedin-message";
+import { PipelineRecord } from "@/lib/pipeline-helpers";
+import { detectPersona, getPersonaConfig } from "@/lib/persona-helpers";
+import { generateBattlecards, getCategoryStyle } from "@/lib/battlecard-helpers";
+import { buildThreadingMap, STATUS_STYLES } from "@/lib/threading-helpers";
+import { SequenceProgress } from "@/lib/sequence-helpers";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { EngagementTimeline } from "@/components/engagement-timeline";
 import { CopyButton } from "@/components/copy-button";
+import { PreCallBriefingDialog } from "@/components/pre-call-briefing";
+import { SequencePanel } from "@/components/sequence-panel";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import {
@@ -22,6 +29,8 @@ import {
   Lightbulb,
   Info,
   ChevronLeft,
+  ChevronDown,
+  ChevronUp,
   Check,
   Shuffle,
   MapPin,
@@ -31,6 +40,8 @@ import {
   Link,
   Search,
   Mail,
+  Shield,
+  BookOpen,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -40,6 +51,8 @@ interface CompanyDetailProps {
   rating: RatingData | null;
   notes: string;
   engagements: EngagementEntry[];
+  pipelineState: Record<string, PipelineRecord>;
+  sequenceProgress?: SequenceProgress;
   onToggleMet: (id: number) => void;
   onSaveNotes: (id: number, notes: string) => void;
   onClose?: () => void;
@@ -47,6 +60,7 @@ interface CompanyDetailProps {
   onAddEngagement: () => void;
   onDeleteEngagement: (id: string) => void;
   onQuickLog?: (contactName: string, channel: EngagementChannel, action: string) => void;
+  onSequenceStep?: (companyId: number, stepId: string, channel: EngagementChannel, action: string) => void;
 }
 
 const typeBadgeStyles: Record<string, string> = {
@@ -73,6 +87,8 @@ export function CompanyDetail({
   rating,
   notes,
   engagements,
+  pipelineState,
+  sequenceProgress,
   onToggleMet,
   onSaveNotes,
   onClose,
@@ -80,14 +96,29 @@ export function CompanyDetail({
   onAddEngagement,
   onDeleteEngagement,
   onQuickLog,
+  onSequenceStep,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [iceIndex, setIceIndex] = useState(0);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
   const [activeVariant, setActiveVariant] = useState<MessageVariant["style"]>("casual");
   const [activeLinkedInVariant, setActiveLinkedInVariant] = useState<LinkedInVariant["style"]>("connection-request");
+  const [briefingLeader, setBriefingLeader] = useState<Leader | null>(null);
+  const [battlecardsOpen, setBattlecardsOpen] = useState(false);
   const researched = isResearched(company);
   const quickLinks = generateQuickLinks(company);
+
+  // Battlecards
+  const battlecards = useMemo(
+    () => generateBattlecards(company, pipelineState),
+    [company, pipelineState]
+  );
+
+  // Threading map
+  const threadingMap = useMemo(
+    () => buildThreadingMap(company, engagements),
+    [company, engagements]
+  );
 
   const shuffleIce = useCallback(() => {
     if (company.icebreakers && company.icebreakers.length > 0) {
@@ -227,7 +258,7 @@ export function CompanyDetail({
         ) : (
           /* Full researched content */
           <>
-            {/* Contacts */}
+            {/* Contacts with Persona Badges + Brief Me */}
             <Section icon={Users} title="Contacts">
               <div className="space-y-2">
                 {(company.leaders || []).map((leader, i) => (
@@ -248,6 +279,7 @@ export function CompanyDetail({
                     activeLinkedInVariant={activeLinkedInVariant}
                     onLinkedInVariantChange={setActiveLinkedInVariant}
                     onQuickLog={onQuickLog}
+                    onBriefMe={() => setBriefingLeader(leader)}
                   />
                 ))}
                 {(!company.leaders || company.leaders.length === 0) &&
@@ -259,6 +291,57 @@ export function CompanyDetail({
                   ))}
               </div>
             </Section>
+
+            {/* Account Coverage (Multi-Threading Map) */}
+            {threadingMap.totalCount > 0 && (
+              <Section icon={Users} title="Account Coverage">
+                <div className="space-y-2">
+                  {/* Coverage bar */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex-1 h-1.5 rounded-full bg-secondary/50 overflow-hidden">
+                      <div
+                        className={cn(
+                          "h-full rounded-full transition-all",
+                          threadingMap.coveragePct >= 75 ? "bg-green-500" :
+                          threadingMap.coveragePct >= 50 ? "bg-amber-500" : "bg-red-500"
+                        )}
+                        style={{ width: `${threadingMap.coveragePct}%` }}
+                      />
+                    </div>
+                    <span className="text-xs text-muted-foreground">
+                      {threadingMap.engagedCount} of {threadingMap.totalCount} ({threadingMap.coveragePct}%)
+                    </span>
+                  </div>
+
+                  {/* Leader threads */}
+                  {threadingMap.threads.map((thread, i) => {
+                    const personaConfig = getPersonaConfig(thread.persona);
+                    const statusStyle = STATUS_STYLES[thread.status];
+                    return (
+                      <div key={i} className="flex items-center gap-2 text-xs">
+                        <span className="font-medium min-w-0 truncate flex-1">{thread.leader.n}</span>
+                        <Badge variant="outline" className={cn("text-[9px] px-1 py-0 h-4", personaConfig.colorClass)}>
+                          {personaConfig.label}
+                        </Badge>
+                        <Badge variant="outline" className={cn("text-[9px] px-1 py-0 h-4", statusStyle.colorClass)}>
+                          {statusStyle.label}
+                        </Badge>
+                        {thread.engagementCount > 0 && (
+                          <span className="text-[10px] text-muted-foreground">{thread.engagementCount}x</span>
+                        )}
+                      </div>
+                    );
+                  })}
+
+                  {/* Suggestion */}
+                  {threadingMap.suggestion && (
+                    <p className="text-xs text-primary/80 bg-primary/5 rounded-lg p-2 mt-1">
+                      {threadingMap.suggestion}
+                    </p>
+                  )}
+                </div>
+              </Section>
+            )}
 
             {/* Icebreakers */}
             <Section icon={Lightbulb} title="Icebreakers">
@@ -345,6 +428,57 @@ export function CompanyDetail({
               </Section>
             )}
 
+            {/* Battlecards */}
+            {battlecards.length > 0 && (
+              <div>
+                <button
+                  onClick={() => setBattlecardsOpen(!battlecardsOpen)}
+                  className="flex items-center gap-2 mb-2 w-full text-left"
+                >
+                  <Shield className="h-4 w-4 text-muted-foreground" />
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground flex-1">
+                    Battlecards
+                  </h3>
+                  <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4">
+                    {battlecards.length}
+                  </Badge>
+                  {battlecardsOpen ? (
+                    <ChevronUp className="h-3.5 w-3.5 text-muted-foreground" />
+                  ) : (
+                    <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
+                  )}
+                </button>
+                {battlecardsOpen && (
+                  <div className="space-y-2">
+                    {battlecards.map((card, i) => {
+                      const catStyle = getCategoryStyle(card.category);
+                      return (
+                        <div key={i} className="rounded-lg bg-secondary/20 p-3 space-y-1.5">
+                          <div className="flex items-start gap-2">
+                            <Badge className={cn("text-[9px] px-1.5 py-0 h-4 shrink-0", catStyle.colorClass)}>
+                              {catStyle.label}
+                            </Badge>
+                            <p className="text-xs font-medium text-foreground/90 flex-1">
+                              &ldquo;{card.trigger}&rdquo;
+                            </p>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <p className="text-xs text-muted-foreground leading-relaxed flex-1">
+                              {card.response}
+                            </p>
+                            <CopyButton text={card.response} />
+                          </div>
+                          <p className="text-[10px] text-primary/60 italic">
+                            {card.socialProof}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* The Ask */}
             {company.ask && (
               <Section icon={Target} title="The Ask">
@@ -355,6 +489,17 @@ export function CompanyDetail({
                   <CopyButton text={company.ask} />
                 </div>
               </Section>
+            )}
+
+            {/* Sequence Panel */}
+            {onSequenceStep && (
+              <SequencePanel
+                company={company}
+                engagements={engagements}
+                pipelineState={pipelineState}
+                sequenceProgress={sequenceProgress}
+                onStepComplete={onSequenceStep}
+              />
             )}
 
             {/* Engagement Timeline */}
@@ -376,6 +521,18 @@ export function CompanyDetail({
           </>
         )}
       </div>
+
+      {/* Pre-Call Briefing Dialog */}
+      {briefingLeader && (
+        <PreCallBriefingDialog
+          open={!!briefingLeader}
+          onClose={() => setBriefingLeader(null)}
+          company={company}
+          leader={briefingLeader}
+          engagements={engagements}
+          pipelineState={pipelineState}
+        />
+      )}
     </ScrollArea>
   );
 }
@@ -392,6 +549,7 @@ function LeaderCard({
   activeLinkedInVariant,
   onLinkedInVariantChange,
   onQuickLog,
+  onBriefMe,
 }: {
   leader: Leader;
   company: Company;
@@ -402,6 +560,7 @@ function LeaderCard({
   activeLinkedInVariant: LinkedInVariant["style"];
   onLinkedInVariantChange: (style: LinkedInVariant["style"]) => void;
   onQuickLog?: (contactName: string, channel: EngagementChannel, action: string) => void;
+  onBriefMe: () => void;
 }) {
   const emailVariants = useMemo(() => generateMessageVariants(leader, company), [leader, company]);
   const linkedInVariants = useMemo(() => generateLinkedInVariants(leader, company), [leader, company]);
@@ -411,6 +570,10 @@ function LeaderCard({
   const [hooksExpanded, setHooksExpanded] = useState(false);
   const bioRef = useRef<HTMLParagraphElement>(null);
   const [bioTruncated, setBioTruncated] = useState(false);
+
+  // Persona detection
+  const persona = useMemo(() => detectPersona(leader.t), [leader.t]);
+  const personaConfig = useMemo(() => getPersonaConfig(persona), [persona]);
 
   useEffect(() => {
     if (bioRef.current) {
@@ -444,8 +607,23 @@ function LeaderCard({
         <div className="min-w-0 flex-1">
           <span className="text-sm font-medium">{leader.n}</span>
           <span className="text-xs text-muted-foreground ml-2">{leader.t}</span>
+          {persona !== 'unknown' && (
+            <Badge variant="outline" className={cn("text-[9px] px-1 py-0 h-4 ml-1.5", personaConfig.colorClass)}>
+              {personaConfig.label}
+            </Badge>
+          )}
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onBriefMe();
+            }}
+            className="flex items-center gap-1 text-[10px] px-2 py-1 rounded-md bg-purple-500/10 text-purple-400 hover:bg-purple-500/20 transition-colors"
+            title="Pre-call briefing"
+          >
+            <BookOpen className="h-3 w-3" /> Brief
+          </button>
           <button
             onClick={(e) => {
               e.stopPropagation();

@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 2.6.00
+**Version:** 2.7.00
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 **Live:** GitHub Pages (auto-deploy on push to main)
@@ -355,7 +355,7 @@ src/
 │   ├── app-sidebar.tsx     # Desktop sidebar navigation
 │   ├── company-list.tsx    # Company list with filtering/sorting
 │   ├── company-card.tsx    # Individual company card
-│   ├── company-detail.tsx  # Detail panel (right side desktop, Sheet mobile)
+│   ├── company-detail.tsx  # Detail panel + persona badges + battlecards + threading
 │   ├── company-table.tsx   # Table view alternative
 │   ├── search-command.tsx  # Cmd+K command palette
 │   ├── filter-bar.tsx      # Filter toggles + sort + view switch
@@ -365,8 +365,10 @@ src/
 │   ├── schedule-tab.tsx    # Event schedule + booth plan
 │   ├── checklist-tab.tsx   # End-of-day checklist
 │   ├── dashboard-tab.tsx   # Analytics dashboard
-│   ├── engagement-log.tsx  # Engagement logging dialog
-│   └── engagement-timeline.tsx  # Engagement history display
+│   ├── engagement-log.tsx  # Engagement logging + Quick Capture mode
+│   ├── engagement-timeline.tsx  # Engagement history display
+│   ├── pre-call-briefing.tsx    # Pre-call briefing dialog
+│   └── sequence-panel.tsx       # Multi-touch sequence timeline
 ├── data/
 │   ├── all-companies.json  # 1,021 companies (canonical)
 │   ├── tam-companies.json  # 895 TAM companies
@@ -378,6 +380,13 @@ src/
 └── lib/
     ├── types.ts            # TypeScript interfaces
     ├── engagement-helpers.ts # Engagement utility functions
+    ├── persona-helpers.ts    # Persona detection from titles
+    ├── battlecard-helpers.ts # Objection battlecard generation
+    ├── threading-helpers.ts  # Multi-threading map computation
+    ├── briefing-helpers.ts   # Pre-call briefing assembly
+    ├── morning-briefing-helpers.ts # Morning briefing data
+    ├── sequence-helpers.ts   # Multi-touch sequence generation
+    ├── sentiment-helpers.ts  # Post-meeting sentiment config
     └── utils.ts            # cn() utility (shadcn)
 ```
 
@@ -397,6 +406,9 @@ Sidebar, Card, Command, Sheet, Dialog, Tabs, Badge, ScrollArea, Resizable, Toggl
 - `eventiq_quick_notes` — Quick notes text
 - `eventiq_engagements` — Engagement entries array
 - `eventiq_imported_companies` — Companies imported via in-app dialog (merged at runtime)
+- `eventiq_pipeline` — Pipeline stage records per company
+- `eventiq_follow_ups` — Follow-up reminders array
+- `eventiq_sequences` — Multi-touch sequence progress per company
 
 ---
 

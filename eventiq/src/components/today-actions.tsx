@@ -9,6 +9,15 @@ import {
   categorizeTodayActions,
   getSnoozePresets,
 } from "@/lib/follow-up-helpers";
+import {
+  buildMorningBriefing,
+  MorningBriefing,
+  NewsTrigger,
+  StaleWarning,
+  QuickWin,
+  TopAction,
+} from "@/lib/morning-briefing-helpers";
+import { CopyButton } from "@/components/copy-button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import {
@@ -19,6 +28,10 @@ import {
   AlertTriangle,
   Calendar,
   MessageSquare,
+  Newspaper,
+  Zap,
+  TrendingUp,
+  Star,
 } from "lucide-react";
 
 interface TodayActionsProps {
@@ -26,6 +39,7 @@ interface TodayActionsProps {
   companies: Company[];
   engagements: EngagementEntry[];
   pipelineState: Record<string, PipelineRecord>;
+  metState: Record<string, boolean>;
   onSnooze: (id: string, newDate: string) => void;
   onComplete: (id: string) => void;
   onLogEngagement: (companyId: number) => void;
@@ -56,28 +70,43 @@ const categoryStyles = {
   },
 };
 
+const URGENCY_STYLES: Record<string, string> = {
+  critical: "bg-red-500/15 text-red-400",
+  high: "bg-amber-500/15 text-amber-400",
+  medium: "bg-blue-500/15 text-blue-400",
+  low: "bg-muted/50 text-muted-foreground",
+};
+
 export function TodayActions({
   followUps,
   companies,
   engagements,
   pipelineState,
+  metState,
   onSnooze,
   onComplete,
   onLogEngagement,
   onSelectCompany,
 }: TodayActionsProps) {
   const [collapsed, setCollapsed] = useState(false);
+  const [morningOpen, setMorningOpen] = useState(true);
 
   const categorized = useMemo(
     () => categorizeTodayActions(followUps, companies, engagements, pipelineState),
     [followUps, companies, engagements, pipelineState]
   );
 
-  if (categorized.length === 0) return null;
+  const morning = useMemo(
+    () => buildMorningBriefing(companies, engagements, pipelineState, metState),
+    [companies, engagements, pipelineState, metState]
+  );
+
+  const totalItems = categorized.length;
+  const morningItems = morning.newsTriggers.length + morning.staleWarnings.length + morning.quickWins.length + morning.topActions.length;
+
+  if (totalItems === 0 && morningItems === 0) return null;
 
   const overdueCount = categorized.filter((c) => c.category === "overdue").length;
-  const todayCount = categorized.filter((c) => c.category === "today").length;
-  const staleCount = categorized.filter((c) => c.category === "stale").length;
 
   return (
     <div className="border-b border-border">
@@ -91,7 +120,7 @@ export function TodayActions({
             Today&apos;s Actions
           </span>
           <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4 font-semibold">
-            {categorized.length}
+            {totalItems + morningItems}
           </Badge>
           {overdueCount > 0 && (
             <Badge className="text-[10px] px-1.5 py-0 h-4 bg-red-500/20 text-red-400">
@@ -106,21 +135,189 @@ export function TodayActions({
         )}
       </button>
 
-      {/* Items */}
+      {/* Content */}
       {!collapsed && (
-        <div className="px-2 pb-2 space-y-1 max-h-48 overflow-auto">
-          {categorized.map((item) => (
-            <ActionItem
-              key={item.followUp.id}
-              item={item}
-              onSnooze={onSnooze}
-              onComplete={onComplete}
-              onLogEngagement={onLogEngagement}
-              onSelectCompany={onSelectCompany}
-            />
-          ))}
+        <div className="px-2 pb-2 space-y-2 max-h-64 overflow-auto">
+
+          {/* Morning Briefing Sections */}
+          {morningItems > 0 && (
+            <div className="space-y-1.5">
+              {/* News Triggers */}
+              {morning.newsTriggers.length > 0 && (
+                <MorningSection
+                  icon={Newspaper}
+                  label="News Triggers"
+                  count={morning.newsTriggers.length}
+                  iconColor="text-blue-400"
+                >
+                  {morning.newsTriggers.map((trigger, i) => (
+                    <div key={i} className="rounded-md border-l-[3px] border-l-blue-500 bg-blue-500/5 p-2 flex items-start gap-2 text-xs">
+                      <Newspaper className="h-3.5 w-3.5 mt-0.5 text-blue-400 shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <button
+                          onClick={() => onSelectCompany(trigger.company.id)}
+                          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+                        >
+                          {trigger.company.name}
+                        </button>
+                        <p className="text-muted-foreground truncate">{trigger.headline}</p>
+                      </div>
+                      <CopyButton text={trigger.suggestedMessage} size="sm" />
+                    </div>
+                  ))}
+                </MorningSection>
+              )}
+
+              {/* Stale Warnings */}
+              {morning.staleWarnings.length > 0 && (
+                <MorningSection
+                  icon={AlertTriangle}
+                  label="Losing Momentum"
+                  count={morning.staleWarnings.length}
+                  iconColor="text-amber-400"
+                >
+                  {morning.staleWarnings.map((warning, i) => (
+                    <div key={i} className="rounded-md border-l-[3px] border-l-amber-500 bg-amber-500/5 p-2 flex items-start gap-2 text-xs">
+                      <Clock className="h-3.5 w-3.5 mt-0.5 text-amber-400 shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <button
+                          onClick={() => onSelectCompany(warning.company.id)}
+                          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+                        >
+                          {warning.company.name}
+                        </button>
+                        <p className="text-muted-foreground">
+                          {warning.daysSince}d since last {warning.lastChannel}
+                        </p>
+                      </div>
+                      <button
+                        onClick={() => onLogEngagement(warning.company.id)}
+                        className="p-1 rounded hover:bg-primary/20 text-muted-foreground hover:text-primary transition-colors"
+                        title="Log engagement"
+                      >
+                        <MessageSquare className="h-3 w-3" />
+                      </button>
+                    </div>
+                  ))}
+                </MorningSection>
+              )}
+
+              {/* Quick Wins */}
+              {morning.quickWins.length > 0 && (
+                <MorningSection
+                  icon={Zap}
+                  label="Quick Wins"
+                  count={morning.quickWins.length}
+                  iconColor="text-green-400"
+                >
+                  {morning.quickWins.map((win, i) => (
+                    <div key={i} className="rounded-md border-l-[3px] border-l-green-500 bg-green-500/5 p-2 flex items-start gap-2 text-xs">
+                      <Zap className="h-3.5 w-3.5 mt-0.5 text-green-400 shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <button
+                          onClick={() => onSelectCompany(win.company.id)}
+                          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+                        >
+                          {win.company.name}
+                        </button>
+                        <p className="text-muted-foreground">
+                          Score {win.score} — never contacted
+                        </p>
+                      </div>
+                      <Badge variant="outline" className="text-[9px] px-1 py-0 h-4">
+                        {win.type}
+                      </Badge>
+                    </div>
+                  ))}
+                </MorningSection>
+              )}
+
+              {/* Your Day — Top 5 */}
+              {morning.topActions.length > 0 && (
+                <MorningSection
+                  icon={Star}
+                  label="Your Day"
+                  count={morning.topActions.length}
+                  iconColor="text-primary"
+                >
+                  {morning.topActions.map((action, i) => (
+                    <div key={i} className="rounded-md border-l-[3px] border-l-primary/50 bg-primary/5 p-2 flex items-start gap-2 text-xs">
+                      <TrendingUp className="h-3.5 w-3.5 mt-0.5 text-primary shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <button
+                          onClick={() => onSelectCompany(action.company.id)}
+                          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+                        >
+                          {action.company.name}
+                        </button>
+                        <p className="text-muted-foreground">{action.nextAction}</p>
+                      </div>
+                      <Badge className={cn("text-[9px] px-1 py-0 h-4", URGENCY_STYLES[action.urgencyTier])}>
+                        {action.urgencyTier}
+                      </Badge>
+                    </div>
+                  ))}
+                </MorningSection>
+              )}
+            </div>
+          )}
+
+          {/* Follow-up items (existing) */}
+          {categorized.length > 0 && (
+            <div className="space-y-1">
+              {categorized.map((item) => (
+                <ActionItem
+                  key={item.followUp.id}
+                  item={item}
+                  onSnooze={onSnooze}
+                  onComplete={onComplete}
+                  onLogEngagement={onLogEngagement}
+                  onSelectCompany={onSelectCompany}
+                />
+              ))}
+            </div>
+          )}
         </div>
       )}
+    </div>
+  );
+}
+
+function MorningSection({
+  icon: Icon,
+  label,
+  count,
+  iconColor,
+  children,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+  count: number;
+  iconColor: string;
+  children: React.ReactNode;
+}) {
+  const [open, setOpen] = useState(true);
+
+  return (
+    <div>
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-1.5 w-full text-left py-1 hover:opacity-80 transition-opacity"
+      >
+        <Icon className={cn("h-3 w-3", iconColor)} />
+        <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground flex-1">
+          {label}
+        </span>
+        <Badge variant="outline" className="text-[9px] px-1 py-0 h-3.5">
+          {count}
+        </Badge>
+        {open ? (
+          <ChevronUp className="h-3 w-3 text-muted-foreground" />
+        ) : (
+          <ChevronDown className="h-3 w-3 text-muted-foreground" />
+        )}
+      </button>
+      {open && <div className="space-y-1 mt-1">{children}</div>}
     </div>
   );
 }

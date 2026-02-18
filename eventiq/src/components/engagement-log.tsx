@@ -5,6 +5,12 @@ import { Company, EngagementChannel, EngagementEntry } from "@/lib/types";
 import { CHANNELS, getAllContacts, getChannelConfig } from "@/lib/engagement-helpers";
 import { getSnoozePresets } from "@/lib/follow-up-helpers";
 import {
+  ALL_SENTIMENTS,
+  Sentiment,
+  getSentimentConfig,
+  getFollowUpDate,
+} from "@/lib/sentiment-helpers";
+import {
   Dialog,
   DialogContent,
   DialogHeader,
@@ -22,6 +28,7 @@ import {
   StickyNote,
   ExternalLink,
   Clock,
+  Zap,
 } from "lucide-react";
 
 export interface FollowUpData {
@@ -29,11 +36,16 @@ export interface FollowUpData {
   notes: string;
 }
 
+export interface SentimentData {
+  sentiment: Sentiment;
+  pipelineStage: string;
+}
+
 interface EngagementLogProps {
   open: boolean;
   company: Company;
   onClose: () => void;
-  onSave: (entry: EngagementEntry, followUp?: FollowUpData) => void;
+  onSave: (entry: EngagementEntry, followUp?: FollowUpData, sentimentData?: SentimentData) => void;
 }
 
 const channelIcons: Record<EngagementChannel, React.ComponentType<{ className?: string }>> = {
@@ -46,6 +58,8 @@ const channelIcons: Record<EngagementChannel, React.ComponentType<{ className?: 
 };
 
 export function EngagementLog({ open, company, onClose, onSave }: EngagementLogProps) {
+  const [quickCaptureMode, setQuickCaptureMode] = useState(false);
+  const [selectedSentiment, setSelectedSentiment] = useState<Sentiment | null>(null);
   const [selectedChannel, setSelectedChannel] = useState<EngagementChannel>("email");
   const [selectedAction, setSelectedAction] = useState("");
   const [selectedContact, setSelectedContact] = useState("");
@@ -66,6 +80,43 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
   const handleChannelChange = (channel: EngagementChannel) => {
     setSelectedChannel(channel);
     setSelectedAction(""); // reset action when channel changes
+  };
+
+  const handleQuickCaptureSave = (sentiment: Sentiment) => {
+    const config = getSentimentConfig(sentiment);
+    const entry: EngagementEntry = {
+      id: crypto.randomUUID(),
+      companyId: company.id,
+      contactName: effectiveContact,
+      channel: "meeting",
+      action: config.suggestedAction,
+      timestamp: new Date().toISOString(),
+      notes: `${config.label} — Next: ${config.suggestedNextStep}`,
+      source: "manual",
+    };
+
+    const followUp: FollowUpData = {
+      dueDate: getFollowUpDate(config.followUpDays),
+      notes: config.suggestedNextStep,
+    };
+
+    const sentimentData: SentimentData = {
+      sentiment,
+      pipelineStage: config.pipelineStage,
+    };
+
+    onSave(entry, followUp, sentimentData);
+
+    // Reset
+    setQuickCaptureMode(false);
+    setSelectedSentiment(null);
+    setSelectedChannel("email");
+    setSelectedAction("");
+    setSelectedContact("");
+    setNotes("");
+    setFollowUpDate("");
+    setFollowUpNotes("");
+    onClose();
   };
 
   const handleSave = () => {
@@ -100,9 +151,82 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
     <Dialog open={open} onOpenChange={(o) => !o && onClose()}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-base">Log Engagement: {company.name}</DialogTitle>
+          <div className="flex items-center justify-between">
+            <DialogTitle className="text-base">Log Engagement: {company.name}</DialogTitle>
+            <button
+              onClick={() => setQuickCaptureMode(!quickCaptureMode)}
+              className={cn(
+                "flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium transition-all",
+                quickCaptureMode
+                  ? "bg-purple-500/20 text-purple-400 ring-1 ring-purple-500/30"
+                  : "bg-secondary/50 text-muted-foreground hover:bg-secondary/80"
+              )}
+            >
+              <Zap className="h-3 w-3" />
+              Quick Capture
+            </button>
+          </div>
         </DialogHeader>
 
+        {/* Quick Capture Mode */}
+        {quickCaptureMode ? (
+          <div className="space-y-4 py-2">
+            {/* Contact picker */}
+            <div>
+              <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                Who did you meet?
+              </label>
+              <div className="flex flex-wrap gap-1.5 mt-1.5">
+                {contacts.map((c) => (
+                  <button
+                    key={c.name}
+                    className={cn(
+                      "px-3 py-1.5 rounded-lg border text-xs font-medium transition-all",
+                      (effectiveContact === c.name)
+                        ? "bg-primary/20 text-primary border-primary/30"
+                        : "bg-secondary/30 text-muted-foreground border-border hover:bg-secondary/50"
+                    )}
+                    onClick={() => setSelectedContact(c.name)}
+                  >
+                    {c.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Sentiment tap targets */}
+            <div>
+              <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                How did it go?
+              </label>
+              <div className="grid grid-cols-2 gap-2 mt-2">
+                {ALL_SENTIMENTS.map((sentiment) => {
+                  const config = getSentimentConfig(sentiment);
+                  return (
+                    <button
+                      key={sentiment}
+                      onClick={() => handleQuickCaptureSave(sentiment)}
+                      className={cn(
+                        "flex flex-col items-center gap-1.5 py-4 rounded-xl border-2 transition-all text-center",
+                        config.bgClass
+                      )}
+                    >
+                      <span className="text-2xl">{config.emoji}</span>
+                      <span className={cn("text-sm font-semibold", config.colorClass)}>{config.label}</span>
+                      <span className="text-[10px] text-muted-foreground">
+                        {config.suggestedNextStep} in {config.followUpDays}d
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <p className="text-[10px] text-muted-foreground text-center">
+              Tap a sentiment to auto-log meeting + set follow-up
+            </p>
+          </div>
+        ) : (
         <div className="space-y-4 py-2">
           {/* Channel picker */}
           <div>
@@ -249,13 +373,16 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
             </div>
           )}
         </div>
+        )}
 
+        {!quickCaptureMode && (
         <DialogFooter>
           <Button variant="ghost" onClick={onClose}>
             Cancel
           </Button>
           <Button onClick={handleSave}>Log</Button>
         </DialogFooter>
+        )}
       </DialogContent>
     </Dialog>
   );

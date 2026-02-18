@@ -180,18 +180,17 @@ export function CompanyList({
   return (
     <div className="flex flex-col h-full min-h-0">
       {/* Today's Actions */}
-      {activeFollowUps.length > 0 && onSnooze && onCompleteFollowUp && onQuickLog && (
-        <TodayActions
-          followUps={activeFollowUps}
-          companies={companies}
-          engagements={engagements}
-          pipelineState={pipelineState}
-          onSnooze={onSnooze}
-          onComplete={onCompleteFollowUp}
-          onLogEngagement={onQuickLog}
-          onSelectCompany={onSelect}
-        />
-      )}
+      <TodayActions
+        followUps={activeFollowUps}
+        companies={companies}
+        engagements={engagements}
+        pipelineState={pipelineState}
+        metState={metState}
+        onSnooze={onSnooze || (() => {})}
+        onComplete={onCompleteFollowUp || (() => {})}
+        onLogEngagement={onQuickLog || (() => {})}
+        onSelectCompany={onSelect}
+      />
       <FilterBar
         activeFilter={activeFilter}
         onFilterChange={onFilterChange}
