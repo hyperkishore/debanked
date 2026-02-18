@@ -13,6 +13,8 @@ export type PipelineStage =
 export interface PipelineRecord {
   stage: PipelineStage;
   movedAt: string;
+  dealValue?: number;
+  closeDate?: string;
 }
 
 export interface PipelineStageConfig {

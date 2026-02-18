@@ -562,6 +562,11 @@
     "notes": "Existing client — get testimonial + upsell new products.",
     "news": [
       {
+        "h": "Fundfi Launches Two New Products",
+        "s": "deBanked, Dec 2025",
+        "d": "New loan product and credit splits program developed in response to small business feedback."
+      },
+      {
         "h": "Fundfi Expands Credit Facility for Second Time in 2025",
         "s": "deBanked, Sep 2025",
         "d": "Fundfi expanded its credit facility for the second time in 2025, positioning the company to serve record numbers of SMBs across North America."
@@ -763,6 +768,11 @@
     "desc": "NYC-based MCA funder established in 2018. Just closed a $150M credit facility with Raven Capital. 11-50 employees. CEO Adam Benowitz led the deal. Louis Calderone (President/Co-Founder) is speaking on the Funder Panel.",
     "notes": "Funder Panel speaker. $150M new facility = need to deploy capital faster.",
     "news": [
+      {
+        "h": "Vox Funding Secures $150M Credit Facility",
+        "s": "PYMNTS, May 2025",
+        "d": "Facility from Raven Capital to expand flexible financing for small businesses."
+      },
       {
         "h": "VOX Funding Secures $150M Credit Facility from Raven Capital",
         "s": "deBanked, Jun 2025",
@@ -1689,6 +1699,11 @@
     "notes": "Already tech-forward — don’t lead with ‘automate underwriting.’ Position around upstream data extraction.",
     "news": [
       {
+        "h": "Forward Financing Closes Inaugural $170M ABS",
+        "s": "PR Newswire, Dec 2025",
+        "d": "2x oversubscribed asset-backed securitization. Total debt facilities now $620M. $4.3B funded to 85K businesses since 2012."
+      },
+      {
         "h": "Forward Financing Announces $170M Inaugural Asset-Backed Securitization",
         "s": "PR Newswire, Dec 2025",
         "d": "The 2x oversubscribed securitization marks a pivotal achievement, providing stable and efficient funding and reflecting institutional investor confidence."
@@ -1832,6 +1847,11 @@
     "desc": "Miami-based non-bank LOC/term loan provider (est. 2017). Surpassed $1B funded, 10K+ businesses. $20M EverBank term loan (Jan 2026). $50M warehouse facility (Oct 2024). Founded by two trial lawyers. Expanding into legal lending (case financing for law firms).",
     "notes": "$1B+ funded milestone. $20M EverBank facility in Jan 2026. Lines of credit, not just MCA.",
     "news": [
+      {
+        "h": "idea Financial Surpasses $1 Billion in Business Funding",
+        "s": "PR Newswire, Jul 2025",
+        "d": "Secured $50M warehouse facility from Performance Trust Capital Partners. Increased max loan to $350K."
+      },
       {
         "h": "idea Financial Surpasses $1B in Total Funding",
         "s": "idea Financial, 2025",
@@ -5598,6 +5618,11 @@
     "notes": "HIGH RELEVANCE. Large operation with multiple products and explicit CLEAR usage. Launched Credibly.ai — clearly investing in AI. Good fit for HyperVerge’s full suite. Sukanya flagged as a CLEAR user.",
     "news": [
       {
+        "h": "Credibly Receives US Patent for AI SMB Lending Platform",
+        "s": "deBanked, Oct 2025",
+        "d": "Patent covers proprietary AI-driven lending technology. $3B+ in capital deployed to 60K+ SMBs."
+      },
+      {
         "h": "Credibly Expands AI IP Portfolio with New Patent for SMB Financing",
         "s": "PR Newswire, Jan 2026",
         "d": "US Patent No. US 12,505,113 B2 covers machine learning, deep learning, and GenAI for evaluating affordability, structuring offers, and automating underwriting workflows."
@@ -5989,7 +6014,13 @@
     ],
     "desc": "Founded in 2006 as Strategic Funding Source, rebranded to Kapitus in 2019. Over $5B funded to 50,000+ businesses. Offers MCA, SBA loans, lines of credit, and equipment financing from NYC.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Kapitus Closes $250M Securitization",
+        "s": "ELFA, Jul 2025",
+        "d": "Also upsized corporate note to $95M. Warehouse line increased to $230M. $675M raised across instruments in 2025."
+      }
+    ],
     "ice": "Five billion dollars to 50,000+ businesses since 2006 -- the rebrand to Kapitus clearly hasn't slowed you down. What's driving growth now?",
     "icebreakers": [
       "Five billion dollars to 50,000+ businesses since 2006 -- the rebrand to Kapitus clearly hasn't slowed you down. What's driving growth now?"
@@ -6024,7 +6055,13 @@
     ],
     "desc": "San Diego, CA-based family-owned MCA funder (est. 2008). Over $1.7B in working capital funded. Founded by Mark and David Leibowitz after traditional banks pulled back from SMB lending.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Mulligan Funding Closes $120M ABS Deal",
+        "s": "deBanked, Jan 2025",
+        "d": "Expandable to $500M. December 2024 was best month ever. Restructured ISO team for partnership management."
+      }
+    ],
     "ice": "A family-owned business that's funded $1.7B+ is rare in this space -- how do you maintain that personal touch at scale?",
     "icebreakers": [
       "A family-owned business that's funded $1.7B+ is rare in this space -- how do you maintain that personal touch at scale?"
@@ -6907,7 +6944,13 @@
     ],
     "desc": "San Francisco-based fintech working capital platform offering lines of credit up to $150,000 to small businesses. Has made over 150,000 loans totaling $6 billion over 12 years of operation.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Fundbox Partners with Cantaloupe, Autobooks, EverCommerce, Wave",
+        "s": "American Banker, 2025",
+        "d": "Four major embedded lending partnerships accessing 350K+ potential borrowers. $1B in loans in past 14 months."
+      }
+    ],
     "ice": "Fundbox has been a pioneer in using AI for small business credit decisions, and your $6 billion in originations speaks to the model's success.",
     "icebreakers": [
       "Fundbox has been a pioneer in using AI for small business credit decisions, and your $6 billion in originations speaks to the model's success."
@@ -6942,7 +6985,13 @@
     ],
     "desc": "Fintech business banking platform serving over 750,000 customers with $16 billion in loans delivered. Offers business checking, lines of credit, and term loans to small businesses.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "BlueVine Raises $102.5M Series F",
+        "s": "Fintech Futures, 2025",
+        "d": "Led by ION Crossover Partners with Citi Ventures, M12, SVB Capital. 500K+ customers, $850M on deposit, $14B in loans."
+      }
+    ],
     "ice": "BlueVine's growth to 750,000 customers and $16 billion in loans is remarkable -- your integrated banking and lending model is clearly resonating.",
     "icebreakers": [
       "BlueVine's growth to 750,000 customers and $16 billion in loans is remarkable -- your integrated banking and lending model is clearly resonating."
@@ -7332,7 +7381,13 @@
     ],
     "desc": "Sioux Falls, SD-based alternative lender founded in 2013 offering revenue-based financing and merchant cash advances. Hit a $1 billion funding milestone in 2023.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Expansion Capital Group Secures $100M Credit Facility",
+        "s": "BusinessWire, Jan 2025",
+        "d": "New CEO Tim Mages appointed April 2025. $1.2B+ funded to 30K businesses."
+      }
+    ],
     "ice": "Reaching the $1 billion funding milestone from Sioux Falls proves that great alternative lending can happen anywhere, not just New York or Miami.",
     "icebreakers": [
       "Reaching the $1 billion funding milestone from Sioux Falls proves that great alternative lending can happen anywhere, not just New York or Miami."
@@ -7907,7 +7962,13 @@
     ],
     "desc": "Dublin-based revenue-based financing platform for e-commerce brands valued at $1.6B. Raised $1.24B from QED Investors, DST Global, and secured $300M debt facility from J.P. Morgan.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Wayflyer Launches Innovation Fund Beyond eCommerce",
+        "s": "BusinessWire, Oct 2025",
+        "d": "Piloting financing for retail, SaaS, healthcare, and consumer services. Also launched Hosted Capital for embedded lending."
+      }
+    ],
     "ice": "The J.P. Morgan debt facility is a strong signal of institutional confidence in Wayflyer's underwriting model.",
     "icebreakers": [
       "The J.P. Morgan debt facility is a strong signal of institutional confidence in Wayflyer's underwriting model."
@@ -8747,7 +8808,18 @@
     ],
     "desc": "New York-based non-bank financing company providing MCA and various financial services. Founded 2019, 36 employees, raised $40M. Inc. 5000 #2293 with 187% growth.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "ByzFunder Reports 40% Growth in 2025",
+        "s": "PR Newswire, Jan 2026",
+        "d": "Driven by AI underwriting, ByzFlex expansion, and 30% increase in customer portal engagement. Building proprietary AI Lending Management System for 2026."
+      },
+      {
+        "h": "ByzFunder Hires New C-Suite",
+        "s": "PR Newswire, 2025",
+        "d": "Added CMO, CRO, CISO, Head of People, and Head of Sales to support growth trajectory."
+      }
+    ],
     "ice": "Making the Inc. 5000 with 187% growth and $40M raised shows ByzFunder is building serious momentum in the MCA space.",
     "icebreakers": [
       "Making the Inc. 5000 with 187% growth and $40M raised shows ByzFunder is building serious momentum in the MCA space."
@@ -8782,7 +8854,13 @@
     ],
     "desc": "Seattle-based revenue-based financing provider for tech startups. Offers $50K-$4M in non-dilutive growth capital without equity dilution, with over $165M deployed to 350+ companies.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Lighter Capital Secures $100M Credit Facility",
+        "s": "BusinessWire, Nov 2025",
+        "d": "From i80 Group. Additional $30M facility for Australia. $500M+ deployed since inception."
+      }
+    ],
     "ice": "Thor, Lighter Capital has been a pioneer in revenue-based financing for startups. How are you thinking about AI to scale underwriting decisions across your growing deal flow?",
     "icebreakers": [
       "Thor, Lighter Capital has been a pioneer in revenue-based financing for startups. How are you thinking about AI to scale underwriting decisions across your growing deal flow?"
@@ -9272,7 +9350,13 @@
     ],
     "desc": "Minority-led CDFI providing $8.7B in loans and grants to 586K small businesses. Founded 2015 to serve underserved urban and rural borrowers. EY Entrepreneur of the Year winner.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Lendistry Raises $75M, Surpasses $10B Deployed",
+        "s": "Fintech Global, Oct 2025",
+        "d": "Investments from KeyBank ($100M), TD Bank ($25M), Exelon ($5M). Launched insurance division LIFT."
+      }
+    ],
     "ice": "Everett, $8.7B deployed to 586K businesses through a CDFI model is transformative impact. How is Lendistry thinking about AI to scale mission-driven lending without losing the personal touch?",
     "icebreakers": [
       "Everett, $8.7B deployed to 586K businesses through a CDFI model is transformative impact. How is Lendistry thinking about AI to scale mission-driven lending without losing the personal touch?"
@@ -11206,6 +11290,11 @@
     "desc": "Leading fintech lender originating over $23B in loans since 2001, primarily serving professionals (healthcare, legal, accounting) with high-quality consumer and business loans distributed through an institutional network of 1,650+ banks.",
     "notes": "",
     "news": [
+      {
+        "h": "BHG Completes Record $500M ABS Transaction",
+        "s": "Morningstar/PR Newswire, Aug 2025",
+        "d": "Largest-ever securitization. Joined American Fintech Council. 1,700+ bank institutional network. $24B+ in loans facilitated."
+      },
       {
         "h": "BHG Financial Completes Record $500M Asset-Backed Securities Transaction",
         "s": "BHG Financial, Aug 2025",
@@ -13783,6 +13872,11 @@
     "desc": "Leading fintech based in Greenwich, CT offering revenue-based financing and working capital solutions to SMBs, with new CEO John Paradisi bringing 25+ years of banking experience and a new CIO from Citadel.",
     "notes": "",
     "news": [
+      {
+        "h": "Libertas Secures $100M Credit Facility from Victory Park Capital",
+        "s": "BusinessWire, Oct 2025",
+        "d": "Also closed $75M investment-grade corporate notes. ~$5B funded since inception, originating $100M/month."
+      },
       {
         "h": "Libertas Funding Crosses $5 Billion Milestone",
         "s": "BusinessWire, Jan 2026",

@@ -42,6 +42,9 @@ import {
   Mail,
   Shield,
   BookOpen,
+  Tag,
+  X,
+  Plus,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -53,6 +56,7 @@ interface CompanyDetailProps {
   engagements: EngagementEntry[];
   pipelineState: Record<string, PipelineRecord>;
   sequenceProgress?: SequenceProgress;
+  tags?: string[];
   onToggleMet: (id: number) => void;
   onSaveNotes: (id: number, notes: string) => void;
   onClose?: () => void;
@@ -61,6 +65,8 @@ interface CompanyDetailProps {
   onDeleteEngagement: (id: string) => void;
   onQuickLog?: (contactName: string, channel: EngagementChannel, action: string) => void;
   onSequenceStep?: (companyId: number, stepId: string, channel: EngagementChannel, action: string) => void;
+  onAddTag?: (companyId: number, tag: string) => void;
+  onRemoveTag?: (companyId: number, tag: string) => void;
 }
 
 const typeBadgeStyles: Record<string, string> = {
@@ -89,6 +95,7 @@ export function CompanyDetail({
   engagements,
   pipelineState,
   sequenceProgress,
+  tags = [],
   onToggleMet,
   onSaveNotes,
   onClose,
@@ -97,9 +104,13 @@ export function CompanyDetail({
   onDeleteEngagement,
   onQuickLog,
   onSequenceStep,
+  onAddTag,
+  onRemoveTag,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [iceIndex, setIceIndex] = useState(0);
+  const [tagInput, setTagInput] = useState("");
+  const [showTagInput, setShowTagInput] = useState(false);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
   const [activeVariant, setActiveVariant] = useState<MessageVariant["style"]>("casual");
   const [activeLinkedInVariant, setActiveLinkedInVariant] = useState<LinkedInVariant["style"]>("connection-request");
@@ -202,6 +213,59 @@ export function CompanyDetail({
                 >
                   <Linkedin className="h-3 w-3" /> LinkedIn
                 </a>
+              )}
+            </div>
+          )}
+
+          {/* Custom tags */}
+          {onAddTag && (
+            <div className="flex flex-wrap items-center gap-1 mt-1.5">
+              {tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center gap-0.5 text-[10px] px-1.5 py-0.5 rounded bg-primary/10 text-primary"
+                >
+                  <Tag className="h-2.5 w-2.5" />
+                  {tag}
+                  {onRemoveTag && (
+                    <button
+                      onClick={() => onRemoveTag(company.id, tag)}
+                      className="hover:text-red-400 transition-colors ml-0.5"
+                    >
+                      <X className="h-2.5 w-2.5" />
+                    </button>
+                  )}
+                </span>
+              ))}
+              {showTagInput ? (
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const t = tagInput.trim();
+                    if (t && !tags.includes(t)) {
+                      onAddTag(company.id, t);
+                    }
+                    setTagInput("");
+                    setShowTagInput(false);
+                  }}
+                  className="inline-flex items-center"
+                >
+                  <input
+                    autoFocus
+                    value={tagInput}
+                    onChange={(e) => setTagInput(e.target.value)}
+                    onBlur={() => { setShowTagInput(false); setTagInput(""); }}
+                    placeholder="tag..."
+                    className="w-16 text-[10px] px-1 py-0.5 rounded bg-secondary/50 border border-border text-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+                  />
+                </form>
+              ) : (
+                <button
+                  onClick={() => setShowTagInput(true)}
+                  className="inline-flex items-center gap-0.5 text-[10px] px-1.5 py-0.5 rounded border border-dashed border-border text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                >
+                  <Plus className="h-2.5 w-2.5" /> tag
+                </button>
               )}
             </div>
           )}
@@ -612,6 +676,21 @@ function LeaderCard({
               {personaConfig.label}
             </Badge>
           )}
+          {/* Email & phone inline */}
+          {(leader.email || leader.phone) && (
+            <div className="flex items-center gap-2 mt-0.5">
+              {leader.email && (
+                <a href={`mailto:${leader.email}`} className="text-[10px] text-blue-400 hover:underline truncate max-w-[180px]" title={leader.email}>
+                  {leader.email}
+                </a>
+              )}
+              {leader.phone && (
+                <a href={`tel:${leader.phone}`} className="text-[10px] text-green-400 hover:underline">
+                  {leader.phone}
+                </a>
+              )}
+            </div>
+          )}
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
           <button
@@ -747,13 +826,27 @@ function LeaderCard({
                 </button>
               ))}
             </div>
-            <CopyButton
-              text={`Subject: ${currentEmail.subject}\n\n${currentEmail.body}`}
-              variant="button"
-              label="Copy"
-              size="sm"
-              onAfterCopy={() => handleCopyWithLog("email", "sent_intro")}
-            />
+            <div className="flex items-center gap-1">
+              {leader.email && (
+                <a
+                  href={`mailto:${leader.email}?subject=${encodeURIComponent(currentEmail.subject)}&body=${encodeURIComponent(currentEmail.body)}`}
+                  className="flex items-center gap-1 text-[10px] px-2 py-1 rounded-md bg-green-500/10 text-green-400 hover:bg-green-500/20 transition-colors font-medium"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleCopyWithLog("email", "sent_intro");
+                  }}
+                >
+                  <Mail className="h-3 w-3" /> Gmail
+                </a>
+              )}
+              <CopyButton
+                text={`Subject: ${currentEmail.subject}\n\n${currentEmail.body}`}
+                variant="button"
+                label="Copy"
+                size="sm"
+                onAfterCopy={() => handleCopyWithLog("email", "sent_intro")}
+              />
+            </div>
           </div>
           <div className="text-[10px] text-blue-400/60 mb-1 font-medium">
             Subject: {currentEmail.subject}

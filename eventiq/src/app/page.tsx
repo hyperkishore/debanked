@@ -50,6 +50,7 @@ import { ScheduleTab } from "@/components/schedule-tab";
 import { ChecklistTab } from "@/components/checklist-tab";
 import { DashboardTab } from "@/components/dashboard-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
+import { FeedTab } from "@/components/feed-tab";
 import { useLocalStorage } from "@/hooks/use-local-storage";
 import { useKeyboard } from "@/hooks/use-keyboard";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -122,6 +123,12 @@ export default function Home() {
   // Sequence progress state
   const [sequences, setSequences] = useLocalStorage<Record<number, SequenceProgress>>(
     "eventiq_sequences",
+    {}
+  );
+
+  // Custom tags per company
+  const [tagsState, setTagsState] = useLocalStorage<Record<number, string[]>>(
+    "eventiq_tags",
     {}
   );
 
@@ -245,6 +252,28 @@ export default function Home() {
       setCheckState((prev) => ({ ...prev, [key]: !prev[key] }));
     },
     [setCheckState]
+  );
+
+  // Tag handlers
+  const handleAddTag = useCallback(
+    (companyId: number, tag: string) => {
+      setTagsState((prev) => {
+        const existing = prev[companyId] || [];
+        if (existing.includes(tag)) return prev;
+        return { ...prev, [companyId]: [...existing, tag] };
+      });
+    },
+    [setTagsState]
+  );
+
+  const handleRemoveTag = useCallback(
+    (companyId: number, tag: string) => {
+      setTagsState((prev) => {
+        const existing = prev[companyId] || [];
+        return { ...prev, [companyId]: existing.filter((t) => t !== tag) };
+      });
+    },
+    [setTagsState]
   );
 
   const handleJumpToCompany = useCallback(
@@ -648,6 +677,13 @@ export default function Home() {
             onOpenCompany={handleSelect}
           />
         );
+      case "feed":
+        return (
+          <FeedTab
+            companies={companies}
+            onSelectCompany={handleSelect}
+          />
+        );
       default:
         return null;
     }
@@ -746,6 +782,7 @@ export default function Home() {
                         engagements={selectedCompanyEngagements}
                         pipelineState={pipelineState}
                         sequenceProgress={sequences[selectedCompany.id]}
+                        tags={tagsState[selectedCompany.id] || []}
                         onToggleMet={handleToggleMet}
                         onSaveNotes={handleSaveNotes}
                         onOpenRating={(id) => {
@@ -756,6 +793,8 @@ export default function Home() {
                         onDeleteEngagement={handleDeleteEngagement}
                         onQuickLog={handleQuickLog}
                         onSequenceStep={handleSequenceStep}
+                        onAddTag={handleAddTag}
+                        onRemoveTag={handleRemoveTag}
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
@@ -810,6 +849,7 @@ export default function Home() {
                       engagements={selectedCompanyEngagements}
                       pipelineState={pipelineState}
                       sequenceProgress={sequences[selectedCompany.id]}
+                      tags={tagsState[selectedCompany.id] || []}
                       onToggleMet={handleToggleMet}
                       onSaveNotes={handleSaveNotes}
                       onClose={() => setMobileDetailOpen(false)}
@@ -821,6 +861,8 @@ export default function Home() {
                       onDeleteEngagement={handleDeleteEngagement}
                       onQuickLog={handleQuickLog}
                       onSequenceStep={handleSequenceStep}
+                      onAddTag={handleAddTag}
+                      onRemoveTag={handleRemoveTag}
                     />
                   )}
                 </SheetContent>

@@ -3,7 +3,7 @@
 import { FilterType, SortType, ViewType } from "@/lib/types";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Button } from "@/components/ui/button";
-import { LayoutGrid, Table2, ArrowUpDown } from "lucide-react";
+import { LayoutGrid, Table2, ArrowUpDown, Download } from "lucide-react";
 
 interface FilterBarProps {
   activeFilter: FilterType;
@@ -15,6 +15,7 @@ interface FilterBarProps {
   totalCount: number;
   filteredCount: number;
   metCount: number;
+  onExportCsv?: () => void;
 }
 
 const filters: { value: FilterType; label: string }[] = [
@@ -40,6 +41,7 @@ export function FilterBar({
   totalCount,
   filteredCount,
   metCount,
+  onExportCsv,
 }: FilterBarProps) {
   const sortOptions: { value: SortType; label: string }[] = [
     { value: "priority", label: "Priority" },
@@ -108,6 +110,17 @@ export function FilterBar({
               <LayoutGrid className="h-3.5 w-3.5" />
             )}
           </Button>
+          {onExportCsv && (
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-6 w-6 p-0"
+              onClick={onExportCsv}
+              title="Export filtered list as CSV"
+            >
+              <Download className="h-3.5 w-3.5" />
+            </Button>
+          )}
         </div>
       </div>
     </div>

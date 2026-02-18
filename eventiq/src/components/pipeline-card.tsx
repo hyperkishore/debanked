@@ -8,6 +8,7 @@ interface PipelineCardProps {
   ratingState: Record<string, RatingData>;
   daysSince: number | null;
   lastChannel: string | null;
+  dealValue?: number;
   onOpen: (id: number) => void;
   onDragStart: (e: React.DragEvent, companyId: number) => void;
 }
@@ -40,6 +41,7 @@ export function PipelineCard({
   ratingState,
   daysSince,
   lastChannel,
+  dealValue,
   onOpen,
   onDragStart,
 }: PipelineCardProps) {
@@ -85,6 +87,11 @@ export function PipelineCard({
         {lastChannel && (
           <span className="text-[10px]" title={lastChannel}>
             {channelIcon[lastChannel] || ""}
+          </span>
+        )}
+        {dealValue != null && dealValue > 0 && (
+          <span className="text-[9px] font-medium text-green-400 ml-auto">
+            ${dealValue >= 1000 ? `${(dealValue / 1000).toFixed(0)}K` : dealValue}
           </span>
         )}
       </div>

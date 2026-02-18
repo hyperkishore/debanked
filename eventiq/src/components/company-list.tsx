@@ -10,8 +10,9 @@ import { CompanyTable } from "./company-table";
 import { FilterBar } from "./filter-bar";
 import { TodayActions } from "./today-actions";
 import { FollowUpReminder } from "@/lib/follow-up-helpers";
-import { useMemo, useRef, useEffect } from "react";
+import { useMemo, useRef, useEffect, useCallback } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
+import { toast } from "sonner";
 
 interface CompanyListProps {
   companies: Company[];
@@ -177,6 +178,26 @@ export function CompanyList({
 
   const showOutreachBadges = activeSort === "outreach";
 
+  const handleExportCsv = useCallback(() => {
+    const headers = ["Name", "Type", "Priority", "Employees", "Location", "Website", "LinkedIn", "Contacts", "Leaders", "Leader LinkedIn URLs", "Score"];
+    const rows = sorted.map((c) => {
+      const contacts = c.contacts.map((ct) => `${ct.n} (${ct.t})`).join("; ");
+      const leaders = (c.leaders || []).map((l) => `${l.n} (${l.t})`).join("; ");
+      const leaderLinkedIns = (c.leaders || []).filter((l) => l.li).map((l) => `${l.n}: ${l.li}`).join("; ");
+      const score = outreachData.scores.get(c.id) || 0;
+      return [c.name, c.type, c.priority, c.employees || "", c.location || "", c.website || "", c.linkedinUrl || "", contacts, leaders, leaderLinkedIns, score];
+    });
+    const csvContent = [headers, ...rows].map((row) => row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(",")).join("\n");
+    const blob = new Blob([csvContent], { type: "text/csv" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `eventiq-${activeFilter}-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+    toast.success(`Exported ${sorted.length} companies`);
+  }, [sorted, activeFilter, outreachData.scores]);
+
   return (
     <div className="flex flex-col h-full min-h-0">
       {/* Today's Actions */}
@@ -201,6 +222,7 @@ export function CompanyList({
         totalCount={companies.length}
         filteredCount={sorted.length}
         metCount={metCount}
+        onExportCsv={handleExportCsv}
       />
       {activeView === "cards" ? (
         <div ref={parentRef} className="flex-1 overflow-auto">
