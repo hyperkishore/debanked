@@ -9,9 +9,12 @@ import {
   TabType,
   RatingData,
   EngagementEntry,
+  EngagementChannel,
 } from "@/lib/types";
 import { computeStreak, checkMilestone, checkStreakMilestone, StreakData, DEFAULT_STREAK } from "@/lib/streak-helpers";
 import { PipelineStage, PipelineRecord, inferStage } from "@/lib/pipeline-helpers";
+import { FollowUpReminder } from "@/lib/follow-up-helpers";
+import { FollowUpData } from "@/components/engagement-log";
 import companiesData from "@/data/all-companies.json";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import {
@@ -103,6 +106,12 @@ export default function Home() {
   const [pipelineState, setPipelineState] = useLocalStorage<Record<string, PipelineRecord>>(
     "eventiq_pipeline",
     {}
+  );
+
+  // Follow-up reminders state
+  const [followUps, setFollowUps] = useLocalStorage<FollowUpReminder[]>(
+    "eventiq_follow_ups",
+    []
   );
 
   // Imported companies from localStorage (merged at runtime with build-time data)
@@ -251,11 +260,24 @@ export default function Home() {
   );
 
   const handleAddEngagement = useCallback(
-    (entry: EngagementEntry) => {
+    (entry: EngagementEntry, followUp?: FollowUpData) => {
       const prevTotal = engagements.length;
       const prevStreak = streakData.currentStreak;
 
       setEngagements((prev) => [...prev, entry]);
+
+      // Create follow-up if provided
+      if (followUp) {
+        const reminder: FollowUpReminder = {
+          id: crypto.randomUUID(),
+          companyId: entry.companyId,
+          contactName: entry.contactName,
+          dueDate: followUp.dueDate,
+          notes: followUp.notes,
+          createdAt: new Date().toISOString(),
+        };
+        setFollowUps((prev) => [...prev, reminder]);
+      }
 
       // Check milestones after adding
       const newTotal = prevTotal + 1;
@@ -277,7 +299,7 @@ export default function Home() {
         }
       }, 100);
     },
-    [setEngagements, engagements, streakData]
+    [setEngagements, setFollowUps, engagements, streakData]
   );
 
   const handleDeleteEngagement = useCallback(
@@ -285,6 +307,61 @@ export default function Home() {
       setEngagements((prev) => prev.filter((e) => e.id !== id));
     },
     [setEngagements]
+  );
+
+  // Quick-log from message draft copy toast
+  const handleQuickLog = useCallback(
+    (contactName: string, channel: EngagementChannel, action: string) => {
+      if (!selectedId) return;
+      const entry: EngagementEntry = {
+        id: crypto.randomUUID(),
+        companyId: selectedId,
+        contactName,
+        channel,
+        action,
+        timestamp: new Date().toISOString(),
+        notes: "",
+        source: "manual",
+      };
+      handleAddEngagement(entry);
+      toast.success("Engagement logged");
+    },
+    [selectedId, handleAddEngagement]
+  );
+
+  // Follow-up handlers
+  const handleSnooze = useCallback(
+    (followUpId: string, newDate: string) => {
+      setFollowUps((prev) =>
+        prev.map((f) => (f.id === followUpId ? { ...f, dueDate: newDate } : f))
+      );
+      toast.success("Snoozed");
+    },
+    [setFollowUps]
+  );
+
+  const handleCompleteFollowUp = useCallback(
+    (followUpId: string) => {
+      setFollowUps((prev) =>
+        prev.map((f) => (f.id === followUpId ? { ...f, completed: true } : f))
+      );
+      toast.success("Follow-up completed");
+    },
+    [setFollowUps]
+  );
+
+  // Open engagement from action feed / TodayActions (select company first, then open dialog)
+  const handleOpenEngagementForCompany = useCallback(
+    (companyId: number) => {
+      setSelectedId(companyId);
+      setActiveTab("companies");
+      if (isMobile) {
+        setMobileDetailOpen(true);
+      }
+      // Slight delay so company selection propagates
+      setTimeout(() => setEngagementDialogOpen(true), 100);
+    },
+    [isMobile]
   );
 
   const handleImportCompanies = useCallback(
@@ -366,20 +443,6 @@ export default function Home() {
       }));
     },
     [setPipelineState]
-  );
-
-  // Open engagement from action feed (select company first, then open dialog)
-  const handleOpenEngagementForCompany = useCallback(
-    (companyId: number) => {
-      setSelectedId(companyId);
-      setActiveTab("companies");
-      if (isMobile) {
-        setMobileDetailOpen(true);
-      }
-      // Slight delay so company selection propagates
-      setTimeout(() => setEngagementDialogOpen(true), 100);
-    },
-    [isMobile]
   );
 
   const allNotesExport = useMemo(() => {
@@ -569,6 +632,7 @@ export default function Home() {
                       metState={metState}
                       ratingState={ratingState}
                       engagements={engagements}
+                      pipelineState={pipelineState}
                       activeFilter={activeFilter}
                       activeSort={activeSort}
                       activeView={activeView}
@@ -578,6 +642,10 @@ export default function Home() {
                       onFilterChange={setActiveFilter}
                       onSortChange={setActiveSort}
                       onViewChange={setActiveView}
+                      followUps={followUps}
+                      onSnooze={handleSnooze}
+                      onCompleteFollowUp={handleCompleteFollowUp}
+                      onQuickLog={handleOpenEngagementForCompany}
                     />
                   </ResizablePanel>
                   <ResizableHandle withHandle />
@@ -597,6 +665,7 @@ export default function Home() {
                         }}
                         onAddEngagement={() => setEngagementDialogOpen(true)}
                         onDeleteEngagement={handleDeleteEngagement}
+                        onQuickLog={handleQuickLog}
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
@@ -615,6 +684,7 @@ export default function Home() {
                   metState={metState}
                   ratingState={ratingState}
                   engagements={engagements}
+                  pipelineState={pipelineState}
                   activeFilter={activeFilter}
                   activeSort={activeSort}
                   activeView={activeView}
@@ -624,6 +694,10 @@ export default function Home() {
                   onFilterChange={setActiveFilter}
                   onSortChange={setActiveSort}
                   onViewChange={setActiveView}
+                  followUps={followUps}
+                  onSnooze={handleSnooze}
+                  onCompleteFollowUp={handleCompleteFollowUp}
+                  onQuickLog={handleOpenEngagementForCompany}
                 />
               </div>
 
@@ -653,6 +727,7 @@ export default function Home() {
                       }}
                       onAddEngagement={() => setEngagementDialogOpen(true)}
                       onDeleteEngagement={handleDeleteEngagement}
+                      onQuickLog={handleQuickLog}
                     />
                   )}
                 </SheetContent>

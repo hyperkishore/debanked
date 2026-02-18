@@ -1,8 +1,9 @@
 "use client";
 
-import { Company, Leader, RatingData, EngagementEntry } from "@/lib/types";
+import { Company, Leader, RatingData, EngagementEntry, EngagementChannel } from "@/lib/types";
 import { isResearched, generateOutreachMessage, generateQuickLinks } from "@/lib/types";
 import { generateMessageVariants, MessageVariant } from "@/lib/message-variants";
+import { generateLinkedInVariants, LinkedInVariant } from "@/lib/linkedin-message";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -10,6 +11,7 @@ import { Separator } from "@/components/ui/separator";
 import { EngagementTimeline } from "@/components/engagement-timeline";
 import { CopyButton } from "@/components/copy-button";
 import { cn } from "@/lib/utils";
+import { toast } from "sonner";
 import {
   ExternalLink,
   Linkedin,
@@ -44,6 +46,7 @@ interface CompanyDetailProps {
   onOpenRating: (id: number) => void;
   onAddEngagement: () => void;
   onDeleteEngagement: (id: string) => void;
+  onQuickLog?: (contactName: string, channel: EngagementChannel, action: string) => void;
 }
 
 const typeBadgeStyles: Record<string, string> = {
@@ -59,6 +62,11 @@ const VARIANT_LABELS: Record<MessageVariant["style"], string> = {
   "news-hook": "News Hook",
 };
 
+const LINKEDIN_LABELS: Record<LinkedInVariant["style"], string> = {
+  "connection-request": "Connection Request",
+  inmail: "InMail",
+};
+
 export function CompanyDetail({
   company,
   isMet,
@@ -71,11 +79,13 @@ export function CompanyDetail({
   onOpenRating,
   onAddEngagement,
   onDeleteEngagement,
+  onQuickLog,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [iceIndex, setIceIndex] = useState(0);
-  const [expandedLeader, setExpandedLeader] = useState<string | null>(null);
+  const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
   const [activeVariant, setActiveVariant] = useState<MessageVariant["style"]>("casual");
+  const [activeLinkedInVariant, setActiveLinkedInVariant] = useState<LinkedInVariant["style"]>("connection-request");
   const researched = isResearched(company);
   const quickLinks = generateQuickLinks(company);
 
@@ -225,12 +235,19 @@ export function CompanyDetail({
                     key={i}
                     leader={leader}
                     company={company}
-                    isExpanded={expandedLeader === leader.n}
-                    onToggleExpand={() =>
-                      setExpandedLeader(expandedLeader === leader.n ? null : leader.n)
+                    expandedPanel={expandedLeader?.name === leader.n ? expandedLeader.panel : null}
+                    onToggleExpand={(panel) =>
+                      setExpandedLeader(
+                        expandedLeader?.name === leader.n && expandedLeader.panel === panel
+                          ? null
+                          : { name: leader.n, panel }
+                      )
                     }
                     activeVariant={activeVariant}
                     onVariantChange={setActiveVariant}
+                    activeLinkedInVariant={activeLinkedInVariant}
+                    onLinkedInVariantChange={setActiveLinkedInVariant}
+                    onQuickLog={onQuickLog}
                   />
                 ))}
                 {(!company.leaders || company.leaders.length === 0) &&
@@ -363,25 +380,33 @@ export function CompanyDetail({
   );
 }
 
-// --- Leader Card with message variants ---
+// --- Leader Card with email + linkedin message variants ---
 
 function LeaderCard({
   leader,
   company,
-  isExpanded,
+  expandedPanel,
   onToggleExpand,
   activeVariant,
   onVariantChange,
+  activeLinkedInVariant,
+  onLinkedInVariantChange,
+  onQuickLog,
 }: {
   leader: Leader;
   company: Company;
-  isExpanded: boolean;
-  onToggleExpand: () => void;
+  expandedPanel: "email" | "linkedin" | null;
+  onToggleExpand: (panel: "email" | "linkedin") => void;
   activeVariant: MessageVariant["style"];
   onVariantChange: (style: MessageVariant["style"]) => void;
+  activeLinkedInVariant: LinkedInVariant["style"];
+  onLinkedInVariantChange: (style: LinkedInVariant["style"]) => void;
+  onQuickLog?: (contactName: string, channel: EngagementChannel, action: string) => void;
 }) {
-  const variants = useMemo(() => generateMessageVariants(leader, company), [leader, company]);
-  const current = variants.find((v) => v.style === activeVariant) || variants[0];
+  const emailVariants = useMemo(() => generateMessageVariants(leader, company), [leader, company]);
+  const linkedInVariants = useMemo(() => generateLinkedInVariants(leader, company), [leader, company]);
+  const currentEmail = emailVariants.find((v) => v.style === activeVariant) || emailVariants[0];
+  const currentLinkedIn = linkedInVariants.find((v) => v.style === activeLinkedInVariant) || linkedInVariants[0];
   const [bioExpanded, setBioExpanded] = useState(false);
   const [hooksExpanded, setHooksExpanded] = useState(false);
   const bioRef = useRef<HTMLParagraphElement>(null);
@@ -398,6 +423,21 @@ function LeaderCard({
   const visibleHooks = hooksExpanded ? hooks : hooks.slice(0, MAX_VISIBLE_HOOKS);
   const hiddenHookCount = hooks.length - MAX_VISIBLE_HOOKS;
 
+  const handleCopyWithLog = useCallback(
+    (channel: EngagementChannel, action: string) => {
+      if (onQuickLog) {
+        toast("Log this outreach?", {
+          action: {
+            label: "Log it",
+            onClick: () => onQuickLog(leader.n, channel, action),
+          },
+          duration: 5000,
+        });
+      }
+    },
+    [onQuickLog, leader.n]
+  );
+
   return (
     <div className="rounded-lg bg-secondary/30 p-2.5">
       <div className="flex items-center justify-between">
@@ -409,17 +449,32 @@ function LeaderCard({
           <button
             onClick={(e) => {
               e.stopPropagation();
-              onToggleExpand();
+              onToggleExpand("email");
             }}
             className={cn(
               "flex items-center gap-1 text-[10px] px-2 py-1 rounded-md transition-colors",
-              isExpanded
-                ? "bg-primary/20 text-primary"
-                : "bg-primary/10 text-primary hover:bg-primary/20"
+              expandedPanel === "email"
+                ? "bg-blue-500/20 text-blue-400"
+                : "bg-blue-500/10 text-blue-400 hover:bg-blue-500/20"
             )}
-            title="View outreach messages"
+            title="Draft email"
           >
-            <Mail className="h-3 w-3" /> Message
+            <Mail className="h-3 w-3" /> Email
+          </button>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleExpand("linkedin");
+            }}
+            className={cn(
+              "flex items-center gap-1 text-[10px] px-2 py-1 rounded-md transition-colors",
+              expandedPanel === "linkedin"
+                ? "bg-sky-400/20 text-sky-400"
+                : "bg-sky-400/10 text-sky-400 hover:bg-sky-400/20"
+            )}
+            title="Draft LinkedIn message"
+          >
+            <Linkedin className="h-3 w-3" /> LinkedIn
           </button>
           {leader.li && (
             <a
@@ -429,7 +484,7 @@ function LeaderCard({
               className="text-primary hover:text-primary/80"
               onClick={(e) => e.stopPropagation()}
             >
-              <Linkedin className="h-3.5 w-3.5" />
+              <ExternalLink className="h-3 w-3" />
             </a>
           )}
         </div>
@@ -494,10 +549,9 @@ function LeaderCard({
         </div>
       )}
 
-      {/* Expanded message variants */}
-      {isExpanded && (
-        <div className="mt-2 rounded-md border border-primary/20 bg-primary/5 p-3">
-          {/* Variant tabs */}
+      {/* Expanded Email variants */}
+      {expandedPanel === "email" && (
+        <div className="mt-2 rounded-md border border-blue-500/20 bg-blue-500/5 p-3">
           <div className="flex items-center justify-between mb-2">
             <div className="flex gap-1">
               {(["formal", "casual", "news-hook"] as const).map((style) => (
@@ -507,8 +561,8 @@ function LeaderCard({
                   className={cn(
                     "text-[10px] px-2 py-1 rounded-md transition-colors font-medium",
                     activeVariant === style
-                      ? "bg-primary text-white"
-                      : "bg-primary/10 text-primary/70 hover:bg-primary/20"
+                      ? "bg-blue-500 text-white"
+                      : "bg-blue-500/10 text-blue-400/70 hover:bg-blue-500/20"
                   )}
                 >
                   {VARIANT_LABELS[style]}
@@ -516,17 +570,60 @@ function LeaderCard({
               ))}
             </div>
             <CopyButton
-              text={`Subject: ${current.subject}\n\n${current.body}`}
+              text={`Subject: ${currentEmail.subject}\n\n${currentEmail.body}`}
               variant="button"
               label="Copy"
               size="sm"
+              onAfterCopy={() => handleCopyWithLog("email", "sent_intro")}
             />
           </div>
-          <div className="text-[10px] text-primary/60 mb-1 font-medium">
-            Subject: {current.subject}
+          <div className="text-[10px] text-blue-400/60 mb-1 font-medium">
+            Subject: {currentEmail.subject}
           </div>
           <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">
-            {current.body}
+            {currentEmail.body}
+          </pre>
+        </div>
+      )}
+
+      {/* Expanded LinkedIn variants */}
+      {expandedPanel === "linkedin" && (
+        <div className="mt-2 rounded-md border border-sky-400/20 bg-sky-400/5 p-3">
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex gap-1">
+              {(["connection-request", "inmail"] as const).map((style) => (
+                <button
+                  key={style}
+                  onClick={() => onLinkedInVariantChange(style)}
+                  className={cn(
+                    "text-[10px] px-2 py-1 rounded-md transition-colors font-medium",
+                    activeLinkedInVariant === style
+                      ? "bg-sky-400 text-white"
+                      : "bg-sky-400/10 text-sky-300/70 hover:bg-sky-400/20"
+                  )}
+                >
+                  {LINKEDIN_LABELS[style]}
+                </button>
+              ))}
+            </div>
+            <CopyButton
+              text={currentLinkedIn.body}
+              variant="button"
+              label="Copy"
+              size="sm"
+              onAfterCopy={() =>
+                handleCopyWithLog(
+                  "linkedin",
+                  activeLinkedInVariant === "connection-request" ? "sent_connection" : "sent_message"
+                )
+              }
+            />
+          </div>
+          {activeLinkedInVariant === "connection-request" && (
+            <p className="text-[10px] text-sky-400/50 mb-1">~300 char limit for connection requests</p>
+          )}
+          <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">
+            {currentLinkedIn.body}
           </pre>
         </div>
       )}

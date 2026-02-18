@@ -1,6 +1,7 @@
 "use client";
 
 import { Company, getResearchScore, getResearchTier } from "@/lib/types";
+import { UrgencyTier } from "@/lib/outreach-score";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
@@ -14,6 +15,9 @@ interface CompanyCardProps {
   onSelect: (id: number) => void;
   onToggleMet: (id: number) => void;
   query?: string;
+  outreachScore?: number;
+  urgencyTier?: UrgencyTier;
+  nextBestAction?: string;
 }
 
 function highlightText(text: string, query: string) {
@@ -68,6 +72,13 @@ const typeBadgeMap: Record<string, string> = {
   TAM: "bg-[var(--tam)]/10 text-[var(--tam)] hover:bg-[var(--tam)]/20",
 };
 
+const urgencyBadgeStyles: Record<UrgencyTier, string> = {
+  critical: "bg-red-500/20 text-red-400 border-red-500/30",
+  high: "bg-amber-500/20 text-amber-400 border-amber-500/30",
+  medium: "bg-blue-500/20 text-blue-400 border-blue-500/30",
+  low: "bg-muted/50 text-muted-foreground border-border",
+};
+
 export function CompanyCard({
   company,
   isSelected,
@@ -77,6 +88,9 @@ export function CompanyCard({
   onSelect,
   onToggleMet,
   query = "",
+  outreachScore,
+  urgencyTier,
+  nextBestAction,
 }: CompanyCardProps) {
   const contactNames = company.contacts.map((c) => c.n).join(", ");
   const subtitle = contactNames || company.location || "";
@@ -112,6 +126,14 @@ export function CompanyCard({
                 CLEAR
               </Badge>
             )}
+            {urgencyTier && (
+              <Badge
+                variant="outline"
+                className={cn("text-[10px] px-1.5 py-0 h-4 font-semibold shrink-0", urgencyBadgeStyles[urgencyTier])}
+              >
+                {outreachScore}
+              </Badge>
+            )}
           </div>
           <p className="text-xs text-muted-foreground mt-1 truncate">
             {highlightText(subtitle, query)}
@@ -121,9 +143,14 @@ export function CompanyCard({
               {company.employees} employees
             </span>
           )}
-          {company.ice && (
+          {company.ice && !nextBestAction && (
             <p className="text-xs text-muted-foreground/70 mt-1 line-clamp-1">
               {company.ice.substring(0, 80)}...
+            </p>
+          )}
+          {nextBestAction && (
+            <p className="text-[11px] text-primary/80 mt-1 font-medium">
+              Next: {nextBestAction}
             </p>
           )}
           {lastEngagementTime && (

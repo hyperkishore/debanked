@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { Company, EngagementChannel, EngagementEntry } from "@/lib/types";
 import { CHANNELS, getAllContacts, getChannelConfig } from "@/lib/engagement-helpers";
+import { getSnoozePresets } from "@/lib/follow-up-helpers";
 import {
   Dialog,
   DialogContent,
@@ -20,13 +21,19 @@ import {
   Calendar,
   StickyNote,
   ExternalLink,
+  Clock,
 } from "lucide-react";
+
+export interface FollowUpData {
+  dueDate: string;
+  notes: string;
+}
 
 interface EngagementLogProps {
   open: boolean;
   company: Company;
   onClose: () => void;
-  onSave: (entry: EngagementEntry) => void;
+  onSave: (entry: EngagementEntry, followUp?: FollowUpData) => void;
 }
 
 const channelIcons: Record<EngagementChannel, React.ComponentType<{ className?: string }>> = {
@@ -43,9 +50,12 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
   const [selectedAction, setSelectedAction] = useState("");
   const [selectedContact, setSelectedContact] = useState("");
   const [notes, setNotes] = useState("");
+  const [followUpDate, setFollowUpDate] = useState("");
+  const [followUpNotes, setFollowUpNotes] = useState("");
 
   const contacts = useMemo(() => getAllContacts(company), [company]);
   const channelConfig = getChannelConfig(selectedChannel);
+  const snoozePresets = getSnoozePresets();
 
   // Pre-select first contact
   const effectiveContact = selectedContact || (contacts[0]?.name ?? "");
@@ -69,12 +79,20 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
       notes,
       source: "manual",
     };
-    onSave(entry);
+
+    const followUp = followUpDate
+      ? { dueDate: followUpDate, notes: followUpNotes || notes }
+      : undefined;
+
+    onSave(entry, followUp);
+
     // Reset
     setSelectedChannel("email");
     setSelectedAction("");
     setSelectedContact("");
     setNotes("");
+    setFollowUpDate("");
+    setFollowUpNotes("");
     onClose();
   };
 
@@ -170,6 +188,47 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
               placeholder="Optional details..."
               className="w-full h-16 mt-1.5 bg-secondary/30 border border-border rounded-lg p-2.5 text-sm resize-none focus:outline-none focus:ring-1 focus:ring-primary"
             />
+          </div>
+
+          {/* Follow-up date */}
+          <div>
+            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
+              <Clock className="h-3 w-3" />
+              Follow up by
+            </label>
+            <div className="flex items-center gap-2 mt-1.5">
+              <input
+                type="date"
+                value={followUpDate}
+                onChange={(e) => setFollowUpDate(e.target.value)}
+                className="bg-secondary/30 border border-border rounded-lg px-2.5 py-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+              <div className="flex gap-1">
+                {snoozePresets.map((preset) => (
+                  <button
+                    key={preset.label}
+                    onClick={() => setFollowUpDate(preset.date)}
+                    className={cn(
+                      "px-2 py-1 rounded-md text-[10px] font-medium transition-colors",
+                      followUpDate === preset.date
+                        ? "bg-primary/20 text-primary"
+                        : "bg-secondary/30 text-muted-foreground hover:bg-secondary/50"
+                    )}
+                  >
+                    {preset.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+            {followUpDate && (
+              <input
+                type="text"
+                value={followUpNotes}
+                onChange={(e) => setFollowUpNotes(e.target.value)}
+                placeholder="Follow-up notes (optional)"
+                className="w-full mt-1.5 bg-secondary/30 border border-border rounded-lg px-2.5 py-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+            )}
           </div>
 
           {/* Quick links */}

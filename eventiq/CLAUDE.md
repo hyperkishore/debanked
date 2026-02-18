@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 2.5.00
+**Version:** 2.6.00
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 **Live:** GitHub Pages (auto-deploy on push to main)

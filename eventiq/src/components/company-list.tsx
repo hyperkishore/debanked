@@ -3,9 +3,13 @@
 import { Company, FilterType, SortType, ViewType, RatingData, EngagementEntry } from "@/lib/types";
 import { isResearched, getResearchScore } from "@/lib/types";
 import { getLastEngagement, needsFollowUp } from "@/lib/engagement-helpers";
+import { PipelineRecord } from "@/lib/pipeline-helpers";
+import { computeOutreachScore, getNextBestAction, getUrgencyTier } from "@/lib/outreach-score";
 import { CompanyCard } from "./company-card";
 import { CompanyTable } from "./company-table";
 import { FilterBar } from "./filter-bar";
+import { TodayActions } from "./today-actions";
+import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { useMemo, useRef, useEffect } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 
@@ -15,6 +19,7 @@ interface CompanyListProps {
   metState: Record<string, boolean>;
   ratingState: Record<string, RatingData>;
   engagements: EngagementEntry[];
+  pipelineState: Record<string, PipelineRecord>;
   activeFilter: FilterType;
   activeSort: SortType;
   activeView: ViewType;
@@ -24,6 +29,10 @@ interface CompanyListProps {
   onFilterChange: (filter: FilterType) => void;
   onSortChange: (sort: SortType) => void;
   onViewChange: (view: ViewType) => void;
+  followUps?: FollowUpReminder[];
+  onSnooze?: (id: string, newDate: string) => void;
+  onCompleteFollowUp?: (id: string) => void;
+  onQuickLog?: (companyId: number) => void;
 }
 
 function filterCompanies(
@@ -59,7 +68,11 @@ function filterCompanies(
   return filtered;
 }
 
-function sortCompanies(companies: Company[], sort: SortType): Company[] {
+function sortCompanies(
+  companies: Company[],
+  sort: SortType,
+  outreachScores?: Map<number, number>
+): Company[] {
   return [...companies].sort((a, b) => {
     switch (sort) {
       case "name":
@@ -76,6 +89,11 @@ function sortCompanies(companies: Company[], sort: SortType): Company[] {
         return (b.employees || 0) - (a.employees || 0);
       case "quality":
         return getResearchScore(b) - getResearchScore(a);
+      case "outreach": {
+        const scoreA = outreachScores?.get(a.id) ?? 0;
+        const scoreB = outreachScores?.get(b.id) ?? 0;
+        return scoreB - scoreA;
+      }
       default:
         return 0;
     }
@@ -88,6 +106,7 @@ export function CompanyList({
   metState,
   ratingState,
   engagements,
+  pipelineState,
   activeFilter,
   activeSort,
   activeView,
@@ -97,6 +116,10 @@ export function CompanyList({
   onFilterChange,
   onSortChange,
   onViewChange,
+  followUps,
+  onSnooze,
+  onCompleteFollowUp,
+  onQuickLog,
 }: CompanyListProps) {
   const parentRef = useRef<HTMLDivElement>(null);
 
@@ -110,10 +133,30 @@ export function CompanyList({
     [companies, activeFilter, metState, searchQuery, engagements]
   );
 
+  // Compute outreach scores (only when sorting by outreach or always for badge display)
+  const outreachData = useMemo(() => {
+    const scores = new Map<number, number>();
+    const actions = new Map<number, string>();
+    const tiers = new Map<number, string>();
+    for (const c of filtered) {
+      const breakdown = computeOutreachScore(c, engagements, pipelineState, metState);
+      scores.set(c.id, breakdown.total);
+      actions.set(c.id, getNextBestAction(c, engagements, pipelineState));
+      tiers.set(c.id, getUrgencyTier(breakdown.total));
+    }
+    return { scores, actions, tiers };
+  }, [filtered, engagements, pipelineState, metState]);
+
   const sorted = useMemo(
-    () => sortCompanies(filtered, activeSort),
-    [filtered, activeSort]
+    () => sortCompanies(filtered, activeSort, outreachData.scores),
+    [filtered, activeSort, outreachData.scores]
   );
+
+  // Active follow-ups for TodayActions
+  const activeFollowUps = useMemo(() => {
+    if (!followUps) return [];
+    return followUps.filter((f) => !f.completed);
+  }, [followUps]);
 
   const virtualizer = useVirtualizer({
     count: sorted.length,
@@ -132,8 +175,23 @@ export function CompanyList({
     }
   }, [selectedId, sorted, activeView, virtualizer]);
 
+  const showOutreachBadges = activeSort === "outreach";
+
   return (
     <div className="flex flex-col h-full min-h-0">
+      {/* Today's Actions */}
+      {activeFollowUps.length > 0 && onSnooze && onCompleteFollowUp && onQuickLog && (
+        <TodayActions
+          followUps={activeFollowUps}
+          companies={companies}
+          engagements={engagements}
+          pipelineState={pipelineState}
+          onSnooze={onSnooze}
+          onComplete={onCompleteFollowUp}
+          onLogEngagement={onQuickLog}
+          onSelectCompany={onSelect}
+        />
+      )}
       <FilterBar
         activeFilter={activeFilter}
         onFilterChange={onFilterChange}
@@ -178,6 +236,9 @@ export function CompanyList({
                     onSelect={onSelect}
                     onToggleMet={onToggleMet}
                     query={searchQuery}
+                    outreachScore={showOutreachBadges ? outreachData.scores.get(company.id) : undefined}
+                    urgencyTier={showOutreachBadges ? (outreachData.tiers.get(company.id) as "critical" | "high" | "medium" | "low") : undefined}
+                    nextBestAction={showOutreachBadges ? outreachData.actions.get(company.id) : undefined}
                   />
                 </div>
               );

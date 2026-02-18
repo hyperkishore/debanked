@@ -48,6 +48,7 @@ export function FilterBar({
     { value: "phase", label: "Phase" },
     { value: "employees", label: "Employees" },
     { value: "quality", label: "Quality" },
+    { value: "outreach", label: "Outreach" },
   ];
 
   const currentSortIdx = sortOptions.findIndex((s) => s.value === activeSort);

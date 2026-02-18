@@ -11,6 +11,7 @@ interface CopyButtonProps {
   variant?: "icon" | "button";
   size?: "sm" | "md";
   className?: string;
+  onAfterCopy?: () => void;
 }
 
 export function CopyButton({
@@ -19,6 +20,7 @@ export function CopyButton({
   variant = "icon",
   size = "sm",
   className,
+  onAfterCopy,
 }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
 
@@ -27,8 +29,9 @@ export function CopyButton({
       setCopied(true);
       toast.success("Copied!");
       setTimeout(() => setCopied(false), 2000);
+      onAfterCopy?.();
     });
-  }, [text]);
+  }, [text, onAfterCopy]);
 
   if (variant === "button") {
     return (
