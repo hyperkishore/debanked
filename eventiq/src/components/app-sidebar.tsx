@@ -14,13 +14,14 @@ import {
   SidebarMenuItem,
   SidebarHeader,
 } from "@/components/ui/sidebar";
-import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban } from "lucide-react";
+import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2 } from "lucide-react";
 
 interface AppSidebarProps {
   activeTab: TabType;
   onTabChange: (tab: TabType) => void;
   onOpenSearch: () => void;
   onOpenImport: () => void;
+  onOpenSettings: () => void;
   metCount: number;
   totalCount: number;
   streakData: StreakData;
@@ -40,6 +41,7 @@ export function AppSidebar({
   onTabChange,
   onOpenSearch,
   onOpenImport,
+  onOpenSettings,
   metCount,
   totalCount,
   streakData,
@@ -85,6 +87,17 @@ export function AppSidebar({
                 >
                   <Upload className="h-4 w-4" />
                   <span>Import Data</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+
+              {/* Settings */}
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  onClick={onOpenSettings}
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  <Settings2 className="h-4 w-4" />
+                  <span>Settings</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
@@ -160,7 +173,7 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.7.00</span>
+          <span className="opacity-50">v2.7.01</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

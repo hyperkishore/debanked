@@ -41,6 +41,9 @@ import {
   generateId,
   getPendingCount,
 } from "@/lib/chat-helpers";
+import { FeedbackWidget } from "@/components/feedback-widget";
+import { SheetsSettings } from "@/components/sheets-settings";
+import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
 import { PitchTab } from "@/components/pitch-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
@@ -95,6 +98,7 @@ export default function Home() {
   );
   const [engagementDialogOpen, setEngagementDialogOpen] = useState(false);
   const [importDialogOpen, setImportDialogOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
 
   // Chat widget state
@@ -213,8 +217,11 @@ export default function Home() {
         setRatingCompanyId(id);
         setRatingDialogOpen(true);
       }
+      // Sync to Google Sheets
+      const companyName = companies.find((c) => c.id === id)?.name || '';
+      syncToSheets('met', { companyId: id, companyName, met: !wasMet });
     },
-    [metState, setMetState]
+    [metState, setMetState, companies]
   );
 
   const handleSaveNotes = useCallback(
@@ -265,6 +272,18 @@ export default function Home() {
       const prevStreak = streakData.currentStreak;
 
       setEngagements((prev) => [...prev, entry]);
+
+      // Sync to Google Sheets
+      const companyName = companies.find((c) => c.id === entry.companyId)?.name || '';
+      syncToSheets('engagement', {
+        companyId: entry.companyId,
+        companyName,
+        contactName: entry.contactName,
+        channel: entry.channel,
+        action: entry.action,
+        notes: entry.notes,
+        source: entry.source,
+      });
 
       // Create follow-up if provided
       if (followUp) {
@@ -378,6 +397,15 @@ export default function Home() {
         source: 'manual',
       };
       handleAddEngagement(entry);
+      // Sync sequence step to Google Sheets
+      syncToSheets('sequence', {
+        companyId,
+        companyName: company?.name || '',
+        sequenceType: sequences[companyId]?.sequenceType || 'cold',
+        stepId,
+        channel,
+        action,
+      });
       toast.success("Step completed + engagement logged");
     },
     [setSequences, companies, handleAddEngagement]
@@ -491,12 +519,16 @@ export default function Home() {
   // Pipeline move handler
   const handlePipelineMove = useCallback(
     (companyId: number, newStage: PipelineStage) => {
+      const oldStage = pipelineState[companyId]?.stage || 'researched';
       setPipelineState((prev) => ({
         ...prev,
         [companyId]: { stage: newStage, movedAt: new Date().toISOString() },
       }));
+      // Sync to Google Sheets
+      const companyName = companies.find((c) => c.id === companyId)?.name || '';
+      syncToSheets('pipeline', { companyId, companyName, oldStage, newStage });
     },
-    [setPipelineState]
+    [setPipelineState, pipelineState, companies]
   );
 
   const allNotesExport = useMemo(() => {
@@ -632,6 +664,7 @@ export default function Home() {
           onTabChange={setActiveTab}
           onOpenSearch={() => setSearchOpen(true)}
           onOpenImport={() => setImportDialogOpen(true)}
+          onOpenSettings={() => setSettingsOpen(true)}
           metCount={metCount}
           totalCount={companies.length}
           streakData={streakData}
@@ -855,6 +888,18 @@ export default function Home() {
         onSendMessage={handleSendChatMessage}
         onClearMessages={handleClearChat}
         currentContext={chatContext}
+      />
+
+      {/* Feedback widget */}
+      <FeedbackWidget
+        companyName={selectedCompany?.name}
+        currentTab={activeTab}
+      />
+
+      {/* Sheets sync settings */}
+      <SheetsSettings
+        open={settingsOpen}
+        onClose={() => setSettingsOpen(false)}
       />
     </SidebarProvider>
   );
