@@ -58,7 +58,7 @@ export default function Home() {
 
   // State
   const [activeTab, setActiveTab] = useState<TabType>("companies");
-  const [selectedId, setSelectedId] = useState<number | null>(null);
+  const [selectedId, setSelectedId] = useState<number | null>(buildTimeCompanies[0]?.id ?? null);
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
   const [activeSort, setActiveSort] = useState<SortType>("priority");
   const [activeView, setActiveView] = useState<ViewType>("cards");
@@ -166,13 +166,6 @@ export default function Home() {
     setPipelineState(inferred);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Auto-select first company on initial load (avoid empty right panel)
-  useEffect(() => {
-    if (selectedId === null && companies.length > 0) {
-      setSelectedId(companies[0].id);
-    }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
   // Register service worker
   useEffect(() => {
     if ("serviceWorker" in navigator) {
@@ -182,7 +175,7 @@ export default function Home() {
 
   const selectedCompany = useMemo(
     () => companies.find((c) => c.id === selectedId) || null,
-    [selectedId]
+    [selectedId, companies]
   );
 
   const metCount = useMemo(
