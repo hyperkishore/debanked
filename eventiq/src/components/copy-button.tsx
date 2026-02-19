@@ -45,7 +45,7 @@ export function CopyButton({
           size === "sm" ? "text-xs px-2 py-1" : "text-xs px-3 py-1.5",
           copied
             ? "bg-[var(--icp)] text-white"
-            : "bg-primary/10 text-primary hover:bg-primary/20",
+            : "bg-brand/10 text-brand hover:bg-brand/20",
           className
         )}
       >

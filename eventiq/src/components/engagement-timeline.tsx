@@ -86,7 +86,7 @@ export function EngagementTimeline({
             <Button
               variant="ghost"
               size="sm"
-              className="h-6 w-6 p-0 text-muted-foreground hover:text-primary"
+              className="h-6 w-6 p-0 text-muted-foreground hover:text-brand"
               onClick={onAdd}
             >
               <Plus className="h-3.5 w-3.5" />
@@ -105,14 +105,14 @@ export function EngagementTimeline({
 
       {/* Timeline entries */}
       {visibleEngagements.length > 0 && (
-        <div className="space-y-1">
+        <div className="space-y-2">
           {visibleEngagements.map((entry) => {
             const config = getChannelConfig(entry.channel);
             const Icon = channelIcons[entry.channel];
             return (
               <Card
                 key={entry.id}
-                className="group flex-row items-start gap-2 bg-secondary/20 px-2.5 py-2 shadow-none border-0 hover:bg-secondary/30 transition-colors"
+                className="group flex-row items-start gap-2 bg-secondary/20 p-3 shadow-none border-0 hover:bg-secondary/30 transition-colors"
               >
                 <div className={cn("mt-0.5 rounded-md p-1", config.colorClass)}>
                   <Icon className="h-3 w-3" />

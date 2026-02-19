@@ -77,7 +77,7 @@ export function ChatFab({
           size="icon"
           onClick={onClick}
           className={cn(
-            "fixed z-[60] rounded-full h-12 w-12 shadow-lg hover:bg-primary/90 transition-all",
+            "fixed z-[60] rounded-full h-12 w-12 shadow-lg hover:bg-brand/90 transition-all",
             isMobile ? "right-4" : "bottom-6 right-6",
             pendingCount > 0 && "chat-fab-pulse"
           )}
@@ -277,7 +277,7 @@ export function ChatWidget({
                   className={cn(
                     "chat-message-enter max-w-[85%] rounded-lg px-3 py-2 text-sm",
                     msg.role === "user"
-                      ? "self-end bg-primary/20 text-foreground"
+                      ? "self-end bg-brand/20 text-foreground"
                       : "self-start bg-secondary text-secondary-foreground"
                   )}
                 >
@@ -343,7 +343,7 @@ export function ChatWidget({
             size="icon"
             className={cn(
               "size-8 shrink-0",
-              input.trim() ? "text-primary" : "text-muted-foreground/40"
+              input.trim() ? "text-brand" : "text-muted-foreground/40"
             )}
             onClick={handleSubmit}
             disabled={!input.trim()}

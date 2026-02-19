@@ -122,11 +122,11 @@ export function TodayActions({
           <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             Today&apos;s Actions
           </span>
-          <Badge variant="outline" className="text-xs px-1.5 py-0 h-4 font-semibold">
+          <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 font-semibold">
             {totalItems + morningItems}
           </Badge>
           {overdueCount > 0 && (
-            <Badge className="text-xs px-1.5 py-0 h-4 bg-red-500/20 text-red-400">
+            <Badge className="text-xs px-1.5 py-0.5 h-5 bg-red-500/20 text-red-400">
               {overdueCount} overdue
             </Badge>
           )}
@@ -144,7 +144,7 @@ export function TodayActions({
 
           {/* Morning Briefing Sections */}
           {morningItems > 0 && (
-            <div className="space-y-1.5">
+            <div className="space-y-2">
               {/* News Triggers */}
               {morning.newsTriggers.length > 0 && (
                 <MorningSection
@@ -154,14 +154,14 @@ export function TodayActions({
                   iconColor="text-blue-400"
                 >
                   {morning.newsTriggers.map((trigger, i) => (
-                    <div key={i} className="rounded-md border-l-[3px] border-l-blue-500 bg-blue-500/5 p-2 flex items-start gap-2 text-xs">
+                    <div key={i} className="rounded-md border-l-[3px] border-l-blue-500 bg-blue-500/5 p-3 flex items-start gap-2 text-xs">
                       <Newspaper className="h-3.5 w-3.5 mt-0.5 text-blue-400 shrink-0" />
                       <div className="flex-1 min-w-0">
                         <Button
                           variant="ghost"
                           size="sm"
                           onClick={() => onSelectCompany(trigger.company.id)}
-                          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
+                          className="h-auto p-0 font-medium text-foreground hover:text-brand hover:bg-transparent truncate block text-left"
                         >
                           {trigger.company.name}
                         </Button>
@@ -182,14 +182,14 @@ export function TodayActions({
                   iconColor="text-amber-400"
                 >
                   {morning.staleWarnings.map((warning, i) => (
-                    <div key={i} className="rounded-md border-l-[3px] border-l-amber-500 bg-amber-500/5 p-2 flex items-start gap-2 text-xs">
+                    <div key={i} className="rounded-md border-l-[3px] border-l-amber-500 bg-amber-500/5 p-3 flex items-start gap-2 text-xs">
                       <Clock className="h-3.5 w-3.5 mt-0.5 text-amber-400 shrink-0" />
                       <div className="flex-1 min-w-0">
                         <Button
                           variant="ghost"
                           size="sm"
                           onClick={() => onSelectCompany(warning.company.id)}
-                          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
+                          className="h-auto p-0 font-medium text-foreground hover:text-brand hover:bg-transparent truncate block text-left"
                         >
                           {warning.company.name}
                         </Button>
@@ -203,7 +203,7 @@ export function TodayActions({
                             variant="ghost"
                             size="icon"
                             onClick={() => onLogEngagement(warning.company.id)}
-                            className="h-6 w-6 text-muted-foreground hover:text-primary hover:bg-primary/20"
+                            className="h-6 w-6 text-muted-foreground hover:text-brand hover:bg-brand/20"
                           >
                             <MessageSquare className="h-3 w-3" />
                           </Button>
@@ -224,14 +224,14 @@ export function TodayActions({
                   iconColor="text-green-400"
                 >
                   {morning.quickWins.map((win, i) => (
-                    <div key={i} className="rounded-md border-l-[3px] border-l-green-500 bg-green-500/5 p-2 flex items-start gap-2 text-xs">
+                    <div key={i} className="rounded-md border-l-[3px] border-l-green-500 bg-green-500/5 p-3 flex items-start gap-2 text-xs">
                       <Zap className="h-3.5 w-3.5 mt-0.5 text-green-400 shrink-0" />
                       <div className="flex-1 min-w-0">
                         <Button
                           variant="ghost"
                           size="sm"
                           onClick={() => onSelectCompany(win.company.id)}
-                          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
+                          className="h-auto p-0 font-medium text-foreground hover:text-brand hover:bg-transparent truncate block text-left"
                         >
                           {win.company.name}
                         </Button>
@@ -239,7 +239,7 @@ export function TodayActions({
                           Score {win.score} — never contacted
                         </p>
                       </div>
-                      <Badge variant="outline" className="text-xs px-1 py-0 h-4">
+                      <Badge variant="outline" className="text-xs px-1 py-0.5 h-5">
                         {win.type}
                       </Badge>
                     </div>
@@ -253,23 +253,23 @@ export function TodayActions({
                   icon={Star}
                   label="Your Day"
                   count={morning.topActions.length}
-                  iconColor="text-primary"
+                  iconColor="text-brand"
                 >
                   {morning.topActions.map((action, i) => (
-                    <div key={i} className="rounded-md border-l-[3px] border-l-primary/50 bg-primary/5 p-2 flex items-start gap-2 text-xs">
-                      <TrendingUp className="h-3.5 w-3.5 mt-0.5 text-primary shrink-0" />
+                    <div key={i} className="rounded-md border-l-[3px] border-l-brand/50 bg-brand/5 p-3 flex items-start gap-2 text-xs">
+                      <TrendingUp className="h-3.5 w-3.5 mt-0.5 text-brand shrink-0" />
                       <div className="flex-1 min-w-0">
                         <Button
                           variant="ghost"
                           size="sm"
                           onClick={() => onSelectCompany(action.company.id)}
-                          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
+                          className="h-auto p-0 font-medium text-foreground hover:text-brand hover:bg-transparent truncate block text-left"
                         >
                           {action.company.name}
                         </Button>
                         <p className="text-muted-foreground">{action.nextAction}</p>
                       </div>
-                      <Badge className={cn("text-xs px-1 py-0 h-4", URGENCY_STYLES[action.urgencyTier])}>
+                      <Badge className={cn("text-xs px-1 py-0.5 h-5", URGENCY_STYLES[action.urgencyTier])}>
                         {action.urgencyTier}
                       </Badge>
                     </div>
@@ -281,7 +281,7 @@ export function TodayActions({
 
           {/* Follow-up items (existing) */}
           {categorized.length > 0 && (
-            <div className="space-y-1">
+            <div className="space-y-2">
               {categorized.map((item) => (
                 <ActionItem
                   key={item.followUp.id}
@@ -336,7 +336,7 @@ function MorningSection({
           <ChevronDown className="h-3 w-3 text-muted-foreground" />
         )}
       </Button>
-      {open && <div className="space-y-1 mt-1">{children}</div>}
+      {open && <div className="space-y-2 mt-1">{children}</div>}
     </div>
   );
 }
@@ -363,7 +363,7 @@ function ActionItem({
   return (
     <div
       className={cn(
-        "rounded-md border-l-[3px] p-2 flex items-start gap-2 text-xs",
+        "rounded-md border-l-[3px] p-3 flex items-start gap-2 text-xs",
         style.border,
         style.bg
       )}
@@ -374,7 +374,7 @@ function ActionItem({
           variant="ghost"
           size="sm"
           onClick={() => onSelectCompany(item.followUp.companyId)}
-          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
+          className="h-auto p-0 font-medium text-foreground hover:text-brand hover:bg-transparent truncate block text-left"
         >
           {item.companyName}
         </Button>
@@ -446,7 +446,7 @@ function ActionItem({
               variant="ghost"
               size="icon"
               onClick={() => onLogEngagement(item.followUp.companyId)}
-              className="h-6 w-6 text-muted-foreground hover:text-primary hover:bg-primary/20"
+              className="h-6 w-6 text-muted-foreground hover:text-brand hover:bg-brand/20"
             >
               <MessageSquare className="h-3 w-3" />
             </Button>

@@ -77,7 +77,7 @@ export function PreCallBriefingDialog({
               {briefing.who.topHooks.length > 0 && (
                 <div className="flex flex-wrap gap-1">
                   {briefing.who.topHooks.map((hook, i) => (
-                    <span key={i} className="text-xs px-1.5 py-0.5 rounded-full bg-primary/10 text-primary">
+                    <span key={i} className="text-xs px-1.5 py-0.5 rounded-full bg-brand/10 text-brand">
                       {hook}
                     </span>
                   ))}
@@ -109,13 +109,13 @@ export function PreCallBriefingDialog({
           <BriefSection icon={Target} title="YOUR ANGLE">
             <div className="space-y-2">
               <div className="flex items-start gap-2">
-                <p className="text-sm text-foreground/90 bg-primary/5 border border-primary/20 rounded-lg p-2.5 flex-1 leading-relaxed">
+                <p className="text-sm text-foreground/90 bg-brand/5 border border-brand/20 rounded-lg p-2.5 flex-1 leading-relaxed">
                   {briefing.yourAngle.talkingPoint}
                 </p>
                 <CopyButton text={briefing.yourAngle.talkingPoint} />
               </div>
               <div className="flex items-start gap-2">
-                <p className="text-xs text-primary bg-primary/5 rounded-lg p-2 flex-1">
+                <p className="text-xs text-brand bg-brand/5 rounded-lg p-2 flex-1">
                   CTA: {briefing.yourAngle.cta}
                 </p>
                 <CopyButton text={briefing.yourAngle.cta} />
@@ -128,7 +128,7 @@ export function PreCallBriefingDialog({
             <BriefSection icon={Newspaper} title="NEWS HOOK">
               <div className="space-y-1.5">
                 <p className="text-sm font-medium">{briefing.newsHook.headline}</p>
-                <p className="text-xs text-primary/70">{briefing.newsHook.source}</p>
+                <p className="text-xs text-brand/70">{briefing.newsHook.source}</p>
                 <div className="flex items-start gap-2">
                   <p className="text-xs text-foreground/80 bg-secondary/30 rounded-lg p-2 flex-1 leading-relaxed italic">
                     &ldquo;{briefing.newsHook.suggestedOpener}&rdquo;
@@ -168,7 +168,7 @@ function BriefSection({
   children: React.ReactNode;
 }) {
   return (
-    <Card className="bg-secondary/20 p-3 gap-0 py-0 shadow-none border-0">
+    <Card className="bg-secondary/20 p-3 gap-2 shadow-none border-0">
       <div className="flex items-center gap-1.5 mb-2">
         <Icon className="h-3.5 w-3.5 text-muted-foreground" />
         <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{title}</span>

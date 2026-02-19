@@ -145,7 +145,7 @@ const phases: Phase[] = [
 ];
 
 const tagStyles = {
-  keynote: "bg-primary/20 text-primary",
+  keynote: "bg-brand/20 text-brand",
   panel: "bg-[var(--client)]/20 text-[var(--client)]",
   demo: "bg-[var(--icp)]/20 text-[var(--icp)]",
 } as const;
@@ -170,7 +170,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
             {programSessions.map((session, i) => (
               <Card key={i} className="gap-0 py-0 shadow-none overflow-hidden">
                 <div className="px-3 py-2 border-b border-border/50 flex items-center gap-2">
-                  <Badge className={cn("text-xs px-1.5 py-0 h-4", tagStyles[session.tag])}>
+                  <Badge className={cn("text-xs px-1.5 py-0.5 h-5", tagStyles[session.tag])}>
                     {session.tag.toUpperCase()}
                   </Badge>
                   <span className="text-sm font-medium">{session.title}</span>
@@ -218,9 +218,9 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
 
           <div className="space-y-4">
             {phases.map((phase) => (
-              <Card key={phase.id} className="p-3 gap-0 py-0 shadow-none">
+              <Card key={phase.id} className="p-3 gap-2 shadow-none">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xs text-primary/80 font-medium">{phase.time}</span>
+                  <span className="text-xs text-brand/80 font-medium">{phase.time}</span>
                 </div>
                 <h4 className="text-sm font-semibold mb-0.5">{phase.title}</h4>
                 <p className="text-xs text-muted-foreground mb-2">{phase.desc}</p>

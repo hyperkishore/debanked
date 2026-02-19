@@ -71,16 +71,16 @@ export function PitchTab() {
     <ScrollArea className="h-full">
       <div className="p-4 space-y-6 max-w-2xl mx-auto">
         {/* 30-Second Pitch */}
-        <Card className="border-l-[3px] border-l-primary p-4 gap-0 py-0 shadow-none">
+        <Card className="border-l-[3px] border-l-brand p-4 gap-3 shadow-none">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-xs font-semibold text-primary uppercase tracking-wider">30-Second Pitch</h3>
+            <h3 className="text-xs font-semibold text-brand uppercase tracking-wider">30-Second Pitch</h3>
             <CopyButton text={PITCH_TEXT} variant="button" label="Copy" size="sm" />
           </div>
           <p className="text-sm leading-relaxed">
-            &ldquo;We&rsquo;re <span className="text-primary font-semibold">HyperVerge</span> &mdash; we built an AI Co-Pilot that cuts small business underwriting from{" "}
-            <span className="text-primary font-semibold">40 minutes to under 5</span>. We automate application intake, cash flow analysis, risk/CLEAR report review, and industry classification. Already deployed with{" "}
-            <span className="text-primary font-semibold">450+ financial services enterprises</span>. We&rsquo;re working with{" "}
-            <span className="text-primary font-semibold">PIRS Capital</span> in the MCA space and seeing incredible results.&rdquo;
+            &ldquo;We&rsquo;re <span className="text-brand font-semibold">HyperVerge</span> &mdash; we built an AI Co-Pilot that cuts small business underwriting from{" "}
+            <span className="text-brand font-semibold">40 minutes to under 5</span>. We automate application intake, cash flow analysis, risk/CLEAR report review, and industry classification. Already deployed with{" "}
+            <span className="text-brand font-semibold">450+ financial services enterprises</span>. We&rsquo;re working with{" "}
+            <span className="text-brand font-semibold">PIRS Capital</span> in the MCA space and seeing incredible results.&rdquo;
           </p>
         </Card>
 
@@ -94,7 +94,7 @@ export function PitchTab() {
                   <tr key={i} className="border-b border-border/50 last:border-b-0 group">
                     <td className="py-2.5 px-3 text-muted-foreground">{vp.from}</td>
                     <td className="py-2.5 px-3 font-medium">{vp.to}</td>
-                    <td className="py-2.5 px-3 text-right text-primary font-semibold whitespace-nowrap">{vp.impact}</td>
+                    <td className="py-2.5 px-3 text-right text-brand font-semibold whitespace-nowrap">{vp.impact}</td>
                     <td className="py-2.5 pr-2 w-8">
                       <CopyButton
                         text={`${vp.from} \u2192 ${vp.to} (${vp.impact})`}
@@ -122,7 +122,7 @@ export function PitchTab() {
           <ul className="space-y-2">
             {socialProof.map((item, i) => (
               <li key={i} className="flex items-start gap-2 text-sm group">
-                <span className="w-2 h-2 rounded-full bg-primary shrink-0 mt-1.5" />
+                <span className="w-2 h-2 rounded-full bg-brand shrink-0 mt-1.5" />
                 <span className="flex-1">{item}</span>
                 <CopyButton text={item} className="opacity-0 group-hover:opacity-100" />
               </li>
@@ -163,7 +163,7 @@ export function PitchTab() {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 p-2.5 rounded-lg bg-card border border-border hover:border-primary/30 transition-colors"
+                className="flex items-center gap-2 p-2.5 rounded-lg bg-card border border-border hover:border-brand/30 transition-colors"
               >
                 <span className="w-7 h-7 rounded-md bg-[var(--sqo)]/12 text-[var(--sqo)] flex items-center justify-center text-xs shrink-0">&blacktriangleright;</span>
                 <div className="min-w-0">
@@ -181,7 +181,7 @@ export function PitchTab() {
           <p className="text-xs text-muted-foreground mb-3">Warm contacts who can introduce you to cold targets</p>
           <div className="space-y-2">
             {referralMap.map((ref, i) => (
-              <Card key={i} className="flex-row items-center gap-3 p-2.5 py-0 shadow-none group">
+              <Card key={i} className="flex-row items-center gap-3 p-3 shadow-none group">
                 <div className="min-w-0 flex-1">
                   <div className="text-sm font-medium">{ref.from}</div>
                   <div className="text-xs text-muted-foreground">{ref.fromCo}</div>
@@ -190,7 +190,7 @@ export function PitchTab() {
                 <div className="min-w-0 flex-1">
                   <div className="text-sm font-medium">{ref.to}</div>
                   <div className="text-xs text-muted-foreground">{ref.toCo}</div>
-                  <div className="text-xs text-primary/70 mt-0.5">{ref.reason}</div>
+                  <div className="text-xs text-brand/70 mt-0.5">{ref.reason}</div>
                 </div>
                 <CopyButton
                   text={`Hi ${ref.from.split(" ")[0]}, would you be open to introducing me to ${ref.to} at ${ref.toCo.split(" (")[0]}? ${ref.reason}. I'd love to show them how HyperVerge can help.`}

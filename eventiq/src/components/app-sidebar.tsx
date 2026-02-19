@@ -58,8 +58,8 @@ export function AppSidebar({
     <Sidebar className="border-r border-sidebar-border">
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-            <span className="text-primary font-bold text-sm">EQ</span>
+          <div className="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center">
+            <span className="text-brand font-bold text-sm">EQ</span>
           </div>
           <div className="flex-1 min-w-0">
             <h1 className="text-sm font-bold">EventIQ</h1>
@@ -167,8 +167,8 @@ export function AppSidebar({
           <div className="mb-3 pb-3 border-b border-border/30">
             {user ? (
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                  <span className="text-primary font-bold text-xs">
+                <div className="w-6 h-6 rounded-full bg-brand/20 flex items-center justify-center shrink-0">
+                  <span className="text-brand font-bold text-xs">
                     {(user.user_metadata?.full_name || user.email || "U")[0].toUpperCase()}
                   </span>
                 </div>
@@ -213,7 +213,7 @@ export function AppSidebar({
                 className="h-1.5 rounded-full transition-all"
                 style={{
                   width: `${Math.min((streakData.currentStreak / 30) * 100, 100)}%`,
-                  backgroundColor: streakData.currentStreak >= 14 ? "var(--icp)" : streakData.currentStreak >= 7 ? "var(--client)" : "var(--primary)",
+                  backgroundColor: streakData.currentStreak >= 14 ? "var(--icp)" : streakData.currentStreak >= 7 ? "var(--client)" : "var(--brand)",
                 }}
               />
             </div>
@@ -227,7 +227,7 @@ export function AppSidebar({
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div
-            className="bg-primary/60 h-1.5 rounded-full transition-all"
+            className="bg-brand/60 h-1.5 rounded-full transition-all"
             style={{ width: `${totalCount > 0 ? (metCount / totalCount) * 100 : 0}%` }}
           />
         </div>

@@ -173,7 +173,7 @@ export function CompanyDetail({
                 {company.type}
               </Badge>
               {company.clear && (
-                <Badge variant="outline" className="text-xs font-semibold text-primary border-primary/30">
+                <Badge variant="outline" className="text-xs font-semibold text-brand border-brand/30">
                   CLEAR
                 </Badge>
               )}
@@ -203,7 +203,7 @@ export function CompanyDetail({
                   href={company.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-primary hover:underline"
+                  className="flex items-center gap-1 text-brand hover:underline"
                 >
                   <Globe className="h-3 w-3" /> Website
                 </a>
@@ -213,7 +213,7 @@ export function CompanyDetail({
                   href={company.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-primary hover:underline"
+                  className="flex items-center gap-1 text-brand hover:underline"
                 >
                   <Linkedin className="h-3 w-3" /> LinkedIn
                 </a>
@@ -227,7 +227,7 @@ export function CompanyDetail({
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center gap-0.5 text-xs px-1.5 py-0.5 rounded bg-primary/10 text-primary"
+                  className="inline-flex items-center gap-0.5 text-xs px-1.5 py-0.5 rounded bg-brand/10 text-brand"
                 >
                   <Tag className="h-2.5 w-2.5" />
                   {tag}
@@ -270,7 +270,7 @@ export function CompanyDetail({
                   variant="outline"
                   size="sm"
                   onClick={() => setShowTagInput(true)}
-                  className="inline-flex items-center gap-0.5 text-xs h-5 px-1.5 py-0.5 rounded border-dashed text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                  className="inline-flex items-center gap-0.5 text-xs h-5 px-1.5 py-0.5 rounded border-dashed text-muted-foreground hover:text-brand hover:border-brand/30 transition-colors"
                 >
                   <Plus className="h-2.5 w-2.5" /> tag
                 </Button>
@@ -296,7 +296,7 @@ export function CompanyDetail({
                 "text-xs",
                 rating.rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
                 rating.rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
-                rating.rating === "cold" && "bg-primary/20 text-primary",
+                rating.rating === "cold" && "bg-brand/20 text-brand",
               )}>
                 {rating.rating.toUpperCase()}
               </Badge>
@@ -332,7 +332,7 @@ export function CompanyDetail({
           <>
             {/* Contacts with Persona Badges + Brief Me */}
             <Section icon={Users} title="Contacts">
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {(company.leaders || []).map((leader, i) => (
                   <LeaderCard
                     key={i}
@@ -367,7 +367,7 @@ export function CompanyDetail({
             {/* Account Coverage (Multi-Threading Map) */}
             {threadingMap.totalCount > 0 && (
               <Section icon={Users} title="Account Coverage">
-                <div className="space-y-2">
+                <div className="space-y-3">
                   {/* Coverage bar */}
                   <div className="flex items-center gap-2">
                     <div className="flex-1 h-1.5 rounded-full bg-secondary/50 overflow-hidden">
@@ -392,10 +392,10 @@ export function CompanyDetail({
                     return (
                       <div key={i} className="flex items-center gap-2 text-xs">
                         <span className="font-medium min-w-0 truncate flex-1">{thread.leader.n}</span>
-                        <Badge variant="outline" className={cn("text-xs px-1 py-0 h-4", personaConfig.colorClass)}>
+                        <Badge variant="outline" className={cn("text-xs px-1 py-0.5 h-5", personaConfig.colorClass)}>
                           {personaConfig.label}
                         </Badge>
-                        <Badge variant="outline" className={cn("text-xs px-1 py-0 h-4", statusStyle.colorClass)}>
+                        <Badge variant="outline" className={cn("text-xs px-1 py-0.5 h-5", statusStyle.colorClass)}>
                           {statusStyle.label}
                         </Badge>
                         {thread.engagementCount > 0 && (
@@ -407,7 +407,7 @@ export function CompanyDetail({
 
                   {/* Suggestion */}
                   {threadingMap.suggestion && (
-                    <p className="text-xs text-primary/80 bg-primary/5 rounded-lg p-2 mt-1">
+                    <p className="text-xs text-brand/80 bg-brand/5 rounded-lg p-2 mt-1">
                       {threadingMap.suggestion}
                     </p>
                   )}
@@ -417,7 +417,7 @@ export function CompanyDetail({
 
             {/* Icebreakers */}
             <Section icon={Lightbulb} title="Icebreakers">
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <div className="flex items-start gap-2">
                   <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
                     {currentIcebreaker || "No icebreakers available"}
@@ -439,7 +439,7 @@ export function CompanyDetail({
                 <div className="flex-1">
                   <p className="text-sm leading-relaxed text-muted-foreground">{company.desc}</p>
                   {company.notes && (
-                    <p className="text-xs text-primary/80 mt-2 italic">{company.notes}</p>
+                    <p className="text-xs text-brand/80 mt-2 italic">{company.notes}</p>
                   )}
                 </div>
                 {company.desc && <CopyButton text={company.desc} />}
@@ -449,11 +449,11 @@ export function CompanyDetail({
             {/* News */}
             {company.news && company.news.length > 0 && (
               <Section icon={Newspaper} title="Recent News">
-                <div className="space-y-2">
+                <div className="space-y-3">
                   {company.news.map((item, i) => (
-                    <Card key={i} className="bg-secondary/30 p-2.5 gap-0 py-0 shadow-none border-0">
+                    <Card key={i} className="bg-secondary/30 p-3 gap-2 shadow-none border-0">
                       <h4 className="text-sm font-medium leading-snug">{item.h}</h4>
-                      <p className="text-xs text-primary/70 mt-0.5">{item.s}</p>
+                      <p className="text-xs text-brand/70 mt-0.5">{item.s}</p>
                       <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{item.d}</p>
                     </Card>
                   ))}
@@ -470,7 +470,7 @@ export function CompanyDetail({
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs px-2 py-1 rounded-md bg-secondary/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                    className="flex items-center gap-1 text-xs px-2 py-1 rounded-md bg-secondary/50 text-muted-foreground hover:text-brand hover:bg-brand/10 transition-colors"
                   >
                     {link.icon === 'globe' && <Globe className="h-3 w-3" />}
                     {link.icon === 'linkedin' && <Linkedin className="h-3 w-3" />}
@@ -491,7 +491,7 @@ export function CompanyDetail({
                 <div className="space-y-1.5">
                   {company.tp.map((point, i) => (
                     <div key={i} className="flex items-start gap-2 text-sm group">
-                      <span className="text-primary shrink-0 mt-0.5">&bull;</span>
+                      <span className="text-brand shrink-0 mt-0.5">&bull;</span>
                       <span className="text-muted-foreground leading-relaxed flex-1">{point}</span>
                       <CopyButton text={point} className="opacity-0 group-hover:opacity-100" />
                     </div>
@@ -513,7 +513,7 @@ export function CompanyDetail({
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground flex-1">
                     Battlecards
                   </h3>
-                  <Badge variant="outline" className="text-xs px-1.5 py-0 h-4">
+                  <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5">
                     {battlecards.length}
                   </Badge>
                   {battlecardsOpen ? (
@@ -523,13 +523,13 @@ export function CompanyDetail({
                   )}
                 </Button>
                 {battlecardsOpen && (
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     {battlecards.map((card, i) => {
                       const catStyle = getCategoryStyle(card.category);
                       return (
-                        <Card key={i} className="bg-secondary/20 p-3 gap-0 py-0 shadow-none border-0 space-y-1.5">
+                        <Card key={i} className="bg-secondary/20 p-3 gap-2 shadow-none border-0 space-y-1.5">
                           <div className="flex items-start gap-2">
-                            <Badge className={cn("text-xs px-1.5 py-0 h-4 shrink-0", catStyle.colorClass)}>
+                            <Badge className={cn("text-xs px-1.5 py-0.5 h-5 shrink-0", catStyle.colorClass)}>
                               {catStyle.label}
                             </Badge>
                             <p className="text-xs font-medium text-foreground/90 flex-1">
@@ -542,7 +542,7 @@ export function CompanyDetail({
                             </p>
                             <CopyButton text={card.response} />
                           </div>
-                          <p className="text-xs text-primary/60 italic">
+                          <p className="text-xs text-brand/60 italic">
                             {card.socialProof}
                           </p>
                         </Card>
@@ -557,7 +557,7 @@ export function CompanyDetail({
             {company.ask && (
               <Section icon={Target} title="The Ask">
                 <div className="flex items-start gap-2">
-                  <div className="flex-1 text-sm bg-primary/5 border border-primary/20 rounded-lg p-3 leading-relaxed">
+                  <div className="flex-1 text-sm bg-brand/5 border border-brand/20 rounded-lg p-3 leading-relaxed">
                     {company.ask}
                   </div>
                   <CopyButton text={company.ask} />
@@ -676,13 +676,13 @@ function LeaderCard({
   );
 
   return (
-    <Card className="bg-secondary/30 p-2.5 gap-0 py-0 shadow-none border-0">
+    <Card className="bg-secondary/30 p-3 gap-2 shadow-none border-0">
       <div className="flex items-center justify-between">
         <div className="min-w-0 flex-1">
           <span className="text-sm font-medium">{leader.n}</span>
           <span className="text-xs text-muted-foreground ml-2">{leader.t}</span>
           {persona !== 'unknown' && (
-            <Badge variant="outline" className={cn("text-xs px-1 py-0 h-4 ml-1.5", personaConfig.colorClass)}>
+            <Badge variant="outline" className={cn("text-xs px-1 py-0.5 h-5 ml-1.5", personaConfig.colorClass)}>
               {personaConfig.label}
             </Badge>
           )}
@@ -771,7 +771,7 @@ function LeaderCard({
               href={leader.li}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80"
+              className="text-brand hover:text-brand/80"
               onClick={(e) => e.stopPropagation()}
             >
               <ExternalLink className="h-3 w-3" />
@@ -795,7 +795,7 @@ function LeaderCard({
               variant="ghost"
               size="sm"
               onClick={() => setBioExpanded(!bioExpanded)}
-              className="text-xs text-primary/70 hover:text-primary h-auto p-0 mt-0.5"
+              className="text-xs text-brand/70 hover:text-brand h-auto p-0 mt-0.5"
             >
               {bioExpanded ? "Show less" : "Show more"}
             </Button>
@@ -810,7 +810,7 @@ function LeaderCard({
               className={cn(
                 "text-xs px-1.5 py-0.5 rounded-full inline-flex items-center gap-1 group/hook",
                 hook.startsWith("*")
-                  ? "bg-primary/15 text-primary"
+                  ? "bg-brand/15 text-brand"
                   : "bg-muted/50 text-muted-foreground"
               )}
             >
@@ -827,7 +827,7 @@ function LeaderCard({
               variant="ghost"
               size="sm"
               onClick={() => setHooksExpanded(true)}
-              className="text-xs h-auto px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-primary transition-colors"
+              className="text-xs h-auto px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-brand transition-colors"
             >
               +{hiddenHookCount} more
             </Button>
@@ -837,7 +837,7 @@ function LeaderCard({
               variant="ghost"
               size="sm"
               onClick={() => setHooksExpanded(false)}
-              className="text-xs h-auto px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-primary transition-colors"
+              className="text-xs h-auto px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-brand transition-colors"
             >
               Show less
             </Button>

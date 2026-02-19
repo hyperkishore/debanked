@@ -75,13 +75,13 @@ const priorityStyles = {
 const priorityBadge = {
   urgent: "text-[var(--sqo)] border-[var(--sqo)]/30",
   high: "text-[var(--client)] border-[var(--client)]/30",
-  normal: "text-primary border-primary/30",
+  normal: "text-brand border-brand/30",
 };
 
 const typeBadgeStyle: Record<string, string> = {
   "follow-up": "text-[var(--client)] border-[var(--client)]/30",
   "hot-lead": "text-[var(--sqo)] border-[var(--sqo)]/30",
-  "suggested": "text-primary border-primary/30",
+  "suggested": "text-brand border-brand/30",
 };
 
 export function ActionFeed({
@@ -127,7 +127,7 @@ export function ActionFeed({
   if (actions.length === 0 && todayProgress.done === 0) return null;
 
   return (
-    <Card className="gap-0 py-0 shadow-none overflow-hidden">
+    <Card className="gap-2 py-0 shadow-none overflow-hidden">
       {/* Header */}
       <Button
         variant="ghost"
@@ -207,7 +207,7 @@ function ActionSection({
           <div
             key={`${action.companyId}-${action.type}`}
             className={cn(
-              "flex items-center gap-2 p-2 rounded-md border text-xs",
+              "flex items-center gap-2 p-3 rounded-md border text-xs",
               priorityStyles[action.priority]
             )}
           >

@@ -109,7 +109,7 @@ export function SequencePanel({
                     isDone
                       ? "bg-green-500 border-green-500"
                       : isNext
-                        ? "bg-primary border-primary"
+                        ? "bg-brand border-brand"
                         : "bg-background border-border"
                   )}
                 />
@@ -117,7 +117,7 @@ export function SequencePanel({
                 <div
                   className={cn(
                     "rounded-lg p-2.5 transition-colors",
-                    isDone ? "bg-green-500/5" : isNext ? "bg-primary/5" : "bg-secondary/20",
+                    isDone ? "bg-green-500/5" : isNext ? "bg-brand/5" : "bg-secondary/20",
                   )}
                 >
                   <div className="flex items-center gap-2">
@@ -134,7 +134,7 @@ export function SequencePanel({
                         "w-4 h-4 rounded border flex items-center justify-center shrink-0 transition-colors",
                         isDone
                           ? "bg-green-500 border-green-500 text-white"
-                          : "border-border hover:border-primary"
+                          : "border-border hover:border-brand"
                       )}
                     >
                       {isDone && <Check className="h-3 w-3" />}
@@ -142,7 +142,7 @@ export function SequencePanel({
 
                     {/* Step info */}
                     <Icon className={cn("h-3.5 w-3.5 shrink-0", isDone ? "text-green-400" : "text-muted-foreground")} />
-                    <Badge variant="outline" className="text-xs px-1 py-0 h-4">
+                    <Badge variant="outline" className="text-xs px-1 py-0.5 h-5">
                       Day {step.dayOffset}
                     </Badge>
                     <span className={cn("text-xs flex-1", isDone && "line-through text-muted-foreground")}>

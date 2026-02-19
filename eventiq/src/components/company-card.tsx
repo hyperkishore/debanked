@@ -31,7 +31,7 @@ function highlightText(text: string, query: string) {
   const parts = text.split(regex);
   return parts.map((part, i) =>
     regex.test(part) ? (
-      <mark key={i} className="bg-primary/30 text-foreground rounded-sm px-0.5">
+      <mark key={i} className="bg-brand/30 text-foreground rounded-sm px-0.5">
         {part}
       </mark>
     ) : (
@@ -89,8 +89,8 @@ export function CompanyCard({
   return (
     <Card
       className={cn(
-        "group cursor-pointer gap-0 rounded-lg py-0 shadow-none transition-all hover:bg-secondary/50",
-        isSelected && "ring-1 ring-primary bg-secondary/50"
+        "group cursor-pointer p-3 gap-2 rounded-lg shadow-none transition-all hover:bg-secondary/50",
+        isSelected && "ring-1 ring-brand bg-secondary/50"
       )}
       onClick={() => onSelect(company.id)}
       role="button"
@@ -99,7 +99,7 @@ export function CompanyCard({
         if (e.key === "Enter") onSelect(company.id);
       }}
     >
-      <div className="flex items-start gap-3 p-3">
+      <div className="flex items-start gap-3">
         {/* Type color indicator */}
         <div
           className={cn(
@@ -116,25 +116,25 @@ export function CompanyCard({
             </h3>
             <Badge
               variant="outline"
-              className={cn("text-xs px-1.5 py-0 h-4 font-semibold shrink-0", typeBadgeMap[company.type] || "")}
+              className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0", typeBadgeMap[company.type] || "")}
             >
               {company.type}
             </Badge>
             {company.clear && (
-              <Badge variant="outline" className="text-xs px-1.5 py-0 h-4 font-semibold text-primary border-primary/30">
+              <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 font-semibold text-brand border-brand/30">
                 CLEAR
               </Badge>
             )}
             {urgencyTier && (
               <Badge
                 variant="outline"
-                className={cn("text-xs px-1.5 py-0 h-4 font-semibold shrink-0", urgencyBadgeStyles[urgencyTier])}
+                className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0", urgencyBadgeStyles[urgencyTier])}
               >
                 {outreachScore}
               </Badge>
             )}
             {company.booth && (
-              <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" title="Has booth" />
+              <span className="w-1.5 h-1.5 rounded-full bg-brand/50 shrink-0" title="Has booth" />
             )}
           </div>
 
@@ -155,13 +155,13 @@ export function CompanyCard({
           )}
 
           {nextBestAction && (
-            <p className="text-xs text-primary/80 mt-1 font-medium">
+            <p className="text-xs text-brand/80 mt-1 font-medium">
               Next: {nextBestAction}
             </p>
           )}
 
           {lastEngagementTime && (
-            <p className="text-xs text-primary/60 mt-0.5">
+            <p className="text-xs text-brand/60 mt-0.5">
               Last contact: {formatEngagementTime(lastEngagementTime)}
             </p>
           )}
@@ -180,10 +180,10 @@ export function CompanyCard({
         <div className="flex flex-col items-center gap-1 shrink-0 pt-0.5">
           {isMet && (
             <Badge className={cn(
-              "text-xs px-1.5 py-0 h-4",
+              "text-xs px-1.5 py-0.5 h-5",
               rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
               rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
-              rating === "cold" && "bg-primary/20 text-primary",
+              rating === "cold" && "bg-brand/20 text-brand",
               !rating && "bg-muted text-muted-foreground"
             )}>
               {rating ? `MET·${rating.toUpperCase()}` : "MET"}
@@ -201,8 +201,8 @@ export function CompanyCard({
                 className={cn(
                   "w-6 h-6 rounded-full transition-all opacity-0 group-hover:opacity-100",
                   isMet
-                    ? "bg-primary/20 text-primary opacity-100"
-                    : "bg-muted/50 text-muted-foreground hover:bg-primary/20 hover:text-primary"
+                    ? "bg-brand/20 text-brand opacity-100"
+                    : "bg-muted/50 text-muted-foreground hover:bg-brand/20 hover:text-brand"
                 )}
               >
                 {isMet ? <Check className="h-3 w-3" /> : <Circle className="h-3 w-3" />}

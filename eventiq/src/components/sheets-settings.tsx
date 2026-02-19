@@ -141,7 +141,7 @@ export function SheetsSettings({ open, onClose }: SheetsSettingsProps) {
               size="sm"
               onClick={() => setEnabled(!enabled)}
               className={`w-11 h-6 rounded-full transition-colors relative p-0 ${
-                enabled ? "bg-primary" : "bg-muted"
+                enabled ? "bg-brand" : "bg-muted"
               }`}
             >
               <div

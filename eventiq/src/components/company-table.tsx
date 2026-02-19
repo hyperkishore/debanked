@@ -68,7 +68,7 @@ export function CompanyTable({
                   </div>
                 </td>
                 <td className="py-2 px-2">
-                  <Badge variant="outline" className={cn("text-xs px-1.5 py-0 h-4", typeBadgeStyles[company.type] || "")}>
+                  <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 h-5", typeBadgeStyles[company.type] || "")}>
                     {company.type}
                   </Badge>
                 </td>

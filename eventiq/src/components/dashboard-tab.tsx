@@ -26,7 +26,7 @@ interface DashboardTabProps {
 
 function StatCard({ label, value, sub }: { label: string; value: string | number; sub?: string }) {
   return (
-    <Card className="p-4 gap-0 py-0 shadow-none">
+    <Card className="p-4 gap-3 shadow-none">
       <p className="text-xs text-muted-foreground uppercase tracking-wider">{label}</p>
       <p className="text-2xl font-bold mt-1">{value}</p>
       {sub && <p className="text-xs text-muted-foreground mt-1">{sub}</p>}
@@ -102,7 +102,7 @@ function VerticalBarChart({ buckets }: { buckets: { label: string; value: number
             <span className="text-xs font-medium tabular-nums text-foreground">{b.value}</span>
             <div className="w-full bg-muted/20 rounded-t-md flex flex-col justify-end" style={{ height: "100%" }}>
               <div
-                className="bg-primary/60 rounded-t-md transition-all w-full"
+                className="bg-brand/60 rounded-t-md transition-all w-full"
                 style={{ height: `${height}%` }}
               />
             </div>
@@ -163,7 +163,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
     const sourceItems = [
       { label: "EventIQ Only", value: companies.filter((c) => c.source?.includes("eventiq") && !c.source?.includes("tam")).length, color: "var(--icp)" },
       { label: "TAM Only", value: companies.filter((c) => c.source?.includes("tam") && !c.source?.includes("eventiq")).length, color: "var(--tam)" },
-      { label: "Both", value: companies.filter((c) => c.source?.includes("eventiq") && c.source?.includes("tam")).length, color: "var(--primary)" },
+      { label: "Both", value: companies.filter((c) => c.source?.includes("eventiq") && c.source?.includes("tam")).length, color: "var(--brand)" },
     ];
 
     // Size distribution
@@ -184,7 +184,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
     const topLocations = Object.entries(locCounts)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 8)
-      .map(([label, value]) => ({ label, value, color: "var(--primary)" }));
+      .map(([label, value]) => ({ label, value, color: "var(--brand)" }));
     const locTotal = companies.filter((c) => c.location).length;
 
     // Research progress
@@ -195,7 +195,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
     // Data quality distribution
     const qualitySegments = [
       { label: "Complete (80+)", value: companies.filter((c) => getResearchScore(c) >= 80).length, color: "var(--icp)" },
-      { label: "Good (50-79)", value: companies.filter((c) => { const s = getResearchScore(c); return s >= 50 && s < 80; }).length, color: "var(--primary)" },
+      { label: "Good (50-79)", value: companies.filter((c) => { const s = getResearchScore(c); return s >= 50 && s < 80; }).length, color: "var(--brand)" },
       { label: "Partial (25-49)", value: companies.filter((c) => { const s = getResearchScore(c); return s >= 25 && s < 50; }).length, color: "var(--client)" },
       { label: "Minimal (<25)", value: companies.filter((c) => getResearchScore(c) < 25).length, color: "var(--sqo)" },
     ];
@@ -347,24 +347,24 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
         </div>
 
         {/* Priority breakdown */}
-        <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+        <Card className="p-4 gap-3 shadow-none space-y-3">
           <SectionHeader title="Priority Breakdown" />
           <StackedBar segments={stats.prioritySegments} />
         </Card>
 
         {/* Data Quality + Research Progress */}
         <div className="grid md:grid-cols-2 gap-4">
-          <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+          <Card className="p-4 gap-3 shadow-none space-y-3">
             <SectionHeader title="Data Quality" />
             <StackedBar segments={stats.qualitySegments} />
           </Card>
 
-          <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+          <Card className="p-4 gap-3 shadow-none space-y-3">
             <SectionHeader title="Research Progress" />
             <div className="space-y-3">
               <ProgressRow label="P0 Companies" done={stats.p0Researched} total={stats.p0Total} color="var(--sqo)" />
               <ProgressRow label="P1 Companies" done={stats.p1Researched} total={stats.p1Total} color="var(--client)" />
-              <ProgressRow label="Overall" done={stats.overallResearched} total={stats.total} color="var(--primary)" />
+              <ProgressRow label="Overall" done={stats.overallResearched} total={stats.total} color="var(--brand)" />
             </div>
           </Card>
         </div>
@@ -380,13 +380,13 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
             <div className="grid md:grid-cols-2 gap-4">
               {/* Channel breakdown */}
-              <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+              <Card className="p-4 gap-3 shadow-none space-y-3">
                 <SectionHeader title="By Channel" />
                 <HorizontalBar items={engagementStats.channelItems} total={engagementStats.totalEngagements} />
               </Card>
 
               {/* Hottest prospects */}
-              <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+              <Card className="p-4 gap-3 shadow-none space-y-3">
                 <SectionHeader title="Hottest Prospects" />
                 <div className="space-y-2">
                   {engagementStats.hottestProspects.map((p) => (
@@ -403,7 +403,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
                               "text-xs px-1.5 py-0 h-5",
                               p.rating === "hot" ? "text-[var(--sqo)] border-[var(--sqo)]/30" :
                               p.rating === "warm" ? "text-[var(--client)] border-[var(--client)]/30" :
-                              "text-primary border-primary/30"
+                              "text-brand border-brand/30"
                             )}
                           >
                             {p.rating}
@@ -423,7 +423,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
             {/* Needs Follow-up */}
             {engagementStats.needsFollowUp.length > 0 && (
-              <Card className="p-4 gap-0 py-0 shadow-none border-[var(--client)]/20 space-y-3">
+              <Card className="p-4 gap-3 shadow-none border-[var(--client)]/20 space-y-3">
                 <SectionHeader title="Needs Follow-up" description="Companies with no outreach in 3+ days" />
                 <div className="grid md:grid-cols-2 gap-2">
                   {engagementStats.needsFollowUp.map((c) => (
@@ -440,7 +440,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
             )}
 
             {/* Recent Activity */}
-            <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+            <Card className="p-4 gap-3 shadow-none space-y-3">
               <SectionHeader title="Recent Activity" />
               <div className="space-y-2">
                 {engagementStats.recentActivity.map((e) => {
@@ -469,19 +469,19 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
         {/* Source + Size charts */}
         <div className="grid md:grid-cols-2 gap-4">
-          <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+          <Card className="p-4 gap-3 shadow-none space-y-3">
             <SectionHeader title="Data Source" />
             <HorizontalBar items={stats.sourceItems} total={stats.total} />
           </Card>
 
-          <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+          <Card className="p-4 gap-3 shadow-none space-y-3">
             <SectionHeader title="Company Size Distribution" />
             <VerticalBarChart buckets={stats.sizeBuckets} />
           </Card>
         </div>
 
         {/* Top locations */}
-        <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
+        <Card className="p-4 gap-3 shadow-none space-y-3">
           <SectionHeader title="Top Locations" />
           <HorizontalBar items={stats.topLocations} total={stats.locTotal} />
         </Card>
@@ -492,7 +492,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
 function channelToColor(channel: string): string {
   const colors: Record<string, string> = {
-    email: "var(--primary)",
+    email: "var(--brand)",
     linkedin: "var(--tam)",
     imessage: "var(--icp)",
     call: "var(--client)",

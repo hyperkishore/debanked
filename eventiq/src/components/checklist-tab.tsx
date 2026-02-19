@@ -61,7 +61,7 @@ export function ChecklistTab({
                 className={cn(
                   "w-full flex items-center gap-3 p-3 rounded-lg transition-all text-left h-auto justify-start",
                   checkState[item.key]
-                    ? "bg-primary/5 opacity-60"
+                    ? "bg-brand/5 opacity-60"
                     : "bg-card hover:bg-secondary/30"
                 )}
                 onClick={() => onToggleCheck(item.key)}
@@ -70,7 +70,7 @@ export function ChecklistTab({
                   className={cn(
                     "w-5 h-5 rounded-md border flex items-center justify-center shrink-0 transition-all",
                     checkState[item.key]
-                      ? "bg-primary border-primary"
+                      ? "bg-brand border-brand"
                       : "border-border"
                   )}
                 >

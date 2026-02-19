@@ -190,7 +190,7 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
                     className={cn(
                       "px-3 py-1.5 h-auto rounded-lg text-xs font-medium",
                       (effectiveContact === c.name)
-                        ? "bg-primary/20 text-primary border-primary/30"
+                        ? "bg-brand/20 text-brand border-brand/30"
                         : "bg-secondary/30 text-muted-foreground border-border hover:bg-secondary/50"
                     )}
                     onClick={() => setSelectedContact(c.name)}
@@ -279,7 +279,7 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
                   className={cn(
                     "px-3 py-1.5 h-auto rounded-lg text-xs font-medium",
                     (effectiveContact === c.name)
-                      ? "bg-primary/20 text-primary border-primary/30"
+                      ? "bg-brand/20 text-brand border-brand/30"
                       : "bg-secondary/30 text-muted-foreground border-border hover:bg-secondary/50"
                   )}
                   onClick={() => setSelectedContact(c.name)}
@@ -351,7 +351,7 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
                     className={cn(
                       "px-2 py-1 h-auto rounded-md text-xs font-medium",
                       followUpDate === preset.date
-                        ? "bg-primary/20 text-primary"
+                        ? "bg-brand/20 text-brand"
                         : "bg-secondary/30 text-muted-foreground hover:bg-secondary/50"
                     )}
                   >

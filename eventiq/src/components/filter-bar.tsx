@@ -71,7 +71,7 @@ export function FilterBar({
             <ToggleGroupItem
               key={f.value}
               value={f.value}
-              className="h-6 px-2 text-xs data-[state=on]:bg-primary/20 data-[state=on]:text-primary"
+              className="h-6 px-2 text-xs data-[state=on]:bg-brand/20 data-[state=on]:text-brand"
             >
               {f.label}
               {f.value === "Met" && metCount > 0 && (

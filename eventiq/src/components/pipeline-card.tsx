@@ -54,8 +54,8 @@ export function PipelineCard({
       onDragStart={(e) => onDragStart(e, company.id)}
       onClick={() => onOpen(company.id)}
       className={cn(
-        "pipeline-card rounded-md border-l-2 p-2 gap-0 py-0 shadow-none cursor-grab active:cursor-grabbing",
-        "hover:border-primary/30 transition-colors",
+        "pipeline-card rounded-md border-l-2 p-3 gap-2 shadow-none cursor-grab active:cursor-grabbing",
+        "hover:border-brand/30 transition-colors",
         typeAccent[company.type] || "border-l-border"
       )}
     >
@@ -71,7 +71,7 @@ export function PipelineCard({
             "text-xs px-1 py-0.5 rounded font-medium",
             rating.rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
             rating.rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
-            rating.rating === "cold" && "bg-primary/20 text-primary",
+            rating.rating === "cold" && "bg-brand/20 text-brand",
           )}>
             {rating.rating.toUpperCase()}
           </span>

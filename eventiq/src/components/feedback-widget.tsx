@@ -97,7 +97,7 @@ export function FeedbackWidget({ companyName, currentTab }: FeedbackWidgetProps)
               setSection(currentTab || "General / Other");
               setOpen(true);
             }}
-            className="fixed bottom-20 right-4 z-40 h-10 w-10 rounded-full shadow-lg bg-card border-border hover:bg-primary/20 hover:border-primary/30"
+            className="fixed bottom-20 right-4 z-40 h-10 w-10 rounded-full shadow-lg bg-card border-border hover:bg-brand/20 hover:border-brand/30"
           >
             <MessageSquareHeart className="h-5 w-5" />
           </Button>

@@ -55,7 +55,7 @@ function FeedCard({ item, onSelect }: { item: FeedItem; onSelect: (id: number) =
         <SignalIcon type={item.signalType} />
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-1.5 mb-0.5">
-            <span className="text-xs font-semibold text-foreground group-hover:text-primary transition-colors truncate">
+            <span className="text-xs font-semibold text-foreground group-hover:text-brand transition-colors truncate">
               {item.companyName}
             </span>
             <Badge variant="outline" className={`text-xs px-1 py-0 h-3.5 ${TYPE_COLORS[item.companyType] || ""}`}>
@@ -83,7 +83,7 @@ function FeedCard({ item, onSelect }: { item: FeedItem; onSelect: (id: number) =
 
 function StatCard({ label, value, subtext }: { label: string; value: string; subtext?: string }) {
   return (
-    <Card className="flex-1 min-w-[140px] p-3 gap-0 py-0 shadow-none border-border/50 bg-card/30">
+    <Card className="flex-1 min-w-[140px] p-3 gap-2 shadow-none border-border/50 bg-card/30">
       <p className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">{label}</p>
       <p className="text-lg font-bold text-foreground">{value}</p>
       {subtext && <p className="text-xs text-muted-foreground mt-0.5">{subtext}</p>}
@@ -100,7 +100,7 @@ function ThemeCard({ title, description, companies, hvAngle, onSelectCompany, al
   allCompanies: Company[];
 }) {
   return (
-    <Card className="p-3 gap-0 py-0 shadow-none border-border/50 bg-card/30">
+    <Card className="p-3 gap-2 shadow-none border-border/50 bg-card/30">
       <h4 className="text-xs font-semibold text-foreground mb-1">{title}</h4>
       <p className="text-xs text-muted-foreground leading-snug mb-2">{description}</p>
       <div className="flex flex-wrap gap-1 mb-2">
@@ -112,15 +112,15 @@ function ThemeCard({ title, description, companies, hvAngle, onSelectCompany, al
               variant="ghost"
               size="sm"
               onClick={() => match && onSelectCompany(match.id)}
-              className={`text-xs h-auto px-1.5 py-0.5 rounded ${match ? "bg-primary/10 text-primary hover:bg-primary/20 cursor-pointer" : "bg-muted/30 text-muted-foreground cursor-default"} transition-colors`}
+              className={`text-xs h-auto px-1.5 py-0.5 rounded ${match ? "bg-brand/10 text-brand hover:bg-brand/20 cursor-pointer" : "bg-muted/30 text-muted-foreground cursor-default"} transition-colors`}
             >
               {name}
             </Button>
           );
         })}
       </div>
-      <div className="flex items-start gap-1.5 p-2 rounded bg-primary/5 border border-primary/10">
-        <span className="text-xs font-medium text-primary shrink-0">HV Angle:</span>
+      <div className="flex items-start gap-1.5 p-2 rounded bg-brand/5 border border-brand/10">
+        <span className="text-xs font-medium text-brand shrink-0">HV Angle:</span>
         <span className="text-xs text-foreground/80 leading-snug">{hvAngle}</span>
       </div>
     </Card>
@@ -249,7 +249,7 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
               onClick={() => setActiveSection(s.id)}
               className={`shrink-0 text-xs px-2.5 py-1 rounded-md transition-colors ${
                 activeSection === s.id
-                  ? "bg-primary/20 text-primary font-medium"
+                  ? "bg-brand/20 text-brand font-medium"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted/30"
               }`}
             >
