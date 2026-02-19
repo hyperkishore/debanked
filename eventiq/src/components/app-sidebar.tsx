@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
   activeTab: TabType;
@@ -223,7 +224,10 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.9.04</span>
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
+            <span className="opacity-50">v2.9.06</span>
+          </div>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div
