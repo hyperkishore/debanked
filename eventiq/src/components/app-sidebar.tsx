@@ -226,7 +226,7 @@ export function AppSidebar({
           </span>
           <div className="flex items-center gap-1">
             <ThemeToggle />
-            <span className="opacity-50">v2.9.07</span>
+            <span className="opacity-50">v2.9.08</span>
           </div>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
