@@ -1,6 +1,7 @@
 "use client";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Card } from "@/components/ui/card";
 import { CopyButton } from "@/components/copy-button";
 import { ExternalLink } from "lucide-react";
 
@@ -70,7 +71,7 @@ export function PitchTab() {
     <ScrollArea className="h-full">
       <div className="p-4 space-y-6 max-w-2xl mx-auto">
         {/* 30-Second Pitch */}
-        <div className="rounded-xl bg-card border-l-[3px] border-l-primary p-4">
+        <Card className="border-l-[3px] border-l-primary p-4 gap-0 py-0 shadow-none">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-xs font-semibold text-primary uppercase tracking-wider">30-Second Pitch</h3>
             <CopyButton text={PITCH_TEXT} variant="button" label="Copy" size="sm" />
@@ -81,7 +82,7 @@ export function PitchTab() {
             <span className="text-primary font-semibold">450+ financial services enterprises</span>. We&rsquo;re working with{" "}
             <span className="text-primary font-semibold">PIRS Capital</span> in the MCA space and seeing incredible results.&rdquo;
           </p>
-        </div>
+        </Card>
 
         {/* Value Propositions */}
         <div>
@@ -180,7 +181,7 @@ export function PitchTab() {
           <p className="text-xs text-muted-foreground mb-3">Warm contacts who can introduce you to cold targets</p>
           <div className="space-y-2">
             {referralMap.map((ref, i) => (
-              <div key={i} className="flex items-center gap-3 p-2.5 rounded-lg bg-card border border-border group">
+              <Card key={i} className="flex-row items-center gap-3 p-2.5 py-0 shadow-none group">
                 <div className="min-w-0 flex-1">
                   <div className="text-sm font-medium">{ref.from}</div>
                   <div className="text-xs text-muted-foreground">{ref.fromCo}</div>
@@ -195,7 +196,7 @@ export function PitchTab() {
                   text={`Hi ${ref.from.split(" ")[0]}, would you be open to introducing me to ${ref.to} at ${ref.toCo.split(" (")[0]}? ${ref.reason}. I'd love to show them how HyperVerge can help.`}
                   className="opacity-0 group-hover:opacity-100 shrink-0"
                 />
-              </div>
+              </Card>
             ))}
           </div>
         </div>

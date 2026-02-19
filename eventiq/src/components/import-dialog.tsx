@@ -425,7 +425,7 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
 
         <Separator />
 
-        <div className="flex-1 min-h-0 overflow-auto">
+        <ScrollArea className="flex-1 min-h-0">
           {step === "paste" && (
             <div className="space-y-3">
               <Textarea
@@ -516,7 +516,7 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
               </div>
             </div>
           )}
-        </div>
+        </ScrollArea>
 
         <DialogFooter>
           {step === "paste" && (

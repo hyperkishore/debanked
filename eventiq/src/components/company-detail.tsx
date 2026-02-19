@@ -13,12 +13,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Card } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { EngagementTimeline } from "@/components/engagement-timeline";
 import { CopyButton } from "@/components/copy-button";
 import { PreCallBriefingDialog } from "@/components/pre-call-briefing";
 import { SequencePanel } from "@/components/sequence-panel";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import {
@@ -449,11 +451,11 @@ export function CompanyDetail({
               <Section icon={Newspaper} title="Recent News">
                 <div className="space-y-2">
                   {company.news.map((item, i) => (
-                    <div key={i} className="rounded-lg bg-secondary/30 p-2.5">
+                    <Card key={i} className="bg-secondary/30 p-2.5 gap-0 py-0 shadow-none border-0">
                       <h4 className="text-sm font-medium leading-snug">{item.h}</h4>
                       <p className="text-xs text-primary/70 mt-0.5">{item.s}</p>
                       <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{item.d}</p>
-                    </div>
+                    </Card>
                   ))}
                 </div>
               </Section>
@@ -525,7 +527,7 @@ export function CompanyDetail({
                     {battlecards.map((card, i) => {
                       const catStyle = getCategoryStyle(card.category);
                       return (
-                        <div key={i} className="rounded-lg bg-secondary/20 p-3 space-y-1.5">
+                        <Card key={i} className="bg-secondary/20 p-3 gap-0 py-0 shadow-none border-0 space-y-1.5">
                           <div className="flex items-start gap-2">
                             <Badge className={cn("text-xs px-1.5 py-0 h-4 shrink-0", catStyle.colorClass)}>
                               {catStyle.label}
@@ -543,7 +545,7 @@ export function CompanyDetail({
                           <p className="text-xs text-primary/60 italic">
                             {card.socialProof}
                           </p>
-                        </div>
+                        </Card>
                       );
                     })}
                   </div>
@@ -674,7 +676,7 @@ function LeaderCard({
   );
 
   return (
-    <div className="rounded-lg bg-secondary/30 p-2.5">
+    <Card className="bg-secondary/30 p-2.5 gap-0 py-0 shadow-none border-0">
       <div className="flex items-center justify-between">
         <div className="min-w-0 flex-1">
           <span className="text-sm font-medium">{leader.n}</span>
@@ -688,9 +690,14 @@ function LeaderCard({
           {(leader.email || leader.phone) && (
             <div className="flex items-center gap-2 mt-0.5">
               {leader.email && (
-                <a href={`mailto:${leader.email}`} className="text-xs text-blue-400 hover:underline truncate max-w-[180px]" title={leader.email}>
-                  {leader.email}
-                </a>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a href={`mailto:${leader.email}`} className="text-xs text-blue-400 hover:underline truncate max-w-[180px]">
+                      {leader.email}
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>{leader.email}</TooltipContent>
+                </Tooltip>
               )}
               {leader.phone && (
                 <a href={`tel:${leader.phone}`} className="text-xs text-green-400 hover:underline">
@@ -701,52 +708,64 @@ function LeaderCard({
           )}
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onBriefMe();
-            }}
-            className="flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md bg-purple-500/10 text-purple-400 hover:bg-purple-500/20 transition-colors"
-            title="Pre-call briefing"
-          >
-            <BookOpen className="h-3 w-3" /> Brief
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onToggleExpand("email");
-            }}
-            className={cn(
-              "flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md transition-colors",
-              expandedPanel === "email"
-                ? "bg-blue-500/20 text-blue-400"
-                : "bg-blue-500/10 text-blue-400 hover:bg-blue-500/20"
-            )}
-            title="Draft email"
-          >
-            <Mail className="h-3 w-3" /> Email
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onToggleExpand("linkedin");
-            }}
-            className={cn(
-              "flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md transition-colors",
-              expandedPanel === "linkedin"
-                ? "bg-sky-400/20 text-sky-400"
-                : "bg-sky-400/10 text-sky-400 hover:bg-sky-400/20"
-            )}
-            title="Draft LinkedIn message"
-          >
-            <Linkedin className="h-3 w-3" /> LinkedIn
-          </Button>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onBriefMe();
+                }}
+                className="flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md bg-purple-500/10 text-purple-400 hover:bg-purple-500/20 transition-colors"
+              >
+                <BookOpen className="h-3 w-3" /> Brief
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>Pre-call briefing</TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onToggleExpand("email");
+                }}
+                className={cn(
+                  "flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md transition-colors",
+                  expandedPanel === "email"
+                    ? "bg-blue-500/20 text-blue-400"
+                    : "bg-blue-500/10 text-blue-400 hover:bg-blue-500/20"
+                )}
+              >
+                <Mail className="h-3 w-3" /> Email
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>Draft email</TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onToggleExpand("linkedin");
+                }}
+                className={cn(
+                  "flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md transition-colors",
+                  expandedPanel === "linkedin"
+                    ? "bg-sky-400/20 text-sky-400"
+                    : "bg-sky-400/10 text-sky-400 hover:bg-sky-400/20"
+                )}
+              >
+                <Linkedin className="h-3 w-3" /> LinkedIn
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>Draft LinkedIn message</TooltipContent>
+          </Tooltip>
           {leader.li && (
             <a
               href={leader.li}
@@ -922,7 +941,7 @@ function LeaderCard({
           </pre>
         </div>
       )}
-    </div>
+    </Card>
   );
 }
 

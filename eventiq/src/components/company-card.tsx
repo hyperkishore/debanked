@@ -4,8 +4,12 @@ import { Company, getResearchScore, getResearchTier } from "@/lib/types";
 import { UrgencyTier } from "@/lib/outreach-score";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
+import { Check, Circle } from "lucide-react";
 
 interface CompanyCardProps {
   company: Company;
@@ -36,34 +40,18 @@ function highlightText(text: string, query: string) {
   );
 }
 
-const qualityColors: Record<string, string> = {
-  complete: "bg-green-500",
-  good: "bg-blue-500",
-  partial: "bg-amber-500",
-  minimal: "bg-red-500/60",
+const qualityIndicatorColors: Record<string, string> = {
+  complete: "[&>[data-slot=progress-indicator]]:bg-green-500",
+  good: "[&>[data-slot=progress-indicator]]:bg-blue-500",
+  partial: "[&>[data-slot=progress-indicator]]:bg-amber-500",
+  minimal: "[&>[data-slot=progress-indicator]]:bg-red-500/60",
 };
 
-function QualityBar({ company }: { company: Company }) {
-  const score = getResearchScore(company);
-  const tier = getResearchTier(score);
-  return (
-    <div className="mt-2 flex items-center gap-1.5">
-      <div className="flex-1 h-1 rounded-full bg-muted/30 overflow-hidden">
-        <div
-          className={cn("h-full rounded-full transition-all", qualityColors[tier])}
-          style={{ width: `${score}%` }}
-        />
-      </div>
-      <span className="text-xs text-muted-foreground/60 shrink-0 w-6 text-right">{score}%</span>
-    </div>
-  );
-}
-
-const typeColorMap: Record<string, string> = {
-  SQO: "border-l-[var(--sqo)]",
-  Client: "border-l-[var(--client)]",
-  ICP: "border-l-[var(--icp)]",
-  TAM: "border-l-[var(--tam)]",
+const typeIndicatorColor: Record<string, string> = {
+  SQO: "bg-[var(--sqo)]",
+  Client: "bg-[var(--client)]",
+  ICP: "bg-[var(--icp)]",
+  TAM: "bg-[var(--tam)]",
 };
 
 const typeBadgeMap: Record<string, string> = {
@@ -95,12 +83,13 @@ export function CompanyCard({
 }: CompanyCardProps) {
   const contactNames = company.contacts.map((c) => c.n).join(", ");
   const subtitle = contactNames || company.location || "";
+  const score = getResearchScore(company);
+  const tier = getResearchTier(score);
 
   return (
-    <div
+    <Card
       className={cn(
-        "group relative cursor-pointer border-l-[3px] rounded-lg bg-card p-3 transition-all hover:bg-secondary/50",
-        typeColorMap[company.type] || "border-l-muted",
+        "group cursor-pointer gap-0 rounded-lg py-0 shadow-none transition-all hover:bg-secondary/50",
         isSelected && "ring-1 ring-primary bg-secondary/50"
       )}
       onClick={() => onSelect(company.id)}
@@ -110,9 +99,18 @@ export function CompanyCard({
         if (e.key === "Enter") onSelect(company.id);
       }}
     >
-      <div className="flex items-start justify-between gap-2">
+      <div className="flex items-start gap-3 p-3">
+        {/* Type color indicator */}
+        <div
+          className={cn(
+            "mt-1.5 w-2 h-2 rounded-full shrink-0",
+            typeIndicatorColor[company.type] || "bg-muted"
+          )}
+        />
+
+        {/* Main content */}
         <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <h3 className="text-sm font-semibold truncate">
               {highlightText(company.name, query)}
             </h3>
@@ -135,32 +133,51 @@ export function CompanyCard({
                 {outreachScore}
               </Badge>
             )}
+            {company.booth && (
+              <span className="w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" title="Has booth" />
+            )}
           </div>
+
           <p className="text-xs text-muted-foreground mt-1 truncate">
             {highlightText(subtitle, query)}
           </p>
+
           {company.employees && company.employees > 0 && (
             <span className="text-xs text-muted-foreground/60">
-              {company.employees} employees
+              {company.employees.toLocaleString()} employees
             </span>
           )}
+
           {company.ice && !nextBestAction && (
             <p className="text-xs text-muted-foreground/70 mt-1 line-clamp-1">
               {company.ice.substring(0, 80)}...
             </p>
           )}
+
           {nextBestAction && (
             <p className="text-xs text-primary/80 mt-1 font-medium">
               Next: {nextBestAction}
             </p>
           )}
+
           {lastEngagementTime && (
             <p className="text-xs text-primary/60 mt-0.5">
               Last contact: {formatEngagementTime(lastEngagementTime)}
             </p>
           )}
+
+          {/* Research quality */}
+          <div className="mt-2 flex items-center gap-2">
+            <Progress
+              value={score}
+              className={cn("h-1 flex-1", qualityIndicatorColors[tier])}
+            />
+            <span className="text-xs text-muted-foreground/60 tabular-nums shrink-0">{score}%</span>
+          </div>
         </div>
-        <div className="flex items-center gap-1 shrink-0">
+
+        {/* Right actions */}
+        <div className="flex flex-col items-center gap-1 shrink-0 pt-0.5">
           {isMet && (
             <Badge className={cn(
               "text-xs px-1.5 py-0 h-4",
@@ -172,30 +189,29 @@ export function CompanyCard({
               {rating ? `MET·${rating.toUpperCase()}` : "MET"}
             </Badge>
           )}
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={(e) => {
-              e.stopPropagation();
-              onToggleMet(company.id);
-            }}
-            className={cn(
-              "w-6 h-6 rounded-full flex items-center justify-center text-xs transition-all opacity-0 group-hover:opacity-100",
-              isMet
-                ? "bg-primary/20 text-primary opacity-100"
-                : "bg-muted/50 text-muted-foreground hover:bg-primary/20 hover:text-primary"
-            )}
-            title={isMet ? "Unmark met" : "Mark as met"}
-          >
-            {isMet ? "✓" : "○"}
-          </Button>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onToggleMet(company.id);
+                }}
+                className={cn(
+                  "w-6 h-6 rounded-full transition-all opacity-0 group-hover:opacity-100",
+                  isMet
+                    ? "bg-primary/20 text-primary opacity-100"
+                    : "bg-muted/50 text-muted-foreground hover:bg-primary/20 hover:text-primary"
+                )}
+              >
+                {isMet ? <Check className="h-3 w-3" /> : <Circle className="h-3 w-3" />}
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>{isMet ? "Unmark met" : "Mark as met"}</TooltipContent>
+          </Tooltip>
         </div>
       </div>
-      {company.booth && (
-        <div className="absolute top-1 right-1 w-1.5 h-1.5 rounded-full bg-primary/40" title="Has booth" />
-      )}
-      {/* Research quality bar */}
-      <QualityBar company={company} />
-    </div>
+    </Card>
   );
 }

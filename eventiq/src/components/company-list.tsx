@@ -162,7 +162,7 @@ export function CompanyList({
   const virtualizer = useVirtualizer({
     count: sorted.length,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => 88,
+    estimateSize: () => 140,
     overscan: 5,
   });
 
@@ -238,12 +238,13 @@ export function CompanyList({
               return (
                 <div
                   key={company.id}
+                  ref={virtualizer.measureElement}
+                  data-index={virtualRow.index}
                   style={{
                     position: "absolute",
                     top: 0,
                     left: 0,
                     width: "100%",
-                    height: `${virtualRow.size}px`,
                     transform: `translateY(${virtualRow.start}px)`,
                   }}
                   className="px-2 py-0.5"

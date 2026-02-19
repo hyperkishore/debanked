@@ -20,6 +20,7 @@ import {
 import { CopyButton } from "@/components/copy-button";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import {
   ChevronDown,
@@ -196,15 +197,19 @@ export function TodayActions({
                           {warning.daysSince}d since last {warning.lastChannel}
                         </p>
                       </div>
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={() => onLogEngagement(warning.company.id)}
-                        className="h-6 w-6 text-muted-foreground hover:text-primary hover:bg-primary/20"
-                        title="Log engagement"
-                      >
-                        <MessageSquare className="h-3 w-3" />
-                      </Button>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={() => onLogEngagement(warning.company.id)}
+                            className="h-6 w-6 text-muted-foreground hover:text-primary hover:bg-primary/20"
+                          >
+                            <MessageSquare className="h-3 w-3" />
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent>Log engagement</TooltipContent>
+                      </Tooltip>
                     </div>
                   ))}
                 </MorningSection>
@@ -385,15 +390,19 @@ function ActionItem({
         {/* Snooze */}
         {!isStale && (
           <div className="relative">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setShowSnooze(!showSnooze)}
-              className="h-6 w-6 text-muted-foreground hover:text-foreground hover:bg-secondary/50"
-              title="Snooze"
-            >
-              <Clock className="h-3 w-3" />
-            </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setShowSnooze(!showSnooze)}
+                  className="h-6 w-6 text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                >
+                  <Clock className="h-3 w-3" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Snooze</TooltipContent>
+            </Tooltip>
             {showSnooze && (
               <div className="absolute right-0 top-6 z-10 bg-card border border-border rounded-md shadow-lg py-1 min-w-[100px]">
                 {snoozePresets.map((preset) => (
@@ -416,26 +425,34 @@ function ActionItem({
         )}
         {/* Complete */}
         {!isStale && (
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => onComplete(item.followUp.id)}
-            className="h-6 w-6 text-muted-foreground hover:text-green-400 hover:bg-green-500/20"
-            title="Complete"
-          >
-            <Check className="h-3 w-3" />
-          </Button>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => onComplete(item.followUp.id)}
+                className="h-6 w-6 text-muted-foreground hover:text-green-400 hover:bg-green-500/20"
+              >
+                <Check className="h-3 w-3" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>Complete</TooltipContent>
+          </Tooltip>
         )}
         {/* Log engagement */}
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => onLogEngagement(item.followUp.companyId)}
-          className="h-6 w-6 text-muted-foreground hover:text-primary hover:bg-primary/20"
-          title="Log engagement"
-        >
-          <MessageSquare className="h-3 w-3" />
-        </Button>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => onLogEngagement(item.followUp.companyId)}
+              className="h-6 w-6 text-muted-foreground hover:text-primary hover:bg-primary/20"
+            >
+              <MessageSquare className="h-3 w-3" />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>Log engagement</TooltipContent>
+        </Tooltip>
       </div>
     </div>
   );

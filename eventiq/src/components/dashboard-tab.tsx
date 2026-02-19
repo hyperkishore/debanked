@@ -9,6 +9,7 @@ import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useMemo } from "react";
 
@@ -25,11 +26,11 @@ interface DashboardTabProps {
 
 function StatCard({ label, value, sub }: { label: string; value: string | number; sub?: string }) {
   return (
-    <div className="rounded-lg bg-card border border-border p-4">
+    <Card className="p-4 gap-0 py-0 shadow-none">
       <p className="text-xs text-muted-foreground uppercase tracking-wider">{label}</p>
       <p className="text-2xl font-bold mt-1">{value}</p>
       {sub && <p className="text-xs text-muted-foreground mt-1">{sub}</p>}
-    </div>
+    </Card>
   );
 }
 
@@ -346,26 +347,26 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
         </div>
 
         {/* Priority breakdown */}
-        <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+        <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
           <SectionHeader title="Priority Breakdown" />
           <StackedBar segments={stats.prioritySegments} />
-        </div>
+        </Card>
 
         {/* Data Quality + Research Progress */}
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+          <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
             <SectionHeader title="Data Quality" />
             <StackedBar segments={stats.qualitySegments} />
-          </div>
+          </Card>
 
-          <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+          <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
             <SectionHeader title="Research Progress" />
             <div className="space-y-3">
               <ProgressRow label="P0 Companies" done={stats.p0Researched} total={stats.p0Total} color="var(--sqo)" />
               <ProgressRow label="P1 Companies" done={stats.p1Researched} total={stats.p1Total} color="var(--client)" />
               <ProgressRow label="Overall" done={stats.overallResearched} total={stats.total} color="var(--primary)" />
             </div>
-          </div>
+          </Card>
         </div>
 
         {/* Engagement Analytics Section */}
@@ -379,13 +380,13 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
             <div className="grid md:grid-cols-2 gap-4">
               {/* Channel breakdown */}
-              <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+              <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
                 <SectionHeader title="By Channel" />
                 <HorizontalBar items={engagementStats.channelItems} total={engagementStats.totalEngagements} />
-              </div>
+              </Card>
 
               {/* Hottest prospects */}
-              <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+              <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
                 <SectionHeader title="Hottest Prospects" />
                 <div className="space-y-2">
                   {engagementStats.hottestProspects.map((p) => (
@@ -417,12 +418,12 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
                     <p className="text-xs text-muted-foreground">No engagements yet</p>
                   )}
                 </div>
-              </div>
+              </Card>
             </div>
 
             {/* Needs Follow-up */}
             {engagementStats.needsFollowUp.length > 0 && (
-              <div className="rounded-lg bg-card border border-[var(--client)]/20 p-4 space-y-3">
+              <Card className="p-4 gap-0 py-0 shadow-none border-[var(--client)]/20 space-y-3">
                 <SectionHeader title="Needs Follow-up" description="Companies with no outreach in 3+ days" />
                 <div className="grid md:grid-cols-2 gap-2">
                   {engagementStats.needsFollowUp.map((c) => (
@@ -435,11 +436,11 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
                     </div>
                   ))}
                 </div>
-              </div>
+              </Card>
             )}
 
             {/* Recent Activity */}
-            <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+            <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
               <SectionHeader title="Recent Activity" />
               <div className="space-y-2">
                 {engagementStats.recentActivity.map((e) => {
@@ -460,7 +461,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
                   );
                 })}
               </div>
-            </div>
+            </Card>
           </>
         )}
 
@@ -468,22 +469,22 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
         {/* Source + Size charts */}
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+          <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
             <SectionHeader title="Data Source" />
             <HorizontalBar items={stats.sourceItems} total={stats.total} />
-          </div>
+          </Card>
 
-          <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+          <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
             <SectionHeader title="Company Size Distribution" />
             <VerticalBarChart buckets={stats.sizeBuckets} />
-          </div>
+          </Card>
         </div>
 
         {/* Top locations */}
-        <div className="rounded-lg bg-card border border-border p-4 space-y-3">
+        <Card className="p-4 gap-0 py-0 shadow-none space-y-3">
           <SectionHeader title="Top Locations" />
           <HorizontalBar items={stats.topLocations} total={stats.locTotal} />
-        </div>
+        </Card>
       </div>
     </ScrollArea>
   );

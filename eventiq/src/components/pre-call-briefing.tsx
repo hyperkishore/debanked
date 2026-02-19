@@ -12,6 +12,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import {
   User,
@@ -167,12 +168,12 @@ function BriefSection({
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-lg bg-secondary/20 p-3">
+    <Card className="bg-secondary/20 p-3 gap-0 py-0 shadow-none border-0">
       <div className="flex items-center gap-1.5 mb-2">
         <Icon className="h-3.5 w-3.5 text-muted-foreground" />
         <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{title}</span>
       </div>
       {children}
-    </div>
+    </Card>
   );
 }

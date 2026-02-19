@@ -17,6 +17,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import {
   ChatMessage,
   InputCategory,
@@ -70,24 +71,29 @@ export function ChatFab({
   const isMobile = useIsMobile();
 
   return (
-    <Button
-      size="icon"
-      onClick={onClick}
-      className={cn(
-        "fixed z-[60] rounded-full h-12 w-12 shadow-lg hover:bg-primary/90 transition-all",
-        isMobile ? "right-4" : "bottom-6 right-6",
-        pendingCount > 0 && "chat-fab-pulse"
-      )}
-      style={isMobile ? { bottom: "calc(4rem + env(safe-area-inset-bottom, 0px))" } : undefined}
-      aria-label="Open input capture"
-    >
-      <MessageSquarePlus className="size-5" />
-      {pendingCount > 0 && (
-        <span className="absolute -top-1 -right-1 flex items-center justify-center size-5 rounded-full bg-destructive text-xs font-bold text-white">
-          {pendingCount > 9 ? "9+" : pendingCount}
-        </span>
-      )}
-    </Button>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <Button
+          size="icon"
+          onClick={onClick}
+          className={cn(
+            "fixed z-[60] rounded-full h-12 w-12 shadow-lg hover:bg-primary/90 transition-all",
+            isMobile ? "right-4" : "bottom-6 right-6",
+            pendingCount > 0 && "chat-fab-pulse"
+          )}
+          style={isMobile ? { bottom: "calc(4rem + env(safe-area-inset-bottom, 0px))" } : undefined}
+          aria-label="Open input capture"
+        >
+          <MessageSquarePlus className="size-5" />
+          {pendingCount > 0 && (
+            <span className="absolute -top-1 -right-1 flex items-center justify-center size-5 rounded-full bg-destructive text-xs font-bold text-white">
+              {pendingCount > 9 ? "9+" : pendingCount}
+            </span>
+          )}
+        </Button>
+      </TooltipTrigger>
+      <TooltipContent side="left">Capture input</TooltipContent>
+    </Tooltip>
   );
 }
 
@@ -207,35 +213,47 @@ export function ChatWidget({
             )}
           </div>
           <div className="flex items-center gap-1">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="size-8"
-              onClick={handleExport}
-              disabled={messages.length === 0}
-              title="Export as markdown"
-            >
-              <Download className="size-4" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="size-8 text-muted-foreground hover:text-destructive"
-              onClick={handleClear}
-              disabled={messages.length === 0}
-              title="Clear all"
-            >
-              <Trash2 className="size-4" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="size-8"
-              onClick={() => onOpenChange(false)}
-              title="Close"
-            >
-              <span className="text-lg leading-none">&times;</span>
-            </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="size-8"
+                  onClick={handleExport}
+                  disabled={messages.length === 0}
+                >
+                  <Download className="size-4" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Export as markdown</TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="size-8 text-muted-foreground hover:text-destructive"
+                  onClick={handleClear}
+                  disabled={messages.length === 0}
+                >
+                  <Trash2 className="size-4" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Clear all</TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="size-8"
+                  onClick={() => onOpenChange(false)}
+                >
+                  <span className="text-lg leading-none">&times;</span>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Close</TooltipContent>
+            </Tooltip>
           </div>
         </div>
 
@@ -272,7 +290,7 @@ export function ChatWidget({
                       </span>
                       {msg.context?.companyName && (
                         <span className="text-xs text-muted-foreground/60">
-                          \u00B7 {msg.context.companyName}
+                          {"\u00B7"} {msg.context.companyName}
                         </span>
                       )}
                     </div>

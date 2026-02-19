@@ -4,6 +4,7 @@ import { CompanyType } from "@/lib/types";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 interface ScheduleTabProps {
@@ -167,7 +168,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
 
           <div className="space-y-3">
             {programSessions.map((session, i) => (
-              <div key={i} className="rounded-lg bg-card border border-border overflow-hidden">
+              <Card key={i} className="gap-0 py-0 shadow-none overflow-hidden">
                 <div className="px-3 py-2 border-b border-border/50 flex items-center gap-2">
                   <Badge className={cn("text-xs px-1.5 py-0 h-4", tagStyles[session.tag])}>
                     {session.tag.toUpperCase()}
@@ -206,7 +207,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                     </Button>
                   ))}
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>
@@ -217,7 +218,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
 
           <div className="space-y-4">
             {phases.map((phase) => (
-              <div key={phase.id} className="rounded-lg bg-card border border-border p-3">
+              <Card key={phase.id} className="p-3 gap-0 py-0 shadow-none">
                 <div className="flex items-center justify-between mb-1">
                   <span className="text-xs text-primary/80 font-medium">{phase.time}</span>
                 </div>
@@ -238,7 +239,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                     </Button>
                   ))}
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>

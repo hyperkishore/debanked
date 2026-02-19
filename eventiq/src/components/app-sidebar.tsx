@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud } from "lucide-react";
 
 interface AppSidebarProps {
@@ -174,15 +175,19 @@ export function AppSidebar({
                 <span className="text-xs text-foreground truncate flex-1">
                   {user.user_metadata?.full_name || user.email?.split("@")[0]}
                 </span>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={signOut}
-                  className="h-6 w-6 text-muted-foreground"
-                  title="Sign out"
-                >
-                  <LogOut className="h-3 w-3" />
-                </Button>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={signOut}
+                      className="h-6 w-6 text-muted-foreground"
+                    >
+                      <LogOut className="h-3 w-3" />
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>Sign out</TooltipContent>
+                </Tooltip>
               </div>
             ) : (
               <Button
@@ -218,7 +223,7 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.9.03</span>
+          <span className="opacity-50">v2.9.04</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

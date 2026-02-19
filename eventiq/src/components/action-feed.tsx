@@ -5,6 +5,7 @@ import { getTodayProgress, getRecentActivityCount, StreakData } from "@/lib/stre
 import { Company, RatingData, EngagementEntry } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useMemo, useState } from "react";
 import { ChevronDown } from "lucide-react";
@@ -126,7 +127,7 @@ export function ActionFeed({
   if (actions.length === 0 && todayProgress.done === 0) return null;
 
   return (
-    <div className="rounded-lg bg-card border border-border overflow-hidden">
+    <Card className="gap-0 py-0 shadow-none overflow-hidden">
       {/* Header */}
       <Button
         variant="ghost"
@@ -181,7 +182,7 @@ export function ActionFeed({
           )}
         </div>
       )}
-    </div>
+    </Card>
   );
 }
 

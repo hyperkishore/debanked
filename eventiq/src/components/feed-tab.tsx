@@ -16,6 +16,7 @@ import {
 import { getSupabase } from "@/lib/supabase";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface FeedTabProps {
@@ -82,11 +83,11 @@ function FeedCard({ item, onSelect }: { item: FeedItem; onSelect: (id: number) =
 
 function StatCard({ label, value, subtext }: { label: string; value: string; subtext?: string }) {
   return (
-    <div className="flex-1 min-w-[140px] p-3 rounded-lg border border-border/50 bg-card/30">
+    <Card className="flex-1 min-w-[140px] p-3 gap-0 py-0 shadow-none border-border/50 bg-card/30">
       <p className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">{label}</p>
       <p className="text-lg font-bold text-foreground">{value}</p>
       {subtext && <p className="text-xs text-muted-foreground mt-0.5">{subtext}</p>}
-    </div>
+    </Card>
   );
 }
 
@@ -99,7 +100,7 @@ function ThemeCard({ title, description, companies, hvAngle, onSelectCompany, al
   allCompanies: Company[];
 }) {
   return (
-    <div className="p-3 rounded-lg border border-border/50 bg-card/30">
+    <Card className="p-3 gap-0 py-0 shadow-none border-border/50 bg-card/30">
       <h4 className="text-xs font-semibold text-foreground mb-1">{title}</h4>
       <p className="text-xs text-muted-foreground leading-snug mb-2">{description}</p>
       <div className="flex flex-wrap gap-1 mb-2">
@@ -122,7 +123,7 @@ function ThemeCard({ title, description, companies, hvAngle, onSelectCompany, al
         <span className="text-xs font-medium text-primary shrink-0">HV Angle:</span>
         <span className="text-xs text-foreground/80 leading-snug">{hvAngle}</span>
       </div>
-    </div>
+    </Card>
   );
 }
 

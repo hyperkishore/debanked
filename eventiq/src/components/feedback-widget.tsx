@@ -18,7 +18,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import { MessageSquarePlus, Bug, Lightbulb, HelpCircle, Send, Loader2 } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { MessageSquareHeart, Bug, Lightbulb, HelpCircle, Send, Loader2 } from "lucide-react";
 import { syncToSheets } from "@/lib/sheets-sync";
 import { toast } from "sonner";
 
@@ -87,23 +88,28 @@ export function FeedbackWidget({ companyName, currentTab }: FeedbackWidgetProps)
 
   return (
     <>
-      <Button
-        size="icon"
-        onClick={() => {
-          setSection(currentTab || "General / Other");
-          setOpen(true);
-        }}
-        className="fixed bottom-20 right-4 z-40 h-10 w-10 rounded-full shadow-lg"
-        title="Send feedback"
-      >
-        <MessageSquarePlus className="h-5 w-5" />
-      </Button>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button
+            size="icon"
+            variant="outline"
+            onClick={() => {
+              setSection(currentTab || "General / Other");
+              setOpen(true);
+            }}
+            className="fixed bottom-20 right-4 z-40 h-10 w-10 rounded-full shadow-lg bg-card border-border hover:bg-primary/20 hover:border-primary/30"
+          >
+            <MessageSquareHeart className="h-5 w-5" />
+          </Button>
+        </TooltipTrigger>
+        <TooltipContent side="left">Send feedback</TooltipContent>
+      </Tooltip>
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="sm:max-w-[420px]">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
-              <MessageSquarePlus className="h-5 w-5" />
+              <MessageSquareHeart className="h-5 w-5" />
               Send Feedback
             </DialogTitle>
           </DialogHeader>

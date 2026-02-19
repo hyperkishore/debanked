@@ -2,6 +2,7 @@
 
 import { Company, RatingData } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { Card } from "@/components/ui/card";
 
 interface PipelineCardProps {
   company: Company;
@@ -48,12 +49,12 @@ export function PipelineCard({
   const rating = ratingState[company.id];
 
   return (
-    <div
+    <Card
       draggable
       onDragStart={(e) => onDragStart(e, company.id)}
       onClick={() => onOpen(company.id)}
       className={cn(
-        "pipeline-card rounded-md bg-card border border-border border-l-2 p-2 cursor-grab active:cursor-grabbing",
+        "pipeline-card rounded-md border-l-2 p-2 gap-0 py-0 shadow-none cursor-grab active:cursor-grabbing",
         "hover:border-primary/30 transition-colors",
         typeAccent[company.type] || "border-l-border"
       )}
@@ -95,6 +96,6 @@ export function PipelineCard({
           </span>
         )}
       </div>
-    </div>
+    </Card>
   );
 }

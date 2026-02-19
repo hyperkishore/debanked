@@ -4,6 +4,7 @@ import { FilterType, SortType, ViewType } from "@/lib/types";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Button } from "@/components/ui/button";
 import { LayoutGrid, Table2, ArrowUpDown, Download } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface FilterBarProps {
   activeFilter: FilterType;
@@ -87,39 +88,51 @@ export function FilterBar({
           {metCount > 0 && ` · ${metCount} met`}
         </span>
         <div className="flex items-center gap-0.5">
-          <Button
-            variant="ghost"
-            size="sm"
-            className="h-6 px-1.5 text-xs text-muted-foreground"
-            onClick={() => onSortChange(nextSort.value)}
-            title={`Sort: ${activeSort}`}
-          >
-            <ArrowUpDown className="h-3 w-3 mr-0.5" />
-            {activeSort}
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="h-6 w-6 p-0"
-            onClick={() => onViewChange(activeView === "cards" ? "table" : "cards")}
-            title={activeView === "cards" ? "Switch to table" : "Switch to cards"}
-          >
-            {activeView === "cards" ? (
-              <Table2 className="h-3.5 w-3.5" />
-            ) : (
-              <LayoutGrid className="h-3.5 w-3.5" />
-            )}
-          </Button>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-6 px-1.5 text-xs text-muted-foreground"
+                onClick={() => onSortChange(nextSort.value)}
+              >
+                <ArrowUpDown className="h-3 w-3 mr-0.5" />
+                {activeSort}
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>{`Sort: ${activeSort}`}</TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-6 w-6 p-0"
+                onClick={() => onViewChange(activeView === "cards" ? "table" : "cards")}
+              >
+                {activeView === "cards" ? (
+                  <Table2 className="h-3.5 w-3.5" />
+                ) : (
+                  <LayoutGrid className="h-3.5 w-3.5" />
+                )}
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>{activeView === "cards" ? "Switch to table" : "Switch to cards"}</TooltipContent>
+          </Tooltip>
           {onExportCsv && (
-            <Button
-              variant="ghost"
-              size="sm"
-              className="h-6 w-6 p-0"
-              onClick={onExportCsv}
-              title="Export filtered list as CSV"
-            >
-              <Download className="h-3.5 w-3.5" />
-            </Button>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-6 w-6 p-0"
+                  onClick={onExportCsv}
+                >
+                  <Download className="h-3.5 w-3.5" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Export filtered list as CSV</TooltipContent>
+            </Tooltip>
           )}
         </div>
       </div>
