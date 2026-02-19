@@ -8,6 +8,16 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { MessageSquarePlus, Bug, Lightbulb, HelpCircle, Send, Loader2 } from "lucide-react";
 import { syncToSheets } from "@/lib/sheets-sync";
 import { toast } from "sonner";
@@ -71,22 +81,23 @@ export function FeedbackWidget({ companyName, currentTab }: FeedbackWidgetProps)
       setNotes("");
       setOpen(false);
     } else {
-      toast.error("Sync not configured. Go to Settings → Google Sheets to set up.");
+      toast.error("Sync not configured. Go to Settings to set up.");
     }
   };
 
   return (
     <>
-      <button
+      <Button
+        size="icon"
         onClick={() => {
           setSection(currentTab || "General / Other");
           setOpen(true);
         }}
-        className="fixed bottom-20 right-4 z-40 w-10 h-10 rounded-full bg-primary/90 text-primary-foreground flex items-center justify-center shadow-lg hover:bg-primary transition-colors"
+        className="fixed bottom-20 right-4 z-40 h-10 w-10 rounded-full shadow-lg"
         title="Send feedback"
       >
         <MessageSquarePlus className="h-5 w-5" />
-      </button>
+      </Button>
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="sm:max-w-[420px]">
@@ -99,58 +110,55 @@ export function FeedbackWidget({ companyName, currentTab }: FeedbackWidgetProps)
 
           <div className="space-y-4 pt-2">
             {/* Section picker */}
-            <div>
-              <label className="text-xs font-medium text-muted-foreground mb-1.5 block">Section</label>
-              <select
-                value={section}
-                onChange={(e) => setSection(e.target.value)}
-                className="w-full h-9 rounded-md border border-input bg-background px-3 text-sm"
-              >
-                {SECTIONS.map((s) => (
-                  <option key={s} value={s}>{s}</option>
-                ))}
-              </select>
+            <div className="space-y-1.5">
+              <Label>Section</Label>
+              <Select value={section} onValueChange={setSection}>
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {SECTIONS.map((s) => (
+                    <SelectItem key={s} value={s}>{s}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
 
             {/* Type picker */}
-            <div>
-              <label className="text-xs font-medium text-muted-foreground mb-1.5 block">Type</label>
-              <div className="flex gap-2">
+            <div className="space-y-1.5">
+              <Label>Type</Label>
+              <ToggleGroup
+                type="single"
+                value={feedbackType}
+                onValueChange={(v) => v && setFeedbackType(v as FeedbackType)}
+                className="justify-start"
+              >
                 {FEEDBACK_TYPES.map((ft) => {
                   const Icon = ft.icon;
                   return (
-                    <button
-                      key={ft.id}
-                      onClick={() => setFeedbackType(ft.id)}
-                      className={`flex-1 flex items-center justify-center gap-1.5 h-9 rounded-md border text-sm transition-colors ${
-                        feedbackType === ft.id
-                          ? "border-primary bg-primary/10 text-foreground"
-                          : "border-input bg-background text-muted-foreground hover:text-foreground"
-                      }`}
-                    >
+                    <ToggleGroupItem key={ft.id} value={ft.id} className="flex-1 gap-1.5">
                       <Icon className={`h-3.5 w-3.5 ${feedbackType === ft.id ? ft.color : ""}`} />
                       {ft.label}
-                    </button>
+                    </ToggleGroupItem>
                   );
                 })}
-              </div>
+              </ToggleGroup>
             </div>
 
             {/* Notes */}
-            <div>
-              <label className="text-xs font-medium text-muted-foreground mb-1.5 block">Description</label>
-              <textarea
+            <div className="space-y-1.5">
+              <Label>Description</Label>
+              <Textarea
                 value={notes}
                 onChange={(e) => setNotes(e.target.value)}
                 placeholder="What happened? What would be better?"
                 rows={4}
-                className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm resize-none focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
 
             {/* Context info */}
             {companyName && (
-              <p className="text-[10px] text-muted-foreground">
+              <p className="text-xs text-muted-foreground">
                 Context: viewing {companyName}
               </p>
             )}

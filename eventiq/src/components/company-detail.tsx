@@ -11,6 +11,7 @@ import { buildThreadingMap, STATUS_STYLES } from "@/lib/threading-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { EngagementTimeline } from "@/components/engagement-timeline";
@@ -250,13 +251,13 @@ export function CompanyDetail({
                   }}
                   className="inline-flex items-center"
                 >
-                  <input
+                  <Input
                     autoFocus
                     value={tagInput}
                     onChange={(e) => setTagInput(e.target.value)}
                     onBlur={() => { setShowTagInput(false); setTagInput(""); }}
                     placeholder="tag..."
-                    className="w-16 text-[10px] px-1 py-0.5 rounded bg-secondary/50 border border-border text-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+                    className="w-16 h-5 text-xs px-1 py-0.5"
                   />
                 </form>
               ) : (

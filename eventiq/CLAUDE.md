@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 2.8.00
+**Version:** 2.9.00
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → static export to `out/`
 **Live:** GitHub Pages (auto-deploy on push to main)
@@ -392,6 +392,63 @@ src/
 
 ## Key shadcn/ui Components
 Sidebar, Card, Command, Sheet, Dialog, Tabs, Badge, ScrollArea, Resizable, ToggleGroup, Input, Tooltip, Sonner, Button, Toggle, Separator, Skeleton
+
+---
+
+## UI Rules — MANDATORY
+
+**CRITICAL: All UI code MUST use shadcn/ui components. No raw HTML elements for interactive/display primitives.**
+
+### Component Requirements
+| Need | Use This | NEVER Use |
+|------|----------|-----------|
+| Button/clickable action | `<Button>` from `@/components/ui/button` | Raw `<button>` with custom styles |
+| Text input | `<Input>` from `@/components/ui/input` | Raw `<input>` |
+| Textarea | `<Textarea>` from `@/components/ui/textarea` | Raw `<textarea>` |
+| Dropdown select | `<Select>` from `@/components/ui/select` | Raw `<select>` |
+| Label | `<Label>` from `@/components/ui/label` | Raw `<label>` |
+| Table | `<Table>` from `@/components/ui/table` | Raw `<table>/<tr>/<td>` |
+| Modal/popup | `<Dialog>` from `@/components/ui/dialog` | Custom modal div |
+| Side panel | `<Sheet>` from `@/components/ui/sheet` | Custom sliding div |
+| Dropdown menu | `<DropdownMenu>` from `@/components/ui/dropdown-menu` | Custom dropdown div |
+| Tabs | `<Tabs>` from `@/components/ui/tabs` | Custom tab buttons |
+| Toggle | `<Toggle>` or `<ToggleGroup>` | Custom toggle buttons |
+| Progress | `<Progress>` from `@/components/ui/progress` | Custom progress bar div |
+| Avatar/initials | `<Avatar>` from `@/components/ui/avatar` | Custom rounded div |
+| Tooltip | `<Tooltip>` from `@/components/ui/tooltip` | `title` attribute |
+| Accordion | `<Accordion>` from `@/components/ui/accordion` | Custom expand/collapse |
+| Keyboard shortcut display | `<Kbd>` from `@/components/ui/kbd` | Raw `<kbd>` |
+| Icons | `lucide-react` | Raw `<svg>` elements |
+| Toast/notification | `sonner` (`toast()`) | Custom notification div |
+| Scroll container | `<ScrollArea>` | `overflow-auto` div |
+
+**Full catalog:** https://ui.shadcn.com/docs/components
+
+### Adding New shadcn Components
+If a component isn't installed yet, add it:
+```bash
+npx shadcn@latest add <component-name>
+```
+
+### Spacing & Layout Rules
+- **Minimum text size:** `text-xs` (12px). Never use `text-[9px]` or `text-[10px]` — use `text-xs` instead
+- **Spacing scale:** Use Tailwind's default spacing: `gap-1` (4px), `gap-1.5` (6px), `gap-2` (8px), `gap-3` (12px), `gap-4` (16px), `gap-6` (24px)
+- **Padding:** Cards use `p-3` or `p-4`. Compact items use `p-2`. Never mix arbitrarily
+- **Border radius:** Use `rounded-lg` for cards/panels, `rounded-md` for buttons/inputs, `rounded-full` for pills/avatars
+- **No hardcoded pixels** in className — use Tailwind spacing scale
+- **No inline `style={}` for layout** — use Tailwind classes. Only exception: dynamic values from JS (e.g. chart widths)
+
+### Color Rules
+- Use CSS variables: `var(--sqo)`, `var(--client)`, `var(--icp)`, `var(--primary)`
+- Use Tailwind theme colors: `text-foreground`, `text-muted-foreground`, `bg-card`, `bg-muted`, `border-border`
+- Never hardcode hex colors in components
+
+### Responsive
+- Desktop: `md:` breakpoint and above
+- Mobile: default styles (mobile-first)
+- Use `useIsMobile()` hook for JS-level responsive logic
+
+---
 
 ## Data Flow
 - All company data: `src/data/all-companies.json` → imported at build time

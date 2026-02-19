@@ -11,6 +11,7 @@ import {
 import { getLastEngagement } from "@/lib/engagement-helpers";
 import { PipelineCard } from "@/components/pipeline-card";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { useState, useMemo, useCallback, useRef } from "react";
 
@@ -162,12 +163,12 @@ export function PipelineTab({
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <input
+          <Input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search companies..."
-            className="flex-1 h-7 bg-secondary/30 border border-border rounded-md px-2 text-xs focus:outline-none focus:ring-1 focus:ring-primary"
+            className="flex-1 h-7 text-xs"
           />
           <div className="flex gap-1">
             {typeFilters.map((f) => (
