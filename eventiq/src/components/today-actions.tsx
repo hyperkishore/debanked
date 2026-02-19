@@ -19,6 +19,7 @@ import {
 } from "@/lib/morning-briefing-helpers";
 import { CopyButton } from "@/components/copy-button";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
   ChevronDown,
@@ -111,19 +112,20 @@ export function TodayActions({
   return (
     <div className="border-b border-border">
       {/* Header */}
-      <button
+      <Button
+        variant="ghost"
         onClick={() => setCollapsed(!collapsed)}
-        className="w-full flex items-center justify-between px-3 py-2 hover:bg-secondary/30 transition-colors"
+        className="w-full flex items-center justify-between px-3 py-2 h-auto rounded-none hover:bg-secondary/30"
       >
         <div className="flex items-center gap-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             Today&apos;s Actions
           </span>
-          <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4 font-semibold">
+          <Badge variant="outline" className="text-xs px-1.5 py-0 h-4 font-semibold">
             {totalItems + morningItems}
           </Badge>
           {overdueCount > 0 && (
-            <Badge className="text-[10px] px-1.5 py-0 h-4 bg-red-500/20 text-red-400">
+            <Badge className="text-xs px-1.5 py-0 h-4 bg-red-500/20 text-red-400">
               {overdueCount} overdue
             </Badge>
           )}
@@ -133,7 +135,7 @@ export function TodayActions({
         ) : (
           <ChevronUp className="h-3.5 w-3.5 text-muted-foreground" />
         )}
-      </button>
+      </Button>
 
       {/* Content */}
       {!collapsed && (
@@ -154,12 +156,14 @@ export function TodayActions({
                     <div key={i} className="rounded-md border-l-[3px] border-l-blue-500 bg-blue-500/5 p-2 flex items-start gap-2 text-xs">
                       <Newspaper className="h-3.5 w-3.5 mt-0.5 text-blue-400 shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <button
+                        <Button
+                          variant="ghost"
+                          size="sm"
                           onClick={() => onSelectCompany(trigger.company.id)}
-                          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+                          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
                         >
                           {trigger.company.name}
-                        </button>
+                        </Button>
                         <p className="text-muted-foreground truncate">{trigger.headline}</p>
                       </div>
                       <CopyButton text={trigger.suggestedMessage} size="sm" />
@@ -180,23 +184,27 @@ export function TodayActions({
                     <div key={i} className="rounded-md border-l-[3px] border-l-amber-500 bg-amber-500/5 p-2 flex items-start gap-2 text-xs">
                       <Clock className="h-3.5 w-3.5 mt-0.5 text-amber-400 shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <button
+                        <Button
+                          variant="ghost"
+                          size="sm"
                           onClick={() => onSelectCompany(warning.company.id)}
-                          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+                          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
                         >
                           {warning.company.name}
-                        </button>
+                        </Button>
                         <p className="text-muted-foreground">
                           {warning.daysSince}d since last {warning.lastChannel}
                         </p>
                       </div>
-                      <button
+                      <Button
+                        variant="ghost"
+                        size="icon"
                         onClick={() => onLogEngagement(warning.company.id)}
-                        className="p-1 rounded hover:bg-primary/20 text-muted-foreground hover:text-primary transition-colors"
+                        className="h-6 w-6 text-muted-foreground hover:text-primary hover:bg-primary/20"
                         title="Log engagement"
                       >
                         <MessageSquare className="h-3 w-3" />
-                      </button>
+                      </Button>
                     </div>
                   ))}
                 </MorningSection>
@@ -214,17 +222,19 @@ export function TodayActions({
                     <div key={i} className="rounded-md border-l-[3px] border-l-green-500 bg-green-500/5 p-2 flex items-start gap-2 text-xs">
                       <Zap className="h-3.5 w-3.5 mt-0.5 text-green-400 shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <button
+                        <Button
+                          variant="ghost"
+                          size="sm"
                           onClick={() => onSelectCompany(win.company.id)}
-                          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+                          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
                         >
                           {win.company.name}
-                        </button>
+                        </Button>
                         <p className="text-muted-foreground">
                           Score {win.score} — never contacted
                         </p>
                       </div>
-                      <Badge variant="outline" className="text-[9px] px-1 py-0 h-4">
+                      <Badge variant="outline" className="text-xs px-1 py-0 h-4">
                         {win.type}
                       </Badge>
                     </div>
@@ -244,15 +254,17 @@ export function TodayActions({
                     <div key={i} className="rounded-md border-l-[3px] border-l-primary/50 bg-primary/5 p-2 flex items-start gap-2 text-xs">
                       <TrendingUp className="h-3.5 w-3.5 mt-0.5 text-primary shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <button
+                        <Button
+                          variant="ghost"
+                          size="sm"
                           onClick={() => onSelectCompany(action.company.id)}
-                          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+                          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
                         >
                           {action.company.name}
-                        </button>
+                        </Button>
                         <p className="text-muted-foreground">{action.nextAction}</p>
                       </div>
-                      <Badge className={cn("text-[9px] px-1 py-0 h-4", URGENCY_STYLES[action.urgencyTier])}>
+                      <Badge className={cn("text-xs px-1 py-0 h-4", URGENCY_STYLES[action.urgencyTier])}>
                         {action.urgencyTier}
                       </Badge>
                     </div>
@@ -300,15 +312,17 @@ function MorningSection({
 
   return (
     <div>
-      <button
+      <Button
+        variant="ghost"
+        size="sm"
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 w-full text-left py-1 hover:opacity-80 transition-opacity"
+        className="flex items-center gap-1.5 w-full text-left py-1 h-auto px-0 hover:bg-transparent hover:opacity-80"
       >
         <Icon className={cn("h-3 w-3", iconColor)} />
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground flex-1">
+        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground flex-1">
           {label}
         </span>
-        <Badge variant="outline" className="text-[9px] px-1 py-0 h-3.5">
+        <Badge variant="outline" className="text-xs px-1 py-0 h-3.5">
           {count}
         </Badge>
         {open ? (
@@ -316,7 +330,7 @@ function MorningSection({
         ) : (
           <ChevronDown className="h-3 w-3 text-muted-foreground" />
         )}
-      </button>
+      </Button>
       {open && <div className="space-y-1 mt-1">{children}</div>}
     </div>
   );
@@ -351,44 +365,50 @@ function ActionItem({
     >
       <Icon className={cn("h-3.5 w-3.5 mt-0.5 shrink-0", style.iconColor)} />
       <div className="flex-1 min-w-0">
-        <button
+        <Button
+          variant="ghost"
+          size="sm"
           onClick={() => onSelectCompany(item.followUp.companyId)}
-          className="font-medium text-foreground hover:text-primary transition-colors truncate block text-left"
+          className="h-auto p-0 font-medium text-foreground hover:text-primary hover:bg-transparent truncate block text-left"
         >
           {item.companyName}
-        </button>
+        </Button>
         <p className="text-muted-foreground truncate">
           {item.followUp.contactName}
           {item.followUp.notes && ` — ${item.followUp.notes}`}
         </p>
         {item.daysDelta < 0 && (
-          <span className="text-red-400 text-[10px]">{Math.abs(item.daysDelta)}d overdue</span>
+          <span className="text-red-400 text-xs">{Math.abs(item.daysDelta)}d overdue</span>
         )}
       </div>
       <div className="flex items-center gap-1 shrink-0">
         {/* Snooze */}
         {!isStale && (
           <div className="relative">
-            <button
+            <Button
+              variant="ghost"
+              size="icon"
               onClick={() => setShowSnooze(!showSnooze)}
-              className="p-1 rounded hover:bg-secondary/50 text-muted-foreground hover:text-foreground transition-colors"
+              className="h-6 w-6 text-muted-foreground hover:text-foreground hover:bg-secondary/50"
               title="Snooze"
             >
               <Clock className="h-3 w-3" />
-            </button>
+            </Button>
             {showSnooze && (
               <div className="absolute right-0 top-6 z-10 bg-card border border-border rounded-md shadow-lg py-1 min-w-[100px]">
                 {snoozePresets.map((preset) => (
-                  <button
+                  <Button
                     key={preset.label}
+                    variant="ghost"
+                    size="sm"
                     onClick={() => {
                       onSnooze(item.followUp.id, preset.date);
                       setShowSnooze(false);
                     }}
-                    className="block w-full text-left px-3 py-1.5 text-[11px] hover:bg-secondary/50 transition-colors"
+                    className="block w-full text-left px-3 py-1.5 text-xs justify-start h-auto rounded-none"
                   >
                     {preset.label}
-                  </button>
+                  </Button>
                 ))}
               </div>
             )}
@@ -396,22 +416,26 @@ function ActionItem({
         )}
         {/* Complete */}
         {!isStale && (
-          <button
+          <Button
+            variant="ghost"
+            size="icon"
             onClick={() => onComplete(item.followUp.id)}
-            className="p-1 rounded hover:bg-green-500/20 text-muted-foreground hover:text-green-400 transition-colors"
+            className="h-6 w-6 text-muted-foreground hover:text-green-400 hover:bg-green-500/20"
             title="Complete"
           >
             <Check className="h-3 w-3" />
-          </button>
+          </Button>
         )}
         {/* Log engagement */}
-        <button
+        <Button
+          variant="ghost"
+          size="icon"
           onClick={() => onLogEngagement(item.followUp.companyId)}
-          className="p-1 rounded hover:bg-primary/20 text-muted-foreground hover:text-primary transition-colors"
+          className="h-6 w-6 text-muted-foreground hover:text-primary hover:bg-primary/20"
           title="Log engagement"
         >
           <MessageSquare className="h-3 w-3" />
-        </button>
+        </Button>
       </div>
     </div>
   );

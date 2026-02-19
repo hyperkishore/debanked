@@ -3,6 +3,7 @@
 import { CompanyType } from "@/lib/types";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface ScheduleTabProps {
@@ -168,16 +169,18 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
             {programSessions.map((session, i) => (
               <div key={i} className="rounded-lg bg-card border border-border overflow-hidden">
                 <div className="px-3 py-2 border-b border-border/50 flex items-center gap-2">
-                  <Badge className={cn("text-[10px] px-1.5 py-0 h-4", tagStyles[session.tag])}>
+                  <Badge className={cn("text-xs px-1.5 py-0 h-4", tagStyles[session.tag])}>
                     {session.tag.toUpperCase()}
                   </Badge>
                   <span className="text-sm font-medium">{session.title}</span>
                 </div>
                 <div className="divide-y divide-border/30">
                   {session.speakers.map((speaker, j) => (
-                    <button
+                    <Button
                       key={j}
-                      className="w-full flex items-center justify-between px-3 py-2 hover:bg-secondary/30 transition-colors text-left"
+                      variant="ghost"
+                      size="sm"
+                      className="w-full flex items-center justify-between px-3 py-2 h-auto rounded-none hover:bg-secondary/30 text-left"
                       onClick={() => onJumpToCompany(speaker.company)}
                     >
                       <div>
@@ -189,7 +192,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                           <Badge
                             variant="outline"
                             className={cn(
-                              "text-[9px] px-1 py-0 h-3.5",
+                              "text-xs px-1 py-0 h-3.5",
                               speaker.type === "SQO" && "text-[var(--sqo)] border-[var(--sqo)]/30",
                               speaker.type === "Client" && "text-[var(--client)] border-[var(--client)]/30",
                               speaker.type === "ICP" && "text-[var(--icp)] border-[var(--icp)]/30"
@@ -200,7 +203,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                         )}
                         <span className="text-muted-foreground text-xs">›</span>
                       </div>
-                    </button>
+                    </Button>
                   ))}
                 </div>
               </div>
@@ -222,15 +225,17 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                 <p className="text-xs text-muted-foreground mb-2">{phase.desc}</p>
                 <div className="space-y-1">
                   {phase.items.map((item, j) => (
-                    <button
+                    <Button
                       key={j}
-                      className="w-full flex items-center gap-2 py-1.5 px-2 rounded-md hover:bg-secondary/30 transition-colors text-left"
+                      variant="ghost"
+                      size="sm"
+                      className="w-full flex items-center gap-2 py-1.5 px-2 h-auto rounded-md hover:bg-secondary/30 text-left justify-start"
                       onClick={() => onJumpToCompany(item.company)}
                     >
                       <span className={cn("w-2 h-2 rounded-full shrink-0", item.type ? dotStyles[item.type] : "bg-muted-foreground")} />
                       <span className="text-sm font-medium min-w-0 truncate">{item.company}</span>
                       <span className="text-xs text-muted-foreground truncate ml-auto">{item.contact}</span>
-                    </button>
+                    </Button>
                   ))}
                 </div>
               </div>

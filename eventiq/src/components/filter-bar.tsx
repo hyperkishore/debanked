@@ -70,11 +70,11 @@ export function FilterBar({
             <ToggleGroupItem
               key={f.value}
               value={f.value}
-              className="h-6 px-2 text-[11px] data-[state=on]:bg-primary/20 data-[state=on]:text-primary"
+              className="h-6 px-2 text-xs data-[state=on]:bg-primary/20 data-[state=on]:text-primary"
             >
               {f.label}
               {f.value === "Met" && metCount > 0 && (
-                <span className="ml-1 text-[10px] opacity-60">{metCount}</span>
+                <span className="ml-1 text-xs opacity-60">{metCount}</span>
               )}
             </ToggleGroupItem>
           ))}
@@ -82,7 +82,7 @@ export function FilterBar({
       </div>
       {/* Count + sort + view */}
       <div className="flex items-center justify-between">
-        <span className="text-[11px] text-muted-foreground">
+        <span className="text-xs text-muted-foreground">
           {filteredCount} of {totalCount}
           {metCount > 0 && ` · ${metCount} met`}
         </span>
@@ -90,7 +90,7 @@ export function FilterBar({
           <Button
             variant="ghost"
             size="sm"
-            className="h-6 px-1.5 text-[11px] text-muted-foreground"
+            className="h-6 px-1.5 text-xs text-muted-foreground"
             onClick={() => onSortChange(nextSort.value)}
             title={`Sort: ${activeSort}`}
           >

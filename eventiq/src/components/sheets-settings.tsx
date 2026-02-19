@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { getSheetsConfig, saveSheetsConfig, testConnection, flushQueue } from "@/lib/sheets-sync";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Settings2, CheckCircle, XCircle, Loader2, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 
@@ -84,7 +86,7 @@ export function SheetsSettings({ open, onClose }: SheetsSettingsProps) {
             <ol className="list-decimal list-inside space-y-0.5">
               <li>Create a Google Sheet</li>
               <li>Go to Extensions → Apps Script</li>
-              <li>Paste the script from <code className="text-[10px] bg-muted px-1 rounded">scripts/google-apps-script.gs</code></li>
+              <li>Paste the script from <code className="text-xs bg-muted px-1 rounded">scripts/google-apps-script.gs</code></li>
               <li>Deploy → New Deployment → Web App (Anyone can access)</li>
               <li>Copy the URL and paste below</li>
             </ol>
@@ -92,11 +94,11 @@ export function SheetsSettings({ open, onClose }: SheetsSettingsProps) {
 
           {/* URL input */}
           <div>
-            <label className="text-xs font-medium text-muted-foreground mb-1.5 block">
+            <Label className="text-xs font-medium text-muted-foreground mb-1.5 block">
               Apps Script Web App URL
-            </label>
+            </Label>
             <div className="flex gap-2">
-              <input
+              <Input
                 type="url"
                 value={url}
                 onChange={(e) => {
@@ -104,7 +106,7 @@ export function SheetsSettings({ open, onClose }: SheetsSettingsProps) {
                   setTestResult(null);
                 }}
                 placeholder="https://script.google.com/macros/s/..."
-                className="flex-1 h-9 rounded-md border border-input bg-background px-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+                className="flex-1 h-9"
               />
               <Button
                 variant="outline"
@@ -134,9 +136,11 @@ export function SheetsSettings({ open, onClose }: SheetsSettingsProps) {
                 Syncs feedback, engagements, pipeline, and met status
               </p>
             </div>
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={() => setEnabled(!enabled)}
-              className={`w-11 h-6 rounded-full transition-colors relative ${
+              className={`w-11 h-6 rounded-full transition-colors relative p-0 ${
                 enabled ? "bg-primary" : "bg-muted"
               }`}
             >
@@ -146,7 +150,7 @@ export function SheetsSettings({ open, onClose }: SheetsSettingsProps) {
                 }`}
                 style={{ transform: enabled ? "translateX(21px)" : "translateX(0)" }}
               />
-            </button>
+            </Button>
           </div>
 
           {/* Flush queue */}

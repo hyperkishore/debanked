@@ -16,6 +16,7 @@ import { Sheet, SheetContent, SheetTitle, SheetDescription } from "@/components/
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import {
   ChatMessage,
   InputCategory,
@@ -69,11 +70,11 @@ export function ChatFab({
   const isMobile = useIsMobile();
 
   return (
-    <button
+    <Button
+      size="icon"
       onClick={onClick}
       className={cn(
-        "fixed z-[60] flex items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all",
-        "size-12",
+        "fixed z-[60] rounded-full h-12 w-12 shadow-lg hover:bg-primary/90 transition-all",
         isMobile ? "right-4" : "bottom-6 right-6",
         pendingCount > 0 && "chat-fab-pulse"
       )}
@@ -82,11 +83,11 @@ export function ChatFab({
     >
       <MessageSquarePlus className="size-5" />
       {pendingCount > 0 && (
-        <span className="absolute -top-1 -right-1 flex items-center justify-center size-5 rounded-full bg-destructive text-[10px] font-bold text-white">
+        <span className="absolute -top-1 -right-1 flex items-center justify-center size-5 rounded-full bg-destructive text-xs font-bold text-white">
           {pendingCount > 9 ? "9+" : pendingCount}
         </span>
       )}
-    </button>
+    </Button>
   );
 }
 
@@ -200,7 +201,7 @@ export function ChatWidget({
           <div className="flex items-center gap-2">
             <h2 className="text-sm font-semibold">Inputs</h2>
             {pendingCount > 0 && (
-              <Badge variant="secondary" className="text-[10px] h-5">
+              <Badge variant="secondary" className="text-xs h-5">
                 {pendingCount} pending
               </Badge>
             )}
@@ -266,11 +267,11 @@ export function ChatWidget({
                   {msg.role === "user" && msg.category && (
                     <div className="flex items-center gap-1.5 mb-1">
                       <CategoryIcon category={msg.category} className="text-muted-foreground" />
-                      <span className="text-[10px] text-muted-foreground font-medium">
+                      <span className="text-xs text-muted-foreground font-medium">
                         {getCategoryLabel(msg.category)}
                       </span>
                       {msg.context?.companyName && (
-                        <span className="text-[10px] text-muted-foreground/60">
+                        <span className="text-xs text-muted-foreground/60">
                           \u00B7 {msg.context.companyName}
                         </span>
                       )}
@@ -289,7 +290,7 @@ export function ChatWidget({
                   ) : (
                     <p className="leading-relaxed">{msg.content}</p>
                   )}
-                  <span className="block text-[9px] text-muted-foreground/50 mt-1">
+                  <span className="block text-xs text-muted-foreground/50 mt-1">
                     {new Date(msg.timestamp).toLocaleTimeString("en-US", {
                       hour: "numeric",
                       minute: "2-digit",
@@ -303,21 +304,21 @@ export function ChatWidget({
 
         {/* Context bar */}
         <div className="border-t border-border/50 px-4 py-1.5">
-          <p className="text-[10px] text-muted-foreground/60 truncate">
+          <p className="text-xs text-muted-foreground/60 truncate">
             Viewing: {contextText}
           </p>
         </div>
 
         {/* Input area */}
         <div className="border-t border-border px-3 py-2 flex items-end gap-2">
-          <textarea
+          <Textarea
             ref={textareaRef}
             value={input}
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
             placeholder="Type a request, idea, or note..."
             rows={1}
-            className="flex-1 resize-none bg-transparent text-sm text-foreground placeholder:text-muted-foreground/50 outline-none py-1.5 max-h-20"
+            className="flex-1 resize-none bg-transparent text-sm text-foreground placeholder:text-muted-foreground/50 border-0 focus-visible:ring-0 py-1.5 max-h-20 min-h-0"
           />
           <Button
             variant="ghost"

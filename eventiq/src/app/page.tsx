@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useMemo, useCallback, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Search } from "lucide-react";
 import {
   Company,
   FilterType,
@@ -712,26 +714,17 @@ export default function Home() {
         <div className="flex items-center justify-between px-4 h-12 border-b border-border md:hidden">
           <h1 className="text-sm font-bold">EventIQ</h1>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] text-muted-foreground">
+            <span className="text-xs text-muted-foreground">
               {metCount}/{companies.length} met
             </span>
-            <button
+            <Button
+              variant="ghost"
+              size="icon"
               onClick={() => setSearchOpen(true)}
-              className="w-8 h-8 rounded-lg flex items-center justify-center bg-secondary/50 text-muted-foreground"
+              className="h-8 w-8 rounded-lg bg-secondary/50 text-muted-foreground"
             >
-              <svg
-                width="14"
-                height="14"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <circle cx="7" cy="7" r="5" />
-                <path d="m11 11 2 2" />
-              </svg>
-            </button>
+              <Search className="h-3.5 w-3.5" />
+            </Button>
           </div>
         </div>
 

@@ -69,14 +69,14 @@ export function PreCallBriefingDialog({
                 <span className="text-sm font-medium">{briefing.who.leader.n}</span>
                 <span className="text-xs text-muted-foreground">{briefing.who.leader.t}</span>
               </div>
-              <Badge variant="outline" className={cn("text-[10px]", briefing.who.persona.colorClass)}>
+              <Badge variant="outline" className={cn("text-xs", briefing.who.persona.colorClass)}>
                 {briefing.who.persona.label}: {briefing.who.persona.strategy}
               </Badge>
               <p className="text-xs text-muted-foreground leading-relaxed">{briefing.who.oneLiner}</p>
               {briefing.who.topHooks.length > 0 && (
                 <div className="flex flex-wrap gap-1">
                   {briefing.who.topHooks.map((hook, i) => (
-                    <span key={i} className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary">
+                    <span key={i} className="text-xs px-1.5 py-0.5 rounded-full bg-primary/10 text-primary">
                       {hook}
                     </span>
                   ))}
@@ -127,7 +127,7 @@ export function PreCallBriefingDialog({
             <BriefSection icon={Newspaper} title="NEWS HOOK">
               <div className="space-y-1.5">
                 <p className="text-sm font-medium">{briefing.newsHook.headline}</p>
-                <p className="text-[10px] text-primary/70">{briefing.newsHook.source}</p>
+                <p className="text-xs text-primary/70">{briefing.newsHook.source}</p>
                 <div className="flex items-start gap-2">
                   <p className="text-xs text-foreground/80 bg-secondary/30 rounded-lg p-2 flex-1 leading-relaxed italic">
                     &ldquo;{briefing.newsHook.suggestedOpener}&rdquo;
@@ -170,7 +170,7 @@ function BriefSection({
     <div className="rounded-lg bg-secondary/20 p-3">
       <div className="flex items-center gap-1.5 mb-2">
         <Icon className="h-3.5 w-3.5 text-muted-foreground" />
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{title}</span>
+        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{title}</span>
       </div>
       {children}
     </div>

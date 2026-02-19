@@ -60,14 +60,14 @@ export function PipelineCard({
     >
       <div className="flex items-center justify-between gap-1">
         <span className="text-xs font-medium truncate">{company.name}</span>
-        <span className={cn("text-[8px] px-1 py-0.5 rounded font-semibold shrink-0", typeBadge[company.type])}>
+        <span className={cn("text-xs px-1 py-0.5 rounded font-semibold shrink-0", typeBadge[company.type])}>
           {company.type}
         </span>
       </div>
       <div className="flex items-center gap-1.5 mt-1">
         {rating?.rating && (
           <span className={cn(
-            "text-[8px] px-1 py-0.5 rounded font-medium",
+            "text-xs px-1 py-0.5 rounded font-medium",
             rating.rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
             rating.rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
             rating.rating === "cold" && "bg-primary/20 text-primary",
@@ -77,7 +77,7 @@ export function PipelineCard({
         )}
         {daysSince !== null && (
           <span className={cn(
-            "text-[9px] text-muted-foreground",
+            "text-xs text-muted-foreground",
             daysSince > 7 && "text-[var(--sqo)]",
             daysSince > 3 && daysSince <= 7 && "text-[var(--client)]"
           )}>
@@ -85,12 +85,12 @@ export function PipelineCard({
           </span>
         )}
         {lastChannel && (
-          <span className="text-[10px]" title={lastChannel}>
+          <span className="text-xs" title={lastChannel}>
             {channelIcon[lastChannel] || ""}
           </span>
         )}
         {dealValue != null && dealValue > 0 && (
-          <span className="text-[9px] font-medium text-green-400 ml-auto">
+          <span className="text-xs font-medium text-green-400 ml-auto">
             ${dealValue >= 1000 ? `${(dealValue / 1000).toFixed(0)}K` : dealValue}
           </span>
         )}

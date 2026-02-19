@@ -167,7 +167,7 @@ export function PitchTab() {
                 <span className="w-7 h-7 rounded-md bg-[var(--sqo)]/12 text-[var(--sqo)] flex items-center justify-center text-xs shrink-0">&blacktriangleright;</span>
                 <div className="min-w-0">
                   <div className="text-xs font-medium truncate">{item.title}</div>
-                  <div className="text-[10px] text-muted-foreground">{item.subtitle}</div>
+                  <div className="text-xs text-muted-foreground">{item.subtitle}</div>
                 </div>
               </a>
             ))}
@@ -183,13 +183,13 @@ export function PitchTab() {
               <div key={i} className="flex items-center gap-3 p-2.5 rounded-lg bg-card border border-border group">
                 <div className="min-w-0 flex-1">
                   <div className="text-sm font-medium">{ref.from}</div>
-                  <div className="text-[10px] text-muted-foreground">{ref.fromCo}</div>
+                  <div className="text-xs text-muted-foreground">{ref.fromCo}</div>
                 </div>
                 <span className="text-muted-foreground shrink-0">&rarr;</span>
                 <div className="min-w-0 flex-1">
                   <div className="text-sm font-medium">{ref.to}</div>
-                  <div className="text-[10px] text-muted-foreground">{ref.toCo}</div>
-                  <div className="text-[10px] text-primary/70 mt-0.5">{ref.reason}</div>
+                  <div className="text-xs text-muted-foreground">{ref.toCo}</div>
+                  <div className="text-xs text-primary/70 mt-0.5">{ref.reason}</div>
                 </div>
                 <CopyButton
                   text={`Hi ${ref.from.split(" ")[0]}, would you be open to introducing me to ${ref.to} at ${ref.toCo.split(" (")[0]}? ${ref.reason}. I'd love to show them how HyperVerge can help.`}

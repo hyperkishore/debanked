@@ -18,6 +18,9 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import {
   Mail,
@@ -153,10 +156,12 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
         <DialogHeader>
           <div className="flex items-center justify-between">
             <DialogTitle className="text-base">Log Engagement: {company.name}</DialogTitle>
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={() => setQuickCaptureMode(!quickCaptureMode)}
               className={cn(
-                "flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium transition-all",
+                "flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium",
                 quickCaptureMode
                   ? "bg-purple-500/20 text-purple-400 ring-1 ring-purple-500/30"
                   : "bg-secondary/50 text-muted-foreground hover:bg-secondary/80"
@@ -164,7 +169,7 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
             >
               <Zap className="h-3 w-3" />
               Quick Capture
-            </button>
+            </Button>
           </div>
         </DialogHeader>
 
@@ -173,15 +178,17 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
           <div className="space-y-4 py-2">
             {/* Contact picker */}
             <div>
-              <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+              <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
                 Who did you meet?
-              </label>
+              </Label>
               <div className="flex flex-wrap gap-1.5 mt-1.5">
                 {contacts.map((c) => (
-                  <button
+                  <Button
                     key={c.name}
+                    variant="outline"
+                    size="sm"
                     className={cn(
-                      "px-3 py-1.5 rounded-lg border text-xs font-medium transition-all",
+                      "px-3 py-1.5 h-auto rounded-lg text-xs font-medium",
                       (effectiveContact === c.name)
                         ? "bg-primary/20 text-primary border-primary/30"
                         : "bg-secondary/30 text-muted-foreground border-border hover:bg-secondary/50"
@@ -189,40 +196,41 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
                     onClick={() => setSelectedContact(c.name)}
                   >
                     {c.name}
-                  </button>
+                  </Button>
                 ))}
               </div>
             </div>
 
             {/* Sentiment tap targets */}
             <div>
-              <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+              <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
                 How did it go?
-              </label>
+              </Label>
               <div className="grid grid-cols-2 gap-2 mt-2">
                 {ALL_SENTIMENTS.map((sentiment) => {
                   const config = getSentimentConfig(sentiment);
                   return (
-                    <button
+                    <Button
                       key={sentiment}
+                      variant="outline"
                       onClick={() => handleQuickCaptureSave(sentiment)}
                       className={cn(
-                        "flex flex-col items-center gap-1.5 py-4 rounded-xl border-2 transition-all text-center",
+                        "flex flex-col items-center gap-1.5 py-4 h-auto rounded-xl border-2 text-center",
                         config.bgClass
                       )}
                     >
                       <span className="text-2xl">{config.emoji}</span>
                       <span className={cn("text-sm font-semibold", config.colorClass)}>{config.label}</span>
-                      <span className="text-[10px] text-muted-foreground">
+                      <span className="text-xs text-muted-foreground">
                         {config.suggestedNextStep} in {config.followUpDays}d
                       </span>
-                    </button>
+                    </Button>
                   );
                 })}
               </div>
             </div>
 
-            <p className="text-[10px] text-muted-foreground text-center">
+            <p className="text-xs text-muted-foreground text-center">
               Tap a sentiment to auto-log meeting + set follow-up
             </p>
           </div>
@@ -230,17 +238,19 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
         <div className="space-y-4 py-2">
           {/* Channel picker */}
           <div>
-            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+            <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
               Channel
-            </label>
+            </Label>
             <div className="flex gap-1.5 mt-1.5">
               {CHANNELS.map((ch) => {
                 const Icon = channelIcons[ch.id];
                 return (
-                  <button
+                  <Button
                     key={ch.id}
+                    variant="outline"
+                    size="sm"
                     className={cn(
-                      "flex-1 flex flex-col items-center gap-1 py-2 rounded-lg border text-[10px] font-medium transition-all",
+                      "flex-1 flex flex-col items-center gap-1 py-2 h-auto rounded-lg text-xs font-medium",
                       selectedChannel === ch.id
                         ? cn(ch.colorClass, "border-current/30 ring-1 ring-current/20")
                         : "bg-secondary/30 text-muted-foreground border-border hover:bg-secondary/50"
@@ -249,7 +259,7 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
                   >
                     <Icon className="h-4 w-4" />
                     {ch.label}
-                  </button>
+                  </Button>
                 );
               })}
             </div>
@@ -257,15 +267,17 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
 
           {/* Contact picker */}
           <div>
-            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+            <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
               Contact
-            </label>
+            </Label>
             <div className="flex flex-wrap gap-1.5 mt-1.5">
               {contacts.map((c) => (
-                <button
+                <Button
                   key={c.name}
+                  variant="outline"
+                  size="sm"
                   className={cn(
-                    "px-3 py-1.5 rounded-lg border text-xs font-medium transition-all",
+                    "px-3 py-1.5 h-auto rounded-lg text-xs font-medium",
                     (effectiveContact === c.name)
                       ? "bg-primary/20 text-primary border-primary/30"
                       : "bg-secondary/30 text-muted-foreground border-border hover:bg-secondary/50"
@@ -273,22 +285,24 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
                   onClick={() => setSelectedContact(c.name)}
                 >
                   {c.name}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
 
           {/* Action picker */}
           <div>
-            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+            <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
               Action
-            </label>
+            </Label>
             <div className="flex flex-wrap gap-1.5 mt-1.5">
               {channelConfig.actions.map((a) => (
-                <button
+                <Button
                   key={a.value}
+                  variant="outline"
+                  size="sm"
                   className={cn(
-                    "px-3 py-1.5 rounded-lg border text-xs font-medium transition-all",
+                    "px-3 py-1.5 h-auto rounded-lg text-xs font-medium",
                     (selectedAction === a.value || (!selectedAction && a.value === channelConfig.actions[0]?.value))
                       ? cn(channelConfig.colorClass, "border-current/30")
                       : "bg-secondary/30 text-muted-foreground border-border hover:bg-secondary/50"
@@ -296,61 +310,63 @@ export function EngagementLog({ open, company, onClose, onSave }: EngagementLogP
                   onClick={() => setSelectedAction(a.value)}
                 >
                   {a.label}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
 
           {/* Notes */}
           <div>
-            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+            <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
               Notes
-            </label>
-            <textarea
+            </Label>
+            <Textarea
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
               placeholder="Optional details..."
-              className="w-full h-16 mt-1.5 bg-secondary/30 border border-border rounded-lg p-2.5 text-sm resize-none focus:outline-none focus:ring-1 focus:ring-primary"
+              className="w-full h-16 mt-1.5 bg-secondary/30 rounded-lg resize-none"
             />
           </div>
 
           {/* Follow-up date */}
           <div>
-            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
+            <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
               <Clock className="h-3 w-3" />
               Follow up by
-            </label>
+            </Label>
             <div className="flex items-center gap-2 mt-1.5">
-              <input
+              <Input
                 type="date"
                 value={followUpDate}
                 onChange={(e) => setFollowUpDate(e.target.value)}
-                className="bg-secondary/30 border border-border rounded-lg px-2.5 py-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+                className="bg-secondary/30 rounded-lg w-auto"
               />
               <div className="flex gap-1">
                 {snoozePresets.map((preset) => (
-                  <button
+                  <Button
                     key={preset.label}
+                    variant="ghost"
+                    size="sm"
                     onClick={() => setFollowUpDate(preset.date)}
                     className={cn(
-                      "px-2 py-1 rounded-md text-[10px] font-medium transition-colors",
+                      "px-2 py-1 h-auto rounded-md text-xs font-medium",
                       followUpDate === preset.date
                         ? "bg-primary/20 text-primary"
                         : "bg-secondary/30 text-muted-foreground hover:bg-secondary/50"
                     )}
                   >
                     {preset.label}
-                  </button>
+                  </Button>
                 ))}
               </div>
             </div>
             {followUpDate && (
-              <input
+              <Input
                 type="text"
                 value={followUpNotes}
                 onChange={(e) => setFollowUpNotes(e.target.value)}
                 placeholder="Follow-up notes (optional)"
-                className="w-full mt-1.5 bg-secondary/30 border border-border rounded-lg px-2.5 py-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+                className="w-full mt-1.5 bg-secondary/30 rounded-lg"
               />
             )}
           </div>

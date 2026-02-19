@@ -2,6 +2,7 @@
 
 import { Company, RatingData } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface CompanyTableProps {
@@ -60,14 +61,14 @@ export function CompanyTable({
                   <div className="flex items-center gap-2">
                     <span className="font-medium truncate">{company.name}</span>
                     {company.clear && (
-                      <Badge variant="outline" className="text-[9px] px-1 py-0 h-3.5 text-primary border-primary/30">
+                      <Badge variant="outline" className="text-xs px-1 py-0 h-3.5 text-primary border-primary/30">
                         CLEAR
                       </Badge>
                     )}
                   </div>
                 </td>
                 <td className="py-2 px-2">
-                  <Badge variant="outline" className={cn("text-[10px] px-1.5 py-0 h-4", typeBadgeStyles[company.type] || "")}>
+                  <Badge variant="outline" className={cn("text-xs px-1.5 py-0 h-4", typeBadgeStyles[company.type] || "")}>
                     {company.type}
                   </Badge>
                 </td>
@@ -81,20 +82,22 @@ export function CompanyTable({
                   {company.employees ? company.employees : "—"}
                 </td>
                 <td className="py-2 px-2 text-center">
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onToggleMet(company.id);
-                    }}
+                  <Button
+                    variant="ghost"
+                    size="icon"
                     className={cn(
-                      "w-6 h-6 rounded-full flex items-center justify-center text-xs mx-auto transition-all",
+                      "h-6 w-6 rounded-full text-xs mx-auto",
                       isMet
                         ? "bg-primary/20 text-primary"
                         : "bg-muted/30 text-muted-foreground hover:bg-primary/20 hover:text-primary"
                     )}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onToggleMet(company.id);
+                    }}
                   >
                     {isMet ? "✓" : "○"}
-                  </button>
+                  </Button>
                 </td>
               </tr>
             );

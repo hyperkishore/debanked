@@ -12,6 +12,7 @@ import { SequenceProgress } from "@/lib/sequence-helpers";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { EngagementTimeline } from "@/components/engagement-timeline";
@@ -224,17 +225,19 @@ export function CompanyDetail({
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center gap-0.5 text-[10px] px-1.5 py-0.5 rounded bg-primary/10 text-primary"
+                  className="inline-flex items-center gap-0.5 text-xs px-1.5 py-0.5 rounded bg-primary/10 text-primary"
                 >
                   <Tag className="h-2.5 w-2.5" />
                   {tag}
                   {onRemoveTag && (
-                    <button
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-4 w-4 p-0 hover:text-red-400 transition-colors ml-0.5"
                       onClick={() => onRemoveTag(company.id, tag)}
-                      className="hover:text-red-400 transition-colors ml-0.5"
                     >
                       <X className="h-2.5 w-2.5" />
-                    </button>
+                    </Button>
                   )}
                 </span>
               ))}
@@ -261,12 +264,14 @@ export function CompanyDetail({
                   />
                 </form>
               ) : (
-                <button
+                <Button
+                  variant="outline"
+                  size="sm"
                   onClick={() => setShowTagInput(true)}
-                  className="inline-flex items-center gap-0.5 text-[10px] px-1.5 py-0.5 rounded border border-dashed border-border text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
+                  className="inline-flex items-center gap-0.5 text-xs h-5 px-1.5 py-0.5 rounded border-dashed text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors"
                 >
                   <Plus className="h-2.5 w-2.5" /> tag
-                </button>
+                </Button>
               )}
             </div>
           )}
@@ -312,11 +317,11 @@ export function CompanyDetail({
 
             {/* Notes still available for unresearched companies */}
             <Section icon={MessageSquare} title="Your Notes">
-              <textarea
+              <Textarea
                 value={localNotes}
                 onChange={(e) => handleNotesChange(e.target.value)}
                 placeholder="Add notes about this company..."
-                className="w-full h-24 bg-secondary/30 border border-border rounded-lg p-3 text-sm resize-y focus:outline-none focus:ring-1 focus:ring-primary"
+                className="w-full h-24 bg-secondary/30 text-sm resize-y"
               />
             </Section>
           </div>
@@ -385,14 +390,14 @@ export function CompanyDetail({
                     return (
                       <div key={i} className="flex items-center gap-2 text-xs">
                         <span className="font-medium min-w-0 truncate flex-1">{thread.leader.n}</span>
-                        <Badge variant="outline" className={cn("text-[9px] px-1 py-0 h-4", personaConfig.colorClass)}>
+                        <Badge variant="outline" className={cn("text-xs px-1 py-0 h-4", personaConfig.colorClass)}>
                           {personaConfig.label}
                         </Badge>
-                        <Badge variant="outline" className={cn("text-[9px] px-1 py-0 h-4", statusStyle.colorClass)}>
+                        <Badge variant="outline" className={cn("text-xs px-1 py-0 h-4", statusStyle.colorClass)}>
                           {statusStyle.label}
                         </Badge>
                         {thread.engagementCount > 0 && (
-                          <span className="text-[10px] text-muted-foreground">{thread.engagementCount}x</span>
+                          <span className="text-xs text-muted-foreground">{thread.engagementCount}x</span>
                         )}
                       </div>
                     );
@@ -446,7 +451,7 @@ export function CompanyDetail({
                   {company.news.map((item, i) => (
                     <div key={i} className="rounded-lg bg-secondary/30 p-2.5">
                       <h4 className="text-sm font-medium leading-snug">{item.h}</h4>
-                      <p className="text-[11px] text-primary/70 mt-0.5">{item.s}</p>
+                      <p className="text-xs text-primary/70 mt-0.5">{item.s}</p>
                       <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{item.d}</p>
                     </div>
                   ))}
@@ -463,7 +468,7 @@ export function CompanyDetail({
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-[11px] px-2 py-1 rounded-md bg-secondary/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                    className="flex items-center gap-1 text-xs px-2 py-1 rounded-md bg-secondary/50 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                   >
                     {link.icon === 'globe' && <Globe className="h-3 w-3" />}
                     {link.icon === 'linkedin' && <Linkedin className="h-3 w-3" />}
@@ -496,15 +501,17 @@ export function CompanyDetail({
             {/* Battlecards */}
             {battlecards.length > 0 && (
               <div>
-                <button
+                <Button
+                  variant="ghost"
+                  size="sm"
                   onClick={() => setBattlecardsOpen(!battlecardsOpen)}
-                  className="flex items-center gap-2 mb-2 w-full text-left"
+                  className="flex items-center gap-2 mb-2 w-full text-left h-auto p-0 hover:bg-transparent"
                 >
                   <Shield className="h-4 w-4 text-muted-foreground" />
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground flex-1">
                     Battlecards
                   </h3>
-                  <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4">
+                  <Badge variant="outline" className="text-xs px-1.5 py-0 h-4">
                     {battlecards.length}
                   </Badge>
                   {battlecardsOpen ? (
@@ -512,7 +519,7 @@ export function CompanyDetail({
                   ) : (
                     <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
                   )}
-                </button>
+                </Button>
                 {battlecardsOpen && (
                   <div className="space-y-2">
                     {battlecards.map((card, i) => {
@@ -520,7 +527,7 @@ export function CompanyDetail({
                       return (
                         <div key={i} className="rounded-lg bg-secondary/20 p-3 space-y-1.5">
                           <div className="flex items-start gap-2">
-                            <Badge className={cn("text-[9px] px-1.5 py-0 h-4 shrink-0", catStyle.colorClass)}>
+                            <Badge className={cn("text-xs px-1.5 py-0 h-4 shrink-0", catStyle.colorClass)}>
                               {catStyle.label}
                             </Badge>
                             <p className="text-xs font-medium text-foreground/90 flex-1">
@@ -533,7 +540,7 @@ export function CompanyDetail({
                             </p>
                             <CopyButton text={card.response} />
                           </div>
-                          <p className="text-[10px] text-primary/60 italic">
+                          <p className="text-xs text-primary/60 italic">
                             {card.socialProof}
                           </p>
                         </div>
@@ -576,11 +583,11 @@ export function CompanyDetail({
 
             {/* Notes */}
             <Section icon={MessageSquare} title="Your Notes">
-              <textarea
+              <Textarea
                 value={localNotes}
                 onChange={(e) => handleNotesChange(e.target.value)}
                 placeholder="Add notes about your conversation..."
-                className="w-full h-24 bg-secondary/30 border border-border rounded-lg p-3 text-sm resize-y focus:outline-none focus:ring-1 focus:ring-primary"
+                className="w-full h-24 bg-secondary/30 text-sm resize-y"
               />
             </Section>
           </>
@@ -673,7 +680,7 @@ function LeaderCard({
           <span className="text-sm font-medium">{leader.n}</span>
           <span className="text-xs text-muted-foreground ml-2">{leader.t}</span>
           {persona !== 'unknown' && (
-            <Badge variant="outline" className={cn("text-[9px] px-1 py-0 h-4 ml-1.5", personaConfig.colorClass)}>
+            <Badge variant="outline" className={cn("text-xs px-1 py-0 h-4 ml-1.5", personaConfig.colorClass)}>
               {personaConfig.label}
             </Badge>
           )}
@@ -681,12 +688,12 @@ function LeaderCard({
           {(leader.email || leader.phone) && (
             <div className="flex items-center gap-2 mt-0.5">
               {leader.email && (
-                <a href={`mailto:${leader.email}`} className="text-[10px] text-blue-400 hover:underline truncate max-w-[180px]" title={leader.email}>
+                <a href={`mailto:${leader.email}`} className="text-xs text-blue-400 hover:underline truncate max-w-[180px]" title={leader.email}>
                   {leader.email}
                 </a>
               )}
               {leader.phone && (
-                <a href={`tel:${leader.phone}`} className="text-[10px] text-green-400 hover:underline">
+                <a href={`tel:${leader.phone}`} className="text-xs text-green-400 hover:underline">
                   {leader.phone}
                 </a>
               )}
@@ -694,23 +701,27 @@ function LeaderCard({
           )}
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
-          <button
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={(e) => {
               e.stopPropagation();
               onBriefMe();
             }}
-            className="flex items-center gap-1 text-[10px] px-2 py-1 rounded-md bg-purple-500/10 text-purple-400 hover:bg-purple-500/20 transition-colors"
+            className="flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md bg-purple-500/10 text-purple-400 hover:bg-purple-500/20 transition-colors"
             title="Pre-call briefing"
           >
             <BookOpen className="h-3 w-3" /> Brief
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={(e) => {
               e.stopPropagation();
               onToggleExpand("email");
             }}
             className={cn(
-              "flex items-center gap-1 text-[10px] px-2 py-1 rounded-md transition-colors",
+              "flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md transition-colors",
               expandedPanel === "email"
                 ? "bg-blue-500/20 text-blue-400"
                 : "bg-blue-500/10 text-blue-400 hover:bg-blue-500/20"
@@ -718,14 +729,16 @@ function LeaderCard({
             title="Draft email"
           >
             <Mail className="h-3 w-3" /> Email
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={(e) => {
               e.stopPropagation();
               onToggleExpand("linkedin");
             }}
             className={cn(
-              "flex items-center gap-1 text-[10px] px-2 py-1 rounded-md transition-colors",
+              "flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md transition-colors",
               expandedPanel === "linkedin"
                 ? "bg-sky-400/20 text-sky-400"
                 : "bg-sky-400/10 text-sky-400 hover:bg-sky-400/20"
@@ -733,7 +746,7 @@ function LeaderCard({
             title="Draft LinkedIn message"
           >
             <Linkedin className="h-3 w-3" /> LinkedIn
-          </button>
+          </Button>
           {leader.li && (
             <a
               href={leader.li}
@@ -759,12 +772,14 @@ function LeaderCard({
             {leader.bg}
           </p>
           {bioTruncated && (
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={() => setBioExpanded(!bioExpanded)}
-              className="text-[10px] text-primary/70 hover:text-primary mt-0.5"
+              className="text-xs text-primary/70 hover:text-primary h-auto p-0 mt-0.5"
             >
               {bioExpanded ? "Show less" : "Show more"}
-            </button>
+            </Button>
           )}
         </div>
       )}
@@ -774,7 +789,7 @@ function LeaderCard({
             <span
               key={j}
               className={cn(
-                "text-[10px] px-1.5 py-0.5 rounded-full inline-flex items-center gap-1 group/hook",
+                "text-xs px-1.5 py-0.5 rounded-full inline-flex items-center gap-1 group/hook",
                 hook.startsWith("*")
                   ? "bg-primary/15 text-primary"
                   : "bg-muted/50 text-muted-foreground"
@@ -789,20 +804,24 @@ function LeaderCard({
             </span>
           ))}
           {!hooksExpanded && hiddenHookCount > 0 && (
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={() => setHooksExpanded(true)}
-              className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-primary transition-colors"
+              className="text-xs h-auto px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-primary transition-colors"
             >
               +{hiddenHookCount} more
-            </button>
+            </Button>
           )}
           {hooksExpanded && hiddenHookCount > 0 && (
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={() => setHooksExpanded(false)}
-              className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-primary transition-colors"
+              className="text-xs h-auto px-1.5 py-0.5 rounded-full bg-muted/30 text-muted-foreground hover:text-primary transition-colors"
             >
               Show less
-            </button>
+            </Button>
           )}
         </div>
       )}
@@ -813,25 +832,27 @@ function LeaderCard({
           <div className="flex items-center justify-between mb-2">
             <div className="flex gap-1">
               {(["formal", "casual", "news-hook"] as const).map((style) => (
-                <button
+                <Button
                   key={style}
+                  variant="ghost"
+                  size="sm"
                   onClick={() => onVariantChange(style)}
                   className={cn(
-                    "text-[10px] px-2 py-1 rounded-md transition-colors font-medium",
+                    "text-xs h-auto px-2 py-1 rounded-md transition-colors font-medium",
                     activeVariant === style
-                      ? "bg-blue-500 text-white"
+                      ? "bg-blue-500 text-white hover:bg-blue-500/90"
                       : "bg-blue-500/10 text-blue-400/70 hover:bg-blue-500/20"
                   )}
                 >
                   {VARIANT_LABELS[style]}
-                </button>
+                </Button>
               ))}
             </div>
             <div className="flex items-center gap-1">
               {leader.email && (
                 <a
                   href={`mailto:${leader.email}?subject=${encodeURIComponent(currentEmail.subject)}&body=${encodeURIComponent(currentEmail.body)}`}
-                  className="flex items-center gap-1 text-[10px] px-2 py-1 rounded-md bg-green-500/10 text-green-400 hover:bg-green-500/20 transition-colors font-medium"
+                  className="flex items-center gap-1 text-xs px-2 py-1 rounded-md bg-green-500/10 text-green-400 hover:bg-green-500/20 transition-colors font-medium"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleCopyWithLog("email", "sent_intro");
@@ -849,7 +870,7 @@ function LeaderCard({
               />
             </div>
           </div>
-          <div className="text-[10px] text-blue-400/60 mb-1 font-medium">
+          <div className="text-xs text-blue-400/60 mb-1 font-medium">
             Subject: {currentEmail.subject}
           </div>
           <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">
@@ -864,18 +885,20 @@ function LeaderCard({
           <div className="flex items-center justify-between mb-2">
             <div className="flex gap-1">
               {(["connection-request", "inmail"] as const).map((style) => (
-                <button
+                <Button
                   key={style}
+                  variant="ghost"
+                  size="sm"
                   onClick={() => onLinkedInVariantChange(style)}
                   className={cn(
-                    "text-[10px] px-2 py-1 rounded-md transition-colors font-medium",
+                    "text-xs h-auto px-2 py-1 rounded-md transition-colors font-medium",
                     activeLinkedInVariant === style
-                      ? "bg-sky-400 text-white"
+                      ? "bg-sky-400 text-white hover:bg-sky-400/90"
                       : "bg-sky-400/10 text-sky-300/70 hover:bg-sky-400/20"
                   )}
                 >
                   {LINKEDIN_LABELS[style]}
-                </button>
+                </Button>
               ))}
             </div>
             <CopyButton
@@ -892,7 +915,7 @@ function LeaderCard({
             />
           </div>
           {activeLinkedInVariant === "connection-request" && (
-            <p className="text-[10px] text-sky-400/50 mb-1">~300 char limit for connection requests</p>
+            <p className="text-xs text-sky-400/50 mb-1">~300 char limit for connection requests</p>
           )}
           <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">
             {currentLinkedIn.body}

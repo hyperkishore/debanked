@@ -2,6 +2,7 @@
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { Check, Copy } from "lucide-react";
 import { toast } from "sonner";
@@ -54,10 +55,11 @@ export function ChecklistTab({
           </div>
           <div className="space-y-1">
             {checklistItems.map((item) => (
-              <button
+              <Button
                 key={item.key}
+                variant="ghost"
                 className={cn(
-                  "w-full flex items-center gap-3 p-3 rounded-lg transition-all text-left",
+                  "w-full flex items-center gap-3 p-3 rounded-lg transition-all text-left h-auto justify-start",
                   checkState[item.key]
                     ? "bg-primary/5 opacity-60"
                     : "bg-card hover:bg-secondary/30"
@@ -82,7 +84,7 @@ export function ChecklistTab({
                 >
                   {item.label}
                 </span>
-              </button>
+              </Button>
             ))}
           </div>
         </div>
@@ -92,11 +94,11 @@ export function ChecklistTab({
           <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
             Quick Notes
           </h3>
-          <textarea
+          <Textarea
             value={quickNotes}
             onChange={(e) => onQuickNotesChange(e.target.value)}
             placeholder="Jot down notes during the event..."
-            className="w-full h-32 bg-card border border-border rounded-lg p-3 text-sm resize-y focus:outline-none focus:ring-1 focus:ring-primary"
+            className="w-full h-32 bg-card resize-y"
           />
         </div>
 

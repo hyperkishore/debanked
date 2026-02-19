@@ -12,6 +12,7 @@ import { getLastEngagement } from "@/lib/engagement-helpers";
 import { PipelineCard } from "@/components/pipeline-card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useState, useMemo, useCallback, useRef } from "react";
 
@@ -172,18 +173,20 @@ export function PipelineTab({
           />
           <div className="flex gap-1">
             {typeFilters.map((f) => (
-              <button
+              <Button
                 key={f.value}
+                variant={typeFilter === f.value ? "default" : "ghost"}
+                size="sm"
                 onClick={() => setTypeFilter(f.value)}
                 className={cn(
-                  "text-[10px] px-2 py-1 rounded-md font-medium transition-colors",
+                  "text-xs px-2 py-1 h-auto font-medium",
                   typeFilter === f.value
-                    ? "bg-primary text-white"
+                    ? ""
                     : "bg-secondary/30 text-muted-foreground hover:bg-secondary/50"
                 )}
               >
                 {f.label}
-              </button>
+              </Button>
             ))}
           </div>
         </div>
@@ -216,7 +219,7 @@ export function PipelineTab({
                     <span className="text-xs font-semibold" style={{ color: stage.color }}>
                       {stage.label}
                     </span>
-                    <span className="text-[10px] text-muted-foreground font-medium bg-muted/30 px-1.5 py-0.5 rounded">
+                    <span className="text-xs text-muted-foreground font-medium bg-muted/30 px-1.5 py-0.5 rounded">
                       {stageCompanies.length}
                     </span>
                   </div>
@@ -249,7 +252,7 @@ export function PipelineTab({
                       );
                     })}
                     {stageCompanies.length === 0 && (
-                      <div className="text-center py-4 text-[10px] text-muted-foreground/50">
+                      <div className="text-center py-4 text-xs text-muted-foreground/50">
                         Drop here
                       </div>
                     )}

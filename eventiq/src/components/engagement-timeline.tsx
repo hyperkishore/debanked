@@ -8,6 +8,7 @@ import {
   formatActionLabel,
 } from "@/lib/engagement-helpers";
 import { Button } from "@/components/ui/button";
+import { Kbd } from "@/components/ui/kbd";
 import { cn } from "@/lib/utils";
 import {
   Mail,
@@ -73,7 +74,7 @@ export function EngagementTimeline({
             Engagement
           </h3>
           {engagements.length > 0 && (
-            <span className="text-[10px] text-muted-foreground/60">
+            <span className="text-xs text-muted-foreground/60">
               ({engagements.length})
             </span>
           )}
@@ -92,7 +93,7 @@ export function EngagementTimeline({
       {/* Empty state */}
       {engagements.length === 0 && (
         <div className="text-xs text-muted-foreground/60 bg-secondary/20 rounded-lg p-3 text-center">
-          No interactions logged. Press <kbd className="px-1 py-0.5 rounded bg-muted/50 font-mono text-[10px]">e</kbd> to log one.
+          No interactions logged. Press <Kbd>e</Kbd> to log one.
         </div>
       )}
 
@@ -119,21 +120,23 @@ export function EngagementTimeline({
                     <span className="font-medium truncate">{entry.contactName}</span>
                   </div>
                   {entry.notes && (
-                    <p className="text-[11px] text-muted-foreground/70 mt-0.5 line-clamp-1">
+                    <p className="text-xs text-muted-foreground/70 mt-0.5 line-clamp-1">
                       {entry.notes}
                     </p>
                   )}
                 </div>
                 <div className="flex items-center gap-1 shrink-0">
                   {entry.source !== "manual" && (
-                    <span className="text-[9px] px-1 py-0.5 rounded bg-muted/50 text-muted-foreground/50 uppercase">
+                    <span className="text-xs px-1 py-0.5 rounded bg-muted/50 text-muted-foreground/50 uppercase">
                       auto
                     </span>
                   )}
-                  <span className="text-[10px] text-muted-foreground/50">
+                  <span className="text-xs text-muted-foreground/50">
                     {formatEngagementTime(entry.timestamp)}
                   </span>
-                  <button
+                  <Button
+                    variant="ghost"
+                    size="icon"
                     className={cn(
                       "h-5 w-5 rounded flex items-center justify-center transition-all",
                       deletingId === entry.id
@@ -144,7 +147,7 @@ export function EngagementTimeline({
                     title={deletingId === entry.id ? "Click again to confirm" : "Delete"}
                   >
                     <Trash2 className="h-3 w-3" />
-                  </button>
+                  </Button>
                 </div>
               </div>
             );

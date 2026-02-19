@@ -15,6 +15,7 @@ import {
 } from "@/lib/feed-helpers";
 import { getSupabase } from "@/lib/supabase";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface FeedTabProps {
@@ -34,7 +35,7 @@ const TYPE_COLORS: Record<string, string> = {
 function SignalIcon({ type }: { type: SignalType }) {
   const config = SIGNAL_TYPE_CONFIG[type];
   return (
-    <span className={`inline-flex items-center justify-center w-5 h-5 rounded text-[10px] font-bold ${config.color} bg-current/10`}>
+    <span className={`inline-flex items-center justify-center w-5 h-5 rounded text-xs font-bold ${config.color} bg-current/10`}>
       {config.icon}
     </span>
   );
@@ -44,46 +45,47 @@ function FeedCard({ item, onSelect }: { item: FeedItem; onSelect: (id: number) =
   const config = SIGNAL_TYPE_CONFIG[item.signalType];
 
   return (
-    <button
+    <Button
+      variant="ghost"
       onClick={() => onSelect(item.companyId)}
-      className="w-full text-left p-3 rounded-lg border border-border/50 bg-card/50 hover:bg-card hover:border-border transition-all group"
+      className="w-full h-auto p-3 justify-start rounded-lg border border-border/50 bg-card/50 hover:bg-card hover:border-border transition-all group"
     >
-      <div className="flex items-start gap-2.5">
+      <div className="flex items-start gap-2.5 w-full text-left">
         <SignalIcon type={item.signalType} />
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-1.5 mb-0.5">
             <span className="text-xs font-semibold text-foreground group-hover:text-primary transition-colors truncate">
               {item.companyName}
             </span>
-            <Badge variant="outline" className={`text-[9px] px-1 py-0 h-3.5 ${TYPE_COLORS[item.companyType] || ""}`}>
+            <Badge variant="outline" className={`text-xs px-1 py-0 h-3.5 ${TYPE_COLORS[item.companyType] || ""}`}>
               {item.companyType}
             </Badge>
             {item.heat === "hot" && (
-              <span className="text-[9px] text-[var(--sqo)] font-semibold">HOT</span>
+              <span className="text-xs text-[var(--sqo)] font-semibold">HOT</span>
             )}
           </div>
-          <p className="text-[11px] text-foreground/90 leading-snug mb-1">{item.headline}</p>
+          <p className="text-xs text-foreground/90 leading-snug mb-1">{item.headline}</p>
           {item.description && (
-            <p className="text-[10px] text-muted-foreground leading-snug line-clamp-2">{item.description}</p>
+            <p className="text-xs text-muted-foreground leading-snug line-clamp-2">{item.description}</p>
           )}
           <div className="flex items-center gap-2 mt-1.5">
-            <span className={`text-[9px] font-medium ${config.color}`}>{config.label}</span>
+            <span className={`text-xs font-medium ${config.color}`}>{config.label}</span>
             {item.source && (
-              <span className="text-[9px] text-muted-foreground/60">{item.source}</span>
+              <span className="text-xs text-muted-foreground/60">{item.source}</span>
             )}
           </div>
         </div>
       </div>
-    </button>
+    </Button>
   );
 }
 
 function StatCard({ label, value, subtext }: { label: string; value: string; subtext?: string }) {
   return (
     <div className="flex-1 min-w-[140px] p-3 rounded-lg border border-border/50 bg-card/30">
-      <p className="text-[10px] text-muted-foreground uppercase tracking-wider mb-0.5">{label}</p>
+      <p className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">{label}</p>
       <p className="text-lg font-bold text-foreground">{value}</p>
-      {subtext && <p className="text-[10px] text-muted-foreground mt-0.5">{subtext}</p>}
+      {subtext && <p className="text-xs text-muted-foreground mt-0.5">{subtext}</p>}
     </div>
   );
 }
@@ -99,24 +101,26 @@ function ThemeCard({ title, description, companies, hvAngle, onSelectCompany, al
   return (
     <div className="p-3 rounded-lg border border-border/50 bg-card/30">
       <h4 className="text-xs font-semibold text-foreground mb-1">{title}</h4>
-      <p className="text-[10px] text-muted-foreground leading-snug mb-2">{description}</p>
+      <p className="text-xs text-muted-foreground leading-snug mb-2">{description}</p>
       <div className="flex flex-wrap gap-1 mb-2">
         {companies.map((name) => {
           const match = allCompanies.find((c) => c.name.toLowerCase().includes(name.toLowerCase()));
           return (
-            <button
+            <Button
               key={name}
+              variant="ghost"
+              size="sm"
               onClick={() => match && onSelectCompany(match.id)}
-              className={`text-[9px] px-1.5 py-0.5 rounded ${match ? "bg-primary/10 text-primary hover:bg-primary/20 cursor-pointer" : "bg-muted/30 text-muted-foreground cursor-default"} transition-colors`}
+              className={`text-xs h-auto px-1.5 py-0.5 rounded ${match ? "bg-primary/10 text-primary hover:bg-primary/20 cursor-pointer" : "bg-muted/30 text-muted-foreground cursor-default"} transition-colors`}
             >
               {name}
-            </button>
+            </Button>
           );
         })}
       </div>
       <div className="flex items-start gap-1.5 p-2 rounded bg-primary/5 border border-primary/10">
-        <span className="text-[10px] font-medium text-primary shrink-0">HV Angle:</span>
-        <span className="text-[10px] text-foreground/80 leading-snug">{hvAngle}</span>
+        <span className="text-xs font-medium text-primary shrink-0">HV Angle:</span>
+        <span className="text-xs text-foreground/80 leading-snug">{hvAngle}</span>
       </div>
     </div>
   );
@@ -222,7 +226,7 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
         {/* Header */}
         <div>
           <h2 className="text-base font-bold text-foreground">Market Intelligence Feed</h2>
-          <p className="text-[11px] text-muted-foreground mt-0.5">
+          <p className="text-xs text-muted-foreground mt-0.5">
             MCA/Alternative lending market signals across {companies.length} companies
           </p>
         </div>
@@ -237,17 +241,19 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
         {/* Section tabs */}
         <div className="flex gap-1 overflow-x-auto scrollbar-none">
           {sections.map((s) => (
-            <button
+            <Button
               key={s.id}
+              variant="ghost"
+              size="sm"
               onClick={() => setActiveSection(s.id)}
-              className={`shrink-0 text-[11px] px-2.5 py-1 rounded-md transition-colors ${
+              className={`shrink-0 text-xs px-2.5 py-1 rounded-md transition-colors ${
                 activeSection === s.id
                   ? "bg-primary/20 text-primary font-medium"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted/30"
               }`}
             >
               {s.label}
-            </button>
+            </Button>
           ))}
         </div>
 
@@ -316,28 +322,32 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
           <div className="space-y-2">
             {/* Signal type filter pills */}
             <div className="flex gap-1 flex-wrap">
-              <button
+              <Button
+                variant="ghost"
+                size="sm"
                 onClick={() => setSignalFilter("all")}
-                className={`text-[10px] px-2 py-0.5 rounded-full transition-colors ${
+                className={`text-xs px-2 py-0.5 h-auto rounded-full transition-colors ${
                   signalFilter === "all" ? "bg-foreground/10 text-foreground font-medium" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 All ({signalCounts.all || 0})
-              </button>
+              </Button>
               {(Object.keys(SIGNAL_TYPE_CONFIG) as SignalType[]).map((type) => {
                 const config = SIGNAL_TYPE_CONFIG[type];
                 const count = signalCounts[type] || 0;
                 if (count === 0) return null;
                 return (
-                  <button
+                  <Button
                     key={type}
+                    variant="ghost"
+                    size="sm"
                     onClick={() => setSignalFilter(type)}
-                    className={`text-[10px] px-2 py-0.5 rounded-full transition-colors ${
+                    className={`text-xs px-2 py-0.5 h-auto rounded-full transition-colors ${
                       signalFilter === type ? `${config.color} font-medium bg-current/10` : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
                     {config.label} ({count})
-                  </button>
+                  </Button>
                 );
               })}
             </div>

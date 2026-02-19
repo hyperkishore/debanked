@@ -16,6 +16,8 @@ import {
   SidebarMenuItem,
   SidebarHeader,
 } from "@/components/ui/sidebar";
+import { Button } from "@/components/ui/button";
+import { Kbd } from "@/components/ui/kbd";
 import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud } from "lucide-react";
 
 interface AppSidebarProps {
@@ -60,7 +62,7 @@ export function AppSidebar({
           </div>
           <div className="flex-1 min-w-0">
             <h1 className="text-sm font-bold">EventIQ</h1>
-            <p className="text-[10px] text-muted-foreground">MCA Market Intelligence</p>
+            <p className="text-xs text-muted-foreground">MCA Market Intelligence</p>
           </div>
           <SyncIndicator />
         </div>
@@ -79,9 +81,9 @@ export function AppSidebar({
                 >
                   <Search className="h-4 w-4" />
                   <span>Search</span>
-                  <kbd className="ml-auto text-[10px] bg-muted/50 px-1.5 py-0.5 rounded text-muted-foreground font-mono">
+                  <Kbd className="ml-auto">
                     &#x2318;K
-                  </kbd>
+                  </Kbd>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
@@ -131,27 +133,27 @@ export function AppSidebar({
             <div className="px-3 space-y-1.5 text-xs text-muted-foreground">
               <div className="flex justify-between">
                 <span>Navigate list</span>
-                <span className="font-mono text-[10px]">j/k</span>
+                <Kbd>j/k</Kbd>
               </div>
               <div className="flex justify-between">
                 <span>Open detail</span>
-                <span className="font-mono text-[10px]">Enter</span>
+                <Kbd>Enter</Kbd>
               </div>
               <div className="flex justify-between">
                 <span>Close detail</span>
-                <span className="font-mono text-[10px]">Esc</span>
+                <Kbd>Esc</Kbd>
               </div>
               <div className="flex justify-between">
                 <span>Search</span>
-                <span className="font-mono text-[10px]">/ or &#x2318;K</span>
+                <Kbd>/ or &#x2318;K</Kbd>
               </div>
               <div className="flex justify-between">
                 <span>Toggle met</span>
-                <span className="font-mono text-[10px]">m</span>
+                <Kbd>m</Kbd>
               </div>
               <div className="flex justify-between">
                 <span>Log engagement</span>
-                <span className="font-mono text-[10px]">e or &#x2318;E</span>
+                <Kbd>e or &#x2318;E</Kbd>
               </div>
             </div>
           </SidebarGroupContent>
@@ -165,29 +167,33 @@ export function AppSidebar({
             {user ? (
               <div className="flex items-center gap-2">
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                  <span className="text-primary font-bold text-[10px]">
+                  <span className="text-primary font-bold text-xs">
                     {(user.user_metadata?.full_name || user.email || "U")[0].toUpperCase()}
                   </span>
                 </div>
-                <span className="text-[11px] text-foreground truncate flex-1">
+                <span className="text-xs text-foreground truncate flex-1">
                   {user.user_metadata?.full_name || user.email?.split("@")[0]}
                 </span>
-                <button
+                <Button
+                  variant="ghost"
+                  size="icon"
                   onClick={signOut}
-                  className="p-1 rounded hover:bg-muted/50 text-muted-foreground"
+                  className="h-6 w-6 text-muted-foreground"
                   title="Sign out"
                 >
                   <LogOut className="h-3 w-3" />
-                </button>
+                </Button>
               </div>
             ) : (
-              <button
+              <Button
+                variant="ghost"
+                size="sm"
                 onClick={signIn}
-                className="flex items-center gap-2 w-full text-[11px] text-muted-foreground hover:text-foreground transition-colors px-1 py-1 rounded hover:bg-muted/30"
+                className="flex items-center gap-2 w-full text-xs text-muted-foreground hover:text-foreground h-auto px-1 py-1"
               >
                 <Cloud className="h-3.5 w-3.5" />
                 <span>Sign in to sync</span>
-              </button>
+              </Button>
             )}
           </div>
         )}
@@ -212,7 +218,7 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.9.02</span>
+          <span className="opacity-50">v2.9.03</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

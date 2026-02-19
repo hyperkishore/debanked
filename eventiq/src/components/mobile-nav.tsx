@@ -1,6 +1,7 @@
 "use client";
 
 import { TabType } from "@/lib/types";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Building2, CalendarDays, Layers, CheckSquare, BarChart3, Kanban, Rss } from "lucide-react";
 
@@ -29,10 +30,11 @@ export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streak
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
           return (
-            <button
+            <Button
               key={tab.id}
+              variant="ghost"
               className={cn(
-                "flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors relative",
+                "flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors relative h-auto rounded-none p-0",
                 isActive ? "text-primary" : "text-muted-foreground"
               )}
               onClick={() => onTabChange(tab.id)}
@@ -41,15 +43,15 @@ export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streak
                 <Icon className="h-5 w-5" />
                 {/* Streak flame badge on dashboard icon */}
                 {tab.id === "dashboard" && streakCount > 0 && (
-                  <span className="absolute -top-1.5 -right-2.5 text-[8px] font-bold bg-[var(--sqo)]/20 text-[var(--sqo)] rounded-full w-4 h-4 flex items-center justify-center streak-flame-mini">
+                  <span className="absolute -top-1.5 -right-2.5 text-xs font-bold bg-[var(--sqo)]/20 text-[var(--sqo)] rounded-full w-4 h-4 flex items-center justify-center streak-flame-mini">
                     {streakCount}
                   </span>
                 )}
               </div>
-              <span className="text-[9px] font-semibold tracking-wide">
+              <span className="text-xs font-semibold tracking-wide">
                 {tab.label}
               </span>
-            </button>
+            </Button>
           );
         })}
       </div>

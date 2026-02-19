@@ -3,6 +3,7 @@
 import { Copy, Check } from "lucide-react";
 import { useState, useCallback } from "react";
 import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface CopyButtonProps {
@@ -35,11 +36,13 @@ export function CopyButton({
 
   if (variant === "button") {
     return (
-      <button
+      <Button
+        variant="ghost"
+        size="sm"
         onClick={handleCopy}
         className={cn(
           "flex items-center gap-1 rounded-md font-medium transition-colors",
-          size === "sm" ? "text-[10px] px-2 py-1" : "text-xs px-3 py-1.5",
+          size === "sm" ? "text-xs px-2 py-1" : "text-xs px-3 py-1.5",
           copied
             ? "bg-[var(--icp)] text-white"
             : "bg-primary/10 text-primary hover:bg-primary/20",
@@ -51,16 +54,18 @@ export function CopyButton({
         ) : (
           <><Copy className={size === "sm" ? "h-3 w-3" : "h-3.5 w-3.5"} /> {label || "Copy"}</>
         )}
-      </button>
+      </Button>
     );
   }
 
   return (
-    <button
+    <Button
+      variant="ghost"
+      size="icon"
       onClick={handleCopy}
       className={cn(
         "shrink-0 rounded-md transition-colors",
-        size === "sm" ? "p-1" : "p-1.5",
+        size === "sm" ? "h-6 w-6 p-1" : "h-7 w-7 p-1.5",
         copied
           ? "text-[var(--icp)]"
           : "text-muted-foreground/40 hover:text-muted-foreground",
@@ -73,6 +78,6 @@ export function CopyButton({
       ) : (
         <Copy className={size === "sm" ? "h-3 w-3" : "h-3.5 w-3.5"} />
       )}
-    </button>
+    </Button>
   );
 }

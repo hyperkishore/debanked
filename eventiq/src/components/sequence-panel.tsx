@@ -13,6 +13,7 @@ import {
 import { CopyButton } from "@/components/copy-button";
 import { Badge } from "@/components/ui/badge";
 import { ClipboardList } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
   Mail,
@@ -68,18 +69,19 @@ export function SequencePanel({
   return (
     <div>
       {/* Header */}
-      <button
+      <Button
+        variant="ghost"
         onClick={() => setCollapsed(!collapsed)}
-        className="flex items-center gap-2 mb-2 w-full text-left"
+        className="flex items-center gap-2 mb-2 w-full text-left h-auto p-0 justify-start"
       >
         <ClipboardList className="h-4 w-4 text-muted-foreground" />
         <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground flex-1">
           Sequence
         </h3>
-        <Badge variant="outline" className={cn("text-[10px]", getSequenceColor(sequenceType))}>
+        <Badge variant="outline" className={cn("text-xs", getSequenceColor(sequenceType))}>
           {sequence.label}
         </Badge>
-        <span className="text-[10px] text-muted-foreground">
+        <span className="text-xs text-muted-foreground">
           {completedCount}/{sequence.steps.length}
         </span>
         {collapsed ? (
@@ -87,7 +89,7 @@ export function SequencePanel({
         ) : (
           <ChevronUp className="h-3.5 w-3.5 text-muted-foreground" />
         )}
-      </button>
+      </Button>
 
       {/* Timeline */}
       {!collapsed && (
@@ -120,7 +122,9 @@ export function SequencePanel({
                 >
                   <div className="flex items-center gap-2">
                     {/* Checkbox */}
-                    <button
+                    <Button
+                      variant="ghost"
+                      size="icon"
                       onClick={() => {
                         if (!isDone) {
                           onStepComplete(company.id, step.id, step.channel, step.engagementAction);
@@ -134,11 +138,11 @@ export function SequencePanel({
                       )}
                     >
                       {isDone && <Check className="h-3 w-3" />}
-                    </button>
+                    </Button>
 
                     {/* Step info */}
                     <Icon className={cn("h-3.5 w-3.5 shrink-0", isDone ? "text-green-400" : "text-muted-foreground")} />
-                    <Badge variant="outline" className="text-[9px] px-1 py-0 h-4">
+                    <Badge variant="outline" className="text-xs px-1 py-0 h-4">
                       Day {step.dayOffset}
                     </Badge>
                     <span className={cn("text-xs flex-1", isDone && "line-through text-muted-foreground")}>
@@ -146,16 +150,18 @@ export function SequencePanel({
                     </span>
 
                     {/* Expand toggle */}
-                    <button
+                    <Button
+                      variant="ghost"
+                      size="icon"
                       onClick={() => setExpandedStep(isExpanded ? null : step.id)}
-                      className="p-1 rounded hover:bg-secondary/50 text-muted-foreground"
+                      className="h-6 w-6 text-muted-foreground"
                     >
                       {isExpanded ? (
                         <ChevronUp className="h-3 w-3" />
                       ) : (
                         <ChevronDown className="h-3 w-3" />
                       )}
-                    </button>
+                    </Button>
                   </div>
 
                   {/* Expanded content */}

@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
 interface RatingDialogProps {
@@ -66,38 +67,41 @@ export function RatingDialog({ open, companyName, onClose, onSave }: RatingDialo
         <div className="space-y-4 py-2">
           {/* Rating */}
           <div>
-            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+            <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
               Temperature
-            </label>
+            </Label>
             <div className="flex gap-2 mt-1.5">
               {ratingOptions.map((opt) => (
-                <button
+                <Button
                   key={opt.value}
+                  variant="outline"
                   data-active={rating === opt.value}
                   className={cn(
-                    "flex-1 py-2 rounded-lg border text-sm font-medium transition-all",
+                    "flex-1 py-2 h-auto rounded-lg text-sm font-medium transition-all",
                     opt.color,
                     rating === opt.value && "ring-1 ring-offset-1 ring-offset-background"
                   )}
                   onClick={() => setRating(opt.value)}
                 >
                   {opt.label}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
 
           {/* Follow-ups */}
           <div>
-            <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+            <Label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
               Follow-up Actions
-            </label>
+            </Label>
             <div className="flex flex-wrap gap-2 mt-1.5">
               {followUpOptions.map((opt) => (
-                <button
+                <Button
                   key={opt.value}
+                  variant="outline"
+                  size="sm"
                   className={cn(
-                    "px-3 py-1.5 rounded-lg border text-xs font-medium transition-all",
+                    "px-3 py-1.5 h-auto rounded-lg text-xs font-medium transition-all",
                     followUps.includes(opt.value)
                       ? "bg-primary/20 text-primary border-primary/30"
                       : "bg-secondary/50 text-muted-foreground border-border hover:bg-secondary"
@@ -105,7 +109,7 @@ export function RatingDialog({ open, companyName, onClose, onSave }: RatingDialo
                   onClick={() => toggleFollowUp(opt.value)}
                 >
                   {opt.label}
-                </button>
+                </Button>
               ))}
             </div>
           </div>

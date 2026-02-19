@@ -3,6 +3,7 @@
 import { Company, getResearchScore, getResearchTier } from "@/lib/types";
 import { UrgencyTier } from "@/lib/outreach-score";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
 
@@ -53,7 +54,7 @@ function QualityBar({ company }: { company: Company }) {
           style={{ width: `${score}%` }}
         />
       </div>
-      <span className="text-[9px] text-muted-foreground/60 shrink-0 w-6 text-right">{score}%</span>
+      <span className="text-xs text-muted-foreground/60 shrink-0 w-6 text-right">{score}%</span>
     </div>
   );
 }
@@ -117,19 +118,19 @@ export function CompanyCard({
             </h3>
             <Badge
               variant="outline"
-              className={cn("text-[10px] px-1.5 py-0 h-4 font-semibold shrink-0", typeBadgeMap[company.type] || "")}
+              className={cn("text-xs px-1.5 py-0 h-4 font-semibold shrink-0", typeBadgeMap[company.type] || "")}
             >
               {company.type}
             </Badge>
             {company.clear && (
-              <Badge variant="outline" className="text-[10px] px-1.5 py-0 h-4 font-semibold text-primary border-primary/30">
+              <Badge variant="outline" className="text-xs px-1.5 py-0 h-4 font-semibold text-primary border-primary/30">
                 CLEAR
               </Badge>
             )}
             {urgencyTier && (
               <Badge
                 variant="outline"
-                className={cn("text-[10px] px-1.5 py-0 h-4 font-semibold shrink-0", urgencyBadgeStyles[urgencyTier])}
+                className={cn("text-xs px-1.5 py-0 h-4 font-semibold shrink-0", urgencyBadgeStyles[urgencyTier])}
               >
                 {outreachScore}
               </Badge>
@@ -139,7 +140,7 @@ export function CompanyCard({
             {highlightText(subtitle, query)}
           </p>
           {company.employees && company.employees > 0 && (
-            <span className="text-[10px] text-muted-foreground/60">
+            <span className="text-xs text-muted-foreground/60">
               {company.employees} employees
             </span>
           )}
@@ -149,12 +150,12 @@ export function CompanyCard({
             </p>
           )}
           {nextBestAction && (
-            <p className="text-[11px] text-primary/80 mt-1 font-medium">
+            <p className="text-xs text-primary/80 mt-1 font-medium">
               Next: {nextBestAction}
             </p>
           )}
           {lastEngagementTime && (
-            <p className="text-[10px] text-primary/60 mt-0.5">
+            <p className="text-xs text-primary/60 mt-0.5">
               Last contact: {formatEngagementTime(lastEngagementTime)}
             </p>
           )}
@@ -162,7 +163,7 @@ export function CompanyCard({
         <div className="flex items-center gap-1 shrink-0">
           {isMet && (
             <Badge className={cn(
-              "text-[10px] px-1.5 py-0 h-4",
+              "text-xs px-1.5 py-0 h-4",
               rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
               rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
               rating === "cold" && "bg-primary/20 text-primary",
@@ -171,7 +172,9 @@ export function CompanyCard({
               {rating ? `MET·${rating.toUpperCase()}` : "MET"}
             </Badge>
           )}
-          <button
+          <Button
+            variant="ghost"
+            size="icon"
             onClick={(e) => {
               e.stopPropagation();
               onToggleMet(company.id);
@@ -185,7 +188,7 @@ export function CompanyCard({
             title={isMet ? "Unmark met" : "Mark as met"}
           >
             {isMet ? "✓" : "○"}
-          </button>
+          </Button>
         </div>
       </div>
       {company.booth && (

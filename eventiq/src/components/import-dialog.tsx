@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Upload,
   ChevronRight,
@@ -427,8 +428,8 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
         <div className="flex-1 min-h-0 overflow-auto">
           {step === "paste" && (
             <div className="space-y-3">
-              <textarea
-                className="w-full h-64 bg-muted/30 border border-border rounded-md p-3 text-sm font-mono resize-none focus:outline-none focus:ring-1 focus:ring-primary"
+              <Textarea
+                className="w-full h-64 bg-muted/30 font-mono resize-none"
                 placeholder={`Paste your data here...\n\nSupported formats:\n- CSV (comma-separated)\n- TSV (tab-separated)\n- JSON (array of objects)\n\nExample CSV:\nCompany,Contact,Title,Email,Website\nAcme Corp,John Doe,CEO,john@acme.com,acme.com\nBeta Inc,Jane Smith,VP Sales,jane@beta.io,beta.io`}
                 value={rawInput}
                 onChange={(e) => setRawInput(e.target.value)}
@@ -463,7 +464,7 @@ export function ImportDialog({ open, onClose, companies, onImport }: ImportDialo
                         {imp.employees > 0 && <span>{imp.employees} employees</span>}
                       </div>
                     </div>
-                    <Badge variant="outline" className="text-[10px] shrink-0">
+                    <Badge variant="outline" className="text-xs shrink-0">
                       {imp._matchedExistingId ? "Update" : "New"}
                     </Badge>
                   </div>

@@ -189,11 +189,11 @@ export function SearchCommand({ companies, open, onOpenChange, onSelect }: Searc
                       <span className="font-medium">{result.company.name}</span>
                       {query.length > 0 && result.matchField !== "name" && (
                         <div className="flex items-center gap-1.5 mt-0.5">
-                          <span className={cn("text-[10px] font-medium", fieldBadgeColor[result.matchField] || "text-muted-foreground")}>
+                          <span className={cn("text-xs font-medium", fieldBadgeColor[result.matchField] || "text-muted-foreground")}>
                             {result.matchField}
                           </span>
                           {result.matchSnippet && (
-                            <span className="text-[11px] text-muted-foreground truncate max-w-[300px]">
+                            <span className="text-xs text-muted-foreground truncate max-w-[300px]">
                               {result.matchSnippet}
                             </span>
                           )}
@@ -207,7 +207,7 @@ export function SearchCommand({ companies, open, onOpenChange, onSelect }: Searc
                     </div>
                     <Badge
                       variant="outline"
-                      className={cn("text-[10px] ml-2 shrink-0", badgeStyles[type] || "")}
+                      className={cn("text-xs ml-2 shrink-0", badgeStyles[type] || "")}
                     >
                       {type}
                     </Badge>
