@@ -29,7 +29,17 @@ export interface IndustryTheme {
   hvAngle: string; // HyperVerge positioning angle
 }
 
-// Parse date from news source strings like "Yahoo Finance, Dec 2025" or "PR Newswire, Jul 2025"
+// Parse date from news item — uses `p` (published_at ISO) if available, falls back to source string
+function parseDateFromNews(news: NewsItem): number {
+  // Prefer structured published_at field
+  if (news.p) {
+    const ts = new Date(news.p).getTime();
+    if (!isNaN(ts)) return ts;
+  }
+  return parseDateFromSource(news.s || "");
+}
+
+// Fallback: parse date from source strings like "Yahoo Finance, Dec 2025"
 function parseDateFromSource(source: string): number {
   const months: Record<string, number> = {
     jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
@@ -47,7 +57,7 @@ function parseDateFromSource(source: string): number {
   }
 
   // Try "YYYY" only
-  const yearMatch = source.match(/\b(202[3-6])\b/);
+  const yearMatch = source.match(/\b(202[3-9])\b/);
   if (yearMatch) {
     return new Date(parseInt(yearMatch[1]), 6, 1).getTime();
   }
@@ -98,7 +108,7 @@ export function buildFeedItems(companies: Company[]): FeedItem[] {
     for (const news of company.news) {
       if (!news.h || news.h.length < 5) continue;
 
-      const dateEstimate = parseDateFromSource(news.s || "");
+      const dateEstimate = parseDateFromNews(news);
       const signalType = classifySignal(news.h, news.d || "");
       const heat = classifyHeat(company, news, dateEstimate);
 

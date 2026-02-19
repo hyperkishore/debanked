@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { Company } from "@/lib/types";
+import { useMemo, useState, useEffect } from "react";
+import { Company, NewsItem } from "@/lib/types";
 import {
   buildFeedItems,
   getHotSignals,
@@ -13,6 +13,7 @@ import {
   SignalType,
   SIGNAL_TYPE_CONFIG,
 } from "@/lib/feed-helpers";
+import { getSupabase } from "@/lib/supabase";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -124,12 +125,70 @@ function ThemeCard({ title, description, companies, hvAngle, onSelectCompany, al
 export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
   const [activeSection, setActiveSection] = useState<FeedSection>("all");
   const [signalFilter, setSignalFilter] = useState<SignalType | "all">("all");
+  const [liveNews, setLiveNews] = useState<NewsItem[]>([]);
 
-  const allItems = useMemo(() => buildFeedItems(companies), [companies]);
+  // Fetch live news from Supabase company_news table (supplements baked-in data)
+  useEffect(() => {
+    const supabase = getSupabase();
+    if (!supabase) return;
+
+    let cancelled = false;
+    (async () => {
+      const { data, error } = await supabase
+        .from("company_news")
+        .select("*")
+        .order("published_at", { ascending: false })
+        .limit(200);
+
+      if (error || !data || cancelled) return;
+
+      // Convert Supabase rows to NewsItem format for merging
+      const items: NewsItem[] = data.map((row: Record<string, unknown>) => ({
+        h: String(row.headline || ""),
+        s: String(row.source || ""),
+        d: String(row.description || ""),
+        p: row.published_at ? String(row.published_at) : undefined,
+        _companyId: row.company_id,
+        _companyName: row.company_name,
+      } as NewsItem & { _companyId: number; _companyName: string }));
+      setLiveNews(items);
+    })();
+
+    return () => { cancelled = true; };
+  }, []);
+
+  // Merge baked-in companies with live news from Supabase
+  const companiesWithLiveNews = useMemo(() => {
+    if (liveNews.length === 0) return companies;
+
+    // Group live news by company_id
+    const newsMap = new Map<number, NewsItem[]>();
+    for (const item of liveNews) {
+      const cid = (item as unknown as { _companyId: number })._companyId;
+      if (!cid) continue;
+      const existing = newsMap.get(cid) || [];
+      existing.push(item);
+      newsMap.set(cid, existing);
+    }
+
+    return companies.map((c) => {
+      const additional = newsMap.get(c.id);
+      if (!additional) return c;
+
+      // Dedupe by headline
+      const existingHeadlines = new Set(c.news.map((n) => n.h.toLowerCase().trim()));
+      const newItems = additional.filter((n) => !existingHeadlines.has(n.h.toLowerCase().trim()));
+      if (newItems.length === 0) return c;
+
+      return { ...c, news: [...newItems, ...c.news] };
+    });
+  }, [companies, liveNews]);
+
+  const allItems = useMemo(() => buildFeedItems(companiesWithLiveNews), [companiesWithLiveNews]);
   const hotSignals = useMemo(() => getHotSignals(allItems), [allItems]);
   const fundingActivity = useMemo(() => getFundingActivity(allItems), [allItems]);
   const productLaunches = useMemo(() => getProductLaunches(allItems), [allItems]);
-  const marketStats = useMemo(() => getMarketStats(companies), [companies]);
+  const marketStats = useMemo(() => getMarketStats(companiesWithLiveNews), [companiesWithLiveNews]);
   const themes = useMemo(() => getIndustryThemes(), []);
 
   const filteredItems = useMemo(() => {

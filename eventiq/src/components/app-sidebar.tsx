@@ -2,6 +2,8 @@
 
 import { TabType } from "@/lib/types";
 import { StreakData } from "@/lib/streak-helpers";
+import { useAuth } from "@/contexts/auth-context";
+import { SyncIndicator } from "@/components/sync-indicator";
 import {
   Sidebar,
   SidebarContent,
@@ -14,7 +16,7 @@ import {
   SidebarMenuItem,
   SidebarHeader,
 } from "@/components/ui/sidebar";
-import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss } from "lucide-react";
+import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud } from "lucide-react";
 
 interface AppSidebarProps {
   activeTab: TabType;
@@ -47,6 +49,8 @@ export function AppSidebar({
   totalCount,
   streakData,
 }: AppSidebarProps) {
+  const { user, isConfigured, signIn, signOut } = useAuth();
+
   return (
     <Sidebar className="border-r border-sidebar-border">
       <SidebarHeader className="p-4">
@@ -54,10 +58,11 @@ export function AppSidebar({
           <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
             <span className="text-primary font-bold text-sm">EQ</span>
           </div>
-          <div>
+          <div className="flex-1 min-w-0">
             <h1 className="text-sm font-bold">EventIQ</h1>
             <p className="text-[10px] text-muted-foreground">MCA Market Intelligence</p>
           </div>
+          <SyncIndicator />
         </div>
       </SidebarHeader>
 
@@ -154,6 +159,39 @@ export function AppSidebar({
       </SidebarContent>
 
       <SidebarFooter className="p-4">
+        {/* Auth section */}
+        {isConfigured && (
+          <div className="mb-3 pb-3 border-b border-border/30">
+            {user ? (
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                  <span className="text-primary font-bold text-[10px]">
+                    {(user.user_metadata?.full_name || user.email || "U")[0].toUpperCase()}
+                  </span>
+                </div>
+                <span className="text-[11px] text-foreground truncate flex-1">
+                  {user.user_metadata?.full_name || user.email?.split("@")[0]}
+                </span>
+                <button
+                  onClick={signOut}
+                  className="p-1 rounded hover:bg-muted/50 text-muted-foreground"
+                  title="Sign out"
+                >
+                  <LogOut className="h-3 w-3" />
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={signIn}
+                className="flex items-center gap-2 w-full text-[11px] text-muted-foreground hover:text-foreground transition-colors px-1 py-1 rounded hover:bg-muted/30"
+              >
+                <Cloud className="h-3.5 w-3.5" />
+                <span>Sign in to sync</span>
+              </button>
+            )}
+          </div>
+        )}
+
         {/* Streak display */}
         {streakData.currentStreak > 0 && (
           <div className="flex items-center gap-2 mb-2" title={`Longest streak: ${streakData.longestStreak} days`}>
@@ -174,7 +212,7 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.8.00</span>
+          <span className="opacity-50">v2.9.00</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

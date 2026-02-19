@@ -1,0 +1,152 @@
+name: Daily News Refresh
+
+on:
+  schedule:
+    # Run at 8:00 AM UTC, Monday–Friday
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      priority:
+        description: 'Priority tier to refresh (P0, P1, TAM, all)'
+        required: false
+        default: ''
+      stale_days:
+        description: 'Refresh companies with news older than N days'
+        required: false
+        default: '30'
+
+env:
+  SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+  SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: eventiq
+        run: npm ci
+
+      - name: Determine refresh tier
+        id: tier
+        run: |
+          DOW=$(date +%u) # 1=Monday, 5=Friday
+          PRIORITY="${{ github.event.inputs.priority }}"
+
+          if [ -n "$PRIORITY" ]; then
+            echo "mode=--priority $PRIORITY" >> $GITHUB_OUTPUT
+            echo "label=Manual: $PRIORITY" >> $GITHUB_OUTPUT
+          elif [ "$DOW" = "1" ]; then
+            echo "mode=--priority P0" >> $GITHUB_OUTPUT
+            echo "label=Monday: P0 + P1" >> $GITHUB_OUTPUT
+          elif [ "$DOW" = "2" ]; then
+            echo "mode=--stale 14" >> $GITHUB_OUTPUT
+            echo "label=Tuesday: Stale >14 days" >> $GITHUB_OUTPUT
+          elif [ "$DOW" = "3" ]; then
+            echo "mode=--stale 30" >> $GITHUB_OUTPUT
+            echo "label=Wednesday: Stale >30 days" >> $GITHUB_OUTPUT
+          elif [ "$DOW" = "4" ]; then
+            echo "mode=--priority P1" >> $GITHUB_OUTPUT
+            echo "label=Thursday: P1 refresh" >> $GITHUB_OUTPUT
+          elif [ "$DOW" = "5" ]; then
+            echo "mode=--all" >> $GITHUB_OUTPUT
+            echo "label=Friday: Full sweep" >> $GITHUB_OUTPUT
+          else
+            echo "mode=--stale ${{ github.event.inputs.stale_days || '30' }}" >> $GITHUB_OUTPUT
+            echo "label=Stale refresh" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Generate batches
+        working-directory: eventiq
+        run: |
+          echo "Refresh tier: ${{ steps.tier.outputs.label }}"
+          node scripts/refresh.js ${{ steps.tier.outputs.mode }}
+
+      - name: Run Claude agent research (batch 1-5)
+        working-directory: eventiq
+        run: |
+          # Process each batch file with Claude API
+          for batch in scripts/refresh-batch-*.json; do
+            [ -f "$batch" ] || continue
+            BATCH_NUM=$(echo "$batch" | grep -o '[0-9]')
+            echo "Processing batch $BATCH_NUM..."
+
+            # Call Claude API to research companies in this batch
+            COMPANIES=$(cat "$batch")
+            RESULT=$(curl -s https://api.anthropic.com/v1/messages \
+              -H "x-api-key: $ANTHROPIC_API_KEY" \
+              -H "anthropic-version: 2023-06-01" \
+              -H "content-type: application/json" \
+              -d "$(cat <<PAYLOAD
+            {
+              "model": "claude-sonnet-4-20250514",
+              "max_tokens": 8192,
+              "messages": [{
+                "role": "user",
+                "content": "Research the following companies and find their latest news (last 3 months). For each company, return 2-4 news items with headline, source, description, and published date.\n\nReturn ONLY a JSON array where each element has: {id, name, news: [{h: headline, s: source, d: description, p: YYYY-MM-DD}]}\n\nCompanies:\n$COMPANIES"
+              }]
+            }
+PAYLOAD
+            )")
+
+            # Extract JSON from Claude response
+            echo "$RESULT" | node -e "
+              const data = JSON.parse(require('fs').readFileSync('/dev/stdin','utf8'));
+              const text = data.content?.[0]?.text || '';
+              const jsonMatch = text.match(/\[[\s\S]*\]/);
+              if (jsonMatch) {
+                require('fs').writeFileSync('scripts/refresh-result-${BATCH_NUM}.json', jsonMatch[0]);
+                console.log('  Batch ${BATCH_NUM}: saved result');
+              } else {
+                console.log('  Batch ${BATCH_NUM}: no JSON found in response');
+              }
+            " || echo "  Batch $BATCH_NUM: failed"
+
+            # Rate limit: wait between batches
+            sleep 5
+          done
+
+      - name: Write results to Supabase
+        working-directory: eventiq
+        run: |
+          if ls scripts/refresh-result-*.json 1>/dev/null 2>&1; then
+            node scripts/refresh-to-supabase.js scripts/refresh-result-*.json
+          else
+            echo "No result files found — skipping Supabase write"
+          fi
+
+      - name: Also merge into all-companies.json
+        working-directory: eventiq
+        run: |
+          if ls scripts/refresh-result-*.json 1>/dev/null 2>&1; then
+            node scripts/merge-enrichment.js scripts/refresh-result-*.json
+          fi
+
+      - name: Pull fresh news from Supabase
+        working-directory: eventiq
+        run: node scripts/pull-news-from-supabase.js
+
+      - name: Build static site
+        working-directory: eventiq
+        run: npm run build
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: daily news refresh (${{ steps.tier.outputs.label }})"
+            git push
+          fi

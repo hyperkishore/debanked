@@ -51,7 +51,7 @@ import { ChecklistTab } from "@/components/checklist-tab";
 import { DashboardTab } from "@/components/dashboard-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
 import { FeedTab } from "@/components/feed-tab";
-import { useLocalStorage } from "@/hooks/use-local-storage";
+import { useSyncedStorage } from "@/hooks/use-synced-storage";
 import { useKeyboard } from "@/hooks/use-keyboard";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { toast } from "sonner";
@@ -74,26 +74,26 @@ export default function Home() {
   const [mobileDetailOpen, setMobileDetailOpen] = useState(false);
 
   // Persistent state
-  const [metState, setMetState] = useLocalStorage<Record<string, boolean>>(
+  const [metState, setMetState] = useSyncedStorage<Record<string, boolean>>(
     "eventiq_met",
     {}
   );
-  const [ratingState, setRatingState] = useLocalStorage<
+  const [ratingState, setRatingState] = useSyncedStorage<
     Record<string, RatingData>
   >("eventiq_ratings", {});
-  const [notesState, setNotesState] = useLocalStorage<Record<string, string>>(
+  const [notesState, setNotesState] = useSyncedStorage<Record<string, string>>(
     "eventiq_notes",
     {}
   );
-  const [checkState, setCheckState] = useLocalStorage<Record<string, boolean>>(
+  const [checkState, setCheckState] = useSyncedStorage<Record<string, boolean>>(
     "eventiq_checks",
     {}
   );
-  const [quickNotes, setQuickNotes] = useLocalStorage<string>(
+  const [quickNotes, setQuickNotes] = useSyncedStorage<string>(
     "eventiq_quick_notes",
     ""
   );
-  const [engagements, setEngagements] = useLocalStorage<EngagementEntry[]>(
+  const [engagements, setEngagements] = useSyncedStorage<EngagementEntry[]>(
     "eventiq_engagements",
     []
   );
@@ -103,37 +103,37 @@ export default function Home() {
   const [chatOpen, setChatOpen] = useState(false);
 
   // Chat widget state
-  const [chatMessages, setChatMessages] = useLocalStorage<ChatMessage[]>(
+  const [chatMessages, setChatMessages] = useSyncedStorage<ChatMessage[]>(
     "eventiq_user_inputs",
     []
   );
 
   // Pipeline state
-  const [pipelineState, setPipelineState] = useLocalStorage<Record<string, PipelineRecord>>(
+  const [pipelineState, setPipelineState] = useSyncedStorage<Record<string, PipelineRecord>>(
     "eventiq_pipeline",
     {}
   );
 
   // Follow-up reminders state
-  const [followUps, setFollowUps] = useLocalStorage<FollowUpReminder[]>(
+  const [followUps, setFollowUps] = useSyncedStorage<FollowUpReminder[]>(
     "eventiq_follow_ups",
     []
   );
 
   // Sequence progress state
-  const [sequences, setSequences] = useLocalStorage<Record<number, SequenceProgress>>(
+  const [sequences, setSequences] = useSyncedStorage<Record<number, SequenceProgress>>(
     "eventiq_sequences",
     {}
   );
 
   // Custom tags per company
-  const [tagsState, setTagsState] = useLocalStorage<Record<number, string[]>>(
+  const [tagsState, setTagsState] = useSyncedStorage<Record<number, string[]>>(
     "eventiq_tags",
     {}
   );
 
   // Imported companies from localStorage (merged at runtime with build-time data)
-  const [importedCompanies, setImportedCompanies] = useLocalStorage<Company[]>(
+  const [importedCompanies, setImportedCompanies] = useSyncedStorage<Company[]>(
     "eventiq_imported_companies",
     []
   );

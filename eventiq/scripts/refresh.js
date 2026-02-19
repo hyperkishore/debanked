@@ -40,13 +40,35 @@ if (args.includes('--all')) {
   const days = parseInt(args[args.indexOf('--stale') + 1]) || 30;
   const cutoff = new Date();
   cutoff.setDate(cutoff.getDate() - days);
-  // Companies whose newest news is older than cutoff (or have no news)
+  const cutoffTs = cutoff.getTime();
+
+  const months = { jan:0, feb:1, mar:2, apr:3, may:4, jun:5, jul:6, aug:7, sep:8, oct:9, nov:10, dec:11 };
+
+  function parseNewsDate(news) {
+    // Prefer structured p (published_at ISO) field
+    if (news.p) {
+      const ts = new Date(news.p).getTime();
+      if (!isNaN(ts)) return ts;
+    }
+    // Fallback: parse "Mon YYYY" from source string
+    if (news.s) {
+      const m = news.s.match(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s+(\d{4})\b/i);
+      if (m) {
+        const month = months[m[1].toLowerCase().slice(0, 3)];
+        const year = parseInt(m[2]);
+        if (!isNaN(month) && !isNaN(year)) return new Date(year, month, 15).getTime();
+      }
+    }
+    return 0; // unparseable = stale
+  }
+
   targets = data.filter(c => {
     if (!c.news || c.news.length === 0) return true;
-    // Try to parse date from news source field
-    return true; // For now, include all — date parsing is unreliable
+    // Check if the newest news item is older than cutoff
+    const newestTs = Math.max(...c.news.map(parseNewsDate));
+    return newestTs < cutoffTs;
   }).filter(c => c.desc && c.desc.length > 0); // Only researched ones
-  console.log(`Mode: Stale (>${days} days) — includes all researched companies`);
+  console.log(`Mode: Stale (>${days} days) — ${targets.length} companies with old/missing news`);
 } else {
   targets = data.filter(c => c.source && c.source.includes('researched'));
   console.log('Mode: Researched companies only');

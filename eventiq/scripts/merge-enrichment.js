@@ -107,7 +107,7 @@ for (const company of allCompanies) {
     updatedLeaders++;
   }
 
-  // Merge news: append new headlines (dedup by normalized headline)
+  // Merge news: append new headlines (dedup by normalized headline), preserve p field
   if (enrichment.news && enrichment.news.length > 0) {
     const existingHeadlines = new Set(
       (company.news || []).map(n => n.h.toLowerCase().trim().replace(/[^a-z0-9]/g, ''))
@@ -116,6 +116,17 @@ for (const company of allCompanies) {
       const norm = n.h.toLowerCase().trim().replace(/[^a-z0-9]/g, '');
       return !existingHeadlines.has(norm);
     });
+    // Also backfill p field on existing news if enrichment provides it
+    if (company.news) {
+      for (const existing of company.news) {
+        if (existing.p) continue; // already has published_at
+        const normH = existing.h.toLowerCase().trim().replace(/[^a-z0-9]/g, '');
+        const enriched = enrichment.news.find(n =>
+          n.h.toLowerCase().trim().replace(/[^a-z0-9]/g, '') === normH && n.p
+        );
+        if (enriched) existing.p = enriched.p;
+      }
+    }
     if (newNews.length > 0) {
       company.news = [...newNews, ...(company.news || [])]; // New news first
       updatedNews++;

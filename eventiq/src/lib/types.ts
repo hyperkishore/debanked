@@ -4,9 +4,10 @@ export interface Contact {
 }
 
 export interface NewsItem {
-  h: string;
-  s: string;
-  d: string;
+  h: string;  // headline
+  s: string;  // source + date string (e.g. "Yahoo Finance, Dec 2025")
+  d: string;  // description
+  p?: string; // published_at ISO date (e.g. "2025-12-15") — used for reliable date sorting
 }
 
 export interface Leader {
