@@ -19,7 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { Building2, Clock, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud } from "lucide-react";
+import { Building2, Users, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -38,7 +38,7 @@ const navItems: { id: TabType; label: string; icon: React.ComponentType<{ classN
   { id: "feed", label: "Market Intel", icon: Rss, shortcut: "7" },
   { id: "dashboard", label: "Dashboard", icon: BarChart3, shortcut: "5" },
   { id: "pipeline", label: "Pipeline", icon: Kanban, shortcut: "6" },
-  { id: "schedule", label: "Schedule", icon: Clock, shortcut: "2" },
+  { id: "schedule", label: "Roundtable", icon: Users, shortcut: "2" },
   { id: "pitch", label: "Pitch", icon: Layers, shortcut: "3" },
   { id: "checklist", label: "Checklist", icon: CheckSquare, shortcut: "4" },
 ];
@@ -226,7 +226,7 @@ export function AppSidebar({
           </span>
           <div className="flex items-center gap-1">
             <ThemeToggle />
-            <span className="opacity-50">v2.9.06</span>
+            <span className="opacity-50">v2.9.07</span>
           </div>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
