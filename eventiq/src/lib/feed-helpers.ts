@@ -112,8 +112,9 @@ export function buildFeedItems(companies: Company[]): FeedItem[] {
       const signalType = classifySignal(news.h, news.d || "");
       const heat = classifyHeat(company, news, dateEstimate);
 
+      const newsIndex = company.news.indexOf(news);
       items.push({
-        id: `${company.id}-${news.h.slice(0, 20)}`,
+        id: `${company.id}-${newsIndex}-${news.h.slice(0, 30)}`,
         companyId: company.id,
         companyName: company.name,
         companyType: company.type,

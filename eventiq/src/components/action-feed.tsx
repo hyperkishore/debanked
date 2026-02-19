@@ -3,8 +3,11 @@
 import { SuggestedAction, getSuggestedActions } from "@/lib/action-feed-helpers";
 import { getTodayProgress, getRecentActivityCount, StreakData } from "@/lib/streak-helpers";
 import { Company, RatingData, EngagementEntry } from "@/lib/types";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { useMemo, useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 interface ActionFeedProps {
   companies: Company[];
@@ -47,7 +50,7 @@ function DailyGoalRing({ done, goal, size = 48 }: { done: number; goal: number; 
           className="progress-ring-circle"
         />
       </svg>
-      <span className="absolute text-[10px] font-bold">{done}</span>
+      <span className="absolute text-xs font-bold">{done}</span>
     </div>
   );
 }
@@ -69,15 +72,15 @@ const priorityStyles = {
 };
 
 const priorityBadge = {
-  urgent: "bg-[var(--sqo)]/20 text-[var(--sqo)]",
-  high: "bg-[var(--client)]/20 text-[var(--client)]",
-  normal: "bg-primary/20 text-primary",
+  urgent: "text-[var(--sqo)] border-[var(--sqo)]/30",
+  high: "text-[var(--client)] border-[var(--client)]/30",
+  normal: "text-primary border-primary/30",
 };
 
-const typeBadge: Record<string, string> = {
-  "follow-up": "bg-[var(--client)]/15 text-[var(--client)]",
-  "hot-lead": "bg-[var(--sqo)]/15 text-[var(--sqo)]",
-  "suggested": "bg-primary/15 text-primary",
+const typeBadgeStyle: Record<string, string> = {
+  "follow-up": "text-[var(--client)] border-[var(--client)]/30",
+  "hot-lead": "text-[var(--sqo)] border-[var(--sqo)]/30",
+  "suggested": "text-primary border-primary/30",
 };
 
 export function ActionFeed({
@@ -125,9 +128,10 @@ export function ActionFeed({
   return (
     <div className="rounded-lg bg-card border border-border overflow-hidden">
       {/* Header */}
-      <button
+      <Button
+        variant="ghost"
         onClick={toggleCollapsed}
-        className="w-full flex items-center justify-between p-3 hover:bg-secondary/20 transition-colors"
+        className="w-full flex items-center justify-between p-3 h-auto rounded-none hover:bg-secondary/20"
       >
         <div className="flex items-center gap-3">
           <DailyGoalRing done={todayProgress.done} goal={todayProgress.goal} />
@@ -136,7 +140,7 @@ export function ActionFeed({
               Today&apos;s Actions
             </h3>
             <div className="flex items-center gap-2 mt-0.5">
-              <span className="text-[10px] text-muted-foreground">
+              <span className="text-xs text-muted-foreground">
                 {todayProgress.done}/{todayProgress.goal} daily goal
               </span>
               <ActivityPulse count={recentActivity} />
@@ -145,15 +149,13 @@ export function ActionFeed({
         </div>
         <div className="flex items-center gap-2">
           {actions.length > 0 && (
-            <span className="text-[10px] font-medium px-1.5 py-0.5 rounded bg-[var(--sqo)]/20 text-[var(--sqo)]">
+            <Badge variant="outline" className="text-xs text-[var(--sqo)] border-[var(--sqo)]/30">
               {actions.length} actions
-            </span>
+            </Badge>
           )}
-          <span className={cn("text-muted-foreground transition-transform text-sm", !collapsed && "rotate-180")}>
-            &#x25BE;
-          </span>
+          <ChevronDown className={cn("h-4 w-4 text-muted-foreground transition-transform", !collapsed && "rotate-180")} />
         </div>
-      </button>
+      </Button>
 
       {/* Collapsible body */}
       {!collapsed && actions.length > 0 && (
@@ -196,7 +198,7 @@ function ActionSection({
 }) {
   return (
     <div>
-      <h4 className="text-[10px] font-semibold uppercase tracking-wider mb-1.5" style={{ color }}>
+      <h4 className="text-xs font-semibold uppercase tracking-wider mb-1.5" style={{ color }}>
         {title}
       </h4>
       <div className="space-y-1.5">
@@ -211,25 +213,24 @@ function ActionSection({
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-1.5">
                 <span className="font-medium truncate">{action.companyName}</span>
-                <span className={cn("text-[9px] px-1 py-0.5 rounded font-medium", typeBadge[action.type])}>
+                <Badge variant="outline" className={cn("text-xs px-1.5 py-0 h-5", typeBadgeStyle[action.type])}>
                   {action.type === "follow-up" ? "Follow-up" : "Hot"}
-                </span>
+                </Badge>
               </div>
               <p className="text-muted-foreground mt-0.5 truncate">{action.reason}</p>
             </div>
-            <button
+            <Button
+              variant="outline"
+              size="sm"
               onClick={() => onAction(action.companyId)}
-              className={cn(
-                "shrink-0 text-[10px] font-medium px-2 py-1 rounded-md transition-colors",
-                priorityBadge[action.priority]
-              )}
+              className={cn("shrink-0 text-xs h-7 px-2", priorityBadge[action.priority])}
             >
               {action.cta}
-            </button>
+            </Button>
           </div>
         ))}
         {actions.length > 5 && (
-          <p className="text-[10px] text-muted-foreground pl-2">+{actions.length - 5} more</p>
+          <p className="text-xs text-muted-foreground pl-2">+{actions.length - 5} more</p>
         )}
       </div>
     </div>

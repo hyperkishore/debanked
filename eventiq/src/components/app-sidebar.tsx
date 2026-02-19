@@ -212,7 +212,7 @@ export function AppSidebar({
           <span>
             {metCount}/{totalCount} met
           </span>
-          <span className="opacity-50">v2.9.01</span>
+          <span className="opacity-50">v2.9.02</span>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
           <div

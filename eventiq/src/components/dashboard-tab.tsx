@@ -1,12 +1,15 @@
 "use client";
 
 import { Company, RatingData, EngagementEntry } from "@/lib/types";
-import { isResearched, getResearchScore, getResearchTier } from "@/lib/types";
+import { isResearched, getResearchScore } from "@/lib/types";
 import { getLastEngagement, getChannelConfig, formatEngagementTime } from "@/lib/engagement-helpers";
 import { StreakData } from "@/lib/streak-helpers";
 import { ActionFeed } from "@/components/action-feed";
+import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
+import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 import { useMemo } from "react";
 
 interface DashboardTabProps {
@@ -25,21 +28,23 @@ function StatCard({ label, value, sub }: { label: string; value: string | number
     <div className="rounded-lg bg-card border border-border p-4">
       <p className="text-xs text-muted-foreground uppercase tracking-wider">{label}</p>
       <p className="text-2xl font-bold mt-1">{value}</p>
-      {sub && <p className="text-[11px] text-muted-foreground mt-0.5">{sub}</p>}
+      {sub && <p className="text-xs text-muted-foreground mt-1">{sub}</p>}
     </div>
   );
 }
 
 function HorizontalBar({ items, total }: { items: { label: string; value: number; color: string }[]; total: number }) {
   return (
-    <div className="space-y-2">
+    <div className="space-y-3">
       {items.map((item) => {
         const pct = total > 0 ? (item.value / total) * 100 : 0;
         return (
-          <div key={item.label} className="space-y-0.5">
+          <div key={item.label} className="space-y-1">
             <div className="flex items-center justify-between text-xs">
               <span className="text-muted-foreground">{item.label}</span>
-              <span className="font-medium">{item.value} <span className="text-muted-foreground/60">({pct.toFixed(0)}%)</span></span>
+              <span className="font-medium tabular-nums">
+                {item.value} <span className="text-muted-foreground/60">({pct.toFixed(0)}%)</span>
+              </span>
             </div>
             <div className="w-full bg-muted/30 rounded-full h-2">
               <div
@@ -57,7 +62,7 @@ function HorizontalBar({ items, total }: { items: { label: string; value: number
 function StackedBar({ segments }: { segments: { label: string; value: number; color: string }[] }) {
   const total = segments.reduce((sum, s) => sum + s.value, 0);
   return (
-    <div className="space-y-2">
+    <div className="space-y-3">
       <div className="flex w-full h-6 rounded-lg overflow-hidden">
         {segments.map((seg) => {
           const pct = total > 0 ? (seg.value / total) * 100 : 0;
@@ -77,7 +82,7 @@ function StackedBar({ segments }: { segments: { label: string; value: number; co
           <div key={seg.label} className="flex items-center gap-1.5">
             <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: seg.color }} />
             <span className="text-muted-foreground">{seg.label}</span>
-            <span className="font-medium">{seg.value}</span>
+            <span className="font-medium tabular-nums">{seg.value}</span>
           </div>
         ))}
       </div>
@@ -88,19 +93,19 @@ function StackedBar({ segments }: { segments: { label: string; value: number; co
 function VerticalBarChart({ buckets }: { buckets: { label: string; value: number }[] }) {
   const maxVal = Math.max(...buckets.map((b) => b.value), 1);
   return (
-    <div className="flex items-end gap-2 h-32">
+    <div className="flex items-end gap-2 h-36">
       {buckets.map((b) => {
         const height = (b.value / maxVal) * 100;
         return (
           <div key={b.label} className="flex-1 flex flex-col items-center gap-1">
-            <span className="text-[10px] font-medium text-foreground">{b.value}</span>
-            <div className="w-full bg-muted/30 rounded-t flex flex-col justify-end" style={{ height: "100%" }}>
+            <span className="text-xs font-medium tabular-nums text-foreground">{b.value}</span>
+            <div className="w-full bg-muted/20 rounded-t-md flex flex-col justify-end" style={{ height: "100%" }}>
               <div
-                className="bg-primary/60 rounded-t transition-all w-full"
+                className="bg-primary/60 rounded-t-md transition-all w-full"
                 style={{ height: `${height}%` }}
               />
             </div>
-            <span className="text-[9px] text-muted-foreground text-center leading-tight">{b.label}</span>
+            <span className="text-xs text-muted-foreground text-center leading-tight">{b.label}</span>
           </div>
         );
       })}
@@ -109,12 +114,14 @@ function VerticalBarChart({ buckets }: { buckets: { label: string; value: number
 }
 
 function ProgressRow({ label, done, total, color }: { label: string; done: number; total: number; color: string }) {
-  const pct = total > 0 ? (done / total) * 100 : 0;
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
   return (
-    <div className="space-y-0.5">
+    <div className="space-y-1">
       <div className="flex items-center justify-between text-xs">
         <span className="text-muted-foreground">{label}</span>
-        <span className="font-medium">{done}/{total} <span className="text-muted-foreground/60">({pct.toFixed(0)}%)</span></span>
+        <span className="font-medium tabular-nums">
+          {done}/{total} <span className="text-muted-foreground/60">({pct}%)</span>
+        </span>
       </div>
       <div className="w-full bg-muted/30 rounded-full h-2">
         <div
@@ -126,6 +133,15 @@ function ProgressRow({ label, done, total, color }: { label: string; done: numbe
   );
 }
 
+function SectionHeader({ title, description }: { title: string; description?: string }) {
+  return (
+    <div>
+      <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{title}</h3>
+      {description && <p className="text-xs text-muted-foreground/70 mt-0.5">{description}</p>}
+    </div>
+  );
+}
+
 // --- Main component ---
 
 export function DashboardTab({ companies, metState, engagements, ratingState, streakData, onOpenEngagement }: DashboardTabProps) {
@@ -133,25 +149,20 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
     const total = companies.length;
     const p0 = companies.filter((c) => c.priority <= 2);
     const researched = companies.filter(isResearched);
-    const metCount = Object.values(metState).filter(Boolean).length;
-    const withEmployees = companies.filter((c) => c.employees && c.employees > 0);
-    const avgEmployees = withEmployees.length > 0
-      ? Math.round(withEmployees.reduce((s, c) => s + (c.employees || 0), 0) / withEmployees.length)
-      : 0;
 
     // Priority breakdown
     const prioritySegments = [
-      { label: "P0", value: companies.filter((c) => c.priority <= 2).length, color: "oklch(0.58 0.22 25)" },
-      { label: "P1", value: companies.filter((c) => c.priority === 3 || c.priority === 4).length, color: "oklch(0.72 0.19 85)" },
-      { label: "TBC", value: companies.filter((c) => c.priority === 5 || c.priority === 6).length, color: "oklch(0.55 0.05 250)" },
-      { label: "Not Priority", value: companies.filter((c) => c.priority === 7).length, color: "oklch(0.35 0.02 270)" },
+      { label: "P0", value: companies.filter((c) => c.priority <= 2).length, color: "var(--sqo)" },
+      { label: "P1", value: companies.filter((c) => c.priority === 3 || c.priority === 4).length, color: "var(--client)" },
+      { label: "TBC", value: companies.filter((c) => c.priority === 5 || c.priority === 6).length, color: "var(--tam)" },
+      { label: "Not Priority", value: companies.filter((c) => c.priority === 7).length, color: "var(--muted-foreground)" },
     ];
 
     // Source breakdown
     const sourceItems = [
-      { label: "EventIQ Only", value: companies.filter((c) => c.source?.includes("eventiq") && !c.source?.includes("tam")).length, color: "oklch(0.65 0.17 145)" },
-      { label: "TAM Only", value: companies.filter((c) => c.source?.includes("tam") && !c.source?.includes("eventiq")).length, color: "oklch(0.55 0.05 250)" },
-      { label: "Both", value: companies.filter((c) => c.source?.includes("eventiq") && c.source?.includes("tam")).length, color: "oklch(0.65 0.15 250)" },
+      { label: "EventIQ Only", value: companies.filter((c) => c.source?.includes("eventiq") && !c.source?.includes("tam")).length, color: "var(--icp)" },
+      { label: "TAM Only", value: companies.filter((c) => c.source?.includes("tam") && !c.source?.includes("eventiq")).length, color: "var(--tam)" },
+      { label: "Both", value: companies.filter((c) => c.source?.includes("eventiq") && c.source?.includes("tam")).length, color: "var(--primary)" },
     ];
 
     // Size distribution
@@ -172,7 +183,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
     const topLocations = Object.entries(locCounts)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 8)
-      .map(([ label, value ]) => ({ label, value, color: "oklch(0.65 0.15 250)" }));
+      .map(([label, value]) => ({ label, value, color: "var(--primary)" }));
     const locTotal = companies.filter((c) => c.location).length;
 
     // Research progress
@@ -182,10 +193,10 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
     // Data quality distribution
     const qualitySegments = [
-      { label: "Complete (80+)", value: companies.filter(c => getResearchScore(c) >= 80).length, color: "oklch(0.65 0.17 145)" },
-      { label: "Good (50-79)", value: companies.filter(c => { const s = getResearchScore(c); return s >= 50 && s < 80; }).length, color: "oklch(0.65 0.15 250)" },
-      { label: "Partial (25-49)", value: companies.filter(c => { const s = getResearchScore(c); return s >= 25 && s < 50; }).length, color: "oklch(0.72 0.19 85)" },
-      { label: "Minimal (<25)", value: companies.filter(c => getResearchScore(c) < 25).length, color: "oklch(0.58 0.22 25)" },
+      { label: "Complete (80+)", value: companies.filter((c) => getResearchScore(c) >= 80).length, color: "var(--icp)" },
+      { label: "Good (50-79)", value: companies.filter((c) => { const s = getResearchScore(c); return s >= 50 && s < 80; }).length, color: "var(--primary)" },
+      { label: "Partial (25-49)", value: companies.filter((c) => { const s = getResearchScore(c); return s >= 25 && s < 50; }).length, color: "var(--client)" },
+      { label: "Minimal (<25)", value: companies.filter((c) => getResearchScore(c) < 25).length, color: "var(--sqo)" },
     ];
     const avgQuality = total > 0
       ? Math.round(companies.reduce((s, c) => s + getResearchScore(c), 0) / total)
@@ -195,8 +206,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
       total,
       p0Count: p0.length,
       researchedCount: researched.length,
-      metCount,
-      avgEmployees,
+      avgQuality,
       prioritySegments,
       sourceItems,
       sizeBuckets,
@@ -208,16 +218,13 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
       p1Total: p1Companies.length,
       overallResearched: researched.length,
       qualitySegments,
-      avgQuality,
     };
   }, [companies, metState]);
 
   // Engagement analytics
   const engagementStats = useMemo(() => {
     const totalEngagements = engagements.length;
-
-    // Unique companies engaged
-    const engagedCompanyIds = new Set(engagements.map(e => e.companyId));
+    const engagedCompanyIds = new Set(engagements.map((e) => e.companyId));
     const companiesEngaged = engagedCompanyIds.size;
 
     // Channel breakdown
@@ -232,7 +239,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
         return { label: config.label, value: count, color: channelToColor(channel) };
       });
 
-    // Hottest prospects: companies with most engagements (top 8)
+    // Hottest prospects
     const companyEngagementCounts: Record<number, number> = {};
     for (const e of engagements) {
       companyEngagementCounts[e.companyId] = (companyEngagementCounts[e.companyId] || 0) + 1;
@@ -241,7 +248,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
       .sort((a, b) => b[1] - a[1])
       .slice(0, 8)
       .map(([id, count]) => {
-        const company = companies.find(c => c.id === parseInt(id));
+        const company = companies.find((c) => c.id === parseInt(id));
         const last = getLastEngagement(engagements, parseInt(id));
         return {
           id: parseInt(id),
@@ -253,13 +260,13 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
         };
       });
 
-    // Needs follow-up: companies with engagements but last touch > 3 days ago
+    // Needs follow-up
     const threeDaysMs = 3 * 24 * 60 * 60 * 1000;
     const now = Date.now();
     const needsFollowUp = Object.entries(companyEngagementCounts)
       .filter(([id]) => {
         const last = getLastEngagement(engagements, parseInt(id));
-        return last && (now - new Date(last.timestamp).getTime()) > threeDaysMs;
+        return last && now - new Date(last.timestamp).getTime() > threeDaysMs;
       })
       .sort((a, b) => {
         const lastA = getLastEngagement(engagements, parseInt(a[0]));
@@ -268,7 +275,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
       })
       .slice(0, 6)
       .map(([id, count]) => {
-        const company = companies.find(c => c.id === parseInt(id));
+        const company = companies.find((c) => c.id === parseInt(id));
         const last = getLastEngagement(engagements, parseInt(id));
         const daysSince = last ? Math.floor((now - new Date(last.timestamp).getTime()) / 86400000) : 999;
         return {
@@ -281,12 +288,12 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
         };
       });
 
-    // Recent activity (last 10)
+    // Recent activity
     const recentActivity = [...engagements]
       .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())
       .slice(0, 10)
-      .map(e => {
-        const company = companies.find(c => c.id === e.companyId);
+      .map((e) => {
+        const company = companies.find((c) => c.id === e.companyId);
         return {
           ...e,
           companyName: company?.name || `Company #${e.companyId}`,
@@ -314,6 +321,7 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
   return (
     <ScrollArea className="h-full">
       <div className="p-4 md:p-6 max-w-4xl mx-auto space-y-6">
+        {/* Page header */}
         <div>
           <h2 className="text-lg font-bold">Dashboard</h2>
           <p className="text-xs text-muted-foreground mt-0.5">Market intelligence overview</p>
@@ -339,23 +347,23 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
         {/* Priority breakdown */}
         <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Priority Breakdown</h3>
+          <SectionHeader title="Priority Breakdown" />
           <StackedBar segments={stats.prioritySegments} />
         </div>
 
         {/* Data Quality + Research Progress */}
         <div className="grid md:grid-cols-2 gap-4">
           <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Data Quality</h3>
+            <SectionHeader title="Data Quality" />
             <StackedBar segments={stats.qualitySegments} />
           </div>
 
           <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Research Progress</h3>
-            <div className="space-y-2.5">
-              <ProgressRow label="P0 Companies" done={stats.p0Researched} total={stats.p0Total} color="oklch(0.58 0.22 25)" />
-              <ProgressRow label="P1 Companies" done={stats.p1Researched} total={stats.p1Total} color="oklch(0.72 0.19 85)" />
-              <ProgressRow label="Overall" done={stats.overallResearched} total={stats.total} color="oklch(0.65 0.15 250)" />
+            <SectionHeader title="Research Progress" />
+            <div className="space-y-3">
+              <ProgressRow label="P0 Companies" done={stats.p0Researched} total={stats.p0Total} color="var(--sqo)" />
+              <ProgressRow label="P1 Companies" done={stats.p1Researched} total={stats.p1Total} color="var(--client)" />
+              <ProgressRow label="Overall" done={stats.overallResearched} total={stats.total} color="var(--primary)" />
             </div>
           </div>
         </div>
@@ -372,30 +380,35 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
             <div className="grid md:grid-cols-2 gap-4">
               {/* Channel breakdown */}
               <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-                <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">By Channel</h3>
+                <SectionHeader title="By Channel" />
                 <HorizontalBar items={engagementStats.channelItems} total={engagementStats.totalEngagements} />
               </div>
 
               {/* Hottest prospects */}
               <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-                <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Hottest Prospects</h3>
-                <div className="space-y-1.5">
+                <SectionHeader title="Hottest Prospects" />
+                <div className="space-y-2">
                   {engagementStats.hottestProspects.map((p) => (
                     <div key={p.id} className="flex items-center justify-between text-xs">
                       <div className="flex items-center gap-1.5 min-w-0">
-                        <div className={`w-1.5 h-1.5 rounded-full shrink-0 ${typeColorDot[p.type] || "bg-muted"}`} />
+                        <div className={cn("w-2 h-2 rounded-full shrink-0", typeColorDot[p.type] || "bg-muted")} />
                         <span className="truncate">{p.name}</span>
                       </div>
-                      <div className="flex items-center gap-2 shrink-0">
+                      <div className="flex items-center gap-2 shrink-0 ml-2">
                         {p.rating && (
-                          <span className={`text-[10px] font-medium ${
-                            p.rating === "hot" ? "text-[var(--sqo)]" :
-                            p.rating === "warm" ? "text-[var(--client)]" : "text-primary"
-                          }`}>
-                            {p.rating.toUpperCase()}
-                          </span>
+                          <Badge
+                            variant="outline"
+                            className={cn(
+                              "text-xs px-1.5 py-0 h-5",
+                              p.rating === "hot" ? "text-[var(--sqo)] border-[var(--sqo)]/30" :
+                              p.rating === "warm" ? "text-[var(--client)] border-[var(--client)]/30" :
+                              "text-primary border-primary/30"
+                            )}
+                          >
+                            {p.rating}
+                          </Badge>
                         )}
-                        <span className="font-medium">{p.count}</span>
+                        <span className="font-medium tabular-nums">{p.count}</span>
                         <span className="text-muted-foreground/60">{p.lastTouch}</span>
                       </div>
                     </div>
@@ -409,17 +422,16 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
             {/* Needs Follow-up */}
             {engagementStats.needsFollowUp.length > 0 && (
-              <div className="rounded-lg bg-card border border-amber-500/20 p-4 space-y-3">
-                <h3 className="text-xs font-semibold uppercase tracking-wider text-amber-400">Needs Follow-up</h3>
-                <p className="text-[11px] text-muted-foreground">Companies with no outreach in 3+ days</p>
+              <div className="rounded-lg bg-card border border-[var(--client)]/20 p-4 space-y-3">
+                <SectionHeader title="Needs Follow-up" description="Companies with no outreach in 3+ days" />
                 <div className="grid md:grid-cols-2 gap-2">
                   {engagementStats.needsFollowUp.map((c) => (
                     <div key={c.id} className="flex items-center justify-between text-xs p-2 rounded-md bg-muted/20">
                       <div className="flex items-center gap-1.5 min-w-0">
-                        <div className={`w-1.5 h-1.5 rounded-full shrink-0 ${typeColorDot[c.type] || "bg-muted"}`} />
+                        <div className={cn("w-2 h-2 rounded-full shrink-0", typeColorDot[c.type] || "bg-muted")} />
                         <span className="truncate font-medium">{c.name}</span>
                       </div>
-                      <span className="text-amber-400/80 shrink-0">{c.daysSince}d ago</span>
+                      <span className="text-[var(--client)] shrink-0 ml-2 tabular-nums">{c.daysSince}d ago</span>
                     </div>
                   ))}
                 </div>
@@ -428,15 +440,15 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
             {/* Recent Activity */}
             <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Recent Activity</h3>
+              <SectionHeader title="Recent Activity" />
               <div className="space-y-2">
                 {engagementStats.recentActivity.map((e) => {
                   const config = getChannelConfig(e.channel);
                   return (
                     <div key={e.id} className="flex items-center gap-2 text-xs">
-                      <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded ${config.colorClass}`}>
+                      <Badge variant="outline" className={cn("text-xs px-1.5 py-0 h-5 shrink-0", config.colorClass)}>
                         {config.label}
-                      </span>
+                      </Badge>
                       <div className="flex items-center gap-1 min-w-0 flex-1">
                         <span className="font-medium truncate">{e.companyName}</span>
                         {e.contactName && (
@@ -457,19 +469,19 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
         {/* Source + Size charts */}
         <div className="grid md:grid-cols-2 gap-4">
           <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Data Source</h3>
+            <SectionHeader title="Data Source" />
             <HorizontalBar items={stats.sourceItems} total={stats.total} />
           </div>
 
           <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Company Size Distribution</h3>
+            <SectionHeader title="Company Size Distribution" />
             <VerticalBarChart buckets={stats.sizeBuckets} />
           </div>
         </div>
 
         {/* Top locations */}
         <div className="rounded-lg bg-card border border-border p-4 space-y-3">
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Top Locations</h3>
+          <SectionHeader title="Top Locations" />
           <HorizontalBar items={stats.topLocations} total={stats.locTotal} />
         </div>
       </div>
@@ -479,12 +491,12 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
 
 function channelToColor(channel: string): string {
   const colors: Record<string, string> = {
-    email: "oklch(0.65 0.15 250)",
-    linkedin: "oklch(0.65 0.17 220)",
-    imessage: "oklch(0.65 0.17 145)",
-    call: "oklch(0.72 0.19 85)",
-    meeting: "oklch(0.6 0.17 300)",
-    note: "oklch(0.5 0.05 270)",
+    email: "var(--primary)",
+    linkedin: "var(--tam)",
+    imessage: "var(--icp)",
+    call: "var(--client)",
+    meeting: "var(--sqo)",
+    note: "var(--muted-foreground)",
   };
-  return colors[channel] || "oklch(0.55 0.05 250)";
+  return colors[channel] || "var(--tam)";
 }
