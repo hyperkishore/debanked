@@ -203,6 +203,12 @@
   touch-action: manipulation;
 }
 
+/* Fix: Radix ScrollArea uses display:table internally which causes cards to expand
+   beyond column width. Force block display for pipeline columns (vertical scroll only). */
+[data-stage] [data-slot="scroll-area-viewport"] > div {
+  display: block !important;
+}
+
 /* Pipeline mobile scroll snap */
 .pipeline-scroll {
   scroll-snap-type: x proximity;
