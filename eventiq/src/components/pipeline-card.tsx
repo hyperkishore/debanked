@@ -3,6 +3,7 @@
 import { Company, RatingData } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
+import { DealEditPopover } from "@/components/deal-edit-popover";
 
 interface PipelineCardProps {
   company: Company;
@@ -10,8 +11,10 @@ interface PipelineCardProps {
   daysSince: number | null;
   lastChannel: string | null;
   dealValue?: number;
+  closeDate?: string;
   onOpen: (id: number) => void;
   onDragStart: (e: React.DragEvent, companyId: number) => void;
+  onUpdateDeal?: (companyId: number, dealValue: number | undefined, closeDate: string | undefined) => void;
 }
 
 const typeAccent: Record<string, string> = {
@@ -37,14 +40,27 @@ const channelIcon: Record<string, string> = {
   note: "\u{1F4DD}",
 };
 
+function formatCloseDate(dateStr: string): string {
+  const d = new Date(dateStr + "T00:00:00");
+  const now = new Date();
+  const diffDays = Math.ceil((d.getTime() - now.getTime()) / 86400000);
+  const formatted = d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  if (diffDays < 0) return `${formatted} (overdue)`;
+  if (diffDays === 0) return `${formatted} (today)`;
+  if (diffDays <= 7) return `${formatted} (${diffDays}d)`;
+  return formatted;
+}
+
 export function PipelineCard({
   company,
   ratingState,
   daysSince,
   lastChannel,
   dealValue,
+  closeDate,
   onOpen,
   onDragStart,
+  onUpdateDeal,
 }: PipelineCardProps) {
   const rating = ratingState[company.id];
 
@@ -90,12 +106,31 @@ export function PipelineCard({
             {channelIcon[lastChannel] || ""}
           </span>
         )}
-        {dealValue != null && dealValue > 0 && (
-          <span className="text-xs font-medium text-green-400 ml-auto">
-            ${dealValue >= 1000 ? `${(dealValue / 1000).toFixed(0)}K` : dealValue}
-          </span>
-        )}
+        <span className="ml-auto flex items-center gap-1">
+          {dealValue != null && dealValue > 0 && (
+            <span className="text-xs font-medium text-green-400">
+              ${dealValue >= 1000 ? `${(dealValue / 1000).toFixed(0)}K` : dealValue}
+            </span>
+          )}
+          {onUpdateDeal && (
+            <DealEditPopover
+              dealValue={dealValue}
+              closeDate={closeDate}
+              onSave={(v, d) => onUpdateDeal(company.id, v, d)}
+            />
+          )}
+        </span>
       </div>
+      {closeDate && (
+        <div className="mt-0.5">
+          <span className={cn(
+            "text-xs",
+            new Date(closeDate + "T00:00:00") < new Date() ? "text-[var(--sqo)]/80" : "text-muted-foreground/60"
+          )}>
+            Close: {formatCloseDate(closeDate)}
+          </span>
+        </div>
+      )}
     </Card>
   );
 }

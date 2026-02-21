@@ -49,6 +49,8 @@ import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
 import { PitchTab } from "@/components/pitch-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
+import { TaskQueueTab } from "@/components/task-queue-tab";
+import { TaskQueueState, DEFAULT_TASK_QUEUE_STATE } from "@/lib/task-queue-helpers";
 import { ChecklistTab } from "@/components/checklist-tab";
 import { DashboardTab } from "@/components/dashboard-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
@@ -71,6 +73,7 @@ export default function Home() {
   const [activeView, setActiveView] = useState<ViewType>("cards");
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery] = useState("");
+  const [activeTagFilter, setActiveTagFilter] = useState<string | null>(null);
   const [ratingDialogOpen, setRatingDialogOpen] = useState(false);
   const [ratingCompanyId, setRatingCompanyId] = useState<number | null>(null);
   const [mobileDetailOpen, setMobileDetailOpen] = useState(false);
@@ -132,6 +135,12 @@ export default function Home() {
   const [tagsState, setTagsState] = useSyncedStorage<Record<number, string[]>>(
     "eventiq_tags",
     {}
+  );
+
+  // Task queue state (daily task management)
+  const [taskQueueState, setTaskQueueState] = useSyncedStorage<TaskQueueState>(
+    "eventiq_task_queue",
+    DEFAULT_TASK_QUEUE_STATE
   );
 
   // Imported companies from localStorage (merged at runtime with build-time data)
@@ -329,7 +338,7 @@ export default function Home() {
         setFollowUps((prev) => [...prev, reminder]);
       }
 
-      // Auto-advance pipeline stage from sentiment
+      // Auto-advance pipeline stage from sentiment — preserves deal data
       if (sentimentData) {
         const currentRecord = pipelineState[entry.companyId];
         const currentStage = currentRecord?.stage || 'researched';
@@ -340,7 +349,12 @@ export default function Home() {
         if (newIdx > currentIdx) {
           setPipelineState((prev) => ({
             ...prev,
-            [entry.companyId]: { stage: sentimentData.pipelineStage as PipelineStage, movedAt: new Date().toISOString() },
+            [entry.companyId]: {
+              stage: sentimentData.pipelineStage as PipelineStage,
+              movedAt: new Date().toISOString(),
+              dealValue: currentRecord?.dealValue,
+              closeDate: currentRecord?.closeDate,
+            },
           }));
         }
       }
@@ -547,19 +561,43 @@ export default function Home() {
     setChatMessages([]);
   }, [setChatMessages]);
 
-  // Pipeline move handler
+  // Pipeline move handler — preserves dealValue and closeDate
   const handlePipelineMove = useCallback(
     (companyId: number, newStage: PipelineStage) => {
       const oldStage = pipelineState[companyId]?.stage || 'researched';
+      const existing = pipelineState[companyId];
       setPipelineState((prev) => ({
         ...prev,
-        [companyId]: { stage: newStage, movedAt: new Date().toISOString() },
+        [companyId]: {
+          stage: newStage,
+          movedAt: new Date().toISOString(),
+          dealValue: existing?.dealValue,
+          closeDate: existing?.closeDate,
+        },
       }));
       // Sync to Google Sheets
       const companyName = companies.find((c) => c.id === companyId)?.name || '';
       syncToSheets('pipeline', { companyId, companyName, oldStage, newStage });
     },
     [setPipelineState, pipelineState, companies]
+  );
+
+  // Deal value + close date update handler
+  const handleUpdateDeal = useCallback(
+    (companyId: number, dealValue: number | undefined, closeDate: string | undefined) => {
+      setPipelineState((prev) => {
+        const existing = prev[companyId] || { stage: 'researched' as PipelineStage, movedAt: new Date().toISOString() };
+        return {
+          ...prev,
+          [companyId]: {
+            ...existing,
+            dealValue,
+            closeDate,
+          },
+        };
+      });
+    },
+    [setPipelineState]
   );
 
   const allNotesExport = useMemo(() => {
@@ -655,7 +693,22 @@ export default function Home() {
           />
         );
       case "schedule":
-        return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
+        return (
+          <TaskQueueTab
+            companies={companies}
+            engagements={engagements}
+            pipelineState={pipelineState}
+            metState={metState}
+            followUps={followUps}
+            sequences={sequences}
+            queueState={taskQueueState}
+            onUpdateQueueState={setTaskQueueState}
+            onOpenCompany={handleSelect}
+            onCompleteFollowUp={handleCompleteFollowUp}
+            onSequenceStep={handleSequenceStep}
+            onOpenEngagement={handleOpenEngagementForCompany}
+          />
+        );
       case "pitch":
         return <PitchTab />;
       case "checklist":
@@ -677,6 +730,7 @@ export default function Home() {
             engagements={engagements}
             onPipelineMove={handlePipelineMove}
             onOpenCompany={handleSelect}
+            onUpdateDeal={handleUpdateDeal}
           />
         );
       case "feed":
@@ -762,6 +816,9 @@ export default function Home() {
                       onSnooze={handleSnooze}
                       onCompleteFollowUp={handleCompleteFollowUp}
                       onQuickLog={handleOpenEngagementForCompany}
+                      tagsState={tagsState}
+                      activeTagFilter={activeTagFilter}
+                      onTagFilterChange={setActiveTagFilter}
                     />
                   </ResizablePanel>
                   <ResizableHandle withHandle />
@@ -820,6 +877,9 @@ export default function Home() {
                   onSnooze={handleSnooze}
                   onCompleteFollowUp={handleCompleteFollowUp}
                   onQuickLog={handleOpenEngagementForCompany}
+                  tagsState={tagsState}
+                  activeTagFilter={activeTagFilter}
+                  onTagFilterChange={setActiveTagFilter}
                 />
               </div>
 

@@ -242,6 +242,19 @@ export const TABLE_MAPPINGS: Record<string, TableMapping> = {
       return result;
     },
   },
+  eventiq_task_queue: {
+    table: "task_queue_state",
+    shape: "scalar",
+    conflict: "user_id",
+    toRows: (value, userId) => [
+      { user_id: userId, queue_data: value },
+    ],
+    fromRows: (rows) => {
+      const r = rows[0];
+      if (!r) return { completedTasks: [], dismissedTasks: [], snoozedTasks: {}, lastResetDate: new Date().toISOString().slice(0, 10) };
+      return r.queue_data ?? { completedTasks: [], dismissedTasks: [], snoozedTasks: {}, lastResetDate: new Date().toISOString().slice(0, 10) };
+    },
+  },
   eventiq_user_inputs: {
     table: "chat_messages",
     shape: "array",

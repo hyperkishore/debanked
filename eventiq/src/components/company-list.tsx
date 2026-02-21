@@ -33,6 +33,9 @@ interface CompanyListProps {
   onSnooze?: (id: string, newDate: string) => void;
   onCompleteFollowUp?: (id: string) => void;
   onQuickLog?: (companyId: number) => void;
+  tagsState?: Record<number, string[]>;
+  activeTagFilter?: string | null;
+  onTagFilterChange?: (tag: string | null) => void;
 }
 
 function filterCompanies(
@@ -120,6 +123,9 @@ export function CompanyList({
   onSnooze,
   onCompleteFollowUp,
   onQuickLog,
+  tagsState = {},
+  activeTagFilter,
+  onTagFilterChange,
 }: CompanyListProps) {
   const parentRef = useRef<HTMLDivElement>(null);
 
@@ -128,10 +134,33 @@ export function CompanyList({
     [metState]
   );
 
-  const filtered = useMemo(
+  const baseFiltered = useMemo(
     () => filterCompanies(companies, activeFilter, metState, searchQuery, engagements),
     [companies, activeFilter, metState, searchQuery, engagements]
   );
+
+  // Apply tag filter
+  const filtered = useMemo(() => {
+    if (!activeTagFilter) return baseFiltered;
+    return baseFiltered.filter((c) => {
+      const companyTags = tagsState[c.id] || [];
+      return companyTags.includes(activeTagFilter);
+    });
+  }, [baseFiltered, activeTagFilter, tagsState]);
+
+  // Compute available tags from all companies for filter pills
+  const availableTags = useMemo(() => {
+    const tagCounts = new Map<string, number>();
+    for (const c of baseFiltered) {
+      const companyTags = tagsState[c.id] || [];
+      for (const tag of companyTags) {
+        tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+      }
+    }
+    return Array.from(tagCounts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([tag]) => tag);
+  }, [baseFiltered, tagsState]);
 
   // Compute outreach scores (only when sorting by outreach or always for badge display)
   const outreachData = useMemo(() => {
@@ -204,6 +233,9 @@ export function CompanyList({
         filteredCount={sorted.length}
         metCount={metCount}
         onExportCsv={handleExportCsv}
+        availableTags={availableTags}
+        activeTagFilter={activeTagFilter}
+        onTagFilterChange={onTagFilterChange}
       />
       {activeView === "cards" ? (
         <div ref={parentRef} className="flex-1 overflow-auto">
@@ -242,6 +274,7 @@ export function CompanyList({
                     outreachScore={showOutreachBadges ? outreachData.scores.get(company.id) : undefined}
                     urgencyTier={showOutreachBadges ? (outreachData.tiers.get(company.id) as "critical" | "high" | "medium" | "low") : undefined}
                     nextBestAction={showOutreachBadges ? outreachData.actions.get(company.id) : undefined}
+                    tags={tagsState[company.id]}
                   />
                 </div>
               );

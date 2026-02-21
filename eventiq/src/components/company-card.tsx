@@ -9,7 +9,7 @@ import { Progress } from "@/components/ui/progress";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
-import { Check, Circle } from "lucide-react";
+import { Check, Circle, Tag } from "lucide-react";
 
 interface CompanyCardProps {
   company: Company;
@@ -23,6 +23,7 @@ interface CompanyCardProps {
   outreachScore?: number;
   urgencyTier?: UrgencyTier;
   nextBestAction?: string;
+  tags?: string[];
 }
 
 function highlightText(text: string, query: string) {
@@ -80,6 +81,7 @@ export function CompanyCard({
   outreachScore,
   urgencyTier,
   nextBestAction,
+  tags = [],
 }: CompanyCardProps) {
   const contactNames = company.contacts.map((c) => c.n).join(", ");
   const subtitle = contactNames || company.location || "";
@@ -164,6 +166,26 @@ export function CompanyCard({
             <p className="text-xs text-brand/60 mt-0.5">
               Last contact: {formatEngagementTime(lastEngagementTime)}
             </p>
+          )}
+
+          {/* Tags */}
+          {tags.length > 0 && (
+            <div className="flex flex-wrap gap-1 mt-1">
+              {tags.slice(0, 3).map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center gap-0.5 text-xs px-1 py-0.5 rounded bg-brand/10 text-brand/70"
+                >
+                  <Tag className="h-2 w-2" />
+                  {tag}
+                </span>
+              ))}
+              {tags.length > 3 && (
+                <span className="text-xs text-muted-foreground/60">
+                  +{tags.length - 3}
+                </span>
+              )}
+            </div>
           )}
 
           {/* Research quality */}

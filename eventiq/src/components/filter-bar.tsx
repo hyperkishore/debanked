@@ -3,7 +3,8 @@
 import { FilterType, SortType, ViewType } from "@/lib/types";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Button } from "@/components/ui/button";
-import { LayoutGrid, Table2, ArrowUpDown, Download } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { LayoutGrid, Table2, ArrowUpDown, Download, X } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface FilterBarProps {
@@ -17,6 +18,9 @@ interface FilterBarProps {
   filteredCount: number;
   metCount: number;
   onExportCsv?: () => void;
+  availableTags?: string[];
+  activeTagFilter?: string | null;
+  onTagFilterChange?: (tag: string | null) => void;
 }
 
 const filters: { value: FilterType; label: string }[] = [
@@ -43,6 +47,9 @@ export function FilterBar({
   filteredCount,
   metCount,
   onExportCsv,
+  availableTags = [],
+  activeTagFilter,
+  onTagFilterChange,
 }: FilterBarProps) {
   const sortOptions: { value: SortType; label: string }[] = [
     { value: "priority", label: "Priority" },
@@ -81,6 +88,35 @@ export function FilterBar({
           ))}
         </ToggleGroup>
       </div>
+      {/* Tag filter pills */}
+      {availableTags.length > 0 && onTagFilterChange && (
+        <div className="overflow-x-auto scrollbar-none">
+          <div className="flex gap-1 w-max">
+            {activeTagFilter && (
+              <Badge
+                variant="outline"
+                className="text-xs px-1.5 py-0.5 h-5 cursor-pointer bg-brand/15 text-brand border-brand/30 hover:bg-brand/25 transition-colors"
+                onClick={() => onTagFilterChange(null)}
+              >
+                {activeTagFilter}
+                <X className="h-2.5 w-2.5 ml-0.5" />
+              </Badge>
+            )}
+            {availableTags
+              .filter((t) => t !== activeTagFilter)
+              .map((tag) => (
+                <Badge
+                  key={tag}
+                  variant="outline"
+                  className="text-xs px-1.5 py-0.5 h-5 cursor-pointer text-muted-foreground hover:text-brand hover:border-brand/30 transition-colors"
+                  onClick={() => onTagFilterChange(tag)}
+                >
+                  {tag}
+                </Badge>
+              ))}
+          </div>
+        </div>
+      )}
       {/* Count + sort + view */}
       <div className="flex items-center justify-between">
         <span className="text-xs text-muted-foreground">

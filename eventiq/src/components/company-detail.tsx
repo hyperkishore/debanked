@@ -73,6 +73,13 @@ interface CompanyDetailProps {
   onRemoveTag?: (companyId: number, tag: string) => void;
 }
 
+const TAG_SUGGESTIONS = [
+  "hot-lead", "partnership", "competitor", "decision-maker-met",
+  "needs-followup", "referral-source", "mca", "sba",
+  "equipment-finance", "revenue-based", "high-volume",
+  "early-stage", "enterprise",
+];
+
 const typeBadgeStyles: Record<string, string> = {
   SQO: "bg-[var(--sqo)]/10 text-[var(--sqo)] border-[var(--sqo)]/30",
   Client: "bg-[var(--client)]/10 text-[var(--client)] border-[var(--client)]/30",
@@ -115,6 +122,7 @@ export function CompanyDetail({
   const [iceIndex, setIceIndex] = useState(0);
   const [tagInput, setTagInput] = useState("");
   const [showTagInput, setShowTagInput] = useState(false);
+  const [showTagSuggestions, setShowTagSuggestions] = useState(false);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
   const [activeVariant, setActiveVariant] = useState<MessageVariant["style"]>("casual");
   const [activeLinkedInVariant, setActiveLinkedInVariant] = useState<LinkedInVariant["style"]>("connection-request");
@@ -244,27 +252,63 @@ export function CompanyDetail({
                 </span>
               ))}
               {showTagInput ? (
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const t = tagInput.trim();
-                    if (t && !tags.includes(t)) {
-                      onAddTag(company.id, t);
-                    }
-                    setTagInput("");
-                    setShowTagInput(false);
-                  }}
-                  className="inline-flex items-center"
-                >
-                  <Input
-                    autoFocus
-                    value={tagInput}
-                    onChange={(e) => setTagInput(e.target.value)}
-                    onBlur={() => { setShowTagInput(false); setTagInput(""); }}
-                    placeholder="tag..."
-                    className="w-16 h-5 text-xs px-1 py-0.5"
-                  />
-                </form>
+                <div className="relative inline-flex items-center">
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const t = tagInput.trim().toLowerCase();
+                      if (t && !tags.includes(t)) {
+                        onAddTag(company.id, t);
+                      }
+                      setTagInput("");
+                      setShowTagInput(false);
+                      setShowTagSuggestions(false);
+                    }}
+                    className="inline-flex items-center"
+                  >
+                    <Input
+                      autoFocus
+                      value={tagInput}
+                      onChange={(e) => {
+                        setTagInput(e.target.value);
+                        setShowTagSuggestions(true);
+                      }}
+                      onFocus={() => setShowTagSuggestions(true)}
+                      onBlur={() => {
+                        // Delay to allow click on suggestion
+                        setTimeout(() => {
+                          setShowTagInput(false);
+                          setTagInput("");
+                          setShowTagSuggestions(false);
+                        }, 150);
+                      }}
+                      placeholder="tag..."
+                      className="w-28 h-5 text-xs px-1 py-0.5"
+                    />
+                  </form>
+                  {showTagSuggestions && (
+                    <div className="absolute top-full left-0 mt-1 z-50 w-48 max-h-40 overflow-auto rounded-md border border-border bg-popover p-1 shadow-md">
+                      {TAG_SUGGESTIONS
+                        .filter((s) => !tags.includes(s) && s.includes(tagInput.toLowerCase()))
+                        .map((suggestion) => (
+                          <button
+                            key={suggestion}
+                            type="button"
+                            className="w-full text-left text-xs px-2 py-1 rounded hover:bg-brand/10 hover:text-brand transition-colors"
+                            onMouseDown={(e) => {
+                              e.preventDefault();
+                              onAddTag(company.id, suggestion);
+                              setTagInput("");
+                              setShowTagInput(false);
+                              setShowTagSuggestions(false);
+                            }}
+                          >
+                            {suggestion}
+                          </button>
+                        ))}
+                    </div>
+                  )}
+                </div>
               ) : (
                 <Button
                   variant="outline"

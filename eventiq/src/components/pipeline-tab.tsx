@@ -16,6 +16,16 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useState, useMemo, useCallback, useRef } from "react";
 
+const STAGE_WEIGHTS: Record<PipelineStage, number> = {
+  researched: 0.05,
+  contacted: 0.10,
+  engaged: 0.20,
+  demo: 0.40,
+  proposal: 0.60,
+  won: 1.00,
+  lost: 0,
+};
+
 interface PipelineTabProps {
   companies: Company[];
   pipelineState: Record<string, PipelineRecord>;
@@ -23,6 +33,13 @@ interface PipelineTabProps {
   engagements: EngagementEntry[];
   onPipelineMove: (companyId: number, newStage: PipelineStage) => void;
   onOpenCompany: (id: number) => void;
+  onUpdateDeal?: (companyId: number, dealValue: number | undefined, closeDate: string | undefined) => void;
+}
+
+function formatCurrency(value: number): string {
+  if (value >= 1_000_000) return `$${(value / 1_000_000).toFixed(1)}M`;
+  if (value >= 1_000) return `$${(value / 1_000).toFixed(0)}K`;
+  return `$${value}`;
 }
 
 export function PipelineTab({
@@ -32,6 +49,7 @@ export function PipelineTab({
   engagements,
   onPipelineMove,
   onOpenCompany,
+  onUpdateDeal,
 }: PipelineTabProps) {
   const [search, setSearch] = useState("");
   const [typeFilter, setTypeFilter] = useState<CompanyType | "all">("all");
@@ -63,6 +81,39 @@ export function PipelineTab({
   const pipeline = useMemo(
     () => getPipelineByStage(filteredCompanies, pipelineState),
     [filteredCompanies, pipelineState]
+  );
+
+  // Compute weighted pipeline totals per stage
+  const stageTotals = useMemo(() => {
+    const totals: Record<PipelineStage, { raw: number; weighted: number }> = {
+      researched: { raw: 0, weighted: 0 },
+      contacted: { raw: 0, weighted: 0 },
+      engaged: { raw: 0, weighted: 0 },
+      demo: { raw: 0, weighted: 0 },
+      proposal: { raw: 0, weighted: 0 },
+      won: { raw: 0, weighted: 0 },
+      lost: { raw: 0, weighted: 0 },
+    };
+
+    for (const [stageId, stageCompanies] of Object.entries(pipeline)) {
+      const stage = stageId as PipelineStage;
+      for (const c of stageCompanies) {
+        const record = pipelineState[c.id];
+        const dv = record?.dealValue;
+        if (dv && dv > 0) {
+          totals[stage].raw += dv;
+          totals[stage].weighted += dv * STAGE_WEIGHTS[stage];
+        }
+      }
+    }
+
+    return totals;
+  }, [pipeline, pipelineState]);
+
+  // Grand total weighted pipeline
+  const totalWeighted = useMemo(
+    () => Object.values(stageTotals).reduce((sum, t) => sum + t.weighted, 0),
+    [stageTotals]
   );
 
   // Drag handlers
@@ -159,8 +210,15 @@ export function PipelineTab({
               Drag companies between stages
             </p>
           </div>
-          <div className="text-xs text-muted-foreground">
-            {filteredCompanies.length} companies
+          <div className="text-right">
+            <div className="text-xs text-muted-foreground">
+              {filteredCompanies.length} companies
+            </div>
+            {totalWeighted > 0 && (
+              <div className="text-xs font-medium text-green-400">
+                Weighted: {formatCurrency(totalWeighted)}
+              </div>
+            )}
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -198,6 +256,7 @@ export function PipelineTab({
           {PIPELINE_STAGES.map((stage) => {
             const stageCompanies = pipeline[stage.id];
             const isOver = dragOverStage === stage.id;
+            const totals = stageTotals[stage.id];
 
             return (
               <div
@@ -223,6 +282,16 @@ export function PipelineTab({
                       {stageCompanies.length}
                     </span>
                   </div>
+                  {totals.weighted > 0 && (
+                    <div className="flex items-center justify-between mt-0.5">
+                      <span className="text-xs text-green-400/70">
+                        {formatCurrency(totals.raw)}
+                      </span>
+                      <span className="text-xs text-green-400 font-medium">
+                        {formatCurrency(totals.weighted)}w
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Cards */}
@@ -231,6 +300,7 @@ export function PipelineTab({
                     {stageCompanies.map((company) => {
                       const daysSince = getDaysSinceContact(company.id, engagements);
                       const lastEng = getLastEngagement(engagements, company.id);
+                      const record = pipelineState[company.id];
 
                       return (
                         <div
@@ -245,8 +315,11 @@ export function PipelineTab({
                             ratingState={ratingState}
                             daysSince={daysSince}
                             lastChannel={lastEng?.channel || null}
+                            dealValue={record?.dealValue}
+                            closeDate={record?.closeDate}
                             onOpen={onOpenCompany}
                             onDragStart={handleDragStart}
+                            onUpdateDeal={onUpdateDeal}
                           />
                         </div>
                       );
