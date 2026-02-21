@@ -730,7 +730,7 @@ function AttendeeCard({
           <User className="h-3.5 w-3.5 text-muted-foreground" />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-1.5 flex-wrap">
+          <div className="flex items-center gap-1.5">
             <span className="text-sm font-semibold truncate">
               {attendee.name}
             </span>
@@ -748,7 +748,7 @@ function AttendeeCard({
             {attendee.hvAngle && (
               <Badge
                 className={cn(
-                  "text-xs px-1.5 py-0 h-3.5 shrink-0 border-0",
+                  "text-xs px-1 py-0 h-3.5 shrink-0 border-0 hidden sm:inline-flex",
                   priorityColors[attendee.hvAngle.priority]
                 )}
               >
@@ -758,7 +758,7 @@ function AttendeeCard({
           </div>
           <div className="text-xs text-muted-foreground truncate">
             {attendee.title}
-            {attendee.title && " \u2014 "}
+            {attendee.title && " — "}
             {attendee.company}
           </div>
         </div>
@@ -773,7 +773,7 @@ function AttendeeCard({
         <div className="px-3 pb-3 space-y-3 border-t border-border/50">
           {/* Note / Warning */}
           {attendee.note && (
-            <div className="pt-2 flex gap-1.5 bg-[var(--sqo)]/5 -mx-3 px-3 py-2 border-b border-[var(--sqo)]/20">
+            <div className="pt-2 flex gap-1.5 rounded-md bg-[var(--sqo)]/5 px-2 py-2 mt-2">
               <AlertTriangle className="h-3 w-3 text-[var(--sqo)] shrink-0 mt-0.5" />
               <span className="text-xs text-[var(--sqo)]">{attendee.note}</span>
             </div>
@@ -838,7 +838,7 @@ function AttendeeCard({
 
           {/* HyperVerge Angle */}
           {attendee.hvAngle && (
-            <div className="bg-brand/5 -mx-3 px-3 py-2 border-y border-brand/20">
+            <div className="bg-brand/5 rounded-md px-2 py-2 border border-brand/20">
               <div className="flex items-center gap-1.5 mb-1.5">
                 <Target className="h-3 w-3 text-brand" />
                 <span className="text-xs font-semibold text-brand">
@@ -898,7 +898,7 @@ function AttendeeCard({
                     className="text-xs text-muted-foreground leading-relaxed flex gap-1.5"
                   >
                     <span className="text-[var(--client)] shrink-0 mt-0.5">
-                      \u2022
+                      {"\u2022"}
                     </span>
                     <span>{news}</span>
                   </li>
@@ -949,7 +949,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
 
   return (
     <ScrollArea className="h-full">
-      <div className="p-4 space-y-4 max-w-2xl mx-auto">
+      <div className="p-3 sm:p-4 space-y-3 sm:space-y-4 max-w-2xl mx-auto overflow-hidden">
         {/* Header */}
         <div>
           <div className="flex items-center justify-between mb-1">
@@ -964,7 +964,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
             </Button>
           </div>
           <p className="text-xs text-muted-foreground">
-            deBanked CONNECT 2026 \u2014 Fontainebleau, Miami \u2014{" "}
+            deBanked CONNECT 2026 — Fontainebleau, Miami —{" "}
             {attendees.filter((a) => !a.isInternal).length} external guests + 2
             HyperVerge
           </p>
@@ -975,7 +975,6 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
           title="Quick Reference — Seating & Playbook"
           icon={Bookmark}
           iconColor="text-brand"
-          defaultOpen
         >
           <div className="pt-2 space-y-3">
             {/* Seating targets */}
@@ -994,7 +993,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                         {t.name}
                       </span>{" "}
                       <span className="text-muted-foreground">
-                        \u2014 {t.reason}
+                        — {t.reason}
                       </span>
                     </span>
                   </div>
@@ -1010,7 +1009,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
               <ul className="mt-1.5 space-y-1">
                 {keyStats.map((s, i) => (
                   <li key={i} className="text-xs flex gap-1.5">
-                    <span className="text-[var(--icp)] shrink-0">\u2022</span>
+                    <span className="text-[var(--icp)] shrink-0">{"\u2022"}</span>
                     <span className="text-foreground italic">&ldquo;{s}&rdquo;</span>
                   </li>
                 ))}
@@ -1018,7 +1017,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
             </div>
 
             {/* Do / Don't */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-2">
               <div>
                 <span className="text-xs font-semibold text-[var(--icp)]">
                   DO Lead With
@@ -1026,7 +1025,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                 <ul className="mt-1 space-y-0.5">
                   {doLeadWith.map((d, i) => (
                     <li key={i} className="text-xs text-muted-foreground flex gap-1">
-                      <span className="text-[var(--icp)] shrink-0">\u2713</span>
+                      <span className="text-[var(--icp)] shrink-0">{"\u2713"}</span>
                       <span>{d}</span>
                     </li>
                   ))}
@@ -1039,7 +1038,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                 <ul className="mt-1 space-y-0.5">
                   {dontLeadWith.map((d, i) => (
                     <li key={i} className="text-xs text-muted-foreground flex gap-1">
-                      <span className="text-[var(--sqo)] shrink-0">\u2717</span>
+                      <span className="text-[var(--sqo)] shrink-0">{"\u2717"}</span>
                       <span>{d}</span>
                     </li>
                   ))}
@@ -1085,7 +1084,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                       className="text-xs text-muted-foreground flex gap-1"
                     >
                       <span className="text-[var(--client)] shrink-0">
-                        \u2022
+                        {"\u2022"}
                       </span>
                       <span>{c}</span>
                     </li>
@@ -1129,7 +1128,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
                   <span className="font-medium text-foreground">
                     {conn.people}
                   </span>{" "}
-                  \u2014 {conn.detail}
+                  — {conn.detail}
                 </p>
               </div>
             ))}
@@ -1142,7 +1141,7 @@ export function ScheduleTab({ onJumpToCompany }: ScheduleTabProps) {
             <span className="text-xs font-bold text-foreground">
               Attendees ({attendees.filter((a) => !a.isInternal).length})
             </span>
-            <div className="flex gap-1 ml-auto">
+            <div className="hidden sm:flex gap-1 ml-auto">
               {["HIGH", "PARTNERSHIP", "STRATEGIC"].map((p) => (
                 <Badge
                   key={p}
