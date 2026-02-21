@@ -8,7 +8,6 @@ import { computeOutreachScore, getNextBestAction, getUrgencyTier } from "@/lib/o
 import { CompanyCard } from "./company-card";
 import { CompanyTable } from "./company-table";
 import { FilterBar } from "./filter-bar";
-import { TodayActions } from "./today-actions";
 import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { useMemo, useRef, useEffect, useCallback } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
@@ -153,12 +152,6 @@ export function CompanyList({
     [filtered, activeSort, outreachData.scores]
   );
 
-  // Active follow-ups for TodayActions
-  const activeFollowUps = useMemo(() => {
-    if (!followUps) return [];
-    return followUps.filter((f) => !f.completed);
-  }, [followUps]);
-
   const virtualizer = useVirtualizer({
     count: sorted.length,
     getScrollElement: () => parentRef.current,
@@ -200,18 +193,6 @@ export function CompanyList({
 
   return (
     <div className="flex flex-col h-full min-h-0">
-      {/* Today's Actions */}
-      <TodayActions
-        followUps={activeFollowUps}
-        companies={companies}
-        engagements={engagements}
-        pipelineState={pipelineState}
-        metState={metState}
-        onSnooze={onSnooze || (() => {})}
-        onComplete={onCompleteFollowUp || (() => {})}
-        onLogEngagement={onQuickLog || (() => {})}
-        onSelectCompany={onSelect}
-      />
       <FilterBar
         activeFilter={activeFilter}
         onFilterChange={onFilterChange}
