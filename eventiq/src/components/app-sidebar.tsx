@@ -19,7 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { Building2, ListChecks, Users, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud, Map } from "lucide-react";
+import { Building2, ListChecks, Users, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud, Map, UtensilsCrossed } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -40,6 +40,7 @@ const navItems: { id: TabType; label: string; icon: React.ComponentType<{ classN
   { id: "dashboard", label: "Dashboard", icon: BarChart3, shortcut: "5" },
   { id: "pipeline", label: "Pipeline", icon: Kanban, shortcut: "6" },
   { id: "schedule", label: "Today", icon: ListChecks, shortcut: "2" },
+  { id: "dinner", label: "Dinner", icon: UtensilsCrossed, shortcut: "9" },
   { id: "pitch", label: "Pitch", icon: Layers, shortcut: "3" },
   { id: "checklist", label: "Checklist", icon: CheckSquare, shortcut: "4" },
 ];

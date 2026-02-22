@@ -733,6 +733,8 @@ export default function Home() {
             onOpenEngagement={handleOpenEngagementForCompany}
           />
         );
+      case "dinner":
+        return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
       case "pitch":
         return <PitchTab />;
       case "checklist":
