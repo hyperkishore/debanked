@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "EventIQ — MCA Market Intelligence",
   description: "HyperVerge BD intelligence tool for the MCA market",
-  manifest: "/debanked/manifest.json",
+  manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",

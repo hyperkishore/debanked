@@ -20,6 +20,8 @@ import { EngagementTimeline } from "@/components/engagement-timeline";
 import { CopyButton } from "@/components/copy-button";
 import { PreCallBriefingDialog } from "@/components/pre-call-briefing";
 import { SequencePanel } from "@/components/sequence-panel";
+import { AIBriefingCard } from "@/components/ai-briefing-card";
+import { DocumentVault } from "@/components/document-vault";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
@@ -458,6 +460,12 @@ export function CompanyDetail({
                 </div>
               </Section>
             )}
+
+            {/* AI Briefing */}
+            <AIBriefingCard companyId={company.id} />
+
+            {/* Document Vault */}
+            <DocumentVault companyId={company.id} />
 
             {/* Icebreakers */}
             <Section icon={Lightbulb} title="Icebreakers">

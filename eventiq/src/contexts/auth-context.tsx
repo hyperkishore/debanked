@@ -81,7 +81,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       provider: "google",
       options: {
         queryParams: { hd: "hyperverge.co" }, // restrict to @hyperverge.co
-        redirectTo: window.location.origin + window.location.pathname,
+        redirectTo: window.location.origin + "/auth/callback",
       },
     });
   }, []);

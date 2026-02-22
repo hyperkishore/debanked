@@ -1,12 +1,11 @@
-const CACHE_NAME = 'eventiq-v2.2.00';
-const BASE_PATH = '/debanked';
+const CACHE_NAME = 'eventiq-v3.0.00';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll([
-        BASE_PATH + '/',
-        BASE_PATH + '/manifest.json',
+        '/',
+        '/manifest.json',
       ]);
     })
   );
@@ -27,20 +26,36 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      if (response) return response;
-      return fetch(event.request).then((fetchResponse) => {
-        if (fetchResponse && fetchResponse.status === 200 && fetchResponse.type === 'basic') {
-          const responseToCache = fetchResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
-          });
+  const url = new URL(event.request.url);
+  const isNavigate = event.request.mode === 'navigate';
+  const isHTML = url.pathname.endsWith('.html') || url.pathname === '/' || !url.pathname.includes('.');
+
+  if (isNavigate || isHTML) {
+    // Network-first for HTML — always get latest SSR content, cache as fallback
+    event.respondWith(
+      fetch(event.request).then((response) => {
+        if (response && response.status === 200) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
         }
-        return fetchResponse;
+        return response;
       }).catch(() => {
-        return caches.match(BASE_PATH + '/');
-      });
-    })
-  );
+        return caches.match(event.request).then((cached) => cached || caches.match('/'));
+      })
+    );
+  } else {
+    // Cache-first for static assets (JS, CSS, images, fonts)
+    event.respondWith(
+      caches.match(event.request).then((cached) => {
+        if (cached) return cached;
+        return fetch(event.request).then((response) => {
+          if (response && response.status === 200 && response.type === 'basic') {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          }
+          return response;
+        });
+      })
+    );
+  }
 });

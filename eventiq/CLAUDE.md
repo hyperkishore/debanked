@@ -10,19 +10,18 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 2.9.00
+**Version:** 3.0.00
 **Dev server:** `npm run dev` → http://localhost:3000
-**Build:** `npm run build` → static export to `out/`
-**Live:** GitHub Pages (auto-deploy on push to main)
+**Build:** `npm run build` → `.next/` (SSR, no static export)
+**Deploy target:** AWS Amplify (SSR support)
 
 ---
 
 ## Data Architecture
 
-### Data Files
-- **`src/data/all-companies.json`** — Canonical dataset: 1,021 companies (4 SQO + 2 Client + 238 ICP + 575 TAM + others)
-- **`src/data/tam-companies.json`** — 895 TAM companies (broader addressable market)
-- **`src/data/companies.json`** — Legacy file (225 companies), kept for backward compat
+### Data Sources
+- **Supabase `companies` table** — Canonical dataset: 1,021 companies, served via `/api/companies` API route
+- **`src/data/all-companies.json`** — Local backup (gitignored), used for seeding Supabase via `scripts/seed-companies-to-supabase.js`
 
 ### Company Priority Tiers
 | Priority | Label | Companies | Leaders | Description |
@@ -451,9 +450,10 @@ npx shadcn@latest add <component-name>
 ---
 
 ## Data Flow
-- All company data: `src/data/all-companies.json` → imported at build time
-- User state (met/notes/ratings/checks/engagements): localStorage via `useLocalStorage` hook
-- No backend/API — fully static, offline-capable
+- Company data: Supabase `companies` table → `/api/companies` API route → fetched at runtime
+- User state (met/notes/ratings/checks/engagements): localStorage via `useSyncedStorage` hook ↔ Supabase
+- Auth: Google OAuth (@hyperverge.co) via Supabase Auth, enforced by Next.js middleware
+- Offline: PWA with service worker, localStorage fallback
 
 ## LocalStorage Keys
 - `eventiq_met` — Set of met company IDs

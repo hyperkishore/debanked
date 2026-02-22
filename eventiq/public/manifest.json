@@ -2,19 +2,19 @@
   "name": "EventIQ — MCA Market Intelligence",
   "short_name": "EventIQ",
   "description": "HyperVerge BD intelligence tool for the MCA market",
-  "start_url": "/debanked/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0c0c12",
   "theme_color": "#0c0c12",
   "orientation": "any",
   "icons": [
     {
-      "src": "/debanked/icon-192.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/debanked/icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

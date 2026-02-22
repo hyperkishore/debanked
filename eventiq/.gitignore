@@ -33,6 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Company data — now served from Supabase, should not be in the repo
+src/data/*.json
+
 # vercel
 .vercel
 

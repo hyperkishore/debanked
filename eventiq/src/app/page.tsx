@@ -18,7 +18,7 @@ import { PipelineStage, PipelineRecord, inferStage } from "@/lib/pipeline-helper
 import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { FollowUpData, SentimentData } from "@/components/engagement-log";
 import { SequenceProgress } from "@/lib/sequence-helpers";
-import companiesData from "@/data/all-companies.json";
+import { Skeleton } from "@/components/ui/skeleton";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import {
   ResizablePanelGroup,
@@ -55,19 +55,36 @@ import { ChecklistTab } from "@/components/checklist-tab";
 import { DashboardTab } from "@/components/dashboard-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
 import { FeedTab } from "@/components/feed-tab";
+import { MarketMapTab } from "@/components/market-map-tab";
 import { useSyncedStorage } from "@/hooks/use-synced-storage";
 import { useKeyboard } from "@/hooks/use-keyboard";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { toast } from "sonner";
 
-const buildTimeCompanies = companiesData as Company[];
-
 export default function Home() {
   const isMobile = useIsMobile();
 
+  // Companies loaded from API
+  const [apiCompanies, setApiCompanies] = useState<Company[]>([]);
+  const [companiesLoading, setCompaniesLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/companies")
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setApiCompanies(data);
+        }
+      })
+      .catch((err) => {
+        console.warn("[EventIQ] Failed to fetch companies from API:", err);
+      })
+      .finally(() => setCompaniesLoading(false));
+  }, []);
+
   // State
   const [activeTab, setActiveTab] = useState<TabType>("companies");
-  const [selectedId, setSelectedId] = useState<number | null>(buildTimeCompanies[0]?.id ?? null);
+  const [selectedId, setSelectedId] = useState<number | null>(null);
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
   const [activeSort, setActiveSort] = useState<SortType>("priority");
   const [activeView, setActiveView] = useState<ViewType>("cards");
@@ -149,11 +166,11 @@ export default function Home() {
     []
   );
 
-  // Merge build-time + imported companies (imported updates override build-time fields)
+  // Merge API + imported companies (imported updates override API fields)
   const companies = useMemo(() => {
-    if (importedCompanies.length === 0) return buildTimeCompanies;
+    if (importedCompanies.length === 0) return apiCompanies;
 
-    const merged = [...buildTimeCompanies];
+    const merged = [...apiCompanies];
     const existingById = new Map(merged.map((c, idx) => [c.id, idx]));
 
     for (const imp of importedCompanies) {
@@ -177,7 +194,14 @@ export default function Home() {
       }
     }
     return merged;
-  }, [importedCompanies]);
+  }, [importedCompanies, apiCompanies]);
+
+  // Select first company once data loads
+  useEffect(() => {
+    if (companies.length > 0 && selectedId === null) {
+      setSelectedId(companies[0].id);
+    }
+  }, [companies, selectedId]);
 
   // Compute streak data from engagements
   const streakData = useMemo<StreakData>(() => computeStreak(engagements), [engagements]);
@@ -198,7 +222,7 @@ export default function Home() {
   // Register service worker
   useEffect(() => {
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/debanked/sw.js").catch(() => {});
+      navigator.serviceWorker.register("/sw.js").catch(() => {});
     }
   }, []);
 
@@ -642,7 +666,7 @@ export default function Home() {
     return [...companies]
       .sort((a, b) => a.priority - b.priority || a.phase - b.phase)
       .map((c) => c.id);
-  }, []);
+  }, [companies]);
 
   useKeyboard({
     onNavigateDown: () => {
@@ -740,6 +764,13 @@ export default function Home() {
             onSelectCompany={handleSelect}
           />
         );
+      case "map":
+        return (
+          <MarketMapTab
+            companies={companies}
+            onSelectCompany={handleSelect}
+          />
+        );
       default:
         return null;
     }
@@ -784,7 +815,23 @@ export default function Home() {
 
         {/* Main content area */}
         <div className="flex-1 min-h-0 overflow-hidden">
-          {activeTab === "companies" ? (
+          {companiesLoading ? (
+            <div className="p-6 space-y-4">
+              <div className="flex items-center gap-3">
+                <Skeleton className="h-8 w-48" />
+                <Skeleton className="h-8 w-24" />
+              </div>
+              {Array.from({ length: 8 }).map((_, i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <Skeleton className="h-12 w-12 rounded-lg" />
+                  <div className="flex-1 space-y-2">
+                    <Skeleton className="h-4 w-48" />
+                    <Skeleton className="h-3 w-32" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : activeTab === "companies" ? (
             <>
               {/* Desktop: Resizable panels */}
               <div className="hidden md:block h-full">

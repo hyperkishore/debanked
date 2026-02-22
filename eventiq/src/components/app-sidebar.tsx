@@ -19,7 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { Building2, ListChecks, Users, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud } from "lucide-react";
+import { Building2, ListChecks, Users, Layers, CheckSquare, Search, BarChart3, Upload, Kanban, Settings2, Rss, LogIn, LogOut, Cloud, Map } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -35,6 +35,7 @@ interface AppSidebarProps {
 
 const navItems: { id: TabType; label: string; icon: React.ComponentType<{ className?: string }>; shortcut: string }[] = [
   { id: "companies", label: "Companies", icon: Building2, shortcut: "1" },
+  { id: "map", label: "Market Map", icon: Map, shortcut: "8" },
   { id: "feed", label: "Market Intel", icon: Rss, shortcut: "7" },
   { id: "dashboard", label: "Dashboard", icon: BarChart3, shortcut: "5" },
   { id: "pipeline", label: "Pipeline", icon: Kanban, shortcut: "6" },
@@ -226,7 +227,7 @@ export function AppSidebar({
           </span>
           <div className="flex items-center gap-1">
             <ThemeToggle />
-            <span className="opacity-50">v2.11.01</span>
+            <span className="opacity-50">v3.0.00</span>
           </div>
         </div>
         <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
