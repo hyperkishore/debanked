@@ -1,17 +1,34 @@
-import { NextResponse } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
+import { createServerClient } from "@supabase/ssr";
 import { getSupabaseServer } from "@/lib/supabase-server";
 
 /**
  * GET /api/companies
  * Returns all companies from Supabase, transforming DB schema back to client format.
- * Falls back to empty array if Supabase is not configured.
+ * Requires authenticated session.
  */
-export async function GET() {
+export async function GET(request: NextRequest) {
+  // Auth check
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+
+  const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
+    cookies: {
+      getAll() {
+        return request.cookies.getAll();
+      },
+      setAll() {},
+    },
+  });
+
+  const { data: { user } } = await supabaseAuth.auth.getUser();
+  if (!user) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   const supabase = getSupabaseServer();
 
   if (!supabase) {
-    // Supabase not configured — return empty array
-    // (client will fall back to any locally imported data)
     return NextResponse.json([]);
   }
 

@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { createServerClient } from "@supabase/ssr";
 import { getSupabaseServer } from "@/lib/supabase-server";
 import { runSignalIngestion } from "@/lib/signal-ingest";
 
@@ -7,19 +8,36 @@ import { runSignalIngestion } from "@/lib/signal-ingest";
  *
  * Triggers the signal ingestion pipeline.
  * Designed to be called by:
- * - AWS EventBridge (daily cron at 8AM UTC)
- * - Manual trigger from the UI
- *
- * Requires either:
- * - A valid bearer token matching SIGNAL_INGEST_SECRET env var
- * - Or being called from an authenticated session
+ * - AWS EventBridge (daily cron at 8AM UTC) — uses SIGNAL_INGEST_SECRET bearer token
+ * - Manual trigger from the UI — uses authenticated session
  */
 export async function POST(request: NextRequest) {
-  // Auth: check bearer token or skip in dev
+  // Auth: check bearer token OR authenticated session (must have one)
   const authHeader = request.headers.get("authorization");
   const expectedSecret = process.env.SIGNAL_INGEST_SECRET;
 
-  if (expectedSecret && authHeader !== `Bearer ${expectedSecret}`) {
+  let authorized = false;
+
+  // Option 1: Valid bearer token
+  if (expectedSecret && authHeader === `Bearer ${expectedSecret}`) {
+    authorized = true;
+  }
+
+  // Option 2: Authenticated user session
+  if (!authorized) {
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+    const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
+      cookies: {
+        getAll() { return request.cookies.getAll(); },
+        setAll() {},
+      },
+    });
+    const { data: { user } } = await supabaseAuth.auth.getUser();
+    if (user) authorized = true;
+  }
+
+  if (!authorized) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
