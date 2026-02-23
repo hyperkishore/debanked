@@ -44,7 +44,7 @@ ${hookOpener}${newsLine}
 
 ${shortTP}
 
-At HyperVerge, we've built an AI Co-Pilot that takes underwriting from 40 minutes to under 5. Already deployed with 450+ financial services companies, including PIRS Capital in MCA.
+At HyperVerge, we've built an AI Co-Pilot that takes underwriting from 40 minutes to under 5. Already deployed with 450+ financial services companies.
 
 ${ask}
 

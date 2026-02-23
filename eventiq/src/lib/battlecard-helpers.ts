@@ -37,7 +37,7 @@ export function generateBattlecards(
     cards.push({
       trigger: "We need enterprise-grade SLAs and uptime guarantees.",
       response: "Absolutely. We maintain 99.9% uptime with SOC 2 Type II certification. Our enterprise tier includes dedicated support, custom SLAs, and on-prem deployment options.",
-      socialProof: "PIRS Capital runs their entire underwriting on HyperVerge with 99.9% uptime.",
+      socialProof: "HyperVerge serves 450+ financial services enterprises with enterprise-grade SLAs.",
       category: 'trust',
     });
   }
@@ -46,7 +46,7 @@ export function generateBattlecards(
     cards.push({
       trigger: "We've built our own underwriting system in-house.",
       response: "Many of our best customers started with in-house tools. The challenge is maintaining and scaling them. HyperVerge plugs into your existing stack via API — you keep your logic, we handle document extraction, identity verification, and bank statement analysis at scale.",
-      socialProof: "FundKite uses their own proprietary stack alongside HyperVerge for document extraction — best of both worlds.",
+      socialProof: "Several MCA lenders run HyperVerge alongside their proprietary scoring models — best of both worlds.",
       category: 'competition',
     });
   }
@@ -55,7 +55,7 @@ export function generateBattlecards(
     cards.push({
       trigger: "Who is HyperVerge? We haven't heard of you.",
       response: "We're an AI company powering 450+ financial services enterprises globally. Our underwriting AI Co-Pilot cuts decision time from 40 minutes to under 5. We work with MCA lenders, equipment finance, SBA — the full spectrum.",
-      socialProof: "450+ lenders on the platform including PIRS Capital, with $10B+ in applications processed.",
+      socialProof: "450+ financial services enterprises on the platform processing millions of applications.",
       category: 'trust',
     });
   }

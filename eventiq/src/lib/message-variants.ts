@@ -31,7 +31,7 @@ ${company.desc ? `Given ${companyName}'s position in the market, I believe there
 
 ${shortTP}
 
-We're currently deployed with 450+ financial services enterprises, including partners like PIRS Capital in the MCA space. Our platform typically reduces underwriting time from 40 minutes to under 5.
+We're currently deployed with 450+ financial services enterprises across MCA, equipment finance, and SBA lending. Our platform typically reduces underwriting time from 40 minutes to under 5.
 
 ${ask}
 
@@ -51,7 +51,7 @@ HyperVerge`;
 
 ${casualOpener}
 
-Quick pitch: we built an AI co-pilot that takes underwriting from 40 min to under 5. Already working with 450+ lenders, including PIRS Capital in MCA.
+Quick pitch: we built an AI co-pilot that takes underwriting from 40 min to under 5. Already working with 450+ lenders in MCA.
 
 ${shortTP}
 
@@ -75,7 +75,7 @@ ${newsOpener}
 
 ${latestNews ? `With that kind of momentum, scaling underwriting efficiently becomes critical.` : `As you scale, underwriting speed becomes a competitive advantage.`}
 
-That's exactly what we do at HyperVerge — our AI Co-Pilot cuts underwriting from 40 minutes to under 5. We're already deployed with 450+ financial services enterprises, including PIRS Capital.
+That's exactly what we do at HyperVerge — our AI Co-Pilot cuts underwriting from 40 minutes to under 5. We're already deployed with 450+ financial services enterprises.
 
 ${ask}
 

@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { CopyButton } from "@/components/copy-button";
 import { ExternalLink } from "lucide-react";
 
-const PITCH_TEXT = `"We're HyperVerge \u2014 we built an AI Co-Pilot that cuts small business underwriting from 40 minutes to under 5. We automate application intake, cash flow analysis, risk/CLEAR report review, and industry classification. Already deployed with 450+ financial services enterprises. We're working with PIRS Capital in the MCA space and seeing incredible results."`;
+const PITCH_TEXT = `"We're HyperVerge \u2014 we built an AI Co-Pilot that cuts small business underwriting from 40 minutes to under 5. We automate application intake, cash flow analysis, risk/CLEAR report review, and industry classification. Already deployed with 450+ financial services enterprises. We work with MCA funders across the industry and seeing incredible results."`;
 
 const valueProps = [
   { from: "Manual bank statement review", to: "AI cash flow analysis", impact: "15m \u2192 sec" },
@@ -18,7 +18,7 @@ const valueProps = [
 
 const socialProof = [
   "450+ banking & financial services enterprises across 10+ countries",
-  "Already partnered with PIRS Capital in the MCA space",
+  "Deployed with leading MCA funders and equipment finance companies",
   "Working with Fundfi & FundKite as existing clients",
   "SOC 2 compliant, enterprise-grade data security",
 ];
@@ -61,9 +61,9 @@ const referralMap = [
   { from: "Jim Noel", fromCo: "BriteCap (SQO)", to: "Mark Cisco", toCo: "CAN Capital", reason: "Jim was VP at CAN Capital previously" },
   { from: "Brian Kandinov", fromCo: "Fundfi (Client)", to: "Steven Edisis", toCo: "Dynamic Capital", reason: "Both on Funder Panel, NYC funders" },
   { from: "Richard Henderson", fromCo: "BriteCap (SQO)", to: "Mark Cerminaro", toCo: "Rapid Finance", reason: "Henderson was CRO at CAN, Cerminaro CRO at Rapid" },
-  { from: "Andrew Mallinger", fromCo: "PIRS Capital (Partner)", to: "Shaya Baum", toCo: "Wing Lake Capital", reason: "Both MCA-focused, PIRS can vouch for HyperVerge" },
+  { from: "Alex Shvarts", fromCo: "FundKite (Client)", to: "Shaya Baum", toCo: "Wing Lake Capital", reason: "Both MCA-focused NYC funders" },
   { from: "Alex Shvarts", fromCo: "FundKite (Client)", to: "Jay Avigdor", toCo: "Velocity Capital Group", reason: "Both NYC MCA veterans, dinner roundtable" },
-  { from: "Andrew Mallinger", fromCo: "PIRS Capital (Partner)", to: "Jill Capadanno", toCo: "Forward Financing", reason: "PIRS partnership validates AI underwriting" },
+  { from: "Brian Kandinov", fromCo: "Fundfi (Client)", to: "Jill Capadanno", toCo: "Forward Financing", reason: "Both fintech-forward lenders" },
 ];
 
 export function PitchTab() {
@@ -80,7 +80,7 @@ export function PitchTab() {
             &ldquo;We&rsquo;re <span className="text-brand font-semibold">HyperVerge</span> &mdash; we built an AI Co-Pilot that cuts small business underwriting from{" "}
             <span className="text-brand font-semibold">40 minutes to under 5</span>. We automate application intake, cash flow analysis, risk/CLEAR report review, and industry classification. Already deployed with{" "}
             <span className="text-brand font-semibold">450+ financial services enterprises</span>. We&rsquo;re working with{" "}
-            <span className="text-brand font-semibold">PIRS Capital</span> in the MCA space and seeing incredible results.&rdquo;
+            <span className="text-brand font-semibold">MCA funders and equipment finance companies</span> and seeing incredible results.&rdquo;
           </p>
         </Card>
 

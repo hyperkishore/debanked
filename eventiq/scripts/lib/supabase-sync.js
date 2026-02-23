@@ -58,7 +58,6 @@ function toRow(c) {
     website: c.website || null,
     linkedin_url: c.linkedinUrl || null,
     source: c.source || [],
-    outreach_history: c.outreachHistory || null,
   };
 }
 
