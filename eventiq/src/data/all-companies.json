@@ -14,6 +14,18 @@
       {
         "n": "Daniel Dames",
         "t": "VP of Ops"
+      },
+      {
+        "n": "Jeff Myatt",
+        "t": "Director of IT"
+      },
+      {
+        "n": "Dustin Quick",
+        "t": "Director of Technology"
+      },
+      {
+        "n": "Sarah Battino",
+        "t": "Director of Call Center Ops"
       }
     ],
     "desc": "Bitty (formerly Bitty Advance) is a Fort Lauderdale-based MCA funder established in 2018, now led by serial entrepreneur Craig Hecker who acquired the company in 2020 after founding and selling Rapid Capital Funding. Since Hecker's acquisition, Bitty has facilitated over $420M in cumulative funding to 29,000+ small businesses with products ranging from $2,000 to $250,000. In 2023, Bitty originated approximately $165M in revenue-based financing. The company generated $8.5M in adjusted net income for the trailing 12 months ending March 2024, attracting a strategic 35% equity investment from publicly traded OppFi (NYSE: OPFI) in August 2024 for $15.25M cash plus $2.7M in stock. OppFi has options to acquire majority ownership by 2027 and full ownership by 2030. In Q3 2025, Bitty generated $1.4M in equity income for OppFi alone. Bitty self-identifies as a 'tech company first' and recently launched a fixed-term installment loan product in Texas (Sept 2025) to comply with new state MCA regulations, integrated with Cloudsquare's Salesforce-based broker CRM for API submissions (Jan 2025), and was a Platinum Sponsor at the B2B Finance Expo 2025 in Las Vegas.",
@@ -104,6 +116,90 @@
           "Featured in CAKE Spotlight Q&A series"
         ],
         "li": "https://www.linkedin.com/in/brianbastio/"
+      },
+      {
+        "n": "Jeff Myatt",
+        "t": "Director of Information / IT & Platform Operations",
+        "bg": "20+ years in IT operations and call center management. Previously SVP of Technology Development at Rapid Capital Funding (Craig Hecker's previous company), and COO at Kash4Biz. Manages daily system operations of the Bitty platform including servicing, business continuity, troubleshooting, and user support. Responsible for technology integrations including the Cloudsquare API launch in Jan 2025.",
+        "hooks": [
+          "*Followed Craig Hecker from Rapid Capital to Bitty",
+          "Was COO at Kash4Biz — deep MCA platform ops",
+          "20+ years managing on-shore/off-shore call centers",
+          "Owns all Bitty tech integrations"
+        ],
+        "li": "https://www.linkedin.com/in/jeff-myatt-6615661"
+      },
+      {
+        "n": "Charlie Siegel",
+        "t": "Director of Partner Relations",
+        "bg": "Integral to Bitty since inception. Background in retail operations (Publix Supermarkets) and HR. Oversees partner relations, business growth, training initiatives, and regional development. Serves as Bitty's press contact. Based in Fort Lauderdale. Likely connected to co-founder Eddie Siegel.",
+        "hooks": [
+          "*With Bitty since day one — connected to co-founder Eddie Siegel",
+          "Publix Supermarkets retail ops background",
+          "Company press contact — go-to for partnerships",
+          "Drives broker channel geographic expansion"
+        ],
+        "li": "https://www.linkedin.com/in/charlie-siegel-ba26b920a"
+      },
+      {
+        "n": "Patrick Siegfried",
+        "t": "General Counsel",
+        "bg": "13+ years in alternative commercial finance. Founding member of the Alternative Finance Bar Association (AFBA). Previously Deputy GC at Rapid Finance. GW Law School grad. Also appointed GC & COO at Nexi (formerly Fundamental Capital) in Sept 2023 — may serve Bitty in advisory/fractional capacity. Runs Small Business Legal Solutions consultancy.",
+        "hooks": [
+          "*Co-founded Alt Finance Bar Association",
+          "GW Law School — legal architect of MCA industry",
+          "Dual role at Bitty and Nexi",
+          "Rapid Finance Deputy GC background"
+        ],
+        "li": "https://www.linkedin.com/in/patrick-siegfried-10040519/"
+      },
+      {
+        "n": "Dustin Quick",
+        "t": "Director of Technology",
+        "bg": "Full-stack developer and data analyst with nearly a decade in telecom and financial industries. Built and maintains Bitty's entire digital lending platform. Responsible for software architecture, database management, cloud services, and reporting. Built the API layer powering the Cloudsquare integration.",
+        "hooks": [
+          "Owns Bitty's entire technical stack",
+          "Telecom background — high-volume transaction experience",
+          "Built the platform OppFi valued at ~$51M",
+          "Key decision-maker for vendor integrations"
+        ],
+        "li": null
+      },
+      {
+        "n": "Sarah Battino",
+        "t": "Director of Call Center Operations",
+        "bg": "15+ years in call center management. Previously VP of Operations at Kash4Biz (Hecker-affiliated company). Earlier career at Wunderman and VML (major advertising/CRM agencies). Manages pre-qualifications, sales, customer service, and servicing teams at Bitty.",
+        "hooks": [
+          "*Wunderman/VML agency background",
+          "Followed Hecker orbit from Kash4Biz",
+          "Manages full customer lifecycle from pre-qual to servicing",
+          "15+ years call center management"
+        ],
+        "li": "https://www.linkedin.com/in/sarah-battino-810b415/"
+      },
+      {
+        "n": "Peter Havenstein Jr.",
+        "t": "Director of Renewals",
+        "bg": "20+ years in financial services. Previously Team Lead at Rapid Finance and Director of Sales at VerAleo Capital Partners. Expertise in sales strategy, operational management, and renewals. Salisbury University grad.",
+        "hooks": [
+          "Rapid Finance + VerAleo Capital background",
+          "Runs renewals — Bitty's most profitable channel",
+          "Salisbury University — 20 years in financial services",
+          "Book of business key to OppFi 2027/2030 valuation"
+        ],
+        "li": "https://www.linkedin.com/in/peter-havenstein-jr-57779a6b"
+      },
+      {
+        "n": "Jeffrey Hageman",
+        "t": "Director, Client Advocacy Program",
+        "bg": "Previously SVP at Edge Capital, Business Financial Advisor at Strong Capital Funding, and ISO Relations/Business Development at Legend Funding. Earlier career as Sales Operations Manager at Beacon Building Products where he built an inside sales team. SUNY Cortland BA.",
+        "hooks": [
+          "Built inside sales team at Beacon Building Products",
+          "Worked across alt-finance: Edge Capital, Strong Capital, Legend Funding",
+          "SUNY Cortland — practical sales ops career",
+          "Runs client advocacy and retention program"
+        ],
+        "li": "https://www.linkedin.com/in/jeffrey-hageman-8bb4a767/"
       }
     ],
     "ask": "Craig, Daniel -- would love 20 minutes to show you how HyperVerge's bank statement OCR and ID verification could plug into Bitty's tech-first platform and help your team keep pace with the growth OppFi is banking on. Open to a quick demo next week?",

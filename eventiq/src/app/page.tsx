@@ -37,13 +37,13 @@ import { ImportDialog } from "@/components/import-dialog";
 import { ChatWidget, ChatFab } from "@/components/chat-widget";
 import {
   ChatMessage,
+  InputCategory,
   InputContext,
   detectCategory,
   generateBotResponse,
   generateId,
   getPendingCount,
 } from "@/lib/chat-helpers";
-import { FeedbackWidget } from "@/components/feedback-widget";
 import { SheetsSettings } from "@/components/sheets-settings";
 import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
@@ -530,6 +530,40 @@ export default function Home() {
     [activeTab, selectedCompany]
   );
 
+  // Fire-and-forget: persist every sidebar input to Supabase feedback table
+  const persistInputToSupabase = useCallback(
+    (content: string, category: InputCategory, ctx: InputContext) => {
+      const TAB_SECTION: Record<string, string> = {
+        companies: "Companies List",
+        dashboard: "Dashboard",
+        pipeline: "Pipeline",
+        schedule: "Schedule",
+        resources: "Resources",
+        marketing: "Marketing Ideas",
+        feed: "Feed",
+        map: "Market Map",
+        dinner: "Dinner",
+      };
+      const feedbackType = category === "bug" ? "bug" : "suggestion";
+      const section = TAB_SECTION[ctx.tab] || "General / Other";
+
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          section,
+          feedbackType,
+          notes: content,
+          page: typeof window !== "undefined" ? window.location.pathname : "",
+          companyName: ctx.companyName || "",
+        }),
+      }).catch(() => {
+        // Non-blocking — silently ignore network errors
+      });
+    },
+    []
+  );
+
   const handleSendChatMessage = useCallback(
     (content: string) => {
       const category = detectCategory(content);
@@ -553,8 +587,11 @@ export default function Home() {
       };
 
       setChatMessages((prev) => [...prev, userMsg, botMsg]);
+
+      // Persist to Supabase (non-blocking)
+      persistInputToSupabase(content, category, chatContext);
     },
-    [chatContext, chatMessages, setChatMessages]
+    [chatContext, chatMessages, setChatMessages, persistInputToSupabase]
   );
 
   const handleClearChat = useCallback(() => {
@@ -984,14 +1021,6 @@ export default function Home() {
             currentContext={chatContext}
           />
         </>
-      )}
-
-      {/* Feedback widget — dev mode only */}
-      {devMode && (
-        <FeedbackWidget
-          companyName={selectedCompany?.name}
-          currentTab={activeTab}
-        />
       )}
 
       {/* Sheets sync settings */}

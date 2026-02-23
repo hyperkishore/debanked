@@ -7,7 +7,6 @@ import { generateLinkedInVariants, LinkedInVariant } from "@/lib/linkedin-messag
 import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { detectPersona, getPersonaConfig } from "@/lib/persona-helpers";
 import { generateBattlecards, getCategoryStyle } from "@/lib/battlecard-helpers";
-import { buildThreadingMap, STATUS_STYLES } from "@/lib/threading-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -21,7 +20,6 @@ import { CopyButton } from "@/components/copy-button";
 import { PreCallBriefingDialog } from "@/components/pre-call-briefing";
 import { SequencePanel } from "@/components/sequence-panel";
 import { AIBriefingCard } from "@/components/ai-briefing-card";
-import { DocumentVault } from "@/components/document-vault";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
@@ -38,7 +36,6 @@ import {
   ChevronDown,
   ChevronUp,
   Check,
-  Shuffle,
   MapPin,
   Globe,
   Building2,
@@ -121,7 +118,6 @@ export function CompanyDetail({
   onRemoveTag,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
-  const [iceIndex, setIceIndex] = useState(0);
   const [tagInput, setTagInput] = useState("");
   const [showTagInput, setShowTagInput] = useState(false);
   const [showTagSuggestions, setShowTagSuggestions] = useState(false);
@@ -139,27 +135,10 @@ export function CompanyDetail({
     [company, pipelineState]
   );
 
-  // Threading map
-  const threadingMap = useMemo(
-    () => buildThreadingMap(company, engagements),
-    [company, engagements]
-  );
-
-  const shuffleIce = useCallback(() => {
-    if (company.icebreakers && company.icebreakers.length > 0) {
-      setIceIndex((prev) => (prev + 1) % company.icebreakers!.length);
-    }
-  }, [company.icebreakers]);
-
   const handleNotesChange = (value: string) => {
     setLocalNotes(value);
     onSaveNotes(company.id, value);
   };
-
-  // Current icebreaker text for copy
-  const currentIcebreaker = company.icebreakers && company.icebreakers.length > 0
-    ? company.icebreakers[iceIndex % company.icebreakers.length]
-    : company.ice || "";
 
   // All talking points as copyable text
   const allTalkingPoints = (company.tp || []).join("\n\n");
@@ -376,6 +355,19 @@ export function CompanyDetail({
         ) : (
           /* Full researched content */
           <>
+            {/* About */}
+            <Section icon={Info} title="About">
+              <div className="flex items-start gap-2">
+                <div className="flex-1">
+                  <p className="text-sm leading-relaxed text-muted-foreground">{company.desc}</p>
+                  {company.notes && (
+                    <p className="text-xs text-brand/80 mt-2 italic">{company.notes}</p>
+                  )}
+                </div>
+                {company.desc && <CopyButton text={company.desc} />}
+              </div>
+            </Section>
+
             {/* Contacts with Persona Badges + Brief Me */}
             <Section icon={Users} title="Contacts">
               <div className="space-y-3">
@@ -410,91 +402,31 @@ export function CompanyDetail({
               </div>
             </Section>
 
-            {/* Account Coverage (Multi-Threading Map) */}
-            {threadingMap.totalCount > 0 && (
-              <Section icon={Users} title="Account Coverage">
-                <div className="space-y-3">
-                  {/* Coverage bar */}
-                  <div className="flex items-center gap-2">
-                    <div className="flex-1 h-1.5 rounded-full bg-secondary/50 overflow-hidden">
-                      <div
-                        className={cn(
-                          "h-full rounded-full transition-all",
-                          threadingMap.coveragePct >= 75 ? "bg-green-500" :
-                          threadingMap.coveragePct >= 50 ? "bg-amber-500" : "bg-red-500"
-                        )}
-                        style={{ width: `${threadingMap.coveragePct}%` }}
-                      />
-                    </div>
-                    <span className="text-xs text-muted-foreground">
-                      {threadingMap.engagedCount} of {threadingMap.totalCount} ({threadingMap.coveragePct}%)
-                    </span>
-                  </div>
-
-                  {/* Leader threads */}
-                  {threadingMap.threads.map((thread, i) => {
-                    const personaConfig = getPersonaConfig(thread.persona);
-                    const statusStyle = STATUS_STYLES[thread.status];
-                    return (
-                      <div key={i} className="flex items-center gap-2 text-xs">
-                        <span className="font-medium min-w-0 truncate flex-1">{thread.leader.n}</span>
-                        <Badge variant="outline" className={cn("text-xs px-1 py-0.5 h-5", personaConfig.colorClass)}>
-                          {personaConfig.label}
-                        </Badge>
-                        <Badge variant="outline" className={cn("text-xs px-1 py-0.5 h-5", statusStyle.colorClass)}>
-                          {statusStyle.label}
-                        </Badge>
-                        {thread.engagementCount > 0 && (
-                          <span className="text-xs text-muted-foreground">{thread.engagementCount}x</span>
-                        )}
-                      </div>
-                    );
-                  })}
-
-                  {/* Suggestion */}
-                  {threadingMap.suggestion && (
-                    <p className="text-xs text-brand/80 bg-brand/5 rounded-lg p-2 mt-1">
-                      {threadingMap.suggestion}
-                    </p>
-                  )}
-                </div>
-              </Section>
-            )}
-
             {/* AI Briefing */}
             <AIBriefingCard companyId={company.id} />
 
-            {/* Document Vault */}
-            <DocumentVault companyId={company.id} />
-
             {/* Icebreakers */}
             <Section icon={Lightbulb} title="Icebreakers">
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
-                    {currentIcebreaker || "No icebreakers available"}
+              <div className="space-y-2">
+                {company.icebreakers && company.icebreakers.length > 0 ? (
+                  company.icebreakers.map((ice, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
+                        {ice}
+                      </div>
+                      <CopyButton text={ice} />
+                    </div>
+                  ))
+                ) : company.ice ? (
+                  <div className="flex items-start gap-2">
+                    <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
+                      {company.ice}
+                    </div>
+                    <CopyButton text={company.ice} />
                   </div>
-                  {currentIcebreaker && <CopyButton text={currentIcebreaker} />}
-                </div>
-                {company.icebreakers && company.icebreakers.length > 1 && (
-                  <Button variant="ghost" size="sm" className="h-7 text-xs text-muted-foreground" onClick={shuffleIce}>
-                    <Shuffle className="h-3 w-3 mr-1" />
-                    Next icebreaker ({iceIndex + 1}/{company.icebreakers.length})
-                  </Button>
+                ) : (
+                  <p className="text-sm text-muted-foreground">No icebreakers available</p>
                 )}
-              </div>
-            </Section>
-
-            {/* About */}
-            <Section icon={Info} title="About">
-              <div className="flex items-start gap-2">
-                <div className="flex-1">
-                  <p className="text-sm leading-relaxed text-muted-foreground">{company.desc}</p>
-                  {company.notes && (
-                    <p className="text-xs text-brand/80 mt-2 italic">{company.notes}</p>
-                  )}
-                </div>
-                {company.desc && <CopyButton text={company.desc} />}
               </div>
             </Section>
 
@@ -502,13 +434,27 @@ export function CompanyDetail({
             {company.news && company.news.length > 0 && (
               <Section icon={Newspaper} title="Recent News">
                 <div className="space-y-3">
-                  {company.news.map((item, i) => (
-                    <Card key={i} className="bg-secondary/30 p-3 gap-2 shadow-none border-0">
-                      <h4 className="text-sm font-medium leading-snug">{item.h}</h4>
-                      <p className="text-xs text-brand/70 mt-0.5">{item.s}</p>
-                      <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{item.d}</p>
-                    </Card>
-                  ))}
+                  {company.news.map((item, i) => {
+                    const newsUrl = item.u || `https://www.google.com/search?q=${encodeURIComponent(item.h + " " + company.name)}`;
+                    return (
+                      <a
+                        key={i}
+                        href={newsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <Card className="bg-secondary/30 p-3 gap-2 shadow-none border-0 hover:bg-secondary/50 transition-colors cursor-pointer">
+                          <div className="flex items-start gap-2">
+                            <h4 className="text-sm font-medium leading-snug text-brand hover:underline flex-1">{item.h}</h4>
+                            <ExternalLink className="h-3 w-3 text-muted-foreground shrink-0 mt-0.5" />
+                          </div>
+                          <p className="text-xs text-brand/70 mt-0.5">{item.s}</p>
+                          <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{item.d}</p>
+                        </Card>
+                      </a>
+                    );
+                  })}
                 </div>
               </Section>
             )}
@@ -791,13 +737,13 @@ function LeaderCard({
                   onToggleExpand("email");
                 }}
                 className={cn(
-                  "flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md transition-colors",
+                  "flex items-center text-xs h-auto p-1 rounded-md transition-colors",
                   expandedPanel === "email"
-                    ? "bg-blue-500/20 text-blue-400"
-                    : "bg-blue-500/10 text-blue-400 hover:bg-blue-500/20"
+                    ? "bg-muted text-foreground"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
                 )}
               >
-                <Mail className="h-3 w-3" /> Email
+                <Mail className="h-3.5 w-3.5" />
               </Button>
             </TooltipTrigger>
             <TooltipContent>Draft email</TooltipContent>
@@ -812,13 +758,13 @@ function LeaderCard({
                   onToggleExpand("linkedin");
                 }}
                 className={cn(
-                  "flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md transition-colors",
+                  "flex items-center text-xs h-auto p-1 rounded-md transition-colors",
                   expandedPanel === "linkedin"
-                    ? "bg-sky-400/20 text-sky-400"
-                    : "bg-sky-400/10 text-sky-400 hover:bg-sky-400/20"
+                    ? "bg-muted text-foreground"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
                 )}
               >
-                <Linkedin className="h-3 w-3" /> LinkedIn
+                <Linkedin className="h-3.5 w-3.5" />
               </Button>
             </TooltipTrigger>
             <TooltipContent>Draft LinkedIn message</TooltipContent>
