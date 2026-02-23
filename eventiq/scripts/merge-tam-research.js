@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 // Usage: node scripts/merge-tam-research.js scripts/tam-result-*.json
 const args = process.argv.slice(2);
@@ -90,3 +91,6 @@ console.log(`\nWritten to ${dataPath}`);
 // Stats
 const withDesc = data.filter(c => c.desc && c.desc.length > 20);
 console.log(`\nCompanies with description: ${withDesc.length} / ${data.length} (${(withDesc.length / data.length * 100).toFixed(1)}%)`);
+
+// Sync to Supabase
+syncToSupabase(data);

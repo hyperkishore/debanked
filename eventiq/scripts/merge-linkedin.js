@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 // Usage: node scripts/merge-linkedin.js scripts/linkedin-result-*.json
 const args = process.argv.slice(2);
@@ -74,3 +75,6 @@ const allLeaders = data.filter(c => c.leaders && c.leaders.length > 0).flatMap(c
 const withLi = allLeaders.filter(l => l.li && l.li.length > 0);
 console.log(`Total leaders: ${allLeaders.length}`);
 console.log(`With LinkedIn: ${withLi.length} (${(withLi.length / allLeaders.length * 100).toFixed(1)}%)`);
+
+// Sync to Supabase
+syncToSupabase(data);

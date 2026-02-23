@@ -17,6 +17,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 const { buildCompanyIndex, findBestMatch } = require('./lib/fuzzy-match');
 
@@ -368,6 +369,7 @@ async function main() {
     if (!flags.engagementsOnly) {
       fs.writeFileSync(DATA_FILE, JSON.stringify(existingData, null, 2));
       console.log(`\nWritten company updates to ${DATA_FILE}`);
+      await syncToSupabase(existingData);
     }
 
     // Write engagements

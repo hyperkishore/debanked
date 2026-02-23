@@ -8,6 +8,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 const AGENT_OUTPUT_DIR = '/Users/kishore/.claude/projects/-Users-kishore-Desktop-Claude-experiments-debanked/bfc56a8c-6370-4f88-b9b5-6647cf32d228/subagents';
 const EXISTING_DATA = path.join(__dirname, '../src/data/companies.json');
@@ -166,3 +167,6 @@ console.log(`  ICP: ${merged.filter(c => c.type === 'ICP').length}`);
 fs.writeFileSync(OUTPUT_FILE, JSON.stringify(merged, null, 2));
 console.log(`\nWritten to ${OUTPUT_FILE}`);
 console.log(`File size: ${(fs.statSync(OUTPUT_FILE).size / 1024).toFixed(1)} KB`);
+
+// Sync to Supabase
+syncToSupabase(merged);

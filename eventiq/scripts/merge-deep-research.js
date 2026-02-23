@@ -14,6 +14,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 const ALL_COMPANIES = path.join(__dirname, '../src/data/all-companies.json');
 const scriptsDir = __dirname;
@@ -152,3 +153,6 @@ console.log(`\nTotal leaders: ${totalLeaders}`);
 console.log(`With hooks: ${withHooks}`);
 console.log(`With LinkedIn: ${withLi}`);
 console.log(`Deep-researched companies: ${deepResearched}`);
+
+// Sync to Supabase
+syncToSupabase(allCompanies);

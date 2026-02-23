@@ -10,6 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 const ALL_COMPANIES = path.join(__dirname, '../src/data/all-companies.json');
 
@@ -149,3 +150,6 @@ console.log(`File size: ${(size / 1024).toFixed(1)} KB`);
 // Stats
 const totalResearched = allCompanies.filter(c => c.desc && c.desc.length > 0 && c.contacts.length > 0).length;
 console.log(`\nTotal researched now: ${totalResearched}/${allCompanies.length} (${(totalResearched/allCompanies.length*100).toFixed(1)}%)`);
+
+// Sync to Supabase
+syncToSupabase(allCompanies);

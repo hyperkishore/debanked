@@ -10,6 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 const ALL_COMPANIES = path.join(__dirname, '../src/data/all-companies.json');
 const scriptsDir = __dirname;
@@ -100,3 +101,6 @@ const pct = (100 * withHooks / totalLeaders).toFixed(1);
 console.log(`\nTotal leaders: ${totalLeaders}`);
 console.log(`With hooks: ${withHooks} (${pct}%)`);
 console.log(`Without hooks: ${totalLeaders - withHooks}`);
+
+// Sync to Supabase
+syncToSupabase(allCompanies);

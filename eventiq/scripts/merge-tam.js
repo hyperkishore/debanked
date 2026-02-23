@@ -11,6 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 const EXISTING_DATA = path.join(__dirname, '../src/data/companies.json');
 const TAM_DATA = path.join(__dirname, '../src/data/tam-companies.json');
@@ -216,3 +217,6 @@ fs.writeFileSync(OUTPUT_FILE, JSON.stringify(merged, null, 2));
 const size = fs.statSync(OUTPUT_FILE).size;
 console.log(`\nWritten to ${OUTPUT_FILE}`);
 console.log(`File size: ${(size / 1024).toFixed(1)} KB`);
+
+// Sync to Supabase
+syncToSupabase(merged);

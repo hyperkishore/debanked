@@ -13,6 +13,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 const ALL_COMPANIES = path.join(__dirname, '../src/data/all-companies.json');
 
@@ -163,3 +164,6 @@ const totalLeaders = allCompanies.reduce((s, c) => s + (c.leaders || []).length,
 console.log(`\nTotal leaders: ${totalLeaders}`);
 console.log(`With hooks: ${totalWithHooks}`);
 console.log(`With LinkedIn: ${totalWithLi}`);
+
+// Sync to Supabase
+syncToSupabase(allCompanies);

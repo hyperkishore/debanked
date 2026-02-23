@@ -18,6 +18,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { syncToSupabase } = require('./lib/supabase-sync');
 
 const { buildCompanyIndex, findBestMatch } = require('./lib/fuzzy-match');
 
@@ -295,6 +296,9 @@ function main() {
     newNames: newCompanies.map(c => c.name),
   }, null, 2));
   console.log(`  Log:     ${logPath}`);
+
+  // Sync to Supabase
+  await syncToSupabase(existingData);
 }
 
 main();
