@@ -1,6 +1,7 @@
 export interface Contact {
   n: string;
   t: string;
+  li?: string;
 }
 
 export interface NewsItem {

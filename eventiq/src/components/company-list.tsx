@@ -257,11 +257,8 @@ export function CompanyList({
                   <CompanyCard
                     company={company}
                     isSelected={selectedId === company.id}
-                    isMet={!!metState[company.id]}
-                    rating={ratingState[company.id]?.rating}
                     lastEngagementTime={getLastEngagement(engagements, company.id)?.timestamp ?? null}
                     onSelect={onSelect}
-                    onToggleMet={onToggleMet}
                     query={inlineSearch}
                     outreachScore={showOutreachBadges ? outreachData.scores.get(company.id) : undefined}
                     urgencyTier={showOutreachBadges ? (outreachData.tiers.get(company.id) as "critical" | "high" | "medium" | "low") : undefined}

@@ -3,22 +3,16 @@
 import { Company, OutreachStatus, getResearchScore, getResearchTier } from "@/lib/types";
 import { UrgencyTier } from "@/lib/outreach-score";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
-import { Check, Circle, Tag } from "lucide-react";
+import { Tag } from "lucide-react";
 
 interface CompanyCardProps {
   company: Company;
   isSelected: boolean;
-  isMet: boolean;
-  rating?: string;
   lastEngagementTime?: string | null;
   onSelect: (id: number) => void;
-  onToggleMet: (id: number) => void;
   query?: string;
   outreachScore?: number;
   urgencyTier?: UrgencyTier;
@@ -41,11 +35,11 @@ function highlightText(text: string, query: string) {
   );
 }
 
-const qualityIndicatorColors: Record<string, string> = {
-  complete: "[&>[data-slot=progress-indicator]]:bg-green-500",
-  good: "[&>[data-slot=progress-indicator]]:bg-blue-500",
-  partial: "[&>[data-slot=progress-indicator]]:bg-amber-500",
-  minimal: "[&>[data-slot=progress-indicator]]:bg-red-500/60",
+const tierBadgeColors: Record<string, string> = {
+  complete: "text-green-400",
+  good: "text-blue-400",
+  partial: "text-amber-400",
+  minimal: "text-red-400/60",
 };
 
 const typeIndicatorColor: Record<string, string> = {
@@ -78,11 +72,8 @@ const outreachBadgeStyles: Record<string, { label: string; className: string }> 
 export function CompanyCard({
   company,
   isSelected,
-  isMet,
-  rating,
   lastEngagementTime,
   onSelect,
-  onToggleMet,
   query = "",
   outreachScore,
   urgencyTier,
@@ -93,6 +84,12 @@ export function CompanyCard({
   const subtitle = contactNames || company.location || "";
   const score = getResearchScore(company);
   const tier = getResearchTier(score);
+
+  // Build metadata line: location · N employees
+  const metaParts: string[] = [];
+  if (company.location) metaParts.push(company.location);
+  if (company.employees && company.employees > 0) metaParts.push(`${company.employees.toLocaleString()} employees`);
+  const metaLine = metaParts.join(" · ");
 
   return (
     <Card
@@ -158,15 +155,15 @@ export function CompanyCard({
             {highlightText(subtitle, query)}
           </p>
 
-          {company.employees && company.employees > 0 && (
+          {metaLine && (
             <span className="text-xs text-muted-foreground/60">
-              {company.employees.toLocaleString()} employees
+              {metaLine}
             </span>
           )}
 
           {company.ice && !nextBestAction && (
-            <p className="text-xs text-muted-foreground/70 mt-1 line-clamp-1">
-              {company.ice.substring(0, 80)}...
+            <p className="text-xs text-muted-foreground/70 mt-1 line-clamp-2">
+              {company.ice}
             </p>
           )}
 
@@ -201,52 +198,12 @@ export function CompanyCard({
               )}
             </div>
           )}
-
-          {/* Research quality */}
-          <div className="mt-2 flex items-center gap-2">
-            <Progress
-              value={score}
-              className={cn("h-1 flex-1", qualityIndicatorColors[tier])}
-            />
-            <span className="text-xs text-muted-foreground/60 tabular-nums shrink-0">{score}%</span>
-          </div>
         </div>
 
-        {/* Right actions */}
-        <div className="flex flex-col items-center gap-1 shrink-0 pt-0.5">
-          {isMet && (
-            <Badge className={cn(
-              "text-xs px-1.5 py-0.5 h-5",
-              rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
-              rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
-              rating === "cold" && "bg-brand/20 text-brand",
-              !rating && "bg-muted text-muted-foreground"
-            )}>
-              {rating ? `MET·${rating.toUpperCase()}` : "MET"}
-            </Badge>
-          )}
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onToggleMet(company.id);
-                }}
-                className={cn(
-                  "w-6 h-6 rounded-full transition-all opacity-0 group-hover:opacity-100",
-                  isMet
-                    ? "bg-brand/20 text-brand opacity-100"
-                    : "bg-muted/50 text-muted-foreground hover:bg-brand/20 hover:text-brand"
-                )}
-              >
-                {isMet ? <Check className="h-3 w-3" /> : <Circle className="h-3 w-3" />}
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>{isMet ? "Unmark met" : "Mark as met"}</TooltipContent>
-          </Tooltip>
-        </div>
+        {/* Research score badge */}
+        <span className={cn("text-xs font-medium tabular-nums shrink-0 pt-0.5", tierBadgeColors[tier])}>
+          {score}%
+        </span>
       </div>
     </Card>
   );

@@ -4,7 +4,13 @@ import { FilterType, SortType, ViewType } from "@/lib/types";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { LayoutGrid, Table2, ArrowUpDown, X } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { LayoutGrid, Table2, ArrowUpDown, X, Check } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface FilterBarProps {
@@ -35,6 +41,16 @@ const filters: { value: FilterType; label: string }[] = [
   { value: "Unresearched", label: "Unresearched" },
 ];
 
+const sortOptions: { value: SortType; label: string; shortLabel: string }[] = [
+  { value: "priority", label: "Priority (highest first)", shortLabel: "Priority" },
+  { value: "name", label: "Name (A \u2192 Z)", shortLabel: "Name" },
+  { value: "type", label: "Type (SQO \u2192 TAM)", shortLabel: "Type" },
+  { value: "phase", label: "Phase", shortLabel: "Phase" },
+  { value: "employees", label: "Employees (largest first)", shortLabel: "Employees" },
+  { value: "quality", label: "Research quality (best first)", shortLabel: "Quality" },
+  { value: "outreach", label: "Outreach score (highest first)", shortLabel: "Outreach" },
+];
+
 export function FilterBar({
   activeFilter,
   onFilterChange,
@@ -49,18 +65,7 @@ export function FilterBar({
   activeTagFilter,
   onTagFilterChange,
 }: FilterBarProps) {
-  const sortOptions: { value: SortType; label: string }[] = [
-    { value: "priority", label: "Priority" },
-    { value: "name", label: "Name" },
-    { value: "type", label: "Type" },
-    { value: "phase", label: "Phase" },
-    { value: "employees", label: "Employees" },
-    { value: "quality", label: "Quality" },
-    { value: "outreach", label: "Outreach" },
-  ];
-
-  const currentSortIdx = sortOptions.findIndex((s) => s.value === activeSort);
-  const nextSort = sortOptions[(currentSortIdx + 1) % sortOptions.length];
+  const currentSort = sortOptions.find((s) => s.value === activeSort);
 
   return (
     <div className="flex flex-col gap-1.5 px-3 py-2 border-b border-border">
@@ -119,23 +124,33 @@ export function FilterBar({
       <div className="flex items-center justify-between">
         <span className="text-xs text-muted-foreground">
           {filteredCount} of {totalCount}
-          {metCount > 0 && ` · ${metCount} met`}
+          {metCount > 0 && ` \u00b7 ${metCount} met`}
         </span>
         <div className="flex items-center gap-0.5">
-          <Tooltip>
-            <TooltipTrigger asChild>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
               <Button
                 variant="ghost"
                 size="sm"
                 className="h-6 px-1.5 text-xs text-muted-foreground"
-                onClick={() => onSortChange(nextSort.value)}
               >
                 <ArrowUpDown className="h-3 w-3 mr-0.5" />
-                {activeSort}
+                {currentSort?.shortLabel || activeSort}
               </Button>
-            </TooltipTrigger>
-            <TooltipContent>{`Sort: ${activeSort}`}</TooltipContent>
-          </Tooltip>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-56">
+              {sortOptions.map((opt) => (
+                <DropdownMenuItem
+                  key={opt.value}
+                  onClick={() => onSortChange(opt.value)}
+                  className="text-xs flex items-center justify-between"
+                >
+                  {opt.label}
+                  {activeSort === opt.value && <Check className="h-3 w-3 ml-2 text-brand" />}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
