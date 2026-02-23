@@ -84,15 +84,13 @@ export async function runSignalIngestion(
   const priorityCompanies = companies.filter((c) => c.priority <= 2);
   const tamCompanies = companies.filter((c) => c.priority > 2);
 
-  // --- Google News: P0/P1 individual searches ---
+  // --- Google News: P0/P1 individual searches (bounded concurrency) ---
   const googleStart = Date.now();
-  const googleSignals: RawSignal[] = [];
-  for (const company of priorityCompanies) {
-    const signals = await fetchGoogleNews(company.name);
-    googleSignals.push(...signals);
-    // Rate limit: small delay between requests
-    await sleep(200);
-  }
+  const googleSignals: RawSignal[] = await runBounded(
+    priorityCompanies.map((c) => () => fetchGoogleNews(c.name)),
+    5,
+    100
+  );
   results.push(
     await storeSignals(supabase, googleSignals, companyMap, "google_news", {
       companiesSearched: priorityCompanies.length,
@@ -103,12 +101,11 @@ export async function runSignalIngestion(
   // --- Bing News: P0/P1 individual searches (if API key configured) ---
   if (process.env.BING_NEWS_API_KEY) {
     const bingStart = Date.now();
-    const bingSignals: RawSignal[] = [];
-    for (const company of priorityCompanies) {
-      const signals = await fetchBingNews(company.name);
-      bingSignals.push(...signals);
-      await sleep(100);
-    }
+    const bingSignals: RawSignal[] = await runBounded(
+      priorityCompanies.map((c) => () => fetchBingNews(c.name)),
+      5,
+      100
+    );
     results.push(
       await storeSignals(supabase, bingSignals, companyMap, "bing_news", {
         companiesSearched: priorityCompanies.length,
@@ -127,12 +124,11 @@ export async function runSignalIngestion(
     "revenue based financing",
   ];
   const batchStart = Date.now();
-  const batchSignals: RawSignal[] = [];
-  for (const keyword of batchKeywords) {
-    const signals = await fetchGoogleNews(keyword);
-    batchSignals.push(...signals);
-    await sleep(200);
-  }
+  const batchSignals: RawSignal[] = await runBounded(
+    batchKeywords.map((kw) => () => fetchGoogleNews(kw)),
+    5,
+    100
+  );
   results.push(
     await storeSignals(supabase, batchSignals, companyMap, "google_news_batch", {
       companiesSearched: batchKeywords.length,
@@ -235,6 +231,33 @@ async function storeSignals(
   });
 
   return result;
+}
+
+/**
+ * Run async tasks with bounded concurrency.
+ * Processes up to `concurrency` tasks in parallel, with `delayMs` between spawns.
+ * Returns flattened results from all tasks.
+ */
+async function runBounded<T>(
+  tasks: Array<() => Promise<T[]>>,
+  concurrency: number,
+  delayMs: number
+): Promise<T[]> {
+  const results: T[] = [];
+  let idx = 0;
+
+  async function worker() {
+    while (idx < tasks.length) {
+      const currentIdx = idx++;
+      const taskResults = await tasks[currentIdx]();
+      results.push(...taskResults);
+      if (delayMs > 0) await sleep(delayMs);
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(concurrency, tasks.length) }, () => worker());
+  await Promise.all(workers);
+  return results;
 }
 
 function sleep(ms: number): Promise<void> {
