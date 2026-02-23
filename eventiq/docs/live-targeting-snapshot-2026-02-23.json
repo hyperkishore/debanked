@@ -1,0 +1,1166 @@
+{
+  "generatedAt": "2026-02-23T05:34:07.985Z",
+  "totalCompanies": 1023,
+  "primaryTop30": [
+    {
+      "id": 2,
+      "name": "BriteCap Financial",
+      "type": "SQO",
+      "priority": 1,
+      "score": 36,
+      "signal": 9,
+      "ricp": true,
+      "ricpTitles": [
+        "Dave Lafferty (Chief Credit Officer)"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "FundKite",
+      "type": "Client",
+      "priority": 2,
+      "score": 32,
+      "signal": 9,
+      "ricp": true,
+      "ricpTitles": [
+        "Rick Kuci (COO)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "PIRS Capital",
+      "type": "SQO",
+      "priority": 1,
+      "score": 30,
+      "signal": 5,
+      "ricp": true,
+      "ricpTitles": [
+        "Andrew Mallinger (COO)"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Spartan Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 30,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Connor Leppzer (Director of Underwriting)",
+        "Connor Leppzer (Dir Underwriting)"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "CFG Merchant Solutions",
+      "type": "ICP",
+      "priority": 2,
+      "score": 30,
+      "signal": 9,
+      "ricp": true,
+      "ricpTitles": [
+        "Michael Kevitch (Senior Underwriter & Portfolio Manager)"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Fundfi",
+      "type": "Client",
+      "priority": 2,
+      "score": 29,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Gerard Lucero (Senior Underwriter)",
+        "Natasha Dillon (CFO/COO)"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Wing Lake Capital Partners",
+      "type": "SQO",
+      "priority": 1,
+      "score": 28,
+      "signal": 4,
+      "ricp": true,
+      "ricpTitles": [
+        "Eli Golshteyn (Director of Underwriting)",
+        "Eli Golshteyn (Dir of Underwriting)"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Elevate Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 28,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Mackenzie Mead (Manager, Underwriting)",
+        "Liam Donahue (Underwriter)"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Credibly",
+      "type": "ICP",
+      "priority": 2,
+      "score": 28,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1,
+      "name": "Bitty",
+      "type": "SQO",
+      "priority": 1,
+      "score": 27,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 14,
+      "name": "Velocity Capital Group",
+      "type": "ICP",
+      "priority": 2,
+      "score": 27,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Jesse Guzman (CRO)",
+        "David Slepoy (VP Risk Management)"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Rapid Finance",
+      "type": "ICP",
+      "priority": 2,
+      "score": 27,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Mark Cerminaro (CRO)",
+        "Terry Thornton (Chief Credit & Analysis Officer)",
+        "Terry Thornton (Chief Credit Officer)"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Forward Financing",
+      "type": "ICP",
+      "priority": 2,
+      "score": 27,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Tyler Thielmann (CRO)"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "CapFlow Funding Group",
+      "type": "ICP",
+      "priority": 2,
+      "score": 27,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Thomas Ingrassia (Chief Risk Officer)"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Vox Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 17,
+      "name": "idea Financial",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 38,
+      "name": "Lendini",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 44,
+      "name": "Dynamic Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 9,
+      "ricp": true,
+      "ricpTitles": [
+        "Steven Edisis (CEO & COO)"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "World Business Lenders",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 114,
+      "name": "Expansion Capital Group",
+      "type": "ICP",
+      "priority": 2,
+      "score": 24,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Herk Christie (Chief Operating Officer)"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Big Think Capital",
+      "type": "ICP",
+      "priority": 3,
+      "score": 23,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Tom Forsberg (CRO)"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "CAN Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 22,
+      "signal": 5,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 10,
+      "name": "Aspire Funding Platform",
+      "type": "ICP",
+      "priority": 3,
+      "score": 22,
+      "signal": 5,
+      "ricp": true,
+      "ricpTitles": [
+        "Austin Zak (Manager, Underwriting)",
+        "Bernard Aquino (Senior Underwriting Specialist)"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Tip Top Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 22,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 20,
+      "name": "Likety",
+      "type": "ICP",
+      "priority": 3,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 73,
+      "name": "Kapitus",
+      "type": "ICP",
+      "priority": 2,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 74,
+      "name": "Mulligan Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 102,
+      "name": "BlueVine",
+      "type": "ICP",
+      "priority": 2,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 160,
+      "name": "Lighter Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 11,
+      "name": "Simply Funding",
+      "type": "ICP",
+      "priority": 3,
+      "score": 18,
+      "signal": 5,
+      "ricp": false,
+      "ricpTitles": []
+    }
+  ],
+  "primaryRicpGaps": [
+    {
+      "id": 64,
+      "name": "Credibly",
+      "type": "ICP",
+      "priority": 2,
+      "score": 28,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1,
+      "name": "Bitty",
+      "type": "SQO",
+      "priority": 1,
+      "score": 27,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 7,
+      "name": "Vox Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 17,
+      "name": "idea Financial",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 38,
+      "name": "Lendini",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 57,
+      "name": "World Business Lenders",
+      "type": "ICP",
+      "priority": 2,
+      "score": 26,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 8,
+      "name": "CAN Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 22,
+      "signal": 5,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 45,
+      "name": "Tip Top Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 22,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 20,
+      "name": "Likety",
+      "type": "ICP",
+      "priority": 3,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 73,
+      "name": "Kapitus",
+      "type": "ICP",
+      "priority": 2,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 74,
+      "name": "Mulligan Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 102,
+      "name": "BlueVine",
+      "type": "ICP",
+      "priority": 2,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 160,
+      "name": "Lighter Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 19,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 11,
+      "name": "Simply Funding",
+      "type": "ICP",
+      "priority": 3,
+      "score": 18,
+      "signal": 5,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 159,
+      "name": "ByzFunder",
+      "type": "ICP",
+      "priority": 2,
+      "score": 18,
+      "signal": 6,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 12,
+      "name": "MonetaFi",
+      "type": "ICP",
+      "priority": 3,
+      "score": 17,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 18,
+      "name": "Gulf Coast Business Credit",
+      "type": "ICP",
+      "priority": 3,
+      "score": 17,
+      "signal": 4,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 47,
+      "name": "Lexington Capital Holdings",
+      "type": "ICP",
+      "priority": 2,
+      "score": 17,
+      "signal": 4,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 101,
+      "name": "Fundbox",
+      "type": "ICP",
+      "priority": 2,
+      "score": 16,
+      "signal": 4,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 132,
+      "name": "Wayflyer",
+      "type": "ICP",
+      "priority": 2,
+      "score": 16,
+      "signal": 4,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 176,
+      "name": "Lendistry",
+      "type": "ICP",
+      "priority": 2,
+      "score": 16,
+      "signal": 4,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 46,
+      "name": "Barclays Advance",
+      "type": "ICP",
+      "priority": 3,
+      "score": 15,
+      "signal": 6,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 9,
+      "name": "Dexly Finance",
+      "type": "ICP",
+      "priority": 3,
+      "score": 14,
+      "signal": 4,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 67,
+      "name": "Pearl Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 68,
+      "name": "Greenbox Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 70,
+      "name": "National Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 71,
+      "name": "Fora Financial",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 76,
+      "name": "Clearco",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 83,
+      "name": "Everest Business Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 85,
+      "name": "Reliant Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 86,
+      "name": "Lendio",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 89,
+      "name": "One Park Financial",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 94,
+      "name": "ROK Financial",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 104,
+      "name": "Shield Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 110,
+      "name": "Blue Bridge Financial",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 113,
+      "name": "Lendr",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 115,
+      "name": "Cardiff",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 116,
+      "name": "Revenued",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 118,
+      "name": "ARF Financial",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 131,
+      "name": "NewCo Capital Group",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 138,
+      "name": "SellersFi",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 139,
+      "name": "Alternative Funding Group",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 145,
+      "name": "SBG Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 146,
+      "name": "Backd Business Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 175,
+      "name": "Nav",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 177,
+      "name": "Accion Opportunity Fund",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 178,
+      "name": "Grameen America",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 180,
+      "name": "Torro",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 185,
+      "name": "Uplyft Capital",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 186,
+      "name": "Onramp Funds",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 193,
+      "name": "Fox Business Funding",
+      "type": "ICP",
+      "priority": 2,
+      "score": 12,
+      "signal": 0,
+      "ricp": false,
+      "ricpTitles": []
+    }
+  ],
+  "tamBreakout": [
+    {
+      "id": 1037,
+      "name": "Pursuit Lending",
+      "priority": 2,
+      "score": 23,
+      "signal": 9,
+      "ricp": true,
+      "ricpTitles": [
+        "Rich Amsterdam (EVP & Chief Credit Officer)"
+      ]
+    },
+    {
+      "id": 1070,
+      "name": "Republic Business Credit",
+      "priority": 2,
+      "score": 22,
+      "signal": 9,
+      "ricp": true,
+      "ricpTitles": [
+        "Matthew Begley (COO)"
+      ]
+    },
+    {
+      "id": 1084,
+      "name": "Wingspire Capital",
+      "priority": 2,
+      "score": 22,
+      "signal": 9,
+      "ricp": true,
+      "ricpTitles": [
+        "Ray De Palma (COO)"
+      ]
+    },
+    {
+      "id": 1527,
+      "name": "Financial Pacific Leasing",
+      "priority": 2,
+      "score": 22,
+      "signal": 9,
+      "ricp": true,
+      "ricpTitles": [
+        "Stephen E. Leege (SVP, Chief Credit Officer)"
+      ]
+    },
+    {
+      "id": 1014,
+      "name": "BHG Financial",
+      "priority": 2,
+      "score": 21,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "April Brissette (Chief Risk Officer)"
+      ]
+    },
+    {
+      "id": 1470,
+      "name": "Direct Funding Now LLC",
+      "priority": 2,
+      "score": 21,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Carlos Miranda (COO)"
+      ]
+    },
+    {
+      "id": 1489,
+      "name": "NATIONAL BIZ LLC d/b/a National Business Capital",
+      "priority": 2,
+      "score": 21,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Phil Fernandes (COO)"
+      ]
+    },
+    {
+      "id": 1064,
+      "name": "Novel Capital",
+      "priority": 2,
+      "score": 20,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Keith Harrington (Co-Founder & COO)"
+      ]
+    },
+    {
+      "id": 1585,
+      "name": "8FIG",
+      "priority": 2,
+      "score": 20,
+      "signal": 7,
+      "ricp": true,
+      "ricpTitles": [
+        "Roei Yellin (Co-Founder & CRO)"
+      ]
+    },
+    {
+      "id": 1027,
+      "name": "Marco",
+      "priority": 2,
+      "score": 19,
+      "signal": 5,
+      "ricp": true,
+      "ricpTitles": [
+        "Peter Spradling (COO & Co-Founder)"
+      ]
+    },
+    {
+      "id": 1042,
+      "name": "Libertas",
+      "priority": 2,
+      "score": 19,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1085,
+      "name": "The Business Backer",
+      "priority": 2,
+      "score": 19,
+      "signal": 6,
+      "ricp": true,
+      "ricpTitles": [
+        "Stephen Tosh (COO)"
+      ]
+    },
+    {
+      "id": 1513,
+      "name": "Amerisource Business Capital",
+      "priority": 2,
+      "score": 19,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1536,
+      "name": "LendingPoint™",
+      "priority": 2,
+      "score": 19,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1632,
+      "name": "EASTERN FUNDING",
+      "priority": 2,
+      "score": 19,
+      "signal": 5,
+      "ricp": true,
+      "ricpTitles": [
+        "Falencia Prime (COO)"
+      ]
+    },
+    {
+      "id": 1019,
+      "name": "Drip Capital",
+      "priority": 2,
+      "score": 18,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1028,
+      "name": "North Mill Equipment Finance LLC",
+      "priority": 2,
+      "score": 18,
+      "signal": 4,
+      "ricp": true,
+      "ricpTitles": [
+        "Mark L. Bonanno (President & COO)"
+      ]
+    },
+    {
+      "id": 1045,
+      "name": "Avtech Capital",
+      "priority": 2,
+      "score": 18,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1046,
+      "name": "Newity LLC",
+      "priority": 2,
+      "score": 18,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1087,
+      "name": "QFS Capital",
+      "priority": 2,
+      "score": 18,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1094,
+      "name": "BlueTape",
+      "priority": 2,
+      "score": 18,
+      "signal": 5,
+      "ricp": true,
+      "ricpTitles": [
+        "Patrick Gannon (Co-Founder & COO)"
+      ]
+    },
+    {
+      "id": 1095,
+      "name": "GFE",
+      "priority": 2,
+      "score": 18,
+      "signal": 5,
+      "ricp": true,
+      "ricpTitles": [
+        "Boris Shakhmurov (COO & CISO)",
+        "Boris Shakhmurov (COO)"
+      ]
+    },
+    {
+      "id": 1493,
+      "name": "Premium Merchant Funding 18, LLC",
+      "priority": 2,
+      "score": 18,
+      "signal": 5,
+      "ricp": true,
+      "ricpTitles": [
+        "Abe Burger (COO)"
+      ]
+    },
+    {
+      "id": 1501,
+      "name": "Shore Funding Solutions Inc.",
+      "priority": 2,
+      "score": 18,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1535,
+      "name": "LEAF Commercial Capital, Inc.",
+      "priority": 2,
+      "score": 18,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1539,
+      "name": "Maxim Commercial Capital, LLC",
+      "priority": 2,
+      "score": 18,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1641,
+      "name": "EVERLASTING CAPITAL",
+      "priority": 2,
+      "score": 18,
+      "signal": 5,
+      "ricp": true,
+      "ricpTitles": [
+        "Will Murphy (COO & Co-Founder)"
+      ]
+    },
+    {
+      "id": 1673,
+      "name": "Idea 247, Inc.",
+      "priority": 2,
+      "score": 18,
+      "signal": 9,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1017,
+      "name": "OnDeck",
+      "priority": 2,
+      "score": 17,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    },
+    {
+      "id": 1020,
+      "name": "iBusiness Funding",
+      "priority": 2,
+      "score": 17,
+      "signal": 7,
+      "ricp": false,
+      "ricpTitles": []
+    }
+  ],
+  "missingRicpTotal": 973
+}
