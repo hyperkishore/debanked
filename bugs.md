@@ -310,6 +310,11 @@ This file tracks confirmed and high-confidence bugs/gaps observed in the current
   3. Gate sequence launch on minimum RICP coverage for high-priority accounts.
 - Recommended fix:
   - Option 1 immediately, then Option 2 and Option 3.
+- Baseline update (February 23, 2026, 13:18 UTC live read):
+  - Current live `companies`: 1000
+  - Priority cohort (`SQO`/`Client`/`ICP`, `priority <= 3`): 68
+  - Missing RICP in priority cohort: 44
+  - Coverage in priority cohort: 35.3%
 
 ---
 
@@ -321,3 +326,91 @@ This file tracks confirmed and high-confidence bugs/gaps observed in the current
 1. Security boundaries and data loss risks.
 2. User-visible reliability and truthfulness of API/sync outcomes.
 3. Performance and logic-quality fixes.
+
+## BUG-016: Leader Records Lack Verification Provenance for RICP Usage
+- Severity: `High`
+- Evidence:
+  - `eventiq/src/lib/types.ts:13`
+  - `eventiq/src/lib/types.ts:21`
+  - `eventiq/scripts/merge-enrichment.js:99`
+- Why this is a bug:
+  - RICP records are used for outbound targeting but do not require source URL, verification timestamp, or confidence, making it hard to separate validated contacts from stale/unverified entries.
+- Impact:
+  - Lower personalization quality and avoidable meeting loss from role/title inaccuracies.
+- Reproduction:
+  1. Inspect `Leader` type and merged leader records.
+  2. Observe absence of required provenance fields.
+  3. Attempt confidence-filtered outreach; data model cannot support it.
+- Fix options:
+  1. Add provenance fields to leader/contact schema and enforce on write.
+  2. Add a validation script that rejects incomplete RICP entries.
+  3. Mark legacy entries as `unverified` until backfilled.
+- Recommended fix:
+  - Option 1 + Option 2.
+
+## BUG-017: RICP Detection Uses Narrow Title Regex and Can Miss Valid Personas
+- Severity: `Medium`
+- Evidence:
+  - `eventiq/src/components/marketing-ideas-tab.tsx:26`
+  - `eventiq/src/components/marketing-ideas-tab.tsx:94`
+- Why this is a bug:
+  - Coverage checks rely on a single regex and can miss role-adjacent titles, causing false “missing RICP” classification.
+- Impact:
+  - Research queue noise and mis-prioritized enrichment work.
+- Reproduction:
+  1. Add valid risk/credit persona with non-matching title variant.
+  2. Run coverage calculation in marketing tab.
+  3. Observe account still flagged as missing RICP.
+- Fix options:
+  1. Introduce a normalized title taxonomy for operations/risk/credit/underwriting.
+  2. Store mapped `functionalRole` on each leader/contact.
+  3. Use taxonomy + keyword fallback instead of regex-only matching.
+- Recommended fix:
+  - Option 1 + Option 2.
+
+## BUG-018: Source-of-Truth Drift Between Local Files, Snapshots, and Live Supabase
+- Severity: `High`
+- Evidence:
+  - `eventiq/src/data/all-companies.json`
+  - `eventiq/docs/live-targeting-snapshot-2026-02-23.json:3`
+  - Live read-only Supabase query on **February 23, 2026** returned `1000` companies.
+- Why this is a bug:
+  - GTM prioritization and RICP gap decisions can be made on inconsistent datasets (local: 1021, saved snapshot: 1023, live DB: 1000).
+- Impact:
+  - Account ranking drift, duplicate/outdated targeting, and distorted meeting/SQL tracking.
+- Reproduction:
+  1. Count entries in local `all-companies.json`.
+  2. Read snapshot total in `live-targeting-snapshot-2026-02-23.json`.
+  3. Query live `companies` table in Supabase.
+  4. Compare totals and coverage outputs; mismatch observed.
+- Fix options:
+  1. Declare live Supabase as canonical source for daily targeting.
+  2. Add nightly reconciliation job that reports drift and blocks stale exports.
+  3. Version snapshots with source + timestamp metadata and expiry policy.
+- Recommended fix:
+  - Option 1 immediately, then Option 2.
+
+## BUG-019: Enrichment Merge Prefers Longer Background Text, Not Newer/More Trustworthy Data
+- Severity: `Medium`
+- Evidence:
+  - `eventiq/scripts/merge-enrichment.js:93`
+  - `eventiq/scripts/merge-enrichment.js:95`
+- Why this is a bug:
+  - Merge logic updates leader background by string length only, which can keep stale but longer text over newer concise verified updates.
+- Impact:
+  - RICP context can degrade over time, reducing message quality and trustworthiness.
+- Reproduction:
+  1. Prepare enrichment with newer but shorter corrected background.
+  2. Run merge script.
+  3. Observe older longer background remains.
+- Fix options:
+  1. Compare by `verifiedAt` instead of text length.
+  2. Add source-trust scoring and prefer higher-trust source on conflict.
+  3. Keep revision history and allow explicit “authoritative overwrite” flag.
+- Recommended fix:
+  - Option 1 + Option 2.
+
+## Immediate Attention Update (2026-02-23)
+- Add to immediate high-priority queue:
+  - `BUG-016` (missing RICP verification provenance)
+  - `BUG-018` (source-of-truth drift)
