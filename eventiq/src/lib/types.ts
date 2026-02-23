@@ -18,7 +18,22 @@ export interface Leader {
   li?: string;
   email?: string;
   phone?: string;
+  sourceUrls?: string[];
+  verifiedAt?: string;
+  confidence?: number;
+  functionalRole?: string;
+  lastReviewedAt?: string;
 }
+
+export type SubVertical =
+  | "mca"
+  | "equipment_finance"
+  | "sba_lending"
+  | "factoring"
+  | "revenue_based"
+  | "embedded_lending"
+  | "commercial_real_estate"
+  | "other";
 
 export function generateOutreachMessage(leader: Leader, company: Company): string {
   const firstName = leader.n.split(' ')[0];
@@ -133,6 +148,7 @@ export interface Company {
   website?: string;
   linkedinUrl?: string;
   source: string[];
+  subVertical?: SubVertical;
   outreachHistory?: OutreachHistory;
 }
 

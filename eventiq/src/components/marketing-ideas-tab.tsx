@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import { Company } from "@/lib/types";
+import { isRicpTitle, normalizePersonName } from "@/lib/ricp-taxonomy";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -22,9 +23,6 @@ interface PrioritizedAccount {
   signalScore: number;
   ricpContacts: string[];
 }
-
-const RICP_TITLE_RE =
-  /chief operating officer|\bcoo\b|chief risk officer|\bcro\b|chief credit|credit officer|head of risk|risk management|underwrit/i;
 
 const GTM_EXPERIMENTS = [
   {
@@ -91,11 +89,11 @@ function uniqueRicpContacts(company: Company): string[] {
     ...(company.contacts || []).map((p) => ({ n: p.n, t: p.t })),
   ];
 
-  const matches = people.filter((p) => RICP_TITLE_RE.test(p.t || ""));
+  const matches = people.filter((p) => isRicpTitle(p.t || ""));
   const dedup = new Map<string, string>();
 
   for (const person of matches) {
-    const key = `${person.n}|${person.t}`.toLowerCase();
+    const key = normalizePersonName(person.n);
     if (!dedup.has(key)) {
       dedup.set(key, `${person.n} (${person.t})`);
     }

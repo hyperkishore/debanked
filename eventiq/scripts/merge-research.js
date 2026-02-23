@@ -76,11 +76,51 @@ for (const company of allCompanies) {
   }
 
   if (research) {
-    // Merge research data — only overwrite if research has non-empty values
+    // Merge research data — merge arrays by name instead of overwriting
     if (research.desc && research.desc.length > 0) company.desc = research.desc;
-    if (research.contacts && research.contacts.length > 0) company.contacts = research.contacts;
-    if (research.leaders && research.leaders.length > 0) company.leaders = research.leaders;
-    if (research.news && research.news.length > 0) company.news = research.news;
+
+    // Merge contacts: dedup by normalized name before appending
+    if (research.contacts && research.contacts.length > 0) {
+      const existingNames = new Set((company.contacts || []).map(c => c.n.toLowerCase().trim()));
+      const newContacts = research.contacts.filter(c => !existingNames.has(c.n.toLowerCase().trim()));
+      company.contacts = [...(company.contacts || []), ...newContacts];
+      // If research has more complete contacts, prefer them
+      if (research.contacts.length > company.contacts.length) {
+        company.contacts = research.contacts;
+      }
+    }
+
+    // Merge leaders: dedup by normalized name before appending
+    if (research.leaders && research.leaders.length > 0) {
+      const existingLeaderNames = new Set((company.leaders || []).map(l => l.n.toLowerCase().trim()));
+      for (const rl of research.leaders) {
+        const normName = rl.n.toLowerCase().trim();
+        if (existingLeaderNames.has(normName)) {
+          // Update existing leader with research data if research has more detail
+          const existing = (company.leaders || []).find(l => l.n.toLowerCase().trim() === normName);
+          if (existing && rl.bg && rl.bg.length > (existing.bg || '').length) {
+            existing.bg = rl.bg;
+          }
+          if (existing && rl.hooks && rl.hooks.length > 0 && (!existing.hooks || existing.hooks.length === 0)) {
+            existing.hooks = rl.hooks;
+          }
+          if (existing && rl.li && !existing.li) {
+            existing.li = rl.li;
+          }
+        } else {
+          if (!company.leaders) company.leaders = [];
+          company.leaders.push(rl);
+          existingLeaderNames.add(normName);
+        }
+      }
+    }
+
+    // Merge news: dedup by normalized headline before appending
+    if (research.news && research.news.length > 0) {
+      const existingHeadlines = new Set((company.news || []).map(n => n.h.toLowerCase().trim().replace(/[^a-z0-9]/g, '')));
+      const newNews = research.news.filter(n => !existingHeadlines.has(n.h.toLowerCase().trim().replace(/[^a-z0-9]/g, '')));
+      company.news = [...newNews, ...(company.news || [])];
+    }
     if (research.ice && research.ice.length > 0) company.ice = research.ice;
     if (research.icebreakers && research.icebreakers.length > 0) company.icebreakers = research.icebreakers;
     if (research.tp && research.tp.length > 0) company.tp = research.tp;

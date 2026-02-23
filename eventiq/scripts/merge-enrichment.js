@@ -90,17 +90,26 @@ for (const company of allCompanies) {
           existingLeader.li = enrichLeader.li;
           addedLinkedIn++;
         }
-        // Update background if enrichment has a longer one
-        if (enrichLeader.bg && enrichLeader.bg.length > (existingLeader.bg || '').length) {
+        // Update background: prefer verifiedAt date, fall back to length comparison
+        const existingVerified = existingLeader.verifiedAt ? new Date(existingLeader.verifiedAt).getTime() : 0;
+        const enrichVerified = enrichLeader.verifiedAt ? new Date(enrichLeader.verifiedAt).getTime() : 0;
+        if (enrichVerified > existingVerified && enrichLeader.bg) {
+          existingLeader.bg = enrichLeader.bg;
+        } else if (!enrichVerified && !existingVerified && enrichLeader.bg && enrichLeader.bg.length > (existingLeader.bg || '').length) {
           existingLeader.bg = enrichLeader.bg;
         }
+        // Copy provenance fields from enrichment
+        if (enrichLeader.sourceUrls) existingLeader.sourceUrls = enrichLeader.sourceUrls;
+        if (enrichLeader.verifiedAt) existingLeader.verifiedAt = enrichLeader.verifiedAt;
+        if (enrichLeader.confidence) existingLeader.confidence = enrichLeader.confidence;
+        if (enrichLeader.functionalRole) existingLeader.functionalRole = enrichLeader.functionalRole;
       }
     }
-    // Add any new leaders not in existing
+    // Add any new leaders not in existing (require minimum provenance: name, title, and bg)
     for (const enrichLeader of enrichment.leaders) {
       const normName = enrichLeader.n.toLowerCase().trim();
       const exists = company.leaders.some(l => l.n.toLowerCase().trim() === normName);
-      if (!exists && enrichLeader.n && enrichLeader.t) {
+      if (!exists && enrichLeader.n && enrichLeader.t && enrichLeader.bg && enrichLeader.bg.length > 10) {
         company.leaders.push(enrichLeader);
       }
     }
