@@ -19,7 +19,7 @@ import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { FollowUpData, SentimentData } from "@/components/engagement-log";
 import { SequenceProgress } from "@/lib/sequence-helpers";
 import { Skeleton } from "@/components/ui/skeleton";
-import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import {
   ResizablePanelGroup,
   ResizablePanel,
@@ -624,18 +624,6 @@ export default function Home() {
     },
   });
 
-  // Tab labels for desktop header breadcrumb
-  const tabLabels: Record<TabType, string> = {
-    companies: "Companies",
-    map: "Market Map",
-    feed: "Market Intel",
-    dashboard: "Dashboard",
-    pipeline: "Pipeline",
-    schedule: "Today",
-    dinner: "Dinner",
-    resources: "Resources",
-  };
-
   // Content rendering based on active tab
   const renderContent = () => {
     switch (activeTab) {
@@ -725,14 +713,6 @@ export default function Home() {
       </div>
 
       <SidebarInset className="h-screen flex flex-col">
-        {/* Desktop header with sidebar trigger */}
-        <div className="hidden md:flex items-center h-10 px-2 border-b border-border gap-2">
-          <SidebarTrigger />
-          <span className="text-xs font-medium text-muted-foreground">
-            {tabLabels[activeTab] || "EventIQ"}
-          </span>
-        </div>
-
         {/* Mobile header */}
         <div className="flex items-center justify-between px-4 h-12 border-b border-border md:hidden">
           <h1 className="text-sm font-bold">EventIQ</h1>

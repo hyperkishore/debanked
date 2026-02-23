@@ -3,7 +3,6 @@
 import { FilterType, TabType } from "@/lib/types";
 import { StreakData } from "@/lib/streak-helpers";
 import { useAuth } from "@/contexts/auth-context";
-import { SyncIndicator } from "@/components/sync-indicator";
 import {
   Sidebar,
   SidebarContent,
@@ -15,6 +14,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarHeader,
+  SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Badge } from "@/components/ui/badge";
 import { Kbd } from "@/components/ui/kbd";
@@ -30,7 +30,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Building2, ListChecks, Layers, BarChart3, Kanban, Rss, Map, UtensilsCrossed, Upload, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen } from "lucide-react";
+import { Building2, ListChecks, BarChart3, Kanban, Rss, Map, UtensilsCrossed, Upload, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -105,7 +105,7 @@ export function AppSidebar({
             <p className="text-xs text-muted-foreground">MCA Market Intelligence</p>
           </div>
           <div className="group-data-[collapsible=icon]:hidden">
-            <SyncIndicator />
+            <SidebarTrigger />
           </div>
         </div>
       </SidebarHeader>
@@ -127,6 +127,24 @@ export function AppSidebar({
                       <Icon className="h-4 w-4" />
                       <span>{item.label}</span>
                     </SidebarMenuButton>
+                    {item.id === "companies" && activeTab === "companies" && (
+                      <div className="ml-7 mt-1 mb-1 flex flex-wrap gap-1 group-data-[collapsible=icon]:hidden">
+                        {filterOptions.map((f) => (
+                          <Badge
+                            key={f.value}
+                            variant={activeFilter === f.value ? "default" : "outline"}
+                            className={`cursor-pointer text-xs px-2 py-0.5 ${
+                              activeFilter === f.value
+                                ? "bg-brand/20 text-brand border-brand/30 hover:bg-brand/30"
+                                : "text-muted-foreground hover:text-foreground hover:border-foreground/30"
+                            }`}
+                            onClick={() => onFilterChange(f.value)}
+                          >
+                            {f.label}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
                   </SidebarMenuItem>
                 );
               })}
@@ -134,75 +152,49 @@ export function AppSidebar({
           </SidebarGroupContent>
         </SidebarGroup>
 
-        {/* Filters — only visible when Companies tab is active */}
-        {activeTab === "companies" && (
-          <SidebarGroup>
-            <SidebarGroupLabel>Filters</SidebarGroupLabel>
-            <SidebarGroupContent>
-              <div className="px-3 flex flex-wrap gap-1">
-                {filterOptions.map((f) => (
-                  <Badge
-                    key={f.value}
-                    variant={activeFilter === f.value ? "default" : "outline"}
-                    className={`cursor-pointer text-xs px-2 py-0.5 ${
-                      activeFilter === f.value
-                        ? "bg-brand/20 text-brand border-brand/30 hover:bg-brand/30"
-                        : "text-muted-foreground hover:text-foreground hover:border-foreground/30"
-                    }`}
-                    onClick={() => onFilterChange(f.value)}
-                  >
-                    {f.label}
-                  </Badge>
-                ))}
-              </div>
-            </SidebarGroupContent>
-          </SidebarGroup>
-        )}
-
-        {/* Keyboard Shortcuts — collapsed by default */}
-        <Collapsible defaultOpen={false}>
-          <SidebarGroup>
-            <CollapsibleTrigger className="flex items-center w-full">
-              <SidebarGroupLabel className="flex-1 cursor-pointer">
-                Keyboard Shortcuts
-              </SidebarGroupLabel>
-              <ChevronRight className="h-3.5 w-3.5 mr-3 text-muted-foreground transition-transform [[data-state=open]_&]:rotate-90" />
-            </CollapsibleTrigger>
-            <CollapsibleContent>
-              <SidebarGroupContent>
-                <div className="px-3 space-y-1.5 text-xs text-muted-foreground">
-                  <div className="flex justify-between">
-                    <span>Navigate list</span>
-                    <Kbd>j/k</Kbd>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Open detail</span>
-                    <Kbd>Enter</Kbd>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Close detail</span>
-                    <Kbd>Esc</Kbd>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Search</span>
-                    <Kbd>/ or &#x2318;K</Kbd>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Toggle met</span>
-                    <Kbd>m</Kbd>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Log engagement</span>
-                    <Kbd>e or &#x2318;E</Kbd>
-                  </div>
-                </div>
-              </SidebarGroupContent>
-            </CollapsibleContent>
-          </SidebarGroup>
-        </Collapsible>
       </SidebarContent>
 
       <SidebarFooter className="p-4">
+        {/* Keyboard Shortcuts — collapsed by default */}
+        <div className="group-data-[collapsible=icon]:hidden mb-3 pb-3 border-b border-border/30">
+          <Collapsible defaultOpen={false}>
+            <CollapsibleTrigger className="flex items-center w-full px-1 py-1 rounded-md hover:bg-accent transition-colors">
+              <span className="text-xs font-medium text-muted-foreground flex-1 text-left">
+                Keyboard Shortcuts
+              </span>
+              <ChevronRight className="h-3.5 w-3.5 text-muted-foreground transition-transform [[data-state=open]_&]:rotate-90" />
+            </CollapsibleTrigger>
+            <CollapsibleContent>
+              <div className="mt-2 space-y-1.5 text-xs text-muted-foreground px-1">
+                <div className="flex justify-between">
+                  <span>Navigate list</span>
+                  <Kbd>j/k</Kbd>
+                </div>
+                <div className="flex justify-between">
+                  <span>Open detail</span>
+                  <Kbd>Enter</Kbd>
+                </div>
+                <div className="flex justify-between">
+                  <span>Close detail</span>
+                  <Kbd>Esc</Kbd>
+                </div>
+                <div className="flex justify-between">
+                  <span>Search</span>
+                  <Kbd>/ or &#x2318;K</Kbd>
+                </div>
+                <div className="flex justify-between">
+                  <span>Toggle met</span>
+                  <Kbd>m</Kbd>
+                </div>
+                <div className="flex justify-between">
+                  <span>Log engagement</span>
+                  <Kbd>e or &#x2318;E</Kbd>
+                </div>
+              </div>
+            </CollapsibleContent>
+          </Collapsible>
+        </div>
+
         {/* User dropdown menu */}
         {isConfigured && (
           <div className="mb-3 pb-3 border-b border-border/30">
@@ -276,7 +268,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.1.00</span>
+              <span className="opacity-50">v3.1.01</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
