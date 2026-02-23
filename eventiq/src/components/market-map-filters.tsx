@@ -4,12 +4,23 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { CompanyType } from "@/lib/types";
+import { MetricSortKey } from "@/lib/company-metrics";
 import {
   MarketMapFilters,
   HeatLevel,
   SubVertical,
 } from "@/lib/market-map-helpers";
-import { Flame, Thermometer, Snowflake, Palette, Activity } from "lucide-react";
+import { MapViewMode } from "@/components/market-map-tab";
+import {
+  Flame,
+  Thermometer,
+  Snowflake,
+  Palette,
+  Activity,
+  Crosshair,
+  LayoutGrid,
+  TreePine,
+} from "lucide-react";
 
 interface MarketMapFiltersBarProps {
   filters: MarketMapFilters;
@@ -19,6 +30,12 @@ interface MarketMapFiltersBarProps {
   availableSubVerticals: SubVertical[];
   totalCount: number;
   filteredCount: number;
+  viewMode?: MapViewMode;
+  onViewModeChange?: (mode: MapViewMode) => void;
+  xAxis?: MetricSortKey;
+  yAxis?: MetricSortKey;
+  onXAxisChange?: (key: MetricSortKey) => void;
+  onYAxisChange?: (key: MetricSortKey) => void;
 }
 
 const typeLabels: Record<CompanyType, { label: string; color: string }> = {
@@ -34,6 +51,14 @@ const heatLabels: Record<HeatLevel, { label: string; icon: typeof Flame }> = {
   cool: { label: "Cool", icon: Snowflake },
 };
 
+const AXIS_OPTIONS: { key: MetricSortKey; label: string }[] = [
+  { key: "fit", label: "Fit" },
+  { key: "intent", label: "Intent" },
+  { key: "access", label: "Access" },
+  { key: "timing", label: "Timing" },
+  { key: "composite", label: "Composite" },
+];
+
 export function MarketMapFiltersBar({
   filters,
   onFiltersChange,
@@ -42,6 +67,12 @@ export function MarketMapFiltersBar({
   availableSubVerticals,
   totalCount,
   filteredCount,
+  viewMode = "quadrant",
+  onViewModeChange,
+  xAxis = "fit",
+  yAxis = "intent",
+  onXAxisChange,
+  onYAxisChange,
 }: MarketMapFiltersBarProps) {
   const toggleType = (type: CompanyType) => {
     const types = filters.types.includes(type)
@@ -69,6 +100,34 @@ export function MarketMapFiltersBar({
 
   return (
     <div className="flex flex-wrap items-center gap-3 p-3 border-b border-border bg-card/50">
+      {/* View mode toggle */}
+      {onViewModeChange && (
+        <>
+          <ToggleGroup
+            type="single"
+            value={viewMode}
+            onValueChange={(val) => {
+              if (val) onViewModeChange(val as MapViewMode);
+            }}
+            className="gap-0"
+          >
+            <ToggleGroupItem value="quadrant" className="h-7 px-2 text-xs gap-1">
+              <Crosshair className="h-3 w-3" />
+              Quadrant
+            </ToggleGroupItem>
+            <ToggleGroupItem value="cards" className="h-7 px-2 text-xs gap-1">
+              <LayoutGrid className="h-3 w-3" />
+              Cards
+            </ToggleGroupItem>
+            <ToggleGroupItem value="treemap" className="h-7 px-2 text-xs gap-1">
+              <TreePine className="h-3 w-3" />
+              Treemap
+            </ToggleGroupItem>
+          </ToggleGroup>
+          <div className="w-px h-5 bg-border" />
+        </>
+      )}
+
       {/* Type filters */}
       <div className="flex items-center gap-1.5">
         <span className="text-xs text-muted-foreground font-medium">Type:</span>
@@ -116,27 +175,65 @@ export function MarketMapFiltersBar({
       {/* Divider */}
       <div className="w-px h-5 bg-border" />
 
-      {/* Color by toggle */}
-      <div className="flex items-center gap-1.5">
-        <span className="text-xs text-muted-foreground font-medium">Color:</span>
-        <ToggleGroup
-          type="single"
-          value={colorBy}
-          onValueChange={(val) => {
-            if (val) onColorByChange(val as "type" | "heat");
-          }}
-          className="gap-0"
-        >
-          <ToggleGroupItem value="type" className="h-7 px-2 text-xs gap-1">
-            <Palette className="h-3 w-3" />
-            Type
-          </ToggleGroupItem>
-          <ToggleGroupItem value="heat" className="h-7 px-2 text-xs gap-1">
-            <Activity className="h-3 w-3" />
-            Heat
-          </ToggleGroupItem>
-        </ToggleGroup>
-      </div>
+      {/* Color by toggle — only for treemap view */}
+      {viewMode === "treemap" && (
+        <div className="flex items-center gap-1.5">
+          <span className="text-xs text-muted-foreground font-medium">Color:</span>
+          <ToggleGroup
+            type="single"
+            value={colorBy}
+            onValueChange={(val) => {
+              if (val) onColorByChange(val as "type" | "heat");
+            }}
+            className="gap-0"
+          >
+            <ToggleGroupItem value="type" className="h-7 px-2 text-xs gap-1">
+              <Palette className="h-3 w-3" />
+              Type
+            </ToggleGroupItem>
+            <ToggleGroupItem value="heat" className="h-7 px-2 text-xs gap-1">
+              <Activity className="h-3 w-3" />
+              Heat
+            </ToggleGroupItem>
+          </ToggleGroup>
+        </div>
+      )}
+
+      {/* Axis selectors — only for quadrant view */}
+      {viewMode === "quadrant" && onXAxisChange && onYAxisChange && (
+        <div className="flex items-center gap-1.5">
+          <span className="text-xs text-muted-foreground font-medium">X:</span>
+          <ToggleGroup
+            type="single"
+            value={xAxis}
+            onValueChange={(val) => {
+              if (val) onXAxisChange(val as MetricSortKey);
+            }}
+            className="gap-0"
+          >
+            {AXIS_OPTIONS.map((opt) => (
+              <ToggleGroupItem key={opt.key} value={opt.key} className="h-6 px-1.5 text-[10px]">
+                {opt.label}
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+          <span className="text-xs text-muted-foreground font-medium ml-1">Y:</span>
+          <ToggleGroup
+            type="single"
+            value={yAxis}
+            onValueChange={(val) => {
+              if (val) onYAxisChange(val as MetricSortKey);
+            }}
+            className="gap-0"
+          >
+            {AXIS_OPTIONS.map((opt) => (
+              <ToggleGroupItem key={opt.key} value={opt.key} className="h-6 px-1.5 text-[10px]">
+                {opt.label}
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+        </div>
+      )}
 
       {/* Spacer */}
       <div className="flex-1" />
