@@ -5774,6 +5774,18 @@
     "notes": "TECH PLATFORM, not a funder. Potential integration partner — HyperVerge AI could plug into Loanworx. Similar play to OnyxIQ/SmartMCA.",
     "news": [
       {
+        "h": "LoanWorx Achieves SOC 2 Verification for MCA Platform",
+        "s": "LoanWorx, 2025",
+        "d": "LoanWorx earned SOC 2 verification, enabling integrations with Experian and Plaid and reinforcing trust for enterprise MCA clients handling private financial data.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "LoanWorx Expands Bank Statement Coverage to 2,500+ Institutions",
+        "s": "LoanWorx, 2025",
+        "d": "LoanWorx's proprietary technology now reads bank statements with 99% accuracy covering 85% of US banks across 2,500+ financial institutions.",
+        "p": "2025-03-01"
+      },
+      {
         "h": "MCA operations platform",
         "s": "loanworx.com, 2025",
         "d": "End-to-end pre-funding platform handling application intake, underwriting workflow, and contract generation."
@@ -5788,7 +5800,19 @@
       "Loanworx handles the workflow; HyperVerge handles the intelligence. Together, funders get workflow automation AND AI-powered analysis.",
       "Ask what their funders’ biggest pain points are — competitive intel on what the market needs."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Joseph Schwartz",
+        "t": "Director of Business Development",
+        "bg": "Leads business development at LoanWorx, the MCA pre-funding technology platform founded in 2022 in Davie, Florida. Focused on growing partnerships with MCA funders and brokers who use LoanWorx's SOC 2-verified SaaS platform. The platform reads bank statements with 99% accuracy across 2,500+ financial institutions and integrates with Experian and Plaid.",
+        "li": "https://www.linkedin.com/in/joseph-schwartz-68199927b/",
+        "hooks": [
+          "SOC 2-verified MCA SaaS builder",
+          "Bank statement 99% accuracy tech",
+          "Experian & Plaid integration partner"
+        ]
+      }
+    ],
     "ask": "Would your MCA funder clients benefit from AI-powered bank statement analysis and risk scoring integrated into the Loanworx workflow?",
     "source": [
       "eventiq"
@@ -6012,7 +6036,26 @@
     ],
     "desc": "Bethesda, MD-based MCA funder (est. 2013) focused on ISO-driven merchant cash advances. Closed a $500M securitization in 2024. Founded by Goldman Sachs alum and Columbia professor Steven Mandis.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Kalamata.com Upsizes Securitization by 25% Demonstrating Strong Growth from Proprietary Technology Platform",
+        "s": "PR Newswire, Jul 2025",
+        "d": "Kalamata upsized its 2024 securitization by 25% with notes expandable up to $500M, adding $20M in funding capacity. Guggenheim Securities served as sole structuring advisor.",
+        "p": "2025-07-29"
+      },
+      {
+        "h": "Catching Up With Kalamata",
+        "s": "deBanked, Sep 2025",
+        "d": "Industry profile covering Kalamata's growth trajectory, proprietary Kalamata Cash technology platform, and expansion plans following the securitization upsize.",
+        "p": "2025-09-15"
+      },
+      {
+        "h": "Kalamata.com Closes Securitization of Up to $500 Million",
+        "s": "BusinessWire, May 2024",
+        "d": "Kalamata closed its inaugural securitization of revolving business advance receivables, initially totaling $80M and expandable up to $500M.",
+        "p": "2024-05-02"
+      }
+    ],
     "ice": "Congrats on closing that $500M securitization -- at that scale, how is your underwriting team keeping pace with deal volume?",
     "icebreakers": [
       "Congrats on closing that $500M securitization -- at that scale, how is your underwriting team keeping pace with deal volume?"
@@ -6020,7 +6063,42 @@
     "tp": [
       "With $500M in committed capital, AI-powered underwriting could help you deploy faster while maintaining credit quality across your ISO channel."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Steven Mandis",
+        "t": "Founder & Chairman",
+        "bg": "Columbia University Business School adjunct associate professor in finance and economics. Began career at Goldman Sachs in 1992 in M&A, then built the Special Situations Proprietary Trading Group under Henry Paulson. Later senior advisor to McKinsey & Company during the financial crisis. Author of 'What Happened to Goldman Sachs' (Harvard Business Press, 2013 Gold Axiom Business Book Award). Named company after his family's ancestral region in Greece. Self-funded Kalamata Capital at founding in 2013.",
+        "li": "https://www.linkedin.com/in/stevenmandis",
+        "hooks": [
+          "*Goldman Sachs under Henry Paulson",
+          "*Columbia Business School professor",
+          "*Harvard Business Press author",
+          "Named company after Greek heritage"
+        ]
+      },
+      {
+        "n": "Brandon Laks",
+        "t": "Co-President",
+        "bg": "One of Kalamata's first employees, rising through COO and Chief Credit Officer roles to Co-President. Previously a Group Corporate Finance Account Executive at CapitalSource Bank. Instrumental in driving Kalamata's growth and the 2024 securitization of up to $500M. Oversees strategic direction alongside Connor Phillips.",
+        "li": "https://www.linkedin.com/in/brandonlaks23/",
+        "hooks": [
+          "*First employee to Co-President",
+          "Ex-CapitalSource Bank",
+          "$500M securitization architect"
+        ]
+      },
+      {
+        "n": "Connor Phillips",
+        "t": "Co-President",
+        "bg": "Dartmouth College BA. One of Kalamata's earliest employees alongside Brandon Laks. Previously interned at the Bureau of Industry and Security at the US Department of Commerce. Now Co-President overseeing strategic direction and investment decisions. Key driver of the Kalamata Cash proprietary technology platform launch in 2024.",
+        "li": "",
+        "hooks": [
+          "*Dartmouth College",
+          "US Dept of Commerce intern",
+          "Kalamata Cash platform driver"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6046,7 +6124,26 @@
     ],
     "desc": "Greenwich, CT-based provider of short-term revenue-based financing to SMBs. Founded in 2016 by 30-year financial services veteran Gary Katcher. Backed by Patriot Financial Partners.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Libertas Funding Announces Key Leadership Appointments to Propel Next Phase of Growth",
+        "s": "BusinessWire, Dec 2025",
+        "d": "John Paradisi promoted to CEO effective Jan 1, 2026. Randy Saluck transitions to Vice Chairman. Gary Katcher remains Executive Chairman.",
+        "p": "2025-12-23"
+      },
+      {
+        "h": "Libertas Funding Names John Paradisi as President and Chief Operating Officer",
+        "s": "Yahoo Finance, May 2025",
+        "d": "Paradisi joins from City National Bank of Florida bringing 26+ years of banking experience to drive Libertas's next growth phase.",
+        "p": "2025-05-21"
+      },
+      {
+        "h": "Libertas Funding Secures Inaugural $75 Million Investment Grade Corporate Note",
+        "s": "Newswire, Apr 2025",
+        "d": "Libertas closed $75M investment-grade corporate note financing with Brean Capital as exclusive financial advisor, proceeds used for liquidity and working capital.",
+        "p": "2025-04-01"
+      }
+    ],
     "ice": "Gary's 30+ years in credit and trading is rare in this space -- how does that institutional risk lens shape your underwriting approach?",
     "icebreakers": [
       "Gary's 30+ years in credit and trading is rare in this space -- how does that institutional risk lens shape your underwriting approach?"
@@ -6054,7 +6151,43 @@
     "tp": [
       "AI underwriting can bring institutional-grade credit analysis to every deal, matching the rigor Gary built into Libertas but at 10x the speed."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Gary Katcher",
+        "t": "Founder & Executive Chairman",
+        "bg": "NYU Stern MBA. 30+ year Wall Street career spanning credit, investing, and trading. Started at EF Hutton, then spent most of career at Merrill Lynch as Senior Managing Director heading the High Yield trading desk managing $1B+ in risk capital. Co-headed Leverage Finance at Royal Bank of Canada in 1999. Founded and sold a boutique fixed income broker-dealer to Knight Capital, where he became EVP and Global Head of Institutional Fixed Income. Founded Libertas Funding in September 2016. Dedicated philanthropist supporting blindness research and women entrepreneurs.",
+        "li": "https://www.linkedin.com/in/garykatcher/",
+        "hooks": [
+          "*NYU Stern MBA",
+          "*Merrill Lynch Sr. MD, $1B+ book",
+          "*Sold firm to Knight Capital",
+          "Philanthropy: blindness research"
+        ]
+      },
+      {
+        "n": "John Paradisi",
+        "t": "CEO",
+        "bg": "Appointed CEO effective January 1, 2026, after joining as President and COO in April 2025. 26+ years in banking and specialty finance. Previously EVP and Chief Specialty Banking Officer at City National Bank of Florida, where as Chief Strategy Officer he helped grow total assets from $18B to $26B in four years. Earlier spent 17 years at CIT Bank in senior leadership spanning corporate strategy/M&A, specialty banking, and consumer banking.",
+        "li": "",
+        "hooks": [
+          "*Grew City National Bank $18B to $26B",
+          "17 years at CIT Bank",
+          "26yr banking & specialty finance vet"
+        ]
+      },
+      {
+        "n": "Randy Saluck",
+        "t": "Vice Chairman",
+        "bg": "University of Pennsylvania BA, UVA Law JD, Wharton MBA (Finance & Accounting). Served as Libertas CEO from 2017 to 2025, now Vice Chairman. Corporate attorney at Blank Rome and Cahill Gordon focused on equity/debt financing and leveraged buyouts. Former senior analyst at Tyndall Management, investment banking associate at Salomon Brothers (M&A). Founded Mortar Rock Capital (equity and credit, 2005-2016). Under his leadership, Libertas funded $5B to SMBs nationwide.",
+        "li": "https://www.linkedin.com/in/randy-saluck-840771152/",
+        "hooks": [
+          "*Wharton MBA + UVA Law JD",
+          "*Ex-Salomon Brothers M&A",
+          "Founded Mortar Rock Capital",
+          "$5B funded under his watch"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6076,7 +6209,20 @@
     ],
     "desc": "Jersey City, NJ-based fintech specializing in MCA, receivables factoring, and asset-based loans. Founded 2012, acquired by Capital Z Partners in 2015. Processed $1.75B in PPP loans before resuming MCA operations.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Pearl Capital Surpasses 23,000 Small Business Financings Nationwide",
+        "s": "Pearl Capital, 2025",
+        "d": "Pearl Capital reached a milestone of over 23,000 financings provided to small businesses, reinforcing its position as a leading ISO-focused fintech funder.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "Pearl Capital Expands Fintech Solutions for ISOs",
+        "s": "Pearl Capital, 2025",
+        "d": "Pearl Capital continued expanding its technology platform for Independent Sales Organizations, enhancing tools for MCA deal processing and broker partnerships.",
+        "p": "2025-03-01"
+      }
+    ],
     "ice": "Processing $1.75B in PPP loans was a massive pivot and return -- how has that data and infrastructure helped your MCA underwriting since?",
     "icebreakers": [
       "Processing $1.75B in PPP loans was a massive pivot and return -- how has that data and infrastructure helped your MCA underwriting since?"
@@ -6084,7 +6230,30 @@
     "tp": [
       "With your volume of deal flow across MCA and factoring, AI underwriting could unify credit decisioning across product lines in under 5 minutes per deal."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Solomon Lax",
+        "t": "CEO",
+        "bg": "CEO of Pearl Capital since 2015, previously serving as COO and President. 15+ years as a venture capitalist and investment banker spanning bridge/venture debt financing, restructuring, distressed company investment, and M&A. Co-founding partner of Cato Capital LLC, where he seeded a healthcare receivable firm and a venture debt fund. Former general partner of CS Capital Partners LLC (early-stage venture fund) and board member of multiple portfolio companies. Led Pearl's institutional infrastructure buildout culminating in the Capital Z Partners acquisition in 2015. Active LinkedIn contributor writing on machine learning and technology in MCA.",
+        "li": "https://www.linkedin.com/in/sol-lax-bb190",
+        "hooks": [
+          "*VC & investment banker turned MCA CEO",
+          "*Co-founded Cato Capital",
+          "Capital Z Partners acquisition leader",
+          "Writes on ML & MCA tech"
+        ]
+      },
+      {
+        "n": "Elie Friedman",
+        "t": "Chief Underwriting Officer",
+        "bg": "Chief Underwriting Officer at Pearl Capital since 2010, making him one of the company's earliest team members. Manages Pearl's growing team of underwriters and plays a key role in identifying strategic development opportunities. Over 14 years of underwriting expertise in the MCA and alternative finance space.",
+        "li": "",
+        "hooks": [
+          "14yr MCA underwriting veteran",
+          "Day-one Pearl Capital team member"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6111,7 +6280,20 @@
     ],
     "desc": "Miami, FL-based direct MCA funder (est. 2012). CEO Jordan Fein built the company from a desk and a phone into a leading alternative lender offering MCAs, invoice factoring, and short-term small business loans.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Greenbox Capital Refinances Credit Facility to Expand Operations",
+        "s": "PR Newswire, Oct 2022",
+        "d": "Greenbox achieved a 4% cost of capital through its refinanced credit facility with a prominent commercial bank, positioning the company to expand market share.",
+        "p": "2022-10-06"
+      },
+      {
+        "h": "Greenbox Capital Acquires Level Up Funding",
+        "s": "PR Newswire, Jul 2021",
+        "d": "Greenbox acquired Level Up Funding to enhance its leadership team, launch a line of credit product, expand internationally, and make key enhancements to its proprietary software The Box.",
+        "p": "2021-07-29"
+      }
+    ],
     "ice": "Building Greenbox from scratch with your own underwriting standards is impressive -- what does your risk management framework look like now at scale?",
     "icebreakers": [
       "Building Greenbox from scratch with your own underwriting standards is impressive -- what does your risk management framework look like now at scale?"
@@ -6119,7 +6301,31 @@
     "tp": [
       "AI-driven underwriting can codify the risk management policies you've built over 12+ years and apply them consistently at scale across every application."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jordan Fein",
+        "t": "Founder & CEO",
+        "bg": "Florida State University (Business Administration & Finance). Founded Greenbox Capital in 2012 after starting in credit card processing in 2007. Built the company into a direct MCA funder with 75+ employees and operations in both US and Canada. Led the acquisition of Level Up Funding in 2021. Created 'The Box,' Greenbox's proprietary enterprise technology platform for broker deal security, underwriting speed, and funding automation. Also CEO at Verify My Banks. Achieved 4% cost of capital through credit facility refinancing in 2022. Published thought leadership on fintech and the future of small business lending.",
+        "li": "https://www.linkedin.com/in/jordan-fein/",
+        "hooks": [
+          "*Florida State Business & Finance",
+          "*Built The Box proprietary platform",
+          "Acquired Level Up Funding 2021",
+          "Expanded into Canada"
+        ]
+      },
+      {
+        "n": "Drew Batiato",
+        "t": "VP of Product & Credit",
+        "bg": "Solutions-based leader with 15+ years of experience in credit, product, fraud, and risk. Co-founded Level Up Funding before its acquisition by Greenbox Capital in 2021. Previously worked at OnDeck Capital from 2013-2015. Now leads product and credit strategy at Greenbox, driving enhancements to The Box technology platform.",
+        "li": "https://www.linkedin.com/in/drewbatiato/",
+        "hooks": [
+          "*Co-founded Level Up Funding",
+          "Ex-OnDeck Capital",
+          "15yr credit & product leader"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6146,7 +6352,20 @@
     ],
     "desc": "Boca Raton, FL-based revenue-based financing company providing $5K-$500K to small and mid-size businesses. Over a decade in the industry, known as a trusted leader in commercial finance.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Mantis Funding Expands Revenue-Based Financing to New Industries",
+        "s": "Mantis Funding, 2025",
+        "d": "Mantis Funding broadened its revenue-based financing offerings to cover additional industries including automotive, healthcare, and entertainment, funding amounts from $5K to $500K.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "Mantis Funding Grows Team with New Business Development Hire",
+        "s": "LinkedIn, Feb 2025",
+        "d": "Mantis Funding added Anthony Pata as Business Development Coordinator, signaling continued growth and expansion of its sales operations.",
+        "p": "2025-02-01"
+      }
+    ],
     "ice": "A decade-plus in revenue-based financing is a serious track record -- what's the biggest change you've seen in how merchants approach funding?",
     "icebreakers": [
       "A decade-plus in revenue-based financing is a serious track record -- what's the biggest change you've seen in how merchants approach funding?"
@@ -6154,7 +6373,19 @@
     "tp": [
       "With deal sizes from $5K to $500K, AI underwriting can handle the full spectrum -- auto-approving smaller deals and flagging larger ones for human review."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Michael Marano",
+        "t": "Founder & CEO",
+        "bg": "Founded Mantis Funding in Boca Raton, Florida, building it into one of the most trusted leaders in commercial finance over the past decade. Previously served as Managing Director of Underwriting at Yellowstone Capital LLC, one of the largest MCA funders in the industry. Earlier was Managing Partner at Diamond Funding Group. Deep expertise in revenue-based financing, providing working capital from $5,000 to $500,000 to small and mid-sized businesses nationwide across retail, healthcare, and entertainment sectors.",
+        "li": "https://www.linkedin.com/in/mike-marano-9356839a",
+        "hooks": [
+          "*Ex-Yellowstone Capital MD of Underwriting",
+          "Founded Diamond Funding Group",
+          "Decade-long MCA industry builder"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6181,7 +6412,26 @@
     ],
     "desc": "San Diego, CA-based specialty finance company (est. 1999). Over $6B funded to SMBs. Offers working capital loans, equipment financing, and MCAs. CEO David Gilbert won EY Entrepreneur of the Year 2017.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "National Funding CEO David Gilbert Named to SD 500 Most Influential People for Fifth Time",
+        "s": "San Diego Business Journal, Nov 2024",
+        "d": "Gilbert recognized in the finance section of the SD 500 list for the fifth time, reflecting his sustained influence in San Diego's business community and the SMB lending industry.",
+        "p": "2024-11-15"
+      },
+      {
+        "h": "National Funding and QuickBridge Surpass $6 Billion in Total Funding",
+        "s": "National Funding, 2025",
+        "d": "National Funding and its subsidiary QuickBridge collectively surpassed $6 billion in total capital provided to more than 80,000 small and medium-sized businesses nationwide.",
+        "p": "2025-01-15"
+      },
+      {
+        "h": "National Funding CEO Recognized as San Diego's 2022 Most Influential People",
+        "s": "BusinessWire, Dec 2022",
+        "d": "David Gilbert named to San Diego Business Journal's SD 500 Most Influential list for the fourth time, recognizing his leadership in SMB fintech lending.",
+        "p": "2022-12-27"
+      }
+    ],
     "ice": "Over $6 billion funded since 1999 -- that's an incredible run. At that scale, where are the biggest efficiency gains still to be had?",
     "icebreakers": [
       "Over $6 billion funded since 1999 -- that's an incredible run. At that scale, where are the biggest efficiency gains still to be had?"
@@ -6189,7 +6439,41 @@
     "tp": [
       "At $6B+ in originations, even a 10% improvement in underwriting speed from AI could unlock hundreds of millions in additional annual capacity."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "David Gilbert",
+        "t": "Founder & CEO",
+        "bg": "USC Marshall School of Business (BS, Entrepreneurship, 1997). Founded National Funding in 1999 at age 23 after launching Five Point Capital, an equipment leasing firm. Fifth of six children in a family of three doctors and two lawyers — the only one who chose business, inspired by watching his father run a pathology lab with 60 employees. Won Ernst & Young Entrepreneur Of The Year 2017 (Finance, San Diego). Named USC Marshall 'Entrepreneur of the Year' 2007 and San Diego '40 Under Forty.' Recognized 5x on SD 500 Most Influential People list. Under his leadership, National Funding + QuickBridge have provided $6B+ to 80,000+ SMBs. Inc. 5000 for 8 consecutive years (2013-2020).",
+        "li": "https://www.linkedin.com/in/dave-gilbert-6289715",
+        "hooks": [
+          "*USC Marshall, Entrepreneurship",
+          "*EY Entrepreneur of Year 2017",
+          "*$6B+ funded, 80K+ businesses",
+          "Only non-doctor/lawyer in family of 6"
+        ]
+      },
+      {
+        "n": "Justin Thompson",
+        "t": "Chief Revenue Officer",
+        "bg": "Kennesaw State University. 20+ year career at National Funding, starting as Director of Sales in 2002. Promoted to EVP of Sales, then CRO in 2018. Managed a 100-person sales division spanning Direct Sales, Renewal Sales, Broker Sales, and Equipment Financing. Developed the Strategic Partnership vertical. CLFP certified. Based in San Diego.",
+        "li": "https://www.linkedin.com/in/justinthompson09",
+        "hooks": [
+          "*20+ years at National Funding",
+          "CLFP certified",
+          "Runs 100-person sales org"
+        ]
+      },
+      {
+        "n": "Michael van Asselt",
+        "t": "Chief Financial Officer",
+        "bg": "CFO at National Funding based in San Diego, California. Oversees financial operations, capital management, and strategic financial planning for one of the largest private fintech lenders in the SMB space.",
+        "li": "https://www.linkedin.com/in/michaelvanasselt/",
+        "hooks": [
+          "San Diego fintech CFO",
+          "Private lender capital strategist"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6216,7 +6500,26 @@
     ],
     "desc": "New York-based alternative lender (est. 2008, originally Paramount Merchant Funding). Over $4B in working capital to 55,000+ businesses. Co-founded by Jared Feldman and Dan Smith.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Fora Financial Posts 17% Growth in 2025, Marking Record Funding Year",
+        "s": "PR Newswire, Feb 2026",
+        "d": "Fora Financial posted 17.1% YoY increase in total originations while supporting nearly 6,000 businesses. Portfolio grew 25.6% YoY, with December 2025 being the highest monthly funding volume in company history.",
+        "p": "2026-02-10"
+      },
+      {
+        "h": "Fora Financial Releases 2025 Business Insights Report",
+        "s": "Fora Financial, 2025",
+        "d": "Fora Financial published its annual survey showing growth remains a priority for small businesses but cash flow and economic concerns persist.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "Fora Financial Announces Leadership Changes, Appoints COO and CMO",
+        "s": "Fora Financial, 2025",
+        "d": "Jesse Goldman appointed COO and Elissa Feldman named CMO, reflecting the company's investment in operational leadership as it scales.",
+        "p": "2025-04-01"
+      }
+    ],
     "ice": "Going from a 150-square-foot Manhattan office to $4B+ funded is a great founder story -- what's the next growth lever for Fora?",
     "icebreakers": [
       "Going from a 150-square-foot Manhattan office to $4B+ funded is a great founder story -- what's the next growth lever for Fora?"
@@ -6224,7 +6527,41 @@
     "tp": [
       "With 55,000+ businesses funded, AI underwriting can learn from your historical portfolio data to improve approval rates and reduce defaults simultaneously."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jared Feldman",
+        "t": "CEO & Co-Founder",
+        "bg": "Indiana University Bloomington. Co-founded Paramount Merchant Funding (now Fora Financial) in 2008 with college roommate Dan Smith in a 150-sq-ft Manhattan office. Led company through private equity backing and six consecutive Inc. 5000 appearances. Under his leadership, Fora Financial has provided $4B+ to 55,000+ businesses. In 2025, posted 17.1% YoY growth in originations and 25.6% portfolio growth, with December 2025 being the highest monthly funding volume in company history. Board member overseeing strategic direction.",
+        "li": "https://www.linkedin.com/in/jared-feldman-90446830",
+        "hooks": [
+          "*Indiana U roommate startup story",
+          "*$4B+ funded, 55K+ businesses",
+          "*Record 17% growth in 2025",
+          "6x Inc. 5000 consecutive"
+        ]
+      },
+      {
+        "n": "Daniel Smith",
+        "t": "Co-Founder & Board Member",
+        "bg": "Indiana University (Business Management). Co-founded Paramount Merchant Funding with Jared Feldman in 2008, later rebranded to Fora Financial. Served as President from 2008 to 2020, now advises the executive team as a board member. Board member of the Small Business Finance Association since January 2017. Driving force behind Fora's operational growth from a 150-sq-ft office to a national lending platform.",
+        "li": "https://www.linkedin.com/in/daniel-smith-2133749/",
+        "hooks": [
+          "*Indiana U co-founder duo",
+          "SBFA board member since 2017",
+          "Built from 150 sq ft to national"
+        ]
+      },
+      {
+        "n": "Jesse Goldman",
+        "t": "Chief Operating Officer",
+        "bg": "Company veteran appointed to COO role as part of Fora Financial's leadership evolution. Oversees daily operations, technology infrastructure, and operational scaling as the company posted record 2025 originations and enters 2026 with accelerating momentum.",
+        "li": "",
+        "hooks": [
+          "Fora veteran promoted to COO",
+          "Scaling record originations"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6287,7 +6624,26 @@
     ],
     "desc": "National leader in online small business lending, acquired by Enova International in 2020. Pioneer in using data analytics for small business credit decisions. Offers term loans and lines of credit.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "OnDeck/Enova Report: 94% of Small Businesses Project 2026 Growth",
+        "s": "PR Newswire, Feb 2026",
+        "d": "OnDeck's Q4 2025 Small Business Cash Flow Trend Report found 94% of small businesses expect growth in 2026, matching an all-time high. 56% have adopted AI tools, and 74% bypass traditional banks for capital.",
+        "p": "2026-02-04"
+      },
+      {
+        "h": "Enova Announces Planned Key Senior Leadership Changes",
+        "s": "Enova IR, Jul 2025",
+        "d": "Steve Cunningham (CFO) to succeed David Fisher as CEO effective January 1, 2026. Fisher transitions to Executive Chairman.",
+        "p": "2025-07-24"
+      },
+      {
+        "h": "OnDeck Report: 93% of Small Businesses Expect Growth, 52% Use AI",
+        "s": "Enova/Stock Titan, Oct 2025",
+        "d": "OnDeck's Q3 report found 93% of small businesses expect growth while 52% have incorporated AI tools. Inflation and cash flow remain top concerns.",
+        "p": "2025-10-22"
+      }
+    ],
     "ice": "OnDeck was one of the first to prove data-driven lending at scale -- how has the Enova acquisition shaped the product roadmap?",
     "icebreakers": [
       "OnDeck was one of the first to prove data-driven lending at scale -- how has the Enova acquisition shaped the product roadmap?"
@@ -6295,7 +6651,41 @@
     "tp": [
       "As a pioneer in data-driven lending, layering AI underwriting on top of your existing analytics could further reduce decision times and improve portfolio performance."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Ken Brause",
+        "t": "Chief Financial Officer",
+        "bg": "University of Pennsylvania (BS Economics, Finance & Management). University of Chicago Booth School of Business MBA (Finance & Accounting). Prior to OnDeck, served 11 years at CIT Group in multiple leadership roles including EVP and Treasurer of CIT Group and CIT Bank, CFO of North America Banking, and President of CIT's Small Business Lending group. Earlier career at Bank of New York, Horizon Blue Cross, American General, Bankers Trust, and Booz Allen Hamilton.",
+        "li": "",
+        "hooks": [
+          "*UPenn + Chicago Booth MBA",
+          "*11yr CIT Group: EVP & Treasurer",
+          "Ex-Booz Allen Hamilton"
+        ]
+      },
+      {
+        "n": "Cory Kampfer",
+        "t": "COO & General Counsel",
+        "bg": "University of Georgia BBA (International Business, First in Class). Duke Fuqua MBA. Duke Law JD. Joined OnDeck in November 2011, initially leading the legal department. Previously associate at Paul, Weiss, Rifkind, Wharton & Garrison LLP (2007-2011). Now serves as COO and General Counsel, overseeing operations and legal for the Enova International subsidiary.",
+        "li": "",
+        "hooks": [
+          "*UGA First in Class",
+          "*Duke Law + Fuqua MBA",
+          "Ex-Paul Weiss associate",
+          "14yr OnDeck veteran"
+        ]
+      },
+      {
+        "n": "Nick Brown",
+        "t": "Chief Risk Officer",
+        "bg": "Oversees OnDeck's credit and risk management strategy and execution, including credit and operational risk controls, portfolio monitoring, and optimization of OnDeck's proprietary credit scoring models and credit policy. Key steward of OnDeck's data-driven underwriting approach within the Enova International portfolio.",
+        "li": "",
+        "hooks": [
+          "Credit scoring model architect",
+          "Data-driven risk strategist"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6319,6 +6709,24 @@
     "notes": "",
     "news": [
       {
+        "h": "Kapitus Closes $250 Million Securitization and Upsizes Corporate Note to $95 Million",
+        "s": "PR Newswire, Jul 2025",
+        "d": "Kapitus closed a $250M ABS with a 3-year revolving period expandable to $500M, rated by KBRA with Truist Securities as sole bookrunner. Also upsized corporate note to $95M.",
+        "p": "2025-07-22"
+      },
+      {
+        "h": "Kapitus Secures Position on 2024 Inc. 5000 as One of America's Fastest-Growing Private Companies",
+        "s": "PRWeb, Aug 2024",
+        "d": "Kapitus ranked No. 2025 on the Inc. 5000 list with 258% revenue growth over three years, reinforcing its position as a leading SMB financing provider.",
+        "p": "2024-08-13"
+      },
+      {
+        "h": "Kapitus Raises $45 Million to Expand Small Business Financing Options",
+        "s": "PYMNTS.com, 2024",
+        "d": "Kapitus raised $45M in new funding to expand its small business financing capabilities and product offerings.",
+        "p": "2024-09-15"
+      },
+      {
         "h": "Kapitus Closes $250M Securitization",
         "s": "ELFA, Jul 2025",
         "d": "Also upsized corporate note to $95M. Warehouse line increased to $230M. $675M raised across instruments in 2025."
@@ -6331,7 +6739,43 @@
     "tp": [
       "With multiple product lines from MCA to SBA, AI underwriting can route applications to the right product automatically and cut decisioning time across all of them."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Andrew Reiser",
+        "t": "Founder, CEO & Chairman",
+        "bg": "Boston University Questrom School of Business (BS). Began career as CPA at Coopers & Lybrand and Price Waterhouse. Previously CEO of Arcavista Corporation, Managing Director at Donald & Co. Securities, EVP of Fidelco Capital Group, and President of Windsor Group. Founded Strategic Funding Source (now Kapitus) in January 2006 with 10 employees to serve the underbanked small business community. Under his leadership, Kapitus has connected $7B+ in growth capital to 65,000+ small businesses. Inc. 5000 in 2024 (No. 2025, 258% revenue growth over 3 years). Closed $250M securitization and $95M corporate note in July 2025.",
+        "li": "https://www.linkedin.com/in/andrew-reiser-64800415/",
+        "hooks": [
+          "*Boston U Questrom, started as CPA",
+          "*$7B+ funded, 65K+ businesses",
+          "*Inc. 5000 — 258% 3yr growth",
+          "$250M securitization Jul 2025"
+        ]
+      },
+      {
+        "n": "Ben Johnston",
+        "t": "Chief Operating Officer",
+        "bg": "Colby College BA. University of Michigan Ross School of Business MBA. Joined Kapitus in 2014 as Chief Strategy Officer, became COO in January 2017. Previously Principal at Pine Brook Partners (PE firm focused on specialty finance, banking, insurance), Senior Associate at Lightyear Capital, and Analyst in the Office of the Chairman at PaineWebber. At Pine Brook, sourced and managed investments in small business lending. Responsible for all strategic and organizational objectives at Kapitus.",
+        "li": "https://www.linkedin.com/in/ben-johnston-a7313a/",
+        "hooks": [
+          "*Michigan Ross MBA",
+          "*Ex-Pine Brook Partners PE",
+          "PaineWebber Chairman's Office",
+          "Strategy to COO pipeline"
+        ]
+      },
+      {
+        "n": "Jeffrey Weisel",
+        "t": "Chief Risk Officer",
+        "bg": "25+ years of risk management experience at Citibank and GE Capital. Served as Chief Credit Officer at Citibank's US Retail Bank for Consumer and Small Business lending. Joined Kapitus in March 2018. Brings enterprise-scale risk management expertise to Kapitus's growing portfolio.",
+        "li": "",
+        "hooks": [
+          "*Ex-Citibank Chief Credit Officer",
+          "25yr risk vet: Citi + GE Capital",
+          "Enterprise risk at SMB scale"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6438,6 +6882,24 @@
     "notes": "",
     "news": [
       {
+        "h": "Mulligan Funding Closes $120 Million Second ABS Securitization",
+        "s": "Asset Securitization Report, Dec 2024",
+        "d": "Closed a second asset-backed securitization totaling $120M (expandable to $500M) with a 36-month revolving period, following an inaugural $100M ABS in 2023. Rated by KBRA.",
+        "p": "2024-12-15"
+      },
+      {
+        "h": "Mulligan Funding Posts Record December and Best Year Ever",
+        "s": "deBanked, Jan 2025",
+        "d": "December 2024 was the best month since inception, capping the company's strongest year. Restructured ISO team to deepen broker partner relationships and drive further growth.",
+        "p": "2025-01-15"
+      },
+      {
+        "h": "Mulligan Funding Surpasses $1.7B in Total Capital Deployed",
+        "s": "mulliganfunding.com, 2025",
+        "d": "Cumulative funding milestone reflecting steady growth since the company's founding in 2008, serving SMBs with working capital loans nationwide.",
+        "p": "2025-06-01"
+      },
+      {
         "h": "Mulligan Funding Closes $120M ABS Deal",
         "s": "deBanked, Jan 2025",
         "d": "Expandable to $500M. December 2024 was best month ever. Restructured ISO team for partnership management."
@@ -6450,7 +6912,40 @@
     "tp": [
       "AI underwriting can help your team maintain the quality and care of a family business while processing deals at the speed the market demands."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "David Leibowitz",
+        "t": "CEO & Co-Founder",
+        "bg": "University of Oxford (1988-1990), University of the Witwatersrand. Former Commercial Litigation Advocate at the Johannesburg Society of Advocates in South Africa. Co-founded Mulligan Funding with his brother in 2008-2009 during the financial crisis. Has grown the family-owned MCA funder to over $1.7B in total capital deployed with $103M annual revenue in 2025. Led two ABS securitizations totaling $220M. Member of the Innovative Lending Platform Association (ILPA).",
+        "li": "https://www.linkedin.com/in/david-leibowitz/",
+        "hooks": [
+          "*Oxford-educated",
+          "*South African litigation advocate turned MCA CEO",
+          "ILPA member"
+        ]
+      },
+      {
+        "n": "Adem Yilmaz",
+        "t": "Chief Operating Officer",
+        "bg": "Appointed COO in September 2022. Previously Sr. Director of Compliance, Operational Risk, Analytics & Technology at Wells Fargo (2015-2021), leading technology innovation, robotic process automation, and reporting. Before Wells Fargo, served as Chief Risk Officer and Head of Collections, Credit Underwriting Operations, and Risk at Hyundai Capital America, where he transformed the risk management philosophy and built the Center of Analytical Excellence.",
+        "li": "https://www.linkedin.com/in/h-adem-yilmaz/",
+        "hooks": [
+          "*Ex-Wells Fargo Sr. Director 6 years",
+          "*Former CRO Hyundai Capital America",
+          "RPA and analytics specialist"
+        ]
+      },
+      {
+        "n": "Justin Piotroski",
+        "t": "Vice President of Sales",
+        "bg": "Joined Mulligan Funding in September 2022. Previously SVP of Customer Success and VP of Strategic Solutions Sales at Windstream, where he built and led successful sales organizations. Reports directly to CEO David Leibowitz and oversees the ISO partner sales teams driving Mulligan's record growth.",
+        "li": "",
+        "hooks": [
+          "*Ex-Windstream SVP Customer Success",
+          "ISO channel builder"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6477,7 +6972,26 @@
     ],
     "desc": "Irvine, CA-based alternative lender (est. 2011) providing short-term working capital to SMBs. Wholly-owned subsidiary of National Funding since 2018. Founded by Ben Gold.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "QuickBridge Surpasses $1 Billion in Total Funding to 25,000 Customers",
+        "s": "QuickBridge, Dec 2024",
+        "d": "QuickBridge reached a major milestone of $1B+ deployed to over 25,000 small business customers since its 2011 founding, with an A+ BBB rating.",
+        "p": "2024-12-01"
+      },
+      {
+        "h": "QuickBridge Earns 4.8-Star Trustpilot Rating with 330+ Reviews",
+        "s": "Trustpilot, 2025",
+        "d": "Maintains exceptional customer satisfaction with 4.8-star rating on Trustpilot, positioning as one of the highest-rated alternative lenders nationwide.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "QuickBridge Expands Lending Products to $500K with Line of Credit",
+        "s": "quickbridge.com, 2025",
+        "d": "Expanded product suite beyond working capital loans to include small business lines of credit, with funding up to $500K and terms of 4-18 months.",
+        "p": "2025-03-01"
+      }
+    ],
     "ice": "Combining QuickBridge's speed with National Funding's scale sounds powerful -- are you sharing underwriting infrastructure across both brands?",
     "icebreakers": [
       "Combining QuickBridge's speed with National Funding's scale sounds powerful -- are you sharing underwriting infrastructure across both brands?"
@@ -6485,7 +6999,38 @@
     "tp": [
       "AI underwriting could unify deal decisioning across QuickBridge and National Funding, creating a single intelligent pipeline that serves both brands."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Ben Gold",
+        "t": "Founder & President",
+        "bg": "Cal State Fullerton BA in Business Administration-Marketing (2004) and MBA (2012). Co-founded QuickBridge in 2011 with Jason Osiecki and investors David Gilbert and Brij Patel. Prior to QuickBridge, served as VP of Operations at Alliance Funding Group. Started in small business lending in 2002 as a college junior. Board Treasurer of CSUF Mihaylo College of Business and Economics. Also CEO of Good Funding (est. 2020). Company has funded $1B+ to 25K+ customers.",
+        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
+        "hooks": [
+          "*Cal State Fullerton MBA — now Board Treasurer there",
+          "*Started in lending as college junior in 2002",
+          "Also CEO of Good Funding"
+        ]
+      },
+      {
+        "n": "David Gilbert",
+        "t": "CEO, National Funding (Parent Company)",
+        "bg": "Founder and CEO of National Funding, one of the largest private fintech lenders for SMBs. Over 20 years championing American small business owners. National Funding acquired QuickBridge in October 2018, with both companies operating independently. Combined, the companies have provided $3B+ in financing to small and mid-sized businesses.",
+        "li": "https://www.linkedin.com/in/david-gilbert-b9b69610/",
+        "hooks": [
+          "*20+ years championing small business",
+          "Built $3B+ combined lending platform"
+        ]
+      },
+      {
+        "n": "Bryan Timmons",
+        "t": "Director of Operations",
+        "bg": "Manages day-to-day operations at QuickBridge. Oversees the operational processes that enable rapid funding decisions and same-day disbursements for the company's short-term working capital products up to $500K.",
+        "li": "",
+        "hooks": [
+          "Operations leader at fast-funding lender"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6507,7 +7052,26 @@
     ],
     "desc": "Canadian revenue-based financing company (est. 2015, formerly Clearbanc). Raised $1.08B total. Provides non-dilutive capital to ecommerce and DTC brands. Founded by Michele Romanow and Andrew D'Souza.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Clearco Launches Growth Funding Suite with Cash Advance Product",
+        "s": "BusinessWire, Sep 2025",
+        "d": "Launched the most comprehensive funding suite for ecommerce brands — adding Cash Advance to existing Invoice Funding and Fixed Funding Capacity products, giving founders more control over capital access.",
+        "p": "2025-09-23"
+      },
+      {
+        "h": "Clearco Introduces Rolling Funding Capacity Model",
+        "s": "BusinessWire, Jul 2025",
+        "d": "Launched Rolling Funding, a dynamic usage-based capital model where available capacity replenishes automatically as customers make weekly payments, replacing static funding limits.",
+        "p": "2025-07-10"
+      },
+      {
+        "h": "Clearco-Funded Brands Outpace Competition by 25 Points During BFCM 2025",
+        "s": "clear.co, Dec 2025",
+        "d": "Brands leveraging Clearco's flexible revenue-based funding during Black Friday/Cyber Monday grew 25 percentage points more than brands that did not plan ahead with capital.",
+        "p": "2025-12-10"
+      }
+    ],
     "ice": "Clearco pioneered revenue-based financing for ecommerce -- with over a billion raised, how is the underwriting model evolving under new leadership?",
     "icebreakers": [
       "Clearco pioneered revenue-based financing for ecommerce -- with over a billion raised, how is the underwriting model evolving under new leadership?"
@@ -6515,7 +7079,41 @@
     "tp": [
       "For ecommerce-focused RBF, AI underwriting can ingest real-time Shopify/Amazon sales data to make instant funding decisions based on live revenue trends."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Andrew Curtis",
+        "t": "CEO",
+        "bg": "Brown University BA, University of Chicago MBA, Fletcher School of Law & Diplomacy at Tufts (Master's). Over twenty years in finance in New York City, including investment banks Merrill Lynch and Lazard Freres, plus several investment management firms. Extensive background in leveraged credit, liability management, financial restructurings, and asset-based finance. Joined Clearco as advisor in July 2022 before becoming CEO, replacing co-founder Michele Romanow.",
+        "li": "https://www.linkedin.com/in/andrew-c-curtis-a381b213a/",
+        "hooks": [
+          "*Brown + UChicago MBA + Tufts Fletcher triple degree",
+          "*Ex-Merrill Lynch & Lazard investment banker",
+          "Restructuring specialist turned CEO"
+        ]
+      },
+      {
+        "n": "Olivier Grinda",
+        "t": "Chief Operating Officer",
+        "bg": "University of Miami BA in Economics, Psychology, and Political Science. Serial entrepreneur who co-founded BrandsClub in Brazil (2009), growing it to a top-10 most-visited website and $60M revenue within 2 years. Also founded DTC footwear brand Shoes4you and led Miami real estate company Home61. Previously at Antler. Based in Austin, TX.",
+        "li": "https://www.linkedin.com/in/oliviergrinda/",
+        "hooks": [
+          "*Built BrandsClub to $60M revenue in Brazil",
+          "U Miami triple major",
+          "*Serial entrepreneur — 4 companies founded"
+        ]
+      },
+      {
+        "n": "Michele Romanow",
+        "t": "Co-Founder & Board Member",
+        "bg": "Co-founded Clearbanc (now Clearco) in 2015. Canadian entrepreneur who appeared as a Dragon on CBC's Dragons' Den. Previously co-founded SnapSaves (acquired by Groupon) and Buytopia. Named to Forbes 30 Under 30. Transitioned from CEO to board role when Andrew Curtis took over leadership.",
+        "li": "https://www.linkedin.com/in/micheleromanow/",
+        "hooks": [
+          "*Dragon on CBC's Dragons' Den",
+          "*Forbes 30 Under 30",
+          "*Sold SnapSaves to Groupon"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6542,7 +7140,26 @@
     ],
     "desc": "PayPal's embedded lending product offering MCAs and loans up to $300K to PayPal merchants. Surpassed $30B in global small business lending originations. Repayment via percentage of PayPal sales.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "PayPal Surpasses $30 Billion in Global Small Business Lending",
+        "s": "PayPal Newsroom, Mar 2025",
+        "d": "Crossed $30B in total loan originations with 1.4M+ loans and cash advances extended to 420K+ business accounts globally since 2013. Working Capital drives 36% increase in merchant PayPal payment volume.",
+        "p": "2025-03-26"
+      },
+      {
+        "h": "PayPal Plans PayPal Bank to Deepen Small Business Lending",
+        "s": "PYMNTS, Dec 2025",
+        "d": "Announced plans for PayPal Bank to offer more efficient SMB lending, lowering dependence on third-party bank partners like WebBank and enabling direct loan origination.",
+        "p": "2025-12-15"
+      },
+      {
+        "h": "PayPal Merchant Receivables Purchases Jump 33% YoY Through Q3 2025",
+        "s": "PYMNTS, Nov 2025",
+        "d": "Purchased approximately $1.6B in merchant receivables through September 2025, up from $1.2B in the same period in 2024, signaling accelerating lending demand.",
+        "p": "2025-11-01"
+      }
+    ],
     "ice": "Passing $30B in global originations is massive -- how is PayPal thinking about the next generation of merchant underwriting?",
     "icebreakers": [
       "Passing $30B in global originations is massive -- how is PayPal thinking about the next generation of merchant underwriting?"
@@ -6550,7 +7167,40 @@
     "tp": [
       "At $30B+ scale, even marginal AI improvements in credit decisioning could unlock billions in additional safe lending capacity."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Michelle Gill",
+        "t": "EVP & GM, Small Business and Financial Services Group",
+        "bg": "Leads PayPal's entire small business lending division including Working Capital and Business Loan products. Previously SVP of Intuit's QuickBooks Money Platform. Before Intuit, served as GM and EVP of Consumer Lending and Capital Markets at SoFi. Spent 14 years at Goldman Sachs, rising to Partner co-leading the Structured Finance business. Also previously at Sixth Street Partners. Brought multiple lending businesses under a single umbrella at PayPal.",
+        "li": "https://www.linkedin.com/in/michellegill/",
+        "hooks": [
+          "*Goldman Sachs Partner 14 years",
+          "*Ex-SoFi EVP Consumer Lending",
+          "*Ex-Intuit QuickBooks Money SVP"
+        ]
+      },
+      {
+        "n": "Alex Chriss",
+        "t": "President & CEO, PayPal",
+        "bg": "Tufts University BA in Economics. Appointed PayPal CEO in September 2023. Previously spent nearly 20 years at Intuit, most recently as SVP and GM of the Small Business and Self-Employed Group overseeing QuickBooks and TurboTax. Founded and sold two startups early in career. Under his leadership, PayPal surpassed $30B in global SMB lending and returned to profitable growth with $1.68T TPV in 2024.",
+        "li": "https://www.linkedin.com/in/alexchriss/",
+        "hooks": [
+          "*Tufts Economics grad",
+          "*19 years at Intuit before PayPal CEO",
+          "Founded 2 startups"
+        ]
+      },
+      {
+        "n": "John Kim",
+        "t": "EVP, Chief Product Officer",
+        "bg": "Oversees PayPal's product strategy across all business lines including lending products. Responsible for the product vision behind Working Capital and Business Loan products that have achieved NPS scores of 76 and 85 respectively, with 90%+ repeat rates.",
+        "li": "https://www.linkedin.com/in/johnkim/",
+        "hooks": [
+          "PayPal CPO",
+          "Drives 90%+ repeat lending rates"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6572,7 +7222,26 @@
     ],
     "desc": "Block's (formerly Square) embedded lending product offering loans from $500-$100K to Square sellers. Factor rates of 1.1-1.16, among the lowest in MCA. Repayment via daily Square sales deductions.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Square Loans Originated $5.7B in Business Loans in 2024",
+        "s": "deBanked, Feb 2025",
+        "d": "Maintained position as the largest online business lender with $5.7B in SMB loan originations in 2024. Has underwritten $22B+ in loans globally with aggregate loss rates below 3%.",
+        "p": "2025-02-15"
+      },
+      {
+        "h": "Square Financial Services Receives FDIC Approval for Cash App Borrow",
+        "s": "BusinessWire, Mar 2025",
+        "d": "FDIC approved Square Financial Services to originate and service consumer Cash App Borrow loans in-house, expanding beyond business loans. Cash App Borrow saw $9B in originations in 2024.",
+        "p": "2025-03-13"
+      },
+      {
+        "h": "Square Loans Reaches $1.7B in Q3 2025 Originations",
+        "s": "deBanked, Nov 2025",
+        "d": "Originated $1.7B in Q3 2025, up from $1.59B in Q1 and $1.64B in Q2, showing steady quarterly growth in SMB lending.",
+        "p": "2025-11-01"
+      }
+    ],
     "ice": "Square's factor rates are among the lowest in the industry -- how does the underwriting model leverage POS transaction data to price so competitively?",
     "icebreakers": [
       "Square's factor rates are among the lowest in the industry -- how does the underwriting model leverage POS transaction data to price so competitively?"
@@ -6580,7 +7249,30 @@
     "tp": [
       "AI underwriting layered on Square's rich transaction data could enable real-time credit limit adjustments and instant re-offers to top-performing merchants."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jack Dorsey",
+        "t": "Block Head, Chairman & Co-Founder",
+        "bg": "Born in St. Louis, Missouri. Attended Bishop DuBourg High School where he developed early interest in computers and communications. Studied at Missouri University of Science and Technology and New York University (did not finish). Co-founded Twitter in 2006 and Square in 2009. Renamed Square to Block, Inc. in December 2021. Returned as hands-on CEO after departure of CEO Alyssa Henry, launching internal restructuring to eliminate silos and promote AI adoption.",
+        "li": "https://www.linkedin.com/in/jackdorsey/",
+        "hooks": [
+          "*Twitter co-founder",
+          "*College dropout turned dual-unicorn founder",
+          "St. Louis native"
+        ]
+      },
+      {
+        "n": "Amrita Ahuja",
+        "t": "COO & CFO",
+        "bg": "Duke University AB in Economics (1997-2001), London School of Economics (1999-2000), Harvard Business School MBA (2005-2007). Joined Block in January 2019 as CFO, expanded to COO in February 2023. Career began as Morgan Stanley investment banking analyst, then strategic planning at Walt Disney Company. Held multiple roles at Activision Blizzard including CFO of Blizzard Entertainment. Also Director in Fox Network's Business Development Group. Serves on boards of Airbnb and Discord.",
+        "li": "https://www.linkedin.com/in/amrita-ahuja-2402595/",
+        "hooks": [
+          "*Duke + Harvard MBA + LSE",
+          "*Ex-Blizzard Entertainment CFO",
+          "*Airbnb & Discord board member"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6602,7 +7294,26 @@
     ],
     "desc": "Shopify's embedded MCA and loan product offering $200-$2M to eligible merchants. Invite-only, based on store performance. Available in US, Canada, UK, and Australia. No credit check required.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Shopify Capital Finishes 2025 with $4.2B in MCAs and Business Loans",
+        "s": "deBanked, Feb 2026",
+        "d": "Full-year 2025 originations reached $4.2B in merchant cash advances and business loans, significantly exceeding the estimated $3B from 2024 and cementing Shopify as a major embedded lender.",
+        "p": "2026-02-10"
+      },
+      {
+        "h": "Shopify Capital Expands to Germany and the Netherlands",
+        "s": "Shopify News, 2025",
+        "d": "Launched Shopify Capital services in Germany and the Netherlands, marking the company's first expansion of lending products into European markets.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "Shopify Capital Reaches $1B in Q2 2025 Originations",
+        "s": "deBanked, May 2025",
+        "d": "Purchased $1B in business loans and MCAs in Q2 2025, bringing first-half total to $1.8B. Held $1.6B on balance sheet as of June 30, 2025.",
+        "p": "2025-05-15"
+      }
+    ],
     "ice": "Shopify Capital's invite-only model is a smart way to pre-qualify merchants -- how are you expanding eligibility while managing risk?",
     "icebreakers": [
       "Shopify Capital's invite-only model is a smart way to pre-qualify merchants -- how are you expanding eligibility while managing risk?"
@@ -6610,7 +7321,40 @@
     "tp": [
       "AI underwriting could expand Shopify Capital's eligible merchant pool by identifying lower-risk merchants that current rule-based systems might miss."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Harley Finkelstein",
+        "t": "President, Shopify",
+        "bg": "Born in Montreal, Quebec. Founded a T-shirt company at age 17 while at McGill University. Transferred to Concordia University for BA in Economics. University of Ottawa JD/MBA, where he founded the JD/MBA Student Society and Canadian MBA Oath. Became one of the first Shopify merchants in 2009. Appointed President in September 2020. Oversees Shopify's merchant-facing operations including Shopify Capital which has deployed $5.1B+ to merchants.",
+        "li": "https://www.linkedin.com/in/harleyf/",
+        "hooks": [
+          "*JD/MBA from U of Ottawa",
+          "*Founded T-shirt company at 17",
+          "*One of Shopify's first-ever merchants"
+        ]
+      },
+      {
+        "n": "Tobi Lutke",
+        "t": "CEO & Co-Founder, Shopify",
+        "bg": "Born in Koblenz, Germany. Dropped out of school after 10th grade to enter a programming apprenticeship at Carl-Benz-School Koblenz, then worked at Siemens at age 17. Moved to Canada in 2002. Co-founded Snowdevil (online snowboard shop) in 2004, which evolved into Shopify in 2006. Self-taught programmer who built Shopify's original platform. Company now powers millions of merchants globally with Shopify Capital deploying $4.2B in MCAs and loans in 2025 alone.",
+        "li": "https://www.linkedin.com/in/tobias-lutke-shopify/",
+        "hooks": [
+          "*German high school dropout turned billionaire CEO",
+          "*Started as snowboard shop, built $200B+ company",
+          "Self-taught programmer"
+        ]
+      },
+      {
+        "n": "Jeff Hoffmeister",
+        "t": "Chief Financial Officer, Shopify",
+        "bg": "CFO at Shopify Inc., leading financial strategy, capital allocation, and investor relations. Oversees the financial operations supporting Shopify Capital's rapid growth to $4.2B in annual MCAs and business loans in 2025, with $1.6B held on balance sheet as of mid-2025.",
+        "li": "https://www.linkedin.com/in/jeffhoffmeister/",
+        "hooks": [
+          "Shopify CFO",
+          "$4.2B annual lending portfolio manager"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6632,7 +7376,26 @@
     ],
     "desc": "Amazon's merchant lending program partnered with Parafin, offering MCAs from $500 to $10M. Invite-only for Amazon sellers with 3+ months history. Fixed capital fee, no interest or late fees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Slope Announces Capital Lending Partnership with Amazon, Backed by Sam Altman and JPMorgan",
+        "s": "CNBC, Dec 2025",
+        "d": "AI-native lending platform Slope, backed by Sam Altman and JPMorgan, launched a new partnership with Amazon to provide lines of credit to eligible US sellers. Applications grew 300% week-over-week during the trial period.",
+        "p": "2025-12-16"
+      },
+      {
+        "h": "Amazon Lending Adds Intuit QuickBooks Capital as Third-Party Provider",
+        "s": "Nova Analytics, Oct 2025",
+        "d": "Intuit QuickBooks Capital joined Amazon Lending as a financing provider, announced at Amazon Accelerate conference, expanding the multi-provider lending marketplace.",
+        "p": "2025-10-01"
+      },
+      {
+        "h": "Amazon Expands Lending Ecosystem with SellersFi Credit Lines Up to $10M",
+        "s": "SellersFi, 2025",
+        "d": "SellersFi announced a financing solution with Amazon Lending offering credit lines up to $10M to e-commerce sellers, the largest individual credit facility in the program.",
+        "p": "2025-08-01"
+      }
+    ],
     "ice": "The Parafin partnership gives Amazon sellers MCA access up to $10M -- how is Amazon thinking about risk at the upper end of that range?",
     "icebreakers": [
       "The Parafin partnership gives Amazon sellers MCA access up to $10M -- how is Amazon thinking about risk at the upper end of that range?"
@@ -6640,7 +7403,29 @@
     "tp": [
       "AI underwriting could help Amazon Lending evaluate seller risk in real-time using marketplace performance data, enabling faster and larger funding decisions."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Tai Koottatep",
+        "t": "Director & GM, WW B2B Payments and Lending",
+        "bg": "Director and General Manager of Amazon's Worldwide B2B Payments and Lending arm. Oversees the Amazon Lending program which connects sellers with capital through both Amazon's on-balance-sheet loans and a growing ecosystem of third-party financing providers including Parafin, Lendistry, SellersFi, Intuit QuickBooks Capital, and Slope. Has expanded the program to offer funds from $500 to $10M with instant approval for eligible sellers.",
+        "li": "https://www.linkedin.com/in/tai-koottatep/",
+        "hooks": [
+          "Amazon WW Lending GM",
+          "Built multi-partner lending ecosystem"
+        ]
+      },
+      {
+        "n": "Sahill Poddar",
+        "t": "CEO & Co-Founder, Parafin (Amazon MCA Partner)",
+        "bg": "PhD from University of Heidelberg, where he worked on discovering the Higgs boson particle at CERN using machine learning. All three Parafin co-founders came from Robinhood, where Sahill served as Engineering Head of Machine Learning. Founded Parafin to power embedded capital for platforms. Parafin provides the merchant cash advance program for Amazon sellers, launched in November 2022.",
+        "li": "https://www.linkedin.com/in/sahill-poddar-57302461/",
+        "hooks": [
+          "*PhD from CERN — discovered Higgs boson",
+          "*Ex-Robinhood ML Engineering Head",
+          "*PhD to $100M revenue in 4 years"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6666,7 +7451,20 @@
     ],
     "desc": "Brooklyn, NY-based MCA direct funder (est. 2016). Provides merchant cash advances, revenue-based financing, and small business loans. Principals have funded thousands of businesses over 10+ years.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Unique Funding Solutions Maintains Presence as Direct MCA Funder",
+        "s": "FunderIntel, 2025",
+        "d": "UFS continues to operate as a direct funding source for merchant cash advances, listed on FunderIntel as a direct funder serving small businesses nationwide with fast turnaround.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "UFS Recognized by Broker Community for Fast Deal Closings",
+        "s": "DailyFunder, 2024",
+        "d": "Praised by ISO/broker community on DailyFunder for handling challenging B and C paper deals with same-day turnaround and experienced team committed to closing.",
+        "p": "2024-06-01"
+      }
+    ],
     "ice": "A decade of direct funding experience in Brooklyn -- what's your sweet spot in terms of deal size and merchant profile?",
     "icebreakers": [
       "A decade of direct funding experience in Brooklyn -- what's your sweet spot in terms of deal size and merchant profile?"
@@ -6674,7 +7472,18 @@
     "tp": [
       "AI underwriting can help identify your ideal merchant profile from historical data and automatically fast-track applications that match your best-performing segments."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Unique Funding Solutions was founded in 2016 in Brooklyn, New York as a direct MCA funder specializing in B and C paper funding with same-day turnaround. The company has 11-50 employees operating from offices at 1672 E 22nd St, Brooklyn and 71 S Central Ave Ste 200, Valley Stream, NY. UFS is known in the industry for fast approvals and commitment to closing deals, serving industries including automotive repair, beauty salons, medical practices, construction, retail, and real estate. Leadership information is not publicly disclosed.",
+        "li": "",
+        "hooks": [
+          "Brooklyn-based direct funder since 2016",
+          "B/C paper specialist with same-day funding"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6701,7 +7510,26 @@
     ],
     "desc": "Acquired by American Express in 2020, now operates as Amex Business Line of Credit. Lines from $2K-$250K with doc-free application. Pioneered automated SMB lending using real-time business data.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "American Express Retires Kabbage Brand, Launches Business Blueprint",
+        "s": "Finovate, Feb 2023",
+        "d": "Amex fully retired the Kabbage brand, launching Business Blueprint as an integrated digital cash flow management hub with lines of credit ($2K-$250K), business checking, and MyInsights cash flow tool.",
+        "p": "2023-02-01"
+      },
+      {
+        "h": "Amex Business Blueprint Expands Digital Tools for Small Businesses",
+        "s": "American Express, 2025",
+        "d": "Business Blueprint platform continues to serve small businesses with digital financial products, payment card management, and cash flow insights, building on Kabbage's technology foundation.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "Kabbage Co-Founders Launch Keep Financial for Vesting Cash Compensation",
+        "s": "Crunchbase, 2024",
+        "d": "Rob Frohwein and Kathryn Petralia moved on from American Express to co-found Keep Financial, applying their fintech expertise to revolutionize employee compensation through Vesting Cash Plans.",
+        "p": "2024-03-01"
+      }
+    ],
     "ice": "Kabbage pioneered automated SMB underwriting before the acquisition -- how has Amex's infrastructure amplified that capability?",
     "icebreakers": [
       "Kabbage pioneered automated SMB underwriting before the acquisition -- how has Amex's infrastructure amplified that capability?"
@@ -6709,7 +7537,31 @@
     "tp": [
       "The doc-free, data-driven model Kabbage built is a perfect foundation for next-gen AI underwriting that could further reduce friction and improve credit quality."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Rob Frohwein",
+        "t": "Co-Founder, Kabbage (now at Keep Financial)",
+        "bg": "Dickinson College BA in Economics (1986-1990), Villanova University JD Magna Cum Laude. Former intellectual property lawyer at Troutman Sanders LLP. Co-authored three books on IP. CEO of LAVA Group (IP investment bank). VP and General Counsel at Security First Network Bank (world's first Internet bank). Co-founded Kabbage in 2009 during the financial crisis, fascinated by cloud data accessibility for lending. After Amex acquisition, founded Keep Financial (vesting cash compensation platform).",
+        "li": "https://www.linkedin.com/in/frohwein/",
+        "hooks": [
+          "*Villanova JD Magna Cum Laude",
+          "*World's first internet bank VP & GC",
+          "*Co-authored 3 IP books",
+          "*Founded Keep Financial post-Kabbage"
+        ]
+      },
+      {
+        "n": "Kathryn Petralia",
+        "t": "Co-Founder & Former President, Kabbage",
+        "bg": "Furman University BA in English Literature. Nearly 15 years in fintech and ecommerce startups before co-founding Kabbage in 2008 with Rob Frohwein and Marc Gorlin. Served as Kabbage COO and President. Previously VP of Strategy at Revolution Money (acquired by American Express). Named to Forbes' Most Powerful Women (2017). Helped grow Kabbage to $2.5B+ in funding raised before the 2020 Amex acquisition.",
+        "li": "https://www.linkedin.com/in/kathrynpetralia/",
+        "hooks": [
+          "*Forbes Most Powerful Women 2017",
+          "*Furman English Lit degree — unusual for fintech",
+          "*Revolution Money VP (also acquired by Amex)"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6731,7 +7583,26 @@
     ],
     "desc": "Miami-based revenue-based financing provider (est. 2013). Founded by Scott Crockett, who previously built Allied Cash Advance to 250+ locations and $60M annual revenue. Funds based on daily cash flow, not credit scores.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Everest Business Funding Named Best and Brightest Workplace in the Nation 2025",
+        "s": "BusinessWire, Jun 2025",
+        "d": "Earned back-to-back national recognition from the National Association for Business Resources, reflecting commitment to employee growth, collaboration, and workplace culture.",
+        "p": "2025-06-02"
+      },
+      {
+        "h": "Everest Business Funding Sponsors and Speaks at Broker Expo New York",
+        "s": "Funders Forum, Sep 2025",
+        "d": "Participated as both sponsor and featured speaker at the Broker Expo New York on September 17, 2025 in Manhattan, strengthening industry presence and ISO relationships.",
+        "p": "2025-09-17"
+      },
+      {
+        "h": "Everest Business Funding Expands Revenue-Based Financing to $2M Limit",
+        "s": "everestbusinessfunding.com, 2025",
+        "d": "Now offers fast access to working capital up to $2M through revenue-based financing, serving business owners across a wide range of industries with a streamlined application process.",
+        "p": "2025-01-05"
+      }
+    ],
     "ice": "Going from 250 Allied Cash storefronts to a digital-first model at Everest is a big pivot -- how has that changed your approach to risk?",
     "icebreakers": [
       "Going from 250 Allied Cash storefronts to a digital-first model at Everest is a big pivot -- how has that changed your approach to risk?"
@@ -6739,7 +7610,30 @@
     "tp": [
       "Cash flow-based underwriting is perfect for AI -- we can analyze bank statement patterns to predict repayment capacity in minutes, not hours."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Scott Crockett",
+        "t": "Founder & CEO",
+        "bg": "Tulane University BA. Began career as an investment banker at NationsBanc Montgomery Securities, where he turned down a promotion to start his own consumer finance company. 20+ years of experience in the finance industry. Track record includes raising more than $500M in capital and creating thousands of jobs. Founded, built, and managed several finance companies across consumer and commercial finance sectors before establishing Everest Business Funding in 2013.",
+        "li": "https://www.linkedin.com/in/scottfcrockett/",
+        "hooks": [
+          "*Tulane grad",
+          "*Ex-NationsBanc Montgomery investment banker",
+          "*Turned down Wall Street promotion to start own company"
+        ]
+      },
+      {
+        "n": "Tracy Parks",
+        "t": "Chief Operating Officer",
+        "bg": "Based in Fort Lauderdale, Florida. COO at Everest Business Funding since September 2012. Previously President and CEO of Allied Cash Advance (June 2007 - September 2012). Also held COO role at Whetstone Holdings and positions at eTitleLoan. Brings deep operational experience in consumer and commercial lending operations.",
+        "li": "https://www.linkedin.com/in/tracyparks/",
+        "hooks": [
+          "*Former CEO Allied Cash Advance 5 years",
+          "Fort Lauderdale-based",
+          "Consumer-to-commercial lending crossover"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6766,7 +7660,26 @@
     ],
     "desc": "Long Island, NY-based MCA provider (est. 2012). Originated $180M in 2016. Founded by Ali Mayar, a former stockbroker, and Vincent, a former mortgage broker. Serves SMBs nationwide.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Platinum Asset Funding LLC v Platinum Rapid Funding Group — 2025 NY Court Case",
+        "s": "Justia, 2025",
+        "d": "Legal dispute involving Platinum Rapid Funding Group in New York state courts, indicating continued active operations and brand prominence in the MCA space.",
+        "p": "2025-07-15"
+      },
+      {
+        "h": "Platinum Rapid Funding Group Plans Office Relocation",
+        "s": "LinkedIn, Apr 2024",
+        "d": "Company announced plans to move from its Uniondale, NY headquarters at 348 RXR Plaza, signaling operational growth and need for expanded facilities.",
+        "p": "2024-04-01"
+      },
+      {
+        "h": "Platinum Rapid Funding Group Featured on Money Inc.",
+        "s": "AccessNewswire, 2019",
+        "d": "Company profiled in Money Inc., highlighting CEO Ali Mayar's entrepreneurial journey from stockbroker to building one of Long Island's notable MCA providers.",
+        "p": "2019-06-15"
+      }
+    ],
     "ice": "$180M originated in 2016 alone is serious volume -- how has deal flow evolved since then as the MCA market has matured?",
     "icebreakers": [
       "$180M originated in 2016 alone is serious volume -- how has deal flow evolved since then as the MCA market has matured?"
@@ -6774,7 +7687,30 @@
     "tp": [
       "With your volume and Wall Street background, you'd appreciate how AI underwriting brings quantitative rigor to every MCA decision at scale."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Ali Mayar",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Platinum Rapid Funding Group in 2012 after working as a stockbroker. First job was in corporate security, where he was exposed to the alternative financial solutions industry. Under his leadership the company originated $180M in 2016. Built the company from the ground up on Long Island, NY, focused on helping smaller entrepreneurs grow their startups. The management team has over 25 years of combined experience working with small business owners.",
+        "li": "https://www.linkedin.com/in/ali-mayar-bbb3822a/",
+        "hooks": [
+          "*Ex-stockbroker turned MCA founder",
+          "$180M originated in single year",
+          "Started from corporate security"
+        ]
+      },
+      {
+        "n": "Vincent Bardong",
+        "t": "President & Co-Founder",
+        "bg": "Co-founded Platinum Rapid Funding Group alongside Ali Mayar. Holds a Bachelor of Business Administration (B.B.A.) from Queens College. Previously worked as a mortgage broker before pivoting to alternative lending after the 2008 Great Recession decimated the mortgage industry. Instrumental in building the company's operations in Uniondale, Long Island.",
+        "li": "https://www.linkedin.com/in/vincent-p-bardong-38b42024/",
+        "hooks": [
+          "*Queens College BBA",
+          "Ex-mortgage broker",
+          "Pivoted during 2008 recession"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6801,7 +7737,26 @@
     ],
     "desc": "San Diego-based alternative lender (est. 2008) specializing in MCA, working capital, equipment leasing, and bridge loans. Funded almost $2B to 10,000+ small businesses across the US.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Reliant Funding Acquired in March 2024",
+        "s": "Tracxn, Mar 2024",
+        "d": "Reliant Funding was acquired in a deal closing March 1, 2024, marking a major ownership transition for the San Diego-based alternative lender after 16 years of independent operation.",
+        "p": "2024-03-01"
+      },
+      {
+        "h": "Reliant Funding Secures $125M Debt Facility from Ares Management",
+        "s": "PitchBook, 2023",
+        "d": "Ares Management provided $125M in debt funding, significantly expanding Reliant's lending capacity for short-term working capital products to small and mid-sized businesses.",
+        "p": "2023-06-15"
+      },
+      {
+        "h": "Reliant Funding Revenue Reaches $65M in 2025",
+        "s": "ZoomInfo, 2025",
+        "d": "Annual revenue estimated at $65M as the company continues serving SMBs nationwide with MCA and working capital products across construction, healthcare, and hospitality sectors.",
+        "p": "2025-09-01"
+      }
+    ],
     "ice": "Nearly $2B funded to 10,000+ businesses since 2008 -- at that scale, where does underwriting efficiency matter most?",
     "icebreakers": [
       "Nearly $2B funded to 10,000+ businesses since 2008 -- at that scale, where does underwriting efficiency matter most?"
@@ -6809,7 +7764,42 @@
     "tp": [
       "AI underwriting can help process your diverse product mix -- MCA, equipment, bridge loans -- through a unified decisioning engine, cutting turnaround across the board."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Steve Kietz",
+        "t": "CEO",
+        "bg": "Promoted to CEO in July 2021 after serving as CMO since 2017. Holds a BA from SUNY Binghamton and an MBA in Marketing from Baruch College. 30+ year career in financial services including President of Citibank Direct, President of Inte Q, and Founder/CEO of Mobile Money Ventures (acquired by Intuit). Named to Bank Systems & Technology 'Elite 8' most innovative bankers in 2008. Previously held leading roles at Citi and JP Morgan.",
+        "li": "https://www.linkedin.com/in/stevekietz/",
+        "hooks": [
+          "*Founded company acquired by Intuit",
+          "*Ex-President of Citibank Direct",
+          "SUNY Binghamton + Baruch MBA",
+          "Elite 8 most innovative banker"
+        ]
+      },
+      {
+        "n": "Adam Stettner",
+        "t": "Founder",
+        "bg": "Founded Reliant Funding in 2008 and served as CEO for 14 years, growing it to $3B funded on balance sheet to ~100,000 small businesses and 200+ employees. BA in Communication from University of Maryland, studied finance at Columbia Business School Executive Education. Previously created a division at Student Loan Xpress (CIT/Fortune 500) producing $8B+ in student loan originations. Won Ernst & Young Entrepreneur of the Year 2019. Left to found FundCanna in 2021, a cannabis industry lender. Holds Series 7, 55, and 63 licenses.",
+        "li": "https://www.linkedin.com/in/adamstettner/",
+        "hooks": [
+          "*EY Entrepreneur of the Year 2019",
+          "*$8B student loan division at CIT",
+          "UMD + Columbia Business School",
+          "*Founded FundCanna (cannabis fintech)"
+        ]
+      },
+      {
+        "n": "David Schneider",
+        "t": "VP of Marketing",
+        "bg": "20+ years of B2B marketing experience specializing in customer acquisition and retention, merchandising, product development, and multi-channel e-commerce. Leads marketing strategy and brand positioning at Reliant Funding, driving customer acquisition across digital and traditional channels for the San Diego-based lender.",
+        "li": "https://www.linkedin.com/in/david-schneider-bab7aaa/",
+        "hooks": [
+          "20+ yr B2B marketing veteran",
+          "Multi-channel e-commerce expert"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6836,7 +7826,26 @@
     ],
     "desc": "Utah-based online lending marketplace (est. 2011). The largest marketplace for business loans in the US, facilitating 400,000+ loans totaling $15B+. Connects SMBs with 75+ lenders including MCA providers.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Grasshopper Bank Taps Lendio to Power AI-Driven SBA Lending",
+        "s": "PR Newswire, Jul 2025",
+        "d": "Grasshopper Bank partnered with Lendio's Intelligent Lending platform to bring instant SBA loan offers to market, with first deal closing in May 2025. Signals Lendio's pivot toward AI-powered lending infrastructure.",
+        "p": "2025-07-15"
+      },
+      {
+        "h": "Payro Finance Selects Lendio to Expand SMB Financing",
+        "s": "PR Newswire, Feb 2025",
+        "d": "Payro Finance chose Lendio's embedded loan marketplace to expand financing options for small businesses, validating Lendio's B2B embedded lending strategy.",
+        "p": "2025-02-10"
+      },
+      {
+        "h": "Lendio Q1 2025 SMB Lending Index Shows Lender Optimism Surge",
+        "s": "PR Newswire, Apr 2025",
+        "d": "Lendio's proprietary lending index reveals 'Poor' access-to-capital ratings dropped from 29% to just 9%, signaling strong recovery in small business lending confidence.",
+        "p": "2025-04-15"
+      }
+    ],
     "ice": "$15 billion in facilitated funding through 75+ lenders is marketplace dominance -- how are you thinking about AI to improve borrower-lender matching?",
     "icebreakers": [
       "$15 billion in facilitated funding through 75+ lenders is marketplace dominance -- how are you thinking about AI to improve borrower-lender matching?"
@@ -6844,7 +7853,31 @@
     "tp": [
       "AI-powered underwriting on the marketplace side could instantly match borrowers to the right lender and product, improving conversion rates for everyone."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Brock Blake",
+        "t": "CEO & Co-Founder",
+        "bg": "Founded Lendio after witnessing small businesses struggle to get capital post-2008. Educated at BYU Marriott School of Management. Never held a traditional job — started with a paper route, ran a soccer camp, and bought/sold scooters at BYU to pay tuition. Co-founded FundingUniverse in 2006 with Trent Miskin after winning a $50K startup competition. Named Utah Business Magazine CEO of the Year. Won EY Entrepreneur of the Year 2020 Utah Region. Named Utah's Top 40 Under 40 at age 24 and Utah Technology Council's Emerging Executive of the Year in 2006.",
+        "li": "https://www.linkedin.com/in/brockblake/",
+        "hooks": [
+          "*Never held a traditional job",
+          "*EY Entrepreneur of the Year 2020",
+          "BYU Marriott School",
+          "*Won $50K competition to start company"
+        ]
+      },
+      {
+        "n": "Joanna Fankhauser",
+        "t": "Chief Operations Officer",
+        "bg": "Appointed COO in September 2025 to drive Lendio's next phase of growth. BBA from BYU, MBA from University of Utah. Previously Global VP of Revenue Operations & Enablement at Instructure and held roles at Pluralsight, Wyndham Hotels & Resorts, and American Ski Company. Brings deep SaaS strategy and operations experience to scale Lendio's Embedded Marketplace and Intelligent Lending platforms.",
+        "li": "https://www.linkedin.com/in/joannafank/",
+        "hooks": [
+          "*Ex-Instructure Global VP",
+          "BYU + Utah MBA",
+          "SaaS ops scaling expert"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6871,7 +7904,26 @@
     ],
     "desc": "Israeli fintech helping SMBs become more fundable. Raised $12.5M. Provides a proprietary LendingScore to assess creditworthiness and connects businesses with suitable lenders. Operations in US and Australia.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Become Secures $12.5M Series A to Make SMBs More Fundable",
+        "s": "FinTech Futures, Oct 2019",
+        "d": "Israeli fintech Become raised $12.5M led by Benson Oak Ventures and Magenta Venture, including $2.5M in venture debt from Viola Credit, to scale operations in the US and Australia.",
+        "p": "2019-10-29"
+      },
+      {
+        "h": "Become Surpasses $200M in SMB Lending Matches",
+        "s": "Startup Nation Central, 2020",
+        "d": "The platform's proprietary MatchScore algorithm, analyzing thousands of attributes to pair SMBs with optimal funding solutions, drove significant volume growth. Businesses using Become are 20% more likely to receive funding.",
+        "p": "2020-06-15"
+      },
+      {
+        "h": "How a Computer Game Master Applied His Talents to Online Lending",
+        "s": "deBanked, Dec 2018",
+        "d": "Profile of CEO Eden Amirav, a former professional Warcraft III player who applied competitive gaming analytics skills to building an SMB lending marketplace.",
+        "p": "2018-12-15"
+      }
+    ],
     "ice": "The LendingScore concept is brilliant -- turning rejection into a roadmap for fundability. How is that scoring algorithm evolving?",
     "icebreakers": [
       "The LendingScore concept is brilliant -- turning rejection into a roadmap for fundability. How is that scoring algorithm evolving?"
@@ -6879,7 +7931,20 @@
     "tp": [
       "AI-driven underwriting can complement your LendingScore by providing real-time credit analysis that helps lenders say yes to merchants you've coached to fundability."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Eden Amirav",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Become (formerly Lending Express) to help SMBs become more fundable using data analytics. Attended Open University Israel (2011-2013). Brings 13+ years of experience in online businesses and marketing technologies. Before becoming a fintech founder, was Israel's #1 champion in Warcraft III for four consecutive years (2003-2006). Under his leadership, Become surpassed $200M in matching online lending to SMEs and raised $12.5M in funding from Benson Oak Ventures, Magenta Venture, RIO Ventures, iAngels, and Entree Capital.",
+        "li": "https://www.linkedin.com/in/eden-amirav-9375bb23",
+        "hooks": [
+          "*Israel's #1 Warcraft III champion 4 years",
+          "Open University Israel",
+          "*$200M+ SMB lending matched",
+          "Rebranded from Lending Express"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6901,7 +7966,26 @@
     ],
     "desc": "Toronto, Canada-based MCA provider (est. 2007). Offers merchant cash advances from $5K-$250K with 100% approval rate and minimal paperwork. Claims 4-hour funding turnaround. Focused on Canadian market.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Synergy Merchants Launches FastCap Funding Product",
+        "s": "synergymerchants.com, 2024",
+        "d": "New financing alternative offering merchants $1,500-$50,000 in under four hours with no credit checks, targeting businesses accepting credit/debit payments for at least 30 days. Positioned as a fast-track alternative to their core MCA product.",
+        "p": "2024-06-15"
+      },
+      {
+        "h": "Synergy Merchants Ranked Among Canada's Best MCA Companies",
+        "s": "TopCreditCardProcessors, Dec 2025",
+        "d": "Synergy Merchants recognized in industry rankings of best merchant cash advance companies in Canada, reflecting sustained market leadership since 2007.",
+        "p": "2025-12-01"
+      },
+      {
+        "h": "Synergy Merchants Expands Partner Network Across Canada",
+        "s": "synergymerchants.com, 2025",
+        "d": "Company continues building partnerships to expand access to merchant cash advances for Canadian businesses that have been declined by traditional banks and standard MCA providers.",
+        "p": "2025-03-15"
+      }
+    ],
     "ice": "A 100% approval rate and 4-hour funding in the Canadian market is bold -- how do you balance speed with risk management?",
     "icebreakers": [
       "A 100% approval rate and 4-hour funding in the Canadian market is bold -- how do you balance speed with risk management?"
@@ -6909,7 +7993,20 @@
     "tp": [
       "AI underwriting can maintain your rapid 4-hour turnaround while adding sophisticated risk scoring that protects your portfolio as you scale."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Synergy Merchants Leadership",
+        "t": "Management Team",
+        "bg": "Synergy Merchants is a Canadian-owned company specializing in merchant cash advances since 2007, headquartered at 265 Rimrock Rd, Toronto, Ontario. The company has grown to approximately 95 employees and is recognized as Canada's leading merchant funding and cash advance company. They introduced FastCap Funding, providing $1,500-$50,000 in under four hours with no credit checks. Leadership details are not publicly disclosed — the company maintains a private management structure.",
+        "li": "",
+        "hooks": [
+          "*Canada's leading MCA provider",
+          "Est. 2007 Toronto",
+          "95 employees",
+          "FastCap Funding launched"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -6931,7 +8028,26 @@
     ],
     "desc": "Miami, FL-based business financing platform connecting SMBs with funders. CEO John Lie-Nielsen named Most Influential CEO 2023 in Florida for SME Financing Technology.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "One Park Financial Certified as Great Place to Work for 8th Year",
+        "s": "OneParkFinancial.com, Sep 2025",
+        "d": "Fund Street Technologies' subsidiary One Park Financial earned Great Place to Work certification for the eighth consecutive year, reflecting strong employee retention and culture in the competitive Miami fintech market.",
+        "p": "2025-09-15"
+      },
+      {
+        "h": "One Park Financial Wins Communication Award at 2025 Sun Sentinel Top Workplaces",
+        "s": "Sun Sentinel, May 2025",
+        "d": "Ranked 3rd place and won a Communication Award in the Sun Sentinel's 2025 Top Workplaces, demonstrating continued organizational excellence in South Florida.",
+        "p": "2025-05-20"
+      },
+      {
+        "h": "John Lie-Nielsen Named Most Influential CEO 2023 — Florida",
+        "s": "CEO Monthly, 2023",
+        "d": "CEO recognized for leadership in SME financing technology, highlighting One Park Financial's impact connecting small businesses with working capital solutions from 20+ lending partners.",
+        "p": "2023-11-15"
+      }
+    ],
     "ice": "Being named Florida's most influential CEO in SME financing tech is well-deserved -- what technology investments are you most excited about?",
     "icebreakers": [
       "Being named Florida's most influential CEO in SME financing tech is well-deserved -- what technology investments are you most excited about?"
@@ -6939,7 +8055,42 @@
     "tp": [
       "AI underwriting on your platform could pre-qualify merchants before they reach funders, improving match rates and reducing wasted effort for everyone."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "John Lie-Nielsen",
+        "t": "CEO & Founder",
+        "bg": "Founded One Park Financial in 2010 as a subsidiary of Fund Street Technologies. Has been an entrepreneur for over half his life — founded ACA Financial LLC in 1999. Named 'Most Influential CEO 2023 — Florida' by CEO Monthly in the SME Financing Technology category. Company featured multiple times on Entrepreneur Magazine's Entrepreneur 360 list. Practices servant leadership philosophy, prioritizing team empowerment. Company certified as Great Place to Work for 8 consecutive years. Revenue estimated at $64M annually.",
+        "li": "https://www.linkedin.com/in/john-lie-nielsen-9b10141b/",
+        "hooks": [
+          "*Most Influential CEO 2023 Florida",
+          "*Entrepreneur since 1999",
+          "8x Great Place to Work certified",
+          "Servant leadership advocate"
+        ]
+      },
+      {
+        "n": "Erik Nord",
+        "t": "Co-Founder",
+        "bg": "Co-founded One Park Financial alongside John Lie-Nielsen. Holds a J.D. (Doctor of Law) from University of Minnesota-Twin Cities. Attorney, advisor, and entrepreneur with expertise in asset management, mergers and acquisitions, corporate governance, and brokerage. Previously held roles at Above Labs and ePallet, Inc. Brings legal and M&A expertise to the company's strategic direction.",
+        "li": "https://www.linkedin.com/in/erik-nord-92804b59/",
+        "hooks": [
+          "*JD from University of Minnesota",
+          "Attorney + entrepreneur",
+          "M&A expertise"
+        ]
+      },
+      {
+        "n": "Jose Miguel Vera",
+        "t": "SVP of Growth & Marketing",
+        "bg": "Seasoned performance and integrated marketing professional leading all growth and marketing functions at One Park Financial. Rose through multiple roles internally: Senior Director of Acquisition Marketing, VP of Marketing, then SVP. Previously served as Senior Manager of SEM at Dentalplans and held director-level roles at Optimum7 digital agency. Expert in data-driven customer acquisition and multi-channel marketing strategy.",
+        "li": "https://www.linkedin.com/in/josemiguelvera/",
+        "hooks": [
+          "Rose through 4 roles internally",
+          "Ex-Optimum7 digital agency",
+          "Performance marketing expert"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -6966,7 +8117,26 @@
     ],
     "desc": "NYC-based fintech (est. 2011) providing B2B payments platform that extends net terms and financing to businesses. Raised $156M in funding. Co-founded by Benjy and Shai Feinberg.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Behalf Ceases Operations in January 2023",
+        "s": "DomainGang, 2023",
+        "d": "B2B payments fintech Behalf mysteriously shut down without formal notice to customers or merchants. Social media accounts went dark in March 2022, and the domain behalf.com was later auctioned for $34,500 in December 2023.",
+        "p": "2023-01-15"
+      },
+      {
+        "h": "Behalf Raises $100M Debt Facility for B2B BNPL Offering",
+        "s": "Finovate, Jul 2021",
+        "d": "Ares Management provided $100M debt facility plus $19M in venture financing to expand Behalf's buy-now-pay-later capabilities for B2B commerce, marking the company's peak capitalization before eventual shutdown.",
+        "p": "2021-07-15"
+      },
+      {
+        "h": "FinTech Vet Rob Rosenblatt Takes Over as CEO at Behalf",
+        "s": "GlobeNewsWire, Aug 2020",
+        "d": "Former Kabbage and Flywire executive Rob Rosenblatt was promoted from President to CEO, replacing co-founder Benjy Feinberg who transitioned to an advisory role.",
+        "p": "2020-08-20"
+      }
+    ],
     "ice": "The B2B payments and financing combo is a powerful flywheel -- how is Behalf thinking about embedded credit decisioning?",
     "icebreakers": [
       "The B2B payments and financing combo is a powerful flywheel -- how is Behalf thinking about embedded credit decisioning?"
@@ -6974,7 +8144,32 @@
     "tp": [
       "AI underwriting embedded into your payments platform could enable instant credit decisions at point of purchase, creating a seamless buy-now-pay-later for B2B."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Benjy Feinberg",
+        "t": "Co-Founder & Former CEO",
+        "bg": "Co-founded Behalf in 2011 with his brother Shai Feinberg and Jeremy Esekow. Studied law in Israel and earned an MBA from INSEAD (France, 1997). Before founding Behalf, worked in New York financing and buying out multimillion-dollar companies and preparing companies for IPOs. Built Behalf into a platform that onboarded 19,000+ merchants and 95,000 business customers, providing $1B+ in B2B financing. Stepped down as CEO in 2020 to serve as advisor.",
+        "li": "https://www.linkedin.com/in/benjyfeinberg/",
+        "hooks": [
+          "*INSEAD MBA",
+          "*$1B+ in B2B financing originated",
+          "Israeli law degree",
+          "IPO preparation background"
+        ]
+      },
+      {
+        "n": "Rob Rosenblatt",
+        "t": "Former CEO (2020-2022)",
+        "bg": "Took over as CEO of Behalf in 2020 after serving as President for six months. BS from University at Albany, MBA from Harvard Business School. Former Head of Lending & GM at Kabbage where he drove unprecedented growth. Previously Chief Customer and Chief Marketing Officer at Flywire. Board member of PEX Card. After Behalf ceased operations in January 2023, joined National Funding as President of a new digital lending division.",
+        "li": "https://www.linkedin.com/in/rrosenblatt",
+        "hooks": [
+          "*Harvard Business School MBA",
+          "*Ex-Kabbage Head of Lending",
+          "Ex-Flywire CMO",
+          "Albany + HBS"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7000,7 +8195,26 @@
     ],
     "desc": "Small business lender that merged with 12Five Capital in 2023. Co-led by McLean Wilson and Danielle Brown. Originally founded in 2015 by former investment banker Carl Fairbank.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Breakout Achieves Fifth Consecutive Year of Growth in Term Loan Originations",
+        "s": "Breakout Finance, Feb 2025",
+        "d": "50.5% average annual growth rate since 2020, surpassing $500M in total originations since inception in 2015. Company has positioned itself as a trusted alternative to costly MCAs with technology-driven underwriting.",
+        "p": "2025-02-15"
+      },
+      {
+        "h": "Breakout Finance Unveils New Brand Identity Post-Merger",
+        "s": "ABF Journal, Nov 2023",
+        "d": "Following the merger of Breakout Capital and 12Five Capital, the combined entity rebranded as Breakout Finance with an expanded product suite including term loans, factoring, PO financing, and asset-based lending.",
+        "p": "2023-11-13"
+      },
+      {
+        "h": "Breakout Capital and 12Five Capital Merge to Create SMB Lending Powerhouse",
+        "s": "PR Newswire, Sep 2023",
+        "d": "Merger facilitated by Altriarch Commercial Finance creates a combined entity with $80M+ day-one portfolio. McLean Wilson and a co-CEO lead the combined firm, with Ryan Jaskiewicz as CSO.",
+        "p": "2023-09-18"
+      }
+    ],
     "ice": "The merger with 12Five Capital creates an interesting combined platform -- how are you integrating the underwriting processes of both companies?",
     "icebreakers": [
       "The merger with 12Five Capital creates an interesting combined platform -- how are you integrating the underwriting processes of both companies?"
@@ -7008,7 +8222,32 @@
     "tp": [
       "Post-merger is the perfect time to unify underwriting with AI -- one intelligent system that combines the best practices from both Breakout and 12Five."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "McLean Wilson",
+        "t": "Co-CEO & President",
+        "bg": "25+ years in finance and banking with deep experience in asset-based lending, factoring, asset management, and capital raising. Graduated from Clemson University with BS and MS in Civil Engineering. Holds Series 65 license. Co-founded Charleston Capital Management (alternative investment asset manager focused on small business loans and MCAs) and inFactor (origination/servicing software platform for small business lenders). Previously VP at SouthStar Capital, originating $500M+ in factored assets. Promoted from Chief Credit Officer to CEO in January 2020.",
+        "li": "https://www.linkedin.com/in/mclean-wilson-a9506713/",
+        "hooks": [
+          "*Clemson BS + MS Civil Engineering",
+          "*Co-founded 3 fintech companies",
+          "Series 65 licensed",
+          "$500M+ factoring at SouthStar"
+        ]
+      },
+      {
+        "n": "Ryan Jaskiewicz",
+        "t": "Chief Strategy Officer",
+        "bg": "Started 12Five Capital at age 23 in 2006. BA in Political Science from University of Illinois at Chicago. Built 12Five into a leading Chicago-based commercial finance company focused on factoring, PO financing, and asset-based lending. Following the September 2023 merger with Breakout Capital (facilitated by parent company Altriarch), now serves as CSO responsible for corporate strategy, technology innovation, and leading the ABL and factoring divisions. The combined entity has a day-one portfolio exceeding $80M.",
+        "li": "https://www.linkedin.com/in/ryan-jaskiewicz-b3a3945/",
+        "hooks": [
+          "*Founded 12Five Capital at age 23",
+          "UIC Political Science",
+          "*$80M combined portfolio",
+          "Chicago factoring pioneer"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7030,7 +8269,26 @@
     ],
     "desc": "Long Island, NY-based business financing marketplace (est. 2007). Over $2.5B funded. Bootstrapped from Joe's spare bedroom to one of Long Island's top workplaces with zero private equity.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "National Business Capital Named #1 Top Workplace on Long Island 2025",
+        "s": "Long Island Press, Sep 2025",
+        "d": "NBC voted the top small business workplace on Long Island for the sixth consecutive year, reflecting the founder's commitment to culture-driven growth without private equity backing.",
+        "p": "2025-09-03"
+      },
+      {
+        "h": "National Business Capital Surpasses $3 Billion in Total Funding",
+        "s": "NBC Press, 2025",
+        "d": "Milestone reached as the fintech marketplace surpassed $3B in total small business financing deployed through its network of 75+ lending partners since 2007.",
+        "p": "2025-06-15"
+      },
+      {
+        "h": "National Business Capital Named Top Workplace 2024",
+        "s": "Long Island Press, Sep 2024",
+        "d": "NBC ranked among Long Island's top 27 small businesses for workplace culture, marking the fifth consecutive year of recognition in the annual Top Workplaces survey.",
+        "p": "2024-09-04"
+      }
+    ],
     "ice": "Bootstrapping to $2.5B+ funded without a dollar of PE is a remarkable story -- what's the secret to scaling profitably in this space?",
     "icebreakers": [
       "Bootstrapping to $2.5B+ funded without a dollar of PE is a remarkable story -- what's the secret to scaling profitably in this space?"
@@ -7038,7 +8296,30 @@
     "tp": [
       "AI underwriting can help your team process more applications per day without adding headcount -- essential for a bootstrapped company focused on efficiency."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Joe Camberato",
+        "t": "CEO & Founder",
+        "bg": "Founded National Business Capital in 2007 out of his spare bedroom with co-founder James Webster. Previously worked in the mortgage industry assisting self-employed clients and served as President at Merchant Mutual Inc. Grew NBC from a two-person startup to a $3B+ funded platform with 160 employees and 75+ lending partners, all without taking a single dollar of private equity. Named #1 Top Workplace on Long Island, NY for 6 consecutive years. Hosts 'The Fund Tank' show discussing small business financing.",
+        "li": "https://www.linkedin.com/in/growbyjoe/",
+        "hooks": [
+          "*$3B+ funded with zero PE money",
+          "*#1 Top Workplace Long Island 6 years",
+          "Started in spare bedroom",
+          "Hosts 'The Fund Tank' show"
+        ]
+      },
+      {
+        "n": "Vincent Campbell",
+        "t": "Senior Leadership",
+        "bg": "Brings 30+ years of financial services experience from leadership roles at Citibank, Webster Bank, and CIT. Provides institutional banking expertise to National Business Capital's lending operations and partner management across the company's network of 75+ lending partners.",
+        "li": "",
+        "hooks": [
+          "*30+ yrs at Citibank, Webster, CIT",
+          "Institutional banking veteran"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7060,7 +8341,26 @@
     ],
     "desc": "Small business lending company (est. 2010) known for same-day funding and custom financing. CEO Mark Kane transitioned from Wall Street to SMB lending. Network of 6,000+ affiliates built since 2013.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Sunwise Capital Expands Into Real Estate Lending",
+        "s": "EIN Presswire, Dec 2025",
+        "d": "Building on 15 years and 86,000+ small businesses served, Sunwise Capital entered commercial real estate lending for acquisitions, refinances, cash-out, construction, and value-add projects.",
+        "p": "2025-12-15"
+      },
+      {
+        "h": "Sunwise Capital Launches Equipment Financing Division",
+        "s": "MonitorDaily, Aug 2025",
+        "d": "New division led by industry expert Christopher Murray provides equipment financing from $10K to $30M with flexible leases, loans, and hybrid solutions across construction, healthcare, manufacturing, and transportation.",
+        "p": "2025-08-15"
+      },
+      {
+        "h": "Sunwise Capital Partnership Program: Best 5 Reasons to Join",
+        "s": "sunwisecapital.com, 2025",
+        "d": "Company expanded its ISO/broker partnership program, offering partners access to same-day funding capabilities and a streamlined application process for small business borrowers.",
+        "p": "2025-04-01"
+      }
+    ],
     "ice": "Building a 6,000-affiliate network since 2013 is a massive distribution advantage -- how do you maintain underwriting consistency across all those channels?",
     "icebreakers": [
       "Building a 6,000-affiliate network since 2013 is a massive distribution advantage -- how do you maintain underwriting consistency across all those channels?"
@@ -7068,7 +8368,20 @@
     "tp": [
       "With 6,000+ affiliates sending deals, AI underwriting ensures every application gets the same rigorous and fast evaluation regardless of source."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Mark Kane",
+        "t": "Founder & CEO",
+        "bg": "Founded Sunwise Capital in 2010 in Boca Raton, FL. Graduated with honors with a BS in Psychology from University of Massachusetts Amherst, then completed an intensive 9-month Master's in Psychology at University of Chicago (among 22 of 109 to finish). Started career running a 42-bed psychiatric facility before age 24. Transitioned to Wall Street as a broker, then investment banker. Bootstrapped a startup from $5K to $18M revenue within months. 18+ years in business financing. Has served 86,000+ small businesses. Recently expanded into equipment financing ($10K-$30M) and real estate lending.",
+        "li": "https://www.linkedin.com/in/markjkane/",
+        "hooks": [
+          "*Psychologist turned Wall Street broker",
+          "*UMass honors + UChicago Masters",
+          "*Ran psychiatric facility before 24",
+          "$5K to $18M revenue bootstrap"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7095,7 +8408,26 @@
     ],
     "desc": "Islip, NY-based business lender (est. 2020). Founded by James Webster with nearly two decades in financial services. Previously facilitated $2B+ at National Business Capital. Offers MCA, LOC, equipment financing.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "ROK Financial Named 2025 Inc. 5000 Honoree",
+        "s": "Inc. Magazine, Aug 2025",
+        "d": "ROK Financial ranked No. 4713 on the 2025 Inc. 5000 list with 63% three-year revenue growth, following its No. 4921 ranking in 2024.",
+        "p": "2025-08-12"
+      },
+      {
+        "h": "ROK Financial Expands Alternative Financing Programs for Bad Credit Business Loans",
+        "s": "GlobeNewsWire, Aug 2025",
+        "d": "ROK Financial expanded its suite of programs built for small businesses facing credit challenges, positioning itself at the center of the alternative lending shift nationwide.",
+        "p": "2025-08-16"
+      },
+      {
+        "h": "James Webster to Speak at Broker Fair 2025",
+        "s": "deBanked, Mar 2025",
+        "d": "ROK Financial founder James Webster was announced as a speaker at the annual Broker Fair conference, reinforcing the company's thought leadership in business finance brokerage.",
+        "p": "2025-03-15"
+      }
+    ],
     "ice": "Launching in 2020 and growing fast takes real conviction -- what did you see at National Business Capital that inspired you to build ROK?",
     "icebreakers": [
       "Launching in 2020 and growing fast takes real conviction -- what did you see at National Business Capital that inspired you to build ROK?"
@@ -7103,7 +8435,31 @@
     "tp": [
       "Starting fresh gives you the advantage of building AI-native underwriting from day one rather than retrofitting legacy processes."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "James Webster",
+        "t": "Founder & Executive Chairman",
+        "bg": "Long Island native with two decades in financial services. Co-founded and served as CEO of National Business Capital, where his team secured over $1 billion in financing for nearly 100,000 small businesses over 10 years. Founded ROK Financial in 2020 during the COVID-19 pandemic. Appointed co-chairman of the SBFA Broker Council in 2019, a non-profit promoting transparency in alternative lending. Named to The Top 100 Magazine. Speaker at Broker Fair 2025.",
+        "li": "https://www.linkedin.com/in/jtwrokfounder/",
+        "hooks": [
+          "*SBFA Broker Council co-chairman",
+          "*Built $1B+ lending business at National Business Capital",
+          "Broker Fair 2025 speaker",
+          "Top 100 Magazine honoree"
+        ]
+      },
+      {
+        "n": "Patrick Manning",
+        "t": "Chief Executive Officer",
+        "bg": "Over a decade of experience in alternative finance. Appointed CEO of ROK Financial in December 2022, succeeding James Webster. Previously held executive and sales positions at National Business Capital & Services and Exit Links Real Estate. Has assisted in providing over $1 billion in small business loans. Known for managing sales processes and building teams in the business financing space. President's Club honoree in 2015.",
+        "li": "https://www.linkedin.com/in/patrick-manning-80012647/",
+        "hooks": [
+          "*Facilitated $1B+ in SMB loans",
+          "Former National Business Capital exec",
+          "President's Club 2015"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7130,7 +8486,20 @@
     ],
     "desc": "Boca Raton, FL-based direct MCA funder. Named to Inc. 5000 in 2025. Specializes in same-day and next-day capital for small businesses that may not qualify for bank loans. No middleman model.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Splash Advance Named to 2025 Inc. 5000 List",
+        "s": "Inc. Magazine, Aug 2025",
+        "d": "Splash Advance ranked No. 3901 on the 2025 Inc. 5000 list with 95% three-year revenue growth, recognizing the direct MCA funder's rapid expansion from its Boca Raton headquarters.",
+        "p": "2025-08-12"
+      },
+      {
+        "h": "Splash Advance Reaches $5M Revenue Milestone with Lean Team",
+        "s": "Latka, 2024",
+        "d": "CEO Daniel Frankel shared how the bootstrapped company grew to $5M in annual revenue with just 7 employees, demonstrating exceptional capital efficiency as a direct funder.",
+        "p": "2024-06-01"
+      }
+    ],
     "ice": "Making the Inc. 5000 in 2025 as a direct funder is a strong signal -- what's driving that growth?",
     "icebreakers": [
       "Making the Inc. 5000 in 2025 as a direct funder is a strong signal -- what's driving that growth?"
@@ -7138,7 +8507,30 @@
     "tp": [
       "As a direct funder on the Inc. 5000, AI underwriting can help you maintain same-day funding speed while scaling without proportionally growing your underwriting team."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Daniel Frankel",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Splash Advance in 2019 in Boca Raton, FL. Previously worked as a Funding Specialist at Cresthill Capital. Holds a Bachelor of Arts from the University of Rhode Island. Built the company to $5M in revenue with a lean 7-person team. Led the company to Inc. 5000 recognition in 2025 with 95% three-year growth. Also serves as Director of Operations, overseeing day-to-day workflow.",
+        "li": "https://www.linkedin.com/in/daniel-frankel-08479290/",
+        "hooks": [
+          "*$5M revenue with 7-person team",
+          "University of Rhode Island",
+          "Former Cresthill Capital funding specialist"
+        ]
+      },
+      {
+        "n": "Brandon Sciortino",
+        "t": "Co-Founder & Managing Member",
+        "bg": "Co-founded Splash Advance in 2019. Previously served as Vice President of Sales at First Premier Funding, LLC and CEO at Fundshop. Brings deep experience in alternative lending sales and operations. Helped grow Splash Advance from a startup to an Inc. 5000 company in under six years.",
+        "li": "https://www.linkedin.com/in/brandon-sciortino-623380101/",
+        "hooks": [
+          "*Former CEO of Fundshop",
+          "Ex-VP Sales at First Premier Funding",
+          "Built Inc. 5000 company in 6 years"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7165,7 +8557,20 @@
     ],
     "desc": "Houston, TX-based direct MCA lender (est. 2013). Founded by two Texans with nearly 5 decades of combined commercial funding experience. Works exclusively through ISO/partner network for B-paper, 1st-3rd positions.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Accord Business Funding Expands B-Paper MCA Programs Nationwide",
+        "s": "United Capital Source, 2025",
+        "d": "Accord continued expanding its B-paper MCA product nationally, offering up to $150,000 in merchant cash advances with 15% ISO commissions and next-day commission payments.",
+        "p": "2025-01-15"
+      },
+      {
+        "h": "Accord Business Funding Hires VP of Sales & Marketing",
+        "s": "deBanked, Apr 2018",
+        "d": "Accord made a strategic hire to bolster its sales and marketing capabilities, bringing on Aldo Castro as VP to accelerate ISO partner acquisition and brand growth.",
+        "p": "2018-04-15"
+      }
+    ],
     "ice": "Five decades of combined funding experience and an ISO-only model -- how do you evaluate deal quality when merchants come through multiple partners?",
     "icebreakers": [
       "Five decades of combined funding experience and an ISO-only model -- how do you evaluate deal quality when merchants come through multiple partners?"
@@ -7173,7 +8578,29 @@
     "tp": [
       "AI underwriting can standardize credit evaluation across your entire ISO network, ensuring consistent decisioning regardless of which partner submits the deal."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Adam Beebe",
+        "t": "Co-Founder",
+        "bg": "Co-founded Accord Business Funding in 2013 in Houston, TX. Brings nearly five decades of combined commercial funding experience with his co-founder. Built Accord into a direct MCA lender specializing in B-paper deals in 1st, 2nd, and 3rd positions. Known for a hands-on management style with direct involvement in underwriting decisions. Established Accord's reputation for speed and flexibility with sub-3-hour decision turnarounds.",
+        "li": "https://www.linkedin.com/in/adam-beebe-104b388",
+        "hooks": [
+          "*50 years combined funding experience",
+          "Built B-paper MCA specialty",
+          "Houston-based direct funder since 2013"
+        ]
+      },
+      {
+        "n": "Aldo Castro",
+        "t": "Vice President of Sales & Marketing",
+        "bg": "Joined Accord Business Funding to lead the company's sales and marketing strategy. Responsible for growing Accord's ISO partner network and expanding the company's national footprint from its Houston base. Oversees partner acquisition, commission structures, and brand positioning in the MCA direct funding space.",
+        "li": "",
+        "hooks": [
+          "Leads Accord's ISO partner growth",
+          "Expanded national MCA footprint from Texas"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7200,7 +8627,26 @@
     ],
     "desc": "Cherry Hill, NJ-based business loan marketplace (est. 2012). Co-founded by Jacques Famy Jr. with 20+ years in retail lending. Helps SMBs find tailored financing across multiple products.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "AdvancePoint Capital Launches Innovative Restaurant Financing Products",
+        "s": "PR Newswire, Apr 2023",
+        "d": "AdvancePoint Capital expanded its product lineup with specialized restaurant financing for working capital, equipment, maintenance, marketing, and inventory — serving restaurants with 24-hour nationwide funding.",
+        "p": "2023-04-04"
+      },
+      {
+        "h": "AdvancePoint Capital Surpasses $375M in Capital Deployed to 7,500+ SMBs",
+        "s": "AdvancePoint Capital, 2025",
+        "d": "The business loan marketplace hit a major milestone, deploying over $375 million in capital to more than 7,500 small business customers since its 2012 founding.",
+        "p": "2025-01-01"
+      },
+      {
+        "h": "AdvancePoint Capital Earns A+ BBB Rating",
+        "s": "Better Business Bureau, 2025",
+        "d": "AdvancePoint Capital maintained its A+ BBB rating and 4.8/5 Google review score, reinforcing its reputation as a trusted business loan marketplace.",
+        "p": "2025-01-01"
+      }
+    ],
     "ice": "Twenty years in retail lending gives you a deep understanding of what small businesses actually need -- how has that shaped AdvancePoint's product mix?",
     "icebreakers": [
       "Twenty years in retail lending gives you a deep understanding of what small businesses actually need -- how has that shaped AdvancePoint's product mix?"
@@ -7208,7 +8654,30 @@
     "tp": [
       "AI underwriting can help match each applicant to the optimal financing product from your marketplace, improving both approval rates and borrower satisfaction."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jacques Famy Jr.",
+        "t": "Co-Founder & Managing Partner, CMO",
+        "bg": "Started in finance in 1996 in the mortgage industry. Co-founded Nations Home Mortgage in 1998 and led it until 2010. Co-founded AdvancePoint Capital in 2012. Over 20 years of retail lending experience. Graduate of Stockton State University in Business Studies. Leads AdvancePoint's content strategy and marketing. Enjoys traveling and outdoor activities.",
+        "li": "https://www.linkedin.com/in/jacques-famy-jr-7aa15453/",
+        "hooks": [
+          "*Co-founded Nations Home Mortgage in 1998",
+          "Stockton State University",
+          "25+ years in lending",
+          "Transitioned from mortgage to alt-lending"
+        ]
+      },
+      {
+        "n": "Bill",
+        "t": "Head of Sales",
+        "bg": "Joined AdvancePoint Capital in 2013 as a sales representative, working his way up to Head of Sales by 2017. Leads the sales team and manages customer relations for the business loan marketplace. Has been instrumental in AdvancePoint's growth from a startup to serving over 7,500 small business customers.",
+        "li": "",
+        "hooks": [
+          "Rose from sales rep to Head of Sales in 4 years",
+          "10+ years at AdvancePoint"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7230,7 +8699,20 @@
     ],
     "desc": "MCA direct funder offering a wide range of financial programs. Co-founder Larry Blumstein is a former restaurant owner who has been both a merchant and MCA recipient, giving unique both-sides-of-the-table perspective.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "BHB Funding Transforms Operations with Prudent AI, Achieves 40% Efficiency Gain",
+        "s": "Prudent AI Case Study, 2025",
+        "d": "BHB Funding implemented Prudent AI to automate bank statement analysis, achieving 40% operational efficiency improvement and enabling the company to scale without adding headcount.",
+        "p": "2025-01-01"
+      },
+      {
+        "h": "BHB Funding Expands Financial Programs Across 325+ Industries",
+        "s": "BHB Funding, 2025",
+        "d": "BHB Funding expanded its product suite to include short-term loans, equipment financing, revenue-based financing, business lines of credit, and down payment financing across 325+ industry verticals.",
+        "p": "2025-01-01"
+      }
+    ],
     "ice": "Having been on both sides of an MCA deal as a restaurant owner and a funder is rare -- how does that shape your underwriting philosophy?",
     "icebreakers": [
       "Having been on both sides of an MCA deal as a restaurant owner and a funder is rare -- how does that shape your underwriting philosophy?"
@@ -7238,7 +8720,19 @@
     "tp": [
       "Your merchant-side experience means you understand what borrowers go through -- AI underwriting can help translate that empathy into smarter, faster risk decisions."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Larry Blumstein",
+        "t": "Co-Founder & Managing Member",
+        "bg": "Co-founded BHB Funding in 2018 in Boca Raton, FL. Former restaurant owner who experienced the MCA process firsthand as a merchant, giving him a unique dual perspective on the industry. Built BHB into a boutique MCA funder serving over 325 industries. Led the company's adoption of Prudent AI to automate bank statement review, achieving 40% operational efficiency improvement. Manages day-to-day operations from Boynton Beach, FL.",
+        "li": "https://www.linkedin.com/in/larryblumstein/",
+        "hooks": [
+          "*Former restaurant owner turned MCA funder",
+          "*40% efficiency gain via AI adoption",
+          "Understands both sides of MCA"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7260,7 +8754,20 @@
     ],
     "desc": "MCA and business loan provider offering 100% unsecured funds with no personal guarantee. Provides merchant cash advances, business loans, and lines of credit with 12-24 hour approvals and 24-48 hour funding.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Samson Funding Expands 100% Unsecured Business Financing Nationwide",
+        "s": "Samson Funding, 2025",
+        "d": "Samson Funding continued expanding its 100% unsecured funding model with no personal guarantee and no collateral required, offering approvals within 12-24 hours and funding within 24-48 hours.",
+        "p": "2025-01-01"
+      },
+      {
+        "h": "Samson Funding Broadens Industry Coverage Across Healthcare, Retail, and Construction",
+        "s": "Samson Funding, 2025",
+        "d": "The company expanded its financing specializations to cover healthcare, retail, construction, and additional verticals, offering business loans, MCAs, and ongoing lines of credit.",
+        "p": "2025-01-01"
+      }
+    ],
     "ice": "No personal guarantee and 24-hour approvals is a compelling offer -- how do you underwrite risk without PG protection?",
     "icebreakers": [
       "No personal guarantee and 24-hour approvals is a compelling offer -- how do you underwrite risk without PG protection?"
@@ -7268,7 +8775,30 @@
     "tp": [
       "AI underwriting is especially valuable for no-PG deals -- it can identify cash flow patterns that predict repayment without relying on personal credit or guarantees."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Steven Markowitz",
+        "t": "Owner & Founder",
+        "bg": "Founded Samson Funding in 2015 in New York City. Attended Stanstead College with a finance focus. Built Samson into a family-run business with his sons Steven Jr., Michael, and Joseph all involved in operations. Based in Staten Island. Active in charitable causes with his wife Michele. Established the company's 100% unsecured funding model with no personal guarantees required.",
+        "li": "https://www.linkedin.com/in/steven-markowitz-75102271/",
+        "hooks": [
+          "*Family-run funding business with three sons",
+          "Stanstead College",
+          "Built 100% unsecured MCA model"
+        ]
+      },
+      {
+        "n": "Michael Markowitz",
+        "t": "Managing Director",
+        "bg": "Managing Director of Samson Funding responsible for day-to-day business operations and deal flow. Holds a Bachelor's in Business Economics from SUNY Cortland (2012-2015). Previously worked at JFS Investments and The CollegeBound Network. Skills in sales management, financial analysis, and credit evaluation.",
+        "li": "https://www.linkedin.com/in/michael-markowitz-46a587bb/",
+        "hooks": [
+          "SUNY Cortland Business Economics",
+          "Former JFS Investments",
+          "Runs day-to-day at family business"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7295,7 +8825,26 @@
     ],
     "desc": "McLean, VA-based alternative lender founded in 2015 providing merchant cash advances, business loans, and SBA loans. Has provided nearly $1 billion in funding to small businesses nationwide.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Breakout Finance Achieves Fifth Consecutive Year of Growth in Term Loan Originations",
+        "s": "PR Newswire, Feb 2025",
+        "d": "Breakout Finance announced its fifth consecutive year of growth, surpassing $500 million in total loan originations across nearly all 50 states, maintaining a 50% average year-over-year growth rate since 2020.",
+        "p": "2025-02-10"
+      },
+      {
+        "h": "Breakout Capital Secures $45 Million Credit Facility Led by Synovus Bank",
+        "s": "PR Newswire, Jul 2023",
+        "d": "Breakout Capital secured a $45 million credit facility with Synovus Bank providing $35 million committed capacity plus $10 million uncommitted, to expand small business lending operations.",
+        "p": "2023-07-27"
+      },
+      {
+        "h": "12five Capital Merges with Breakout Capital Under Altriarch Parent",
+        "s": "Industry Reports, 2023",
+        "d": "12five Capital, LLC joined forces with Breakout Capital, LLC, with the merger facilitated by Altriarch Commercial Finance, Inc., consolidating operations under a shared parent company.",
+        "p": "2023-06-01"
+      }
+    ],
     "ice": "Breakout has built an impressive track record deploying nearly a billion dollars to small businesses since 2015.",
     "icebreakers": [
       "Breakout has built an impressive track record deploying nearly a billion dollars to small businesses since 2015."
@@ -7303,7 +8852,32 @@
     "tp": [
       "AI-powered underwriting can help Breakout evaluate more applicants faster while maintaining credit quality across their diverse product suite."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "McLean Wilson",
+        "t": "CEO & President",
+        "bg": "Over 25 years of experience in finance and banking. 15 years in factoring and small business lending. Previously operated two factoring companies — built and sold one within 18 months. Co-Founder of Charleston Capital Management, an alternative investment asset manager. Co-Founder of inFactor, a technology-powered origination and servicing platform for small business lenders. Promoted from Chief Credit Officer to CEO in January 2020. Clemson University graduate. Deep expertise in asset-based lending, factoring, and capital raising.",
+        "li": "https://www.linkedin.com/in/mclean-wilson-a9506713/",
+        "hooks": [
+          "*Built and sold factoring company in 18 months",
+          "*Co-founded inFactor lending tech platform",
+          "Clemson University",
+          "25+ years in finance"
+        ]
+      },
+      {
+        "n": "Carl Fairbank",
+        "t": "Founder",
+        "bg": "Founded Breakout Capital Finance in 2015 in McLean, VA to bring affordable and transparent funding to small businesses. Former investment banker at FBR & Co. and member of the Corporate Strategy Group at Capital One Financial Corporation. Named to the 2016 Trending 40s list of DC's top entrepreneurs under 40. Forbes Finance Council member. Stepped down as CEO in 2019 to focus on AI, machine learning, and blockchain innovation. Through his decade of work as an investment banker in alternative finance, he identified market inefficiencies driving high costs for small business funding.",
+        "li": "https://www.linkedin.com/in/carl-fairbank/",
+        "hooks": [
+          "*DC's Top 40 Under 40 (2016)",
+          "*Ex-Capital One strategy group",
+          "Forbes Finance Council member",
+          "Former FBR & Co. investment banker"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7327,6 +8901,24 @@
     "notes": "",
     "news": [
       {
+        "h": "Fundbox Expands Credit Facility with ATLAS and Blue Owl Capital",
+        "s": "GlobeNewsWire, Feb 2026",
+        "d": "Fundbox renewed its credit facility with ATLAS SP Partners and added Blue Owl Capital as a new lender, supporting over $2B in annual global funding capacity.",
+        "p": "2026-02-19"
+      },
+      {
+        "h": "Fundbox Expands Into Australia with $100M AUD Warehouse Facility",
+        "s": "GlobeNewsWire, Jan 2026",
+        "d": "Fundbox launched in Australia backed by a $100M AUD facility from MA Financial Group, enabling platforms like Stripe to offer embedded small business lending in the Australian market.",
+        "p": "2026-01-21"
+      },
+      {
+        "h": "Fundbox Partners with Wave to Reach 350,000+ Small Businesses",
+        "s": "GlobeNewsWire, Nov 2025",
+        "d": "Fundbox announced its fourth major partnership of 2025, integrating financing solutions into Wave's platform for 350,000+ small business owners and solopreneurs.",
+        "p": "2025-11-19"
+      },
+      {
         "h": "Fundbox Partners with Cantaloupe, Autobooks, EverCommerce, Wave",
         "s": "American Banker, 2025",
         "d": "Four major embedded lending partnerships accessing 350K+ potential borrowers. $1B in loans in past 14 months."
@@ -7339,7 +8931,32 @@
     "tp": [
       "Next-generation AI underwriting models can further reduce default rates while expanding the eligible borrower pool beyond current parameters."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Prashant Fuloria",
+        "t": "Chief Executive Officer",
+        "bg": "25+ years scaling global technology platforms. Former SVP of Advertising and Data at Yahoo, managing 1,300-person engineering/product teams driving Yahoo's $5B/year ad business. Former Senior Director of Product Management at Facebook, overseeing commerce and advertising. Former Product Director at Google, building monetization products including early AdWords and Google's Global Billing & Payments Platform. CPO at Flurry (acquired by Yahoo). Holds IIT Delhi President's Gold Medal (highest academic award), PhD and MA in Business, PhD Minor in Operations Research, and MS in Statistics from Stanford. Lead Guitarist of Coverflow, a Silicon Valley band.",
+        "li": "https://www.linkedin.com/in/fuloria/",
+        "hooks": [
+          "*IIT Delhi President's Gold Medal + Stanford PhD",
+          "*Ex-Google, Facebook, Yahoo exec",
+          "*Lead guitarist of Silicon Valley band Coverflow",
+          "Managed $5B ad business at Yahoo"
+        ]
+      },
+      {
+        "n": "Cetin Duransoy",
+        "t": "President & COO",
+        "bg": "20+ years in financial services. Spent 15 years at Capital One in various leadership roles, most recently leading Small Business Lending, Deposits and Business Banking Strategy teams. Former Head of Global Installment Products at Visa, where he built the installment payment ecosystem from conception to launch. Started career as an engineer before attending business school. Education includes University of Maryland Robert H. Smith School of Business and Middle East Technical University.",
+        "li": "https://www.linkedin.com/in/cetin-duransoy-39098a1/",
+        "hooks": [
+          "*15 years at Capital One, led SMB lending",
+          "*Built Visa's global installment payments from scratch",
+          "Engineer turned financial services exec",
+          "University of Maryland Smith School"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7368,6 +8985,24 @@
     "notes": "",
     "news": [
       {
+        "h": "Bluevine Launches Tap to Pay Powered by Stripe",
+        "s": "PR Newswire, Dec 2025",
+        "d": "Bluevine launched Tap to Pay allowing small businesses to accept in-person payments anywhere without hardware, powered by Stripe integration.",
+        "p": "2025-12-15"
+      },
+      {
+        "h": "Bluevine Partners with Stripe to Launch Invoicing and Payment Links",
+        "s": "PR Newswire, May 2025",
+        "d": "Bluevine launched invoicing and payment links enabling SMB customers to create professional invoices and accept credit card, debit card, digital wallet, and ACH payments.",
+        "p": "2025-05-28"
+      },
+      {
+        "h": "Bluevine Announces Small Business Banking Partnership with Xero",
+        "s": "BlueVine Newsroom, Feb 2025",
+        "d": "Bluevine partnered with global accounting platform Xero, allowing customers to sync banking data for greater efficiencies with free trial offers for both platforms.",
+        "p": "2025-02-15"
+      },
+      {
         "h": "BlueVine Raises $102.5M Series F",
         "s": "Fintech Futures, 2025",
         "d": "Led by ION Crossover Partners with Citi Ventures, M12, SVB Capital. 500K+ customers, $850M on deposit, $14B in loans."
@@ -7380,7 +9015,42 @@
     "tp": [
       "AI underwriting can help BlueVine scale its lending products while leveraging the rich transaction data from its business checking accounts for better risk assessment."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Eyal Lifshitz",
+        "t": "Co-Founder & CEO",
+        "bg": "Third-generation small business entrepreneur — father owned a physical therapy clinic in NYC, grandfather ran a lighting supply store in Israel. Former Principal at Greylock IL (Greylock Partners' Israel/Europe fund), where he invested over $100 million in startups. Former consultant at McKinsey & Company. Former engineer at Texas Instruments. MBA with high honors from University of Chicago as a Carlton Fellow. Built BlueVine into the largest digital banking platform for small business in the US with 750K+ customers and $16B+ in capital.",
+        "li": "https://www.linkedin.com/in/eyallifshitz/",
+        "hooks": [
+          "*Third-generation entrepreneur (NYC clinic → Israel store → BlueVine)",
+          "*Greylock IL Principal, invested $100M+",
+          "*McKinsey + UChicago MBA Carlton Fellow",
+          "Built largest US digital SMB banking platform"
+        ]
+      },
+      {
+        "n": "Nir Klar",
+        "t": "Co-Founder & CTO",
+        "bg": "Technology innovation leader with 20 years of experience building large-scale web and mobile platforms. BSc in Computer Science from the Israel Institute of Technology (Technion). MBA from Tel Aviv University. Co-founded BlueVine in 2013. Previously CTO at Planet SOHO and Media Layers. Earlier career at NICE Systems and the Israeli Defense Force. Based in Tel Aviv, Israel.",
+        "li": "https://www.linkedin.com/in/nirklar/",
+        "hooks": [
+          "*Technion Computer Science + Tel Aviv University MBA",
+          "*Israeli Defense Force veteran",
+          "Former CTO at Planet SOHO",
+          "20 years building tech platforms"
+        ]
+      },
+      {
+        "n": "Ana Sirbu",
+        "t": "Chief Financial Officer",
+        "bg": "Joined BlueVine in January 2018 as CFO. Oversees financial strategy, reporting, and capital allocation for the largest digital SMB banking platform in the US. Has guided BlueVine through multiple funding rounds and the company's growth to 750K+ customers.",
+        "li": "",
+        "hooks": [
+          "CFO during BlueVine's explosive growth phase",
+          "7+ years steering SMB fintech finances"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7407,7 +9077,26 @@
     ],
     "desc": "UK-based fintech specializing in SME loans, listed on the London Stock Exchange (FTSE 250). Has facilitated over 15 billion pounds in loans since founding in 2010 as a peer-to-peer lending platform.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Funding Circle Exceeds 2025 and 2026 Revenue Targets Ahead of Schedule",
+        "s": "BusinessCloud, Jan 2026",
+        "d": "Funding Circle achieved its FY26 revenue target a year early with ~£204M revenue (up 28% YoY) and profit before tax rising to ~£20M from £3M, sending shares up 17%.",
+        "p": "2026-01-15"
+      },
+      {
+        "h": "Funding Circle Surpasses £3 Billion Financing Milestone with £750M Waterfall Renewal",
+        "s": "Crowdfund Insider, Sep 2025",
+        "d": "Funding Circle renewed its partnership with Waterfall Asset Management and BNP Paribas with a £750M forward funding commitment, pushing total financing past £3 billion.",
+        "p": "2025-09-17"
+      },
+      {
+        "h": "Funding Circle Closes £200M Forward Flow Agreement with Deutsche Bank",
+        "s": "Crowdfund Insider, Jul 2025",
+        "d": "Funding Circle secured a £200M forward flow agreement with long-standing partner Deutsche Bank to continue supporting core UK small business term loans.",
+        "p": "2025-07-15"
+      }
+    ],
     "ice": "Funding Circle's evolution from peer-to-peer lending to institutional-grade SME credit platform is a fascinating journey in fintech maturation.",
     "icebreakers": [
       "Funding Circle's evolution from peer-to-peer lending to institutional-grade SME credit platform is a fascinating journey in fintech maturation."
@@ -7415,7 +9104,43 @@
     "tp": [
       "AI-driven credit decisioning can help Funding Circle maintain underwriting quality at scale as it continues expanding its institutional lending model."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Lisa Jacobs",
+        "t": "Chief Executive Officer",
+        "bg": "Joined Funding Circle in 2012 and became CEO on January 1, 2022. Previously served as UK Managing Director and Chief Strategy Officer. Led Funding Circle's entry into the US and Continental Europe through acquisition. Part of the core team behind the company's 2018 London Stock Exchange IPO. Former management consultant at the Boston Consulting Group with financial services focus. Worked with NGOs in Tanzania and India. Studied Philosophy, Politics and Economics at the University of Oxford. Named AltFi CEO of the Year 2022 and Fintech Woman of the Year 2021. Innovate Finance PowerList 2017-2023.",
+        "li": "",
+        "hooks": [
+          "*Oxford PPE → BCG → Built Funding Circle's global expansion",
+          "*AltFi CEO of the Year 2022",
+          "*NGO work in Tanzania and India",
+          "Led London Stock Exchange IPO"
+        ]
+      },
+      {
+        "n": "Tony Nicol",
+        "t": "Chief Financial Officer",
+        "bg": "Appointed to the Board as CFO on January 1, 2025. Joined Funding Circle in 2018 as Director of Finance and was part of the team leading the IPO. Previously Group Financial Controller at IG Group Holdings plc. Former Assurance Director at PwC. Transitioned from Director of Finance and Investor Relations to the CFO role.",
+        "li": "",
+        "hooks": [
+          "*Part of Funding Circle IPO team",
+          "Former PwC Assurance Director",
+          "Ex-IG Group Financial Controller"
+        ]
+      },
+      {
+        "n": "Samir Desai",
+        "t": "Founder (former CEO)",
+        "bg": "Co-founded Funding Circle in 2010. Led the company as CEO through its growth to £16B+ in SME loans and London Stock Exchange listing. Received CBE honor. Stepped down from day-to-day operations in 2022, transitioned to Non-Executive Director, then departed the board in October 2024. Retains 4.9% stake. Now focuses on Super Payments, his new venture.",
+        "li": "",
+        "hooks": [
+          "*CBE honor for services to business",
+          "*Founded £16B+ SME lending platform",
+          "Now building Super Payments",
+          "FTSE 250 founder"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7437,7 +9162,26 @@
     ],
     "desc": "New York-based alternative lender founded in 2008 offering merchant cash advances, unsecured business loans, and working capital loans. Has helped secure over $500 million for more than 1,000 companies.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Shield Funding Surpasses $500 Million in Small Business Funding",
+        "s": "ShieldFunding.com, 2025",
+        "d": "Shield Funding reached a milestone of over $500 million deployed to more than 1,000 small and medium-sized businesses nationwide since its 2008 founding.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "Shield Funding Earns 4.8 Stars on Trustpilot with 330+ Reviews",
+        "s": "Trustpilot, 2025",
+        "d": "Shield Funding maintains one of the highest customer ratings in alternative lending, with 4.8/5 on 330+ Trustpilot reviews and 4/5 on Google.",
+        "p": "2025-09-01"
+      },
+      {
+        "h": "Shield Funding Expands Same-Day Business Loan Products",
+        "s": "ShieldFunding.com, 2025",
+        "d": "Shield Funding broadened its product suite with same-day business loans, unsecured lines of credit, and MCA products ranging from $5K to $1M for borrowers with credit scores as low as 500.",
+        "p": "2025-03-01"
+      }
+    ],
     "ice": "Shield Funding has been in the alternative lending space since 2008 -- that kind of longevity shows real expertise in underwriting and risk management.",
     "icebreakers": [
       "Shield Funding has been in the alternative lending space since 2008 -- that kind of longevity shows real expertise in underwriting and risk management."
@@ -7445,7 +9189,19 @@
     "tp": [
       "AI underwriting tools can help Shield Funding process applications faster and identify creditworthy merchants that might be missed by traditional scoring methods."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Sam Baitz",
+        "t": "Founder & CEO",
+        "bg": "Sam Baitz founded Shield Funding in 2008 (operating as Ascendancy Corp.) and has grown the company to over $500 million in funded capital for 1,000+ small businesses. He holds a Bachelor of Business/Commerce from Lubavitch Yeshiva Gedolah in Maryvale, South Africa. With 20+ years in business funding, Baitz built Shield Funding into a direct lender offering same-day funding for MCA and business loans in all 50 states.",
+        "li": "https://www.linkedin.com/in/sam-baitz-07b74a31/",
+        "hooks": [
+          "*South Africa university graduate",
+          "20+ years business funding",
+          "$500M+ funded to date"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7472,7 +9228,26 @@
     ],
     "desc": "Long Island City, NY-based financial services company founded in 2007 specializing in credit card processing, merchant cash advances, and payment processing solutions for small businesses.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Lovell Minnick Partners Acquires Merchant Industry, Appoints Vaden Landers as CEO",
+        "s": "BusinessWire, Sep 2025",
+        "d": "Private equity firm Lovell Minnick Partners acquired a majority stake in Merchant Industry, appointing payments veteran Vaden Landers as CEO. Founders Leo Vartanov and Chris Benabu retain substantial minority equity stakes.",
+        "p": "2025-09-29"
+      },
+      {
+        "h": "Merchant Industry Named to Inc. 5000 Fastest-Growing Companies",
+        "s": "Inc. Magazine, 2025",
+        "d": "Merchant Industry earned recognition on the 2025 Inc. 5000 list as one of the fastest-growing private companies in America, processing $5B+ in annual transactions.",
+        "p": "2025-08-15"
+      },
+      {
+        "h": "Merchant Industry Opens New South Florida Office in Plantation",
+        "s": "MerchantIndustry.com, 2025",
+        "d": "Merchant Industry expanded operations with a new office in Plantation, Florida, complementing its Long Island City headquarters to support growing merchant base of 15,000+.",
+        "p": "2025-05-01"
+      }
+    ],
     "ice": "Merchant Industry's unique combination of payment processing and cash advance services gives you a real advantage in understanding merchant cash flows.",
     "icebreakers": [
       "Merchant Industry's unique combination of payment processing and cash advance services gives you a real advantage in understanding merchant cash flows."
@@ -7480,7 +9255,43 @@
     "tp": [
       "AI underwriting powered by your own payment processing data could create a uniquely accurate risk model for merchant cash advance decisions."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Vaden Landers",
+        "t": "CEO (post-acquisition)",
+        "bg": "Vaden C. Landers was appointed CEO of Merchant Industry upon the September 2025 acquisition by Lovell Minnick Partners. He brings 38+ years in payment processing, involvement in 100+ M&A transactions, and has founded or led seven payments startups with three successful exits. Previously served as President & CEO of MerchantE (Opn subsidiary), EVP & CRO at Usio Inc., and CEO of ProfitPoint. Studied Criminal Justice & Business Management at Lincoln Memorial University.",
+        "li": "https://www.linkedin.com/in/vadenclanders/",
+        "hooks": [
+          "*100+ M&A deals in payments",
+          "*3 successful startup exits",
+          "38+ years payment processing",
+          "Lincoln Memorial University"
+        ]
+      },
+      {
+        "n": "Leo Vartanov",
+        "t": "Founder & Former CEO",
+        "bg": "Leo Vartanov co-founded Merchant Industry in 2007 and served as CEO through the company's sale to Lovell Minnick Partners in September 2025, retaining a substantial minority equity stake. A St. John's University Honors graduate, Leo drove MI's explosive growth to 15,000+ merchants and $5B+ in annual transaction volume. He created the Swipe4Free cash discounting platform and led the company to Inc. 5000 recognition. Previously owned Wireless Choice.",
+        "li": "https://www.linkedin.com/in/leovartanov/",
+        "hooks": [
+          "*St. John's University Honors grad",
+          "*Created Swipe4Free platform",
+          "Inc. 5000 honoree",
+          "Sold to PE firm in 2025"
+        ]
+      },
+      {
+        "n": "Chris Benabu",
+        "t": "Co-Founder & CRO",
+        "bg": "Chris Benabu co-founded Merchant Industry in 2007 alongside Leo Vartanov and serves as Chief Revenue Officer. He retained a minority equity stake after the 2025 Lovell Minnick acquisition. Previously served as COO of Wireless Choice (2001-2012) and CEO of Valencia Holdings Group LLC. Also has experience at First US Funding and ISO Access.",
+        "li": "https://www.linkedin.com/in/chris-benabu/",
+        "hooks": [
+          "Co-founded MI in 2007",
+          "Ex-Wireless Choice COO",
+          "Retained equity post-PE sale"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7502,7 +9313,26 @@
     ],
     "desc": "Tampa, FL-based merchant cash advance provider offering alternative business funding solutions to small and medium-sized businesses nationwide.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Quikstone Capital Partners with Waitbusters for Restaurant Funding",
+        "s": "QuikstoneCapital.com, 2025",
+        "d": "Quikstone Capital Solutions partnered with Waitbusters to offer alternative financial solutions specifically for restaurants in need of working capital.",
+        "p": "2025-04-01"
+      },
+      {
+        "h": "Quikstone Capital Celebrates 20 Years Serving Small Businesses",
+        "s": "QuikstoneCapital.com, 2025",
+        "d": "Quikstone Capital marked its 20th anniversary of providing merchant cash advances to businesses nationwide, having evolved from Sterling Funding to a leading MCA provider.",
+        "p": "2025-07-01"
+      },
+      {
+        "h": "Small Businesses Continue Pandemic Recovery with Alternative Funding",
+        "s": "QuikstoneCapital.com, 2024",
+        "d": "Quikstone Capital reported growing demand from small businesses still recovering from pandemic impacts, particularly in hospitality and retail sectors seeking flexible capital.",
+        "p": "2024-09-01"
+      }
+    ],
     "ice": "Quikstone has built a strong reputation in the MCA space with a focus on transparent and straightforward funding solutions.",
     "icebreakers": [
       "Quikstone has built a strong reputation in the MCA space with a focus on transparent and straightforward funding solutions."
@@ -7510,7 +9340,30 @@
     "tp": [
       "AI-enhanced underwriting can help Quikstone evaluate merchant cash advance applications more accurately by analyzing real-time business performance data."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Paul Hunter",
+        "t": "President & CEO",
+        "bg": "Paul Hunter leads Quikstone Capital Solutions as President and CEO. The company was founded in 2005 (originally as Sterling Funding) and is headquartered in Tampa, Florida, providing merchant cash advances ranging from $5,000 to $250,000 to businesses nationwide. Under his leadership, Quikstone has helped thousands of merchants access working capital by leveraging their Visa and MasterCard sales volume.",
+        "li": "",
+        "hooks": [
+          "Tampa-based MCA leader",
+          "Rebranded from Sterling Funding",
+          "20 years in merchant finance"
+        ]
+      },
+      {
+        "n": "Karen Erdelac",
+        "t": "Executive Director, Operations",
+        "bg": "Karen Erdelac serves as Executive Director of Operations at Quikstone Capital Solutions (formerly Sterling Funding), overseeing the company's operational infrastructure and merchant cash advance processes. She is a prolific content contributor for the company's merchant cash advance blog, writing educational content on topics from tax implications to business improvement strategies for SMB owners.",
+        "li": "https://www.linkedin.com/in/karen-erdelac-3191b513/",
+        "hooks": [
+          "MCA blog content author",
+          "Operations leadership",
+          "Sterling Funding veteran"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7537,7 +9390,26 @@
     ],
     "desc": "NYC-based direct funding source providing working capital to retailers, restaurants, and merchants nationwide. A founding member of the North American Merchant Advance Association.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Kapitus Closes $250M Securitization and Upsizes Corporate Note to $95M",
+        "s": "Asset Securitization Report, Jul 2025",
+        "d": "Kapitus completed a $250 million asset-backed securitization and upsized its corporate note from $45M to $95M, led by Guggenheim Securities, to fund growing small business lending operations.",
+        "p": "2025-07-15"
+      },
+      {
+        "h": "Kapitus Acquires Ten Oaks Commercial Capital, Launches Equipment Finance Arm",
+        "s": "PR Newswire, Oct 2024",
+        "d": "Kapitus acquired Ten Oaks Commercial Capital to enter equipment financing, expanding beyond MCA and business loans into equipment finance for construction, manufacturing, hospitality, and healthcare.",
+        "p": "2024-10-25"
+      },
+      {
+        "h": "Kapitus Equipment Finance Partners with Northteq to Modernize Lending",
+        "s": "MonitorDaily, Jan 2026",
+        "d": "Kapitus Equipment Finance partnered with Northteq to modernize its lending technology stack, signaling investment in digital infrastructure for the newly acquired equipment financing division.",
+        "p": "2026-01-15"
+      }
+    ],
     "ice": "As a founding member of the North American Merchant Advance Association, Strategic Funding has been instrumental in shaping MCA industry standards.",
     "icebreakers": [
       "As a founding member of the North American Merchant Advance Association, Strategic Funding has been instrumental in shaping MCA industry standards."
@@ -7545,7 +9417,31 @@
     "tp": [
       "AI underwriting can help Strategic Funding scale its direct funding operations while maintaining the credit discipline that has made it one of the most respected names in the industry."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Andrew Reiser",
+        "t": "Chairman & CEO",
+        "bg": "Andrew Reiser founded Strategic Funding Source in 2006 with 10 employees and grew it into Kapitus, one of the largest small business lenders with $5B+ deployed. Prior to founding the company, Andy served as CEO of Arcavista Corporation, Managing Director of Donald & Co. Securities, EVP of Fidelco Capital Group, and President of Windsor Group. He began his career as a CPA at Coopers & Lybrand and Price Waterhouse. Holds a BS from Boston University's Questrom School of Business.",
+        "li": "https://www.linkedin.com/in/andrew-reiser-64800415/",
+        "hooks": [
+          "*Ex-Coopers & Lybrand CPA",
+          "*Boston University Questrom",
+          "$5B+ deployed as founder",
+          "Started with 10 employees"
+        ]
+      },
+      {
+        "n": "Ben Johnston",
+        "t": "Chief Operating Officer",
+        "bg": "Ben Johnston joined Kapitus in 2014 as Chief Strategy Officer and became COO in 2017. Prior to Kapitus, he was a Principal at Pine Brook Partners (NYC private equity), Senior Associate at Lightyear Capital, and Analyst in the Office of the Chairman at PaineWebber. Holds a BA from Colby College and MBA from the University of Michigan's Ross School of Business. Active in industry speaking engagements on small business financing.",
+        "li": "https://www.linkedin.com/in/ben-johnston-a7313a/",
+        "hooks": [
+          "*Colby College + Michigan Ross MBA",
+          "Ex-Pine Brook Partners PE",
+          "Ex-PaineWebber analyst"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7567,7 +9463,26 @@
     ],
     "desc": "Leading ecommerce funding and payments platform that has provided over $3 billion in funding to thousands of online marketplace sellers since 2013.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Payability Surpasses $3 Billion Provided to eCommerce Sellers",
+        "s": "BusinessWire, Oct 2020",
+        "d": "Payability hit a major milestone of $3B+ in capital deployed to ecommerce sellers across Amazon, Walmart, and Newegg, establishing itself as the largest ecommerce funding platform.",
+        "p": "2020-10-13"
+      },
+      {
+        "h": "Payability Adds Two Strategic Executives to Board of Directors",
+        "s": "BusinessWire, May 2021",
+        "d": "Payability appointed Andy Sack (Techstars Seattle, 25+ years tech entrepreneur) and Ellen Levy (ex-LinkedIn exec, Stanford, Softbank VC) to its board, signaling growth ambitions.",
+        "p": "2021-05-27"
+      },
+      {
+        "h": "Payability Launches Free Instant Access for Amazon Sellers",
+        "s": "Payability.com, 2025",
+        "d": "Payability introduced free instant access for Amazon seller payouts, allowing sellers to receive daily payouts at no cost to improve cash flow management.",
+        "p": "2025-01-01"
+      }
+    ],
     "ice": "Payability's focus on ecommerce seller financing is a brilliant niche -- over $3 billion deployed shows the demand is enormous.",
     "icebreakers": [
       "Payability's focus on ecommerce seller financing is a brilliant niche -- over $3 billion deployed shows the demand is enormous."
@@ -7575,7 +9490,31 @@
     "tp": [
       "AI-driven underwriting can leverage marketplace seller data like sales velocity, reviews, and inventory turnover to make faster and more accurate funding decisions."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Keith Smith",
+        "t": "Co-Founder & CEO",
+        "bg": "Keith Smith co-founded Payability in 2013 with Scott Lynn, growing it to $3B+ provided to ecommerce sellers on Amazon, Walmart, and Newegg. Originally from the Pacific Northwest, Keith previously co-founded BigDoor (loyalty programs for NFL, MLB, CBS, Starbucks) and CyberMortgage. He began his career as an analyst at financial institutions. Attended Northwest University. Active Techstars mentor, angel investor, and advisor to early-stage startups.",
+        "li": "https://www.linkedin.com/in/keithlsmith/",
+        "hooks": [
+          "*Founded BigDoor (NFL, CBS, Starbucks client)",
+          "*Techstars mentor",
+          "$3B+ provided to sellers",
+          "Northwest University"
+        ]
+      },
+      {
+        "n": "Scott Lynn",
+        "t": "Co-Founder",
+        "bg": "Scott Lynn co-founded Payability in 2013 alongside Keith Smith. He is also known as a successful art collector and entrepreneur who founded Masterworks, a platform that allows fractional investing in fine art. His dual background in art investment and fintech brings a unique perspective to the ecommerce funding space.",
+        "li": "",
+        "hooks": [
+          "*Founded Masterworks art investing",
+          "Serial fintech entrepreneur",
+          "Art collector"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7597,7 +9536,26 @@
     ],
     "desc": "NYC-based merchant cash advance funder launched in 2016 to finance small businesses often ineligible for traditional funding. CEO has 25 years of experience in the alternative credit sector.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "6th Avenue Capital Secures $60 Million Commitment for MCA Funding",
+        "s": "deBanked, Nov 2017",
+        "d": "6th Avenue Capital secured a $60 million funding commitment to expand its merchant cash advance operations, signaling institutional confidence in the company's underwriting approach.",
+        "p": "2017-11-01"
+      },
+      {
+        "h": "6th Avenue Capital Secures Convertible Note from Star Strong Capital",
+        "s": "Benzinga, Oct 2019",
+        "d": "6th Avenue Capital received a convertible note from Star Strong Capital focused on supporting minority and women-owned small businesses, enabling broader MCA access for underserved SMB owners.",
+        "p": "2019-10-01"
+      },
+      {
+        "h": "6th Avenue Capital Promotes Darren Schulman to President",
+        "s": "deBanked, Apr 2018",
+        "d": "Darren Schulman was promoted from COO to President of 6th Avenue Capital, reporting to CEO Christine Chang, with oversight of originations, underwriting, operations, and collections.",
+        "p": "2018-04-01"
+      }
+    ],
     "ice": "6th Avenue Capital's mission to serve small businesses overlooked by traditional lenders is exactly where AI-powered underwriting can make the biggest impact.",
     "icebreakers": [
       "6th Avenue Capital's mission to serve small businesses overlooked by traditional lenders is exactly where AI-powered underwriting can make the biggest impact."
@@ -7605,7 +9563,31 @@
     "tp": [
       "AI underwriting models can help 6th Avenue identify creditworthy merchants in underserved segments that traditional scoring completely misses."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Christine Chang",
+        "t": "CEO",
+        "bg": "Christine C. Chang is CEO of 6th Avenue Capital, an institutional small business MCA funder. She brings 25+ years in alternative credit from Charles River, Credit Suisse, and New York Private Bank & Trust, where she served as COO building infrastructure for ultra-high-net-worth clients at Emigrant Bank's wealth management division. She earned her B.A. from Cornell University during the tech boom. She is the only female CEO of a cash advance technology company and an active advocate for diversity in fintech.",
+        "li": "https://www.linkedin.com/in/christine-chang-5231211/",
+        "hooks": [
+          "*Cornell University",
+          "*Only female MCA tech CEO",
+          "Ex-Credit Suisse",
+          "Ex-NY Private Bank & Trust COO"
+        ]
+      },
+      {
+        "n": "Darren Schulman",
+        "t": "President",
+        "bg": "Darren Schulman is President of 6th Avenue Capital, promoted from COO in April 2018. A 20-year veteran of alternative finance and banking, he previously served as COO at Capify (formerly AmeriMerchant), President and CFO at MRS Associates (BPO collections), and EVP at MTB Bank. He holds a BS in Accounting from Brooklyn College. He oversees originations, underwriting, operations, collections, and strategic initiatives, and sits on the company's Board of Directors.",
+        "li": "https://www.linkedin.com/in/darren-schulman-5b6189177/",
+        "hooks": [
+          "*Brooklyn College accounting grad",
+          "Ex-Capify (AmeriMerchant) COO",
+          "20-year alt finance veteran"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7627,7 +9609,26 @@
     ],
     "desc": "Specialty equipment finance firm providing small and medium-sized businesses with secured loans for revenue-producing, essential-use equipment. CEO has 35+ years in financial services.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Blue Bridge Financial Closes First $124.8M Asset-Backed Securitization",
+        "s": "PR Newswire, Jan 2024",
+        "d": "Blue Bridge Financial completed its inaugural asset-backed securitization of $124.8 million, a major capital markets milestone enabling further growth in equipment finance lending.",
+        "p": "2024-01-15"
+      },
+      {
+        "h": "Blue Bridge Financial Extends and Upsizes $135M Revolving Credit Facility with DZ BANK",
+        "s": "PR Newswire, Jan 2024",
+        "d": "Blue Bridge Financial extended its senior credit facility with DZ BANK to $135 million, providing continued capacity to fund small business equipment loans nationwide.",
+        "p": "2024-01-20"
+      },
+      {
+        "h": "Blue Bridge Financial Surpasses 8,000 Small Businesses Financed",
+        "s": "BlueBridgeFinancial.com, 2025",
+        "d": "Blue Bridge Financial reached the milestone of financing nearly 8,000 small businesses across 30+ industries with equipment loans and working capital since founding in 2009.",
+        "p": "2025-06-01"
+      }
+    ],
     "ice": "Blue Bridge's focus on essential-use equipment financing is a smart niche -- businesses always need their revenue-producing equipment funded.",
     "icebreakers": [
       "Blue Bridge's focus on essential-use equipment financing is a smart niche -- businesses always need their revenue-producing equipment funded."
@@ -7635,7 +9636,42 @@
     "tp": [
       "AI-powered underwriting can analyze equipment utilization data alongside business financials to make more accurate lending decisions for equipment finance."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Steve Dervenis",
+        "t": "Executive Chairman & CEO",
+        "bg": "Steve Dervenis has 35+ years in financial services and fintech. Before Blue Bridge Financial, he served as CEO of E*TRADE Global Asset Management and co-founded Carillon Capital, a boutique investment advisory firm and merchant bank completing $2.2B+ in transactions across various asset classes. He holds a BS in Finance from the University of Maryland at College Park. Steve oversees Blue Bridge's strategic direction, sales, finance, and capital markets functions.",
+        "li": "",
+        "hooks": [
+          "*Ex-E*TRADE Global Asset Mgmt CEO",
+          "*Co-founded Carillon Capital ($2.2B+)",
+          "University of Maryland finance grad",
+          "35+ years finserv"
+        ]
+      },
+      {
+        "n": "Hannah Phearsdorf",
+        "t": "Chief Financial Officer",
+        "bg": "Hannah Phearsdorf joined Blue Bridge Financial in 2017 after earning her MBA in Finance from Saint Bonaventure University and has risen from Assistant VP to CFO. She holds a bachelor's degree from West Virginia University. As CFO, she oversees all financial strategy, reporting, capital markets activities, loan sales management, and investor relations. She directly manages all lending facilities and plays a key role in Blue Bridge's $135M revolving credit facility and $124.8M securitization.",
+        "li": "https://www.linkedin.com/in/hannah-phearsdorf-finance/",
+        "hooks": [
+          "*West Virginia U + St. Bonaventure MBA",
+          "Rose from Assistant VP to CFO",
+          "Manages $135M credit facility"
+        ]
+      },
+      {
+        "n": "Rob Snow",
+        "t": "Chief Credit Officer",
+        "bg": "Rob Snow brings 32+ years of financial services experience to Blue Bridge Financial, where he oversees credit, operations, administration, loss mitigation, and servicing functions. His extensive background in credit risk assessment and portfolio management supports Blue Bridge's underwriting and servicing of 8,000+ small business equipment loans across 30+ industries.",
+        "li": "",
+        "hooks": [
+          "32+ years financial services",
+          "Oversees credit & loss mitigation",
+          "8,000+ SMB loans portfolio"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7662,7 +9698,26 @@
     ],
     "desc": "Annapolis, MD-based small business funding company established in 2012, specializing in merchant cash advances and business financing solutions for small businesses across the United States.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "First Down Funding Expands to All 50 States with 30-Second Application",
+        "s": "FirstDownFunding.com, 2025",
+        "d": "First Down Funding now serves small businesses across all 50 states with a streamlined 30-second application process and 24-hour funding capability.",
+        "p": "2025-03-01"
+      },
+      {
+        "h": "SharpShooter Funding Partners with Bret Hart for Canadian Market Expansion",
+        "s": "Yahoo Finance, 2016",
+        "d": "Paul Pitcher's First Down Funding launched SharpShooter Funding in Canada with WWE Hall of Famer Bret Hart as partner and commissioner, bringing U.S.-style MCA funding to Canadian businesses.",
+        "p": "2016-02-09"
+      },
+      {
+        "h": "First Down Funding Recognized for Game-Changing Business Funding Model",
+        "s": "GlobeNewswire, 2015",
+        "d": "Paul Pitcher's innovative approach to alternative business funding earned recognition for creating an accessible model that gives business owners funding within hours.",
+        "p": "2015-12-10"
+      }
+    ],
     "ice": "First Down Funding has been delivering efficient small business financing from historic Annapolis since 2012 -- great to see a company built on transparency and reliability.",
     "icebreakers": [
       "First Down Funding has been delivering efficient small business financing from historic Annapolis since 2012 -- great to see a company built on transparency and reliability."
@@ -7670,7 +9725,20 @@
     "tp": [
       "AI underwriting can help First Down Funding reduce application-to-funding time while improving approval accuracy for small business merchants."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Paul Pitcher",
+        "t": "Founder & CEO",
+        "bg": "Paul Pitcher founded First Down Funding in 2012 in Annapolis, MD's historic downtown district. A Maryland native and Severn School graduate, Paul transitioned from a Regional Sales Manager role with the Washington Wizards and Capitals to become a broker before founding First Down. He later expanded into Canada with SharpShooter Funding, partnering with WWE Hall of Famer Bret 'Hitman' Hart as the company's commissioner. Paul is an avid sports fan and golfer who credits competitive sports for his business drive.",
+        "li": "https://www.linkedin.com/in/paulpitcher/",
+        "hooks": [
+          "*Ex-Washington Wizards/Capitals sales mgr",
+          "*Partnered with Bret 'Hitman' Hart",
+          "Severn School alum",
+          "Founded SharpShooter Funding (Canada)"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7697,7 +9765,26 @@
     ],
     "desc": "Fort Lee, NJ-based commercial finance company turning invoices into cash since 1985. Specializes in invoice factoring and has nearly four decades of experience in commercial finance.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Prestige Capital Acquired by Great Elm Capital (80% Stake)",
+        "s": "ABF Journal, Feb 2019",
+        "d": "Great Elm Capital Corp acquired 80% of Prestige Capital from retiring founder Harvey Kaminski, with Alan Eliasof and Stuart Rosenthal retaining equity and continuing to lead the company.",
+        "p": "2019-02-22"
+      },
+      {
+        "h": "Mark Simshauser Joins Prestige Capital as Senior Director, Northeast",
+        "s": "PrestigeCapital.com, Aug 2023",
+        "d": "Prestige Capital expanded its origination team by hiring Mark Simshauser as Senior Director for the Northeast US market, signaling growth in factoring volume.",
+        "p": "2023-08-01"
+      },
+      {
+        "h": "Prestige Capital Celebrates Nearly Four Decades in Invoice Factoring",
+        "s": "PrestigeCapital.com, 2024",
+        "d": "Founded in 1985, Prestige Capital has funded $4.2B+ in transactions with a 92% client retention rate, serving companies with $3M-$300M in annual sales across the US.",
+        "p": "2024-01-01"
+      }
+    ],
     "ice": "Nearly 40 years of invoice factoring experience gives Prestige Capital incredible institutional knowledge about business credit risk.",
     "icebreakers": [
       "Nearly 40 years of invoice factoring experience gives Prestige Capital incredible institutional knowledge about business credit risk."
@@ -7705,7 +9792,31 @@
     "tp": [
       "AI can augment Prestige's decades of factoring expertise by analyzing invoice patterns and debtor payment behaviors to predict risk more precisely."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Alan Eliasof",
+        "t": "CEO",
+        "bg": "Alan Eliasof, CPA, is Chief Executive Officer of Prestige Capital, responsible for finance, operations, and credit functions. Before joining Prestige Capital, he held senior executive finance and accounting positions with private companies and public accounting firms. He received his bachelor's degree in accounting from the University of Rhode Island and is a member of the American Institute of CPAs and New Jersey Society of CPAs. He has been with Prestige Capital for 20+ years since founding in 1985.",
+        "li": "https://www.linkedin.com/in/alan-eliasof-1646157/",
+        "hooks": [
+          "*University of Rhode Island accounting",
+          "CPA (AICPA member)",
+          "20+ years at Prestige Capital"
+        ]
+      },
+      {
+        "n": "Stuart Rosenthal",
+        "t": "President",
+        "bg": "Stuart Rosenthal is President of Prestige Capital with 30+ years in commercial finance. He leads marketing and sales efforts for the company. Prior to Prestige Capital, he served as VP and Sales Manager at CIT Credit Finance and began his career at Arthur Andersen. He holds a bachelor's degree in accounting from Binghamton University. Stuart is a board member of the International Factoring Association, founding board member of IFA's Northeast Chapter, and former TMA New Jersey Chapter board member.",
+        "li": "https://www.linkedin.com/in/stuart-rosenthal-40a32a12/",
+        "hooks": [
+          "*Binghamton University accounting",
+          "*Ex-Arthur Andersen",
+          "IFA board member",
+          "Ex-CIT Credit Finance VP"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -7727,7 +9838,26 @@
     ],
     "desc": "Chicago-based merchant cash advance provider founded in 2011 as Viking Funding Group by former Navy SEAL Tim Roach. Rebranded as Lendr in 2016, providing MCA funding to SMEs.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Lendr Adopts AdvanceIQ.ai Risk & Portfolio Intelligence Platform",
+        "s": "Manila Times/GlobeNewswire, Feb 2026",
+        "d": "Lendr CEO Daniel DeMeo endorsed AdvanceIQ.ai's AIQ Platform, stating it provides 'a much clearer view into portfolio performance and deal quality' for their MCA lending operations.",
+        "p": "2026-02-05"
+      },
+      {
+        "h": "Dan DeMeo Appointed CEO of Lendr",
+        "s": "deBanked, Nov 2018",
+        "d": "Lendr appointed Daniel DeMeo as CEO, bringing former CAN Capital and JP Morgan Chase leadership experience to lead the Chicago-based MCA provider through its next growth phase.",
+        "p": "2018-11-01"
+      },
+      {
+        "h": "Lendr Completes Rebrand from Viking Funding Group",
+        "s": "PR Web, 2016",
+        "d": "Tim Roach's Viking Funding Group rebranded to Lendr in mid-2016, signaling a technology-forward evolution of the merchant cash advance platform with enhanced straight-through processing.",
+        "p": "2016-06-01"
+      }
+    ],
     "ice": "Lendr's evolution from Viking Funding Group to a modern MCA platform shows real adaptability, and having a former CAN Capital CEO at the helm brings deep industry expertise.",
     "icebreakers": [
       "Lendr's evolution from Viking Funding Group to a modern MCA platform shows real adaptability, and having a former CAN Capital CEO at the helm brings deep industry expertise."
@@ -7735,7 +9865,32 @@
     "tp": [
       "AI underwriting can help Lendr scale its MCA operations while maintaining the disciplined credit approach that Dan DeMeo brought from his CAN Capital experience."
     ],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Daniel DeMeo",
+        "t": "CEO",
+        "bg": "Daniel DeMeo joined Lendr in November 2018 as CEO. He brings deep financial services leadership experience as former CEO of CAN Capital, CFO of Global Technology at JP Morgan Chase, and CFO of Chase's consumer and small business credit card unit. Earlier roles include EVP at Citibank Universal Card Service and SVP of Marketing/Business Development at GE Capital. He holds a BA from New England College and MBA in Finance from Fairleigh Dickinson University.",
+        "li": "https://www.linkedin.com/in/danieldemeo/",
+        "hooks": [
+          "*Ex-JP Morgan Chase CFO (consumer cards)",
+          "*Ex-CAN Capital CEO",
+          "Fairleigh Dickinson MBA",
+          "Ex-GE Capital SVP"
+        ]
+      },
+      {
+        "n": "Tim Roach",
+        "t": "Co-Founder & Chairman",
+        "bg": "Tim Roach co-founded Lendr in 2011 (originally as Viking Funding Group), rebranding to Lendr in 2016. A former Navy SEAL who served at Seal Team One, Tim transitioned from military service to entrepreneurship. He founded Oak Street Trading, a proprietary trading firm, in 2002, applying straight-through processing technology from trading to create Lendr's MCA platform. He holds a BS in Finance from Linfield College.",
+        "li": "https://www.linkedin.com/in/tim-roach-011b563/",
+        "hooks": [
+          "*Former Navy SEAL (Seal Team One)",
+          "*Founded Oak Street Trading",
+          "Linfield College finance grad",
+          "Rebranded Viking Funding to Lendr"
+        ]
+      }
+    ],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
