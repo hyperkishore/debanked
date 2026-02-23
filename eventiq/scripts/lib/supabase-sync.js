@@ -58,6 +58,7 @@ function toRow(c) {
     website: c.website || null,
     linkedin_url: c.linkedinUrl || null,
     source: c.source || [],
+    category: c.category || null,
   };
 }
 
@@ -97,18 +98,55 @@ async function syncToSupabase(companies, opts = {}) {
   let upserted = 0;
   let errors = 0;
 
+  const skipColumns = new Set();
+
   try {
     for (let i = 0; i < companies.length; i += BATCH_SIZE) {
-      const batch = companies.slice(i, i + BATCH_SIZE).map(toRow);
+      let batch = companies.slice(i, i + BATCH_SIZE).map(toRow);
+
+      // Strip columns that Supabase doesn't have yet
+      if (skipColumns.size > 0) {
+        batch = batch.map((row) => {
+          const clean = { ...row };
+          for (const col of skipColumns) delete clean[col];
+          return clean;
+        });
+      }
+
       const { error } = await supabase
         .from("companies")
         .upsert(batch, { onConflict: "id" });
 
       if (error) {
-        console.error(
-          `  [supabase-sync] Error batch ${i}-${i + batch.length}: ${error.message}`
+        // If column doesn't exist, strip it and retry this batch
+        const colMatch = error.message.match(
+          /Could not find the '(\w+)' column/
         );
-        errors += batch.length;
+        if (colMatch) {
+          skipColumns.add(colMatch[1]);
+          // Retry this batch without the missing column
+          const retryBatch = batch.map((row) => {
+            const clean = { ...row };
+            delete clean[colMatch[1]];
+            return clean;
+          });
+          const { error: retryErr } = await supabase
+            .from("companies")
+            .upsert(retryBatch, { onConflict: "id" });
+          if (retryErr) {
+            console.error(
+              `  [supabase-sync] Error batch ${i}-${i + retryBatch.length}: ${retryErr.message}`
+            );
+            errors += retryBatch.length;
+          } else {
+            upserted += retryBatch.length;
+          }
+        } else {
+          console.error(
+            `  [supabase-sync] Error batch ${i}-${i + batch.length}: ${error.message}`
+          );
+          errors += batch.length;
+        }
       } else {
         upserted += batch.length;
       }

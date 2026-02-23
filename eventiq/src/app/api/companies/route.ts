@@ -44,6 +44,7 @@ export async function GET(request: NextRequest) {
     website: row.website,
     linkedinUrl: row.linkedin_url,
     source: row.source || [],
+    category: row.category || undefined,
     outreachHistory: row.outreach_history || undefined,
   }));
 

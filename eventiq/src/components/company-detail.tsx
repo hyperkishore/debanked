@@ -1,6 +1,6 @@
 "use client";
 
-import { Company, Leader, RatingData, EngagementEntry, EngagementChannel, OutreachHistory } from "@/lib/types";
+import { Company, CompanyCategory, Leader, RatingData, EngagementEntry, EngagementChannel, OutreachHistory } from "@/lib/types";
 import { isResearched, generateOutreachMessage, generateQuickLinks } from "@/lib/types";
 import { generateMessageVariants, MessageVariant } from "@/lib/message-variants";
 import { generateLinkedInVariants, LinkedInVariant } from "@/lib/linkedin-message";
@@ -86,6 +86,15 @@ const typeBadgeStyles: Record<string, string> = {
   TAM: "bg-[var(--tam)]/10 text-[var(--tam)] border-[var(--tam)]/30",
 };
 
+const categoryBadgeStyles: Record<CompanyCategory, { label: string; className: string }> = {
+  funder: { label: "Funder", className: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30" },
+  broker: { label: "Broker", className: "bg-orange-500/10 text-orange-400 border-orange-500/30" },
+  bank: { label: "Bank", className: "bg-blue-500/10 text-blue-400 border-blue-500/30" },
+  technology: { label: "Technology", className: "bg-violet-500/10 text-violet-400 border-violet-500/30" },
+  marketplace: { label: "Marketplace", className: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30" },
+  service_provider: { label: "Service Provider", className: "bg-pink-500/10 text-pink-400 border-pink-500/30" },
+};
+
 const VARIANT_LABELS: Record<MessageVariant["style"], string> = {
   formal: "Formal",
   casual: "Casual",
@@ -144,192 +153,198 @@ export function CompanyDetail({
   const allTalkingPoints = (company.tp || []).join("\n\n");
 
   return (
-    <ScrollArea className="h-full">
-      <div className="p-4 space-y-5">
-        {/* Header */}
-        <div>
-          <div className="flex items-start justify-between">
-            <div className="flex items-center gap-2 min-w-0">
-              {onClose && (
-                <Button variant="ghost" size="sm" className="h-7 w-7 p-0 shrink-0 md:hidden" onClick={onClose}>
-                  <ChevronLeft className="h-4 w-4" />
-                </Button>
-              )}
-              <h2 className="text-lg font-bold truncate">{company.name}</h2>
-            </div>
-            <div className="flex items-center gap-2 shrink-0">
-              <Badge variant="outline" className={cn("text-xs font-semibold", typeBadgeStyles[company.type] || "")}>
-                {company.type}
-              </Badge>
-              {company.clear && (
-                <Badge variant="outline" className="text-xs font-semibold text-brand border-brand/30">
-                  CLEAR
-                </Badge>
-              )}
-              {company.booth && (
-                <Badge variant="outline" className="text-xs text-muted-foreground">
-                  BOOTH
-                </Badge>
-              )}
-            </div>
+    <div className="flex flex-col h-full">
+      {/* Sticky Header */}
+      <div className="sticky top-0 z-10 bg-background border-b border-border p-4 pb-3 shrink-0">
+        <div className="flex items-start justify-between">
+          <div className="flex items-center gap-2 min-w-0">
+            {onClose && (
+              <Button variant="ghost" size="sm" className="h-7 w-7 p-0 shrink-0 md:hidden" onClick={onClose}>
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
+            )}
+            <h2 className="text-lg font-bold truncate">{company.name}</h2>
           </div>
-
-          {/* Meta info row */}
-          {(company.location || company.employees || company.website) && (
-            <div className="flex flex-wrap items-center gap-3 mt-1.5 text-xs text-muted-foreground">
-              {company.location && (
-                <span className="flex items-center gap-1">
-                  <MapPin className="h-3 w-3" /> {company.location}
-                </span>
-              )}
-              {company.employees !== undefined && company.employees > 0 && (
-                <span className="flex items-center gap-1">
-                  <Building2 className="h-3 w-3" /> {company.employees} employees
-                </span>
-              )}
-              {company.website && (
-                <a
-                  href={company.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-brand hover:underline"
-                >
-                  <Globe className="h-3 w-3" /> Website
-                </a>
-              )}
-              {company.linkedinUrl && (
-                <a
-                  href={company.linkedinUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-brand hover:underline"
-                >
-                  <Linkedin className="h-3 w-3" /> LinkedIn
-                </a>
-              )}
-            </div>
-          )}
-
-          {/* Custom tags */}
-          {onAddTag && (
-            <div className="flex flex-wrap items-center gap-1 mt-1.5">
-              {tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="inline-flex items-center gap-0.5 text-xs px-1.5 py-0.5 rounded bg-brand/10 text-brand"
-                >
-                  <Tag className="h-2.5 w-2.5" />
-                  {tag}
-                  {onRemoveTag && (
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="h-4 w-4 p-0 hover:text-red-400 transition-colors ml-0.5"
-                      onClick={() => onRemoveTag(company.id, tag)}
-                    >
-                      <X className="h-2.5 w-2.5" />
-                    </Button>
-                  )}
-                </span>
-              ))}
-              {showTagInput ? (
-                <div className="relative inline-flex items-center">
-                  <form
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const t = tagInput.trim().toLowerCase();
-                      if (t && !tags.includes(t)) {
-                        onAddTag(company.id, t);
-                      }
-                      setTagInput("");
-                      setShowTagInput(false);
-                      setShowTagSuggestions(false);
-                    }}
-                    className="inline-flex items-center"
-                  >
-                    <Input
-                      autoFocus
-                      value={tagInput}
-                      onChange={(e) => {
-                        setTagInput(e.target.value);
-                        setShowTagSuggestions(true);
-                      }}
-                      onFocus={() => setShowTagSuggestions(true)}
-                      onBlur={() => {
-                        // Delay to allow click on suggestion
-                        setTimeout(() => {
-                          setShowTagInput(false);
-                          setTagInput("");
-                          setShowTagSuggestions(false);
-                        }, 150);
-                      }}
-                      placeholder="tag..."
-                      className="w-28 h-5 text-xs px-1 py-0.5"
-                    />
-                  </form>
-                  {showTagSuggestions && (
-                    <div className="absolute top-full left-0 mt-1 z-50 w-48 max-h-40 overflow-auto rounded-md border border-border bg-popover p-1 shadow-md">
-                      {TAG_SUGGESTIONS
-                        .filter((s) => !tags.includes(s) && s.includes(tagInput.toLowerCase()))
-                        .map((suggestion) => (
-                          <button
-                            key={suggestion}
-                            type="button"
-                            className="w-full text-left text-xs px-2 py-1 rounded hover:bg-brand/10 hover:text-brand transition-colors"
-                            onMouseDown={(e) => {
-                              e.preventDefault();
-                              onAddTag(company.id, suggestion);
-                              setTagInput("");
-                              setShowTagInput(false);
-                              setShowTagSuggestions(false);
-                            }}
-                          >
-                            {suggestion}
-                          </button>
-                        ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setShowTagInput(true)}
-                  className="inline-flex items-center gap-0.5 text-xs h-5 px-1.5 py-0.5 rounded border-dashed text-muted-foreground hover:text-brand hover:border-brand/30 transition-colors"
-                >
-                  <Plus className="h-2.5 w-2.5" /> tag
-                </Button>
-              )}
-            </div>
-          )}
-
-          <div className="flex items-center gap-2 mt-2">
-            <Button
-              variant={isMet ? "default" : "outline"}
-              size="sm"
-              className="h-7 text-xs"
-              onClick={() => {
-                onToggleMet(company.id);
-                if (!isMet) onOpenRating(company.id);
-              }}
-            >
-              <Check className="h-3 w-3 mr-1" />
-              {isMet ? "Met" : "Mark Met"}
-            </Button>
-            {isMet && rating && rating.rating && (
-              <Badge className={cn(
-                "text-xs",
-                rating.rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
-                rating.rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
-                rating.rating === "cold" && "bg-brand/20 text-brand",
-              )}>
-                {rating.rating.toUpperCase()}
+          <div className="flex items-center gap-1.5 shrink-0">
+            <Badge variant="outline" className={cn("text-xs font-semibold", typeBadgeStyles[company.type] || "")}>
+              {company.type}
+            </Badge>
+            {company.category && (
+              <Badge variant="outline" className={cn("text-xs font-semibold", categoryBadgeStyles[company.category].className)}>
+                {categoryBadgeStyles[company.category].label}
+              </Badge>
+            )}
+            {company.clear && (
+              <Badge variant="outline" className="text-xs font-semibold text-brand border-brand/30">
+                CLEAR
+              </Badge>
+            )}
+            {company.booth && (
+              <Badge variant="outline" className="text-xs text-muted-foreground">
+                BOOTH
               </Badge>
             )}
           </div>
         </div>
 
-        <Separator />
+        {/* Meta info row */}
+        {(company.location || company.employees || company.website) && (
+          <div className="flex flex-wrap items-center gap-3 mt-1.5 text-xs text-muted-foreground">
+            {company.location && (
+              <span className="flex items-center gap-1">
+                <MapPin className="h-3 w-3" /> {company.location}
+              </span>
+            )}
+            {company.employees !== undefined && company.employees > 0 && (
+              <span className="flex items-center gap-1">
+                <Building2 className="h-3 w-3" /> {company.employees} employees
+              </span>
+            )}
+            {company.website && (
+              <a
+                href={company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-brand hover:underline"
+              >
+                <Globe className="h-3 w-3" /> Website
+              </a>
+            )}
+            {company.linkedinUrl && (
+              <a
+                href={company.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-brand hover:underline"
+              >
+                <Linkedin className="h-3 w-3" /> LinkedIn
+              </a>
+            )}
+          </div>
+        )}
+
+        {/* Custom tags */}
+        {onAddTag && (
+          <div className="flex flex-wrap items-center gap-1 mt-1.5">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center gap-0.5 text-xs px-1.5 py-0.5 rounded bg-brand/10 text-brand"
+              >
+                <Tag className="h-2.5 w-2.5" />
+                {tag}
+                {onRemoveTag && (
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-4 w-4 p-0 hover:text-red-400 transition-colors ml-0.5"
+                    onClick={() => onRemoveTag(company.id, tag)}
+                  >
+                    <X className="h-2.5 w-2.5" />
+                  </Button>
+                )}
+              </span>
+            ))}
+            {showTagInput ? (
+              <div className="relative inline-flex items-center">
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const t = tagInput.trim().toLowerCase();
+                    if (t && !tags.includes(t)) {
+                      onAddTag(company.id, t);
+                    }
+                    setTagInput("");
+                    setShowTagInput(false);
+                    setShowTagSuggestions(false);
+                  }}
+                  className="inline-flex items-center"
+                >
+                  <Input
+                    autoFocus
+                    value={tagInput}
+                    onChange={(e) => {
+                      setTagInput(e.target.value);
+                      setShowTagSuggestions(true);
+                    }}
+                    onFocus={() => setShowTagSuggestions(true)}
+                    onBlur={() => {
+                      // Delay to allow click on suggestion
+                      setTimeout(() => {
+                        setShowTagInput(false);
+                        setTagInput("");
+                        setShowTagSuggestions(false);
+                      }, 150);
+                    }}
+                    placeholder="tag..."
+                    className="w-28 h-5 text-xs px-1 py-0.5"
+                  />
+                </form>
+                {showTagSuggestions && (
+                  <div className="absolute top-full left-0 mt-1 z-50 w-48 max-h-40 overflow-auto rounded-md border border-border bg-popover p-1 shadow-md">
+                    {TAG_SUGGESTIONS
+                      .filter((s) => !tags.includes(s) && s.includes(tagInput.toLowerCase()))
+                      .map((suggestion) => (
+                        <button
+                          key={suggestion}
+                          type="button"
+                          className="w-full text-left text-xs px-2 py-1 rounded hover:bg-brand/10 hover:text-brand transition-colors"
+                          onMouseDown={(e) => {
+                            e.preventDefault();
+                            onAddTag(company.id, suggestion);
+                            setTagInput("");
+                            setShowTagInput(false);
+                            setShowTagSuggestions(false);
+                          }}
+                        >
+                          {suggestion}
+                        </button>
+                      ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowTagInput(true)}
+                className="inline-flex items-center gap-0.5 text-xs h-5 px-1.5 py-0.5 rounded border-dashed text-muted-foreground hover:text-brand hover:border-brand/30 transition-colors"
+              >
+                <Plus className="h-2.5 w-2.5" /> tag
+              </Button>
+            )}
+          </div>
+        )}
+
+        <div className="flex items-center gap-2 mt-2">
+          <Button
+            variant={isMet ? "default" : "outline"}
+            size="sm"
+            className="h-7 text-xs"
+            onClick={() => {
+              onToggleMet(company.id);
+              if (!isMet) onOpenRating(company.id);
+            }}
+          >
+            <Check className="h-3 w-3 mr-1" />
+            {isMet ? "Met" : "Mark Met"}
+          </Button>
+          {isMet && rating && rating.rating && (
+            <Badge className={cn(
+              "text-xs",
+              rating.rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
+              rating.rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
+              rating.rating === "cold" && "bg-brand/20 text-brand",
+            )}>
+              {rating.rating.toUpperCase()}
+            </Badge>
+          )}
+        </div>
+      </div>
+
+      {/* Scrollable Content */}
+      <ScrollArea className="flex-1">
+      <div className="p-4 space-y-5">
 
         {!researched && company.type === "TAM" ? (
           /* Unresearched TAM placeholder */
@@ -611,6 +626,7 @@ export function CompanyDetail({
         />
       )}
     </ScrollArea>
+    </div>
   );
 }
 

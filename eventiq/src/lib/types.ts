@@ -27,6 +27,8 @@ export interface Leader {
   lastReviewedAt?: string;
 }
 
+export type CompanyCategory = "funder" | "broker" | "bank" | "technology" | "marketplace" | "service_provider";
+
 export type SubVertical =
   | "mca"
   | "equipment_finance"
@@ -150,6 +152,7 @@ export interface Company {
   website?: string;
   linkedinUrl?: string;
   source: string[];
+  category?: CompanyCategory;
   subVertical?: SubVertical;
   outreachHistory?: OutreachHistory;
 }
