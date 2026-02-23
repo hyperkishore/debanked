@@ -12,7 +12,16 @@ import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { useMemo } from "react";
+import { useAuth } from "@/contexts/auth-context";
+import { useMemo, useState, useEffect, useCallback } from "react";
+import {
+  Bug,
+  Lightbulb,
+  HelpCircle,
+  AlertCircle,
+  Clock,
+  CheckCircle2,
+} from "lucide-react";
 
 interface DashboardTabProps {
   companies: Company[];
@@ -349,6 +358,96 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
     TAM: "bg-[var(--tam)]",
   };
 
+  // --- Feedback analytics (admin only) ---
+  const { user: authUser } = useAuth();
+  const isAdmin = authUser?.email?.endsWith("@hyperverge.co") ?? false;
+
+  interface FeedbackItem {
+    id: string;
+    user_email: string;
+    section: string;
+    feedback_type: string;
+    notes: string;
+    page: string;
+    company_name: string;
+    status: string;
+    created_at: string;
+  }
+
+  const [feedbackItems, setFeedbackItems] = useState<FeedbackItem[]>([]);
+  const [feedbackLoading, setFeedbackLoading] = useState(false);
+
+  useEffect(() => {
+    if (!isAdmin) return;
+    setFeedbackLoading(true);
+    fetch("/api/feedback?limit=200")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((data) => setFeedbackItems(data))
+      .catch(() => {})
+      .finally(() => setFeedbackLoading(false));
+  }, [isAdmin]);
+
+  const feedbackStats = useMemo(() => {
+    const total = feedbackItems.length;
+    const open = feedbackItems.filter((f) => f.status === "open").length;
+    const inProgress = feedbackItems.filter((f) => f.status === "in_progress").length;
+    const resolved = feedbackItems.filter((f) => f.status === "resolved").length;
+
+    const bugs = feedbackItems.filter((f) => f.feedback_type === "bug").length;
+    const suggestions = feedbackItems.filter((f) => f.feedback_type === "suggestion").length;
+    const questions = feedbackItems.filter((f) => f.feedback_type === "question").length;
+
+    const sectionCounts: Record<string, number> = {};
+    for (const f of feedbackItems) {
+      sectionCounts[f.section] = (sectionCounts[f.section] || 0) + 1;
+    }
+    const topSections = Object.entries(sectionCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 8)
+      .map(([label, value]) => ({ label, value, color: "var(--brand)" }));
+    const sectionTotal = feedbackItems.length;
+
+    // Recent 10, open-first
+    const recent = [...feedbackItems]
+      .sort((a, b) => {
+        const statusOrder: Record<string, number> = { open: 0, in_progress: 1, resolved: 2 };
+        const sd = (statusOrder[a.status] ?? 3) - (statusOrder[b.status] ?? 3);
+        if (sd !== 0) return sd;
+        return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+      })
+      .slice(0, 10);
+
+    return { total, open, inProgress, resolved, bugs, suggestions, questions, topSections, sectionTotal, recent };
+  }, [feedbackItems]);
+
+  const cycleFeedbackStatus = useCallback(
+    async (id: string, currentStatus: string) => {
+      const next =
+        currentStatus === "open"
+          ? "in_progress"
+          : currentStatus === "in_progress"
+            ? "resolved"
+            : "open";
+      // Optimistic update
+      setFeedbackItems((prev) =>
+        prev.map((f) => (f.id === id ? { ...f, status: next } : f))
+      );
+      try {
+        await fetch("/api/feedback", {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id, status: next }),
+        });
+      } catch {
+        // Revert on error
+        setFeedbackItems((prev) =>
+          prev.map((f) => (f.id === id ? { ...f, status: currentStatus } : f))
+        );
+      }
+    },
+    []
+  );
+
   return (
     <ScrollArea className="h-full">
       <div className="p-4 md:p-6 max-w-4xl mx-auto space-y-6">
@@ -562,6 +661,100 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
                     </div>
                   );
                 })}
+              </div>
+            </Card>
+          </>
+        )}
+
+        {/* User Feedback Analytics (admin only) */}
+        {isAdmin && feedbackStats.total > 0 && (
+          <>
+            <Separator />
+            <div>
+              <h2 className="text-lg font-bold">User Feedback</h2>
+              <p className="text-xs text-muted-foreground mt-0.5">
+                Feedback submitted via the in-app widget
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <StatCard label="Total" value={feedbackStats.total} />
+              <StatCard label="Open" value={feedbackStats.open} />
+              <StatCard label="In Progress" value={feedbackStats.inProgress} />
+              <StatCard label="Resolved" value={feedbackStats.resolved} />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <Card className="p-4 gap-3 shadow-none space-y-3">
+                <SectionHeader title="By Type" />
+                <StackedBar
+                  segments={[
+                    { label: "Bug", value: feedbackStats.bugs, color: "var(--sqo)" },
+                    { label: "Suggestion", value: feedbackStats.suggestions, color: "var(--client)" },
+                    { label: "Question", value: feedbackStats.questions, color: "var(--brand)" },
+                  ]}
+                />
+              </Card>
+
+              <Card className="p-4 gap-3 shadow-none space-y-3">
+                <SectionHeader title="By Section" />
+                <HorizontalBar items={feedbackStats.topSections} total={feedbackStats.sectionTotal} />
+              </Card>
+            </div>
+
+            <Card className="p-4 gap-3 shadow-none space-y-3">
+              <SectionHeader title="Recent Feedback" />
+              <div className="space-y-2">
+                {feedbackStats.recent.map((f) => {
+                  const typeIcon =
+                    f.feedback_type === "bug" ? (
+                      <Bug className="h-3.5 w-3.5 text-[var(--sqo)]" />
+                    ) : f.feedback_type === "question" ? (
+                      <HelpCircle className="h-3.5 w-3.5 text-[var(--brand)]" />
+                    ) : (
+                      <Lightbulb className="h-3.5 w-3.5 text-[var(--client)]" />
+                    );
+
+                  const statusIcon =
+                    f.status === "open" ? (
+                      <AlertCircle className="h-3.5 w-3.5 text-[var(--sqo)]" />
+                    ) : f.status === "in_progress" ? (
+                      <Clock className="h-3.5 w-3.5 text-[var(--client)]" />
+                    ) : (
+                      <CheckCircle2 className="h-3.5 w-3.5 text-[var(--icp)]" />
+                    );
+
+                  const dateStr = new Date(f.created_at).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                  });
+
+                  return (
+                    <div key={f.id} className="flex items-start gap-2 text-xs p-2 rounded-md bg-muted/20">
+                      <button
+                        onClick={() => cycleFeedbackStatus(f.id, f.status)}
+                        className="shrink-0 mt-0.5 cursor-pointer hover:opacity-70 transition-opacity"
+                        title={`Status: ${f.status} (click to cycle)`}
+                      >
+                        {statusIcon}
+                      </button>
+                      <div className="shrink-0 mt-0.5">{typeIcon}</div>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-1.5">
+                          <Badge variant="outline" className="text-xs px-1.5 py-0 h-5 shrink-0">
+                            {f.section}
+                          </Badge>
+                          <span className="text-muted-foreground truncate">{f.user_email}</span>
+                          <span className="text-muted-foreground/60 shrink-0 ml-auto">{dateStr}</span>
+                        </div>
+                        <p className="text-foreground mt-0.5 line-clamp-2">{f.notes}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+                {feedbackStats.recent.length === 0 && !feedbackLoading && (
+                  <p className="text-xs text-muted-foreground">No feedback yet</p>
+                )}
               </div>
             </Card>
           </>

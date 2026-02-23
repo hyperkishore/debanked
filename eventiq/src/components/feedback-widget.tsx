@@ -66,23 +66,39 @@ export function FeedbackWidget({ companyName, currentTab }: FeedbackWidgetProps)
     }
 
     setSending(true);
-    const success = await syncToSheets("feedback", {
+
+    const payload = {
       section,
       feedbackType,
       notes: notes.trim(),
       page: typeof window !== "undefined" ? window.location.pathname : "",
       companyName: companyName || "",
       userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "",
-    });
+    };
+
+    // Primary: save to Supabase via API
+    let apiOk = false;
+    try {
+      const res = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      apiOk = res.ok;
+    } catch {}
+
+    // Secondary: sync to Google Sheets (non-blocking)
+    syncToSheets("feedback", payload).catch(() => {});
 
     setSending(false);
 
-    if (success) {
+    if (apiOk) {
       toast.success("Feedback sent!");
       setNotes("");
       setOpen(false);
     } else {
-      toast.error("Sync not configured. Go to Settings to set up.");
+      // Fallback: if API failed but Sheets might work
+      toast.error("Failed to save feedback. Please try again.");
     }
   };
 
