@@ -27,7 +27,14 @@ const AGENT_COUNT = 5;
 
 let targets;
 
-if (args.includes('--all')) {
+if (args.includes('--unresearched-icp')) {
+  const countIdx = args.indexOf('--count');
+  const count = countIdx !== -1 ? parseInt(args[countIdx + 1]) : 50;
+  targets = data
+    .filter(c => c.type === 'ICP' && (!c.leaders || c.leaders.length === 0))
+    .slice(0, count);
+  console.log(`Mode: Unresearched ICP companies (${targets.length}/${count} requested)`);
+} else if (args.includes('--all')) {
   targets = data;
   console.log('Mode: ALL companies');
 } else if (args.includes('--priority')) {

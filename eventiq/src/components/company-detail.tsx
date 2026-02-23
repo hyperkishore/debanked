@@ -1,6 +1,6 @@
 "use client";
 
-import { Company, Leader, RatingData, EngagementEntry, EngagementChannel } from "@/lib/types";
+import { Company, Leader, RatingData, EngagementEntry, EngagementChannel, OutreachHistory } from "@/lib/types";
 import { isResearched, generateOutreachMessage, generateQuickLinks } from "@/lib/types";
 import { generateMessageVariants, MessageVariant } from "@/lib/message-variants";
 import { generateLinkedInVariants, LinkedInVariant } from "@/lib/linkedin-message";
@@ -635,6 +635,11 @@ export function CompanyDetail({
               onDelete={onDeleteEngagement}
             />
 
+            {/* Email Outreach History */}
+            {company.outreachHistory && company.outreachHistory.status !== "no_history" && (
+              <EmailHistorySection outreachHistory={company.outreachHistory} />
+            )}
+
             {/* Notes */}
             <Section icon={MessageSquare} title="Your Notes">
               <Textarea
@@ -1017,5 +1022,77 @@ function Section({
       </div>
       {children}
     </div>
+  );
+}
+
+// --- Email Outreach History Section ---
+
+const outreachStatusLabels: Record<string, { label: string; color: string }> = {
+  engaged: { label: "Engaged", color: "text-green-400" },
+  contacted: { label: "Contacted", color: "text-blue-400" },
+  responded: { label: "Responded", color: "text-orange-400" },
+};
+
+function EmailHistorySection({ outreachHistory }: { outreachHistory: OutreachHistory }) {
+  const [expanded, setExpanded] = useState(false);
+  const statusInfo = outreachStatusLabels[outreachHistory.status];
+
+  return (
+    <Section icon={Mail} title="Email History">
+      <Card className="p-3 shadow-none space-y-2">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Badge variant="outline" className={cn("text-xs font-semibold", statusInfo?.color || "")}>
+              {statusInfo?.label || outreachHistory.status}
+            </Badge>
+            <span className="text-xs text-muted-foreground">
+              {outreachHistory.totalOutbound} sent &middot; {outreachHistory.totalInbound} received
+            </span>
+          </div>
+          {outreachHistory.lastActivityDate && (
+            <span className="text-xs text-muted-foreground">
+              Last: {new Date(outreachHistory.lastActivityDate).toLocaleDateString()}
+            </span>
+          )}
+        </div>
+
+        {outreachHistory.matchedContacts.length > 0 && (
+          <>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-6 px-2 text-xs text-muted-foreground gap-1"
+              onClick={() => setExpanded(!expanded)}
+            >
+              {expanded ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
+              {outreachHistory.matchedContacts.length} matched contacts
+            </Button>
+
+            {expanded && (
+              <div className="space-y-1.5">
+                {outreachHistory.matchedContacts.map((contact) => (
+                  <div key={contact.email} className="flex items-center justify-between text-xs">
+                    <div className="min-w-0">
+                      <span className="font-medium">{contact.name || contact.email}</span>
+                      {contact.title && (
+                        <span className="text-muted-foreground ml-1">({contact.title})</span>
+                      )}
+                      {contact.name && (
+                        <span className="text-muted-foreground/60 ml-1 font-mono text-[10px]">{contact.email}</span>
+                      )}
+                    </div>
+                    <div className="text-muted-foreground shrink-0 ml-2 tabular-nums">
+                      {contact.outbound > 0 && <span className="text-blue-400">{contact.outbound} out</span>}
+                      {contact.outbound > 0 && contact.inbound > 0 && <span> / </span>}
+                      {contact.inbound > 0 && <span className="text-green-400">{contact.inbound} in</span>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </>
+        )}
+      </Card>
+    </Section>
   );
 }

@@ -146,6 +146,28 @@ function SectionHeader({ title, description }: { title: string; description?: st
 // --- Main component ---
 
 export function DashboardTab({ companies, metState, engagements, ratingState, streakData, onOpenEngagement }: DashboardTabProps) {
+  // Outreach coverage stats
+  const outreachStats = useMemo(() => {
+    const withHistory = companies.filter(
+      (c) => c.outreachHistory && c.outreachHistory.status !== "no_history"
+    );
+    const engaged = companies.filter(
+      (c) => c.outreachHistory?.status === "engaged"
+    );
+    const contacted = companies.filter(
+      (c) => c.outreachHistory?.status === "contacted"
+    );
+    const responded = companies.filter(
+      (c) => c.outreachHistory?.status === "responded"
+    );
+    return {
+      totalWithHistory: withHistory.length,
+      engaged: engaged.length,
+      contacted: contacted.length,
+      responded: responded.length,
+    };
+  }, [companies]);
+
   const stats = useMemo(() => {
     const total = companies.length;
     const p0 = companies.filter((c) => c.priority <= 2);
@@ -345,6 +367,32 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
           <StatCard label="Avg Quality" value={`${stats.avgQuality}%`} sub="research completeness" />
           <StatCard label="Engagements" value={engagementStats.totalEngagements} sub={`${engagementStats.companiesEngaged} companies touched`} />
         </div>
+
+        {/* Outreach coverage stats */}
+        {outreachStats.totalWithHistory > 0 && (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <StatCard
+              label="Outreach Coverage"
+              value={outreachStats.totalWithHistory}
+              sub={`of ${stats.total} companies contacted`}
+            />
+            <StatCard
+              label="Engaged"
+              value={outreachStats.engaged}
+              sub="bidirectional comms"
+            />
+            <StatCard
+              label="Awaiting Reply"
+              value={outreachStats.contacted}
+              sub="outbound, no reply"
+            />
+            <StatCard
+              label="Responded"
+              value={outreachStats.responded}
+              sub="inbound received"
+            />
+          </div>
+        )}
 
         {/* Priority breakdown */}
         <Card className="p-4 gap-3 shadow-none space-y-3">

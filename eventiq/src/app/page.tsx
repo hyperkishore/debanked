@@ -48,6 +48,7 @@ import { SheetsSettings } from "@/components/sheets-settings";
 import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
 import { ResourcesTab } from "@/components/resources-tab";
+import { MarketingIdeasTab } from "@/components/marketing-ideas-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
 import { TaskQueueTab } from "@/components/task-queue-tab";
 import { TaskQueueState, DEFAULT_TASK_QUEUE_STATE } from "@/lib/task-queue-helpers";
@@ -659,6 +660,8 @@ export default function Home() {
         return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
       case "resources":
         return <ResourcesTab />;
+      case "marketing":
+        return <MarketingIdeasTab companies={companies} />;
       case "pipeline":
         return (
           <PipelineTab

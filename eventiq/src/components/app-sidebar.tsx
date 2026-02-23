@@ -31,7 +31,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Building2, ListChecks, BarChart3, Kanban, Rss, Map, UtensilsCrossed, Upload, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen } from "lucide-react";
+import { Building2, ListChecks, BarChart3, Kanban, Rss, Map, UtensilsCrossed, Upload, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Megaphone } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -57,6 +57,7 @@ const coreNavItems: NavItem[] = [
   { id: "feed", label: "Market Intel", icon: Rss, shortcut: "7" },
   { id: "dashboard", label: "Dashboard", icon: BarChart3, shortcut: "5" },
   { id: "schedule", label: "Today", icon: ListChecks, shortcut: "2" },
+  { id: "marketing", label: "Marketing Ideas", icon: Megaphone, shortcut: "4" },
   { id: "dinner", label: "Dinner", icon: UtensilsCrossed, shortcut: "9" },
   { id: "resources", label: "Resources", icon: BookOpen, shortcut: "3" },
 ];

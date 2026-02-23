@@ -1,6 +1,6 @@
 "use client";
 
-import { Company, getResearchScore, getResearchTier } from "@/lib/types";
+import { Company, OutreachStatus, getResearchScore, getResearchTier } from "@/lib/types";
 import { UrgencyTier } from "@/lib/outreach-score";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -69,6 +69,12 @@ const urgencyBadgeStyles: Record<UrgencyTier, string> = {
   low: "bg-muted/50 text-muted-foreground border-border",
 };
 
+const outreachBadgeStyles: Record<string, { label: string; className: string }> = {
+  engaged: { label: "Engaged", className: "bg-green-500/15 text-green-400 border-green-500/30" },
+  contacted: { label: "Contacted", className: "bg-blue-500/15 text-blue-400 border-blue-500/30" },
+  responded: { label: "Responded", className: "bg-orange-500/15 text-orange-400 border-orange-500/30" },
+};
+
 export function CompanyCard({
   company,
   isSelected,
@@ -133,6 +139,14 @@ export function CompanyCard({
                 className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0", urgencyBadgeStyles[urgencyTier])}
               >
                 {outreachScore}
+              </Badge>
+            )}
+            {company.outreachHistory && company.outreachHistory.status !== "no_history" && outreachBadgeStyles[company.outreachHistory.status] && (
+              <Badge
+                variant="outline"
+                className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0", outreachBadgeStyles[company.outreachHistory.status].className)}
+              >
+                {outreachBadgeStyles[company.outreachHistory.status].label}
               </Badge>
             )}
             {company.booth && (
