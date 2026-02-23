@@ -649,6 +649,7 @@ export default function Home() {
             engagements={engagements}
             ratingState={ratingState}
             streakData={streakData}
+            pipelineState={pipelineState}
             onOpenEngagement={handleOpenEngagementForCompany}
           />
         );

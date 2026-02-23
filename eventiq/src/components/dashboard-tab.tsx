@@ -4,6 +4,7 @@ import { Company, RatingData, EngagementEntry } from "@/lib/types";
 import { isResearched, getResearchScore } from "@/lib/types";
 import { getLastEngagement, getChannelConfig, formatEngagementTime } from "@/lib/engagement-helpers";
 import { StreakData } from "@/lib/streak-helpers";
+import { detectBreaches, type SLABreach } from "@/lib/sla-helpers";
 import { ActionFeed } from "@/components/action-feed";
 import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -19,6 +20,7 @@ interface DashboardTabProps {
   engagements: EngagementEntry[];
   ratingState: Record<string, RatingData>;
   streakData: StreakData;
+  pipelineState: Record<string, { stage: string; movedAt: string }>;
   onOpenEngagement: (companyId: number) => void;
 }
 
@@ -145,7 +147,7 @@ function SectionHeader({ title, description }: { title: string; description?: st
 
 // --- Main component ---
 
-export function DashboardTab({ companies, metState, engagements, ratingState, streakData, onOpenEngagement }: DashboardTabProps) {
+export function DashboardTab({ companies, metState, engagements, ratingState, streakData, pipelineState, onOpenEngagement }: DashboardTabProps) {
   // Outreach coverage stats
   const outreachStats = useMemo(() => {
     const withHistory = companies.filter(
@@ -167,6 +169,12 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
       responded: responded.length,
     };
   }, [companies]);
+
+  // SLA breach detection
+  const slaBreaches = useMemo(() => {
+    const companyList = companies.map((c) => ({ id: c.id, name: c.name }));
+    return detectBreaches(companyList, engagements, pipelineState);
+  }, [companies, engagements, pipelineState]);
 
   const stats = useMemo(() => {
     const total = companies.length;
@@ -359,6 +367,52 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
           streakData={streakData}
           onOpenEngagement={onOpenEngagement}
         />
+
+        {/* SLA Breach Alerts */}
+        {slaBreaches.length > 0 && (
+          <Card className="p-4 gap-3 shadow-none border-[var(--sqo)]/20 space-y-3">
+            <SectionHeader
+              title="SLA Alerts"
+              description={`${slaBreaches.length} breach${slaBreaches.length !== 1 ? "es" : ""} detected`}
+            />
+            <div className="space-y-2">
+              {slaBreaches.slice(0, 6).map((b) => (
+                <div
+                  key={`${b.slaId}-${b.companyId}`}
+                  className="flex items-center justify-between text-xs p-2 rounded-md bg-muted/20"
+                >
+                  <div className="flex items-center gap-2 min-w-0">
+                    <Badge
+                      variant="outline"
+                      className={cn(
+                        "text-xs px-1.5 py-0 h-5 shrink-0",
+                        b.severity === "critical"
+                          ? "text-[var(--sqo)] border-[var(--sqo)]/30"
+                          : b.severity === "breach"
+                            ? "text-[var(--client)] border-[var(--client)]/30"
+                            : "text-muted-foreground border-muted-foreground/30"
+                      )}
+                    >
+                      {b.severity}
+                    </Badge>
+                    <span className="truncate font-medium">{b.companyName}</span>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0 ml-2">
+                    <span className="text-muted-foreground">{b.slaLabel}</span>
+                    <span className="tabular-nums font-medium text-[var(--sqo)]">
+                      {b.hoursOverdue}h overdue
+                    </span>
+                  </div>
+                </div>
+              ))}
+              {slaBreaches.length > 6 && (
+                <p className="text-xs text-muted-foreground text-center">
+                  +{slaBreaches.length - 6} more
+                </p>
+              )}
+            </div>
+          </Card>
+        )}
 
         {/* Stat cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">

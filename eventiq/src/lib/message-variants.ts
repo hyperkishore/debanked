@@ -4,6 +4,8 @@ export interface MessageVariant {
   style: "formal" | "casual" | "news-hook";
   subject: string;
   body: string;
+  experimentId?: string;
+  variantLabel?: string;
 }
 
 export function generateMessageVariants(leader: Leader, company: Company): MessageVariant[] {
