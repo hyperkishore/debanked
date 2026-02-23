@@ -13,7 +13,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 **Version:** 3.1.02
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → `.next/` (SSR, no static export)
-**Deploy target:** AWS Amplify (SSR support)
+**Deploy target:** Vercel (auto-deploy from Git)
 
 ---
 
