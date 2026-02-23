@@ -112,7 +112,22 @@
       "deep-researched"
     ],
     "website": "https://bittyadvance.com",
-    "linkedinUrl": "https://www.linkedin.com/company/bitty-advance"
+    "linkedinUrl": "https://www.linkedin.com/company/bitty-advance",
+    "outreachHistory": {
+      "status": "contacted",
+      "totalOutbound": 2,
+      "totalInbound": 0,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "dan@bittyadvance.com",
+          "name": "",
+          "title": "",
+          "outbound": 2,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 2,
@@ -267,7 +282,78 @@
     "location": "California",
     "employees": 97,
     "website": "https://www.britecap.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/britecap-financial/"
+    "linkedinUrl": "https://www.linkedin.com/company/britecap-financial/",
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 62,
+      "totalInbound": 16,
+      "lastActivityDate": "2026-02-13T21:18:54Z",
+      "matchedContacts": [
+        {
+          "email": "pushkar.choudhuri@britecap.com",
+          "name": "Rick Henderson",
+          "title": "Co-Founder",
+          "outbound": 18,
+          "inbound": 2
+        },
+        {
+          "email": "david.chiu@britecap.com",
+          "name": "Dc",
+          "title": "Co-Founder",
+          "outbound": 13,
+          "inbound": 4
+        },
+        {
+          "email": "aimee.perez-morfin@britecap.com",
+          "name": "Rick Henderson",
+          "title": "CTO",
+          "outbound": 9,
+          "inbound": 6
+        },
+        {
+          "email": "rick.henderson@britecap.com",
+          "name": "Rick Henderson",
+          "title": "CTO",
+          "outbound": 12,
+          "inbound": 2
+        },
+        {
+          "email": "david.schneider@britecap.com",
+          "name": "Rick Henderson",
+          "title": "",
+          "outbound": 10,
+          "inbound": 0
+        },
+        {
+          "email": "murugappan.chettiar@britecap.com",
+          "name": "Murugappan Chettiar",
+          "title": "",
+          "outbound": 0,
+          "inbound": 1
+        },
+        {
+          "email": "tim.amero@britecap.com",
+          "name": "Tim Amero",
+          "title": "President",
+          "outbound": 0,
+          "inbound": 1
+        },
+        {
+          "email": "herson.ramirez@britecap.com",
+          "name": "Pushkar Choudhuri",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "jim.noel@britecap.com",
+          "name": "Pushkar Choudhuri",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 3,
@@ -405,7 +491,57 @@
     "location": "New York",
     "employees": 18,
     "website": "https://pirscapital.com",
-    "linkedinUrl": "https://www.linkedin.com/company/pirs-capital-llc/"
+    "linkedinUrl": "https://www.linkedin.com/company/pirs-capital-llc/",
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 26,
+      "totalInbound": 25,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "andrew.mallinger@pirscapital.com",
+          "name": "Aviral Gupta",
+          "title": "Co-Founder",
+          "outbound": 8,
+          "inbound": 7
+        },
+        {
+          "email": "pirsitsupport@pirscapital.com",
+          "name": "Pirs It Support",
+          "title": "Co-founder",
+          "outbound": 2,
+          "inbound": 10
+        },
+        {
+          "email": "jacob.shimon@pirscapital.com",
+          "name": "Aviral Gupta",
+          "title": "Co-Founder",
+          "outbound": 8,
+          "inbound": 3
+        },
+        {
+          "email": "sergey.kalika@pirscapital.com",
+          "name": "Aviral Gupta",
+          "title": "Co-founder",
+          "outbound": 4,
+          "inbound": 5
+        },
+        {
+          "email": "pirsdev@pirscapital.com",
+          "name": "Aviral Gupta",
+          "title": "",
+          "outbound": 2,
+          "inbound": 0
+        },
+        {
+          "email": "pirsqa@pirscapital.com",
+          "name": "Aviral Gupta",
+          "title": "",
+          "outbound": 2,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 4,
@@ -539,7 +675,36 @@
       "deep-researched"
     ],
     "website": "https://www.winglakecp.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/winglakecp"
+    "linkedinUrl": "https://www.linkedin.com/company/winglakecp",
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 2,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "sseligson@winglakecp.com",
+          "name": "Sam Seligson",
+          "title": "President",
+          "outbound": 0,
+          "inbound": 2
+        },
+        {
+          "email": "docusign@winglakecp.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "sbaum@winglakecp.com",
+          "name": "Praveen Kumar",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 5,
@@ -746,7 +911,57 @@
     "location": "Florida",
     "employees": 44,
     "website": "https://fundkite.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/fundkite/"
+    "linkedinUrl": "https://www.linkedin.com/company/fundkite/",
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 6,
+      "totalInbound": 25,
+      "lastActivityDate": "2025-10-30T20:18:05Z",
+      "matchedContacts": [
+        {
+          "email": "alex.s@fundkite.com",
+          "name": "Alex Shvarts",
+          "title": "Founder",
+          "outbound": 2,
+          "inbound": 16
+        },
+        {
+          "email": "rick.k@fundkite.com",
+          "name": "Kishore Natarajan",
+          "title": "Co-founder",
+          "outbound": 4,
+          "inbound": 7
+        },
+        {
+          "email": "chetan@fundkite.com",
+          "name": "Vignesh Krishnakumar",
+          "title": "CTO",
+          "outbound": 0,
+          "inbound": 2
+        },
+        {
+          "email": "alex.s+docs@fundkite.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "alex.sharipov@fundkite.com",
+          "name": "Alex Shvarts",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "ken.t@fundkite.com",
+          "name": "Kishore Natarajan",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 7,
@@ -1410,7 +1625,22 @@
     "location": "Florida",
     "employees": 21,
     "website": "https://elevatefunding.com",
-    "linkedinUrl": "https://www.linkedin.com/company/elevate-funding/"
+    "linkedinUrl": "https://www.linkedin.com/company/elevate-funding/",
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 5,
+      "totalInbound": 2,
+      "lastActivityDate": "2026-02-12T17:27:04Z",
+      "matchedContacts": [
+        {
+          "email": "heather@elevatefunding.com",
+          "name": "Heather Francis",
+          "title": "Co-Founder",
+          "outbound": 5,
+          "inbound": 2
+        }
+      ]
+    }
   },
   {
     "id": 14,
@@ -1535,7 +1765,22 @@
     "location": "New York",
     "employees": 35,
     "website": "https://www.velocitycg.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/velocity-capital-group-llc/"
+    "linkedinUrl": "https://www.linkedin.com/company/velocity-capital-group-llc/",
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 1,
+      "lastActivityDate": "2026-02-18T23:55:31Z",
+      "matchedContacts": [
+        {
+          "email": "jay@velocitycg.com",
+          "name": "Jay Avigdor",
+          "title": "Founder",
+          "outbound": 0,
+          "inbound": 1
+        }
+      ]
+    }
   },
   {
     "id": 15,
@@ -1821,7 +2066,29 @@
     "location": "Massachusetts",
     "employees": 306,
     "website": "https://www.forwardfinancing.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/forward-financing/"
+    "linkedinUrl": "https://www.linkedin.com/company/forward-financing/",
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 10,
+      "lastActivityDate": "2026-01-06T05:43:17Z",
+      "matchedContacts": [
+        {
+          "email": "rgupta@forwardfinancing.com",
+          "name": "Aviral Gupta",
+          "title": "Co-founder",
+          "outbound": 0,
+          "inbound": 8
+        },
+        {
+          "email": "rkolluri@forwardfinancing.com",
+          "name": "Kishore Natarajan",
+          "title": "Co-founder",
+          "outbound": 0,
+          "inbound": 2
+        }
+      ]
+    }
   },
   {
     "id": 17,
@@ -5966,7 +6233,43 @@
     "location": "New York",
     "employees": 178,
     "website": "https://www.forafinancial.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/fora-financial/"
+    "linkedinUrl": "https://www.linkedin.com/company/fora-financial/",
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 4,
+      "totalInbound": 8,
+      "lastActivityDate": "2026-02-19T15:43:10Z",
+      "matchedContacts": [
+        {
+          "email": "brian.seaman@forafinancial.com",
+          "name": "Brian Seaman",
+          "title": "Co-founder",
+          "outbound": 0,
+          "inbound": 7
+        },
+        {
+          "email": "jesse.goldman@forafinancial.com",
+          "name": "Jesse Goldman",
+          "title": "COO",
+          "outbound": 2,
+          "inbound": 1
+        },
+        {
+          "email": "michael.air@forafinancial.com",
+          "name": "",
+          "title": "",
+          "outbound": 2,
+          "inbound": 0
+        },
+        {
+          "email": "darren.oster@forafinancial.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 72,
@@ -6037,7 +6340,85 @@
     "location": "New York",
     "employees": 415,
     "website": "https://kapitus.com",
-    "linkedinUrl": "https://www.linkedin.com/company/kapitus/"
+    "linkedinUrl": "https://www.linkedin.com/company/kapitus/",
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 29,
+      "lastActivityDate": "2025-05-15T16:15:05Z",
+      "matchedContacts": [
+        {
+          "email": "tashe@kapitus.com",
+          "name": "Kishore Natarajan",
+          "title": "Head of Vendor Management",
+          "outbound": 0,
+          "inbound": 7
+        },
+        {
+          "email": "anarayan@kapitus.com",
+          "name": "Ben Johnston",
+          "title": "",
+          "outbound": 0,
+          "inbound": 6
+        },
+        {
+          "email": "bjohnston@kapitus.com",
+          "name": "Ben Johnston",
+          "title": "Co-founder",
+          "outbound": 0,
+          "inbound": 4
+        },
+        {
+          "email": "dmani@kapitus.com",
+          "name": "Dinesh Kumar Mani",
+          "title": "Co-founder",
+          "outbound": 0,
+          "inbound": 4
+        },
+        {
+          "email": "acarpenterholmes@kapitus.com",
+          "name": "Amy Carpenter Holmes",
+          "title": "Counsel",
+          "outbound": 0,
+          "inbound": 3
+        },
+        {
+          "email": "ppandurangarao@kapitus.com",
+          "name": "Arun Narayan",
+          "title": "CTO",
+          "outbound": 0,
+          "inbound": 3
+        },
+        {
+          "email": "mg@kapitus.com",
+          "name": "Murali G",
+          "title": "VP of Vendor Management",
+          "outbound": 0,
+          "inbound": 2
+        },
+        {
+          "email": "bvillere@kapitus.com",
+          "name": "Brandy Villere",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "ahaman@kapitus.com",
+          "name": "Brandy Villere",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "arun@kapitus.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 74,
@@ -7404,7 +7785,85 @@
     "location": "South Dakota",
     "employees": 72,
     "website": "https://ecg.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/expansion-capital-group/about/"
+    "linkedinUrl": "https://www.linkedin.com/company/expansion-capital-group/about/",
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 12,
+      "totalInbound": 23,
+      "lastActivityDate": "2025-05-27T23:06:36Z",
+      "matchedContacts": [
+        {
+          "email": "hchristie@ecg.com",
+          "name": "Herk Christie",
+          "title": "COO",
+          "outbound": 12,
+          "inbound": 23
+        },
+        {
+          "email": "1889@ecg.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "bkjonegaard@ecg.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "bpeter@ecg.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "jlichty@ecg.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "jmckenzie@ecg.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "kpranger@ecg.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "pmorrison@ecg.com",
+          "name": "Phil Morrison",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "tlanger@ecg.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "zcorio@ecg.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 115,
@@ -7944,7 +8403,22 @@
     "location": "Florida",
     "employees": 35,
     "website": "https://www.newcocapitalgroup.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/newcocapitalgroup/"
+    "linkedinUrl": "https://www.linkedin.com/company/newcocapitalgroup/",
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 22,
+      "totalInbound": 19,
+      "lastActivityDate": "2026-02-12T00:02:09Z",
+      "matchedContacts": [
+        {
+          "email": "zorin@newcocapitalgroup.com",
+          "name": "Zorin Dahari",
+          "title": "Director of Operations",
+          "outbound": 22,
+          "inbound": 19
+        }
+      ]
+    }
   },
   {
     "id": 132,
@@ -8425,7 +8899,22 @@
     "location": "Texas",
     "employees": 58,
     "website": "https://www.backd.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/backdbusinessfunding/"
+    "linkedinUrl": "https://www.linkedin.com/company/backdbusinessfunding/",
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 1,
+      "lastActivityDate": "2025-05-13T16:04:33Z",
+      "matchedContacts": [
+        {
+          "email": "rperales@backd.com",
+          "name": "Robert Perales",
+          "title": "",
+          "outbound": 0,
+          "inbound": 1
+        }
+      ]
+    }
   },
   {
     "id": 147,
@@ -14297,7 +14786,36 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 8,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "info@newitymarket.com",
+          "name": "Newity",
+          "title": "advisor",
+          "outbound": 0,
+          "inbound": 7
+        },
+        {
+          "email": "supportteam@newitymarket.com",
+          "name": "Support At Newity",
+          "title": "",
+          "outbound": 0,
+          "inbound": 1
+        },
+        {
+          "email": "kdunson@newitymarket.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 1047,
@@ -14524,7 +15042,22 @@
     "source": [
       "tam",
       "researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 4,
+      "totalInbound": 2,
+      "lastActivityDate": "2025-04-29T21:24:43Z",
+      "matchedContacts": [
+        {
+          "email": "mitchell@westwoodfunding.com",
+          "name": "Mitchell Seiden",
+          "title": "Co-Founder",
+          "outbound": 4,
+          "inbound": 2
+        }
+      ]
+    }
   },
   {
     "id": 1050,
@@ -16905,7 +17438,22 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "contacted",
+      "totalOutbound": 2,
+      "totalInbound": 0,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "dan@bittyadvance.com",
+          "name": "",
+          "title": "",
+          "outbound": 2,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 1079,
@@ -19089,7 +19637,36 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 14,
+      "totalInbound": 3,
+      "lastActivityDate": "2025-10-02T19:27:56Z",
+      "matchedContacts": [
+        {
+          "email": "dan@funderial.com",
+          "name": "Daniel Eaker",
+          "title": "",
+          "outbound": 5,
+          "inbound": 3
+        },
+        {
+          "email": "ian@funderial.com",
+          "name": "Daniel Eaker",
+          "title": "",
+          "outbound": 5,
+          "inbound": 0
+        },
+        {
+          "email": "daniel@funderial.com",
+          "name": "Daniel Eaker",
+          "title": "",
+          "outbound": 4,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 1105,
@@ -20029,7 +20606,22 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 2,
+      "lastActivityDate": "2026-02-13T13:51:51Z",
+      "matchedContacts": [
+        {
+          "email": "jonathank@altbanq.com",
+          "name": "Jonathan Katz",
+          "title": "",
+          "outbound": 0,
+          "inbound": 2
+        }
+      ]
+    }
   },
   {
     "id": 1119,
@@ -21349,7 +21941,85 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 71,
+      "totalInbound": 6448,
+      "lastActivityDate": "2026-02-20T20:00:39Z",
+      "matchedContacts": [
+        {
+          "email": "messaging-digest-noreply@linkedin.com",
+          "name": "Harsha Ampar Via Linkedin",
+          "title": "Founder",
+          "outbound": 1,
+          "inbound": 3587
+        },
+        {
+          "email": "newsletters-noreply@linkedin.com",
+          "name": "American Banker Via Linkedin",
+          "title": "Founder",
+          "outbound": 0,
+          "inbound": 1006
+        },
+        {
+          "email": "invitations@linkedin.com",
+          "name": "Linkedin",
+          "title": "Co-Founder",
+          "outbound": 0,
+          "inbound": 525
+        },
+        {
+          "email": "jobalerts-noreply@linkedin.com",
+          "name": "Linkedin Job Alerts",
+          "title": "Co-Founder",
+          "outbound": 0,
+          "inbound": 263
+        },
+        {
+          "email": "hit-reply@linkedin.com",
+          "name": "Luke Harris",
+          "title": "Co-Founder",
+          "outbound": 0,
+          "inbound": 251
+        },
+        {
+          "email": "messages-noreply@linkedin.com",
+          "name": "Linkedin Sales Navigator",
+          "title": "Co-Founder",
+          "outbound": 0,
+          "inbound": 214
+        },
+        {
+          "email": "editors-noreply@linkedin.com",
+          "name": "Linkedin News",
+          "title": "Co-Founder",
+          "outbound": 0,
+          "inbound": 183
+        },
+        {
+          "email": "security-noreply@linkedin.com",
+          "name": "Linkedin",
+          "title": "Co-Founder",
+          "outbound": 0,
+          "inbound": 61
+        },
+        {
+          "email": "jobs-noreply@linkedin.com",
+          "name": "Linkedin",
+          "title": "Co-Founder",
+          "outbound": 0,
+          "inbound": 50
+        },
+        {
+          "email": "rroy@linkedin.com",
+          "name": "Rahul Roy",
+          "title": "Recruiter",
+          "outbound": 8,
+          "inbound": 32
+        }
+      ]
+    }
   },
   {
     "id": 1168,
@@ -23033,7 +23703,29 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "engaged",
+      "totalOutbound": 3,
+      "totalInbound": 3,
+      "lastActivityDate": "2021-12-21T20:59:46Z",
+      "matchedContacts": [
+        {
+          "email": "esaraccini@founderpath.com",
+          "name": "Edwin Saraccini",
+          "title": "Co-Founder",
+          "outbound": 1,
+          "inbound": 2
+        },
+        {
+          "email": "nathan@founderpath.com",
+          "name": "Nathan Latka",
+          "title": "Founder",
+          "outbound": 2,
+          "inbound": 1
+        }
+      ]
+    }
   },
   {
     "id": 1230,
@@ -23172,7 +23864,36 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 11,
+      "lastActivityDate": "2026-02-20T22:43:53Z",
+      "matchedContacts": [
+        {
+          "email": "gerard@fundfimerchantfunding.com",
+          "name": "Gerard Lucero",
+          "title": "Owner",
+          "outbound": 0,
+          "inbound": 8
+        },
+        {
+          "email": "natasha@fundfimerchantfunding.com",
+          "name": "Natasha D",
+          "title": "Owner",
+          "outbound": 0,
+          "inbound": 3
+        },
+        {
+          "email": "dylan@fundfimerchantfunding.com",
+          "name": "Natasha D",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 1235,
@@ -25700,7 +26421,22 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 1,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "nepfinteam@nepfin.com",
+          "name": "Nepfin Team",
+          "title": "",
+          "outbound": 0,
+          "inbound": 1
+        }
+      ]
+    }
   },
   {
     "id": 1330,
@@ -28005,7 +28741,22 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 1,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "nabil@thesmartermerchant.com",
+          "name": "Nabil Aziz",
+          "title": "",
+          "outbound": 0,
+          "inbound": 1
+        }
+      ]
+    }
   },
   {
     "id": 1417,
@@ -28803,7 +29554,36 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 2,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "sseligson@winglakecp.com",
+          "name": "Sam Seligson",
+          "title": "President",
+          "outbound": 0,
+          "inbound": 2
+        },
+        {
+          "email": "docusign@winglakecp.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "sbaum@winglakecp.com",
+          "name": "Praveen Kumar",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 1447,
@@ -29647,7 +30427,22 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 1,
+      "lastActivityDate": null,
+      "matchedContacts": [
+        {
+          "email": "nabil@thesmartermerchant.com",
+          "name": "Nabil Aziz",
+          "title": "",
+          "outbound": 0,
+          "inbound": 1
+        }
+      ]
+    }
   },
   {
     "id": 1472,
@@ -29994,7 +30789,22 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 1,
+      "lastActivityDate": "2023-11-10T09:35:19Z",
+      "matchedContacts": [
+        {
+          "email": "andy.gordon@liberis.com",
+          "name": "Andy Gordon",
+          "title": "Head of Legal",
+          "outbound": 0,
+          "inbound": 1
+        }
+      ]
+    }
   },
   {
     "id": 1483,
@@ -33040,7 +33850,22 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 1,
+      "lastActivityDate": "2023-07-20T21:21:42Z",
+      "matchedContacts": [
+        {
+          "email": "hello@quick-capitalfunding.com",
+          "name": "Quick Capital Funding",
+          "title": "",
+          "outbound": 0,
+          "inbound": 1
+        }
+      ]
+    }
   },
   {
     "id": 1545,
@@ -38783,7 +39608,36 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "outreachHistory": {
+      "status": "responded",
+      "totalOutbound": 0,
+      "totalInbound": 3,
+      "lastActivityDate": "2022-05-04T19:36:46Z",
+      "matchedContacts": [
+        {
+          "email": "ragupta@lendingclub.com",
+          "name": "Ravi Kumar Gupta",
+          "title": "",
+          "outbound": 0,
+          "inbound": 3
+        },
+        {
+          "email": "kgaston@lendingclub.com",
+          "name": "",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        },
+        {
+          "email": "nhu@lendingclub.com",
+          "name": "Ni Hu",
+          "title": "",
+          "outbound": 0,
+          "inbound": 0
+        }
+      ]
+    }
   },
   {
     "id": 1692,

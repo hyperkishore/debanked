@@ -133,6 +133,7 @@ export interface Company {
   website?: string;
   linkedinUrl?: string;
   source: string[];
+  outreachHistory?: OutreachHistory;
 }
 
 export function isResearched(c: Company): boolean {
@@ -179,7 +180,7 @@ export function getResearchTier(score: number): ResearchTier {
 export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'Researched' | 'Unresearched';
 export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees' | 'quality' | 'outreach';
 export type ViewType = 'cards' | 'table';
-export type TabType = 'companies' | 'schedule' | 'resources' | 'dashboard' | 'pipeline' | 'feed' | 'map' | 'dinner';
+export type TabType = 'companies' | 'schedule' | 'resources' | 'marketing' | 'dashboard' | 'pipeline' | 'feed' | 'map' | 'dinner';
 
 export type Rating = 'hot' | 'warm' | 'cold' | '';
 export type FollowUp = 'demo' | 'email' | 'intro' | 'none';
@@ -242,6 +243,34 @@ export interface ReferralMap {
 export interface ChecklistItem {
   key: string;
   label: string;
+}
+
+// Outreach history from email cross-reference
+export type OutreachStatus = 'engaged' | 'contacted' | 'responded' | 'no_history';
+
+export interface OutreachContact {
+  email: string;
+  name: string;
+  title: string;
+  outbound: number;
+  inbound: number;
+}
+
+export interface OutreachHistory {
+  status: OutreachStatus;
+  totalOutbound: number;
+  totalInbound: number;
+  lastActivityDate?: string;
+  matchedContacts: OutreachContact[];
+}
+
+// Company evaluation metrics for market map
+export interface CompanyMetrics {
+  fitScore: number;      // 0-100: ICP match quality
+  intentScore: number;   // 0-100: buying signals strength
+  accessScore: number;   // 0-100: decision-maker reachability
+  timingScore: number;   // 0-100: urgency/recency signals
+  composite: number;     // weighted average
 }
 
 // Engagement tracking types

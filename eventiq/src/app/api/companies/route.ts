@@ -68,6 +68,7 @@ export async function GET(request: NextRequest) {
     website: row.website,
     linkedinUrl: row.linkedin_url,
     source: row.source || [],
+    outreachHistory: row.outreach_history || undefined,
   }));
 
   return NextResponse.json(companies);
