@@ -110,9 +110,11 @@ export async function flushSyncQueue(): Promise<number> {
       } else if (op.operation === "delete") {
         // Expects data to have filter keys, e.g. { id: "..." }
         const id = op.data.id;
-        if (id) {
-          result = await supabase.from(op.table).delete().eq("id", id);
+        if (!id) {
+          // Skip delete ops without an id — don't count as success
+          continue;
         }
+        result = await supabase.from(op.table).delete().eq("id", id);
       }
 
       if (result?.error) {
@@ -134,6 +136,19 @@ export async function flushSyncQueue(): Promise<number> {
     setStatus("pending");
   } else {
     setStatus("idle");
+  }
+
+  // Persist sync stats to localStorage
+  try {
+    const stats = {
+      lastFlush: new Date().toISOString(),
+      sent,
+      failed: failed.length,
+      pending: failed.length,
+    };
+    localStorage.setItem("eventiq_sync_stats", JSON.stringify(stats));
+  } catch {
+    // ignore storage errors
   }
 
   return sent;

@@ -69,20 +69,33 @@ export default function Home() {
   // Companies loaded from API
   const [apiCompanies, setApiCompanies] = useState<Company[]>([]);
   const [companiesLoading, setCompaniesLoading] = useState(true);
+  const [companiesError, setCompaniesError] = useState<string | null>(null);
 
-  useEffect(() => {
+  const fetchCompanies = useCallback(() => {
+    setCompaniesLoading(true);
+    setCompaniesError(null);
     fetch("/api/companies")
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {
           setApiCompanies(data);
+        } else if (data?.error) {
+          setCompaniesError(data.error);
         }
       })
       .catch((err) => {
         console.warn("[EventIQ] Failed to fetch companies from API:", err);
+        setCompaniesError(err instanceof Error ? err.message : String(err));
       })
       .finally(() => setCompaniesLoading(false));
   }, []);
+
+  useEffect(() => {
+    fetchCompanies();
+  }, [fetchCompanies]);
 
   // State
   const [activeTab, setActiveTab] = useState<TabType>("companies");
@@ -198,9 +211,9 @@ export default function Home() {
   // Compute streak data from engagements
   const streakData = useMemo<StreakData>(() => computeStreak(engagements), [engagements]);
 
-  // Auto-infer pipeline stages on first load (only if pipeline state is empty)
+  // Auto-infer pipeline stages on first load (only if pipeline state is empty and companies loaded)
   useEffect(() => {
-    if (Object.keys(pipelineState).length > 0) return;
+    if (Object.keys(pipelineState).length > 0 || companies.length === 0) return;
     const inferred: Record<string, PipelineRecord> = {};
     for (const c of companies) {
       inferred[c.id] = {
@@ -209,7 +222,7 @@ export default function Home() {
       };
     }
     setPipelineState(inferred);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [companies.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Register service worker
   useEffect(() => {
@@ -733,6 +746,23 @@ export default function Home() {
             </Button>
           </div>
         </div>
+
+        {/* Error banner */}
+        {companiesError && (
+          <div className="mx-4 mt-2 p-3 rounded-lg bg-destructive/10 border border-destructive/30 flex items-center justify-between gap-3">
+            <p className="text-xs text-destructive">
+              Failed to load companies: {companiesError}
+            </p>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={fetchCompanies}
+              className="shrink-0 text-xs"
+            >
+              Retry
+            </Button>
+          </div>
+        )}
 
         {/* Main content area */}
         <div className="flex-1 min-h-0 overflow-hidden">

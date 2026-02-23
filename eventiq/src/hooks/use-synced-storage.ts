@@ -318,6 +318,8 @@ export function useSyncedStorage<T>(key: string, initialValue: T) {
   const [storedValue, setStoredValue] = useState<T>(initialValue);
   const [isHydrated, setIsHydrated] = useState(false);
   const latestValue = useRef<T>(initialValue);
+  // Track keys that have pending local writes — don't let Supabase overwrite them during merge
+  const pendingWriteKeys = useRef<Set<string>>(new Set());
 
   // Load from localStorage on mount (same as useLocalStorage)
   useEffect(() => {
@@ -377,15 +379,30 @@ export function useSyncedStorage<T>(key: string, initialValue: T) {
           window.localStorage.setItem(key, JSON.stringify(mergedValue));
         } catch {}
       } else {
-        // Record/scalar: Supabase wins (last-writer-wins)
-        const mergedValue = (typeof remoteValue === "object" && remoteValue !== null && !Array.isArray(remoteValue))
-          ? { ...(latestValue.current as object), ...(remoteValue as object) } as T
-          : remoteValue;
-        setStoredValue(mergedValue);
-        latestValue.current = mergedValue;
-        try {
-          window.localStorage.setItem(key, JSON.stringify(mergedValue));
-        } catch {}
+        // Record/scalar: Supabase wins (last-writer-wins), but protect pending local writes
+        if (typeof remoteValue === "object" && remoteValue !== null && !Array.isArray(remoteValue)) {
+          const local = latestValue.current as Record<string, unknown>;
+          const remote = remoteValue as Record<string, unknown>;
+          const merged: Record<string, unknown> = { ...local, ...remote };
+          // For keys with pending writes, keep local value instead of remote
+          for (const pendingKey of pendingWriteKeys.current) {
+            if (pendingKey in local) {
+              merged[pendingKey] = local[pendingKey];
+            }
+          }
+          const mergedValue = merged as T;
+          setStoredValue(mergedValue);
+          latestValue.current = mergedValue;
+          try {
+            window.localStorage.setItem(key, JSON.stringify(mergedValue));
+          } catch {}
+        } else {
+          setStoredValue(remoteValue);
+          latestValue.current = remoteValue;
+          try {
+            window.localStorage.setItem(key, JSON.stringify(remoteValue));
+          } catch {}
+        }
       }
 
       // Flush any pending writes while we're at it
@@ -428,6 +445,13 @@ export function useSyncedStorage<T>(key: string, initialValue: T) {
         const mapping = TABLE_MAPPINGS[key];
         if (!mapping) return;
 
+        // Track this key as having a pending write
+        if (typeof valueToStore === "object" && valueToStore !== null && !Array.isArray(valueToStore)) {
+          for (const k of Object.keys(valueToStore as Record<string, unknown>)) {
+            pendingWriteKeys.current.add(k);
+          }
+        }
+
         const supabase = getSupabase();
         if (!supabase) return;
 
@@ -443,8 +467,10 @@ export function useSyncedStorage<T>(key: string, initialValue: T) {
               conflict: mapping.conflict,
             });
           }
-          // Try to flush immediately (non-blocking)
-          flushSyncQueue();
+          // Try to flush immediately (non-blocking), then clear pending keys
+          flushSyncQueue().then(() => {
+            pendingWriteKeys.current.clear();
+          });
         });
       } catch (error) {
         console.warn(`Error setting localStorage key "${key}":`, error);

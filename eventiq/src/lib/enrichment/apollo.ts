@@ -15,11 +15,13 @@ export interface ApolloEnrichment {
   };
   industry: string | null;
   foundedYear: number | null;
+  errorCode?: string;
 }
 
 /**
  * Enrich a company using Apollo.io API.
  * Requires APOLLO_API_KEY env var.
+ * Returns { data, errorCode } discriminating 401/429/404/500.
  */
 export async function enrichCompanyViaApollo(
   companyDomain: string
@@ -44,8 +46,22 @@ export async function enrichCompanyViaApollo(
     );
 
     if (!res.ok) {
+      const errorCode =
+        res.status === 401 ? "UNAUTHORIZED" :
+        res.status === 429 ? "RATE_LIMITED" :
+        res.status === 404 ? "NOT_FOUND" :
+        `HTTP_${res.status}`;
       console.error(`[Apollo] HTTP ${res.status} for ${companyDomain}`);
-      return null;
+      return {
+        employeeCount: null,
+        revenueEstimate: null,
+        fundingRounds: [],
+        techStack: [],
+        socialLinks: { linkedin: null, twitter: null, facebook: null },
+        industry: null,
+        foundedYear: null,
+        errorCode,
+      };
     }
 
     const data = await res.json();

@@ -41,15 +41,13 @@ export async function syncToSheets(type: SyncEventType, payload: Record<string, 
   };
 
   try {
-    const res = await fetch(config.url, {
+    // Use server-side proxy to avoid no-cors limitations
+    const res = await fetch('/api/sheets-proxy', {
       method: 'POST',
-      mode: 'no-cors', // Apps Script doesn't support CORS preflight
-      headers: { 'Content-Type': 'text/plain' }, // avoid preflight
-      body: JSON.stringify(event),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: config.url, event }),
     });
-    // no-cors means we can't read the response, but if fetch didn't throw, it sent
-    void res;
-    return true;
+    return res.ok;
   } catch {
     // Queue for retry
     queueEvent(event);
@@ -84,13 +82,12 @@ export async function flushQueue(): Promise<number> {
 
     for (const event of queue) {
       try {
-        await fetch(config.url, {
+        const res = await fetch('/api/sheets-proxy', {
           method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'text/plain' },
-          body: JSON.stringify(event),
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ url: config.url, event }),
         });
-        sent++;
+        if (res.ok) sent++;
       } catch {
         failed.push(event);
       }
@@ -106,13 +103,13 @@ export async function flushQueue(): Promise<number> {
 /** Test connection by sending a ping. Returns true if fetch didn't throw. */
 export async function testConnection(url: string): Promise<boolean> {
   try {
-    await fetch(url, {
+    const event = { type: 'ping', payload: {}, timestamp: new Date().toISOString() };
+    const res = await fetch('/api/sheets-proxy', {
       method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify({ type: 'ping', payload: {}, timestamp: new Date().toISOString() }),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url, event }),
     });
-    return true;
+    return res.ok;
   } catch {
     return false;
   }
