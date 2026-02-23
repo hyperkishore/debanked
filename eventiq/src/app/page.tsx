@@ -19,7 +19,7 @@ import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { FollowUpData, SentimentData } from "@/components/engagement-log";
 import { SequenceProgress } from "@/lib/sequence-helpers";
 import { Skeleton } from "@/components/ui/skeleton";
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import {
   ResizablePanelGroup,
   ResizablePanel,
@@ -47,22 +47,23 @@ import { FeedbackWidget } from "@/components/feedback-widget";
 import { SheetsSettings } from "@/components/sheets-settings";
 import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
-import { PitchTab } from "@/components/pitch-tab";
+import { ResourcesTab } from "@/components/resources-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
 import { TaskQueueTab } from "@/components/task-queue-tab";
 import { TaskQueueState, DEFAULT_TASK_QUEUE_STATE } from "@/lib/task-queue-helpers";
-import { ChecklistTab } from "@/components/checklist-tab";
 import { DashboardTab } from "@/components/dashboard-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
 import { FeedTab } from "@/components/feed-tab";
 import { MarketMapTab } from "@/components/market-map-tab";
 import { useSyncedStorage } from "@/hooks/use-synced-storage";
+import { useDeveloperMode } from "@/hooks/use-developer-mode";
 import { useKeyboard } from "@/hooks/use-keyboard";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { toast } from "sonner";
 
 export default function Home() {
   const isMobile = useIsMobile();
+  const { devMode, toggleDevMode } = useDeveloperMode();
 
   // Companies loaded from API
   const [apiCompanies, setApiCompanies] = useState<Company[]>([]);
@@ -89,7 +90,6 @@ export default function Home() {
   const [activeSort, setActiveSort] = useState<SortType>("priority");
   const [activeView, setActiveView] = useState<ViewType>("cards");
   const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery] = useState("");
   const [activeTagFilter, setActiveTagFilter] = useState<string | null>(null);
   const [ratingDialogOpen, setRatingDialogOpen] = useState(false);
   const [ratingCompanyId, setRatingCompanyId] = useState<number | null>(null);
@@ -106,14 +106,6 @@ export default function Home() {
   const [notesState, setNotesState] = useSyncedStorage<Record<string, string>>(
     "eventiq_notes",
     {}
-  );
-  const [checkState, setCheckState] = useSyncedStorage<Record<string, boolean>>(
-    "eventiq_checks",
-    {}
-  );
-  const [quickNotes, setQuickNotes] = useSyncedStorage<string>(
-    "eventiq_quick_notes",
-    ""
   );
   const [engagements, setEngagements] = useSyncedStorage<EngagementEntry[]>(
     "eventiq_engagements",
@@ -176,7 +168,6 @@ export default function Home() {
     for (const imp of importedCompanies) {
       const existingIdx = existingById.get(imp.id);
       if (existingIdx !== undefined) {
-        // Merge: imported fields override existing empty fields
         const existing = merged[existingIdx];
         merged[existingIdx] = {
           ...existing,
@@ -259,7 +250,6 @@ export default function Home() {
         setRatingCompanyId(id);
         setRatingDialogOpen(true);
       }
-      // Sync to Google Sheets
       const companyName = companies.find((c) => c.id === id)?.name || '';
       syncToSheets('met', { companyId: id, companyName, met: !wasMet });
     },
@@ -280,13 +270,6 @@ export default function Home() {
       }
     },
     [ratingCompanyId, setRatingState]
-  );
-
-  const handleToggleCheck = useCallback(
-    (key: string) => {
-      setCheckState((prev) => ({ ...prev, [key]: !prev[key] }));
-    },
-    [setCheckState]
   );
 
   // Tag handlers
@@ -337,7 +320,6 @@ export default function Home() {
 
       setEngagements((prev) => [...prev, entry]);
 
-      // Sync to Google Sheets
       const companyName = companies.find((c) => c.id === entry.companyId)?.name || '';
       syncToSheets('engagement', {
         companyId: entry.companyId,
@@ -349,7 +331,6 @@ export default function Home() {
         source: entry.source,
       });
 
-      // Create follow-up if provided
       if (followUp) {
         const reminder: FollowUpReminder = {
           id: crypto.randomUUID(),
@@ -362,14 +343,12 @@ export default function Home() {
         setFollowUps((prev) => [...prev, reminder]);
       }
 
-      // Auto-advance pipeline stage from sentiment — preserves deal data
       if (sentimentData) {
         const currentRecord = pipelineState[entry.companyId];
         const currentStage = currentRecord?.stage || 'researched';
         const stageOrder = ['researched', 'contacted', 'engaged', 'demo', 'proposal', 'won', 'lost'];
         const currentIdx = stageOrder.indexOf(currentStage);
         const newIdx = stageOrder.indexOf(sentimentData.pipelineStage);
-        // Only advance forward, never go backward
         if (newIdx > currentIdx) {
           setPipelineState((prev) => ({
             ...prev,
@@ -383,23 +362,17 @@ export default function Home() {
         }
       }
 
-      // Check milestones after adding
       const newTotal = prevTotal + 1;
       const milestone = checkMilestone(prevTotal, newTotal);
       if (milestone) {
-        toast.success(`${milestone.emoji} ${milestone.label}`, {
-          duration: 4000,
-        });
+        toast.success(`${milestone.emoji} ${milestone.label}`, { duration: 4000 });
       }
 
-      // Check streak milestones after a brief delay (streak recomputes async)
       setTimeout(() => {
         const newStreak = computeStreak([...engagements, entry]);
         const streakMilestone = checkStreakMilestone(prevStreak, newStreak.currentStreak);
         if (streakMilestone) {
-          toast.success(`${streakMilestone.emoji} ${streakMilestone.label}`, {
-            duration: 4000,
-          });
+          toast.success(`${streakMilestone.emoji} ${streakMilestone.label}`, { duration: 4000 });
         }
       }, 100);
     },
@@ -413,7 +386,6 @@ export default function Home() {
     [setEngagements]
   );
 
-  // Quick-log from message draft copy toast
   const handleQuickLog = useCallback(
     (contactName: string, channel: EngagementChannel, action: string) => {
       if (!selectedId) return;
@@ -433,10 +405,8 @@ export default function Home() {
     [selectedId, handleAddEngagement]
   );
 
-  // Sequence step handler
   const handleSequenceStep = useCallback(
     (companyId: number, stepId: string, channel: EngagementChannel, action: string) => {
-      // Mark step complete in sequence progress
       setSequences((prev) => {
         const existing = prev[companyId];
         const completedSteps = existing?.completedSteps || [];
@@ -452,7 +422,6 @@ export default function Home() {
         };
       });
 
-      // Auto-log engagement
       const company = companies.find((c) => c.id === companyId);
       const contactName = company?.leaders?.[0]?.n || company?.contacts?.[0]?.n || 'Unknown';
       const entry: EngagementEntry = {
@@ -466,7 +435,6 @@ export default function Home() {
         source: 'manual',
       };
       handleAddEngagement(entry);
-      // Sync sequence step to Google Sheets
       syncToSheets('sequence', {
         companyId,
         companyName: company?.name || '',
@@ -480,7 +448,6 @@ export default function Home() {
     [setSequences, companies, handleAddEngagement]
   );
 
-  // Follow-up handlers
   const handleSnooze = useCallback(
     (followUpId: string, newDate: string) => {
       setFollowUps((prev) =>
@@ -501,7 +468,6 @@ export default function Home() {
     [setFollowUps]
   );
 
-  // Open engagement from action feed / TodayActions (select company first, then open dialog)
   const handleOpenEngagementForCompany = useCallback(
     (companyId: number) => {
       setSelectedId(companyId);
@@ -509,7 +475,6 @@ export default function Home() {
       if (isMobile) {
         setMobileDetailOpen(true);
       }
-      // Slight delay so company selection propagates
       setTimeout(() => setEngagementDialogOpen(true), 100);
     },
     [isMobile]
@@ -521,7 +486,6 @@ export default function Home() {
         const all = [...prev];
         const existingById = new Map(all.map((c, idx) => [c.id, idx]));
 
-        // Add/update updated companies
         for (const u of updatedCompanies) {
           const idx = existingById.get(u.id);
           if (idx !== undefined) {
@@ -531,7 +495,6 @@ export default function Home() {
           }
         }
 
-        // Add new companies
         for (const n of newCompanies) {
           all.push(n);
         }
@@ -566,7 +529,6 @@ export default function Home() {
         resolved: false,
       };
 
-      // Count pending including this new message
       const newPending = getPendingCount(chatMessages) + 1;
 
       const botMsg: ChatMessage = {
@@ -585,7 +547,6 @@ export default function Home() {
     setChatMessages([]);
   }, [setChatMessages]);
 
-  // Pipeline move handler — preserves dealValue and closeDate
   const handlePipelineMove = useCallback(
     (companyId: number, newStage: PipelineStage) => {
       const oldStage = pipelineState[companyId]?.stage || 'researched';
@@ -599,14 +560,12 @@ export default function Home() {
           closeDate: existing?.closeDate,
         },
       }));
-      // Sync to Google Sheets
       const companyName = companies.find((c) => c.id === companyId)?.name || '';
       syncToSheets('pipeline', { companyId, companyName, oldStage, newStage });
     },
     [setPipelineState, pipelineState, companies]
   );
 
-  // Deal value + close date update handler
   const handleUpdateDeal = useCallback(
     (companyId: number, dealValue: number | undefined, closeDate: string | undefined) => {
       setPipelineState((prev) => {
@@ -623,43 +582,6 @@ export default function Home() {
     },
     [setPipelineState]
   );
-
-  const allNotesExport = useMemo(() => {
-    const lines: string[] = ["EventIQ Notes Export", "=".repeat(40), ""];
-    companies.forEach((c) => {
-      const met = metState[c.id];
-      const rating = ratingState[c.id];
-      const notes = notesState[c.id];
-      const companyEngagements = getCompanyEngagements(engagements, c.id);
-      if (met || notes || companyEngagements.length > 0) {
-        lines.push(`## ${c.name} (${c.type})`);
-        if (met)
-          lines.push(
-            `Status: Met${rating?.rating ? ` - ${rating.rating.toUpperCase()}` : ""}`
-          );
-        if (rating?.followUps?.length)
-          lines.push(`Follow-up: ${rating.followUps.join(", ")}`);
-        if (rating?.careAbout) lines.push(`Care about: ${rating.careAbout}`);
-        if (rating?.promised) lines.push(`Promised: ${rating.promised}`);
-        if (rating?.personal) lines.push(`Personal: ${rating.personal}`);
-        if (notes) lines.push(`Notes: ${notes}`);
-        if (companyEngagements.length > 0) {
-          lines.push("Engagement Log:");
-          companyEngagements.forEach((e) => {
-            const date = new Date(e.timestamp).toLocaleDateString("en-US", { month: "short", day: "numeric" });
-            const action = e.action.split("_").join(" ");
-            const detail = e.notes ? ` — ${e.notes}` : "";
-            lines.push(`- ${date}: ${e.channel} / ${action} with ${e.contactName}${detail}`);
-          });
-        }
-        lines.push("");
-      }
-    });
-    if (quickNotes) {
-      lines.push("## Quick Notes", quickNotes, "");
-    }
-    return lines.join("\n");
-  }, [metState, ratingState, notesState, quickNotes, engagements]);
 
   // Keyboard navigation
   const sortedCompanyIds = useMemo(() => {
@@ -702,6 +624,18 @@ export default function Home() {
     },
   });
 
+  // Tab labels for desktop header breadcrumb
+  const tabLabels: Record<TabType, string> = {
+    companies: "Companies",
+    map: "Market Map",
+    feed: "Market Intel",
+    dashboard: "Dashboard",
+    pipeline: "Pipeline",
+    schedule: "Today",
+    dinner: "Dinner",
+    resources: "Resources",
+  };
+
   // Content rendering based on active tab
   const renderContent = () => {
     switch (activeTab) {
@@ -735,18 +669,8 @@ export default function Home() {
         );
       case "dinner":
         return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
-      case "pitch":
-        return <PitchTab />;
-      case "checklist":
-        return (
-          <ChecklistTab
-            checkState={checkState}
-            onToggleCheck={handleToggleCheck}
-            quickNotes={quickNotes}
-            onQuickNotesChange={setQuickNotes}
-            allNotes={allNotesExport}
-          />
-        );
+      case "resources":
+        return <ResourcesTab />;
       case "pipeline":
         return (
           <PipelineTab
@@ -793,10 +717,22 @@ export default function Home() {
           metCount={metCount}
           totalCount={companies.length}
           streakData={streakData}
+          devMode={devMode}
+          onToggleDevMode={toggleDevMode}
+          activeFilter={activeFilter}
+          onFilterChange={setActiveFilter}
         />
       </div>
 
       <SidebarInset className="h-screen flex flex-col">
+        {/* Desktop header with sidebar trigger */}
+        <div className="hidden md:flex items-center h-10 px-2 border-b border-border gap-2">
+          <SidebarTrigger />
+          <span className="text-xs font-medium text-muted-foreground">
+            {tabLabels[activeTab] || "EventIQ"}
+          </span>
+        </div>
+
         {/* Mobile header */}
         <div className="flex items-center justify-between px-4 h-12 border-b border-border md:hidden">
           <h1 className="text-sm font-bold">EventIQ</h1>
@@ -855,7 +791,6 @@ export default function Home() {
                       activeFilter={activeFilter}
                       activeSort={activeSort}
                       activeView={activeView}
-                      searchQuery={searchQuery}
                       onSelect={handleSelect}
                       onToggleMet={handleToggleMet}
                       onFilterChange={setActiveFilter}
@@ -916,7 +851,6 @@ export default function Home() {
                   activeFilter={activeFilter}
                   activeSort={activeSort}
                   activeView={activeView}
-                  searchQuery={searchQuery}
                   onSelect={handleSelect}
                   onToggleMet={handleToggleMet}
                   onFilterChange={setActiveFilter}
@@ -1020,25 +954,31 @@ export default function Home() {
         onImport={handleImportCompanies}
       />
 
-      {/* Chat widget — floating input capture */}
-      <ChatFab
-        pendingCount={getPendingCount(chatMessages)}
-        onClick={() => setChatOpen(true)}
-      />
-      <ChatWidget
-        open={chatOpen}
-        onOpenChange={setChatOpen}
-        messages={chatMessages}
-        onSendMessage={handleSendChatMessage}
-        onClearMessages={handleClearChat}
-        currentContext={chatContext}
-      />
+      {/* Chat widget — dev mode only */}
+      {devMode && (
+        <>
+          <ChatFab
+            pendingCount={getPendingCount(chatMessages)}
+            onClick={() => setChatOpen(true)}
+          />
+          <ChatWidget
+            open={chatOpen}
+            onOpenChange={setChatOpen}
+            messages={chatMessages}
+            onSendMessage={handleSendChatMessage}
+            onClearMessages={handleClearChat}
+            currentContext={chatContext}
+          />
+        </>
+      )}
 
-      {/* Feedback widget */}
-      <FeedbackWidget
-        companyName={selectedCompany?.name}
-        currentTab={activeTab}
-      />
+      {/* Feedback widget — dev mode only */}
+      {devMode && (
+        <FeedbackWidget
+          companyName={selectedCompany?.name}
+          currentTab={activeTab}
+        />
+      )}
 
       {/* Sheets sync settings */}
       <SheetsSettings

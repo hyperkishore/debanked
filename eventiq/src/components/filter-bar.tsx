@@ -4,7 +4,7 @@ import { FilterType, SortType, ViewType } from "@/lib/types";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { LayoutGrid, Table2, ArrowUpDown, Download, X } from "lucide-react";
+import { LayoutGrid, Table2, ArrowUpDown, X } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface FilterBarProps {
@@ -17,7 +17,6 @@ interface FilterBarProps {
   totalCount: number;
   filteredCount: number;
   metCount: number;
-  onExportCsv?: () => void;
   availableTags?: string[];
   activeTagFilter?: string | null;
   onTagFilterChange?: (tag: string | null) => void;
@@ -46,7 +45,6 @@ export function FilterBar({
   totalCount,
   filteredCount,
   metCount,
-  onExportCsv,
   availableTags = [],
   activeTagFilter,
   onTagFilterChange,
@@ -66,8 +64,8 @@ export function FilterBar({
 
   return (
     <div className="flex flex-col gap-1.5 px-3 py-2 border-b border-border">
-      {/* Filter pills - horizontally scrollable */}
-      <div className="overflow-x-auto scrollbar-none">
+      {/* Filter pills - mobile only (desktop uses sidebar filters) */}
+      <div className="overflow-x-auto scrollbar-none md:hidden">
         <ToggleGroup
           type="single"
           value={activeFilter}
@@ -155,21 +153,6 @@ export function FilterBar({
             </TooltipTrigger>
             <TooltipContent>{activeView === "cards" ? "Switch to table" : "Switch to cards"}</TooltipContent>
           </Tooltip>
-          {onExportCsv && (
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="h-6 w-6 p-0"
-                  onClick={onExportCsv}
-                >
-                  <Download className="h-3.5 w-3.5" />
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Export filtered list as CSV</TooltipContent>
-            </Tooltip>
-          )}
         </div>
       </div>
     </div>

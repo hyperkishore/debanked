@@ -10,10 +10,34 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 3.0.00
+**Version:** 3.1.00
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → `.next/` (SSR, no static export)
 **Deploy target:** AWS Amplify (SSR support)
+
+---
+
+## Session Start — MANDATORY
+
+**CRITICAL: At the start of EVERY coding session on this project, read these three files before doing any work:**
+
+1. **`../bugs.md`** — Bug register with severity, evidence, and fix options. Check for Critical/High items that may relate to the current task.
+2. **`../improvements.md`** — Improvement plan with priorities (P0/P1/P2), implementation guidance, and acceptance criteria.
+3. **`../ROADMAP.md`** — Combined product vision + engineering execution plan. Understand what phase we're in and what's prioritized.
+
+**During development:**
+- If you discover a new bug, add it to `../bugs.md` following the existing format (BUG-XXX with severity, evidence, impact, fix options).
+- If you identify an improvement opportunity, add it to `../improvements.md` following the existing format (IMP-XXX with priority, evidence, rationale).
+- If you complete a bug fix or improvement, update the status in the respective file and note what was done.
+- If product direction or priorities change during a conversation, update `../ROADMAP.md` accordingly.
+- When ideating on new features or architecture, check the roadmap first to ensure alignment with the current phase and priorities.
+
+**File locations (relative to eventiq/):**
+```
+../bugs.md           — Bug register
+../improvements.md   — Improvement plan
+../ROADMAP.md        — Product roadmap (vision + engineering execution)
+```
 
 ---
 
