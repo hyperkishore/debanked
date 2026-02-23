@@ -15,6 +15,7 @@ import {
   SidebarMenuItem,
   SidebarHeader,
   SidebarTrigger,
+  useSidebar,
 } from "@/components/ui/sidebar";
 import { Badge } from "@/components/ui/badge";
 import { Kbd } from "@/components/ui/kbd";
@@ -90,6 +91,7 @@ export function AppSidebar({
   onFilterChange,
 }: AppSidebarProps) {
   const { user, isConfigured, signIn, signOut } = useAuth();
+  const { toggleSidebar } = useSidebar();
 
   const navItems = devMode ? [...coreNavItems, ...devNavItems] : coreNavItems;
 
@@ -97,7 +99,11 @@ export function AppSidebar({
     <Sidebar collapsible="icon" className="border-r border-sidebar-border">
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center shrink-0">
+          <div
+            className="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center shrink-0 cursor-pointer hover:bg-brand/30 transition-colors"
+            onClick={toggleSidebar}
+            title="Toggle sidebar"
+          >
             <span className="text-brand font-bold text-sm">EQ</span>
           </div>
           <div className="flex-1 min-w-0 group-data-[collapsible=icon]:hidden">
@@ -268,7 +274,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.1.01</span>
+              <span className="opacity-50">v3.1.02</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
