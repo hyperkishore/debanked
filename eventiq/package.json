@@ -1,6 +1,6 @@
 {
   "name": "eventiq",
-  "version": "3.1.03",
+  "version": "3.1.04",
   "private": true,
   "scripts": {
     "dev": "next dev",

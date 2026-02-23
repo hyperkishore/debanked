@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { ExternalLink, ChevronRight, Eye, EyeOff } from "lucide-react";
+import { ExternalLink, ChevronRight, Eye, EyeOff, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ResourceItem {
@@ -16,6 +16,13 @@ interface ResourceItem {
   isCredential?: boolean;
 }
 
+interface CredentialData {
+  id: string;
+  title: string;
+  username: string;
+  password: string;
+}
+
 const resources: ResourceItem[] = [
   // GTM Resources
   { category: "GTM", title: "GTM Strategy & Playbook", link: "https://www.notion.so/hyperverge/GTM-Strategy-Playbook-MCA-1c6fd39b4d2780a48c72c4d1cc13f5cb" },
@@ -23,8 +30,7 @@ const resources: ResourceItem[] = [
   { category: "GTM", title: "Email Templates & Sequences", link: "https://www.notion.so/hyperverge/Email-Templates-Sequences-1c6fd39b4d2780b6b6bfe6aafe93e8e0" },
   { category: "GTM", title: "Competitive Analysis", link: "https://www.notion.so/hyperverge/Competitive-Landscape-1c6fd39b4d2780b0a9bdf5d7f73b0a31" },
   { category: "GTM", title: "Pricing & Packaging", link: "https://www.notion.so/hyperverge/Pricing-Packaging-1c6fd39b4d2780a3a6f4d2e5c1b0d9e8" },
-  { category: "GTM", title: "Apollo Credentials", detail: "kishore@hyperverge.co / HV-apollo-2026!", isCredential: true },
-  { category: "GTM", title: "Lusha Credentials", detail: "kishore@hyperverge.co / HV-lusha-2026!", isCredential: true },
+  // Apollo & Lusha credentials are now loaded from /api/credentials (server-side only)
   { category: "GTM", title: "Conference / Event Calendar", link: "https://www.notion.so/hyperverge/Conference-Calendar-1c6fd39b4d2780b5b9d7e3f4a2c1b0d9" },
   { category: "GTM", title: "Partnership Tracker", link: "https://docs.google.com/spreadsheets/d/1kR3s5x7y8Z9a0b1c2d3e4f5g6h7i8j9k0l1m2n3o4p5/edit" },
 
@@ -45,36 +51,52 @@ const resources: ResourceItem[] = [
   { category: "GTM/Product", title: "SOC 2 & Compliance Docs", link: "https://www.notion.so/hyperverge/Compliance-Center-1c6fd39b4d2780e6d0a1b2c3d4e5f6g7" },
 ];
 
-function CredentialField({ detail }: { detail: string }) {
+function CredentialField({ credential }: { credential: CredentialData }) {
   const [visible, setVisible] = useState(false);
+  const detail = `${credential.username} / ${credential.password}`;
 
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-xs text-muted-foreground font-mono">
-        {visible ? detail : "••••••••••••••••"}
-      </span>
-      <Button
-        variant="ghost"
-        size="icon"
-        className="h-5 w-5 shrink-0"
-        onClick={() => setVisible(!visible)}
-      >
-        {visible ? <EyeOff className="h-3 w-3" /> : <Eye className="h-3 w-3" />}
-      </Button>
+    <Card className="p-3 shadow-none">
+      <div className="text-sm font-medium mb-1">{credential.title}</div>
+      <div className="flex items-center gap-2">
+        <span className="text-xs text-muted-foreground font-mono">
+          {visible ? detail : "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022"}
+        </span>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="h-5 w-5 shrink-0"
+          onClick={() => setVisible(!visible)}
+        >
+          {visible ? <EyeOff className="h-3 w-3" /> : <Eye className="h-3 w-3" />}
+        </Button>
+      </div>
+    </Card>
+  );
+}
+
+function CredentialSection({ credentials, loading }: { credentials: CredentialData[]; loading: boolean }) {
+  if (loading) {
+    return (
+      <div className="flex items-center gap-2 text-xs text-muted-foreground ml-6">
+        <Loader2 className="h-3 w-3 animate-spin" />
+        <span>Loading credentials...</span>
+      </div>
+    );
+  }
+
+  if (credentials.length === 0) return null;
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 ml-6 mt-2">
+      {credentials.map((cred) => (
+        <CredentialField key={cred.id} credential={cred} />
+      ))}
     </div>
   );
 }
 
 function ResourceCard({ item }: { item: ResourceItem }) {
-  if (item.isCredential) {
-    return (
-      <Card className="p-3 shadow-none">
-        <div className="text-sm font-medium mb-1">{item.title}</div>
-        <CredentialField detail={item.detail || ""} />
-      </Card>
-    );
-  }
-
   return (
     <a
       href={item.link}
@@ -95,13 +117,26 @@ function ResourceCard({ item }: { item: ResourceItem }) {
   );
 }
 
-function CategorySection({ category, items }: { category: string; items: ResourceItem[] }) {
+function CategorySection({
+  category,
+  items,
+  credentials,
+  credentialsLoading,
+}: {
+  category: string;
+  items: ResourceItem[];
+  credentials?: CredentialData[];
+  credentialsLoading?: boolean;
+}) {
+  const credCount = credentials?.length || 0;
+  const totalCount = items.length + credCount;
+
   return (
     <Collapsible defaultOpen={true}>
       <CollapsibleTrigger className="flex items-center gap-2 w-full group mb-2">
         <ChevronRight className="h-4 w-4 text-muted-foreground transition-transform group-data-[state=open]:rotate-90" />
         <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{category}</h3>
-        <Badge variant="outline" className="text-xs ml-1">{items.length}</Badge>
+        <Badge variant="outline" className="text-xs ml-1">{totalCount}</Badge>
       </CollapsibleTrigger>
       <CollapsibleContent>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 ml-6">
@@ -109,12 +144,26 @@ function CategorySection({ category, items }: { category: string; items: Resourc
             <ResourceCard key={i} item={item} />
           ))}
         </div>
+        {credentials !== undefined && (
+          <CredentialSection credentials={credentials} loading={credentialsLoading || false} />
+        )}
       </CollapsibleContent>
     </Collapsible>
   );
 }
 
 export function ResourcesTab() {
+  const [credentials, setCredentials] = useState<CredentialData[]>([]);
+  const [credentialsLoading, setCredentialsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/credentials")
+      .then((res) => (res.ok ? res.json() : { credentials: [] }))
+      .then((data) => setCredentials(data.credentials || []))
+      .catch(() => setCredentials([]))
+      .finally(() => setCredentialsLoading(false));
+  }, []);
+
   const gtmItems = resources.filter((r) => r.category === "GTM");
   const productItems = resources.filter((r) => r.category === "Product");
   const crossItems = resources.filter((r) => r.category === "GTM/Product");
@@ -129,7 +178,12 @@ export function ResourcesTab() {
           </p>
         </div>
 
-        <CategorySection category="GTM" items={gtmItems} />
+        <CategorySection
+          category="GTM"
+          items={gtmItems}
+          credentials={credentials}
+          credentialsLoading={credentialsLoading}
+        />
         <CategorySection category="Product" items={productItems} />
         <CategorySection category="GTM / Product" items={crossItems} />
       </div>
