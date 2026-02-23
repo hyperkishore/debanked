@@ -1,97 +1,64 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { createServerClient } from "@supabase/ssr";
-import { getSupabaseServer } from "@/lib/supabase-server";
+import {
+  authenticateRequest,
+  requireInt,
+  apiError,
+} from "@/lib/api-helpers";
 
 /**
  * GET /api/documents?companyId=123
- * List documents for a company.
+ * List documents for a company (scoped to the user's own uploads).
  *
  * POST /api/documents
  * Upload document metadata (file upload to S3 handled client-side with presigned URL).
  * Body: { companyId, fileName, fileSize, fileType, s3Key }
  *
  * DELETE /api/documents?id=456
- * Delete a document record.
+ * Delete a document record (only the uploader can delete).
  */
 
 export async function GET(request: NextRequest) {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+  const auth = await authenticateRequest(request);
+  if ("error" in auth) return auth.error;
+  const { user, supabase } = auth;
 
-  const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
-
-  const { data: { user } } = await supabaseAuth.auth.getUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const supabase = getSupabaseServer();
-  if (!supabase) {
-    return NextResponse.json({ error: "Database not configured" }, { status: 503 });
-  }
-
-  const companyId = request.nextUrl.searchParams.get("companyId");
-  if (!companyId) {
-    return NextResponse.json({ error: "companyId required" }, { status: 400 });
-  }
+  const companyIdParam = request.nextUrl.searchParams.get("companyId");
+  const parsed = requireInt(companyIdParam, "companyId");
+  if ("error" in parsed) return parsed.error;
 
   const { data: documents, error } = await supabase
     .from("company_documents")
     .select("*")
-    .eq("company_id", parseInt(companyId))
+    .eq("company_id", parsed.value)
+    .eq("uploaded_by", user.id)
     .order("created_at", { ascending: false });
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return apiError(error.message, 500);
   }
 
   return NextResponse.json({ documents: documents || [] });
 }
 
 export async function POST(request: NextRequest) {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-
-  const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
-
-  const { data: { user } } = await supabaseAuth.auth.getUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const supabase = getSupabaseServer();
-  if (!supabase) {
-    return NextResponse.json({ error: "Database not configured" }, { status: 503 });
-  }
+  const auth = await authenticateRequest(request);
+  if ("error" in auth) return auth.error;
+  const { user, supabase } = auth;
 
   const body = await request.json();
   const { companyId, fileName, fileSize, fileType, s3Key } = body;
 
   if (!companyId || !fileName || !s3Key) {
-    return NextResponse.json(
-      { error: "companyId, fileName, and s3Key required" },
-      { status: 400 }
-    );
+    return apiError("companyId, fileName, and s3Key required", 400);
   }
+
+  const parsedCompanyId = requireInt(String(companyId), "companyId");
+  if ("error" in parsedCompanyId) return parsedCompanyId.error;
 
   const { data, error } = await supabase
     .from("company_documents")
     .insert({
-      company_id: companyId,
+      company_id: parsedCompanyId.value,
       uploaded_by: user.id,
       file_name: fileName,
       file_size: fileSize || 0,
@@ -102,49 +69,29 @@ export async function POST(request: NextRequest) {
     .single();
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return apiError(error.message, 500);
   }
 
   return NextResponse.json({ document: data });
 }
 
 export async function DELETE(request: NextRequest) {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+  const auth = await authenticateRequest(request);
+  if ("error" in auth) return auth.error;
+  const { user, supabase } = auth;
 
-  const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
+  const docIdParam = request.nextUrl.searchParams.get("id");
+  const parsed = requireInt(docIdParam, "id");
+  if ("error" in parsed) return parsed.error;
 
-  const { data: { user } } = await supabaseAuth.auth.getUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const supabase = getSupabaseServer();
-  if (!supabase) {
-    return NextResponse.json({ error: "Database not configured" }, { status: 503 });
-  }
-
-  const docId = request.nextUrl.searchParams.get("id");
-  if (!docId) {
-    return NextResponse.json({ error: "id required" }, { status: 400 });
-  }
-
-  // Only allow deletion by the uploader
   const { error } = await supabase
     .from("company_documents")
     .delete()
-    .eq("id", parseInt(docId))
+    .eq("id", parsed.value)
     .eq("uploaded_by", user.id);
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return apiError(error.message, 500);
   }
 
   return NextResponse.json({ success: true });

@@ -1,36 +1,15 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { createServerClient } from "@supabase/ssr";
-import { getSupabaseServer } from "@/lib/supabase-server";
+import { authenticateRequest, apiError } from "@/lib/api-helpers";
 
 /**
  * GET /api/companies
  * Returns all companies from Supabase, transforming DB schema back to client format.
- * Requires authenticated session.
+ * Requires authenticated session. Returns 503 on misconfiguration instead of empty array.
  */
 export async function GET(request: NextRequest) {
-  // Auth check
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-
-  const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
-
-  const { data: { user } } = await supabaseAuth.auth.getUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const supabase = getSupabaseServer();
-
-  if (!supabase) {
-    return NextResponse.json([]);
-  }
+  const auth = await authenticateRequest(request);
+  if ("error" in auth) return auth.error;
+  const { supabase } = auth;
 
   const { data, error } = await supabase
     .from("companies")
@@ -39,10 +18,7 @@ export async function GET(request: NextRequest) {
 
   if (error) {
     console.error("[API] Error fetching companies:", error.message);
-    return NextResponse.json(
-      { error: "Failed to fetch companies" },
-      { status: 500 }
-    );
+    return apiError("Failed to fetch companies", 500);
   }
 
   // Transform DB rows back to the client Company interface

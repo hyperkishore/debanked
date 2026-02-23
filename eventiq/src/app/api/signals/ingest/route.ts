@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { getSupabaseServer } from "@/lib/supabase-server";
+import { apiError } from "@/lib/api-helpers";
 import { runSignalIngestion } from "@/lib/signal-ingest";
 
 /**
@@ -8,11 +9,10 @@ import { runSignalIngestion } from "@/lib/signal-ingest";
  *
  * Triggers the signal ingestion pipeline.
  * Designed to be called by:
- * - AWS EventBridge (daily cron at 8AM UTC) — uses SIGNAL_INGEST_SECRET bearer token
- * - Manual trigger from the UI — uses authenticated session
+ * - AWS EventBridge (daily cron at 8AM UTC) -- uses SIGNAL_INGEST_SECRET bearer token
+ * - Manual trigger from the UI -- uses authenticated session (restricted to @hyperverge.co)
  */
 export async function POST(request: NextRequest) {
-  // Auth: check bearer token OR authenticated session (must have one)
   const authHeader = request.headers.get("authorization");
   const expectedSecret = process.env.SIGNAL_INGEST_SECRET;
 
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     authorized = true;
   }
 
-  // Option 2: Authenticated user session
+  // Option 2: Authenticated user session (must be @hyperverge.co admin)
   if (!authorized) {
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
     const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
@@ -34,19 +34,18 @@ export async function POST(request: NextRequest) {
       },
     });
     const { data: { user } } = await supabaseAuth.auth.getUser();
-    if (user) authorized = true;
+    if (user && user.email?.endsWith("@hyperverge.co")) {
+      authorized = true;
+    }
   }
 
   if (!authorized) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    return apiError("Unauthorized", 401);
   }
 
   const supabase = getSupabaseServer();
   if (!supabase) {
-    return NextResponse.json(
-      { error: "Supabase not configured" },
-      { status: 503 }
-    );
+    return apiError("Supabase not configured", 503);
   }
 
   try {
@@ -62,9 +61,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(summary);
   } catch (err) {
     console.error("[Ingest] Fatal error:", err);
-    return NextResponse.json(
-      { error: "Ingestion failed", details: String(err) },
-      { status: 500 }
-    );
+    return apiError("Ingestion failed", 500);
   }
 }

@@ -1,6 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { createServerClient } from "@supabase/ssr";
-import { getSupabaseServer } from "@/lib/supabase-server";
+import { authenticateRequest, apiError } from "@/lib/api-helpers";
 import { isAIConfigured } from "@/lib/ai-client";
 
 /**
@@ -10,33 +9,12 @@ import { isAIConfigured } from "@/lib/ai-client";
  */
 export async function GET(request: NextRequest) {
   if (!isAIConfigured()) {
-    return NextResponse.json(
-      { error: "AI provider not configured" },
-      { status: 503 }
-    );
+    return apiError("AI provider not configured", 503);
   }
 
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-
-  const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
-
-  const { data: { user } } = await supabaseAuth.auth.getUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const supabase = getSupabaseServer();
-  if (!supabase) {
-    return NextResponse.json({ error: "Database not configured" }, { status: 503 });
-  }
+  const auth = await authenticateRequest(request);
+  if ("error" in auth) return auth.error;
+  const { user, supabase } = auth;
 
   // Get companies with recent signals (last 30 days)
   const thirtyDaysAgo = new Date();
@@ -70,15 +48,27 @@ export async function GET(request: NextRequest) {
     scores.set(news.company_id, existing);
   }
 
-  // Boost active pipeline deals
+  // Boost active pipeline deals — seed entries for pipeline companies first
   const activeStages = new Set(["contacted", "engaged", "demo", "proposal"]);
   for (const p of pipeline || []) {
     if (activeStages.has(p.stage)) {
-      const existing = scores.get(p.company_id);
-      if (existing) {
-        existing.score += 5;
-        existing.reasons.push(`Active in pipeline: ${p.stage}`);
+      if (!scores.has(p.company_id)) {
+        // Batch-fetch company names for pipeline companies not yet in scores
+        const { data: companyRow } = await supabase
+          .from("companies")
+          .select("name")
+          .eq("id", p.company_id)
+          .single();
+
+        scores.set(p.company_id, {
+          name: companyRow?.name || `Company #${p.company_id}`,
+          score: 0,
+          reasons: [],
+        });
       }
+      const existing = scores.get(p.company_id)!;
+      existing.score += 5;
+      existing.reasons.push(`Active in pipeline: ${p.stage}`);
     }
   }
 

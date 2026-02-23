@@ -1,6 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { createServerClient } from "@supabase/ssr";
-import { getSupabaseServer } from "@/lib/supabase-server";
+import { authenticateRequest } from "@/lib/api-helpers";
 import {
   isHubSpotConfigured,
   pullCompanies,
@@ -13,8 +12,8 @@ import {
  * Bidirectional sync between EventIQ and HubSpot CRM.
  * Body: { direction: "pull" | "push" | "both" }
  *
- * Pull: Import companies + deals from HubSpot → Supabase
- * Push: Export pipeline stage changes from Supabase → HubSpot
+ * Pull: Import companies + deals from HubSpot -> Supabase
+ * Push: Export pipeline stage changes from Supabase -> HubSpot
  */
 export async function POST(request: NextRequest) {
   if (!isHubSpotConfigured()) {
@@ -24,27 +23,9 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-
-  const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
-
-  const { data: { user } } = await supabaseAuth.auth.getUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const supabase = getSupabaseServer();
-  if (!supabase) {
-    return NextResponse.json({ error: "Database not configured" }, { status: 503 });
-  }
+  const auth = await authenticateRequest(request);
+  if ("error" in auth) return auth.error;
+  const { user, supabase } = auth;
 
   const body = await request.json();
   const direction: string = body.direction || "pull";
@@ -55,7 +36,7 @@ export async function POST(request: NextRequest) {
     errors: string[];
   } = { errors: [] };
 
-  // --- PULL: HubSpot → Supabase ---
+  // --- PULL: HubSpot -> Supabase ---
   if (direction === "pull" || direction === "both") {
     try {
       const hsCompanies = await pullCompanies(200);
@@ -76,7 +57,6 @@ export async function POST(request: NextRequest) {
         });
 
         if (match) {
-          // Update existing company with HubSpot data
           const updates: Record<string, unknown> = {};
           if (hsc.numberofemployees && hsc.numberofemployees > 0) {
             updates.employees = hsc.numberofemployees;
@@ -103,10 +83,9 @@ export async function POST(request: NextRequest) {
     }
   }
 
-  // --- PUSH: Supabase → HubSpot ---
+  // --- PUSH: Supabase -> HubSpot ---
   if (direction === "push" || direction === "both") {
     try {
-      // Get pipeline records that have a HubSpot deal ID
       const { data: pipelineRecords } = await supabase
         .from("pipeline_records")
         .select("company_id, stage, hubspot_deal_id")
@@ -118,7 +97,6 @@ export async function POST(request: NextRequest) {
         if (record.hubspot_deal_id) {
           const success = await pushDealStage(record.hubspot_deal_id, record.stage);
           if (success) pushCount++;
-          // Rate limit
           await new Promise((r) => setTimeout(r, 200));
         }
       }

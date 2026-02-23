@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { createServerClient } from "@supabase/ssr";
+import { authenticateAdmin } from "@/lib/api-helpers";
 
 /**
  * GET /api/credentials
@@ -7,23 +7,8 @@ import { createServerClient } from "@supabase/ssr";
  * Credentials are stored in environment variables, never in the client bundle.
  */
 export async function GET(request: NextRequest) {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-
-  const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
-
-  const { data: { user } } = await supabase.auth.getUser();
-
-  if (!user || !user.email?.endsWith("@hyperverge.co")) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
+  const auth = await authenticateAdmin(request);
+  if ("error" in auth) return auth.error;
 
   const credentials = [
     {

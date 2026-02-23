@@ -1,6 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { createServerClient } from "@supabase/ssr";
-import { getSupabaseServer } from "@/lib/supabase-server";
+import { authenticateRequest, requireInt, apiError } from "@/lib/api-helpers";
 import { generateBriefing, computeSignalHash } from "@/lib/ai-briefing";
 import { isAIConfigured } from "@/lib/ai-client";
 
@@ -13,41 +12,20 @@ export async function POST(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params;
-  const companyId = parseInt(id);
-
-  if (isNaN(companyId)) {
-    return NextResponse.json({ error: "Invalid company ID" }, { status: 400 });
-  }
+  const parsed = requireInt(id, "company ID");
+  if ("error" in parsed) return parsed.error;
+  const companyId = parsed.value;
 
   if (!isAIConfigured()) {
-    return NextResponse.json(
-      { error: "AI provider not configured. Set OPENAI_API_KEY or ANTHROPIC_API_KEY." },
-      { status: 503 }
+    return apiError(
+      "AI provider not configured. Set OPENAI_API_KEY or ANTHROPIC_API_KEY.",
+      503
     );
   }
 
-  // Get user from session
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-
-  const supabaseAuth = createServerClient(supabaseUrl, supabaseAnonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll() {},
-    },
-  });
-
-  const { data: { user } } = await supabaseAuth.auth.getUser();
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-
-  const supabase = getSupabaseServer();
-  if (!supabase) {
-    return NextResponse.json({ error: "Database not configured" }, { status: 503 });
-  }
+  const auth = await authenticateRequest(request);
+  if ("error" in auth) return auth.error;
+  const { user, supabase } = auth;
 
   // Fetch company data
   const { data: company } = await supabase
@@ -57,7 +35,7 @@ export async function POST(
     .single();
 
   if (!company) {
-    return NextResponse.json({ error: "Company not found" }, { status: 404 });
+    return apiError("Company not found", 404);
   }
 
   // Fetch recent signals
