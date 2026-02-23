@@ -11,7 +11,10 @@ For each company, inserts:
 import re
 import sys
 
-INPUT_FILE = "/Users/kishore/Desktop/Claude-experiments/debanked/index.html"
+import os
+
+# Accept file path from CLI arg, fall back to repo-relative default
+INPUT_FILE = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
 
 # Research data keyed by the EXACT name as it appears in the HTML
 # Each entry: { "news": [...], "icebreakers": [...] }
