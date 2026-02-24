@@ -153,9 +153,9 @@ export function CompanyDetail({
   const allTalkingPoints = (company.tp || []).join("\n\n");
 
   return (
-    <div className="flex flex-col h-full">
-      {/* Sticky Header */}
-      <div className="sticky top-0 z-10 bg-background border-b border-border p-4 pb-3 shrink-0">
+    <div className="flex flex-col h-full overflow-hidden">
+      {/* Fixed Header */}
+      <div className="bg-background border-b border-border p-4 pb-3 shrink-0">
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-2 min-w-0">
             {onClose && (
@@ -343,7 +343,8 @@ export function CompanyDetail({
       </div>
 
       {/* Scrollable Content */}
-      <ScrollArea className="flex-1">
+      <div className="flex-1 min-h-0">
+      <ScrollArea className="h-full">
       <div className="p-4 space-y-5">
 
         {!researched && company.type === "TAM" ? (
@@ -626,6 +627,7 @@ export function CompanyDetail({
         />
       )}
     </ScrollArea>
+    </div>
     </div>
   );
 }
