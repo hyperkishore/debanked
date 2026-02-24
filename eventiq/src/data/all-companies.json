@@ -2759,15 +2759,21 @@
     "ask": "Would you be interested in exploring AI underwriting as a value-add for your lending partners?",
     "source": [
       "eventiq",
-      "deep-researched"
+      "deep-researched",
+      "tam",
+      "tam-researched"
     ],
-    "category": "broker"
+    "category": "broker",
+    "location": "New York",
+    "employees": 17,
+    "website": "https://www.unitedcapitalsource.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/united-capital-source/"
   },
   {
     "id": 22,
     "name": "Big Think Capital",
     "type": "ICP",
-    "priority": 3,
+    "priority": 2,
     "phase": 4,
     "booth": false,
     "contacts": [
@@ -2784,8 +2790,8 @@
         "t": "VP Technology"
       }
     ],
-    "desc": "Direct lender & marketplace. $1B+ funded to 25K+ businesses. Melville, NY + FL. 110 employees, $19.3M revenue. Syndication investment platform. Fortune Best Small Workplaces 2025 (#19). VP Tech Brian Weiss is ALREADY building AI/ML pipelines for underwriting. CMO Ami Dviri ex-NY Life/JPMorgan/Deutsche Bank.",
-    "notes": "$1B+ funded. Syndication platform. D-1 All-American lacrosse captain at Bryant. Revenue + syndication angles.",
+    "desc": "Direct lender & marketplace. $1B+ funded to 25K+ businesses. Melville, NY + FL. 110 employees, $19.3M revenue. Syndication investment platform. Fortune Best Small Workplaces 2025 (#19). VP Tech Brian Weiss is ALREADY building AI/ML pipelines for underwriting. CMO Ami Dviri ex-NY Life/JPMorgan/Deutsche Bank. A+ BBB rated with 2,000+ five-star Trustpilot reviews and 98% positive rating. Products include MCAs, term loans, lines of credit, SBA loans, and equipment financing up to $2M.",
+    "notes": "$1B+ funded. Syndication platform. D-1 All-American lacrosse captain at Bryant. Revenue + syndication angles.\nAlternate ask: With your focus on intelligent borrowing and client advocacy, would a demo be valuable to see how HyperVerge's AI ensures thorough yet fast underwriting decisions?",
     "news": [
       {
         "h": "Big Think Capital Ranked #19 Fortune Best Small Workplaces 2025",
@@ -2806,6 +2812,26 @@
         "h": "Big Think Capital Surpasses $1B Funded",
         "s": "bigthinkcapital.com, 2024",
         "d": "Company milestone of over $1 billion in business financing delivered to more than 25,000 clients nationwide since founding."
+      },
+      {
+        "h": "Big Think Capital Appoints Ami Dviri as Chief Marketing Officer",
+        "s": "BusinessWire, Mar 2024",
+        "d": "Ami Dviri joined Big Think Capital as CMO with 20 years of experience at Fortune 100 companies including JP Morgan Chase, Deutsche Bank, and New York Life."
+      },
+      {
+        "h": "Big Think Capital Ranked #19 on Fortune Best Small Workplaces 2025",
+        "s": "Fortune, 2025",
+        "d": "Ranked #19 on Fortune's Best Small Workplaces list and #30 in Financial Services & Insurance category."
+      },
+      {
+        "h": "Big Think Capital Maintains 98% Five-Star Trustpilot Rating",
+        "s": "Trustpilot, 2024",
+        "d": "Consistently earns highest ratings in financial services with nearly 2,500 clients providing positive reviews."
+      },
+      {
+        "h": "Big Think Capital Recognized as Client-First Lending Marketplace",
+        "s": "Industry Press, 2024",
+        "d": "Profiled for unique advocacy-first approach to lending that prioritizes intelligent borrowing over volume."
       }
     ],
     "ice": "Tom, driving $1B+ in funded deals at Big Think while building the syndication platform on top shows real strategic vision on the revenue side.",
@@ -2813,11 +2839,18 @@
       "Congrats on Top Business Lending Firm recognition and crossing the $1B mark. What has been the biggest driver of growth on the syndication side?",
       "The NY Bankers Association Forum is a more institutional crowd than typical alt lending events. Are traditional banks looking to partner with marketplace lenders like Big Think?",
       "Seven years from launch to a billion dollars is a serious trajectory. Where do you see the next leg of growth coming from?",
-      "Managing a marketplace spanning SBA to revenue-based financing is a wide spectrum. How do you balance product breadth with syndication investor risk profiles?"
+      "Managing a marketplace spanning SBA to revenue-based financing is a wide spectrum. How do you balance product breadth with syndication investor risk profiles?",
+      "Going from law to $3B in mortgage banking to founding Big Think Capital with an advocacy-first approach is a unique journey -- how does that legal mindset shape your underwriting philosophy?",
+      "98% five-star ratings on Trustpilot with 2,500 reviews is remarkable for financial services -- what's the secret to maintaining that client satisfaction?",
+      "Promoting 'intelligent borrowing' is a differentiated message in MCA -- how do you ensure your underwriting supports that philosophy?",
+      "With 112 employees and A+ BBB rating, you've built something special -- where are you investing in technology to maintain quality at scale?"
     ],
     "tp": [
       "Big Think prides itself on funding professionals reviewing every file — but at $1B+ funded, manual review creates a throughput ceiling. AI handles the 80% routine analysis so your team focuses on the 20% needing human judgment.",
-      "For the syndication platform, AI-automated underwriting creates standardized risk assessments that give investors more confidence and transparency."
+      "For the syndication platform, AI-automated underwriting creates standardized risk assessments that give investors more confidence and transparency.",
+      "HyperVerge's AI underwriting automation aligns with Big Think's advocacy-first approach -- ensuring merchants are properly assessed for intelligent borrowing decisions.",
+      "With 112 employees processing multiple product types, automated document verification cuts review from 40 minutes to under 5 minutes while maintaining quality.",
+      "HyperVerge serves 450+ MCA companies and can help Big Think Capital scale their marketplace while maintaining the 98% positive rating standard."
     ],
     "leaders": [
       {
@@ -2828,7 +2861,11 @@
           "*Brooklyn Law JD",
           "Michigan econ Magna Cum Laude",
           "*Ex-SVP Lendio",
-          "Ran $3B mortgage firm"
+          "Ran $3B mortgage firm",
+          "*Fortune Best Workplaces #19 (2025)",
+          "Attorney turned fintech founder",
+          "Hired ex-JPMorgan CMO Ami Dviri",
+          "2,000+ five-star Trustpilot reviews"
         ],
         "li": "https://www.linkedin.com/in/david-a-brown-54941a20/"
       },
@@ -2884,9 +2921,14 @@
     "ask": "Would you be open to a conversation about how AI impacts your revenue-per-underwriter metric?",
     "source": [
       "eventiq",
-      "deep-researched"
+      "deep-researched",
+      "tam",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "location": "New York",
+    "employees": 112,
+    "website": "https://bigthinkcapital.com"
   },
   {
     "id": 23,
@@ -3675,7 +3717,7 @@
     "id": 31,
     "name": "Newity",
     "type": "ICP",
-    "priority": 4,
+    "priority": 2,
     "phase": 3,
     "booth": true,
     "contacts": [
@@ -3710,6 +3752,26 @@
         "h": "Newity Navigates Major SBA SOP Rule Changes",
         "s": "newitymarket.com, Jun 2025",
         "d": "Published guide for loan brokers on navigating June 2025 SBA SOP changes including new franchise eligibility requirements and collateral pledge rules."
+      },
+      {
+        "h": "NEWITY Ranks No. 596 on 2025 Inc. 5000",
+        "s": "Inc., Aug 2025",
+        "d": "Recognized among America's fastest-growing private companies, reinforcing NEWITY's position as #1 SBA 7(a) loan facilitator for loans up to $350K."
+      },
+      {
+        "h": "NEWITY Co-CEOs Named to American Banker's 25 People Who Will Change Banking",
+        "s": "American Banker, Jan 2025",
+        "d": "David Cody and Luke LaHaie recognized as top visionaries reshaping the banking industry."
+      },
+      {
+        "h": "NEWITY Named to Inc. 5000 at No. 596",
+        "s": "Inc. Magazine, 2025",
+        "d": "Ranked among America's fastest-growing private companies."
+      },
+      {
+        "h": "NEWITY Leads as #1 SBA 7(a) Loan Facilitator",
+        "s": "SBA, 2025",
+        "d": "Top position in facilitating SBA 7(a) loans up to $500K nationwide."
       }
     ],
     "ice": "Being named to American Banker’s ‘25 people who will change banking’ is a big deal — and $11.8B facilitated for 125K+ businesses through SBA channels is impressive given how documentation-heavy SBA underwriting can be.",
@@ -3717,10 +3779,17 @@
       "Zero to #1 SBA 7(a) lender by volume in under five years is extraordinary. With 7,800 loans and $1.3B originated, what does the next phase look like?",
       "Congrats on Inc. 5000 at No. 596 -- 695% growth is remarkable. How are you navigating the 2025 SBA SOP changes while maintaining velocity?",
       "Both co-CEOs on American Banker's top 25 changemakers is a strong signal. How are David and Luke thinking about Newity's role as more states add disclosure laws?",
-      "Answering 19,000+ member support calls in 2025 shows real service commitment. How important has that human touch been to your growth?"
+      "Answering 19,000+ member support calls in 2025 shows real service commitment. How important has that human touch been to your growth?",
+      "American Banker's '25 People Who Will Change Banking' is a huge honor. What role does AI play in NEWITY's SBA lending platform?",
+      "#1 in SBA 7(a) loans up to $500K requires serious throughput. How are you automating the underwriting process?",
+      "Inc. 5000 at No. 596 shows rapid growth. How is technology helping NEWITY scale its SBA lending operations?",
+      "From PPP to #1 in SBA 7(a) is an impressive evolution. What technology investments are driving that leadership position?"
     ],
     "tp": [
-      "SBA 7(a) underwriting is notoriously document-intensive. Even with Biz2X handling origination, the actual analysis (cash flow verification, risk scoring, NAICS classification) is still manual. HyperVerge sits alongside your existing stack to automate the analytical layer."
+      "SBA 7(a) underwriting is notoriously document-intensive. Even with Biz2X handling origination, the actual analysis (cash flow verification, risk scoring, NAICS classification) is still manual. HyperVerge sits alongside your existing stack to automate the analytical layer.",
+      "As the #1 SBA 7(a) facilitator, NEWITY processes massive volume. HyperVerge's AI underwriting can help evaluate applications in under 5 minutes instead of 40.",
+      "SBA lending involves complex document verification. HyperVerge automates this for 450+ lending companies, maintaining compliance while accelerating decisions.",
+      "NEWITY's mission to serve underserved entrepreneurs aligns with HyperVerge's efficiency gains. Our platform shows how automation maximizes lending capacity."
     ],
     "leaders": [
       {
@@ -3731,7 +3800,11 @@
           "*American Banker Top 25 2025",
           "*Early Fortress partner",
           "Grew AUM to $40B+",
-          "Colby College"
+          "Colby College",
+          "*Ex-Fortress Investment Group",
+          "*$40B+ AUM at Fortress",
+          "Co-founded MatlinPatterson",
+          "Raised $50B+ across asset classes"
         ],
         "li": "https://www.linkedin.com/in/davidcody1"
       },
@@ -3743,7 +3816,11 @@
           "*American Banker Top 25 2025",
           "Notre Dame master's",
           "CPA + CFA Charterholder",
-          "Michigan State Finance"
+          "Michigan State Finance",
+          "*Notre Dame MS Accountancy",
+          "*CPA + CFA Charterholder",
+          "*American Banker Top 25 (2025)",
+          "Michigan State finance grad"
         ],
         "li": "https://www.linkedin.com/in/luke-lahaie-49998524/"
       }
@@ -3751,8 +3828,15 @@
     "ask": "Request a meeting with their COO or tech team to discuss how AI complements their existing Biz2X platform for SBA decisioning.",
     "source": [
       "eventiq",
-      "deep-researched"
-    ]
+      "deep-researched",
+      "tam",
+      "researched"
+    ],
+    "location": "Illinois",
+    "employees": 77,
+    "website": "https://newitymarket.com",
+    "linkedinUrl": "https://www.linkedin.com/company/newitymarket/",
+    "category": "technology"
   },
   {
     "id": 32,
@@ -3900,7 +3984,7 @@
     "id": 34,
     "name": "Bizfund",
     "type": "ICP",
-    "priority": 4,
+    "priority": 2,
     "phase": 3,
     "booth": true,
     "contacts": [
@@ -3921,6 +4005,16 @@
         "h": "BizFund Expands ISO Department Leadership",
         "s": "ZoomInfo, 2025",
         "d": "Rikki Kopfstein promoted from VP ISO Relations to Head of Business Development for the ISO department, signaling growth in broker channel."
+      },
+      {
+        "h": "BizFund Continues MCA Funding Operations Under New Era Brand",
+        "s": "Industry Profile, 2024",
+        "d": "BizFund operates as a direct MCA funder with $18M in estimated revenue."
+      },
+      {
+        "h": "BizFund Serves Businesses That Don't Qualify for Traditional Loans",
+        "s": "Company Profile, 2025",
+        "d": "Funding available for businesses with limited credit history, various industries, and flexible requirements."
       }
     ],
     "ice": "With a 90%+ approval rate and 24-48 hour turnaround, Bizfund has clearly optimized for saying ‘yes’ fast. Is the bottleneck now processing speed or finding the 10% to decline?",
@@ -3928,10 +4022,17 @@
       "Expanding into Canada is significant -- different regulations and borrower expectations. What has been the biggest surprise adapting the US model for Canadian merchants?",
       "Ten years in MCA gives BizFund real staying power. How are you leveraging that experience to win deals newer funders cannot?",
       "I saw BizFund at the Funders Forum + Brokers Expo. How important is the broker channel versus direct merchant acquisition for your growth?",
-      "The banking relationship challenge is real for MCA companies. How is BizFund managing that risk as compliance requirements increase?"
+      "The banking relationship challenge is real for MCA companies. How is BizFund managing that risk as compliance requirements increase?",
+      "BizFund's focus on businesses that don't qualify for traditional loans is a big market. How automated is your approval process?",
+      "Danny, your journey from Pearl Capital to BizFund shows entrepreneurial grit. What's the biggest operational challenge today?",
+      "Funding businesses with limited credit history requires sophisticated risk assessment. What tools are you using?",
+      "BizFund's $10K minimum revenue threshold means high volume. How fast is your current underwriting turnaround?"
     ],
     "tp": [
-      "A 90%+ approval rate means your team reviews many deals that will be approved — that’s a lot of manual effort on obvious approvals. AI can auto-approve clear-cut deals and flag only borderline cases, cutting 24-48 hours to same-day."
+      "A 90%+ approval rate means your team reviews many deals that will be approved — that’s a lot of manual effort on obvious approvals. AI can auto-approve clear-cut deals and flag only borderline cases, cutting 24-48 hours to same-day.",
+      "HyperVerge's AI underwriting could help BizFund cut MCA review time from 40 minutes to under 5, processing more deals daily.",
+      "With 450+ MCA companies served, HyperVerge understands the specific challenges of funding businesses with limited credit history.",
+      "Automating bank statement analysis would help BizFund maintain underwriting quality while scaling volume."
     ],
     "leaders": [
       {
@@ -3942,7 +4043,10 @@
           "*Founded Pearl Capital 2009",
           "Ex-New Era Lending",
           "Miami/Brooklyn dual base",
-          "90%+ approval rate"
+          "90%+ approval rate",
+          "Pearl Capital to BizFund pivot",
+          "Miami-based MCA operator",
+          "ISO relations focused"
         ],
         "li": "https://www.linkedin.com/in/danny-koshanfar-0576a485/"
       },
@@ -3970,9 +4074,15 @@
     "ask": "Ask to speak with the head of underwriting. Position around compressing 24-48 hour turnaround to under 1 hour.",
     "source": [
       "eventiq",
-      "deep-researched"
+      "deep-researched",
+      "tam",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "location": "Dalware",
+    "employees": 43,
+    "website": "https://bizfund.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/new-era-lending/people/"
   },
   {
     "id": 35,
@@ -4042,7 +4152,8 @@
     "source": [
       "eventiq",
       "tam",
-      "deep-researched"
+      "deep-researched",
+      "tam-researched"
     ],
     "location": "New York",
     "employees": 10,
@@ -6168,91 +6279,6 @@
     "employees": 179,
     "website": "https://www.credibly.com/",
     "linkedinUrl": "https://www.linkedin.com/company/credibly/about/",
-    "category": "funder"
-  },
-  {
-    "id": 65,
-    "name": "Kalamata Capital",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Steven Mandis",
-        "t": "Founder & Chairman"
-      }
-    ],
-    "desc": "Bethesda, MD-based MCA funder (est. 2013) focused on ISO-driven merchant cash advances. Closed a $500M securitization in 2024. Founded by Goldman Sachs alum and Columbia professor Steven Mandis.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Kalamata.com Upsizes Securitization by 25% Demonstrating Strong Growth from Proprietary Technology Platform",
-        "s": "PR Newswire, Jul 2025",
-        "d": "Kalamata upsized its 2024 securitization by 25% with notes expandable up to $500M, adding $20M in funding capacity. Guggenheim Securities served as sole structuring advisor.",
-        "p": "2025-07-29"
-      },
-      {
-        "h": "Catching Up With Kalamata",
-        "s": "deBanked, Sep 2025",
-        "d": "Industry profile covering Kalamata's growth trajectory, proprietary Kalamata Cash technology platform, and expansion plans following the securitization upsize.",
-        "p": "2025-09-15"
-      },
-      {
-        "h": "Kalamata.com Closes Securitization of Up to $500 Million",
-        "s": "BusinessWire, May 2024",
-        "d": "Kalamata closed its inaugural securitization of revolving business advance receivables, initially totaling $80M and expandable up to $500M.",
-        "p": "2024-05-02"
-      }
-    ],
-    "ice": "Congrats on closing that $500M securitization -- at that scale, how is your underwriting team keeping pace with deal volume?",
-    "icebreakers": [
-      "Congrats on closing that $500M securitization -- at that scale, how is your underwriting team keeping pace with deal volume?"
-    ],
-    "tp": [
-      "With $500M in committed capital, AI-powered underwriting could help you deploy faster while maintaining credit quality across your ISO channel."
-    ],
-    "leaders": [
-      {
-        "n": "Steven Mandis",
-        "t": "Founder & Chairman",
-        "bg": "Columbia University Business School adjunct associate professor in finance and economics. Began career at Goldman Sachs in 1992 in M&A, then built the Special Situations Proprietary Trading Group under Henry Paulson. Later senior advisor to McKinsey & Company during the financial crisis. Author of 'What Happened to Goldman Sachs' (Harvard Business Press, 2013 Gold Axiom Business Book Award). Named company after his family's ancestral region in Greece. Self-funded Kalamata Capital at founding in 2013.",
-        "li": "https://www.linkedin.com/in/stevenmandis",
-        "hooks": [
-          "*Goldman Sachs under Henry Paulson",
-          "*Columbia Business School professor",
-          "*Harvard Business Press author",
-          "Named company after Greek heritage"
-        ]
-      },
-      {
-        "n": "Brandon Laks",
-        "t": "Co-President",
-        "bg": "One of Kalamata's first employees, rising through COO and Chief Credit Officer roles to Co-President. Previously a Group Corporate Finance Account Executive at CapitalSource Bank. Instrumental in driving Kalamata's growth and the 2024 securitization of up to $500M. Oversees strategic direction alongside Connor Phillips.",
-        "li": "https://www.linkedin.com/in/brandonlaks23/",
-        "hooks": [
-          "*First employee to Co-President",
-          "Ex-CapitalSource Bank",
-          "$500M securitization architect"
-        ]
-      },
-      {
-        "n": "Connor Phillips",
-        "t": "Co-President",
-        "bg": "Dartmouth College BA. One of Kalamata's earliest employees alongside Brandon Laks. Previously interned at the Bureau of Industry and Security at the US Department of Commerce. Now Co-President overseeing strategic direction and investment decisions. Key driver of the Kalamata Cash proprietary technology platform launch in 2024.",
-        "li": "",
-        "hooks": [
-          "*Dartmouth College",
-          "US Dept of Commerce intern",
-          "Kalamata Cash platform driver"
-        ]
-      }
-    ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
     "category": "funder"
   },
   {
@@ -10348,37 +10374,6 @@
     "category": "bank"
   },
   {
-    "id": 119,
-    "name": "Crestmont Capital",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Gregory Keleshian",
-        "t": "CEO"
-      }
-    ],
-    "desc": "Irvine, CA-based business lender founded in 2015 offering merchant cash advances, revenue-based financing, and SBA loans. Named to Inc. 5000 list in 2023.",
-    "notes": "",
-    "news": [],
-    "ice": "Making the Inc. 5000 list shows Crestmont is on a strong growth trajectory -- that kind of momentum is exciting in the alternative lending space.",
-    "icebreakers": [
-      "Making the Inc. 5000 list shows Crestmont is on a strong growth trajectory -- that kind of momentum is exciting in the alternative lending space."
-    ],
-    "tp": [
-      "AI underwriting can help Crestmont maintain credit quality during rapid growth by automating risk assessment across its diverse lending products."
-    ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 120,
     "name": "Excel Capital Management",
     "type": "ICP",
@@ -10559,41 +10554,6 @@
     "source": [
       "eventiq"
     ]
-  },
-  {
-    "id": 126,
-    "name": "Crest Hill Capital",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "",
-        "t": "CEO"
-      }
-    ],
-    "desc": "New York-based merchant cash advance provider founded in 2013 specializing in funding solutions for small and medium-sized businesses across various industries.",
-    "notes": "",
-    "news": [],
-    "ice": "Crest Hill Capital has carved out a solid position in the MCA market since 2013 with a focus on reliable funding for SMBs.",
-    "icebreakers": [
-      "Crest Hill Capital has carved out a solid position in the MCA market since 2013 with a focus on reliable funding for SMBs."
-    ],
-    "tp": [
-      "AI underwriting can help Crest Hill evaluate merchant applications faster and more accurately, reducing manual review time while improving approval rates."
-    ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq",
-      "tam"
-    ],
-    "location": "Florida",
-    "employees": 7,
-    "website": "http://cresthillcapital.com/index.html#iso",
-    "linkedinUrl": "http://cresthillcapital.com/index.html#iso"
   },
   {
     "id": 127,
@@ -11158,37 +11118,6 @@
     "category": "broker"
   },
   {
-    "id": 144,
-    "name": "Cobalt Funding Solutions",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "",
-        "t": "CEO"
-      }
-    ],
-    "desc": "NYC-based MCA funder offering snap funding up to $3M per deal with terms up to 10 months. No stipulations model. Featured on FunderIntel as a top direct funder.",
-    "notes": "",
-    "news": [],
-    "ice": "The no-stipulation, snap-funding model up to $3M is a strong value prop -- speed and simplicity clearly win deals.",
-    "icebreakers": [
-      "The no-stipulation, snap-funding model up to $3M is a strong value prop -- speed and simplicity clearly win deals."
-    ],
-    "tp": [
-      "AI underwriting can maintain the speed of your no-stip model while adding a data-driven risk layer to protect margins on larger deals."
-    ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 145,
     "name": "SBG Funding",
     "type": "ICP",
@@ -11459,37 +11388,6 @@
     "source": [
       "eventiq"
     ]
-  },
-  {
-    "id": 153,
-    "name": "Shore Funding Solutions",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "",
-        "t": "CEO"
-      }
-    ],
-    "desc": "Established in 2014 by banking and Wall Street professionals. Grown to 80 employees and facilitated over $1B in business funding. Inc. 5000 honoree.",
-    "notes": "",
-    "news": [],
-    "ice": "Crossing $1B in facilitated funding with a team of 80 shows impressive operational efficiency.",
-    "icebreakers": [
-      "Crossing $1B in facilitated funding with a team of 80 shows impressive operational efficiency."
-    ],
-    "tp": [
-      "AI underwriting can help Shore Funding scale beyond $1B without proportionally growing headcount by automating routine deal evaluation."
-    ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
-    "category": "bank"
   },
   {
     "id": 154,
@@ -13860,33 +13758,6 @@
     "location": "Texas",
     "employees": 5,
     "website": "https://www.1stcommercialcredit.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/1st-commercial-credit/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
-    "id": 1003,
-    "name": "1st Commercial Credit LLC",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Duplicate of 1st Commercial Credit (ID 1002). Same Austin, TX-based invoice factoring and supply chain financing company offering asset-based financial services to small and mid-sized businesses.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Texas",
-    "employees": 5,
-    "website": "http://www.1stcommercialcredit.com",
     "linkedinUrl": "https://www.linkedin.com/company/1st-commercial-credit/",
     "source": [
       "tam",
@@ -17125,132 +16996,6 @@
     "category": "funder"
   },
   {
-    "id": 1046,
-    "name": "Newity LLC",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "David Cody",
-        "t": "Co-CEO & Co-Founder"
-      },
-      {
-        "n": "Luke LaHaie",
-        "t": "Co-CEO & Co-Founder"
-      }
-    ],
-    "desc": "Leading SBA 7(a) loan facilitator and technology platform, ranked #1 in SBA 7(a) loans up to $500K, co-founded by David Cody and Luke LaHaie, named to Inc. 5000 at No. 596 and recognized by American Banker.",
-    "notes": "",
-    "news": [
-      {
-        "h": "NEWITY Ranks No. 596 on 2025 Inc. 5000",
-        "s": "Inc., Aug 2025",
-        "d": "Recognized among America's fastest-growing private companies, reinforcing NEWITY's position as #1 SBA 7(a) loan facilitator for loans up to $350K."
-      },
-      {
-        "h": "NEWITY Facilitates $326.56M in SBA Funding in 2025",
-        "s": "NEWITY, Jan 2026",
-        "d": "Facilitated $326.56M through Northeast Bank and added 322,103 new members to its network in 2025. Since 2020, has helped 125,000+ businesses access $12B+ in capital."
-      },
-      {
-        "h": "NEWITY Co-CEOs Named to American Banker's 25 People Who Will Change Banking",
-        "s": "American Banker, Jan 2025",
-        "d": "David Cody and Luke LaHaie recognized as top visionaries reshaping the banking industry."
-      },
-      {
-        "h": "NEWITY Named to Inc. 5000 at No. 596",
-        "s": "Inc. Magazine, 2025",
-        "d": "Ranked among America's fastest-growing private companies."
-      },
-      {
-        "h": "NEWITY Leads as #1 SBA 7(a) Loan Facilitator",
-        "s": "SBA, 2025",
-        "d": "Top position in facilitating SBA 7(a) loans up to $500K nationwide."
-      }
-    ],
-    "ice": "Being named to American Banker's 25 People Who Will Change Banking is incredible recognition. How are you leveraging technology to maintain your #1 position in SBA 7(a) lending?",
-    "icebreakers": [
-      "American Banker's '25 People Who Will Change Banking' is a huge honor. What role does AI play in NEWITY's SBA lending platform?",
-      "#1 in SBA 7(a) loans up to $500K requires serious throughput. How are you automating the underwriting process?",
-      "Inc. 5000 at No. 596 shows rapid growth. How is technology helping NEWITY scale its SBA lending operations?",
-      "From PPP to #1 in SBA 7(a) is an impressive evolution. What technology investments are driving that leadership position?"
-    ],
-    "tp": [
-      "As the #1 SBA 7(a) facilitator, NEWITY processes massive volume. HyperVerge's AI underwriting can help evaluate applications in under 5 minutes instead of 40.",
-      "SBA lending involves complex document verification. HyperVerge automates this for 450+ lending companies, maintaining compliance while accelerating decisions.",
-      "NEWITY's mission to serve underserved entrepreneurs aligns with HyperVerge's efficiency gains. Our platform shows how automation maximizes lending capacity."
-    ],
-    "leaders": [
-      {
-        "n": "David Cody",
-        "t": "Co-CEO & Co-Founder",
-        "bg": "Over two decades of experience in asset management and capital formation. Previously CEO of MatlinPatterson Asset Management (MPAM) which he co-founded in 2010. Before that, served as President of the Hybrid (credit) business at Fortress Investment Group where he grew AUM to over $40B. Involved in developing 300+ asset management products and raised over $50B across asset classes.",
-        "li": "https://www.linkedin.com/in/davidcody1",
-        "hooks": [
-          "*Ex-Fortress Investment Group",
-          "*$40B+ AUM at Fortress",
-          "Co-founded MatlinPatterson",
-          "Raised $50B+ across asset classes"
-        ]
-      },
-      {
-        "n": "Luke LaHaie",
-        "t": "Co-CEO & Co-Founder",
-        "bg": "Co-founded NEWITY in 2020 after recognizing gaps in PPP relief access. Holds a Master's in Accountancy from University of Notre Dame and a BS in Finance from Michigan State University. CPA registered in Illinois and Michigan, and CFA Charterholder. Over 12 years of experience in commercial lending, transaction advisory, audit, and lender services. Named to American Banker's '25 People Who Will Change Banking in 2025'.",
-        "li": "https://theorg.com/org/newity/org-chart/luke-lahaie",
-        "hooks": [
-          "*Notre Dame MS Accountancy",
-          "*CPA + CFA Charterholder",
-          "*American Banker Top 25 (2025)",
-          "Michigan State finance grad"
-        ]
-      }
-    ],
-    "ask": "Given NEWITY's #1 position in SBA 7(a) lending and Inc. 5000 growth, would David and Luke be interested in seeing how HyperVerge's AI could help process even more applications faster?",
-    "location": "Illinois",
-    "employees": 77,
-    "website": "https://newitymarket.com",
-    "linkedinUrl": "https://www.linkedin.com/company/newitymarket/",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ],
-    "outreachHistory": {
-      "status": "responded",
-      "totalOutbound": 0,
-      "totalInbound": 8,
-      "lastActivityDate": null,
-      "matchedContacts": [
-        {
-          "email": "info@newitymarket.com",
-          "name": "Newity",
-          "title": "advisor",
-          "outbound": 0,
-          "inbound": 7
-        },
-        {
-          "email": "supportteam@newitymarket.com",
-          "name": "Support At Newity",
-          "title": "",
-          "outbound": 0,
-          "inbound": 1
-        },
-        {
-          "email": "kdunson@newitymarket.com",
-          "name": "",
-          "title": "",
-          "outbound": 0,
-          "inbound": 0
-        }
-      ]
-    },
-    "category": "technology"
-  },
-  {
     "id": 1047,
     "name": "Hello Alice",
     "type": "TAM",
@@ -18879,7 +18624,7 @@
   {
     "id": 1067,
     "name": "Kalamata Capital Group",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -18930,6 +18675,18 @@
         "h": "Kalamata Surpasses $1 Billion in Total Funding",
         "s": "Company Profile, 2024",
         "d": "Over 13,000 loans and MCAs funded since founding in 2013."
+      },
+      {
+        "h": "Kalamata.com Upsizes Securitization by 25% Demonstrating Strong Growth from Proprietary Technology Platform",
+        "s": "PR Newswire, Jul 2025",
+        "d": "Kalamata upsized its 2024 securitization by 25% with notes expandable up to $500M, adding $20M in funding capacity. Guggenheim Securities served as sole structuring advisor.",
+        "p": "2025-07-29"
+      },
+      {
+        "h": "Kalamata.com Closes Securitization of Up to $500 Million",
+        "s": "BusinessWire, May 2024",
+        "d": "Kalamata closed its inaugural securitization of revolving business advance receivables, initially totaling $80M and expandable up to $500M.",
+        "p": "2024-05-02"
       }
     ],
     "ice": "Kalamata's $500M securitization with a BBB rating from KBRA is a huge milestone. As you deploy that capital through the Kalamata Cash platform, how are you scaling underwriting?",
@@ -18937,12 +18694,14 @@
       "The 25% upsize on your securitization shows incredible demand. How is your underwriting keeping pace with that growth?",
       "Steven, your journey from Rapid Financial to building Kalamata to $1B+ in funding is impressive. What's the biggest challenge now?",
       "Kalamata Cash is an innovative proprietary platform. How much of the underwriting is automated vs. manual?",
-      "With 13,000+ deals funded and a BBB-rated securitization, you've proven institutional-grade quality. How do you maintain that at scale?"
+      "With 13,000+ deals funded and a BBB-rated securitization, you've proven institutional-grade quality. How do you maintain that at scale?",
+      "Congrats on closing that $500M securitization -- at that scale, how is your underwriting team keeping pace with deal volume?"
     ],
     "tp": [
       "HyperVerge's AI underwriting could help Kalamata deploy its $500M+ facility faster by cutting review time from 40 minutes to under 5.",
       "With 450+ MCA companies served, HyperVerge is the trusted platform for funders at Kalamata's scale -- .",
-      "Automating document verification and bank statement analysis would complement Kalamata Cash and help maintain that BBB-rated portfolio quality."
+      "Automating document verification and bank statement analysis would complement Kalamata Cash and help maintain that BBB-rated portfolio quality.",
+      "With $500M in committed capital, AI-powered underwriting could help you deploy faster while maintaining credit quality across your ISO channel."
     ],
     "leaders": [
       {
@@ -18954,7 +18713,11 @@
           "*Ex-Goldman Sachs M&A (1992)",
           "*Columbia Business School prof",
           "*Authored Goldman Sachs book",
-          "Ex-Citigroup chief of staff"
+          "Ex-Citigroup chief of staff",
+          "*Goldman Sachs under Henry Paulson",
+          "*Columbia Business School professor",
+          "*Harvard Business Press author",
+          "Named company after Greek heritage"
         ]
       },
       {
@@ -18966,7 +18729,21 @@
           "*Early employee to co-president",
           "Launched Kalamata Cash platform",
           "$500M+ securitization facility",
-          "25% upsize in July 2025"
+          "25% upsize in July 2025",
+          "*First employee to Co-President",
+          "Ex-CapitalSource Bank",
+          "$500M securitization architect"
+        ]
+      },
+      {
+        "n": "Connor Phillips",
+        "t": "Co-President",
+        "bg": "Dartmouth College BA. One of Kalamata's earliest employees alongside Brandon Laks. Previously interned at the Bureau of Industry and Security at the US Department of Commerce. Now Co-President overseeing strategic direction and investment decisions. Key driver of the Kalamata Cash proprietary technology platform launch in 2024.",
+        "li": "",
+        "hooks": [
+          "*Dartmouth College",
+          "US Dept of Commerce intern",
+          "Kalamata Cash platform driver"
         ]
       }
     ],
@@ -18978,7 +18755,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -19046,72 +18824,6 @@
       "researched",
       "deep-researched"
     ]
-  },
-  {
-    "id": 1069,
-    "name": "Bizfund LLC",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Danny Koshanfar",
-        "t": "CEO"
-      }
-    ],
-    "desc": "Delaware-based MCA funder (operating as New Era Lending) providing merchant cash advances and short-term funding to small businesses with 6+ months operating history and $10K+ monthly revenue.",
-    "notes": "",
-    "news": [
-      {
-        "h": "BizFund Continues MCA Funding Operations Under New Era Brand",
-        "s": "Industry Profile, 2024",
-        "d": "BizFund operates as a direct MCA funder with $18M in estimated revenue."
-      },
-      {
-        "h": "BizFund Serves Businesses That Don't Qualify for Traditional Loans",
-        "s": "Company Profile, 2025",
-        "d": "Funding available for businesses with limited credit history, various industries, and flexible requirements."
-      }
-    ],
-    "ice": "Danny, your experience founding Pearl Capital and building BizFund shows deep MCA expertise. How are you scaling underwriting as deal volume grows?",
-    "icebreakers": [
-      "BizFund's focus on businesses that don't qualify for traditional loans is a big market. How automated is your approval process?",
-      "Danny, your journey from Pearl Capital to BizFund shows entrepreneurial grit. What's the biggest operational challenge today?",
-      "Funding businesses with limited credit history requires sophisticated risk assessment. What tools are you using?",
-      "BizFund's $10K minimum revenue threshold means high volume. How fast is your current underwriting turnaround?"
-    ],
-    "tp": [
-      "HyperVerge's AI underwriting could help BizFund cut MCA review time from 40 minutes to under 5, processing more deals daily.",
-      "With 450+ MCA companies served, HyperVerge understands the specific challenges of funding businesses with limited credit history.",
-      "Automating bank statement analysis would help BizFund maintain underwriting quality while scaling volume."
-    ],
-    "leaders": [
-      {
-        "n": "Danny Koshanfar",
-        "t": "CEO",
-        "bg": "Founded Pearl Capital in 2009 and served as President until 2012. Transitioned to lead New Era Lending, then BizFund starting in January 2013. Based in Miami, FL. Manages a team including Rikki Kopfstein (VP of ISO Relations) and Jeff Engel (ISO Relations Manager). BizFund provides short-term 3-12 month funding from their Wilmington, DE headquarters.",
-        "li": "https://www.linkedin.com/in/danny-koshanfar-0576a485/",
-        "hooks": [
-          "*Founded Pearl Capital 2009",
-          "Pearl Capital to BizFund pivot",
-          "Miami-based MCA operator",
-          "ISO relations focused"
-        ]
-      }
-    ],
-    "ask": "BizFund's MCA volume would benefit from faster underwriting. Can we show you how HyperVerge helps similar funders 8x their review speed? Quick demo this week?",
-    "location": "Dalware",
-    "employees": 43,
-    "website": "https://bizfund.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/new-era-lending/people/",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ],
-    "category": "funder"
   },
   {
     "id": 1070,
@@ -23940,32 +23652,6 @@
     ]
   },
   {
-    "id": 1149,
-    "name": "Business Capital Providers",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Florida-based small business lending company. Limited public information available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Florida",
-    "employees": 4,
-    "website": "https://bcproviders.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/bc-providers/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
     "id": 1150,
     "name": "Business Capital Providers Inc.",
     "type": "TAM",
@@ -23984,7 +23670,7 @@
     "ask": "",
     "location": "Florida",
     "employees": 4,
-    "website": "",
+    "website": "https://bcproviders.com/",
     "linkedinUrl": "https://www.linkedin.com/company/bc-providers/",
     "source": [
       "tam",
@@ -25995,33 +25681,6 @@
       "tam-researched"
     ],
     "category": "funder"
-  },
-  {
-    "id": 1221,
-    "name": "Fenix Capital Funding LLC",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Brooklyn, NY-based MCA provider (est. Oct 2021) specializing in merchant cash advances from $7,500 to $150,000 with 4-12 month terms. Also offers consolidation programs reducing daily payments by 20-50%. Same-day funding with 4-hour approval. Works through ISO network.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 9,
-    "website": "",
-    "linkedinUrl": "https://www.linkedin.com/company/fenix-capital-funding/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "broker"
   },
   {
     "id": 1222,
@@ -28049,33 +27708,6 @@
     ]
   },
   {
-    "id": 1295,
-    "name": "Lily Advance LLC",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Tennessee-based underwriting firm helping brokers nationwide secure fast, reliable business funding through merchant cash advances.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Tennessee",
-    "employees": 2,
-    "website": "https://lilyadvance.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/lily-advance/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "broker"
-  },
-  {
     "id": 1296,
     "name": "Line of Credit Depot",
     "type": "TAM",
@@ -28157,33 +27789,6 @@
       "tam",
       "tam-researched"
     ]
-  },
-  {
-    "id": 1299,
-    "name": "Logic Advance Group",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Alternative lending company founded in 2015, based in Queens, NY. Offers MCA, revenue-based financing, lines of credit, equipment financing, term loans, and credit card processing, with funding from $5K to $500K in as little as 24 hours.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 6,
-    "website": "https://logicadvancegroup.com",
-    "linkedinUrl": "https://www.linkedin.com/company/logicadvancegroup/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
   },
   {
     "id": 1300,
@@ -28677,32 +28282,6 @@
     ]
   },
   {
-    "id": 1318,
-    "name": "Moneywell GRP",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Small business lending company based in Florida. Limited public information available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Florida",
-    "employees": 2,
-    "website": "https://www.moneywellgrp.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/moneywell-grp/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
     "id": 1319,
     "name": "MoneyWell GRP LLC",
     "type": "TAM",
@@ -28721,7 +28300,7 @@
     "ask": "",
     "location": "Florida",
     "employees": 2,
-    "website": "",
+    "website": "https://www.moneywellgrp.com/",
     "linkedinUrl": "https://www.linkedin.com/company/moneywell-grp/",
     "source": [
       "tam",
@@ -31676,59 +31255,6 @@
     ]
   },
   {
-    "id": 1428,
-    "name": "United Business Funding",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "New York-based (Farmingville, NY) financial services company with 20+ years in operation, offering small business loans and merchant cash advances from $2,000 to $2,000,000 with funding in as little as 3 business days.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 11,
-    "website": "http://ubfunds.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/united-business-funding/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1429,
-    "name": "United Capital Source Inc",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "New York-based business lending marketplace since 2011, connecting businesses with 75+ lenders for business lines of credit, term loans, merchant cash advances, SBA loans, and working capital. Over 1,500 five-star reviews. MCAs up to $1M available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 17,
-    "website": "https://www.unitedcapitalsource.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/united-capital-source/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "broker"
-  },
-  {
     "id": 1430,
     "name": "Universal Lending Corporation",
     "type": "TAM",
@@ -32312,33 +31838,6 @@
     "category": "funder"
   },
   {
-    "id": 1451,
-    "name": "Wynwood Capital Group",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Likely a duplicate entry of Wynwood Capital (id 1450). Florida-based MCA provider offering merchant cash advances with fast funding and high approval rates.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Florida",
-    "employees": 5,
-    "website": "",
-    "linkedinUrl": "https://www.linkedin.com/company/wynwood-capital-group/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1452,
     "name": "Wyoming Capital Access",
     "type": "TAM",
@@ -32530,92 +32029,6 @@
     "category": "funder"
   },
   {
-    "id": 1459,
-    "name": "Big Think Capital Inc.",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "David Brown",
-        "t": "President & Founder"
-      }
-    ],
-    "desc": "Melville, NY-based direct lender and marketplace offering MCAs, term loans, lines of credit, SBA loans, and equipment financing up to $2M. A+ BBB rated with 2,000+ five-star Trustpilot reviews and 98% positive rating.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Big Think Capital Ranked #19 Fortune Best Small Workplaces 2025",
-        "s": "Fortune, 2025",
-        "d": "Big Think Capital recognized as one of the best small workplaces in the US, also ranking #30 in Financial Services & Insurance."
-      },
-      {
-        "h": "Big Think Capital Appoints Ami Dviri as Chief Marketing Officer",
-        "s": "BusinessWire, Mar 2024",
-        "d": "Ami Dviri joined Big Think Capital as CMO with 20 years of experience at Fortune 100 companies including JP Morgan Chase, Deutsche Bank, and New York Life."
-      },
-      {
-        "h": "Big Think Capital Ranked #19 on Fortune Best Small Workplaces 2025",
-        "s": "Fortune, 2025",
-        "d": "Ranked #19 on Fortune's Best Small Workplaces list and #30 in Financial Services & Insurance category."
-      },
-      {
-        "h": "Big Think Capital Appoints Ami Dviri as CMO",
-        "s": "Company Announcement, 2025",
-        "d": "Appointed Ami Dviri as Chief Marketing Officer to lead all marketing functions, reporting to President David Brown."
-      },
-      {
-        "h": "Big Think Capital Maintains 98% Five-Star Trustpilot Rating",
-        "s": "Trustpilot, 2024",
-        "d": "Consistently earns highest ratings in financial services with nearly 2,500 clients providing positive reviews."
-      },
-      {
-        "h": "Big Think Capital Recognized as Client-First Lending Marketplace",
-        "s": "Industry Press, 2024",
-        "d": "Profiled for unique advocacy-first approach to lending that prioritizes intelligent borrowing over volume."
-      }
-    ],
-    "ice": "Going from law to $3B in mortgage banking to founding Big Think Capital with an advocacy-first approach is a unique journey -- how does that legal mindset shape your underwriting philosophy?",
-    "icebreakers": [
-      "Going from law to $3B in mortgage banking to founding Big Think Capital with an advocacy-first approach is a unique journey -- how does that legal mindset shape your underwriting philosophy?",
-      "98% five-star ratings on Trustpilot with 2,500 reviews is remarkable for financial services -- what's the secret to maintaining that client satisfaction?",
-      "Promoting 'intelligent borrowing' is a differentiated message in MCA -- how do you ensure your underwriting supports that philosophy?",
-      "With 112 employees and A+ BBB rating, you've built something special -- where are you investing in technology to maintain quality at scale?"
-    ],
-    "tp": [
-      "HyperVerge's AI underwriting automation aligns with Big Think's advocacy-first approach -- ensuring merchants are properly assessed for intelligent borrowing decisions.",
-      "With 112 employees processing multiple product types, automated document verification cuts review from 40 minutes to under 5 minutes while maintaining quality.",
-      "HyperVerge serves 450+ MCA companies and can help Big Think Capital scale their marketplace while maintaining the 98% positive rating standard."
-    ],
-    "leaders": [
-      {
-        "n": "David Brown",
-        "t": "President & Founder",
-        "bg": "Started career as attorney, transitioned to mortgage banking then financial sales before founding Big Think Capital in Melville, NY. Company ranked #19 on Fortune's Best Small Workplaces 2025 and #30 on Fortune's Best Small/Medium Workplaces in Financial Services 2025. Appointed Ami Dviri (ex-JP Morgan Chase, Deutsche Bank, New York Life) as CMO in March 2024. Big Think Capital is A+ BBB rated with 2,000+ five-star Trustpilot reviews and 98% positive rating. 112 employees.",
-        "li": "https://www.linkedin.com/in/david-a-brown-54941a20/",
-        "hooks": [
-          "*Fortune Best Workplaces #19 (2025)",
-          "Attorney turned fintech founder",
-          "Hired ex-JPMorgan CMO Ami Dviri",
-          "2,000+ five-star Trustpilot reviews"
-        ]
-      }
-    ],
-    "ask": "With your focus on intelligent borrowing and client advocacy, would a demo be valuable to see how HyperVerge's AI ensures thorough yet fast underwriting decisions?",
-    "location": "New York",
-    "employees": 112,
-    "website": "https://bigthinkcapital.com",
-    "linkedinUrl": "bigthinkcapital.com",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1460,
     "name": "BIZ ADVANCE NOW INC.",
     "type": "TAM",
@@ -32776,27 +32189,37 @@
   {
     "id": 1464,
     "name": "Cobalt Funding Solutions LLC",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
+    "contacts": [
+      {
+        "n": "",
+        "t": "CEO"
+      }
+    ],
     "desc": "New York-based fintech company providing revenue-based financing with funding from $10K-$3M. Delivers swift financial solutions within 24 hours, serving businesses nationwide. Offers snap funding with no stipulations and terms up to 10 months.",
     "notes": "",
     "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
+    "ice": "The no-stipulation, snap-funding model up to $3M is a strong value prop -- speed and simplicity clearly win deals.",
+    "icebreakers": [
+      "The no-stipulation, snap-funding model up to $3M is a strong value prop -- speed and simplicity clearly win deals."
+    ],
+    "tp": [
+      "AI underwriting can maintain the speed of your no-stip model while adding a data-driven risk layer to protect margins on larger deals."
+    ],
     "leaders": [],
-    "ask": "",
+    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "location": "New York",
     "employees": 9,
     "website": "https://cobaltfunding.com",
     "linkedinUrl": "cobaltfunding.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -32829,54 +32252,74 @@
   {
     "id": 1466,
     "name": "Crest Hill Capital LLC",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
+    "contacts": [
+      {
+        "n": "",
+        "t": "CEO"
+      }
+    ],
     "desc": "West Palm Beach, FL-based working capital and factoring company providing hassle-free financing to small business owners. Offers MCA and working capital funding up to $2M with approval within 48 hours, regardless of credit score.",
     "notes": "",
     "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
+    "ice": "Crest Hill Capital has carved out a solid position in the MCA market since 2013 with a focus on reliable funding for SMBs.",
+    "icebreakers": [
+      "Crest Hill Capital has carved out a solid position in the MCA market since 2013 with a focus on reliable funding for SMBs."
+    ],
+    "tp": [
+      "AI underwriting can help Crest Hill evaluate merchant applications faster and more accurately, reducing manual review time while improving approval rates."
+    ],
     "leaders": [],
-    "ask": "",
+    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "location": "Florida",
     "employees": 7,
     "website": "https://cresthillcapital.com",
     "linkedinUrl": "cresthillcapital.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
   {
     "id": 1467,
     "name": "Crestmont Capital LLC",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
+    "contacts": [
+      {
+        "n": "Gregory Keleshian",
+        "t": "CEO"
+      }
+    ],
     "desc": "Irvine, CA-based MCA provider offering customized financing solutions up to $500K with minimal documentation and funding in 24 hours. Serves businesses across all industries including cash advance collection, mortgage, and various other sectors.",
     "notes": "",
     "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
+    "ice": "Making the Inc. 5000 list shows Crestmont is on a strong growth trajectory -- that kind of momentum is exciting in the alternative lending space.",
+    "icebreakers": [
+      "Making the Inc. 5000 list shows Crestmont is on a strong growth trajectory -- that kind of momentum is exciting in the alternative lending space."
+    ],
+    "tp": [
+      "AI underwriting can help Crestmont maintain credit quality during rapid growth by automating risk assessment across its diverse lending products."
+    ],
     "leaders": [],
-    "ask": "",
+    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "location": "California",
     "employees": 14,
     "website": "https://crestmontcapital.com",
     "linkedinUrl": "crestmontcapital.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -34141,7 +33584,7 @@
   {
     "id": 1501,
     "name": "Shore Funding Solutions Inc.",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -34154,6 +33597,10 @@
       {
         "n": "Lauretta Teseo",
         "t": "President"
+      },
+      {
+        "n": "",
+        "t": "CEO"
       }
     ],
     "desc": "Melville, NY-based business lender providing MCAs and loans up to $5M with 90% approval rate. Named Inc. 500 #593 fastest-growing company; facilitated $1B+ in total funding with team of 80+ professionals since 2014.",
@@ -34200,12 +33647,14 @@
       "Going from a small Melville team to $1B+ in funding with a 90% approval rate is remarkable growth -- how are you managing underwriting quality at that approval level?",
       "Making the Inc. 500 list and reaching $1B in funding speaks to strong execution -- what role does technology play in maintaining that momentum?",
       "A 90% approval rate means you're saying yes to a lot of deals -- how do you ensure risk is properly managed at that volume?",
-      "With 84 employees and banking/Wall Street DNA, where are you investing in technology to scale the next billion in funding?"
+      "With 84 employees and banking/Wall Street DNA, where are you investing in technology to scale the next billion in funding?",
+      "Crossing $1B in facilitated funding with a team of 80 shows impressive operational efficiency."
     ],
     "tp": [
       "HyperVerge's AI underwriting automation can help Shore Funding maintain their 90% approval rate while improving risk assessment -- cutting review from 40 minutes to under 5 minutes.",
       "With $1B+ in funding and 80+ employees, automated document verification and fraud detection at scale protect portfolio quality.",
-      "HyperVerge serves 450+ MCA companies and can help Shore Funding Solutions scale their next billion in funding with enterprise-grade AI underwriting."
+      "HyperVerge serves 450+ MCA companies and can help Shore Funding Solutions scale their next billion in funding with enterprise-grade AI underwriting.",
+      "AI underwriting can help Shore Funding scale beyond $1B without proportionally growing headcount by automating routine deal evaluation."
     ],
     "leaders": [
       {
@@ -34238,8 +33687,10 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
-    ]
+      "deep-researched",
+      "eventiq"
+    ],
+    "category": "bank"
   },
   {
     "id": 1502,
@@ -41977,32 +41428,6 @@
     ]
   },
   {
-    "id": 1678,
-    "name": "INVISION FUNDING",
-    "type": "TAM",
-    "priority": 6,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Small business lending company offering funding solutions. Limited public information available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://www.InVisionFundingSolutions.com",
-    "linkedinUrl": "https://www.InVisionFundingSolutions.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
     "id": 1679,
     "name": "IRON CROWN CAPITAL",
     "type": "TAM",
@@ -42452,58 +41877,6 @@
     "category": "funder"
   },
   {
-    "id": 1693,
-    "name": "LEVO Funding",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Kentucky-based small business funding company. Limited public information available about their specific merchant cash advance offerings.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Kentucky",
-    "employees": 14,
-    "website": "https://levofunding.com",
-    "linkedinUrl": "levofunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1694,
-    "name": "LG FUNDING",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Brooklyn, NY-based merchant cash advance provider offering business funding through future credit card receivable purchases. Known for quick approval and simple application process.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New Jersey",
-    "employees": 2,
-    "website": "https://www.lgfunding.com",
-    "linkedinUrl": "www.lgfunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
     "id": 1695,
     "name": "Lightspeed Capital",
     "type": "TAM",
@@ -42553,7 +41926,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "broker"
   },
   {
     "id": 1697,
