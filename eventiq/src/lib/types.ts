@@ -198,7 +198,7 @@ export function getResearchTier(score: number): ResearchTier {
   return 'minimal';
 }
 
-export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'Researched' | 'Unresearched';
+export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'NeedsEmail' | 'Researched' | 'Unresearched';
 export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees' | 'quality' | 'outreach';
 export type ViewType = 'cards' | 'table';
 export type TabType = 'companies' | 'schedule' | 'resources' | 'marketing' | 'dashboard' | 'pipeline' | 'feed' | 'map' | 'dinner';

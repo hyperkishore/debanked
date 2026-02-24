@@ -1,7 +1,30 @@
 /**
- * Apollo.io API client for company enrichment.
+ * Apollo.io API client for company + contact enrichment.
  * Free tier: 50 credits/month.
  */
+
+// --- Types ---
+
+export interface ApolloContact {
+  name: string;
+  title: string;
+  email: string | null;
+  phone: string | null;
+  linkedinUrl: string | null;
+  confidence: number;
+}
+
+export interface ApolloPersonEnrichment {
+  name: string;
+  title: string;
+  email: string | null;
+  emailConfidence: number;
+  phone: string | null;
+  linkedinUrl: string | null;
+  city: string | null;
+  state: string | null;
+  headline: string | null;
+}
 
 export interface ApolloEnrichment {
   employeeCount: number | null;
@@ -93,4 +116,130 @@ export async function enrichCompanyViaApollo(
     console.error(`[Apollo] Error enriching ${companyDomain}:`, err);
     return null;
   }
+}
+
+// Target titles for small business lending decision-makers
+const TARGET_TITLES = [
+  "CEO", "COO", "CRO", "CTO", "CFO",
+  "VP Risk", "VP Underwriting", "VP Operations", "VP Technology",
+  "Head of Risk", "Head of Underwriting", "Head of Operations",
+  "Director of Risk", "Director of Underwriting", "Director of Technology",
+  "Chief Risk Officer", "Chief Operating Officer", "Chief Revenue Officer",
+  "Managing Director", "President", "Founder", "Co-Founder",
+  "SVP", "EVP",
+];
+
+/**
+ * Search for people at a company using Apollo.io People Search API.
+ * Returns contacts matching target decision-maker titles.
+ */
+export async function searchPeopleAtCompany(
+  companyDomain: string,
+  companyName: string
+): Promise<ApolloContact[]> {
+  const apiKey = process.env.APOLLO_API_KEY;
+  if (!apiKey) return [];
+
+  try {
+    const res = await fetch(
+      "https://api.apollo.io/v1/mixed_people/search",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-cache",
+        },
+        body: JSON.stringify({
+          api_key: apiKey,
+          q_organization_domains: companyDomain,
+          person_titles: TARGET_TITLES,
+          page: 1,
+          per_page: 10,
+        }),
+      }
+    );
+
+    if (!res.ok) {
+      console.error(`[Apollo People] HTTP ${res.status} for ${companyName}`);
+      return [];
+    }
+
+    const data = await res.json();
+    const people = data.people || [];
+
+    return people.map((p: {
+      name: string;
+      title: string;
+      email: string;
+      phone_numbers?: Array<{ sanitized_number: string }>;
+      linkedin_url: string;
+      email_confidence?: number;
+    }) => ({
+      name: p.name || "",
+      title: p.title || "",
+      email: p.email || null,
+      phone: p.phone_numbers?.[0]?.sanitized_number || null,
+      linkedinUrl: p.linkedin_url || null,
+      confidence: p.email_confidence ?? 0,
+    }));
+  } catch (err) {
+    console.error(`[Apollo People] Error searching ${companyName}:`, err);
+    return [];
+  }
+}
+
+/**
+ * Enrich a single person by email using Apollo.io People Match API.
+ * Returns verified contact details.
+ */
+export async function enrichPerson(
+  email: string
+): Promise<ApolloPersonEnrichment | null> {
+  const apiKey = process.env.APOLLO_API_KEY;
+  if (!apiKey) return null;
+
+  try {
+    const res = await fetch(
+      "https://api.apollo.io/v1/people/match",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-cache",
+        },
+        body: JSON.stringify({
+          api_key: apiKey,
+          email,
+        }),
+      }
+    );
+
+    if (!res.ok) {
+      console.error(`[Apollo Enrich] HTTP ${res.status} for ${email}`);
+      return null;
+    }
+
+    const data = await res.json();
+    const person = data.person;
+    if (!person) return null;
+
+    return {
+      name: person.name || "",
+      title: person.title || "",
+      email: person.email || null,
+      emailConfidence: person.email_confidence ?? 0,
+      phone: person.phone_numbers?.[0]?.sanitized_number || null,
+      linkedinUrl: person.linkedin_url || null,
+      city: person.city || null,
+      state: person.state || null,
+      headline: person.headline || null,
+    };
+  } catch (err) {
+    console.error(`[Apollo Enrich] Error for ${email}:`, err);
+    return null;
+  }
+}
+
+export function isApolloConfigured(): boolean {
+  return !!process.env.APOLLO_API_KEY;
 }

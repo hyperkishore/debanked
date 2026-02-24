@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
-import { Tag } from "lucide-react";
+import { Tag, Mail, Phone } from "lucide-react";
 
 interface CompanyCardProps {
   company: Company;
@@ -181,25 +181,33 @@ export function CompanyCard({
             </p>
           )}
 
-          {/* Tags */}
-          {tags.length > 0 && (
-            <div className="flex flex-wrap gap-1 mt-1">
-              {tags.slice(0, 3).map((tag) => (
-                <span
-                  key={tag}
-                  className="inline-flex items-center gap-0.5 text-xs px-1 py-0.5 rounded bg-brand/10 text-brand/70"
-                >
-                  <Tag className="h-2 w-2" />
-                  {tag}
-                </span>
-              ))}
-              {tags.length > 3 && (
-                <span className="text-xs text-muted-foreground/60">
-                  +{tags.length - 3}
-                </span>
-              )}
-            </div>
-          )}
+          {/* Enrichment status icons + Tags */}
+          <div className="flex flex-wrap items-center gap-1 mt-1">
+            {(() => {
+              const hasEmail = (company.leaders || []).some(l => l.email);
+              const hasPhone = (company.leaders || []).some(l => l.phone);
+              return (
+                <>
+                  <Mail className={cn("h-3 w-3", hasEmail ? "text-blue-400" : "text-muted-foreground/30")} />
+                  <Phone className={cn("h-3 w-3", hasPhone ? "text-green-400" : "text-muted-foreground/30")} />
+                </>
+              );
+            })()}
+            {tags.slice(0, 3).map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center gap-0.5 text-xs px-1 py-0.5 rounded bg-brand/10 text-brand/70"
+              >
+                <Tag className="h-2 w-2" />
+                {tag}
+              </span>
+            ))}
+            {tags.length > 3 && (
+              <span className="text-xs text-muted-foreground/60">
+                +{tags.length - 3}
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Research score badge */}

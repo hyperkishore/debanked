@@ -55,6 +55,7 @@ function filterCompanies(
   else if (filter === "Met") filtered = filtered.filter((c) => metState[c.id]);
   else if (filter === "CLEAR") filtered = filtered.filter((c) => c.clear);
   else if (filter === "FollowUp") filtered = filtered.filter((c) => metState[c.id] && needsFollowUp(engagements, c.id));
+  else if (filter === "NeedsEmail") filtered = filtered.filter((c) => isResearched(c) && !(c.leaders || []).some(l => l.email));
   else if (filter === "Researched") filtered = filtered.filter((c) => isResearched(c));
   else if (filter === "Unresearched") filtered = filtered.filter((c) => !isResearched(c));
 

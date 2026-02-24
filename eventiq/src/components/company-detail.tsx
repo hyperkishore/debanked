@@ -48,6 +48,10 @@ import {
   Tag,
   X,
   Plus,
+  Phone,
+  FileText,
+  Send,
+  ClipboardCopy,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -225,6 +229,50 @@ export function CompanyDetail({
           </div>
         )}
 
+        {/* Enrichment status badges */}
+        {company.leaders && company.leaders.length > 0 && (
+          <div className="flex items-center gap-1.5 mt-1.5">
+            {(() => {
+              const leaderWithVerifiedEmail = company.leaders!.find(l => l.email && (l.confidence ?? 0) >= 0.8);
+              const leaderWithEmail = company.leaders!.find(l => l.email);
+              const leaderWithPhone = company.leaders!.some(l => l.phone);
+              return (
+                <>
+                  {leaderWithVerifiedEmail ? (
+                    <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-green-500/10 text-green-400 border-green-500/30">
+                      <Check className="h-2.5 w-2.5 mr-0.5" />Email verified
+                    </Badge>
+                  ) : leaderWithEmail ? (
+                    <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-yellow-500/10 text-yellow-400 border-yellow-500/30">
+                      <Mail className="h-2.5 w-2.5 mr-0.5" />Email unverified
+                    </Badge>
+                  ) : (
+                    <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-muted/50 text-muted-foreground border-border">
+                      <Mail className="h-2.5 w-2.5 mr-0.5" />No email
+                    </Badge>
+                  )}
+                  {leaderWithPhone && (
+                    <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-green-500/10 text-green-400 border-green-500/30">
+                      <Phone className="h-2.5 w-2.5 mr-0.5" />Phone
+                    </Badge>
+                  )}
+                </>
+              );
+            })()}
+            {pipelineState[company.id]?.hubspot_deal_id ? (
+              <a
+                href={`https://app.hubspot.com/contacts/deals/${pipelineState[company.id].hubspot_deal_id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-orange-500/10 text-orange-400 border-orange-500/30 cursor-pointer hover:bg-orange-500/20">
+                  <ExternalLink className="h-2.5 w-2.5 mr-0.5" />HubSpot
+                </Badge>
+              </a>
+            ) : null}
+          </div>
+        )}
+
         {/* Custom tags */}
         {onAddTag && (
           <div className="flex flex-wrap items-center gap-1 mt-1.5">
@@ -371,29 +419,79 @@ export function CompanyDetail({
               variant="outline"
               size="sm"
               className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-[#0077b5] hover:border-[#0077b5]/40"
-              onClick={() => window.open(company.leaders![0].li, "_blank")}
+              onClick={() => {
+                window.open(company.leaders![0].li, "_blank");
+                if (onQuickLog) {
+                  onQuickLog(company.leaders![0].n, "linkedin", "sent_connection");
+                }
+              }}
             >
               <Linkedin className="h-3 w-3" />
               LinkedIn
             </Button>
           )}
-          <Button
-            variant="outline"
-            size="sm"
-            className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
-            onClick={() => {
-              const leader = company.leaders?.[0];
-              const firstName = leader?.n.split(" ")[0] || "there";
-              const subject = `${company.name} + HyperVerge — Quick Question`;
-              const body = company.ask
-                || `Hi ${firstName},\n\n${company.ice || company.tp?.[0] || `I'd love to connect about how HyperVerge can help ${company.name}.`}\n\nBest,\n`;
-              const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-              window.open(mailto);
-            }}
-          >
-            <Mail className="h-3 w-3" />
-            Draft Email
-          </Button>
+          {(() => {
+            const leaderWithEmail = company.leaders?.find(l => l.email);
+            const leader = leaderWithEmail || company.leaders?.[0];
+            const firstName = leader?.n.split(" ")[0] || "there";
+            const recipient = leader?.email || "";
+            const subject = `${company.name} + HyperVerge — Quick Question`;
+            const body = company.ask
+              || `Hi ${firstName},\n\n${company.ice || company.tp?.[0] || `I'd love to connect about how HyperVerge can help ${company.name}.`}\n\nBest,\n`;
+            return (
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
+                    onClick={() => {
+                      const mailto = `mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                      window.open(mailto);
+                      if (onQuickLog && leader) {
+                        onQuickLog(leader.n, "email", "sent_intro");
+                      }
+                    }}
+                  >
+                    <Mail className="h-3 w-3" />
+                    Draft Email
+                    {leader && <span className="text-muted-foreground/50 ml-0.5">({firstName})</span>}
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  {recipient ? `Email ${leader?.n} (${recipient})` : "No email on file — add via Apollo enrichment"}
+                </TooltipContent>
+              </Tooltip>
+            );
+          })()}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
+                onClick={() => {
+                  const leader = company.leaders?.find(l => l.email) || company.leaders?.[0];
+                  const firstName = leader?.n.split(" ")[0] || "there";
+                  const subject = `${company.name} + HyperVerge — Quick Question`;
+                  const body = company.ask
+                    || `Hi ${firstName},\n\n${company.ice || company.tp?.[0] || `I'd love to connect about how HyperVerge can help ${company.name}.`}\n\nBest,\n`;
+                  const clipboardText = [
+                    leader?.email ? `To: ${leader.email}` : "",
+                    `Subject: ${subject}`,
+                    "",
+                    body,
+                  ].filter(Boolean).join("\n");
+                  navigator.clipboard.writeText(clipboardText);
+                  toast.success("Email copied — paste into Outplay");
+                }}
+              >
+                <Send className="h-3 w-3" />
+                Outplay
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>Copy email content for Outplay</TooltipContent>
+          </Tooltip>
           <Button
             variant="outline"
             size="sm"
@@ -411,6 +509,34 @@ export function CompanyDetail({
           >
             <Copy className="h-3 w-3" />
             Copy Points
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
+            onClick={() => {
+              const leader = company.leaders?.[0];
+              const brief = [
+                `COMPANY: ${company.name} (${company.type})`,
+                leader ? `CONTACT: ${leader.n} — ${leader.t}` : "",
+                leader ? `EMAIL: ${leader.email || "Not on file"}` : "",
+                leader ? `LINKEDIN: ${leader.li || "Not on file"}` : "",
+                leader?.phone ? `PHONE: ${leader.phone}` : "",
+                "",
+                company.ice ? `ICEBREAKER: ${company.ice}` : "",
+                "",
+                company.tp?.length ? `TALKING POINTS:\n${company.tp.map((tp, i) => `${i + 1}. ${tp}`).join("\n")}` : "",
+                "",
+                company.ask ? `ASK: ${company.ask}` : "",
+                "",
+                company.news?.[0] ? `RECENT NEWS: ${company.news[0].h} — ${company.news[0].s}` : "",
+              ].filter(Boolean).join("\n");
+              navigator.clipboard.writeText(brief);
+              toast.success("Full outreach brief copied");
+            }}
+          >
+            <FileText className="h-3 w-3" />
+            Copy Brief
           </Button>
           {company.website && (
             <Button
@@ -797,7 +923,8 @@ function LeaderCard({
               {leader.email && (
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <a href={`mailto:${leader.email}`} className="text-xs text-blue-400 hover:underline truncate max-w-[180px]">
+                    <a href={`mailto:${leader.email}`} className="text-xs text-blue-400 hover:underline truncate max-w-[180px] flex items-center gap-0.5">
+                      <Mail className="h-2.5 w-2.5 shrink-0" />
                       {leader.email}
                     </a>
                   </TooltipTrigger>
@@ -805,7 +932,8 @@ function LeaderCard({
                 </Tooltip>
               )}
               {leader.phone && (
-                <a href={`tel:${leader.phone}`} className="text-xs text-green-400 hover:underline">
+                <a href={`tel:${leader.phone}`} className="text-xs text-green-400 hover:underline flex items-center gap-0.5">
+                  <Phone className="h-2.5 w-2.5 shrink-0" />
                   {leader.phone}
                 </a>
               )}
@@ -813,6 +941,25 @@ function LeaderCard({
           )}
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
+          {leader.email && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  href={`mailto:${leader.email}?subject=${encodeURIComponent(`${company.name} + HyperVerge`)}&body=${encodeURIComponent(currentEmail.body)}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (onQuickLog) {
+                      onQuickLog(leader.n, "email", "sent_intro");
+                    }
+                  }}
+                  className="flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md bg-green-500/10 text-green-400 hover:bg-green-500/20 transition-colors font-medium"
+                >
+                  <Mail className="h-3 w-3" /> Email {leader.n.split(" ")[0]}
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>Open mailto with {leader.email}</TooltipContent>
+            </Tooltip>
+          )}
           <Tooltip>
             <TooltipTrigger asChild>
               <Button

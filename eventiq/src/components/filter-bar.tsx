@@ -37,6 +37,7 @@ const filters: { value: FilterType; label: string }[] = [
   { value: "Met", label: "Met" },
   { value: "CLEAR", label: "CLEAR" },
   { value: "FollowUp", label: "Follow-up" },
+  { value: "NeedsEmail", label: "Needs Email" },
   { value: "Researched", label: "Researched" },
   { value: "Unresearched", label: "Unresearched" },
 ];

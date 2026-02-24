@@ -15,6 +15,7 @@ export interface PipelineRecord {
   movedAt: string;
   dealValue?: number;
   closeDate?: string;
+  hubspot_deal_id?: string;
 }
 
 export interface PipelineStageConfig {
