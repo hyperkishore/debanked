@@ -1,0 +1,54 @@
+{
+  "companyId": 1036,
+  "companyName": "LiftFund",
+  "researchDate": "2026-02-23",
+  "appliedToDataset": true,
+  "summary": "Comprehensive verification of 15 data points. All claims verified. Key updates: nationwide expansion (50 states), lending volume $1.5B (was $439M), employees ~103 (was 110), category corrected from bank to funder (nonprofit CDFI). Added 2 new leaders.",
+  "claims": [
+    { "claim": "Founded in 1994 (originally Accion Texas)", "status": "VERIFIED", "notes": "Renamed to LiftFund in 2015 after leaving U.S. Accion network in late 2014" },
+    { "claim": "Operates in 15 states", "status": "UPDATED", "notes": "Now nationwide (50 states) as of 2025. 15 states only for SBA 7(a) Community Advantage" },
+    { "claim": "25,000+ loans totaling $439M", "status": "UPDATED", "notes": "Now 28,000+ business owners funded, ~$1.5B total capital deployed" },
+    { "claim": "96% repayment rate", "status": "VERIFIED", "notes": "Confirmed in multiple sources including OFN Ned Gramlich Award citation" },
+    { "claim": "110 employees", "status": "UPDATED", "notes": "~103 as of Oct 2025 per LeadIQ. Fluctuates 100-115" },
+    { "claim": "Amy Hereford is President & CEO (mid-2024)", "status": "VERIFIED", "notes": "Appointed after Laurie Vignaud departed June 30, 2024 (less than 1 year tenure)" },
+    { "claim": "Hereford: attorney, Trinity University (Phi Beta Kappa), UT Austin Law JD", "status": "VERIFIED", "notes": "" },
+    { "claim": "Hereford: SBA Lending Advisory Council", "status": "VERIFIED", "notes": "Named December 2024" },
+    { "claim": "Barrera: founder, former nun, Corpus Christi native", "status": "VERIFIED", "notes": "Nun for 15 years (1973-~1988). Parents owned La Mexicana restaurant" },
+    { "claim": "Barrera: University of the Incarnate Word", "status": "VERIFIED", "notes": "Also earned MBA there" },
+    { "claim": "Barrera: Obama advisory council, Ned Gramlich Award", "status": "VERIFIED", "notes": "Obama Financial Capability Council (2011). Ned Gramlich Lifetime Award (2022). Also: Treasury Advisory Committee on Racial Equity" },
+    { "claim": "MacKenzie Scott gift", "status": "VERIFIED", "notes": "$10M gift in December 2020, helped reduce interest rates to 9%" },
+    { "claim": "2025 Outstanding CDFI Award", "status": "VERIFIED", "notes": "From OFN at OFN41, October 22, 2025, Washington D.C." },
+    { "claim": "CDFI Friendly Fort Worth 0% interest loan program", "status": "VERIFIED", "notes": "Up to $100K. Partnership with CDFI Friendly Fort Worth (independent nonprofit). LiftFund deployed $7M+ in similar interest-free loans in Texas" },
+    { "claim": "Disaster Recovery Fund $83M+ to 3,500 businesses", "status": "VERIFIED", "notes": "2025 deployment. Lifetime: $222M+ to 11,000+ businesses, sustaining ~47,000 jobs" }
+  ],
+  "newFindings": {
+    "leaders": [
+      { "name": "Adam Henson", "title": "COO/CFO", "linkedin": "https://www.linkedin.com/in/adam-henson-213306132/", "notes": "Baylor University graduate" },
+      { "name": "DK Thepuatrakul", "title": "CTO", "linkedin": "https://www.linkedin.com/in/dk-thepuatrakul-9176b524/", "notes": "CTO since March 2018" },
+      { "name": "Sara Saldana", "title": "Chief Lending Officer", "notes": "At LiftFund since April 2010. No LinkedIn found" },
+      { "name": "Adrian Gonzalez", "title": "Chief CDC Officer", "notes": "No LinkedIn found" }
+    ],
+    "barreraPostLiftFund": "Now CEO of Kirpa Tech (AI website builder for small businesses). Board member at Piermont Bank. Joined San Antonio Report Board.",
+    "loanProducts": [
+      "SBA 7(a) Community Advantage: up to SBA limits, Prime WSJ + up to 6%, 7-10 years",
+      "SBA 504 Loan: for fixed assets/real estate",
+      "Small Business Loans: $500-$1M, 7.5%-15.99%, nationwide",
+      "Fort Worth 0% Interest: up to $100K"
+    ],
+    "borrowerDemographics": "77% Hispanic or African-American, 38% women",
+    "categoryCorrection": "Was 'bank', corrected to 'funder'. LiftFund is a 501(c)(3) nonprofit CDFI, not a bank (no deposits, not FDIC-insured, no bank charter)"
+  },
+  "sources": [
+    "https://www.liftfund.com/about",
+    "https://www.liftfund.com/about/our-team",
+    "https://www.prnewswire.com/news-releases/liftfund-enters-2026-as-a-key-voice--resource-for-small-business-disaster-recovery-302656897.html",
+    "https://www.prnewswire.com/news-releases/liftfund-wins-national-award-for-advancing-small-business-recovery-and-community-economic-stability-302593007.html",
+    "https://sanantonioreport.org/liftfund-ceo-departs-suddenly-one-year-general-counsel-named-ceo/",
+    "https://sanantonioreport.org/janie-barrera-liftfund-achievements-mackenzie-scott-donation/",
+    "https://www.ofn.org/news/2022-ned-gramlich-award-ofn/",
+    "https://www.ksat.com/news/local/2022/12/27/entrepreneur-at-heart-liftfund-ceo-at-one-time-was-a-nun/",
+    "https://www.liftfund.com/funding/our-products",
+    "https://fortworthinc.com/news/cdfi-friendly-fort-worth-launches-new-0-interest-loan-progra/",
+    "https://debanked.com/2024/12/sba-names-members-to-its-small-business-lending-advisory-council/"
+  ]
+}

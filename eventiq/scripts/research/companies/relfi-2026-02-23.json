@@ -1,0 +1,91 @@
+{
+  "companyId": 1796,
+  "companyName": "RelFi",
+  "researchDate": "2026-02-23",
+  "appliedToDataset": true,
+  "summary": "New company addition. RelFi (relfi.co) is a NJ-based lending marketplace founded Jan 2025, evolved from L3 Funding LLC (est. 2020). Family-run by Blaku brothers. 75+ funders, $220M/mo volume, 25K daily applicants.",
+  "companyOverview": {
+    "fullName": "RelFi Inc",
+    "dba": "RelFi (Relationship Finance)",
+    "founded": "January 23, 2025 (LLC registration). Predecessor L3 Funding LLC incorporated September 16, 2020",
+    "headquarters": "65 Challenger Road, Ridgefield Park, NJ 07660",
+    "phone": "(888) 958-8884",
+    "email": "hello@relfi.co",
+    "employees": "11-50 (LinkedIn); ~20-40 combined with L3 Funding",
+    "funding": "Bootstrapped — no external venture funding identified",
+    "sisterCompany": "L3 Funding LLC (direct MCA funder, same address, same Blaku family leadership)"
+  },
+  "metrics": {
+    "businessesServed": "10,000+",
+    "monthlyFundingVolume": "$220M (in-network)",
+    "funderNetwork": "75+ funders",
+    "dailyApplicants": "25,000",
+    "annualFundingEvents": "1.2M",
+    "maxDealSize": "$25M",
+    "approvalSpeed": "Capital within 24 hours; many working capital deals approved within 1 hour",
+    "minimumEligibility": "$500K+ annual revenue, 600+ FICO, 1+ year in business"
+  },
+  "products": [
+    "Working Capital",
+    "SBA Loans (7a)",
+    "Lines of Credit",
+    "Asset-Backed Lending",
+    "Equipment Financing",
+    "Hard Money Loans",
+    "USDA Loans",
+    "Invoice Factoring"
+  ],
+  "dealExamples": [
+    "$10M manufacturing expansion (Florida)",
+    "$7.85M logistics acquisition (North Carolina)",
+    "$3.1M hydro excavation growth (Nevada)",
+    "$4.5M SBA loan",
+    "$1.5M credit line (Maryland telecom)",
+    "$875K line of credit",
+    "$750K working capital"
+  ],
+  "leaders": [
+    {
+      "name": "Fitz Blaku",
+      "title": "CEO",
+      "linkedin": "https://www.linkedin.com/in/fitz-blaku-87064b66/",
+      "background": "20-year technology veteran. Software Architect at L3 predecessor (June 2018), CTO (May 2022), CEO (Jan 2025). Ex-PwC Emerging Technology Strategist (2014-2016). Senior Software Engineer at Relationship Science (2011-2013). Built platforms for ADT, Gilt, One Kings Lane. Harvard Business School Disruptive Strategy credential. Father of two.",
+      "hooks": ["CTO-to-CEO transition", "Ex-PwC", "Harvard Disruptive Strategy", "10+ blog posts on SMB finance"]
+    },
+    {
+      "name": "Victor Rodriguez",
+      "title": "COO",
+      "linkedin": "https://www.linkedin.com/in/victor-rodriguez-3374271a6",
+      "background": "Primary business contact per BBB filing. Manages operations, customer service, partner/ISO relationships. Focus on structuring deals 'larger, faster, and more impactful' than expected.",
+      "hooks": ["Day-to-day operations leader", "Manages 75+ funder relationships"]
+    },
+    {
+      "name": "Kris Blaku",
+      "title": "Managing Director, L3 Funding",
+      "linkedin": "https://www.linkedin.com/in/kris-blaku-458249116",
+      "background": "Managing Director of L3 Funding LLC (direct MCA lender, est. Sept 2020). Offices in NJ and Clearwater, FL. Part of Blaku family fintech operation with brothers Fitz and Lum.",
+      "hooks": ["Runs direct lending arm", "Family business"]
+    },
+    {
+      "name": "Lum Blaku",
+      "title": "VP, Strategy & Growth",
+      "linkedin": "https://www.linkedin.com/in/lumblaku/",
+      "background": "Baruch College (CUNY). BDL at Industry Dive (2020-2021), Enterprise BDR at Welcome/Optimizely (2017-2020), BD at Astoria Company (2016-2017). NYC-based.",
+      "hooks": ["Baruch College", "Ex-Optimizely", "SaaS growth applied to lending"]
+    }
+  ],
+  "sources": [
+    "https://relfi.co/",
+    "https://relfi.co/partner",
+    "https://relfi.co/strategic-financing",
+    "https://resources.relfi.co/",
+    "https://www.bbb.org/us/nj/ridgefield-park/profile/loans/relfi-inc-0221-90238768",
+    "https://www.linkedin.com/company/relfi-inc",
+    "https://www.linkedin.com/in/fitz-blaku-87064b66/",
+    "https://www.linkedin.com/in/lumblaku/",
+    "https://www.linkedin.com/in/victor-rodriguez-3374271a6",
+    "https://www.linkedin.com/in/kris-blaku-458249116",
+    "https://l3funding.com/",
+    "https://www.bbb.org/us/nj/ridgefield-park/profile/financing/l3-funding-llc-0221-90219621"
+  ]
+}

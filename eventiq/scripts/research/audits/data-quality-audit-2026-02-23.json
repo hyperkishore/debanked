@@ -1,0 +1,73 @@
+{
+  "auditDate": "2026-02-23",
+  "totalCompanies": 958,
+  "appliedFixes": true,
+  "summary": "Systemic data quality audit triggered by NETFUNDING (id:1708) having fabricated 430 employee count with placeholder data. Found widespread issues across 368 companies.",
+  "findings": {
+    "fakeLinkedinUrls": {
+      "count": 344,
+      "description": "Company linkedinUrl field contained website URL copy-paste instead of actual LinkedIn company page URL",
+      "fix": "Set to undefined where URL doesn't contain linkedin.com",
+      "rootCause": "Enrichment pipeline defaulted to copying website URL when LinkedIn could not be found"
+    },
+    "placeholderLeaders": {
+      "count": 25,
+      "description": "Leaders with names like 'Management Team', 'Leadership Team', 'Executive Team' instead of real people",
+      "fix": "Removed placeholder entries entirely",
+      "rootCause": "Research agents created fake leader entries when no leadership information could be found"
+    },
+    "fabricatedNews": {
+      "count": 18,
+      "description": "News items sourced from 'Industry Reports, 2025' — not a real publication. Template headlines like 'Operates as Major X-Based Y'",
+      "fix": "Removed fabricated news items",
+      "rootCause": "Research agents fabricated news when no real press coverage existed"
+    },
+    "falseDeepResearchedTag": {
+      "count": 10,
+      "description": "Companies tagged 'deep-researched' with zero real leaders and no verified news",
+      "fix": "Stripped 'deep-researched' from source array",
+      "rootCause": "Tag was applied in bulk by agents regardless of whether real data was found"
+    },
+    "wrongEmployeeCount": {
+      "count": 1,
+      "description": "UFS (id:1767) listed 9,000 employees — impossible for a Brooklyn MCA shop",
+      "fix": "Set to undefined",
+      "rootCause": "Data entry error or confusion with different company"
+    }
+  },
+  "top20WorstOffenders": [
+    { "id": 1708, "name": "NETFUNDING", "employees": 430, "issues": "Zero real leaders, fake news, circular description, website as LinkedIn" },
+    { "id": 1644, "name": "FAST CASH FUNDING", "employees": 46, "issues": "Placeholder leader, fake LinkedIn, website-sourced news" },
+    { "id": 1676, "name": "INFINITY CAPITAL", "employees": 37, "issues": "Placeholder leader, fake LinkedIn, Industry Reports news" },
+    { "id": 1737, "name": "ROYAL FUNDING", "employees": 48, "issues": "Placeholder leader, fake LinkedIn, location-only hooks" },
+    { "id": 1759, "name": "THRIVE FUNDING", "employees": 25, "issues": "Placeholder leader, fake LinkedIn, Company Reports news" },
+    { "id": 1769, "name": "UNITED FIRST FUNDING", "employees": 37, "issues": "Placeholder leader, fake LinkedIn, Company Reports news" },
+    { "id": 1630, "name": "EAGLE CAPITAL", "employees": 45, "issues": "Placeholder leader, wrong domain LinkedIn, Industry Reports news, identity confusion" },
+    { "id": 1781, "name": "Revenue Funding", "employees": 36, "issues": "Placeholder leader, missing LinkedIn, Industry Reports news" },
+    { "id": 176, "name": "Lendistry", "employees": 284, "issues": "ICP company with ZERO leaders. Major gap." },
+    { "id": 1532, "name": "J D Factors", "employees": 108, "issues": "Placeholder leader name but real people mentioned in bg field" },
+    { "id": 1056, "name": "Business Capital LLC", "employees": 58, "issues": "Website as LinkedIn, leader LinkedIn wrong" },
+    { "id": 1519, "name": "CapFront", "employees": 47, "issues": "Phantom leader from merge confusion, fake LinkedIn" },
+    { "id": 1545, "name": "RidgeStone Capital", "employees": 37, "issues": "Leader bg says 'Limited public info', fake LinkedIn" },
+    { "id": 1637, "name": "ELEVATION CAPITAL", "employees": 86, "issues": "Fake LinkedIn, Industry Reports news (but leader data is real)" },
+    { "id": 1641, "name": "EVERLASTING CAPITAL", "employees": 27, "issues": "Fake LinkedIn only (leader data is excellent)" },
+    { "id": 1656, "name": "FUSION CAPITAL", "employees": 23, "issues": "Fake LinkedIn, Industry Reports news, thin leader data" },
+    { "id": 1746, "name": "SMALL BUSINESS FUNDING", "employees": 25, "issues": "Placeholder leader, fake LinkedIn" },
+    { "id": 1778, "name": "Imperial Advance", "employees": 26, "issues": "Placeholder leader, fake LinkedIn, Industry Reports news" },
+    { "id": 178, "name": "Grameen America", "employees": 210, "issues": "ICP company with ZERO leaders despite having Andrea Jung (ex-Avon CEO) and Muhammad Yunus connection" },
+    { "id": 132, "name": "Wayflyer", "employees": 337, "issues": "ICP company with ZERO leaders. $1.6B valued, J.P. Morgan backed." }
+  ],
+  "highPriorityGaps": [
+    { "id": 176, "name": "Lendistry", "type": "ICP", "employees": 284, "reason": "ICP company with zero leaders — should be fully researched" },
+    { "id": 178, "name": "Grameen America", "type": "ICP", "employees": 210, "reason": "ICP company with zero leaders — Andrea Jung, Muhammad Yunus connection" },
+    { "id": 132, "name": "Wayflyer", "type": "ICP", "employees": 337, "reason": "ICP company with zero leaders — $1.6B valued, J.P. Morgan backed" }
+  ],
+  "recommendations": [
+    "Strip 'deep-researched' tag from companies with only placeholder data",
+    "Null out linkedinUrl where it doesn't contain linkedin.com",
+    "Remove 'Management Team' leader entries — empty is better than fake",
+    "Prioritize Lendistry, Grameen America, Wayflyer for real research",
+    "Audit 'Industry Reports' news items — replace or remove",
+    "Add validation to enrichment pipeline: reject placeholder data, require real names"
+  ]
+}
