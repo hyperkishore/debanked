@@ -2419,7 +2419,6 @@
     "location": "Florida",
     "employees": 76,
     "website": "https://ideafinancial.com",
-    "linkedinUrl": "ideafinancial.com",
     "category": "funder"
   },
   {
@@ -3564,7 +3563,6 @@
     "location": "",
     "employees": 7,
     "website": "https://Not found",
-    "linkedinUrl": "Not found",
     "category": "funder"
   },
   {
@@ -4944,7 +4942,6 @@
     "location": "",
     "employees": 53,
     "website": "https://www.tiptopcapital.com",
-    "linkedinUrl": "www.tiptopcapital.com",
     "category": "funder"
   },
   {
@@ -5925,7 +5922,6 @@
     "location": "Florida",
     "employees": 12,
     "website": "https://reliancef.com/contact-us/",
-    "linkedinUrl": "https://reliancef.com/contact-us/",
     "category": "funder"
   },
   {
@@ -6168,7 +6164,6 @@
     "location": "Florida",
     "employees": 5,
     "website": "https://www.dieselfunding.com",
-    "linkedinUrl": "https://www.dieselfunding.com",
     "category": "funder"
   },
   {
@@ -6501,7 +6496,6 @@
     "location": "New Jersey",
     "employees": 57,
     "website": "https://pearlcapital.com",
-    "linkedinUrl": "https://pearlcapital.com",
     "category": "funder"
   },
   {
@@ -7116,7 +7110,6 @@
     "location": "Ontario",
     "employees": 165,
     "website": "https://clear.co",
-    "linkedinUrl": "clear.co",
     "category": "funder"
   },
   {
@@ -7468,18 +7461,7 @@
     "tp": [
       "AI underwriting can help identify your ideal merchant profile from historical data and automatically fast-track applications that match your best-performing segments."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Unique Funding Solutions was founded in 2016 in Brooklyn, New York as a direct MCA funder specializing in B and C paper funding with same-day turnaround. The company has 11-50 employees operating from offices at 1672 E 22nd St, Brooklyn and 71 S Central Ave Ste 200, Valley Stream, NY. UFS is known in the industry for fast approvals and commitment to closing deals, serving industries including automotive repair, beauty salons, medical practices, construction, retail, and real estate. Leadership information is not publicly disclosed.",
-        "li": "",
-        "hooks": [
-          "Brooklyn-based direct funder since 2016",
-          "B/C paper specialist with same-day funding"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
@@ -7639,7 +7621,6 @@
     "location": "",
     "employees": 14,
     "website": "https://PlatinumRapidFunding.com",
-    "linkedinUrl": "PlatinumRapidFunding.com",
     "category": "broker"
   },
   {
@@ -7916,20 +7897,7 @@
     "tp": [
       "AI underwriting can maintain your rapid 4-hour turnaround while adding sophisticated risk scoring that protects your portfolio as you scale."
     ],
-    "leaders": [
-      {
-        "n": "Synergy Merchants Leadership",
-        "t": "Management Team",
-        "bg": "Synergy Merchants is a Canadian-owned company specializing in merchant cash advances since 2007, headquartered at 265 Rimrock Rd, Toronto, Ontario. The company has grown to approximately 95 employees and is recognized as Canada's leading merchant funding and cash advance company. They introduced FastCap Funding, providing $1,500-$50,000 in under four hours with no credit checks. Leadership details are not publicly disclosed — the company maintains a private management structure.",
-        "li": "",
-        "hooks": [
-          "*Canada's leading MCA provider",
-          "Est. 2007 Toronto",
-          "95 employees",
-          "FastCap Funding launched"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
@@ -8607,12 +8575,6 @@
         "s": "PR Newswire, Jul 2023",
         "d": "Breakout Capital secured a $45 million credit facility with Synovus Bank providing $35 million committed capacity plus $10 million uncommitted, to expand small business lending operations.",
         "p": "2023-07-27"
-      },
-      {
-        "h": "12five Capital Merges with Breakout Capital Under Altriarch Parent",
-        "s": "Industry Reports, 2023",
-        "d": "12five Capital, LLC joined forces with Breakout Capital, LLC, with the merger facilitated by Altriarch Commercial Finance, Inc., consolidating operations under a shared parent company.",
-        "p": "2023-06-01"
       }
     ],
     "ice": "Breakout has built an impressive track record deploying nearly a billion dollars to small businesses since 2015.",
@@ -9521,8 +9483,7 @@
     ],
     "location": "Maryland",
     "employees": 1,
-    "website": "https://firstdownfunding.com",
-    "linkedinUrl": "https://firstdownfunding.com"
+    "website": "https://firstdownfunding.com"
   },
   {
     "id": 112,
@@ -9938,7 +9899,6 @@
     "location": "California",
     "employees": 78,
     "website": "https://www.arffinancial.com",
-    "linkedinUrl": "https://www.arffinancial.com",
     "category": "bank"
   },
   {
@@ -11641,7 +11601,6 @@
     "location": "California",
     "employees": 284,
     "website": "https://lendistry.com",
-    "linkedinUrl": "https://lendistry.com",
     "category": "bank"
   },
   {
@@ -11712,8 +11671,7 @@
     ],
     "location": "New York",
     "employees": 210,
-    "website": "https://grameenamerica.org",
-    "linkedinUrl": "grameenamerica.org"
+    "website": "https://grameenamerica.org"
   },
   {
     "id": 179,
@@ -16974,20 +16932,7 @@
       "With 450+ MCA companies already using HyperVerge, we understand the nuances of alternative lending underwriting that Cuallix handles.",
       "Automating document verification and fraud detection would help Cuallix scale its Cuallet and Payllix platforms more efficiently."
     ],
-    "leaders": [
-      {
-        "n": "Executive Team",
-        "t": "C-Suite",
-        "bg": "Cuallix leadership oversees a fintech operation spanning Mexico, US, and Hong Kong with 25+ years in credit and payment processing. The company became the first institution worldwide to use Ripple's xRapid for cross-border payments from the US to Mexico, reducing foreign exchange costs by 40-70%. Operates multiple platforms including Cuallet (digital banking) and Payllix (global payments/transfers).",
-        "li": "https://www.linkedin.com/company/financiera-cuallix/about/",
-        "hooks": [
-          "*First Ripple xRapid user globally",
-          "3-country operation",
-          "25yr credit history",
-          "US-Mexico remittance corridor"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Given Cuallix's cross-border operations, I'd love to show you how HyperVerge can standardize and accelerate your underwriting across all three markets. Can we schedule a 20-minute demo?",
     "location": "Monterrey",
     "employees": 62,
@@ -17411,7 +17356,7 @@
         "n": "Henry Pershin",
         "t": "Founder & Owner",
         "bg": "Founded Business Capital LLC in 2019 as a direct funder based in Hallandale Beach, FL. Led the rebrand to BusinessCapital.com with a real-time underwriting platform. The company provides unsecured capital with 95% of clients funded within 48 hours. Management team includes Shneur Pershin (Sales Manager) and Andrew Kramer (Accounting Manager).",
-        "li": "https://www.businesscapitalllc.com/",
+        "li": "",
         "hooks": [
           "95% funded within 48hrs",
           "Built real-time underwriting",
@@ -17432,7 +17377,6 @@
     "location": "Florida",
     "employees": 58,
     "website": "https://www.businesscapitalllc.com/",
-    "linkedinUrl": "https://www.businesscapitalllc.com/",
     "source": [
       "tam",
       "researched",
@@ -17770,18 +17714,7 @@
       "Recommending HyperVerge to your lending partners could improve approval speed and the overall borrower experience on your marketplace.",
       "Top MCA funders trust HyperVerge, creating a natural fit with BusinessLoans.com's lender network."
     ],
-    "leaders": [
-      {
-        "n": "Leadership Team",
-        "t": "Management",
-        "bg": "BusinessLoans.com has helped over 100,000 small businesses prequalify since its 2020 founding in Charleston, SC. Operates as an online lending marketplace matching borrowers with lenders for short-term loans, long-term loans, lines of credit, and merchant cash advances.",
-        "li": "https://www.linkedin.com/company/businessloans/",
-        "hooks": [
-          "100K+ businesses prequalified",
-          "Charleston SC founded 2020"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Your lending partners' underwriting speed directly impacts your marketplace conversion. Can we discuss how HyperVerge helps MCA funders in your network close deals faster?",
     "location": "South Carolina",
     "employees": 51,
@@ -18998,19 +18931,7 @@
       "With 450+ MCA companies served, HyperVerge understands the challenges of underwriting clients with challenging credit profiles.",
       "Automating bank statement analysis would help TwinFold scale without compromising the integrity-first approach that defines your brand."
     ],
-    "leaders": [
-      {
-        "n": "Leadership Team",
-        "t": "Family Ownership",
-        "bg": "TwinFold Capital has been privately held and family-owned since 2008 in Los Angeles, CA. Operates as Merchant One Solutions LLC DBA TwinFold Capital. Provides working capital and merchant financing from $5K to $1M with 24-72 hour funding. BBB Accredited since 2016 with A+ rating. Located at 601 N Larchmont Blvd, Los Angeles.",
-        "li": "https://www.linkedin.com/company/twinfold-capital/",
-        "hooks": [
-          "*A+ BBB rating since 2016",
-          "Family-owned since 2008",
-          "LA Larchmont Blvd based"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "TwinFold's commitment to fast, honest funding deserves efficient technology. Can we show you how HyperVerge supports family-owned funders like you?",
     "location": "California",
     "employees": 37,
@@ -19144,18 +19065,7 @@
       "Our platform cuts underwriting from 40 minutes to under 5, which could enhance Sutton's already-fast AI-powered approvals.",
       "Leading funders combine their own technology with HyperVerge's specialized underwriting AI for best results."
     ],
-    "leaders": [
-      {
-        "n": "Leadership Team",
-        "t": "Management",
-        "bg": "Sutton Funding operates from Madison Avenue in NYC, offering AI-powered lending approvals up to $2M. The company provides merchant cash advances, term loans, lines of credit, and equipment financing using proprietary AI technology for fast approval decisions. Limited public information available on individual leadership.",
-        "li": "https://www.linkedin.com/company/sutton-funding/",
-        "hooks": [
-          "Madison Ave NYC office",
-          "AI-powered lending platform"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Sutton's AI-first approach makes you a natural fit for HyperVerge's specialized underwriting AI. Can we explore how our technology could enhance your platform?",
     "location": "New York",
     "employees": 36,
@@ -19281,19 +19191,7 @@
       "With 450+ lending companies served, HyperVerge has proven technology for the equipment financing risk assessment QuickSpark performs.",
       "Automating document verification for low-FICO applicants would help QuickSpark scale within the TimePayment ecosystem."
     ],
-    "leaders": [
-      {
-        "n": "QuickSpark SBU Leadership",
-        "t": "Strategic Business Unit within TimePayment",
-        "bg": "QuickSpark was founded in 2010 in Phoenix, AZ and acquired by TimePayment in 2022. TimePayment is a Boston-based fintech owned by affiliates of Fortress Investment Group. QuickSpark works with over 3,500 vendors, including 500 with deep e-commerce integrations, funding equipment purchases as low as $1,000 with 12-60 month terms across 50+ industries.",
-        "li": "https://www.linkedin.com/company/quickspark-financial/",
-        "hooks": [
-          "3,500+ vendor network",
-          "*Fortress Investment Group backed",
-          "500 deep e-commerce integrations"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "QuickSpark's challenging credit profiles require thorough but fast underwriting. Can we show you how HyperVerge automates that process? Quick demo?",
     "location": "Arizona",
     "employees": 34,
@@ -19441,19 +19339,7 @@
       "With 450+ MCA companies served, HyperVerge specializes in the performance-based underwriting model Gemini uses.",
       "Automating bank statement analysis would help Gemini make faster funding decisions while maintaining its minimal documentation approach."
     ],
-    "leaders": [
-      {
-        "n": "Leadership Team",
-        "t": "Management",
-        "bg": "Gemini Business Funding was established in 2017 in Clearwater, Florida at 2963 Gulf To Bay Blvd. The company claims a 90% approval rate using proprietary underwriting technology with same-day decisions. Offers revenue-based financing with no fixed monthly payments and a simple 1-page application requiring only 4 months of bank statements. Limited public information on individual leadership.",
-        "li": "https://www.linkedin.com/company/gemini-business-funding/",
-        "hooks": [
-          "90% approval rate claimed",
-          "Clearwater FL since 2017",
-          "4-month bank statement review"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Gemini's same-day funding promise deserves same-day underwriting. Can we show you how HyperVerge achieves that for MCA funders? Quick 15-minute demo?",
     "location": "Florida",
     "employees": 32,
@@ -20843,11 +20729,6 @@
         "h": "Advantage Merchant Funding Continues Growth in Manhattan Fintech Space",
         "s": "Company Profile, 2024",
         "d": "Operating as one of Manhattan's fastest-growing fintech companies providing comprehensive custom funding solutions."
-      },
-      {
-        "h": "Advantage Merchant Funding Grows as Leading NYC Fintech",
-        "s": "Industry Reports, 2024",
-        "d": "Continues expansion as one of Manhattan's fastest-growing fintech companies with comprehensive MCA and funding solutions."
       }
     ],
     "ice": "Being one of Manhattan's fastest-growing fintechs in the MCA space is impressive -- how are you handling the underwriting volume for subprime and no-credit-check applications?",
@@ -21468,11 +21349,6 @@
         "h": "NY AG Settles with MCA Creditors Including Mr Advance",
         "s": "NY Attorney General, 2025",
         "d": "Included in settlement with NY Attorney General involving 25 MCA creditors to vacate 1,100+ judgments and discharge over $500M in debt nationwide."
-      },
-      {
-        "h": "Mr Advance Continues Direct Lending Operations in NYC",
-        "s": "Industry Reports, 2024",
-        "d": "Mr Advance continues to operate as a direct MCA lender from its Astoria, New York headquarters, serving small businesses nationwide."
       }
     ],
     "ice": "As a direct lender in the competitive NYC MCA space, speed of decisioning is everything -- how are you leveraging your fintech stack to stay competitive?",
@@ -22195,7 +22071,6 @@
     "location": "",
     "employees": 0,
     "website": "https://afsb2b.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -22222,7 +22097,6 @@
     "location": "Florida",
     "employees": 8,
     "website": "https://alvaadvance.com",
-    "linkedinUrl": "Not available",
     "source": [
       "tam",
       "tam-researched"
@@ -22274,7 +22148,6 @@
     "location": "",
     "employees": 0,
     "website": "https://amgmca.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -24045,7 +23918,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.cromwellcapital.com/services",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -24647,7 +24519,6 @@
     "location": "",
     "employees": 0,
     "website": "https://ercapitalventures.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -25239,7 +25110,6 @@
     "location": "New York",
     "employees": 4,
     "website": "https://fund4less.com",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -25936,7 +25806,6 @@
     "location": "",
     "employees": 5,
     "website": "https://www.hfhcapitalfunding.com",
-    "linkedinUrl": "www.hfhcapitalfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -26121,7 +25990,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.instonecapital.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -26731,7 +26599,6 @@
     "location": "",
     "employees": 0,
     "website": "https://lend-out.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -27131,7 +26998,6 @@
     "location": "",
     "employees": 0,
     "website": "https://merchantcashhq.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -27383,7 +27249,6 @@
     "location": "",
     "employees": 0,
     "website": "http://moneystorefunding.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -27723,7 +27588,6 @@
     "location": "",
     "employees": 0,
     "website": "",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -27749,7 +27613,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.newrocklending.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -29152,7 +29015,6 @@
     "location": "",
     "employees": 0,
     "website": "",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -29926,7 +29788,6 @@
     "location": "New York",
     "employees": 16,
     "website": "https://thesmartermerchant.com",
-    "linkedinUrl": "thesmartermerchant.com",
     "source": [
       "tam",
       "tam-researched"
@@ -30146,7 +30007,6 @@
     "location": "",
     "employees": 0,
     "website": "",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -30198,7 +30058,6 @@
     "location": "",
     "employees": 0,
     "website": "https://truepathfunding.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -30593,7 +30452,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.westclarafunding.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -30724,7 +30582,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.wotrenterprise.com/",
-    "linkedinUrl": "Not Available",
     "source": [
       "tam",
       "tam-researched"
@@ -30856,7 +30713,6 @@
     "location": "Florida",
     "employees": 2,
     "website": "https://www.apexepf.com",
-    "linkedinUrl": "https://www.apexepf.com",
     "source": [
       "tam",
       "tam-researched"
@@ -30883,7 +30739,6 @@
     "location": "New York",
     "employees": 13,
     "website": "https://arenafundingsource.com",
-    "linkedinUrl": "arenafundingsource.com",
     "source": [
       "tam",
       "tam-researched"
@@ -30915,7 +30770,6 @@
     "location": "Florida",
     "employees": 4,
     "website": "https://firststreetfunding.com",
-    "linkedinUrl": "https://firststreetfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31020,7 +30874,6 @@
     "location": "New York",
     "employees": 20,
     "website": "https://www.clarifycapital.com",
-    "linkedinUrl": "www.clarifycapital.com",
     "source": [
       "tam",
       "researched",
@@ -31047,7 +30900,6 @@
     "location": "California",
     "employees": 7,
     "website": "https://www.clearskiescapital.com",
-    "linkedinUrl": "https://www.clearskiescapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31083,7 +30935,6 @@
     "location": "New York",
     "employees": 9,
     "website": "https://cobaltfunding.com",
-    "linkedinUrl": "cobaltfunding.com",
     "source": [
       "tam",
       "tam-researched",
@@ -31111,7 +30962,6 @@
     "location": "New York",
     "employees": 6,
     "website": "https://www.creditfy.com/",
-    "linkedinUrl": "https://www.creditfy.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -31146,7 +30996,6 @@
     "location": "Florida",
     "employees": 7,
     "website": "https://cresthillcapital.com",
-    "linkedinUrl": "cresthillcapital.com",
     "source": [
       "tam",
       "tam-researched",
@@ -31183,7 +31032,6 @@
     "location": "California",
     "employees": 14,
     "website": "https://crestmontcapital.com",
-    "linkedinUrl": "crestmontcapital.com",
     "source": [
       "tam",
       "tam-researched",
@@ -31211,7 +31059,6 @@
     "location": "New York",
     "employees": 4,
     "website": "https://www.cucumbercapital.com",
-    "linkedinUrl": "https://www.cucumbercapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31238,7 +31085,6 @@
     "location": "California",
     "employees": 7,
     "website": "https://emcfinancial.com",
-    "linkedinUrl": "emcfinancial.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31340,7 +31186,6 @@
     "location": "California",
     "employees": 74,
     "website": "https://directfundingnow.net",
-    "linkedinUrl": "directfundingnow.net",
     "source": [
       "tam",
       "researched",
@@ -31404,7 +31249,6 @@
     "location": "Florida",
     "employees": 87,
     "website": "https://dynamic-capital.com",
-    "linkedinUrl": "dynamic-capital.com",
     "source": [
       "tam",
       "researched",
@@ -31432,7 +31276,6 @@
     "location": "New York",
     "employees": 2,
     "website": "https://www.essentiafunding.com",
-    "linkedinUrl": "https://www.essentiafunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31548,7 +31391,6 @@
     "location": "New York",
     "employees": 12,
     "website": "https://flexibilitycapital.com",
-    "linkedinUrl": "flexibilitycapital.com",
     "source": [
       "tam",
       "tam-researched",
@@ -31577,7 +31419,6 @@
     "location": "Florida",
     "employees": 18,
     "website": "https://Symplifi Capital: symplificapital.com; Fundonatic: fundonatic.com; 24 Capital: 24capital.com",
-    "linkedinUrl": "Symplifi Capital: symplificapital.com; Fundonatic: fundonatic.com; 24 Capital: 24capital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31609,7 +31450,6 @@
     "location": "New York",
     "employees": 5,
     "website": "https://www.quickficapital.com",
-    "linkedinUrl": "www.quickficapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31635,7 +31475,6 @@
     "location": "SD",
     "employees": 12,
     "website": "https://www.ifscapital.com",
-    "linkedinUrl": "https://www.ifscapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31661,7 +31500,6 @@
     "location": "Virginia",
     "employees": 0,
     "website": "https://www.InVisionFundingSolutions.com",
-    "linkedinUrl": "https://www.InVisionFundingSolutions.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31696,7 +31534,6 @@
     "location": "California",
     "employees": 14,
     "website": "https://levofunding.com",
-    "linkedinUrl": "https://levofunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31722,7 +31559,6 @@
     "location": "New York",
     "employees": 3,
     "website": "https://www.lgfunding.com",
-    "linkedinUrl": "www.lgfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31757,7 +31593,6 @@
     "location": "New York",
     "employees": 15,
     "website": "https://www.liberis.com/",
-    "linkedinUrl": "https://www.liberis.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -31798,7 +31633,6 @@
     "location": "California",
     "employees": 6,
     "website": "https://Likety.com",
-    "linkedinUrl": "https://Likety.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31824,7 +31658,6 @@
     "location": "New York",
     "employees": 14,
     "website": "https://www.litefund.co",
-    "linkedinUrl": "https://www.litefund.co",
     "source": [
       "tam",
       "tam-researched"
@@ -31850,7 +31683,6 @@
     "location": "Pennsylvania",
     "employees": 10,
     "website": "https://www.loanability.com",
-    "linkedinUrl": "https://www.loanability.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31876,7 +31708,6 @@
     "location": "New Jersey",
     "employees": 2,
     "website": "https://madisonadvance.com",
-    "linkedinUrl": "madisonadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31911,7 +31742,6 @@
     "location": "New York",
     "employees": 3,
     "website": "https://www.mainstreetcash.com",
-    "linkedinUrl": "www.mainstreetcash.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31938,7 +31768,6 @@
     "location": "Pennsylvania",
     "employees": 0,
     "website": "https://microadvance.com",
-    "linkedinUrl": "microadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32055,7 +31884,6 @@
     "location": "New York",
     "employees": 158,
     "website": "https://www.nationalbusinesscapital.com",
-    "linkedinUrl": "www.nationalbusinesscapital.com",
     "source": [
       "tam",
       "researched",
@@ -32083,7 +31911,6 @@
     "location": "Florida",
     "employees": 0,
     "website": "https://statenfinance.com",
-    "linkedinUrl": "statenfinance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32118,7 +31945,6 @@
     "location": "New Jersey",
     "employees": 57,
     "website": "https://No official operational website for PEARL ALPHA FUNDING, LLC was found.",
-    "linkedinUrl": "No official operational website for PEARL ALPHA FUNDING, LLC was found.",
     "source": [
       "tam",
       "researched"
@@ -32144,7 +31970,6 @@
     "location": "Maryland",
     "employees": 4,
     "website": "https://pinnaclebusinessfunding.com, enodcapital.com, customcapital.com, customcapitallending.com, pinnaclefunding.com, pinnaclebusinesscapital.com",
-    "linkedinUrl": "pinnaclebusinessfunding.com, enodcapital.com, customcapital.com, customcapitallending.com, pinnaclefunding.com, pinnaclebusinesscapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32242,7 +32067,6 @@
     "location": "New York",
     "employees": 538,
     "website": "https://www.pmfus.com",
-    "linkedinUrl": "www.pmfus.com",
     "source": [
       "tam",
       "researched",
@@ -32270,7 +32094,6 @@
     "location": "New York",
     "employees": 6,
     "website": "https://reliablefunding.source",
-    "linkedinUrl": "reliablefunding.source",
     "source": [
       "tam",
       "tam-researched"
@@ -32297,11 +32120,6 @@
         "h": "Riverpoint Capital Continues Bridge Loan Operations",
         "s": "Company Profile, 2024",
         "d": "Operating under multiple d/b/a brands including Redwood Capital Solutions and Express Capital Group, providing short-term financing to businesses."
-      },
-      {
-        "h": "Riverpoint Capital Continues Multi-Product Lending Expansion",
-        "s": "Industry Reports, 2024",
-        "d": "Riverpoint Financial Group continues to expand its diverse lending portfolio including lines of credit, bridge loans, and equipment financing from dual Florida-NYC operations."
       }
     ],
     "ice": "Operating under multiple brands (Redwood Capital, Express Capital) from both Florida and NYC gives you broad market coverage -- how are you managing underwriting consistency across brands?",
@@ -32333,7 +32151,6 @@
     "location": "Florida",
     "employees": 36,
     "website": "https://riverpointcapital.com",
-    "linkedinUrl": "riverpointcapital.com",
     "source": [
       "tam",
       "researched",
@@ -32361,7 +32178,6 @@
     "location": "New York",
     "employees": 11,
     "website": "https://rocfinancing.com",
-    "linkedinUrl": "rocfinancing.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32387,7 +32203,6 @@
     "location": "Florida",
     "employees": 4,
     "website": "https://rocketcap.com",
-    "linkedinUrl": "rocketcap.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32413,7 +32228,6 @@
     "location": "New Jersey",
     "employees": 4,
     "website": "https://rubycapitalgroup.com",
-    "linkedinUrl": "rubycapitalgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32440,7 +32254,6 @@
     "location": "New Jersey",
     "employees": 11,
     "website": "https://securecapitalsolutions.com",
-    "linkedinUrl": "securecapitalsolutions.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32466,7 +32279,6 @@
     "location": "New York",
     "employees": 11,
     "website": "https://shinecapitalgroup.com",
-    "linkedinUrl": "shinecapitalgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32574,7 +32386,6 @@
     "location": "New York",
     "employees": 84,
     "website": "https://shorefundingsolutions.com",
-    "linkedinUrl": "https://shorefundingsolutions.com",
     "source": [
       "tam",
       "researched",
@@ -32657,7 +32468,6 @@
     "location": "Florida",
     "employees": 43,
     "website": "https://www.signetllc.com/capital",
-    "linkedinUrl": "https://www.signetllc.com/capital",
     "source": [
       "tam",
       "researched",
@@ -32683,19 +32493,9 @@
     "notes": "",
     "news": [
       {
-        "h": "Sky Bridge Acquired by Revenued",
-        "s": "Industry reports, 2020",
-        "d": "Sky Bridge Business Funding was acquired by Revenued in 2020 and its services are now integrated into Revenued's platform."
-      },
-      {
         "h": "Revenued Acquires Sky Bridge Business Funding",
         "s": "PR Newswire, July 2020",
         "d": "Fintech company Revenued announced the acquisition of Sky Bridge Business Funding to expand its future business financing solutions."
-      },
-      {
-        "h": "Sky Bridge Business Funding Rebrands as Horizon Business Funding",
-        "s": "Industry reports",
-        "d": "Following the Revenued acquisition, Sky Bridge now operates under the Horizon Business Funding brand."
       }
     ],
     "ice": "I understand Sky Bridge was acquired by Revenued back in 2020 and rebranded. How has the integration been going, and are you still scaling the MCA side of the business?",
@@ -32710,24 +32510,11 @@
       "HyperVerge serves 450+ MCA companies and can help maintain the 5-star service reputation by cutting underwriting time from 40 minutes to under 5 minutes.",
       "Leading funders use HyperVerge to handle growing deal volume without proportionally scaling headcount -- ideal for post-acquisition growth."
     ],
-    "leaders": [
-      {
-        "n": "Revenued Leadership",
-        "t": "Parent Company",
-        "bg": "Sky Bridge Business Funding was acquired by fintech company Revenued in July 2020 and rebranded as Horizon Business Funding. Revenued was founded in 2018 and has provided over $684M in financing to 18,000+ businesses. During 2020-2021, Horizon helped provide over $4B in PPP funding to 110K+ businesses.",
-        "li": "",
-        "hooks": [
-          "*$4B+ PPP funding distributed",
-          "Acquired by Revenued July 2020",
-          "Now Horizon Business Funding"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would the team at Horizon/Revenued be interested in exploring how AI underwriting could help scale deal volume while maintaining the service quality Sky Bridge was known for?",
     "location": "New Jersey",
     "employees": 36,
     "website": "https://SKY BRIDGE BUSINESS FUNDING, LLC was acquired by Revenued in 2020. Its services are likely integrated into Revenued's offerings or a rebranded entity such as Horizon Business Funding.",
-    "linkedinUrl": "SKY BRIDGE BUSINESS FUNDING, LLC was acquired by Revenued in 2020. Its services are likely integrated into Revenued's offerings or a rebranded entity such as Horizon Business Funding.",
     "source": [
       "tam",
       "researched",
@@ -32755,7 +32542,6 @@
     "location": "Florida",
     "employees": 0,
     "website": "https://sunrisefundinggrp.com",
-    "linkedinUrl": "sunrisefundinggrp.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32782,7 +32568,6 @@
     "location": "New Jersey",
     "employees": 4,
     "website": "https://www.traditionsfunding.com",
-    "linkedinUrl": "www.traditionsfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32809,7 +32594,6 @@
     "location": "Florida",
     "employees": 11,
     "website": "https://vaultcapitalllc.com",
-    "linkedinUrl": "vaultcapitalllc.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32836,7 +32620,6 @@
     "location": "New Jersey",
     "employees": 9,
     "website": "https://viviancapitalgrp.com",
-    "linkedinUrl": "viviancapitalgrp.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32863,7 +32646,6 @@
     "location": "New York",
     "employees": 3,
     "website": "https://XCapitalGrp.com",
-    "linkedinUrl": "https://XCapitalGrp.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32894,7 +32676,6 @@
     "location": "New York",
     "employees": 3,
     "website": "https://zahavassetmgmt.com",
-    "linkedinUrl": "https://zahavassetmgmt.com",
     "source": [
       "tam",
       "tam-researched"
@@ -32920,7 +32701,6 @@
     "location": "Florida",
     "employees": 0,
     "website": "https://www.zlurfunding.com",
-    "linkedinUrl": "https://www.zlurfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33023,7 +32803,6 @@
     "location": "Florida",
     "employees": 61,
     "website": "https://acclivityfinancial.com",
-    "linkedinUrl": "acclivityfinancial.com",
     "source": [
       "tam",
       "researched",
@@ -33051,7 +32830,6 @@
     "location": "South Dakota",
     "employees": 13,
     "website": "https://financewithafp.com",
-    "linkedinUrl": "financewithafp.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33175,7 +32953,6 @@
     "location": "Texas",
     "employees": 74,
     "website": "https://www.amerisource.us.com",
-    "linkedinUrl": "www.amerisource.us.com",
     "source": [
       "tam",
       "researched",
@@ -33203,7 +32980,6 @@
     "location": "New Jersey",
     "employees": 2,
     "website": "https://belltowerfunding.com",
-    "linkedinUrl": "belltowerfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33234,7 +33010,6 @@
     "location": "New York",
     "employees": 5,
     "website": "https://bhcapitalfunding.com",
-    "linkedinUrl": "https://bhcapitalfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33315,7 +33090,6 @@
     "location": "Kentucky",
     "employees": 60,
     "website": "https://www.bluegrasslending.com",
-    "linkedinUrl": "www.bluegrasslending.com",
     "source": [
       "tam",
       "researched",
@@ -33390,7 +33164,6 @@
     "location": "New York",
     "employees": 42,
     "website": "https://c6capllc.com",
-    "linkedinUrl": "c6capllc.com",
     "source": [
       "tam",
       "researched",
@@ -33417,7 +33190,6 @@
     "location": "Massachusetts",
     "employees": 10,
     "website": "https://capexresources.com",
-    "linkedinUrl": "capexresources.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33511,23 +33283,12 @@
           "LIU Finance & Accounting grad",
           "Ex-Imperial Advance"
         ]
-      },
-      {
-        "n": "Cap Fund Leadership",
-        "t": "Management Team",
-        "bg": "Cap Fund provides merchant cash advances and working capital solutions to small businesses. Appears to be related to or share website with CapFront. Limited public information available on specific leadership or distinct operations.",
-        "li": "",
-        "hooks": [
-          "Related to CapFront",
-          "MCA provider"
-        ]
       }
     ],
     "ask": "Zack, would you and Mike be interested in a quick demo showing how HyperVerge could help CapFront automate underwriting across your entire product suite?",
     "location": "New York",
     "employees": 47,
     "website": "https://www.capfront.net",
-    "linkedinUrl": "https://www.capfront.net",
     "source": [
       "tam",
       "researched",
@@ -33555,7 +33316,6 @@
     "location": "Connecticut",
     "employees": 0,
     "website": "https://cardinalbusinessfinancing.com",
-    "linkedinUrl": "cardinalbusinessfinancing.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33623,7 +33383,6 @@
     "location": "New York",
     "employees": 83,
     "website": "https://ccapsolution.com",
-    "linkedinUrl": "https://ccapsolution.com",
     "source": [
       "tam",
       "researched",
@@ -33651,7 +33410,6 @@
     "location": "Colorado",
     "employees": 1,
     "website": "https://enradocapital.com/",
-    "linkedinUrl": "https://enradocapital.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -33742,7 +33500,6 @@
     "location": "California",
     "employees": 35,
     "website": "https://www.envisioncapitalgroup.com",
-    "linkedinUrl": "https://www.envisioncapitalgroup.com",
     "source": [
       "tam",
       "researched",
@@ -33770,7 +33527,6 @@
     "location": "Florida",
     "employees": 6,
     "website": "https://financialadvantagegroup.com",
-    "linkedinUrl": "financialadvantagegroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33877,7 +33633,6 @@
     "location": "Washington",
     "employees": 175,
     "website": "https://financialpacificleasing.com",
-    "linkedinUrl": "financialpacificleasing.com",
     "source": [
       "tam",
       "researched",
@@ -33905,7 +33660,6 @@
     "location": "Georgia",
     "employees": 5,
     "website": "https://ft3cap.com",
-    "linkedinUrl": "https://ft3cap.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33932,7 +33686,6 @@
     "location": "Florida",
     "employees": 16,
     "website": "https://globelend.com/",
-    "linkedinUrl": "https://globelend.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -33959,7 +33712,6 @@
     "location": "New Jersey",
     "employees": 6,
     "website": "https://www.greenbridgeloans.com",
-    "linkedinUrl": "https://www.greenbridgeloans.com",
     "source": [
       "tam",
       "tam-researched"
@@ -33986,7 +33738,6 @@
     "location": "",
     "employees": 4,
     "website": "https://greenvestfunding.com",
-    "linkedinUrl": "greenvestfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -34041,24 +33792,11 @@
       "With 450+ lending companies using HyperVerge, we understand factoring-specific underwriting and can help JD Factors scale across transportation, staffing, and oilfield sectors.",
       "As JD Factors expands its new factoring facilities, HyperVerge can automate the onboarding and credit review process for new clients across industries."
     ],
-    "leaders": [
-      {
-        "n": "Leadership Team",
-        "t": "CEO & Executives",
-        "bg": "JD Factors has been providing receivables factoring since 1989, headquartered in the Los Angeles area with offices throughout the US and Canada. Co-Presidents Bo Kelly and Matt Johnson lead the company. Premiere transportation factor in North America with 30+ years of experience. Did not increase rates to clients during 2025.",
-        "li": "https://www.linkedin.com/company/j-d-factors",
-        "hooks": [
-          "Co-Presidents Bo Kelly & Matt Johnson",
-          "*30+ years factoring since 1989",
-          "US & Canada operations"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would JD Factors' leadership be open to seeing how AI-powered underwriting could accelerate your credit assessment process across all your industry verticals?",
     "location": "California",
     "employees": 108,
     "website": "https://www.jdfactors.com",
-    "linkedinUrl": "https://www.jdfactors.com",
     "source": [
       "tam",
       "researched",
@@ -34086,7 +33824,6 @@
     "location": "Florida",
     "employees": 2,
     "website": "https://labocapital.com",
-    "linkedinUrl": "https://labocapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -34112,7 +33849,6 @@
     "location": "",
     "employees": 0,
     "website": "https://lafcalifornia.com/",
-    "linkedinUrl": "https://lafcalifornia.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -34215,7 +33951,6 @@
     "location": "Pennsylvania",
     "employees": 358,
     "website": "https://www.leafnow.com",
-    "linkedinUrl": "www.leafnow.com",
     "source": [
       "tam",
       "researched",
@@ -34335,7 +34070,6 @@
     "location": "Georgia",
     "employees": 239,
     "website": "https://www.lendingpoint.com",
-    "linkedinUrl": "www.lendingpoint.com",
     "source": [
       "tam",
       "researched",
@@ -34363,7 +34097,6 @@
     "location": "California",
     "employees": 14,
     "website": "https://lendspark.com/",
-    "linkedinUrl": "https://lendspark.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -34390,7 +34123,6 @@
     "location": "New York",
     "employees": 8,
     "website": "https://logicadvancegroup.com",
-    "linkedinUrl": "logicadvancegroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -34499,7 +34231,6 @@
     "location": "California",
     "employees": 33,
     "website": "https://www.maximcc.com",
-    "linkedinUrl": "www.maximcc.com",
     "source": [
       "tam",
       "researched",
@@ -34563,7 +34294,6 @@
     "location": "New York",
     "employees": 23,
     "website": "https://merchantsourceinc.com",
-    "linkedinUrl": "merchantsourceinc.com",
     "source": [
       "tam",
       "researched",
@@ -34591,7 +34321,6 @@
     "location": "",
     "employees": 2,
     "website": "https://Not found",
-    "linkedinUrl": "Not found",
     "source": [
       "tam",
       "tam-researched"
@@ -34617,7 +34346,6 @@
     "location": "",
     "employees": 4,
     "website": "https://www.owlfunding.com/index.php",
-    "linkedinUrl": "https://www.owlfunding.com/index.php",
     "source": [
       "tam",
       "tam-researched"
@@ -34705,7 +34433,6 @@
     "location": "Tennessee",
     "employees": 65,
     "website": "https://pathwaylending.org",
-    "linkedinUrl": "pathwaylending.org",
     "source": [
       "tam",
       "researched",
@@ -34779,7 +34506,6 @@
     "location": "California",
     "employees": 40,
     "website": "https://quick-capitalfunding.com",
-    "linkedinUrl": "quick-capitalfunding.com",
     "source": [
       "tam",
       "researched",
@@ -34858,7 +34584,6 @@
     "location": "California",
     "employees": 37,
     "website": "https://www.ridgestonecap.com",
-    "linkedinUrl": "https://www.ridgestonecap.com",
     "source": [
       "tam",
       "researched",
@@ -34886,7 +34611,6 @@
     "location": "",
     "employees": 4,
     "website": "https://starcadecapital.com/",
-    "linkedinUrl": "https://starcadecapital.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -34917,7 +34641,6 @@
     "location": "New York",
     "employees": 3,
     "website": "https://s2ccapitalgroup.com",
-    "linkedinUrl": "s2ccapitalgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -34943,7 +34666,6 @@
     "location": "",
     "employees": 6,
     "website": "https://surfside-capital.com",
-    "linkedinUrl": "surfside-capital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -34969,7 +34691,6 @@
     "location": "England",
     "employees": 2,
     "website": "https://tictokcap.com/",
-    "linkedinUrl": "https://tictokcap.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -34995,7 +34716,6 @@
     "location": "New York",
     "employees": 1,
     "website": "https://tramfunding.com/",
-    "linkedinUrl": "https://tramfunding.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -35099,7 +34819,6 @@
     "location": "New Jersey",
     "employees": 44,
     "website": "https://triocapital.com",
-    "linkedinUrl": "triocapital.com",
     "source": [
       "tam",
       "researched",
@@ -35127,7 +34846,6 @@
     "location": "Florida",
     "employees": 8,
     "website": "https://merchantcashgroup.com",
-    "linkedinUrl": "merchantcashgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35153,7 +34871,6 @@
     "location": "California",
     "employees": 8,
     "website": "https://www.coastalcapitalgroup.com",
-    "linkedinUrl": "https://www.coastalcapitalgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35184,7 +34901,6 @@
     "location": "",
     "employees": 8,
     "website": "https://MLFactors.com",
-    "linkedinUrl": "MLFactors.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35220,7 +34936,6 @@
     "location": "New York",
     "employees": 6,
     "website": "https://silverlinecapitalllc.com",
-    "linkedinUrl": "silverlinecapitalllc.com",
     "source": [
       "tam",
       "tam-researched",
@@ -35248,7 +34963,6 @@
     "location": "",
     "employees": 17,
     "website": "https://eaglebusinesscredit.com/",
-    "linkedinUrl": "https://eaglebusinesscredit.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -35290,23 +35004,11 @@
       "With 450+ MCA companies using HyperVerge (), we understand stacked-position risk assessment and can help Ace scale safely.",
       "As Ace's zero-fee ISO model drives more deal flow, HyperVerge can automate the initial screening and revenue verification process."
     ],
-    "leaders": [
-      {
-        "n": "Ace Partners Leadership",
-        "t": "Management Team",
-        "bg": "Ace Partners (also Ace Funding) provides revenue-based funding solutions including MCA, lines of credit, and equipment financing to small businesses nationwide. Approves businesses for 100-150% of gross monthly income. Limited public information on specific leadership.",
-        "li": "",
-        "hooks": [
-          "MCA provider",
-          "Dual brand operation"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would Ace Partners' team be open to seeing how AI underwriting could speed up your multi-position buyout evaluations while maintaining risk standards?",
     "location": "Georgia",
     "employees": 55,
     "website": "https://acefundingsource.com, acepartners.net",
-    "linkedinUrl": "acefundingsource.com, acepartners.net",
     "source": [
       "tam",
       "researched",
@@ -35349,26 +35051,14 @@
       "With 450+ MCA and lending companies using HyperVerge, we can help National Capital optimize the single-application model with automated risk scoring.",
       "As National Capital's marketplace handles diverse deal types (SBA, MCA, equipment), HyperVerge's AI adapts underwriting intensity based on product and risk profile."
     ],
-    "leaders": [
-      {
-        "n": "National Capital Leadership",
-        "t": "Management Team",
-        "bg": "National Capital operates a business lending marketplace connecting SMBs to multiple lenders through a single application process with a 90% approval rate. Offers term loans, SBA loans, lines of credit, MCA, equipment financing, and invoice factoring. Limited public information on specific leadership.",
-        "li": "",
-        "hooks": [
-          "90% approval rate marketplace"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would National Capital's team be interested in seeing how AI-powered pre-screening could help achieve even faster approvals across your lending marketplace?",
     "location": "District of Columbia",
     "employees": 82,
     "website": "https://nationalcapital.com",
-    "linkedinUrl": "nationalcapital.com",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ],
     "category": "funder"
   },
@@ -35392,7 +35082,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.slateadvance.com/",
-    "linkedinUrl": "https://www.slateadvance.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -35509,7 +35198,6 @@
     "location": "Texas",
     "employees": 86,
     "website": "https://accordbf.com",
-    "linkedinUrl": "accordbf.com",
     "source": [
       "tam",
       "researched",
@@ -35538,7 +35226,6 @@
     "location": "Illinois",
     "employees": 3,
     "website": "https://alphacapitalsource.com",
-    "linkedinUrl": "alphacapitalsource.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35565,7 +35252,6 @@
     "location": "New York",
     "employees": 1,
     "website": "https://www.jetcapitalfunding.net/",
-    "linkedinUrl": "https://www.jetcapitalfunding.net/",
     "source": [
       "tam",
       "tam-researched"
@@ -35596,7 +35282,6 @@
     "location": "Florida",
     "employees": 7,
     "website": "https://www.familybusinessfund.net",
-    "linkedinUrl": "https://www.familybusinessfund.net",
     "source": [
       "tam",
       "tam-researched"
@@ -35623,7 +35308,6 @@
     "location": "Delaware",
     "employees": 5,
     "website": "https://NextwaveFunding.com",
-    "linkedinUrl": "NextwaveFunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35650,7 +35334,6 @@
     "location": "District of Columbia",
     "employees": 3,
     "website": "https://americanbusinessfunding.com",
-    "linkedinUrl": "americanbusinessfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35677,7 +35360,6 @@
     "location": "",
     "employees": 7,
     "website": "https://spincapitalfinancial.com",
-    "linkedinUrl": "spincapitalfinancial.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35829,7 +35511,6 @@
     "location": "Florida",
     "employees": 261,
     "website": "https://www.oneparkfinancial.com",
-    "linkedinUrl": "https://www.oneparkfinancial.com",
     "source": [
       "tam",
       "researched",
@@ -35858,7 +35539,6 @@
     "location": "New York",
     "employees": 13,
     "website": "https://kingdomkapital.com",
-    "linkedinUrl": "https://kingdomkapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35885,7 +35565,6 @@
     "location": "New York",
     "employees": 2,
     "website": "https://www.pantherscapital.com",
-    "linkedinUrl": "www.pantherscapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35911,7 +35590,6 @@
     "location": "",
     "employees": 7,
     "website": "https://mainstreetfundinggroup.com",
-    "linkedinUrl": "mainstreetfundinggroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35938,7 +35616,6 @@
     "location": "Texas",
     "employees": 5,
     "website": "https://wiseadvances.com",
-    "linkedinUrl": "wiseadvances.com",
     "source": [
       "tam",
       "tam-researched"
@@ -35965,7 +35642,6 @@
     "location": "",
     "employees": 6,
     "website": "https://capitaladvances.com",
-    "linkedinUrl": "capitaladvances.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36038,7 +35714,6 @@
     "location": "",
     "employees": 31,
     "website": "https://www.gibraltarbc.com",
-    "linkedinUrl": "www.gibraltarbc.com",
     "source": [
       "tam",
       "researched",
@@ -36065,7 +35740,6 @@
     "location": "",
     "employees": 0,
     "website": "https://mdcapitalny.com",
-    "linkedinUrl": "mdcapitalny.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36171,23 +35845,11 @@
       "As Green Capital handles both ACH and split funding deals, HyperVerge can standardize underwriting across both repayment methods.",
       "AI underwriting can help Green Capital evaluate applications across its network of investors more efficiently, matching each deal to the right capital source."
     ],
-    "leaders": [
-      {
-        "n": "Green Capital Leadership",
-        "t": "Management Team",
-        "bg": "Green Capital provides business cash advances with flexible repayment through daily ACH and split funding, serving small business owners from New Jersey. Compatible with multiple payment processors. Limited public information on specific leadership.",
-        "li": "",
-        "hooks": [
-          "NJ-based MCA funder",
-          "ACH & split funding options"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would Green Capital be interested in seeing how AI underwriting could help improve both speed and compliance across your funding operations?",
     "location": "New Jersey",
     "employees": 50,
     "website": "https://greencapitalcredit.com/",
-    "linkedinUrl": "https://greencapitalcredit.com/",
     "source": [
       "tam",
       "researched",
@@ -36216,7 +35878,6 @@
     "location": "Oregon",
     "employees": 7,
     "website": "https://rdmcapitalfunding.com",
-    "linkedinUrl": "rdmcapitalfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36242,7 +35903,6 @@
     "location": "Florida",
     "employees": 7,
     "website": "https://www.1stglobalcapital.com",
-    "linkedinUrl": "www.1stglobalcapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36283,23 +35943,11 @@
       "With 450+ MCA companies using HyperVerge (), we can help 24 Capital serve more businesses faster regardless of credit profile.",
       "As 24 Capital evolves its fintech platform, HyperVerge's AI underwriting API can integrate directly into your existing workflow."
     ],
-    "leaders": [
-      {
-        "n": "24 Capital Leadership",
-        "t": "Management Team",
-        "bg": "24 Capital is a Miami-based direct funder providing business loans, SBA loans, equipment financing, lines of credit, and revenue-based financing. Known for 24-hour funding speed, working with businesses regardless of credit history. Limited public information on specific leadership.",
-        "li": "",
-        "hooks": [
-          "Miami-based direct funder",
-          "24-hour funding speed"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would 24 Capital's team be open to a demo showing how AI underwriting could guarantee your 24-hour funding speed even as volume scales?",
     "location": "Florida",
     "employees": 28,
     "website": "https://www.24capital.com/",
-    "linkedinUrl": "https://www.24capital.com/",
     "source": [
       "tam",
       "researched",
@@ -36398,7 +36046,6 @@
     "location": "",
     "employees": 70,
     "website": "https://www.360payments.com",
-    "linkedinUrl": "www.360payments.com",
     "source": [
       "tam",
       "researched",
@@ -36501,7 +36148,6 @@
     "location": "Texas",
     "employees": 66,
     "website": "https://www.8fig.co/",
-    "linkedinUrl": "https://www.8fig.co/",
     "source": [
       "tam",
       "researched",
@@ -36528,7 +36174,6 @@
     "location": "",
     "employees": 0,
     "website": "https://accountablecapital.com, accountablelending.com",
-    "linkedinUrl": "accountablecapital.com, accountablelending.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36555,7 +36200,6 @@
     "location": "",
     "employees": 15,
     "website": "https://theacfgroup.com",
-    "linkedinUrl": "theacfgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36624,7 +36268,6 @@
     "location": "Nebraska",
     "employees": 525,
     "website": "https://advancefundsnetwork.com",
-    "linkedinUrl": "advancefundsnetwork.com",
     "source": [
       "tam",
       "researched",
@@ -36652,7 +36295,6 @@
     "location": "",
     "employees": 16,
     "website": "https://www.afg.com",
-    "linkedinUrl": "https://www.afg.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36679,7 +36321,6 @@
     "location": "New York",
     "employees": 4,
     "website": "https://Not explicitly found in the provided search results.",
-    "linkedinUrl": "Not explicitly found in the provided search results.",
     "source": [
       "tam",
       "tam-researched"
@@ -36706,7 +36347,6 @@
     "location": "",
     "employees": 7,
     "website": "https://AmericanFundingServices.com",
-    "linkedinUrl": "AmericanFundingServices.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36788,7 +36428,6 @@
     "location": "",
     "employees": 21,
     "website": "https://americanstimulusfunding.com",
-    "linkedinUrl": "americanstimulusfunding.com",
     "source": [
       "tam",
       "researched",
@@ -36821,7 +36460,6 @@
     "location": "New York",
     "employees": 9,
     "website": "https://acgroupinc.com",
-    "linkedinUrl": "acgroupinc.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36847,7 +36485,6 @@
     "location": "Florida",
     "employees": 7,
     "website": "https://approvedfundinggroup.com",
-    "linkedinUrl": "approvedfundinggroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36874,7 +36511,6 @@
     "location": "",
     "employees": 0,
     "website": "https://arcadiaservicing.com, arcadiaadvancegroup.com, arcadialendinggroup.com",
-    "linkedinUrl": "arcadiaservicing.com, arcadiaadvancegroup.com, arcadialendinggroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36901,7 +36537,6 @@
     "location": "New Jersey",
     "employees": 19,
     "website": "https://www.arcariusfunding.com",
-    "linkedinUrl": "www.arcariusfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -36985,7 +36620,6 @@
     "location": "New York",
     "employees": 62,
     "website": "https://www.ascendus.org/",
-    "linkedinUrl": "https://www.ascendus.org/",
     "source": [
       "tam",
       "researched",
@@ -37013,7 +36647,6 @@
     "location": "Bratislava Region",
     "employees": 5,
     "website": "https://www.atlantiscapitalllc.com/",
-    "linkedinUrl": "https://www.atlantiscapitalllc.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -37039,7 +36672,6 @@
     "location": "",
     "employees": 8,
     "website": "https://avanzacapitalllc.com/",
-    "linkedinUrl": "https://avanzacapitalllc.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -37100,7 +36732,6 @@
     "location": "New York",
     "employees": 14,
     "website": "https://www.bbigm.com",
-    "linkedinUrl": "www.bbigm.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37127,7 +36758,6 @@
     "location": "New York",
     "employees": 4,
     "website": "https://bmfcapital.com",
-    "linkedinUrl": "bmfcapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37153,7 +36783,6 @@
     "location": "Wisconsin",
     "employees": 5,
     "website": "https://brookwatercapital.net",
-    "linkedinUrl": "brookwatercapital.net",
     "source": [
       "tam",
       "tam-researched"
@@ -37180,7 +36809,6 @@
     "location": "Delaware",
     "employees": 1,
     "website": "https://businessadvancefunding.com",
-    "linkedinUrl": "businessadvancefunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37230,11 +36858,6 @@
         "h": "Enova Releases Q4 2025 Small Business Cash Flow Trend Report",
         "s": "Enova International, Q4 2025",
         "d": "Enova's small business segment showed continued resilience heading into 2026, with growing adoption of digital lending platforms."
-      },
-      {
-        "h": "The Business Backer Acquired by Enova International",
-        "s": "Industry reports",
-        "d": "The Business Backer was acquired by Enova International and integrated into its small business lending portfolio alongside OnDeck."
       },
       {
         "h": "Business Backer No Longer Accepting New Applications",
@@ -37322,7 +36945,6 @@
     "location": "Ohio",
     "employees": 31,
     "website": "https://businessbacker.com",
-    "linkedinUrl": "businessbacker.com",
     "source": [
       "tam",
       "researched",
@@ -37349,7 +36971,6 @@
     "location": "",
     "employees": 10,
     "website": "https://Not found",
-    "linkedinUrl": "Not found",
     "source": [
       "tam",
       "tam-researched"
@@ -37375,7 +36996,6 @@
     "location": "",
     "employees": 0,
     "website": "https://carpecap.com",
-    "linkedinUrl": "https://carpecap.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37401,7 +37021,6 @@
     "location": "Illinois",
     "employees": 10,
     "website": "https://cashbuoy.biz",
-    "linkedinUrl": "cashbuoy.biz",
     "source": [
       "tam",
       "tam-researched"
@@ -37428,7 +37047,6 @@
     "location": "",
     "employees": 1,
     "website": "https://cashvillagefunding.com",
-    "linkedinUrl": "cashvillagefunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37455,7 +37073,6 @@
     "location": "Colorado",
     "employees": 5,
     "website": "https://cashfund.com",
-    "linkedinUrl": "cashfund.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37481,7 +37098,6 @@
     "location": "Georgia",
     "employees": 3,
     "website": "https://caymusfunding.com",
-    "linkedinUrl": "caymusfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37508,7 +37124,6 @@
     "location": "Arizona",
     "employees": 1,
     "website": "https://chromeadvance.com",
-    "linkedinUrl": "chromeadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37615,7 +37230,6 @@
     "location": "Ontario",
     "employees": 165,
     "website": "https://clearbanc.com/",
-    "linkedinUrl": "https://clearbanc.com/",
     "source": [
       "tam",
       "researched",
@@ -37695,7 +37309,6 @@
     "location": "California",
     "employees": 36,
     "website": "https://www.coastfunding.com",
-    "linkedinUrl": "https://www.coastfunding.com",
     "source": [
       "tam",
       "researched",
@@ -37728,7 +37341,6 @@
     "location": "California",
     "employees": 0,
     "website": "https://www.coconutfunding.com/",
-    "linkedinUrl": "https://www.coconutfunding.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -37754,7 +37366,6 @@
     "location": "New York",
     "employees": 6,
     "website": "https://coolidgecapital.com",
-    "linkedinUrl": "coolidgecapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37786,7 +37397,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.cooperasset.com",
-    "linkedinUrl": "www.cooperasset.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37813,7 +37423,6 @@
     "location": "North Carolina",
     "employees": 3,
     "website": "https://corecapitallenders.com",
-    "linkedinUrl": "corecapitallenders.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37840,7 +37449,6 @@
     "location": "",
     "employees": 2,
     "website": "https://creditlinecap.com",
-    "linkedinUrl": "creditlinecap.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37933,7 +37541,6 @@
     "location": "Georgia",
     "employees": 36,
     "website": "https://www.crestcapital.com",
-    "linkedinUrl": "https://www.crestcapital.com",
     "source": [
       "tam",
       "researched",
@@ -37961,7 +37568,6 @@
     "location": "New York",
     "employees": 5,
     "website": "https://crystalspringscapital.com",
-    "linkedinUrl": "crystalspringscapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -37987,7 +37593,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.dakacapitalgroup.com",
-    "linkedinUrl": "www.dakacapitalgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38013,7 +37618,6 @@
     "location": "Florida",
     "employees": 4,
     "website": "https://dependancep.com",
-    "linkedinUrl": "https://dependancep.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38110,7 +37714,6 @@
     "location": "Oregon",
     "employees": 123,
     "website": "https://dextcapital.com",
-    "linkedinUrl": "dextcapital.com",
     "source": [
       "tam",
       "researched",
@@ -38138,7 +37741,6 @@
     "location": "New York",
     "employees": 2,
     "website": "https://www.diamondadvances.com",
-    "linkedinUrl": "https://www.diamondadvances.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38164,7 +37766,6 @@
     "location": "",
     "employees": 0,
     "website": "https://diverse-capital.com",
-    "linkedinUrl": "https://diverse-capital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38190,7 +37791,6 @@
     "location": "",
     "employees": 3,
     "website": "https://www.dynastyventuresllc.com",
-    "linkedinUrl": "https://www.dynastyventuresllc.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38212,13 +37812,7 @@
     ],
     "desc": "MCA and business funding company operating under the Quick Capital Fund brand in New York, providing merchant cash advances and working capital to small businesses.",
     "notes": "",
-    "news": [
-      {
-        "h": "Quick Capital Fund Active in MCA Market",
-        "s": "Industry Reports, 2025",
-        "d": "Quick Capital Fund continues to provide merchant cash advances with fast approval and flexible terms for small businesses."
-      }
-    ],
+    "news": [],
     "ice": "As an MCA funder in the competitive New York market, how are you differentiating your underwriting and approval process to stay ahead?",
     "icebreakers": [
       "The MCA space in New York is incredibly competitive -- what's your biggest challenge in processing deal flow efficiently?",
@@ -38231,27 +37825,14 @@
       "Over 450 MCA companies already use HyperVerge to process more deals with fewer underwriting staff,.",
       "In a competitive market like New York, faster underwriting means winning more deals from brokers and ISOs who value quick funding turnarounds."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Operates as Quick Capital Fund providing MCA and business funding solutions in New York. Limited public information available about leadership team.",
-        "li": "",
-        "hooks": [
-          "Quick Capital Fund brand",
-          "NY-based MCA funder"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would you be open to a quick demo showing how HyperVerge can help Quick Capital Fund process MCA applications in under 5 minutes instead of 40?",
     "location": "New York",
     "employees": 45,
     "website": "https://quick-capital.fund",
-    "linkedinUrl": "quick-capital.fund",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ]
   },
   {
@@ -38274,7 +37855,6 @@
     "location": "",
     "employees": 8,
     "website": "https://EastShoreEquities.com",
-    "linkedinUrl": "EastShoreEquities.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38388,7 +37968,6 @@
     "location": "New York",
     "employees": 66,
     "website": "https://easternfunding.com",
-    "linkedinUrl": "easternfunding.com",
     "source": [
       "tam",
       "researched",
@@ -38522,7 +38101,6 @@
     "location": "Florida",
     "employees": 81,
     "website": "https://everestbusinessfunding.com/",
-    "linkedinUrl": "https://everestbusinessfunding.com/",
     "source": [
       "tam",
       "researched",
@@ -38551,7 +38129,6 @@
     "location": "Georgia",
     "employees": 17,
     "website": "https://www.edgecapital.com",
-    "linkedinUrl": "https://www.edgecapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38577,7 +38154,6 @@
     "location": "Connecticut",
     "employees": 11,
     "website": "https://www.efinancialtree.com",
-    "linkedinUrl": "www.efinancialtree.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38608,11 +38184,6 @@
     "desc": "New York City-based MCA direct funder established in 2008, specializing in merchant cash advances for small and medium-sized businesses across North America. Provides funding up to 4th position.",
     "notes": "",
     "news": [
-      {
-        "h": "Ein Cap Continues Growth as Direct MCA Funder",
-        "s": "Industry Reports, 2025",
-        "d": "Ein Cap has grown from a small private lender in 2008 into a multi-million dollar MCA funder serving businesses across North America."
-      },
       {
         "h": "Ein Cap Continues Merchant Cash Advance Operations",
         "s": "BBB / Industry, 2024",
@@ -38676,7 +38247,6 @@
     "location": "New York",
     "employees": 25,
     "website": "https://eincap.com",
-    "linkedinUrl": "eincap.com",
     "source": [
       "tam",
       "researched",
@@ -38700,13 +38270,7 @@
     ],
     "desc": "Direct funder providing alternative financing options for small to medium-sized businesses, based in Bel Air, Maryland. Founded in 2010, has provided over $150 million to 2,500+ businesses through MCAs and other products.",
     "notes": "",
-    "news": [
-      {
-        "h": "Elevation Capital Continues Growth as Direct MCA Funder",
-        "s": "Industry Reports, 2025",
-        "d": "Elevation Capital Group has surpassed $150M in funding to over 2,500 businesses since its 2010 founding."
-      }
-    ],
+    "news": [],
     "ice": "With over $150 million funded to 2,500+ businesses since 2010, Elevation Capital has shown great staying power in the alternative financing space -- how are you thinking about scaling your underwriting to reach the next level?",
     "icebreakers": [
       "Elevation Capital has been in the MCA space since 2010 -- what operational improvements are you most focused on right now?",
@@ -38736,7 +38300,6 @@
     "location": "Haryana",
     "employees": 86,
     "website": "https://www.elevationcapitalllc.com",
-    "linkedinUrl": "https://www.elevationcapitalllc.com",
     "source": [
       "tam",
       "researched",
@@ -38765,7 +38328,6 @@
     "location": "",
     "employees": 0,
     "website": "https://elixirfunding.com",
-    "linkedinUrl": "https://elixirfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38791,7 +38353,6 @@
     "location": "",
     "employees": 0,
     "website": "https://emmycapitalgroup.com",
-    "linkedinUrl": "https://emmycapitalgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38818,7 +38379,6 @@
     "location": "",
     "employees": 1,
     "website": "https://epic-advance.com",
-    "linkedinUrl": "https://epic-advance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -38906,7 +38466,6 @@
     "location": "New Hampshire",
     "employees": 27,
     "website": "https://www.everlastingcapital.com/",
-    "linkedinUrl": "https://www.everlastingcapital.com/",
     "source": [
       "tam",
       "researched",
@@ -38986,7 +38545,6 @@
     "location": "California",
     "employees": 46,
     "website": "https://www.expresscapital.com",
-    "linkedinUrl": "www.expresscapital.com",
     "source": [
       "tam",
       "researched",
@@ -39014,7 +38572,6 @@
     "location": "",
     "employees": 0,
     "website": "https://factorfunding.com",
-    "linkedinUrl": "factorfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39056,26 +38613,14 @@
       "For no-credit-requirement MCAs, HyperVerge's AI analyzes bank statements and revenue data to provide fast, accurate risk assessments.",
       "450+ MCA companies  already use HyperVerge to automate their underwriting -- proven technology for same-day funding operations."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Leads Fast Cash Funding's MCA operations providing up to $1M in same-day funding across all industries in Florida. Limited public information available about specific leadership.",
-        "li": "",
-        "hooks": [
-          "Florida-based MCA funder"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would you be open to seeing how HyperVerge can help Fast Cash Funding maintain same-day approvals while processing significantly more deals?",
     "location": "Florida",
     "employees": 46,
     "website": "https://fastcashfunding.com",
-    "linkedinUrl": "https://fastcashfunding.com",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ],
     "category": "funder"
   },
@@ -39099,7 +38644,6 @@
     "location": "New York",
     "employees": 1,
     "website": "https://favofunding.com",
-    "linkedinUrl": "https://favofunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39125,7 +38669,6 @@
     "location": "",
     "employees": 1,
     "website": "https://fbfcap.com",
-    "linkedinUrl": "fbfcap.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39151,7 +38694,6 @@
     "location": "New York",
     "employees": 5,
     "website": "https://finpointfunding.com",
-    "linkedinUrl": "finpointfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39177,7 +38719,6 @@
     "location": "New York",
     "employees": 12,
     "website": "https://www.firstamericanfunding.net",
-    "linkedinUrl": "https://www.firstamericanfunding.net",
     "source": [
       "tam",
       "tam-researched"
@@ -39203,7 +38744,6 @@
     "location": "",
     "employees": 0,
     "website": "https://firstlineadvance.com",
-    "linkedinUrl": "https://firstlineadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39230,7 +38770,6 @@
     "location": "Florida",
     "employees": 16,
     "website": "https://www.flashadvance.com",
-    "linkedinUrl": "www.flashadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39256,7 +38795,6 @@
     "location": "Florida",
     "employees": 12,
     "website": "https://fmsadvance.com",
-    "linkedinUrl": "fmsadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39283,7 +38821,6 @@
     "location": "",
     "employees": 0,
     "website": "https://fortunadvance.com",
-    "linkedinUrl": "fortunadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39309,7 +38846,6 @@
     "location": "",
     "employees": 0,
     "website": "https://fujifunding.com",
-    "linkedinUrl": "fujifunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39335,7 +38871,6 @@
     "location": "Florida",
     "employees": 2,
     "website": "https://www.fundonatic.com",
-    "linkedinUrl": "https://www.fundonatic.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39361,13 +38896,7 @@
     ],
     "desc": "Business funding company based in North Myrtle Beach, South Carolina, providing small business loans, working capital financing, and business lines of credit through fusionfunding.com.",
     "notes": "",
-    "news": [
-      {
-        "h": "Fusion Capital Serves Growing SMB Market",
-        "s": "Industry Reports, 2025",
-        "d": "Fusion Capital continues to expand its small business lending operations from its South Carolina headquarters."
-      }
-    ],
+    "news": [],
     "ice": "Christian, as Fusion Capital grows its small business lending operations, how are you thinking about improving your underwriting efficiency to serve more businesses?",
     "icebreakers": [
       "South Carolina is an interesting base for a national lending operation -- how does Fusion Capital differentiate in the competitive funding market?",
@@ -39397,7 +38926,6 @@
     "location": "South Carolina",
     "employees": 23,
     "website": "https://www.fusionfunding.com",
-    "linkedinUrl": "https://www.fusionfunding.com",
     "source": [
       "tam",
       "researched",
@@ -39426,7 +38954,6 @@
     "location": "New York",
     "employees": 4,
     "website": "https://gldfunding.com",
-    "linkedinUrl": "gldfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39452,7 +38979,6 @@
     "location": "California",
     "employees": 4,
     "website": "https://goldfundinggroup.com",
-    "linkedinUrl": "goldfundinggroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39587,7 +39113,6 @@
     "location": "California",
     "employees": 36,
     "website": "https://www.goodfunding.com",
-    "linkedinUrl": "www.goodfunding.com",
     "source": [
       "tam",
       "researched",
@@ -39614,7 +39139,6 @@
     "location": "",
     "employees": 0,
     "website": "https://goosefunding.com",
-    "linkedinUrl": "goosefunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39640,7 +39164,6 @@
     "location": "Florida",
     "employees": 2,
     "website": "https://granitefunding.com",
-    "linkedinUrl": "granitefunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39667,7 +39190,6 @@
     "location": "Michigan",
     "employees": 6,
     "website": "https://gcmcapitalgroup.com/",
-    "linkedinUrl": "https://gcmcapitalgroup.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -39693,7 +39215,6 @@
     "location": "",
     "employees": 0,
     "website": "https://harperadvance.com",
-    "linkedinUrl": "https://harperadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39719,7 +39240,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.headwaycapital.com",
-    "linkedinUrl": "https://www.headwaycapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39745,7 +39265,6 @@
     "location": "Florida",
     "employees": 14,
     "website": "https://www.highlandhillcap.com",
-    "linkedinUrl": "https://www.highlandhillcap.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39772,7 +39291,6 @@
     "location": "",
     "employees": 0,
     "website": "https://homeruncapital.com",
-    "linkedinUrl": "homeruncapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39798,7 +39316,6 @@
     "location": "",
     "employees": 0,
     "website": "https://honestfundingllc.com/",
-    "linkedinUrl": "https://honestfundingllc.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -39824,7 +39341,6 @@
     "location": "",
     "employees": 0,
     "website": "https://globalcapitalexperts.com/",
-    "linkedinUrl": "https://globalcapitalexperts.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -39850,7 +39366,6 @@
     "location": "",
     "employees": 0,
     "website": "https://hunsonsolutions.com",
-    "linkedinUrl": "hunsonsolutions.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39876,7 +39391,6 @@
     "location": "England",
     "employees": 4,
     "website": "https://www.icg-funding.com",
-    "linkedinUrl": "www.icg-funding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39908,7 +39422,6 @@
     "location": "",
     "employees": 11,
     "website": "https://ikahncapital.com",
-    "linkedinUrl": "ikahncapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39935,7 +39448,6 @@
     "location": "",
     "employees": 0,
     "website": "https://imsfund.com",
-    "linkedinUrl": "imsfund.com",
     "source": [
       "tam",
       "tam-researched"
@@ -39957,13 +39469,7 @@
     ],
     "desc": "Technology-driven business lender providing merchant cash advances, small business loans, and cash flow loans. Offers 24-hour funding decisions and positions itself as a leader in the cash advance industry.",
     "notes": "",
-    "news": [
-      {
-        "h": "Infinity Capital Continues Growth in MCA Market",
-        "s": "Industry Reports, 2025",
-        "d": "Infinity Capital positions itself as a technology-driven leader in the cash advance industry with rapid 24-hour funding decisions."
-      }
-    ],
+    "news": [],
     "ice": "As a technology-driven lender focused on 24-hour decisions, how is Infinity Capital leveraging AI to maintain that speed as deal volume grows?",
     "icebreakers": [
       "Being technology-driven is a great differentiator in the MCA space -- what technology are you currently using for underwriting?",
@@ -39976,26 +39482,14 @@
       "450+ MCA companies already use HyperVerge, making it the industry's leading AI underwriting platform for cash advance providers.",
       "Maintain your 24-hour decision promise even as deal volume scales -- HyperVerge ensures speed without sacrificing underwriting quality."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Leads Infinity Capital's technology-driven MCA and business lending operations with 24-hour decision-making from Oklahoma. Limited public information available about specific leadership.",
-        "li": "",
-        "hooks": [
-          "Tech-driven MCA funder"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "As a technology-driven lender, would you be interested in seeing how HyperVerge's AI can further accelerate Infinity Capital's underwriting to maintain your 24-hour decision advantage?",
     "location": "Oklahoma",
     "employees": 37,
     "website": "https://infinitythe1.com/",
-    "linkedinUrl": "https://infinitythe1.com/",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ]
   },
   {
@@ -40018,7 +39512,6 @@
     "location": "",
     "employees": 0,
     "website": "https://integritycorporatefunding.com",
-    "linkedinUrl": "integritycorporatefunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40044,7 +39537,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.ironcrowncapital.com/",
-    "linkedinUrl": "https://www.ironcrowncapital.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -40075,7 +39567,6 @@
     "location": "",
     "employees": 8,
     "website": "https://irukacapital.com",
-    "linkedinUrl": "irukacapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40101,7 +39592,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.iterumfinancial.com",
-    "linkedinUrl": "www.iterumfinancial.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40128,7 +39618,6 @@
     "location": "Tennessee",
     "employees": 18,
     "website": "https://jembiz.com",
-    "linkedinUrl": "jembiz.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40154,7 +39643,6 @@
     "location": "",
     "employees": 0,
     "website": "https://k5kapital.com",
-    "linkedinUrl": "https://k5kapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40180,7 +39668,6 @@
     "location": "",
     "employees": 6,
     "website": "https://kashcapitalllc.com",
-    "linkedinUrl": "kashcapitalllc.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40206,7 +39693,6 @@
     "location": "",
     "employees": 0,
     "website": "https://kash-advance.com",
-    "linkedinUrl": "https://kash-advance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40232,7 +39718,6 @@
     "location": "Massachusetts",
     "employees": 1,
     "website": "https://kinetic-funding.com",
-    "linkedinUrl": "kinetic-funding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40258,7 +39743,6 @@
     "location": "New York",
     "employees": 9,
     "website": "https://kingscashgroup.com",
-    "linkedinUrl": "kingscashgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40284,7 +39768,6 @@
     "location": "",
     "employees": 4,
     "website": "https://www.knightsbridgefunding.com",
-    "linkedinUrl": "www.knightsbridgefunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40310,7 +39793,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.lendincheck.com",
-    "linkedinUrl": "www.lendincheck.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40336,7 +39818,6 @@
     "location": "",
     "employees": 0,
     "website": "https://lendingclub.com",
-    "linkedinUrl": "lendingclub.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40439,7 +39920,6 @@
     "location": "",
     "employees": 26,
     "website": "https://lendzi.com",
-    "linkedinUrl": "lendzi.com",
     "source": [
       "tam",
       "researched",
@@ -40467,7 +39947,6 @@
     "location": "California",
     "employees": 8,
     "website": "https://www.lightspeedhq.com/capital",
-    "linkedinUrl": "https://www.lightspeedhq.com/capital",
     "source": [
       "tam",
       "tam-researched"
@@ -40493,7 +39972,6 @@
     "location": "Tennessee",
     "employees": 4,
     "website": "https://lilyadvance.com",
-    "linkedinUrl": "https://lilyadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40520,7 +39998,6 @@
     "location": "Florida",
     "employees": 11,
     "website": "https://loan23.com",
-    "linkedinUrl": "loan23.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40546,7 +40023,6 @@
     "location": "",
     "employees": 2,
     "website": "https://www.lynkscapital.com/",
-    "linkedinUrl": "https://www.lynkscapital.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -40573,7 +40049,6 @@
     "location": "",
     "employees": 3,
     "website": "https://www.lexcapitalgroup.net/",
-    "linkedinUrl": "https://www.lexcapitalgroup.net/",
     "source": [
       "tam",
       "tam-researched"
@@ -40600,7 +40075,6 @@
     "location": "Arizona",
     "employees": 15,
     "website": "https://www.mayfairfundingsolutions.com",
-    "linkedinUrl": "https://www.mayfairfundingsolutions.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40627,7 +40101,6 @@
     "location": "New York",
     "employees": 3,
     "website": "https://mcanationwidefastloans.com",
-    "linkedinUrl": "mcanationwidefastloans.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40653,7 +40126,6 @@
     "location": "New York",
     "employees": 5,
     "website": "https://merchantrefi.com",
-    "linkedinUrl": "https://merchantrefi.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40679,7 +40151,6 @@
     "location": "",
     "employees": 0,
     "website": "https://Not explicitly found in search results",
-    "linkedinUrl": "Not explicitly found in search results",
     "source": [
       "tam",
       "tam-researched"
@@ -40705,7 +40176,6 @@
     "location": "New York",
     "employees": 3,
     "website": "https://www.mgmcapitalfunding.com",
-    "linkedinUrl": "https://www.mgmcapitalfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40732,7 +40202,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.mgmfundingenterprises.com",
-    "linkedinUrl": "https://www.mgmfundingenterprises.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40763,7 +40232,6 @@
     "location": "New York",
     "employees": 5,
     "website": "https://nestplanner.com/",
-    "linkedinUrl": "https://nestplanner.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -40778,53 +40246,19 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [
-      {
-        "n": "Management Team",
-        "t": "Leadership"
-      }
-    ],
-    "desc": "Business funding company based in Texas with approximately 430 employees, providing business loans and financing solutions to small and medium-sized businesses.",
-    "notes": "",
-    "news": [
-      {
-        "h": "NetFunding Operates as Major Texas-Based Business Funder",
-        "s": "Industry Reports, 2025",
-        "d": "NetFunding maintains a significant operation with approximately 430 employees focused on business lending."
-      }
-    ],
-    "ice": "With 430 employees, NetFunding is one of the larger operations in the business funding space -- how are you leveraging technology to maximize your team's underwriting efficiency?",
-    "icebreakers": [
-      "A 430-person operation is substantial for the funding industry -- what portion of your team is dedicated to underwriting?",
-      "At your scale, even small improvements in underwriting efficiency can have massive impact -- are you exploring AI solutions?",
-      "What technology stack is NetFunding currently using for deal processing and underwriting?",
-      "How does NetFunding maintain consistency in underwriting decisions across such a large team?"
-    ],
-    "tp": [
-      "At 430 employees, HyperVerge's AI underwriting automation could save NetFunding thousands of hours per month, cutting review time from 40 minutes to under 5 minutes per deal.",
-      "HyperVerge ensures consistent underwriting decisions across your entire team -- critical for large operations maintaining quality at scale.",
-      "450+ MCA companies  already use HyperVerge to automate underwriting. Our platform is built for organizations of your scale."
-    ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Leads NetFunding's operations with approximately 430 employees in Texas, providing business funding solutions. Limited public information available about specific leadership.",
-        "li": "",
-        "hooks": [
-          "Texas-based, 430 employees"
-        ]
-      }
-    ],
-    "ask": "With 430 employees and high deal volume, would NetFunding be interested in seeing how HyperVerge's AI could save your underwriting team thousands of hours per month?",
+    "contacts": [],
+    "desc": "Business funding company based in Texas. Data unverified — needs research.",
+    "notes": "Data quality issue: previous entry had unverified 430 employee count and placeholder data. Needs real research.",
+    "news": [],
+    "ice": "",
+    "icebreakers": [],
+    "tp": [],
+    "leaders": [],
+    "ask": "",
     "location": "Texas",
-    "employees": 430,
     "website": "https://www.netfunding.com/",
-    "linkedinUrl": "https://www.netfunding.com/",
     "source": [
-      "tam",
-      "researched",
-      "deep-researched"
+      "tam"
     ]
   },
   {
@@ -40847,7 +40281,6 @@
     "location": "",
     "employees": 0,
     "website": "https://newyorktribecagroup.com",
-    "linkedinUrl": "newyorktribecagroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40873,7 +40306,6 @@
     "location": "Boca Raton",
     "employees": 5,
     "website": "https://noblebusinessloans.com",
-    "linkedinUrl": "noblebusinessloans.com",
     "source": [
       "tam",
       "tam-researched"
@@ -40977,7 +40409,6 @@
     "location": "New Jersey",
     "employees": 230,
     "website": "https://www.getnrsfunding.com",
-    "linkedinUrl": "www.getnrsfunding.com",
     "source": [
       "tam",
       "researched",
@@ -41004,7 +40435,6 @@
     "location": "",
     "employees": 0,
     "website": "https://onefunder.com",
-    "linkedinUrl": "onefunder.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41030,7 +40460,6 @@
     "location": "",
     "employees": 0,
     "website": "https://orangeadvance.com",
-    "linkedinUrl": "orangeadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41056,7 +40485,6 @@
     "location": "Utah",
     "employees": 3,
     "website": "https://pacwesternfinancial.com",
-    "linkedinUrl": "pacwesternfinancial.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41083,7 +40511,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.parksidefundinggroup.com",
-    "linkedinUrl": "https://www.parksidefundinggroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41114,7 +40541,6 @@
     "location": "New York",
     "employees": 5,
     "website": "https://www.pdmcapital.com",
-    "linkedinUrl": "https://www.pdmcapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41141,7 +40567,6 @@
     "location": "",
     "employees": 0,
     "website": "https://peoplefund.org",
-    "linkedinUrl": "peoplefund.org",
     "source": [
       "tam",
       "tam-researched"
@@ -41168,7 +40593,6 @@
     "location": "Indiana",
     "employees": 6,
     "website": "https://www.thephoenixfinance.com",
-    "linkedinUrl": "https://www.thephoenixfinance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41194,7 +40618,6 @@
     "location": "",
     "employees": 0,
     "website": "https://Not found",
-    "linkedinUrl": "Not found",
     "source": [
       "tam",
       "tam-researched"
@@ -41220,7 +40643,6 @@
     "location": "",
     "employees": 4,
     "website": "https://plexe.co",
-    "linkedinUrl": "plexe.co",
     "source": [
       "tam",
       "tam-researched"
@@ -41246,7 +40668,6 @@
     "location": "Texas",
     "employees": 14,
     "website": "https://powerfundingsolutions.com",
-    "linkedinUrl": "powerfundingsolutions.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41273,7 +40694,6 @@
     "location": "",
     "employees": 5,
     "website": "https://www.poweruplending.com",
-    "linkedinUrl": "www.poweruplending.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41300,7 +40720,6 @@
     "location": "Indiana",
     "employees": 15,
     "website": "https://premierecapitalfunding.com",
-    "linkedinUrl": "https://premierecapitalfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41327,7 +40746,6 @@
     "location": "New York",
     "employees": 8,
     "website": "https://www.promptcapitalfunding.com",
-    "linkedinUrl": "www.promptcapitalfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41353,7 +40771,6 @@
     "location": "",
     "employees": 2,
     "website": "http://propellacapital.com",
-    "linkedinUrl": "http://propellacapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41415,7 +40832,6 @@
     "location": "New York",
     "employees": 32,
     "website": "https://prosperumfunding.com",
-    "linkedinUrl": "prosperumfunding.com",
     "source": [
       "tam",
       "researched",
@@ -41443,7 +40859,6 @@
     "location": "",
     "employees": 1,
     "website": "https://proventurecap.com",
-    "linkedinUrl": "proventurecap.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41469,7 +40884,6 @@
     "location": "Florida",
     "employees": 5,
     "website": "https://purpletreefunding.com",
-    "linkedinUrl": "https://purpletreefunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41496,7 +40910,6 @@
     "location": "New York",
     "employees": 1,
     "website": "https://www.qmadvance.com",
-    "linkedinUrl": "www.qmadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41527,7 +40940,6 @@
     "location": "New York",
     "employees": 8,
     "website": "https://www.radiancefunding.com",
-    "linkedinUrl": "https://www.radiancefunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41553,7 +40965,6 @@
     "location": "New York",
     "employees": 4,
     "website": "https://regioncapitalgroup.com",
-    "linkedinUrl": "regioncapitalgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41579,7 +40990,6 @@
     "location": "",
     "employees": 0,
     "website": "https://reserveadvance.com",
-    "linkedinUrl": "reserveadvance.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41605,7 +41015,6 @@
     "location": "",
     "employees": 7,
     "website": "https://www.retroadv.com/",
-    "linkedinUrl": "https://www.retroadv.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -41632,7 +41041,6 @@
     "location": "",
     "employees": 0,
     "website": "https://rivalfunding.com",
-    "linkedinUrl": "https://rivalfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41658,7 +41066,6 @@
     "location": "",
     "employees": 13,
     "website": "https://royalfundinggroup.com",
-    "linkedinUrl": "royalfundinggroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41700,27 +41107,14 @@
       "With 15+ financing products, HyperVerge's customizable AI workflows can handle different underwriting criteria for each product type.",
       "450+ MCA companies  trust HyperVerge -- we're built for high-volume, fast-turnaround operations like Royal Funding."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Leads Royal Funding Group's operations at 180 Maiden Lane in NYC, with over $1B funded and 15+ financing products. Limited public information available about specific leadership.",
-        "li": "",
-        "hooks": [
-          "$1B+ funded",
-          "180 Maiden Lane NYC"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "With $1B+ funded and a one-hour approval target, would Royal Funding be interested in seeing how HyperVerge's AI can help maintain that speed as volume grows?",
     "location": "New York",
     "employees": 48,
     "website": "https://royalfunding.net",
-    "linkedinUrl": "https://royalfunding.net",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ]
   },
   {
@@ -41743,7 +41137,6 @@
     "location": "",
     "employees": 0,
     "website": "https://sbfcenter.com",
-    "linkedinUrl": "sbfcenter.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41769,7 +41162,6 @@
     "location": "",
     "employees": 0,
     "website": "https://scrappyfunding.com",
-    "linkedinUrl": "scrappyfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41800,7 +41192,6 @@
     "location": "Washington",
     "employees": 2,
     "website": "https://seattleprimecapital.com",
-    "linkedinUrl": "seattleprimecapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41826,7 +41217,6 @@
     "location": "Florida",
     "employees": 1,
     "website": "https://shor.capital",
-    "linkedinUrl": "https://shor.capital",
     "source": [
       "tam",
       "tam-researched"
@@ -41852,7 +41242,6 @@
     "location": "",
     "employees": 0,
     "website": "https://sjdfunding.net/",
-    "linkedinUrl": "https://sjdfunding.net/",
     "source": [
       "tam",
       "tam-researched"
@@ -41878,7 +41267,6 @@
     "location": "California",
     "employees": 11,
     "website": "https://skycapfunding.com",
-    "linkedinUrl": "https://skycapfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41904,7 +41292,6 @@
     "location": "New York",
     "employees": 8,
     "website": "https://skyinance.com/",
-    "linkedinUrl": "https://skyinance.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -41946,27 +41333,14 @@
       "With 12+ years of lending data, HyperVerge's AI can be trained on your historical performance to make even better underwriting decisions.",
       "450+ MCA companies  already use HyperVerge -- proven technology for established funders looking to modernize."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Leads Small Business Funding's operations from King of Prussia, PA, providing fast business funding nationwide for over 12 years. Limited public information available about specific leadership.",
-        "li": "",
-        "hooks": [
-          "King of Prussia PA based",
-          "12+ years in business"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would Small Business Funding be open to a demo showing how HyperVerge can help cut your approval time from 24 hours to same-hour with AI-powered underwriting?",
     "location": "Pennsylvania",
     "employees": 25,
     "website": "https://smallbusinessfunding.com",
-    "linkedinUrl": "smallbusinessfunding.com",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ]
   },
   {
@@ -41989,7 +41363,6 @@
     "location": "New York",
     "employees": 6,
     "website": "https://www.smartstepfunding.com",
-    "linkedinUrl": "https://www.smartstepfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42015,7 +41388,6 @@
     "location": "",
     "employees": 0,
     "website": "https://solarcapitalgroup.com",
-    "linkedinUrl": "solarcapitalgroup.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42041,7 +41413,6 @@
     "location": "New Jersey",
     "employees": 0,
     "website": "https://sparkfunding.com",
-    "linkedinUrl": "https://sparkfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42067,7 +41438,6 @@
     "location": "",
     "employees": 1,
     "website": "https://supremecapitalfunding.com",
-    "linkedinUrl": "supremecapitalfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42093,7 +41463,6 @@
     "location": "",
     "employees": 0,
     "website": "https://surethingfunding.com",
-    "linkedinUrl": "surethingfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42119,7 +41488,6 @@
     "location": "",
     "employees": 0,
     "website": "https://swiftadvancepartners.com",
-    "linkedinUrl": "swiftadvancepartners.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42145,7 +41513,6 @@
     "location": "New York",
     "employees": 15,
     "website": "https://symplificapital.com",
-    "linkedinUrl": "symplificapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42172,7 +41539,6 @@
     "location": "",
     "employees": 0,
     "website": "https://tandemadvance.com/",
-    "linkedinUrl": "https://tandemadvance.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -42280,7 +41646,6 @@
     "location": "",
     "employees": 61,
     "website": "https://tbfgrp.com/",
-    "linkedinUrl": "https://tbfgrp.com/",
     "source": [
       "tam",
       "researched",
@@ -42308,7 +41673,6 @@
     "location": "North Carolina",
     "employees": 10,
     "website": "https://threadcap.org",
-    "linkedinUrl": "threadcap.org",
     "source": [
       "tam",
       "tam-researched"
@@ -42350,26 +41714,14 @@
       "With 450+ lending companies already using HyperVerge, our platform handles the complexity of middle market underwriting at speed.",
       "Faster underwriting means winning more deals in the competitive private credit space -- HyperVerge gives you a speed advantage."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Leads Thrive Funding's institutional private credit operations serving the middle market from Utah. Limited public information available about specific leadership.",
-        "li": "",
-        "hooks": [
-          "Utah-based private credit"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would Thrive Funding be interested in seeing how HyperVerge's AI can accelerate your middle market underwriting while maintaining the thorough analysis your institutional investors expect?",
     "location": "Utah",
     "employees": 25,
     "website": "https://www.thrivefunding.com",
-    "linkedinUrl": "https://www.thrivefunding.com",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ]
   },
   {
@@ -42454,7 +41806,6 @@
     "location": "New York",
     "employees": 109,
     "website": "https://www.thryvecapital.com/",
-    "linkedinUrl": "https://www.thryvecapital.com/",
     "source": [
       "tam",
       "researched",
@@ -42514,7 +41865,6 @@
     "location": "New York",
     "employees": 277,
     "website": "https://tigercapitalfunding.com",
-    "linkedinUrl": "tigercapitalfunding.com",
     "source": [
       "tam",
       "researched",
@@ -42542,7 +41892,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.topchoicefinancial.com",
-    "linkedinUrl": "https://www.topchoicefinancial.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42568,7 +41917,6 @@
     "location": "New York",
     "employees": 3,
     "website": "https://trueadvance.biz",
-    "linkedinUrl": "trueadvance.biz",
     "source": [
       "tam",
       "tam-researched"
@@ -42599,7 +41947,6 @@
     "location": "New York",
     "employees": 8,
     "website": "https://trueeaglecapital.com",
-    "linkedinUrl": "trueeaglecapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42657,7 +42004,6 @@
     "location": "Limassol",
     "employees": 32,
     "website": "https://www.TrustCapitalUSA.com",
-    "linkedinUrl": "www.TrustCapitalUSA.com",
     "source": [
       "tam",
       "researched",
@@ -42689,13 +42035,7 @@
     ],
     "desc": "Unique Funding Solutions, founded in 2016 in Brooklyn, New York. MCA and alternative financing direct funder serving diverse industries including automotive repair, medical practices, construction, and retail. Known for fast 24-hour funding.",
     "notes": "",
-    "news": [
-      {
-        "h": "UFS Continues Growth in Alternative Business Financing",
-        "s": "Industry Reports, 2025",
-        "d": "Unique Funding Solutions maintains its position as a reliable MCA funder with fast 24-hour funding across diverse industries."
-      }
-    ],
+    "news": [],
     "ice": "Jake and Irving, UFS has built a strong reputation for fast 24-hour funding -- as deal volume grows, how is your underwriting team scaling to maintain that speed?",
     "icebreakers": [
       "UFS serves such diverse industries from auto repair to medical practices -- how do you handle the different underwriting criteria for each?",
@@ -42734,9 +42074,7 @@
     ],
     "ask": "Would UFS be interested in a demo showing how HyperVerge's AI can help you process more deals per day while maintaining your 24-hour funding turnaround?",
     "location": "Free State",
-    "employees": 9000,
     "website": "https://uniquefundingsolutions.com",
-    "linkedinUrl": "uniquefundingsolutions.com",
     "source": [
       "tam",
       "researched",
@@ -42764,7 +42102,6 @@
     "location": "New York",
     "employees": 11,
     "website": "https://ubfunds.com",
-    "linkedinUrl": "ubfunds.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42805,27 +42142,14 @@
       "With five different funding products, HyperVerge's customizable workflows handle different underwriting criteria for MCAs, term loans, factoring, and equipment financing.",
       "450+ MCA companies  trust HyperVerge for AI-powered underwriting automation."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Founded by a group of investment banking, commercial banking, and mortgage banking experts at 800 Third Ave, New York. Provides MCAs, business loans, invoice factoring, and equipment financing. Limited public information available about specific leadership.",
-        "li": "",
-        "hooks": [
-          "800 Third Ave NYC",
-          "Founded by banking experts"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would United Fundings be interested in seeing how HyperVerge's AI can help your team of banking veterans process deals faster across all five of your funding products?",
     "location": "",
     "employees": 37,
     "website": "https://www.unitedfundings.com",
-    "linkedinUrl": "https://www.unitedfundings.com",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ],
     "category": "funder"
   },
@@ -42849,7 +42173,6 @@
     "location": "Florida",
     "employees": 5,
     "website": "https://valuebusinessfunding.com",
-    "linkedinUrl": "https://valuebusinessfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42875,7 +42198,6 @@
     "location": "",
     "employees": 0,
     "website": "http://www.wgfinancinginc.com/",
-    "linkedinUrl": "http://www.wgfinancinginc.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -42901,7 +42223,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.windgatecapital.com",
-    "linkedinUrl": "https://www.windgatecapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42932,7 +42253,6 @@
     "location": "New York",
     "employees": 15,
     "website": "https://xpfunding.com",
-    "linkedinUrl": "xpfunding.com",
     "source": [
       "tam",
       "tam-researched"
@@ -42964,7 +42284,6 @@
     "location": "",
     "employees": 7,
     "website": "https://coeurcap.com/",
-    "linkedinUrl": "https://coeurcap.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -43007,11 +42326,6 @@
         "h": "Finstro Surpasses AUD $1 Billion in Capital Provided to SMBs",
         "s": "Finstro, 2024",
         "d": "Company milestone after supporting over 7,000 small businesses since founding in 2014."
-      },
-      {
-        "h": "Finstro Faces Leadership Uncertainty After US Backer Push",
-        "s": "Industry Reports, 2024",
-        "d": "NBH Corporation, a major US investor, pushed for cost savings after investing $20M, creating uncertainty for the Australian lender."
       },
       {
         "h": "Finstro Expands Into US B2B Payments Market",
@@ -43058,7 +42372,6 @@
     "location": "New South Wales",
     "employees": 110,
     "website": "https://finstro.com",
-    "linkedinUrl": "finstro.com",
     "source": [
       "tam",
       "researched",
@@ -43117,7 +42430,6 @@
     "location": "Connecticut",
     "employees": 20,
     "website": "https://generalmerchantfunding.com",
-    "linkedinUrl": "generalmerchantfunding.com",
     "source": [
       "tam",
       "researched",
@@ -43151,11 +42463,6 @@
         "h": "Imperial Advance Rebrands as Funderial",
         "s": "Company Updates, 2024",
         "d": "Imperial Advance rebranded to Funderial while maintaining its NYC headquarters and $2B+ track record in business lending."
-      },
-      {
-        "h": "Funderial Continues Growth in Alternative Lending",
-        "s": "Industry Reports, 2025",
-        "d": "Funderial (formerly Imperial Advance) maintains its position as a major MCA and business lending provider with nationwide operations."
       }
     ],
     "ice": "The rebrand from Imperial Advance to Funderial signals a new chapter -- with $2B+ funded, how is the leadership team thinking about modernizing the underwriting process as part of this evolution?",
@@ -43170,24 +42477,11 @@
       "With $2B+ funded, HyperVerge can help Funderial process its massive deal volume more efficiently while maintaining underwriting quality.",
       "450+ MCA companies  already use HyperVerge -- we're the industry standard for AI-powered underwriting automation."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Executives with 30+ years of combined experience in lending. Now operating as Funderial from 65 W 36th St, Suite 901, New York. Over $2B in business loans funded nationwide. Rebranded from Imperial Advance to Funderial. Offers financing from 160+ lending partners including lines of credit, SBA loans, and MCAs. Minimum credit score 500 accepted.",
-        "li": "",
-        "hooks": [
-          "*Rebranded to Funderial",
-          "$2B+ in business loans funded",
-          "160+ lending partners"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "As Funderial enters a new chapter, would you be interested in seeing how HyperVerge's AI underwriting can be part of the company's modernization strategy?",
     "location": "New York",
     "employees": 26,
     "website": "https://imperialadvance.com",
-    "linkedinUrl": "imperialadvance.com",
     "source": [
       "tam",
       "researched",
@@ -43215,13 +42509,7 @@
     ],
     "desc": "Full-service investment bank headquartered in Los Angeles, California, co-founded in 1997 by Randall Wooster. Offers capital markets, advisory services, institutional sales and trading, and research capabilities to middle market companies. 150+ professionals across global offices.",
     "notes": "",
-    "news": [
-      {
-        "h": "Imperial Capital Maintains Position as Leading Middle Market Investment Bank",
-        "s": "Industry Reports, 2025",
-        "d": "Imperial Capital continues to serve middle market companies with advisory, capital markets, and restructuring services from offices worldwide."
-      }
-    ],
+    "news": [],
     "ice": "Randall, with nearly 30 years building Imperial Capital into a nationally recognized investment bank, you've seen the evolution of financial services firsthand -- how are you advising middle market clients on AI adoption?",
     "icebreakers": [
       "Imperial Capital's advisory services give you deep insight into middle market trends -- are your lending clients asking about AI for underwriting?",
@@ -43262,7 +42550,6 @@
     "location": "California",
     "employees": 168,
     "website": "https://imperialcapital.com",
-    "linkedinUrl": "imperialcapital.com",
     "source": [
       "tam",
       "researched",
@@ -43290,7 +42577,6 @@
     "location": "New York",
     "employees": 14,
     "website": "https://principiscapital.com",
-    "linkedinUrl": "principiscapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -43312,13 +42598,7 @@
     ],
     "desc": "Florida-based MCA and revenue-based financing company providing merchant cash advances and business funding to small businesses. Operates as a direct funder in the alternative lending space.",
     "notes": "",
-    "news": [
-      {
-        "h": "Revenue Funding Active in Florida MCA Market",
-        "s": "Industry Reports, 2025",
-        "d": "Revenue Funding continues to provide merchant cash advances and revenue-based financing to small businesses in Florida and nationwide."
-      }
-    ],
+    "news": [],
     "ice": "As a Florida-based MCA funder in one of the most competitive markets in the country, how is Revenue Funding thinking about technology to improve underwriting speed and accuracy?",
     "icebreakers": [
       "Florida is a hotbed for MCA companies -- how does Revenue Funding differentiate in this crowded market?",
@@ -43331,26 +42611,14 @@
       "450+ MCA companies  already use HyperVerge -- proven technology for revenue-based financing operations.",
       "Faster underwriting means winning more deals from brokers and ISOs who send their best deals to the fastest funders."
     ],
-    "leaders": [
-      {
-        "n": "Management Team",
-        "t": "Leadership",
-        "bg": "Leads Revenue Funding's MCA and revenue-based financing operations in Florida. Limited public information available about specific leadership.",
-        "li": "",
-        "hooks": [
-          "Florida-based revenue funder"
-        ]
-      }
-    ],
+    "leaders": [],
     "ask": "Would Revenue Funding be open to a demo showing how HyperVerge can help you process MCA applications faster and win more deals in the competitive Florida market?",
     "location": "Florida",
     "employees": 36,
     "website": "",
-    "linkedinUrl": "N/A",
     "source": [
       "tam",
-      "researched",
-      "deep-researched"
+      "researched"
     ],
     "category": "funder"
   },
@@ -43461,7 +42729,6 @@
     "location": "Illinois",
     "employees": 184,
     "website": "https://smartbizbank.com",
-    "linkedinUrl": "smartbizbank.com",
     "source": [
       "tam",
       "researched",
@@ -43494,7 +42761,6 @@
     "location": "Utah",
     "employees": 18,
     "website": "https://snapadvances.com",
-    "linkedinUrl": "snapadvances.com",
     "source": [
       "tam",
       "tam-researched"
@@ -43521,7 +42787,6 @@
     "location": "Florida",
     "employees": 5,
     "website": "https://vadermountaincapital.com",
-    "linkedinUrl": "vadermountaincapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -43635,7 +42900,6 @@
     "location": "Texas",
     "employees": 56,
     "website": "https://yellowstonecapital.com",
-    "linkedinUrl": "yellowstonecapital.com",
     "source": [
       "tam",
       "researched",
@@ -43662,7 +42926,6 @@
     "location": "",
     "employees": 15,
     "website": "https://livfunding.com/",
-    "linkedinUrl": "https://livfunding.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -43688,7 +42951,6 @@
     "location": "",
     "employees": 0,
     "website": "https://www.eadvance-iso.com/",
-    "linkedinUrl": "https://www.eadvance-iso.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -43715,7 +42977,6 @@
     "location": "New York",
     "employees": 7,
     "website": "https://mnycapital.com/apply-now/",
-    "linkedinUrl": "https://mnycapital.com/apply-now/",
     "source": [
       "tam",
       "tam-researched"
@@ -43742,7 +43003,6 @@
     "location": "Illinois",
     "employees": 4,
     "website": "https://fundprollc.com/iso-partnerships/",
-    "linkedinUrl": "https://fundprollc.com/iso-partnerships/",
     "source": [
       "tam",
       "tam-researched"
@@ -43769,7 +43029,6 @@
     "location": "New Jersey",
     "employees": 1,
     "website": "https://www.vervefunding.com/partnerwithus",
-    "linkedinUrl": "https://www.vervefunding.com/partnerwithus",
     "source": [
       "tam",
       "tam-researched"
@@ -43796,7 +43055,6 @@
     "location": "New York",
     "employees": 10,
     "website": "https://www.merkcapfunding.com/partner",
-    "linkedinUrl": "https://www.merkcapfunding.com/partner",
     "source": [
       "tam",
       "tam-researched"
@@ -43822,7 +43080,6 @@
     "location": "Florida",
     "employees": 0,
     "website": "https://adventurefundings.com/partner/",
-    "linkedinUrl": "https://adventurefundings.com/partner/",
     "source": [
       "tam",
       "tam-researched"
@@ -43848,7 +43105,6 @@
     "location": "Florida",
     "employees": 1,
     "website": "https://www.fundxfinancial.com/iso",
-    "linkedinUrl": "https://www.fundxfinancial.com/iso",
     "source": [
       "tam",
       "tam-researched"
@@ -43875,7 +43131,6 @@
     "location": "New Jersey",
     "employees": 5,
     "website": "http://www.americanmicroloan.com/",
-    "linkedinUrl": "http://www.americanmicroloan.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -43902,7 +43157,6 @@
     "location": "New York",
     "employees": 2,
     "website": "https://cashablefund.com/",
-    "linkedinUrl": "https://cashablefund.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -44128,7 +43382,6 @@
     "location": "Kentucky",
     "employees": 0,
     "website": "https://goldcapitalfund.com",
-    "linkedinUrl": "goldcapitalfund.com",
     "source": [
       "tam",
       "tam-researched"
@@ -44154,10 +43407,119 @@
     "location": "",
     "employees": 0,
     "website": "https://www.tigersfunding.com",
-    "linkedinUrl": "https://www.tigersfunding.com",
     "source": [
       "tam",
       "tam-researched"
+    ]
+  },
+  {
+    "id": 1796,
+    "name": "RelFi",
+    "type": "TAM",
+    "priority": 4,
+    "phase": 0,
+    "booth": false,
+    "clear": false,
+    "contacts": [
+      {
+        "n": "Fitz Blaku",
+        "t": "CEO"
+      },
+      {
+        "n": "Victor Rodriguez",
+        "t": "COO"
+      },
+      {
+        "n": "Lum Blaku",
+        "t": "VP, Strategy & Growth"
+      }
+    ],
+    "desc": "Fintech lending marketplace founded January 2025 in Ridgefield Park, NJ (evolved from L3 Funding LLC, est. 2020). Connects SMBs with 75+ funders for working capital, SBA loans, lines of credit, asset-backed lending, equipment financing, and invoice factoring. $220M monthly in-network funding volume, 25,000 daily applicants, 1.2M annual funding events. Deals up to $25M. Family-run by the Blaku brothers (Fitz, Kris, Lum). 11-50 employees.",
+    "notes": "Sister company: L3 Funding LLC (direct MCA funder, same address, same leadership). RelFi = \"Relationship Finance\" marketplace layer.",
+    "news": [
+      {
+        "h": "RelFi Inc Launches as Standalone LLC",
+        "s": "BBB Filing, Jan 2025",
+        "d": "RelFi Inc registered as an LLC in New Jersey, evolving from L3 Funding to position as a broader marketplace/strategic financing brand."
+      },
+      {
+        "h": "CEO Fitz Blaku Publishes Business Financing Thought Leadership Series",
+        "s": "RelFi Resources, Mar 2025",
+        "d": "CEO authored 10+ articles covering cash flow management, growth plateaus, and smart financing strategy for SMBs."
+      },
+      {
+        "h": "RelFi Publishes SBA Loans Guide for 2026",
+        "s": "RelFi Resources, Feb 2026",
+        "d": "Detailed guide on SBA loan approvals in 2026, positioning RelFi as an authority on SBA lending."
+      }
+    ],
+    "ice": "Building a marketplace with 75+ funders and $220M monthly volume from a standing start in January 2025 is impressive execution. How is Fitz thinking about technology to maintain deal quality at that scale?",
+    "icebreakers": [
+      "Going from CTO to CEO — building the platform yourself then running the business gives you a unique edge. What's the biggest tech challenge in scaling a lending marketplace?",
+      "Processing 25,000 daily applicants across 75+ funders is serious volume. How are you automating the matching and underwriting process?",
+      "The Blaku brothers running both the direct lending arm (L3 Funding) and the marketplace (RelFi) is a smart structure. How do the two entities complement each other?",
+      "$220M monthly in-network volume in your first year — what's the growth trajectory looking like for 2026?"
+    ],
+    "tp": [
+      "At 25,000 daily applicants, RelFi's matching engine needs fast, accurate underwriting signals. HyperVerge's AI can pre-qualify applications in under 5 minutes, improving conversion for your 75+ funder partners.",
+      "As a marketplace, RelFi's value prop depends on funder satisfaction. HyperVerge (serving 450+ MCA companies) standardizes document verification across your funder network, reducing friction.",
+      "Scaling from L3's direct lending to RelFi's marketplace model requires different underwriting infrastructure. HyperVerge's platform is built for high-volume, multi-lender workflows."
+    ],
+    "ask": "Fitz, with 25,000 daily applicants flowing through RelFi's marketplace, would it be worth 20 minutes to explore how AI-powered underwriting could improve match quality and funder conversion?",
+    "location": "New Jersey",
+    "employees": 30,
+    "website": "https://relfi.co",
+    "linkedinUrl": "https://www.linkedin.com/company/relfi-inc",
+    "source": [
+      "added-manually",
+      "deep-researched",
+      "verified-2026-02"
+    ],
+    "category": "marketplace",
+    "leaders": [
+      {
+        "n": "Fitz Blaku",
+        "t": "CEO",
+        "bg": "20-year technology veteran turned fintech CEO. Joined RelFi's predecessor (L3 Funding) as Software Architect in June 2018, became CTO in May 2022 building the company's CRM and workflow platforms, then promoted to CEO in January 2025. Previously Emerging Technology Strategist (Consultant) at PwC (2014-2016) and Senior Software Engineer/UX Designer at Relationship Science (2011-2013). Built platforms for ADT Home Security, Gilt, and One Kings Lane. Holds Harvard Business School Disruptive Strategy credential.",
+        "li": "https://www.linkedin.com/in/fitz-blaku-87064b66/",
+        "hooks": [
+          "*CTO-to-CEO — built the platform himself",
+          "Ex-PwC emerging tech strategist",
+          "Harvard Disruptive Strategy credential",
+          "Prolific blogger (10+ articles on SMB finance)"
+        ]
+      },
+      {
+        "n": "Victor Rodriguez",
+        "t": "COO",
+        "bg": "Chief Operating Officer and primary business contact at RelFi. Handles customer contacts, business operations, and partner/ISO relationships driving 25,000 daily applicants. Focus on structuring deals \"larger, faster, and more impactful\" than clients anticipate.",
+        "li": "https://www.linkedin.com/in/victor-rodriguez-3374271a6",
+        "hooks": [
+          "Runs day-to-day operations",
+          "Manages 75+ funder relationships"
+        ]
+      },
+      {
+        "n": "Kris Blaku",
+        "t": "Managing Director, L3 Funding",
+        "bg": "Managing Director of L3 Funding LLC, RelFi's sister company and direct MCA lender incorporated in September 2020. Operates from both Ridgefield Park, NJ and Clearwater, FL. Part of the Blaku family fintech operation alongside brothers Fitz (CEO) and Lum (VP Growth).",
+        "li": "https://www.linkedin.com/in/kris-blaku-458249116",
+        "hooks": [
+          "Runs direct lending arm (L3 Funding)",
+          "Family business — 3 Blaku brothers in fintech"
+        ]
+      },
+      {
+        "n": "Lum Blaku",
+        "t": "VP, Strategy & Growth",
+        "bg": "Vice President of Strategy and Growth at RelFi. Baruch College (CUNY) graduate. Previous career spans enterprise SaaS: Business Development Lead at Industry Dive (2020-2021), Enterprise BDR at Welcome/Optimizely (2017-2020), and Business Development at Astoria Company (2016-2017). Brings enterprise sales methodology to fintech lending growth.",
+        "li": "https://www.linkedin.com/in/lumblaku/",
+        "hooks": [
+          "Baruch College grad",
+          "Ex-Optimizely enterprise BDR",
+          "SaaS growth tactics applied to lending"
+        ]
+      }
     ]
   }
 ]
