@@ -363,6 +363,67 @@ export function CompanyDetail({
             </Badge>
           )}
         </div>
+
+        {/* Quick outreach actions */}
+        <div className="flex items-center gap-1.5 mt-2 flex-wrap">
+          {company.leaders?.[0]?.li && (
+            <Button
+              variant="outline"
+              size="sm"
+              className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-[#0077b5] hover:border-[#0077b5]/40"
+              onClick={() => window.open(company.leaders![0].li, "_blank")}
+            >
+              <Linkedin className="h-3 w-3" />
+              LinkedIn
+            </Button>
+          )}
+          <Button
+            variant="outline"
+            size="sm"
+            className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
+            onClick={() => {
+              const leader = company.leaders?.[0];
+              const firstName = leader?.n.split(" ")[0] || "there";
+              const subject = `${company.name} + HyperVerge — Quick Question`;
+              const body = company.ask
+                || `Hi ${firstName},\n\n${company.ice || company.tp?.[0] || `I'd love to connect about how HyperVerge can help ${company.name}.`}\n\nBest,\n`;
+              const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+              window.open(mailto);
+            }}
+          >
+            <Mail className="h-3 w-3" />
+            Draft Email
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
+            onClick={() => {
+              const parts = [
+                company.ice,
+                ...(company.tp || []),
+                company.ask,
+              ].filter(Boolean);
+              const text = parts.join("\n\n");
+              navigator.clipboard.writeText(text);
+              toast.success("Talking points copied");
+            }}
+          >
+            <Copy className="h-3 w-3" />
+            Copy Points
+          </Button>
+          {company.website && (
+            <Button
+              variant="outline"
+              size="sm"
+              className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
+              onClick={() => window.open(company.website!.startsWith("http") ? company.website : `https://${company.website}`, "_blank")}
+            >
+              <Globe className="h-3 w-3" />
+              Website
+            </Button>
+          )}
+        </div>
       </div>
 
       {/* Scrollable Content */}

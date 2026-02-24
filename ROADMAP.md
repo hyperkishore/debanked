@@ -566,3 +566,329 @@ Operational notes:
 1. Sequence gate: do not launch full outbound for Bucket A/B until at least one validated RICP record exists.
 2. Validation minimum: name, normalized title, source URL, verification date, confidence.
 3. Promotion rule: any Bucket C account with fresh high-intent signal moves to Bucket A in next daily run.
+
+---
+
+## Part 8: Data Enrichment Program (Primary Focus - 80%)
+
+### Objective
+
+Build a reliable enrichment system that improves:
+1. Meeting-booked rate (BDR + marketing outbound)
+2. Meeting-to-SQL conversion (AE handoff quality)
+
+### Enrichment Streams (Execution Order)
+
+#### Stream 1: Buyer-Coverage Enrichment (RICP + Adjacent Committee)
+Scope:
+1. Core roles: COO, CRO/credit-risk, underwriting owner.
+2. Adjacent roles: CFO, Head of Credit, VP Risk, Head of Ops.
+
+Exit criteria:
+1. Top 25 accounts: >=95% have at least one validated core RICP.
+2. Priority cohort: >=85% have at least one validated core RICP.
+3. Active SQO accounts: >=2 decision-thread contacts each.
+
+#### Stream 2: Contactability Enrichment (Reachability)
+Scope:
+1. Add and verify work email, direct phone, LinkedIn URL.
+2. Add deliverability/reachability confidence score.
+3. Add preferred channel hint (`email`, `linkedin`, `phone`, `event`).
+
+Exit criteria:
+1. Top 25 accounts: >=80% have at least one high-confidence channel.
+2. Bounce-risk segment is explicitly tagged and excluded from aggressive sequencing.
+
+#### Stream 3: Intent + Signal Enrichment (Why Now)
+Scope:
+1. Capture fresh triggers: funding, leadership, hiring, new product, partnership, compliance/regulatory moves.
+2. Add signal recency bucket: `0-7d`, `8-30d`, `31-90d`, `stale`.
+3. Attach signal-to-persona relevance note (which role should care and why).
+
+Exit criteria:
+1. Every top 25 account has at least one persona-relevant signal in last 90 days.
+2. Daily queue uses signal recency + fit + RICP coverage state.
+
+#### Stream 4: Messaging-Asset Enrichment (Execution Readiness)
+Scope:
+1. Role-specific pain points (COO, CRO, underwriting).
+2. Evidence-backed personalization hooks.
+3. CTA templates by stage (`cold`, `warm`, `post-event`, `re-engage`).
+
+Exit criteria:
+1. Each top-priority account has at least 3 role-specific hooks and 2 CTA variants.
+2. BDR can launch a first-touch without manual research.
+
+### Enrichment Record Contract (Minimum Required Fields)
+
+For each enriched contact/persona:
+1. `name`
+2. `title_raw`
+3. `title_normalized`
+4. `functional_role` (`operations` | `risk` | `underwriting` | `finance`)
+5. `linkedin_url` (if available)
+6. `email` / `phone` with confidence
+7. `source_urls[]`
+8. `verified_at` (UTC date)
+9. `confidence` (`high` | `medium` | `low`)
+10. `last_reviewed_at`
+
+### Weekly Operating Plan (Next 6 Weeks)
+
+Week 1:
+1. Close Bucket A (top 10 no-RICP) and re-rank daily.
+2. Backfill verification metadata for newly added personas.
+
+Week 2:
+1. Close Bucket B (next 15).
+2. Add contactability confidence and channel hints.
+
+Week 3:
+1. Reduce remaining no-RICP backlog by at least 30%.
+2. Add persona-relevant trigger notes for top 25.
+
+Week 4:
+1. Complete top 25 to >=95% validated RICP coverage.
+2. Ensure >=80% top 25 reachability via high-confidence channel.
+
+Week 5:
+1. Push cohort-wide coverage to >=80%.
+2. Add role-specific messaging assets for all top 40 ranked accounts.
+
+Week 6:
+1. Push cohort-wide coverage to >=85%.
+2. Compare enriched vs non-enriched conversion deltas (meeting and SQL).
+
+### Role-Specific Outputs
+
+BDR output:
+1. Daily ranked account queue with validated target persona and channel.
+2. Ready-to-send personalization hooks and CTA by role.
+
+AE output:
+1. Multi-thread map per active account.
+2. Coverage-gap alerts before discovery/demo calls.
+
+Marketing output:
+1. Segment lists by sub-vertical + signal + persona coverage state.
+2. Campaign audiences with minimum data quality threshold.
+
+### Metrics Dashboard (Data-Enrichment-Specific)
+
+Leading metrics:
+1. RICP coverage %
+2. Reachability coverage %
+3. Verification freshness (median days since verification)
+4. Accounts blocked by sequence gating
+
+Lagging metrics:
+1. Meeting-booked rate by coverage state (`missing`, `partial`, `validated`)
+2. Meeting-to-SQL conversion by coverage state
+3. Campaign-attributed meetings by enriched segment
+
+### Further Data-Enrichment Upgrades (Next Layer)
+
+1. Build a full **Top-44 Account Enrichment Playbook**:
+   - one row per account with missing role, target source set, owner, SLA, and QA status.
+2. Publish a strict **Enrichment Schema Contract**:
+   - required fields, enums, and validation blockers before records become outbound-ready.
+3. Standardize a **Confidence Scoring Model**:
+   - deterministic scoring for source trust, recency, and cross-source agreement.
+4. Enforce **Freshness and Re-Verification Policy**:
+   - tiered re-check cycles (for example 30/60/90 days) by account priority.
+5. Add **Entity Resolution and Dedupe Policy**:
+   - canonical company identity, alias map, and person-level identity normalization.
+6. Expand **Role-Specific Messaging Asset Coverage**:
+   - COO/CRO/underwriting messaging packs aligned to signal type and funnel stage.
+7. Add **Weekly Enrichment Ops Dashboard**:
+   - coverage, stale-data %, reachable-contact %, blocked sequences, and SLA breaches.
+8. Implement **Causal Uplift Measurement**:
+   - compare enriched vs non-enriched cohorts for meetings booked and SQL conversion.
+9. Create **Claude Implementation Handoff Pack**:
+   - prioritized tasks, expected outputs, and acceptance tests for parallel execution.
+10. Add **30-Day Execution Calendar**:
+   - day-level ownership, output targets, and weekly checkpoint reviews.
+
+---
+
+## Part 9: $3M Pipeline Execution Plan
+
+### The Goal
+
+**$3M qualified pipeline in 12 months.** At typical MCA/fintech deal sizes ($50K-$300K ARR), this means 10-60 new qualified opportunities, or 1-5 per month. Very achievable — but only if EventIQ becomes a daily execution tool, not just a research repository.
+
+### Core Problem
+
+EventIQ generates excellent intelligence (icebreakers, hooks, talking points, leadership profiles) but doesn't close the last mile from "I know what to say" to "I said it and tracked it." The 959 researched companies with deep leadership profiles are the moat — the question is how fast reps convert that research into meetings.
+
+### What Moves Pipeline (Prioritized Build Order)
+
+#### Priority 1: Contact Enrichment for Top 68 Accounts (Week 1-2)
+**Why:** You can't book meetings without contact info. The tool has names, titles, LinkedIn URLs, and backgrounds but no verified email addresses or phone numbers.
+
+- Enrich all SQO/Client/ICP accounts with verified work emails + direct dials
+- Store with confidence scores so reps know what's safe to email
+- Gate outbound sequences on having at least one high-confidence channel
+
+#### Priority 2: One-Click Outreach from Company Detail (Week 2-3)
+**Why:** Reps read the research then switch to Gmail/LinkedIn to compose from scratch. This kills the workflow.
+
+- **"Draft Email" button** → opens Gmail compose with pre-populated subject + body using icebreaker + talking points + ask
+- **"Open LinkedIn" button** → opens leader's LinkedIn profile (URLs already exist)
+- **"Copy Talking Points" button** → clipboard-ready blurb for call prep
+- **Estimated impact:** Save 15-20 min per outreach touch
+
+#### Priority 3: HubSpot Bidirectional Sync (Week 3-5)
+**Why:** Pipeline tracked in EventIQ localStorage doesn't help leadership see it. Pipeline in HubSpot doesn't inform EventIQ's daily queue.
+
+- **EventIQ → HubSpot:** Push pipeline stage changes, engagement logs, meeting notes
+- **HubSpot → EventIQ:** Pull deal stage, last activity date, owner assignments
+- Existing foundation: `hubspot-sync.js` and `hubspot-client.ts`
+
+#### Priority 4: Automated Daily Operations (Week 2-4, parallel)
+**Why:** Research decays. Reps need a daily push to act on fresh signals.
+
+- **Morning Briefing Email (7 AM UTC weekdays):** Top 5 companies to work today, fresh news triggers, stale deal warnings, quick wins — sent via Resend to @hyperverge.co users
+- **Signal Ingestion Cron (8 AM UTC daily):** Google News + Bing News + deBanked RSS automatic ingestion into `company_news` table
+- **Weekly Research Refresh (Monday 6 AM UTC):** Re-research top 100 accounts for news, leadership changes, funding events
+
+#### Priority 5: Chrome Extension (Week 5-8, pending user input)
+**Why:** Meet reps where they already work — LinkedIn and Gmail.
+
+- **LinkedIn sidebar:** Shows EventIQ research for the person/company they're viewing
+- **Gmail compose helper:** Suggests personalized opener based on hooks + recent news
+- **Holding for:** User has an existing solution to share; will build on top of it
+
+### What to Deprioritize
+
+These are documented in improvements.md but should NOT be built before the above:
+
+| Item | Why Deprioritize |
+|------|-----------------|
+| A/B/n message experimentation (IMP-021) | Need outreach volume first before testing variants |
+| Deterministic confidence scoring model (IMP-038) | Simple high/medium/low is sufficient at current scale |
+| Enrichment uplift measurement framework (IMP-043) | Academic — you'll feel the uplift in meetings booked |
+| Signal graphs + intent scoring v2 (IMP-019) | Series A feature; basic scoring works fine |
+| Demand gen control tower (IMP-023) | Premature — team is <5 people |
+| Most bugs (BUG-001 through BUG-012) | Edge cases that don't affect pipeline generation |
+
+**Exceptions — bugs that DO matter for pipeline:**
+- BUG-003 (document access) — matters for multi-user
+- BUG-006 (sync conflicts) — matters for cross-device use
+- BUG-013 (briefing excludes pipeline companies) — directly affects daily queue
+- BUG-015 (missing RICP contacts) — blocking outreach
+
+### API & Tool Stack
+
+#### Contact Enrichment
+
+| Tool | Purpose | Pricing | Why |
+|------|---------|---------|-----|
+| **Apollo.io (Pro)** | Primary email/phone finder, 210M contacts | $79/mo | Best coverage for MCA/fintech vertical, already in stack |
+| **Hunter.io (Starter)** | Email verification, domain search | $49/mo | <1% bounce rate, good for verification layer |
+| **RocketReach** | Backup email/phone, 700M profiles | $80/mo | 90-98% deliverability, fills Apollo gaps |
+| **Cognism** | Direct dials (phone-verified mobile) | ~$200+/mo | Diamond Data for phone outreach, GDPR-safe |
+
+**Recommended starter stack:** Apollo + Hunter ($128/mo). Add RocketReach if Apollo coverage gaps emerge.
+
+#### Company Intelligence & News
+
+| Tool | Purpose | Pricing | Why |
+|------|---------|---------|-----|
+| **Tavily** | AI-native web search for research agents | $30/mo | Purpose-built for LLM pipelines, already in stack |
+| **GNews API** | News monitoring, full article content | ~$50/mo | History from 2020, good for MCA news |
+| **Brave Search API** | Backup web search, 35B page index | $5/1K queries | Independent index, good for deep research |
+| **Contify** | Curated company-specific intelligence | Custom | 1M+ sources, company-matched (evaluate if budget allows) |
+| **NewsAPI.ai** | Real-time event detection (funding, hiring, M&A) | Custom | Structured signal types, not just keyword matching |
+
+**Recommended starter stack:** Tavily + GNews ($80/mo). Add Brave for research depth.
+
+#### Podcast & Content Intelligence
+
+| Tool | Purpose | Pricing | Why |
+|------|---------|---------|-----|
+| **Podchaser API** | 16M+ creator/guest credits, podcast appearances | Custom | Only source for "who appeared on which podcast" — great for hooks |
+| **Pod Engine API** | Transcripts, sponsors, guest data, 20+ data points | $100+/mo | Powerful for finding executive speaking appearances |
+| **ListenNotes API** | 4M+ podcasts, episode search | Free-$99/mo | Good for discovery, cheaper than Podchaser |
+
+**Recommended:** Podchaser or ListenNotes for discovering executive podcast appearances → excellent conversation hooks.
+
+#### Workflow & Enrichment Orchestration
+
+| Tool | Purpose | Pricing | Why |
+|------|---------|---------|-----|
+| **Clay.com** | Waterfall enrichment across 150+ providers | $134-720/mo | Checks multiple providers sequentially, stops when found |
+
+**Recommendation:** Evaluate Clay only if managing multiple enrichment sources becomes complex. At current scale, direct API integration is simpler and cheaper.
+
+#### Email Delivery & Notifications
+
+| Tool | Purpose | Pricing | Why |
+|------|---------|---------|-----|
+| **Resend** | Transactional email (briefings, alerts) | Free-$20/mo | Built for Vercel/Next.js, React Email templates, 3K free emails/mo |
+| **Slack Incoming Webhooks** | Real-time alerts (signal triggers, cron failures) | Free | Already used by most sales teams |
+
+#### Search & Research APIs
+
+| Tool | Purpose | Pricing | Why |
+|------|---------|---------|-----|
+| **Serper** | Google SERP results for agent research | $50/mo | Cheapest Google wrapper, $0.30-2/1K requests |
+| **Firecrawl** | Website scraping + extraction for LLM | $16+/mo | Good for scraping company team pages |
+
+### Total Recommended Monthly Spend
+
+| Tier | Tools | Monthly Cost |
+|------|-------|-------------|
+| **Starter** | Apollo + Hunter + Tavily + GNews + Resend | ~$240/mo |
+| **Growth** | + RocketReach + Brave + ListenNotes + Serper | ~$470/mo |
+| **Scale** | + Cognism + Podchaser + Clay | ~$1,000-1,500/mo |
+
+Start with Starter tier. Graduate to Growth when outbound volume exceeds 100 touches/week.
+
+### Automated Daily Operations Architecture
+
+```
+┌─────────────────────────────────────────────────────┐
+│                 VERCEL CRON JOBS                      │
+├─────────────────────────────────────────────────────┤
+│                                                       │
+│  6:00 AM UTC Mon    /api/cron/research-refresh        │
+│  ├─ Identify stale companies (>30 days, priority 1st) │
+│  ├─ Web search for fresh news + leadership changes    │
+│  └─ Update company_news + all-companies.json          │
+│                                                       │
+│  8:00 AM UTC Daily  /api/cron/ingest-signals          │
+│  ├─ Google News (P0/P1 companies + industry keywords) │
+│  ├─ Bing News (if API key configured)                 │
+│  ├─ deBanked RSS (full company matching)              │
+│  └─ Classify signals + update company_news table      │
+│                                                       │
+│  7:00 AM UTC M-F    /api/cron/send-briefing           │
+│  ├─ Compute outreach scores for all companies         │
+│  ├─ Get top 10 by score + recent signals              │
+│  ├─ Include: triggers, stale warnings, quick wins     │
+│  ├─ Render HTML email template                        │
+│  └─ Send via Resend to @hyperverge.co users           │
+│                                                       │
+└─────────────────────────────────────────────────────┘
+```
+
+### Success Metrics
+
+| Metric | Baseline | 90-Day Target | 12-Month Target |
+|--------|----------|---------------|-----------------|
+| Qualified pipeline | $0 | $500K | $3M |
+| Meetings booked/month | ~2 | 8-10 | 15-20 |
+| Outbound touches/week/rep | ~20 | 50+ | 80+ |
+| RICP coverage (top 68) | 35% | 85% | 95% |
+| Contact email coverage (top 68) | ~10% | 80% | 95% |
+| Daily EventIQ active users | 1 | 3-5 | 5-8 |
+| Morning briefing open rate | N/A | 60%+ | 70%+ |
+| Time from research to first touch | Days | <4 hours | <1 hour |
+
+---
+
+## Changelog
+- **2026-02-22**: Combined ROADMAP.md and ROADMAP_V2.md into single document. Added engineering phases referencing bugs.md and improvements.md.
+- **2026-02-23**: Added Part 6 top-of-funnel acceleration program with BDR/AE/marketing/demand-gen pillars, external benchmark anchors, 90-day waves, and Claude handoff protocol.
+- **2026-02-23**: Added Part 9 — $3M pipeline execution plan with prioritized build order, API stack recommendations, automated daily operations architecture, and success metrics.
