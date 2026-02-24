@@ -15634,83 +15634,118 @@
         "t": "President & CEO"
       },
       {
-        "n": "Janie Barrera",
-        "t": "Founder (retired)"
+        "n": "Adam Henson",
+        "t": "COO/CFO"
+      },
+      {
+        "n": "DK Thepuatrakul",
+        "t": "CTO"
       }
     ],
-    "desc": "Nonprofit CDFI (Community Development Financial Institution) founded in 1994, providing responsible small business loans in 15 states, with a focus on underserved entrepreneurs who don't qualify for traditional bank funding.",
+    "desc": "Nonprofit CDFI (Community Development Financial Institution) founded in 1994 as Accion Texas, renamed LiftFund in 2015. Now operates nationwide across all 50 states (SBA 7(a) Community Advantage in 15 states). Has funded 28,000+ business owners with ~$1.5B in total capital deployed. 96% repayment rate. 77% of borrowers are Hispanic or African-American, 38% women. Won the 2025 Outstanding CDFI Award from OFN. Received $10M MacKenzie Scott gift in 2020. Deployed $83M+ in disaster recovery capital in 2025 alone ($222M+ lifetime). ~103 employees.",
     "notes": "",
     "news": [
       {
         "h": "LiftFund Enters 2026 as Key Voice for Small Business Disaster Recovery",
         "s": "PR Newswire, Jan 2026",
-        "d": "LiftFund coordinating a National Disaster Recovery Fund to bridge the gap between disaster impact and traditional aid, deploying $83M+ to 3,500 businesses in 2025."
+        "d": "Coordinating a National Disaster Recovery Fund; deployed $83M+ to 3,500 businesses and sustained 4,700 jobs in 2025. Lifetime: $222M+ in disaster capital to 11,000+ businesses."
+      },
+      {
+        "h": "LiftFund Wins 2025 Outstanding CDFI Award",
+        "s": "OFN/PR Newswire, Oct 2025",
+        "d": "Recognized at OFN41 in Washington D.C. for leadership in rebuilding local economies after disasters and economic disruption."
+      },
+      {
+        "h": "LiftFund Expands to All 50 States",
+        "s": "LiftFund, 2025",
+        "d": "Small Business Loans now available nationwide, expanding beyond original 15-state SBA Community Advantage footprint."
       },
       {
         "h": "CDFI Friendly Fort Worth Launches 0% Interest Loan Program with LiftFund",
         "s": "Fort Worth Inc, 2025",
-        "d": "Partnered to launch a 0% Interest Buy-Down Program for small business loans up to $100,000 to reduce financing barriers."
+        "d": "Partnership offering up to $100K in interest-free loans. LiftFund has helped Texas business owners secure $7M+ in interest-free loans through similar efforts."
       },
       {
-        "h": "LiftFund Wins 2025 Outstanding CDFI Award",
-        "s": "PR Newswire, Oct 2025",
-        "d": "Recognized for leadership in rebuilding local economies after disasters and economic disruption."
+        "h": "Amy Hereford Named to SBA Lending Advisory Council",
+        "s": "deBanked, Dec 2024",
+        "d": "LiftFund CEO appointed to shape policies expanding access to capital for entrepreneurs."
       },
       {
-        "h": "LiftFund Receives MacKenzie Scott Gift",
-        "s": "San Antonio Report, 2025",
-        "d": "Major philanthropic donation to support LiftFund's mission of providing responsible small business loans."
+        "h": "LiftFund Received $10M MacKenzie Scott Gift",
+        "s": "San Antonio Report, Dec 2020",
+        "d": "Major philanthropic donation helping LiftFund reduce interest rates to 9% and expand mission-driven lending."
       }
     ],
-    "ice": "Winning the 2025 Outstanding CDFI Award for disaster recovery lending is well-deserved recognition. How is LiftFund thinking about technology to help serve more underserved entrepreneurs efficiently?",
+    "ice": "Expanding to all 50 states while winning the Outstanding CDFI Award shows LiftFund is hitting its stride. How is Amy thinking about technology to maintain that 96% repayment rate at nationwide scale?",
     "icebreakers": [
-      "The Outstanding CDFI Award shows incredible impact over 30 years. How is LiftFund leveraging technology to reach more underserved businesses?",
-      "Operating in 15 states as a nonprofit lender requires efficiency. How are you approaching automation in your lending process?",
-      "With new CEO Amy Hereford at the helm, what modernization priorities is LiftFund pursuing?",
-      "LiftFund's mission to serve underserved entrepreneurs is powerful. How can technology help you deploy capital faster to those who need it?"
+      "Winning the 2025 Outstanding CDFI Award and expanding to all 50 states is a huge milestone. How is LiftFund thinking about technology to scale nationwide efficiently?",
+      "Deploying $83M in disaster recovery in 2025 alone is remarkable impact. What role does automation play in getting capital out that fast?",
+      "With DK Thepuatrakul leading tech since 2018, LiftFund clearly values digital transformation. What are the biggest technology bottlenecks in CDFI lending?",
+      "Janie Barrera building LiftFund from 3 employees to a nationwide lender is an incredible founder story. How is Amy Hereford's legal background shaping the next chapter?"
     ],
     "tp": [
-      "As a CDFI serving underserved entrepreneurs, speed matters. HyperVerge's AI underwriting can help LiftFund evaluate applications in under 5 minutes, getting capital to businesses faster.",
-      "LiftFund operates in 15 states with limited resources. HyperVerge's automation (serving 450+ lending companies) can help do more with less, maximizing mission impact.",
-      "Nonprofit lenders need efficiency to maximize every dollar. HyperVerge's proven platform reduces underwriting costs while maintaining the responsible lending standards CDFIs require."
+      "LiftFund now serves all 50 states — that's a massive scaling challenge for underwriting. HyperVerge's AI can evaluate applications in under 5 minutes while maintaining the responsible lending standards CDFIs require.",
+      "$83M deployed in disaster recovery in one year requires speed. HyperVerge (serving 450+ lending companies) automates document verification and decisioning so capital reaches businesses faster.",
+      "With 77% of borrowers being minority entrepreneurs, LiftFund's mission demands efficiency to maximize every dollar. HyperVerge reduces underwriting costs while avoiding the bias risks of manual review."
     ],
     "leaders": [
       {
         "n": "Amy Hereford",
         "t": "President & CEO",
-        "bg": "Attorney who practiced complex business litigation at major California and Texas firms representing Fortune 100 clients. Phi Beta Kappa graduate of Trinity University in San Antonio with a JD from the University of Texas School of Law, where she received the Outstanding Public Service Award. Served as LiftFund's general counsel and chief external affairs officer before being appointed CEO in mid-2024. Now serves on the SBA's Lending Advisory Council.",
+        "bg": "Attorney who practiced complex business litigation at major California and Texas firms representing Fortune 100 clients. Phi Beta Kappa graduate of Trinity University in San Antonio with a JD from the University of Texas School of Law, where she received the Outstanding Public Service Award. Served as LiftFund's general counsel and chief external affairs officer before being appointed CEO in mid-2024 after Laurie Vignaud's sudden departure. Now serves on the SBA's Small Business Lending Advisory Council (named December 2024).",
         "li": "https://www.linkedin.com/in/amy-hereford-5b71b1301/",
         "hooks": [
           "*Phi Beta Kappa, Trinity U",
           "*UT Austin law JD",
           "SBA Lending Advisory Council",
-          "Fortune 100 litigator"
+          "Fortune 100 litigator turned nonprofit CEO"
         ]
       },
       {
         "n": "Janie Barrera",
-        "t": "Founder",
-        "bg": "Former nun and Corpus Christi native who graduated from the University of the Incarnate Word. Founded LiftFund (originally Accion Texas) in 1994 with three employees. Built it into one of the nation's largest micro/small business lenders with 25,000+ loans totaling $439M and a 96% repayment rate. Appointed by President Obama to the President's Advisory Council on Financial Capability. Recipient of the Ned Gramlich Lifetime Award.",
+        "t": "Founder (retired)",
+        "bg": "Corpus Christi native whose parents owned La Mexicana restaurant. Entered the convent in 1973 and was a nun for 15 years, helping start Catholic radio and TV stations in Corpus Christi and Laredo. Left to earn MBA at University of the Incarnate Word. Founded LiftFund (then Accion Texas) in 1994 with three employees and seed money. Built it into one of the nation's largest CDFI lenders: 28,000+ loans, ~$1.5B deployed, 96% repayment rate. Appointed to President Obama's Advisory Council on Financial Capability (2011) and the U.S. Treasury's Advisory Committee on Racial Equity. Recipient of the 2022 Ned Gramlich Lifetime Achievement Award. Now CEO of Kirpa Tech (AI website builder for small businesses) and board member at Piermont Bank.",
         "li": "https://www.linkedin.com/in/janie-barrera-a95b5611/",
         "hooks": [
-          "*Former nun turned founder",
-          "*Obama advisory council",
-          "*Ned Gramlich Lifetime Award",
-          "Univ of Incarnate Word"
+          "*Former nun for 15 years",
+          "*Obama advisory council appointee",
+          "*2022 Ned Gramlich Lifetime Award",
+          "Now CEO of Kirpa Tech (AI)"
+        ]
+      },
+      {
+        "n": "Adam Henson",
+        "t": "Chief Operating & Financial Officer",
+        "bg": "Baylor University graduate serving as both COO and CFO of LiftFund, overseeing operations and financial management for the nationwide CDFI.",
+        "li": "https://www.linkedin.com/in/adam-henson-213306132/",
+        "hooks": [
+          "Baylor grad",
+          "Dual COO/CFO role"
+        ]
+      },
+      {
+        "n": "DK Thepuatrakul",
+        "t": "Chief Technology Officer",
+        "bg": "CTO at LiftFund since March 2018, leading technology strategy and digital transformation for the nonprofit CDFI's lending operations across 50 states.",
+        "li": "https://www.linkedin.com/in/dk-thepuatrakul-9176b524/",
+        "hooks": [
+          "CTO since 2018",
+          "CDFI tech leader"
         ]
       }
     ],
-    "ask": "Would Amy be interested in learning how HyperVerge's AI underwriting could help LiftFund serve more underserved entrepreneurs faster, maximizing your CDFI impact?",
+    "ask": "Amy, with LiftFund's nationwide expansion and the disaster recovery fund scaling up, would it be worth 20 minutes to explore how AI underwriting could help you deploy capital faster while keeping that 96% repayment rate?",
     "location": "Texas",
-    "employees": 110,
+    "employees": 103,
     "website": "https://www.liftfund.com/",
     "linkedinUrl": "https://www.linkedin.com/company/liftfund",
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "verified-2026-02"
     ],
-    "category": "bank"
+    "category": "funder"
   },
   {
     "id": 1037,
