@@ -28,6 +28,8 @@ export async function GET(request: NextRequest) {
   }
 
   try {
+    const startTime = Date.now();
+
     // 1. Get all priority companies (SQO, Client, ICP)
     const { data: priorityCompanies } = await supabase
       .from("companies")
@@ -121,12 +123,13 @@ export async function GET(request: NextRequest) {
     }
 
     // 5. Log the run
+    const durationMs = Date.now() - startTime;
     await supabase.from("signal_ingestion_log").insert({
       source: "research_refresh",
       companies_searched: batch.length,
       signals_found: totalFound,
       signals_new: totalNew,
-      duration_ms: 0,
+      duration_ms: durationMs,
     });
 
     const summary = {
