@@ -26,6 +26,10 @@
       {
         "n": "Sarah Battino",
         "t": "Director of Call Center Ops"
+      },
+      {
+        "n": "OppFi Inc.",
+        "t": "Strategic Investor (35% stake)"
       }
     ],
     "desc": "Bitty (formerly Bitty Advance) is a Fort Lauderdale-based MCA funder established in 2018, now led by serial entrepreneur Craig Hecker who acquired the company in 2020 after founding and selling Rapid Capital Funding. Since Hecker's acquisition, Bitty has facilitated over $420M in cumulative funding to 29,000+ small businesses with products ranging from $2,000 to $250,000. In 2023, Bitty originated approximately $165M in revenue-based financing. The company generated $8.5M in adjusted net income for the trailing 12 months ending March 2024, attracting a strategic 35% equity investment from publicly traded OppFi (NYSE: OPFI) in August 2024 for $15.25M cash plus $2.7M in stock. OppFi has options to acquire majority ownership by 2027 and full ownership by 2030. In Q3 2025, Bitty generated $1.4M in equity income for OppFi alone. Bitty self-identifies as a 'tech company first' and recently launched a fixed-term installment loan product in Texas (Sept 2025) to comply with new state MCA regulations, integrated with Cloudsquare's Salesforce-based broker CRM for API submissions (Jan 2025), and was a Platinum Sponsor at the B2B Finance Expo 2025 in Las Vegas.",
@@ -60,6 +64,36 @@
         "h": "Bitty Platinum Sponsor at B2B Finance Expo 2025",
         "s": "deBanked, Oct 2025",
         "d": "Bitty was a Platinum Sponsor at the B2B Finance Expo at Wynn Las Vegas, alongside Rapid Finance, Kapitus, and Ocrolus."
+      },
+      {
+        "h": "OppFi: 'Bitty is a Great Partner'",
+        "s": "deBanked, Oct 2025",
+        "d": "During Q3 2025 earnings, OppFi CEO Todd Schwartz praised Bitty's growth, noting significant additional growth opportunities and ongoing supply-demand imbalance in small business revenue-based finance."
+      },
+      {
+        "h": "OppFi Acquires 35% Equity Interest in Bitty Advance",
+        "s": "BusinessWire, Aug 2024",
+        "d": "OppFi acquired 35% stake in Bitty for $15.25M cash and $2.7M stock, entering the small business financing market with options for majority ownership by 2027."
+      },
+      {
+        "h": "Bitty Advance Funded 29,000+ Small Businesses Since 2020",
+        "s": "deBanked, Aug 2024",
+        "d": "Under Craig Hecker's ownership, Bitty has facilitated funding to over 29,000 small businesses with products ranging from $2,000 to $250,000."
+      },
+      {
+        "h": "OppFi Acquires 35% Equity in Bitty Advance for $18M",
+        "s": "BusinessWire, Aug 2024",
+        "d": "Strategic investment with options for majority and total ownership; expected to be immediately accretive."
+      },
+      {
+        "h": "Bitty Advance Has Funded 29,000+ Small Businesses Since 2020",
+        "s": "OppFi Press Release, 2024",
+        "d": "Products ranging from $2,000 to $250,000 across the United States."
+      },
+      {
+        "h": "Craig Hecker Acquires Full Ownership of Bitty Advance",
+        "s": "deBanked, Jul 2020",
+        "d": "Industry veteran took sole ownership to scale micro-advance market segment."
       }
     ],
     "ice": "Craig, saw Bitty launched the new installment loan product in Texas to stay ahead of the ACH regulation changes -- and OppFi calling Bitty a 'great partner' generating $1.4M equity income in Q3 alone is impressive. With that kind of origination velocity and your push to be a 'tech company first,' curious if you've looked at how HyperVerge could cut your bank statement and ID verification time from minutes to seconds -- especially as you scale Big Bitty deals.",
@@ -67,13 +101,20 @@
       "Bitty's new Texas installment loan launch shows you're proactively adapting to state-by-state regulation -- automation that handles compliance across multiple product types could be a force multiplier.",
       "With $165M originated in 2023, $420M cumulative, and OppFi projecting $4M+ pre-tax from Bitty in 2025 -- that throughput demands underwriting speed that matches your growth rate.",
       "Craig describes Bitty as 'a tech company first' and just integrated with Cloudsquare for API submissions -- HyperVerge's API-first approach to document verification would plug right into that automation-first philosophy.",
-      "As OppFi's 2027 majority ownership option approaches, proving scalable tech infrastructure will be key to maximizing Bitty's valuation -- automated KYC/KYB is table stakes for institutional-grade operations."
+      "As OppFi's 2027 majority ownership option approaches, proving scalable tech infrastructure will be key to maximizing Bitty's valuation -- automated KYC/KYB is table stakes for institutional-grade operations.",
+      "The OppFi deal at $18M is a strong validation. How is Bitty preparing for the next phase of growth?",
+      "29,000+ funded businesses in the micro-advance space is impressive volume. How automated is your underwriting?",
+      "Craig, your track record from Rapid Capital to Bitty shows serial success. What's the biggest opportunity in micro-advances?",
+      "With OppFi's backing and options for majority ownership, Bitty is positioned for growth. What technology investments are you prioritizing?"
     ],
     "tp": [
       "At $165M+ annual originations and growing, every minute saved per deal compounds -- HyperVerge takes bank statement analysis and ID verification from 40+ minutes to under 5 minutes.",
       "HyperVerge serves 450+ MCA companies including many funders of Bitty's scale -- we understand the revenue-based financing workflow from application to renewal.",
       "With your Cloudsquare API integration and self-described tech-first approach, HyperVerge's API plugs directly into your existing Salesforce-based broker pipeline for seamless document verification.",
-      "As OppFi brings data analytics capabilities to Bitty, enhanced document intelligence from HyperVerge gives your underwriting team richer, faster data extraction from bank statements."
+      "As OppFi brings data analytics capabilities to Bitty, enhanced document intelligence from HyperVerge gives your underwriting team richer, faster data extraction from bank statements.",
+      "HyperVerge's AI underwriting is perfect for Bitty's high-volume micro-advance model, cutting review time from 40 minutes to under 5.",
+      "With 450+ MCA companies served, HyperVerge understands the unique challenges of the micro-advance segment Bitty operates in.",
+      "As OppFi's involvement scales Bitty's operations, HyperVerge can ensure consistent underwriting quality without proportionally scaling headcount."
     ],
     "leaders": [
       {
@@ -86,7 +127,11 @@
           "University of Michigan 1993 grad, Detroit native",
           "Sold Rapid Capital to NAB, bought Bitty",
           "OppFi path to full ownership by 2030",
-          "Signature deBanked event sponsor"
+          "Signature deBanked event sponsor",
+          "*Started on Chicago Board Options Exchange",
+          "*Built $10M/yr dry cleaning business",
+          "Founded & sold Rapid Capital",
+          "OppFi $15.25M equity deal"
         ],
         "li": "https://www.linkedin.com/in/craig-hecker-59b6b171/"
       },
@@ -205,7 +250,9 @@
     "ask": "Craig, Daniel -- would love 20 minutes to show you how HyperVerge's bank statement OCR and ID verification could plug into Bitty's tech-first platform and help your team keep pace with the growth OppFi is banking on. Open to a quick demo next week?",
     "source": [
       "eventiq",
-      "deep-researched"
+      "deep-researched",
+      "tam",
+      "researched"
     ],
     "website": "https://bittyadvance.com",
     "linkedinUrl": "https://www.linkedin.com/company/bitty-advance",
@@ -224,7 +271,9 @@
         }
       ]
     },
-    "category": "funder"
+    "category": "funder",
+    "location": "Florida",
+    "employees": 35
   },
   {
     "id": 2,
@@ -771,7 +820,9 @@
     "ask": "Shaya, would it make sense to show Eli a 15-minute demo of how HyperVerge handles bank statement extraction and MCA contract verification? Happy to tailor it to Wing Lake's consolidation workflow with real document types your team sees daily.",
     "source": [
       "eventiq",
-      "deep-researched"
+      "deep-researched",
+      "tam",
+      "tam-researched"
     ],
     "website": "https://www.winglakecp.com/",
     "linkedinUrl": "https://www.linkedin.com/company/winglakecp",
@@ -804,7 +855,9 @@
         }
       ]
     },
-    "category": "funder"
+    "category": "funder",
+    "location": "Michigan",
+    "employees": 14
   },
   {
     "id": 5,
@@ -2217,6 +2270,10 @@
       {
         "n": "Julian Hernandez",
         "t": "Dir Revenue"
+      },
+      {
+        "n": "Larry Bassuk",
+        "t": "President & Co-Founder"
       }
     ],
     "desc": "Miami-based non-bank LOC/term loan provider (est. 2017). Surpassed $1B funded, 10K+ businesses. $20M EverBank term loan (Jan 2026). $50M warehouse facility (Oct 2024). Founded by two trial lawyers. Expanding into legal lending (case financing for law firms).",
@@ -2251,6 +2308,36 @@
         "h": "CEO Justin Leto interview on fintech strategy",
         "s": "EKMH Innovators",
         "d": "Discusses origin story as attorneys-turned-fintech entrepreneurs, LevelEsq litigation platform."
+      },
+      {
+        "h": "Idea Financial Secures $50M Warehouse Facility",
+        "s": "BusinessWire, Sep 2024",
+        "d": "Closed new $50M warehouse facility led by Performance Trust Capital Partners, increasing maximum SMB lending limit to $350K."
+      },
+      {
+        "h": "Idea Financial Secures $20M Corporate Term Loan from EverBank",
+        "s": "PR Newswire, Jan 2026",
+        "d": "Strategic loan to accelerate growth in small business lending and legal financing through its LevelEsq platform."
+      },
+      {
+        "h": "Idea Financial Surpasses $1 Billion in Total Funding Originated",
+        "s": "Idea Financial, 2025",
+        "d": "Company milestone demonstrating rapid growth since founding in 2017, offering lines of credit and litigation financing."
+      },
+      {
+        "h": "Idea Financial Surpasses $1 Billion in Funding",
+        "s": "Company Reports, Jul 2025",
+        "d": "Idea Financial exceeded $1 billion in total funding since inception in 2017."
+      },
+      {
+        "h": "Idea Financial Closes $20 Million Corporate Term Loan with EverBank",
+        "s": "Business Wire, Dec 2025",
+        "d": "Closed $20M corporate term loan to accelerate growth in small business lending divisions."
+      },
+      {
+        "h": "Idea Financial Secures $50 Million Warehouse Facility",
+        "s": "deBanked, Oct 2024",
+        "d": "Closed new $50M warehouse facility led by Performance Trust Capital Partners, expanding credit lines to $350K."
       }
     ],
     "ice": "Chris, congrats on idea Financial crossing the $1B funded milestone and the recent $20M EverBank facility — that’s serious momentum. How are you scaling ops to keep up?",
@@ -2258,11 +2345,18 @@
       "Congrats on crossing the $1B origination milestone -- serious inflection point in eight years. Is the priority deepening LevelEsq or expanding the core SMB credit line further?",
       "The Performance Trust facility bumped your max to $350K -- meaningful jump. Are you seeing demand from merchants who were capped at $250K needing extra headroom?",
       "Justin's background from practicing attorney to fintech CEO is unique in alt lending. Has that legal training shaped how idea Financial approaches underwriting or compliance differently?",
-      "Back-to-back capital raises -- $50M warehouse and $20M term loan -- signal institutional confidence. What has the growth trajectory looked like operationally?"
+      "Back-to-back capital raises -- $50M warehouse and $20M term loan -- signal institutional confidence. What has the growth trajectory looked like operationally?",
+      "The $1B funding milestone and $20M EverBank deal show incredible momentum -- what's your biggest operational challenge at this scale?",
+      "As a fellow lawyer-turned-fintech-founder, your approach to risk must be methodical -- how do you see AI enhancing that?",
+      "With $50M+ in new warehouse capacity, can your underwriting team keep pace with the increased deal flow?",
+      "Idea Financial's growth from 2017 to $1B is impressive -- what role does technology play in maintaining quality at scale?"
     ],
     "tp": [
       "With $1B+ funded and rapid growth fueled by the EverBank facility, your underwriting pipeline is scaling faster than your ops team. AI automation can handle application intake, cash flow analysis, and risk review.",
-      "As a lines-of-credit lender, you have repeat underwriting on renewals and draws — AI automation compounds time savings across the entire customer lifecycle, not just origination."
+      "As a lines-of-credit lender, you have repeat underwriting on renewals and draws — AI automation compounds time savings across the entire customer lifecycle, not just origination.",
+      "As Idea Financial scales past $1B with new capital from EverBank and Performance Trust, HyperVerge's AI can ensure your underwriting throughput matches your funding capacity.",
+      "Cut underwriting review from 40 minutes to under 5 minutes -- critical for deploying your expanded $50M warehouse facility efficiently.",
+      "450+ lending companies  use HyperVerge. Our platform integrates with existing systems to accelerate deal processing without disrupting workflows."
     ],
     "leaders": [
       {
@@ -2274,7 +2368,10 @@
           "*Trial lawyer turned CEO",
           "UM Law cum laude",
           "*$11M malpractice verdict",
-          "*Started in law firm conference room"
+          "*Started in law firm conference room",
+          "*Attorney turned fintech founder",
+          "*Surpassed $1B in originations",
+          "U of Miami JD"
         ]
       },
       {
@@ -2284,7 +2381,10 @@
         "hooks": [
           "UF Law",
           "*Commercial litigator turned fintech",
-          "Compliance-first mindset"
+          "Compliance-first mindset",
+          "*UF law grad, trial attorney",
+          "Co-founded Leto|Bassuk law firm",
+          "Miami philanthropy board chair"
         ],
         "li": "https://www.linkedin.com/in/larrybassukidea/"
       },
@@ -2313,7 +2413,8 @@
     "source": [
       "eventiq",
       "tam",
-      "deep-researched"
+      "deep-researched",
+      "researched"
     ],
     "location": "Florida",
     "employees": 76,
@@ -4773,15 +4874,9 @@
     "ask": "Steven, would it make sense to schedule a 20-minute demo next week? I can show you exactly how AI handles the bank statement analysis and risk review for a live MCA application.",
     "source": [
       "eventiq",
-      "deep-researched",
-      "tam",
-      "tam-researched"
+      "deep-researched"
     ],
-    "category": "funder",
-    "location": "New York",
-    "employees": 13,
-    "website": "https://dynamicfinancialgrp.com/home",
-    "linkedinUrl": "https://www.linkedin.com/company/dynamic-financial-ny/"
+    "category": "funder"
   },
   {
     "id": 45,
@@ -7470,84 +7565,6 @@
     ]
   },
   {
-    "id": 83,
-    "name": "Everest Business Funding",
-    "type": "ICP",
-    "priority": 2,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Scott Crockett",
-        "t": "Founder & CEO"
-      }
-    ],
-    "desc": "Miami-based revenue-based financing provider (est. 2013). Founded by Scott Crockett, who previously built Allied Cash Advance to 250+ locations and $60M annual revenue. Funds based on daily cash flow, not credit scores.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Everest Business Funding Named Best and Brightest Workplace in the Nation 2025",
-        "s": "BusinessWire, Jun 2025",
-        "d": "Earned back-to-back national recognition from the National Association for Business Resources, reflecting commitment to employee growth, collaboration, and workplace culture.",
-        "p": "2025-06-02"
-      },
-      {
-        "h": "Everest Business Funding Sponsors and Speaks at Broker Expo New York",
-        "s": "Funders Forum, Sep 2025",
-        "d": "Participated as both sponsor and featured speaker at the Broker Expo New York on September 17, 2025 in Manhattan, strengthening industry presence and ISO relationships.",
-        "p": "2025-09-17"
-      },
-      {
-        "h": "Everest Business Funding Expands Revenue-Based Financing to $2M Limit",
-        "s": "everestbusinessfunding.com, 2025",
-        "d": "Now offers fast access to working capital up to $2M through revenue-based financing, serving business owners across a wide range of industries with a streamlined application process.",
-        "p": "2025-01-05"
-      }
-    ],
-    "ice": "Going from 250 Allied Cash storefronts to a digital-first model at Everest is a big pivot -- how has that changed your approach to risk?",
-    "icebreakers": [
-      "Going from 250 Allied Cash storefronts to a digital-first model at Everest is a big pivot -- how has that changed your approach to risk?"
-    ],
-    "tp": [
-      "Cash flow-based underwriting is perfect for AI -- we can analyze bank statement patterns to predict repayment capacity in minutes, not hours."
-    ],
-    "leaders": [
-      {
-        "n": "Scott Crockett",
-        "t": "Founder & CEO",
-        "bg": "Tulane University BA. Began career as an investment banker at NationsBanc Montgomery Securities, where he turned down a promotion to start his own consumer finance company. 20+ years of experience in the finance industry. Track record includes raising more than $500M in capital and creating thousands of jobs. Founded, built, and managed several finance companies across consumer and commercial finance sectors before establishing Everest Business Funding in 2013.",
-        "li": "https://www.linkedin.com/in/scottfcrockett/",
-        "hooks": [
-          "*Tulane grad",
-          "*Ex-NationsBanc Montgomery investment banker",
-          "*Turned down Wall Street promotion to start own company"
-        ]
-      },
-      {
-        "n": "Tracy Parks",
-        "t": "Chief Operating Officer",
-        "bg": "Based in Fort Lauderdale, Florida. COO at Everest Business Funding since September 2012. Previously President and CEO of Allied Cash Advance (June 2007 - September 2012). Also held COO role at Whetstone Holdings and positions at eTitleLoan. Brings deep operational experience in consumer and commercial lending operations.",
-        "li": "https://www.linkedin.com/in/tracyparks/",
-        "hooks": [
-          "*Former CEO Allied Cash Advance 5 years",
-          "Fort Lauderdale-based",
-          "Consumer-to-commercial lending crossover"
-        ]
-      }
-    ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq",
-      "tam"
-    ],
-    "location": "New York",
-    "employees": 67,
-    "website": "https://everestbusinessfunding.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/everest-business-funding/about/",
-    "category": "funder"
-  },
-  {
     "id": 84,
     "name": "Platinum Rapid Funding Group",
     "type": "ICP",
@@ -8360,77 +8377,6 @@
     "website": "https://splashadvance.com",
     "linkedinUrl": "https://www.linkedin.com/company/splash-advance/",
     "category": "funder"
-  },
-  {
-    "id": 96,
-    "name": "Accord Business Funding",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Founding Partners",
-        "t": "Leadership"
-      }
-    ],
-    "desc": "Houston, TX-based direct MCA lender (est. 2013). Founded by two Texans with nearly 5 decades of combined commercial funding experience. Works exclusively through ISO/partner network for B-paper, 1st-3rd positions.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Accord Business Funding Expands B-Paper MCA Programs Nationwide",
-        "s": "United Capital Source, 2025",
-        "d": "Accord continued expanding its B-paper MCA product nationally, offering up to $150,000 in merchant cash advances with 15% ISO commissions and next-day commission payments.",
-        "p": "2025-01-15"
-      },
-      {
-        "h": "Accord Business Funding Hires VP of Sales & Marketing",
-        "s": "deBanked, Apr 2018",
-        "d": "Accord made a strategic hire to bolster its sales and marketing capabilities, bringing on Aldo Castro as VP to accelerate ISO partner acquisition and brand growth.",
-        "p": "2018-04-15"
-      }
-    ],
-    "ice": "Five decades of combined funding experience and an ISO-only model -- how do you evaluate deal quality when merchants come through multiple partners?",
-    "icebreakers": [
-      "Five decades of combined funding experience and an ISO-only model -- how do you evaluate deal quality when merchants come through multiple partners?"
-    ],
-    "tp": [
-      "AI underwriting can standardize credit evaluation across your entire ISO network, ensuring consistent decisioning regardless of which partner submits the deal."
-    ],
-    "leaders": [
-      {
-        "n": "Adam Beebe",
-        "t": "Co-Founder",
-        "bg": "Co-founded Accord Business Funding in 2013 in Houston, TX. Brings nearly five decades of combined commercial funding experience with his co-founder. Built Accord into a direct MCA lender specializing in B-paper deals in 1st, 2nd, and 3rd positions. Known for a hands-on management style with direct involvement in underwriting decisions. Established Accord's reputation for speed and flexibility with sub-3-hour decision turnarounds.",
-        "li": "https://www.linkedin.com/in/adam-beebe-104b388",
-        "hooks": [
-          "*50 years combined funding experience",
-          "Built B-paper MCA specialty",
-          "Houston-based direct funder since 2013"
-        ]
-      },
-      {
-        "n": "Aldo Castro",
-        "t": "Vice President of Sales & Marketing",
-        "bg": "Joined Accord Business Funding to lead the company's sales and marketing strategy. Responsible for growing Accord's ISO partner network and expanding the company's national footprint from its Houston base. Oversees partner acquisition, commission structures, and brand positioning in the MCA direct funding space.",
-        "li": "",
-        "hooks": [
-          "Leads Accord's ISO partner growth",
-          "Expanded national MCA footprint from Texas"
-        ]
-      }
-    ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq",
-      "tam"
-    ],
-    "location": "Texas",
-    "employees": 12,
-    "website": "https://accordbf.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/accord-business-funding/",
-    "category": "broker"
   },
   {
     "id": 97,
@@ -9503,8 +9449,7 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
-      "tam",
-      "tam-researched"
+      "tam"
     ],
     "location": "Virginia",
     "employees": 42,
@@ -19189,111 +19134,6 @@
     "category": "funder"
   },
   {
-    "id": 1078,
-    "name": "Bitty Advance",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Craig Hecker",
-        "t": "CEO & Owner"
-      },
-      {
-        "n": "OppFi Inc.",
-        "t": "Strategic Investor (35% stake)"
-      }
-    ],
-    "desc": "Florida-based MCA funder specializing in micro-advances ($2,000-$250,000) for small businesses under $100K annual revenue, with OppFi acquiring a 35% equity stake in 2024.",
-    "notes": "",
-    "news": [
-      {
-        "h": "OppFi: 'Bitty is a Great Partner'",
-        "s": "deBanked, Oct 2025",
-        "d": "During Q3 2025 earnings, OppFi CEO Todd Schwartz praised Bitty's growth, noting significant additional growth opportunities and ongoing supply-demand imbalance in small business revenue-based finance."
-      },
-      {
-        "h": "OppFi Acquires 35% Equity Interest in Bitty Advance",
-        "s": "BusinessWire, Aug 2024",
-        "d": "OppFi acquired 35% stake in Bitty for $15.25M cash and $2.7M stock, entering the small business financing market with options for majority ownership by 2027."
-      },
-      {
-        "h": "Bitty Advance Funded 29,000+ Small Businesses Since 2020",
-        "s": "deBanked, Aug 2024",
-        "d": "Under Craig Hecker's ownership, Bitty has facilitated funding to over 29,000 small businesses with products ranging from $2,000 to $250,000."
-      },
-      {
-        "h": "OppFi Acquires 35% Equity in Bitty Advance for $18M",
-        "s": "BusinessWire, Aug 2024",
-        "d": "Strategic investment with options for majority and total ownership; expected to be immediately accretive."
-      },
-      {
-        "h": "Bitty Advance Has Funded 29,000+ Small Businesses Since 2020",
-        "s": "OppFi Press Release, 2024",
-        "d": "Products ranging from $2,000 to $250,000 across the United States."
-      },
-      {
-        "h": "Craig Hecker Acquires Full Ownership of Bitty Advance",
-        "s": "deBanked, Jul 2020",
-        "d": "Industry veteran took sole ownership to scale micro-advance market segment."
-      }
-    ],
-    "ice": "Craig, the OppFi investment validates what you've built at Bitty. With 29,000+ businesses funded, how are you scaling the underwriting to meet growing demand?",
-    "icebreakers": [
-      "The OppFi deal at $18M is a strong validation. How is Bitty preparing for the next phase of growth?",
-      "29,000+ funded businesses in the micro-advance space is impressive volume. How automated is your underwriting?",
-      "Craig, your track record from Rapid Capital to Bitty shows serial success. What's the biggest opportunity in micro-advances?",
-      "With OppFi's backing and options for majority ownership, Bitty is positioned for growth. What technology investments are you prioritizing?"
-    ],
-    "tp": [
-      "HyperVerge's AI underwriting is perfect for Bitty's high-volume micro-advance model, cutting review time from 40 minutes to under 5.",
-      "With 450+ MCA companies served, HyperVerge understands the unique challenges of the micro-advance segment Bitty operates in.",
-      "As OppFi's involvement scales Bitty's operations, HyperVerge can ensure consistent underwriting quality without proportionally scaling headcount."
-    ],
-    "leaders": [
-      {
-        "n": "Craig Hecker",
-        "t": "CEO & Owner",
-        "bg": "Serial entrepreneur who started career on the Chicago Board Options Exchange in 1993. Built a retail dry cleaning and garment restoration business grossing nearly $10M/year. Founded Rapid Capital Funding in 2007, grew it, and sold it. Acquired a stake in Bitty Advance in early 2020, then purchased full ownership months later. Under his leadership, Bitty committed capital to fund up to $10M/month. OppFi acquired 35% equity stake in Aug 2024 for $15.25M cash plus $2.7M in stock, with options to acquire majority by 2027 and total ownership by 2030.",
-        "li": "https://www.linkedin.com/in/craig-hecker-59b6b171/",
-        "hooks": [
-          "*Started on Chicago Board Options Exchange",
-          "*Built $10M/yr dry cleaning business",
-          "Founded & sold Rapid Capital",
-          "OppFi $15.25M equity deal"
-        ]
-      }
-    ],
-    "ask": "Craig, Bitty's micro-advance model at 29,000+ deals is exactly where HyperVerge shines. Can we show you how we handle high-volume MCA underwriting? 15 minutes?",
-    "location": "Florida",
-    "employees": 35,
-    "website": "https://bittyadvance.com",
-    "linkedinUrl": "https://www.linkedin.com/company/bitty-advance/",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ],
-    "outreachHistory": {
-      "status": "contacted",
-      "totalOutbound": 2,
-      "totalInbound": 0,
-      "lastActivityDate": null,
-      "matchedContacts": [
-        {
-          "email": "dan@bittyadvance.com",
-          "name": "",
-          "title": "",
-          "outbound": 2,
-          "inbound": 0
-        }
-      ]
-    },
-    "category": "funder"
-  },
-  {
     "id": 1079,
     "name": "Fundomate Technologies, Inc.",
     "type": "TAM",
@@ -19587,7 +19427,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "tam-researched"
     ],
     "category": "funder"
   },
@@ -19787,97 +19628,6 @@
     "employees": 32,
     "website": "https://wingspirecapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/wingspire-capital",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ]
-  },
-  {
-    "id": 1085,
-    "name": "The Business Backer",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Jim Salters",
-        "t": "CEO"
-      },
-      {
-        "n": "Stephen Tosh",
-        "t": "COO"
-      }
-    ],
-    "desc": "Cincinnati, OH-based small business funding company (subsidiary of Enova International/NYSE:ENVA since 2015) providing working capital, receivable financing, and installment loans through funding advisors.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Enova's Small Business Portfolio Includes 7 Brands",
-        "s": "Enova.com, 2025",
-        "d": "Business Backer is part of Enova's portfolio alongside OnDeck, Headway Capital, CashNetUSA, NetCredit, Simplic, and Pangea, serving 13M+ customers."
-      },
-      {
-        "h": "Enova to Acquire Grasshopper Bank for $369M",
-        "s": "Finovate, Dec 2025",
-        "d": "Parent company Enova expanding to full-stack digital financial services with banking capabilities."
-      },
-      {
-        "h": "94% of Small Businesses Expect 2026 Growth per Enova Report",
-        "s": "StockTitan, 2026",
-        "d": "Enova's annual survey shows record-high business confidence heading into 2026."
-      },
-      {
-        "h": "The Business Backer Operates as Part of Enova's 7-Brand Portfolio",
-        "s": "Enova Blog, 2025",
-        "d": "Alongside OnDeck, Headway Capital, CashNetUSA, NetCredit, Simplic, and Pangea."
-      }
-    ],
-    "ice": "The Business Backer's position within Enova's portfolio gives you incredible resources, especially with the Grasshopper Bank acquisition. How are you leveraging that for faster underwriting?",
-    "icebreakers": [
-      "Enova's Grasshopper Bank acquisition creates a full-stack platform. How does that impact Business Backer's underwriting?",
-      "94% of small businesses expect growth in 2026 -- that means more funding demand. Is your underwriting ready for the surge?",
-      "Being part of Enova's 7-brand portfolio gives you scale. Are you sharing underwriting technology across brands?",
-      "Jim, your turnaround expertise must inform how you think about risk. What's the biggest underwriting challenge today?"
-    ],
-    "tp": [
-      "HyperVerge's AI underwriting could help The Business Backer process more applications as small business demand surges, cutting review from 40 minutes to under 5.",
-      "With 450+ MCA companies served, HyperVerge has proven technology that fits within Enova's technology-forward approach.",
-      "Automating document analysis would help The Business Backer maintain quality across its working capital and receivable financing products."
-    ],
-    "leaders": [
-      {
-        "n": "Jim Salters",
-        "t": "Former CEO (departed 2018)",
-        "bg": "Invested in and became CEO of The Business Backer in 2009. Grew the company from 5 to over 100 employees and generated 30x revenue growth, leading to an 8-figure exit to Enova International (NYSE: ENVA) in 2015. Left Business Backer/Enova in 2018 to pursue CEO coaching. Now Board Chair of EasterSeals Greater Cincinnati, founding board member of Team Gleason, and Chairman/Co-founder of Quanta HCM. Active in Entrepreneurs Organization (EO).",
-        "li": "https://www.linkedin.com/company/the-business-backer/people/",
-        "hooks": [
-          "*30x revenue growth, 8-figure exit",
-          "*Now EasterSeals Board Chair",
-          "CEO coach post-Enova",
-          "Quanta HCM co-founder"
-        ]
-      },
-      {
-        "n": "Scott Avera",
-        "t": "Founder (departed post-acquisition)",
-        "bg": "Born entrepreneur who developed first commercial software product at age 15. Former owner of Ascent Solutions, an Inc 500 software company known for products like PKZIP and WinZip. Co-founded The Business Backer in 2006 with Mark Deeter. Grew company to 80+ employees and nearly $20M revenue in 2014, earning Inc. 5000 rankings four years running. Assets sold to Enova International in 2015. Active member of Queen City Angels investment group in Cincinnati.",
-        "li": "https://www.linkedin.com/company/the-business-backer/people/",
-        "hooks": [
-          "*Built PKZIP/WinZip (Ascent Solutions)",
-          "*First software at age 15",
-          "Inc. 5000 four years running",
-          "Queen City Angels member"
-        ]
-      }
-    ],
-    "ask": "With small business confidence at record highs, underwriting demand will surge. Can we show you how HyperVerge helps Enova-portfolio companies handle that volume?",
-    "location": "Ohio",
-    "employees": 31,
-    "website": "https://businessbacker.com",
-    "linkedinUrl": "https://www.linkedin.com/company/the-business-backer/people/",
     "source": [
       "tam",
       "researched",
@@ -20946,100 +20696,6 @@
       "deep-researched"
     ],
     "category": "funder"
-  },
-  {
-    "id": 1098,
-    "name": "Good Funding",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Ben Gold",
-        "t": "CEO"
-      },
-      {
-        "n": "Jason Osiecki",
-        "t": "Co-Founder & President"
-      }
-    ],
-    "desc": "Orange County-based small business lender offering up to $500K in working capital with same-day decisions and next-day funding. Ranked #2 fastest-growing midsize company by OC Business Journal with 650% revenue growth.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Good Funding Closes Up to $30M Credit Facility",
-        "s": "PR Newswire, May 2021",
-        "d": "Good Funding closed $20M senior revolving credit facility with accordion to $30M, marking its inaugural institutional financing. Brean Capital served as exclusive advisor."
-      },
-      {
-        "h": "Good Funding Closes $20M Credit Facility with $30M Accordion",
-        "s": "PR Newswire, 2021",
-        "d": "Closed inaugural institutional financing—a $20M senior revolving credit facility with option to increase to $30M via Brean Capital."
-      },
-      {
-        "h": "Good Funding Ranked #2 Fastest-Growing Midsize Company by OC Business Journal",
-        "s": "OCBJ, 2024",
-        "d": "Recognized with nearly 650% two-year revenue growth, ranking second among all businesses on OCBJ's annual fastest-growing list."
-      },
-      {
-        "h": "Good Funding Reaches $100MM in Total Fundings",
-        "s": "Company News, 2024",
-        "d": "Surpassed $100 million milestone in total fundings since inception, supporting over 3,000 businesses with working capital solutions."
-      },
-      {
-        "h": "Good Funding Closes Up to $30 Million Credit Facility",
-        "s": "Company News, 2024",
-        "d": "Secured a major credit facility to support continued growth and lending capacity expansion."
-      }
-    ],
-    "ice": "650% revenue growth and #2 fastest-growing in Orange County is incredible -- at that pace, how are you keeping underwriting quality consistent while scaling so rapidly?",
-    "icebreakers": [
-      "650% revenue growth and #2 fastest-growing in Orange County is incredible -- at that pace, how are you keeping underwriting quality consistent while scaling so rapidly?",
-      "Reaching $100MM in fundings with 3,000+ businesses served since 2020 is impressive growth -- what's the biggest operational challenge at this velocity?",
-      "Same-day decisions and next-day funding at your scale requires serious automation -- where are you in that technology journey?",
-      "Closing a $30M credit facility shows strong institutional confidence -- how are you planning to deploy that capital efficiently?"
-    ],
-    "tp": [
-      "HyperVerge's AI underwriting automation is purpose-built for hypergrowth lenders like Good Funding -- cutting review from 40 minutes to under 5 minutes to sustain 650% growth rates.",
-      "With $30M in fresh capital and 3,000+ businesses served, automated document verification and risk assessment ensure you maintain quality at scale.",
-      "HyperVerge serves 450+ lending companies and has helped lenders achieve faster, more consistent underwriting -- ideal for Good Funding's rapid expansion."
-    ],
-    "leaders": [
-      {
-        "n": "Ben Gold",
-        "t": "CEO",
-        "bg": "Founded Quick Bridge Funding, a short-term working capital provider for SMBs. Quick Bridge was acquired by National Funding, where Gold remained as President. In 2020, became CEO and co-founded Good Funding with Jason Osiecki. Good Funding closed a $20M senior revolving credit facility with accordion to $30M in May 2021, its inaugural institutional financing. Company ranked #2 fastest-growing midsize company by OC Business Journal with 650% revenue growth.",
-        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
-        "hooks": [
-          "*Founded & sold Quick Bridge Funding",
-          "650% revenue growth",
-          "$30M credit facility (2021)"
-        ]
-      },
-      {
-        "n": "Jason Osiecki",
-        "t": "Co-Founder & President",
-        "bg": "Co-founded Good Funding in 2020 with Ben Gold. Previously VP of Strategic Partnerships at National Funding (2018-2020), VP of Sales at Quick Bridge Funding (2011-2018), and Director of Sales at Five Point Capital (2003-2010). University of Maryland Robert H. Smith School of Business, BS in Finance (1996-2000). Based in Tustin, California.",
-        "li": "https://www.linkedin.com/in/jason-osiecki-4867474",
-        "hooks": [
-          "*17+ years in alt lending (Five Point to Good Funding)",
-          "UMD Smith School Finance grad",
-          "Ex-National Funding & Quick Bridge VP"
-        ]
-      }
-    ],
-    "ask": "With 650% growth and a fresh $30M credit facility, you're clearly at an inflection point -- would 20 minutes be worth it to see how HyperVerge can help you maintain underwriting speed and quality?",
-    "location": "California",
-    "employees": 25,
-    "website": "https://www.goodfunding.com/about",
-    "linkedinUrl": "https://www.linkedin.com/company/good-funding/",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ]
   },
   {
     "id": 1099,
@@ -22738,33 +22394,6 @@
     ]
   },
   {
-    "id": 1128,
-    "name": "Arcarius",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Fort Lee, NJ-based funding company formed in 2015 specializing in equipment financing, short/long-term business loans, invoice financing, and MCAs. Serves healthcare, construction, and restaurant industries as alternative to traditional bank financing.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New Jersey",
-    "employees": 19,
-    "website": "https://arcariusfunding.com",
-    "linkedinUrl": "https://www.linkedin.com/company/arcarius-llc/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1129,
     "name": "Arsenal Funding",
     "type": "TAM",
@@ -22977,42 +22606,6 @@
       "tam",
       "tam-researched"
     ]
-  },
-  {
-    "id": 1137,
-    "name": "BIG (Blackbridge Investment Group)",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Cosmin Panait",
-        "t": "Co-Founder"
-      },
-      {
-        "n": "Alexander Dillon",
-        "t": "Co-Founder"
-      }
-    ],
-    "desc": "NYC-based revenue-based financing provider recently rebranded as BIG Funding. Co-founded by Cosmin Panait and Alexander Dillon. Requires 1+ year in business and $10K+ monthly revenue. Combines fintech tools with customer-focused service.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 9,
-    "website": "https://www.bbigm.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/big-blackbridge-investment-group/about/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
   },
   {
     "id": 1138,
@@ -27351,33 +26944,6 @@
     "category": "funder"
   },
   {
-    "id": 1302,
-    "name": "Main Street Cash",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "MCA provider based in New York offering business cash advances. Purchases future receivables from credit/debit card sales or revenue deposits, with flexible repayment tied to daily sales volume.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 3,
-    "website": "https://mainstreetcash.com",
-    "linkedinUrl": "https://www.linkedin.com/company/main-street-cash/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1303,
     "name": "Main Street Finance Group",
     "type": "TAM",
@@ -28182,63 +27748,10 @@
     "category": "funder"
   },
   {
-    "id": 1333,
-    "name": "Nexi Finance (Formerly Fundamental Capital, LLC)",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Likely a duplicate of Nexi (id 1332). Nexi Finance, formerly Fundamental Capital LLC, same company with offices in Florida. Provides alternative lending solutions for small businesses.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Florida",
-    "employees": 15,
-    "website": "https://gonexi.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/nexifinance/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1334,
-    "name": "Noble Funding",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Business lender based in Boca Raton, FL with A+ BBB rating. Offers 3-5 year term loans starting at 8.99% from $100K and up, including asset-based lending, invoice factoring, and MCA refinancing. Has funded over $500M nationwide.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Boca Raton",
-    "employees": 4,
-    "website": "https://noblebusinessloans.com",
-    "linkedinUrl": "https://www.linkedin.com/company/noble-funding/about/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1335,
     "name": "Novus Capital Funding II",
     "type": "TAM",
-    "priority": 7,
+    "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -28252,7 +27765,7 @@
     "leaders": [],
     "ask": "",
     "location": "Not Available",
-    "employees": 0,
+    "employees": 4,
     "website": "https://www.novuscapitalfund.com/",
     "linkedinUrl": "https://www.linkedin.com/company/novus-capital-funding-ii-llc/about/",
     "source": [
@@ -30787,33 +30300,6 @@
     ]
   },
   {
-    "id": 1433,
-    "name": "Vader Mountain Capital",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Florida-based (Sweetwater/Miami) revenue-based financing provider founded in 2018, offering working capital up to $1M for small businesses with funding as fast as 60 minutes. Note: FTC has filed a lawsuit alleging predatory lending practices.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Florida",
-    "employees": 4,
-    "website": "https://vadermountaincapital.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/vader-mountain-capital/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1434,
     "name": "Velocity Equipment FinanceVelocity Equipment Finance",
     "type": "TAM",
@@ -31132,61 +30618,6 @@
     "category": "funder"
   },
   {
-    "id": 1446,
-    "name": "Wing Lake Capital",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Michigan-based company specializing in MCA consolidation and restructuring for small businesses. Provides non-credit-based working capital solutions, focusing on debt schedule and profit/loss margins rather than credit scores. Also offers business loan alternatives to MCAs.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Michigan",
-    "employees": 14,
-    "website": "https://winglakecp.com",
-    "linkedinUrl": "https://www.linkedin.com/company/winglakecp/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "outreachHistory": {
-      "status": "responded",
-      "totalOutbound": 0,
-      "totalInbound": 2,
-      "lastActivityDate": null,
-      "matchedContacts": [
-        {
-          "email": "sseligson@winglakecp.com",
-          "name": "Sam Seligson",
-          "title": "President",
-          "outbound": 0,
-          "inbound": 2
-        },
-        {
-          "email": "docusign@winglakecp.com",
-          "name": "",
-          "title": "",
-          "outbound": 0,
-          "inbound": 0
-        },
-        {
-          "email": "sbaum@winglakecp.com",
-          "name": "Praveen Kumar",
-          "title": "",
-          "outbound": 0,
-          "inbound": 0
-        }
-      ]
-    }
-  },
-  {
     "id": 1447,
     "name": "WiseSide Incorporated",
     "type": "TAM",
@@ -31477,32 +30908,6 @@
     "employees": 15,
     "website": "https://bizadvancenow.com",
     "linkedinUrl": "https://www.linkedin.com/company/biz-advance-now/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1461,
-    "name": "CFS CAP, LLC d/b/a Cashfund",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Colorado-based MCA company operating as Cashfund (dba of CFS CAP, LLC). Offers small business loans with funding up to $500K available in as little as 24 hours through merchant cash advances.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Colorado",
-    "employees": 5,
-    "website": "https://cashfund.com",
-    "linkedinUrl": "https://cashfund.com",
     "source": [
       "tam",
       "tam-researched"
@@ -31908,48 +31313,6 @@
     ]
   },
   {
-    "id": 1471,
-    "name": "DMKA LLC d/b/a The Smarter Merchant",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Duplicate entry of The Smarter Merchant (see id 1416). New York-based direct MCA funder launched in 2013, focusing on ISO relationships and technology-driven underwriting for merchant cash advances.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 16,
-    "website": "https://thesmartermerchant.com",
-    "linkedinUrl": "thesmartermerchant.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "outreachHistory": {
-      "status": "responded",
-      "totalOutbound": 0,
-      "totalInbound": 1,
-      "lastActivityDate": null,
-      "matchedContacts": [
-        {
-          "email": "nabil@thesmartermerchant.com",
-          "name": "Nabil Aziz",
-          "title": "",
-          "outbound": 0,
-          "inbound": 1
-        }
-      ]
-    },
-    "category": "funder"
-  },
-  {
     "id": 1472,
     "name": "Duke & Co, LLC d/b/a Dynamic Capital",
     "type": "TAM",
@@ -32072,26 +31435,90 @@
     "id": 1475,
     "name": "Flexibility Capital Inc.",
     "type": "TAM",
-    "priority": 4,
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
+    "contacts": [
+      {
+        "n": "Michael Peeler",
+        "t": "Founder & CEO"
+      }
+    ],
     "desc": "Flexibility Capital is a leading provider of small business loans and merchant cash advances with 20+ years of experience and Inc 5000 recognition. Offers working capital loans, equipment financing, SBA loans, lines of credit, and invoice factoring from $10K to $5M with 24-hour funding.",
     "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
+    "news": [
+      {
+        "h": "Flexibility Capital Ranked Inc. 5000 #92 Financial Services",
+        "s": "PR Newswire, Aug 2024",
+        "d": "Ranked #1513 overall and #92 in Financial Services on the 2024 Inc. 5000 list, its second time on the prestigious list."
+      },
+      {
+        "h": "Flexibility Capital Named 2024 Inc. 5000 Honoree",
+        "s": "Inc.com, 2024",
+        "d": "Ranked #92 in Financial Services and #1513 overall on the Inc. 5000 list of fastest-growing private companies."
+      },
+      {
+        "h": "Flexibility Capital Celebrates 1,000 Trustpilot Reviews",
+        "s": "PR Newswire, Jan 2025",
+        "d": "Achieved a 4.9 out of 5 Trustscore with 1,000+ reviews, reinforcing its position as a leader in alternative business financing."
+      },
+      {
+        "h": "Flexibility Capital Returns to Inc. 5000 in 2025",
+        "s": "Inc.com, 2025",
+        "d": "Ranked #3034 with 134% three-year growth, marking its second consecutive appearance on the list."
+      },
+      {
+        "h": "Flexibility Capital Ranked #3034 on Inc. 5000 for Third Consecutive Year",
+        "s": "Inc., 2025",
+        "d": "Flexibility Capital achieved its third Inc. 5000 ranking with 134% three-year growth."
+      },
+      {
+        "h": "Flexibility Capital Celebrates 1,000 Trustpilot Reviews with 4.9/5 Rating",
+        "s": "PR Newswire, Jan 2025",
+        "d": "Company reached 1,000 Trustpilot reviews with an outstanding 4.9 out of 5 rating."
+      },
+      {
+        "h": "Flexibility Capital Surpasses $1 Billion in Total Funding",
+        "s": "Company Reports, 2024",
+        "d": "Since its 2018 founding, Flexibility Capital has secured over $1 billion in funding for thousands of small businesses."
+      }
+    ],
+    "ice": "Congratulations on making the Inc. 5000 three years running and surpassing $1 billion in funding -- Michael, as you scale at this pace, how is your underwriting team keeping up with the growing deal flow?",
+    "icebreakers": [
+      "Three consecutive Inc. 5000 appearances and $1B+ funded is remarkable growth -- what's your secret to maintaining quality while scaling so fast?",
+      "A 4.9 Trustpilot rating with 1,000+ reviews shows incredible customer satisfaction -- how does your underwriting process contribute to that experience?",
+      "Michael, with 20+ years of experience, where do you see AI fitting into Flexibility Capital's next phase of growth?",
+      "Going from $0 to $1B in 6 years is exceptional -- what operational improvements would help you reach $2B even faster?"
+    ],
+    "tp": [
+      "HyperVerge can help Flexibility Capital maintain its Inc. 5000 growth rate by automating underwriting, cutting review from 40 minutes to under 5 minutes.",
+      "With 450+ MCA companies already using HyperVerge, our platform is proven for high-growth funders targeting $1B+ in originations.",
+      "Faster underwriting means happier customers -- supporting the kind of 4.9-star experience that Flexibility Capital is known for."
+    ],
+    "leaders": [
+      {
+        "n": "Michael Peeler",
+        "t": "Founder & CEO",
+        "bg": "Founded Flexibility Capital in 2018 after serving as VP of Business Development at Kapitus (formerly Strategic Funding Source). Penn State University graduate. Led company to Inc. 5000 ranking in 2022 (#4284) and 2024 (#1513, #92 in Financial Services). Surpassed $1B in total funding and 1,000+ Trustpilot reviews with 4.9 star rating.",
+        "li": "https://www.linkedin.com/in/michael-peeler-88488461/",
+        "hooks": [
+          "*$1B+ funded since 2018",
+          "*Ex-Kapitus VP",
+          "2x Inc. 5000 honoree (2022, 2024)"
+        ]
+      }
+    ],
+    "ask": "Michael, as Flexibility Capital pushes toward $2B in total funding, would you be open to a demo showing how HyperVerge's AI underwriting can help maintain your growth trajectory?",
     "location": "New York",
     "employees": 12,
     "website": "https://flexibilitycapital.com",
     "linkedinUrl": "flexibilitycapital.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched",
+      "deep-researched"
     ],
     "category": "funder"
   },
@@ -32453,7 +31880,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1488,
@@ -33977,6 +33405,10 @@
       {
         "n": "Mike Behar",
         "t": "Co-Founder & Director of Sales"
+      },
+      {
+        "n": "Cap Fund Team",
+        "t": "Leadership"
       }
     ],
     "desc": "Garden City, NY-based business funding marketplace founded in 2017, offering direct lending, merchant cash advances, equipment financing, invoice factoring, lines of credit, term loans, and SBA loans.",
@@ -33996,6 +33428,11 @@
         "h": "CapFront Expands Business Funding Marketplace",
         "s": "Company reports",
         "d": "CapFront continues to grow its lending marketplace with products including MCA, equipment financing, and SBA loans."
+      },
+      {
+        "h": "Cap Fund Expands Business Funding Solutions",
+        "s": "Company reports",
+        "d": "Cap Fund continues to grow its merchant cash advance and working capital offerings for small businesses."
       }
     ],
     "ice": "Congrats on the Forbes Business Council acceptance, Zack. As CapFront scales its funding marketplace across multiple product lines, how are you handling underwriting consistency?",
@@ -34003,12 +33440,19 @@
       "Congrats on the Forbes Business Council acceptance, Zack. As CapFront scales its funding marketplace across multiple product lines, how are you handling underwriting consistency?",
       "CapFront's marketplace model covering everything from MCA to SBA loans is ambitious. What's been the biggest challenge in scaling underwriting across those products?",
       "I see CapFront started with a 1.09 factor rate on merchant advances -- that's competitive. How do you maintain speed without sacrificing underwriting quality?",
-      "From your experience in SMB lending before founding CapFront, what's the biggest operational bottleneck you've seen in the funding process?"
+      "From your experience in SMB lending before founding CapFront, what's the biggest operational bottleneck you've seen in the funding process?",
+      "How is Cap Fund positioning itself in the competitive MCA market? What's been your biggest challenge in scaling underwriting operations?",
+      "The alternative lending space is evolving fast. How is Cap Fund differentiating its underwriting approach?",
+      "With fast funding being table stakes in MCA, what's Cap Fund doing to stand out in terms of speed and accuracy?",
+      "How is your team managing underwriting volume as the business grows?"
     ],
     "tp": [
       "HyperVerge can help CapFront's marketplace model by automating underwriting across all product lines -- from MCA to SBA -- cutting review time from 40 minutes to under 5 minutes.",
       "With 450+ MCA companies using HyperVerge (), we understand the marketplace funding model and can help CapFront scale without proportionally growing headcount.",
-      "As CapFront offers both direct lending and marketplace products, HyperVerge's AI ensures consistent risk assessment regardless of the funding product."
+      "As CapFront offers both direct lending and marketplace products, HyperVerge's AI ensures consistent risk assessment regardless of the funding product.",
+      "HyperVerge's AI underwriting cuts MCA review from 40 minutes to under 5 minutes, helping funders like Cap Fund maintain speed as deal volume grows.",
+      "450+ MCA companies use HyperVerge -- we understand the competitive dynamics of merchant cash advance funding.",
+      "HyperVerge can help Cap Fund automate bank statement analysis, revenue verification, and risk scoring to improve both speed and accuracy."
     ],
     "leaders": [
       {
@@ -34031,6 +33475,16 @@
           "Co-founded CapFront 2017",
           "LIU Finance & Accounting grad",
           "Ex-Imperial Advance"
+        ]
+      },
+      {
+        "n": "Cap Fund Leadership",
+        "t": "Management Team",
+        "bg": "Cap Fund provides merchant cash advances and working capital solutions to small businesses. Appears to be related to or share website with CapFront. Limited public information available on specific leadership or distinct operations.",
+        "li": "",
+        "hooks": [
+          "Related to CapFront",
+          "MCA provider"
         ]
       }
     ],
@@ -34141,85 +33595,6 @@
       "deep-researched"
     ],
     "category": "broker"
-  },
-  {
-    "id": 1523,
-    "name": "Ein Cap, Inc.",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Russell Naftali",
-        "t": "Founder & President"
-      },
-      {
-        "n": "John Mayne",
-        "t": "CEO"
-      }
-    ],
-    "desc": "Brooklyn, NY-based MCA funder specializing in merchant cash advances to small businesses nationwide, funding even up to 4th position deals. Works extensively with ISO broker networks.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Ein Cap Continues Merchant Cash Advance Operations",
-        "s": "BBB / Industry, 2024",
-        "d": "Ein Cap maintains its focus as a NYC-based MCA provider serving small businesses across America."
-      },
-      {
-        "h": "Ein Cap Expands MCA Funding to 4th Position Deals",
-        "s": "Company reports",
-        "d": "Ein Cap now funds merchants up to 4th position, expanding its reach in the competitive MCA market."
-      }
-    ],
-    "ice": "Ein Cap's willingness to fund up to 4th position is bold. With that risk profile, how are you managing underwriting speed and accuracy across your ISO network?",
-    "icebreakers": [
-      "Ein Cap's willingness to fund up to 4th position is bold. With that risk profile, how are you managing underwriting speed and accuracy across your ISO network?",
-      "I see Ein Cap works extensively with ISOs for deal flow. How do you ensure consistent underwriting quality across all those broker submissions?",
-      "Funding 4th position deals requires deep risk assessment capability. What's your biggest challenge in evaluating those stacked positions?",
-      "With the New York MCA market getting more competitive, how is Ein Cap differentiating its underwriting approach?"
-    ],
-    "tp": [
-      "HyperVerge's AI can help Ein Cap underwrite 4th position deals faster and more accurately, cutting review from 40 minutes to under 5 minutes per application.",
-      "With 450+ MCA companies using HyperVerge (), we understand multi-position MCA risk assessment and can help Ein Cap scale safely.",
-      "As Ein Cap processes high volumes of ISO submissions, HyperVerge can automate the initial screening and risk scoring, freeing your team to focus on complex stacked-position deals."
-    ],
-    "leaders": [
-      {
-        "n": "Russell Naftali",
-        "t": "Founder & President",
-        "bg": "Founded Ein Cap Inc. in Brooklyn, NY to provide merchant cash advances to small businesses across America through ISO partnerships. Also based in Miami, FL. Works in Venture Capital and Private Equity space. Specializes in funding even up to 4th position deals for businesses needing quick capital access.",
-        "li": "https://www.linkedin.com/in/russell-naftali/",
-        "hooks": [
-          "Brooklyn & Miami based",
-          "Funds up to 4th position deals",
-          "ISO partnership focused"
-        ]
-      },
-      {
-        "n": "John Mayne",
-        "t": "CEO",
-        "bg": "CEO of Ein Cap managing the company's MCA operations and ISO network relationships. Based in Brooklyn, NY.",
-        "li": "https://www.linkedin.com/in/john-mayne-59a794113/",
-        "hooks": [
-          "CEO of Ein Cap",
-          "Brooklyn-based MCA operations"
-        ]
-      }
-    ],
-    "ask": "John, would Ein Cap be interested in seeing how AI underwriting could help you process ISO submissions faster, especially for those higher-risk stacked positions?",
-    "location": "New York",
-    "employees": 25,
-    "website": "https://eincap.com",
-    "linkedinUrl": "eincap.com",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ],
-    "category": "funder"
   },
   {
     "id": 1524,
@@ -34343,37 +33718,27 @@
   {
     "id": 1526,
     "name": "Financial Advantage Group LLC",
-    "type": "ICP",
+    "type": "TAM",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [
-      {
-        "n": "Steven T. Stull",
-        "t": "Founder & President"
-      }
-    ],
+    "contacts": [],
     "desc": "Financial Advantage Group provides working capital to small businesses in the US, Canada, and UK through term loans, merchant cash advances, and business lines of credit. Offers unsecured financing programs with funding in 1-2 business days.",
     "notes": "",
     "news": [],
-    "ice": "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission.",
-    "icebreakers": [
-      "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission."
-    ],
-    "tp": [
-      "AI underwriting can help Advantage Capital identify high-potential businesses in underserved markets that traditional scoring overlooks, advancing both the impact and return missions."
-    ],
+    "ice": "",
+    "icebreakers": [],
+    "tp": [],
     "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "ask": "",
     "location": "Florida",
     "employees": 6,
     "website": "https://financialadvantagegroup.com",
     "linkedinUrl": "financialadvantagegroup.com",
     "source": [
       "tam",
-      "tam-researched",
-      "eventiq"
+      "tam-researched"
     ],
     "category": "funder"
   },
@@ -35917,7 +35282,7 @@
   {
     "id": 1558,
     "name": "National Capital",
-    "type": "ICP",
+    "type": "TAM",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -35926,10 +35291,6 @@
       {
         "n": "National Capital Team",
         "t": "Leadership"
-      },
-      {
-        "n": "David Gilbert",
-        "t": "Founder & CEO"
       }
     ],
     "desc": "Business financing marketplace helping SMBs access multiple lending options through a single application with a 90% approval rate. Offers term loans, SBA loans, lines of credit, MCA, equipment financing, and invoice factoring.",
@@ -35939,24 +35300,6 @@
         "h": "National Capital Achieves 90% Approval Rate for Business Funding",
         "s": "Company reports",
         "d": "National Capital highlights its 90% approval rate for businesses regardless of credit, revenue, or time in business."
-      },
-      {
-        "h": "National Funding CEO David Gilbert Named to SD 500 Most Influential People for Fifth Time",
-        "s": "San Diego Business Journal, Nov 2024",
-        "d": "Gilbert recognized in the finance section of the SD 500 list for the fifth time, reflecting his sustained influence in San Diego's business community and the SMB lending industry.",
-        "p": "2024-11-15"
-      },
-      {
-        "h": "National Funding and QuickBridge Surpass $6 Billion in Total Funding",
-        "s": "National Funding, 2025",
-        "d": "National Funding and its subsidiary QuickBridge collectively surpassed $6 billion in total capital provided to more than 80,000 small and medium-sized businesses nationwide.",
-        "p": "2025-01-15"
-      },
-      {
-        "h": "National Funding CEO Recognized as San Diego's 2022 Most Influential People",
-        "s": "BusinessWire, Dec 2022",
-        "d": "David Gilbert named to San Diego Business Journal's SD 500 Most Influential list for the fourth time, recognizing his leadership in SMB fintech lending.",
-        "p": "2022-12-27"
       }
     ],
     "ice": "A 90% approval rate across diverse business profiles is impressive. How is National Capital managing underwriting efficiency across all those lending partners?",
@@ -35964,14 +35307,12 @@
       "A 90% approval rate across diverse business profiles is impressive. How is National Capital managing underwriting efficiency across all those lending partners?",
       "The single-application marketplace model is smart for borrowers. How are you handling the underwriting complexity of matching deals to the right lenders?",
       "With approvals possible in 24 hours, how is National Capital maintaining speed while offering such a broad range of products?",
-      "Serving businesses regardless of credit or revenue profile requires sophisticated risk assessment. How does your team manage that?",
-      "Over $6 billion funded since 1999 -- that's an incredible run. At that scale, where are the biggest efficiency gains still to be had?"
+      "Serving businesses regardless of credit or revenue profile requires sophisticated risk assessment. How does your team manage that?"
     ],
     "tp": [
       "HyperVerge's AI can help National Capital pre-screen applications faster, cutting initial review from 40 minutes to under 5 minutes before routing to lending partners.",
       "With 450+ MCA and lending companies using HyperVerge, we can help National Capital optimize the single-application model with automated risk scoring.",
-      "As National Capital's marketplace handles diverse deal types (SBA, MCA, equipment), HyperVerge's AI adapts underwriting intensity based on product and risk profile.",
-      "At $6B+ in originations, even a 10% improvement in underwriting speed from AI could unlock hundreds of millions in additional annual capacity."
+      "As National Capital's marketplace handles diverse deal types (SBA, MCA, equipment), HyperVerge's AI adapts underwriting intensity based on product and risk profile."
     ],
     "leaders": [
       {
@@ -35981,39 +35322,6 @@
         "li": "",
         "hooks": [
           "90% approval rate marketplace"
-        ]
-      },
-      {
-        "n": "David Gilbert",
-        "t": "Founder & CEO",
-        "bg": "USC Marshall School of Business (BS, Entrepreneurship, 1997). Founded National Funding in 1999 at age 23 after launching Five Point Capital, an equipment leasing firm. Fifth of six children in a family of three doctors and two lawyers — the only one who chose business, inspired by watching his father run a pathology lab with 60 employees. Won Ernst & Young Entrepreneur Of The Year 2017 (Finance, San Diego). Named USC Marshall 'Entrepreneur of the Year' 2007 and San Diego '40 Under Forty.' Recognized 5x on SD 500 Most Influential People list. Under his leadership, National Funding + QuickBridge have provided $6B+ to 80,000+ SMBs. Inc. 5000 for 8 consecutive years (2013-2020).",
-        "li": "https://www.linkedin.com/in/dave-gilbert-6289715",
-        "hooks": [
-          "*USC Marshall, Entrepreneurship",
-          "*EY Entrepreneur of Year 2017",
-          "*$6B+ funded, 80K+ businesses",
-          "Only non-doctor/lawyer in family of 6"
-        ]
-      },
-      {
-        "n": "Justin Thompson",
-        "t": "Chief Revenue Officer",
-        "bg": "Kennesaw State University. 20+ year career at National Funding, starting as Director of Sales in 2002. Promoted to EVP of Sales, then CRO in 2018. Managed a 100-person sales division spanning Direct Sales, Renewal Sales, Broker Sales, and Equipment Financing. Developed the Strategic Partnership vertical. CLFP certified. Based in San Diego.",
-        "li": "https://www.linkedin.com/in/justinthompson09",
-        "hooks": [
-          "*20+ years at National Funding",
-          "CLFP certified",
-          "Runs 100-person sales org"
-        ]
-      },
-      {
-        "n": "Michael van Asselt",
-        "t": "Chief Financial Officer",
-        "bg": "CFO at National Funding based in San Diego, California. Oversees financial operations, capital management, and strategic financial planning for one of the largest private fintech lenders in the SMB space.",
-        "li": "https://www.linkedin.com/in/michaelvanasselt/",
-        "hooks": [
-          "San Diego fintech CFO",
-          "Private lender capital strategist"
         ]
       }
     ],
@@ -36025,8 +35333,7 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched",
-      "eventiq"
+      "deep-researched"
     ],
     "category": "funder"
   },
@@ -36057,41 +35364,9 @@
     ]
   },
   {
-    "id": 1560,
-    "name": "Snap Advance",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Bart Longson",
-        "t": "CEO"
-      }
-    ],
-    "desc": "Snap Advances is a Salt Lake City, UT-based MCA provider founded in 2009, specializing in quick working capital access for small businesses. Offers purchase-and-sell agreements on future credit/debit card transactions with flexible sales-based repayment and no collateral required.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Utah",
-    "employees": 13,
-    "website": "https://snapadvances.com",
-    "linkedinUrl": "https://snapadvances.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1561,
     "name": "Accord Business Funder",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -36100,6 +35375,10 @@
       {
         "n": "Mike Ballases",
         "t": "Vice President"
+      },
+      {
+        "n": "Founding Partners",
+        "t": "Leadership"
       }
     ],
     "desc": "Houston, TX-based MCA direct funder since 2013, specializing in B-paper funding in 1st, 2nd, and 3rd positions. ISO-driven model with funding from $5K to $150K, quick decisions in 2-3 hours, and a strong Texas focus.",
@@ -36119,6 +35398,18 @@
         "h": "Accord Business Funding Launches Weekly Payment Options",
         "s": "Company reports",
         "d": "Accord now offers weekly payment options on a case-by-case basis for qualified merchants."
+      },
+      {
+        "h": "Accord Business Funding Expands B-Paper MCA Programs Nationwide",
+        "s": "United Capital Source, 2025",
+        "d": "Accord continued expanding its B-paper MCA product nationally, offering up to $150,000 in merchant cash advances with 15% ISO commissions and next-day commission payments.",
+        "p": "2025-01-15"
+      },
+      {
+        "h": "Accord Business Funding Hires VP of Sales & Marketing",
+        "s": "deBanked, Apr 2018",
+        "d": "Accord made a strategic hire to bolster its sales and marketing capabilities, bringing on Aldo Castro as VP to accelerate ISO partner acquisition and brand growth.",
+        "p": "2018-04-15"
       }
     ],
     "ice": "Accord's focus on B-paper MCA in 1st through 3rd positions is a specialized niche. With 2-3 hour decision times, how is your team managing underwriting speed for those higher-risk deals?",
@@ -36126,12 +35417,14 @@
       "Accord's focus on B-paper MCA in 1st through 3rd positions is a specialized niche. With 2-3 hour decision times, how is your team managing underwriting speed for those higher-risk deals?",
       "I see Accord is ISO-driven with strong Texas roots. How are you maintaining underwriting consistency across your broker network?",
       "B-paper MCA underwriting in stacked positions is one of the more complex areas. What's your biggest challenge in scaling that?",
-      "Accord's 2-3 hour decision time on B-paper deals is impressive. How much of that process is automated vs. manual?"
+      "Accord's 2-3 hour decision time on B-paper deals is impressive. How much of that process is automated vs. manual?",
+      "Five decades of combined funding experience and an ISO-only model -- how do you evaluate deal quality when merchants come through multiple partners?"
     ],
     "tp": [
       "HyperVerge's AI can help Accord maintain its 2-3 hour decision time on B-paper deals by cutting the underwriting portion from 40 minutes to under 5 minutes.",
       "With 450+ MCA companies using HyperVerge (), we understand B-paper and multi-position MCA risk assessment deeply.",
-      "As Accord's ISO network grows, HyperVerge can automate the initial screening of broker submissions, freeing your team to focus on complex B-paper evaluations."
+      "As Accord's ISO network grows, HyperVerge can automate the initial screening of broker submissions, freeing your team to focus on complex B-paper evaluations.",
+      "AI underwriting can standardize credit evaluation across your entire ISO network, ensuring consistent decisioning regardless of which partner submits the deal."
     ],
     "leaders": [
       {
@@ -36154,17 +35447,39 @@
           "Houston-based",
           "Adam Beebe, CEO"
         ]
+      },
+      {
+        "n": "Adam Beebe",
+        "t": "Co-Founder",
+        "bg": "Co-founded Accord Business Funding in 2013 in Houston, TX. Brings nearly five decades of combined commercial funding experience with his co-founder. Built Accord into a direct MCA lender specializing in B-paper deals in 1st, 2nd, and 3rd positions. Known for a hands-on management style with direct involvement in underwriting decisions. Established Accord's reputation for speed and flexibility with sub-3-hour decision turnarounds.",
+        "li": "https://www.linkedin.com/in/adam-beebe-104b388",
+        "hooks": [
+          "*50 years combined funding experience",
+          "Built B-paper MCA specialty",
+          "Houston-based direct funder since 2013"
+        ]
+      },
+      {
+        "n": "Aldo Castro",
+        "t": "Vice President of Sales & Marketing",
+        "bg": "Joined Accord Business Funding to lead the company's sales and marketing strategy. Responsible for growing Accord's ISO partner network and expanding the company's national footprint from its Houston base. Oversees partner acquisition, commission structures, and brand positioning in the MCA direct funding space.",
+        "li": "",
+        "hooks": [
+          "Leads Accord's ISO partner growth",
+          "Expanded national MCA footprint from Texas"
+        ]
       }
     ],
     "ask": "Mike, would Accord be interested in a quick demo showing how AI could help maintain your fast decision times on B-paper deals as ISO volume grows?",
-    "location": "",
+    "location": "Texas",
     "employees": 86,
     "website": "https://accordbf.com",
     "linkedinUrl": "accordbf.com",
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -36774,64 +36089,6 @@
       "tam-researched"
     ],
     "category": "bank"
-  },
-  {
-    "id": 1579,
-    "name": "Cap Fund",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Cap Fund Team",
-        "t": "Leadership"
-      }
-    ],
-    "desc": "Business funding provider offering merchant cash advances and working capital solutions to small businesses. Operates in the alternative lending space with a focus on fast funding and flexible terms.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Cap Fund Expands Business Funding Solutions",
-        "s": "Company reports",
-        "d": "Cap Fund continues to grow its merchant cash advance and working capital offerings for small businesses."
-      }
-    ],
-    "ice": "How is Cap Fund positioning itself in the competitive MCA market? What's been your biggest challenge in scaling underwriting operations?",
-    "icebreakers": [
-      "How is Cap Fund positioning itself in the competitive MCA market? What's been your biggest challenge in scaling underwriting operations?",
-      "The alternative lending space is evolving fast. How is Cap Fund differentiating its underwriting approach?",
-      "With fast funding being table stakes in MCA, what's Cap Fund doing to stand out in terms of speed and accuracy?",
-      "How is your team managing underwriting volume as the business grows?"
-    ],
-    "tp": [
-      "HyperVerge's AI underwriting cuts MCA review from 40 minutes to under 5 minutes, helping funders like Cap Fund maintain speed as deal volume grows.",
-      "450+ MCA companies use HyperVerge -- we understand the competitive dynamics of merchant cash advance funding.",
-      "HyperVerge can help Cap Fund automate bank statement analysis, revenue verification, and risk scoring to improve both speed and accuracy."
-    ],
-    "leaders": [
-      {
-        "n": "Cap Fund Leadership",
-        "t": "Management Team",
-        "bg": "Cap Fund provides merchant cash advances and working capital solutions to small businesses. Appears to be related to or share website with CapFront. Limited public information available on specific leadership or distinct operations.",
-        "li": "",
-        "hooks": [
-          "Related to CapFront",
-          "MCA provider"
-        ]
-      }
-    ],
-    "ask": "Would Cap Fund's team be interested in a demo showing how AI underwriting automation could help you process more deals faster?",
-    "location": "",
-    "employees": 47,
-    "website": "https://www.capfront.net",
-    "linkedinUrl": "https://www.capfront.net",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ]
   },
   {
     "id": 1580,
@@ -37593,7 +36850,7 @@
     "id": 1596,
     "name": "ARCARIUS TRN",
     "type": "TAM",
-    "priority": 6,
+    "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -37606,14 +36863,15 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "",
-    "employees": 0,
+    "location": "New Jersey",
+    "employees": 19,
     "website": "https://www.arcariusfunding.com",
     "linkedinUrl": "www.arcariusfunding.com",
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1597,
@@ -37786,7 +37044,16 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
+    "contacts": [
+      {
+        "n": "Cosmin Panait",
+        "t": "Co-Founder"
+      },
+      {
+        "n": "Alexander Dillon",
+        "t": "Co-Founder"
+      }
+    ],
     "desc": "Blackbridge Investment Group (BIG) is a trusted provider of revenue-based financing to small businesses nationwide, founded in 2023. Combines innovative fintech tools with customer-focused service, requiring 1+ year in business and $10K+ monthly revenue with same-day funding and no interest charges.",
     "notes": "",
     "news": [],
@@ -37795,7 +37062,7 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "",
+    "location": "New York",
     "employees": 14,
     "website": "https://www.bbigm.com",
     "linkedinUrl": "www.bbigm.com",
@@ -37896,6 +37163,14 @@
       {
         "n": "Jim Granat",
         "t": "Head of Small Business Financing (Enova)"
+      },
+      {
+        "n": "Jim Salters",
+        "t": "CEO"
+      },
+      {
+        "n": "Stephen Tosh",
+        "t": "COO"
       }
     ],
     "desc": "Cincinnati, OH-based alternative business financing company founded in 2007, now owned by Enova International. Provided business loans, lines of credit, and MCA. Currently redirects new customers to OnDeck partner brand.",
@@ -37930,6 +37205,26 @@
         "h": "Business Backer No Longer Accepting New Applications",
         "s": "businessbacker.com",
         "d": "The Business Backer is no longer accepting new customer applications and recommends OnDeck for fast business funding."
+      },
+      {
+        "h": "Enova's Small Business Portfolio Includes 7 Brands",
+        "s": "Enova.com, 2025",
+        "d": "Business Backer is part of Enova's portfolio alongside OnDeck, Headway Capital, CashNetUSA, NetCredit, Simplic, and Pangea, serving 13M+ customers."
+      },
+      {
+        "h": "Enova to Acquire Grasshopper Bank for $369M",
+        "s": "Finovate, Dec 2025",
+        "d": "Parent company Enova expanding to full-stack digital financial services with banking capabilities."
+      },
+      {
+        "h": "94% of Small Businesses Expect 2026 Growth per Enova Report",
+        "s": "StockTitan, 2026",
+        "d": "Enova's annual survey shows record-high business confidence heading into 2026."
+      },
+      {
+        "h": "The Business Backer Operates as Part of Enova's 7-Brand Portfolio",
+        "s": "Enova Blog, 2025",
+        "d": "Alongside OnDeck, Headway Capital, CashNetUSA, NetCredit, Simplic, and Pangea."
       }
     ],
     "ice": "I see Business Backer is now part of Enova International's portfolio. How is the integration going, and is the team exploring new technology for the small business lending side?",
@@ -37937,12 +37232,19 @@
       "I see Business Backer is now part of Enova International's portfolio. How is the integration going, and is the team exploring new technology for the small business lending side?",
       "With Business Backer now under Enova alongside OnDeck, how is the combined small business lending strategy evolving?",
       "The transition from standalone MCA provider to part of a public fintech is interesting. What's changed in the underwriting approach?",
-      "As Enova consolidates its small business brands, is there an opportunity to rethink the underwriting technology stack?"
+      "As Enova consolidates its small business brands, is there an opportunity to rethink the underwriting technology stack?",
+      "Enova's Grasshopper Bank acquisition creates a full-stack platform. How does that impact Business Backer's underwriting?",
+      "94% of small businesses expect growth in 2026 -- that means more funding demand. Is your underwriting ready for the surge?",
+      "Being part of Enova's 7-brand portfolio gives you scale. Are you sharing underwriting technology across brands?",
+      "Jim, your turnaround expertise must inform how you think about risk. What's the biggest underwriting challenge today?"
     ],
     "tp": [
       "HyperVerge's AI can help Enova's small business division (including Business Backer/OnDeck) streamline underwriting from 40 minutes to under 5 minutes.",
       "With 450+ MCA companies using HyperVerge, we can help Enova standardize underwriting across its small business brands.",
-      "As Enova integrates Business Backer into its portfolio, HyperVerge can provide consistent AI-powered risk assessment across all product lines."
+      "As Enova integrates Business Backer into its portfolio, HyperVerge can provide consistent AI-powered risk assessment across all product lines.",
+      "HyperVerge's AI underwriting could help The Business Backer process more applications as small business demand surges, cutting review from 40 minutes to under 5.",
+      "With 450+ MCA companies served, HyperVerge has proven technology that fits within Enova's technology-forward approach.",
+      "Automating document analysis would help The Business Backer maintain quality across its working capital and receivable financing products."
     ],
     "leaders": [
       {
@@ -37954,6 +37256,30 @@
           "*Ex-Lendio President & CRO",
           "Leads OnDeck + Business Backer + Headway",
           "Arizona State BBA '94"
+        ]
+      },
+      {
+        "n": "Jim Salters",
+        "t": "Former CEO (departed 2018)",
+        "bg": "Invested in and became CEO of The Business Backer in 2009. Grew the company from 5 to over 100 employees and generated 30x revenue growth, leading to an 8-figure exit to Enova International (NYSE: ENVA) in 2015. Left Business Backer/Enova in 2018 to pursue CEO coaching. Now Board Chair of EasterSeals Greater Cincinnati, founding board member of Team Gleason, and Chairman/Co-founder of Quanta HCM. Active in Entrepreneurs Organization (EO).",
+        "li": "https://www.linkedin.com/company/the-business-backer/people/",
+        "hooks": [
+          "*30x revenue growth, 8-figure exit",
+          "*Now EasterSeals Board Chair",
+          "CEO coach post-Enova",
+          "Quanta HCM co-founder"
+        ]
+      },
+      {
+        "n": "Scott Avera",
+        "t": "Founder (departed post-acquisition)",
+        "bg": "Born entrepreneur who developed first commercial software product at age 15. Former owner of Ascent Solutions, an Inc 500 software company known for products like PKZIP and WinZip. Co-founded The Business Backer in 2006 with Mark Deeter. Grew company to 80+ employees and nearly $20M revenue in 2014, earning Inc. 5000 rankings four years running. Assets sold to Enova International in 2015. Active member of Queen City Angels investment group in Cincinnati.",
+        "li": "https://www.linkedin.com/company/the-business-backer/people/",
+        "hooks": [
+          "*Built PKZIP/WinZip (Ascent Solutions)",
+          "*First software at age 15",
+          "Inc. 5000 four years running",
+          "Queen City Angels member"
         ]
       }
     ],
@@ -38607,32 +37933,6 @@
     ]
   },
   {
-    "id": 1623,
-    "name": "CUCUMBER CAPITAL",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Cucumber Capital is a provider of business funding solutions for small businesses through merchant cash advances. Strives to provide fast and transparent financing options to help businesses grow and succeed.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 4,
-    "website": "https://www.cucumbercapital.com",
-    "linkedinUrl": "https://www.cucumbercapital.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
     "id": 1624,
     "name": "DAKA CAPITAL",
     "type": "TAM",
@@ -39064,7 +38364,7 @@
   {
     "id": 1633,
     "name": "EBF HOLDINGS LLC",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -39122,6 +38422,24 @@
         "h": "Everest Business Funding Exhibits at World of Concrete 2026",
         "s": "Industry Events, Jan 2026",
         "d": "Everest Business Funding exhibited at World of Concrete 2026 to connect with construction businesses needing funding."
+      },
+      {
+        "h": "Everest Business Funding Named Best and Brightest Workplace in the Nation 2025",
+        "s": "BusinessWire, Jun 2025",
+        "d": "Earned back-to-back national recognition from the National Association for Business Resources, reflecting commitment to employee growth, collaboration, and workplace culture.",
+        "p": "2025-06-02"
+      },
+      {
+        "h": "Everest Business Funding Sponsors and Speaks at Broker Expo New York",
+        "s": "Funders Forum, Sep 2025",
+        "d": "Participated as both sponsor and featured speaker at the Broker Expo New York on September 17, 2025 in Manhattan, strengthening industry presence and ISO relationships.",
+        "p": "2025-09-17"
+      },
+      {
+        "h": "Everest Business Funding Expands Revenue-Based Financing to $2M Limit",
+        "s": "everestbusinessfunding.com, 2025",
+        "d": "Now offers fast access to working capital up to $2M through revenue-based financing, serving business owners across a wide range of industries with a streamlined application process.",
+        "p": "2025-01-05"
       }
     ],
     "ice": "Congratulations on winning the Best and Brightest award again -- I noticed you've been vocal about harnessing new technology for small business growth. How is Everest Business Funding applying that philosophy to your underwriting process?",
@@ -39129,12 +38447,14 @@
       "Scott, your emphasis on new technology for small business growth is exactly the conversation we love to have -- are you exploring AI for underwriting?",
       "Winning Best and Brightest nationally shows a great culture -- how are you empowering your team with better tools for deal processing?",
       "With 20+ years in the industry and $250M+ raised, what's the biggest operational challenge Everest Business Funding faces in scaling further?",
-      "I saw Everest exhibited at World of Concrete -- as you expand into new verticals, how do you handle the increased underwriting volume?"
+      "I saw Everest exhibited at World of Concrete -- as you expand into new verticals, how do you handle the increased underwriting volume?",
+      "Going from 250 Allied Cash storefronts to a digital-first model at Everest is a big pivot -- how has that changed your approach to risk?"
     ],
     "tp": [
       "HyperVerge aligns perfectly with your vision of harnessing new technology -- our AI cuts underwriting review from 40 minutes to under 5 minutes.",
       "With 450+ MCA and revenue-based financing companies already using HyperVerge, we understand the specific needs of funders like Everest Business Funding.",
-      "As you expand into verticals like construction, HyperVerge's AI can adapt underwriting criteria while maintaining speed and consistency across industries."
+      "As you expand into verticals like construction, HyperVerge's AI can adapt underwriting criteria while maintaining speed and consistency across industries.",
+      "Cash flow-based underwriting is perfect for AI -- we can analyze bank statement patterns to predict repayment capacity in minutes, not hours."
     ],
     "leaders": [
       {
@@ -39145,7 +38465,21 @@
         "hooks": [
           "*Founded Allied Cash (250+ stores)",
           "Tulane University grad",
-          "*2025 Best & Brightest Workplace"
+          "*2025 Best & Brightest Workplace",
+          "*Tulane grad",
+          "*Ex-NationsBanc Montgomery investment banker",
+          "*Turned down Wall Street promotion to start own company"
+        ]
+      },
+      {
+        "n": "Tracy Parks",
+        "t": "Chief Operating Officer",
+        "bg": "Based in Fort Lauderdale, Florida. COO at Everest Business Funding since September 2012. Previously President and CEO of Allied Cash Advance (June 2007 - September 2012). Also held COO role at Whetstone Holdings and positions at eTitleLoan. Brings deep operational experience in consumer and commercial lending operations.",
+        "li": "https://www.linkedin.com/in/tracyparks/",
+        "hooks": [
+          "*Former CEO Allied Cash Advance 5 years",
+          "Fort Lauderdale-based",
+          "Consumer-to-commercial lending crossover"
         ]
       }
     ],
@@ -39157,7 +38491,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -39242,6 +38577,16 @@
         "h": "Ein Cap Continues Growth as Direct MCA Funder",
         "s": "Industry Reports, 2025",
         "d": "Ein Cap has grown from a small private lender in 2008 into a multi-million dollar MCA funder serving businesses across North America."
+      },
+      {
+        "h": "Ein Cap Continues Merchant Cash Advance Operations",
+        "s": "BBB / Industry, 2024",
+        "d": "Ein Cap maintains its focus as a NYC-based MCA provider serving small businesses across America."
+      },
+      {
+        "h": "Ein Cap Expands MCA Funding to 4th Position Deals",
+        "s": "Company reports",
+        "d": "Ein Cap now funds merchants up to 4th position, expanding its reach in the competitive MCA market."
       }
     ],
     "ice": "Russell, since founding Ein Cap in 2008, you've built a strong direct funding operation -- as the MCA industry evolves with AI and automation, how are you thinking about modernizing your underwriting?",
@@ -39249,12 +38594,19 @@
       "Ein Cap's growth from a small private lender to a multi-million dollar funder is impressive -- what's driving that growth and how is your underwriting keeping up?",
       "As a direct funder that goes up to 4th position, your risk assessment must be very nuanced -- are you looking at AI to improve that process?",
       "With 15+ years in the MCA space, how has your underwriting process evolved and where do you see it going?",
-      "The MCA industry is rapidly adopting AI -- how is Ein Cap positioning itself to stay competitive on underwriting speed?"
+      "The MCA industry is rapidly adopting AI -- how is Ein Cap positioning itself to stay competitive on underwriting speed?",
+      "Ein Cap's willingness to fund up to 4th position is bold. With that risk profile, how are you managing underwriting speed and accuracy across your ISO network?",
+      "I see Ein Cap works extensively with ISOs for deal flow. How do you ensure consistent underwriting quality across all those broker submissions?",
+      "Funding 4th position deals requires deep risk assessment capability. What's your biggest challenge in evaluating those stacked positions?",
+      "With the New York MCA market getting more competitive, how is Ein Cap differentiating its underwriting approach?"
     ],
     "tp": [
       "HyperVerge's AI underwriting is especially valuable for direct funders like Ein Cap that take on higher-risk positions, providing faster and more consistent risk assessment.",
       "Cut your MCA underwriting review time from 40 minutes to under 5 minutes -- critical for a direct funder competing on speed and approval rates.",
-      "450+ MCA companies  already trust HyperVerge for AI-powered underwriting automation."
+      "450+ MCA companies  already trust HyperVerge for AI-powered underwriting automation.",
+      "HyperVerge's AI can help Ein Cap underwrite 4th position deals faster and more accurately, cutting review from 40 minutes to under 5 minutes per application.",
+      "With 450+ MCA companies using HyperVerge (), we understand multi-position MCA risk assessment and can help Ein Cap scale safely.",
+      "As Ein Cap processes high volumes of ISO submissions, HyperVerge can automate the initial screening and risk scoring, freeing your team to focus on complex stacked-position deals."
     ],
     "leaders": [
       {
@@ -39265,7 +38617,9 @@
         "hooks": [
           "Brooklyn-based MCA CEO",
           "Direct funder since 2008",
-          "ISO broker partnerships"
+          "ISO broker partnerships",
+          "CEO of Ein Cap",
+          "Brooklyn-based MCA operations"
         ]
       },
       {
@@ -39276,7 +38630,10 @@
         "hooks": [
           "*Founded EIN Capital 2008",
           "Direct funder up to 4th position",
-          "Brooklyn, NY based"
+          "Brooklyn, NY based",
+          "Brooklyn & Miami based",
+          "Funds up to 4th position deals",
+          "ISO partnership focused"
         ]
       }
     ],
@@ -39845,95 +39202,6 @@
     ]
   },
   {
-    "id": 1651,
-    "name": "FLEXIBILITY CAPITAL (website blocked)",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Michael Peeler",
-        "t": "Founder & CEO"
-      }
-    ],
-    "desc": "New York-based alternative financing company founded in 2018, providing small business loans and MCAs. Ranked on Inc. 5000 in 2022, 2024, and 2025. Has secured over $1 billion in funding for thousands of businesses.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Flexibility Capital Ranked Inc. 5000 #92 Financial Services",
-        "s": "PR Newswire, Aug 2024",
-        "d": "Ranked #1513 overall and #92 in Financial Services on the 2024 Inc. 5000 list, its second time on the prestigious list."
-      },
-      {
-        "h": "Flexibility Capital Named 2024 Inc. 5000 Honoree",
-        "s": "Inc.com, 2024",
-        "d": "Ranked #92 in Financial Services and #1513 overall on the Inc. 5000 list of fastest-growing private companies."
-      },
-      {
-        "h": "Flexibility Capital Celebrates 1,000 Trustpilot Reviews",
-        "s": "PR Newswire, Jan 2025",
-        "d": "Achieved a 4.9 out of 5 Trustscore with 1,000+ reviews, reinforcing its position as a leader in alternative business financing."
-      },
-      {
-        "h": "Flexibility Capital Returns to Inc. 5000 in 2025",
-        "s": "Inc.com, 2025",
-        "d": "Ranked #3034 with 134% three-year growth, marking its second consecutive appearance on the list."
-      },
-      {
-        "h": "Flexibility Capital Ranked #3034 on Inc. 5000 for Third Consecutive Year",
-        "s": "Inc., 2025",
-        "d": "Flexibility Capital achieved its third Inc. 5000 ranking with 134% three-year growth."
-      },
-      {
-        "h": "Flexibility Capital Celebrates 1,000 Trustpilot Reviews with 4.9/5 Rating",
-        "s": "PR Newswire, Jan 2025",
-        "d": "Company reached 1,000 Trustpilot reviews with an outstanding 4.9 out of 5 rating."
-      },
-      {
-        "h": "Flexibility Capital Surpasses $1 Billion in Total Funding",
-        "s": "Company Reports, 2024",
-        "d": "Since its 2018 founding, Flexibility Capital has secured over $1 billion in funding for thousands of small businesses."
-      }
-    ],
-    "ice": "Congratulations on making the Inc. 5000 three years running and surpassing $1 billion in funding -- Michael, as you scale at this pace, how is your underwriting team keeping up with the growing deal flow?",
-    "icebreakers": [
-      "Three consecutive Inc. 5000 appearances and $1B+ funded is remarkable growth -- what's your secret to maintaining quality while scaling so fast?",
-      "A 4.9 Trustpilot rating with 1,000+ reviews shows incredible customer satisfaction -- how does your underwriting process contribute to that experience?",
-      "Michael, with 20+ years of experience, where do you see AI fitting into Flexibility Capital's next phase of growth?",
-      "Going from $0 to $1B in 6 years is exceptional -- what operational improvements would help you reach $2B even faster?"
-    ],
-    "tp": [
-      "HyperVerge can help Flexibility Capital maintain its Inc. 5000 growth rate by automating underwriting, cutting review from 40 minutes to under 5 minutes.",
-      "With 450+ MCA companies already using HyperVerge, our platform is proven for high-growth funders targeting $1B+ in originations.",
-      "Faster underwriting means happier customers -- supporting the kind of 4.9-star experience that Flexibility Capital is known for."
-    ],
-    "leaders": [
-      {
-        "n": "Michael Peeler",
-        "t": "Founder & CEO",
-        "bg": "Founded Flexibility Capital in 2018 after serving as VP of Business Development at Kapitus (formerly Strategic Funding Source). Penn State University graduate. Led company to Inc. 5000 ranking in 2022 (#4284) and 2024 (#1513, #92 in Financial Services). Surpassed $1B in total funding and 1,000+ Trustpilot reviews with 4.9 star rating.",
-        "li": "https://www.linkedin.com/in/michael-peeler-88488461/",
-        "hooks": [
-          "*$1B+ funded since 2018",
-          "*Ex-Kapitus VP",
-          "2x Inc. 5000 honoree (2022, 2024)"
-        ]
-      }
-    ],
-    "ask": "Michael, as Flexibility Capital pushes toward $2B in total funding, would you be open to a demo showing how HyperVerge's AI underwriting can help maintain your growth trajectory?",
-    "location": "",
-    "employees": 29,
-    "website": "https://flexibilitycapital.com",
-    "linkedinUrl": "flexibilitycapital.com",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ]
-  },
-  {
     "id": 1652,
     "name": "FORTRESS MERCHANT SOLUTIONS",
     "type": "TAM",
@@ -40104,33 +39372,6 @@
     "category": "funder"
   },
   {
-    "id": 1657,
-    "name": "GEM FUNDING",
-    "type": "TAM",
-    "priority": 6,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Gemini Business Funding provides merchant cash advances, revenue-based financing, business loans, and lines of credit to help small businesses access working capital regardless of credit issues.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://geminibusinessfunding.com",
-    "linkedinUrl": "geminibusinessfunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1658,
     "name": "GLD FUNDING",
     "type": "TAM",
@@ -40236,6 +39477,26 @@
         "h": "Good Funding Closes Up to $30 Million Credit Facility",
         "s": "Company News, 2025",
         "d": "Good Funding announced its inaugural institutional financing with an accordion feature to increase to $30M."
+      },
+      {
+        "h": "Good Funding Closes Up to $30M Credit Facility",
+        "s": "PR Newswire, May 2021",
+        "d": "Good Funding closed $20M senior revolving credit facility with accordion to $30M, marking its inaugural institutional financing. Brean Capital served as exclusive advisor."
+      },
+      {
+        "h": "Good Funding Closes $20M Credit Facility with $30M Accordion",
+        "s": "PR Newswire, 2021",
+        "d": "Closed inaugural institutional financing—a $20M senior revolving credit facility with option to increase to $30M via Brean Capital."
+      },
+      {
+        "h": "Good Funding Ranked #2 Fastest-Growing Midsize Company by OC Business Journal",
+        "s": "OCBJ, 2024",
+        "d": "Recognized with nearly 650% two-year revenue growth, ranking second among all businesses on OCBJ's annual fastest-growing list."
+      },
+      {
+        "h": "Good Funding Reaches $100MM in Total Fundings",
+        "s": "Company News, 2024",
+        "d": "Surpassed $100 million milestone in total fundings since inception, supporting over 3,000 businesses with working capital solutions."
       }
     ],
     "ice": "Ben, congratulations on the $100M funding milestone and the #2 OCBJ ranking with 650% growth -- that's incredible for a company founded in 2020. How are you scaling your underwriting to keep pace?",
@@ -40243,12 +39504,19 @@
       "From founding in 2020 to $100M+ funded in just a few years is remarkable -- what's driving that growth and how is your team handling it?",
       "The $30M credit facility shows institutional confidence -- as capital availability grows, how are you scaling the operations side?",
       "Ranking #2 on the OCBJ list with 650% growth means deal volume is exploding -- is underwriting your bottleneck?",
-      "Jason, as co-founder, what's your vision for Good Funding's next growth phase and how does technology factor in?"
+      "Jason, as co-founder, what's your vision for Good Funding's next growth phase and how does technology factor in?",
+      "650% revenue growth and #2 fastest-growing in Orange County is incredible -- at that pace, how are you keeping underwriting quality consistent while scaling so rapidly?",
+      "Reaching $100MM in fundings with 3,000+ businesses served since 2020 is impressive growth -- what's the biggest operational challenge at this velocity?",
+      "Same-day decisions and next-day funding at your scale requires serious automation -- where are you in that technology journey?",
+      "Closing a $30M credit facility shows strong institutional confidence -- how are you planning to deploy that capital efficiently?"
     ],
     "tp": [
       "With 650% growth, HyperVerge's AI underwriting is exactly what Good Funding needs to scale without proportionally growing the underwriting team -- we cut review from 40 minutes to under 5.",
       "As you close institutional credit facilities and increase funding capacity, HyperVerge ensures your underwriting throughput can match your capital availability.",
-      "450+ MCA companies  trust HyperVerge -- we're built for hyper-growth funders like Good Funding."
+      "450+ MCA companies  trust HyperVerge -- we're built for hyper-growth funders like Good Funding.",
+      "HyperVerge's AI underwriting automation is purpose-built for hypergrowth lenders like Good Funding -- cutting review from 40 minutes to under 5 minutes to sustain 650% growth rates.",
+      "With $30M in fresh capital and 3,000+ businesses served, automated document verification and risk assessment ensure you maintain quality at scale.",
+      "HyperVerge serves 450+ lending companies and has helped lenders achieve faster, more consistent underwriting -- ideal for Good Funding's rapid expansion."
     ],
     "leaders": [
       {
@@ -40259,7 +39527,10 @@
         "hooks": [
           "*CSUF MBA, Executive Council treasurer",
           "*Co-founded Quick Bridge ($200M+)",
-          "OCBJ #2 fastest growing"
+          "OCBJ #2 fastest growing",
+          "*Founded & sold Quick Bridge Funding",
+          "650% revenue growth",
+          "$30M credit facility (2021)"
         ]
       },
       {
@@ -40270,12 +39541,15 @@
         "hooks": [
           "*U of Maryland Finance grad",
           "*Ex-National Funding, Quick Bridge",
-          "Ex-Five Point Capital director"
+          "Ex-Five Point Capital director",
+          "*17+ years in alt lending (Five Point to Good Funding)",
+          "UMD Smith School Finance grad",
+          "Ex-National Funding & Quick Bridge VP"
         ]
       }
     ],
     "ask": "Ben, with 650% growth and a new $30M credit facility, would you be open to seeing how HyperVerge can help Good Funding's underwriting scale as fast as your funding capacity?",
-    "location": "",
+    "location": "California",
     "employees": 36,
     "website": "https://www.goodfunding.com",
     "linkedinUrl": "www.goodfunding.com",
@@ -40575,110 +39849,6 @@
     "category": "broker"
   },
   {
-    "id": 1673,
-    "name": "Idea 247, Inc.",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Justin Leto",
-        "t": "CEO & Co-Founder"
-      },
-      {
-        "n": "Larry Bassuk",
-        "t": "President & Co-Founder"
-      }
-    ],
-    "desc": "Miami-based fintech providing small business lines of credit and term loans, founded in 2017. Surpassed $1 billion in total funding in 2025 and recently secured $50M warehouse facility and $20M term loan from EverBank.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Idea Financial Surpasses $1 Billion in Business Funding",
-        "s": "PR Newswire/Yahoo Finance, Jul 2025",
-        "d": "Crossed $1B milestone since 2017 inception, supporting 10,000+ businesses with revolving lines of credit up to $350K."
-      },
-      {
-        "h": "Idea Financial Secures $50M Warehouse Facility",
-        "s": "BusinessWire, Sep 2024",
-        "d": "Closed new $50M warehouse facility led by Performance Trust Capital Partners, increasing maximum SMB lending limit to $350K."
-      },
-      {
-        "h": "Idea Financial Secures $20M Corporate Term Loan from EverBank",
-        "s": "PR Newswire, Jan 2026",
-        "d": "Strategic loan to accelerate growth in small business lending and legal financing through its LevelEsq platform."
-      },
-      {
-        "h": "Idea Financial Surpasses $1 Billion in Total Funding Originated",
-        "s": "Idea Financial, 2025",
-        "d": "Company milestone demonstrating rapid growth since founding in 2017, offering lines of credit and litigation financing."
-      },
-      {
-        "h": "Idea Financial Surpasses $1 Billion in Funding",
-        "s": "Company Reports, Jul 2025",
-        "d": "Idea Financial exceeded $1 billion in total funding since inception in 2017."
-      },
-      {
-        "h": "Idea Financial Closes $20 Million Corporate Term Loan with EverBank",
-        "s": "Business Wire, Dec 2025",
-        "d": "Closed $20M corporate term loan to accelerate growth in small business lending divisions."
-      },
-      {
-        "h": "Idea Financial Secures $50 Million Warehouse Facility",
-        "s": "deBanked, Oct 2024",
-        "d": "Closed new $50M warehouse facility led by Performance Trust Capital Partners, expanding credit lines to $350K."
-      }
-    ],
-    "ice": "Justin, congratulations on surpassing $1 billion in funding and securing the EverBank term loan -- as Idea Financial scales rapidly, how are you thinking about AI to further streamline your underwriting?",
-    "icebreakers": [
-      "The $1B funding milestone and $20M EverBank deal show incredible momentum -- what's your biggest operational challenge at this scale?",
-      "As a fellow lawyer-turned-fintech-founder, your approach to risk must be methodical -- how do you see AI enhancing that?",
-      "With $50M+ in new warehouse capacity, can your underwriting team keep pace with the increased deal flow?",
-      "Idea Financial's growth from 2017 to $1B is impressive -- what role does technology play in maintaining quality at scale?"
-    ],
-    "tp": [
-      "As Idea Financial scales past $1B with new capital from EverBank and Performance Trust, HyperVerge's AI can ensure your underwriting throughput matches your funding capacity.",
-      "Cut underwriting review from 40 minutes to under 5 minutes -- critical for deploying your expanded $50M warehouse facility efficiently.",
-      "450+ lending companies  use HyperVerge. Our platform integrates with existing systems to accelerate deal processing without disrupting workflows."
-    ],
-    "leaders": [
-      {
-        "n": "Justin Leto",
-        "t": "CEO & Co-Founder",
-        "bg": "Florida licensed trial lawyer who co-founded Idea Financial in 2017 from his law firm conference room. Also co-founded Leto | Bassuk law firm and insurance startup Level Insurance (now LevelEsq litigation financing). BS from University of Arizona, JD from University of Miami School of Law. Led company past $1B in total funding as of July 2025 across 10,000+ businesses.",
-        "li": "https://www.linkedin.com/in/justincleto/",
-        "hooks": [
-          "*Attorney turned fintech founder",
-          "*Surpassed $1B in originations",
-          "U of Miami JD"
-        ]
-      },
-      {
-        "n": "Larry Bassuk",
-        "t": "President & Co-Founder",
-        "bg": "Florida trial lawyer who co-founded Idea Financial with Justin Leto after meeting in the same office building. Spent nearly a decade as commercial litigator before pivoting to fintech. Undergraduate and JD from University of Florida. Co-founded Leto | Bassuk law firm and Level Insurance. Miami native active in philanthropy, serving on and chairing several boards.",
-        "li": "https://www.linkedin.com/in/larrybassukidea/",
-        "hooks": [
-          "*UF law grad, trial attorney",
-          "Co-founded Leto|Bassuk law firm",
-          "Miami philanthropy board chair"
-        ]
-      }
-    ],
-    "ask": "Justin, with $1B+ funded and new capital ready to deploy, would you like to see how HyperVerge's AI underwriting can help Idea Financial maximize throughput on that expanded warehouse facility?",
-    "location": "Florida",
-    "employees": 76,
-    "website": "https://www.ideafinancial.com",
-    "linkedinUrl": "www.ideafinancial.com",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ]
-  },
-  {
     "id": 1674,
     "name": "IKAHN CAPITAL\nI Lend Advance",
     "type": "TAM",
@@ -40790,10 +39960,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched",
-      "tam-researched"
-    ],
-    "category": "funder"
+      "deep-researched"
+    ]
   },
   {
     "id": 1677,
@@ -41030,32 +40198,6 @@
     "employees": 1,
     "website": "https://kinetic-funding.com",
     "linkedinUrl": "kinetic-funding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1687,
-    "name": "KINGDOM CAPITAL",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Missouri-based merchant cash advance provider offering fast and flexible MCA financing solutions for small businesses with approvals in 24-48 hours.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Missouri",
-    "employees": 15,
-    "website": "https://kingdomkapital.com",
-    "linkedinUrl": "kingdomkapital.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41344,32 +40486,6 @@
     "employees": 11,
     "website": "https://loan23.com",
     "linkedinUrl": "loan23.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1698,
-    "name": "Loot - GetLoot",
-    "type": "TAM",
-    "priority": 6,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Small business lending company operating under the GetLoot brand. Limited public information available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://getloot.com",
-    "linkedinUrl": "getloot.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41719,40 +40835,15 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "",
+    "location": "Boca Raton",
     "employees": 5,
     "website": "https://noblebusinessloans.com",
     "linkedinUrl": "noblebusinessloans.com",
     "source": [
       "tam",
       "tam-researched"
-    ]
-  },
-  {
-    "id": 1711,
-    "name": "NOVUS CAPITAL",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "England-based small business funding company. Limited public information available about their specific MCA offerings.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "England",
-    "employees": 4,
-    "website": "https://www.novuscapitalfund.com",
-    "linkedinUrl": "https://www.novuscapitalfund.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1712,
@@ -42870,32 +41961,6 @@
     ]
   },
   {
-    "id": 1748,
-    "name": "SNAP ADVANCE - NOT SNAP FINANCE",
-    "type": "TAM",
-    "priority": 6,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Small business lending company offering merchant cash advances (not to be confused with Snap Finance). Limited public information available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://snapadvances.com",
-    "linkedinUrl": "https://snapadvances.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
     "id": 1749,
     "name": "SOLAR CAPITAL GROUP",
     "type": "TAM",
@@ -42942,32 +42007,6 @@
     "employees": 0,
     "website": "https://sparkfunding.com",
     "linkedinUrl": "https://sparkfunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1751,
-    "name": "SUPERFAST CAPITA",
-    "type": "TAM",
-    "priority": 6,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://Superfastcap.com",
-    "linkedinUrl": "Superfastcap.com",
     "source": [
       "tam",
       "tam-researched"
@@ -43444,8 +42483,7 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched",
-      "tam-researched"
+      "deep-researched"
     ],
     "category": "funder"
   },
@@ -44404,7 +43442,12 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
+    "contacts": [
+      {
+        "n": "Bart Longson",
+        "t": "CEO"
+      }
+    ],
     "desc": "Salt Lake City, Utah-based merchant cash advance provider founded in 2009, specializing in quick working capital access for small businesses. Uses a purchase-and-sell agreement structure with repayment based on a fixed percentage of daily card transactions, with flexible terms and no collateral required.",
     "notes": "",
     "news": [],
@@ -44420,7 +43463,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1784,
@@ -44829,5 +43873,256 @@
       "tam-researched"
     ],
     "category": "funder"
+  },
+  {
+    "id": 1141,
+    "name": "Bluebridge Funding",
+    "type": "TAM",
+    "priority": 4,
+    "phase": 0,
+    "booth": false,
+    "clear": false,
+    "contacts": [],
+    "desc": "New York-based small business lending company. Limited public information available.",
+    "notes": "",
+    "news": [],
+    "ice": "",
+    "icebreakers": [],
+    "tp": [],
+    "leaders": [],
+    "ask": "",
+    "location": "New Yorl",
+    "employees": 4,
+    "website": "https://bluebridgefunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/nbcllc/people/",
+    "source": [
+      "tam",
+      "tam-researched"
+    ]
+  },
+  {
+    "id": 1203,
+    "name": "Dynamic Financial Group",
+    "type": "TAM",
+    "priority": 4,
+    "phase": 0,
+    "booth": false,
+    "clear": false,
+    "contacts": [],
+    "desc": "New York-based tech-forward funding broker specializing in MCA consolidation, business funding, and flexible financing for restaurants, retail, trades, logistics, ecommerce, and professional services. Minimal documentation required.",
+    "notes": "",
+    "news": [],
+    "ice": "",
+    "icebreakers": [],
+    "tp": [],
+    "leaders": [],
+    "ask": "",
+    "location": "New York",
+    "employees": 13,
+    "website": "https://dynamicfinancialgrp.com/home",
+    "linkedinUrl": "https://www.linkedin.com/company/dynamic-financial-ny/",
+    "source": [
+      "tam",
+      "tam-researched"
+    ],
+    "category": "broker"
+  },
+  {
+    "id": 70,
+    "name": "National Funding",
+    "type": "ICP",
+    "priority": 2,
+    "phase": 4,
+    "booth": false,
+    "clear": false,
+    "contacts": [
+      {
+        "n": "David Gilbert",
+        "t": "Founder & CEO"
+      }
+    ],
+    "desc": "San Diego, CA-based specialty finance company (est. 1999). Over $6B funded to SMBs. Offers working capital loans, equipment financing, and MCAs. CEO David Gilbert won EY Entrepreneur of the Year 2017.",
+    "notes": "",
+    "news": [
+      {
+        "h": "National Funding CEO David Gilbert Named to SD 500 Most Influential People for Fifth Time",
+        "s": "San Diego Business Journal, Nov 2024",
+        "d": "Gilbert recognized in the finance section of the SD 500 list for the fifth time, reflecting his sustained influence in San Diego's business community and the SMB lending industry.",
+        "p": "2024-11-15"
+      },
+      {
+        "h": "National Funding and QuickBridge Surpass $6 Billion in Total Funding",
+        "s": "National Funding, 2025",
+        "d": "National Funding and its subsidiary QuickBridge collectively surpassed $6 billion in total capital provided to more than 80,000 small and medium-sized businesses nationwide.",
+        "p": "2025-01-15"
+      },
+      {
+        "h": "National Funding CEO Recognized as San Diego's 2022 Most Influential People",
+        "s": "BusinessWire, Dec 2022",
+        "d": "David Gilbert named to San Diego Business Journal's SD 500 Most Influential list for the fourth time, recognizing his leadership in SMB fintech lending.",
+        "p": "2022-12-27"
+      }
+    ],
+    "ice": "Over $6 billion funded since 1999 -- that's an incredible run. At that scale, where are the biggest efficiency gains still to be had?",
+    "icebreakers": [
+      "Over $6 billion funded since 1999 -- that's an incredible run. At that scale, where are the biggest efficiency gains still to be had?"
+    ],
+    "tp": [
+      "At $6B+ in originations, even a 10% improvement in underwriting speed from AI could unlock hundreds of millions in additional annual capacity."
+    ],
+    "leaders": [
+      {
+        "n": "David Gilbert",
+        "t": "Founder & CEO",
+        "bg": "USC Marshall School of Business (BS, Entrepreneurship, 1997). Founded National Funding in 1999 at age 23 after launching Five Point Capital, an equipment leasing firm. Fifth of six children in a family of three doctors and two lawyers — the only one who chose business, inspired by watching his father run a pathology lab with 60 employees. Won Ernst & Young Entrepreneur Of The Year 2017 (Finance, San Diego). Named USC Marshall 'Entrepreneur of the Year' 2007 and San Diego '40 Under Forty.' Recognized 5x on SD 500 Most Influential People list. Under his leadership, National Funding + QuickBridge have provided $6B+ to 80,000+ SMBs. Inc. 5000 for 8 consecutive years (2013-2020).",
+        "li": "https://www.linkedin.com/in/dave-gilbert-6289715",
+        "hooks": [
+          "*USC Marshall, Entrepreneurship",
+          "*EY Entrepreneur of Year 2017",
+          "*$6B+ funded, 80K+ businesses",
+          "Only non-doctor/lawyer in family of 6"
+        ]
+      },
+      {
+        "n": "Justin Thompson",
+        "t": "Chief Revenue Officer",
+        "bg": "Kennesaw State University. 20+ year career at National Funding, starting as Director of Sales in 2002. Promoted to EVP of Sales, then CRO in 2018. Managed a 100-person sales division spanning Direct Sales, Renewal Sales, Broker Sales, and Equipment Financing. Developed the Strategic Partnership vertical. CLFP certified. Based in San Diego.",
+        "li": "https://www.linkedin.com/in/justinthompson09",
+        "hooks": [
+          "*20+ years at National Funding",
+          "CLFP certified",
+          "Runs 100-person sales org"
+        ]
+      },
+      {
+        "n": "Michael van Asselt",
+        "t": "Chief Financial Officer",
+        "bg": "CFO at National Funding based in San Diego, California. Oversees financial operations, capital management, and strategic financial planning for one of the largest private fintech lenders in the SMB space.",
+        "li": "https://www.linkedin.com/in/michaelvanasselt/",
+        "hooks": [
+          "San Diego fintech CFO",
+          "Private lender capital strategist"
+        ]
+      }
+    ],
+    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "source": [
+      "eventiq",
+      "tam"
+    ],
+    "location": "California",
+    "employees": 174,
+    "website": "https://nationalfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/national-funding/",
+    "category": "funder"
+  },
+  {
+    "id": 130,
+    "name": "Advantage Capital",
+    "type": "ICP",
+    "priority": 4,
+    "phase": 4,
+    "booth": false,
+    "clear": false,
+    "contacts": [
+      {
+        "n": "Steven T. Stull",
+        "t": "Founder & President"
+      }
+    ],
+    "desc": "New Orleans-based impact investment firm founded in 1992 that has invested over $3.8 billion in 800+ companies. Focuses on growth equity and lending in underserved communities while generating competitive returns.",
+    "notes": "",
+    "news": [],
+    "ice": "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission.",
+    "icebreakers": [
+      "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission."
+    ],
+    "tp": [
+      "AI underwriting can help Advantage Capital identify high-potential businesses in underserved markets that traditional scoring overlooks, advancing both the impact and return missions."
+    ],
+    "leaders": [],
+    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "source": [
+      "eventiq"
+    ]
+  },
+  {
+    "id": 1263,
+    "name": "Infinity Capital Funding",
+    "type": "TAM",
+    "priority": 4,
+    "phase": 0,
+    "booth": false,
+    "clear": false,
+    "contacts": [],
+    "desc": "Technology-driven MCA provider founded in 2011, based in Woodland Hills, CA. Direct funder providing merchant cash advances, small business loans, and working capital solutions to small and mid-size businesses for over 13 years.",
+    "notes": "",
+    "news": [],
+    "ice": "",
+    "icebreakers": [],
+    "tp": [],
+    "leaders": [],
+    "ask": "",
+    "location": "California",
+    "employees": 12,
+    "website": "https://infinitycapitalfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/infinity-capital-funding-inc/about/",
+    "source": [
+      "tam",
+      "tam-researched"
+    ],
+    "category": "funder"
+  },
+  {
+    "id": 1659,
+    "name": "GOLD CAPITAL",
+    "type": "TAM",
+    "priority": 7,
+    "phase": 0,
+    "booth": false,
+    "clear": false,
+    "contacts": [],
+    "desc": "Kentucky-based business funding company offering merchant cash advances with money available within 48 hours. Serves as a merchant funding partner for small businesses seeking working capital.",
+    "notes": "",
+    "news": [],
+    "ice": "",
+    "icebreakers": [],
+    "tp": [],
+    "leaders": [],
+    "ask": "",
+    "location": "Kentucky",
+    "employees": 0,
+    "website": "https://goldcapitalfund.com",
+    "linkedinUrl": "goldcapitalfund.com",
+    "source": [
+      "tam",
+      "tam-researched"
+    ]
+  },
+  {
+    "id": 1762,
+    "name": "TIGER FUNDING",
+    "type": "TAM",
+    "priority": 6,
+    "phase": 0,
+    "booth": false,
+    "clear": false,
+    "contacts": [],
+    "desc": "",
+    "notes": "",
+    "news": [],
+    "ice": "",
+    "icebreakers": [],
+    "tp": [],
+    "leaders": [],
+    "ask": "",
+    "location": "",
+    "employees": 0,
+    "website": "https://www.tigersfunding.com",
+    "linkedinUrl": "https://www.tigersfunding.com",
+    "source": [
+      "tam",
+      "tam-researched"
+    ]
   }
 ]
