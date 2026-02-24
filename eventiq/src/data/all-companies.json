@@ -3102,6 +3102,10 @@
       {
         "n": "Joseph Spiegel",
         "t": "Sales Manager"
+      },
+      {
+        "n": "William Gallagher",
+        "t": "Co-Founder"
       }
     ],
     "desc": "Private commercial lender (est. 2009) in NJ. Specializes in factoring, AR, inventory, PO funding. $1B+ working capital provided. Sister company to CFG Merchant Solutions (same founders: Andrew Coon, Bill Gallagher). New FactorLOC product (Sep 2024). Thomas Ingrassia hired as CRO (2024, ex-Goldman Sachs/Capstone). Joseph Spiegel won IFA NEXGEN Rookie of the Year.",
@@ -3136,6 +3140,31 @@
         "h": "Active at DeBanked Connect Miami 2025",
         "s": "CapFlow Blog, Feb 2025",
         "d": "Joseph Spiegel representing company, building broker and funder partnerships."
+      },
+      {
+        "h": "CapFlow Funding Group Profiled by Forbes",
+        "s": "Forbes/LinkedIn, Dec 2024",
+        "d": "CEO Andrew Coon featured in Forbes-related content highlighting CapFlow's growth and lending model."
+      },
+      {
+        "h": "CapFlow Launches FactorLOC Product",
+        "s": "IFA Commercial Factor, Sep 2024",
+        "d": "CapFlow launched FactorLOC, a new product bridging traditional invoice factoring and lines of credit with flexible advance rates of 40-60%."
+      },
+      {
+        "h": "CapFlow Launches FactorLOC Product for SMB Financing",
+        "s": "IFA Commercial Factor",
+        "d": "CapFlow Funding Group launched FactorLOC, a factoring line of credit between $50K-$500K allowing SMBs to draw working capital on-demand."
+      },
+      {
+        "h": "CapFlow Launches FactorOne Spot-Factoring Solution",
+        "s": "capflowfunding.com",
+        "d": "CapFlow introduced FactorOne, a spot-factoring product for single invoices without long-term contracts or monthly minimums."
+      },
+      {
+        "h": "CapFlow Surpasses $1 Billion in Working Capital Provided",
+        "s": "Company reports",
+        "d": "CapFlow Funding Group has provided over $1 billion in working capital to thousands of American businesses since 2009."
       }
     ],
     "ice": "Joseph, congrats on winning the IFA NEXGEN Rookie of the Year — that’s serious recognition in the factoring world. Building that kind of impact at CapFlow so quickly caught the industry’s attention.",
@@ -3143,10 +3172,17 @@
       "Congrats on the NEXGEN Rookie of the Year from the IFA -- real recognition of your impact at CapFlow. What has been the biggest lesson since getting into factoring?",
       "FactorOne is clever -- factor one invoice with no contract or minimums. That removes a lot of friction from traditional factoring. How are you positioning it relative to full facilities?",
       "You had a busy start to 2025 between DeBanked Miami and IFA. What is the pulse of the factoring market right now?",
-      "Winning an industry award this early is a strong signal. What is the biggest opportunity you are going after at CapFlow this year?"
+      "Winning an industry award this early is a strong signal. What is the biggest opportunity you are going after at CapFlow this year?",
+      "Andrew, the FactorLOC and FactorOne products are innovative additions to the factoring space. With $1B+ deployed, how is CapFlow managing underwriting across all these product types?",
+      "FactorOne's spot-factoring without contracts or minimums is a unique offering. How does your team handle the higher-velocity underwriting that requires?",
+      "60+ years of institutional investment banking experience across your managing partners is powerful. How is that translating to the factoring market?",
+      "Serving businesses with $75K to $25M in monthly revenue is a wide range. How does CapFlow adapt underwriting for each segment?"
     ],
     "tp": [
-      "CapFlow’s factoring requires continuous credit evaluation of both client AND debtors. AI can analyze debtor creditworthiness, concentration risk, and payment patterns across your entire portfolio in real-time."
+      "CapFlow’s factoring requires continuous credit evaluation of both client AND debtors. AI can analyze debtor creditworthiness, concentration risk, and payment patterns across your entire portfolio in real-time.",
+      "HyperVerge's AI can help CapFlow underwrite FactorLOC and FactorOne applications faster, cutting review from 40 minutes to under 5 minutes per deal.",
+      "With 450+ lending companies using HyperVerge, we understand factoring-specific underwriting (debtor credit, invoice verification) and can automate key steps.",
+      "As CapFlow's innovative products drive higher deal velocity, HyperVerge can ensure consistent risk assessment across factoring, PO funding, and inventory financing."
     ],
     "leaders": [
       {
@@ -3157,7 +3193,9 @@
           "Brown University BA",
           "WashU MBA",
           "*Ex-Morgan Stanley",
-          "*Forbes Business Council Dec 2024"
+          "*Forbes Business Council Dec 2024",
+          "*Ex-Morgan Stanley & Merrill Lynch MD",
+          "*$1B+ working capital deployed"
         ],
         "li": "https://www.linkedin.com/in/andrew-j-coon/"
       },
@@ -3203,13 +3241,25 @@
           "Dual-company CIO"
         ],
         "li": "https://www.linkedin.com/in/klewis01"
+      },
+      {
+        "n": "William Gallagher",
+        "t": "Co-Founder & President, CFGMS",
+        "bg": "Co-founded CapFlow Funding Group, now President of CFG Merchant Solutions (CFGMS). Spent 1991-2004 at Lehman Brothers as Senior VP in Fixed Income Division, leading high-grade credit and commercial paper trading desks. Previously Chief Credit Officer at CapFlow. BA in Economics from Villanova University (1989).",
+        "li": "https://www.linkedin.com/in/william-gallagher-5b699524/",
+        "hooks": [
+          "*13 years at Lehman Brothers trader",
+          "Villanova Economics grad",
+          "CFGMS President"
+        ]
       }
     ],
     "ask": "Would you be interested in seeing how faster underwriting could help your sales numbers?",
     "source": [
       "eventiq",
       "tam",
-      "deep-researched"
+      "deep-researched",
+      "researched"
     ],
     "location": "New Jersey",
     "employees": 26,
@@ -3836,7 +3886,7 @@
     "employees": 77,
     "website": "https://newitymarket.com",
     "linkedinUrl": "https://www.linkedin.com/company/newitymarket/",
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 32,
@@ -4384,7 +4434,7 @@
     "employees": 24,
     "website": "https://lendini.com/",
     "linkedinUrl": "https://www.linkedin.com/company/lendini/about/",
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 39,
@@ -4723,9 +4773,15 @@
     "ask": "Steven, would it make sense to schedule a 20-minute demo next week? I can show you exactly how AI handles the bank statement analysis and risk review for a live MCA application.",
     "source": [
       "eventiq",
-      "deep-researched"
+      "deep-researched",
+      "tam",
+      "tam-researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "location": "New York",
+    "employees": 13,
+    "website": "https://dynamicfinancialgrp.com/home",
+    "linkedinUrl": "https://www.linkedin.com/company/dynamic-financial-ny/"
   },
   {
     "id": 45,
@@ -6282,96 +6338,6 @@
     "category": "funder"
   },
   {
-    "id": 66,
-    "name": "Libertas Funding",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Randy Saluck",
-        "t": "CEO"
-      },
-      {
-        "n": "Gary Katcher",
-        "t": "Founder & Executive Chairman"
-      }
-    ],
-    "desc": "Greenwich, CT-based provider of short-term revenue-based financing to SMBs. Founded in 2016 by 30-year financial services veteran Gary Katcher. Backed by Patriot Financial Partners.",
-    "notes": "",
-    "news": [
-      {
-        "h": "Libertas Funding Announces Key Leadership Appointments to Propel Next Phase of Growth",
-        "s": "BusinessWire, Dec 2025",
-        "d": "John Paradisi promoted to CEO effective Jan 1, 2026. Randy Saluck transitions to Vice Chairman. Gary Katcher remains Executive Chairman.",
-        "p": "2025-12-23"
-      },
-      {
-        "h": "Libertas Funding Names John Paradisi as President and Chief Operating Officer",
-        "s": "Yahoo Finance, May 2025",
-        "d": "Paradisi joins from City National Bank of Florida bringing 26+ years of banking experience to drive Libertas's next growth phase.",
-        "p": "2025-05-21"
-      },
-      {
-        "h": "Libertas Funding Secures Inaugural $75 Million Investment Grade Corporate Note",
-        "s": "Newswire, Apr 2025",
-        "d": "Libertas closed $75M investment-grade corporate note financing with Brean Capital as exclusive financial advisor, proceeds used for liquidity and working capital.",
-        "p": "2025-04-01"
-      }
-    ],
-    "ice": "Gary's 30+ years in credit and trading is rare in this space -- how does that institutional risk lens shape your underwriting approach?",
-    "icebreakers": [
-      "Gary's 30+ years in credit and trading is rare in this space -- how does that institutional risk lens shape your underwriting approach?"
-    ],
-    "tp": [
-      "AI underwriting can bring institutional-grade credit analysis to every deal, matching the rigor Gary built into Libertas but at 10x the speed."
-    ],
-    "leaders": [
-      {
-        "n": "Gary Katcher",
-        "t": "Founder & Executive Chairman",
-        "bg": "NYU Stern MBA. 30+ year Wall Street career spanning credit, investing, and trading. Started at EF Hutton, then spent most of career at Merrill Lynch as Senior Managing Director heading the High Yield trading desk managing $1B+ in risk capital. Co-headed Leverage Finance at Royal Bank of Canada in 1999. Founded and sold a boutique fixed income broker-dealer to Knight Capital, where he became EVP and Global Head of Institutional Fixed Income. Founded Libertas Funding in September 2016. Dedicated philanthropist supporting blindness research and women entrepreneurs.",
-        "li": "https://www.linkedin.com/in/garykatcher/",
-        "hooks": [
-          "*NYU Stern MBA",
-          "*Merrill Lynch Sr. MD, $1B+ book",
-          "*Sold firm to Knight Capital",
-          "Philanthropy: blindness research"
-        ]
-      },
-      {
-        "n": "John Paradisi",
-        "t": "CEO",
-        "bg": "Appointed CEO effective January 1, 2026, after joining as President and COO in April 2025. 26+ years in banking and specialty finance. Previously EVP and Chief Specialty Banking Officer at City National Bank of Florida, where as Chief Strategy Officer he helped grow total assets from $18B to $26B in four years. Earlier spent 17 years at CIT Bank in senior leadership spanning corporate strategy/M&A, specialty banking, and consumer banking.",
-        "li": "",
-        "hooks": [
-          "*Grew City National Bank $18B to $26B",
-          "17 years at CIT Bank",
-          "26yr banking & specialty finance vet"
-        ]
-      },
-      {
-        "n": "Randy Saluck",
-        "t": "Vice Chairman",
-        "bg": "University of Pennsylvania BA, UVA Law JD, Wharton MBA (Finance & Accounting). Served as Libertas CEO from 2017 to 2025, now Vice Chairman. Corporate attorney at Blank Rome and Cahill Gordon focused on equity/debt financing and leveraged buyouts. Former senior analyst at Tyndall Management, investment banking associate at Salomon Brothers (M&A). Founded Mortar Rock Capital (equity and credit, 2005-2016). Under his leadership, Libertas funded $5B to SMBs nationwide.",
-        "li": "https://www.linkedin.com/in/randy-saluck-840771152/",
-        "hooks": [
-          "*Wharton MBA + UVA Law JD",
-          "*Ex-Salomon Brothers M&A",
-          "Founded Mortar Rock Capital",
-          "$5B funded under his watch"
-        ]
-      }
-    ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 67,
     "name": "Pearl Capital",
     "type": "ICP",
@@ -6578,95 +6544,6 @@
     "category": "funder"
   },
   {
-    "id": 70,
-    "name": "National Funding",
-    "type": "ICP",
-    "priority": 2,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "David Gilbert",
-        "t": "Founder & CEO"
-      }
-    ],
-    "desc": "San Diego, CA-based specialty finance company (est. 1999). Over $6B funded to SMBs. Offers working capital loans, equipment financing, and MCAs. CEO David Gilbert won EY Entrepreneur of the Year 2017.",
-    "notes": "",
-    "news": [
-      {
-        "h": "National Funding CEO David Gilbert Named to SD 500 Most Influential People for Fifth Time",
-        "s": "San Diego Business Journal, Nov 2024",
-        "d": "Gilbert recognized in the finance section of the SD 500 list for the fifth time, reflecting his sustained influence in San Diego's business community and the SMB lending industry.",
-        "p": "2024-11-15"
-      },
-      {
-        "h": "National Funding and QuickBridge Surpass $6 Billion in Total Funding",
-        "s": "National Funding, 2025",
-        "d": "National Funding and its subsidiary QuickBridge collectively surpassed $6 billion in total capital provided to more than 80,000 small and medium-sized businesses nationwide.",
-        "p": "2025-01-15"
-      },
-      {
-        "h": "National Funding CEO Recognized as San Diego's 2022 Most Influential People",
-        "s": "BusinessWire, Dec 2022",
-        "d": "David Gilbert named to San Diego Business Journal's SD 500 Most Influential list for the fourth time, recognizing his leadership in SMB fintech lending.",
-        "p": "2022-12-27"
-      }
-    ],
-    "ice": "Over $6 billion funded since 1999 -- that's an incredible run. At that scale, where are the biggest efficiency gains still to be had?",
-    "icebreakers": [
-      "Over $6 billion funded since 1999 -- that's an incredible run. At that scale, where are the biggest efficiency gains still to be had?"
-    ],
-    "tp": [
-      "At $6B+ in originations, even a 10% improvement in underwriting speed from AI could unlock hundreds of millions in additional annual capacity."
-    ],
-    "leaders": [
-      {
-        "n": "David Gilbert",
-        "t": "Founder & CEO",
-        "bg": "USC Marshall School of Business (BS, Entrepreneurship, 1997). Founded National Funding in 1999 at age 23 after launching Five Point Capital, an equipment leasing firm. Fifth of six children in a family of three doctors and two lawyers — the only one who chose business, inspired by watching his father run a pathology lab with 60 employees. Won Ernst & Young Entrepreneur Of The Year 2017 (Finance, San Diego). Named USC Marshall 'Entrepreneur of the Year' 2007 and San Diego '40 Under Forty.' Recognized 5x on SD 500 Most Influential People list. Under his leadership, National Funding + QuickBridge have provided $6B+ to 80,000+ SMBs. Inc. 5000 for 8 consecutive years (2013-2020).",
-        "li": "https://www.linkedin.com/in/dave-gilbert-6289715",
-        "hooks": [
-          "*USC Marshall, Entrepreneurship",
-          "*EY Entrepreneur of Year 2017",
-          "*$6B+ funded, 80K+ businesses",
-          "Only non-doctor/lawyer in family of 6"
-        ]
-      },
-      {
-        "n": "Justin Thompson",
-        "t": "Chief Revenue Officer",
-        "bg": "Kennesaw State University. 20+ year career at National Funding, starting as Director of Sales in 2002. Promoted to EVP of Sales, then CRO in 2018. Managed a 100-person sales division spanning Direct Sales, Renewal Sales, Broker Sales, and Equipment Financing. Developed the Strategic Partnership vertical. CLFP certified. Based in San Diego.",
-        "li": "https://www.linkedin.com/in/justinthompson09",
-        "hooks": [
-          "*20+ years at National Funding",
-          "CLFP certified",
-          "Runs 100-person sales org"
-        ]
-      },
-      {
-        "n": "Michael van Asselt",
-        "t": "Chief Financial Officer",
-        "bg": "CFO at National Funding based in San Diego, California. Oversees financial operations, capital management, and strategic financial planning for one of the largest private fintech lenders in the SMB space.",
-        "li": "https://www.linkedin.com/in/michaelvanasselt/",
-        "hooks": [
-          "San Diego fintech CFO",
-          "Private lender capital strategist"
-        ]
-      }
-    ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq",
-      "tam"
-    ],
-    "location": "California",
-    "employees": 174,
-    "website": "https://nationalfunding.com",
-    "linkedinUrl": "https://www.linkedin.com/company/national-funding/",
-    "category": "funder"
-  },
-  {
     "id": 71,
     "name": "Fora Financial",
     "type": "ICP",
@@ -6790,90 +6667,6 @@
       ]
     },
     "category": "funder"
-  },
-  {
-    "id": 72,
-    "name": "OnDeck Capital",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Noah Breslow",
-        "t": "Former CEO"
-      }
-    ],
-    "desc": "National leader in online small business lending, acquired by Enova International in 2020. Pioneer in using data analytics for small business credit decisions. Offers term loans and lines of credit.",
-    "notes": "",
-    "news": [
-      {
-        "h": "OnDeck/Enova Report: 94% of Small Businesses Project 2026 Growth",
-        "s": "PR Newswire, Feb 2026",
-        "d": "OnDeck's Q4 2025 Small Business Cash Flow Trend Report found 94% of small businesses expect growth in 2026, matching an all-time high. 56% have adopted AI tools, and 74% bypass traditional banks for capital.",
-        "p": "2026-02-04"
-      },
-      {
-        "h": "Enova Announces Planned Key Senior Leadership Changes",
-        "s": "Enova IR, Jul 2025",
-        "d": "Steve Cunningham (CFO) to succeed David Fisher as CEO effective January 1, 2026. Fisher transitions to Executive Chairman.",
-        "p": "2025-07-24"
-      },
-      {
-        "h": "OnDeck Report: 93% of Small Businesses Expect Growth, 52% Use AI",
-        "s": "Enova/Stock Titan, Oct 2025",
-        "d": "OnDeck's Q3 report found 93% of small businesses expect growth while 52% have incorporated AI tools. Inflation and cash flow remain top concerns.",
-        "p": "2025-10-22"
-      }
-    ],
-    "ice": "OnDeck was one of the first to prove data-driven lending at scale -- how has the Enova acquisition shaped the product roadmap?",
-    "icebreakers": [
-      "OnDeck was one of the first to prove data-driven lending at scale -- how has the Enova acquisition shaped the product roadmap?"
-    ],
-    "tp": [
-      "As a pioneer in data-driven lending, layering AI underwriting on top of your existing analytics could further reduce decision times and improve portfolio performance."
-    ],
-    "leaders": [
-      {
-        "n": "Ken Brause",
-        "t": "Chief Financial Officer",
-        "bg": "University of Pennsylvania (BS Economics, Finance & Management). University of Chicago Booth School of Business MBA (Finance & Accounting). Prior to OnDeck, served 11 years at CIT Group in multiple leadership roles including EVP and Treasurer of CIT Group and CIT Bank, CFO of North America Banking, and President of CIT's Small Business Lending group. Earlier career at Bank of New York, Horizon Blue Cross, American General, Bankers Trust, and Booz Allen Hamilton.",
-        "li": "",
-        "hooks": [
-          "*UPenn + Chicago Booth MBA",
-          "*11yr CIT Group: EVP & Treasurer",
-          "Ex-Booz Allen Hamilton"
-        ]
-      },
-      {
-        "n": "Cory Kampfer",
-        "t": "COO & General Counsel",
-        "bg": "University of Georgia BBA (International Business, First in Class). Duke Fuqua MBA. Duke Law JD. Joined OnDeck in November 2011, initially leading the legal department. Previously associate at Paul, Weiss, Rifkind, Wharton & Garrison LLP (2007-2011). Now serves as COO and General Counsel, overseeing operations and legal for the Enova International subsidiary.",
-        "li": "",
-        "hooks": [
-          "*UGA First in Class",
-          "*Duke Law + Fuqua MBA",
-          "Ex-Paul Weiss associate",
-          "14yr OnDeck veteran"
-        ]
-      },
-      {
-        "n": "Nick Brown",
-        "t": "Chief Risk Officer",
-        "bg": "Oversees OnDeck's credit and risk management strategy and execution, including credit and operational risk controls, portfolio monitoring, and optimization of OnDeck's proprietary credit scoring models and credit policy. Key steward of OnDeck's data-driven underwriting approach within the Enova International portfolio.",
-        "li": "",
-        "hooks": [
-          "Credit scoring model architect",
-          "Data-driven risk strategist"
-        ]
-      }
-    ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
-    "category": "technology"
   },
   {
     "id": 73,
@@ -7140,87 +6933,6 @@
     "employees": 153,
     "website": "https://www.mulliganfunding.com/",
     "linkedinUrl": "https://www.linkedin.com/company/mulligan-funding-llc/",
-    "category": "funder"
-  },
-  {
-    "id": 75,
-    "name": "QuickBridge",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Ben Gold",
-        "t": "Founder & President"
-      }
-    ],
-    "desc": "Irvine, CA-based alternative lender (est. 2011) providing short-term working capital to SMBs. Wholly-owned subsidiary of National Funding since 2018. Founded by Ben Gold.",
-    "notes": "",
-    "news": [
-      {
-        "h": "QuickBridge Surpasses $1 Billion in Total Funding to 25,000 Customers",
-        "s": "QuickBridge, Dec 2024",
-        "d": "QuickBridge reached a major milestone of $1B+ deployed to over 25,000 small business customers since its 2011 founding, with an A+ BBB rating.",
-        "p": "2024-12-01"
-      },
-      {
-        "h": "QuickBridge Earns 4.8-Star Trustpilot Rating with 330+ Reviews",
-        "s": "Trustpilot, 2025",
-        "d": "Maintains exceptional customer satisfaction with 4.8-star rating on Trustpilot, positioning as one of the highest-rated alternative lenders nationwide.",
-        "p": "2025-06-01"
-      },
-      {
-        "h": "QuickBridge Expands Lending Products to $500K with Line of Credit",
-        "s": "quickbridge.com, 2025",
-        "d": "Expanded product suite beyond working capital loans to include small business lines of credit, with funding up to $500K and terms of 4-18 months.",
-        "p": "2025-03-01"
-      }
-    ],
-    "ice": "Combining QuickBridge's speed with National Funding's scale sounds powerful -- are you sharing underwriting infrastructure across both brands?",
-    "icebreakers": [
-      "Combining QuickBridge's speed with National Funding's scale sounds powerful -- are you sharing underwriting infrastructure across both brands?"
-    ],
-    "tp": [
-      "AI underwriting could unify deal decisioning across QuickBridge and National Funding, creating a single intelligent pipeline that serves both brands."
-    ],
-    "leaders": [
-      {
-        "n": "Ben Gold",
-        "t": "Founder & President",
-        "bg": "Cal State Fullerton BA in Business Administration-Marketing (2004) and MBA (2012). Co-founded QuickBridge in 2011 with Jason Osiecki and investors David Gilbert and Brij Patel. Prior to QuickBridge, served as VP of Operations at Alliance Funding Group. Started in small business lending in 2002 as a college junior. Board Treasurer of CSUF Mihaylo College of Business and Economics. Also CEO of Good Funding (est. 2020). Company has funded $1B+ to 25K+ customers.",
-        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
-        "hooks": [
-          "*Cal State Fullerton MBA — now Board Treasurer there",
-          "*Started in lending as college junior in 2002",
-          "Also CEO of Good Funding"
-        ]
-      },
-      {
-        "n": "David Gilbert",
-        "t": "CEO, National Funding (Parent Company)",
-        "bg": "Founder and CEO of National Funding, one of the largest private fintech lenders for SMBs. Over 20 years championing American small business owners. National Funding acquired QuickBridge in October 2018, with both companies operating independently. Combined, the companies have provided $3B+ in financing to small and mid-sized businesses.",
-        "li": "https://www.linkedin.com/in/david-gilbert-b9b69610/",
-        "hooks": [
-          "*20+ years championing small business",
-          "Built $3B+ combined lending platform"
-        ]
-      },
-      {
-        "n": "Bryan Timmons",
-        "t": "Director of Operations",
-        "bg": "Manages day-to-day operations at QuickBridge. Oversees the operational processes that enable rapid funding decisions and same-day disbursements for the company's short-term working capital products up to $500K.",
-        "li": "",
-        "hooks": [
-          "Operations leader at fast-funding lender"
-        ]
-      }
-    ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
     "category": "funder"
   },
   {
@@ -8205,96 +7917,6 @@
     "source": [
       "eventiq"
     ],
-    "category": "funder"
-  },
-  {
-    "id": 89,
-    "name": "One Park Financial",
-    "type": "ICP",
-    "priority": 2,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "John Lie-Nielsen",
-        "t": "CEO & Founder"
-      }
-    ],
-    "desc": "Miami, FL-based business financing platform connecting SMBs with funders. CEO John Lie-Nielsen named Most Influential CEO 2023 in Florida for SME Financing Technology.",
-    "notes": "",
-    "news": [
-      {
-        "h": "One Park Financial Certified as Great Place to Work for 8th Year",
-        "s": "OneParkFinancial.com, Sep 2025",
-        "d": "Fund Street Technologies' subsidiary One Park Financial earned Great Place to Work certification for the eighth consecutive year, reflecting strong employee retention and culture in the competitive Miami fintech market.",
-        "p": "2025-09-15"
-      },
-      {
-        "h": "One Park Financial Wins Communication Award at 2025 Sun Sentinel Top Workplaces",
-        "s": "Sun Sentinel, May 2025",
-        "d": "Ranked 3rd place and won a Communication Award in the Sun Sentinel's 2025 Top Workplaces, demonstrating continued organizational excellence in South Florida.",
-        "p": "2025-05-20"
-      },
-      {
-        "h": "John Lie-Nielsen Named Most Influential CEO 2023 — Florida",
-        "s": "CEO Monthly, 2023",
-        "d": "CEO recognized for leadership in SME financing technology, highlighting One Park Financial's impact connecting small businesses with working capital solutions from 20+ lending partners.",
-        "p": "2023-11-15"
-      }
-    ],
-    "ice": "Being named Florida's most influential CEO in SME financing tech is well-deserved -- what technology investments are you most excited about?",
-    "icebreakers": [
-      "Being named Florida's most influential CEO in SME financing tech is well-deserved -- what technology investments are you most excited about?"
-    ],
-    "tp": [
-      "AI underwriting on your platform could pre-qualify merchants before they reach funders, improving match rates and reducing wasted effort for everyone."
-    ],
-    "leaders": [
-      {
-        "n": "John Lie-Nielsen",
-        "t": "CEO & Founder",
-        "bg": "Founded One Park Financial in 2010 as a subsidiary of Fund Street Technologies. Has been an entrepreneur for over half his life — founded ACA Financial LLC in 1999. Named 'Most Influential CEO 2023 — Florida' by CEO Monthly in the SME Financing Technology category. Company featured multiple times on Entrepreneur Magazine's Entrepreneur 360 list. Practices servant leadership philosophy, prioritizing team empowerment. Company certified as Great Place to Work for 8 consecutive years. Revenue estimated at $64M annually.",
-        "li": "https://www.linkedin.com/in/john-lie-nielsen-9b10141b/",
-        "hooks": [
-          "*Most Influential CEO 2023 Florida",
-          "*Entrepreneur since 1999",
-          "8x Great Place to Work certified",
-          "Servant leadership advocate"
-        ]
-      },
-      {
-        "n": "Erik Nord",
-        "t": "Co-Founder",
-        "bg": "Co-founded One Park Financial alongside John Lie-Nielsen. Holds a J.D. (Doctor of Law) from University of Minnesota-Twin Cities. Attorney, advisor, and entrepreneur with expertise in asset management, mergers and acquisitions, corporate governance, and brokerage. Previously held roles at Above Labs and ePallet, Inc. Brings legal and M&A expertise to the company's strategic direction.",
-        "li": "https://www.linkedin.com/in/erik-nord-92804b59/",
-        "hooks": [
-          "*JD from University of Minnesota",
-          "Attorney + entrepreneur",
-          "M&A expertise"
-        ]
-      },
-      {
-        "n": "Jose Miguel Vera",
-        "t": "SVP of Growth & Marketing",
-        "bg": "Seasoned performance and integrated marketing professional leading all growth and marketing functions at One Park Financial. Rose through multiple roles internally: Senior Director of Acquisition Marketing, VP of Marketing, then SVP. Previously served as Senior Manager of SEM at Dentalplans and held director-level roles at Optimum7 digital agency. Expert in data-driven customer acquisition and multi-channel marketing strategy.",
-        "li": "https://www.linkedin.com/in/josemiguelvera/",
-        "hooks": [
-          "Rose through 4 roles internally",
-          "Ex-Optimum7 digital agency",
-          "Performance marketing expert"
-        ]
-      }
-    ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq",
-      "tam"
-    ],
-    "location": "Florida",
-    "employees": 202,
-    "website": "https://oneparkfinancial.com",
-    "linkedinUrl": "https://www.linkedin.com/company/one-park-financial/",
     "category": "funder"
   },
   {
@@ -9881,7 +9503,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "tam-researched"
     ],
     "location": "Virginia",
     "employees": 42,
@@ -10618,67 +10241,6 @@
     "category": "broker"
   },
   {
-    "id": 129,
-    "name": "Green Capital Funding",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "",
-        "t": "Managing Partner"
-      }
-    ],
-    "desc": "Private investment firm and business funding consultation company with an expansive network of alternative investors and lenders. Offers factoring, asset-based funding, and merchant cash advances.",
-    "notes": "",
-    "news": [],
-    "ice": "Green Capital Funding's broad network of alternative investors and lenders gives merchants access to diverse capital solutions.",
-    "icebreakers": [
-      "Green Capital Funding's broad network of alternative investors and lenders gives merchants access to diverse capital solutions."
-    ],
-    "tp": [
-      "AI underwriting can help Green Capital evaluate applications across its network of investors more efficiently, matching each deal to the right capital source."
-    ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
-    "category": "funder"
-  },
-  {
-    "id": 130,
-    "name": "Advantage Capital",
-    "type": "ICP",
-    "priority": 4,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Steven T. Stull",
-        "t": "Founder & President"
-      }
-    ],
-    "desc": "New Orleans-based impact investment firm founded in 1992 that has invested over $3.8 billion in 800+ companies. Focuses on growth equity and lending in underserved communities while generating competitive returns.",
-    "notes": "",
-    "news": [],
-    "ice": "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission.",
-    "icebreakers": [
-      "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission."
-    ],
-    "tp": [
-      "AI underwriting can help Advantage Capital identify high-potential businesses in underserved markets that traditional scoring overlooks, advancing both the impact and return missions."
-    ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ]
-  },
-  {
     "id": 131,
     "name": "NewCo Capital Group",
     "type": "ICP",
@@ -10860,7 +10422,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 136,
@@ -12558,7 +12120,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "technology"
+    "category": "service_provider"
   },
   {
     "id": 190,
@@ -12748,37 +12310,6 @@
     ],
     "tp": [
       "Our AI platform can automate document review and cash flow analysis for equipment financing decisions, cutting turnaround time dramatically."
-    ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
-    "source": [
-      "eventiq"
-    ],
-    "category": "funder"
-  },
-  {
-    "id": 196,
-    "name": "Silverline Capital",
-    "type": "ICP",
-    "priority": 5,
-    "phase": 4,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Management Team",
-        "t": "Leadership"
-      }
-    ],
-    "desc": "Top-rated MCA provider funding $2,500 to $2.5 million with 24-hour approval. Known for going all-in with client businesses and keeping the funding process fast and smooth.",
-    "notes": "",
-    "news": [],
-    "ice": "Your team's reputation for speed -- 24-hour approvals on deals up to $2.5M -- is impressive. How do you maintain that velocity as deal volume grows?",
-    "icebreakers": [
-      "Your team's reputation for speed -- 24-hour approvals on deals up to $2.5M -- is impressive. How do you maintain that velocity as deal volume grows?"
-    ],
-    "tp": [
-      "We help MCA funders maintain fast approval times at scale by automating bank statement analysis and cash flow scoring with AI."
     ],
     "leaders": [],
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
@@ -14257,7 +13788,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 1016,
@@ -14372,7 +13903,7 @@
   {
     "id": 1017,
     "name": "OnDeck",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -14389,6 +13920,10 @@
       {
         "n": "Cory Kampfer",
         "t": "Co-President, Enova Small Business (OnDeck)"
+      },
+      {
+        "n": "Noah Breslow",
+        "t": "Former CEO"
       }
     ],
     "desc": "Pioneering online small business lender (now a subsidiary of Enova International) that has provided $15B+ in loans, offering term loans and lines of credit to SMBs through a technology-driven platform.",
@@ -14423,6 +13958,24 @@
         "h": "OnDeck Surpasses $15 Billion in Total Loans",
         "s": "Business.com, 2026",
         "d": "OnDeck continues strong origination volume as part of the Enova family."
+      },
+      {
+        "h": "OnDeck/Enova Report: 94% of Small Businesses Project 2026 Growth",
+        "s": "PR Newswire, Feb 2026",
+        "d": "OnDeck's Q4 2025 Small Business Cash Flow Trend Report found 94% of small businesses expect growth in 2026, matching an all-time high. 56% have adopted AI tools, and 74% bypass traditional banks for capital.",
+        "p": "2026-02-04"
+      },
+      {
+        "h": "Enova Announces Planned Key Senior Leadership Changes",
+        "s": "Enova IR, Jul 2025",
+        "d": "Steve Cunningham (CFO) to succeed David Fisher as CEO effective January 1, 2026. Fisher transitions to Executive Chairman.",
+        "p": "2025-07-24"
+      },
+      {
+        "h": "OnDeck Report: 93% of Small Businesses Expect Growth, 52% Use AI",
+        "s": "Enova/Stock Titan, Oct 2025",
+        "d": "OnDeck's Q3 report found 93% of small businesses expect growth while 52% have incorporated AI tools. Inflation and cash flow remain top concerns.",
+        "p": "2025-10-22"
       }
     ],
     "ice": "With Enova's leadership transition and OnDeck expanding into equipment financing, it seems like a pivotal moment. How are you thinking about scaling underwriting for the new product lines?",
@@ -14430,12 +13983,14 @@
       "The leadership transition at Enova signals an exciting new chapter for OnDeck. How is the team approaching technology and automation priorities?",
       "Expanding into equipment financing is a smart move. How are you adapting your underwriting processes for these new product lines?",
       "Crossing $15B in total loans is a huge milestone. What role does AI play in OnDeck's underwriting strategy going forward?",
-      "With a new CEO coming in and product expansion underway, how are you balancing speed and risk in your underwriting process?"
+      "With a new CEO coming in and product expansion underway, how are you balancing speed and risk in your underwriting process?",
+      "OnDeck was one of the first to prove data-driven lending at scale -- how has the Enova acquisition shaped the product roadmap?"
     ],
     "tp": [
       "As OnDeck expands into equipment financing, HyperVerge's AI underwriting can help evaluate new asset types quickly, reducing the typical 40-minute review to under 5 minutes.",
       "With leadership changes and product expansion, HyperVerge's proven platform (450+ lending companies) can help OnDeck maintain underwriting consistency during the transition.",
-      "OnDeck's tech-forward DNA aligns well with HyperVerge's AI approach. Our platform shows how automation accelerates decisioning without increasing risk."
+      "OnDeck's tech-forward DNA aligns well with HyperVerge's AI approach. Our platform shows how automation accelerates decisioning without increasing risk.",
+      "As a pioneer in data-driven lending, layering AI underwriting on top of your existing analytics could further reduce decision times and improve portfolio performance."
     ],
     "leaders": [
       {
@@ -14469,7 +14024,32 @@
         "hooks": [
           "Former OnDeck COO",
           "Also General Counsel",
-          "Co-President Enova SMB"
+          "Co-President Enova SMB",
+          "*UGA First in Class",
+          "*Duke Law + Fuqua MBA",
+          "Ex-Paul Weiss associate",
+          "14yr OnDeck veteran"
+        ]
+      },
+      {
+        "n": "Ken Brause",
+        "t": "Chief Financial Officer",
+        "bg": "University of Pennsylvania (BS Economics, Finance & Management). University of Chicago Booth School of Business MBA (Finance & Accounting). Prior to OnDeck, served 11 years at CIT Group in multiple leadership roles including EVP and Treasurer of CIT Group and CIT Bank, CFO of North America Banking, and President of CIT's Small Business Lending group. Earlier career at Bank of New York, Horizon Blue Cross, American General, Bankers Trust, and Booz Allen Hamilton.",
+        "li": "",
+        "hooks": [
+          "*UPenn + Chicago Booth MBA",
+          "*11yr CIT Group: EVP & Treasurer",
+          "Ex-Booz Allen Hamilton"
+        ]
+      },
+      {
+        "n": "Nick Brown",
+        "t": "Chief Risk Officer",
+        "bg": "Oversees OnDeck's credit and risk management strategy and execution, including credit and operational risk controls, portfolio monitoring, and optimization of OnDeck's proprietary credit scoring models and credit policy. Key steward of OnDeck's data-driven underwriting approach within the Enova International portfolio.",
+        "li": "",
+        "hooks": [
+          "Credit scoring model architect",
+          "Data-driven risk strategist"
         ]
       }
     ],
@@ -14481,8 +14061,10 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
-    ]
+      "deep-researched",
+      "eventiq"
+    ],
+    "category": "funder"
   },
   {
     "id": 1018,
@@ -15118,7 +14700,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 1025,
@@ -15836,7 +15418,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 1033,
@@ -16639,7 +16221,7 @@
   {
     "id": 1042,
     "name": "Libertas",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -16656,6 +16238,10 @@
       {
         "n": "Jia-Mang Ten",
         "t": "Chief Investment Officer"
+      },
+      {
+        "n": "Gary Katcher",
+        "t": "Founder & Executive Chairman"
       }
     ],
     "desc": "Leading fintech based in Greenwich, CT offering revenue-based financing and working capital solutions to SMBs, with new CEO John Paradisi bringing 25+ years of banking experience and a new CIO from Citadel.",
@@ -16690,6 +16276,24 @@
         "h": "New CIO from Citadel Signals Sophisticated Risk Management",
         "s": "BusinessWire, Dec 2025",
         "d": "Jia-Mang Ten brings Citadel portfolio management experience to oversee Libertas's underwriting and credit risk."
+      },
+      {
+        "h": "Libertas Funding Announces Key Leadership Appointments to Propel Next Phase of Growth",
+        "s": "BusinessWire, Dec 2025",
+        "d": "John Paradisi promoted to CEO effective Jan 1, 2026. Randy Saluck transitions to Vice Chairman. Gary Katcher remains Executive Chairman.",
+        "p": "2025-12-23"
+      },
+      {
+        "h": "Libertas Funding Names John Paradisi as President and Chief Operating Officer",
+        "s": "Yahoo Finance, May 2025",
+        "d": "Paradisi joins from City National Bank of Florida bringing 26+ years of banking experience to drive Libertas's next growth phase.",
+        "p": "2025-05-21"
+      },
+      {
+        "h": "Libertas Funding Secures Inaugural $75 Million Investment Grade Corporate Note",
+        "s": "Newswire, Apr 2025",
+        "d": "Libertas closed $75M investment-grade corporate note financing with Brean Capital as exclusive financial advisor, proceeds used for liquidity and working capital.",
+        "p": "2025-04-01"
       }
     ],
     "ice": "The new leadership appointments, especially a CIO from Citadel, signal a sophisticated approach to risk management. How are you thinking about AI to complement that world-class risk expertise?",
@@ -16697,12 +16301,14 @@
       "Appointing a CIO from Citadel shows serious commitment to risk management. How is Libertas approaching AI in underwriting?",
       "The leadership transition with John Paradisi and Jia-Mang Ten signals a new growth chapter. What technology investments are you prioritizing?",
       "Having Citadel-caliber talent in your CIO seat is impressive. How does technology factor into your underwriting strategy?",
-      "New CEO, new CIO, new Vice Chairman structure. How is Libertas modernizing its underwriting technology alongside these leadership changes?"
+      "New CEO, new CIO, new Vice Chairman structure. How is Libertas modernizing its underwriting technology alongside these leadership changes?",
+      "Gary's 30+ years in credit and trading is rare in this space -- how does that institutional risk lens shape your underwriting approach?"
     ],
     "tp": [
       "With a new CIO from Citadel overseeing underwriting, HyperVerge's AI can complement sophisticated risk models by automating document review in under 5 minutes.",
       "Libertas's leadership transition is an ideal time to evaluate AI underwriting. HyperVerge serves 450+ lending companies with proven revenue-based financing automation.",
-      "As John Paradisi drives growth, HyperVerge can help scale underwriting without proportionally growing headcount."
+      "As John Paradisi drives growth, HyperVerge can help scale underwriting without proportionally growing headcount.",
+      "AI underwriting can bring institutional-grade credit analysis to every deal, matching the rigor Gary built into Libertas but at 10x the speed."
     ],
     "leaders": [
       {
@@ -16714,7 +16320,10 @@
           "*17yr CIT Bank veteran",
           "Ex-City National Bank FL EVP",
           "Chief Strategy Growth Officer",
-          "Named CEO Jan 2026"
+          "Named CEO Jan 2026",
+          "*Grew City National Bank $18B to $26B",
+          "17 years at CIT Bank",
+          "26yr banking & specialty finance vet"
         ]
       },
       {
@@ -16726,7 +16335,11 @@
           "*CEO-to-Vice Chair transition",
           "Key account strategist",
           "At Libertas since 2017",
-          "Complex deal underwriter"
+          "Complex deal underwriter",
+          "*Wharton MBA + UVA Law JD",
+          "*Ex-Salomon Brothers M&A",
+          "Founded Mortar Rock Capital",
+          "$5B funded under his watch"
         ]
       },
       {
@@ -16740,6 +16353,18 @@
           "Ex-Tremblant Capital",
           "20yr investment veteran"
         ]
+      },
+      {
+        "n": "Gary Katcher",
+        "t": "Founder & Executive Chairman",
+        "bg": "NYU Stern MBA. 30+ year Wall Street career spanning credit, investing, and trading. Started at EF Hutton, then spent most of career at Merrill Lynch as Senior Managing Director heading the High Yield trading desk managing $1B+ in risk capital. Co-headed Leverage Finance at Royal Bank of Canada in 1999. Founded and sold a boutique fixed income broker-dealer to Knight Capital, where he became EVP and Global Head of Institutional Fixed Income. Founded Libertas Funding in September 2016. Dedicated philanthropist supporting blindness research and women entrepreneurs.",
+        "li": "https://www.linkedin.com/in/garykatcher/",
+        "hooks": [
+          "*NYU Stern MBA",
+          "*Merrill Lynch Sr. MD, $1B+ book",
+          "*Sold firm to Knight Capital",
+          "Philanthropy: blindness research"
+        ]
       }
     ],
     "ask": "Given Libertas's leadership transformation, would John and Jia-Mang be interested in seeing how HyperVerge's AI underwriting could enhance Libertas's risk management and decisioning speed?",
@@ -16750,7 +16375,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -18191,7 +17817,7 @@
   {
     "id": 1062,
     "name": "QuickBridge Funding, LLC",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -18228,6 +17854,24 @@
         "h": "QuickBridge Ranks on Inc. 500 Two Consecutive Years",
         "s": "Inc. Magazine, 2024",
         "d": "Rapid growth recognized in America's fastest-growing companies list."
+      },
+      {
+        "h": "QuickBridge Surpasses $1 Billion in Total Funding to 25,000 Customers",
+        "s": "QuickBridge, Dec 2024",
+        "d": "QuickBridge reached a major milestone of $1B+ deployed to over 25,000 small business customers since its 2011 founding, with an A+ BBB rating.",
+        "p": "2024-12-01"
+      },
+      {
+        "h": "QuickBridge Earns 4.8-Star Trustpilot Rating with 330+ Reviews",
+        "s": "Trustpilot, 2025",
+        "d": "Maintains exceptional customer satisfaction with 4.8-star rating on Trustpilot, positioning as one of the highest-rated alternative lenders nationwide.",
+        "p": "2025-06-01"
+      },
+      {
+        "h": "QuickBridge Expands Lending Products to $500K with Line of Credit",
+        "s": "quickbridge.com, 2025",
+        "d": "Expanded product suite beyond working capital loans to include small business lines of credit, with funding up to $500K and terms of 4-18 months.",
+        "p": "2025-03-01"
       }
     ],
     "ice": "QuickBridge's Top 3 customer satisfaction award from LendingTree is well-deserved. How are you maintaining that quality as you scale lending volume?",
@@ -18235,12 +17879,14 @@
       "That LendingTree Top 3 customer satisfaction award is impressive. How much does fast underwriting contribute to that score?",
       "Two consecutive Inc. 500 rankings show incredible growth. Is your underwriting infrastructure keeping pace?",
       "QuickBridge's 4.8 Trustpilot rating is rare in lending. What role does your approval speed play in customer satisfaction?",
-      "As part of National Funding, QuickBridge has scale. Are you looking at AI tools to further accelerate approvals?"
+      "As part of National Funding, QuickBridge has scale. Are you looking at AI tools to further accelerate approvals?",
+      "Combining QuickBridge's speed with National Funding's scale sounds powerful -- are you sharing underwriting infrastructure across both brands?"
     ],
     "tp": [
       "HyperVerge's AI underwriting could help QuickBridge maintain its top customer satisfaction scores by cutting review time from 40 minutes to under 5.",
       "With 450+ MCA companies served, HyperVerge helps lenders like QuickBridge process more applications without sacrificing quality.",
-      "Automating bank statement analysis and document verification aligns with QuickBridge's reputation for speed and reliability."
+      "Automating bank statement analysis and document verification aligns with QuickBridge's reputation for speed and reliability.",
+      "AI underwriting could unify deal decisioning across QuickBridge and National Funding, creating a single intelligent pipeline that serves both brands."
     ],
     "leaders": [
       {
@@ -18252,7 +17898,10 @@
           "*Cal State Fullerton MBA",
           "*Inc. 500 twice",
           "CSUF Board Treasurer",
-          "In lending since age 20"
+          "In lending since age 20",
+          "*Cal State Fullerton MBA — now Board Treasurer there",
+          "*Started in lending as college junior in 2002",
+          "Also CEO of Good Funding"
         ]
       },
       {
@@ -18265,6 +17914,25 @@
           "$3B+ combined financing",
           "Grew via acquisition strategy"
         ]
+      },
+      {
+        "n": "David Gilbert",
+        "t": "CEO, National Funding (Parent Company)",
+        "bg": "Founder and CEO of National Funding, one of the largest private fintech lenders for SMBs. Over 20 years championing American small business owners. National Funding acquired QuickBridge in October 2018, with both companies operating independently. Combined, the companies have provided $3B+ in financing to small and mid-sized businesses.",
+        "li": "https://www.linkedin.com/in/david-gilbert-b9b69610/",
+        "hooks": [
+          "*20+ years championing small business",
+          "Built $3B+ combined lending platform"
+        ]
+      },
+      {
+        "n": "Bryan Timmons",
+        "t": "Director of Operations",
+        "bg": "Manages day-to-day operations at QuickBridge. Oversees the operational processes that enable rapid funding decisions and same-day disbursements for the company's short-term working capital products up to $500K.",
+        "li": "",
+        "hooks": [
+          "Operations leader at fast-funding lender"
+        ]
       }
     ],
     "ask": "QuickBridge's commitment to fast, quality lending is exactly what HyperVerge supports. Can we show you how our AI maintains your high standards while 8x-ing throughput?",
@@ -18275,8 +17943,10 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
-    ]
+      "deep-researched",
+      "eventiq"
+    ],
+    "category": "funder"
   },
   {
     "id": 1063,
@@ -18371,7 +18041,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 1064,
@@ -18617,7 +18287,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "tam-researched"
     ],
     "category": "funder"
   },
@@ -23423,32 +23094,6 @@
     ]
   },
   {
-    "id": 1141,
-    "name": "Bluebridge Funding",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "New York-based small business lending company. Limited public information available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New Yorl",
-    "employees": 4,
-    "website": "https://bluebridgefunding.com",
-    "linkedinUrl": "https://www.linkedin.com/company/nbcllc/people/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
     "id": 1142,
     "name": "BoeFly",
     "type": "TAM",
@@ -25171,59 +24816,6 @@
     ]
   },
   {
-    "id": 1202,
-    "name": "Dynamic Funding",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Small business lending company. Limited public information available. May share website/brand with Dynamic Fundings/Financials (ID 1204).",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 2,
-    "website": "https://dynamicfundings.com",
-    "linkedinUrl": "https://www.linkedin.com/company/dynamic-fundings-ny/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1203,
-    "name": "Dynamic Financial Group",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "New York-based tech-forward funding broker specializing in MCA consolidation, business funding, and flexible financing for restaurants, retail, trades, logistics, ecommerce, and professional services. Minimal documentation required.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 13,
-    "website": "https://dynamicfinancialgrp.com/home",
-    "linkedinUrl": "https://www.linkedin.com/company/dynamic-financial-ny/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "broker"
-  },
-  {
     "id": 1204,
     "name": "Dynamic Fundings/Financials",
     "type": "TAM",
@@ -25707,7 +25299,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 1223,
@@ -26247,38 +25839,6 @@
       "tam",
       "tam-researched"
     ]
-  },
-  {
-    "id": 1241,
-    "name": "FUSION FUNDING",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Rudy Bensimon",
-        "t": "Founder"
-      }
-    ],
-    "desc": "Business financing company founded in 2014 by Rudy Bensimon, headquartered in Miami, FL. Provides working capital, MCAs, SBA loans, equipment finance, and invoice factoring from $20K-$200K with same-day approval.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Florida",
-    "employees": 18,
-    "website": "https://fusionfunding.com",
-    "linkedinUrl": "https://fusionfunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
   },
   {
     "id": 1242,
@@ -26860,59 +26420,6 @@
       "tam-researched"
     ],
     "category": "funder"
-  },
-  {
-    "id": 1263,
-    "name": "Infinity Capital Funding",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Technology-driven MCA provider founded in 2011, based in Woodland Hills, CA. Direct funder providing merchant cash advances, small business loans, and working capital solutions to small and mid-size businesses for over 13 years.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "California",
-    "employees": 12,
-    "website": "https://infinitycapitalfunding.com",
-    "linkedinUrl": "https://www.linkedin.com/company/infinity-capital-funding-inc/about/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
-    "id": 1264,
-    "name": "Infusion Capital Group",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Short-term working capital provider based in Mt. Pleasant, SC. Offers flexible funding from $5K-$500K with no long-term contracts, advancing funds against progress payments, POs, and contracts in as little as 48 hours.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "South Carolina, USA.",
-    "employees": 1,
-    "website": "https://infusioncapitalgroup.com",
-    "linkedinUrl": "https://www.linkedin.com/company/infusion-capital-group/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
   },
   {
     "id": 1265,
@@ -29205,7 +28712,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "technology"
+    "category": "funder"
   },
   {
     "id": 1353,
@@ -29392,33 +28899,6 @@
     ]
   },
   {
-    "id": 1360,
-    "name": "Premier Capital Funding",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Brooklyn, NY-based direct MCA lender providing quick working capital ($5K-$250K) for small and medium businesses with approval within 4 hours and same-day funding. BBB A-rated, offers ISO partnership programs for brokers.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 17,
-    "website": "https://premierecapitalfunding.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/premiere-capital-funding/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "broker"
-  },
-  {
     "id": 1361,
     "name": "Presto Prestamo dba 239Loans.com",
     "type": "TAM",
@@ -29471,32 +28951,6 @@
     "employees": 2,
     "website": "https://primepluscapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/primepluscapital",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1363,
-    "name": "Principis Capital LLC",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "New York-based merchant cash advance provider founded in 2009, offering advances from $4,000 to $150,000 to small businesses. Serves businesses with credit scores below 600 (30% below 500) with funding within six business days.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 16,
-    "website": "https://www.principiscapital.com",
-    "linkedinUrl": "https://www.linkedin.com/company/principis-capital",
     "source": [
       "tam",
       "tam-researched"
@@ -31915,32 +31369,6 @@
       "tam-researched"
     ],
     "category": "funder"
-  },
-  {
-    "id": 1455,
-    "name": "Adventure Funding Group LLC",
-    "type": "TAM",
-    "priority": 7,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Florida-based small business funding company. Limited public information available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Florida",
-    "employees": 0,
-    "website": "https://adventurefundings.com",
-    "linkedinUrl": "adventurefundings.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
   },
   {
     "id": 1456,
@@ -34645,33 +34073,6 @@
     ]
   },
   {
-    "id": 1521,
-    "name": "Cashable Funding",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Cashable Funding is a high-risk direct MCA funder for small business owners seeking immediate cash flow, with 10+ years underwriting experience. Offers daily, weekly, and hybrid repayment options with same-day funding, no FICO requirement, and 50% fee refund on completion.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "New York",
-    "employees": 2,
-    "website": "https://cashablefund.com",
-    "linkedinUrl": "cashablefund.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ],
-    "category": "funder"
-  },
-  {
     "id": 1522,
     "name": "Creative Capital Solutions",
     "type": "TAM",
@@ -34942,27 +34343,37 @@
   {
     "id": 1526,
     "name": "Financial Advantage Group LLC",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
+    "contacts": [
+      {
+        "n": "Steven T. Stull",
+        "t": "Founder & President"
+      }
+    ],
     "desc": "Financial Advantage Group provides working capital to small businesses in the US, Canada, and UK through term loans, merchant cash advances, and business lines of credit. Offers unsecured financing programs with funding in 1-2 business days.",
     "notes": "",
     "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
+    "ice": "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission.",
+    "icebreakers": [
+      "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission."
+    ],
+    "tp": [
+      "AI underwriting can help Advantage Capital identify high-potential businesses in underserved markets that traditional scoring overlooks, advancing both the impact and return missions."
+    ],
     "leaders": [],
-    "ask": "",
+    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "location": "Florida",
     "employees": 6,
     "website": "https://financialadvantagegroup.com",
     "linkedinUrl": "financialadvantagegroup.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -36383,27 +35794,37 @@
   {
     "id": 1555,
     "name": "Silverline",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
+    "contacts": [
+      {
+        "n": "Management Team",
+        "t": "Leadership"
+      }
+    ],
     "desc": "Silverline Capital is a New York-based MCA provider funding anywhere from $2,500 to $2.5M with approval within 24 hours. Known for going all-in on partnerships and keeping the funding process fast and smooth.",
     "notes": "",
     "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
+    "ice": "Your team's reputation for speed -- 24-hour approvals on deals up to $2.5M -- is impressive. How do you maintain that velocity as deal volume grows?",
+    "icebreakers": [
+      "Your team's reputation for speed -- 24-hour approvals on deals up to $2.5M -- is impressive. How do you maintain that velocity as deal volume grows?"
+    ],
+    "tp": [
+      "We help MCA funders maintain fast approval times at scale by automating bank statement analysis and cash flow scoring with AI."
+    ],
     "leaders": [],
-    "ask": "",
+    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "location": "New York",
     "employees": 6,
     "website": "https://silverlinecapitalllc.com",
     "linkedinUrl": "silverlinecapitalllc.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -36496,7 +35917,7 @@
   {
     "id": 1558,
     "name": "National Capital",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -36505,6 +35926,10 @@
       {
         "n": "National Capital Team",
         "t": "Leadership"
+      },
+      {
+        "n": "David Gilbert",
+        "t": "Founder & CEO"
       }
     ],
     "desc": "Business financing marketplace helping SMBs access multiple lending options through a single application with a 90% approval rate. Offers term loans, SBA loans, lines of credit, MCA, equipment financing, and invoice factoring.",
@@ -36514,6 +35939,24 @@
         "h": "National Capital Achieves 90% Approval Rate for Business Funding",
         "s": "Company reports",
         "d": "National Capital highlights its 90% approval rate for businesses regardless of credit, revenue, or time in business."
+      },
+      {
+        "h": "National Funding CEO David Gilbert Named to SD 500 Most Influential People for Fifth Time",
+        "s": "San Diego Business Journal, Nov 2024",
+        "d": "Gilbert recognized in the finance section of the SD 500 list for the fifth time, reflecting his sustained influence in San Diego's business community and the SMB lending industry.",
+        "p": "2024-11-15"
+      },
+      {
+        "h": "National Funding and QuickBridge Surpass $6 Billion in Total Funding",
+        "s": "National Funding, 2025",
+        "d": "National Funding and its subsidiary QuickBridge collectively surpassed $6 billion in total capital provided to more than 80,000 small and medium-sized businesses nationwide.",
+        "p": "2025-01-15"
+      },
+      {
+        "h": "National Funding CEO Recognized as San Diego's 2022 Most Influential People",
+        "s": "BusinessWire, Dec 2022",
+        "d": "David Gilbert named to San Diego Business Journal's SD 500 Most Influential list for the fourth time, recognizing his leadership in SMB fintech lending.",
+        "p": "2022-12-27"
       }
     ],
     "ice": "A 90% approval rate across diverse business profiles is impressive. How is National Capital managing underwriting efficiency across all those lending partners?",
@@ -36521,12 +35964,14 @@
       "A 90% approval rate across diverse business profiles is impressive. How is National Capital managing underwriting efficiency across all those lending partners?",
       "The single-application marketplace model is smart for borrowers. How are you handling the underwriting complexity of matching deals to the right lenders?",
       "With approvals possible in 24 hours, how is National Capital maintaining speed while offering such a broad range of products?",
-      "Serving businesses regardless of credit or revenue profile requires sophisticated risk assessment. How does your team manage that?"
+      "Serving businesses regardless of credit or revenue profile requires sophisticated risk assessment. How does your team manage that?",
+      "Over $6 billion funded since 1999 -- that's an incredible run. At that scale, where are the biggest efficiency gains still to be had?"
     ],
     "tp": [
       "HyperVerge's AI can help National Capital pre-screen applications faster, cutting initial review from 40 minutes to under 5 minutes before routing to lending partners.",
       "With 450+ MCA and lending companies using HyperVerge, we can help National Capital optimize the single-application model with automated risk scoring.",
-      "As National Capital's marketplace handles diverse deal types (SBA, MCA, equipment), HyperVerge's AI adapts underwriting intensity based on product and risk profile."
+      "As National Capital's marketplace handles diverse deal types (SBA, MCA, equipment), HyperVerge's AI adapts underwriting intensity based on product and risk profile.",
+      "At $6B+ in originations, even a 10% improvement in underwriting speed from AI could unlock hundreds of millions in additional annual capacity."
     ],
     "leaders": [
       {
@@ -36536,6 +35981,39 @@
         "li": "",
         "hooks": [
           "90% approval rate marketplace"
+        ]
+      },
+      {
+        "n": "David Gilbert",
+        "t": "Founder & CEO",
+        "bg": "USC Marshall School of Business (BS, Entrepreneurship, 1997). Founded National Funding in 1999 at age 23 after launching Five Point Capital, an equipment leasing firm. Fifth of six children in a family of three doctors and two lawyers — the only one who chose business, inspired by watching his father run a pathology lab with 60 employees. Won Ernst & Young Entrepreneur Of The Year 2017 (Finance, San Diego). Named USC Marshall 'Entrepreneur of the Year' 2007 and San Diego '40 Under Forty.' Recognized 5x on SD 500 Most Influential People list. Under his leadership, National Funding + QuickBridge have provided $6B+ to 80,000+ SMBs. Inc. 5000 for 8 consecutive years (2013-2020).",
+        "li": "https://www.linkedin.com/in/dave-gilbert-6289715",
+        "hooks": [
+          "*USC Marshall, Entrepreneurship",
+          "*EY Entrepreneur of Year 2017",
+          "*$6B+ funded, 80K+ businesses",
+          "Only non-doctor/lawyer in family of 6"
+        ]
+      },
+      {
+        "n": "Justin Thompson",
+        "t": "Chief Revenue Officer",
+        "bg": "Kennesaw State University. 20+ year career at National Funding, starting as Director of Sales in 2002. Promoted to EVP of Sales, then CRO in 2018. Managed a 100-person sales division spanning Direct Sales, Renewal Sales, Broker Sales, and Equipment Financing. Developed the Strategic Partnership vertical. CLFP certified. Based in San Diego.",
+        "li": "https://www.linkedin.com/in/justinthompson09",
+        "hooks": [
+          "*20+ years at National Funding",
+          "CLFP certified",
+          "Runs 100-person sales org"
+        ]
+      },
+      {
+        "n": "Michael van Asselt",
+        "t": "Chief Financial Officer",
+        "bg": "CFO at National Funding based in San Diego, California. Oversees financial operations, capital management, and strategic financial planning for one of the largest private fintech lenders in the SMB space.",
+        "li": "https://www.linkedin.com/in/michaelvanasselt/",
+        "hooks": [
+          "San Diego fintech CFO",
+          "Private lender capital strategist"
         ]
       }
     ],
@@ -36547,7 +36025,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -36686,33 +36165,6 @@
       "tam",
       "researched",
       "deep-researched"
-    ],
-    "category": "funder"
-  },
-  {
-    "id": 1562,
-    "name": "Elevation",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Elevation Capital offers MCAs, factoring, accounts receivable financing, inventory/purchase order financing, and payment processing. BBB A+ rated since 2018, provides advances from $10K-$3M with 1-3 day funding and factor rates of 1.12-1.24.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "North Carolina",
-    "employees": 4,
-    "website": "https://elevationcapitalllc.com/",
-    "linkedinUrl": "https://elevationcapitalllc.com/",
-    "source": [
-      "tam",
-      "tam-researched"
     ],
     "category": "funder"
   },
@@ -36884,7 +36336,7 @@
   {
     "id": 1569,
     "name": "One Park",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -36940,6 +36392,24 @@
         "h": "One Park Financial Named Best Company to Work For in Florida 4 Years Running",
         "s": "Company reports",
         "d": "One Park Financial was recognized as one of the best companies to work for in Florida for the fourth consecutive year."
+      },
+      {
+        "h": "One Park Financial Certified as Great Place to Work for 8th Year",
+        "s": "OneParkFinancial.com, Sep 2025",
+        "d": "Fund Street Technologies' subsidiary One Park Financial earned Great Place to Work certification for the eighth consecutive year, reflecting strong employee retention and culture in the competitive Miami fintech market.",
+        "p": "2025-09-15"
+      },
+      {
+        "h": "One Park Financial Wins Communication Award at 2025 Sun Sentinel Top Workplaces",
+        "s": "Sun Sentinel, May 2025",
+        "d": "Ranked 3rd place and won a Communication Award in the Sun Sentinel's 2025 Top Workplaces, demonstrating continued organizational excellence in South Florida.",
+        "p": "2025-05-20"
+      },
+      {
+        "h": "John Lie-Nielsen Named Most Influential CEO 2023 — Florida",
+        "s": "CEO Monthly, 2023",
+        "d": "CEO recognized for leadership in SME financing technology, highlighting One Park Financial's impact connecting small businesses with working capital solutions from 20+ lending partners.",
+        "p": "2023-11-15"
       }
     ],
     "ice": "Congrats on the Most Influential CEO recognition, John. With 20+ lending partners and operations in 48 states, how is One Park managing underwriting efficiency across that network?",
@@ -36947,23 +36417,29 @@
       "Congrats on the Most Influential CEO recognition, John. With 20+ lending partners and operations in 48 states, how is One Park managing underwriting efficiency across that network?",
       "Four years as one of Florida's best places to work while scaling nationwide is impressive. What role does technology play in One Park's operations?",
       "With 2-hour offer turnaround through McKenzie Capital, how is One Park maintaining that speed as deal volume grows?",
-      "One Park's marketplace model connecting businesses to 20+ lenders is powerful. How are you automating the matching and underwriting process?"
+      "One Park's marketplace model connecting businesses to 20+ lenders is powerful. How are you automating the matching and underwriting process?",
+      "Being named Florida's most influential CEO in SME financing tech is well-deserved -- what technology investments are you most excited about?"
     ],
     "tp": [
       "HyperVerge's AI can help One Park's McKenzie Capital arm process deals faster, cutting underwriting from 40 minutes to under 5 minutes for the 2-hour offer turnaround.",
       "With 450+ MCA companies using HyperVerge, we understand the marketplace/direct funder hybrid model and can help One Park scale across all 48 states.",
-      "As One Park routes applications across 20+ lending partners, HyperVerge can automate pre-screening and lender matching based on AI risk assessment."
+      "As One Park routes applications across 20+ lending partners, HyperVerge can automate pre-screening and lender matching based on AI risk assessment.",
+      "AI underwriting on your platform could pre-qualify merchants before they reach funders, improving match rates and reducing wasted effort for everyone."
     ],
     "leaders": [
       {
         "n": "John Lie-Nielsen",
         "t": "CEO & Founder",
         "bg": "Serial entrepreneur since 1999 who founded ACA Financial LLC that year and One Park Financial in 2010 in Miami. Named Most Influential CEO 2023 - Florida by CEO-Monthly Magazine. Member of Orange Bowl Committee and 2026 Miami Host Committee for College Football Playoff Championship. Company named Sun Sentinel Top Workplace 8 times and Great Place to Work certified 8 consecutive years.",
-        "li": "",
+        "li": "https://www.linkedin.com/in/john-lie-nielsen-9b10141b/",
         "hooks": [
           "*Most Influential CEO Florida 2023",
           "*8x Sun Sentinel Top Workplace",
-          "Orange Bowl Committee member"
+          "Orange Bowl Committee member",
+          "*Most Influential CEO 2023 Florida",
+          "*Entrepreneur since 1999",
+          "8x Great Place to Work certified",
+          "Servant leadership advocate"
         ]
       },
       {
@@ -36975,17 +36451,40 @@
           "Based in Frisco, Colorado",
           "Manages 20+ lender network"
         ]
+      },
+      {
+        "n": "Erik Nord",
+        "t": "Co-Founder",
+        "bg": "Co-founded One Park Financial alongside John Lie-Nielsen. Holds a J.D. (Doctor of Law) from University of Minnesota-Twin Cities. Attorney, advisor, and entrepreneur with expertise in asset management, mergers and acquisitions, corporate governance, and brokerage. Previously held roles at Above Labs and ePallet, Inc. Brings legal and M&A expertise to the company's strategic direction.",
+        "li": "https://www.linkedin.com/in/erik-nord-92804b59/",
+        "hooks": [
+          "*JD from University of Minnesota",
+          "Attorney + entrepreneur",
+          "M&A expertise"
+        ]
+      },
+      {
+        "n": "Jose Miguel Vera",
+        "t": "SVP of Growth & Marketing",
+        "bg": "Seasoned performance and integrated marketing professional leading all growth and marketing functions at One Park Financial. Rose through multiple roles internally: Senior Director of Acquisition Marketing, VP of Marketing, then SVP. Previously served as Senior Manager of SEM at Dentalplans and held director-level roles at Optimum7 digital agency. Expert in data-driven customer acquisition and multi-channel marketing strategy.",
+        "li": "https://www.linkedin.com/in/josemiguelvera/",
+        "hooks": [
+          "Rose through 4 roles internally",
+          "Ex-Optimum7 digital agency",
+          "Performance marketing expert"
+        ]
       }
     ],
     "ask": "John, would One Park be interested in seeing how AI could help McKenzie Capital and your lending partners process applications even faster?",
-    "location": "",
+    "location": "Florida",
     "employees": 261,
     "website": "https://www.oneparkfinancial.com",
     "linkedinUrl": "https://www.oneparkfinancial.com",
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -37337,7 +36836,7 @@
   {
     "id": 1580,
     "name": "Green Capital",
-    "type": "TAM",
+    "type": "ICP",
     "priority": 2,
     "phase": 0,
     "booth": false,
@@ -37346,6 +36845,10 @@
       {
         "n": "Green Capital Team",
         "t": "Leadership"
+      },
+      {
+        "n": "",
+        "t": "Managing Partner"
       }
     ],
     "desc": "New Jersey-based MCA funder providing business cash advances with daily ACH and split funding options. Compatible with multiple payment processors and offers revenue-based funding to small businesses.",
@@ -37367,12 +36870,14 @@
       "Green Capital's multi-processor split funding model is flexible for merchants. As you grow deal volume, how are you managing underwriting speed and compliance?",
       "With both daily ACH and split funding options, how does Green Capital handle the different risk profiles for each repayment method?",
       "The New Jersey MCA market is competitive. How is Green Capital differentiating its underwriting approach?",
-      "As regulatory scrutiny in the MCA space increases, how is Green Capital ensuring compliance alongside fast underwriting?"
+      "As regulatory scrutiny in the MCA space increases, how is Green Capital ensuring compliance alongside fast underwriting?",
+      "Green Capital Funding's broad network of alternative investors and lenders gives merchants access to diverse capital solutions."
     ],
     "tp": [
       "HyperVerge's AI can help Green Capital maintain compliance while speeding up underwriting, cutting review from 40 minutes to under 5 minutes per application.",
       "With 450+ MCA companies using HyperVerge, we understand the compliance requirements in states like New Jersey and can help automate risk assessment.",
-      "As Green Capital handles both ACH and split funding deals, HyperVerge can standardize underwriting across both repayment methods."
+      "As Green Capital handles both ACH and split funding deals, HyperVerge can standardize underwriting across both repayment methods.",
+      "AI underwriting can help Green Capital evaluate applications across its network of investors more efficiently, matching each deal to the right capital source."
     ],
     "leaders": [
       {
@@ -37394,7 +36899,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "eventiq"
     ],
     "category": "funder"
   },
@@ -38487,101 +37993,6 @@
       "tam",
       "tam-researched"
     ]
-  },
-  {
-    "id": 1607,
-    "name": "CAP FLOW",
-    "type": "TAM",
-    "priority": 2,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [
-      {
-        "n": "Andrew Coon",
-        "t": "Co-Founder & CEO"
-      },
-      {
-        "n": "William Gallagher",
-        "t": "Co-Founder"
-      }
-    ],
-    "desc": "Glen Rock, NJ-based private commercial lending platform specializing in invoice factoring, accounts receivable financing, inventory funding, and purchase order financing. Over $1B in working capital provided since 2009.",
-    "notes": "",
-    "news": [
-      {
-        "h": "CapFlow Funding Group Profiled by Forbes",
-        "s": "Forbes/LinkedIn, Dec 2024",
-        "d": "CEO Andrew Coon featured in Forbes-related content highlighting CapFlow's growth and lending model."
-      },
-      {
-        "h": "CapFlow Launches FactorLOC Product",
-        "s": "IFA Commercial Factor, Sep 2024",
-        "d": "CapFlow launched FactorLOC, a new product bridging traditional invoice factoring and lines of credit with flexible advance rates of 40-60%."
-      },
-      {
-        "h": "CapFlow Launches FactorLOC Product for SMB Financing",
-        "s": "IFA Commercial Factor",
-        "d": "CapFlow Funding Group launched FactorLOC, a factoring line of credit between $50K-$500K allowing SMBs to draw working capital on-demand."
-      },
-      {
-        "h": "CapFlow Launches FactorOne Spot-Factoring Solution",
-        "s": "capflowfunding.com",
-        "d": "CapFlow introduced FactorOne, a spot-factoring product for single invoices without long-term contracts or monthly minimums."
-      },
-      {
-        "h": "CapFlow Surpasses $1 Billion in Working Capital Provided",
-        "s": "Company reports",
-        "d": "CapFlow Funding Group has provided over $1 billion in working capital to thousands of American businesses since 2009."
-      }
-    ],
-    "ice": "Andrew, the FactorLOC and FactorOne products are innovative additions to the factoring space. With $1B+ deployed, how is CapFlow managing underwriting across all these product types?",
-    "icebreakers": [
-      "Andrew, the FactorLOC and FactorOne products are innovative additions to the factoring space. With $1B+ deployed, how is CapFlow managing underwriting across all these product types?",
-      "FactorOne's spot-factoring without contracts or minimums is a unique offering. How does your team handle the higher-velocity underwriting that requires?",
-      "60+ years of institutional investment banking experience across your managing partners is powerful. How is that translating to the factoring market?",
-      "Serving businesses with $75K to $25M in monthly revenue is a wide range. How does CapFlow adapt underwriting for each segment?"
-    ],
-    "tp": [
-      "HyperVerge's AI can help CapFlow underwrite FactorLOC and FactorOne applications faster, cutting review from 40 minutes to under 5 minutes per deal.",
-      "With 450+ lending companies using HyperVerge, we understand factoring-specific underwriting (debtor credit, invoice verification) and can automate key steps.",
-      "As CapFlow's innovative products drive higher deal velocity, HyperVerge can ensure consistent risk assessment across factoring, PO funding, and inventory financing."
-    ],
-    "leaders": [
-      {
-        "n": "Andrew Coon",
-        "t": "Co-Founder & CEO",
-        "bg": "Co-founded CapFlow Funding Group in 2009 and CFG Merchant Solutions in 2015. Career includes Managing Director at Morgan Stanley (2007-2009), Managing Director at Merrill Lynch (2000-2007), and Director at Standard & Poor's (1994-1996). MBA from Washington University in St. Louis, BA from Brown University.",
-        "li": "https://www.linkedin.com/in/andrew-j-coon/",
-        "hooks": [
-          "*Ex-Morgan Stanley & Merrill Lynch MD",
-          "Brown University BA",
-          "*$1B+ working capital deployed"
-        ]
-      },
-      {
-        "n": "William Gallagher",
-        "t": "Co-Founder & President, CFGMS",
-        "bg": "Co-founded CapFlow Funding Group, now President of CFG Merchant Solutions (CFGMS). Spent 1991-2004 at Lehman Brothers as Senior VP in Fixed Income Division, leading high-grade credit and commercial paper trading desks. Previously Chief Credit Officer at CapFlow. BA in Economics from Villanova University (1989).",
-        "li": "https://www.linkedin.com/in/william-gallagher-5b699524/",
-        "hooks": [
-          "*13 years at Lehman Brothers trader",
-          "Villanova Economics grad",
-          "CFGMS President"
-        ]
-      }
-    ],
-    "ask": "Andrew, would CapFlow be interested in seeing how AI underwriting could help maintain speed as FactorLOC and FactorOne scale deal volume?",
-    "location": "Arizona",
-    "employees": 27,
-    "website": "https://capflow.com",
-    "linkedinUrl": "https://capflow.com",
-    "source": [
-      "tam",
-      "researched",
-      "deep-researched"
-    ],
-    "category": "funder"
   },
   {
     "id": 1608,
@@ -39937,7 +39348,8 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "tam-researched"
     ],
     "category": "funder"
   },
@@ -40638,6 +40050,10 @@
       {
         "n": "Christian Reynolds",
         "t": "Director"
+      },
+      {
+        "n": "Rudy Bensimon",
+        "t": "Founder"
       }
     ],
     "desc": "Business funding company based in North Myrtle Beach, South Carolina, providing small business loans, working capital financing, and business lines of credit through fusionfunding.com.",
@@ -40682,8 +40098,10 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
-    ]
+      "deep-researched",
+      "tam-researched"
+    ],
+    "category": "funder"
   },
   {
     "id": 1657,
@@ -40733,32 +40151,6 @@
     "employees": 4,
     "website": "https://gldfunding.com",
     "linkedinUrl": "gldfunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1659,
-    "name": "GOLD CAPITAL",
-    "type": "TAM",
-    "priority": 7,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Kentucky-based business funding company offering merchant cash advances with money available within 48 hours. Serves as a merchant funding partner for small businesses seeking working capital.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Kentucky",
-    "employees": 0,
-    "website": "https://goldcapitalfund.com",
-    "linkedinUrl": "goldcapitalfund.com",
     "source": [
       "tam",
       "tam-researched"
@@ -41398,8 +40790,10 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
-    ]
+      "deep-researched",
+      "tam-researched"
+    ],
+    "category": "funder"
   },
   {
     "id": 1677,
@@ -43313,32 +42707,6 @@
     ]
   },
   {
-    "id": 1742,
-    "name": "SILVERLINE FUNDING",
-    "type": "TAM",
-    "priority": 6,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://silverlinefunding.com",
-    "linkedinUrl": "silverlinefunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
     "id": 1743,
     "name": "SJD FUNDING",
     "type": "TAM",
@@ -44076,35 +43444,10 @@
     "source": [
       "tam",
       "researched",
-      "deep-researched"
+      "deep-researched",
+      "tam-researched"
     ],
     "category": "funder"
-  },
-  {
-    "id": 1762,
-    "name": "TIGER FUNDING",
-    "type": "TAM",
-    "priority": 6,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://www.tigersfunding.com",
-    "linkedinUrl": "https://www.tigersfunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
   },
   {
     "id": 1763,
@@ -44434,32 +43777,6 @@
     "employees": 5,
     "website": "https://valuebusinessfunding.com",
     "linkedinUrl": "https://valuebusinessfunding.com",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
-  },
-  {
-    "id": 1771,
-    "name": "WE FUND CAPITAL",
-    "type": "TAM",
-    "priority": 4,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 1,
-    "website": "https://wefundllc.com/",
-    "linkedinUrl": "https://wefundllc.com/",
     "source": [
       "tam",
       "tam-researched"
@@ -45423,7 +44740,7 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "",
+    "location": "Florida",
     "employees": 0,
     "website": "https://adventurefundings.com/partner/",
     "linkedinUrl": "https://adventurefundings.com/partner/",

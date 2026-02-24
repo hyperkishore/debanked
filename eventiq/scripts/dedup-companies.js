@@ -14,7 +14,7 @@ const data = JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'));
 function norm(name) {
   return name.toLowerCase()
     .replace(/[^a-z0-9]/g, '')
-    .replace(/(llc|inc|corp|ltd|group|company|co)\b/g, '');
+    .replace(/(llc|inc|corp|ltd|group|company|co|funding|capital|financial)/g, '');
 }
 
 // Build duplicate groups
