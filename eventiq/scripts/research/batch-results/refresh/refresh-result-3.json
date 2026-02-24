@@ -1,0 +1,395 @@
+[
+  {
+    "id": 84,
+    "name": "Platinum Rapid Funding Group",
+    "website": "https://platinumrapidfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/platinum-rapid-funding-group",
+    "leaders": [
+      {
+        "n": "Ali Mayar",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Platinum Rapid Funding Group in 2012 after working as a stockbroker. First job was in corporate security, where he was exposed to the alternative financial solutions industry. Under his leadership the company originated $180M in 2016. Built the company from the ground up on Long Island, NY, focused on helping smaller entrepreneurs grow their startups. The management team has over 25 years of combined experience working with small business owners.",
+        "li": "https://www.linkedin.com/in/ali-mayar-bbb3822a/",
+        "hooks": ["*Ex-stockbroker turned MCA founder", "$180M originated in single year", "Started from corporate security"]
+      },
+      {
+        "n": "Vincent Bardong",
+        "t": "President & Co-Founder",
+        "bg": "Co-founded Platinum Rapid Funding Group alongside Ali Mayar. Holds a Bachelor of Business Administration (B.B.A.) from Queens College. Previously worked as a mortgage broker before pivoting to alternative lending after the 2008 Great Recession decimated the mortgage industry. Instrumental in building the company's operations in Uniondale, Long Island.",
+        "li": "https://www.linkedin.com/in/vincent-p-bardong-38b42024/",
+        "hooks": ["*Queens College BBA", "Ex-mortgage broker", "Pivoted during 2008 recession"]
+      }
+    ],
+    "news": [
+      {"h": "Platinum Asset Funding LLC v Platinum Rapid Funding Group — 2025 NY Court Case", "s": "Justia, 2025", "d": "Legal dispute involving Platinum Rapid Funding Group in New York state courts, indicating continued active operations and brand prominence in the MCA space.", "p": "2025-07-15"},
+      {"h": "Platinum Rapid Funding Group Plans Office Relocation", "s": "LinkedIn, Apr 2024", "d": "Company announced plans to move from its Uniondale, NY headquarters at 348 RXR Plaza, signaling operational growth and need for expanded facilities.", "p": "2024-04-01"},
+      {"h": "Platinum Rapid Funding Group Featured on Money Inc.", "s": "AccessNewswire, 2019", "d": "Company profiled in Money Inc., highlighting CEO Ali Mayar's entrepreneurial journey from stockbroker to building one of Long Island's notable MCA providers.", "p": "2019-06-15"}
+    ],
+    "ice": "Ali, I saw Platinum Rapid hit $180M in originations back in 2016 — with the MCA market having grown significantly since then, I'd love to hear how your volume has scaled and whether underwriting speed is still a bottleneck at higher volumes.",
+    "icebreakers": [
+      "Noticed the 2024 office relocation from RXR Plaza — is the move tied to team expansion or new operational capacity?",
+      "Impressive trajectory from $180M originated in 2016 to where you are now — what does the origination pipeline look like today?",
+      "As a company that was born out of the 2008 recession, how are you adapting your risk models in the current lending environment?",
+      "With more MCA players entering Long Island, how is Platinum differentiating on speed and approval rates versus newer entrants?"
+    ],
+    "tp": [
+      "At Platinum's origination volume, even a 10% improvement in underwriting speed could unlock significant additional daily funding capacity — HyperVerge's AI-powered document verification processes applications in under 60 seconds.",
+      "Over 450 MCA companies trust HyperVerge for identity verification and fraud prevention — joining that network means Platinum would benefit from shared fraud intelligence across the industry.",
+      "Automating bank statement and ID verification eliminates manual review bottlenecks, letting your team focus on deal quality rather than document chasing — customers like yours typically see 40% faster approval cycles."
+    ],
+    "ask": "Ali, given Platinum's scale and growth trajectory, I'd love to show you how HyperVerge can help your team process more deals per day without adding headcount — would a 20-minute demo this week work?"
+  },
+  {
+    "id": 85,
+    "name": "Reliant Funding",
+    "website": "https://reliantfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/reliant-funding/",
+    "leaders": [
+      {
+        "n": "Steve Kietz",
+        "t": "CEO",
+        "bg": "Promoted to CEO in July 2021 after serving as CMO since 2017. Holds a BA from SUNY Binghamton and an MBA in Marketing from Baruch College. 30+ year career in financial services including President of Citibank Direct, President of Inte Q, and Founder/CEO of Mobile Money Ventures (acquired by Intuit). Named to Bank Systems & Technology 'Elite 8' most innovative bankers in 2008. Previously held leading roles at Citi and JP Morgan.",
+        "li": "https://www.linkedin.com/in/stevekietz/",
+        "hooks": ["*Founded company acquired by Intuit", "*Ex-President of Citibank Direct", "SUNY Binghamton + Baruch MBA", "Elite 8 most innovative banker"]
+      },
+      {
+        "n": "Adam Stettner",
+        "t": "Founder",
+        "bg": "Founded Reliant Funding in 2008 and served as CEO for 14 years, growing it to $3B funded on balance sheet to ~100,000 small businesses and 200+ employees. BA in Communication from University of Maryland, studied finance at Columbia Business School Executive Education. Previously created a division at Student Loan Xpress (CIT/Fortune 500) producing $8B+ in student loan originations. Won Ernst & Young Entrepreneur of the Year 2019. Left to found FundCanna in 2021, a cannabis industry lender. Holds Series 7, 55, and 63 licenses.",
+        "li": "https://www.linkedin.com/in/adamstettner/",
+        "hooks": ["*EY Entrepreneur of the Year 2019", "*$8B student loan division at CIT", "UMD + Columbia Business School", "*Founded FundCanna (cannabis fintech)"]
+      },
+      {
+        "n": "David Schneider",
+        "t": "VP of Marketing",
+        "bg": "20+ years of B2B marketing experience specializing in customer acquisition and retention, merchandising, product development, and multi-channel e-commerce. Leads marketing strategy and brand positioning at Reliant Funding, driving customer acquisition across digital and traditional channels for the San Diego-based lender.",
+        "li": "https://www.linkedin.com/in/david-schneider-bab7aaa/",
+        "hooks": ["20+ yr B2B marketing veteran", "Multi-channel e-commerce expert"]
+      }
+    ],
+    "news": [
+      {"h": "Reliant Funding Acquired in March 2024", "s": "Tracxn, Mar 2024", "d": "Reliant Funding was acquired in a deal closing March 1, 2024, marking a major ownership transition for the San Diego-based alternative lender after 16 years of independent operation.", "p": "2024-03-01"},
+      {"h": "Reliant Funding Secures $125M Debt Facility from Ares Management", "s": "PitchBook, 2023", "d": "Ares Management provided $125M in debt funding, significantly expanding Reliant's lending capacity for short-term working capital products to small and mid-sized businesses.", "p": "2023-06-15"},
+      {"h": "Reliant Funding Revenue Reaches $65M in 2025", "s": "ZoomInfo, 2025", "d": "Annual revenue estimated at $65M as the company continues serving SMBs nationwide with MCA and working capital products across construction, healthcare, and hospitality sectors.", "p": "2025-09-01"}
+    ],
+    "ice": "Steve, congratulations on the 2024 acquisition — with new ownership backing and the $125M Ares facility, I imagine you're scaling origination volume significantly. How is the underwriting infrastructure keeping pace?",
+    "icebreakers": [
+      "With the 2024 acquisition complete, how is Reliant's strategy evolving under new ownership — are you expanding product lines or geographies?",
+      "At $65M in annual revenue and $125M in debt capacity, Reliant has serious firepower — what's the biggest operational bottleneck at this scale?",
+      "As a lender serving construction, healthcare, and hospitality verticals, how do you manage the varying risk profiles across industries?",
+      "With founder Adam Stettner having moved on to FundCanna, how has the company culture and product focus shifted under your leadership?"
+    ],
+    "tp": [
+      "At Reliant's scale of $65M annual revenue, automating identity verification and bank statement analysis could free up significant underwriting capacity — HyperVerge processes verifications in under 60 seconds versus 15-20 minutes manually.",
+      "With 450+ MCA companies already on HyperVerge's platform, Reliant would gain access to cross-industry fraud intelligence that protects your growing portfolio from stacking and identity fraud.",
+      "Post-acquisition growth targets require infrastructure that scales — HyperVerge's API-first approach means Reliant can double origination volume without doubling the ops team."
+    ],
+    "ask": "Steve, with the new ownership push and expanded lending capacity, I'd love to show you how HyperVerge can help Reliant process more applications faster while reducing fraud risk — can we set up a quick call this week?"
+  },
+  {
+    "id": 86,
+    "name": "Lendio",
+    "website": "https://lendio.com",
+    "linkedinUrl": "https://www.linkedin.com/company/lendio/",
+    "leaders": [
+      {
+        "n": "Brock Blake",
+        "t": "CEO & Co-Founder",
+        "bg": "Founded Lendio after witnessing small businesses struggle to get capital post-2008. Educated at BYU Marriott School of Management. Never held a traditional job — started with a paper route, ran a soccer camp, and bought/sold scooters at BYU to pay tuition. Co-founded FundingUniverse in 2006 with Trent Miskin after winning a $50K startup competition. Named Utah Business Magazine CEO of the Year. Won EY Entrepreneur of the Year 2020 Utah Region. Named Utah's Top 40 Under 40 at age 24 and Utah Technology Council's Emerging Executive of the Year in 2006.",
+        "li": "https://www.linkedin.com/in/brockblake/",
+        "hooks": ["*Never held a traditional job", "*EY Entrepreneur of the Year 2020", "BYU Marriott School", "*Won $50K competition to start company"]
+      },
+      {
+        "n": "Joanna Fankhauser",
+        "t": "Chief Operations Officer",
+        "bg": "Appointed COO in September 2025 to drive Lendio's next phase of growth. BBA from BYU, MBA from University of Utah. Previously Global VP of Revenue Operations & Enablement at Instructure and held roles at Pluralsight, Wyndham Hotels & Resorts, and American Ski Company. Brings deep SaaS strategy and operations experience to scale Lendio's Embedded Marketplace and Intelligent Lending platforms.",
+        "li": "https://www.linkedin.com/in/joannafank/",
+        "hooks": ["*Ex-Instructure Global VP", "BYU + Utah MBA", "SaaS ops scaling expert"]
+      }
+    ],
+    "news": [
+      {"h": "Grasshopper Bank Taps Lendio to Power AI-Driven SBA Lending", "s": "PR Newswire, Jul 2025", "d": "Grasshopper Bank partnered with Lendio's Intelligent Lending platform to bring instant SBA loan offers to market, with first deal closing in May 2025. Signals Lendio's pivot toward AI-powered lending infrastructure.", "p": "2025-07-15"},
+      {"h": "Payro Finance Selects Lendio to Expand SMB Financing", "s": "PR Newswire, Feb 2025", "d": "Payro Finance chose Lendio's embedded loan marketplace to expand financing options for small businesses, validating Lendio's B2B embedded lending strategy.", "p": "2025-02-10"},
+      {"h": "Lendio Q1 2025 SMB Lending Index Shows Lender Optimism Surge", "s": "PR Newswire, Apr 2025", "d": "Lendio's proprietary lending index reveals 'Poor' access-to-capital ratings dropped from 29% to just 9%, signaling strong recovery in small business lending confidence.", "p": "2025-04-15"}
+    ],
+    "ice": "Brock, the Grasshopper Bank SBA partnership and Payro embedded marketplace deal show Lendio is evolving from a marketplace into lending infrastructure — how are you thinking about verification and compliance as more banks plug into the platform?",
+    "icebreakers": [
+      "The Grasshopper Bank partnership for AI-driven SBA lending is fascinating — is Intelligent Lending the future of Lendio's revenue model?",
+      "With the lending index showing 'Poor' access dropping from 29% to 9%, how is Lendio capitalizing on this improved lending environment?",
+      "Joanna Fankhauser joining as COO from Instructure signals serious SaaS scaling ambitions — what operational changes is she driving?",
+      "As more banks and fintechs embed Lendio's marketplace, how do you maintain underwriting quality and compliance across diverse lending partners?"
+    ],
+    "tp": [
+      "As Lendio's Intelligent Lending platform powers more bank partners like Grasshopper, embedded identity verification becomes critical — HyperVerge can provide seamless KYC/KYB checks across all your lending partners through a single API.",
+      "With 450+ MCA and alternative lending companies already using HyperVerge, integrating into Lendio's marketplace would give every lender on your platform access to industry-leading fraud detection and document verification.",
+      "Lendio's embedded marketplace model demands verification that's fast enough not to create friction — HyperVerge's sub-60-second processing ensures borrowers complete applications without drop-off."
+    ],
+    "ask": "Brock, as Lendio powers more bank lending partnerships, I'd love to explore how HyperVerge's verification API could become a standard component in your Intelligent Lending stack — could we schedule a 20-minute technical discussion?"
+  },
+  {
+    "id": 87,
+    "name": "Become",
+    "website": "https://www.become.co",
+    "linkedinUrl": "https://www.linkedin.com/company/become-co/",
+    "leaders": [
+      {
+        "n": "Eden Amirav",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Become (formerly Lending Express) to help SMBs become more fundable using data analytics. Attended Open University Israel (2011-2013). Brings 13+ years of experience in online businesses and marketing technologies. Before becoming a fintech founder, was Israel's #1 champion in Warcraft III for four consecutive years (2003-2006). Under his leadership, Become surpassed $200M in matching online lending to SMEs and raised $12.5M in funding from Benson Oak Ventures, Magenta Venture, RIO Ventures, iAngels, and Entree Capital.",
+        "li": "https://www.linkedin.com/in/eden-amirav-9375bb23",
+        "hooks": ["*Israel's #1 Warcraft III champion 4 years", "Open University Israel", "*$200M+ SMB lending matched", "Rebranded from Lending Express"]
+      }
+    ],
+    "news": [
+      {"h": "Become Secures $12.5M Series A to Make SMBs More Fundable", "s": "FinTech Futures, Oct 2019", "d": "Israeli fintech Become raised $12.5M led by Benson Oak Ventures and Magenta Venture, including $2.5M in venture debt from Viola Credit, to scale operations in the US and Australia.", "p": "2019-10-29"},
+      {"h": "Become Surpasses $200M in SMB Lending Matches", "s": "Startup Nation Central, 2020", "d": "The platform's proprietary MatchScore algorithm, analyzing thousands of attributes to pair SMBs with optimal funding solutions, drove significant volume growth. Businesses using Become are 20% more likely to receive funding.", "p": "2020-06-15"},
+      {"h": "How a Computer Game Master Applied His Talents to Online Lending", "s": "deBanked, Dec 2018", "d": "Profile of CEO Eden Amirav, a former professional Warcraft III player who applied competitive gaming analytics skills to building an SMB lending marketplace.", "p": "2018-12-15"}
+    ],
+    "ice": "Eden, the journey from Israel's top Warcraft III player to building a $200M+ SMB lending platform is remarkable — how is Become's MatchScore algorithm evolving as AI capabilities advance in the lending space?",
+    "icebreakers": [
+      "The $12.5M raise and US expansion showed strong investor confidence — how has Become's market positioning evolved since then?",
+      "Become's data showing SMBs are 20% more likely to receive funding through your platform is compelling — what's driving that lift?",
+      "As an Israeli fintech operating in US/Australia lending markets, what unique cross-border compliance challenges do you face?",
+      "With more AI-powered lending platforms entering the market, how is Become's MatchScore staying differentiated?"
+    ],
+    "tp": [
+      "As Become matches SMBs with lenders, integrating identity verification into the matching flow ensures borrowers are verified before reaching lender partners — HyperVerge's API can do this in under 60 seconds with no app download.",
+      "With 450+ MCA companies already using HyperVerge, adding verification to Become's platform would create a trusted layer that increases lender confidence in matched applicants.",
+      "Become's 20% higher funding success rate could improve further by catching fraudulent applications early — HyperVerge's document and identity AI prevents bad actors from entering the funnel."
+    ],
+    "ask": "Eden, as Become connects SMBs to lenders, adding seamless identity verification to your MatchScore flow could boost approval rates even further — would you be open to a 15-minute call to explore this?"
+  },
+  {
+    "id": 88,
+    "name": "Synergy Merchants",
+    "website": "https://synergymerchants.com",
+    "linkedinUrl": "https://www.linkedin.com/company/synergy-merchant-solutions",
+    "leaders": [
+      {
+        "n": "Synergy Merchants Leadership",
+        "t": "Management Team",
+        "bg": "Synergy Merchants is a Canadian-owned company specializing in merchant cash advances since 2007, headquartered at 265 Rimrock Rd, Toronto, Ontario. The company has grown to approximately 95 employees and is recognized as Canada's leading merchant funding and cash advance company. They introduced FastCap Funding, providing $1,500-$50,000 in under four hours with no credit checks. Leadership details are not publicly disclosed — the company maintains a private management structure.",
+        "li": "",
+        "hooks": ["*Canada's leading MCA provider", "Est. 2007 Toronto", "95 employees", "FastCap Funding launched"]
+      }
+    ],
+    "news": [
+      {"h": "Synergy Merchants Launches FastCap Funding Product", "s": "synergymerchants.com, 2024", "d": "New financing alternative offering merchants $1,500-$50,000 in under four hours with no credit checks, targeting businesses accepting credit/debit payments for at least 30 days. Positioned as a fast-track alternative to their core MCA product.", "p": "2024-06-15"},
+      {"h": "Synergy Merchants Ranked Among Canada's Best MCA Companies", "s": "TopCreditCardProcessors, Dec 2025", "d": "Synergy Merchants recognized in industry rankings of best merchant cash advance companies in Canada, reflecting sustained market leadership since 2007.", "p": "2025-12-01"},
+      {"h": "Synergy Merchants Expands Partner Network Across Canada", "s": "synergymerchants.com, 2025", "d": "Company continues building partnerships to expand access to merchant cash advances for Canadian businesses that have been declined by traditional banks and standard MCA providers.", "p": "2025-03-15"}
+    ],
+    "ice": "Your FastCap Funding product — under 4 hours, no credit check — is a bold differentiator in the Canadian MCA market. As volume scales, how are you managing verification and fraud prevention on that tight timeline?",
+    "icebreakers": [
+      "The FastCap Funding launch is interesting — funding in under 4 hours with no credit checks requires serious backend automation. What does your verification stack look like?",
+      "Being Canada's leading MCA provider since 2007 is impressive longevity — how has the competitive landscape changed in the Canadian market?",
+      "With 95 employees and growing, how is Synergy Merchants thinking about scaling operations while maintaining approval speed?",
+      "As more US MCA players look north to Canada, how is Synergy defending its market leadership position?"
+    ],
+    "tp": [
+      "FastCap Funding's under-4-hour promise requires verification that doesn't slow down the process — HyperVerge can verify identity documents and bank statements in under 60 seconds, fitting seamlessly into your fast-track workflow.",
+      "With 450+ MCA companies globally using HyperVerge for fraud prevention, Synergy would benefit from cross-border fraud intelligence that protects your Canadian portfolio from increasingly sophisticated schemes.",
+      "Scaling from 95 employees without adding proportional headcount to underwriting is possible with AI-powered document verification — our customers typically see 40% faster approval cycles."
+    ],
+    "ask": "With FastCap Funding's speed promise, I'd love to show how HyperVerge can handle identity and document verification in under 60 seconds to keep your approvals fast and fraud-free — would a quick demo work this week?"
+  },
+  {
+    "id": 89,
+    "name": "One Park Financial",
+    "website": "https://oneparkfinancial.com",
+    "linkedinUrl": "https://www.linkedin.com/company/one-park-financial/",
+    "leaders": [
+      {
+        "n": "John Lie-Nielsen",
+        "t": "CEO & Founder",
+        "bg": "Founded One Park Financial in 2010 as a subsidiary of Fund Street Technologies. Has been an entrepreneur for over half his life — founded ACA Financial LLC in 1999. Named 'Most Influential CEO 2023 — Florida' by CEO Monthly in the SME Financing Technology category. Company featured multiple times on Entrepreneur Magazine's Entrepreneur 360 list. Practices servant leadership philosophy, prioritizing team empowerment. Company certified as Great Place to Work for 8 consecutive years. Revenue estimated at $64M annually.",
+        "li": "https://www.linkedin.com/in/john-lie-nielsen-9b10141b/",
+        "hooks": ["*Most Influential CEO 2023 Florida", "*Entrepreneur since 1999", "8x Great Place to Work certified", "Servant leadership advocate"]
+      },
+      {
+        "n": "Erik Nord",
+        "t": "Co-Founder",
+        "bg": "Co-founded One Park Financial alongside John Lie-Nielsen. Holds a J.D. (Doctor of Law) from University of Minnesota-Twin Cities. Attorney, advisor, and entrepreneur with expertise in asset management, mergers and acquisitions, corporate governance, and brokerage. Previously held roles at Above Labs and ePallet, Inc. Brings legal and M&A expertise to the company's strategic direction.",
+        "li": "https://www.linkedin.com/in/erik-nord-92804b59/",
+        "hooks": ["*JD from University of Minnesota", "Attorney + entrepreneur", "M&A expertise"]
+      },
+      {
+        "n": "Jose Miguel Vera",
+        "t": "SVP of Growth & Marketing",
+        "bg": "Seasoned performance and integrated marketing professional leading all growth and marketing functions at One Park Financial. Rose through multiple roles internally: Senior Director of Acquisition Marketing, VP of Marketing, then SVP. Previously served as Senior Manager of SEM at Dentalplans and held director-level roles at Optimum7 digital agency. Expert in data-driven customer acquisition and multi-channel marketing strategy.",
+        "li": "https://www.linkedin.com/in/josemiguelvera/",
+        "hooks": ["Rose through 4 roles internally", "Ex-Optimum7 digital agency", "Performance marketing expert"]
+      }
+    ],
+    "news": [
+      {"h": "One Park Financial Certified as Great Place to Work for 8th Year", "s": "OneParkFinancial.com, Sep 2025", "d": "Fund Street Technologies' subsidiary One Park Financial earned Great Place to Work certification for the eighth consecutive year, reflecting strong employee retention and culture in the competitive Miami fintech market.", "p": "2025-09-15"},
+      {"h": "One Park Financial Wins Communication Award at 2025 Sun Sentinel Top Workplaces", "s": "Sun Sentinel, May 2025", "d": "Ranked 3rd place and won a Communication Award in the Sun Sentinel's 2025 Top Workplaces, demonstrating continued organizational excellence in South Florida.", "p": "2025-05-20"},
+      {"h": "John Lie-Nielsen Named Most Influential CEO 2023 — Florida", "s": "CEO Monthly, 2023", "d": "CEO recognized for leadership in SME financing technology, highlighting One Park Financial's impact connecting small businesses with working capital solutions from 20+ lending partners.", "p": "2023-11-15"}
+    ],
+    "ice": "John, 8 consecutive Great Place to Work certifications is exceptional for a fintech — that kind of culture stability must help with consistent service quality. As you scale with 20+ lending partners, how do you maintain fast, reliable verification across all of them?",
+    "icebreakers": [
+      "Congrats on the 8th Great Place to Work certification — in Miami's competitive talent market, that's a real differentiator. How does it translate to borrower experience?",
+      "With $64M in annual revenue and 20+ lending partners, One Park has serious scale — what's the biggest ops challenge in matching merchants to the right lender?",
+      "The Sun Sentinel Communication Award is interesting — how does strong internal communication translate to faster borrower approvals?",
+      "As a marketplace connecting to 20+ lenders, you sit at a unique intersection — how are you handling the varying verification requirements across different lending partners?"
+    ],
+    "tp": [
+      "Connecting merchants to 20+ lending partners means juggling different verification requirements — HyperVerge provides a unified identity and document verification layer that satisfies all partner compliance needs through a single API integration.",
+      "With 450+ MCA companies already on HyperVerge, One Park's lending partners may already be in our network — adding verification at the marketplace level reduces friction and catches fraud before it reaches any partner.",
+      "At $64M revenue and growing, automating the verification process means your team can present offers in 2 hours instead of waiting for manual document review — that speed advantage converts more borrowers."
+    ],
+    "ask": "John, with 20+ lending partners and growing volume, a single verification layer could simplify compliance and speed up approvals across the board — would you be open to a 20-minute call to see how HyperVerge handles this for other marketplaces?"
+  },
+  {
+    "id": 90,
+    "name": "Behalf",
+    "website": "https://www.behalf.com",
+    "linkedinUrl": "https://www.linkedin.com/company/behalf",
+    "leaders": [
+      {
+        "n": "Benjy Feinberg",
+        "t": "Co-Founder & Former CEO",
+        "bg": "Co-founded Behalf in 2011 with his brother Shai Feinberg and Jeremy Esekow. Studied law in Israel and earned an MBA from INSEAD (France, 1997). Before founding Behalf, worked in New York financing and buying out multimillion-dollar companies and preparing companies for IPOs. Built Behalf into a platform that onboarded 19,000+ merchants and 95,000 business customers, providing $1B+ in B2B financing. Stepped down as CEO in 2020 to serve as advisor.",
+        "li": "https://www.linkedin.com/in/benjyfeinberg/",
+        "hooks": ["*INSEAD MBA", "*$1B+ in B2B financing originated", "Israeli law degree", "IPO preparation background"]
+      },
+      {
+        "n": "Rob Rosenblatt",
+        "t": "Former CEO (2020-2022)",
+        "bg": "Took over as CEO of Behalf in 2020 after serving as President for six months. BS from University at Albany, MBA from Harvard Business School. Former Head of Lending & GM at Kabbage where he drove unprecedented growth. Previously Chief Customer and Chief Marketing Officer at Flywire. Board member of PEX Card. After Behalf ceased operations in January 2023, joined National Funding as President of a new digital lending division.",
+        "li": "https://www.linkedin.com/in/rrosenblatt",
+        "hooks": ["*Harvard Business School MBA", "*Ex-Kabbage Head of Lending", "Ex-Flywire CMO", "Albany + HBS"]
+      }
+    ],
+    "news": [
+      {"h": "Behalf Ceases Operations in January 2023", "s": "DomainGang, 2023", "d": "B2B payments fintech Behalf mysteriously shut down without formal notice to customers or merchants. Social media accounts went dark in March 2022, and the domain behalf.com was later auctioned for $34,500 in December 2023.", "p": "2023-01-15"},
+      {"h": "Behalf Raises $100M Debt Facility for B2B BNPL Offering", "s": "Finovate, Jul 2021", "d": "Ares Management provided $100M debt facility plus $19M in venture financing to expand Behalf's buy-now-pay-later capabilities for B2B commerce, marking the company's peak capitalization before eventual shutdown.", "p": "2021-07-15"},
+      {"h": "FinTech Vet Rob Rosenblatt Takes Over as CEO at Behalf", "s": "GlobeNewsWire, Aug 2020", "d": "Former Kabbage and Flywire executive Rob Rosenblatt was promoted from President to CEO, replacing co-founder Benjy Feinberg who transitioned to an advisory role.", "p": "2020-08-20"}
+    ],
+    "ice": "The Behalf story — from $1B+ in B2B financing and $100M from Ares to shutting down in 2023 — offers valuable lessons about B2B payments infrastructure. For companies in this space, what verification and risk management lessons can we learn?",
+    "icebreakers": [
+      "Behalf's trajectory from $1B+ in financing to a quiet shutdown in 2023 is one of the most instructive fintech stories — what do you think went wrong in the risk model?",
+      "The Ares-backed $100M facility in 2021 seemed to validate the B2B BNPL model — what changed in the macro environment that made the business unsustainable?",
+      "With 19,000 merchants and 95,000 business customers, Behalf had real scale — was the challenge in credit quality, unit economics, or something else?",
+      "The shift from founder-CEO Benjy Feinberg to operator-CEO Rob Rosenblatt in 2020 was a pivotal moment — how did the company's strategy evolve after that transition?"
+    ],
+    "tp": [
+      "Behalf's shutdown highlights how critical robust identity verification and fraud prevention are for B2B lending platforms — HyperVerge's AI catches synthetic identities and document fraud that can erode portfolio quality.",
+      "With 450+ lending companies using HyperVerge, we've seen how B2B platforms that implement strong upfront verification maintain healthier portfolios and more sustainable unit economics.",
+      "For any B2B financing platform handling high volumes, automated document verification reduces manual review costs by 40%+ while catching fraud patterns that human reviewers miss."
+    ],
+    "ask": "For anyone building in the B2B financing space, Behalf's story underscores the importance of getting verification and risk management right from day one — HyperVerge can help ensure that foundation is solid. Worth a conversation?"
+  },
+  {
+    "id": 91,
+    "name": "Breakout Capital",
+    "website": "https://www.breakoutfinance.com",
+    "linkedinUrl": "https://www.linkedin.com/company/breakout-capital-finance",
+    "leaders": [
+      {
+        "n": "McLean Wilson",
+        "t": "Co-CEO & President",
+        "bg": "25+ years in finance and banking with deep experience in asset-based lending, factoring, asset management, and capital raising. Graduated from Clemson University with BS and MS in Civil Engineering. Holds Series 65 license. Co-founded Charleston Capital Management (alternative investment asset manager focused on small business loans and MCAs) and inFactor (origination/servicing software platform for small business lenders). Previously VP at SouthStar Capital, originating $500M+ in factored assets. Promoted from Chief Credit Officer to CEO in January 2020.",
+        "li": "https://www.linkedin.com/in/mclean-wilson-a9506713/",
+        "hooks": ["*Clemson BS + MS Civil Engineering", "*Co-founded 3 fintech companies", "Series 65 licensed", "$500M+ factoring at SouthStar"]
+      },
+      {
+        "n": "Ryan Jaskiewicz",
+        "t": "Chief Strategy Officer",
+        "bg": "Started 12Five Capital at age 23 in 2006. BA in Political Science from University of Illinois at Chicago. Built 12Five into a leading Chicago-based commercial finance company focused on factoring, PO financing, and asset-based lending. Following the September 2023 merger with Breakout Capital (facilitated by parent company Altriarch), now serves as CSO responsible for corporate strategy, technology innovation, and leading the ABL and factoring divisions. The combined entity has a day-one portfolio exceeding $80M.",
+        "li": "https://www.linkedin.com/in/ryan-jaskiewicz-b3a3945/",
+        "hooks": ["*Founded 12Five Capital at age 23", "UIC Political Science", "*$80M combined portfolio", "Chicago factoring pioneer"]
+      }
+    ],
+    "news": [
+      {"h": "Breakout Achieves Fifth Consecutive Year of Growth in Term Loan Originations", "s": "Breakout Finance, Feb 2025", "d": "50.5% average annual growth rate since 2020, surpassing $500M in total originations since inception in 2015. Company has positioned itself as a trusted alternative to costly MCAs with technology-driven underwriting.", "p": "2025-02-15"},
+      {"h": "Breakout Finance Unveils New Brand Identity Post-Merger", "s": "ABF Journal, Nov 2023", "d": "Following the merger of Breakout Capital and 12Five Capital, the combined entity rebranded as Breakout Finance with an expanded product suite including term loans, factoring, PO financing, and asset-based lending.", "p": "2023-11-13"},
+      {"h": "Breakout Capital and 12Five Capital Merge to Create SMB Lending Powerhouse", "s": "PR Newswire, Sep 2023", "d": "Merger facilitated by Altriarch Commercial Finance creates a combined entity with $80M+ day-one portfolio. McLean Wilson and a co-CEO lead the combined firm, with Ryan Jaskiewicz as CSO.", "p": "2023-09-18"}
+    ],
+    "ice": "McLean, five consecutive years of growth and $500M+ originated is impressive — especially while positioning Breakout as the transparent alternative to MCAs. As you scale the combined Breakout-12Five portfolio, how are you handling document verification across term loans, factoring, and ABL?",
+    "icebreakers": [
+      "50.5% average annual growth rate since 2020 is outstanding — what's driving that momentum, and how is the tech stack keeping pace?",
+      "The Breakout-12Five merger created a rare multi-product platform covering term loans, factoring, PO financing, and ABL — how do you manage verification across such different products?",
+      "Positioning as a transparent alternative to MCAs is a strong value prop — how is that resonating with borrowers in 2025?",
+      "With $500M+ originated and a Clemson engineering background, you bring a unique analytical lens to lending — how does that engineering mindset shape your risk models?"
+    ],
+    "tp": [
+      "With $500M+ originated across term loans, factoring, and ABL, each product requires different document verification — HyperVerge handles all of them through a single API, from bank statements to tax returns to identity documents.",
+      "Breakout's 50.5% growth rate demands scalable infrastructure — with 450+ lending companies already using HyperVerge, our platform is proven at high-growth volumes without adding headcount.",
+      "As a transparency-first lender, having AI-powered verification that catches fraud before it enters the portfolio protects both your reputation and your bottom line — our customers typically see fraud detection improve by 3-5x."
+    ],
+    "ask": "McLean, with five years of 50%+ growth and an expanding product suite, I'd love to show you how HyperVerge can streamline verification across all of Breakout's products — would a 20-minute demo work for you this week?"
+  },
+  {
+    "id": 92,
+    "name": "National Business Capital",
+    "website": "https://www.nationalbusinesscapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/natbizcapital",
+    "leaders": [
+      {
+        "n": "Joe Camberato",
+        "t": "CEO & Founder",
+        "bg": "Founded National Business Capital in 2007 out of his spare bedroom with co-founder James Webster. Previously worked in the mortgage industry assisting self-employed clients and served as President at Merchant Mutual Inc. Grew NBC from a two-person startup to a $3B+ funded platform with 160 employees and 75+ lending partners, all without taking a single dollar of private equity. Named #1 Top Workplace on Long Island, NY for 6 consecutive years. Hosts 'The Fund Tank' show discussing small business financing.",
+        "li": "https://www.linkedin.com/in/growbyjoe/",
+        "hooks": ["*$3B+ funded with zero PE money", "*#1 Top Workplace Long Island 6 years", "Started in spare bedroom", "Hosts 'The Fund Tank' show"]
+      },
+      {
+        "n": "Vincent Campbell",
+        "t": "Senior Leadership",
+        "bg": "Brings 30+ years of financial services experience from leadership roles at Citibank, Webster Bank, and CIT. Provides institutional banking expertise to National Business Capital's lending operations and partner management across the company's network of 75+ lending partners.",
+        "li": "",
+        "hooks": ["*30+ yrs at Citibank, Webster, CIT", "Institutional banking veteran"]
+      }
+    ],
+    "news": [
+      {"h": "National Business Capital Named #1 Top Workplace on Long Island 2025", "s": "Long Island Press, Sep 2025", "d": "NBC voted the top small business workplace on Long Island for the sixth consecutive year, reflecting the founder's commitment to culture-driven growth without private equity backing.", "p": "2025-09-03"},
+      {"h": "National Business Capital Surpasses $3 Billion in Total Funding", "s": "NBC Press, 2025", "d": "Milestone reached as the fintech marketplace surpassed $3B in total small business financing deployed through its network of 75+ lending partners since 2007.", "p": "2025-06-15"},
+      {"h": "National Business Capital Named Top Workplace 2024", "s": "Long Island Press, Sep 2024", "d": "NBC ranked among Long Island's top 27 small businesses for workplace culture, marking the fifth consecutive year of recognition in the annual Top Workplaces survey.", "p": "2024-09-04"}
+    ],
+    "ice": "Joe, building NBC to $3B+ funded without a dollar of private equity — starting from a spare bedroom — is one of the best bootstrap stories in fintech. With 75+ lending partners on the platform, how do you keep verification and compliance seamless across all of them?",
+    "icebreakers": [
+      "Six consecutive years as #1 Top Workplace on Long Island while hitting $3B+ funded — how does culture translate to better outcomes for your lending partners?",
+      "$3B+ funded through 75+ lending partners with zero PE money is remarkable — what's the secret to scaling a marketplace without outside capital?",
+      "As a marketplace matching SMBs to 75+ lenders, each partner likely has different verification requirements — how are you handling that complexity today?",
+      "The Fund Tank show positions you as a thought leader in SMB financing — how is content marketing driving deal flow compared to traditional channels?"
+    ],
+    "tp": [
+      "With 75+ lending partners on your platform, each with different verification and compliance requirements, HyperVerge provides a unified identity and document verification layer that satisfies all partner needs through a single API integration.",
+      "NBC's $3B+ funded milestone proves massive scale — with 450+ MCA companies already using HyperVerge, your lending partners may already be in our network, making integration seamless.",
+      "Automating bank statement analysis and ID verification at the marketplace level means your team can match borrowers to the right lender faster, without manual document chasing — typically a 40% improvement in processing time."
+    ],
+    "ask": "Joe, with 75+ lending partners and $3B+ deployed, a unified verification layer could be a competitive advantage for NBC — would you be open to a 20-minute call to see how HyperVerge handles this for other lending marketplaces?"
+  },
+  {
+    "id": 93,
+    "name": "Sunwise Capital",
+    "website": "https://sunwisecapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/sunwisecapital/",
+    "leaders": [
+      {
+        "n": "Mark Kane",
+        "t": "Founder & CEO",
+        "bg": "Founded Sunwise Capital in 2010 in Boca Raton, FL. Graduated with honors with a BS in Psychology from University of Massachusetts Amherst, then completed an intensive 9-month Master's in Psychology at University of Chicago (among 22 of 109 to finish). Started career running a 42-bed psychiatric facility before age 24. Transitioned to Wall Street as a broker, then investment banker. Bootstrapped a startup from $5K to $18M revenue within months. 18+ years in business financing. Has served 86,000+ small businesses. Recently expanded into equipment financing ($10K-$30M) and real estate lending.",
+        "li": "https://www.linkedin.com/in/markjkane/",
+        "hooks": ["*Psychologist turned Wall Street broker", "*UMass honors + UChicago Masters", "*Ran psychiatric facility before 24", "$5K to $18M revenue bootstrap"]
+      }
+    ],
+    "news": [
+      {"h": "Sunwise Capital Expands Into Real Estate Lending", "s": "EIN Presswire, Dec 2025", "d": "Building on 15 years and 86,000+ small businesses served, Sunwise Capital entered commercial real estate lending for acquisitions, refinances, cash-out, construction, and value-add projects.", "p": "2025-12-15"},
+      {"h": "Sunwise Capital Launches Equipment Financing Division", "s": "MonitorDaily, Aug 2025", "d": "New division led by industry expert Christopher Murray provides equipment financing from $10K to $30M with flexible leases, loans, and hybrid solutions across construction, healthcare, manufacturing, and transportation.", "p": "2025-08-15"},
+      {"h": "Sunwise Capital Partnership Program: Best 5 Reasons to Join", "s": "sunwisecapital.com, 2025", "d": "Company expanded its ISO/broker partnership program, offering partners access to same-day funding capabilities and a streamlined application process for small business borrowers.", "p": "2025-04-01"}
+    ],
+    "ice": "Mark, the expansion from same-day small business loans into equipment financing and real estate lending is ambitious — with 86,000+ businesses served, how is your verification infrastructure scaling to handle these new, more complex product types?",
+    "icebreakers": [
+      "The move into equipment financing up to $30M and real estate lending represents a major expansion — what's driving the product diversification strategy?",
+      "86,000+ small businesses served since 2010 is serious scale for a founder-led operation — what does the growth trajectory look like with the new product lines?",
+      "Your background going from psychology to Wall Street to lending gives you a unique lens on borrower behavior — how does that inform your risk assessment approach?",
+      "Same-day funding is your hallmark — as you add equipment financing and real estate, how do you maintain that speed advantage with more complex underwriting?"
+    ],
+    "tp": [
+      "As Sunwise expands from same-day loans to equipment financing ($30M deals) and real estate lending, the verification requirements become more complex — HyperVerge handles everything from ID verification to bank statement analysis to document authentication in a single platform.",
+      "With 450+ lending companies using HyperVerge and 86,000+ businesses in your own history, fraud patterns are well-understood — our AI catches synthetic identities and document manipulation that would slow down your same-day funding promise.",
+      "Sunwise's same-day funding depends on fast verification — HyperVerge processes documents in under 60 seconds, ensuring your speed advantage scales as you add equipment and real estate products."
+    ],
+    "ask": "Mark, as Sunwise scales into equipment financing and real estate lending, the verification demands get more complex — I'd love to show you how HyperVerge can keep your approvals fast across all product lines. Would a 20-minute demo this week work?"
+  }
+]

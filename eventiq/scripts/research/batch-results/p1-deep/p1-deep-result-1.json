@@ -1,0 +1,1212 @@
+[
+  {
+    "id": 5,
+    "name": "Fundfi",
+    "leaders": [
+      {
+        "n": "Efraim (Brian) Kandinov",
+        "t": "Co-Founder & CEO",
+        "bg": "Indiana University Kelley School of Business (Finance). Co-founded Fundfi Merchant Funding. Led company through two credit facility expansions in 2025, Canada market entry in 2024, and two new product launches (loans + credit splits) in December 2025. Driving cross-border financing amid US-Canada tariff dynamics. Also listed on LinkedIn as working at Fundfi Merchant Funding LLC.",
+        "li": "https://www.linkedin.com/in/efraim-brian-g-kandinov-261753a/",
+        "hooks": ["Indiana Kelley Finance grad", "*2x credit facility expansion 2025", "US-Canada cross-border pioneer"]
+      },
+      {
+        "n": "Natasha Dillon",
+        "t": "Co-Founder & CFO",
+        "bg": "Pace University MBA. Previously CIO at Radlett Capital (alternative investments). Former CEO of Dillon Strategic Solutions. Co-founded Fundfi alongside Kandinov, managing financial operations through rapid growth phase including dual product launches and Canada expansion.",
+        "li": "https://www.linkedin.com/in/natashadillon/",
+        "hooks": ["Pace Univ MBA", "*Former CIO Radlett Capital", "Founded Dillon Strategic"]
+      }
+    ],
+    "news": [
+      {"h": "Fundfi Expands Credit Facility for Second Time in 2025", "s": "deBanked, Sep 2025", "d": "Fundfi expanded its credit facility for the second time in 2025, positioning the company to serve record numbers of SMBs across North America."},
+      {"h": "Fundfi Launches Two New Products — Loans and Credit Splits", "s": "deBanked, Dec 2025", "d": "Launched traditional loan financing and credit splits program, providing merchants with multiple pathways to access capital."},
+      {"h": "Fundfi Strengthens Cross-Border Solutions Amid US-Canada Tariff Dynamics", "s": "GlobeNewsWire, Jul 2025", "d": "Fundfi Canada Inc. expanded cross-border financial solutions as evolving US-Canada trade relations create new financing needs for businesses."}
+    ]
+  },
+  {
+    "id": 6,
+    "name": "FundKite",
+    "leaders": [
+      {
+        "n": "Alex Shvarts",
+        "t": "Founder & CEO",
+        "bg": "30+ years building businesses. Personally coded FundKite's proprietary daily reconciliation platform. Accepted into Forbes Technology Council in 2019. FundKite has funded $900M+ to 200K+ businesses since 2015 launch. Revenue reached $70M. Just launched manufacturing-specific sales-adjusted repayment model in Jan 2026.",
+        "li": "https://www.linkedin.com/in/alexshvarts/",
+        "hooks": ["*Self-taught coder CEO", "Forbes Tech Council 2019", "*$900M+ funded to 200K businesses"]
+      },
+      {
+        "n": "Rick Kuci",
+        "t": "COO",
+        "bg": "Auburn University, International Business. Former Chairman & CEO of Grove Bank & Trust (2013-2021). Previously President at RK Bank Advisors Group. Promoted to COO at FundKite Sep 2023. Extensive experience in credit, commercial lending, AML, and asset-based lending across multiple South Florida banking institutions.",
+        "li": "https://www.linkedin.com/in/rickkuci/",
+        "hooks": ["Auburn International Business", "*Former Grove Bank CEO 8 years", "Banking-to-fintech crossover"]
+      },
+      {
+        "n": "Gene Zeitlin",
+        "t": "VP, Channel Partner Relations",
+        "bg": "Decade+ in fintech. Manages ISO/broker channel partnerships. Focused on speed-to-approval as competitive differentiator for FundKite's partner network.",
+        "li": "",
+        "hooks": ["Decade in fintech", "Speed-to-approval evangelist"]
+      },
+      {
+        "n": "Justin Verger",
+        "t": "VP, Treasury",
+        "bg": "CUNY Brooklyn College. Manages capital deployment and risk at FundKite. Oversees treasury operations for the $900M+ funding platform.",
+        "li": "",
+        "hooks": ["CUNY Brooklyn College", "Treasury & risk manager"]
+      }
+    ],
+    "news": [
+      {"h": "FundKite Launches Manufacturing-Specific Loan Alternatives", "s": "Financial Content/WRAL, Jan 2026", "d": "FundKite introduced cashflow-aligned funding for manufacturers with sales-adjusted repayment, marking entry into sector-specific lending."},
+      {"h": "FundKite Reaches $70M Revenue as Fastest-Growing Fintech Funder", "s": "Latka, 2025", "d": "Revenue grew to $70M with 50-90 employees, having funded $900M+ to over 200K small businesses since 2015."}
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Vox Funding",
+    "leaders": [
+      {
+        "n": "Adam Benowitz",
+        "t": "CEO",
+        "bg": "UC Berkeley graduate. Lifelong entrepreneur and venture capitalist with 30+ years in financial services. Co-founded Vision Capital Advisors (150+ portfolio companies) where he served as CIO & Senior Managing Director (2010-2012). Also founded BRIX Funding for contractor/builder financing. Founding partner at ExSight Ventures (ophthalmic diagnostics VC). Led VOX's $150M Raven Capital credit facility in 2025.",
+        "li": "https://www.linkedin.com/in/adambenowitz/",
+        "hooks": ["UC Berkeley", "*Founded BRIX Funding for builders", "*ExSight Ventures founding partner", "150+ portfolio cos at Vision Capital"]
+      },
+      {
+        "n": "Louis Calderone",
+        "t": "President & Co-Founder",
+        "bg": "Hofstra University. 25+ years experience. Former President at Aegis Capital Corp. Co-founded VOX Funding in 2018. Speaking on Funder Panel at industry events. Driving company through rapid growth to $750M+ total funded.",
+        "li": "https://www.linkedin.com/in/louis-calderone-02b12651/",
+        "hooks": ["Hofstra alum", "25yr veteran", "*Ex-Aegis Capital President", "Panelist speaker"]
+      },
+      {
+        "n": "Brian Mullins",
+        "t": "CTO, Head of Technology & Data",
+        "bg": "Leads technology, data analytics, and marketing at VOX Funding. Built the SYNQ API that powers VOX's integration with Cloudsquare's Salesforce-native platform. Primary technology buyer for the company.",
+        "li": "",
+        "hooks": ["*Built SYNQ API platform", "CTO + data + marketing triple-hat"]
+      },
+      {
+        "n": "Peter Reilly",
+        "t": "CFO",
+        "bg": "Oversees financial operations at VOX Funding. Focused on ROI and portfolio performance across the company's $750M+ in total funding.",
+        "li": "",
+        "hooks": ["ROI-focused CFO", "Portfolio performance leader"]
+      },
+      {
+        "n": "Michael Mosiello",
+        "t": "General Counsel",
+        "bg": "Oversees legal and compliance for VOX Funding's alternative financing operations.",
+        "li": "",
+        "hooks": ["Alt-finance legal counsel"]
+      }
+    ],
+    "news": [
+      {"h": "VOX Funding Secures $150M Credit Facility from Raven Capital", "s": "deBanked, Jun 2025", "d": "VOX Funding closed a $150M credit facility from Raven Capital to expand flexible financing options, bringing total funded to $750M+ since 2018."},
+      {"h": "VOX Funding and Cloudsquare Partner for API-Driven Capital Automation", "s": "deBanked, Jan 2026", "d": "VOX's SYNQ API integrated with Cloudsquare's Salesforce-native CRM, enabling ISOs to submit deals instantly and eliminating manual handoffs."}
+    ]
+  },
+  {
+    "id": 8,
+    "name": "CAN Capital",
+    "leaders": [
+      {
+        "n": "Edward Siciliano",
+        "t": "CEO",
+        "bg": "Rutgers University. 30+ years in commercial financing. Previously COO and Interim CEO at Marlin Business Services, where he drove 5x origination growth. Leads CAN Capital, the pioneer of the MCA industry (founded 1998) with $8B+ total capital deployed to 85K+ merchants.",
+        "li": "",
+        "hooks": ["Rutgers", "*30yr commercial finance vet", "*Drove 5x origination at Marlin", "Ex-Marlin COO"]
+      },
+      {
+        "n": "Richard Irwin",
+        "t": "CFO (CFA)",
+        "bg": "Rutgers Business School. CFA charterholder. 30 years in finance. Appointed CFO at CAN Capital in October 2023. Oversees financial operations for the $8B+ deployed platform.",
+        "li": "",
+        "hooks": ["Rutgers Business School", "CFA charterholder", "30yr finance career"]
+      },
+      {
+        "n": "Kevin Duffy",
+        "t": "SVP Sales & Business Development",
+        "bg": "At CAN Capital for 20+ years since 2003. Manages ISO/broker partner program. One of the longest-tenured employees at the MCA industry pioneer.",
+        "li": "",
+        "hooks": ["*20+ years at CAN Capital", "ISO channel veteran since 2003"]
+      },
+      {
+        "n": "Mark Cisco",
+        "t": "VP Business Development",
+        "bg": "Columbia University. Previously at Capgemini in Banking & Capital Markets practice. Also worked at Kapitus in business development. Brings consulting and banking technology perspective to BD role.",
+        "li": "https://www.linkedin.com/in/markcisco/",
+        "hooks": ["Columbia Univ", "Capgemini Banking & Cap Markets", "Ex-Kapitus"]
+      },
+      {
+        "n": "Christopher Holland",
+        "t": "Dir Partner Business Development",
+        "bg": "University of Virginia. Previously at Marlin Capital Solutions and Direct Capital/CIT Bank. Builds and manages partner relationships for CAN Capital.",
+        "li": "",
+        "hooks": ["UVA grad", "Ex-Marlin Capital", "Ex-Direct Capital/CIT Bank"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 13,
+    "name": "Elevate Funding",
+    "leaders": [
+      {
+        "n": "Heather Francis",
+        "t": "CEO & Founder",
+        "bg": "University of Florida graduate. In MCA industry since 2009. Previously EVP at Merchant Cash Group. Young Entrepreneur Council (YEC) member. Founded Elevate Funding in 2015 in Gainesville, FL. SBFA member working with state and federal regulators. Investing in deepfake detection and compliance monitoring tech (PerformLine). Leadership team has 30+ years combined industry experience.",
+        "li": "https://www.linkedin.com/in/heather-francis-elevate/",
+        "hooks": ["UF grad", "*In MCA since 2009", "YEC member", "*Deepfake detection investor"]
+      },
+      {
+        "n": "Ken Peng",
+        "t": "Dir Business Dev & Marketing",
+        "bg": "UF Business Management. At Elevate since founding in 2015. Featured in FunderIntel interview. Also runs Ken Eats Gainesville food blog. Day-one team member who helped build the company from scratch.",
+        "li": "https://www.linkedin.com/in/ken-p-7b0a983a",
+        "hooks": ["UF Business", "*Runs food blog Ken Eats Gainesville", "FunderIntel featured", "At Elevate since day one"]
+      },
+      {
+        "n": "Mackenzie Mead",
+        "t": "Manager, Underwriting",
+        "bg": "Rose through ranks at Elevate from Underwriter to Senior to Manager. Deep knowledge of risk criteria and deal evaluation at Elevate Funding.",
+        "li": "",
+        "hooks": ["Rose through Elevate ranks", "Underwriter to manager"]
+      },
+      {
+        "n": "Liam Donahue",
+        "t": "Underwriter",
+        "bg": "Joined Elevate Funding in February 2025. New hire indicates growing underwriting capacity at the firm.",
+        "li": "",
+        "hooks": ["New hire Feb 2025"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 14,
+    "name": "Velocity Capital Group",
+    "leaders": [
+      {
+        "n": "Jay Avigdor",
+        "t": "President & CEO",
+        "bg": "Touro University. Started Velocity Capital Group from a small room in his Long Island home in 2018 after 6 years in MCA. Grew from 1 employee to 18 in under a year. Built network of 40K+ broker relationships. $850M+ in career sales over 13 years. Developed proprietary 'Drag-in' processing software for deal applications via API. Offered crypto funding (USDC, DAI, USDT) starting Aug 2021. Family man who balances business with personal life.",
+        "li": "https://www.linkedin.com/in/jay-avigdor-4b035247/",
+        "hooks": ["Touro University", "*$850M+ career sales", "*Started from home office to 18 staff in 1yr", "Built Drag-in processing software"]
+      },
+      {
+        "n": "Jesse Guzman",
+        "t": "CRO",
+        "bg": "University of Maryland. Joined Velocity Capital Group as CRO in August 2024. Previously CRO at Nexi (2020-2024), where he led growth and successful rebranding. Before that, Director at Arcarius LLC (2017-2020). Focused on expanding funding options for merchants and enhancing ISO support.",
+        "li": "https://www.linkedin.com/in/jesse-guzman-07883338/",
+        "hooks": ["Univ of Maryland", "*Ex-Nexi CRO 4 years", "Hired Aug 2024", "Ex-Arcarius Director"]
+      },
+      {
+        "n": "David Shensky",
+        "t": "SVP Business Development",
+        "bg": "Drexel University. Previously at Swift Financial and Legend Advance Funding. Drives business development for Velocity Capital Group.",
+        "li": "",
+        "hooks": ["Drexel University", "Ex-Swift Financial", "Ex-Legend Advance"]
+      },
+      {
+        "n": "David Slepoy",
+        "t": "VP Risk Management",
+        "bg": "Background at EY and RSM US in accounting and risk. Oversees risk assessment and portfolio quality at Velocity Capital Group.",
+        "li": "",
+        "hooks": ["*Ex-EY accountant", "Ex-RSM US", "Risk management specialist"]
+      },
+      {
+        "n": "Bogdan Klubuk",
+        "t": "CMO",
+        "bg": "Baruch College. Digital marketing background. Leads brand and growth strategy at Velocity Capital Group.",
+        "li": "",
+        "hooks": ["Baruch College", "Digital marketing background"]
+      }
+    ],
+    "news": [
+      {"h": "Velocity Capital Group Welcomes Jesse Guzman as New CRO", "s": "deBanked/Yahoo Finance, Aug 2024", "d": "VCG appointed Jesse Guzman as Chief Revenue Officer, bringing experience from Nexi where he led growth and rebranding, to scale revenue operations."}
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Rapid Finance",
+    "leaders": [
+      {
+        "n": "Will Tumulty",
+        "t": "CEO",
+        "bg": "Former Navy SEAL — completed BUD/S training in Coronado, CA, and served 5 years active duty with SEAL Teams ONE and FOUR. BS in Aerospace Engineering from US Naval Academy. MS in Manufacturing Systems Engineering and MBA from Stanford University. 20+ years in banking and payments. Previous roles at Capital One, AccountNow (COO), and founded Ready Financial Group. Named CEO of Rapid Finance in 2015.",
+        "li": "",
+        "hooks": ["*Former Navy SEAL Teams ONE and FOUR", "*Stanford MBA + Naval Academy", "Ex-Capital One", "Aerospace engineering degree"]
+      },
+      {
+        "n": "Mark Cerminaro",
+        "t": "CRO",
+        "bg": "16+ years at Rapid Finance. Georgetown University. Ex-Morgan Stanley. Deeply embedded in the business as one of the longest-tenured executives.",
+        "li": "https://www.linkedin.com/in/markcerminaro/",
+        "hooks": ["Georgetown", "*Ex-Morgan Stanley", "16yr Rapid Finance lifer"]
+      },
+      {
+        "n": "Jeremy Brown",
+        "t": "Executive Chairman & Co-Founder",
+        "bg": "CPA. Duke University economics degree. Co-founded Rapid Finance in 2005. Board-level decision maker who helped build the company to $4.5B+ in total financing.",
+        "li": "",
+        "hooks": ["Duke Economics", "CPA", "Co-founded Rapid 2005"]
+      },
+      {
+        "n": "Terry Thornton",
+        "t": "Chief Credit & Analysis Officer",
+        "bg": "20+ years in credit risk. Ex-Capital One. UVA economics. Key buyer for underwriting technology decisions at Rapid Finance.",
+        "li": "",
+        "hooks": ["UVA Economics", "Ex-Capital One", "20yr credit risk veteran"]
+      },
+      {
+        "n": "Bogdan Nastea",
+        "t": "CTO",
+        "bg": "BS in Computer Science from University of Maryland, College Park. Joined Rapid Finance in 2012. Founded and successfully exited two technology ventures prior. Built Rapid's Lynx data automation platform and SPADE AI module. Established software development, business intelligence, and application support departments at Rapid. Extensive full project lifecycle experience in architecting complete software suites.",
+        "li": "https://www.linkedin.com/in/bogdan-nastea-93022861",
+        "hooks": ["UMD Computer Science", "*Founded & exited 2 tech ventures", "*Built SPADE AI — 95% faster processing", "At Rapid since 2012"]
+      }
+    ],
+    "news": [
+      {"h": "Rapid Finance Launches SPADE AI Tool — Cuts Processing Time 95%", "s": "BusinessWire/Yahoo Finance, Jun 2025", "d": "SPADE (Smart Processing and Data Extraction) reduces loan application processing from 20 minutes to 20 seconds using advanced ML for document extraction."},
+      {"h": "Rapid Finance Launches Integrated LOS for Community Banks", "s": "BusinessWire, Mar 2025", "d": "Decisioneer LOS now includes one-click access to Rapid's Funding Network, turning bank loan declines into non-interest income."},
+      {"h": "Rapid Finance and Gestalt Tech Announce Strategic Integration", "s": "BusinessWire, Sep 2024", "d": "Integration with Gestalt Tech's data warehousing platform gives lenders real-time applicant views and Lynx fraud detection capabilities."}
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Forward Financing",
+    "leaders": [
+      {
+        "n": "Jason Mullins",
+        "t": "President & CEO",
+        "bg": "MBA from University of Western Ontario's Ivey School of Business. Named one of Canada's Top 40 Under 40. Nearly 15-year tenure at goeasy Ltd, including 6 years as President & CEO where he grew portfolio 5x and revenue 3x. Appointed President & CEO of Forward Financing January 2, 2025. Led Forward's inaugural $170M securitization (2x oversubscribed) in December 2025.",
+        "li": "https://www.linkedin.com/in/jasonmullinsprofile/",
+        "hooks": ["*Ivey MBA, Canada Top 40 Under 40", "*Grew goeasy portfolio 5x as CEO", "Appointed Jan 2025", "*Led $170M inaugural securitization"]
+      },
+      {
+        "n": "Justin Bakes",
+        "t": "Co-Founder & Executive Chairman",
+        "bg": "12 years as CEO before transitioning to Executive Chairman. Ex-UBS Investment Bank (Associate Director in Madrid, Analyst in NYC), where he advised on M&A for financial institutions. Previously Director of M&A at Watsco, Inc. Boston College graduate. Co-founded Forward Financing in 2012. Also serves as Director at Camp Harbor View.",
+        "li": "",
+        "hooks": ["Boston College", "*Ex-UBS Investment Bank Madrid", "12yr CEO before chairman", "Watsco M&A Director"]
+      },
+      {
+        "n": "Tyler Thielmann",
+        "t": "CRO",
+        "bg": "Appointed CRO at Forward Financing July 2025. 14+ years in fintech. Founding team member at Spring Financial where he spent 11 years, most recently as President & CEO. Under his leadership, Spring Financial grew to 450 employees and nearly 1M annual applicants. Oversees all sales operations at Forward.",
+        "li": "https://www.linkedin.com/in/tyler-thielmann/",
+        "hooks": ["*Spring Financial founding team to CEO", "*Scaled to 450 employees & 1M applicants/yr", "Appointed CRO Jul 2025"]
+      },
+      {
+        "n": "Ohi Akhigbe",
+        "t": "Chief Data & Analytics Officer",
+        "bg": "MBA from Northwestern University's Kellogg School of Management. Started career as Analyst at Goldman Sachs (2003-2006). Previously Senior VP at Advisory Research, Investment Analyst at Alyeska Investment Group, Associate at Great Hill Partners. Oversees portfolio risk management, business intelligence, and predictive analytics at Forward Financing.",
+        "li": "https://www.linkedin.com/in/ohi-akhigbe-54474a12/",
+        "hooks": ["Kellogg MBA", "*Ex-Goldman Sachs analyst", "Ex-Alyeska Investment Group", "Risk & BI leader"]
+      },
+      {
+        "n": "Raj Kolluri",
+        "t": "CTO",
+        "bg": "25+ years experience, 15+ in fintech. Joined Forward Financing as CTO February 2024. Previously CTO at Amount and Linear Financial Technologies. Founding member of ODX (OnDeck subsidiary) — built the SaaS digital origination platform with credit, risk assessment, and fraud detection. At OnDeck served as Head SVP, Product & Technology. Oversees engineering, product management, infosec, and enterprise tech.",
+        "li": "https://www.linkedin.com/in/rkolluri",
+        "hooks": ["*Built ODX at OnDeck", "Ex-Amount CTO", "*25yr fintech veteran across 4 CTOs", "Joined Feb 2024"]
+      }
+    ],
+    "news": [
+      {"h": "Forward Financing Announces $170M Inaugural Asset-Backed Securitization", "s": "PR Newswire, Dec 2025", "d": "The 2x oversubscribed securitization marks a pivotal achievement, providing stable and efficient funding and reflecting institutional investor confidence."},
+      {"h": "Forward Financing Welcomes Jason Mullins as President & CEO", "s": "PR Newswire/Built In Boston, Jan 2025", "d": "Mullins brings 15 years at goeasy Ltd including 6 years as CEO; co-founder Justin Bakes transitions to Executive Chairman."},
+      {"h": "Forward Financing Appoints Tyler Thielmann as CRO", "s": "Built In Boston, Jul 2025", "d": "Former Spring Financial President & CEO joins to oversee all sales operations, bringing experience scaling to 1M applicants annually."},
+      {"h": "Forward Financing Wins 5 Built In 2026 Awards", "s": "Built In Boston, 2026", "d": "Recognized across multiple workplace culture categories by Built In for 2026."}
+    ]
+  },
+  {
+    "id": 17,
+    "name": "idea Financial",
+    "leaders": [
+      {
+        "n": "Justin Leto",
+        "t": "Co-Founder & CEO",
+        "bg": "Trial lawyer turned fintech CEO. JD cum laude from University of Miami School of Law. Practicing in Florida since 2003. Won an $11.1M medical malpractice verdict. Co-founded idea Financial in 2017 in a law firm conference room, made first loan Jan 2018. Initially backed with $20M from Warsaw-based Idea Bank, then secured $70M from Cross River Bank. Recently closed $20M corporate term loan from EverBank for expansion into legal lending.",
+        "li": "https://www.linkedin.com/in/justincleto/",
+        "hooks": ["*Trial lawyer turned CEO", "UM Law cum laude", "*$11M malpractice verdict", "*Started in law firm conference room"]
+      },
+      {
+        "n": "Larry Bassuk",
+        "t": "Co-Founder & President",
+        "bg": "Commercial litigator. University of Florida law degree. Co-founded idea Financial with Leto. Handles operations and strategy. Values compliance and risk management — unusual backgrounds as two trial lawyers running a fintech.",
+        "li": "",
+        "hooks": ["UF Law", "*Commercial litigator turned fintech", "Compliance-first mindset"]
+      },
+      {
+        "n": "Christopher Ryan",
+        "t": "Director of Sales Operations",
+        "bg": "Previously CSO at UpWise. ICE (Intercontinental Exchange) trading floor background. Manages operational metrics at idea Financial.",
+        "li": "",
+        "hooks": ["*ICE trading floor alum", "Ex-CSO UpWise"]
+      },
+      {
+        "n": "Julian Hernandez",
+        "t": "Director of Revenue",
+        "bg": "Rose from entry-level position during COVID to overseeing all sales and marketing at idea Financial. Featured in deBanked November 2025 profile. Known as a face-to-face networker who builds relationships at industry events.",
+        "li": "",
+        "hooks": ["*Entry-level to director during COVID", "deBanked featured Nov 2025", "Face-to-face networker"]
+      }
+    ],
+    "news": [
+      {"h": "idea Financial Surpasses $1B in Total Funding", "s": "idea Financial, 2025", "d": "Crossed $1 billion funded milestone, having served 10K+ businesses since founding in 2017."},
+      {"h": "idea Financial Closes $20M EverBank Term Loan", "s": "idea Financial, Jan 2026", "d": "Secured $20M corporate term loan from EverBank to fuel expansion into small business and legal lending (case financing for law firms)."}
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Spartan Capital",
+    "leaders": [
+      {
+        "n": "Frank Ebanks",
+        "t": "CEO & Founder",
+        "bg": "NJIT BS, NYU MBA (Entrepreneurial Studies, 2014-2017). Founded Spartan Capital in Middletown, NY in 2015. Bootstrapped to $10M+/month originations with zero VC funding. Capital-efficient operator. Featured on deBanked TV (Ep 55). Profiled by FunderIntel as 'The Spartan Way.' Hudson Valley's #1 small business financing provider.",
+        "li": "",
+        "hooks": ["NJIT + NYU MBA", "*Bootstrapped to $10M/mo", "*Zero VC funding", "deBanked TV featured"]
+      },
+      {
+        "n": "Terence Walsh",
+        "t": "CFO",
+        "bg": "Appointed April 2025. Previously CFO at Hugo Insurance. Former VP Finance at Fora Financial where they originated $1B+. Understands unit economics deeply.",
+        "li": "",
+        "hooks": ["Ex-Fora Financial VP", "Ex-Hugo Insurance CFO", "$1B+ originated at Fora"]
+      },
+      {
+        "n": "Connor Leppzer",
+        "t": "Director of Underwriting",
+        "bg": "Appointed May 2025. Previously underwriting manager at Forward Financing. Data-driven approach. Has evaluated AI tools before. Key buyer for underwriting technology.",
+        "li": "",
+        "hooks": ["Ex-Forward Financing", "Data-driven underwriter", "*Evaluated AI tools before"]
+      },
+      {
+        "n": "Robert Massa",
+        "t": "Head of Sales",
+        "bg": "NYC metro area based. Manages broker/ISO relationships and sales organization for Spartan Capital.",
+        "li": "",
+        "hooks": ["NYC metro native", "Broker channel builder"]
+      },
+      {
+        "n": "Tara Capella",
+        "t": "CMO",
+        "bg": "Drexel University. Leads brand and growth strategy. Represented Spartan at Broker Fair 2025.",
+        "li": "",
+        "hooks": ["Drexel University", "Broker Fair 2025 rep"]
+      }
+    ],
+    "news": [
+      {"h": "Frank Ebanks Profiled in 'The Spartan Way' FunderIntel Interview", "s": "FunderIntel, 2025", "d": "In-depth interview with CEO Frank Ebanks about bootstrapping Spartan Capital to $10M+/month without venture capital funding."}
+    ]
+  },
+  {
+    "id": 25,
+    "name": "CapFlow Funding Group",
+    "leaders": [
+      {
+        "n": "Andrew Coon",
+        "t": "CEO",
+        "bg": "Brown University BA, Washington University (WashU) MBA. 30+ years in financial services. Co-founded CapFlow Funding Group in 2009 and CFG Merchant Solutions in 2015. Previously at Morgan Stanley, Merrill Lynch, and S&P. Accepted into Forbes Business Council in December 2024. Also attends IFA conferences representing CapFlow.",
+        "li": "https://www.linkedin.com/in/andrew-j-coon/",
+        "hooks": ["Brown University BA", "WashU MBA", "*Ex-Morgan Stanley", "*Forbes Business Council Dec 2024"]
+      },
+      {
+        "n": "Thomas Ingrassia",
+        "t": "Chief Risk Officer",
+        "bg": "Appointed 2024 to optimize FactorLOC product. 17+ years in financial services specializing in factoring, PO financing, and consulting. Previously VP of Due Diligence & Underwriting at Capstone Capital Group for 15+ years. Earlier career at Goldman Sachs in Prime Brokerage Operations. Manages risk, compliance, and strategic financial decisions at CapFlow.",
+        "li": "https://www.linkedin.com/in/thomasingrassia",
+        "hooks": ["*Ex-Goldman Sachs Prime Brokerage", "*15yr Capstone Capital veteran", "17+ yrs in factoring"]
+      },
+      {
+        "n": "Joseph Spiegel",
+        "t": "Sales Manager",
+        "bg": "Won IFA NEXGEN Rookie of the Year award for outstanding contributions to the factoring industry. At CapFlow since October 2022. Represents company at IFA conferences alongside CEO Andrew Coon.",
+        "li": "",
+        "hooks": ["*IFA NEXGEN Rookie of Year", "At CapFlow since 2022", "IFA conference attendee"]
+      },
+      {
+        "n": "Richard Polgar",
+        "t": "CFO",
+        "bg": "CFO of both CapFlow Funding Group and CFG Merchant Solutions. Forbes Finance Council member. Controls financial operations across both entities.",
+        "li": "",
+        "hooks": ["*Forbes Finance Council", "Dual-company CFO"]
+      },
+      {
+        "n": "Karl Lewis",
+        "t": "CIO",
+        "bg": "CIO of both CapFlow and CFG Merchant Solutions. Previously CEO of AllTrust Networks and COO of Treater. Technical decision-maker for both entities.",
+        "li": "",
+        "hooks": ["Ex-CEO AllTrust Networks", "Ex-COO Treater", "Dual-company CIO"]
+      }
+    ],
+    "news": [
+      {"h": "CapFlow Launches FactorLOC Product for Flexible Business Financing", "s": "IFA Commercial Factor, Sep 2024", "d": "FactorLOC bridges traditional invoice factoring and lines of credit, offering 40-60% advance rates with 3-6% monthly fees."},
+      {"h": "CEO Andrew Coon Accepted into Forbes Business Council", "s": "CapFlow Funding, Dec 2024", "d": "Coon's acceptance reflects 30+ years of financial services leadership across CapFlow and CFG Merchant Solutions."},
+      {"h": "Joseph Spiegel Named IFA NEXGEN Rookie of the Year", "s": "IFA, 2024", "d": "CapFlow Sales Manager recognized for outstanding contributions to the factoring industry."}
+    ]
+  },
+  {
+    "id": 30,
+    "name": "CFG Merchant Solutions",
+    "leaders": [
+      {
+        "n": "Andrew Coon",
+        "t": "CEO",
+        "bg": "Also CEO of CapFlow. Brown University BA, WashU MBA. 30+ years. Previously at Morgan Stanley, Merrill Lynch, and S&P. Most institutional background in MCA space. Forbes Business Council member since Dec 2024.",
+        "li": "https://www.linkedin.com/in/andrew-j-coon/",
+        "hooks": ["Brown University BA", "WashU MBA", "*Ex-Morgan Stanley", "*Forbes Business Council"]
+      },
+      {
+        "n": "Bill Gallagher",
+        "t": "Founder & President",
+        "bg": "25+ years in financial services. Villanova University economics. Held institutional trading positions at Lehman Brothers for 13 years (1991-2004) in Fixed Income Division, including senior trader on high grade credit and commercial paper desks. Director in Fixed Income at Barclays Capital heading front-end high grade corporate bond trading. Managing Director at Hudson Castle Group. Accepted into Forbes Business Council December 2024. Co-founded CFGMS in 2015.",
+        "li": "",
+        "hooks": ["Villanova economics", "*13yr Lehman Brothers Fixed Income trader", "Ex-Barclays Capital Director", "*Forbes Business Council Dec 2024"]
+      },
+      {
+        "n": "Richard Polgar",
+        "t": "CFO",
+        "bg": "CFO since CFGMS founding in 2015. Forbes Finance Council member. Manages financial operations as company funded $500M+ through ISOs in 2024.",
+        "li": "",
+        "hooks": ["*Forbes Finance Council", "CFO since 2015 founding"]
+      },
+      {
+        "n": "Karl Lewis",
+        "t": "CIO",
+        "bg": "Previously CEO of AllTrust Networks. Former COO of Treater. Specialist in launching tech-driven businesses. Technical decision-maker for CFGMS.",
+        "li": "",
+        "hooks": ["Ex-CEO AllTrust Networks", "Ex-COO Treater", "Tech startup launcher"]
+      },
+      {
+        "n": "Michael Kevitch",
+        "t": "Senior Underwriter & Portfolio Manager",
+        "bg": "Former Team Leader at Bloomberg LP. Daily user of underwriting tools. Evaluates deals hands-on for CFGMS.",
+        "li": "",
+        "hooks": ["*Ex-Bloomberg LP Team Leader", "Daily underwriting tool user"]
+      }
+    ],
+    "news": [
+      {"h": "CFG Merchant Solutions Relocates NYC Office to 32 Old Slip", "s": "EIN Presswire, Feb 2026", "d": "CFGMS moved from 180 Maiden Lane to 32 Old Slip, Suite 600 in the Financial District, reflecting continued growth."},
+      {"h": "CFGMS Reinforces Compliance for California SB 362", "s": "deBanked, Dec 2025", "d": "Proactively implemented compliance-ready systems for California's SB 362 disclosure law effective January 2026, preserving fast funding for ISOs."},
+      {"h": "CFGMS Ends Q1 2025 with $104M+ in ISO Fundings", "s": "CFG Merchant Solutions, Q1 2025", "d": "Continued strong growth trajectory with over $104M funded through ISO partners in a single quarter."},
+      {"h": "Congressman Dan Meuser Visits CFGMS to Discuss SMB Finance", "s": "deBanked, Apr 2025", "d": "Congressional visit underscores CFGMS's growing influence in the regulatory conversation around small business finance."}
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Lendini",
+    "leaders": [
+      {
+        "n": "David Frascella",
+        "t": "Co-Founder & Chairman",
+        "bg": "Founded Funding Metrics LLC in 2013. Built proprietary risk models combined with real-time cash flow data. Analytics-first approach to merchant cash advance. Parent company operates Lendini and QuickFix Capital brands. Secured $100M revolving credit facility in 2020. $500M+ funded to 9,500+ businesses in all 50 states.",
+        "li": "",
+        "hooks": ["Founded Funding Metrics 2013", "Analytics-first founder", "*$500M+ funded via proprietary risk models"]
+      },
+      {
+        "n": "Jim Carnes",
+        "t": "President / CEO",
+        "bg": "Runs day-to-day operations at Funding Metrics alongside Chairman Frascella. Key operational decision-maker for both Lendini and QuickFix Capital brands.",
+        "li": "",
+        "hooks": ["Ops-focused CEO", "Runs dual brands"]
+      },
+      {
+        "n": "Domenico Frascella",
+        "t": "Sr. Data Scientist",
+        "bg": "Works on proprietary risk models and analytics at Funding Metrics. Technical decision-influencer. Deep ML and data pipeline expertise. Part of the Frascella family that founded the company.",
+        "li": "",
+        "hooks": ["*ML/data pipeline builder", "Sr. Data Scientist", "*Family-run business"]
+      },
+      {
+        "n": "Gianna Frascella",
+        "t": "ISO Manager",
+        "bg": "Manages ISO relationships for Lendini. Part of the founding Frascella family. Focused on faster approvals through technology for ISO partners.",
+        "li": "",
+        "hooks": ["*Family-run business", "ISO channel manager"]
+      }
+    ],
+    "news": [
+      {"h": "Funding Metrics Secures $100M Revolving Credit Facility", "s": "deBanked, Mar 2020", "d": "Closed $100M revolving credit facility with a multi-billion dollar institutional credit fund, enabling growth to $500M+ total funded."}
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Dynamic Capital",
+    "leaders": [
+      {
+        "n": "Steven Edisis",
+        "t": "CEO & COO",
+        "bg": "University of South Florida. Co-founded Dynamic Capital in Miami in 2013 (registered as Dynamic Capital of Miami LLC in 2016). Holds both CEO and COO titles, handling strategy and operations. Known for training zero-experience hires into full-cycle funding professionals. DeBanked panelist. Company reached $7.9M revenue in 2025 with 64% headcount growth. Secured $55M debt facility from Mitsubishi HC Capital America in 2023.",
+        "li": "https://www.linkedin.com/in/steven-edisis/",
+        "hooks": ["Univ of South Florida", "*Trains zero-experience hires", "DeBanked panelist", "*64% headcount growth 2025"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 45,
+    "name": "Tip Top Capital",
+    "leaders": [
+      {
+        "n": "Vinnie Rodriguez",
+        "t": "Chairman & Director of Conventional Lending",
+        "bg": "Wentworth Institute of Technology. Founded Tip Top Capital circa 2016 in NYC. Personally arranged $400M+ in funding since 2018. Leading strategic expansion into conventional/term lending products. DeBanked panelist. When banks say 'no' to business loans, Tip Top Capital says 'yes.'",
+        "li": "https://www.linkedin.com/in/vinnierodriguez/",
+        "hooks": ["Wentworth Institute of Tech", "*$400M+ personally arranged", "DeBanked panelist", "Expanding to conventional lending"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 47,
+    "name": "Lexington Capital Holdings",
+    "leaders": [
+      {
+        "n": "Frankie DiAntonio",
+        "t": "Founder & CEO",
+        "bg": "Approximately 25-26 years old. MBA from Stony Brook University. Lifelong serial entrepreneur. Profiled by CFO.com for perfecting workplace culture at his Long Island alternative financing brokerage. Founded The Lexington Foundation. DeBanked panelist. Company has ~60 employees with average age ~25. Expanding into real estate via Lexington Estates — first property closing on Long Island with plans to go nationwide within 12 months.",
+        "li": "https://www.linkedin.com/in/frankie-diantonio-751324240/",
+        "hooks": ["*~25yr old CEO with MBA", "Stony Brook MBA", "*Profiled by CFO.com", "*Launching Lexington Estates real estate arm", "Founded Lexington Foundation"]
+      }
+    ],
+    "news": [
+      {"h": "Lexington Capital Holdings Expanding Into Real Estate", "s": "deBanked, Sep 2025", "d": "Launching Lexington Estates to buy, sell, rehab and hold properties, starting on Long Island with plans to expand nationwide within 12 months."},
+      {"h": "CFO.com Profiles Lexington's Workplace Culture Under DiAntonio", "s": "CFO.com, 2025", "d": "Feature article asks whether the Long Island brokerage has perfected workplace culture, highlighting its young CEO and average employee age of ~25."}
+    ]
+  },
+  {
+    "id": 57,
+    "name": "World Business Lenders",
+    "leaders": [
+      {
+        "n": "Doug Naidus",
+        "t": "Founder, Chairman & CEO",
+        "bg": "28+ years in financial services. Founded IPI Skyscraper (mortgage brokerage) in 1988, grew it to one of the largest in the US. Founded MortgageIT in 1999, grew it to 2nd largest independent mortgage lender, funded $33B in residential mortgages, took it public on NYSE in 2004, sold to Deutsche Bank in 2007. Served as MD and Global Head of Residential Lending & Trading at Deutsche Bank (2007-2011). Led Deutsche Bank into Shari'a compliant home financing in Saudi Arabia. Founded WBL in 2011.",
+        "li": "https://www.linkedin.com/in/doug-naidus-9995876",
+        "hooks": ["*Founded MortgageIT — NYSE IPO then $33B funded", "*Sold to Deutsche Bank 2007", "Ex-Deutsche Bank MD Global Head", "*Led Shari'a finance in Saudi Arabia"]
+      },
+      {
+        "n": "Terence Reilly",
+        "t": "SVP Loan Operations",
+        "bg": "Oversees Processing, Valuation, Underwriting, and Closing at WBL. 12+ years in real estate investing. Joined WBL in 2021. Key buyer for loan processing technology.",
+        "li": "",
+        "hooks": ["12yr RE investor", "Oversees full loan ops", "Joined WBL 2021"]
+      },
+      {
+        "n": "Andy Occhino",
+        "t": "MD, General Counsel & CCO",
+        "bg": "30+ years in financial services. Oversees legal and compliance at World Business Lenders.",
+        "li": "",
+        "hooks": ["30yr financial services", "General Counsel & CCO"]
+      },
+      {
+        "n": "John O'Donaghue",
+        "t": "SVP Wholesale",
+        "bg": "Manages referral partner relations and originations. 20+ years in sales. Joined WBL in 2013 — one of the longest-tenured team members.",
+        "li": "",
+        "hooks": ["20yr sales veteran", "*With WBL since 2013"]
+      },
+      {
+        "n": "Stephanie Hamilton",
+        "t": "MD, Chief Admin Officer",
+        "bg": "Senior operational leadership. Oversees administration at World Business Lenders.",
+        "li": "",
+        "hooks": ["Chief Admin Officer", "Senior ops leadership"]
+      }
+    ],
+    "news": [
+      {"h": "World Business Lenders Announces $250 Million Investment", "s": "deBanked, Feb 2026", "d": "WBL secured $250M from its primary financing partner, making WBL majority institutionally-owned. Founder Doug Naidus continues to lead as CEO. Planning additional loan programs and origination channels in 2026."}
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Credibly",
+    "leaders": [
+      {
+        "n": "Ryan Rosett",
+        "t": "Co-CEO",
+        "bg": "Co-founded Credibly (originally Retail Capital) in 2010 with Edan King. Drove growth from startup to $3B+ deployed to 60K+ SMBs. Advocates for generative AI in underwriting. Leading Credibly's AI patent strategy. Management buyout in August 2023.",
+        "li": "",
+        "hooks": ["*Grew startup to $3B+ deployed", "Co-CEO since 2010", "*Leading AI patent strategy"]
+      },
+      {
+        "n": "Edan King",
+        "t": "Co-CEO",
+        "bg": "Co-founded Credibly alongside Ryan Rosett in 2010. Led the August 2023 management buyout. Operational leadership through scaling and rebranding from Retail Capital.",
+        "li": "",
+        "hooks": ["Led management buyout Aug 2023", "Co-CEO since 2010"]
+      },
+      {
+        "n": "Chris Roe",
+        "t": "CTO",
+        "bg": "Leads technology and engineering at Credibly. Key decision-maker for AI/tech integrations. Overseeing implementation of patented generative AI underwriting systems.",
+        "li": "",
+        "hooks": ["CTO — tech decision maker", "AI integration leader"]
+      },
+      {
+        "n": "Jim Murray",
+        "t": "CFO",
+        "bg": "Oversees financial strategy at Credibly. Important for ROI-based conversations about technology investments.",
+        "li": "",
+        "hooks": ["CFO — ROI focused", "Tech investment evaluator"]
+      },
+      {
+        "n": "Minyang Jiang",
+        "t": "CSO",
+        "bg": "Chief Strategy Officer at Credibly. Drives strategic initiatives including the Credibly.ai innovation and technology showcase platform.",
+        "li": "",
+        "hooks": ["Chief Strategy Officer", "*Drives Credibly.ai platform"]
+      }
+    ],
+    "news": [
+      {"h": "Credibly Expands AI IP Portfolio with New Patent for SMB Financing", "s": "PR Newswire, Jan 2026", "d": "US Patent No. US 12,505,113 B2 covers machine learning, deep learning, and GenAI for evaluating affordability, structuring offers, and automating underwriting workflows."},
+      {"h": "Credibly Secures First Patent for Proprietary AI Underwriting Platform", "s": "PR Newswire/Yahoo Finance, Oct 2025", "d": "US Patent 12,443,612 B2 covers GenAI with multiple trained multi-class neural networks for underwriting and financing offers to SMBs."},
+      {"h": "Credibly Launches Credibly.ai Innovation Showcase", "s": "PR Newswire/FF News, Apr 2025", "d": "Technology showcase highlighting AI automation and generative AI use cases in fintech, demonstrating speed of development."}
+    ]
+  },
+  {
+    "id": 1014,
+    "name": "BHG Financial",
+    "leaders": [
+      {
+        "n": "Albert Crawford",
+        "t": "Chairman & CEO, Co-Founder",
+        "bg": "Co-founded BHG Financial in 2001 with $25K in capital. 40+ years in financial services. Started career at New York Futures Exchange (NYFE) in 1984, later joined an investment banking firm specializing in securitizations. Under his leadership, BHG has originated or facilitated $27B+ in loans. Completed $500M ABS transaction (largest ever for BHG) in August 2025. Joined American Fintech Council in January 2025.",
+        "li": "https://www.linkedin.com/in/albertcrawford/",
+        "hooks": ["*Started BHG with $25K in 2001", "*Career began at NYFE 1984", "*$500M ABS — largest ever for BHG", "40yr financial services vet"]
+      },
+      {
+        "n": "Meghan Crawford-Hamlin",
+        "t": "President, Bank Division",
+        "bg": "Leads business development, placement operations, bank marketing, national events, and regulatory relations at BHG Financial. Manages BHG's institutional network of 1,650+ banks.",
+        "li": "",
+        "hooks": ["*Founder's daughter", "Leads bank division", "Manages 1,650+ bank network"]
+      },
+      {
+        "n": "April Brissette",
+        "t": "Chief Risk Officer",
+        "bg": "Responsible for safeguarding BHG Financial's interests and reputation by managing and mitigating business risks across a $27B+ loan portfolio.",
+        "li": "",
+        "hooks": ["Chief Risk Officer", "Risk & reputation guardian"]
+      }
+    ],
+    "news": [
+      {"h": "BHG Financial Completes Record $500M Asset-Backed Securities Transaction", "s": "BHG Financial, Aug 2025", "d": "Largest ABS transaction in company history, demonstrating strong institutional investor confidence in BHG's loan portfolio quality."},
+      {"h": "BHG Financial Joins American Fintech Council", "s": "American Fintech Council, Jan 2025", "d": "Crawford cited dedication to providing unparalleled lending options while uplifting the responsible fintech and banking ecosystem."},
+      {"h": "BHG Financial Promotes Three Top-Level Executives in Risk and Regulatory", "s": "Newswire, 2025", "d": "Doubled down on risk and regulatory leadership by promoting three executives, reinforcing compliance-first approach."}
+    ]
+  },
+  {
+    "id": 1015,
+    "name": "Biz2Credit (Itria Ventures)",
+    "leaders": [
+      {
+        "n": "Rohit Arora",
+        "t": "CEO & Co-Founder",
+        "bg": "Built Biz2Credit into a dual-engine empire with billions in active loans and $100M+ ARR. IPO planned for early 2027 with combined valuation approaching $15-20 billion. Built Biz2X SaaS platform generating $100M+ ARR from subscription fees of $1-4M per major client. Total workforce approximately 1,000 with plans to hire 200+ across AI, data science, and engineering.",
+        "li": "https://www.linkedin.com/in/rohitarora2/",
+        "hooks": ["*IPO planned early 2027", "*$100M+ ARR dual-engine empire", "*$15-20B combined valuation"]
+      },
+      {
+        "n": "Ramit Arora",
+        "t": "President & Co-Founder",
+        "bg": "Heads credit and sales operations with 10+ years of financial services experience at Citibank and Xerox. Brother of CEO Rohit Arora — together they co-founded Biz2Credit.",
+        "li": "https://www.linkedin.com/in/ramitarora/",
+        "hooks": ["*Brother co-founder duo", "Ex-Citibank", "Ex-Xerox"]
+      },
+      {
+        "n": "Brad Rosenfeld",
+        "t": "CMO & Chief Strategy Officer",
+        "bg": "Driving Biz2Credit's next growth stage in embedded finance, modern lending, and AI-powered fintech.",
+        "li": "",
+        "hooks": ["CMO & Chief Strategy Officer", "Embedded finance driver"]
+      }
+    ],
+    "news": [
+      {"h": "Biz2X Plans to Hire 200 Professionals in FY26", "s": "Business Standard, Mar 2025", "d": "Fintech firm Biz2X expanding team across AI, data science, engineering, and product management roles in India."},
+      {"h": "Biz2Credit Approaches $15-20B Valuation Ahead of 2027 IPO", "s": "Founder Thesis, 2025", "d": "Profile reveals how Rohit Arora quietly built a dual-engine empire managing billions in active loans with $100M+ ARR, planning IPO for early 2027."}
+    ]
+  },
+  {
+    "id": 1016,
+    "name": "CapitaLand Group",
+    "leaders": [
+      {
+        "n": "Marius Silvasan",
+        "t": "CEO",
+        "bg": "Nearly 30 years as business owner. BBA and MBA from HEC University in Montreal. Career started in telecommunications — built several businesses from the ground up, made acquisitions, took a company public before selling assets in early 2000s. 20+ years in structured finance, syndication, and M&A. Previously CEO of ONE Bio Corp and founder of Tele Plus World Corp. Acquired what became eCapital in 2010 (then Trade Finance Solutions), rebranded to eCapital June 2020. Named to Inc. 5000 for 3 consecutive years (2023-2025).",
+        "li": "https://www.linkedin.com/in/marius-silvasan-2a287a70/",
+        "hooks": ["*HEC Montreal BBA & MBA", "*Grew eCapital to 850+ via M&A", "*Inc. 5000 three consecutive years", "Telecom-to-finance entrepreneur"]
+      },
+      {
+        "n": "Dan Ambrico",
+        "t": "President, Commercial Finance",
+        "bg": "Appointed in March 2025 to lead eCapital's growing commercial finance division.",
+        "li": "",
+        "hooks": ["Appointed March 2025", "Leads commercial finance"]
+      },
+      {
+        "n": "Steve Siler",
+        "t": "CTO",
+        "bg": "Appointed September 2025. Nearly 20 years of experience driving technology transformation in asset-backed finance and private credit.",
+        "li": "",
+        "hooks": ["Appointed Sept 2025", "20yr tech transformation vet", "Private credit technologist"]
+      }
+    ],
+    "news": [
+      {"h": "eCapital Secures $388M Conventional Debt Round from Ares Management", "s": "Tracxn, Oct 2025", "d": "Major debt financing round from Ares Management supports eCapital's continued acquisition-driven growth strategy."},
+      {"h": "eCapital Named to Inc. 5000 for Third Consecutive Year", "s": "Inc., Aug 2025", "d": "Third consecutive appearance on the Inc. 5000 list of fastest-growing private companies, validating rapid growth through M&A."}
+    ]
+  },
+  {
+    "id": 1017,
+    "name": "OnDeck",
+    "leaders": [
+      {
+        "n": "David Fisher",
+        "t": "CEO, Enova International",
+        "bg": "Longtime CEO of Enova International. Led the 2020 OnDeck acquisition and integration. Transitioning to Executive Chairman effective January 2026 as part of planned succession.",
+        "li": "https://www.linkedin.com/in/david-fisher-enova/",
+        "hooks": ["*Led OnDeck acquisition 2020", "Transitioning to Exec Chairman", "Longtime Enova CEO"]
+      },
+      {
+        "n": "Steve Cunningham",
+        "t": "CFO / Incoming CEO, Enova",
+        "bg": "CFA charterholder. Succeeded Fisher as CEO effective January 1, 2026. Enova CFO since joining in 2016. Previously EVP and Chief Risk Officer at Discover Financial Services ($8.7B direct banking). Before that, CFO of Harley-Davidson Financial Services ($7B receivables). Eight years at Capital One in various CFO roles including auto finance ($20B) and banking. Former FDIC bank regulator. University of Alabama BS in Corporate Finance, George Washington University MBA. Board member of AgriBank.",
+        "li": "https://www.linkedin.com/in/steve-cunningham-cfa-4295ab8/",
+        "hooks": ["*CFO became CEO Jan 2026", "*Ex-Discover Financial CRO $8.7B", "Ex-Harley-Davidson Financial CFO", "CFA + Former FDIC regulator"]
+      },
+      {
+        "n": "Cory Kampfer",
+        "t": "Co-President, Enova Small Business",
+        "bg": "Former OnDeck COO and General Counsel. Now co-leads the Enova Small Business division that includes the OnDeck brand.",
+        "li": "",
+        "hooks": ["Former OnDeck COO", "Also General Counsel", "Co-President Enova SMB"]
+      }
+    ],
+    "news": [
+      {"h": "Enova to Acquire Grasshopper Bank for $369M", "s": "American Banker/Investing.com, 2025", "d": "Cash and stock transaction to combine online consumer and SMB lending with digital banking infrastructure, projected to boost EPS 25%+ post-synergies."},
+      {"h": "Enova Reports $1.4B in Small Business Loans in Q3 2025", "s": "deBanked, Oct 2025", "d": "Strong quarterly small business originations through OnDeck and NetCredit platforms."},
+      {"h": "Enova Q4 2025 Earnings Beat Estimates, Expects 15% Origination Growth in 2026", "s": "Investing.com, Feb 2026", "d": "Full-year revenue growth projected at ~15%, with at least 20% rise in adjusted EPS expected for 2026."}
+    ]
+  },
+  {
+    "id": 1018,
+    "name": "Ascentium Capital",
+    "leaders": [
+      {
+        "n": "Dave Lyder",
+        "t": "Group Leader, Ascentium Capital",
+        "bg": "Joined Ascentium Capital in 2014 to launch a direct sales division. Under his leadership, overall origination volume grew from $440M in 2014 to $1.8B in 2022. Succeeded founder Tom Depping as Group Leader following Depping's retirement. Leads the Regions Bank division that has funded $14.1B+ since 2011.",
+        "li": "",
+        "hooks": ["*Grew originations from $440M to $1.8B", "Launched direct sales division 2014", "Succeeded 40yr veteran founder"]
+      },
+      {
+        "n": "Tom Depping",
+        "t": "Founder (retired)",
+        "bg": "Founded Ascentium Capital in 2011. Led it for over a decade, building it into a premier equipment financing platform before Regions Bank acquired it in 2020. Retired in 2025 after a 40-year career in equipment finance.",
+        "li": "",
+        "hooks": ["*40yr equipment finance career", "Founded Ascentium 2011", "Retired 2025"]
+      }
+    ],
+    "news": [
+      {"h": "Ascentium Capital Has Funded Over $14.1B Since 2011", "s": "MonitorDaily, 2025", "d": "Continued growth as a Regions Bank division, providing streamlined financing for equipment, technology, and commercial vehicles nationwide."}
+    ]
+  },
+  {
+    "id": 1019,
+    "name": "Drip Capital",
+    "leaders": [
+      {
+        "n": "Pushkar Mukewar",
+        "t": "CEO & Co-Founder",
+        "bg": "Led Drip Capital to profitability and $2B+ in annual disbursements (FY ending March 2025). Secured $50M credit facility from TD Bank (plus $25M accordion) in 2025 for North American expansion. Spoke at World Economic Forum in Davos on 'SME squeeze' — pointing to $2 trillion global trade finance gap. Signed MoU with Maharashtra government for Rs 10,000 crore in collateral-free trade finance for MSMEs (2026-2031). Pushing AI-driven 'invisible collateral' approach.",
+        "li": "https://www.linkedin.com/in/pushkar-mukewar-0316951/",
+        "hooks": ["*$50M TD Bank facility", "*Davos WEF speaker on SME squeeze", "*$2B+ annual disbursements", "Maharashtra govt MoU for Rs 10K crore"]
+      },
+      {
+        "n": "Divya Agarwalla",
+        "t": "Co-Founder",
+        "bg": "Co-founded Drip Capital to simplify trade finance for cross-border SMEs. Company has grown to profitability serving exporters and importers across India and the Americas.",
+        "li": "",
+        "hooks": ["Co-founded Drip Capital", "Cross-border SME focus"]
+      }
+    ],
+    "news": [
+      {"h": "Drip Capital Raises $50M from TD Bank for North American Expansion", "s": "YourStory, Oct 2025", "d": "Credit facility with additional $25M accordion option accelerates cross-border trade finance growth across the Americas."},
+      {"h": "Drip Capital Signs MoU with Maharashtra Govt for Rs 10,000 Crore MSME Finance", "s": "Construction World, Jan 2026", "d": "Five-year agreement formalized at Davos WEF to provide collateral-free trade finance to MSMEs engaged in exports from Maharashtra."},
+      {"h": "Drip Capital Pushes AI-Driven 'Invisible Collateral' for Seasonal Trade Finance", "s": "TipRanks, 2026", "d": "CEO highlights AI-driven approach to seasonal working-capital lending, addressing documentation gaps and payment cycle uncertainty."}
+    ]
+  },
+  {
+    "id": 1020,
+    "name": "iBusiness Funding",
+    "leaders": [
+      {
+        "n": "Justin Levy",
+        "t": "CEO & Founder",
+        "bg": "Founded Knight Capital Funding in 2013, frustrated by industry inefficiencies. Built LenderAI platform to transform commercial lending through AI chatbots and automation. Announced $100M commitment toward AI development. Launched Lendsey AI (borrower- and lender-facing) and LenderAI Prodigy chatbots. Company processes 1,200+ daily loan applications and has processed $7B+ in SBA loans. iBusiness Funding is wholly owned by Ready Capital Corporation.",
+        "li": "https://www.linkedin.com/in/justinlevyibf/",
+        "hooks": ["*Founded Knight Capital 2013", "*$100M AI commitment", "*$7B+ SBA loans processed", "Built LenderAI & Lendsey AI"]
+      },
+      {
+        "n": "Deepak Sharma",
+        "t": "Executive Director, LaaS Division",
+        "bg": "Leads the Lending-as-a-Service division, helping banks and lenders streamline SBA lending operations through iBusiness Funding's platform.",
+        "li": "",
+        "hooks": ["Leads LaaS division", "SBA lending operations"]
+      }
+    ],
+    "news": [
+      {"h": "iBusiness Funding Launches Lendsey AI and Commits $100M to AI", "s": "Yahoo Finance, 2025", "d": "First-of-its-kind agentic lending AI solution that augments both borrower and lender sides with instant feedback and work execution."},
+      {"h": "iBusiness Funding SBA Audit Shows 0.17% Error Rate", "s": "Yahoo Finance/PR Newswire, May 2025", "d": "Independent audit by Doeren Mayhew found just 0.17% error rate with no findings affecting loan eligibility or guarantee status."},
+      {"h": "iBusiness Funding Unveils LenderAI Prodigy Chatbots for SBA Lending", "s": "PR Newswire, 2025", "d": "Revolutionary AI chatbot collection originally built for internal use, now available to all LenderAI clients for banks and credit unions."}
+    ]
+  },
+  {
+    "id": 1021,
+    "name": "Balboa Capital",
+    "leaders": [
+      {
+        "n": "Patrick Byrne",
+        "t": "CEO / President",
+        "bg": "Columbia Business School MBA. Founder and CEO of Balboa Capital. After Ameris Bank acquired Balboa Capital in December 2021, Byrne and President Phil Silva joined Ameris. Leads Balboa Capital's operations under the Ameris Bank Equipment Finance umbrella. Company has facilitated over $8B in funding.",
+        "li": "https://www.linkedin.com/in/patrick-byrne-91a28548/",
+        "hooks": ["*Columbia Business School MBA", "*Founded Balboa Capital", "Leads under Ameris Bank umbrella", "$8B+ total funded"]
+      },
+      {
+        "n": "David Chiurazzi",
+        "t": "CFO",
+        "bg": "Oversees financial operations for Balboa Capital's equipment finance and small business lending divisions under Ameris Bank.",
+        "li": "",
+        "hooks": ["CFO Balboa Capital", "Equipment finance specialist"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1022,
+    "name": "ClickLease, LLC",
+    "leaders": [
+      {
+        "n": "Bart Longson",
+        "t": "Founder & CEO",
+        "bg": "Co-founded Snap Finance before founding Clicklease in 2018. 20+ years in homebuilding and private lending. While running two successful companies, he also worked as an NFL referee and Division 1 college football official. Clicklease focuses on micro-ticket equipment leasing up to $25K with proprietary instant approval algorithm.",
+        "li": "https://www.linkedin.com/in/bartlongson/",
+        "hooks": ["*Snap Finance co-founder", "*NFL referee while running companies", "20yr homebuilding vet", "Micro-ticket equipment pioneer"]
+      },
+      {
+        "n": "Alex Nash",
+        "t": "President",
+        "bg": "Leads operations and growth strategy for Clicklease's technology-driven equipment leasing platform.",
+        "li": "",
+        "hooks": ["Equipment leasing ops", "Growth strategist"]
+      }
+    ],
+    "news": [
+      {"h": "Clicklease Completes $220M Securitization", "s": "KRON4, Jun 2024", "d": "First securitization covered 34,000 leases totaling $220M, marking a milestone for the micro-ticket equipment finance company."},
+      {"h": "Clicklease Raises $63M Series A Led by Sandlot Partners", "s": "Clicklease Blog, 2024", "d": "Series A funding to accelerate growth in the commercial micro-ticket equipment finance space."}
+    ]
+  },
+  {
+    "id": 1023,
+    "name": "TimePayment Corp.",
+    "leaders": [
+      {
+        "n": "Jay Haverty",
+        "t": "President & CEO",
+        "bg": "Joined TimePayment in March 2018 as COO as part of leadership succession plan. Led record growth and numerous operating initiatives including comprehensive technology and service enhancements. Promoted to President & CEO. Company serves 100,000+ active accounts with transactions from $500 to $500K+.",
+        "li": "",
+        "hooks": ["COO-to-CEO pipeline", "Record growth driver", "*100K+ active accounts"]
+      },
+      {
+        "n": "Deepika Shahani",
+        "t": "VP, Point of Sale & Terminal Leasing",
+        "bg": "Appointed in 2025 to lead TimePayment's expanding POS and terminal leasing business unit.",
+        "li": "",
+        "hooks": ["POS leasing specialist", "2025 appointee"]
+      }
+    ],
+    "news": [
+      {"h": "TimePayment Acquires Kingswood Leasing", "s": "TimePayment, 2025", "d": "Acquired Kingswood Leasing, a leader in restaurant, food services, hospitality and c-store financing, as part of strategy to build industry-focused origination platforms."},
+      {"h": "TimePayment Reaches One Million Equipment Leases Financed", "s": "TimePayment, 2025", "d": "Milestone achievement for the Fortress Investment Group-owned Boston fintech, demonstrating scale in equipment lease financing."}
+    ]
+  },
+  {
+    "id": 1024,
+    "name": "Mundi Trade, Inc.",
+    "leaders": [
+      {
+        "n": "Martin Pustilnick",
+        "t": "CEO & Co-Founder",
+        "bg": "Originally from Argentina. Stanford MBA. Previously entrepreneur-in-residence at FJ Labs in New York. Earlier career at PayJoy (Growth and Marketing), OLX Group, and BCG (Boston Consulting Group). Founded Mundi in 2020 to simplify cross-border trade. Company has grown non-lending TPV from $3M/month to $14M/month. Raised $38.8M total funding including $15M Series A-2 led by Haymaker Ventures.",
+        "li": "https://www.linkedin.com/in/martinpustilnick/",
+        "hooks": ["*Stanford MBA", "*Argentine roots", "FJ Labs EIR", "Ex-BCG consultant"]
+      },
+      {
+        "n": "Julien Bek",
+        "t": "Co-Founder",
+        "bg": "Co-founded Mundi to simplify cross-border trade for underserved SMEs. Company expanded beyond trade finance into payments, FX hedging, and cargo insurance.",
+        "li": "",
+        "hooks": ["Cross-border trade pioneer", "SME advocate"]
+      }
+    ],
+    "news": [
+      {"h": "Mundi Gains $2.5M Investment for Capital Markets Expansion", "s": "Mundi, Feb 2025", "d": "Funding to expand capital markets access for SMEs engaged in cross-border trade."},
+      {"h": "Mundi Non-Lending TPV Grows from $3M to $14M/Month", "s": "Axios Pro, 2024", "d": "Dramatic growth in payments, FX, and insurance products beyond core trade finance business."}
+    ]
+  },
+  {
+    "id": 1025,
+    "name": "Quantum Lending",
+    "leaders": [
+      {
+        "n": "Raj Mundy",
+        "t": "Chairman of the Board",
+        "bg": "Partner at LL Funds. Serves as equity investor and Chairman guiding Quantum Lending's vision and AI-era transformation. Quantum was formed in 2023 through merger of Fundation, Camino Financial, and Amount's SMB operations.",
+        "li": "",
+        "hooks": ["LL Funds partner", "AI-era board leader"]
+      }
+    ],
+    "news": [
+      {"h": "Quantum Lending Raises $400M in Debt and Equity Financing", "s": "BusinessWire, Nov 2025", "d": "Financing includes $250M warehouse line, corporate debt, and equity to power AI-driven hybrid underwriting platform combining ML and human oversight."}
+    ]
+  },
+  {
+    "id": 1026,
+    "name": "David Allen Capital, Inc.",
+    "leaders": [
+      {
+        "n": "David Rutz",
+        "t": "CEO",
+        "bg": "Founder and CEO of David Allen Capital based in Milford, Michigan. Background includes roles at ACN, General Motors, and Accenture. Featured on the Entrepreneur Spotlight Show (Nov 2025) discussing how DAC and BankBreezy are empowering small businesses. Company reached ~296 employees and $39.7M revenue in 2025. Provides capital from $2K to $2M including lines of credit and instant funding.",
+        "li": "https://www.linkedin.com/in/david-rutz-16a8881a5/",
+        "hooks": ["*Ex-General Motors", "Ex-Accenture", "*$39.7M revenue 2025", "Also runs BankBreezy"]
+      }
+    ],
+    "news": [
+      {"h": "David Rutz Featured on Entrepreneur Spotlight Show", "s": "Entrepreneur Spotlight, Nov 2025", "d": "CEO discusses how David Allen Capital and BankBreezy platform are empowering small businesses with alternative financing."}
+    ]
+  },
+  {
+    "id": 1027,
+    "name": "Marco",
+    "leaders": [
+      {
+        "n": "Jacob Shoihet",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Marco in 2020 with Peter Spradling, headquartered in Miami with offices in New York and Montevideo. Handles fundraising, talent development, and organizational continuity. Led Marco to provide $250M+ in liquidity to LatAm exporters. Raised $128M total across 7 funding rounds including $12M Series A (Mar 2024). Company addresses $1.5 trillion global trade finance gap for SMEs.",
+        "li": "https://www.linkedin.com/in/jacobshoihet/",
+        "hooks": ["LatAm trade finance pioneer", "*$128M raised across 7 rounds", "$250M+ to LatAm exporters"]
+      },
+      {
+        "n": "Peter Spradling",
+        "t": "COO & Co-Founder",
+        "bg": "Manages day-to-day business development and operations across Marco's multi-country platform spanning US, Latin America, and Uruguay.",
+        "li": "",
+        "hooks": ["Multi-country ops leader", "BizDev co-founder"]
+      },
+      {
+        "n": "Nik Bougalis",
+        "t": "CTO",
+        "bg": "Cryptographer and software engineer with 20+ years experience. Previously Director of Engineering at Ripple Labs for nearly 10 years, where he built and maintained the XRP Ledger codebase and earned 3 patents in cryptography. Later named CTO of Algorand Foundation in Sep 2025. At Marco, led engineering team building cross-border trade finance infrastructure. C++ specialist.",
+        "li": "",
+        "hooks": ["*Ex-Ripple Labs 10yr engineer", "*3 cryptography patents", "*Also CTO Algorand Foundation", "20yr software engineer"]
+      }
+    ],
+    "news": [
+      {"h": "Marco Closes $12M Series A Led by IDC Ventures", "s": "TechCrunch/Fintech Global, Mar 2024", "d": "Funding to revolutionize LatAm SME trade finance, with contributions from IDB Lab, Florida Funders, and Miami Angels."},
+      {"h": "Marco Reaches $128M Total Funding Across 7 Rounds", "s": "Tracxn, Oct 2025", "d": "Continued growth in trade finance for Latin American exporters with proprietary risk models processing real-time data."}
+    ]
+  },
+  {
+    "id": 1028,
+    "name": "North Mill Equipment Finance LLC",
+    "leaders": [
+      {
+        "n": "David C. Lee",
+        "t": "CEO",
+        "bg": "Chairman and CEO of North Mill Equipment Finance with 30+ years of financial services experience. Led NMEF's cultural transformation over the past six years. Pursuing strategy to maximize risk-adjusted returns by building scale and operating leverage through acquisitions. Partnered with Oaktree Capital for $350M FMV leasing JV.",
+        "li": "https://www.linkedin.com/in/david-lee-035b1320/",
+        "hooks": ["30yr financial services vet", "*Oaktree Capital $350M JV", "Culture transformation CEO"]
+      },
+      {
+        "n": "Mark L. Bonanno",
+        "t": "President & COO",
+        "bg": "Co-leads NMEF's operations and culture transformation alongside CEO David Lee.",
+        "li": "",
+        "hooks": ["CEO-President duo", "Culture change co-lead"]
+      },
+      {
+        "n": "Steve Siler",
+        "t": "CTO",
+        "bg": "Appointed September 2025. Nearly 20 years driving technology transformation in asset-backed finance and private credit. Also appointed CTO at eCapital around the same time.",
+        "li": "",
+        "hooks": ["20yr asset-backed tech vet", "2025 CTO hire"]
+      }
+    ],
+    "news": [
+      {"h": "NMEF Announces Strategic JV with Oaktree Capital for $350M FMV Leasing", "s": "ELFA, Jun 2025", "d": "Joint venture with Oaktree Capital Management to grow NMEF's fair market value equipment leasing platform with combined capital supporting $350M in originations."},
+      {"h": "NMEF Acquires Midland States Bank Equipment Finance Portfolio", "s": "Midland States Bancorp, Nov 2025", "d": "Acquired substantially all of Midland States Bank's equipment finance portfolio, closing November 28, 2025."}
+    ]
+  },
+  {
+    "id": 1029,
+    "name": "inKind",
+    "leaders": [
+      {
+        "n": "Johann Moonesinghe",
+        "t": "CEO & Co-Founder",
+        "bg": "Founded inKind in 2017 with his late brother Rajan Moonesinghe. Raised $450M from Magnetar and Jay-Z's MarcyPen. Ranked No. 40 on Financial Times Fastest-Growing Companies list. Seasoned entrepreneur and angel investor with early-stage investments in Uber, Twilio, and Allbirds. Under his leadership, inKind has funded 6,000+ restaurants providing debt-free, equity-free capital. 4M+ app users. Committed $250M to fund underrepresented restaurant operators.",
+        "li": "https://www.linkedin.com/in/johannmoonesinghe/",
+        "hooks": ["*Jay-Z investor backing via MarcyPen", "*FT #40 fastest-growing", "*Angel investor in Uber, Twilio, Allbirds", "*Co-founded with late brother", "$250M underrepresented restaurant commitment"]
+      },
+      {
+        "n": "Bryan Crow",
+        "t": "CTO & Co-Founder",
+        "bg": "Leads technology development for inKind's restaurant financing and consumer dining platform connecting 4M+ users to 6,000+ restaurant partners.",
+        "li": "",
+        "hooks": ["Restaurant tech builder", "CTO co-founder"]
+      },
+      {
+        "n": "Jonathan de Wolff",
+        "t": "Chief Sustainability Officer",
+        "bg": "Co-founder focused on sustainable and equitable restaurant funding practices. Unique C-suite title in the fintech space.",
+        "li": "",
+        "hooks": ["*Chief Sustainability Officer in fintech", "Equitable funding advocate"]
+      }
+    ],
+    "news": [
+      {"h": "inKind Raises $450M from Magnetar and Jay-Z's MarcyPen", "s": "CB Insights/Fine Dining Lovers, 2025", "d": "Major capital raise to expand restaurant-focused fintech that provides debt-free capital in exchange for future dining credits."},
+      {"h": "inKind Commits $250M to Support Underrepresented Restaurant Operators", "s": "PR Newswire, 2023", "d": "Pledged $250M to fund minority-owned and underrepresented independent restaurant operators by 2025."}
+    ]
+  },
+  {
+    "id": 1030,
+    "name": "Raistone",
+    "leaders": [
+      {
+        "n": "Dave Skirzenski",
+        "t": "CEO & Founder",
+        "bg": "20+ years building and operating fintechs. Named Supply Chain Finance CEO of the Year. Recognized as Tech Leader by PayTech Awards and FinTech Breakthrough Awards. Founded Raistone and grew it to 80+ personnel across NYC, New Orleans, and Salt Lake City. Crossed $10B in financing with six consecutive years of double Y/Y growth. Ranked #43 on 2023 Deloitte Technology Fast 500. Built invoiceXcel (iX) proprietary receivables finance product.",
+        "li": "https://www.linkedin.com/in/daveskirzenski/",
+        "hooks": ["*SCF CEO of the Year", "*PayTech Awards Tech Leader", "*$10B+ financed, 6yr double growth", "Deloitte Fast 500 #43"]
+      }
+    ],
+    "news": [
+      {"h": "Raistone CEO Named Supply Chain Finance CEO of the Year", "s": "C-Suite Insider, 2025", "d": "Dave Skirzenski recognized for exceptional leadership in B2B embedded finance and supply chain finance innovation."},
+      {"h": "Raistone Crosses $10B in Financing", "s": "Raistone, 2025", "d": "Milestone reached following six straight years of double year-over-year growth in supply chain finance and invoice factoring."}
+    ]
+  },
+  {
+    "id": 1031,
+    "name": "Kabbage",
+    "leaders": [
+      {
+        "n": "Rob Frohwein",
+        "t": "Co-Founder & SVP, American Express",
+        "bg": "Co-founded Kabbage in 2009 with Kathryn Petralia and Marc Gorlin. Named it Kabbage when they found the domain was $73,800 cheaper than 'Cabbage.' Led Kabbage's integration into American Express as Business Blueprint before the brand was retired. After AmEx tenure, co-founded Keep Financial Technologies with Petralia, raised $9M seed round led by Andreessen Horowitz.",
+        "li": "https://www.linkedin.com/in/robfrohwein/",
+        "hooks": ["*Kabbage co-founder 2009", "*Launched Keep Financial with a16z seed", "Built AmEx Business Blueprint"]
+      },
+      {
+        "n": "Kathryn Petralia",
+        "t": "Co-Founder",
+        "bg": "Co-founded Kabbage in 2009 and helped build it into a leading alternative small business lender before the AmEx acquisition in 2020. Co-founded Keep Financial Technologies with Rob Frohwein, backed by Andreessen Horowitz $9M seed.",
+        "li": "",
+        "hooks": ["*Kabbage co-founder", "*Co-founded Keep Financial with a16z", "Alt-lending pioneer"]
+      }
+    ],
+    "news": [
+      {"h": "Kabbage Founders Launch Keep Financial Technologies", "s": "American Banker, 2024", "d": "Rob Frohwein and Kathryn Petralia started new fintech Keep, raising $9M seed round led by Andreessen Horowitz."},
+      {"h": "American Express Retires Kabbage Brand, Launches Business Blueprint", "s": "Finovate, 2023", "d": "Full integration of Kabbage into American Express completed with launch of Business Blueprint for small business lending and cash flow tools."}
+    ]
+  },
+  {
+    "id": 1032,
+    "name": "Aspiria",
+    "leaders": [
+      {
+        "n": "Guillermo Hernandez",
+        "t": "Director & Co-Founder",
+        "bg": "Founded Aspiria to bring change to the SME financing space in Mexico. 10+ years experience in financial services in Mexico and internationally. Developed proprietary statistical credit scoring models enabling Aspiria to serve microenterprises and small companies that traditional banks reject. Company has originated 2,300+ loans serving 1,300+ clients with nationwide coverage in Guadalajara, Monterrey, and Mexico City.",
+        "li": "https://www.linkedin.com/in/guillermohernandezaspiria/",
+        "hooks": ["Mexico SME finance pioneer", "Credit scoring innovator", "*10yr FinServ Mexico + international"]
+      },
+      {
+        "n": "Mario Di Vece",
+        "t": "Co-Founder",
+        "bg": "Co-developed Aspiria's business model, statistical credit scoring models, processes, and fully digital lending technology from a garage startup in Guadalajara. Series A funded by social impact investor Oikocredit.",
+        "li": "",
+        "hooks": ["*Garage startup origin", "Credit scoring co-builder", "*Oikocredit impact-backed"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1033,
+    "name": "Capchase",
+    "leaders": [
+      {
+        "n": "Miguel Fernandez Larrea",
+        "t": "CEO & Co-Founder",
+        "bg": "Harvard Business School graduate. Previously led growth at Geoblink, a Madrid-based location intelligence company. Spanish founder based in NYC. Co-founded Capchase in May 2020. Raised over $1B in total funding across 9 rounds. Revenue-based financing allows SaaS companies to access 20-70% of future ARR without equity dilution. Company operates from NYC with offices in London, Madrid, and Barcelona with 100+ employees across 15+ nationalities.",
+        "li": "https://www.linkedin.com/in/miguelflarea/",
+        "hooks": ["*Harvard Business School", "Ex-Geoblink Madrid", "*$1B+ raised across 9 rounds", "Spanish founder in NYC"]
+      },
+      {
+        "n": "Przemek Gotfryd",
+        "t": "Co-Founder",
+        "bg": "Technical co-founder driving Capchase's revenue-based financing platform development.",
+        "li": "",
+        "hooks": ["Technical co-founder", "Revenue-based finance builder"]
+      },
+      {
+        "n": "Ignacio Moreno Pubul",
+        "t": "Co-Founder",
+        "bg": "Co-founded Capchase in May 2020 to help SaaS companies access non-dilutive capital.",
+        "li": "",
+        "hooks": ["Non-dilutive capital advocate", "2020 co-founder"]
+      }
+    ],
+    "news": [
+      {"h": "Capchase Secures $400M+ Debt Financing from i80 Group", "s": "Fintech Futures, 2025", "d": "Additional debt financing backed by i80 Group and international banking group to support continued revenue-based financing growth."},
+      {"h": "Capchase Secures EUR 105M Credit Facility from Deutsche Bank", "s": "Fintech Futures, May 2024", "d": "Deutsche Bank facility expands Capchase's European lending capacity for SaaS revenue-based financing."}
+    ]
+  },
+  {
+    "id": 1034,
+    "name": "Whetstone Holdings",
+    "leaders": [
+      {
+        "n": "Laurie Whetstone",
+        "t": "Founder & President",
+        "bg": "Over two decades of board and executive leadership experience. Founded Whetstone Group Holdings (WGH), a Woman Veteran Owned business consultancy. Also heads Whetstone Holdings which operates Granite Merchant Funding (revenue-based financing $750K-$2M) and Aspen Invoice Factoring. Sought-after advisor and consultant to nonprofit, private, and public companies.",
+        "li": "https://www.linkedin.com/in/lauriewhetstone/",
+        "hooks": ["*Woman Veteran Owned business", "20yr board veteran", "Nonprofit advisor", "Miami-based funder"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1035,
+    "name": "IOU Financial",
+    "leaders": [
+      {
+        "n": "Robert Gloer",
+        "t": "CEO & President",
+        "bg": "Co-founded IOU Financial in 2008. 25+ years in financial services including senior roles in wholesale mortgage lending originating $4.5B+ annually. Led the company's 2026 rebrand and digital transformation, including refreshed visual identity and new website. Company has originated $1.9B+ in loans since 2009. Named one of the Top Places to Work in Fintech for 2025 by American Banker.",
+        "li": "https://www.linkedin.com/in/robert-gloer-4025296/",
+        "hooks": ["*$4.5B annual mortgage originator", "25yr financial services vet", "2008 co-founder", "*Top Places to Work Fintech 2025"]
+      }
+    ],
+    "news": [
+      {"h": "IOU Financial Unveils Refreshed Brand, New Website, and Faster Application", "s": "GlobeNewsWire, Feb 2026", "d": "First step in broader 2026 digital transformation with refreshed visual identity, investing in AI/ML innovations for partner tools and borrower experiences."},
+      {"h": "IOU Financial Named Top Places to Work in Fintech 2025", "s": "American Banker, 2025", "d": "Recognized for workplace culture by American Banker, reflecting strong team environment alongside $1.9B+ in total originations."}
+    ]
+  }
+]

@@ -1,0 +1,778 @@
+[
+  {
+    "id": 1014,
+    "name": "BHG Financial",
+    "website": "https://bhgfinancial.com",
+    "linkedinUrl": "https://www.linkedin.com/company/bhgfinancial/",
+    "leaders": [
+      {
+        "n": "Albert Crawford",
+        "t": "Chairman & CEO, Co-Founder",
+        "li": "https://www.linkedin.com/in/albertcrawford/",
+        "hasHooks": false
+      },
+      {
+        "n": "Meghan Crawford-Hamlin",
+        "t": "President, Bank Division",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "April Brissette",
+        "t": "Chief Risk Officer",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1015,
+    "name": "Biz2Credit (Itria Ventures)",
+    "website": "https://biz2credit.com",
+    "linkedinUrl": "https://www.linkedin.com/company/biz2credit-inc/",
+    "leaders": [
+      {
+        "n": "Rohit Arora",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/rohitarora2/",
+        "hasHooks": false
+      },
+      {
+        "n": "Ramit Arora",
+        "t": "President & Co-Founder",
+        "li": "https://www.linkedin.com/in/ramitarora/",
+        "hasHooks": false
+      },
+      {
+        "n": "Brad Rosenfeld",
+        "t": "CMO & Chief Strategy Officer",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1016,
+    "name": "CapitaLand Group",
+    "website": "https://ecapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ecapitalcorp",
+    "leaders": [
+      {
+        "n": "Marius Silvasan",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/marius-silvasan-2a287a70/",
+        "hasHooks": false
+      },
+      {
+        "n": "Dan Ambrico",
+        "t": "President, Commercial Finance",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Steve Siler",
+        "t": "CTO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1017,
+    "name": "OnDeck",
+    "website": "https://ondeck.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ondeck/people/",
+    "leaders": [
+      {
+        "n": "David Fisher",
+        "t": "CEO, Enova International",
+        "li": "https://www.linkedin.com/in/david-fisher-enova/",
+        "hasHooks": false
+      },
+      {
+        "n": "Steve Cunningham",
+        "t": "CFO / Incoming CEO, Enova",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Cory Kampfer",
+        "t": "Co-President, Enova Small Business",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1018,
+    "name": "Ascentium Capital",
+    "website": "https://ascentiumcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ascentium-capital",
+    "leaders": [
+      {
+        "n": "Dave Lyder",
+        "t": "Group Leader, Ascentium Capital",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Tom Depping",
+        "t": "Founder (retired)",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1019,
+    "name": "Drip Capital",
+    "website": "https://www.dripcapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/dripcapital",
+    "leaders": [
+      {
+        "n": "Pushkar Mukewar",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/pushkar-mukewar-0316951/",
+        "hasHooks": false
+      },
+      {
+        "n": "Divya Agarwalla",
+        "t": "Co-Founder",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1020,
+    "name": "iBusiness Funding",
+    "website": "https://ibusinessfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/ibusiness-funding/",
+    "leaders": [
+      {
+        "n": "Justin Levy",
+        "t": "CEO & Founder",
+        "li": "https://www.linkedin.com/in/justinlevyibf/",
+        "hasHooks": false
+      },
+      {
+        "n": "Deepak Sharma",
+        "t": "Executive Director, LaaS Division",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1021,
+    "name": "Balboa Capital",
+    "website": "https://www.balboacapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/balboa-capital/",
+    "leaders": [
+      {
+        "n": "Patrick Byrne",
+        "t": "CEO / President",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "David Chiurazzi",
+        "t": "CFO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1022,
+    "name": "ClickLease, LLC",
+    "website": "https://www.clicklease.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/clicklease-llc",
+    "leaders": [
+      {
+        "n": "Bart Longson",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/bartlongson/",
+        "hasHooks": false
+      },
+      {
+        "n": "Alex Nash",
+        "t": "President",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1023,
+    "name": "TimePayment Corp.",
+    "website": "https://timepayment.com",
+    "linkedinUrl": "https://www.linkedin.com/company/timepayment/",
+    "leaders": [
+      {
+        "n": "Jay Haverty",
+        "t": "President & CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Deepika Shahani",
+        "t": "VP, Point of Sale & Terminal Leasing",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1024,
+    "name": "Mundi Trade, Inc.",
+    "website": "https://mundi.io/es",
+    "linkedinUrl": "https://www.linkedin.com/company/munditrade",
+    "leaders": [
+      {
+        "n": "Martin Pustilnick",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/martinpustilnick/",
+        "hasHooks": false
+      },
+      {
+        "n": "Julien Bek",
+        "t": "Co-Founder",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1025,
+    "name": "Quantum Lending",
+    "website": "https://www.quantumlends.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/quantumlendingsolutions/",
+    "leaders": [
+      {
+        "n": "Raj Mundy",
+        "t": "Chairman of the Board",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1026,
+    "name": "David Allen Capital, Inc.",
+    "website": "https://davidallencapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/official-davidallencapital",
+    "leaders": [
+      {
+        "n": "David Rutz",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/david-rutz-16a8881a5/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1027,
+    "name": "Marco",
+    "website": "https://www.marcofi.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/marcofi/",
+    "leaders": [
+      {
+        "n": "Jacob Shoihet",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/jacobshoihet/",
+        "hasHooks": false
+      },
+      {
+        "n": "Peter Spradling",
+        "t": "COO & Co-Founder",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Nik Bougalis",
+        "t": "CTO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1028,
+    "name": "North Mill Equipment Finance LLC",
+    "website": "https://nmef.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/north-mill-equipment-finance/",
+    "leaders": [
+      {
+        "n": "David C. Lee",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/david-lee-035b1320/",
+        "hasHooks": false
+      },
+      {
+        "n": "Mark L. Bonanno",
+        "t": "President & COO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Steve Siler",
+        "t": "CTO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1029,
+    "name": "inKind",
+    "website": "https://inkind.com",
+    "linkedinUrl": "https://www.linkedin.com/company/inkindcapital",
+    "leaders": [
+      {
+        "n": "Johann Moonesinghe",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/johannmoonesinghe/",
+        "hasHooks": false
+      },
+      {
+        "n": "Bryan Crow",
+        "t": "CTO & Co-Founder",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Jonathan de Wolff",
+        "t": "Chief Sustainability Officer",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1030,
+    "name": "Raistone",
+    "website": "https://raistone.com",
+    "linkedinUrl": "https://www.linkedin.com/company/raistone-capital/",
+    "leaders": [
+      {
+        "n": "Dave Skirzenski",
+        "t": "CEO & Founder",
+        "li": "https://www.linkedin.com/in/daveskirzenski/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1031,
+    "name": "Kabbage",
+    "website": "http://www.kabbage.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/kabbage-american-express/people/",
+    "leaders": [
+      {
+        "n": "Rob Frohwein",
+        "t": "Co-Founder & SVP, American Express",
+        "li": "https://www.linkedin.com/in/robfrohwein/",
+        "hasHooks": false
+      },
+      {
+        "n": "Kathryn Petralia",
+        "t": "Co-Founder",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1032,
+    "name": "Aspiria",
+    "website": "https://www.aspiria.mx",
+    "linkedinUrl": "https://www.linkedin.com/company/aspiria/",
+    "leaders": [
+      {
+        "n": "Guillermo Hernandez",
+        "t": "Director & Co-Founder",
+        "li": "https://www.linkedin.com/in/guillermohernandezaspiria/",
+        "hasHooks": false
+      },
+      {
+        "n": "Mario Di Vece",
+        "t": "Co-Founder",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1033,
+    "name": "Capchase",
+    "website": "https://www.capchase.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/capchase/",
+    "leaders": [
+      {
+        "n": "Miguel Fernandez Larrea",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/miguelflarea/",
+        "hasHooks": false
+      },
+      {
+        "n": "Przemek Gotfryd",
+        "t": "Co-Founder",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Ignacio Moreno Pubul",
+        "t": "Co-Founder",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1034,
+    "name": "Whetstone Holdings",
+    "website": "https://whetstoneholdings.com",
+    "linkedinUrl": "https://www.linkedin.com/company/whetstone-holdings/",
+    "leaders": [
+      {
+        "n": "Laurie Whetstone",
+        "t": "Founder & President",
+        "li": "https://www.linkedin.com/in/lauriewhetstone/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1035,
+    "name": "IOU Financial",
+    "website": "https://ioufinancial.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/iou-financial-inc-/",
+    "leaders": [
+      {
+        "n": "Robert Gloer",
+        "t": "CEO & President",
+        "li": "https://www.linkedin.com/in/robert-gloer-4025296/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1036,
+    "name": "LiftFund",
+    "website": "https://www.liftfund.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/liftfund",
+    "leaders": [
+      {
+        "n": "Amy Hereford",
+        "t": "President & CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Janie Barrera",
+        "t": "Founder",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1037,
+    "name": "Pursuit Lending",
+    "website": "https://pursuitlending.com",
+    "linkedinUrl": "https://www.linkedin.com/company/pursuitlending/",
+    "leaders": [
+      {
+        "n": "Chris Levy",
+        "t": "President & CEO",
+        "li": "https://www.linkedin.com/in/chrislevy/",
+        "hasHooks": false
+      },
+      {
+        "n": "Rich Amsterdam",
+        "t": "EVP & Chief Credit Officer",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "James Goldrick",
+        "t": "EVP & Chief Lending Officer",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1038,
+    "name": "Driven (formerly Thinking Capital)",
+    "website": "http://thinkingcapital.ca",
+    "linkedinUrl": "https://www.linkedin.com/company/drivenfinancialca",
+    "leaders": [
+      {
+        "n": "Stephane Marceau",
+        "t": "CEO, Driven",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Som Seif",
+        "t": "CEO, Purpose Unlimited (parent)",
+        "li": "https://ca.linkedin.com/in/som-seif-29bb66",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1039,
+    "name": "Mission Capital",
+    "website": "https://www.missioncapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/sbg-funding-social/people/",
+    "leaders": [
+      {
+        "n": "Jeffrey Sachs",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/jeffrey-sachs-b5674522/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1040,
+    "name": "GoCurrency",
+    "website": "https://www.gocurrency.com/",
+    "linkedinUrl": "http://www.linkedin.com/company/gocurrency",
+    "leaders": [
+      {
+        "n": "Vikas Agrawal",
+        "t": "CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Jared Koch",
+        "t": "Director, Currency",
+        "li": "https://www.linkedin.com/in/jared-koch-84b60292/",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1041,
+    "name": "Interface Financial Group",
+    "website": "https://www.interfacefinancial.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/the-interface-financial-group/",
+    "leaders": [
+      {
+        "n": "George Shapiro",
+        "t": "CEO & Chairman",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Vishnu Kumar",
+        "t": "Chief Financial Technology Officer",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1042,
+    "name": "Libertas",
+    "website": "https://libertasfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/libertas-funding/people/",
+    "leaders": [
+      {
+        "n": "John Paradisi",
+        "t": "CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Randy Saluck",
+        "t": "Vice Chairman",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Jia-Mang Ten",
+        "t": "Chief Investment Officer",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1043,
+    "name": "BasePoint Capital LLC",
+    "website": "https://www.basepointcapital.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/basepoint-capital-llc/",
+    "leaders": [
+      {
+        "n": "Eric Schneider",
+        "t": "CEO & President",
+        "li": "https://www.linkedin.com/in/eric-schneider-26a74b1b3",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1044,
+    "name": "The LCF Group",
+    "website": "https://www.thelcfgroup.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/the-lcf-group-inc/",
+    "leaders": [
+      {
+        "n": "Robert Kleiber",
+        "t": "President & CEO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1045,
+    "name": "Avtech Capital",
+    "website": "https://avtechcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/avtech-capital/",
+    "leaders": [
+      {
+        "n": "Chris Scharman",
+        "t": "CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Chris Emery",
+        "t": "CFO",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1046,
+    "name": "Newity LLC",
+    "website": "https://newitymarket.com",
+    "linkedinUrl": "https://www.linkedin.com/company/newitymarket/",
+    "leaders": [
+      {
+        "n": "David Cody",
+        "t": "Co-CEO & Co-Founder",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Luke LaHaie",
+        "t": "Co-CEO & Co-Founder",
+        "li": "https://theorg.com/org/newity/org-chart/luke-lahaie",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1047,
+    "name": "Hello Alice",
+    "website": "https://www.HelloAlice.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/helloalice/",
+    "leaders": [
+      {
+        "n": "Carolyn Rodz",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/carolynrodz/",
+        "hasHooks": false
+      },
+      {
+        "n": "Elizabeth Gore",
+        "t": "President & Co-Founder",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 3
+  },
+  {
+    "id": 1048,
+    "name": "Purpose Unlimited",
+    "website": "https://www.purpose-unlimited.com/home",
+    "linkedinUrl": "https://www.linkedin.com/company/purpose-unlmtd/",
+    "leaders": [
+      {
+        "n": "Som Seif",
+        "t": "Founder & CEO",
+        "li": "https://ca.linkedin.com/in/som-seif-29bb66",
+        "hasHooks": false
+      },
+      {
+        "n": "Stephane Marceau",
+        "t": "CEO, Driven Financial",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  },
+  {
+    "id": 1049,
+    "name": "Westwood Funding",
+    "website": "https://www.westwoodfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/westwood-funding/",
+    "leaders": [],
+    "newsCount": 1
+  },
+  {
+    "id": 1050,
+    "name": "Commercial Funding Inc.",
+    "website": "https://www.commercialfund.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/commercial-fund/",
+    "leaders": [
+      {
+        "n": "Dan McDonough",
+        "t": "President & CEO",
+        "li": "",
+        "hasHooks": false
+      },
+      {
+        "n": "Buddy Zarbock",
+        "t": "VP",
+        "li": "",
+        "hasHooks": false
+      }
+    ],
+    "newsCount": 2
+  }
+]

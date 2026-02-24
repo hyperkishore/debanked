@@ -1,0 +1,863 @@
+[
+  {
+    "id": 1348,
+    "name": "PacShore Solutions",
+    "website": "",
+    "location": "",
+    "employees": 1
+  },
+  {
+    "id": 1349,
+    "name": "Palm Beach Capital Funding",
+    "website": "https://www.palmbchcap.com/",
+    "location": "Florida",
+    "employees": 2
+  },
+  {
+    "id": 1350,
+    "name": "Pathway Catalyst Partners",
+    "website": "https://pathwaycatalyst.com/",
+    "location": "New York",
+    "employees": 16
+  },
+  {
+    "id": 1351,
+    "name": "Payclass Inc.",
+    "website": "https://www.payclassinc.com/",
+    "location": "New York",
+    "employees": 8
+  },
+  {
+    "id": 1352,
+    "name": "Payplant LLC",
+    "website": "https://www.payplant.com/",
+    "location": "California",
+    "employees": 4
+  },
+  {
+    "id": 1353,
+    "name": "Payroll Funding Company",
+    "website": "https://payrollfundingcompany.com",
+    "location": "Nevada",
+    "employees": 11
+  },
+  {
+    "id": 1354,
+    "name": "Paz Funding Source",
+    "website": "https://pazfundingsource.com/",
+    "location": "California",
+    "employees": 2
+  },
+  {
+    "id": 1355,
+    "name": "PEAC Solutions",
+    "website": "https://peacsolutions.com",
+    "location": "New Jersey",
+    "employees": 0
+  },
+  {
+    "id": 1356,
+    "name": "PharmLine",
+    "website": "https://pharmline.com",
+    "location": "Texas",
+    "employees": 0
+  },
+  {
+    "id": 1357,
+    "name": "Pinnacle Advances",
+    "website": "https://pinnacleadvances.com",
+    "location": "Florida",
+    "employees": 4
+  },
+  {
+    "id": 1358,
+    "name": "Pioneer Legal Funding",
+    "website": "https://www.pioneerlegalfunding.com/",
+    "location": "Pennsylvania",
+    "employees": 0
+  },
+  {
+    "id": 1359,
+    "name": "Positiviti Lending",
+    "website": "https://www.positivitilending.com/",
+    "location": "California",
+    "employees": 12
+  },
+  {
+    "id": 1360,
+    "name": "Premier Capital Funding",
+    "website": "https://premierecapitalfunding.com/",
+    "location": "New York",
+    "employees": 17
+  },
+  {
+    "id": 1361,
+    "name": "Presto Prestamo dba 239Loans.com",
+    "website": "https://www.239loans.com/",
+    "location": "Florida",
+    "employees": 2
+  },
+  {
+    "id": 1362,
+    "name": "Prime Plus Capital",
+    "website": "https://primepluscapital.com",
+    "location": "New Jersey",
+    "employees": 2
+  },
+  {
+    "id": 1363,
+    "name": "Principis Capital LLC",
+    "website": "https://www.principiscapital.com",
+    "location": "New York",
+    "employees": 16
+  },
+  {
+    "id": 1364,
+    "name": "Probably Funding",
+    "website": "https://probablyfunding.com",
+    "location": "California",
+    "employees": 15
+  },
+  {
+    "id": 1365,
+    "name": "ProfitShare Partners",
+    "website": "https://profitsharepartners.com",
+    "location": "New York",
+    "employees": 19
+  },
+  {
+    "id": 1366,
+    "name": "Promofi",
+    "website": "http://promofi.io",
+    "location": "Florida",
+    "employees": 1
+  },
+  {
+    "id": 1367,
+    "name": "Prosper Funding Group",
+    "website": "https://prosperfundinggroup.com",
+    "location": "Nevada",
+    "employees": 2
+  },
+  {
+    "id": 1368,
+    "name": "Proto Financial",
+    "website": "https://protofinancial.com",
+    "location": "New York",
+    "employees": 11
+  },
+  {
+    "id": 1369,
+    "name": "Quasar Capital Partners, LLC",
+    "website": "https://www.quasarcapitalpartners.com/",
+    "location": "Texas",
+    "employees": 14
+  },
+  {
+    "id": 1370,
+    "name": "Quick Fix Capital",
+    "website": "https://quickfixcapital.com",
+    "location": "New York",
+    "employees": 1
+  },
+  {
+    "id": 1371,
+    "name": "QuickFi",
+    "website": "https://quickfi.com",
+    "location": "New York",
+    "employees": 17
+  },
+  {
+    "id": 1372,
+    "name": "Quickpay Funding",
+    "website": "https://quickpayfunding.com",
+    "location": "California",
+    "employees": 10
+  },
+  {
+    "id": 1373,
+    "name": "Quicksilver Capital",
+    "website": "https://www.quicksilvercap.com/",
+    "location": "New York",
+    "employees": 6
+  },
+  {
+    "id": 1374,
+    "name": "Qwil",
+    "website": "https://qwil.com",
+    "location": "California",
+    "employees": 16
+  },
+  {
+    "id": 1375,
+    "name": "Radium Two Capital",
+    "website": "http://www.radium2capital.com",
+    "location": "New York",
+    "employees": 4
+  },
+  {
+    "id": 1376,
+    "name": "RAIS Financial",
+    "website": "https://raisfinancial.com",
+    "location": "",
+    "employees": 0
+  },
+  {
+    "id": 1377,
+    "name": "Ramay Capital Finance",
+    "website": "https://www.ramaycapital.com/",
+    "location": "Florida",
+    "employees": 3
+  },
+  {
+    "id": 1378,
+    "name": "Rapidoo",
+    "website": "https://rapidoo.com.br",
+    "location": "Delaware",
+    "employees": 0
+  },
+  {
+    "id": 1379,
+    "name": "RBS Funding",
+    "website": "https://rbsfunding.com",
+    "location": "New York",
+    "employees": 8
+  },
+  {
+    "id": 1380,
+    "name": "Reagan Commercial Capital",
+    "website": "https://reagancommercialcapital.com",
+    "location": "Florida",
+    "employees": 1
+  },
+  {
+    "id": 1381,
+    "name": "Rebel Capital Partners",
+    "website": "https://rebelcapitalpartners.com",
+    "location": "Florida",
+    "employees": 0
+  },
+  {
+    "id": 1382,
+    "name": "Reliable Funding Source",
+    "website": "https://reliablefundingsourcellc.com/",
+    "location": "New York",
+    "employees": 14
+  },
+  {
+    "id": 1383,
+    "name": "Reps Capital LLC",
+    "website": "https://www.repscapital.com/",
+    "location": "Colorado",
+    "employees": 4
+  },
+  {
+    "id": 1384,
+    "name": "Right Choice Capital Inc",
+    "website": "https://www.rightchoicecapitalinc.com/",
+    "location": "",
+    "employees": 7
+  },
+  {
+    "id": 1385,
+    "name": "River Advance",
+    "website": "https://riveradvance.com/",
+    "location": "Not Available",
+    "employees": 3
+  },
+  {
+    "id": 1386,
+    "name": "Rosewood Capital Group",
+    "website": "https://rosewoodcapitalgroup.com",
+    "location": "New York",
+    "employees": 3
+  },
+  {
+    "id": 1387,
+    "name": "Rowan Advanced",
+    "website": "",
+    "location": "",
+    "employees": 0
+  },
+  {
+    "id": 1388,
+    "name": "Salaryo",
+    "website": "https://salaryo.com",
+    "location": "New York",
+    "employees": 9
+  },
+  {
+    "id": 1389,
+    "name": "SBL Funding",
+    "website": "https://sblfunding.biz/",
+    "location": "South Carolina",
+    "employees": 1
+  },
+  {
+    "id": 1390,
+    "name": "Scale Capital",
+    "website": "https://scalecapitalbusinessloans.com",
+    "location": "California",
+    "employees": 1
+  },
+  {
+    "id": 1391,
+    "name": "Seawise Capital",
+    "website": "http://seawisecapital.com",
+    "location": "California",
+    "employees": 0
+  },
+  {
+    "id": 1392,
+    "name": "Secure Funding Source",
+    "website": "https://securefundingsource.com",
+    "location": "New York",
+    "employees": 6
+  },
+  {
+    "id": 1393,
+    "name": "Semble",
+    "website": "http://semble.com",
+    "location": "Washington",
+    "employees": 3
+  },
+  {
+    "id": 1394,
+    "name": "Seneer Capital",
+    "website": "https://seneercapital.com",
+    "location": "Florida",
+    "employees": 1
+  },
+  {
+    "id": 1395,
+    "name": "Setscale",
+    "website": "https://setscale.com",
+    "location": "New York",
+    "employees": 3
+  },
+  {
+    "id": 1396,
+    "name": "SHA Capital",
+    "website": "https://www.shacapital.org",
+    "location": "New Jersey",
+    "employees": 7
+  },
+  {
+    "id": 1397,
+    "name": "Simplified Funding",
+    "website": "https://simplifiedfunding.com",
+    "location": "Florida",
+    "employees": 13
+  },
+  {
+    "id": 1398,
+    "name": "Slim Capital",
+    "website": "https://slimcapital.com",
+    "location": "California",
+    "employees": 9
+  },
+  {
+    "id": 1399,
+    "name": "SLR Digital Finance",
+    "website": "https://slrdigitalfinance.com",
+    "location": "California",
+    "employees": 11
+  },
+  {
+    "id": 1400,
+    "name": "Smart Business Funding",
+    "website": "https://www.smartbusinessfunder.com/",
+    "location": "Miami",
+    "employees": 12
+  },
+  {
+    "id": 1401,
+    "name": "Solaris Financial",
+    "website": "https://www.solarisfinancial.org/",
+    "location": "Texas",
+    "employees": 2
+  },
+  {
+    "id": 1402,
+    "name": "South End Capital",
+    "website": "https://southendcapital.com",
+    "location": "Connecticut",
+    "employees": 2
+  },
+  {
+    "id": 1403,
+    "name": "Specialty Capital",
+    "website": "https://specialtycapital.com",
+    "location": "New York",
+    "employees": 18
+  },
+  {
+    "id": 1404,
+    "name": "SPG Advance",
+    "website": "http://www.spgadvance.com/",
+    "location": "Brooklyn",
+    "employees": 6
+  },
+  {
+    "id": 1405,
+    "name": "SRS Capital Funds",
+    "website": "http://www.srscapitalfunds.com/",
+    "location": "New York",
+    "employees": 5
+  },
+  {
+    "id": 1406,
+    "name": "Stafford Business Funding",
+    "website": "https://staffordbusinessfunding.com",
+    "location": "New Jersey",
+    "employees": 0
+  },
+  {
+    "id": 1407,
+    "name": "Starting Gate Financial",
+    "website": "https://startinggatefinancial.com",
+    "location": "Texas",
+    "employees": 3
+  },
+  {
+    "id": 1408,
+    "name": "Strategic Capital",
+    "website": "",
+    "location": "Kansas",
+    "employees": 12
+  },
+  {
+    "id": 1409,
+    "name": "Sunday Foundation",
+    "website": "https://sundayfunds.com",
+    "location": "California",
+    "employees": 18
+  },
+  {
+    "id": 1410,
+    "name": "Super Fast Cap",
+    "website": "https://www.superfastcap.com/",
+    "location": "New York",
+    "employees": 1
+  },
+  {
+    "id": 1411,
+    "name": "Super G Capital",
+    "website": "https://www.supergcapital.com",
+    "location": "California",
+    "employees": 7
+  },
+  {
+    "id": 1412,
+    "name": "Superior Capital",
+    "website": "https://superiorcapitalfund.com/",
+    "location": "Not available",
+    "employees": 2
+  },
+  {
+    "id": 1413,
+    "name": "Swiftbridge Capital",
+    "website": "https://swiftbridgecapital.com",
+    "location": "California",
+    "employees": 2
+  },
+  {
+    "id": 1414,
+    "name": "Swish Funding, LLC",
+    "website": "https://swishfunding.com",
+    "location": "California",
+    "employees": 10
+  },
+  {
+    "id": 1415,
+    "name": "Tacoma Capital, Inc.",
+    "website": "https://tacomacapital.com",
+    "location": "Kansas",
+    "employees": 7
+  },
+  {
+    "id": 1416,
+    "name": "THE SMARTER MERCHANT",
+    "website": "https://thesmartermerchant.com",
+    "location": "New York",
+    "employees": 16
+  },
+  {
+    "id": 1417,
+    "name": "Thor Capital Group",
+    "website": "https://thorcapitalgroup.com/contact-us/",
+    "location": "New York",
+    "employees": 1
+  },
+  {
+    "id": 1418,
+    "name": "Tin Funding Group",
+    "website": "https://www.tinfundinggroup.com/",
+    "location": "Alabama",
+    "employees": 4
+  },
+  {
+    "id": 1419,
+    "name": "Titan Funding Solutions",
+    "website": "https://titanfundingsolutions.com",
+    "location": "New York",
+    "employees": 4
+  },
+  {
+    "id": 1420,
+    "name": "TMR Now",
+    "website": "https://tmrnow.com/",
+    "location": "New Jersey",
+    "employees": 3
+  },
+  {
+    "id": 1421,
+    "name": "TradeCap Partners",
+    "website": "https://www.tradecappartners.com/",
+    "location": "Texas",
+    "employees": 2
+  },
+  {
+    "id": 1422,
+    "name": "TradeRiver USA",
+    "website": "https://www.traderiverusa.com/",
+    "location": "Maryland",
+    "employees": 3
+  },
+  {
+    "id": 1423,
+    "name": "Tribolt Advance LLC",
+    "website": "",
+    "location": "",
+    "employees": 0
+  },
+  {
+    "id": 1424,
+    "name": "Trinity CP LLC",
+    "website": "https://trinitycpllc.com",
+    "location": "Wisconsin",
+    "employees": 2
+  },
+  {
+    "id": 1425,
+    "name": "True Path Funding",
+    "website": "https://truepathfunding.com/",
+    "location": "",
+    "employees": 0
+  },
+  {
+    "id": 1426,
+    "name": "Tuo",
+    "website": "",
+    "location": "Minnesota",
+    "employees": 8
+  },
+  {
+    "id": 1427,
+    "name": "Union Funding Source",
+    "website": "https://unionfundingsource.com",
+    "location": "Florida",
+    "employees": 6
+  },
+  {
+    "id": 1428,
+    "name": "United Business Funding",
+    "website": "http://ubfunds.com/",
+    "location": "New York",
+    "employees": 11
+  },
+  {
+    "id": 1429,
+    "name": "United Capital Source Inc",
+    "website": "https://www.unitedcapitalsource.com/",
+    "location": "New York",
+    "employees": 17
+  },
+  {
+    "id": 1430,
+    "name": "Universal Lending Corporation",
+    "website": "https://universallending.com",
+    "location": "California",
+    "employees": 13
+  },
+  {
+    "id": 1431,
+    "name": "Upsize Capital",
+    "website": "https://www.upsizecapital.com/",
+    "location": "New York",
+    "employees": 0
+  },
+  {
+    "id": 1432,
+    "name": "Uptown Fund",
+    "website": "https://www.uptownfund.com/",
+    "location": "New Jersey",
+    "employees": 4
+  },
+  {
+    "id": 1433,
+    "name": "Vader Mountain Capital",
+    "website": "https://vadermountaincapital.com/",
+    "location": "Florida",
+    "employees": 4
+  },
+  {
+    "id": 1434,
+    "name": "Velocity Equipment FinanceVelocity Equipment Finance",
+    "website": "https://velocityef.com",
+    "location": "Texas",
+    "employees": 2
+  },
+  {
+    "id": 1435,
+    "name": "Velocity Group USA",
+    "website": "https://vgusa.com/",
+    "location": "New York",
+    "employees": 16
+  },
+  {
+    "id": 1436,
+    "name": "VeriFund Lending",
+    "website": "https://www.verifund.tech/",
+    "location": "New York",
+    "employees": 3
+  },
+  {
+    "id": 1437,
+    "name": "Viking Funding",
+    "website": "https://vikingfunding.com",
+    "location": "Florida",
+    "employees": 9
+  },
+  {
+    "id": 1438,
+    "name": "Vital Cap Fund",
+    "website": "https://www.vitalcapfund.com/",
+    "location": "New York",
+    "employees": 12
+  },
+  {
+    "id": 1439,
+    "name": "Volt Money",
+    "website": "http://voltmoney.com",
+    "location": "Arizona",
+    "employees": 3
+  },
+  {
+    "id": 1440,
+    "name": "Waterview Capital",
+    "website": "https://waterviewcap.com/",
+    "location": "New York",
+    "employees": 5
+  },
+  {
+    "id": 1441,
+    "name": "WeFund",
+    "website": "https://www.wefundeasy.com/",
+    "location": "Florida",
+    "employees": 3
+  },
+  {
+    "id": 1442,
+    "name": "Wellen",
+    "website": "https://wellen.com",
+    "location": "Illinois",
+    "employees": 14
+  },
+  {
+    "id": 1443,
+    "name": "West Clara Funding LLC",
+    "website": "https://www.westclarafunding.com/",
+    "location": "",
+    "employees": 0
+  },
+  {
+    "id": 1444,
+    "name": "Whitestone Fund Corp.",
+    "website": "https://whitestonefund.com",
+    "location": "Connecticut",
+    "employees": 1
+  },
+  {
+    "id": 1445,
+    "name": "Wide Merchant Group",
+    "website": "https://www.widemerchantgroup.com/",
+    "location": "California",
+    "employees": 9
+  },
+  {
+    "id": 1446,
+    "name": "Wing Lake Capital",
+    "website": "https://winglakecp.com",
+    "location": "Michigan",
+    "employees": 14
+  },
+  {
+    "id": 1447,
+    "name": "WiseSide Incorporated",
+    "website": "https://www.wisesidefinancial.com/",
+    "location": "New York",
+    "employees": 1
+  },
+  {
+    "id": 1448,
+    "name": "Working Capital Solution",
+    "website": "https://www.workingcapitalsolution.com/",
+    "location": "Nevada",
+    "employees": 4
+  },
+  {
+    "id": 1449,
+    "name": "WOTR Enterprise LLC",
+    "website": "https://www.wotrenterprise.com/",
+    "location": "",
+    "employees": 0
+  },
+  {
+    "id": 1450,
+    "name": "Wynwood Capital",
+    "website": "https://www.wynwoodcapitalgroup.com/",
+    "location": "Florida",
+    "employees": 5
+  },
+  {
+    "id": 1451,
+    "name": "Wynwood Capital Group",
+    "website": "",
+    "location": "Florida",
+    "employees": 5
+  },
+  {
+    "id": 1452,
+    "name": "Wyoming Capital Access",
+    "website": "https://www.wyomingcapitalaccess.com/",
+    "location": "Wyoming",
+    "employees": 6
+  },
+  {
+    "id": 1453,
+    "name": "YM VENTURES LLC",
+    "website": "https://ymventures.net/",
+    "location": "New Jersey",
+    "employees": 10
+  },
+  {
+    "id": 1454,
+    "name": "Zinch",
+    "website": "https://zinchfin.com/",
+    "location": "California",
+    "employees": 4
+  },
+  {
+    "id": 1455,
+    "name": "Adventure Funding Group LLC",
+    "website": "https://adventurefundings.com",
+    "location": "Florida",
+    "employees": 0
+  },
+  {
+    "id": 1456,
+    "name": "APEX FUNDING GOLD LLC",
+    "website": "https://www.apexepf.com",
+    "location": "Florida",
+    "employees": 2
+  },
+  {
+    "id": 1457,
+    "name": "Arena Funding Source LLC",
+    "website": "https://arenafundingsource.com",
+    "location": "New York",
+    "employees": 13
+  },
+  {
+    "id": 1458,
+    "name": "BHB722 INC. d/b/a BHB FUNDING d/b/a FIRST STREET FUNDING d/b/a CRM FUNDING d/b/a ORANGE FUNDING d/b/a PRIMECOMMERCIAL",
+    "website": "https://firststreetfunding.com",
+    "location": "Florida",
+    "employees": 4
+  },
+  {
+    "id": 1460,
+    "name": "BIZ ADVANCE NOW INC.",
+    "website": "https://bizadvancenow.com",
+    "location": "New York",
+    "employees": 15
+  },
+  {
+    "id": 1461,
+    "name": "CFS CAP, LLC d/b/a Cashfund",
+    "website": "https://cashfund.com",
+    "location": "Colorado",
+    "employees": 5
+  },
+  {
+    "id": 1463,
+    "name": "Clear Skies Capital, Inc.",
+    "website": "https://www.clearskiescapital.com",
+    "location": "California",
+    "employees": 7
+  },
+  {
+    "id": 1464,
+    "name": "Cobalt Funding Solutions LLC",
+    "website": "https://cobaltfunding.com",
+    "location": "New York",
+    "employees": 9
+  },
+  {
+    "id": 1465,
+    "name": "Creditfy, LLC d/b/a Creditfy",
+    "website": "https://www.creditfy.com/",
+    "location": "New York",
+    "employees": 6
+  },
+  {
+    "id": 1466,
+    "name": "Crest Hill Capital LLC",
+    "website": "https://cresthillcapital.com",
+    "location": "Florida",
+    "employees": 7
+  },
+  {
+    "id": 1467,
+    "name": "Crestmont Capital LLC",
+    "website": "https://crestmontcapital.com",
+    "location": "California",
+    "employees": 14
+  },
+  {
+    "id": 1468,
+    "name": "Cucumber Capital LLC d/b/a Cucumber Funding d/b/a Cucumber Capital",
+    "website": "https://www.cucumbercapital.com",
+    "location": "New York",
+    "employees": 4
+  },
+  {
+    "id": 1469,
+    "name": "Direct Business Financing, Inc. d/b/a EMC Financial",
+    "website": "https://emcfinancial.com",
+    "location": "California",
+    "employees": 7
+  },
+  {
+    "id": 1471,
+    "name": "DMKA LLC d/b/a The Smarter Merchant",
+    "website": "https://thesmartermerchant.com",
+    "location": "New York",
+    "employees": 16
+  },
+  {
+    "id": 1473,
+    "name": "Essentia Holdings LLC d/b/a Essentia Funding",
+    "website": "https://www.essentiafunding.com",
+    "location": "New York",
+    "employees": 2
+  },
+  {
+    "id": 1474,
+    "name": "First Line Capital",
+    "website": "https://www.firstline-capital.com/",
+    "location": "Florida",
+    "employees": 0
+  }
+]

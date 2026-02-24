@@ -1,0 +1,582 @@
+[
+  {
+    "companyId": 38,
+    "companyName": "Lendini",
+    "companyDesc": "Analytics-driven fintech (parent: Funding Metrics LLC, est. 2014). Bensalem, PA. Proprietary risk models + real-time cash flow data. $500M+ funded to 9,500+ businesses. $100M revolving credit facility",
+    "companyType": "ICP",
+    "leaderName": "David Frascella",
+    "leaderTitle": "Co-Founder & Chairman",
+    "leaderBg": "Founded Funding Metrics 2013. Built proprietary risk models and online platform. Analytics-first approach.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 38,
+    "companyName": "Lendini",
+    "companyDesc": "Analytics-driven fintech (parent: Funding Metrics LLC, est. 2014). Bensalem, PA. Proprietary risk models + real-time cash flow data. $500M+ funded to 9,500+ businesses. $100M revolving credit facility",
+    "companyType": "ICP",
+    "leaderName": "Jim Carnes",
+    "leaderTitle": "President / CEO",
+    "leaderBg": "Runs day-to-day operations alongside Frascella. Key operational decision-maker.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 38,
+    "companyName": "Lendini",
+    "companyDesc": "Analytics-driven fintech (parent: Funding Metrics LLC, est. 2014). Bensalem, PA. Proprietary risk models + real-time cash flow data. $500M+ funded to 9,500+ businesses. $100M revolving credit facility",
+    "companyType": "ICP",
+    "leaderName": "Domenico Frascella",
+    "leaderTitle": "Sr. Data Scientist",
+    "leaderBg": "Works on proprietary risk models and analytics. Technical decision-influencer. Deep ML/data pipeline conversation.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 38,
+    "companyName": "Lendini",
+    "companyDesc": "Analytics-driven fintech (parent: Funding Metrics LLC, est. 2014). Bensalem, PA. Proprietary risk models + real-time cash flow data. $500M+ funded to 9,500+ businesses. $100M revolving credit facility",
+    "companyType": "ICP",
+    "leaderName": "Gianna Frascella",
+    "leaderTitle": "ISO Manager",
+    "leaderBg": "Manages ISO relationships. Pitch faster approvals through AI for her ISO partners.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 39,
+    "companyName": "Accelerant",
+    "companyDesc": "Capital markets advisory firm. Not the insurtech Accelerant Holdings (NYSE: ACHL). Limited public info available.",
+    "companyType": "ICP",
+    "leaderName": "Sylvania Harrod",
+    "leaderTitle": "Fund Manager / Principal",
+    "leaderBg": "22+ years leadership and PE expertise. Army veteran. Bridges funding needs with growth opportunities.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 40,
+    "companyName": "Lendmate",
+    "companyDesc": "NYC small business lending solutions (est. 2023). Business loan matching and capital structuring. Helps companies break free from daily payment cycles. MCA consolidation solutions. Building partnershi",
+    "companyType": "ICP",
+    "leaderName": "Luckens Victor",
+    "leaderTitle": "Business Credit Advisor",
+    "leaderBg": "Front-line advisor matching businesses with funding products.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 41,
+    "companyName": "Stellar Capital",
+    "companyDesc": "Smithtown, NY (Long Island) business funding. MCA, real estate lending, equipment finance, SBA, LOC. Up to $50M. 50+ years combined team experience. First position loans from $75K starting at 6.99%.",
+    "companyType": "ICP",
+    "leaderName": "Shannon Harris",
+    "leaderTitle": "Chief Funding Advisor",
+    "leaderBg": "In commercial equipment finance since 1997. Expanded to MCA, SBA, LOC in 2008. Deep industry veteran.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 42,
+    "companyName": "Parkview Advance",
+    "companyDesc": "Stamford, CT alt lender (est. 2018). ~20 employees. LOC, AR financing, SBA, equipment financing, ABL. Founder Matthew Walsh previously at Premium Merchant Funding. UConn grad. Growing rapidly, recogni",
+    "companyType": "ICP",
+    "leaderName": "Matthew Walsh",
+    "leaderTitle": "Founder & CEO",
+    "leaderBg": "UConn grad. Ex-Funding Specialist at Premium Merchant Funding. Built Parkview from scratch into multi-product lender.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 43,
+    "companyName": "Maverick Funding",
+    "companyDesc": "Fresh Meadows, NY direct MCA funder using own capital (est. 2020). 1-10 employees. $5K-$1M funding. 1-day approvals. Minimal paperwork (app + 3 months bank statements). Serves logistics, retail, medic",
+    "companyType": "ICP",
+    "leaderName": "Igor Davidov",
+    "leaderTitle": "Founder & CEO",
+    "leaderBg": "John Jay College (CUNY). Founded 2020. Passionate about helping entrepreneurs of all credit types. Actively growing ISO partnerships.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 44,
+    "companyName": "Dynamic Capital",
+    "companyDesc": "Miami-based direct MCA funder (est. 2013). ~84 employees, $7.9M revenue, 64% headcount growth last year. Handles everything from underwriting to funding in-house. Secured $55M debt facility from Mitsu",
+    "companyType": "ICP",
+    "leaderName": "Steven Edisis",
+    "leaderTitle": "CEO & COO",
+    "leaderBg": "University of South Florida. Founded Dynamic Capital in 2013. Handles both strategy and operations. Known for training zero-experience hires into full-cycle funding professionals. DeBanked panelist.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 45,
+    "companyName": "Tip Top Capital",
+    "companyDesc": "NYC-based MCA funder and alternative lender (est. 2016). Offers MCAs, working capital, LOC, and asset-based loans. Chairman Vinnie Rodriguez has personally arranged $400M+ in funding since 2018. Notab",
+    "companyType": "ICP",
+    "leaderName": "Vinnie Rodriguez",
+    "leaderTitle": "Chairman & Director of Conventional Lending",
+    "leaderBg": "Wentworth Institute of Technology. Founded Tip Top Capital ~2016. Personally arranged $400M+ in funding. Leading strategic expansion into conventional lending products. DeBanked panelist.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 46,
+    "companyName": "Barclays Advance",
+    "companyDesc": "Boca Raton-based direct MCA funder (not affiliated with Barclays bank). Sources deals through ISO/broker channel. Currently hiring for ISO Relations roles, indicating growth. Arieh Kaplan manages brok",
+    "companyType": "ICP",
+    "leaderName": "Arieh Kaplan",
+    "leaderTitle": "Head of ISO Relations",
+    "leaderBg": "Previously Funding Specialist at Barclays Advance. Now leads ISO/broker relationship management. DeBanked panelist.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 47,
+    "companyName": "Lexington Capital Holdings",
+    "companyDesc": "Long Island-based alternative financing brokerage/ISO (est. ~2022). ~60 employees (avg age ~25), making it one of the fastest-growing brokerages in the space. CEO Frankie DiAntonio is ~26 years old wi",
+    "companyType": "ICP",
+    "leaderName": "Frankie DiAntonio",
+    "leaderTitle": "Founder & CEO",
+    "leaderBg": "~26 years old. MBA from Stony Brook University. Lifelong serial entrepreneur. Profiled by CFO.com. Founded The Lexington Foundation. DeBanked panelist.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 56,
+    "companyName": "The LCF Group / Reliant Funding",
+    "companyDesc": "Direct MCA funder since 2011 (as Last Chance Funding). West Hempstead, NY. ~75 employees. Acquired Reliant Funding assets Sep 2023 ($3B+ total funded, $125M securitization facility). Reliant is LCF’s ",
+    "companyType": "ICP",
+    "leaderName": "Andy Parker",
+    "leaderTitle": "CEO, The LCF Group",
+    "leaderBg": "Leads overall strategy. Built LCF from 2011 into multi-brand funder. Acquired Reliant assets 2023.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 56,
+    "companyName": "The LCF Group / Reliant Funding",
+    "companyDesc": "Direct MCA funder since 2011 (as Last Chance Funding). West Hempstead, NY. ~75 employees. Acquired Reliant Funding assets Sep 2023 ($3B+ total funded, $125M securitization facility). Reliant is LCF’s ",
+    "companyType": "ICP",
+    "leaderName": "Steve Kietz",
+    "leaderTitle": "CEO, Reliant Funding",
+    "leaderBg": "Named CEO Aug 2021 (formerly CMO). Runs the Reliant prime paper division.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 56,
+    "companyName": "The LCF Group / Reliant Funding",
+    "companyDesc": "Direct MCA funder since 2011 (as Last Chance Funding). West Hempstead, NY. ~75 employees. Acquired Reliant Funding assets Sep 2023 ($3B+ total funded, $125M securitization facility). Reliant is LCF’s ",
+    "companyType": "ICP",
+    "leaderName": "John Merturi",
+    "leaderTitle": "COO",
+    "leaderBg": "Previously CFO for 3.5 years. 15+ yrs finance. Ex-DFC Global, ex-NASDAQ listed firms.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 56,
+    "companyName": "The LCF Group / Reliant Funding",
+    "companyDesc": "Direct MCA funder since 2011 (as Last Chance Funding). West Hempstead, NY. ~75 employees. Acquired Reliant Funding assets Sep 2023 ($3B+ total funded, $125M securitization facility). Reliant is LCF’s ",
+    "companyType": "ICP",
+    "leaderName": "Kerri Brancato",
+    "leaderTitle": "VP of Underwriting",
+    "leaderBg": "Heads the underwriting department. DIRECT BUYER for underwriting automation tools.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 56,
+    "companyName": "The LCF Group / Reliant Funding",
+    "companyDesc": "Direct MCA funder since 2011 (as Last Chance Funding). West Hempstead, NY. ~75 employees. Acquired Reliant Funding assets Sep 2023 ($3B+ total funded, $125M securitization facility). Reliant is LCF’s ",
+    "companyType": "ICP",
+    "leaderName": "Yoel Wagschal",
+    "leaderTitle": "CFO",
+    "leaderBg": "CFO since Oct 2018. Oversees financial strategy and portfolio performance.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 57,
+    "companyName": "World Business Lenders",
+    "companyDesc": "Direct lender specializing in real estate-secured short-term business loans (est. 2011). Elmsford, NY. 300+ employees. ~$37.8M revenue. Loans $5K-$2M, 3-24 months, 13%+ rates. All loans collateralized",
+    "companyType": "ICP",
+    "leaderName": "Doug Naidus",
+    "leaderTitle": "Founder, Chairman & CEO",
+    "leaderBg": "28+ yrs financial services. Founded MortgageIT (NYSE IPO, sold to Deutsche Bank 2007). Previously Deutsche Bank MD.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 57,
+    "companyName": "World Business Lenders",
+    "companyDesc": "Direct lender specializing in real estate-secured short-term business loans (est. 2011). Elmsford, NY. 300+ employees. ~$37.8M revenue. Loans $5K-$2M, 3-24 months, 13%+ rates. All loans collateralized",
+    "companyType": "ICP",
+    "leaderName": "Terence Reilly",
+    "leaderTitle": "SVP Loan Operations",
+    "leaderBg": "Oversees Processing, Valuation, Underwriting, and Closing. 12+ yrs RE investing. Joined 2021. KEY BUYER.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 57,
+    "companyName": "World Business Lenders",
+    "companyDesc": "Direct lender specializing in real estate-secured short-term business loans (est. 2011). Elmsford, NY. 300+ employees. ~$37.8M revenue. Loans $5K-$2M, 3-24 months, 13%+ rates. All loans collateralized",
+    "companyType": "ICP",
+    "leaderName": "Andy Occhino",
+    "leaderTitle": "MD, General Counsel & CCO",
+    "leaderBg": "30+ years financial services. Legal and compliance oversight.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 57,
+    "companyName": "World Business Lenders",
+    "companyDesc": "Direct lender specializing in real estate-secured short-term business loans (est. 2011). Elmsford, NY. 300+ employees. ~$37.8M revenue. Loans $5K-$2M, 3-24 months, 13%+ rates. All loans collateralized",
+    "companyType": "ICP",
+    "leaderName": "John O’Donaghue",
+    "leaderTitle": "SVP Wholesale",
+    "leaderBg": "Manages referral partner relations and originations. 20+ years sales. Joined 2013.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 57,
+    "companyName": "World Business Lenders",
+    "companyDesc": "Direct lender specializing in real estate-secured short-term business loans (est. 2011). Elmsford, NY. 300+ employees. ~$37.8M revenue. Loans $5K-$2M, 3-24 months, 13%+ rates. All loans collateralized",
+    "companyType": "ICP",
+    "leaderName": "Stephanie Hamilton",
+    "leaderTitle": "MD, Chief Admin Officer",
+    "leaderBg": "Senior operational leadership. Oversees administration.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 58,
+    "companyName": "Reliance Financial",
+    "companyDesc": "Revenue-based financing provider, Farmingdale, NJ. Up to $5M per transaction. Record origination month Nov 2025. Secured strategic capital partnership with specialty finance firm (May 2025). Launched ",
+    "companyType": "ICP",
+    "leaderName": "Aryeh Miller",
+    "leaderTitle": "CEO & Managing Partner",
+    "leaderBg": "Industry veteran. Founded and leads Reliance Financial. Based in Farmingdale, NJ. Driving rapid growth.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 59,
+    "companyName": "Blade Funding",
+    "companyDesc": "MCA funder and small business lender, Aventura, FL. Short-term loans up to $250K, LOC up to $100K. Funds as fast as 24 hours. Focused on small-to-mid market businesses. Lanyard sponsor at deBanked Con",
+    "companyType": "ICP",
+    "leaderName": "Sam Charlop",
+    "leaderTitle": "CEO & President",
+    "leaderBg": "Founder and operator. Based in Aventura, FL.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 59,
+    "companyName": "Blade Funding",
+    "companyDesc": "MCA funder and small business lender, Aventura, FL. Short-term loans up to $250K, LOC up to $100K. Funds as fast as 24 hours. Focused on small-to-mid market businesses. Lanyard sponsor at deBanked Con",
+    "companyType": "ICP",
+    "leaderName": "Fred Friedland",
+    "leaderTitle": "Chief Underwriting Officer",
+    "leaderBg": "Heads underwriting decisions. DIRECT BUYER for AI underwriting tools.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 59,
+    "companyName": "Blade Funding",
+    "companyDesc": "MCA funder and small business lender, Aventura, FL. Short-term loans up to $250K, LOC up to $100K. Funds as fast as 24 hours. Focused on small-to-mid market businesses. Lanyard sponsor at deBanked Con",
+    "companyType": "ICP",
+    "leaderName": "Mark Goldberg",
+    "leaderTitle": "ISO Relations Manager",
+    "leaderBg": "Manages broker relationships and deal flow.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 60,
+    "companyName": "Novac Equities",
+    "companyDesc": "Direct MCA funder, Miami, FL (est. Nov 2021). Two tiers: B-C Paper up to $3M ($75K+ monthly rev) and MICRO platform ($10K+ monthly rev). Same-day funding. BBB accredited Dec 2024 (A+ rating). 2-10 emp",
+    "companyType": "ICP",
+    "leaderName": "Jake D’Amelio",
+    "leaderTitle": "Founder & CEO",
+    "leaderBg": "Started as loan broker in NYC. Founded Novac Nov 2021. Also invests in professional padel (Novac WPR circuit).",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 60,
+    "companyName": "Novac Equities",
+    "companyDesc": "Direct MCA funder, Miami, FL (est. Nov 2021). Two tiers: B-C Paper up to $3M ($75K+ monthly rev) and MICRO platform ($10K+ monthly rev). Same-day funding. BBB accredited Dec 2024 (A+ rating). 2-10 emp",
+    "companyType": "ICP",
+    "leaderName": "Thomas Klemser",
+    "leaderTitle": "Operations Manager",
+    "leaderBg": "Day-to-day operations management.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 60,
+    "companyName": "Novac Equities",
+    "companyDesc": "Direct MCA funder, Miami, FL (est. Nov 2021). Two tiers: B-C Paper up to $3M ($75K+ monthly rev) and MICRO platform ($10K+ monthly rev). Same-day funding. BBB accredited Dec 2024 (A+ rating). 2-10 emp",
+    "companyType": "ICP",
+    "leaderName": "BriAnna Montesano",
+    "leaderTitle": "ISO Relations Manager",
+    "leaderBg": "Manages broker relationships and deal sourcing.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 61,
+    "companyName": "Diesel Funding",
+    "companyDesc": "Direct MCA funder, North Miami Beach, FL (est. 2017). Known for funding complex and higher-risk deals that other funders won’t touch. Same-day capability. Performance-based funding decisions tied to a",
+    "companyType": "ICP",
+    "leaderName": "Ari Mandel",
+    "leaderTitle": "Principal / Manager",
+    "leaderBg": "Founder and primary operator. Based in North Miami Beach, FL. Runs underwriting and operations.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 63,
+    "companyName": "APP Funding",
+    "companyDesc": "Direct MCA funder, NYC (29 W 36th St). MCAs $10K-$5M. No collateral required. Repayment tied to daily credit card sales. BBB accredited Jul 2023. Very small team (~3 employees). Claims 500+ brands fun",
+    "companyType": "ICP",
+    "leaderName": "Ben Sanders",
+    "leaderTitle": "CEO",
+    "leaderBg": "Leads APP Funding operations.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 63,
+    "companyName": "APP Funding",
+    "companyDesc": "Direct MCA funder, NYC (29 W 36th St). MCAs $10K-$5M. No collateral required. Repayment tied to daily credit card sales. BBB accredited Jul 2023. Very small team (~3 employees). Claims 500+ brands fun",
+    "companyType": "ICP",
+    "leaderName": "Yosef Zavulunov",
+    "leaderTitle": "COO",
+    "leaderBg": "Previously ISO Manager. Now handles operations and deal evaluation.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 64,
+    "companyName": "Credibly",
+    "companyDesc": "Formerly Retail Capital (rebranded 2016). Southfield, MI fintech lender offering working capital, MCAs, lines of credit, and SBA loans to SMBs. ~180 employees, ~$61.8M revenue. $3B+ total capital depl",
+    "companyType": "ICP",
+    "leaderName": "Ryan Rosett",
+    "leaderTitle": "Co-CEO",
+    "leaderBg": "Co-leads Credibly. Drove growth from startup to $3B+ deployed. Strategic vision and partnerships.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 64,
+    "companyName": "Credibly",
+    "companyDesc": "Formerly Retail Capital (rebranded 2016). Southfield, MI fintech lender offering working capital, MCAs, lines of credit, and SBA loans to SMBs. ~180 employees, ~$61.8M revenue. $3B+ total capital depl",
+    "companyType": "ICP",
+    "leaderName": "Edan King",
+    "leaderTitle": "Co-CEO",
+    "leaderBg": "Co-leads Credibly alongside Rosett. Operational leadership through management buyout and scaling.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 64,
+    "companyName": "Credibly",
+    "companyDesc": "Formerly Retail Capital (rebranded 2016). Southfield, MI fintech lender offering working capital, MCAs, lines of credit, and SBA loans to SMBs. ~180 employees, ~$61.8M revenue. $3B+ total capital depl",
+    "companyType": "ICP",
+    "leaderName": "Chris Roe",
+    "leaderTitle": "CTO",
+    "leaderBg": "Leads technology and engineering. Key decision-maker for AI/tech integrations like HyperVerge.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 64,
+    "companyName": "Credibly",
+    "companyDesc": "Formerly Retail Capital (rebranded 2016). Southfield, MI fintech lender offering working capital, MCAs, lines of credit, and SBA loans to SMBs. ~180 employees, ~$61.8M revenue. $3B+ total capital depl",
+    "companyType": "ICP",
+    "leaderName": "Jim Murray",
+    "leaderTitle": "CFO",
+    "leaderBg": "Oversees financial strategy. Important for ROI-based conversations about technology investments.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 64,
+    "companyName": "Credibly",
+    "companyDesc": "Formerly Retail Capital (rebranded 2016). Southfield, MI fintech lender offering working capital, MCAs, lines of credit, and SBA loans to SMBs. ~180 employees, ~$61.8M revenue. $3B+ total capital depl",
+    "companyType": "ICP",
+    "leaderName": "Minyang Jiang",
+    "leaderTitle": "CSO",
+    "leaderBg": "Chief Strategy Officer. Drives strategic initiatives including the Credibly.ai innovation platform.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1014,
+    "companyName": "BHG Financial",
+    "companyDesc": "Leading fintech lender originating over $23B in loans since 2001, primarily serving professionals (healthcare, legal, accounting) with high-quality consumer and business loans distributed through an i",
+    "companyType": "TAM",
+    "leaderName": "Albert Crawford",
+    "leaderTitle": "Chairman & CEO, Co-Founder",
+    "leaderBg": "Co-founded BHG Financial in 2001 with $25K in capital; 40+ years of sales, management, and leadership experience in financial services.",
+    "leaderLi": "https://www.linkedin.com/in/albertcrawford/"
+  },
+  {
+    "companyId": 1014,
+    "companyName": "BHG Financial",
+    "companyDesc": "Leading fintech lender originating over $23B in loans since 2001, primarily serving professionals (healthcare, legal, accounting) with high-quality consumer and business loans distributed through an i",
+    "companyType": "TAM",
+    "leaderName": "Meghan Crawford-Hamlin",
+    "leaderTitle": "President, Bank Division",
+    "leaderBg": "Leads business development, placement operations, bank marketing, national events, and regulatory relations at BHG Financial.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1014,
+    "companyName": "BHG Financial",
+    "companyDesc": "Leading fintech lender originating over $23B in loans since 2001, primarily serving professionals (healthcare, legal, accounting) with high-quality consumer and business loans distributed through an i",
+    "companyType": "TAM",
+    "leaderName": "April Brissette",
+    "leaderTitle": "Chief Risk Officer",
+    "leaderBg": "Responsible for safeguarding BHG Financial's interests and reputation by managing and mitigating business risks.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1015,
+    "companyName": "Biz2Credit (Itria Ventures)",
+    "companyDesc": "Leading fintech platform for small business lending and digital lending infrastructure (Biz2X), managing billions in active loans with $100M+ ARR, serving both direct borrowers and powering lending-as",
+    "companyType": "TAM",
+    "leaderName": "Rohit Arora",
+    "leaderTitle": "CEO & Co-Founder",
+    "leaderBg": "Built Biz2Credit into a dual-engine empire with billions in active loans and $100M+ ARR; IPO planned for early 2027.",
+    "leaderLi": "https://www.linkedin.com/in/rohitarora2/"
+  },
+  {
+    "companyId": 1015,
+    "companyName": "Biz2Credit (Itria Ventures)",
+    "companyDesc": "Leading fintech platform for small business lending and digital lending infrastructure (Biz2X), managing billions in active loans with $100M+ ARR, serving both direct borrowers and powering lending-as",
+    "companyType": "TAM",
+    "leaderName": "Ramit Arora",
+    "leaderTitle": "President & Co-Founder",
+    "leaderBg": "Heads credit and sales operations with 10+ years of financial services experience at Citibank and Xerox.",
+    "leaderLi": "https://www.linkedin.com/in/ramitarora/"
+  },
+  {
+    "companyId": 1015,
+    "companyName": "Biz2Credit (Itria Ventures)",
+    "companyDesc": "Leading fintech platform for small business lending and digital lending infrastructure (Biz2X), managing billions in active loans with $100M+ ARR, serving both direct borrowers and powering lending-as",
+    "companyType": "TAM",
+    "leaderName": "Brad Rosenfeld",
+    "leaderTitle": "CMO & Chief Strategy Officer",
+    "leaderBg": "Driving Biz2Credit's next growth stage in embedded finance, modern lending, and AI-powered fintech.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1016,
+    "companyName": "CapitaLand Group",
+    "companyDesc": "eCapital Corp is a specialty finance lender providing factoring, asset-based lending, and working capital solutions across the US, Canada, and UK, with 850+ employees and $36B+ in cumulative financing",
+    "companyType": "TAM",
+    "leaderName": "Marius Silvasan",
+    "leaderTitle": "CEO",
+    "leaderBg": "Over 20 years in structured finance, syndication, and M&A; led eCapital through numerous acquisitions growing to 850+ employees.",
+    "leaderLi": "https://www.linkedin.com/in/marius-silvasan-2a287a70/"
+  },
+  {
+    "companyId": 1016,
+    "companyName": "CapitaLand Group",
+    "companyDesc": "eCapital Corp is a specialty finance lender providing factoring, asset-based lending, and working capital solutions across the US, Canada, and UK, with 850+ employees and $36B+ in cumulative financing",
+    "companyType": "TAM",
+    "leaderName": "Dan Ambrico",
+    "leaderTitle": "President, Commercial Finance",
+    "leaderBg": "Appointed in March 2025 to lead eCapital's growing commercial finance division.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1016,
+    "companyName": "CapitaLand Group",
+    "companyDesc": "eCapital Corp is a specialty finance lender providing factoring, asset-based lending, and working capital solutions across the US, Canada, and UK, with 850+ employees and $36B+ in cumulative financing",
+    "companyType": "TAM",
+    "leaderName": "Steve Siler",
+    "leaderTitle": "CTO",
+    "leaderBg": "Appointed September 2025; nearly 20 years of experience driving technology transformation in asset-backed finance and private credit.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1017,
+    "companyName": "OnDeck",
+    "companyDesc": "Pioneering online small business lender (now a subsidiary of Enova International) that has provided $15B+ in loans, offering term loans and lines of credit to SMBs through a technology-driven platform",
+    "companyType": "TAM",
+    "leaderName": "David Fisher",
+    "leaderTitle": "CEO, Enova International",
+    "leaderBg": "Longtime CEO of Enova; transitioning to Executive Chairman effective January 2026 after leading the OnDeck acquisition and integration.",
+    "leaderLi": "https://www.linkedin.com/in/david-fisher-enova/"
+  },
+  {
+    "companyId": 1017,
+    "companyName": "OnDeck",
+    "companyDesc": "Pioneering online small business lender (now a subsidiary of Enova International) that has provided $15B+ in loans, offering term loans and lines of credit to SMBs through a technology-driven platform",
+    "companyType": "TAM",
+    "leaderName": "Steve Cunningham",
+    "leaderTitle": "CFO / Incoming CEO, Enova",
+    "leaderBg": "Current CFO succeeding Fisher as CEO in Jan 2026; previously EVP and Chief Risk Officer at Discover Financial Services.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1017,
+    "companyName": "OnDeck",
+    "companyDesc": "Pioneering online small business lender (now a subsidiary of Enova International) that has provided $15B+ in loans, offering term loans and lines of credit to SMBs through a technology-driven platform",
+    "companyType": "TAM",
+    "leaderName": "Cory Kampfer",
+    "leaderTitle": "Co-President, Enova Small Business",
+    "leaderBg": "Former OnDeck COO and General Counsel who now co-leads the Enova Small Business division.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1018,
+    "companyName": "Ascentium Capital",
+    "companyDesc": "A division of Regions Bank providing nationwide equipment and technology financing, having funded over $14.1B since 2011 with a focus on streamlined financing for specialized business equipment, comme",
+    "companyType": "TAM",
+    "leaderName": "Dave Lyder",
+    "leaderTitle": "Group Leader, Ascentium Capital",
+    "leaderBg": "Elevated to lead Ascentium Capital in 2025, succeeding founder Tom Depping who retired after 40 years in equipment finance.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1018,
+    "companyName": "Ascentium Capital",
+    "companyDesc": "A division of Regions Bank providing nationwide equipment and technology financing, having funded over $14.1B since 2011 with a focus on streamlined financing for specialized business equipment, comme",
+    "companyType": "TAM",
+    "leaderName": "Tom Depping",
+    "leaderTitle": "Founder (retired)",
+    "leaderBg": "Founded Ascentium Capital in 2011 and led it for over a decade before retiring in 2025 after a 40-year career in equipment finance.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1019,
+    "companyName": "Drip Capital",
+    "companyDesc": "Fintech company providing trade finance solutions for cross-border SME exporters and importers, backed by $50M from TD Bank, profitable, and recognized as a leading soonicorn in India's fintech space.",
+    "companyType": "TAM",
+    "leaderName": "Pushkar Mukewar",
+    "leaderTitle": "CEO & Co-Founder",
+    "leaderBg": "Responsible for strategic direction, product, business development and operations; led Drip Capital to profitability and secured $50M credit facility from TD Bank.",
+    "leaderLi": "https://www.linkedin.com/in/pushkar-mukewar-0316951/"
+  },
+  {
+    "companyId": 1019,
+    "companyName": "Drip Capital",
+    "companyDesc": "Fintech company providing trade finance solutions for cross-border SME exporters and importers, backed by $50M from TD Bank, profitable, and recognized as a leading soonicorn in India's fintech space.",
+    "companyType": "TAM",
+    "leaderName": "Divya Agarwalla",
+    "leaderTitle": "Co-Founder",
+    "leaderBg": "Co-founded Drip Capital to simplify trade finance for cross-border SMEs.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1020,
+    "companyName": "iBusiness Funding",
+    "companyDesc": "Leading SBA lending technology company offering LenderAI software and Lending-as-a-Service (LaaS) platform, processing 1,000+ daily loan applications and partnering with Intuit QuickBooks for small bu",
+    "companyType": "TAM",
+    "leaderName": "Justin Levy",
+    "leaderTitle": "CEO & Founder",
+    "leaderBg": "Founded Knight Capital Funding in 2013, frustrated by industry inefficiencies; built LenderAI to transform commercial lending through AI chatbots and automation.",
+    "leaderLi": "https://www.linkedin.com/in/justinlevyibf/"
+  },
+  {
+    "companyId": 1020,
+    "companyName": "iBusiness Funding",
+    "companyDesc": "Leading SBA lending technology company offering LenderAI software and Lending-as-a-Service (LaaS) platform, processing 1,000+ daily loan applications and partnering with Intuit QuickBooks for small bu",
+    "companyType": "TAM",
+    "leaderName": "Deepak Sharma",
+    "leaderTitle": "Executive Director, LaaS Division",
+    "leaderBg": "Leads the Lending-as-a-Service division, helping banks and lenders streamline their SBA lending operations.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1021,
+    "companyName": "Balboa Capital",
+    "companyDesc": "Equipment finance and small business lending company (now Ameris Bank Equipment Finance after 2021 acquisition), providing working capital loans, equipment financing, and SBA loans to small and mid-si",
+    "companyType": "TAM",
+    "leaderName": "Patrick Byrne",
+    "leaderTitle": "CEO / President",
+    "leaderBg": "Leads Balboa Capital's operations as CEO and President under the Ameris Bank umbrella.",
+    "leaderLi": ""
+  },
+  {
+    "companyId": 1021,
+    "companyName": "Balboa Capital",
+    "companyDesc": "Equipment finance and small business lending company (now Ameris Bank Equipment Finance after 2021 acquisition), providing working capital loans, equipment financing, and SBA loans to small and mid-si",
+    "companyType": "TAM",
+    "leaderName": "David Chiurazzi",
+    "leaderTitle": "CFO",
+    "leaderBg": "Oversees financial operations for Balboa Capital's equipment finance and small business lending divisions.",
+    "leaderLi": ""
+  }
+]

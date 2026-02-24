@@ -13,12 +13,12 @@ const path = require('path');
 const { syncToSupabase } = require('./lib/supabase-sync');
 
 const ALL_COMPANIES = path.join(__dirname, '../src/data/all-companies.json');
-const scriptsDir = __dirname;
+const hooksDir = path.join(__dirname, 'research/batch-results/hooks');
 
 // Find all hooks-result files
-const inputFiles = fs.readdirSync(scriptsDir)
+const inputFiles = fs.readdirSync(hooksDir)
   .filter(f => f.match(/hooks-result-\d+\.json$/))
-  .map(f => path.join(scriptsDir, f));
+  .map(f => path.join(hooksDir, f));
 
 if (inputFiles.length === 0) {
   console.error('No hooks-result-*.json files found.');

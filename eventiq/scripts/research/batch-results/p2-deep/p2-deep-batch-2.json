@@ -1,0 +1,580 @@
+[
+  {
+    "id": 39,
+    "name": "Accelerant",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Capital markets advisory firm. Not the insurtech Accelerant Holdings (NYSE: ACHL). Limited public info available.",
+    "leaders": [
+      {
+        "n": "Sylvania Harrod",
+        "t": "Fund Manager / Principal",
+        "bg": "22+ years leadership and PE expertise. Army veteran. Bridges funding needs with growth opportunities.",
+        "li": "",
+        "currentHooks": [
+          "*Army veteran",
+          "22yr PE veteran",
+          "Capital markets advisor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Lendmate",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "NYC small business lending solutions (est. 2023). Business loan matching and capital structuring. Helps companies break free from daily payment cycles. MCA consolidation solutions. Building partnerships through Business Loan Partner Program.",
+    "leaders": [
+      {
+        "n": "Luckens Victor",
+        "t": "Business Credit Advisor",
+        "bg": "Front-line advisor matching businesses with funding products.",
+        "li": "",
+        "currentHooks": [
+          "MCA consolidation advisor",
+          "NYC credit advisor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Stellar Capital",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Smithtown, NY (Long Island) business funding. MCA, real estate lending, equipment finance, SBA, LOC. Up to $50M. 50+ years combined team experience. First position loans from $75K starting at 6.99%.",
+    "leaders": [
+      {
+        "n": "Shannon Harris",
+        "t": "Chief Funding Advisor",
+        "bg": "In commercial equipment finance since 1997. Expanded to MCA, SBA, LOC in 2008. Deep industry veteran.",
+        "li": "",
+        "currentHooks": [
+          "*In equipment finance since '97",
+          "Expanded to MCA in 2008",
+          "25+ yr industry veteran"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Parkview Advance",
+    "type": "ICP",
+    "priority": 4,
+    "website": "https://www.parkviewadvance.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/parkview-advance/",
+    "location": "Connecticut",
+    "employees": 17,
+    "desc": "Stamford, CT alt lender (est. 2018). ~20 employees. LOC, AR financing, SBA, equipment financing, ABL. Founder Matthew Walsh previously at Premium Merchant Funding. UConn grad. Growing rapidly, recognized as top small business lender.",
+    "leaders": [
+      {
+        "n": "Matthew Walsh",
+        "t": "Founder & CEO",
+        "bg": "UConn grad. Ex-Funding Specialist at Premium Merchant Funding. Built Parkview from scratch into multi-product lender.",
+        "li": "",
+        "currentHooks": [
+          "UConn grad",
+          "Ex-Premium Merchant Funding",
+          "Built Parkview from scratch"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Maverick Funding",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Fresh Meadows, NY direct MCA funder using own capital (est. 2020). 1-10 employees. $5K-$1M funding. 1-day approvals. Minimal paperwork (app + 3 months bank statements). Serves logistics, retail, medical. CEO Igor Davidov (John Jay College CUNY).",
+    "leaders": [
+      {
+        "n": "Igor Davidov",
+        "t": "Founder & CEO",
+        "bg": "John Jay College (CUNY). Founded 2020. Passionate about helping entrepreneurs of all credit types. Actively growing ISO partnerships.",
+        "li": "",
+        "currentHooks": [
+          "John Jay College (CUNY)",
+          "Founded during COVID 2020",
+          "Passionate about all credit types"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Barclays Advance",
+    "type": "ICP",
+    "priority": 3,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Boca Raton-based direct MCA funder (not affiliated with Barclays bank). Sources deals through ISO/broker channel. Currently hiring for ISO Relations roles, indicating growth. Arieh Kaplan manages broker relationships as Head of ISO Relations. Panelist at DeBanked Connect 2026. Lower online profile t",
+    "leaders": [
+      {
+        "n": "Arieh Kaplan",
+        "t": "Head of ISO Relations",
+        "bg": "Previously Funding Specialist at Barclays Advance. Now leads ISO/broker relationship management. DeBanked panelist.",
+        "li": "",
+        "currentHooks": [
+          "DeBanked panelist",
+          "Rose from funding specialist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Optimum Bank",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Fort Lauderdale community bank (NYSE American: OPHC). Record 2025: $1.11B assets (19% growth), $16.64M net earnings. SBA Preferred Lender status. $700M CRE mortgage portfolio. Launching HUD/FHA lending subsidiary for multifamily and healthcare in 2026. New API-based core banking platform. Panelist S",
+    "leaders": [
+      {
+        "n": "Seth Denison",
+        "t": "MD, Investor & Corporate Relations",
+        "bg": "JD from FIU (2010). Former SEC Legal Intern. Restructured $5B in CMBS debt. Previously at Lee & Associates and Hart Advisors. Partner in fund managing 60+ manufactured housing communities. DeBanked panelist.",
+        "li": "",
+        "currentHooks": [
+          "FIU Law",
+          "Ex-SEC intern",
+          "$5B CMBS experience",
+          "60+ housing communities"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Greenspoon Marder",
+    "type": "ICP",
+    "priority": 5,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Full-service law firm, 225+ attorneys, 20+ US offices. Robby Birnbaum leads Regulatory Compliance & Financial Services practice. Nation’s leading legal expert on debt settlement. Represents 500+ companies in financial services, defending against CFPB, FTC, and State AG actions. Speaking on “Merchant",
+    "leaders": [
+      {
+        "n": "Robby Birnbaum",
+        "t": "Partner & Practice Group Leader",
+        "bg": "UW-Madison (Poli Sci + English, 1996; JD 1999). 25+ yrs at Greenspoon Marder. Represents 500+ companies. Board of Association for Consumer Debt Relief. Former President of American Fair Credit Council and NACSO. Boca Raton Top Lawyers 2025. SFL Business Journal 40 Under 40 (2012).",
+        "li": "https://www.linkedin.com/in/robby-birnbaum-2444404/",
+        "currentHooks": [
+          "UW-Madison alum",
+          "*25yr firm loyalty",
+          "500+ clients",
+          "CFPB expert",
+          "*Boca Raton local"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Commercial Capital Connect",
+    "type": "ICP",
+    "priority": 5,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Super broker matching small businesses with funding sources across MCA, term loans, LOC, invoice factoring, equipment leasing, SBA loans. 30+ year industry veteran. Already uses AI: built BrokerBuddy (AI trained on lender guidelines for deal matching), AI receptionists, and automated lead qualificat",
+    "leaders": [
+      {
+        "n": "Cheryl Tibbs",
+        "t": "President & COO",
+        "bg": "30+ yr industry veteran. Built BrokerBuddy AI. Entrepreneur since age 12. Self-taught in finance. LinkedIn: fundingsniper007. Calls herself ‘The Loan Arranger.’ Pivoted from residential mortgage to commercial finance post-2008 crisis. Previously at Rainstar Capital Group. Douglasville, GA (Atlanta metro).",
+        "li": "https://www.linkedin.com/in/fundingsniper007",
+        "currentHooks": [
+          "30yr veteran",
+          "AI builder",
+          "*Entrepreneur at 12",
+          "*Atlanta, GA",
+          "Broker Battle judge"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Smart MCA",
+    "type": "ICP",
+    "priority": 5,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "End-to-end SaaS platform for MCA companies: risk analysis, deal flow management, CRM, payment scheduling, and reporting from one dashboard. Founded 2017. Fully customizable. Targets MCA funders who want to manage their entire operation from a single system. Tech demo presenter at deBanked.",
+    "leaders": [
+      {
+        "n": "Motti Dahan",
+        "t": "President & Founder",
+        "bg": "NJIT Electrical Engineering. CISSP certified. Previously at NICE Systems/Qognify, CloudScann (CTO), Alfred AI (CTO), OOTB Technologies (CEO). Built SmartMCA from scratch in 2017. Passaic, NJ.",
+        "li": "https://www.linkedin.com/in/motti-dahan",
+        "currentHooks": [
+          "NJIT engineer",
+          "CISSP certified",
+          "Cybersecurity background",
+          "Serial CTO",
+          "*Passaic, NJ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Figure",
+    "type": "ICP",
+    "priority": 6,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "America’s #1 non-bank HELOC lender. NASDAQ: FIGR. IPO’d Sep 2025 at ~$7.6B valuation. $17B+ in home equity lending on Provenance Blockchain. 168 active lending partners. 77% of originations through embedded/white-label partnerships. Launched YLDS (first SEC-approved yield-bearing stablecoin). Tech d",
+    "leaders": [
+      {
+        "n": "Matt Donofrio",
+        "t": "Director of Embedded Partnerships",
+        "bg": "Boston College. Previously at Citi (FIG, Strategy, Citi Ventures), Marble Pay (Head of Revenue Ops). Builds white-label lending relationships for Figure’s HELOC platform.",
+        "li": "",
+        "currentHooks": [
+          "Boston College",
+          "Citi pedigree",
+          "Citi Ventures builder",
+          "*Blockchain-savvy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "OnyxIQ",
+    "type": "ICP",
+    "priority": 5,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "All-in-one digital lending platform for MCA and alternative lending. Built by Jay Keller (CEO of Wall Street Funding, 17+ yrs in MCA). Melville, NY. Automates origination, underwriting, syndication, collections, portfolio management. “Developed for MCA providers by MCA providers.” Tech demo presente",
+    "leaders": [
+      {
+        "n": "Garrett Kuhlman",
+        "t": "Customer Success Manager",
+        "bg": "Fordham Univ Gabelli School of Business (Info Systems, 2022). Men’s Basketball Manager. Previously at Lenox Advisors, Fieldtech.ai. Joined OnyxIQ Sep 2025. Austin, TX.",
+        "li": "https://www.linkedin.com/in/garrett-kuhlman-80092b17b/",
+        "currentHooks": [
+          "Fordham Gabelli",
+          "*Basketball manager",
+          "Insurance tech to MCA",
+          "*Austin, TX",
+          "*Early career"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Cloudsquare",
+    "type": "ICP",
+    "priority": 5,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "#1-rated lending platform built natively on Salesforce. Automates lead-to-funding-to-servicing. Products: CS Lend (MCA/loan mgmt), CS Broker (broker CRM), IntelliParse (AI bank statement parsing via Heron Data). Pivoted 2025 from general Salesforce consulting to exclusively serve alt-lending. Co-fou",
+    "leaders": [
+      {
+        "n": "Dennis Mikhailov",
+        "t": "CRO & Co-Founder",
+        "bg": "Salesforce ecosystem since 2011. Previously at IBISWorld (BD Manager). Co-founded Cloudsquare ~2015. Based in LA.",
+        "li": "",
+        "currentHooks": [
+          "Co-founder",
+          "Salesforce since 2011",
+          "IBISWorld alum",
+          "*LA based"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Ocrolus",
+    "type": "ICP",
+    "priority": 6,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "AI-powered document analysis platform for lenders. $80M Series C (Feb 2025) at $500M+ valuation. 99%+ accuracy, trained on 15M+ applications across 175+ funders. Launched Encore (Oct 2025) — cash flow data sharing platform for SMB funding. Brown University alum Snitkof co-founded Orchard Platform (a",
+    "leaders": [
+      {
+        "n": "David Snitkof",
+        "t": "GM of SMB",
+        "bg": "Brown Univ (Economics). Co-founded Orchard Platform (acquired by Kabbage). Previously at Amex, Citigroup, Kabbage (Head of Analytics). Writes Fintech AI Review newsletter on Substack. Conference regular (Money 20/20, deBanked).",
+        "li": "https://www.linkedin.com/in/davidsnitkof/",
+        "currentHooks": [
+          "Brown Univ",
+          "Co-founded Orchard",
+          "Kabbage alum",
+          "Amex + Citi",
+          "*Newsletter writer",
+          "*Thought leader"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "The LCF Group / Reliant Funding",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Direct MCA funder since 2011 (as Last Chance Funding). West Hempstead, NY. ~75 employees. Acquired Reliant Funding assets Sep 2023 ($3B+ total funded, $125M securitization facility). Reliant is LCF’s “prime paper” arm. Factor rates 1.10-1.40, up to $2M. COO John Merturi (ex-DFC Global, ex-NASDAQ).",
+    "leaders": [
+      {
+        "n": "Andy Parker",
+        "t": "CEO, The LCF Group",
+        "bg": "Leads overall strategy. Built LCF from 2011 into multi-brand funder. Acquired Reliant assets 2023.",
+        "li": "",
+        "currentHooks": [
+          "Built LCF since 2011",
+          "Acquired Reliant assets 2023"
+        ]
+      },
+      {
+        "n": "Steve Kietz",
+        "t": "CEO, Reliant Funding",
+        "bg": "Named CEO Aug 2021 (formerly CMO). Runs the Reliant prime paper division.",
+        "li": "",
+        "currentHooks": [
+          "CMO-turned-CEO",
+          "Runs Reliant prime paper"
+        ]
+      },
+      {
+        "n": "John Merturi",
+        "t": "COO",
+        "bg": "Previously CFO for 3.5 years. 15+ yrs finance. Ex-DFC Global, ex-NASDAQ listed firms.",
+        "li": "",
+        "currentHooks": [
+          "15yr finance veteran",
+          "Ex-DFC Global",
+          "Ex-NASDAQ listed firms",
+          "CFO-turned-COO"
+        ]
+      },
+      {
+        "n": "Kerri Brancato",
+        "t": "VP of Underwriting",
+        "bg": "Heads the underwriting department. DIRECT BUYER for underwriting automation tools.",
+        "li": "",
+        "currentHooks": [
+          "VP of Underwriting",
+          "Underwriting automation buyer"
+        ]
+      },
+      {
+        "n": "Yoel Wagschal",
+        "t": "CFO",
+        "bg": "CFO since Oct 2018. Oversees financial strategy and portfolio performance.",
+        "li": "",
+        "currentHooks": [
+          "CFO since 2018",
+          "Portfolio performance lead"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Reliance Financial",
+    "type": "ICP",
+    "priority": 4,
+    "website": "https://reliancef.com/contact-us/",
+    "linkedinUrl": "https://reliancef.com/contact-us/",
+    "location": "Florida",
+    "employees": 12,
+    "desc": "Revenue-based financing provider, Farmingdale, NJ. Up to $5M per transaction. Record origination month Nov 2025. Secured strategic capital partnership with specialty finance firm (May 2025). Launched new business lending platform for UT and TX merchants (Sep 2025). Hired new Head of Underwriting and",
+    "leaders": [
+      {
+        "n": "Aryeh Miller",
+        "t": "CEO & Managing Partner",
+        "bg": "Industry veteran. Founded and leads Reliance Financial. Based in Farmingdale, NJ. Driving rapid growth.",
+        "li": "",
+        "currentHooks": [
+          "Farmingdale, NJ based",
+          "Record origination Nov 2025"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Blade Funding",
+    "type": "ICP",
+    "priority": 4,
+    "website": "https://bladefunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/blade-funding-inc/about/",
+    "location": "Florida",
+    "employees": 9,
+    "desc": "MCA funder and small business lender, Aventura, FL. Short-term loans up to $250K, LOC up to $100K. Funds as fast as 24 hours. Focused on small-to-mid market businesses. Lanyard sponsor at deBanked Connect.",
+    "leaders": [
+      {
+        "n": "Sam Charlop",
+        "t": "CEO & President",
+        "bg": "Founder and operator. Based in Aventura, FL.",
+        "li": "",
+        "currentHooks": [
+          "Aventura FL founder",
+          "Small-to-mid market focus"
+        ]
+      },
+      {
+        "n": "Fred Friedland",
+        "t": "Chief Underwriting Officer",
+        "bg": "Heads underwriting decisions. DIRECT BUYER for AI underwriting tools.",
+        "li": "",
+        "currentHooks": [
+          "Chief Underwriting Officer",
+          "AI underwriting buyer"
+        ]
+      },
+      {
+        "n": "Mark Goldberg",
+        "t": "ISO Relations Manager",
+        "bg": "Manages broker relationships and deal flow.",
+        "li": "",
+        "currentHooks": [
+          "ISO relations manager",
+          "Deal flow specialist"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Novac Equities",
+    "type": "ICP",
+    "priority": 4,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Direct MCA funder, Miami, FL (est. Nov 2021). Two tiers: B-C Paper up to $3M ($75K+ monthly rev) and MICRO platform ($10K+ monthly rev). Same-day funding. BBB accredited Dec 2024 (A+ rating). 2-10 employees. Jake is also invested in professional padel (Novac WPR Road to Miami Circuit).",
+    "leaders": [
+      {
+        "n": "Jake D’Amelio",
+        "t": "Founder & CEO",
+        "bg": "Started as loan broker in NYC. Founded Novac Nov 2021. Also invests in professional padel (Novac WPR circuit).",
+        "li": "",
+        "currentHooks": [
+          "*Started as loan broker NYC",
+          "*Invests in pro padel",
+          "Founded Novac Nov 2021"
+        ]
+      },
+      {
+        "n": "Thomas Klemser",
+        "t": "Operations Manager",
+        "bg": "Day-to-day operations management.",
+        "li": "",
+        "currentHooks": [
+          "Day-to-day ops manager"
+        ]
+      },
+      {
+        "n": "BriAnna Montesano",
+        "t": "ISO Relations Manager",
+        "bg": "Manages broker relationships and deal sourcing.",
+        "li": "",
+        "currentHooks": [
+          "ISO relations manager",
+          "Deal sourcing lead"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Diesel Funding",
+    "type": "ICP",
+    "priority": 4,
+    "website": "https://www.dieselfunding.com",
+    "linkedinUrl": "https://www.dieselfunding.com",
+    "location": "Florida",
+    "employees": 5,
+    "desc": "Direct MCA funder, North Miami Beach, FL (est. 2017). Known for funding complex and higher-risk deals that other funders won’t touch. Same-day capability. Performance-based funding decisions tied to actual business revenue. Small team (2-10).",
+    "leaders": [
+      {
+        "n": "Ari Mandel",
+        "t": "Principal / Manager",
+        "bg": "Founder and primary operator. Based in North Miami Beach, FL. Runs underwriting and operations.",
+        "li": "",
+        "currentHooks": [
+          "North Miami Beach based",
+          "Funds deals others won't"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "APP Funding",
+    "type": "ICP",
+    "priority": 5,
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "desc": "Direct MCA funder, NYC (29 W 36th St). MCAs $10K-$5M. No collateral required. Repayment tied to daily credit card sales. BBB accredited Jul 2023. Very small team (~3 employees). Claims 500+ brands funded.",
+    "leaders": [
+      {
+        "n": "Ben Sanders",
+        "t": "CEO",
+        "bg": "Leads APP Funding operations.",
+        "li": "",
+        "currentHooks": [
+          "Runs 3-person funder",
+          "NYC Garment District based"
+        ]
+      },
+      {
+        "n": "Yosef Zavulunov",
+        "t": "COO",
+        "bg": "Previously ISO Manager. Now handles operations and deal evaluation.",
+        "li": "",
+        "currentHooks": [
+          "ISO Manager turned COO",
+          "Deal evaluation lead"
+        ]
+      }
+    ]
+  }
+]

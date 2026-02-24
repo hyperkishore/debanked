@@ -1,0 +1,862 @@
+[
+  {
+    "id": 1036,
+    "name": "LiftFund",
+    "leaders": [
+      {
+        "n": "Amy Hereford",
+        "t": "President & CEO",
+        "bg": "Attorney who practiced complex business litigation at major California and Texas firms representing Fortune 100 clients. Phi Beta Kappa graduate of Trinity University in San Antonio with a JD from the University of Texas School of Law, where she received the Outstanding Public Service Award. Served as LiftFund's general counsel and chief external affairs officer before being appointed CEO in mid-2024. Now serves on the SBA's Lending Advisory Council.",
+        "li": "https://www.linkedin.com/in/amy-hereford-5b71b1301/",
+        "hooks": ["*Phi Beta Kappa, Trinity U", "*UT Austin law JD", "SBA Lending Advisory Council", "Fortune 100 litigator"]
+      },
+      {
+        "n": "Janie Barrera",
+        "t": "Founder",
+        "bg": "Former nun and Corpus Christi native who graduated from the University of the Incarnate Word. Founded LiftFund (originally Accion Texas) in 1994 with three employees. Built it into one of the nation's largest micro/small business lenders with 25,000+ loans totaling $439M and a 96% repayment rate. Appointed by President Obama to the President's Advisory Council on Financial Capability. Recipient of the Ned Gramlich Lifetime Award.",
+        "li": "https://www.linkedin.com/in/janie-barrera-a95b5611/",
+        "hooks": ["*Former nun turned founder", "*Obama advisory council", "*Ned Gramlich Lifetime Award", "Univ of Incarnate Word"]
+      }
+    ],
+    "news": [
+      {"h": "LiftFund Enters 2026 as Key Voice for Small Business Disaster Recovery", "s": "PR Newswire, Jan 2026", "d": "LiftFund coordinating a National Disaster Recovery Fund to bridge the gap between disaster impact and traditional aid, deploying $83M+ to 3,500 businesses in 2025."},
+      {"h": "LiftFund Wins 2025 Outstanding CDFI Award", "s": "PR Newswire, Oct 2025", "d": "Recognized nationally for leadership in rebuilding local economies after disasters, having deployed $222M+ in disaster recovery capital supporting 11,000+ businesses."},
+      {"h": "CDFI Friendly Fort Worth Launches 0% Interest Loan Program with LiftFund", "s": "Fort Worth Inc, 2025", "d": "Partnered to launch a 0% Interest Buy-Down Program for small business loans up to $100,000 to reduce financing barriers."}
+    ]
+  },
+  {
+    "id": 1037,
+    "name": "Pursuit Lending",
+    "leaders": [
+      {
+        "n": "Chris Levy",
+        "t": "President & CEO",
+        "bg": "Started as a 2010 intern at Pursuit, joined full-time in 2012 as an underwriter, and rose through Chief Credit Officer to EVP/COO before becoming CEO in 2022. Holds a BS in Finance from University of Maryland Robert H. Smith School of Business and a JD from Albany Law School. Named to Albany Business Review 40 Under 40 (2022) and Coleman Report SBA Emerging Lender of the Year (2019). Oversaw $780M+ in PPP loan approvals for 11,000+ businesses.",
+        "li": "https://www.linkedin.com/in/chris-levy-874831228/",
+        "hooks": ["*Intern-to-CEO journey", "*Albany Law JD", "*40 Under 40 Albany", "UMD Smith School finance"]
+      },
+      {
+        "n": "Rich Amsterdam",
+        "t": "EVP & Chief Credit Officer",
+        "bg": "Oversees all credit functions including analysis, internal lending, lender service provider teams, and portfolio management at Pursuit.",
+        "li": "",
+        "hooks": ["Chief Credit Officer", "Portfolio management lead"]
+      },
+      {
+        "n": "James Goldrick",
+        "t": "EVP & Chief Lending Officer",
+        "bg": "Oversees the metropolitan New York market including NYC, Long Island, Northern NJ, and Hudson Valley for Pursuit's SBA lending programs.",
+        "li": "",
+        "hooks": ["NYC metro market lead", "Hudson Valley coverage"]
+      }
+    ],
+    "news": [
+      {"h": "Pursuit Expands SBA 504 Lending with First National Bank of Long Island", "s": "Pursuit, 2025", "d": "Partnered to close SBA 504 loans for small businesses in the NYC metro area, including a boutique bridal shop in Rego Park, NY."},
+      {"h": "CDFI Fund Maintains $324M Funding for FY 2026", "s": "OFN, 2025", "d": "Congress maintained level funding for the CDFI Fund at $324M despite proposed cuts, supporting CDFIs like Pursuit."}
+    ]
+  },
+  {
+    "id": 1038,
+    "name": "Driven (formerly Thinking Capital)",
+    "leaders": [
+      {
+        "n": "Stephane Marceau",
+        "t": "Former CEO, Driven",
+        "bg": "Appointed President and CEO of Thinking Capital in October 2019, bringing 20+ years of experience leading data and technology-centric businesses including executive roles at Bell Canada and Yellow Pages, and as a serial tech entrepreneur building AI-powered companies. Led the rebrand from Thinking Capital to Driven in 2022 before departing in 2023.",
+        "li": "",
+        "hooks": ["*Ex-Bell Canada executive", "*AI startup entrepreneur", "Led Thinking Capital rebrand", "Ex-Yellow Pages exec"]
+      },
+      {
+        "n": "Som Seif",
+        "t": "CEO, Purpose Unlimited (parent)",
+        "bg": "University of Toronto engineering graduate who started at RBC Investment Banking. Founded Purpose Unlimited and built it into a diversified financial services group. Acquired Thinking Capital (now Driven) in 2018 for $155.78M. Completed acquisition of Steadyhand in 2025.",
+        "li": "https://ca.linkedin.com/in/som-seif-29bb66",
+        "hooks": ["*U of Toronto engineering", "Ex-RBC Investment Banking", "*$155M Thinking Capital acq", "Steadyhand acquirer 2025"]
+      }
+    ],
+    "news": [
+      {"h": "Driven Launches Express Funding Product for Canadian SMBs", "s": "Driven.ca, Mar 2024", "d": "Introduced Express Funding tailored to Canadian small businesses, expanding from its core fixed-term loan products ranging $10K-$300K."},
+      {"h": "Driven Surpasses $1B in Financing to 17,000+ Canadian SMBs", "s": "Driven.ca, 2024", "d": "Since 2006, the company has provided over $1B in financing to more than 17,000 Canadian small and medium businesses."}
+    ]
+  },
+  {
+    "id": 1039,
+    "name": "Mission Capital",
+    "leaders": [
+      {
+        "n": "Jeffrey Sachs",
+        "t": "Founder & CEO",
+        "bg": "Founded SBG Funding in 2017. Grew the company to surpass $1 billion in total financing by September 2024, earning Inc. 5000 recognition at No. 831 in 2025. Led the company's brand refresh in 2020 with a tenfold increase in financing capacity. Focuses on making funding accessible to underserved entrepreneurs through term loans, lines of credit, and equipment financing.",
+        "li": "https://www.linkedin.com/in/jeffrey-sachs-b5674522/",
+        "hooks": ["*$1B+ funded milestone", "*Inc. 5000 No. 831 (2025)", "10x financing capacity increase", "Founded SBG 2017"]
+      }
+    ],
+    "news": [
+      {"h": "SBG Funding Ranks No. 831 on 2025 Inc. 5000", "s": "PR Newswire, Aug 2025", "d": "SBG Funding recognized among America's fastest-growing private companies on the 2025 Inc. 5000 list."},
+      {"h": "SBG Funding Surpasses $1 Billion in Financing for US Small Businesses", "s": "Morningstar/PR Newswire, Sep 2024", "d": "Crossed the $1 billion cumulative funding milestone, solidifying its position as a leading alternative financing provider."}
+    ]
+  },
+  {
+    "id": 1040,
+    "name": "GoCurrency",
+    "leaders": [
+      {
+        "n": "Vikas Agrawal",
+        "t": "CEO",
+        "bg": "Leads Currency (GoCurrency) as the financial technology arm of Sandhills Global, providing equipment financing, leasing, working capital, and aviation financing solutions across the US and Canada. Limited public information available on personal background.",
+        "li": "",
+        "hooks": ["Sandhills Global fintech arm", "US-Canada equipment finance"]
+      },
+      {
+        "n": "Jared Koch",
+        "t": "Director, Currency",
+        "bg": "Director of Currency at Sandhills Global, overseeing the team that helps buyers and sellers facilitate financing through a wide range of financial products. Previously served as Corporate Sales Executive at Sandhills. Holds a Bachelor of Business Administration from the University of Nebraska-Lincoln.",
+        "li": "https://www.linkedin.com/in/jared-koch-84b60292/",
+        "hooks": ["*Univ of Nebraska-Lincoln BBA", "Ex-Corporate Sales at Sandhills", "Scottsdale-based director"]
+      }
+    ],
+    "news": [
+      {"h": "CurrencyFinance Expands Competitive Equipment Financing", "s": "Truck Paper Blog, Dec 2025", "d": "GoCurrency expanded CurrencyFinance as a trusted third-party financing partner offering personalized financing options with a streamlined online application."},
+      {"h": "Sandhills Global Introduces Currency for Canadian Brands", "s": "PR Newswire, 2024", "d": "Currency expanded to Canada through MarketBook.ca, CraneTrader.ca, and ForestryTrader.ca for equipment financing."}
+    ]
+  },
+  {
+    "id": 1041,
+    "name": "Interface Financial Group",
+    "leaders": [
+      {
+        "n": "George Shapiro",
+        "t": "Executive Chairman",
+        "bg": "Accomplished international executive with 25+ years of business-building in emerging markets. Elected CEO and Chairman of IFG in 2007, transitioning to Executive Chairman in 2019. Previously served as CEO of CBSF Capital Management for 6+ years, leading the company to a successful merger in 2000 and serving as Chairman of the Board until 2006. Based in Bethesda, Maryland.",
+        "li": "https://www.linkedin.com/in/georgeshapiro/",
+        "hooks": ["*25yr emerging markets exec", "Ex-CBSF Capital CEO", "Led CBSF merger 2000", "Bethesda MD based"]
+      },
+      {
+        "n": "Vishnu Kumar",
+        "t": "Chief Financial Technology Officer",
+        "bg": "Seasoned fintech leader with 20+ years spanning financial technology and strategic growth. Holds an MBA and Computer Science degree from the University of Michigan. Previously VP of Information Technology at Instructional Technologies and VP at Clear Iris. Leads IFG's system architecture and platform expansion across 140+ franchise offices.",
+        "li": "https://www.linkedin.com/in/vishnumamba/",
+        "hooks": ["*Univ of Michigan MBA + CS", "Ex-VP at Clear Iris", "20yr fintech career", "140-office tech leader"]
+      }
+    ],
+    "news": [
+      {"h": "Interface Financial Group Celebrates 40+ Years as Funding Source", "s": "Enterprise Podcast Network, 2025", "d": "IFG marked over four decades as a leading alternative funding source for small businesses through its franchise model."},
+      {"h": "IFG Earns World-Class Franchise Certification for 19th Year", "s": "Franchise Research Institute, 2025", "d": "Franchise Research Institute awarded IFG its World-Class Franchise certification every year since 2006."}
+    ]
+  },
+  {
+    "id": 1042,
+    "name": "Libertas",
+    "leaders": [
+      {
+        "n": "John Paradisi",
+        "t": "CEO",
+        "bg": "25+ years of leadership across commercial/consumer banking, specialty lending, and capital markets. Named President and COO at Libertas in May 2025, then promoted to CEO effective January 2026. Previously EVP and Chief Specialty Banking Officer at City National Bank of Florida. Spent 17 years at CIT Bank in consumer banking, commercial banking, corporate strategy, M&A, and business development, rising to Chief Strategy Growth Officer.",
+        "li": "",
+        "hooks": ["*17yr CIT Bank veteran", "Ex-City National Bank FL EVP", "Chief Strategy Growth Officer", "Named CEO Jan 2026"]
+      },
+      {
+        "n": "Randy Saluck",
+        "t": "Vice Chairman",
+        "bg": "Instrumental to Libertas's success since 2017. Transitioned from CEO to Vice Chairman in December 2025. Continues on the Board of Directors, serves on the Libertas credit committee, and provides guidance to the underwriting team on complex transactions. Focuses on developing a Key Account Strategy for institutional relationships.",
+        "li": "https://www.linkedin.com/in/randy-saluck-840771152/",
+        "hooks": ["*CEO-to-Vice Chair transition", "Key account strategist", "At Libertas since 2017", "Complex deal underwriter"]
+      },
+      {
+        "n": "Jia-Mang Ten",
+        "t": "Chief Investment Officer",
+        "bg": "Over 20 years of investment experience. Previously held positions at Citadel LLC, Tremblant Capital, BlueCrest Capital Management, and YG Partners. Expertise in hedge funds, equities, portfolio management, valuation, and financial modeling. Promoted to CIO at Libertas to oversee financial risk, underwriting, and portfolio management.",
+        "li": "https://www.linkedin.com/in/jia-mang-ten-3b9509/",
+        "hooks": ["*Ex-Citadel LLC", "Ex-BlueCrest Capital", "Ex-Tremblant Capital", "20yr investment veteran"]
+      }
+    ],
+    "news": [
+      {"h": "Libertas Funding Crosses $5 Billion Milestone", "s": "BusinessWire, Jan 2026", "d": "Libertas surpassed $5B in total funding in under ten years, with the most recent billion achieved in under ten months. Secured new credit facility for continued expansion."},
+      {"h": "Libertas Announces Key Leadership Appointments", "s": "Yahoo Finance, Dec 2025", "d": "John Paradisi named CEO, Randy Saluck becomes Vice Chairman, Jia-Mang Ten promoted to CIO, plus new Chief Compliance Officer and Chief Marketing Officer."},
+      {"h": "Libertas Names John Paradisi as President and COO", "s": "Yahoo Finance, May 2025", "d": "Paradisi brought 25+ years of banking experience to Libertas as President and COO, later elevated to CEO."}
+    ]
+  },
+  {
+    "id": 1043,
+    "name": "BasePoint Capital LLC",
+    "leaders": [
+      {
+        "n": "Eric Schneider",
+        "t": "CEO & President",
+        "bg": "Leads BasePoint Capital's specialty finance operations with 20+ years of investment experience. Also serves as Chief Investment Officer of Advantage Insurance Inc. and CEO of BasePoint Advisors LLC. Oversaw BasePoint's $102M ABS securitization (Series 2025-1) and the company's growth to $14.5B+ in cumulative financing with $4.9B in outstanding principal balance.",
+        "li": "https://www.linkedin.com/in/eric-schneider-26a74b1b3",
+        "hooks": ["*$14.5B cumulative financed", "Advantage Insurance CIO", "$102M ABS securitization", "Pearl + Revenued operator"]
+      }
+    ],
+    "news": [
+      {"h": "KBRA Assigns Ratings to BasePoint MCA Securitization II, Series 2025-1", "s": "KBRA, 2025", "d": "BasePoint completed its second MCA securitization, a $102M deal backed by a revolving pool of merchant purchase agreements from Revenued and Pearl Capital platforms."},
+      {"h": "BasePoint Floats $102 Million in ABS", "s": "Asset Securitization Report, 2025", "d": "Small business lender BasePoint sponsored a $102M securitization with three note tranches and a revolving period of about three years."}
+    ]
+  },
+  {
+    "id": 1044,
+    "name": "The LCF Group",
+    "leaders": [
+      {
+        "n": "Robert Kleiber",
+        "t": "President & CEO",
+        "bg": "Leads The LCF Group's operations as a direct MCA funder specializing in high-risk 'C & D paper' businesses. Serves as CFO and COO in addition to President. Previously served as Board Member and Senior Advisor at Felene. LCF Group founded in 2011, has funded thousands of businesses across every industry and state. Featured in deBanked discussing LCF's approach to subprime business funding.",
+        "li": "https://www.linkedin.com/in/danny-koshanfar-0576a485/",
+        "hooks": ["*C&D paper specialist", "deBanked CONNECT speaker", "Ex-Felene board member", "Triple-hat: CEO/CFO/COO"]
+      }
+    ],
+    "news": [
+      {"h": "From A to D: How LCF is Aiming High", "s": "deBanked, Oct 2023", "d": "Featured profile on LCF Group's strategy in the subprime MCA space, discussing their approach to funding businesses that traditional lenders decline."}
+    ]
+  },
+  {
+    "id": 1045,
+    "name": "Avtech Capital",
+    "leaders": [
+      {
+        "n": "Chris Scharman",
+        "t": "CEO",
+        "bg": "CEO of Avtech Capital with a JD from Vanderbilt University Law School (1999-2002) and a BA in Near and Middle Eastern Studies from the University of Utah (1994). Accepted into Forbes Finance Council in June 2024. Over a decade in equipment finance with a focus on innovative solutions driving growth and efficiency. Led Avtech's inaugural $141M ABS securitization (AVT 2026-1).",
+        "li": "https://www.linkedin.com/in/chrisscharman/",
+        "hooks": ["*Vanderbilt Law JD", "*Forbes Finance Council", "*Middle Eastern Studies BA", "$141M inaugural ABS issued"]
+      },
+      {
+        "n": "Chris Emery",
+        "t": "CFO",
+        "bg": "Oversees financial operations for Avtech Capital's multi-industry equipment leasing business, which generated $46.9M in revenue in 2025.",
+        "li": "",
+        "hooks": ["$46.9M revenue operations", "Multi-industry leasing CFO"]
+      }
+    ],
+    "news": [
+      {"h": "Avtech Capital Completes Inaugural $141M Equipment ABS Issuance", "s": "PR Newswire, Feb 2026", "d": "Completed first-ever ABS securitization (AVT 2026-1) with a AAA-rated senior tranche, backed by commercial equipment leases. Capital One Securities served as sole bookrunner."},
+      {"h": "Avtech Capital Named Top Place to Work in Utah 2024", "s": "Avtech Capital Blog, 2024", "d": "Recognized among Utah's top workplaces, reflecting the company's culture and growth trajectory."}
+    ]
+  },
+  {
+    "id": 1046,
+    "name": "Newity LLC",
+    "leaders": [
+      {
+        "n": "David Cody",
+        "t": "Co-CEO & Co-Founder",
+        "bg": "Over two decades of experience in asset management and capital formation. Previously CEO of MatlinPatterson Asset Management (MPAM) which he co-founded in 2010. Before that, served as President of the Hybrid (credit) business at Fortress Investment Group where he grew AUM to over $40B. Involved in developing 300+ asset management products and raised over $50B across asset classes.",
+        "li": "https://www.linkedin.com/in/davidcody1",
+        "hooks": ["*Ex-Fortress Investment Group", "*$40B+ AUM at Fortress", "Co-founded MatlinPatterson", "Raised $50B+ across asset classes"]
+      },
+      {
+        "n": "Luke LaHaie",
+        "t": "Co-CEO & Co-Founder",
+        "bg": "Co-founded NEWITY in 2020 after recognizing gaps in PPP relief access. Holds a Master's in Accountancy from University of Notre Dame and a BS in Finance from Michigan State University. CPA registered in Illinois and Michigan, and CFA Charterholder. Over 12 years of experience in commercial lending, transaction advisory, audit, and lender services. Named to American Banker's '25 People Who Will Change Banking in 2025'.",
+        "li": "https://www.linkedin.com/in/luke-lahaie-49998524/",
+        "hooks": ["*Notre Dame MS Accountancy", "*CPA + CFA Charterholder", "*American Banker Top 25 (2025)", "Michigan State finance grad"]
+      }
+    ],
+    "news": [
+      {"h": "NEWITY Ranks No. 596 on 2025 Inc. 5000", "s": "Inc., Aug 2025", "d": "Recognized among America's fastest-growing private companies, reinforcing NEWITY's position as #1 SBA 7(a) loan facilitator for loans up to $350K."},
+      {"h": "NEWITY Facilitates $326.56M in SBA Funding in 2025", "s": "NEWITY, Jan 2026", "d": "Facilitated $326.56M through Northeast Bank and added 322,103 new members to its network in 2025. Since 2020, has helped 125,000+ businesses access $12B+ in capital."}
+    ]
+  },
+  {
+    "id": 1047,
+    "name": "Hello Alice",
+    "leaders": [
+      {
+        "n": "Carolyn Rodz",
+        "t": "CEO & Co-Founder",
+        "bg": "Bolivian-American investment banker turned three-time entrepreneur from Houston, TX. Started two digital marketing businesses and a luxury retail company before co-founding Hello Alice in 2017. Named to Inc.'s 2025 Female Founders 500 List. Launched Hello Alice to provide equitable opportunities for underserved small businesses, now serving 1.5M+ owners. Platform partners include eBay and PepsiCo.",
+        "li": "https://www.linkedin.com/in/carolynrodz/",
+        "hooks": ["*Bolivian-American founder", "*Inc. Female Founders 500 (2025)", "Ex-investment banker", "Three-time entrepreneur"]
+      },
+      {
+        "n": "Elizabeth Gore",
+        "t": "President & Co-Founder",
+        "bg": "Former UN Foundation VP of Global Partnerships for nearly a decade, where she founded grassroots efforts like Nothing But Nets and Girl Up. Served as emeritus chair of the UN Global Entrepreneurs Council and entrepreneur-in-residence at Dell. Hosts Yahoo Finance's 'The Big Idea' show and writes as small business columnist for Inc. magazine.",
+        "li": "https://www.linkedin.com/in/elizabethgoreusa/",
+        "hooks": ["*Ex-UN Foundation VP", "*Yahoo Finance 'Big Idea' host", "*Founded Girl Up at UN", "Inc. magazine columnist"]
+      }
+    ],
+    "news": [
+      {"h": "Allstate Main Street Grants Award $2M Through Hello Alice", "s": "Hello Alice, 2025", "d": "100 small businesses each received $20,000 grants through the 2025 Allstate Main Street Grants Program administered by Hello Alice."},
+      {"h": "Fund Her Future Grant Provides $100K to Six Women Founders", "s": "Hello Alice, 2025", "d": "Six recipients received access to $100,000 in grant funding and a year of expert small business services through Hello Alice."}
+    ]
+  },
+  {
+    "id": 1048,
+    "name": "Purpose Unlimited",
+    "leaders": [
+      {
+        "n": "Som Seif",
+        "t": "Founder & CEO",
+        "bg": "University of Toronto engineering graduate who started at RBC Investment Banking. Founded Purpose Unlimited and built it into a diversified Canadian financial services group spanning asset management, wealth management, and small business financing with $1.3B+ in AUM. Acquired Thinking Capital for $155.78M in 2018 (rebranded to Driven) and completed Steadyhand acquisition in 2025.",
+        "li": "https://ca.linkedin.com/in/som-seif-29bb66",
+        "hooks": ["*U of Toronto engineering", "Ex-RBC Investment Banking", "*$155M Thinking Capital acq", "$1.3B+ AUM builder"]
+      },
+      {
+        "n": "Stephane Marceau",
+        "t": "Former CEO, Driven Financial",
+        "bg": "25+ years of product development and leadership experience. Held executive roles at Bell Canada and Yellow Pages. Serial tech entrepreneur who built AI-powered companies. Led the Thinking Capital to Driven rebrand in 2022 before departing in 2023.",
+        "li": "",
+        "hooks": ["*Ex-Bell Canada executive", "AI startup entrepreneur", "Led Driven rebrand 2022"]
+      }
+    ],
+    "news": [
+      {"h": "Purpose Unlimited Completes Steadyhand Acquisition", "s": "Various, 2025", "d": "Som Seif's Purpose Unlimited completed its acquisition of Steadyhand Investment Management, expanding its wealth management capabilities."},
+      {"h": "Driven Surpasses $1B in Canadian SMB Financing", "s": "Driven.ca, 2024", "d": "Purpose's subsidiary Driven has financed over $1B to 17,000+ Canadian small businesses since 2006."}
+    ]
+  },
+  {
+    "id": 1050,
+    "name": "Commercial Funding Inc.",
+    "leaders": [
+      {
+        "n": "Dan McDonough",
+        "t": "President & CEO",
+        "bg": "Founded Commercial Credit Inc. and serves as President & CEO of subsidiary Commercial Funding Inc. Career in equipment finance since 1986, starting as a credit analyst at First Interstate Credit Alliance. Co-founded the Chicago office of Financial Federal Credit Inc., ultimately managing two national divisions and two branch locations. MBA from DePaul University.",
+        "li": "",
+        "hooks": ["*DePaul MBA", "Equipment finance since 1986", "Co-founded Financial Federal Chicago", "Ex-First Interstate Credit"]
+      },
+      {
+        "n": "Buddy Zarbock",
+        "t": "VP",
+        "bg": "Recently added VP bringing additional leadership to Commercial Funding's operations in invoice factoring, AR financing, and asset-based lending across industries including transportation, oil and gas, construction, manufacturing, and staffing.",
+        "li": "",
+        "hooks": ["New VP addition", "Multi-industry ABL leader"]
+      }
+    ],
+    "news": [
+      {"h": "Commercial Funding Closes $3M Factoring Line for Security Company", "s": "Secured Finance Network, Jan 2023", "d": "Closed a $3 million factoring facility for a growing security company, demonstrating expansion into new industry verticals."},
+      {"h": "Commercial Funding Enters Asset Based Lending Market", "s": "Utah Business, Aug 2020", "d": "Expanded from pure factoring into asset-based lending, broadening their product suite for middle-market companies."}
+    ]
+  },
+  {
+    "id": 1051,
+    "name": "Cuallix",
+    "leaders": [
+      {
+        "n": "Executive Team",
+        "t": "C-Suite",
+        "bg": "Cuallix leadership oversees a fintech operation spanning Mexico, US, and Hong Kong with 25+ years in credit and payment processing. The company became the first institution worldwide to use Ripple's xRapid for cross-border payments from the US to Mexico, reducing foreign exchange costs by 40-70%. Operates multiple platforms including Cuallet (digital banking) and Payllix (global payments/transfers).",
+        "li": "https://www.linkedin.com/company/financiera-cuallix/about/",
+        "hooks": ["*First Ripple xRapid user globally", "3-country operation", "25yr credit history", "US-Mexico remittance corridor"]
+      }
+    ],
+    "news": [
+      {"h": "Cuallix Pioneered Ripple xRapid for US-Mexico Payments", "s": "Finance Magnates, 2017", "d": "Cuallix became the first institution worldwide to use Ripple's xRapid solution utilizing XRP as a liquidity tool for cross-border payments from US to Mexico."}
+    ]
+  },
+  {
+    "id": 1052,
+    "name": "Knight Capital Funding",
+    "leaders": [
+      {
+        "n": "Justin Levy",
+        "t": "Co-Founder & CEO",
+        "bg": "Founded Knight Capital Funding in 2013, three years after graduating Cum Laude from the University of Miami Herbert Business School. Expanded his vision with the launch of iBusiness Funding in 2015. Both companies were acquired by Ready Capital Corporation in 2019. Previously served as CEO at LCG Interactive.",
+        "li": "",
+        "hooks": ["*U of Miami Cum Laude", "*Ready Capital acquisition 2019", "Founded iBusiness Funding", "Ex-LCG Interactive CEO"]
+      },
+      {
+        "n": "Chris McCay",
+        "t": "Marketing Director",
+        "bg": "Manages Knight Capital's branding, marketing, affiliate onboarding, and web development across the Knight Capital Funding and iBusiness Funding brands.",
+        "li": "",
+        "hooks": ["Full-stack marketer", "Affiliate network builder"]
+      }
+    ],
+    "news": [
+      {"h": "Ready Capital Acquires Knight Capital Funding", "s": "Ready Capital, Oct 2019", "d": "Ready Capital Corporation acquired Knight Capital Funding and iBusiness Funding, integrating the MCA specialist into its broader small business lending platform."}
+    ]
+  },
+  {
+    "id": 1053,
+    "name": "Ualett",
+    "leaders": [
+      {
+        "n": "Ricky Michel Presbot",
+        "t": "CEO & Co-Founder",
+        "bg": "Dominican entrepreneur with 20+ years in business development and strategic leadership. Holds an MBA. Founded Ualett in 2018 as a bilingual fintech for US gig workers. Under his leadership, Ualett has grown to 19,000+ cash advances monthly, secured a $150M debt facility from Thiele Capital Management (Sep 2025), and expanded operations to Colombia and Dominican Republic.",
+        "li": "https://www.linkedin.com/in/ricky-michel-presbot-14964472/",
+        "hooks": ["*Dominican entrepreneur with MBA", "*$150M debt facility secured", "19K+ monthly cash advances", "Bilingual fintech builder"]
+      },
+      {
+        "n": "Jay Millard",
+        "t": "Chief Revenue Officer",
+        "bg": "20+ years driving revenue growth across tech and real estate. Formerly SVP Revenue at Dwolla. Brings fintech payments expertise to Ualett's gig economy platform.",
+        "li": "https://www.linkedin.com/in/jaymillard/",
+        "hooks": ["Ex-Dwolla SVP Revenue", "20yr revenue growth pro", "Tech-to-fintech pivot"]
+      }
+    ],
+    "news": [
+      {"h": "Ualett Secures $150 Million Debt Facility", "s": "BusinessWire, Sep 2025", "d": "Secured a 3-year $150M debt facility from Thiele Capital Management to accelerate growth and broaden customer base in the gig economy."},
+      {"h": "Ualett Celebrates 7th Anniversary with Major Expansion", "s": "Foundever, Aug 2025", "d": "Marked 7th anniversary with bilingual operations hub in Colombia through Foundever partnership and hiring campaign in Dominican Republic. Reached 19,000+ monthly cash advances."},
+      {"h": "Ualett Appoints Samantha Yoder as VP of Product", "s": "Yahoo Finance, Nov 2025", "d": "Hired ex-HSBC/Dwolla/Citi product leader Samantha Yoder to expand financial access for the 1099 workforce."}
+    ]
+  },
+  {
+    "id": 1054,
+    "name": "Dakota Financial",
+    "leaders": [
+      {
+        "n": "Michael Green",
+        "t": "Chairman",
+        "bg": "Leads Dakota Financial's strategy since founding in 2002. Has served 15,000+ customers across all 50 states with equipment financing for trucking, construction, agriculture, and manufacturing. Specializes in clients with challenging credit histories including bankruptcies, tax liens, and judgments.",
+        "li": "",
+        "hooks": ["15K+ customers all 50 states", "*Specializes in challenged credit", "Founded 2002 in LA"]
+      },
+      {
+        "n": "Christopher Park",
+        "t": "CFO",
+        "bg": "Manages financial operations for Dakota Financial's asset-based lending programs ranging from $15K to $400K with terms up to 48 months. Based at Dakota's Wilshire Boulevard headquarters in Los Angeles.",
+        "li": "",
+        "hooks": ["Asset-based lending CFO", "$15K-$400K deal range"]
+      }
+    ],
+    "news": [
+      {"h": "2025 Funding Source: Dakota Financial", "s": "MonitorDaily, 2025", "d": "Featured as a funding source for 2025, highlighting Dakota's expertise in hard-asset industries and equipment financing for underserved borrowers."}
+    ]
+  },
+  {
+    "id": 1055,
+    "name": "Fundura Capital",
+    "leaders": [
+      {
+        "n": "Jared Hecht",
+        "t": "Founder",
+        "bg": "Serial entrepreneur who co-founded GroupMe (acquired by Microsoft). Launched Fundera in 2013 with Andres Moran as an online small business lending marketplace. Grew Fundera to help 85,000+ SMBs before selling to NerdWallet in 2020. Now serves as Venture Partner at Union Square Ventures, leading early-stage investments. Stanford graduate.",
+        "li": "",
+        "hooks": ["*GroupMe co-founder (sold to MSFT)", "*Union Square Ventures partner", "Sold Fundera to NerdWallet", "*Serial entrepreneur"]
+      },
+      {
+        "n": "Andres Moran",
+        "t": "Co-Founder",
+        "bg": "Technology entrepreneur who co-founded Fundera in 2013 alongside Jared Hecht and Rohan Deshpande. Built Fundera to bring transparency to online lending, serving 85,000+ SMBs before the NerdWallet acquisition.",
+        "li": "",
+        "hooks": ["Fundera co-founder", "Lending transparency advocate"]
+      }
+    ],
+    "news": [
+      {"h": "NerdWallet Acquires Fundera", "s": "TechCrunch, Nov 2020", "d": "NerdWallet acquired Fundera, bringing the small business lending marketplace and all employees into its platform."}
+    ]
+  },
+  {
+    "id": 1056,
+    "name": "Business Capital LLC",
+    "leaders": [
+      {
+        "n": "Henry Pershin",
+        "t": "Founder & Owner",
+        "bg": "Founded Business Capital LLC in 2019 as a direct funder based in Hallandale Beach, FL. Led the rebrand to BusinessCapital.com with a real-time underwriting platform. The company provides unsecured capital with 95% of clients funded within 48 hours. Management team includes Shneur Pershin (Sales Manager) and Andrew Kramer (Accounting Manager).",
+        "li": "https://www.linkedin.com/in/henry-pershin-457b7b17",
+        "hooks": ["95% funded within 48hrs", "Built real-time underwriting", "Miami Beach based founder"]
+      },
+      {
+        "n": "Jack Berger",
+        "t": "President",
+        "bg": "Leads day-to-day operations at Business Capital with focus on same-day funding capabilities. Limited additional public information available.",
+        "li": "https://www.linkedin.com/in/jack-berger-91a16b14/",
+        "hooks": ["Same-day funding ops leader"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1057,
+    "name": "SouthStar Capital",
+    "leaders": [
+      {
+        "n": "Bernard Linney",
+        "t": "Founder & CEO",
+        "bg": "25+ years in financial services. Served in the 82nd Airborne Division of the US Army as a paratrooper for six years. Began career in commercial banking as a loan officer, then opened a mortgage banking firm and grew it to one of the largest in the Southeast with $1B+ in performing loans sold annually. Founded SouthStar Capital in 2008 in Mount Pleasant, SC. Holds a BS in Business Finance and attended ABA Graduate School of Banking.",
+        "li": "https://www.linkedin.com/in/bernard-linney-666ba26/",
+        "hooks": ["*82nd Airborne paratrooper", "*Built $1B mortgage firm", "ABA Banking School grad", "6yr US Army veteran"]
+      },
+      {
+        "n": "Michael Haddad",
+        "t": "President",
+        "bg": "Appointed President of SouthStar Capital. Leads operational strategy for the company's specialty finance operations including AR financing, ABL, equipment leasing, PO financing, and payroll funding. Annual revenue reached $17.4M in 2025.",
+        "li": "",
+        "hooks": ["Appointed President", "$17.4M annual revenue"]
+      }
+    ],
+    "news": [
+      {"h": "SouthStar Capital Acquires inFactor Capital", "s": "SouthStar Capital, 2024", "d": "Strategic acquisition of inFactor Capital expanded SouthStar's client portfolio and geographic reach in the factoring industry."},
+      {"h": "Michael Haddad Appointed President of SouthStar Capital", "s": "SouthStar Capital, 2024", "d": "New president appointment signals next phase of growth for the Mount Pleasant-based specialty finance company."}
+    ]
+  },
+  {
+    "id": 1058,
+    "name": "Swift Capital",
+    "leaders": [
+      {
+        "n": "PayPal Business Lending",
+        "t": "Parent Company",
+        "bg": "PayPal acquired Swift Capital in 2017 for $183M to expand its small business lending capabilities and increase loan amounts to $500K. Swift Capital operated as a small business lending company based in North Carolina before the acquisition.",
+        "li": "",
+        "hooks": ["$183M PayPal acquisition"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1059,
+    "name": "Swift Financial Corporation",
+    "leaders": [
+      {
+        "n": "PayPal Business Lending",
+        "t": "Parent Company",
+        "bg": "Swift Financial Corporation was established in 2006 in Wilmington, DE, and acquired by PayPal in 2017 for $183M to enhance SMB lending. Now integrated into PayPal's business lending operations.",
+        "li": "",
+        "hooks": ["*Founded 2006 Wilmington DE", "$183M PayPal exit"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1060,
+    "name": "US Business Funding",
+    "leaders": [
+      {
+        "n": "Peter Ribeiro",
+        "t": "Founder & CEO",
+        "bg": "Founded US Business Funding in 2008 in Santa Ana, CA. Built it into a leading provider of equipment financing and small business loan solutions with financing ranging from $10K to $10M. Featured in deBanked discussing growth strategies. Company earned multiple Inc. 5000 rankings including No. 260 (2017), No. 786 (2019), No. 1063 (2018), and No. 2685 (2020). Fora Financial acquired a significant stake in the company.",
+        "li": "",
+        "hooks": ["*Inc. 5000 No. 260 (2017)", "deBanked featured leader", "Fora Financial stake", "$10K-$10M financing range"]
+      }
+    ],
+    "news": [
+      {"h": "Fora Financial Acquires Significant Stake in US Business Funding", "s": "Fora Financial, 2021", "d": "Fora Financial acquired a significant ownership stake in USBF, combining resources to expand small business lending capabilities."},
+      {"h": "Peter Ribeiro Discusses Experience and Success in 2020", "s": "deBanked, Sep 2020", "d": "CEO Peter Ribeiro featured in deBanked discussing navigating the pandemic and adapting business strategy."}
+    ]
+  },
+  {
+    "id": 1061,
+    "name": "BusinessLoans.com",
+    "leaders": [
+      {
+        "n": "Leadership Team",
+        "t": "Management",
+        "bg": "BusinessLoans.com has helped over 100,000 small businesses prequalify since its 2020 founding in Charleston, SC. Operates as an online lending marketplace matching borrowers with lenders for short-term loans, long-term loans, lines of credit, and merchant cash advances.",
+        "li": "",
+        "hooks": ["100K+ businesses prequalified", "Charleston SC founded 2020"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1062,
+    "name": "QuickBridge Funding, LLC",
+    "leaders": [
+      {
+        "n": "Ben Gold",
+        "t": "Founding President",
+        "bg": "Cal State Fullerton alumnus with a BA in Business Administration-Marketing and an MBA. Co-founded QuickBridge in 2011 with Jason Osiecki and investors Dave Gilbert and Brij Patel. Previously VP of Operations at Alliance Funding Group. In small business lending since 2002 as a college junior. Grew QuickBridge from 2 employees to 90+, earning two Inc. 500 rankings. Board Treasurer of CSUF Mihaylo College Executive Council and scholarship sponsor.",
+        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
+        "hooks": ["*Cal State Fullerton MBA", "*Inc. 500 twice", "CSUF Board Treasurer", "In lending since age 20"]
+      },
+      {
+        "n": "Dave Gilbert",
+        "t": "CEO, National Funding",
+        "bg": "Founder of National Funding who acquired QuickBridge in October 2018. Collectively the companies provided $3B+ in financing and exceeded $600M in annual loan volume at the time of acquisition.",
+        "li": "",
+        "hooks": ["National Funding founder", "$3B+ combined financing", "Grew via acquisition strategy"]
+      }
+    ],
+    "news": [
+      {"h": "National Funding Acquires QuickBridge", "s": "PR Newswire, Oct 2018", "d": "National Funding acquired QuickBridge to expand its alternative lending portfolio, with collective financing exceeding $3B to small and mid-sized businesses."}
+    ]
+  },
+  {
+    "id": 1063,
+    "name": "CoFi Lending",
+    "leaders": [
+      {
+        "n": "Cameron Harris",
+        "t": "Co-Founder & Co-CEO",
+        "bg": "Former residential real estate developer who experienced construction loan pain points firsthand. Co-founded CoFi (originally eDraw, Inc.) in June 2018 with Mike Lacey and David Rockwood in Utah. Raised $7M in seed funding from Dreamit, Blackhorn Ventures, and MetaProp NYC. CoFi ranked on Inc. 5000 in 2024. Advocates that 2025 is the year of private construction loans.",
+        "li": "https://www.linkedin.com/in/cameron-harris-554a7723/",
+        "hooks": ["*Ex-residential developer", "$7M seed from Dreamit/MetaProp", "Inc. 5000 (2024)", "Solved own loan pain point"]
+      },
+      {
+        "n": "Mike Lacey",
+        "t": "Co-Founder & Co-CEO",
+        "bg": "Former residential developer with 30+ years of construction and lending experience. Co-founded CoFi in 2018 and built its proprietary construction payment platform that streamlines the draw process for small-to-mid-size builders with loans from $250K to $60M.",
+        "li": "",
+        "hooks": ["*30yr construction veteran", "Built proprietary payment tech", "Loans $250K to $60M"]
+      }
+    ],
+    "news": [
+      {"h": "CoFi Named to MWCN 2024 Utah 100 List", "s": "CoFi Blog, 2024", "d": "Named to MountainWest Capital Network's Utah 100 list of fastest-growing companies, recognizing its construction finance innovation."},
+      {"h": "CoFi Lands $7M Seed Funding Round", "s": "TechBuzz News, 2022", "d": "Raised $7M from Dreamit, Blackhorn Ventures, and MetaProp NYC to revolutionize the construction finance marketplace."}
+    ]
+  },
+  {
+    "id": 1064,
+    "name": "Novel Capital",
+    "leaders": [
+      {
+        "n": "Carlos Antequera",
+        "t": "Co-Founder & CEO",
+        "bg": "Originally from La Paz, Bolivia. MBA from University of Kansas, BS in Computer Science from Washburn University. Previously co-founded EdTech startup Netchemia, growing it to serve 3,500+ school districts before selling to Vista Equity Partners. Kauffman Fellow and Pipeline Entrepreneurial Fellow. TechStars and Village Capital mentor. Led Novel's $15M oversubscribed Pre-Series A round bringing total funding to $130M+.",
+        "li": "https://www.linkedin.com/in/carlosantequera",
+        "hooks": ["*From La Paz, Bolivia", "*Sold Netchemia to Vista Equity", "*Kauffman Fellow", "Univ of Kansas MBA"]
+      },
+      {
+        "n": "Keith Harrington",
+        "t": "Co-Founder & COO",
+        "bg": "Former Managing Director at Kansas Bioscience Authority (KBA) leading $591M fund investments in digital health and biotech. MBA from Indiana University Kelley School of Business, BS in Finance from Park University. Kauffman Fellow. Previously held technology and M&A leadership roles at Birch Telecom, helping grow from startup to $300M in revenue. Built the Revenue-Based Financing Network and hosts an RBF podcast.",
+        "li": "https://www.linkedin.com/in/keithharringtonkansas",
+        "hooks": ["*$591M KBA fund manager", "*Indiana Kelley MBA", "*Kauffman Fellow", "Birch Telecom: $0 to $300M"]
+      }
+    ],
+    "news": [
+      {"h": "Novel Capital Raises $15M Oversubscribed Pre-Series A", "s": "Fintech Futures, 2025", "d": "Closed a $15M oversubscribed round co-led by IGNIA Partners and Ulu Ventures, bringing total funding to $130M+ for its Capital Intelligence platform."},
+      {"h": "Novel Capital Partners with Crux KC for SaaS Marketing Financing", "s": "Various, Mar 2025", "d": "Exclusive partnership with Kansas City marketing firm Crux KC offers B2B SaaS companies non-dilutive financing for marketing services."}
+    ]
+  },
+  {
+    "id": 1065,
+    "name": "The Fundworks",
+    "leaders": [
+      {
+        "n": "Bradley Smiedt",
+        "t": "Co-Founder & Chairman",
+        "bg": "Co-founded The Fundworks in 2015 as a direct MCA funder focused on revenue-based financing in Salt Lake City. Led the company through a $30M investment-grade notes offering in May 2022, refinancing existing $20M notes with Brean Capital as placement agent. Company achieved BBB accreditation in September 2025.",
+        "li": "",
+        "hooks": ["*$30M notes offering (2022)", "SLC-based MCA founder", "BBB accredited Sep 2025"]
+      },
+      {
+        "n": "Evan Smiedt",
+        "t": "CEO",
+        "bg": "Leads day-to-day operations at The Fundworks, managing the company's direct funding and merchant relationships. Completed conventional debt round in May 2025 for continued growth. The Fundworks provides MCA funding in as little as one business day with terms up to 180 days.",
+        "li": "",
+        "hooks": ["*Family business with Bradley", "Direct funder operator", "May 2025 debt round closed"]
+      }
+    ],
+    "news": [
+      {"h": "Fundworks Completes $30M Investment Grade Notes Offering", "s": "GlobeNewsWire, May 2022", "d": "Closed $30M of Senior Secured Notes to institutional investors, refinancing existing $20M notes and providing growth capital for the small business funding platform."},
+      {"h": "The Fundworks Achieves BBB Accreditation", "s": "BBB, Sep 2025", "d": "Received Better Business Bureau accreditation, signaling enhanced credibility for their MCA operations."}
+    ]
+  },
+  {
+    "id": 1066,
+    "name": "Capital Infusion LLC",
+    "leaders": [
+      {
+        "n": "Matthew Birnholz",
+        "t": "Founder & CEO",
+        "bg": "Decades of alternative lending industry experience. Began career at JPMorgan Chase. Served as Regional Director of Business Development at ForwardLine Financial and Area Sales Manager at CAN Capital. Founded Capital Infusion in 2019 in Miami, FL, offering asset-based lending, lines of credit, equipment and invoice financing from $5K to $5M+ with 24-hour personalized loan matching.",
+        "li": "https://www.linkedin.com/in/matthew-birnholz-1731bb65/",
+        "hooks": ["*Ex-JPMorgan Chase", "Ex-CAN Capital area mgr", "Ex-ForwardLine regional director", "Miami alt-lending founder"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1067,
+    "name": "Kalamata Capital Group",
+    "leaders": [
+      {
+        "n": "Steven Mandis",
+        "t": "Founder & Chairman",
+        "bg": "American investor, Columbia Business School adjunct professor, and author. Started at Goldman Sachs in 1992 as M&A banker, helped build the Special Situations Proprietary Trading Group under Henry Paulson. Later joined Halcyon Asset Management, served as senior advisor at McKinsey, and held executive roles at Citigroup including chief of staff to its president. Founded Kalamata in 2013 with his own money, naming it after his parents' Greek homeland. Author of 'What Happened to Goldman Sachs' (published by Harvard Business Press).",
+        "li": "",
+        "hooks": ["*Ex-Goldman Sachs M&A (1992)", "*Columbia Business School prof", "*Authored Goldman Sachs book", "Ex-Citigroup chief of staff"]
+      },
+      {
+        "n": "Brandon Laks",
+        "t": "Co-President",
+        "bg": "One of Kalamata's earliest employees, now Co-President with Connor Phillips. Led the launch of proprietary 'Kalamata Cash' platform in August 2024. Manages operations backed by a $500M+ securitization facility that was upsized 25% in July 2025.",
+        "li": "https://www.linkedin.com/in/brandonlaks23/",
+        "hooks": ["*Early employee to co-president", "Launched Kalamata Cash platform", "$500M+ securitization facility", "25% upsize in July 2025"]
+      }
+    ],
+    "news": [
+      {"h": "Kalamata Upsizes $500M Securitization by 25%", "s": "PR Newswire, Jul 2025", "d": "Upsized its Series 2024-1 securitization by 25%, demonstrating strong growth from its proprietary technology platform after fully utilizing the initial $80M capital draw."},
+      {"h": "Catching Up With Kalamata", "s": "deBanked, Sep 2025", "d": "Featured profile on Kalamata's growth trajectory, proprietary Kalamata Cash platform launch, and market expansion strategy."},
+      {"h": "Kalamata Closes $500M Securitization", "s": "BusinessWire, Apr 2024", "d": "Closed securitization expandable up to $500M to provide financing for small businesses, the company's first major institutional capital raise."}
+    ]
+  },
+  {
+    "id": 1068,
+    "name": "Capital Crossing",
+    "leaders": [
+      {
+        "n": "Ted F Mehm",
+        "t": "Managing Partner",
+        "bg": "Managing Partner of Capital Crossing Servicing Company LLC, an underwriter, investor, and servicer of commercial real estate and small business loans since 1987. Based in Palm Beach, FL. Has acquired discounted loans in the secondary market for over 25 years. The company generated $25.2M in annual revenue in 2025 with 45 employees.",
+        "li": "https://www.linkedin.com/in/ted-mehm-0973b98/",
+        "hooks": ["*25yr+ discounted loan buyer", "Palm Beach based", "$25.2M annual revenue", "Founded 1987 in Boston"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1069,
+    "name": "Bizfund LLC",
+    "leaders": [
+      {
+        "n": "Danny Koshanfar",
+        "t": "CEO",
+        "bg": "Founded Pearl Capital in 2009 and served as President until 2012. Transitioned to lead New Era Lending, then BizFund starting in January 2013. Based in Miami, FL. Manages a team including Rikki Kopfstein (VP of ISO Relations) and Jeff Engel (ISO Relations Manager). BizFund provides short-term 3-12 month funding from their Wilmington, DE headquarters.",
+        "li": "https://www.linkedin.com/in/danny-koshanfar-0576a485/",
+        "hooks": ["*Founded Pearl Capital 2009", "Pearl Capital to BizFund pivot", "Miami-based MCA operator", "ISO relations focused"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1070,
+    "name": "Republic Business Credit",
+    "leaders": [
+      {
+        "n": "Stewart Chesters",
+        "t": "CEO & Founder",
+        "bg": "20+ years of commercial finance experience across two continents. Founded Republic Business Credit in New Orleans 15 years ago with the goal of partnering with growing businesses in the Gulf Region. Built Republic from startup to a nationally recognized lender before it was acquired by Renasant Bank. Continues to lead Republic as CEO under the Renasant Bank umbrella.",
+        "li": "https://www.linkedin.com/in/stewartchesters/",
+        "hooks": ["*Career spans two continents", "New Orleans startup builder", "Renasant Bank subsidiary CEO", "15yr Republic builder"]
+      },
+      {
+        "n": "Robert Meyers",
+        "t": "President",
+        "bg": "Appointed President in 2016. Leads national sales team building and business development for Republic Business Credit. Works alongside CEO Stewart Chesters and COO Matthew Begley.",
+        "li": "",
+        "hooks": ["National sales team builder", "President since 2016"]
+      }
+    ],
+    "news": [
+      {"h": "Republic Business Credit Provides $16M ABL to Oilfield Services Company", "s": "PR Newswire, Oct 2025", "d": "Funded $16M asset-based facility for a Gulf Coast oilfield services company to support manufacturing expansion and refinancing."},
+      {"h": "Republic Provides $3.5M Factoring for UK Automotive Electronics Manufacturer", "s": "PR Newswire, Dec 2025", "d": "Closed $3.5M factoring facility for international in-car technology manufacturer to address seasonal customer concentration."},
+      {"h": "Republic Partners with International Textile Importer", "s": "IFA Commercial Factor, Jul 2025", "d": "Provided credit support for a leading global textile importer, expanding Republic's international trade finance portfolio."}
+    ]
+  },
+  {
+    "id": 1071,
+    "name": "Ampla Technologies Inc.",
+    "leaders": [
+      {
+        "n": "Anthony Santomo",
+        "t": "Founder & CEO",
+        "bg": "Founded Ampla in 2019 as a tech-enabled financing platform for consumer brands. Grew it to $2B+ in loan originations and $5T in transaction volume before FundThrough acquired Ampla in April 2025. Now serves as strategic advisor to FundThrough alongside his core team. Ampla offered working capital, business banking, corporate cards, and analytics.",
+        "li": "",
+        "hooks": ["*$2B+ in originations", "*$5T transaction volume", "Now FundThrough advisor", "Consumer brand finance pioneer"]
+      },
+      {
+        "n": "Steven Uster",
+        "t": "CEO, FundThrough (Acquirer)",
+        "bg": "Co-founded FundThrough in Houston/Toronto as a digital-first invoice factoring platform for SMBs. Led the acquisition of Ampla in April 2025 alongside a $25M Series B round led by Klister Credit. The combined company creates an unrivaled SMB invoice funding platform with automated onboarding and credit underwriting.",
+        "li": "",
+        "hooks": ["FundThrough co-founder", "*Led Ampla acquisition Apr 2025", "$25M Series B closer", "Houston-Toronto dual HQ"]
+      }
+    ],
+    "news": [
+      {"h": "FundThrough Acquires Ampla to Strengthen Digital-First Invoice Funding", "s": "GlobeNewsWire, Apr 2025", "d": "FundThrough acquired Ampla alongside a $25M Series B to create an unrivaled SMB invoice funding platform. Anthony Santomo remains as strategic advisor."},
+      {"h": "FundThrough Raises $25M Series B Alongside Ampla Acquisition", "s": "BetaKit, Apr 2025", "d": "All-equity round led by Klister Credit with Canadian Business Growth Fund and Urbana Corporation participation."}
+    ]
+  },
+  {
+    "id": 1072,
+    "name": "Northern Initiatives",
+    "leaders": [
+      {
+        "n": "Elissa Sangalli",
+        "t": "CEO/President",
+        "bg": "Third president of Northern Initiatives, appointed in 2020. Previously spent 13 years directing Local First, a nonprofit working with 1,000+ businesses in west Michigan. Named Leader of the Year in 2024. Serves as chair of the Michigan CDFI Coalition which she helped launch, securing $85M in state CDFI funding (largest in the nation). Northern Initiatives has deployed $112M+ in loans over 30 years across 73 Michigan counties.",
+        "li": "",
+        "hooks": ["*Named Leader of the Year 2024", "*13yr Local First nonprofit", "*Secured $85M MI CDFI fund", "Chair MI CDFI Coalition"]
+      },
+      {
+        "n": "Chuck Hurst",
+        "t": "VP of Lending",
+        "bg": "Oversees all lending operations across Northern Initiatives' offices statewide, supporting $9.4M in loans to approximately 100 borrowers in 2024. Manages lending across all 73 Michigan counties.",
+        "li": "",
+        "hooks": ["73-county lending operations", "$9.4M deployed in 2024"]
+      }
+    ],
+    "news": [
+      {"h": "West Michigan CDFIs Face Funding Challenges After Executive Order", "s": "Crain's Grand Rapids Business, 2025", "d": "Michigan CDFIs including Northern Initiatives face uncertainty after federal policy changes threatening CDFI Fund support."},
+      {"h": "FHLBank Indianapolis Deploys $26M+ to Indiana and Michigan CDFIs", "s": "GlobeNewsWire, Nov 2025", "d": "FHLBank Indianapolis facilitated $26M+ in low-cost loans to CDFIs across Indiana and Michigan for housing and community development."}
+    ]
+  },
+  {
+    "id": 1073,
+    "name": "Porter Capital",
+    "leaders": [
+      {
+        "n": "Marc Porter",
+        "t": "CEO & Co-Founder",
+        "bg": "Founded Porter Capital in 1991 with brother Donald in Birmingham, AL. Auburn University business degree. Named Small Business Person of the Year by Birmingham Chamber. Revolutionized the lending industry by introducing creative financing solutions like factoring and AR financing to new markets. Led 2025 strategic acquisition of a staffing industry factoring firm. Company approaching $15B in cumulative funding with $1.7B funded in 2025.",
+        "li": "https://www.linkedin.com/in/marc-porter/",
+        "hooks": ["*Auburn University alum", "*Family business with brother Donald", "*SBA Person of the Year", "Approaching $15B cumulative"]
+      },
+      {
+        "n": "Scott Romanowski",
+        "t": "CFO",
+        "bg": "23-year veteran at Porter Capital managing financial operations as the company approaches $15B in cumulative funding. Oversaw financial aspects of the 2025 staffing industry acquisition and major deals including $20M manufacturing facility and $20M healthcare staffing package.",
+        "li": "",
+        "hooks": ["23yr Porter Capital veteran", "Approaching $15B cumulative"]
+      }
+    ],
+    "news": [
+      {"h": "Porter Capital Expands in Staffing Industry with Strategic Acquisition", "s": "PR Newswire, Feb 2025", "d": "Acquired a prominent factoring firm specializing in the staffing sector, integrating client portfolio and key staff to expand industry presence."},
+      {"h": "Porter Capital Provides $20M Factoring Facility for Dallas Manufacturer", "s": "Porter Capital, Feb 2025", "d": "Closed $20M factoring facility for a Dallas-based manufacturing company to fuel growth."},
+      {"h": "Porter Capital's $20M Package for International Healthcare Staffing Agency", "s": "PR Newswire, Jan 2025", "d": "$15M factoring facility plus $5M term loan positioning an international healthcare staffing agency for strong 2025 growth."}
+    ]
+  },
+  {
+    "id": 1074,
+    "name": "CoreTech Leasing",
+    "leaders": [
+      {
+        "n": "Scott McFetters",
+        "t": "Founder & CEO",
+        "bg": "Previously VP Legal Services at U.S. Bank Oliver-Allen Technology Leasing for 13 years before founding CoreTech in 2008 in Newport Beach, CA. Specializes in technology and equipment leasing for law firms, corporations, medical/educational institutions, and PE-sponsored businesses. Company generated $5.2M in annual revenue in 2025.",
+        "li": "https://www.linkedin.com/in/scott-mcfetters-a8a6454",
+        "hooks": ["*13yr US Bank veteran", "VP Legal Services background", "Newport Beach founded 2008", "Law firm tech specialist"]
+      },
+      {
+        "n": "Candace J. Reinhart",
+        "t": "COO/CXO",
+        "bg": "25+ year career dedicated to best practices in the finance industry. Oversees both operations and customer experience in a dual COO/CXO role at CoreTech Leasing. Company philosophy is relationship-oriented rather than transaction-oriented.",
+        "li": "",
+        "hooks": ["25yr finance best practices", "COO and CXO dual role"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1075,
+    "name": "TwinFold Capital",
+    "leaders": [
+      {
+        "n": "Leadership Team",
+        "t": "Family Ownership",
+        "bg": "TwinFold Capital has been privately held and family-owned since 2008 in Los Angeles, CA. Operates as Merchant One Solutions LLC DBA TwinFold Capital. Provides working capital and merchant financing from $5K to $1M with 24-72 hour funding. BBB Accredited since 2016 with A+ rating. Located at 601 N Larchmont Blvd, Los Angeles.",
+        "li": "",
+        "hooks": ["*A+ BBB rating since 2016", "Family-owned since 2008", "LA Larchmont Blvd based"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1076,
+    "name": "Monet Capital",
+    "leaders": [
+      {
+        "n": "Freddy Fernandez",
+        "t": "Founder & CEO",
+        "bg": "Founded Monet Capital in 2017 in Brooklyn, NY. Built the company to $1B+ in funding across 700+ industries and 20,000+ businesses funded. Offers SBA loans, working capital, term loans, lines of credit, and real estate funding. Limited additional public information on personal background.",
+        "li": "",
+        "hooks": ["Brooklyn-based founder", "$1B+ deployed", "20K+ businesses funded"]
+      },
+      {
+        "n": "Jay Waters",
+        "t": "Partner",
+        "bg": "Leads business development and lending operations at Monet Capital. Limited additional public information available.",
+        "li": "",
+        "hooks": ["Monet Capital partner"]
+      }
+    ],
+    "news": []
+  }
+]

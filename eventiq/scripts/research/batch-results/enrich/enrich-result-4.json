@@ -1,0 +1,922 @@
+[
+  {
+    "id": 1502,
+    "name": "Signet Capital Group Inc.",
+    "leaders": [
+      {
+        "n": "Mark Skolnik",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/mark-skolnik-30ba69180/",
+        "hooks": ["Owner & COO turned CEO", "Fort Lauderdale based", "SMB funding specialist"]
+      },
+      {
+        "n": "Menachem Skolnik",
+        "t": "Director",
+        "li": "",
+        "hooks": ["Family-run business", "Director at Signet Capital"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Signet Capital Group Expands Funding Programs",
+        "s": "Signet Capital Group, 2024",
+        "d": "Signet expanded its funding offerings including revenue-based financing, MCA, invoice factoring, and SBA loans with approvals in under two hours."
+      }
+    ]
+  },
+  {
+    "id": 1503,
+    "name": "SKY BRIDGE BUSINESS FUNDING, LLC",
+    "leaders": [
+      {
+        "n": "Revenued Leadership",
+        "t": "Parent Company",
+        "li": "",
+        "hooks": ["Acquired by Revenued 2020", "Integrated into Revenued"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Sky Bridge Acquired by Revenued",
+        "s": "Industry reports, 2020",
+        "d": "Sky Bridge Business Funding was acquired by Revenued in 2020 and its services are now integrated into Revenued's platform."
+      }
+    ]
+  },
+  {
+    "id": 1511,
+    "name": "Acclivity Financial",
+    "leaders": [
+      {
+        "n": "Danny Preston",
+        "t": "President & CEO",
+        "li": "https://www.linkedin.com/in/danny-preston-6795138/",
+        "hooks": ["*Citizens Bank subsidiary leader", "SBA lending veteran", "Ex-Fidelity Bank SVP"]
+      },
+      {
+        "n": "Russell Bryan",
+        "t": "EVP & Chief Lending Officer",
+        "li": "https://www.linkedin.com/in/russell-bryan-82a585105/",
+        "hooks": ["21+ years in banking", "Ex-Fidelity Bank", "Chief Lending Officer"]
+      },
+      {
+        "n": "Fred Schmid",
+        "t": "SVP, SBA Business Development",
+        "li": "https://www.linkedin.com/in/fred-schmid-b6821052/",
+        "hooks": ["SBA specialist", "Business development leader"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Acclivity Financial Continues SBA Lending Expansion",
+        "s": "Acclivity Financial, 2024",
+        "d": "As a Citizens Bank subsidiary, Acclivity became one of the top SBA lenders nationally, with loans ranging from $350K to $10M through SBA 7(a) and USDA programs."
+      },
+      {
+        "h": "Acclivity Financial Grows to 60 Employees",
+        "s": "ZoomInfo, 2025",
+        "d": "Acclivity Financial expanded to approximately 60 employees across North America, serving small rural businesses nationwide."
+      }
+    ]
+  },
+  {
+    "id": 1513,
+    "name": "Amerisource Business Capital",
+    "leaders": [
+      {
+        "n": "Jason Floyd",
+        "t": "Founder & Managing Partner",
+        "li": "https://www.linkedin.com/in/jason-floyd-93108290/",
+        "hooks": ["*Founded company in 1984", "Started with $10K loan", "Texas A&M grad"]
+      },
+      {
+        "n": "Michael Monk",
+        "t": "Managing Partner",
+        "li": "https://www.linkedin.com/in/michael-monk-2a721810/",
+        "hooks": ["*25+ years in commercial finance", "EY Entrepreneur finalist 2019", "Ex-CFA president 2018"]
+      },
+      {
+        "n": "Kelly Merryman Hoogstraten",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/kellymerryman/",
+        "hooks": ["*Ex-YouTube & Netflix exec", "Media-to-finance crossover", "Austin-based"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Amerisource Celebrates 40th Anniversary with $2.1B Milestone",
+        "s": "ABL Advisor, Oct 2024",
+        "d": "Amerisource Business Capital celebrated 40 years of empowering middle market lending, having facilitated over $2.1 billion in loans."
+      },
+      {
+        "h": "Amerisource Closes $30M ABL Facility for Infrastructure Company",
+        "s": "IFA Commercial Factor, May 2025",
+        "d": "Amerisource closed a $30M asset-based lending facility for a Southwest-based midstream energy infrastructure company."
+      },
+      {
+        "h": "Amerisource Provides $2.5M ABL Facility for Texas Distributor",
+        "s": "Amerisource, Feb 2026",
+        "d": "Amerisource closed a $2.5 million ABL facility for a Texas-based industrial supplies distribution company."
+      }
+    ]
+  },
+  {
+    "id": 1516,
+    "name": "Bluegrass Lending Group",
+    "leaders": [
+      {
+        "n": "Thaddeus Voss",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/thaddeusvoss",
+        "hooks": ["Founded in 2020", "*$250M+ funded", "Louisville, KY based"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Bluegrass Lending Revolutionizes Business Funding",
+        "s": "FinTech Futures / Yahoo Finance, Dec 2023",
+        "d": "Bluegrass Lending announced its commitment to lightning-fast capital delivery in as little as 24 hours with competitive rates."
+      },
+      {
+        "h": "Bluegrass Lending Expands Team and Operations",
+        "s": "Indeed, 2024",
+        "d": "The company expanded its team and operations across Arizona and Kentucky as it continued rapid growth."
+      }
+    ]
+  },
+  {
+    "id": 1517,
+    "name": "C6 Capital, LLC",
+    "leaders": [
+      {
+        "n": "Mark Rossano",
+        "t": "Founder & CEO",
+        "li": "https://www.linkedin.com/in/mark-rossano-6a17419",
+        "hooks": ["*Ex-Bloomberg analyst", "Energy & supply chain expert", "Infrastructure fund manager"]
+      }
+    ],
+    "news": [
+      {
+        "h": "C6 Capital Holdings Expands Infrastructure Investments",
+        "s": "C6 Capital Holdings, 2024",
+        "d": "C6 Capital continues deploying capital through C6 Infrastructure Partners, a sustainable energy fund advancing the energy transition."
+      }
+    ]
+  },
+  {
+    "id": 1519,
+    "name": "CapFront",
+    "leaders": [
+      {
+        "n": "Zack Fiddle",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/in/zfiddle/",
+        "hooks": ["*Forbes Business Council member", "Vanderbilt grad", "3rd-gen family business"]
+      },
+      {
+        "n": "Mike Behar",
+        "t": "Co-Founder & Director of Sales",
+        "li": "https://www.linkedin.com/in/michael-behar-36b161105/",
+        "hooks": ["Co-founded CapFront 2017", "Ex-Imperial Advance", "LIU grad"]
+      }
+    ],
+    "news": [
+      {
+        "h": "CapFront CEO Accepted into Forbes Business Council",
+        "s": "CapFront, 2024",
+        "d": "Zack Fiddle was accepted into the Forbes Business Council, recognizing CapFront's growth as a leading SMB funding marketplace."
+      }
+    ]
+  },
+  {
+    "id": 1522,
+    "name": "Creative Capital Solutions",
+    "leaders": [
+      {
+        "n": "Bruno Scotti",
+        "t": "Founder & Managing Director",
+        "li": "https://www.linkedin.com/in/bruno-scotti-aa17ab55/",
+        "hooks": ["Investment banking background", "10,000+ business clients", "NYC-based entrepreneur"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Creative Capital Solutions Continues SME Lending Growth",
+        "s": "Creative Capital Solutions, 2024",
+        "d": "Creative Capital Solutions serves over 10,000 business clients with working capital advances, lines of credit, and asset-based loans with 24-48 hour funding."
+      }
+    ]
+  },
+  {
+    "id": 1523,
+    "name": "Ein Cap, Inc.",
+    "leaders": [
+      {
+        "n": "Russell Naftali",
+        "t": "Founder & President",
+        "li": "https://www.linkedin.com/in/russell-naftali/",
+        "hooks": ["Founded Ein Capital", "Miami-based", "MCA specialist"]
+      },
+      {
+        "n": "John Mayne",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/john-mayne-59a794113/",
+        "hooks": ["CEO of Ein Cap", "Brooklyn-based", "MCA operations leader"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Ein Cap Continues Merchant Cash Advance Operations",
+        "s": "BBB / Industry, 2024",
+        "d": "Ein Cap maintains its focus as a NYC-based MCA provider serving small businesses across America."
+      }
+    ]
+  },
+  {
+    "id": 1525,
+    "name": "Envision Capital Group LLC",
+    "leaders": [
+      {
+        "n": "Brett Allen",
+        "t": "Managing Member & CEO",
+        "li": "https://www.linkedin.com/in/brett-allen-840a246/",
+        "hooks": ["*Founded Envision in 2007", "Also runs MLS Direct Network", "U of Arizona grad"]
+      },
+      {
+        "n": "Tyler Stump",
+        "t": "COO",
+        "li": "https://www.linkedin.com/in/rtstump/",
+        "hooks": ["Director of Operations", "Ohio State grad", "Systems & strategy lead"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Envision Capital Group Expands Commercial Finance Department",
+        "s": "Envision Capital Group, 2024",
+        "d": "Envision added Bruce Follese to head the newly formed commercial finance origination department."
+      },
+      {
+        "h": "Envision Capital Group Partners with Chefs' Toys",
+        "s": "Envision Capital Group, 2024",
+        "d": "Envision partnered with Chefs' Toys, a restaurant equipment provider, expanding its vendor finance program."
+      }
+    ]
+  },
+  {
+    "id": 1527,
+    "name": "Financial Pacific Leasing",
+    "leaders": [
+      {
+        "n": "Stephen E. Leege",
+        "t": "President",
+        "li": "",
+        "hooks": ["SVP Chief Credit Officer", "Ex-CIT Equipment Finance", "Valparaiso University grad"]
+      },
+      {
+        "n": "Jodi L. Wilshire",
+        "t": "EVP & CFO",
+        "li": "",
+        "hooks": ["With FinPac since 1998", "UW grad", "Rose through ranks"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Allen Snelling Promoted to President of Financial Pacific Leasing",
+        "s": "ELFA, Jun 2025",
+        "d": "Umpqua Bank subsidiary Financial Pacific Leasing promoted Allen Snelling to President, overseeing the $1.7B portfolio."
+      },
+      {
+        "h": "LEAF Capital Returns with $792.6M Asset-Backed Securities",
+        "s": "American Banker, Aug 2024",
+        "d": "Financial Pacific Leasing's parent Columbia Banking System continues to grow its equipment financing division with major securitizations."
+      }
+    ]
+  },
+  {
+    "id": 1532,
+    "name": "J D Factors",
+    "leaders": [
+      {
+        "n": "Leadership Team",
+        "t": "CEO & Executives",
+        "li": "https://www.linkedin.com/company/j-d-factors",
+        "hooks": ["Co-Presidents Bo Kelly & Matt Johnson", "30+ years factoring in Canada", "US & Canada operations"]
+      }
+    ],
+    "news": [
+      {
+        "h": "J D Factors Celebrates 30 Years of Factoring in Canada",
+        "s": "Desi Trucking, 2024",
+        "d": "J D Factors celebrated three decades of factoring services across Canada with offices in Mississauga, Montreal, and Calgary."
+      }
+    ]
+  },
+  {
+    "id": 1535,
+    "name": "LEAF Commercial Capital, Inc.",
+    "leaders": [
+      {
+        "n": "Miles Herman",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/miles-herman-29696720/",
+        "hooks": ["*Co-founded LEAF in 2001", "40-year industry veteran", "2023 Monitor Icon Award"]
+      },
+      {
+        "n": "Crit DeMent",
+        "t": "Founder & Former CEO",
+        "li": "https://www.linkedin.com/in/crit-dement-2786b711/",
+        "hooks": ["*Co-founded LEAF in 2001", "Retired 2024", "Industry pioneer"]
+      }
+    ],
+    "news": [
+      {
+        "h": "LEAF Issues $550M in Asset-Backed Securities",
+        "s": "Blank Rome / ELFA, 2025",
+        "d": "LEAF Commercial Capital issued $550M in asset-backed notes through M&T Equipment as the company continues strong securitization activity."
+      },
+      {
+        "h": "Crit DeMent Retires as LEAF Chairman",
+        "s": "LEAF / PRWeb, 2024",
+        "d": "Longtime CEO and co-founder Crit DeMent retired from his position as LEAF Chairman after leading the company since 2001."
+      },
+      {
+        "h": "LEAF Sponsors $792.6M Securitization Deal",
+        "s": "American Banker, Aug 2024",
+        "d": "LEAF Capital Funding sponsored a $792.6 million asset-backed securities issuance managed by Atlas SP Securities, BofA, and JPMorgan."
+      }
+    ]
+  },
+  {
+    "id": 1536,
+    "name": "LendingPoint™",
+    "leaders": [
+      {
+        "n": "Tom Burnside",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/tom-burnside-37486310/",
+        "hooks": ["*Goldman Sachs honoree 2022", "Patent developer", "25+ years fintech"]
+      },
+      {
+        "n": "Franck Fatras",
+        "t": "President, LP Labs & Co-Founder",
+        "li": "https://www.linkedin.com/in/franckfatras/",
+        "hooks": ["*Ex-CAN Capital CTO", "20+ years tech exec", "Cloud platform architect"]
+      },
+      {
+        "n": "Juan Tavares",
+        "t": "Chief Strategy Officer & Co-Founder",
+        "li": "https://www.linkedin.com/in/juan-e-tavares-206704112/",
+        "hooks": ["15+ years private investor", "Strategy & biz dev", "Tavares PE Group"]
+      }
+    ],
+    "news": [
+      {
+        "h": "LendingPoint Announces Strategic Capital Raise",
+        "s": "BusinessWire / Fintech Global, Nov 2025",
+        "d": "LendingPoint announced a new Series C capital raise to accelerate growth in 2026, building on $865M revenue in 2024."
+      },
+      {
+        "h": "LendingPoint Revenue Hits $865M with 300K Customers",
+        "s": "Latka, 2024",
+        "d": "LendingPoint grew revenue to $865.3M in 2024, up from $655M in 2023, serving 300,000 customers with AI-driven lending."
+      }
+    ]
+  },
+  {
+    "id": 1539,
+    "name": "Maxim Commercial Capital, LLC",
+    "leaders": [
+      {
+        "n": "Michael Kianmahd",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/michael-kianmahd",
+        "hooks": ["*Ex-JP Morgan Real Estate", "Underwrote $1.6B in loans", "Promoted to CEO Jan 2024"]
+      },
+      {
+        "n": "Behzad Kianmahd",
+        "t": "Chairperson",
+        "li": "https://www.linkedin.com/in/behzad-kianmahd-7484b342/",
+        "hooks": ["*Founded Maxim in 2008", "Also co-founded TAU Ventures", "Equipment finance pioneer"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Maxim Commercial Capital Grew Team by 21% in 2025",
+        "s": "deBanked, Jan 2026",
+        "d": "Maxim expanded its executive and operating teams by 21% with plans to deploy new credit guidelines in early 2026."
+      },
+      {
+        "h": "Maxim Reports 150% Increase in Q1 2025 Funding Volume",
+        "s": "deBanked / Equipment Finance News, Apr 2025",
+        "d": "Maxim exceeded expectations with 150% increase in funding volume, approving 80% of applications and funding in 37 states."
+      },
+      {
+        "h": "Maxim Delivers Creative Financing Solutions in Q3 2025",
+        "s": "Maxim Commercial Capital, Q3 2025",
+        "d": "Maxim continued filling the capital void for small and mid-sized businesses with creative financing solutions through heavy equipment verticals."
+      }
+    ]
+  },
+  {
+    "id": 1540,
+    "name": "Merchant Source Inc",
+    "leaders": [
+      {
+        "n": "George M. Greco Jr.",
+        "t": "President",
+        "li": "https://www.linkedin.com/in/george-greco-46a9985/",
+        "hooks": ["*50+ years finance experience", "MCA since 2008", "Garden City, NY based"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Merchant Source Continues MCA Operations Since 2008",
+        "s": "Merchant Source Inc, 2024",
+        "d": "Merchant Source maintains its position as a seasoned MCA provider with thousands of small business clients funded since 2008."
+      }
+    ]
+  },
+  {
+    "id": 1543,
+    "name": "Pathway Lending",
+    "leaders": [
+      {
+        "n": "Clint Gwin",
+        "t": "President & CEO",
+        "li": "https://www.linkedin.com/in/clint-gwin-4084b07/",
+        "hooks": ["*Grew balance sheet $3M to $320M", "Presidential appointee to Treasury", "CFPB Advisory Board"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Pathway Lending Launches $30M Housing Fund",
+        "s": "HousingWire / Nashville Post, 2024",
+        "d": "Pathway launched the Pathway Housing Fund with $30M committed to preserve affordable housing in Tennessee communities."
+      },
+      {
+        "h": "Pathway Lending Funds $61.3M in Loan Capital in 2024",
+        "s": "Pathway Lending 25th Impact Report, 2024",
+        "d": "Pathway funded $61.3M in loan capital and provided 15,000 hours of coaching to 2,800 entrepreneurs in 2024."
+      },
+      {
+        "h": "Hank Helton Elected Chair of CDFI Coalition",
+        "s": "CDFI Coalition, Apr 2024",
+        "d": "Pathway Lending's EVP Hank Helton was elected Chair of the national CDFI Coalition Board of Directors."
+      }
+    ]
+  },
+  {
+    "id": 1544,
+    "name": "Quick Capital Funding",
+    "leaders": [
+      {
+        "n": "Dean Noory",
+        "t": "CEO/Owner",
+        "li": "https://www.linkedin.com/in/dean-noory-509932126/",
+        "hooks": ["Founded in 2014", "Orange County based", "SMB lending tech"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Quick Capital Funding Maintains BBB Accreditation",
+        "s": "BBB, 2024",
+        "d": "Quick Capital Funding continues as a BBB-accredited small business lender since 2015, providing fast working capital solutions."
+      }
+    ]
+  },
+  {
+    "id": 1545,
+    "name": "RidgeStone Capital",
+    "leaders": [
+      {
+        "n": "Henrique Silva",
+        "t": "CEO",
+        "li": "",
+        "hooks": ["Equipment & working capital focus", "38-person team"]
+      }
+    ],
+    "news": [
+      {
+        "h": "RidgeStone Capital Expands Equipment Financing Operations",
+        "s": "RidgeStone Capital, 2024",
+        "d": "RidgeStone Capital continues helping business owners secure financing for equipment, expansion, inventory, and working capital."
+      }
+    ]
+  },
+  {
+    "id": 1551,
+    "name": "Trio Capital",
+    "leaders": [
+      {
+        "n": "Dan Castellini",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/dan-castellini-16b1b094/",
+        "hooks": ["*18 years at Marlin Capital", "Rutgers MBA", "Data science background"]
+      },
+      {
+        "n": "Mark Scardigli",
+        "t": "President",
+        "li": "https://www.linkedin.com/in/mark-scardigli-5a4397a/",
+        "hooks": ["*30+ years equipment finance", "Ex-Marlin Capital CSO", "Joined 2023"]
+      },
+      {
+        "n": "Dan Furfari",
+        "t": "VP of Sales",
+        "li": "https://www.linkedin.com/in/dan-furfari-478870b/",
+        "hooks": ["20+ years equipment finance", "Ex-Navitas Credit Corp", "Joined Nov 2023"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Trio Capital Announces Scardigli as President",
+        "s": "ELFA, Apr 2023",
+        "d": "Mark Scardigli joined Trio Capital as President, bringing 30+ years of equipment finance experience from Marlin Capital Solutions."
+      },
+      {
+        "h": "Trio Capital Welcomes Dan Furfari as VP of Sales",
+        "s": "ELFA, Nov 2023",
+        "d": "Trio Capital hired Dan Furfari as VP of Sales to drive strategic development with equipment manufacturers and resellers nationwide."
+      }
+    ]
+  },
+  {
+    "id": 1557,
+    "name": "ACE FUNDING",
+    "leaders": [
+      {
+        "n": "Ace Partners Leadership",
+        "t": "Management Team",
+        "li": "",
+        "hooks": ["MCA provider", "Dual brand operation"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1558,
+    "name": "National Capital",
+    "leaders": [
+      {
+        "n": "National Capital Leadership",
+        "t": "Management Team",
+        "li": "",
+        "hooks": ["Business funding provider"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1561,
+    "name": "Accord Business Funder",
+    "leaders": [
+      {
+        "n": "Mike Ballases",
+        "t": "Vice President",
+        "li": "https://www.linkedin.com/in/mike-ballases-66a34193/",
+        "hooks": ["*Ex-JPMorgan Chase Houston Chair", "Ex-Bank One president", "Co-founded Accord"]
+      },
+      {
+        "n": "Founders",
+        "t": "Co-Founders",
+        "li": "",
+        "hooks": ["Houston-based", "Adam Beebe, CEO"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Accord Business Funding Featured on deBanked",
+        "s": "deBanked, 2019",
+        "d": "Accord Business Funding was profiled for generating deal flow in the heartland, operating from Mississippi and beyond."
+      }
+    ]
+  },
+  {
+    "id": 1569,
+    "name": "One Park",
+    "leaders": [
+      {
+        "n": "John Lie-Nielsen",
+        "t": "CEO & Founder",
+        "li": "",
+        "hooks": ["*Most Influential CEO Award", "Serial entrepreneur since 1999", "Founded ACA Financial"]
+      },
+      {
+        "n": "Eric Cunningham",
+        "t": "COO",
+        "li": "",
+        "hooks": ["Notre Dame grad", "Operations leader", "Frisco, CO based"]
+      }
+    ],
+    "news": [
+      {
+        "h": "One Park Financial Wins 8th Great Place to Work Certification",
+        "s": "One Park Financial, Sep 2025",
+        "d": "One Park Financial received its 8th Great Place to Work certification, reinforcing its reputation as a top employer in Miami."
+      },
+      {
+        "h": "One Park Financial Ranked 3rd in Sun Sentinel Top Workplaces",
+        "s": "Sun Sentinel, May 2025",
+        "d": "One Park Financial achieved 3rd place and won a Communication Award in the 2025 Sun Sentinel Top Workplaces."
+      }
+    ]
+  },
+  {
+    "id": 1575,
+    "name": "Gibraltar",
+    "leaders": [
+      {
+        "n": "Scott Winicour",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/scottwinicour/",
+        "hooks": ["*Led MBO from ground floor", "300% AUM growth", "Hercules Capital portfolio co."]
+      }
+    ],
+    "news": [
+      {
+        "h": "Gibraltar Provides $12.5M to Consumer Goods Company",
+        "s": "Secured Finance Network, Jul 2024",
+        "d": "Gibraltar Business Capital provided a $12.5M ABL facility to Starco Brands to support growth supply chain and inventory needs."
+      },
+      {
+        "h": "Formetco Renews $15M Credit Facility with Gibraltar",
+        "s": "Secured Finance Network, Feb 2025",
+        "d": "Formetco secured a $15M revolving credit facility renewal with Gibraltar Business Capital to facilitate growth plans."
+      }
+    ]
+  },
+  {
+    "id": 1579,
+    "name": "Cap Fund",
+    "leaders": [
+      {
+        "n": "Cap Fund Leadership",
+        "t": "Management Team",
+        "li": "",
+        "hooks": ["Related to CapFront", "Business funding"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1580,
+    "name": "Green Capital",
+    "leaders": [
+      {
+        "n": "Green Capital Leadership",
+        "t": "Management Team",
+        "li": "",
+        "hooks": ["Credit solutions provider"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1583,
+    "name": "24 CAPITAL",
+    "leaders": [
+      {
+        "n": "24 Capital Leadership",
+        "t": "Management Team",
+        "li": "",
+        "hooks": ["Business capital provider"]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1584,
+    "name": "360 Payments - 360 Payments Cap",
+    "leaders": [
+      {
+        "n": "Steve Ciabattoni",
+        "t": "Co-CEO & Founder",
+        "li": "https://www.linkedin.com/in/steve-ciabattoni-b38b81b/",
+        "hooks": ["*Co-founded 360 Payments 2011", "Ex-Heartland Payment Systems", "Ursinus College alum"]
+      },
+      {
+        "n": "Lisa Coyle",
+        "t": "Co-CEO",
+        "li": "https://www.linkedin.com/in/lisacoyle18/",
+        "hooks": ["*Co-CEO & co-founder", "Mentor to Steve", "$3B+ annual processing"]
+      }
+    ],
+    "news": [
+      {
+        "h": "360 Payments Processes $3B+ Annually Across 5,000 Businesses",
+        "s": "360 Payments, 2024",
+        "d": "360 Payments grew to process over $3 billion in annual credit card transactions, servicing 5,000+ businesses in US and Canada."
+      },
+      {
+        "h": "360 Payments Opens Second Office",
+        "s": "360 Payments, 2024",
+        "d": "The Silicon Valley-based fintech expanded its physical footprint by opening a second office location."
+      }
+    ]
+  },
+  {
+    "id": 1585,
+    "name": "8FIG",
+    "leaders": [
+      {
+        "n": "Yaron Shapira",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/in/yaron-shapira-0639532/",
+        "hooks": ["*Serial entrepreneur (Check, Culture Trip)", "*$500M+ deployed to sellers", "Bar Ilan MBA"]
+      },
+      {
+        "n": "Assaf Dagan",
+        "t": "Co-Founder & CTO",
+        "li": "https://www.linkedin.com/in/assafd/",
+        "hooks": ["*Co-founded Qlarium (acquired)", "Ex-HP Software", "AI & analytics expert"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Bizcap Acquires 8fig",
+        "s": "FinTech Futures, 2025",
+        "d": "UK-based business lender Bizcap acquired 8fig, which retains independence under its existing brand and leadership after deploying $500M+ to ecommerce sellers."
+      },
+      {
+        "h": "8fig Raises $140M Series B Funding",
+        "s": "Retail TouchPoints / TechCrunch, 2023",
+        "d": "8fig closed a $140M Series B led by Koch Disruptive Technologies, bringing total funding to $196.5M for its ecommerce funding platform."
+      }
+    ]
+  },
+  {
+    "id": 1588,
+    "name": "ADVANCE SERVICE",
+    "leaders": [
+      {
+        "n": "Irving Betesh",
+        "t": "Chief Revenue Officer",
+        "li": "https://www.linkedin.com/in/irving-betesh-38820198/",
+        "hooks": ["Manages 60-person team", "Started in college 2016", "Brooklyn-based"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Advance Funds Network Continues B2B Financing Growth",
+        "s": "AFN, 2024",
+        "d": "Advance Funds Network continues to expand its B2B financing solutions with a focus on smart financing for small businesses."
+      }
+    ]
+  },
+  {
+    "id": 1592,
+    "name": "AMERICAN SIMULUS FUNDING CORPS",
+    "leaders": [
+      {
+        "n": "Lawrence Principato",
+        "t": "CEO & Founder",
+        "li": "https://www.linkedin.com/in/lawrence-principato/",
+        "hooks": ["Founded in 2009", "Pompano Beach based", "MCA & alt-finance specialist"]
+      },
+      {
+        "n": "Lisa Principato",
+        "t": "President/Owner",
+        "li": "",
+        "hooks": ["Family business co-leader", "President & Owner"]
+      }
+    ],
+    "news": [
+      {
+        "h": "American Stimulus Funding Continues SMB Capital Operations",
+        "s": "American Stimulus Funding, 2024",
+        "d": "American Stimulus Funding maintains its position as a leading short-term working capital provider for small and medium businesses nationwide."
+      }
+    ]
+  },
+  {
+    "id": 1597,
+    "name": "ASCENDUS INC",
+    "leaders": [
+      {
+        "n": "Paul Quintero",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/paul-quintero-6410853a/",
+        "hooks": ["*Scaled lending 12x to $60M", "Ex-Deloitte CPA", "Ex-Wall Street investment banker"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Ascendus Partners with LIIF for Child Care Capital Program",
+        "s": "LIIF, May 2025",
+        "d": "Ascendus partnered with LIIF and Working Solutions CDFI to launch a new Family Child Care Capital Access Initiative in California."
+      },
+      {
+        "h": "Ascendus Deploys $50.2M to 1,309 Business Owners in 2024",
+        "s": "Ascendus Annual Report, 2024",
+        "d": "Ascendus deployed $50.2M in capital and delivered 11,000+ hours of coaching to small business owners in 2024."
+      }
+    ]
+  },
+  {
+    "id": 1605,
+    "name": "BUSINESS BACKER",
+    "leaders": [
+      {
+        "n": "Jim Granat",
+        "t": "Head of Small Business Financing",
+        "li": "https://www.linkedin.com/in/jim-granat-4773628a/",
+        "hooks": ["*Ex-Lendio President", "Co-President Enova SMB", "10+ years online lending"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Enova Reports 25% Revenue Increase, Strong SMB Growth",
+        "s": "Enova International / Yahoo Finance, Q3 2024",
+        "d": "Enova International reported 25% revenue increase and 63% rise in adjusted EPS, driven by strong small business lending originations."
+      },
+      {
+        "h": "Enova Releases Q4 2025 Small Business Cash Flow Trend Report",
+        "s": "Enova International, Q4 2025",
+        "d": "Enova's small business segment showed continued resilience heading into 2026, with growing adoption of digital lending platforms."
+      }
+    ]
+  },
+  {
+    "id": 1607,
+    "name": "CAP FLOW",
+    "leaders": [
+      {
+        "n": "Andrew Coon",
+        "t": "Co-Founder & CEO",
+        "li": "https://www.linkedin.com/in/andrew-j-coon/",
+        "hooks": ["*Ex-Morgan Stanley & Merrill Lynch", "Brown & Wash U MBA", "*$1B+ in working capital"]
+      },
+      {
+        "n": "William Gallagher",
+        "t": "Co-Founder",
+        "li": "https://www.linkedin.com/in/william-gallagher-5b699524/",
+        "hooks": ["*Ex-Lehman Brothers trader", "Now President of CFG MS", "Villanova grad"]
+      }
+    ],
+    "news": [
+      {
+        "h": "CapFlow Launches FactorLOC Product",
+        "s": "IFA Commercial Factor, Sep 2024",
+        "d": "CapFlow launched FactorLOC, a new product bridging traditional invoice factoring and lines of credit with flexible advance rates of 40-60%."
+      },
+      {
+        "h": "CapFlow Launches FactorOne Spot-Factoring Solution",
+        "s": "IFA Commercial Factor, 2024",
+        "d": "CapFlow introduced FactorOne, a fast and flexible spot-factoring solution for single invoice financing."
+      }
+    ]
+  },
+  {
+    "id": 1614,
+    "name": "CLEARBANC",
+    "leaders": [
+      {
+        "n": "Michele Romanow",
+        "t": "CEO & Co-Founder",
+        "li": "https://www.linkedin.com/in/micheleromanow/",
+        "hooks": ["*Dragons' Den star", "*$3B deployed to 10K brands", "Serial entrepreneur"]
+      },
+      {
+        "n": "Andrew D'Souza",
+        "t": "Executive Chairman & Co-Founder",
+        "li": "https://www.linkedin.com/in/andrewdsouza/",
+        "hooks": ["Executive Co-Chairman", "Strategy & fundraising focus", "Canadian tech leader"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Clearco Triples Funding Deployed in 2024",
+        "s": "The Logic, 2024",
+        "d": "Clearco tripled the dollar amount of capital advances in 2024 and is on track to increase an additional 50% in 2025 under new CEO Andrew Curtis."
+      },
+      {
+        "h": "Clearco Back in Growth Mode After Restructuring",
+        "s": "BetaKit / The Logic, 2025",
+        "d": "After leadership changes and layoffs, Clearco returned to growth mode with a new Toronto office and expanded Canadian operations."
+      }
+    ]
+  },
+  {
+    "id": 1615,
+    "name": "COAST FUNDING",
+    "leaders": [
+      {
+        "n": "Matt Price",
+        "t": "CEO",
+        "li": "https://www.linkedin.com/in/matt-price-a3180353/",
+        "hooks": ["*$1.8B financed, 60K businesses", "Ex-Reliant Funding CSO", "Healthcare vertical focus"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Coast Funding Partners with Doctor Multimedia",
+        "s": "Coast Funding, 2024",
+        "d": "Coast Funding entered a strategic partnership with Doctor Multimedia to expand its healthcare and medical financing vertical."
+      },
+      {
+        "h": "Coast Funding Grows Alternative Financing Portfolio",
+        "s": "Coast Funding, 2024",
+        "d": "Founded in 2020, Coast Funding expanded its product offerings including MCA, equipment financing, and working capital in San Diego."
+      }
+    ]
+  }
+]

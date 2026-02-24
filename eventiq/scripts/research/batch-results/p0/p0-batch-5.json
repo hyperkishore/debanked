@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1621,
+    "name": "CREST CAPITAL",
+    "website": "https://www.crestcapital.com",
+    "linkedinUrl": "https://www.crestcapital.com",
+    "location": "Georgia",
+    "employees": 36
+  },
+  {
+    "id": 1626,
+    "name": "DEXT CAPITAL",
+    "website": "https://dextcapital.com",
+    "linkedinUrl": "dextcapital.com",
+    "location": "Oregon",
+    "employees": 123
+  },
+  {
+    "id": 1630,
+    "name": "EAGLE CAPITAL",
+    "website": "https://quick-capital.fund",
+    "linkedinUrl": "quick-capital.fund",
+    "location": "New York",
+    "employees": 45
+  },
+  {
+    "id": 1632,
+    "name": "EASTERN FUNDING",
+    "website": "https://easternfunding.com",
+    "linkedinUrl": "easternfunding.com",
+    "location": "New York",
+    "employees": 66
+  },
+  {
+    "id": 1633,
+    "name": "EBF HOLDINGS LLC",
+    "website": "https://everestbusinessfunding.com/",
+    "linkedinUrl": "https://everestbusinessfunding.com/",
+    "location": "Florida",
+    "employees": 81
+  },
+  {
+    "id": 1636,
+    "name": "EIN CAPITAL",
+    "website": "https://eincap.com",
+    "linkedinUrl": "eincap.com",
+    "location": "New York",
+    "employees": 25
+  },
+  {
+    "id": 1637,
+    "name": "ELEVATION CAPITAL",
+    "website": "https://www.elevationcapitalllc.com",
+    "linkedinUrl": "https://www.elevationcapitalllc.com",
+    "location": "Haryana",
+    "employees": 86
+  },
+  {
+    "id": 1641,
+    "name": "EVERLASTING CAPITAL",
+    "website": "https://www.everlastingcapital.com/",
+    "linkedinUrl": "https://www.everlastingcapital.com/",
+    "location": "New Hampshire",
+    "employees": 27
+  },
+  {
+    "id": 1642,
+    "name": "EXPRESS CAPITAL FUNDING",
+    "website": "https://www.expresscapital.com",
+    "linkedinUrl": "www.expresscapital.com",
+    "location": "California",
+    "employees": 46
+  },
+  {
+    "id": 1644,
+    "name": "FAST CASH FUNDING",
+    "website": "https://fastcashfunding.com",
+    "linkedinUrl": "https://fastcashfunding.com",
+    "location": "Florida",
+    "employees": 46
+  },
+  {
+    "id": 1651,
+    "name": "FLEXIBILITY CAPITAL (website blocked)",
+    "website": "https://flexibilitycapital.com",
+    "linkedinUrl": "flexibilitycapital.com",
+    "location": "",
+    "employees": 29
+  },
+  {
+    "id": 1656,
+    "name": "FUSION CAPITAL",
+    "website": "https://www.fusionfunding.com",
+    "linkedinUrl": "https://www.fusionfunding.com",
+    "location": "South Carolina",
+    "employees": 23
+  },
+  {
+    "id": 1661,
+    "name": "GOOD FUNDING LLC\nGOTORRO",
+    "website": "https://www.goodfunding.com",
+    "linkedinUrl": "www.goodfunding.com",
+    "location": "",
+    "employees": 36
+  },
+  {
+    "id": 1673,
+    "name": "Idea 247, Inc.",
+    "website": "https://www.ideafinancial.com",
+    "linkedinUrl": "www.ideafinancial.com",
+    "location": "Florida",
+    "employees": 76
+  },
+  {
+    "id": 1676,
+    "name": "INFINITY CAPITAL",
+    "website": "https://infinitythe1.com/",
+    "linkedinUrl": "https://infinitythe1.com/",
+    "location": "Oklahoma",
+    "employees": 37
+  },
+  {
+    "id": 1692,
+    "name": "LENDZI/DH & RK INVESTMENTS/LNDZI",
+    "website": "https://lendzi.com",
+    "linkedinUrl": "lendzi.com",
+    "location": "",
+    "employees": 26
+  },
+  {
+    "id": 1708,
+    "name": "NETFUNDING",
+    "website": "https://www.netfunding.com/",
+    "linkedinUrl": "https://www.netfunding.com/",
+    "location": "Texas",
+    "employees": 430
+  },
+  {
+    "id": 1712,
+    "name": "NRS FUNDING",
+    "website": "https://www.getnrsfunding.com",
+    "linkedinUrl": "www.getnrsfunding.com",
+    "location": "New Jersey",
+    "employees": 230
+  },
+  {
+    "id": 1727,
+    "name": "PROSPERUM",
+    "website": "https://prosperumfunding.com",
+    "linkedinUrl": "prosperumfunding.com",
+    "location": "New York",
+    "employees": 32
+  },
+  {
+    "id": 1737,
+    "name": "ROYAL FUNDING",
+    "website": "https://royalfunding.net",
+    "linkedinUrl": "https://royalfunding.net",
+    "location": "New York",
+    "employees": 48
+  },
+  {
+    "id": 1746,
+    "name": "SMALL BUSINESS FUNDING",
+    "website": "https://smallbusinessfunding.com",
+    "linkedinUrl": "smallbusinessfunding.com",
+    "location": "Pennsylvania",
+    "employees": 25
+  },
+  {
+    "id": 1757,
+    "name": "TBF Group",
+    "website": "https://tbfgrp.com/",
+    "linkedinUrl": "https://tbfgrp.com/",
+    "location": "",
+    "employees": 61
+  },
+  {
+    "id": 1759,
+    "name": "THRIVE FUNDING",
+    "website": "https://www.thrivefunding.com",
+    "linkedinUrl": "https://www.thrivefunding.com",
+    "location": "Utah",
+    "employees": 25
+  },
+  {
+    "id": 1760,
+    "name": "THRYVE CAPITAL",
+    "website": "https://www.thryvecapital.com/",
+    "linkedinUrl": "https://www.thryvecapital.com/",
+    "location": "New York",
+    "employees": 109
+  },
+  {
+    "id": 1761,
+    "name": "TIGER CAPITAL",
+    "website": "https://tigercapitalfunding.com",
+    "linkedinUrl": "tigercapitalfunding.com",
+    "location": "New York",
+    "employees": 277
+  },
+  {
+    "id": 1766,
+    "name": "TRUST CAPITAL",
+    "website": "https://www.TrustCapitalUSA.com",
+    "linkedinUrl": "www.TrustCapitalUSA.com",
+    "location": "Limassol",
+    "employees": 32
+  },
+  {
+    "id": 1767,
+    "name": "UFS",
+    "website": "https://uniquefundingsolutions.com",
+    "linkedinUrl": "uniquefundingsolutions.com",
+    "location": "Free State",
+    "employees": 9000
+  },
+  {
+    "id": 1769,
+    "name": "UNITED FIRST FUNDING",
+    "website": "https://www.unitedfundings.com",
+    "linkedinUrl": "https://www.unitedfundings.com",
+    "location": "",
+    "employees": 37
+  },
+  {
+    "id": 1776,
+    "name": "Finstro",
+    "website": "https://finstro.com",
+    "linkedinUrl": "finstro.com",
+    "location": "New South Wales",
+    "employees": 110
+  },
+  {
+    "id": 1777,
+    "name": "General Merchant Funding",
+    "website": "https://generalmerchantfunding.com",
+    "linkedinUrl": "generalmerchantfunding.com",
+    "location": "Connecticut",
+    "employees": 20
+  },
+  {
+    "id": 1778,
+    "name": "Imperial Advance",
+    "website": "https://imperialadvance.com",
+    "linkedinUrl": "imperialadvance.com",
+    "location": "New York",
+    "employees": 26
+  },
+  {
+    "id": 1779,
+    "name": "Imperial Funding",
+    "website": "https://imperialcapital.com",
+    "linkedinUrl": "imperialcapital.com",
+    "location": "California",
+    "employees": 168
+  },
+  {
+    "id": 1781,
+    "name": "Revenue Funding",
+    "website": "",
+    "linkedinUrl": "N/A",
+    "location": "Florida",
+    "employees": 36
+  },
+  {
+    "id": 1782,
+    "name": "Smartbiz",
+    "website": "https://smartbizbank.com",
+    "linkedinUrl": "smartbizbank.com",
+    "location": "Illinois",
+    "employees": 184
+  },
+  {
+    "id": 1785,
+    "name": "YELLOWSTONE CAPITAL",
+    "website": "https://yellowstonecapital.com",
+    "linkedinUrl": "yellowstonecapital.com",
+    "location": "Texas",
+    "employees": 56
+  }
+]

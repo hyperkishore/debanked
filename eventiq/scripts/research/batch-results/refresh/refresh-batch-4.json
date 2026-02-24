@@ -1,0 +1,102 @@
+[
+  {
+    "id": 94,
+    "name": "ROK Financial",
+    "website": "https://rok.biz",
+    "linkedinUrl": "https://www.linkedin.com/company/rokfinancial/",
+    "location": "New York",
+    "employees": 354,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 95,
+    "name": "Splash Advance",
+    "website": "https://splashadvance.com",
+    "linkedinUrl": "https://www.linkedin.com/company/splash-advance/",
+    "location": "Florida",
+    "employees": 6,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 96,
+    "name": "Accord Business Funding",
+    "website": "https://accordbf.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/accord-business-funding/",
+    "location": "Texas",
+    "employees": 12,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 97,
+    "name": "AdvancePoint Capital",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 98,
+    "name": "BHB Funding",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 99,
+    "name": "Samson Funding",
+    "website": "https://samsonfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/samsonfunding/",
+    "location": "New York",
+    "employees": 16,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 100,
+    "name": "Breakout Capital Finance",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 101,
+    "name": "Fundbox",
+    "website": "https://fundbox.com",
+    "linkedinUrl": "https://www.linkedin.com/company/fundbox/posts/?feedView=all",
+    "location": "San Francisco",
+    "employees": 187,
+    "leaders": [],
+    "currentNewsCount": 1
+  },
+  {
+    "id": 102,
+    "name": "BlueVine",
+    "website": "https://bluevine.com",
+    "linkedinUrl": "https://www.linkedin.com/company/bluevine/",
+    "location": "New Jersey",
+    "employees": 567,
+    "leaders": [],
+    "currentNewsCount": 1
+  },
+  {
+    "id": 103,
+    "name": "Funding Circle",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  }
+]

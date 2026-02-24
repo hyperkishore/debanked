@@ -32,7 +32,7 @@ if (!SUPABASE_SERVICE_KEY && !DRY_RUN) {
 }
 
 // Load cross-ref results
-const crossRefPath = resolve(__dirname, "cross-ref-result.json");
+const crossRefPath = resolve(__dirname, "research/batch-results/cross-ref/cross-ref-result.json");
 const crossRef = JSON.parse(readFileSync(crossRefPath, "utf-8"));
 console.log(`Cross-ref results: ${crossRef.summary.totalCompanies} companies`);
 console.log(`  Engaged: ${crossRef.summary.engaged}`);

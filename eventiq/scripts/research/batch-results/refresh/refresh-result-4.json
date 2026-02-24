@@ -1,0 +1,535 @@
+[
+  {
+    "id": 94,
+    "name": "ROK Financial",
+    "website": "https://rok.biz",
+    "linkedinUrl": "https://www.linkedin.com/company/rokfinancial/",
+    "leaders": [
+      {
+        "n": "James Webster",
+        "t": "Founder & Executive Chairman",
+        "bg": "Long Island native with two decades in financial services. Co-founded and served as CEO of National Business Capital, where his team secured over $1 billion in financing for nearly 100,000 small businesses over 10 years. Founded ROK Financial in 2020 during the COVID-19 pandemic. Appointed co-chairman of the SBFA Broker Council in 2019, a non-profit promoting transparency in alternative lending. Named to The Top 100 Magazine. Speaker at Broker Fair 2025.",
+        "li": "https://www.linkedin.com/in/jtwrokfounder/",
+        "hooks": ["*SBFA Broker Council co-chairman", "*Built $1B+ lending business at National Business Capital", "Broker Fair 2025 speaker", "Top 100 Magazine honoree"]
+      },
+      {
+        "n": "Patrick Manning",
+        "t": "Chief Executive Officer",
+        "bg": "Over a decade of experience in alternative finance. Appointed CEO of ROK Financial in December 2022, succeeding James Webster. Previously held executive and sales positions at National Business Capital & Services and Exit Links Real Estate. Has assisted in providing over $1 billion in small business loans. Known for managing sales processes and building teams in the business financing space. President's Club honoree in 2015.",
+        "li": "https://www.linkedin.com/in/patrick-manning-80012647/",
+        "hooks": ["*Facilitated $1B+ in SMB loans", "Former National Business Capital exec", "President's Club 2015"]
+      }
+    ],
+    "news": [
+      {
+        "h": "ROK Financial Named 2025 Inc. 5000 Honoree",
+        "s": "Inc. Magazine, Aug 2025",
+        "d": "ROK Financial ranked No. 4713 on the 2025 Inc. 5000 list with 63% three-year revenue growth, following its No. 4921 ranking in 2024.",
+        "p": "2025-08-12"
+      },
+      {
+        "h": "ROK Financial Expands Alternative Financing Programs for Bad Credit Business Loans",
+        "s": "GlobeNewsWire, Aug 2025",
+        "d": "ROK Financial expanded its suite of programs built for small businesses facing credit challenges, positioning itself at the center of the alternative lending shift nationwide.",
+        "p": "2025-08-16"
+      },
+      {
+        "h": "James Webster to Speak at Broker Fair 2025",
+        "s": "deBanked, Mar 2025",
+        "d": "ROK Financial founder James Webster was announced as a speaker at the annual Broker Fair conference, reinforcing the company's thought leadership in business finance brokerage.",
+        "p": "2025-03-15"
+      }
+    ],
+    "ice": "Congrats on making the Inc. 5000 two years running and expanding your alternative financing programs — as ROK processes 500+ transactions per month, how are you thinking about scaling underwriting speed without adding headcount?",
+    "icebreakers": [
+      "Saw ROK hit the Inc. 5000 for a second consecutive year — at 500+ deals per month, what's been the biggest operational bottleneck in keeping up with growth?",
+      "Your team has facilitated over $2 billion in SMB financing — at that volume, how much time does your underwriting team spend on document review per deal?",
+      "With ROK expanding bad-credit lending programs, how are you managing the risk-speed tradeoff when approving higher-risk applicants?",
+      "As SBFA co-chairman James shapes broker industry standards, how is ROK differentiating from the growing number of fintech broker platforms?"
+    ],
+    "tp": [
+      "At 500+ transactions per month, automating bank statement analysis and identity verification could save your underwriting team 10-15 hours per day — HyperVerge processes documents in under 30 seconds per file.",
+      "HyperVerge already powers underwriting for 450+ MCA and alternative lending companies, including firms at your transaction volume — proven at scale with the exact deal types ROK handles.",
+      "As you expand bad-credit programs, HyperVerge's fraud detection and document verification catches synthetic identities and altered bank statements before they become funded losses."
+    ],
+    "ask": "James, with ROK processing 500+ deals monthly and expanding into higher-risk segments, I'd love to show you how HyperVerge could help your underwriting team move faster without adding risk — would a 15-minute demo next week work?"
+  },
+  {
+    "id": 95,
+    "name": "Splash Advance",
+    "website": "https://splashadvance.com",
+    "linkedinUrl": "https://www.linkedin.com/company/splash-advance/",
+    "leaders": [
+      {
+        "n": "Daniel Frankel",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Splash Advance in 2019 in Boca Raton, FL. Previously worked as a Funding Specialist at Cresthill Capital. Holds a Bachelor of Arts from the University of Rhode Island. Built the company to $5M in revenue with a lean 7-person team. Led the company to Inc. 5000 recognition in 2025 with 95% three-year growth. Also serves as Director of Operations, overseeing day-to-day workflow.",
+        "li": "https://www.linkedin.com/in/daniel-frankel-08479290/",
+        "hooks": ["*$5M revenue with 7-person team", "University of Rhode Island", "Former Cresthill Capital funding specialist"]
+      },
+      {
+        "n": "Brandon Sciortino",
+        "t": "Co-Founder & Managing Member",
+        "bg": "Co-founded Splash Advance in 2019. Previously served as Vice President of Sales at First Premier Funding, LLC and CEO at Fundshop. Brings deep experience in alternative lending sales and operations. Helped grow Splash Advance from a startup to an Inc. 5000 company in under six years.",
+        "li": "https://www.linkedin.com/in/brandon-sciortino-623380101/",
+        "hooks": ["*Former CEO of Fundshop", "Ex-VP Sales at First Premier Funding", "Built Inc. 5000 company in 6 years"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Splash Advance Named to 2025 Inc. 5000 List",
+        "s": "Inc. Magazine, Aug 2025",
+        "d": "Splash Advance ranked No. 3901 on the 2025 Inc. 5000 list with 95% three-year revenue growth, recognizing the direct MCA funder's rapid expansion from its Boca Raton headquarters.",
+        "p": "2025-08-12"
+      },
+      {
+        "h": "Splash Advance Reaches $5M Revenue Milestone with Lean Team",
+        "s": "Latka, 2024",
+        "d": "CEO Daniel Frankel shared how the bootstrapped company grew to $5M in annual revenue with just 7 employees, demonstrating exceptional capital efficiency as a direct funder.",
+        "p": "2024-06-01"
+      }
+    ],
+    "ice": "Congrats on making the Inc. 5000 with 95% growth — building a $5M direct funding operation with only 7 people is remarkable. How are you thinking about scaling underwriting capacity as deal volume grows?",
+    "icebreakers": [
+      "Making the Inc. 5000 with 95% growth as a bootstrapped direct funder — what's been the biggest challenge scaling operations with a lean team?",
+      "$5M in revenue with 7 employees is elite capital efficiency — at what point does manual underwriting become the growth bottleneck?",
+      "As a direct funder competing with larger MCA shops, how do you maintain speed-to-funding while keeping default rates manageable?",
+      "With the MCA space getting more competitive in South Florida, how is Splash differentiating its ISO program to attract top brokers?"
+    ],
+    "tp": [
+      "At $5M revenue with 7 people, automating document verification and bank statement analysis could help Splash scale deal volume 2-3x without proportional headcount growth — HyperVerge processes files in under 30 seconds.",
+      "HyperVerge powers 450+ MCA and alternative lending companies, including direct funders at your growth stage who needed to scale operations without sacrificing underwriting quality.",
+      "As a lean team handling both origination and underwriting, HyperVerge can eliminate 80% of manual document review time, freeing your team to focus on deal evaluation and ISO relationships."
+    ],
+    "ask": "Daniel, Splash's lean-team model is impressive — I'd love to show you how HyperVerge could help you scale deal volume without adding headcount. Would 15 minutes this week work for a quick demo?"
+  },
+  {
+    "id": 96,
+    "name": "Accord Business Funding",
+    "website": "https://accordbf.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/accord-business-funding/",
+    "leaders": [
+      {
+        "n": "Adam Beebe",
+        "t": "Co-Founder",
+        "bg": "Co-founded Accord Business Funding in 2013 in Houston, TX. Brings nearly five decades of combined commercial funding experience with his co-founder. Built Accord into a direct MCA lender specializing in B-paper deals in 1st, 2nd, and 3rd positions. Known for a hands-on management style with direct involvement in underwriting decisions. Established Accord's reputation for speed and flexibility with sub-3-hour decision turnarounds.",
+        "li": "https://www.linkedin.com/in/adam-beebe-104b388",
+        "hooks": ["*50 years combined funding experience", "Built B-paper MCA specialty", "Houston-based direct funder since 2013"]
+      },
+      {
+        "n": "Aldo Castro",
+        "t": "Vice President of Sales & Marketing",
+        "bg": "Joined Accord Business Funding to lead the company's sales and marketing strategy. Responsible for growing Accord's ISO partner network and expanding the company's national footprint from its Houston base. Oversees partner acquisition, commission structures, and brand positioning in the MCA direct funding space.",
+        "li": "",
+        "hooks": ["Leads Accord's ISO partner growth", "Expanded national MCA footprint from Texas"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Accord Business Funding Expands B-Paper MCA Programs Nationwide",
+        "s": "United Capital Source, 2025",
+        "d": "Accord continued expanding its B-paper MCA product nationally, offering up to $150,000 in merchant cash advances with 15% ISO commissions and next-day commission payments.",
+        "p": "2025-01-15"
+      },
+      {
+        "h": "Accord Business Funding Hires VP of Sales & Marketing",
+        "s": "deBanked, Apr 2018",
+        "d": "Accord made a strategic hire to bolster its sales and marketing capabilities, bringing on Aldo Castro as VP to accelerate ISO partner acquisition and brand growth.",
+        "p": "2018-04-15"
+      }
+    ],
+    "ice": "Accord's been a steady force in B-paper MCA since 2013 with that hands-on Houston approach — as you're expanding the ISO partner network nationally, how do you maintain your sub-3-hour decision speed at higher volumes?",
+    "icebreakers": [
+      "Accord has been funding B-paper MCA deals since 2013 — with 12 years of underwriting data, how has your risk appetite evolved as the market has matured?",
+      "Offering up to 15% ISO commissions with next-day payouts is aggressive — how are you managing cash flow while scaling the partner network?",
+      "As a Texas-based direct funder expanding nationally, what's the biggest operational challenge when underwriting deals from unfamiliar markets?",
+      "With new MCA regulation like Texas HB 700 reshaping the funding landscape, how is Accord adapting its compliance and disclosure processes?"
+    ],
+    "tp": [
+      "With Accord's hands-on underwriting model, automating bank statement analysis and document verification could cut your sub-3-hour decision time even further — HyperVerge processes documents in under 30 seconds.",
+      "HyperVerge powers 450+ MCA companies including B-paper direct funders like Accord — our platform is built for the exact deal types and risk profiles you handle daily.",
+      "As you grow the ISO partner network and deal volume increases, HyperVerge eliminates manual document review bottlenecks so your lean team can focus on deal evaluation, not paperwork."
+    ],
+    "ask": "Adam, Accord's speed and hands-on approach are clear differentiators — I'd love to show you how HyperVerge could make your underwriting even faster as you scale the ISO network. Would a 15-minute call next week work?"
+  },
+  {
+    "id": 97,
+    "name": "AdvancePoint Capital",
+    "website": "https://advancepointcap.com",
+    "linkedinUrl": "https://www.linkedin.com/company/advancepoint-capital/",
+    "leaders": [
+      {
+        "n": "Jacques Famy Jr.",
+        "t": "Co-Founder & Managing Partner, CMO",
+        "bg": "Started in finance in 1996 in the mortgage industry. Co-founded Nations Home Mortgage in 1998 and led it until 2010. Co-founded AdvancePoint Capital in 2012. Over 20 years of retail lending experience. Graduate of Stockton State University in Business Studies. Leads AdvancePoint's content strategy and marketing. Enjoys traveling and outdoor activities.",
+        "li": "https://www.linkedin.com/in/jacques-famy-jr-7aa15453/",
+        "hooks": ["*Co-founded Nations Home Mortgage in 1998", "Stockton State University", "25+ years in lending", "Transitioned from mortgage to alt-lending"]
+      },
+      {
+        "n": "Bill",
+        "t": "Head of Sales",
+        "bg": "Joined AdvancePoint Capital in 2013 as a sales representative, working his way up to Head of Sales by 2017. Leads the sales team and manages customer relations for the business loan marketplace. Has been instrumental in AdvancePoint's growth from a startup to serving over 7,500 small business customers.",
+        "li": "",
+        "hooks": ["Rose from sales rep to Head of Sales in 4 years", "10+ years at AdvancePoint"]
+      }
+    ],
+    "news": [
+      {
+        "h": "AdvancePoint Capital Launches Innovative Restaurant Financing Products",
+        "s": "PR Newswire, Apr 2023",
+        "d": "AdvancePoint Capital expanded its product lineup with specialized restaurant financing for working capital, equipment, maintenance, marketing, and inventory — serving restaurants with 24-hour nationwide funding.",
+        "p": "2023-04-04"
+      },
+      {
+        "h": "AdvancePoint Capital Surpasses $375M in Capital Deployed to 7,500+ SMBs",
+        "s": "AdvancePoint Capital, 2025",
+        "d": "The business loan marketplace hit a major milestone, deploying over $375 million in capital to more than 7,500 small business customers since its 2012 founding.",
+        "p": "2025-01-01"
+      },
+      {
+        "h": "AdvancePoint Capital Earns A+ BBB Rating",
+        "s": "Better Business Bureau, 2025",
+        "d": "AdvancePoint Capital maintained its A+ BBB rating and 4.8/5 Google review score, reinforcing its reputation as a trusted business loan marketplace.",
+        "p": "2025-01-01"
+      }
+    ],
+    "ice": "AdvancePoint has deployed over $375M to 7,500+ businesses — as you continue expanding product lines like the restaurant financing launch, how are you thinking about streamlining the lender-matching and underwriting workflow?",
+    "icebreakers": [
+      "Launching specialized restaurant financing was smart — as you add more vertical-specific products, how do you manage the increasing complexity of underwriting criteria across lender partners?",
+      "$375M deployed to 7,500+ SMBs is a significant milestone — what's been the biggest operational challenge as deal volume has scaled?",
+      "With a 4.8 Google rating and A+ BBB score, AdvancePoint clearly prioritizes borrower experience — how do you maintain that quality bar as you scale?",
+      "As more fintech marketplaces enter the space, how is AdvancePoint differentiating beyond product breadth to keep ISO and borrower loyalty?"
+    ],
+    "tp": [
+      "As a marketplace matching borrowers with multiple lenders, AdvancePoint processes diverse document sets — HyperVerge automates bank statement analysis and ID verification across all your lender partners' requirements in under 30 seconds.",
+      "HyperVerge powers 450+ MCA and lending companies, including business loan marketplaces that need to process applications quickly across multiple funding products — proven at your deal complexity.",
+      "Automating document intake and verification could cut AdvancePoint's application-to-approval time significantly, improving borrower experience and helping maintain that 4.8-star rating at higher volumes."
+    ],
+    "ask": "Jacques, with AdvancePoint processing applications across multiple lenders and product types, I'd love to show you how HyperVerge could streamline your document verification workflow — would 15 minutes this week work?"
+  },
+  {
+    "id": 98,
+    "name": "BHB Funding",
+    "website": "https://bhbfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/bhb-funding/",
+    "leaders": [
+      {
+        "n": "Larry Blumstein",
+        "t": "Co-Founder & Managing Member",
+        "bg": "Co-founded BHB Funding in 2018 in Boca Raton, FL. Former restaurant owner who experienced the MCA process firsthand as a merchant, giving him a unique dual perspective on the industry. Built BHB into a boutique MCA funder serving over 325 industries. Led the company's adoption of Prudent AI to automate bank statement review, achieving 40% operational efficiency improvement. Manages day-to-day operations from Boynton Beach, FL.",
+        "li": "https://www.linkedin.com/in/larryblumstein/",
+        "hooks": ["*Former restaurant owner turned MCA funder", "*40% efficiency gain via AI adoption", "Understands both sides of MCA"]
+      }
+    ],
+    "news": [
+      {
+        "h": "BHB Funding Transforms Operations with Prudent AI, Achieves 40% Efficiency Gain",
+        "s": "Prudent AI Case Study, 2025",
+        "d": "BHB Funding implemented Prudent AI to automate bank statement analysis, achieving 40% operational efficiency improvement and enabling the company to scale without adding headcount.",
+        "p": "2025-01-01"
+      },
+      {
+        "h": "BHB Funding Expands Financial Programs Across 325+ Industries",
+        "s": "BHB Funding, 2025",
+        "d": "BHB Funding expanded its product suite to include short-term loans, equipment financing, revenue-based financing, business lines of credit, and down payment financing across 325+ industry verticals.",
+        "p": "2025-01-01"
+      }
+    ],
+    "ice": "Larry, I saw the Prudent AI case study on BHB's 40% efficiency improvement — as a former restaurant owner who's been on both sides of the MCA table, how are you thinking about the next phase of automation for your underwriting team?",
+    "icebreakers": [
+      "The Prudent AI implementation delivering a 40% efficiency gain is impressive — what's the next bottleneck you'd want to automate in BHB's underwriting process?",
+      "Funding across 325+ industries gives BHB serious breadth — how do you maintain underwriting quality across such diverse business types?",
+      "As a former merchant who experienced MCAs firsthand, how does that perspective shape BHB's approach to funding decisions and merchant experience?",
+      "With the Boca Raton MCA market getting more competitive, how is BHB differentiating its boutique approach against larger direct funders?"
+    ],
+    "tp": [
+      "BHB's Prudent AI adoption shows you value operational efficiency — HyperVerge can complement that with automated identity verification, fraud detection, and document classification that catches synthetic identities before funding.",
+      "HyperVerge powers 450+ MCA companies, including boutique direct funders like BHB who need enterprise-grade verification without enterprise-grade headcount.",
+      "Building on your 40% efficiency improvement, HyperVerge's document verification layer can automate the remaining manual review steps — from ID verification to bank statement fraud detection — helping BHB scale further without adding staff."
+    ],
+    "ask": "Larry, BHB's AI-first approach is clearly working — I'd love to show you how HyperVerge's identity verification and fraud detection could build on your Prudent AI gains. Would 15 minutes this week work for a quick demo?"
+  },
+  {
+    "id": 99,
+    "name": "Samson Funding",
+    "website": "https://samsonfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/samsonfunding/",
+    "leaders": [
+      {
+        "n": "Steven Markowitz",
+        "t": "Owner & Founder",
+        "bg": "Founded Samson Funding in 2015 in New York City. Attended Stanstead College with a finance focus. Built Samson into a family-run business with his sons Steven Jr., Michael, and Joseph all involved in operations. Based in Staten Island. Active in charitable causes with his wife Michele. Established the company's 100% unsecured funding model with no personal guarantees required.",
+        "li": "https://www.linkedin.com/in/steven-markowitz-75102271/",
+        "hooks": ["*Family-run funding business with three sons", "Stanstead College", "Built 100% unsecured MCA model"]
+      },
+      {
+        "n": "Michael Markowitz",
+        "t": "Managing Director",
+        "bg": "Managing Director of Samson Funding responsible for day-to-day business operations and deal flow. Holds a Bachelor's in Business Economics from SUNY Cortland (2012-2015). Previously worked at JFS Investments and The CollegeBound Network. Skills in sales management, financial analysis, and credit evaluation.",
+        "li": "https://www.linkedin.com/in/michael-markowitz-46a587bb/",
+        "hooks": ["SUNY Cortland Business Economics", "Former JFS Investments", "Runs day-to-day at family business"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Samson Funding Expands 100% Unsecured Business Financing Nationwide",
+        "s": "Samson Funding, 2025",
+        "d": "Samson Funding continued expanding its 100% unsecured funding model with no personal guarantee and no collateral required, offering approvals within 12-24 hours and funding within 24-48 hours.",
+        "p": "2025-01-01"
+      },
+      {
+        "h": "Samson Funding Broadens Industry Coverage Across Healthcare, Retail, and Construction",
+        "s": "Samson Funding, 2025",
+        "d": "The company expanded its financing specializations to cover healthcare, retail, construction, and additional verticals, offering business loans, MCAs, and ongoing lines of credit.",
+        "p": "2025-01-01"
+      }
+    ],
+    "ice": "Steven, building a family-run funding business with all three sons involved is unique in this space — as Samson scales its 100% unsecured model across new verticals, how are you managing risk and underwriting speed?",
+    "icebreakers": [
+      "A family-run MCA business with three Markowitz brothers all contributing is rare — how does that dynamic shape Samson's culture and decision-making speed?",
+      "Offering 100% unsecured funding with no personal guarantee is a bold positioning — how do you manage default risk without collateral backstops?",
+      "As Samson expands into healthcare and construction verticals, how are you adapting underwriting criteria for industries with very different cash flow patterns?",
+      "With dozens of MCA funders in the NYC market, how does Samson's family-business approach differentiate from the larger institutional players?"
+    ],
+    "tp": [
+      "With Samson offering 100% unsecured funding, robust identity verification and fraud detection are critical — HyperVerge catches synthetic identities and altered documents before you fund, reducing default risk on unsecured deals.",
+      "HyperVerge powers 450+ MCA and lending companies, including unsecured funders who need to verify merchant identity and cash flow quickly — proven with the exact risk profile Samson handles.",
+      "Samson's 12-24 hour approval promise requires fast document processing — HyperVerge automates bank statement analysis and ID verification in under 30 seconds, helping your team deliver on that speed commitment at scale."
+    ],
+    "ask": "Michael, with Samson's unsecured model requiring strong upfront verification to manage risk, I'd love to show you how HyperVerge could help — would a 15-minute call this week work?"
+  },
+  {
+    "id": 100,
+    "name": "Breakout Capital Finance",
+    "website": "https://www.breakoutfinance.com",
+    "linkedinUrl": "https://www.linkedin.com/company/breakout-capital-finance/",
+    "leaders": [
+      {
+        "n": "McLean Wilson",
+        "t": "CEO & President",
+        "bg": "Over 25 years of experience in finance and banking. 15 years in factoring and small business lending. Previously operated two factoring companies — built and sold one within 18 months. Co-Founder of Charleston Capital Management, an alternative investment asset manager. Co-Founder of inFactor, a technology-powered origination and servicing platform for small business lenders. Promoted from Chief Credit Officer to CEO in January 2020. Clemson University graduate. Deep expertise in asset-based lending, factoring, and capital raising.",
+        "li": "https://www.linkedin.com/in/mclean-wilson-a9506713/",
+        "hooks": ["*Built and sold factoring company in 18 months", "*Co-founded inFactor lending tech platform", "Clemson University", "25+ years in finance"]
+      },
+      {
+        "n": "Carl Fairbank",
+        "t": "Founder",
+        "bg": "Founded Breakout Capital Finance in 2015 in McLean, VA to bring affordable and transparent funding to small businesses. Former investment banker at FBR & Co. and member of the Corporate Strategy Group at Capital One Financial Corporation. Named to the 2016 Trending 40s list of DC's top entrepreneurs under 40. Forbes Finance Council member. Stepped down as CEO in 2019 to focus on AI, machine learning, and blockchain innovation. Through his decade of work as an investment banker in alternative finance, he identified market inefficiencies driving high costs for small business funding.",
+        "li": "https://www.linkedin.com/in/carl-fairbank/",
+        "hooks": ["*DC's Top 40 Under 40 (2016)", "*Ex-Capital One strategy group", "Forbes Finance Council member", "Former FBR & Co. investment banker"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Breakout Finance Achieves Fifth Consecutive Year of Growth in Term Loan Originations",
+        "s": "PR Newswire, Feb 2025",
+        "d": "Breakout Finance announced its fifth consecutive year of growth, surpassing $500 million in total loan originations across nearly all 50 states, maintaining a 50% average year-over-year growth rate since 2020.",
+        "p": "2025-02-10"
+      },
+      {
+        "h": "Breakout Capital Secures $45 Million Credit Facility Led by Synovus Bank",
+        "s": "PR Newswire, Jul 2023",
+        "d": "Breakout Capital secured a $45 million credit facility with Synovus Bank providing $35 million committed capacity plus $10 million uncommitted, to expand small business lending operations.",
+        "p": "2023-07-27"
+      },
+      {
+        "h": "12five Capital Merges with Breakout Capital Under Altriarch Parent",
+        "s": "Industry Reports, 2023",
+        "d": "12five Capital, LLC joined forces with Breakout Capital, LLC, with the merger facilitated by Altriarch Commercial Finance, Inc., consolidating operations under a shared parent company.",
+        "p": "2023-06-01"
+      }
+    ],
+    "ice": "Congrats on five consecutive years of growth and crossing $500M in originations — with 50% average YoY growth, how is your team scaling underwriting and operations to keep up with that pace?",
+    "icebreakers": [
+      "Five consecutive years of growth and $500M+ in originations is a serious trajectory — what's been the key to maintaining 50% YoY growth consistently?",
+      "The $45M Synovus credit facility gave Breakout firepower — as you deploy that capital into more term loans, how is your underwriting team keeping pace?",
+      "McLean's inFactor background in lending tech is interesting — how much of that technology philosophy has been embedded into Breakout's operations?",
+      "As Breakout positions itself as a transparent alternative to predatory lenders, how are you balancing speed-to-funding with thorough underwriting?"
+    ],
+    "tp": [
+      "At 50% annual growth and $500M+ in originations, automating document verification and bank statement analysis is critical to scaling without proportional headcount — HyperVerge processes files in under 30 seconds.",
+      "HyperVerge powers 450+ alternative lending companies, including term loan originators at Breakout's growth rate who needed to scale underwriting throughput while maintaining credit quality.",
+      "With Breakout's emphasis on transparency and trust, HyperVerge's automated identity verification and fraud detection helps catch bad actors early, protecting both your portfolio quality and your brand reputation."
+    ],
+    "ask": "McLean, with Breakout growing at 50% annually and pushing past $500M in originations, I'd love to show you how HyperVerge could help your underwriting team keep pace — would a 15-minute call next week work?"
+  },
+  {
+    "id": 101,
+    "name": "Fundbox",
+    "website": "https://fundbox.com",
+    "linkedinUrl": "https://www.linkedin.com/company/fundbox/",
+    "leaders": [
+      {
+        "n": "Prashant Fuloria",
+        "t": "Chief Executive Officer",
+        "bg": "25+ years scaling global technology platforms. Former SVP of Advertising and Data at Yahoo, managing 1,300-person engineering/product teams driving Yahoo's $5B/year ad business. Former Senior Director of Product Management at Facebook, overseeing commerce and advertising. Former Product Director at Google, building monetization products including early AdWords and Google's Global Billing & Payments Platform. CPO at Flurry (acquired by Yahoo). Holds IIT Delhi President's Gold Medal (highest academic award), PhD and MA in Business, PhD Minor in Operations Research, and MS in Statistics from Stanford. Lead Guitarist of Coverflow, a Silicon Valley band.",
+        "li": "https://www.linkedin.com/in/fuloria/",
+        "hooks": ["*IIT Delhi President's Gold Medal + Stanford PhD", "*Ex-Google, Facebook, Yahoo exec", "*Lead guitarist of Silicon Valley band Coverflow", "Managed $5B ad business at Yahoo"]
+      },
+      {
+        "n": "Cetin Duransoy",
+        "t": "President & COO",
+        "bg": "20+ years in financial services. Spent 15 years at Capital One in various leadership roles, most recently leading Small Business Lending, Deposits and Business Banking Strategy teams. Former Head of Global Installment Products at Visa, where he built the installment payment ecosystem from conception to launch. Started career as an engineer before attending business school. Education includes University of Maryland Robert H. Smith School of Business and Middle East Technical University.",
+        "li": "https://www.linkedin.com/in/cetin-duransoy-39098a1/",
+        "hooks": ["*15 years at Capital One, led SMB lending", "*Built Visa's global installment payments from scratch", "Engineer turned financial services exec", "University of Maryland Smith School"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Fundbox Expands Credit Facility with ATLAS and Blue Owl Capital",
+        "s": "GlobeNewsWire, Feb 2026",
+        "d": "Fundbox renewed its credit facility with ATLAS SP Partners and added Blue Owl Capital as a new lender, supporting over $2B in annual global funding capacity.",
+        "p": "2026-02-19"
+      },
+      {
+        "h": "Fundbox Expands Into Australia with $100M AUD Warehouse Facility",
+        "s": "GlobeNewsWire, Jan 2026",
+        "d": "Fundbox launched in Australia backed by a $100M AUD facility from MA Financial Group, enabling platforms like Stripe to offer embedded small business lending in the Australian market.",
+        "p": "2026-01-21"
+      },
+      {
+        "h": "Fundbox Partners with Wave to Reach 350,000+ Small Businesses",
+        "s": "GlobeNewsWire, Nov 2025",
+        "d": "Fundbox announced its fourth major partnership of 2025, integrating financing solutions into Wave's platform for 350,000+ small business owners and solopreneurs.",
+        "p": "2025-11-19"
+      }
+    ],
+    "ice": "Fundbox's embedded lending strategy is firing on all cylinders — four major platform partnerships in 2025 and the Australia expansion. As you scale across so many partner channels, how are you thinking about maintaining consistent underwriting quality?",
+    "icebreakers": [
+      "Four major partnerships in 2025 plus the Australia launch — Fundbox's embedded capital strategy is clearly gaining momentum. How do you manage underwriting consistency across such diverse partner platforms?",
+      "170,000+ businesses served and $6.5 billion originated is massive scale — what's the biggest operational challenge as you expand to international markets?",
+      "Cetin's Capital One SMB lending background paired with Prashant's Google/Facebook product expertise is a rare leadership combo — how does that shape Fundbox's approach to underwriting technology?",
+      "With the embedded lending market heading toward $15.6T by 2030, how is Fundbox positioning against competitors like Lendio and Kabbage for platform partnerships?"
+    ],
+    "tp": [
+      "With Fundbox serving 170,000+ businesses across multiple partner platforms and now expanding internationally, HyperVerge's automated identity verification ensures consistent KYC/KYB across every channel — critical for embedded lending at scale.",
+      "HyperVerge powers 450+ lending companies globally, including embedded capital platforms that need seamless, white-labeled identity verification and document processing across partner integrations.",
+      "As Fundbox expands into Australia and adds new platform partnerships, HyperVerge's multi-country identity verification and fraud detection scales with you — no need to build separate verification stacks per market."
+    ],
+    "ask": "Prashant, with Fundbox scaling across multiple platform partnerships and international markets, I'd love to explore how HyperVerge's identity verification could support your embedded lending infrastructure — would 20 minutes next week work?"
+  },
+  {
+    "id": 102,
+    "name": "BlueVine",
+    "website": "https://bluevine.com",
+    "linkedinUrl": "https://www.linkedin.com/company/bluevine/",
+    "leaders": [
+      {
+        "n": "Eyal Lifshitz",
+        "t": "Co-Founder & CEO",
+        "bg": "Third-generation small business entrepreneur — father owned a physical therapy clinic in NYC, grandfather ran a lighting supply store in Israel. Former Principal at Greylock IL (Greylock Partners' Israel/Europe fund), where he invested over $100 million in startups. Former consultant at McKinsey & Company. Former engineer at Texas Instruments. MBA with high honors from University of Chicago as a Carlton Fellow. Built BlueVine into the largest digital banking platform for small business in the US with 750K+ customers and $16B+ in capital.",
+        "li": "https://www.linkedin.com/in/eyallifshitz/",
+        "hooks": ["*Third-generation entrepreneur (NYC clinic → Israel store → BlueVine)", "*Greylock IL Principal, invested $100M+", "*McKinsey + UChicago MBA Carlton Fellow", "Built largest US digital SMB banking platform"]
+      },
+      {
+        "n": "Nir Klar",
+        "t": "Co-Founder & CTO",
+        "bg": "Technology innovation leader with 20 years of experience building large-scale web and mobile platforms. BSc in Computer Science from the Israel Institute of Technology (Technion). MBA from Tel Aviv University. Co-founded BlueVine in 2013. Previously CTO at Planet SOHO and Media Layers. Earlier career at NICE Systems and the Israeli Defense Force. Based in Tel Aviv, Israel.",
+        "li": "https://www.linkedin.com/in/nirklar/",
+        "hooks": ["*Technion Computer Science + Tel Aviv University MBA", "*Israeli Defense Force veteran", "Former CTO at Planet SOHO", "20 years building tech platforms"]
+      },
+      {
+        "n": "Ana Sirbu",
+        "t": "Chief Financial Officer",
+        "bg": "Joined BlueVine in January 2018 as CFO. Oversees financial strategy, reporting, and capital allocation for the largest digital SMB banking platform in the US. Has guided BlueVine through multiple funding rounds and the company's growth to 750K+ customers.",
+        "li": "",
+        "hooks": ["CFO during BlueVine's explosive growth phase", "7+ years steering SMB fintech finances"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Bluevine Launches Tap to Pay Powered by Stripe",
+        "s": "PR Newswire, Dec 2025",
+        "d": "Bluevine launched Tap to Pay allowing small businesses to accept in-person payments anywhere without hardware, powered by Stripe integration.",
+        "p": "2025-12-15"
+      },
+      {
+        "h": "Bluevine Partners with Stripe to Launch Invoicing and Payment Links",
+        "s": "PR Newswire, May 2025",
+        "d": "Bluevine launched invoicing and payment links enabling SMB customers to create professional invoices and accept credit card, debit card, digital wallet, and ACH payments.",
+        "p": "2025-05-28"
+      },
+      {
+        "h": "Bluevine Announces Small Business Banking Partnership with Xero",
+        "s": "BlueVine Newsroom, Feb 2025",
+        "d": "Bluevine partnered with global accounting platform Xero, allowing customers to sync banking data for greater efficiencies with free trial offers for both platforms.",
+        "p": "2025-02-15"
+      }
+    ],
+    "ice": "BlueVine's Stripe partnership for Tap to Pay and invoicing is turning you into a full-stack SMB financial platform — with 750K+ customers, how are you thinking about scaling identity verification and fraud prevention as you add more financial products?",
+    "icebreakers": [
+      "Launching Tap to Pay and invoicing via Stripe in the same year shows BlueVine is moving fast beyond banking — how is the team managing product velocity with 750K+ customers?",
+      "The Xero partnership is smart — connecting banking and accounting data gives you deeper SMB insights. How are you leveraging that data for underwriting and credit decisions?",
+      "750K+ customers and $16B+ in capital deployed makes BlueVine the clear leader in digital SMB banking — what's the next frontier for growth?",
+      "Eyal's journey from Greylock investor to building the largest US digital SMB bank is compelling — how has that VC perspective shaped BlueVine's product strategy?"
+    ],
+    "tp": [
+      "With 750K+ customers and expanding into payments, lending, and invoicing, BlueVine needs identity verification that scales across every product — HyperVerge provides unified KYC/KYB that works seamlessly across banking, lending, and payments.",
+      "HyperVerge powers identity verification for 450+ financial services companies globally, including digital banking platforms at BlueVine's scale — proven with millions of verifications per month.",
+      "As BlueVine adds more financial products like Tap to Pay and invoicing, each new surface creates fraud risk — HyperVerge's AI-powered identity and document verification catches synthetic identities and fraudulent applications before they become losses."
+    ],
+    "ask": "Eyal, as BlueVine expands beyond banking into payments and invoicing, I'd love to explore how HyperVerge's identity verification platform could support your multi-product growth — would 20 minutes next week work?"
+  },
+  {
+    "id": 103,
+    "name": "Funding Circle",
+    "website": "https://www.fundingcircle.com",
+    "linkedinUrl": "https://www.linkedin.com/company/funding-circle/",
+    "leaders": [
+      {
+        "n": "Lisa Jacobs",
+        "t": "Chief Executive Officer",
+        "bg": "Joined Funding Circle in 2012 and became CEO on January 1, 2022. Previously served as UK Managing Director and Chief Strategy Officer. Led Funding Circle's entry into the US and Continental Europe through acquisition. Part of the core team behind the company's 2018 London Stock Exchange IPO. Former management consultant at the Boston Consulting Group with financial services focus. Worked with NGOs in Tanzania and India. Studied Philosophy, Politics and Economics at the University of Oxford. Named AltFi CEO of the Year 2022 and Fintech Woman of the Year 2021. Innovate Finance PowerList 2017-2023.",
+        "li": "",
+        "hooks": ["*Oxford PPE → BCG → Built Funding Circle's global expansion", "*AltFi CEO of the Year 2022", "*NGO work in Tanzania and India", "Led London Stock Exchange IPO"]
+      },
+      {
+        "n": "Tony Nicol",
+        "t": "Chief Financial Officer",
+        "bg": "Appointed to the Board as CFO on January 1, 2025. Joined Funding Circle in 2018 as Director of Finance and was part of the team leading the IPO. Previously Group Financial Controller at IG Group Holdings plc. Former Assurance Director at PwC. Transitioned from Director of Finance and Investor Relations to the CFO role.",
+        "li": "",
+        "hooks": ["*Part of Funding Circle IPO team", "Former PwC Assurance Director", "Ex-IG Group Financial Controller"]
+      },
+      {
+        "n": "Samir Desai",
+        "t": "Founder (former CEO)",
+        "bg": "Co-founded Funding Circle in 2010. Led the company as CEO through its growth to £16B+ in SME loans and London Stock Exchange listing. Received CBE honor. Stepped down from day-to-day operations in 2022, transitioned to Non-Executive Director, then departed the board in October 2024. Retains 4.9% stake. Now focuses on Super Payments, his new venture.",
+        "li": "",
+        "hooks": ["*CBE honor for services to business", "*Founded £16B+ SME lending platform", "Now building Super Payments", "FTSE 250 founder"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Funding Circle Exceeds 2025 and 2026 Revenue Targets Ahead of Schedule",
+        "s": "BusinessCloud, Jan 2026",
+        "d": "Funding Circle achieved its FY26 revenue target a year early with ~£204M revenue (up 28% YoY) and profit before tax rising to ~£20M from £3M, sending shares up 17%.",
+        "p": "2026-01-15"
+      },
+      {
+        "h": "Funding Circle Surpasses £3 Billion Financing Milestone with £750M Waterfall Renewal",
+        "s": "Crowdfund Insider, Sep 2025",
+        "d": "Funding Circle renewed its partnership with Waterfall Asset Management and BNP Paribas with a £750M forward funding commitment, pushing total financing past £3 billion.",
+        "p": "2025-09-17"
+      },
+      {
+        "h": "Funding Circle Closes £200M Forward Flow Agreement with Deutsche Bank",
+        "s": "Crowdfund Insider, Jul 2025",
+        "d": "Funding Circle secured a £200M forward flow agreement with long-standing partner Deutsche Bank to continue supporting core UK small business term loans.",
+        "p": "2025-07-15"
+      }
+    ],
+    "ice": "Funding Circle beating its FY26 revenue target a year early with 28% growth is exceptional — as you scale past £3 billion in originations and add major institutional partners like Deutsche Bank and Waterfall, how are you thinking about underwriting automation to support that pace?",
+    "icebreakers": [
+      "Hitting the FY26 revenue target a year early and sending shares up 17% — that's a strong signal to the market. What's driving the acceleration in origination growth?",
+      "£3 billion in total financing to 110,000+ UK businesses is a landmark milestone — as you scale, how is the underwriting team keeping pace with increasing volume and partner complexity?",
+      "Lisa's journey from BCG consultant to leading a FTSE 250 fintech through post-founder transition is compelling — how has the strategic direction evolved since the leadership change?",
+      "With £750M from Waterfall, £200M from Deutsche Bank, and £300M from TPG Angelo Gordon all in 2025 — Funding Circle's capital partnerships are accelerating. What's the limiting factor on deploying that capital faster?"
+    ],
+    "tp": [
+      "At £3 billion in originations and growing 28% annually, automating document verification and identity checks is critical to deploying institutional capital from partners like Deutsche Bank and Waterfall — HyperVerge processes applications in seconds, not hours.",
+      "HyperVerge powers identity verification for 450+ lending companies globally, including publicly listed platforms that need SOC 2, GDPR, and FCA-grade compliance — proven at Funding Circle's regulatory requirements.",
+      "As Funding Circle accelerates originations with growing institutional partnerships, HyperVerge's automated KYB and document processing helps your underwriting team focus on credit decisions rather than manual verification tasks."
+    ],
+    "ask": "Lisa, with Funding Circle scaling past £3B in originations and deploying capital from major institutional partners, I'd love to explore how HyperVerge's automated verification could support your growth — would 20 minutes next week work?"
+  }
+]

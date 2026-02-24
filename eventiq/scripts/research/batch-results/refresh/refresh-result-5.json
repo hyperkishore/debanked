@@ -1,0 +1,402 @@
+[
+  {
+    "id": 104,
+    "name": "Shield Funding",
+    "website": "https://shieldfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/shieldfunding",
+    "leaders": [
+      {
+        "n": "Sam Baitz",
+        "t": "Founder & CEO",
+        "bg": "Sam Baitz founded Shield Funding in 2008 (operating as Ascendancy Corp.) and has grown the company to over $500 million in funded capital for 1,000+ small businesses. He holds a Bachelor of Business/Commerce from Lubavitch Yeshiva Gedolah in Maryvale, South Africa. With 20+ years in business funding, Baitz built Shield Funding into a direct lender offering same-day funding for MCA and business loans in all 50 states.",
+        "li": "https://www.linkedin.com/in/sam-baitz-07b74a31/",
+        "hooks": ["*South Africa university graduate", "20+ years business funding", "$500M+ funded to date"]
+      }
+    ],
+    "news": [
+      {"h": "Shield Funding Surpasses $500 Million in Small Business Funding", "s": "ShieldFunding.com, 2025", "d": "Shield Funding reached a milestone of over $500 million deployed to more than 1,000 small and medium-sized businesses nationwide since its 2008 founding.", "p": "2025-06-01"},
+      {"h": "Shield Funding Earns 4.8 Stars on Trustpilot with 330+ Reviews", "s": "Trustpilot, 2025", "d": "Shield Funding maintains one of the highest customer ratings in alternative lending, with 4.8/5 on 330+ Trustpilot reviews and 4/5 on Google.", "p": "2025-09-01"},
+      {"h": "Shield Funding Expands Same-Day Business Loan Products", "s": "ShieldFunding.com, 2025", "d": "Shield Funding broadened its product suite with same-day business loans, unsecured lines of credit, and MCA products ranging from $5K to $1M for borrowers with credit scores as low as 500.", "p": "2025-03-01"}
+    ],
+    "ice": "Shield Funding has crossed $500M in total funding with strong Trustpilot ratings — as you scale origination volume, how are you thinking about automating underwriting to maintain that approval speed?",
+    "icebreakers": [
+      "Congrats on crossing $500M funded — at that scale, what's your biggest bottleneck in maintaining same-day approvals?",
+      "Your 4.8-star Trustpilot rating across 330+ reviews is impressive for alternative lending — how do you balance speed with risk at that volume?",
+      "With minimum credit scores of 500, your underwriting is clearly serving underbanked SMBs — curious how you manage default rates at that threshold?",
+      "As more direct lenders enter the same-day funding space, what differentiates Shield Funding's approach to origination and decisioning?"
+    ],
+    "tp": [
+      "At $500M+ deployed and growing, Shield Funding's underwriting team could benefit from HyperVerge's automated identity verification and document processing to sustain same-day funding speed without scaling headcount linearly.",
+      "HyperVerge's platform is trusted by 450+ MCA and alternative lending companies — we can help Shield Funding reduce fraud and streamline KYC/KYB while maintaining the low credit score thresholds that differentiate your product.",
+      "Our clients typically see 60-70% reduction in manual document review time — for a high-volume same-day lender like Shield Funding, that translates directly to faster approvals and lower cost per funded deal."
+    ],
+    "ask": "Sam, with Shield Funding processing same-day applications across all 50 states, I'd love to show you how HyperVerge's automated verification can help you scale volume without adding underwriting headcount — would a 20-minute demo next week work?"
+  },
+  {
+    "id": 105,
+    "name": "Merchant Industry",
+    "website": "https://www.merchantindustry.com",
+    "linkedinUrl": "https://www.linkedin.com/company/merchant-industry-llc",
+    "leaders": [
+      {
+        "n": "Vaden Landers",
+        "t": "CEO (post-acquisition)",
+        "bg": "Vaden C. Landers was appointed CEO of Merchant Industry upon the September 2025 acquisition by Lovell Minnick Partners. He brings 38+ years in payment processing, involvement in 100+ M&A transactions, and has founded or led seven payments startups with three successful exits. Previously served as President & CEO of MerchantE (Opn subsidiary), EVP & CRO at Usio Inc., and CEO of ProfitPoint. Studied Criminal Justice & Business Management at Lincoln Memorial University.",
+        "li": "https://www.linkedin.com/in/vadenclanders/",
+        "hooks": ["*100+ M&A deals in payments", "*3 successful startup exits", "38+ years payment processing", "Lincoln Memorial University"]
+      },
+      {
+        "n": "Leo Vartanov",
+        "t": "Founder & Former CEO",
+        "bg": "Leo Vartanov co-founded Merchant Industry in 2007 and served as CEO through the company's sale to Lovell Minnick Partners in September 2025, retaining a substantial minority equity stake. A St. John's University Honors graduate, Leo drove MI's explosive growth to 15,000+ merchants and $5B+ in annual transaction volume. He created the Swipe4Free cash discounting platform and led the company to Inc. 5000 recognition. Previously owned Wireless Choice.",
+        "li": "https://www.linkedin.com/in/leovartanov/",
+        "hooks": ["*St. John's University Honors grad", "*Created Swipe4Free platform", "Inc. 5000 honoree", "Sold to PE firm in 2025"]
+      },
+      {
+        "n": "Chris Benabu",
+        "t": "Co-Founder & CRO",
+        "bg": "Chris Benabu co-founded Merchant Industry in 2007 alongside Leo Vartanov and serves as Chief Revenue Officer. He retained a minority equity stake after the 2025 Lovell Minnick acquisition. Previously served as COO of Wireless Choice (2001-2012) and CEO of Valencia Holdings Group LLC. Also has experience at First US Funding and ISO Access.",
+        "li": "https://www.linkedin.com/in/chris-benabu/",
+        "hooks": ["Co-founded MI in 2007", "Ex-Wireless Choice COO", "Retained equity post-PE sale"]
+      }
+    ],
+    "news": [
+      {"h": "Lovell Minnick Partners Acquires Merchant Industry, Appoints Vaden Landers as CEO", "s": "BusinessWire, Sep 2025", "d": "Private equity firm Lovell Minnick Partners acquired a majority stake in Merchant Industry, appointing payments veteran Vaden Landers as CEO. Founders Leo Vartanov and Chris Benabu retain substantial minority equity stakes.", "p": "2025-09-29"},
+      {"h": "Merchant Industry Named to Inc. 5000 Fastest-Growing Companies", "s": "Inc. Magazine, 2025", "d": "Merchant Industry earned recognition on the 2025 Inc. 5000 list as one of the fastest-growing private companies in America, processing $5B+ in annual transactions.", "p": "2025-08-15"},
+      {"h": "Merchant Industry Opens New South Florida Office in Plantation", "s": "MerchantIndustry.com, 2025", "d": "Merchant Industry expanded operations with a new office in Plantation, Florida, complementing its Long Island City headquarters to support growing merchant base of 15,000+.", "p": "2025-05-01"}
+    ],
+    "ice": "The Lovell Minnick acquisition and Vaden Landers' appointment signal big growth plans for Merchant Industry — as you scale the merchant acquiring platform, how are you thinking about modernizing onboarding and KYC for 15,000+ merchants?",
+    "icebreakers": [
+      "Congratulations on the Lovell Minnick acquisition — with Vaden's M&A track record and fresh PE capital, what's the roadmap for scaling merchant onboarding?",
+      "Processing $5B+ annually across 15,000 merchants is serious scale — what does your merchant verification process look like today?",
+      "Post-acquisition transitions often strain compliance and operations — how is the team managing KYC/KYB at your transaction volume?",
+      "With Vaden's background leading seven payments startups and PE capital behind you, Merchant Industry seems positioned for rapid growth — how are you preparing your tech stack?"
+    ],
+    "tp": [
+      "At $5B+ in annual transaction volume and 15,000+ merchants, Merchant Industry's post-acquisition growth plans will require scalable identity verification — HyperVerge automates merchant onboarding and KYC for exactly this scale.",
+      "HyperVerge serves 450+ companies in the alternative finance and payments space, including firms going through similar PE-backed growth phases — we understand the compliance scaling challenges firsthand.",
+      "Our automated document processing and identity verification can reduce merchant onboarding time by 60-70%, helping Merchant Industry's new leadership team scale originations without proportional headcount growth."
+    ],
+    "ask": "Vaden, as you build out Merchant Industry's post-acquisition growth strategy, I'd love to show you how HyperVerge helps payments companies at your scale automate merchant onboarding — could we set up a 20-minute call this week?"
+  },
+  {
+    "id": 106,
+    "name": "Quikstone Capital Solutions",
+    "website": "https://www.quikstonecapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/quikstone-capital",
+    "leaders": [
+      {
+        "n": "Paul Hunter",
+        "t": "President & CEO",
+        "bg": "Paul Hunter leads Quikstone Capital Solutions as President and CEO. The company was founded in 2005 (originally as Sterling Funding) and is headquartered in Tampa, Florida, providing merchant cash advances ranging from $5,000 to $250,000 to businesses nationwide. Under his leadership, Quikstone has helped thousands of merchants access working capital by leveraging their Visa and MasterCard sales volume.",
+        "li": "",
+        "hooks": ["Tampa-based MCA leader", "Rebranded from Sterling Funding", "20 years in merchant finance"]
+      },
+      {
+        "n": "Karen Erdelac",
+        "t": "Executive Director, Operations",
+        "bg": "Karen Erdelac serves as Executive Director of Operations at Quikstone Capital Solutions (formerly Sterling Funding), overseeing the company's operational infrastructure and merchant cash advance processes. She is a prolific content contributor for the company's merchant cash advance blog, writing educational content on topics from tax implications to business improvement strategies for SMB owners.",
+        "li": "https://www.linkedin.com/in/karen-erdelac-3191b513/",
+        "hooks": ["MCA blog content author", "Operations leadership", "Sterling Funding veteran"]
+      }
+    ],
+    "news": [
+      {"h": "Quikstone Capital Partners with Waitbusters for Restaurant Funding", "s": "QuikstoneCapital.com, 2025", "d": "Quikstone Capital Solutions partnered with Waitbusters to offer alternative financial solutions specifically for restaurants in need of working capital.", "p": "2025-04-01"},
+      {"h": "Quikstone Capital Celebrates 20 Years Serving Small Businesses", "s": "QuikstoneCapital.com, 2025", "d": "Quikstone Capital marked its 20th anniversary of providing merchant cash advances to businesses nationwide, having evolved from Sterling Funding to a leading MCA provider.", "p": "2025-07-01"},
+      {"h": "Small Businesses Continue Pandemic Recovery with Alternative Funding", "s": "QuikstoneCapital.com, 2024", "d": "Quikstone Capital reported growing demand from small businesses still recovering from pandemic impacts, particularly in hospitality and retail sectors seeking flexible capital.", "p": "2024-09-01"}
+    ],
+    "ice": "Quikstone just celebrated 20 years in merchant cash advances — as the MCA market gets more competitive, how are you thinking about streamlining your underwriting and merchant onboarding process?",
+    "icebreakers": [
+      "Twenty years in MCA is a real milestone — congratulations. How has Quikstone's underwriting evolved as the competitive landscape has shifted?",
+      "Your partnership with Waitbusters for restaurant funding is a smart vertical play — are you looking at other industry-specific partnerships to drive deal flow?",
+      "Having rebranded from Sterling Funding, Quikstone clearly invested in growth — what's the biggest operational challenge as you scale advance volume?",
+      "As more fintechs enter the MCA space with automated decisioning, how is Quikstone thinking about technology to stay competitive on speed and pricing?"
+    ],
+    "tp": [
+      "With 20 years of MCA experience and a growing pipeline, Quikstone can leverage HyperVerge's automated identity verification to accelerate merchant onboarding from hours to minutes.",
+      "HyperVerge's platform is trusted by 450+ MCA and alternative lending companies — we've helped firms like Quikstone maintain speed while reducing fraud and compliance risk.",
+      "Our automated document processing typically saves MCA providers 60-70% of manual underwriting time — enabling Quikstone to scale advance volume without proportional headcount growth."
+    ],
+    "ask": "Paul, as Quikstone enters its third decade in merchant cash advances, I'd love to share how HyperVerge helps MCA providers modernize their merchant verification and onboarding — would a quick 20-minute demo be useful?"
+  },
+  {
+    "id": 107,
+    "name": "Strategic Funding Source",
+    "website": "https://kapitus.com",
+    "linkedinUrl": "https://www.linkedin.com/company/kapitus",
+    "leaders": [
+      {
+        "n": "Andrew Reiser",
+        "t": "Chairman & CEO",
+        "bg": "Andrew Reiser founded Strategic Funding Source in 2006 with 10 employees and grew it into Kapitus, one of the largest small business lenders with $5B+ deployed. Prior to founding the company, Andy served as CEO of Arcavista Corporation, Managing Director of Donald & Co. Securities, EVP of Fidelco Capital Group, and President of Windsor Group. He began his career as a CPA at Coopers & Lybrand and Price Waterhouse. Holds a BS from Boston University's Questrom School of Business.",
+        "li": "https://www.linkedin.com/in/andrew-reiser-64800415/",
+        "hooks": ["*Ex-Coopers & Lybrand CPA", "*Boston University Questrom", "$5B+ deployed as founder", "Started with 10 employees"]
+      },
+      {
+        "n": "Ben Johnston",
+        "t": "Chief Operating Officer",
+        "bg": "Ben Johnston joined Kapitus in 2014 as Chief Strategy Officer and became COO in 2017. Prior to Kapitus, he was a Principal at Pine Brook Partners (NYC private equity), Senior Associate at Lightyear Capital, and Analyst in the Office of the Chairman at PaineWebber. Holds a BA from Colby College and MBA from the University of Michigan's Ross School of Business. Active in industry speaking engagements on small business financing.",
+        "li": "https://www.linkedin.com/in/ben-johnston-a7313a/",
+        "hooks": ["*Colby College + Michigan Ross MBA", "Ex-Pine Brook Partners PE", "Ex-PaineWebber analyst"]
+      }
+    ],
+    "news": [
+      {"h": "Kapitus Closes $250M Securitization and Upsizes Corporate Note to $95M", "s": "Asset Securitization Report, Jul 2025", "d": "Kapitus completed a $250 million asset-backed securitization and upsized its corporate note from $45M to $95M, led by Guggenheim Securities, to fund growing small business lending operations.", "p": "2025-07-15"},
+      {"h": "Kapitus Acquires Ten Oaks Commercial Capital, Launches Equipment Finance Arm", "s": "PR Newswire, Oct 2024", "d": "Kapitus acquired Ten Oaks Commercial Capital to enter equipment financing, expanding beyond MCA and business loans into equipment finance for construction, manufacturing, hospitality, and healthcare.", "p": "2024-10-25"},
+      {"h": "Kapitus Equipment Finance Partners with Northteq to Modernize Lending", "s": "MonitorDaily, Jan 2026", "d": "Kapitus Equipment Finance partnered with Northteq to modernize its lending technology stack, signaling investment in digital infrastructure for the newly acquired equipment financing division.", "p": "2026-01-15"}
+    ],
+    "ice": "Kapitus's $250M securitization and the Ten Oaks acquisition show aggressive expansion into equipment finance — how are you scaling underwriting and merchant onboarding across these new verticals?",
+    "icebreakers": [
+      "Congrats on the $250M securitization — that kind of capital markets access opens up serious growth. How is the team preparing the underwriting infrastructure for the next scale level?",
+      "The Ten Oaks acquisition and new equipment finance arm is a smart diversification — what's different about equipment finance underwriting versus your core MCA/loan products?",
+      "With $5B+ deployed and now spanning MCA, business loans, and equipment finance, Kapitus is one of the broadest alternative lenders — how do you manage compliance across all these product lines?",
+      "The Northteq partnership for your equipment finance platform signals a tech-forward approach — are you looking at similar modernization for the core lending stack?"
+    ],
+    "tp": [
+      "With $5B+ deployed and now spanning MCA, business loans, and equipment finance, Kapitus needs scalable identity verification across multiple product lines — HyperVerge provides a unified platform that handles all of them.",
+      "HyperVerge is trusted by 450+ alternative lending companies, including firms at Kapitus's scale — our automated KYC/KYB reduces onboarding time by 60-70% while strengthening compliance.",
+      "As Kapitus integrates the Ten Oaks equipment finance acquisition, HyperVerge can help unify merchant and borrower verification across legacy and new platforms without doubling the compliance team."
+    ],
+    "ask": "Andy, with Kapitus expanding into equipment finance and closing a $250M securitization, I'd love to show you how HyperVerge helps multi-product lenders like Kapitus scale underwriting across verticals — would a 20-minute call work this week?"
+  },
+  {
+    "id": 108,
+    "name": "Payability",
+    "website": "https://www.payability.com",
+    "linkedinUrl": "https://www.linkedin.com/company/payability",
+    "leaders": [
+      {
+        "n": "Keith Smith",
+        "t": "Co-Founder & CEO",
+        "bg": "Keith Smith co-founded Payability in 2013 with Scott Lynn, growing it to $3B+ provided to ecommerce sellers on Amazon, Walmart, and Newegg. Originally from the Pacific Northwest, Keith previously co-founded BigDoor (loyalty programs for NFL, MLB, CBS, Starbucks) and CyberMortgage. He began his career as an analyst at financial institutions. Attended Northwest University. Active Techstars mentor, angel investor, and advisor to early-stage startups.",
+        "li": "https://www.linkedin.com/in/keithlsmith/",
+        "hooks": ["*Founded BigDoor (NFL, CBS, Starbucks client)", "*Techstars mentor", "$3B+ provided to sellers", "Northwest University"]
+      },
+      {
+        "n": "Scott Lynn",
+        "t": "Co-Founder",
+        "bg": "Scott Lynn co-founded Payability in 2013 alongside Keith Smith. He is also known as a successful art collector and entrepreneur who founded Masterworks, a platform that allows fractional investing in fine art. His dual background in art investment and fintech brings a unique perspective to the ecommerce funding space.",
+        "li": "",
+        "hooks": ["*Founded Masterworks art investing", "Serial fintech entrepreneur", "Art collector"]
+      }
+    ],
+    "news": [
+      {"h": "Payability Surpasses $3 Billion Provided to eCommerce Sellers", "s": "BusinessWire, Oct 2020", "d": "Payability hit a major milestone of $3B+ in capital deployed to ecommerce sellers across Amazon, Walmart, and Newegg, establishing itself as the largest ecommerce funding platform.", "p": "2020-10-13"},
+      {"h": "Payability Adds Two Strategic Executives to Board of Directors", "s": "BusinessWire, May 2021", "d": "Payability appointed Andy Sack (Techstars Seattle, 25+ years tech entrepreneur) and Ellen Levy (ex-LinkedIn exec, Stanford, Softbank VC) to its board, signaling growth ambitions.", "p": "2021-05-27"},
+      {"h": "Payability Launches Free Instant Access for Amazon Sellers", "s": "Payability.com, 2025", "d": "Payability introduced free instant access for Amazon seller payouts, allowing sellers to receive daily payouts at no cost to improve cash flow management.", "p": "2025-01-01"}
+    ],
+    "ice": "With $3B+ deployed to ecommerce sellers and the launch of free instant access payouts, Payability is clearly the leader in this niche — how are you verifying seller identity and preventing fraud at this scale?",
+    "icebreakers": [
+      "The $3B milestone and free instant access launch show serious momentum — how is Payability handling seller verification as you scale the platform?",
+      "Daily payouts for Amazon and Walmart sellers is a compelling value prop — what does your merchant onboarding and risk assessment process look like?",
+      "As more competitors enter the ecommerce funding space (SellersFi, Onramp, etc.), speed and trust are key differentiators — how are you investing in fraud prevention?",
+      "With Andy Sack and Ellen Levy on the board, Payability clearly has ambitions beyond the current product — what's the next frontier for ecommerce funding?"
+    ],
+    "tp": [
+      "At $3B+ deployed to ecommerce sellers, Payability's volume demands automated seller identity verification — HyperVerge can verify marketplace sellers in seconds, reducing fraud while maintaining the speed sellers expect.",
+      "HyperVerge is trusted by 450+ alternative finance companies for KYC/KYB — our platform handles the unique challenges of ecommerce seller verification including marketplace account validation.",
+      "Our automated document processing reduces onboarding time by 60-70% — for a platform like Payability processing daily payouts, that speed directly translates to more sellers funded faster."
+    ],
+    "ask": "Keith, with Payability processing daily payouts for thousands of sellers across Amazon and Walmart, I'd love to show you how HyperVerge automates seller verification to help you scale faster while reducing fraud — could we do a 20-minute demo?"
+  },
+  {
+    "id": 109,
+    "name": "6th Avenue Capital",
+    "website": "https://6thavenueteam.com",
+    "linkedinUrl": "https://www.linkedin.com/company/6th-avenue-capital",
+    "leaders": [
+      {
+        "n": "Christine Chang",
+        "t": "CEO",
+        "bg": "Christine C. Chang is CEO of 6th Avenue Capital, an institutional small business MCA funder. She brings 25+ years in alternative credit from Charles River, Credit Suisse, and New York Private Bank & Trust, where she served as COO building infrastructure for ultra-high-net-worth clients at Emigrant Bank's wealth management division. She earned her B.A. from Cornell University during the tech boom. She is the only female CEO of a cash advance technology company and an active advocate for diversity in fintech.",
+        "li": "https://www.linkedin.com/in/christine-chang-5231211/",
+        "hooks": ["*Cornell University", "*Only female MCA tech CEO", "Ex-Credit Suisse", "Ex-NY Private Bank & Trust COO"]
+      },
+      {
+        "n": "Darren Schulman",
+        "t": "President",
+        "bg": "Darren Schulman is President of 6th Avenue Capital, promoted from COO in April 2018. A 20-year veteran of alternative finance and banking, he previously served as COO at Capify (formerly AmeriMerchant), President and CFO at MRS Associates (BPO collections), and EVP at MTB Bank. He holds a BS in Accounting from Brooklyn College. He oversees originations, underwriting, operations, collections, and strategic initiatives, and sits on the company's Board of Directors.",
+        "li": "https://www.linkedin.com/in/darren-schulman-5b6189177/",
+        "hooks": ["*Brooklyn College accounting grad", "Ex-Capify (AmeriMerchant) COO", "20-year alt finance veteran"]
+      }
+    ],
+    "news": [
+      {"h": "6th Avenue Capital Secures $60 Million Commitment for MCA Funding", "s": "deBanked, Nov 2017", "d": "6th Avenue Capital secured a $60 million funding commitment to expand its merchant cash advance operations, signaling institutional confidence in the company's underwriting approach.", "p": "2017-11-01"},
+      {"h": "6th Avenue Capital Secures Convertible Note from Star Strong Capital", "s": "Benzinga, Oct 2019", "d": "6th Avenue Capital received a convertible note from Star Strong Capital focused on supporting minority and women-owned small businesses, enabling broader MCA access for underserved SMB owners.", "p": "2019-10-01"},
+      {"h": "6th Avenue Capital Promotes Darren Schulman to President", "s": "deBanked, Apr 2018", "d": "Darren Schulman was promoted from COO to President of 6th Avenue Capital, reporting to CEO Christine Chang, with oversight of originations, underwriting, operations, and collections.", "p": "2018-04-01"}
+    ],
+    "ice": "Christine, as one of the few female CEOs in the MCA space with deep institutional finance experience from Credit Suisse and Emigrant Bank — how is 6th Avenue Capital thinking about scaling underwriting technology for its next growth phase?",
+    "icebreakers": [
+      "Your background at Credit Suisse and NY Private Bank & Trust brings a rare institutional perspective to MCA — how does that influence your approach to risk and underwriting?",
+      "As the only female CEO of a cash advance technology company, you bring unique leadership to the space — what's the biggest challenge in scaling 6th Avenue Capital right now?",
+      "The $60M funding commitment and Star Strong Capital backing show institutional confidence — how are you deploying that capital to reach more underserved SMBs?",
+      "With Darren's Capify and MTB Bank experience complementing your institutional background, 6th Avenue has a strong leadership bench — what's the next milestone you're targeting?"
+    ],
+    "tp": [
+      "6th Avenue Capital's institutional MCA approach can benefit from HyperVerge's automated identity verification — our platform helps funders maintain the speed that SMBs need while meeting institutional-grade compliance standards.",
+      "HyperVerge is trusted by 450+ MCA and alternative lending companies — we understand the unique balance between fast funding and risk management that 6th Avenue navigates.",
+      "Our automated document processing reduces manual review time by 60-70%, helping 6th Avenue Capital scale origination volume without proportionally growing the underwriting team."
+    ],
+    "ask": "Christine, with your unique background bridging institutional finance and MCA, I'd love to show you how HyperVerge's automated verification can help 6th Avenue Capital scale while maintaining the compliance rigor your investors expect — would a 20-minute call work?"
+  },
+  {
+    "id": 110,
+    "name": "Blue Bridge Financial",
+    "website": "https://bluebridgefinancial.com",
+    "linkedinUrl": "https://www.linkedin.com/company/blue-bridge-financial-inc",
+    "leaders": [
+      {
+        "n": "Steve Dervenis",
+        "t": "Executive Chairman & CEO",
+        "bg": "Steve Dervenis has 35+ years in financial services and fintech. Before Blue Bridge Financial, he served as CEO of E*TRADE Global Asset Management and co-founded Carillon Capital, a boutique investment advisory firm and merchant bank completing $2.2B+ in transactions across various asset classes. He holds a BS in Finance from the University of Maryland at College Park. Steve oversees Blue Bridge's strategic direction, sales, finance, and capital markets functions.",
+        "li": "",
+        "hooks": ["*Ex-E*TRADE Global Asset Mgmt CEO", "*Co-founded Carillon Capital ($2.2B+)", "University of Maryland finance grad", "35+ years finserv"]
+      },
+      {
+        "n": "Hannah Phearsdorf",
+        "t": "Chief Financial Officer",
+        "bg": "Hannah Phearsdorf joined Blue Bridge Financial in 2017 after earning her MBA in Finance from Saint Bonaventure University and has risen from Assistant VP to CFO. She holds a bachelor's degree from West Virginia University. As CFO, she oversees all financial strategy, reporting, capital markets activities, loan sales management, and investor relations. She directly manages all lending facilities and plays a key role in Blue Bridge's $135M revolving credit facility and $124.8M securitization.",
+        "li": "https://www.linkedin.com/in/hannah-phearsdorf-finance/",
+        "hooks": ["*West Virginia U + St. Bonaventure MBA", "Rose from Assistant VP to CFO", "Manages $135M credit facility"]
+      },
+      {
+        "n": "Rob Snow",
+        "t": "Chief Credit Officer",
+        "bg": "Rob Snow brings 32+ years of financial services experience to Blue Bridge Financial, where he oversees credit, operations, administration, loss mitigation, and servicing functions. His extensive background in credit risk assessment and portfolio management supports Blue Bridge's underwriting and servicing of 8,000+ small business equipment loans across 30+ industries.",
+        "li": "",
+        "hooks": ["32+ years financial services", "Oversees credit & loss mitigation", "8,000+ SMB loans portfolio"]
+      }
+    ],
+    "news": [
+      {"h": "Blue Bridge Financial Closes First $124.8M Asset-Backed Securitization", "s": "PR Newswire, Jan 2024", "d": "Blue Bridge Financial completed its inaugural asset-backed securitization of $124.8 million, a major capital markets milestone enabling further growth in equipment finance lending.", "p": "2024-01-15"},
+      {"h": "Blue Bridge Financial Extends and Upsizes $135M Revolving Credit Facility with DZ BANK", "s": "PR Newswire, Jan 2024", "d": "Blue Bridge Financial extended its senior credit facility with DZ BANK to $135 million, providing continued capacity to fund small business equipment loans nationwide.", "p": "2024-01-20"},
+      {"h": "Blue Bridge Financial Surpasses 8,000 Small Businesses Financed", "s": "BlueBridgeFinancial.com, 2025", "d": "Blue Bridge Financial reached the milestone of financing nearly 8,000 small businesses across 30+ industries with equipment loans and working capital since founding in 2009.", "p": "2025-06-01"}
+    ],
+    "ice": "Blue Bridge's first $124.8M securitization and the $135M DZ BANK facility show serious capital markets momentum — as you scale past 8,000 borrowers, how are you thinking about automating your equipment finance underwriting?",
+    "icebreakers": [
+      "Congrats on the $124.8M inaugural securitization — that's a huge capital markets milestone for a specialty equipment lender. How is the team preparing for the next round?",
+      "Financing 8,000+ small businesses across 30+ industries is impressive scale — what does your borrower verification process look like today?",
+      "With Steve's E*TRADE and Carillon Capital background, Blue Bridge clearly thinks institutionally — how are you balancing that with the speed SMB borrowers need?",
+      "Equipment finance is seeing consolidation as banks tighten — Kapitus just entered with their Ten Oaks acquisition. How is Blue Bridge differentiating as an independent lender?"
+    ],
+    "tp": [
+      "At 8,000+ small businesses financed across 30+ industries, Blue Bridge needs scalable borrower verification — HyperVerge automates identity and document verification to help equipment lenders underwrite faster.",
+      "HyperVerge is trusted by 450+ alternative lending and finance companies — our platform handles the document-heavy workflows typical in equipment finance, from business entity verification to UCC filing validation.",
+      "Our automated processing typically reduces manual document review time by 60-70% — for a high-volume equipment lender like Blue Bridge, that means faster approvals and lower operational cost per funded deal."
+    ],
+    "ask": "Steve, with Blue Bridge scaling past 8,000 borrowers and fresh capital from your securitization, I'd love to show you how HyperVerge helps equipment lenders automate borrower verification — would a 20-minute call work this week?"
+  },
+  {
+    "id": 111,
+    "name": "First Down Funding",
+    "website": "https://firstdownfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/firstdownfunding",
+    "leaders": [
+      {
+        "n": "Paul Pitcher",
+        "t": "Founder & CEO",
+        "bg": "Paul Pitcher founded First Down Funding in 2012 in Annapolis, MD's historic downtown district. A Maryland native and Severn School graduate, Paul transitioned from a Regional Sales Manager role with the Washington Wizards and Capitals to become a broker before founding First Down. He later expanded into Canada with SharpShooter Funding, partnering with WWE Hall of Famer Bret 'Hitman' Hart as the company's commissioner. Paul is an avid sports fan and golfer who credits competitive sports for his business drive.",
+        "li": "https://www.linkedin.com/in/paulpitcher/",
+        "hooks": ["*Ex-Washington Wizards/Capitals sales mgr", "*Partnered with Bret 'Hitman' Hart", "Severn School alum", "Founded SharpShooter Funding (Canada)"]
+      }
+    ],
+    "news": [
+      {"h": "First Down Funding Expands to All 50 States with 30-Second Application", "s": "FirstDownFunding.com, 2025", "d": "First Down Funding now serves small businesses across all 50 states with a streamlined 30-second application process and 24-hour funding capability.", "p": "2025-03-01"},
+      {"h": "SharpShooter Funding Partners with Bret Hart for Canadian Market Expansion", "s": "Yahoo Finance, 2016", "d": "Paul Pitcher's First Down Funding launched SharpShooter Funding in Canada with WWE Hall of Famer Bret Hart as partner and commissioner, bringing U.S.-style MCA funding to Canadian businesses.", "p": "2016-02-09"},
+      {"h": "First Down Funding Recognized for Game-Changing Business Funding Model", "s": "GlobeNewswire, 2015", "d": "Paul Pitcher's innovative approach to alternative business funding earned recognition for creating an accessible model that gives business owners funding within hours.", "p": "2015-12-10"}
+    ],
+    "ice": "Paul, your journey from the Wizards and Capitals front office to building First Down Funding across all 50 states is a great entrepreneurial story — how are you scaling the underwriting side as application volume grows?",
+    "icebreakers": [
+      "From the Washington Wizards front office to founding an alternative lender — that's a unique career arc. How does the sports sales mindset translate to small business funding?",
+      "The partnership with Bret 'Hitman' Hart for SharpShooter Funding in Canada is one of the most creative brand plays in alternative lending — how's the Canadian market performing?",
+      "A 30-second application with 24-hour funding is a strong value prop — what's the biggest operational challenge in maintaining that speed as you scale?",
+      "First Down Funding has been in the alternative funding space since 2012 — how has the competitive landscape shifted, and where do you see technology making the biggest difference?"
+    ],
+    "tp": [
+      "With First Down Funding serving all 50 states with 24-hour funding, HyperVerge's automated identity verification can help you maintain that speed while reducing fraud risk as volume scales.",
+      "HyperVerge is trusted by 450+ MCA and alternative lending companies — our platform is designed for the fast-paced underwriting that First Down's 30-second application model demands.",
+      "Our automated document processing reduces manual review time by 60-70% — for a company built on speed like First Down Funding, that translates directly to more businesses funded per day."
+    ],
+    "ask": "Paul, with First Down's 30-second application and 24-hour funding promise, I'd love to show you how HyperVerge can automate the verification step so you can scale volume without slowing down — would a quick 20-minute demo work?"
+  },
+  {
+    "id": 112,
+    "name": "Prestige Capital",
+    "website": "https://www.prestigecapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/prestige-capital-corporation",
+    "leaders": [
+      {
+        "n": "Alan Eliasof",
+        "t": "CEO",
+        "bg": "Alan Eliasof, CPA, is Chief Executive Officer of Prestige Capital, responsible for finance, operations, and credit functions. Before joining Prestige Capital, he held senior executive finance and accounting positions with private companies and public accounting firms. He received his bachelor's degree in accounting from the University of Rhode Island and is a member of the American Institute of CPAs and New Jersey Society of CPAs. He has been with Prestige Capital for 20+ years since founding in 1985.",
+        "li": "https://www.linkedin.com/in/alan-eliasof-1646157/",
+        "hooks": ["*University of Rhode Island accounting", "CPA (AICPA member)", "20+ years at Prestige Capital"]
+      },
+      {
+        "n": "Stuart Rosenthal",
+        "t": "President",
+        "bg": "Stuart Rosenthal is President of Prestige Capital with 30+ years in commercial finance. He leads marketing and sales efforts for the company. Prior to Prestige Capital, he served as VP and Sales Manager at CIT Credit Finance and began his career at Arthur Andersen. He holds a bachelor's degree in accounting from Binghamton University. Stuart is a board member of the International Factoring Association, founding board member of IFA's Northeast Chapter, and former TMA New Jersey Chapter board member.",
+        "li": "https://www.linkedin.com/in/stuart-rosenthal-40a32a12/",
+        "hooks": ["*Binghamton University accounting", "*Ex-Arthur Andersen", "IFA board member", "Ex-CIT Credit Finance VP"]
+      }
+    ],
+    "news": [
+      {"h": "Prestige Capital Acquired by Great Elm Capital (80% Stake)", "s": "ABF Journal, Feb 2019", "d": "Great Elm Capital Corp acquired 80% of Prestige Capital from retiring founder Harvey Kaminski, with Alan Eliasof and Stuart Rosenthal retaining equity and continuing to lead the company.", "p": "2019-02-22"},
+      {"h": "Mark Simshauser Joins Prestige Capital as Senior Director, Northeast", "s": "PrestigeCapital.com, Aug 2023", "d": "Prestige Capital expanded its origination team by hiring Mark Simshauser as Senior Director for the Northeast US market, signaling growth in factoring volume.", "p": "2023-08-01"},
+      {"h": "Prestige Capital Celebrates Nearly Four Decades in Invoice Factoring", "s": "PrestigeCapital.com, 2024", "d": "Founded in 1985, Prestige Capital has funded $4.2B+ in transactions with a 92% client retention rate, serving companies with $3M-$300M in annual sales across the US.", "p": "2024-01-01"}
+    ],
+    "ice": "Prestige Capital's $4.2B+ in lifetime factoring volume and 92% client retention rate after nearly 40 years is remarkable — as you scale invoice volumes, how are you thinking about automating the verification and onboarding process?",
+    "icebreakers": [
+      "Nearly four decades and $4.2B+ in factoring volume — that kind of longevity in commercial finance is rare. What's driving the 92% client retention rate?",
+      "With Great Elm Capital's backing since 2019, Prestige Capital has institutional support for growth — how has that changed your approach to scaling originations?",
+      "Stuart's IFA board leadership and Arthur Andersen roots show Prestige Capital's commitment to industry standards — how are you balancing that rigor with the speed clients need?",
+      "Invoice factoring is seeing renewed interest as SMBs face tighter bank credit — how is Prestige Capital positioning against newer digital-first factoring platforms?"
+    ],
+    "tp": [
+      "At $4.2B+ in lifetime volume and growing, Prestige Capital can benefit from HyperVerge's automated identity and document verification to streamline client onboarding for factoring engagements.",
+      "HyperVerge is trusted by 450+ alternative finance companies — our platform handles the document-heavy verification workflows that invoice factoring requires, from business entity verification to accounts receivable validation.",
+      "Our automated processing reduces manual review time by 60-70% — for a high-retention factoring company like Prestige Capital, faster onboarding means faster time-to-first-advance for new clients."
+    ],
+    "ask": "Stuart, with Prestige Capital's impressive 92% retention rate and nearly 40 years in factoring, I'd love to show you how HyperVerge can streamline client onboarding to help you scale originations without adding headcount — would a 20-minute call work?"
+  },
+  {
+    "id": 113,
+    "name": "Lendr",
+    "website": "https://lendr.online",
+    "linkedinUrl": "https://www.linkedin.com/company/lendr",
+    "leaders": [
+      {
+        "n": "Daniel DeMeo",
+        "t": "CEO",
+        "bg": "Daniel DeMeo joined Lendr in November 2018 as CEO. He brings deep financial services leadership experience as former CEO of CAN Capital, CFO of Global Technology at JP Morgan Chase, and CFO of Chase's consumer and small business credit card unit. Earlier roles include EVP at Citibank Universal Card Service and SVP of Marketing/Business Development at GE Capital. He holds a BA from New England College and MBA in Finance from Fairleigh Dickinson University.",
+        "li": "https://www.linkedin.com/in/danieldemeo/",
+        "hooks": ["*Ex-JP Morgan Chase CFO (consumer cards)", "*Ex-CAN Capital CEO", "Fairleigh Dickinson MBA", "Ex-GE Capital SVP"]
+      },
+      {
+        "n": "Tim Roach",
+        "t": "Co-Founder & Chairman",
+        "bg": "Tim Roach co-founded Lendr in 2011 (originally as Viking Funding Group), rebranding to Lendr in 2016. A former Navy SEAL who served at Seal Team One, Tim transitioned from military service to entrepreneurship. He founded Oak Street Trading, a proprietary trading firm, in 2002, applying straight-through processing technology from trading to create Lendr's MCA platform. He holds a BS in Finance from Linfield College.",
+        "li": "https://www.linkedin.com/in/tim-roach-011b563/",
+        "hooks": ["*Former Navy SEAL (Seal Team One)", "*Founded Oak Street Trading", "Linfield College finance grad", "Rebranded Viking Funding to Lendr"]
+      }
+    ],
+    "news": [
+      {"h": "Lendr Adopts AdvanceIQ.ai Risk & Portfolio Intelligence Platform", "s": "Manila Times/GlobeNewswire, Feb 2026", "d": "Lendr CEO Daniel DeMeo endorsed AdvanceIQ.ai's AIQ Platform, stating it provides 'a much clearer view into portfolio performance and deal quality' for their MCA lending operations.", "p": "2026-02-05"},
+      {"h": "Dan DeMeo Appointed CEO of Lendr", "s": "deBanked, Nov 2018", "d": "Lendr appointed Daniel DeMeo as CEO, bringing former CAN Capital and JP Morgan Chase leadership experience to lead the Chicago-based MCA provider through its next growth phase.", "p": "2018-11-01"},
+      {"h": "Lendr Completes Rebrand from Viking Funding Group", "s": "PR Web, 2016", "d": "Tim Roach's Viking Funding Group rebranded to Lendr in mid-2016, signaling a technology-forward evolution of the merchant cash advance platform with enhanced straight-through processing.", "p": "2016-06-01"}
+    ],
+    "ice": "The recent AdvanceIQ.ai partnership shows Lendr is investing in portfolio intelligence — how are you thinking about the broader tech stack for underwriting and merchant verification?",
+    "icebreakers": [
+      "The AdvanceIQ.ai adoption for portfolio analytics shows Lendr is investing in data-driven decision making — what other parts of the lending stack are you looking to modernize?",
+      "Tim's journey from Navy SEAL to founding a proprietary trading firm to building an MCA platform is one of the most unique founder stories in the space — how does that discipline translate to Lendr's operations?",
+      "With Daniel's CAN Capital and JP Morgan background, Lendr has enterprise-grade leadership — how are you balancing that institutional approach with the speed MCA merchants need?",
+      "As more MCA providers adopt advanced analytics and AI, Lendr seems well-positioned with both tech and capital markets experience — what's the competitive moat you're building?"
+    ],
+    "tp": [
+      "Lendr's recent adoption of AdvanceIQ.ai shows a commitment to tech-forward lending — HyperVerge complements that with automated identity verification and document processing to complete the digital underwriting stack.",
+      "HyperVerge is trusted by 450+ MCA and alternative lending companies — we help firms like Lendr with the front-end verification that feeds into portfolio analytics and risk assessment platforms.",
+      "Our automated processing reduces manual document review time by 60-70% — paired with Lendr's new portfolio intelligence tools, that creates a fully automated pipeline from application to funding decision."
+    ],
+    "ask": "Daniel, with Lendr investing in portfolio intelligence via AdvanceIQ.ai, the natural next step is automating the front-end verification — I'd love to show you how HyperVerge completes that digital underwriting stack. Would a 20-minute demo work?"
+  }
+]

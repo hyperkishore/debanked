@@ -1,0 +1,71 @@
+[
+  {
+    "id": 64,
+    "name": "Credibly",
+    "leaders": [
+      {
+        "n": "John Madau",
+        "t": "Chief Credit Officer",
+        "bg": "Chief Credit Officer at Credibly focused on credit policy, loan controls, and underwriting governance. Role corroborated across executive datasets in 2025 (Crunchbase, Equilar, The Org).",
+        "hooks": [
+          "Chief Credit Officer",
+          "Underwriting governance",
+          "*Credit policy owner"
+        ]
+      },
+      {
+        "n": "Dan Yelle",
+        "t": "Chief Data & Analytics Officer",
+        "bg": "Chief Data and Analytics Officer at Credibly leading risk-lifecycle analytics and AI/ML strategy. Biography attribution cites Credibly as source (Equilar profile).",
+        "hooks": [
+          "Risk analytics leader",
+          "AI/ML in credit",
+          "Data-driven underwriting"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "BlueVine",
+    "leaders": [
+      {
+        "n": "Mira Srinivasan",
+        "t": "Chief Risk Officer",
+        "bg": "Appointed Chief Risk Officer at Bluevine in October 2021; cited in Bluevine newsroom and leadership pages. Oversees credit, fraud, operational risk, and underwriting risk frameworks.",
+        "hooks": [
+          "Chief Risk Officer",
+          "Credit and fraud risk",
+          "*Risk framework owner"
+        ],
+        "li": "https://www.linkedin.com/in/mira-srinivasan/"
+      },
+      {
+        "n": "Aditya Narula",
+        "t": "SVP, GM of Lending & Credit",
+        "bg": "Bluevine leadership team member for lending and credit operations, listed on company About page.",
+        "hooks": [
+          "Lending GM",
+          "Credit operations owner"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "idea Financial",
+    "leaders": [
+      {
+        "n": "Tyler Walton",
+        "t": "Underwriting Manager",
+        "bg": "Promoted to Underwriting Manager at idea Financial (company blog announcement, September 2021). Should be re-verified for current title in ongoing enrichment cycle.",
+        "hooks": [
+          "Underwriting manager",
+          "Credit decision workflow",
+          "*Role requires title re-verification"
+        ]
+      }
+    ]
+  }
+]
+

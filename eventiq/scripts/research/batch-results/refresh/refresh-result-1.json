@@ -1,0 +1,426 @@
+[
+  {
+    "id": 62,
+    "name": "Loanworx",
+    "website": "https://loanworx.com",
+    "linkedinUrl": "https://www.linkedin.com/company/loanworx-mca",
+    "leaders": [
+      {
+        "n": "Joseph Schwartz",
+        "t": "Director of Business Development",
+        "bg": "Leads business development at LoanWorx, the MCA pre-funding technology platform founded in 2022 in Davie, Florida. Focused on growing partnerships with MCA funders and brokers who use LoanWorx's SOC 2-verified SaaS platform. The platform reads bank statements with 99% accuracy across 2,500+ financial institutions and integrates with Experian and Plaid.",
+        "li": "https://www.linkedin.com/in/joseph-schwartz-68199927b/",
+        "hooks": ["SOC 2-verified MCA SaaS builder", "Bank statement 99% accuracy tech", "Experian & Plaid integration partner"]
+      }
+    ],
+    "news": [
+      {"h": "LoanWorx Achieves SOC 2 Verification for MCA Platform", "s": "LoanWorx, 2025", "d": "LoanWorx earned SOC 2 verification, enabling integrations with Experian and Plaid and reinforcing trust for enterprise MCA clients handling private financial data.", "p": "2025-06-01"},
+      {"h": "LoanWorx Expands Bank Statement Coverage to 2,500+ Institutions", "s": "LoanWorx, 2025", "d": "LoanWorx's proprietary technology now reads bank statements with 99% accuracy covering 85% of US banks across 2,500+ financial institutions.", "p": "2025-03-01"}
+    ],
+    "ice": "Your SOC 2-verified platform covering 2,500+ banks is impressive for a company founded in 2022. As MCA funders demand faster pre-funding workflows, how are you thinking about integrating AI-powered underwriting into the LoanWorx pipeline?",
+    "icebreakers": [
+      "Your SOC 2 verification and Experian/Plaid integrations show enterprise-grade ambitions. How are MCA funders responding to the platform?",
+      "Covering 2,500+ financial institutions with 99% accuracy on bank statements is a strong differentiator. What's driving adoption among MCA companies?",
+      "As MCA pre-funding workflows get more complex, how is LoanWorx thinking about adding automated risk assessment to the platform?",
+      "With competitors like LendSaaS and Centrex in the MCA software space, what's LoanWorx's strategy for standing out as the go-to pre-funding platform?"
+    ],
+    "tp": [
+      "As a technology platform serving MCA funders, LoanWorx could embed HyperVerge's AI underwriting directly into the pre-funding workflow, giving every funder on the platform instant risk assessment.",
+      "HyperVerge already serves 450+ MCA companies with automated underwriting. Integrating with LoanWorx's platform could bring that capability to your entire funder network as a built-in feature.",
+      "LoanWorx's 99% bank statement accuracy paired with HyperVerge's AI risk models could reduce underwriting time from 40 minutes to under 5, making the platform even more compelling for MCA funders."
+    ],
+    "ask": "Joseph, given LoanWorx's vision to be the leading MCA SaaS platform, would it make sense to explore embedding HyperVerge's AI underwriting as a native feature within the LoanWorx workflow?"
+  },
+  {
+    "id": 65,
+    "name": "Kalamata Capital",
+    "website": "https://www.kalamatacapitalgroup.com",
+    "linkedinUrl": "https://www.linkedin.com/company/kalamata-capital-group",
+    "leaders": [
+      {
+        "n": "Steven Mandis",
+        "t": "Founder & Chairman",
+        "bg": "Columbia University Business School adjunct associate professor in finance and economics. Began career at Goldman Sachs in 1992 in M&A, then built the Special Situations Proprietary Trading Group under Henry Paulson. Later senior advisor to McKinsey & Company during the financial crisis. Author of 'What Happened to Goldman Sachs' (Harvard Business Press, 2013 Gold Axiom Business Book Award). Named company after his family's ancestral region in Greece. Self-funded Kalamata Capital at founding in 2013.",
+        "li": "https://www.linkedin.com/in/stevenmandis",
+        "hooks": ["*Goldman Sachs under Henry Paulson", "*Columbia Business School professor", "*Harvard Business Press author", "Named company after Greek heritage"]
+      },
+      {
+        "n": "Brandon Laks",
+        "t": "Co-President",
+        "bg": "One of Kalamata's first employees, rising through COO and Chief Credit Officer roles to Co-President. Previously a Group Corporate Finance Account Executive at CapitalSource Bank. Instrumental in driving Kalamata's growth and the 2024 securitization of up to $500M. Oversees strategic direction alongside Connor Phillips.",
+        "li": "https://www.linkedin.com/in/brandonlaks23/",
+        "hooks": ["*First employee to Co-President", "Ex-CapitalSource Bank", "$500M securitization architect"]
+      },
+      {
+        "n": "Connor Phillips",
+        "t": "Co-President",
+        "bg": "Dartmouth College BA. One of Kalamata's earliest employees alongside Brandon Laks. Previously interned at the Bureau of Industry and Security at the US Department of Commerce. Now Co-President overseeing strategic direction and investment decisions. Key driver of the Kalamata Cash proprietary technology platform launch in 2024.",
+        "li": "",
+        "hooks": ["*Dartmouth College", "US Dept of Commerce intern", "Kalamata Cash platform driver"]
+      }
+    ],
+    "news": [
+      {"h": "Kalamata.com Upsizes Securitization by 25% Demonstrating Strong Growth from Proprietary Technology Platform", "s": "PR Newswire, Jul 2025", "d": "Kalamata upsized its 2024 securitization by 25% with notes expandable up to $500M, adding $20M in funding capacity. Guggenheim Securities served as sole structuring advisor.", "p": "2025-07-29"},
+      {"h": "Catching Up With Kalamata", "s": "deBanked, Sep 2025", "d": "Industry profile covering Kalamata's growth trajectory, proprietary Kalamata Cash technology platform, and expansion plans following the securitization upsize.", "p": "2025-09-15"},
+      {"h": "Kalamata.com Closes Securitization of Up to $500 Million", "s": "BusinessWire, May 2024", "d": "Kalamata closed its inaugural securitization of revolving business advance receivables, initially totaling $80M and expandable up to $500M.", "p": "2024-05-02"}
+    ],
+    "ice": "Congratulations on the 25% securitization upsize with Guggenheim. As Kalamata Cash drives increased broker engagement, how are you thinking about scaling underwriting speed to match the growing deal flow?",
+    "icebreakers": [
+      "The 25% securitization upsize to $500M shows incredible demand. How is the Kalamata Cash platform handling the increased application volume?",
+      "Going from $80M initial draw to a $500M expandable facility in under two years is remarkable growth. What role is technology playing in maintaining underwriting quality at that scale?",
+      "As broker partners flock to Kalamata Cash for faster technology, how are you ensuring underwriting keeps pace with the speed your platform promises?",
+      "With Guggenheim backing your securitization and a proprietary tech platform, Kalamata is positioning itself as a tech-forward funder. How does AI factor into your underwriting roadmap?"
+    ],
+    "tp": [
+      "With Kalamata's securitization expanding to $500M, HyperVerge's AI underwriting can help deploy that capital faster by cutting decision time from 40 minutes to under 5 per application.",
+      "HyperVerge serves 450+ MCA companies and could integrate directly with Kalamata Cash to give your platform automated risk assessment as a built-in capability for broker partners.",
+      "As Kalamata scales through proprietary technology, embedding HyperVerge's document verification and AI risk models would let your team underwrite more deals without proportionally growing headcount."
+    ],
+    "ask": "Steven, given Kalamata's rapid growth and the Kalamata Cash platform's success with brokers, would a 15-minute call make sense to explore how HyperVerge's AI underwriting could be embedded into your workflow?"
+  },
+  {
+    "id": 66,
+    "name": "Libertas Funding",
+    "website": "https://libertasfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/libertas-funding",
+    "leaders": [
+      {
+        "n": "Gary Katcher",
+        "t": "Founder & Executive Chairman",
+        "bg": "NYU Stern MBA. 30+ year Wall Street career spanning credit, investing, and trading. Started at EF Hutton, then spent most of career at Merrill Lynch as Senior Managing Director heading the High Yield trading desk managing $1B+ in risk capital. Co-headed Leverage Finance at Royal Bank of Canada in 1999. Founded and sold a boutique fixed income broker-dealer to Knight Capital, where he became EVP and Global Head of Institutional Fixed Income. Founded Libertas Funding in September 2016. Dedicated philanthropist supporting blindness research and women entrepreneurs.",
+        "li": "https://www.linkedin.com/in/garykatcher/",
+        "hooks": ["*NYU Stern MBA", "*Merrill Lynch Sr. MD, $1B+ book", "*Sold firm to Knight Capital", "Philanthropy: blindness research"]
+      },
+      {
+        "n": "John Paradisi",
+        "t": "CEO",
+        "bg": "Appointed CEO effective January 1, 2026, after joining as President and COO in April 2025. 26+ years in banking and specialty finance. Previously EVP and Chief Specialty Banking Officer at City National Bank of Florida, where as Chief Strategy Officer he helped grow total assets from $18B to $26B in four years. Earlier spent 17 years at CIT Bank in senior leadership spanning corporate strategy/M&A, specialty banking, and consumer banking.",
+        "li": "",
+        "hooks": ["*Grew City National Bank $18B to $26B", "17 years at CIT Bank", "26yr banking & specialty finance vet"]
+      },
+      {
+        "n": "Randy Saluck",
+        "t": "Vice Chairman",
+        "bg": "University of Pennsylvania BA, UVA Law JD, Wharton MBA (Finance & Accounting). Served as Libertas CEO from 2017 to 2025, now Vice Chairman. Corporate attorney at Blank Rome and Cahill Gordon focused on equity/debt financing and leveraged buyouts. Former senior analyst at Tyndall Management, investment banking associate at Salomon Brothers (M&A). Founded Mortar Rock Capital (equity and credit, 2005-2016). Under his leadership, Libertas funded $5B to SMBs nationwide.",
+        "li": "https://www.linkedin.com/in/randy-saluck-840771152/",
+        "hooks": ["*Wharton MBA + UVA Law JD", "*Ex-Salomon Brothers M&A", "Founded Mortar Rock Capital", "$5B funded under his watch"]
+      }
+    ],
+    "news": [
+      {"h": "Libertas Funding Announces Key Leadership Appointments to Propel Next Phase of Growth", "s": "BusinessWire, Dec 2025", "d": "John Paradisi promoted to CEO effective Jan 1, 2026. Randy Saluck transitions to Vice Chairman. Gary Katcher remains Executive Chairman.", "p": "2025-12-23"},
+      {"h": "Libertas Funding Names John Paradisi as President and Chief Operating Officer", "s": "Yahoo Finance, May 2025", "d": "Paradisi joins from City National Bank of Florida bringing 26+ years of banking experience to drive Libertas's next growth phase.", "p": "2025-05-21"},
+      {"h": "Libertas Funding Secures Inaugural $75 Million Investment Grade Corporate Note", "s": "Newswire, Apr 2025", "d": "Libertas closed $75M investment-grade corporate note financing with Brean Capital as exclusive financial advisor, proceeds used for liquidity and working capital.", "p": "2025-04-01"}
+    ],
+    "ice": "Congratulations on the CEO transition and $75M corporate note raise. With a new leadership team and expanded capital, how is Libertas thinking about scaling underwriting to match the growth ambitions?",
+    "icebreakers": [
+      "The $75M investment-grade corporate note is a strong signal of institutional confidence. How is Libertas planning to deploy that capital efficiently across your SMB portfolio?",
+      "With $4B+ funded since 2016 and a new CEO from City National Bank, Libertas is clearly entering a new growth phase. What role does technology play in that strategy?",
+      "As Libertas scales with fresh leadership and capital, how are you thinking about maintaining underwriting quality while increasing application throughput?",
+      "With John Paradisi bringing $18B-to-$26B growth experience from City National Bank, Libertas seems poised for a big 2026. How are you preparing your operations for that scale?"
+    ],
+    "tp": [
+      "With $4B+ funded and a $75M capital infusion, Libertas is scaling fast. HyperVerge's AI underwriting can help process the increased deal flow in under 5 minutes per application.",
+      "HyperVerge serves 450+ MCA and lending companies with automated underwriting. As Libertas enters its next growth phase under new leadership, our platform can help maintain quality at higher volumes.",
+      "John Paradisi's experience scaling City National Bank from $18B to $26B shows the ambition. HyperVerge can help Libertas scale operations without proportionally growing the underwriting team."
+    ],
+    "ask": "John, as you settle into the CEO role and look to scale Libertas's operations, would a brief call make sense to see how HyperVerge's AI underwriting could support your growth plans?"
+  },
+  {
+    "id": 67,
+    "name": "Pearl Capital",
+    "website": "https://pearlcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/pearlcapitalbusinessfundingllc",
+    "leaders": [
+      {
+        "n": "Solomon Lax",
+        "t": "CEO",
+        "bg": "CEO of Pearl Capital since 2015, previously serving as COO and President. 15+ years as a venture capitalist and investment banker spanning bridge/venture debt financing, restructuring, distressed company investment, and M&A. Co-founding partner of Cato Capital LLC, where he seeded a healthcare receivable firm and a venture debt fund. Former general partner of CS Capital Partners LLC (early-stage venture fund) and board member of multiple portfolio companies. Led Pearl's institutional infrastructure buildout culminating in the Capital Z Partners acquisition in 2015. Active LinkedIn contributor writing on machine learning and technology in MCA.",
+        "li": "https://www.linkedin.com/in/sol-lax-bb190",
+        "hooks": ["*VC & investment banker turned MCA CEO", "*Co-founded Cato Capital", "Capital Z Partners acquisition leader", "Writes on ML & MCA tech"]
+      },
+      {
+        "n": "Elie Friedman",
+        "t": "Chief Underwriting Officer",
+        "bg": "Chief Underwriting Officer at Pearl Capital since 2010, making him one of the company's earliest team members. Manages Pearl's growing team of underwriters and plays a key role in identifying strategic development opportunities. Over 14 years of underwriting expertise in the MCA and alternative finance space.",
+        "li": "",
+        "hooks": ["14yr MCA underwriting veteran", "Day-one Pearl Capital team member"]
+      }
+    ],
+    "news": [
+      {"h": "Pearl Capital Surpasses 23,000 Small Business Financings Nationwide", "s": "Pearl Capital, 2025", "d": "Pearl Capital reached a milestone of over 23,000 financings provided to small businesses, reinforcing its position as a leading ISO-focused fintech funder.", "p": "2025-06-01"},
+      {"h": "Pearl Capital Expands Fintech Solutions for ISOs", "s": "Pearl Capital, 2025", "d": "Pearl Capital continued expanding its technology platform for Independent Sales Organizations, enhancing tools for MCA deal processing and broker partnerships.", "p": "2025-03-01"}
+    ],
+    "ice": "With 23,000+ financings and a deep ISO network, Pearl Capital has built impressive scale since the Capital Z Partners acquisition. How is your underwriting team handling the growing deal volume from your ISO partners?",
+    "icebreakers": [
+      "Reaching 23,000+ financings is a significant milestone. How is Pearl Capital leveraging technology to keep scaling its ISO channel?",
+      "With 14+ years of underwriting experience on your team, Pearl has deep MCA expertise. How are you thinking about augmenting that with AI-driven risk assessment?",
+      "As ISOs demand faster funding decisions, how is Pearl Capital balancing speed with underwriting quality across your growing deal flow?",
+      "The Capital Z Partners backing gives Pearl institutional firepower. How are you using that advantage to differentiate your technology platform for ISOs?"
+    ],
+    "tp": [
+      "With 23,000+ financings and growing ISO demand, HyperVerge's AI underwriting can help Pearl Capital process applications in under 5 minutes, giving your ISO partners the speed they need.",
+      "HyperVerge already serves 450+ MCA companies with automated underwriting. Pearl Capital's ISO-focused model would benefit from the same efficiency gains our platform delivers.",
+      "As Pearl scales its fintech solutions for ISOs, embedding HyperVerge's AI risk assessment would add a powerful differentiator — faster decisions without adding underwriting headcount."
+    ],
+    "ask": "Sol, given Pearl Capital's growing ISO network and 23,000+ financings, would a 15-minute demo make sense to show how HyperVerge could help your underwriting team process deals faster?"
+  },
+  {
+    "id": 68,
+    "name": "Greenbox Capital",
+    "website": "https://www.greenboxcapital.com",
+    "linkedinUrl": "https://www.linkedin.com/company/greenboxcapital",
+    "leaders": [
+      {
+        "n": "Jordan Fein",
+        "t": "Founder & CEO",
+        "bg": "Florida State University (Business Administration & Finance). Founded Greenbox Capital in 2012 after starting in credit card processing in 2007. Built the company into a direct MCA funder with 75+ employees and operations in both US and Canada. Led the acquisition of Level Up Funding in 2021. Created 'The Box,' Greenbox's proprietary enterprise technology platform for broker deal security, underwriting speed, and funding automation. Also CEO at Verify My Banks. Achieved 4% cost of capital through credit facility refinancing in 2022. Published thought leadership on fintech and the future of small business lending.",
+        "li": "https://www.linkedin.com/in/jordan-fein/",
+        "hooks": ["*Florida State Business & Finance", "*Built The Box proprietary platform", "Acquired Level Up Funding 2021", "Expanded into Canada"]
+      },
+      {
+        "n": "Drew Batiato",
+        "t": "VP of Product & Credit",
+        "bg": "Solutions-based leader with 15+ years of experience in credit, product, fraud, and risk. Co-founded Level Up Funding before its acquisition by Greenbox Capital in 2021. Previously worked at OnDeck Capital from 2013-2015. Now leads product and credit strategy at Greenbox, driving enhancements to The Box technology platform.",
+        "li": "https://www.linkedin.com/in/drewbatiato/",
+        "hooks": ["*Co-founded Level Up Funding", "Ex-OnDeck Capital", "15yr credit & product leader"]
+      }
+    ],
+    "news": [
+      {"h": "Greenbox Capital Refinances Credit Facility to Expand Operations", "s": "PR Newswire, Oct 2022", "d": "Greenbox achieved a 4% cost of capital through its refinanced credit facility with a prominent commercial bank, positioning the company to expand market share.", "p": "2022-10-06"},
+      {"h": "Greenbox Capital Acquires Level Up Funding", "s": "PR Newswire, Jul 2021", "d": "Greenbox acquired Level Up Funding to enhance its leadership team, launch a line of credit product, expand internationally, and make key enhancements to its proprietary software The Box.", "p": "2021-07-29"}
+    ],
+    "ice": "The Box platform sounds like a game-changer for brokers. As Greenbox scales in both the US and Canada, how are you thinking about enhancing underwriting automation within the platform?",
+    "icebreakers": [
+      "The Box technology platform is a strong differentiator for Greenbox. How are brokers responding to the speed and deal security it provides?",
+      "Achieving 4% cost of capital through your credit facility refinancing was impressive. How has that impacted your ability to compete on pricing and volume?",
+      "With the Level Up Funding acquisition adding talent and a new line of credit product, how is Greenbox's product roadmap evolving for 2026?",
+      "As more MCA funders invest in technology platforms, how is Greenbox ensuring The Box stays ahead of competitors in underwriting speed and broker tools?"
+    ],
+    "tp": [
+      "With The Box already accelerating broker deals, integrating HyperVerge's AI underwriting could add automated risk assessment that further reduces decision time from 40 minutes to under 5.",
+      "HyperVerge serves 450+ MCA companies with automated underwriting. Embedding our technology into The Box would give every Greenbox broker access to instant AI-powered decisioning.",
+      "As Greenbox expands in Canada and the US with 75+ employees, HyperVerge can help scale underwriting capacity without proportionally growing the team, protecting your 4% cost of capital advantage."
+    ],
+    "ask": "Jordan, given The Box's success with brokers and Greenbox's cross-border growth, would a quick demo make sense to show how HyperVerge's AI underwriting could plug directly into your platform?"
+  },
+  {
+    "id": 69,
+    "name": "Mantis Funding",
+    "website": "https://mantisfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/mantis-funding-llc",
+    "leaders": [
+      {
+        "n": "Michael Marano",
+        "t": "Founder & CEO",
+        "bg": "Founded Mantis Funding in Boca Raton, Florida, building it into one of the most trusted leaders in commercial finance over the past decade. Previously served as Managing Director of Underwriting at Yellowstone Capital LLC, one of the largest MCA funders in the industry. Earlier was Managing Partner at Diamond Funding Group. Deep expertise in revenue-based financing, providing working capital from $5,000 to $500,000 to small and mid-sized businesses nationwide across retail, healthcare, and entertainment sectors.",
+        "li": "https://www.linkedin.com/in/mike-marano-9356839a",
+        "hooks": ["*Ex-Yellowstone Capital MD of Underwriting", "Founded Diamond Funding Group", "Decade-long MCA industry builder"]
+      }
+    ],
+    "news": [
+      {"h": "Mantis Funding Expands Revenue-Based Financing to New Industries", "s": "Mantis Funding, 2025", "d": "Mantis Funding broadened its revenue-based financing offerings to cover additional industries including automotive, healthcare, and entertainment, funding amounts from $5K to $500K.", "p": "2025-06-01"},
+      {"h": "Mantis Funding Grows Team with New Business Development Hire", "s": "LinkedIn, Feb 2025", "d": "Mantis Funding added Anthony Pata as Business Development Coordinator, signaling continued growth and expansion of its sales operations.", "p": "2025-02-01"}
+    ],
+    "ice": "With your background running underwriting at Yellowstone Capital, you understand the scale challenges firsthand. How is Mantis Funding approaching underwriting automation as you grow the portfolio?",
+    "icebreakers": [
+      "Your experience as MD of Underwriting at Yellowstone gives you unique insight into scaling MCA operations. How is Mantis applying those lessons?",
+      "Mantis Funding's focus on revenue-based financing across diverse industries requires flexible underwriting. How are you balancing speed with risk assessment?",
+      "A decade of building Mantis into a trusted name in commercial finance is impressive. What's driving your growth strategy for 2026?",
+      "As MCA industry consolidation continues, how is Mantis Funding positioning itself to compete with larger, well-capitalized funders?"
+    ],
+    "tp": [
+      "With your Yellowstone Capital background, you know the pain of scaling underwriting manually. HyperVerge's AI can cut decision time from 40 minutes to under 5 for Mantis Funding's deal flow.",
+      "HyperVerge serves 450+ MCA companies with automated underwriting. As Mantis grows its team and deal volume, our platform can help scale without proportionally adding underwriters.",
+      "Mantis's revenue-based financing across multiple industries means diverse risk profiles. HyperVerge's AI models adapt to different business types, maintaining accuracy across retail, healthcare, and entertainment."
+    ],
+    "ask": "Mike, given your deep underwriting background from Yellowstone and Mantis's growth trajectory, would a 15-minute call make sense to explore how HyperVerge could automate your underwriting workflow?"
+  },
+  {
+    "id": 70,
+    "name": "National Funding",
+    "website": "https://www.nationalfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/national-funding",
+    "leaders": [
+      {
+        "n": "David Gilbert",
+        "t": "Founder & CEO",
+        "bg": "USC Marshall School of Business (BS, Entrepreneurship, 1997). Founded National Funding in 1999 at age 23 after launching Five Point Capital, an equipment leasing firm. Fifth of six children in a family of three doctors and two lawyers — the only one who chose business, inspired by watching his father run a pathology lab with 60 employees. Won Ernst & Young Entrepreneur Of The Year 2017 (Finance, San Diego). Named USC Marshall 'Entrepreneur of the Year' 2007 and San Diego '40 Under Forty.' Recognized 5x on SD 500 Most Influential People list. Under his leadership, National Funding + QuickBridge have provided $6B+ to 80,000+ SMBs. Inc. 5000 for 8 consecutive years (2013-2020).",
+        "li": "https://www.linkedin.com/in/dave-gilbert-6289715",
+        "hooks": ["*USC Marshall, Entrepreneurship", "*EY Entrepreneur of Year 2017", "*$6B+ funded, 80K+ businesses", "Only non-doctor/lawyer in family of 6"]
+      },
+      {
+        "n": "Justin Thompson",
+        "t": "Chief Revenue Officer",
+        "bg": "Kennesaw State University. 20+ year career at National Funding, starting as Director of Sales in 2002. Promoted to EVP of Sales, then CRO in 2018. Managed a 100-person sales division spanning Direct Sales, Renewal Sales, Broker Sales, and Equipment Financing. Developed the Strategic Partnership vertical. CLFP certified. Based in San Diego.",
+        "li": "https://www.linkedin.com/in/justinthompson09",
+        "hooks": ["*20+ years at National Funding", "CLFP certified", "Runs 100-person sales org"]
+      },
+      {
+        "n": "Michael van Asselt",
+        "t": "Chief Financial Officer",
+        "bg": "CFO at National Funding based in San Diego, California. Oversees financial operations, capital management, and strategic financial planning for one of the largest private fintech lenders in the SMB space.",
+        "li": "https://www.linkedin.com/in/michaelvanasselt/",
+        "hooks": ["San Diego fintech CFO", "Private lender capital strategist"]
+      }
+    ],
+    "news": [
+      {"h": "National Funding CEO David Gilbert Named to SD 500 Most Influential People for Fifth Time", "s": "San Diego Business Journal, Nov 2024", "d": "Gilbert recognized in the finance section of the SD 500 list for the fifth time, reflecting his sustained influence in San Diego's business community and the SMB lending industry.", "p": "2024-11-15"},
+      {"h": "National Funding and QuickBridge Surpass $6 Billion in Total Funding", "s": "National Funding, 2025", "d": "National Funding and its subsidiary QuickBridge collectively surpassed $6 billion in total capital provided to more than 80,000 small and medium-sized businesses nationwide.", "p": "2025-01-15"},
+      {"h": "National Funding CEO Recognized as San Diego's 2022 Most Influential People", "s": "BusinessWire, Dec 2022", "d": "David Gilbert named to San Diego Business Journal's SD 500 Most Influential list for the fourth time, recognizing his leadership in SMB fintech lending.", "p": "2022-12-27"}
+    ],
+    "ice": "Congratulations on surpassing $6B in total funding across National Funding and QuickBridge. With that scale and 8 consecutive Inc. 5000 appearances, how are you thinking about AI-driven underwriting to handle the next phase of growth?",
+    "icebreakers": [
+      "Being named to San Diego's Most Influential People five times reflects incredible staying power. As you look ahead to 2026, what's National Funding's biggest operational priority?",
+      "Surpassing $6B funded across 80,000+ businesses is remarkable scale. How is National Funding leveraging technology to maintain underwriting quality at that volume?",
+      "With a 100-person sales org driving deal flow, how is National Funding ensuring the underwriting team can keep pace with the volume Justin's team generates?",
+      "The QuickBridge acquisition gave National Funding a dual-brand strategy. How are you thinking about unified technology and underwriting across both platforms?"
+    ],
+    "tp": [
+      "With $6B+ funded and 80,000+ businesses served, National Funding's scale demands fast underwriting. HyperVerge can cut decision time from 40 minutes to under 5, matching the pace of your 100-person sales team.",
+      "HyperVerge serves 450+ MCA and lending companies with AI underwriting. National Funding's dual-brand operation (National Funding + QuickBridge) could leverage our platform across both for consistent, automated risk assessment.",
+      "As National Funding targets its next growth milestone, HyperVerge's AI underwriting can scale without proportionally adding headcount, protecting margins while increasing throughput."
+    ],
+    "ask": "Dave, with National Funding surpassing $6B in funding and a 100-person sales team driving volume, would a 15-minute demo make sense to show how HyperVerge's AI underwriting could help your team process deals faster?"
+  },
+  {
+    "id": 71,
+    "name": "Fora Financial",
+    "website": "https://www.forafinancial.com",
+    "linkedinUrl": "https://www.linkedin.com/company/fora-financial",
+    "leaders": [
+      {
+        "n": "Jared Feldman",
+        "t": "CEO & Co-Founder",
+        "bg": "Indiana University Bloomington. Co-founded Paramount Merchant Funding (now Fora Financial) in 2008 with college roommate Dan Smith in a 150-sq-ft Manhattan office. Led company through private equity backing and six consecutive Inc. 5000 appearances. Under his leadership, Fora Financial has provided $4B+ to 55,000+ businesses. In 2025, posted 17.1% YoY growth in originations and 25.6% portfolio growth, with December 2025 being the highest monthly funding volume in company history. Board member overseeing strategic direction.",
+        "li": "https://www.linkedin.com/in/jared-feldman-90446830",
+        "hooks": ["*Indiana U roommate startup story", "*$4B+ funded, 55K+ businesses", "*Record 17% growth in 2025", "6x Inc. 5000 consecutive"]
+      },
+      {
+        "n": "Daniel Smith",
+        "t": "Co-Founder & Board Member",
+        "bg": "Indiana University (Business Management). Co-founded Paramount Merchant Funding with Jared Feldman in 2008, later rebranded to Fora Financial. Served as President from 2008 to 2020, now advises the executive team as a board member. Board member of the Small Business Finance Association since January 2017. Driving force behind Fora's operational growth from a 150-sq-ft office to a national lending platform.",
+        "li": "https://www.linkedin.com/in/daniel-smith-2133749/",
+        "hooks": ["*Indiana U co-founder duo", "SBFA board member since 2017", "Built from 150 sq ft to national"]
+      },
+      {
+        "n": "Jesse Goldman",
+        "t": "Chief Operating Officer",
+        "bg": "Company veteran appointed to COO role as part of Fora Financial's leadership evolution. Oversees daily operations, technology infrastructure, and operational scaling as the company posted record 2025 originations and enters 2026 with accelerating momentum.",
+        "li": "",
+        "hooks": ["Fora veteran promoted to COO", "Scaling record originations"]
+      }
+    ],
+    "news": [
+      {"h": "Fora Financial Posts 17% Growth in 2025, Marking Record Funding Year", "s": "PR Newswire, Feb 2026", "d": "Fora Financial posted 17.1% YoY increase in total originations while supporting nearly 6,000 businesses. Portfolio grew 25.6% YoY, with December 2025 being the highest monthly funding volume in company history.", "p": "2026-02-10"},
+      {"h": "Fora Financial Releases 2025 Business Insights Report", "s": "Fora Financial, 2025", "d": "Fora Financial published its annual survey showing growth remains a priority for small businesses but cash flow and economic concerns persist.", "p": "2025-06-01"},
+      {"h": "Fora Financial Announces Leadership Changes, Appoints COO and CMO", "s": "Fora Financial, 2025", "d": "Jesse Goldman appointed COO and Elissa Feldman named CMO, reflecting the company's investment in operational leadership as it scales.", "p": "2025-04-01"}
+    ],
+    "ice": "Congratulations on the record 2025 — 17% growth and the highest monthly funding volume ever in December. As you enter 2026 with that momentum, how is Fora thinking about automating underwriting to sustain the growth rate?",
+    "icebreakers": [
+      "Record 2025 originations with 17% growth and 25.6% portfolio expansion is an impressive trajectory. What's driving the accelerating momentum into 2026?",
+      "From a 150-sq-ft Manhattan office to $4B+ funded is a remarkable founder story. How is Fora Financial's technology stack evolving to match the scale?",
+      "Your Business Insights Report highlights cash flow concerns among SMBs. How is Fora using those insights to refine your underwriting and product strategy?",
+      "With new COO and CMO appointments, Fora is clearly investing in leadership for the next phase. How are you thinking about operational efficiency as volumes hit new records?"
+    ],
+    "tp": [
+      "With 17% growth and record December volumes, Fora Financial's underwriting team is handling unprecedented volume. HyperVerge can cut application processing from 40 minutes to under 5, keeping pace with growth.",
+      "HyperVerge serves 450+ MCA and lending companies. As Fora scales past $4B+ funded and 55,000+ businesses, our AI underwriting can help maintain quality while accelerating decisions.",
+      "Fora's 25.6% portfolio growth means more applications flowing in daily. HyperVerge's AI document verification and risk models can scale with your volume without proportionally adding underwriting headcount."
+    ],
+    "ask": "Jared, given Fora's record 2025 and accelerating momentum into 2026, would a brief call make sense to explore how HyperVerge's AI underwriting could help sustain that growth trajectory?"
+  },
+  {
+    "id": 72,
+    "name": "OnDeck Capital",
+    "website": "https://www.ondeck.com",
+    "linkedinUrl": "https://www.linkedin.com/company/ondeck",
+    "leaders": [
+      {
+        "n": "Ken Brause",
+        "t": "Chief Financial Officer",
+        "bg": "University of Pennsylvania (BS Economics, Finance & Management). University of Chicago Booth School of Business MBA (Finance & Accounting). Prior to OnDeck, served 11 years at CIT Group in multiple leadership roles including EVP and Treasurer of CIT Group and CIT Bank, CFO of North America Banking, and President of CIT's Small Business Lending group. Earlier career at Bank of New York, Horizon Blue Cross, American General, Bankers Trust, and Booz Allen Hamilton.",
+        "li": "",
+        "hooks": ["*UPenn + Chicago Booth MBA", "*11yr CIT Group: EVP & Treasurer", "Ex-Booz Allen Hamilton"]
+      },
+      {
+        "n": "Cory Kampfer",
+        "t": "COO & General Counsel",
+        "bg": "University of Georgia BBA (International Business, First in Class). Duke Fuqua MBA. Duke Law JD. Joined OnDeck in November 2011, initially leading the legal department. Previously associate at Paul, Weiss, Rifkind, Wharton & Garrison LLP (2007-2011). Now serves as COO and General Counsel, overseeing operations and legal for the Enova International subsidiary.",
+        "li": "",
+        "hooks": ["*UGA First in Class", "*Duke Law + Fuqua MBA", "Ex-Paul Weiss associate", "14yr OnDeck veteran"]
+      },
+      {
+        "n": "Nick Brown",
+        "t": "Chief Risk Officer",
+        "bg": "Oversees OnDeck's credit and risk management strategy and execution, including credit and operational risk controls, portfolio monitoring, and optimization of OnDeck's proprietary credit scoring models and credit policy. Key steward of OnDeck's data-driven underwriting approach within the Enova International portfolio.",
+        "li": "",
+        "hooks": ["Credit scoring model architect", "Data-driven risk strategist"]
+      }
+    ],
+    "news": [
+      {"h": "OnDeck/Enova Report: 94% of Small Businesses Project 2026 Growth", "s": "PR Newswire, Feb 2026", "d": "OnDeck's Q4 2025 Small Business Cash Flow Trend Report found 94% of small businesses expect growth in 2026, matching an all-time high. 56% have adopted AI tools, and 74% bypass traditional banks for capital.", "p": "2026-02-04"},
+      {"h": "Enova Announces Planned Key Senior Leadership Changes", "s": "Enova IR, Jul 2025", "d": "Steve Cunningham (CFO) to succeed David Fisher as CEO effective January 1, 2026. Fisher transitions to Executive Chairman.", "p": "2025-07-24"},
+      {"h": "OnDeck Report: 93% of Small Businesses Expect Growth, 52% Use AI", "s": "Enova/Stock Titan, Oct 2025", "d": "OnDeck's Q3 report found 93% of small businesses expect growth while 52% have incorporated AI tools. Inflation and cash flow remain top concerns.", "p": "2025-10-22"}
+    ],
+    "ice": "Your Q4 2025 report showing 56% AI adoption among small businesses and 74% bypassing traditional banks is powerful data. As non-bank lending grows, how is OnDeck leveraging AI to stay ahead on underwriting speed?",
+    "icebreakers": [
+      "Your Q4 trend report showing 94% of SMBs expecting growth in 2026 and 56% using AI tools signals a major opportunity. How is OnDeck capitalizing on both trends?",
+      "With 74% of small businesses bypassing traditional banks, OnDeck is perfectly positioned. How is Enova's backing accelerating your technology investment?",
+      "The CEO transition at Enova signals a new chapter. How is OnDeck's underwriting and risk team evolving under the new leadership structure?",
+      "OnDeck pioneered data-driven lending decisions. As AI matures, how are you thinking about the next evolution of your proprietary credit scoring models?"
+    ],
+    "tp": [
+      "OnDeck pioneered data-driven SMB lending. HyperVerge's AI underwriting can further accelerate your scoring models, cutting application review from 40 minutes to under 5 while maintaining the risk discipline you're known for.",
+      "HyperVerge serves 450+ MCA and lending companies. With OnDeck processing high volumes under Enova's umbrella, our AI document verification can scale seamlessly with your deal flow.",
+      "Your own data shows 56% of SMBs using AI tools. OnDeck can lead by example with AI-powered underwriting from HyperVerge, reducing manual review while increasing throughput."
+    ],
+    "ask": "Ken, given OnDeck's data-driven DNA and the shift toward AI in SMB lending, would a brief conversation make sense to explore how HyperVerge's AI underwriting could enhance your scoring and decisioning pipeline?"
+  },
+  {
+    "id": 73,
+    "name": "Kapitus",
+    "website": "https://kapitus.com",
+    "linkedinUrl": "https://www.linkedin.com/company/kapitus",
+    "leaders": [
+      {
+        "n": "Andrew Reiser",
+        "t": "Founder, CEO & Chairman",
+        "bg": "Boston University Questrom School of Business (BS). Began career as CPA at Coopers & Lybrand and Price Waterhouse. Previously CEO of Arcavista Corporation, Managing Director at Donald & Co. Securities, EVP of Fidelco Capital Group, and President of Windsor Group. Founded Strategic Funding Source (now Kapitus) in January 2006 with 10 employees to serve the underbanked small business community. Under his leadership, Kapitus has connected $7B+ in growth capital to 65,000+ small businesses. Inc. 5000 in 2024 (No. 2025, 258% revenue growth over 3 years). Closed $250M securitization and $95M corporate note in July 2025.",
+        "li": "https://www.linkedin.com/in/andrew-reiser-64800415/",
+        "hooks": ["*Boston U Questrom, started as CPA", "*$7B+ funded, 65K+ businesses", "*Inc. 5000 — 258% 3yr growth", "$250M securitization Jul 2025"]
+      },
+      {
+        "n": "Ben Johnston",
+        "t": "Chief Operating Officer",
+        "bg": "Colby College BA. University of Michigan Ross School of Business MBA. Joined Kapitus in 2014 as Chief Strategy Officer, became COO in January 2017. Previously Principal at Pine Brook Partners (PE firm focused on specialty finance, banking, insurance), Senior Associate at Lightyear Capital, and Analyst in the Office of the Chairman at PaineWebber. At Pine Brook, sourced and managed investments in small business lending. Responsible for all strategic and organizational objectives at Kapitus.",
+        "li": "https://www.linkedin.com/in/ben-johnston-a7313a/",
+        "hooks": ["*Michigan Ross MBA", "*Ex-Pine Brook Partners PE", "PaineWebber Chairman's Office", "Strategy to COO pipeline"]
+      },
+      {
+        "n": "Jeffrey Weisel",
+        "t": "Chief Risk Officer",
+        "bg": "25+ years of risk management experience at Citibank and GE Capital. Served as Chief Credit Officer at Citibank's US Retail Bank for Consumer and Small Business lending. Joined Kapitus in March 2018. Brings enterprise-scale risk management expertise to Kapitus's growing portfolio.",
+        "li": "",
+        "hooks": ["*Ex-Citibank Chief Credit Officer", "25yr risk vet: Citi + GE Capital", "Enterprise risk at SMB scale"]
+      }
+    ],
+    "news": [
+      {"h": "Kapitus Closes $250 Million Securitization and Upsizes Corporate Note to $95 Million", "s": "PR Newswire, Jul 2025", "d": "Kapitus closed a $250M ABS with a 3-year revolving period expandable to $500M, rated by KBRA with Truist Securities as sole bookrunner. Also upsized corporate note to $95M.", "p": "2025-07-22"},
+      {"h": "Kapitus Secures Position on 2024 Inc. 5000 as One of America's Fastest-Growing Private Companies", "s": "PRWeb, Aug 2024", "d": "Kapitus ranked No. 2025 on the Inc. 5000 list with 258% revenue growth over three years, reinforcing its position as a leading SMB financing provider.", "p": "2024-08-13"},
+      {"h": "Kapitus Raises $45 Million to Expand Small Business Financing Options", "s": "PYMNTS.com, 2024", "d": "Kapitus raised $45M in new funding to expand its small business financing capabilities and product offerings.", "p": "2024-09-15"}
+    ],
+    "ice": "Congratulations on the $250M securitization and Inc. 5000 ranking with 258% growth. As Kapitus scales toward $7B+ funded, how are you thinking about AI-driven underwriting to handle the increasing deal volume?",
+    "icebreakers": [
+      "The $250M securitization expandable to $500M with Truist and KBRA rating shows strong institutional confidence. How is Kapitus planning to deploy that capital efficiently?",
+      "258% revenue growth and Inc. 5000 recognition reflect incredible momentum. What's driving Kapitus's growth, and how is technology keeping pace?",
+      "With Jeffrey Weisel bringing Citibank and GE Capital risk expertise, Kapitus has enterprise-grade risk management. How are you balancing that rigor with the speed SMBs demand?",
+      "From 10 employees in 2006 to 415+ and $7B+ funded — that's a remarkable founder story. What's the next big operational milestone for Kapitus?"
+    ],
+    "tp": [
+      "With $7B+ funded and a $250M securitization fueling growth, Kapitus needs underwriting that scales. HyperVerge's AI can cut application processing from 40 minutes to under 5, matching your growth trajectory.",
+      "HyperVerge serves 450+ MCA and lending companies. With Kapitus's 258% revenue growth and Inc. 5000 momentum, our AI underwriting can help maintain quality while accelerating decisions across your growing portfolio.",
+      "Jeffrey Weisel's Citibank and GE Capital risk background means Kapitus values rigorous underwriting. HyperVerge's AI models deliver that rigor at speed, processing documents and assessing risk in minutes, not hours."
+    ],
+    "ask": "Andy, with $250M in fresh securitization capital and 258% growth momentum, would a 15-minute demo make sense to show how HyperVerge's AI underwriting could help Kapitus deploy capital faster without compromising risk standards?"
+  }
+]

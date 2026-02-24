@@ -1,0 +1,953 @@
+[
+  {
+    "id": 1088,
+    "name": "Ansley Park Capital",
+    "leaders": [
+      {
+        "n": "Eric Miller",
+        "t": "President & CEO",
+        "bg": "Former CEO of BCI Capital Corp and President of Asset Finance at CIT Bank. Extensive experience in large-ticket equipment financing and project finance.",
+        "li": "https://www.linkedin.com/in/e-miller/",
+        "hooks": ["*Ex-CIT Bank President", "Former BCI Capital CEO", "Large-ticket equipment finance veteran"]
+      },
+      {
+        "n": "Mark Trollinger",
+        "t": "CIO & Head of Capital Markets",
+        "bg": "Over 40 years in banking and equipment finance. Former CIO at BciCapital, co-head of Wachovia/Wells Fargo equipment finance platform. Held roles at Capital One and New Province Partners.",
+        "li": "https://www.linkedin.com/in/mark-trollinger-b129909/",
+        "hooks": ["*40+ years in equipment finance", "Ex-Wachovia/Wells Fargo co-head", "Former Capital One executive"]
+      },
+      {
+        "n": "Robert Seltzer",
+        "t": "EVP, Head of Direct Originations",
+        "bg": "Over 30 years in financial services. Former Managing Director of Capital Equipment Finance at CIT Group and Chief Commercial Officer at BciCapital.",
+        "li": "https://www.linkedin.com/in/robert-a-seltzer/",
+        "hooks": ["30+ years in financial services", "Ex-CIT Group Managing Director", "Former BciCapital CCO"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Ansley Park Capital Closes Inaugural $400M+ ABS Securitization",
+        "s": "BusinessWire, Nov 2025",
+        "d": "Landmark transaction valued at over $400M, the largest first-time issuance in the large-ticket equipment finance market."
+      },
+      {
+        "h": "Ansley Park Capital Surpasses $200M in Funding in First Quarter",
+        "s": "BusinessWire, Oct 2024",
+        "d": "Funded $200M across industries in its first full quarter, bringing total originations to over $250M since inception."
+      },
+      {
+        "h": "Ares Management Launches Ansley Park Capital",
+        "s": "BusinessWire, Mar 2024",
+        "d": "Ares Management launched Ansley Park Capital, a newly-formed lending and specialty finance company with 30+ professionals from the former BCI Capital team."
+      }
+    ]
+  },
+  {
+    "id": 1089,
+    "name": "LeasePoint Funding Group",
+    "leaders": [
+      {
+        "n": "Jeffrey Markim",
+        "t": "Founder & CEO",
+        "bg": "Founded LeasePoint in 2016, growing it from a small-ticket broker to a national equipment finance platform. Texas A&M BBA graduate. Former Partner at 4 Point Capital Advisors. Inc. 5000 honoree, NextGen 40 Under 40.",
+        "li": "https://www.linkedin.com/in/jeffmarkim/",
+        "hooks": ["*Inc. 5000 & 40 Under 40 honoree", "Built LeasePoint from scratch", "Texas A&M alum"]
+      },
+      {
+        "n": "Jessi Roesch",
+        "t": "Director of Operations",
+        "bg": "10+ years of operations and leadership experience across banking, heavy industry, and tech. Former global commercial credit operations leader at General Electric. Part of executive leadership team at Spruce.",
+        "li": "",
+        "hooks": ["*Ex-GE operations leader", "10+ years ops experience", "Scaled operations at Spruce"]
+      }
+    ],
+    "news": [
+      {
+        "h": "LeasePoint Secures $40M Incremental Funding from Altriarch",
+        "s": "PR Newswire, Oct 2024",
+        "d": "Secured $40M incremental funding from Altriarch Asset Management via Westlake Securities to support rapid expansion in equipment financing."
+      },
+      {
+        "h": "LeasePoint Hires Director of Sales Joshua Pike",
+        "s": "LeasePoint Press, 2024",
+        "d": "Added Joshua Pike as director of sales with 15+ years of experience leading teams at Xerox overseeing $250M+ in annual revenue."
+      }
+    ]
+  },
+  {
+    "id": 1090,
+    "name": "Broadway Advance llc",
+    "leaders": [
+      {
+        "n": "Philip Defonte",
+        "t": "Managing Director",
+        "bg": "Former founding partner at Shield Re-insurance Ltd. Bachelor of Business Administration from SUNY Albany. Launched Broadway Advance in 2014.",
+        "li": "https://www.linkedin.com/in/philip-defonte-46233027/",
+        "hooks": ["Founded Broadway Advance 2014", "Ex-Shield Re-insurance partner", "SUNY Albany BBA"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Broadway Advance Continues MCA Operations with 25+ Partners",
+        "s": "Company Website, 2024",
+        "d": "Operating with 25+ funding companies and syndicate partners across MCA, small business loans, factoring, and equipment leasing."
+      }
+    ]
+  },
+  {
+    "id": 1091,
+    "name": "nFusion Capital LLC",
+    "leaders": [
+      {
+        "n": "Jason Lippman",
+        "t": "Founder & CEO",
+        "bg": "Former EVP at Far West Capital, grew it from small regional practice to national leader. Co-founded Mirabella Estates (sold to Exclusive Resorts in 11 months). Former CFO of Mall.com, raised $7.5M. Started career at Arthur Andersen consulting Fortune 500 companies.",
+        "li": "https://www.linkedin.com/in/jason-lippman/",
+        "hooks": ["*Built & sold Mirabella Estates", "Ex-Arthur Andersen consultant", "Grew Far West Capital nationally"]
+      }
+    ],
+    "news": [
+      {
+        "h": "nFusion Capital Increases Synovus Credit Facility to $125M",
+        "s": "nFusion Capital, Apr 2025",
+        "d": "Expanded credit facility with Synovus Bank to $125M with $20M accordion, nearly doubling portfolio since mid-2024."
+      },
+      {
+        "h": "nFusion Capital Passes $100M Portfolio Milestone",
+        "s": "IFA Commercial Factor, Jan 2026",
+        "d": "For the fifth consecutive year, doubled its portfolio and surpassed the $100M portfolio mark. Now largest individually owned finance company in North America."
+      },
+      {
+        "h": "nFusion Capital Expands with $75M Synovus Credit Facility",
+        "s": "nFusion Capital, Jul 2024",
+        "d": "Closed a $75M line of credit agented by Synovus Bank to expand lending capacity and added key hires including ABL veteran Daniel Karas."
+      }
+    ]
+  },
+  {
+    "id": 1092,
+    "name": "Select Funding",
+    "leaders": [
+      {
+        "n": "Brian Spratt",
+        "t": "CEO",
+        "bg": "CEO of Select Funding since 2014. Based in Burbank, California. Select Funding was founded by leasing industry veterans focused on customer-centric equipment financing.",
+        "li": "https://www.linkedin.com/in/brian-j-spratt-8a6b7b11/",
+        "hooks": ["Equipment leasing industry veteran", "CEO since 2014", "Burbank-based fintech leader"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Select Funding Continues Equipment Financing Growth",
+        "s": "Company Website, 2024",
+        "d": "Continues to provide up to $1M in business and equipment financing within 24 hours, focusing on vendor programs and end-user transactions."
+      }
+    ]
+  },
+  {
+    "id": 1093,
+    "name": "Amerifi",
+    "leaders": [
+      {
+        "n": "Amit",
+        "t": "Principal",
+        "bg": "Principal at Amerifi Capital, a direct funder based in Aventura, FL, providing working capital solutions from $25K-$7M.",
+        "li": "",
+        "hooks": ["Aventura FL-based funder", "Direct MCA principal", "Up to $7M funding programs"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Amerifi Capital Hiring for MCA CEO Role",
+        "s": "Glassdoor, 2024",
+        "d": "Actively expanding leadership team with a search for MCA CEO position in Miami, signaling growth ambitions."
+      }
+    ]
+  },
+  {
+    "id": 1094,
+    "name": "BlueTape",
+    "leaders": [
+      {
+        "n": "Yaser Masoudnia",
+        "t": "Co-Founder & CEO",
+        "bg": "12+ years as licensed general contractor. Co-founded and exited cybersecurity company NoPassword. Passionate about construction fintech.",
+        "li": "https://www.linkedin.com/in/yasermasoudnia/",
+        "hooks": ["*Exited cybersecurity startup NoPassword", "Licensed general contractor 12+ yrs", "Construction fintech pioneer"]
+      },
+      {
+        "n": "Patrick Gannon",
+        "t": "Co-Founder & COO",
+        "bg": "MIT undergrad (Math/CS), Wharton MBA. Held senior roles at Wells Fargo, JP Morgan, Goldman Sachs, Visa. Helped found LendingClub and led its investor side. Head of lending at Uplift. Named Top 100 MIT Alumni.",
+        "li": "https://www.linkedin.com/in/patrickgannon/",
+        "hooks": ["*LendingClub founding team", "*MIT + Wharton MBA", "Ex-Goldman Sachs, Top 100 MIT Alumni"]
+      }
+    ],
+    "news": [
+      {
+        "h": "BlueTape Launches Lines of Credit Program for Contractors",
+        "s": "BlueTape Newsroom, 2024",
+        "d": "Launched a new Lines of Credit program to enhance financing options for contractors, remodelers, and builders in the construction industry."
+      },
+      {
+        "h": "BlueTape CSM Named Top Ten Women in Construction",
+        "s": "SunRay Construction Solutions, 2024",
+        "d": "Customer Success Manager Alyssa Grandison recognized as one of the Top Ten Women in Construction by SunRay Construction Solutions."
+      }
+    ]
+  },
+  {
+    "id": 1095,
+    "name": "GFE",
+    "leaders": [
+      {
+        "n": "Boris Musheyev",
+        "t": "CEO & Co-Founder",
+        "bg": "Founded GFE nearly a decade ago. Built GFE into a major MCA player with $100M+ senior debt facility. Featured in deBanked.",
+        "li": "https://www.linkedin.com/in/boris-musheyev-8a4800244/",
+        "hooks": ["*Built GFE from startup to $100M facility", "deBanked featured", "MCA industry pioneer"]
+      },
+      {
+        "n": "Boris Shakhmurov",
+        "t": "COO",
+        "bg": "Former Executive Director at JPMorgan Chase overseeing cybersecurity, technology controls, and compliance. 20 years in traditional banking. 30-year friendship with co-founder Musheyev.",
+        "li": "https://www.linkedin.com/in/borisshakhmurov",
+        "hooks": ["*Ex-JPMorgan Chase Executive Director", "20 years in banking", "Cybersecurity & compliance expert"]
+      }
+    ],
+    "news": [
+      {
+        "h": "GFE Closes $100M Senior Debt Facility",
+        "s": "deBanked, 2024",
+        "d": "Successfully closed a senior debt facility of up to $100 million to support continued growth in MCA and reverse consolidation products."
+      }
+    ]
+  },
+  {
+    "id": 1096,
+    "name": "Tongo Financial, Inc.",
+    "leaders": [
+      {
+        "n": "Brandon Wright",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Katapult (NASDAQ: KPLT), a payments company. Cornell Johnson MBA. Previously ran a retail coffee shop in Seattle and residential mortgage brokerage. Met co-founder Luis Scull at ERA accelerator.",
+        "li": "https://www.linkedin.com/in/brandontw/",
+        "hooks": ["*Co-founded Katapult (NASDAQ: KPLT)", "Cornell MBA", "Serial fintech entrepreneur"]
+      },
+      {
+        "n": "Luis Scull",
+        "t": "Co-Founder & CFO",
+        "bg": "Founded Payfully (cash advances for Airbnb hosts). First employee at Open Field Capital, helped grow AUM to $300M over a decade. Previously co-founded Payfully in 2016.",
+        "li": "https://www.linkedin.com/in/luisscull/",
+        "hooks": ["*Founded Payfully (Airbnb fintech)", "Grew Open Field Capital to $300M AUM", "Commission economy specialist"]
+      },
+      {
+        "n": "Anna Kinney",
+        "t": "Chief Product Officer",
+        "bg": "20-year product leader at Microsoft, most recently Principal Program Manager for Microsoft 365 for SMB & M365 Lighthouse. Emory University BA in English.",
+        "li": "https://www.linkedin.com/in/annakinney/",
+        "hooks": ["*20 years at Microsoft", "M365 product leader", "Emory University alum"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Tongo Grows Real Estate Agent Customer Base by 179% in 2024",
+        "s": "BusinessWire, Jan 2025",
+        "d": "Achieved 179% YoY growth, solidified relationships with top US brokerages representing 40%+ of agent population, and 100% retention on Financial Benefits Platform."
+      },
+      {
+        "h": "Tongo Launches Financial Benefits Platform for Real Estate Brokerages",
+        "s": "BusinessWire, Sep 2024",
+        "d": "Launched a new platform empowering real estate brokerages to provide agents with essential financial wellness tools."
+      },
+      {
+        "h": "Tongo Raises $7M Seed Funding",
+        "s": "Startup Weekly, 2024",
+        "d": "Raised $7M seed round to accelerate growth in real estate agent financial services market."
+      }
+    ]
+  },
+  {
+    "id": 1097,
+    "name": "TVT Capital",
+    "leaders": [
+      {
+        "n": "Andrew Fellus",
+        "t": "CEO",
+        "bg": "CEO of TVT Capital since its founding in 2008. Pioneer in bridge loans for small and mid-sized businesses, providing funding from $100K to $25M.",
+        "li": "https://www.linkedin.com/in/andrew-fellus-3a5a0587/",
+        "hooks": ["Founded TVT Capital 2008", "MCA industry pioneer", "Bridge loan specialist $100K-$25M"]
+      },
+      {
+        "n": "John F. Porcello",
+        "t": "Principal",
+        "bg": "Principal at TVT Capital. Also listed as CEO on some profiles. Long-standing figure in the MCA and alternative lending space.",
+        "li": "",
+        "hooks": ["TVT Capital principal", "Alternative lending veteran", "NYC-based financier"]
+      }
+    ],
+    "news": [
+      {
+        "h": "TVT Capital Involved in MCA-Related Bankruptcy Proceedings",
+        "s": "US Bankruptcy Court, Oct 2025",
+        "d": "TVT Capital listed as creditor in bankruptcy proceedings involving MCA funding disputes in Delaware court."
+      }
+    ]
+  },
+  {
+    "id": 1098,
+    "name": "Good Funding",
+    "leaders": [
+      {
+        "n": "Ben Gold",
+        "t": "CEO",
+        "bg": "Co-founded Good Funding in 2020. CEO leading the company's alternative funding operations for small businesses in Orange County, CA.",
+        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
+        "hooks": ["Co-founded Good Funding 2020", "Alternative funding CEO", "Orange County-based leader"]
+      },
+      {
+        "n": "Jason Osiecki",
+        "t": "Co-Founder & President",
+        "bg": "Co-founded Good Funding. Previously held roles at National Funding, Quick Bridge Funding, and Five Point Capital. Experienced in alternative business financing.",
+        "li": "https://www.linkedin.com/in/jason-osiecki-4867474",
+        "hooks": ["Ex-National Funding & Quick Bridge", "Co-founded Good Funding", "Alt lending industry veteran"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Good Funding Closes $20M Credit Facility with $30M Accordion",
+        "s": "PR Newswire, 2021",
+        "d": "Closed inaugural institutional financing—a $20M senior revolving credit facility with option to increase to $30M via Brean Capital."
+      }
+    ]
+  },
+  {
+    "id": 1099,
+    "name": "Targeted Lending Co., LLC",
+    "leaders": [
+      {
+        "n": "Brian Gallo",
+        "t": "CEO",
+        "bg": "CEO of Targeted Lending, leading the company through rapid growth including 65%+ YoY portfolio growth and expanded Wells Fargo credit facilities.",
+        "li": "https://www.linkedin.com/in/bgallo/",
+        "hooks": ["*65%+ YoY portfolio growth", "Wells Fargo credit facility partner", "Small-ticket equipment loan specialist"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Targeted Lending Expands Wells Fargo Credit Facility to $75M",
+        "s": "Yahoo Finance, Apr 2025",
+        "d": "Expanded senior credit facility with Wells Fargo Capital Finance to $75M, capitalizing on industry gap in small-ticket equipment loans."
+      },
+      {
+        "h": "Targeted Lending Achieves Record-Breaking Month",
+        "s": "Newswire, Jul 2024",
+        "d": "Reached highest number of funded loans in company history, with 65% year-over-year portfolio growth."
+      },
+      {
+        "h": "Targeted Lending Secures $50M Wells Fargo Credit Facility",
+        "s": "Newswire, Jan 2024",
+        "d": "Closed $50M credit facility with Wells Fargo Capital Finance to support small business lending commitment."
+      }
+    ]
+  },
+  {
+    "id": 1100,
+    "name": "Advantage Merchant Funding",
+    "leaders": [
+      {
+        "n": "Anthony Lodati",
+        "t": "CEO",
+        "bg": "CEO of Advantage Merchant Funding since 2017 through March 2025. Manhattan-based fintech providing custom funding solutions.",
+        "li": "https://www.linkedin.com/in/anthony-lodati-429628170/",
+        "hooks": ["Manhattan fintech CEO", "Custom funding solutions", "8+ years leading AMF"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Advantage Merchant Funding Continues Growth in Manhattan Fintech Space",
+        "s": "Company Profile, 2024",
+        "d": "Operating as one of Manhattan's fastest-growing fintech companies providing comprehensive custom funding solutions."
+      }
+    ]
+  },
+  {
+    "id": 1101,
+    "name": "Aztec Financial",
+    "leaders": [
+      {
+        "n": "John Sirrine",
+        "t": "President & CFO",
+        "bg": "Co-founded Aztec Financial in 1997 with the Hanks brothers. Led the company as President/CFO through its growth as a leading equipment finance provider for specialty contractors. Company acquired by Taycor Financial/North Mill in 2021.",
+        "li": "",
+        "hooks": ["*Co-founded Aztec Financial 1997", "Specialty contractor finance pioneer", "Navigated Taycor acquisition 2021"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Aztec Financial Acquired by North Mill and Taycor Financial",
+        "s": "Restoration & Remediation Magazine, 2021",
+        "d": "North Mill Equipment Finance and Taycor Financial acquired Aztec Financial from Aramsco, splitting portfolio servicing and origination capabilities."
+      }
+    ]
+  },
+  {
+    "id": 1102,
+    "name": "Blueline Capital Group",
+    "leaders": [
+      {
+        "n": "Steve Humpfle",
+        "t": "CEO",
+        "bg": "30 years in manufacturing of machined parts before transitioning to financial services. Former Loan Officer at GMAC ResCap. Based in Hollister, California.",
+        "li": "https://www.linkedin.com/in/steve-humpfle-b7b7266/",
+        "hooks": ["30 years manufacturing background", "Career pivot to financial services", "California mortgage specialist"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Blueline Capital Group Continues Mortgage Operations",
+        "s": "Company Profile, 2024",
+        "d": "Providing mortgage origination services across California, Oregon, Montana, Idaho, and Colorado, specializing in standard and reverse mortgages."
+      }
+    ]
+  },
+  {
+    "id": 1103,
+    "name": "Centra Funding, LLC",
+    "leaders": [
+      {
+        "n": "John Boettigheimer",
+        "t": "President & Founder",
+        "bg": "Founded Centra Funding in 2006. 29+ years in the leasing industry. Also President of 4 Hour Funding. Member of AACFB Industry Advisory Council 2024-2025. Centra is subsidiary of CV Holdings.",
+        "li": "https://www.linkedin.com/in/john-boettigheimer-a87b158/",
+        "hooks": ["*29+ years in leasing industry", "AACFB Advisory Council member", "Founded Centra Funding 2006"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Centra Acquires LeaseQ, Launches Centra Culinary Finance",
+        "s": "GlobeNewswire, May 2024",
+        "d": "Acquired LeaseQ restaurant and franchise team from TimePayment Corp, launching Centra Culinary Finance brand for restaurant equipment financing."
+      },
+      {
+        "h": "John Boettigheimer Joins AACFB Industry Advisory Council",
+        "s": "MonitorDaily, 2024",
+        "d": "Named to the newly-formed AACFB Industry Advisory Council for 2024-2025, representing industry leadership."
+      }
+    ]
+  },
+  {
+    "id": 1104,
+    "name": "Funderial LLC",
+    "leaders": [
+      {
+        "n": "Oleg Rud",
+        "t": "Managing Member",
+        "bg": "Managing Member of Funderial based in Midtown Manhattan. Pace University graduate. Oversees strategic direction and daily operations.",
+        "li": "https://www.linkedin.com/in/oleg-rud-3a4a553/",
+        "hooks": ["Pace University alum", "Midtown Manhattan-based", "Business financing strategist"]
+      },
+      {
+        "n": "Michael Pennartz",
+        "t": "Executive Vice President",
+        "bg": "Executive Vice President at Funderial, based in New York. Previously with Imperial Advance.",
+        "li": "https://www.linkedin.com/in/michaelpennartz/",
+        "hooks": ["Ex-Imperial Advance", "EVP at Funderial", "NYC-based finance executive"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Funderial Launches Merchant Services Division",
+        "s": "Financial Services Review, 2024",
+        "d": "Unveiled new Merchant Services division with innovative Split Funding option, expanding offerings for SMBs across the US, Canada, and Puerto Rico."
+      }
+    ]
+  },
+  {
+    "id": 1105,
+    "name": "GoKapital",
+    "leaders": [
+      {
+        "n": "Chris Moreno",
+        "t": "CEO & Founder",
+        "bg": "Co-founded GoKapital with brother Oliver Moreno. Based in Miami. Previous experience at BlackRock, Finacity Corporation, and US Department of Labor. Named National Financial Services CEO of the Year 2023.",
+        "li": "https://www.linkedin.com/in/chrmoreno/",
+        "hooks": ["*CEO of the Year 2023", "Ex-BlackRock", "Miami-based lending platform founder"]
+      }
+    ],
+    "news": [
+      {
+        "h": "GoKapital Named Top 7 Best Business Loan Brokers for 2024",
+        "s": "Fit Small Business, 2024",
+        "d": "Recognized as one of the 7 Best Business Loan Brokers for 2024 by Fit Small Business, validating its industry position."
+      }
+    ]
+  },
+  {
+    "id": 1106,
+    "name": "InterNex Capital",
+    "leaders": [
+      {
+        "n": "Paul DeDomenico",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded InterNex Capital in 2015. Former VP and Head of Global Corporate Receivables Programs at ICE. Former CEO of Working Capital Solutions at GE Capital. Led InterNex past $2B in SMB funding.",
+        "li": "https://www.linkedin.com/in/pdedomenico",
+        "hooks": ["*Ex-GE Capital CEO (Working Capital)", "Surpassed $2B in SMB funding", "Former ICE VP"]
+      }
+    ],
+    "news": [
+      {
+        "h": "InterNex Capital Surpasses $2B in SMB Funding",
+        "s": "Genpact Case Study, 2024",
+        "d": "Surpassed $2 billion in funding for SMB clients, doubling from $1B milestone achieved through its digital lending platform."
+      },
+      {
+        "h": "InterNex Capital Secures $100M Funding Facility from 400 Capital",
+        "s": "400 Capital Management, 2023",
+        "d": "Partnered with 400 Capital Management on a $100M funding facility to provide working capital to small and mid-sized businesses."
+      }
+    ]
+  },
+  {
+    "id": 1107,
+    "name": "Lendinero",
+    "leaders": [
+      {
+        "n": "Gil Zapata",
+        "t": "Founder & CEO",
+        "bg": "Founded Lendinero in 2014 to address the capital access gap for Latino-owned businesses. Grew revenues 400%+ and net revenues 900%+. Featured in Forbes, Entrepreneur, deBanked. Over $10M delivered to small businesses, 80%+ Latino-owned.",
+        "li": "https://www.linkedin.com/in/gilzapata/",
+        "hooks": ["*Forbes-featured Latino fintech founder", "900%+ net revenue growth", "80%+ Latino-owned business clients"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Lendinero Reshaping Fintech Landscape for Latino-Owned Businesses",
+        "s": "PR Underground, 2024",
+        "d": "Continuing mission as the leading fully bilingual online finance company, with proprietary platform serving 80%+ Latino-owned businesses."
+      },
+      {
+        "h": "Lendinero Foundation Offers Grants to Latino-Owned Businesses",
+        "s": "Lendinero Foundation, 2024",
+        "d": "Launched Hispanic Business Foundation offering grants to support Latino entrepreneurs alongside core lending operations."
+      }
+    ]
+  },
+  {
+    "id": 1108,
+    "name": "Mr Advance",
+    "leaders": [
+      {
+        "n": "Michael Kay",
+        "t": "CEO",
+        "bg": "CEO of Mr Advance based in NYC. Former roles at Citi Capital LLC and Yellowstone Capital (A Fundry Brand). Company is a direct lender using fintech for alternative business lending.",
+        "li": "https://www.linkedin.com/in/michael-kay-bb0177130",
+        "hooks": ["Ex-Yellowstone Capital", "Ex-Citi Capital", "NYC direct lender CEO"]
+      }
+    ],
+    "news": [
+      {
+        "h": "NY AG Settles with MCA Creditors Including Mr Advance",
+        "s": "NY Attorney General, 2025",
+        "d": "Included in settlement with NY Attorney General involving 25 MCA creditors to vacate 1,100+ judgments and discharge over $500M in debt nationwide."
+      }
+    ]
+  },
+  {
+    "id": 1109,
+    "name": "Par Funding",
+    "leaders": [
+      {
+        "n": "Joseph LaForte",
+        "t": "Former Co-Founder",
+        "bg": "Former co-founder of Par Funding (Complete Business Solutions Group). Pled guilty to RICO conspiracy, securities fraud, and related crimes in connection with $500M fraudulent investment scheme. Sentenced to 13.5-15.5 years imprisonment.",
+        "li": "",
+        "hooks": ["*$500M fraud case—guilty plea", "RICO conspiracy conviction", "13.5-15.5 year sentence"]
+      },
+      {
+        "n": "Lisa McElhone",
+        "t": "Former Co-Founder",
+        "bg": "Former co-founder of Par Funding and wife of Joseph LaForte. Claimed net worth of nearly $800M at one point. Involved in SEC fraud case involving nearly $500M in misleading investors.",
+        "li": "",
+        "hooks": ["*Par Funding SEC fraud case", "Former $800M claimed net worth", "RICO indictment"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Par Funding Principals Plead Guilty to RICO Conspiracy",
+        "s": "DOJ, 2025",
+        "d": "Joseph LaForte and James LaForte pled guilty to racketeering conspiracy, securities fraud, and related crimes in $500M investment scheme."
+      },
+      {
+        "h": "Par Funding Charged in RICO Superseding Indictment",
+        "s": "DOJ Eastern District PA, 2024",
+        "d": "Second superseding indictment charged Par Funding principals with RICO, securities fraud, extortion, tax crimes, perjury, and obstruction."
+      },
+      {
+        "h": "Par Funding Defendants Settle with SEC",
+        "s": "Philadelphia Inquirer, 2024",
+        "d": "Defendants agreed to settle with SEC over $500M investment fraud involving misleading investors about loan defaults and business practices."
+      }
+    ]
+  },
+  {
+    "id": 1110,
+    "name": "TMC Community Capital",
+    "leaders": [
+      {
+        "n": "Barbara Morrison",
+        "t": "Founder",
+        "bg": "Founded TMC Community Capital in 2018 and TMC Financing in 1981. TMC Financing is now the largest CDC in the nation for SBA 504 loans. Bay Area business and civic leader. Disbursed $7M+ to ~350 businesses, 82% to entrepreneurs of color.",
+        "li": "https://www.linkedin.com/in/barbaramorrisontmc/",
+        "hooks": ["*Built nation's largest SBA 504 CDC", "40+ years in small business lending", "82% loans to entrepreneurs of color"]
+      },
+      {
+        "n": "Daniel Fernandez",
+        "t": "CEO",
+        "bg": "First full-time CEO of TMC CC. Born in East San Jose. Former VP of community development at USC Credit Union focusing on South Central LA. Former small business banker at Chase creating nonprofit partnerships. Previously at Mobility Capital Finance fintech.",
+        "li": "",
+        "hooks": ["*Community development banking veteran", "Ex-Chase small business banker", "USC Credit Union VP"]
+      }
+    ],
+    "news": [
+      {
+        "h": "First Foundation Bank Awards $100K Grant to TMC Community Capital",
+        "s": "First Foundation Inc., 2025",
+        "d": "Received $100K grant via FHLB San Francisco to expand Racially Just Community-Based Underwriting program for underserved businesses in rural California."
+      },
+      {
+        "h": "TMC CC and Change Reaction Pay Off $160K+ in Small Business Loans",
+        "s": "Change Reaction, Nov 2024",
+        "d": "Partnered with The Change Reaction to pay off loans for 26 Southern California entrepreneurs, totaling over $160K in debt relief."
+      },
+      {
+        "h": "TMC Community Capital Opens San Jose Office",
+        "s": "San Jose Blog, Jul 2024",
+        "d": "Expanded operations with new Downtown San Jose office, advancing mission of financial justice for marginalized communities in California."
+      }
+    ]
+  },
+  {
+    "id": 1111,
+    "name": "Wall Street Funding",
+    "leaders": [
+      {
+        "n": "Jay Keller",
+        "t": "Founder & CEO",
+        "bg": "Founded Wall Street Funding in 2010 as one of the nation's fastest-growing small business lenders. Also founded Onyx IQ (fintech platform). In alternative funding/MCA/B2B space since 2006. Also co-founder of Big Think Capital.",
+        "li": "https://www.linkedin.com/in/jay-keller-ceo/",
+        "hooks": ["*Also founded Onyx IQ fintech", "In MCA space since 2006", "Serial fintech entrepreneur"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Onyx IQ Continues Fintech Innovation for MCA Industry",
+        "s": "CSTMR, 2024",
+        "d": "Jay Keller's Onyx IQ platform recognized as a fintech company to watch, providing technology solutions for the alternative funding industry."
+      }
+    ]
+  },
+  {
+    "id": 1112,
+    "name": "Zip Capital Group",
+    "leaders": [],
+    "news": [
+      {
+        "h": "MCA Industry Faces New State Regulations in 2025",
+        "s": "Onyx IQ, 2025",
+        "d": "North Dakota and Texas passed new laws regulating merchant cash advances, impacting MCA providers including Zip Capital Group's market segment."
+      }
+    ]
+  },
+  {
+    "id": 1113,
+    "name": "LiftForward, Inc.",
+    "leaders": [
+      {
+        "n": "Jeffrey Rogers",
+        "t": "President & CEO",
+        "bg": "Founded LiftForward in 2013. Built embedded lending fintech platform operating in 15+ countries. Partnership with Microsoft and MasterCard. Private equity backed software company powering subscription services and Hardware as a Service.",
+        "li": "https://www.linkedin.com/in/jeffreyrogersliftforward/",
+        "hooks": ["*Microsoft & MasterCard partner", "Embedded lending in 15+ countries", "PE-backed fintech founder"]
+      }
+    ],
+    "news": [
+      {
+        "h": "LiftForward CEO Discusses Embedded Lending on Fintech Podcast",
+        "s": "Fintech One-on-One, Mar 2025",
+        "d": "Jeffrey Rogers appeared on the Fintech One-on-One podcast discussing LiftForward's embedded lending solutions and international expansion."
+      }
+    ]
+  },
+  {
+    "id": 1114,
+    "name": "Regium Funding",
+    "leaders": [
+      {
+        "n": "Mike Manovo",
+        "t": "CEO",
+        "bg": "CEO and co-founder of Regium Funding, founded in 2020. Baruch College BBA in Marketing. Led company to $500M revenue in 2024 with 150% YoY growth. Based in Fort Lauderdale.",
+        "li": "https://www.linkedin.com/in/mike-manovo-a0a37a90/",
+        "hooks": ["*$500M revenue in 2024 (150% growth)", "Baruch College alum", "Built $1B cumulative sales by 2025"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Regium Funding Surpasses $1B in Cumulative Sales",
+        "s": "Company Reports, Early 2025",
+        "d": "Reached $1 billion in cumulative sales milestone, with $500M revenue in 2024 reflecting 150% year-over-year growth."
+      }
+    ]
+  },
+  {
+    "id": 1116,
+    "name": "Prime Financial Technologies",
+    "leaders": [
+      {
+        "n": "Hicham Oudghiri",
+        "t": "Co-Founder & Board Member",
+        "bg": "Co-founded Enigma Technologies in 2012 and served as CEO. Columbia University graduate. Co-founded Prime Financial Technologies in 2022 as a spin-off from Enigma. Raised $49M initial funding with Capital One Ventures as investor.",
+        "li": "https://www.linkedin.com/in/hichamoudghiri/",
+        "hooks": ["*Founded Enigma Technologies (CEO)", "*Raised $49M from Capital One Ventures", "Columbia University alum"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Prime Financial Technologies Raises $49M to Build SMB Lending Platform",
+        "s": "Crunchbase, 2024",
+        "d": "Secured $49M in initial funding from Capital One Ventures to build technology unlocking SMB lending for community banks and fintechs."
+      }
+    ]
+  },
+  {
+    "id": 1459,
+    "name": "Big Think Capital Inc.",
+    "leaders": [
+      {
+        "n": "David Brown",
+        "t": "President & Founder",
+        "bg": "Started career as attorney, transitioned to mortgage banking then financial sales before founding Big Think Capital. Company ranked #19 on Fortune's Best Small Workplaces 2025 and #30 on Fortune's Best Small/Medium Workplaces in Financial Services 2025.",
+        "li": "https://www.linkedin.com/in/david-a-brown-54941a20/",
+        "hooks": ["*Fortune Best Workplaces #19 (2025)", "Attorney turned fintech founder", "Active industry thought leader"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Big Think Capital Ranked #19 on Fortune Best Small Workplaces 2025",
+        "s": "Fortune, 2025",
+        "d": "Ranked #19 on Fortune's Best Small Workplaces list and #30 in Financial Services & Insurance category."
+      },
+      {
+        "h": "Big Think Capital Appoints Ami Dviri as CMO",
+        "s": "Company Announcement, 2025",
+        "d": "Appointed Ami Dviri as Chief Marketing Officer to lead all marketing functions, reporting to President David Brown."
+      }
+    ]
+  },
+  {
+    "id": 1462,
+    "name": "CLARIFY CAPITAL II LLC d/b/a Clarify Capital",
+    "leaders": [
+      {
+        "n": "Michael Baynes",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Clarify Capital in 2017 with Bryan Gerson. Leads a boutique lending firm working with 75+ lenders to secure competitive funding for SMBs nationwide.",
+        "li": "https://www.linkedin.com/in/michael-baynes-94000a26/",
+        "hooks": ["Co-founded Clarify Capital 2017", "75+ lender network", "SMB lending marketplace leader"]
+      },
+      {
+        "n": "Bryan Gerson",
+        "t": "Co-Founder & President",
+        "bg": "Co-founded Clarify Capital in 2017. Leads research initiatives including the 2025 SMB Recession Readiness Report surveying 300 entrepreneurs.",
+        "li": "https://www.linkedin.com/in/bryan-gerson-5b4b2020/",
+        "hooks": ["Co-founded Clarify Capital 2017", "SMB research publisher", "Recession readiness thought leader"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Clarify Capital Publishes 2025 SMB Recession Readiness Report",
+        "s": "Clarify Capital, 2025",
+        "d": "Published survey of 300 US entrepreneurs examining small business preparedness for potential recession and capital access concerns."
+      }
+    ]
+  },
+  {
+    "id": 1470,
+    "name": "Direct Funding Now LLC",
+    "leaders": [
+      {
+        "n": "Kenneth Manesse",
+        "t": "Founder & CEO",
+        "bg": "Founded Direct Funding Now in 2015. Five-time Inc. 5000 honoree. Also founded Kudo Funding in 2023. Company hit $28.4M in revenue by June 2024.",
+        "li": "https://www.linkedin.com/in/kenneth-m-313a99a9/",
+        "hooks": ["*5x Inc. 5000 honoree", "Founded Kudo Funding (2023)", "$28M+ revenue by 2024"]
+      },
+      {
+        "n": "Robert Lawson",
+        "t": "Chief Revenue Officer",
+        "bg": "CRO at Direct Funding Now. Based in Orange, CA. Previously VP Finance at Complete Funding Financial Services and Chief Sales Officer at US Business Funding.",
+        "li": "https://www.linkedin.com/in/iamrobertjlawsonjr",
+        "hooks": ["Ex-US Business Funding CSO", "Revenue growth specialist", "SoCal-based sales leader"]
+      },
+      {
+        "n": "Carlos Miranda",
+        "t": "COO",
+        "bg": "Chief Operating Officer at Direct Funding Now based in Irvine, CA. Oversees daily operations and financial services delivery.",
+        "li": "https://www.linkedin.com/in/carlos-miranda-3348ba201/",
+        "hooks": ["Irvine CA-based COO", "Financial services operations", "Direct Funding Now leadership"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Direct Funding Now Named 2025 Inc. 5000 Honoree (#4206)",
+        "s": "Inc. Magazine, 2025",
+        "d": "Earned fifth consecutive Inc. 5000 recognition, ranked #4206, with $28.4M revenue and continued rapid growth."
+      }
+    ]
+  },
+  {
+    "id": 1472,
+    "name": "Duke & Co, LLC d/b/a Dynamic Capital",
+    "leaders": [
+      {
+        "n": "Steven Edisis",
+        "t": "Founder & CEO",
+        "bg": "Co-founded Dynamic Capital in 2016 in Miami. Provides financing to small businesses traditionally lacking credit access. Active thought leader on MCA industry via LinkedIn and launching 'The Steven Edisis Show'.",
+        "li": "https://www.linkedin.com/in/steven-edisis/",
+        "hooks": ["Founded Dynamic Capital 2016", "MCA thought leader", "Miami-based alternative lender"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Steven Edisis Announces 'The Steven Edisis Show'",
+        "s": "LinkedIn, 2024",
+        "d": "Launching new show focused on 'Uncomfortable Truths and Unapologetic Facts' about the alternative lending industry."
+      }
+    ]
+  },
+  {
+    "id": 1489,
+    "name": "NATIONAL BIZ LLC d/b/a National Business Capital",
+    "leaders": [
+      {
+        "n": "Joe Camberato",
+        "t": "Founder & CEO",
+        "bg": "Founded National Business Capital in 2007, grew it from spare bedroom to one of top workplaces on Long Island without private equity. Secured $2B+ in total funding for businesses. Named CEO in 2020. Hosts 'The Fund Tank' show.",
+        "li": "https://www.linkedin.com/in/growbyjoe/",
+        "hooks": ["*$2B+ funded without PE backing", "Built from spare bedroom", "Hosts 'The Fund Tank' show"]
+      },
+      {
+        "n": "Phil Fernandes",
+        "t": "COO",
+        "bg": "Promoted to COO after 7+ years as VP of Financing. MIT Applied Business Analytics program. 17+ years of operational leadership in business financing. Oversees funding operations, tech infrastructure, and data intelligence.",
+        "li": "https://www.linkedin.com/in/phil-fernandes-6659a267/",
+        "hooks": ["*MIT Analytics program", "17+ years in business financing", "Promoted from VP to COO"]
+      },
+      {
+        "n": "Glenn Reed",
+        "t": "CFO",
+        "bg": "CFO at National Business Capital. CPA, CGMA with expertise in data-driven strategies and operational excellence for privately held companies.",
+        "li": "https://www.linkedin.com/in/glenn-reed/",
+        "hooks": ["CPA & CGMA certified", "Data-driven CFO", "Privately held company specialist"]
+      }
+    ],
+    "news": [
+      {
+        "h": "National Business Capital Surpasses $2B in Total Funding",
+        "s": "Company Website, 2024",
+        "d": "Exceeded $2 billion in total funding secured for businesses through its 75+ lender marketplace platform."
+      },
+      {
+        "h": "Joe Camberato Hosts 'The Fund Tank' Show",
+        "s": "National Business Capital, 2025",
+        "d": "CEO Joe Camberato actively hosting The Fund Tank, a show featuring fintech industry discussions and business funding insights."
+      }
+    ]
+  },
+  {
+    "id": 1491,
+    "name": "PEARL ALPHA FUNDING, LLC",
+    "leaders": [],
+    "news": []
+  },
+  {
+    "id": 1493,
+    "name": "Premium Merchant Funding 18, LLC",
+    "leaders": [
+      {
+        "n": "Nasher Alex Fabregas",
+        "t": "Founder & CEO",
+        "bg": "Founded Premium Merchant Funding in 2014 in NYC. Currently listed as Funder. Company provides small business loans, credit card processing, cash advances, payroll, and web services. Revenue of $58.6M in 2025.",
+        "li": "https://www.linkedin.com/in/nasher-a-fabregas",
+        "hooks": ["Founded PMF in 2014", "$58M+ annual revenue", "NYC-based direct funder"]
+      },
+      {
+        "n": "Abe Burger",
+        "t": "COO",
+        "bg": "COO at Premium Merchant Funding. Fordham University JD in Law. 14+ years of customer service experience. Works closely with CEO Sam Lallouz on company culture.",
+        "li": "https://www.linkedin.com/in/abe-burger/",
+        "hooks": ["Fordham Law JD", "14+ years customer service", "Culture-focused COO"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Premium Merchant Funding Invests in $90.5M Midtown Office Building",
+        "s": "Property Records, Nov 2024",
+        "d": "Participated in property transaction for 292 Madison Avenue office building as both investor and tenant, leasing entire 10th floor."
+      }
+    ]
+  },
+  {
+    "id": 1495,
+    "name": "RIVERPOINT FINANCIAL GROUP INC. d/b/a Redwood Capital Solutions d/b/a Express Capital Group",
+    "leaders": [
+      {
+        "n": "Yisrael Anatian",
+        "t": "President",
+        "bg": "President of Riverpoint Capital since founding. Family-run business with Sruli Anatian (CEO) and Esther Anatian (COO). Based in Hollywood, FL. Provides short-term business loans and bridge financing.",
+        "li": "",
+        "hooks": ["Family-run MCA business", "Hollywood FL-based", "Bridge loan specialist"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Riverpoint Capital Continues Bridge Loan Operations",
+        "s": "Company Profile, 2024",
+        "d": "Operating under multiple d/b/a brands including Redwood Capital Solutions and Express Capital Group, providing short-term financing to businesses."
+      }
+    ]
+  },
+  {
+    "id": 1501,
+    "name": "Shore Funding Solutions Inc.",
+    "leaders": [
+      {
+        "n": "Philip Teseo",
+        "t": "Co-CEO",
+        "bg": "Co-Chief Executive Officer at Shore Funding Solutions since founding in 2014. Based in Melville, NY. Company has facilitated over $1 billion in funding. Inc. 5000 honoree 2025 (#4162).",
+        "li": "",
+        "hooks": ["*$1B+ in funding facilitated", "Inc. 5000 honoree 2025", "Co-CEO since founding 2014"]
+      },
+      {
+        "n": "Lauretta Teseo",
+        "t": "President",
+        "bg": "President of Shore Funding Solutions. Family-run business with Philip Teseo, based in Melville, NY.",
+        "li": "",
+        "hooks": ["Family-run business leadership", "Melville NY-based", "Shore Funding President"]
+      }
+    ],
+    "news": [
+      {
+        "h": "Shore Funding Solutions Ranked #4162 on Inc. 5000 List",
+        "s": "Inc. Magazine, 2025",
+        "d": "Earned Inc. 5000 recognition, ranking #4162, reflecting continued growth in business lending and lines of credit."
+      },
+      {
+        "h": "Shore Funding Promotes Mike Hernandez to CTO",
+        "s": "Company Announcement, 2024",
+        "d": "Promoted Mike Hernandez from Director of IT to Chief Technology Officer, signaling investment in technology infrastructure."
+      }
+    ]
+  }
+]

@@ -21,7 +21,7 @@ const DB_PATH = path.join(
   process.env.HOME,
   'Desktop', 'Claude-experiments', 'Email-contact-extraction', 'data', 'contacts.db'
 );
-const OUTPUT_PATH = path.join(__dirname, 'cross-ref-result.json');
+const OUTPUT_PATH = path.join(__dirname, 'research/batch-results/cross-ref/cross-ref-result.json');
 
 // Primary person ID for kishore@hyperverge.co in the email DB
 const PRIMARY_PERSON_ID = 1;

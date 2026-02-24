@@ -1,0 +1,102 @@
+[
+  {
+    "id": 62,
+    "name": "Loanworx",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 1
+  },
+  {
+    "id": 65,
+    "name": "Kalamata Capital",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 66,
+    "name": "Libertas Funding",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 67,
+    "name": "Pearl Capital",
+    "website": "https://pearlcapital.com",
+    "linkedinUrl": "https://pearlcapital.com",
+    "location": "New Jersey",
+    "employees": 57,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 68,
+    "name": "Greenbox Capital",
+    "website": "https://info.greenboxcapital.com/linkedin",
+    "linkedinUrl": "https://www.linkedin.com/company/greenboxcapital/",
+    "location": "Florida",
+    "employees": 82,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 69,
+    "name": "Mantis Funding",
+    "website": "https://mantisfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/mantis-funding/",
+    "location": "Florida",
+    "employees": 5,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 70,
+    "name": "National Funding",
+    "website": "https://nationalfunding.com",
+    "linkedinUrl": "https://www.linkedin.com/company/national-funding/",
+    "location": "California",
+    "employees": 174,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 71,
+    "name": "Fora Financial",
+    "website": "https://www.forafinancial.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/fora-financial/",
+    "location": "New York",
+    "employees": 178,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 72,
+    "name": "OnDeck Capital",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 73,
+    "name": "Kapitus",
+    "website": "https://kapitus.com",
+    "linkedinUrl": "https://www.linkedin.com/company/kapitus/",
+    "location": "New York",
+    "employees": 415,
+    "leaders": [],
+    "currentNewsCount": 1
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 74,
+    "name": "Mulligan Funding",
+    "website": "https://www.mulliganfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/mulligan-funding-llc/",
+    "location": "California",
+    "employees": 153,
+    "leaders": [],
+    "currentNewsCount": 1
+  },
+  {
+    "id": 75,
+    "name": "QuickBridge",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 76,
+    "name": "Clearco",
+    "website": "https://clear.co",
+    "linkedinUrl": "clear.co",
+    "location": "Ontario",
+    "employees": 165,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 77,
+    "name": "PayPal Working Capital",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 78,
+    "name": "Square Loans (Block)",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 79,
+    "name": "Shopify Capital",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 80,
+    "name": "Amazon Lending",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 81,
+    "name": "Unique Funding Solutions",
+    "website": "https://www.ufsfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/unique-funding-solutions/",
+    "location": "New York",
+    "employees": 10,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 82,
+    "name": "Kabbage (American Express)",
+    "website": "",
+    "linkedinUrl": "",
+    "location": "",
+    "employees": 0,
+    "leaders": [],
+    "currentNewsCount": 0
+  },
+  {
+    "id": 83,
+    "name": "Everest Business Funding",
+    "website": "https://everestbusinessfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/everest-business-funding/about/",
+    "location": "New York",
+    "employees": 67,
+    "leaders": [],
+    "currentNewsCount": 0
+  }
+]

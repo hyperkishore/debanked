@@ -1,0 +1,429 @@
+[
+  {
+    "id": 74,
+    "name": "Mulligan Funding",
+    "website": "https://www.mulliganfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/mulligan-funding-llc/",
+    "leaders": [
+      {
+        "n": "David Leibowitz",
+        "t": "CEO & Co-Founder",
+        "bg": "University of Oxford (1988-1990), University of the Witwatersrand. Former Commercial Litigation Advocate at the Johannesburg Society of Advocates in South Africa. Co-founded Mulligan Funding with his brother in 2008-2009 during the financial crisis. Has grown the family-owned MCA funder to over $1.7B in total capital deployed with $103M annual revenue in 2025. Led two ABS securitizations totaling $220M. Member of the Innovative Lending Platform Association (ILPA).",
+        "li": "https://www.linkedin.com/in/david-leibowitz/",
+        "hooks": ["*Oxford-educated", "*South African litigation advocate turned MCA CEO", "ILPA member"]
+      },
+      {
+        "n": "Adem Yilmaz",
+        "t": "Chief Operating Officer",
+        "bg": "Appointed COO in September 2022. Previously Sr. Director of Compliance, Operational Risk, Analytics & Technology at Wells Fargo (2015-2021), leading technology innovation, robotic process automation, and reporting. Before Wells Fargo, served as Chief Risk Officer and Head of Collections, Credit Underwriting Operations, and Risk at Hyundai Capital America, where he transformed the risk management philosophy and built the Center of Analytical Excellence.",
+        "li": "https://www.linkedin.com/in/h-adem-yilmaz/",
+        "hooks": ["*Ex-Wells Fargo Sr. Director 6 years", "*Former CRO Hyundai Capital America", "RPA and analytics specialist"]
+      },
+      {
+        "n": "Justin Piotroski",
+        "t": "Vice President of Sales",
+        "bg": "Joined Mulligan Funding in September 2022. Previously SVP of Customer Success and VP of Strategic Solutions Sales at Windstream, where he built and led successful sales organizations. Reports directly to CEO David Leibowitz and oversees the ISO partner sales teams driving Mulligan's record growth.",
+        "li": "",
+        "hooks": ["*Ex-Windstream SVP Customer Success", "ISO channel builder"]
+      }
+    ],
+    "news": [
+      {"h": "Mulligan Funding Closes $120 Million Second ABS Securitization", "s": "Asset Securitization Report, Dec 2024", "d": "Closed a second asset-backed securitization totaling $120M (expandable to $500M) with a 36-month revolving period, following an inaugural $100M ABS in 2023. Rated by KBRA.", "p": "2024-12-15"},
+      {"h": "Mulligan Funding Posts Record December and Best Year Ever", "s": "deBanked, Jan 2025", "d": "December 2024 was the best month since inception, capping the company's strongest year. Restructured ISO team to deepen broker partner relationships and drive further growth.", "p": "2025-01-15"},
+      {"h": "Mulligan Funding Surpasses $1.7B in Total Capital Deployed", "s": "mulliganfunding.com, 2025", "d": "Cumulative funding milestone reflecting steady growth since the company's founding in 2008, serving SMBs with working capital loans nationwide.", "p": "2025-06-01"}
+    ],
+    "ice": "Congrats on the record-breaking 2024 and the $120M ABS close — as you scale toward $500M in securitized capacity, how are you thinking about automating underwriting to keep pace with that volume?",
+    "icebreakers": [
+      "Your $120M ABS closing and record December suggest massive momentum — what's driving the surge in deal flow from your ISO partners?",
+      "Surpassing $1.7B in total funding as a family-owned funder is remarkable — how do you maintain underwriting consistency at that scale?",
+      "With the ISO team restructure, are you seeing bottlenecks in credit decisioning speed as partner submissions increase?",
+      "As more MCA funders pursue ABS deals, how is Mulligan differentiating its underwriting approach to maintain those strong credit metrics?"
+    ],
+    "tp": [
+      "With $1.7B+ deployed and ABS capacity expanding to $500M, automating identity verification and fraud checks can help Mulligan process the increasing deal flow without adding headcount — HyperVerge's platform handles this for 450+ MCA companies.",
+      "HyperVerge's proven underwriting automation platform reduces manual review time by 70%, letting your restructured ISO team focus on partner relationships rather than document chasing.",
+      "As you pursue further securitizations, clean and auditable KYC/KYB data strengthens your ABS credit enhancement story — HyperVerge provides that compliance layer at scale."
+    ],
+    "ask": "David, with the ISO restructure and ABS expansion both pointing to higher volume, would it make sense to spend 20 minutes looking at how HyperVerge automates merchant verification for funders at your scale?"
+  },
+  {
+    "id": 75,
+    "name": "QuickBridge",
+    "website": "https://www.quickbridge.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/quick-bridge-funding/",
+    "leaders": [
+      {
+        "n": "Ben Gold",
+        "t": "Founder & President",
+        "bg": "Cal State Fullerton BA in Business Administration-Marketing (2004) and MBA (2012). Co-founded QuickBridge in 2011 with Jason Osiecki and investors David Gilbert and Brij Patel. Prior to QuickBridge, served as VP of Operations at Alliance Funding Group. Started in small business lending in 2002 as a college junior. Board Treasurer of CSUF Mihaylo College of Business and Economics. Also CEO of Good Funding (est. 2020). Company has funded $1B+ to 25K+ customers.",
+        "li": "https://www.linkedin.com/in/ben-gold-a7ab383/",
+        "hooks": ["*Cal State Fullerton MBA — now Board Treasurer there", "*Started in lending as college junior in 2002", "Also CEO of Good Funding"]
+      },
+      {
+        "n": "David Gilbert",
+        "t": "CEO, National Funding (Parent Company)",
+        "bg": "Founder and CEO of National Funding, one of the largest private fintech lenders for SMBs. Over 20 years championing American small business owners. National Funding acquired QuickBridge in October 2018, with both companies operating independently. Combined, the companies have provided $3B+ in financing to small and mid-sized businesses.",
+        "li": "https://www.linkedin.com/in/david-gilbert-b9b69610/",
+        "hooks": ["*20+ years championing small business", "Built $3B+ combined lending platform"]
+      },
+      {
+        "n": "Bryan Timmons",
+        "t": "Director of Operations",
+        "bg": "Manages day-to-day operations at QuickBridge. Oversees the operational processes that enable rapid funding decisions and same-day disbursements for the company's short-term working capital products up to $500K.",
+        "li": "",
+        "hooks": ["Operations leader at fast-funding lender"]
+      }
+    ],
+    "news": [
+      {"h": "QuickBridge Surpasses $1 Billion in Total Funding to 25,000 Customers", "s": "QuickBridge, Dec 2024", "d": "QuickBridge reached a major milestone of $1B+ deployed to over 25,000 small business customers since its 2011 founding, with an A+ BBB rating.", "p": "2024-12-01"},
+      {"h": "QuickBridge Earns 4.8-Star Trustpilot Rating with 330+ Reviews", "s": "Trustpilot, 2025", "d": "Maintains exceptional customer satisfaction with 4.8-star rating on Trustpilot, positioning as one of the highest-rated alternative lenders nationwide.", "p": "2025-06-01"},
+      {"h": "QuickBridge Expands Lending Products to $500K with Line of Credit", "s": "quickbridge.com, 2025", "d": "Expanded product suite beyond working capital loans to include small business lines of credit, with funding up to $500K and terms of 4-18 months.", "p": "2025-03-01"}
+    ],
+    "ice": "Congrats on crossing $1B in total funding — as QuickBridge scales beyond 25K customers with an expanding product suite, how are you handling the increased underwriting complexity of adding lines of credit?",
+    "icebreakers": [
+      "Hitting $1B deployed while maintaining a 4.8-star Trustpilot rating is unusual in this space — what's QuickBridge doing differently on the customer experience side?",
+      "With 25,000+ customers funded and new product lines launching, are you finding manual review becoming a bottleneck?",
+      "As more alternative lenders add lines of credit alongside MCAs, how is QuickBridge thinking about differentiating its risk assessment for revolving products?",
+      "Operating as a National Funding subsidiary gives you unique scale advantages — are you looking at ways to share underwriting infrastructure across both brands?"
+    ],
+    "tp": [
+      "With $1B+ deployed across 25K customers and new product lines expanding, automated identity and income verification can help QuickBridge maintain its fast funding speed without sacrificing quality — HyperVerge powers this for 450+ MCA companies.",
+      "HyperVerge's platform reduces document review from hours to minutes, which matters when your competitive advantage is same-day funding decisions at scale.",
+      "As QuickBridge adds lines of credit to its product mix, having a single automated KYC/KYB layer across all products ensures consistent compliance and reduces operational complexity."
+    ],
+    "ask": "Ben, with QuickBridge past the $1B mark and adding new products, would a quick call to show how HyperVerge automates merchant verification for funders at your stage make sense?"
+  },
+  {
+    "id": 76,
+    "name": "Clearco",
+    "website": "https://clear.co",
+    "linkedinUrl": "https://www.linkedin.com/company/clearbanc/",
+    "leaders": [
+      {
+        "n": "Andrew Curtis",
+        "t": "CEO",
+        "bg": "Brown University BA, University of Chicago MBA, Fletcher School of Law & Diplomacy at Tufts (Master's). Over twenty years in finance in New York City, including investment banks Merrill Lynch and Lazard Freres, plus several investment management firms. Extensive background in leveraged credit, liability management, financial restructurings, and asset-based finance. Joined Clearco as advisor in July 2022 before becoming CEO, replacing co-founder Michele Romanow.",
+        "li": "https://www.linkedin.com/in/andrew-c-curtis-a381b213a/",
+        "hooks": ["*Brown + UChicago MBA + Tufts Fletcher triple degree", "*Ex-Merrill Lynch & Lazard investment banker", "Restructuring specialist turned CEO"]
+      },
+      {
+        "n": "Olivier Grinda",
+        "t": "Chief Operating Officer",
+        "bg": "University of Miami BA in Economics, Psychology, and Political Science. Serial entrepreneur who co-founded BrandsClub in Brazil (2009), growing it to a top-10 most-visited website and $60M revenue within 2 years. Also founded DTC footwear brand Shoes4you and led Miami real estate company Home61. Previously at Antler. Based in Austin, TX.",
+        "li": "https://www.linkedin.com/in/oliviergrinda/",
+        "hooks": ["*Built BrandsClub to $60M revenue in Brazil", "U Miami triple major", "*Serial entrepreneur — 4 companies founded"]
+      },
+      {
+        "n": "Michele Romanow",
+        "t": "Co-Founder & Board Member",
+        "bg": "Co-founded Clearbanc (now Clearco) in 2015. Canadian entrepreneur who appeared as a Dragon on CBC's Dragons' Den. Previously co-founded SnapSaves (acquired by Groupon) and Buytopia. Named to Forbes 30 Under 30. Transitioned from CEO to board role when Andrew Curtis took over leadership.",
+        "li": "https://www.linkedin.com/in/micheleromanow/",
+        "hooks": ["*Dragon on CBC's Dragons' Den", "*Forbes 30 Under 30", "*Sold SnapSaves to Groupon"]
+      }
+    ],
+    "news": [
+      {"h": "Clearco Launches Growth Funding Suite with Cash Advance Product", "s": "BusinessWire, Sep 2025", "d": "Launched the most comprehensive funding suite for ecommerce brands — adding Cash Advance to existing Invoice Funding and Fixed Funding Capacity products, giving founders more control over capital access.", "p": "2025-09-23"},
+      {"h": "Clearco Introduces Rolling Funding Capacity Model", "s": "BusinessWire, Jul 2025", "d": "Launched Rolling Funding, a dynamic usage-based capital model where available capacity replenishes automatically as customers make weekly payments, replacing static funding limits.", "p": "2025-07-10"},
+      {"h": "Clearco-Funded Brands Outpace Competition by 25 Points During BFCM 2025", "s": "clear.co, Dec 2025", "d": "Brands leveraging Clearco's flexible revenue-based funding during Black Friday/Cyber Monday grew 25 percentage points more than brands that did not plan ahead with capital.", "p": "2025-12-10"}
+    ],
+    "ice": "The Rolling Funding model is a smart pivot from static limits — as Clearco scales beyond $2.5B deployed to 10K+ ecommerce brands, how are you thinking about automating merchant verification to speed up onboarding?",
+    "icebreakers": [
+      "The Growth Funding Suite launch with Cash Advance looks like a major product expansion — how is the new product mix changing your underwriting requirements?",
+      "Deploying $2.5B+ to 10,000 ecommerce brands is impressive scale — what's driving the shift to dynamic rolling capacity versus fixed limits?",
+      "With BFCM showing funded brands outperforming by 25 points, are you seeing seasonal demand spikes strain your merchant onboarding processes?",
+      "As more players enter revenue-based financing for DTC brands, how is Clearco's data-driven approach differentiating on speed and approval rates?"
+    ],
+    "tp": [
+      "With $2.5B deployed to 10K+ brands and three distinct funding products now live, automated identity and business verification can streamline onboarding across all product lines — HyperVerge powers this for 450+ lending companies.",
+      "HyperVerge's platform reduces merchant verification from days to minutes, which is critical when your Rolling Funding model promises real-time capacity replenishment.",
+      "As Clearco expands globally and adds Cash Advance to its suite, consistent automated KYC across geographies and product types reduces compliance risk and accelerates time-to-fund."
+    ],
+    "ask": "Andrew, with three funding products and a dynamic capacity model, would it be worth 20 minutes to see how HyperVerge automates merchant verification for lending platforms at your scale?"
+  },
+  {
+    "id": 77,
+    "name": "PayPal Working Capital",
+    "website": "https://www.paypal.com/us/brc/article/working-capital",
+    "linkedinUrl": "https://www.linkedin.com/company/paypal/",
+    "leaders": [
+      {
+        "n": "Michelle Gill",
+        "t": "EVP & GM, Small Business and Financial Services Group",
+        "bg": "Leads PayPal's entire small business lending division including Working Capital and Business Loan products. Previously SVP of Intuit's QuickBooks Money Platform. Before Intuit, served as GM and EVP of Consumer Lending and Capital Markets at SoFi. Spent 14 years at Goldman Sachs, rising to Partner co-leading the Structured Finance business. Also previously at Sixth Street Partners. Brought multiple lending businesses under a single umbrella at PayPal.",
+        "li": "https://www.linkedin.com/in/michellegill/",
+        "hooks": ["*Goldman Sachs Partner 14 years", "*Ex-SoFi EVP Consumer Lending", "*Ex-Intuit QuickBooks Money SVP"]
+      },
+      {
+        "n": "Alex Chriss",
+        "t": "President & CEO, PayPal",
+        "bg": "Tufts University BA in Economics. Appointed PayPal CEO in September 2023. Previously spent nearly 20 years at Intuit, most recently as SVP and GM of the Small Business and Self-Employed Group overseeing QuickBooks and TurboTax. Founded and sold two startups early in career. Under his leadership, PayPal surpassed $30B in global SMB lending and returned to profitable growth with $1.68T TPV in 2024.",
+        "li": "https://www.linkedin.com/in/alexchriss/",
+        "hooks": ["*Tufts Economics grad", "*19 years at Intuit before PayPal CEO", "Founded 2 startups"]
+      },
+      {
+        "n": "John Kim",
+        "t": "EVP, Chief Product Officer",
+        "bg": "Oversees PayPal's product strategy across all business lines including lending products. Responsible for the product vision behind Working Capital and Business Loan products that have achieved NPS scores of 76 and 85 respectively, with 90%+ repeat rates.",
+        "li": "https://www.linkedin.com/in/johnkim/",
+        "hooks": ["PayPal CPO", "Drives 90%+ repeat lending rates"]
+      }
+    ],
+    "news": [
+      {"h": "PayPal Surpasses $30 Billion in Global Small Business Lending", "s": "PayPal Newsroom, Mar 2025", "d": "Crossed $30B in total loan originations with 1.4M+ loans and cash advances extended to 420K+ business accounts globally since 2013. Working Capital drives 36% increase in merchant PayPal payment volume.", "p": "2025-03-26"},
+      {"h": "PayPal Plans PayPal Bank to Deepen Small Business Lending", "s": "PYMNTS, Dec 2025", "d": "Announced plans for PayPal Bank to offer more efficient SMB lending, lowering dependence on third-party bank partners like WebBank and enabling direct loan origination.", "p": "2025-12-15"},
+      {"h": "PayPal Merchant Receivables Purchases Jump 33% YoY Through Q3 2025", "s": "PYMNTS, Nov 2025", "d": "Purchased approximately $1.6B in merchant receivables through September 2025, up from $1.2B in the same period in 2024, signaling accelerating lending demand.", "p": "2025-11-01"}
+    ],
+    "ice": "Hitting $30B in SMB lending with 90%+ repeat rates is a testament to the embedded model — as PayPal Bank comes online to bring lending in-house, how are you thinking about scaling merchant verification?",
+    "icebreakers": [
+      "Surpassing $30B in global SMB lending with NPS scores above 75 shows remarkable product-market fit — what's driving those 90%+ repeat rates?",
+      "With merchant receivables purchases up 33% year-over-year, is the current verification infrastructure keeping pace with demand?",
+      "The PayPal Bank announcement suggests a major shift from third-party origination — how will that change the underwriting and compliance stack?",
+      "As embedded lending platforms like Shopify and Square scale their own programs, how is PayPal Working Capital maintaining its competitive edge?"
+    ],
+    "tp": [
+      "With $30B+ deployed and receivables growing 33% YoY, automated merchant identity verification can help PayPal maintain speed-to-fund as volume scales — HyperVerge processes verifications for 450+ lending companies.",
+      "HyperVerge's platform reduces KYC/KYB review time by 70%, critical when Working Capital's value proposition is seamless, embedded funding tied to PayPal account activity.",
+      "As PayPal Bank brings lending in-house, building a robust automated verification layer from day one ensures regulatory compliance at scale without manual bottlenecks."
+    ],
+    "ask": "Michelle, with PayPal Bank on the horizon and receivables growing 33% YoY, would it be useful to see how HyperVerge automates merchant verification for lending platforms processing at your volume?"
+  },
+  {
+    "id": 78,
+    "name": "Square Loans (Block)",
+    "website": "https://squareup.com/us/en/banking/loans",
+    "linkedinUrl": "https://www.linkedin.com/company/joinsquare/",
+    "leaders": [
+      {
+        "n": "Jack Dorsey",
+        "t": "Block Head, Chairman & Co-Founder",
+        "bg": "Born in St. Louis, Missouri. Attended Bishop DuBourg High School where he developed early interest in computers and communications. Studied at Missouri University of Science and Technology and New York University (did not finish). Co-founded Twitter in 2006 and Square in 2009. Renamed Square to Block, Inc. in December 2021. Returned as hands-on CEO after departure of CEO Alyssa Henry, launching internal restructuring to eliminate silos and promote AI adoption.",
+        "li": "https://www.linkedin.com/in/jackdorsey/",
+        "hooks": ["*Twitter co-founder", "*College dropout turned dual-unicorn founder", "St. Louis native"]
+      },
+      {
+        "n": "Amrita Ahuja",
+        "t": "COO & CFO",
+        "bg": "Duke University AB in Economics (1997-2001), London School of Economics (1999-2000), Harvard Business School MBA (2005-2007). Joined Block in January 2019 as CFO, expanded to COO in February 2023. Career began as Morgan Stanley investment banking analyst, then strategic planning at Walt Disney Company. Held multiple roles at Activision Blizzard including CFO of Blizzard Entertainment. Also Director in Fox Network's Business Development Group. Serves on boards of Airbnb and Discord.",
+        "li": "https://www.linkedin.com/in/amrita-ahuja-2402595/",
+        "hooks": ["*Duke + Harvard MBA + LSE", "*Ex-Blizzard Entertainment CFO", "*Airbnb & Discord board member"]
+      }
+    ],
+    "news": [
+      {"h": "Square Loans Originated $5.7B in Business Loans in 2024", "s": "deBanked, Feb 2025", "d": "Maintained position as the largest online business lender with $5.7B in SMB loan originations in 2024. Has underwritten $22B+ in loans globally with aggregate loss rates below 3%.", "p": "2025-02-15"},
+      {"h": "Square Financial Services Receives FDIC Approval for Cash App Borrow", "s": "BusinessWire, Mar 2025", "d": "FDIC approved Square Financial Services to originate and service consumer Cash App Borrow loans in-house, expanding beyond business loans. Cash App Borrow saw $9B in originations in 2024.", "p": "2025-03-13"},
+      {"h": "Square Loans Reaches $1.7B in Q3 2025 Originations", "s": "deBanked, Nov 2025", "d": "Originated $1.7B in Q3 2025, up from $1.59B in Q1 and $1.64B in Q2, showing steady quarterly growth in SMB lending.", "p": "2025-11-01"}
+    ],
+    "ice": "With $22B+ in lifetime originations and loss rates below 3%, Square Loans has arguably the best data advantage in embedded lending — as you bring Cash App Borrow in-house via FDIC approval, how are you scaling the verification infrastructure?",
+    "icebreakers": [
+      "$5.7B in originations in 2024 with sub-3% loss rates is best-in-class — what's driving those remarkably low default rates at that scale?",
+      "The FDIC approval for Cash App Borrow marks a major shift to in-house origination — how will that change the compliance and verification stack?",
+      "With quarterly originations trending from $1.59B to $1.7B through 2025, is the current underwriting infrastructure ready for continued growth?",
+      "As PayPal and Shopify scale their own embedded lending, Block seems uniquely positioned with both consumer (Cash App) and business (Square) lending — how do you think about unified risk infrastructure?"
+    ],
+    "tp": [
+      "With $5.7B in annual originations and expansion into consumer lending via Cash App Borrow, a unified automated verification layer can serve both business and consumer products — HyperVerge processes verifications for 450+ lending companies.",
+      "HyperVerge's platform helps maintain the sub-3% loss rates that make Square Loans' $22B+ portfolio exceptional, by automating identity verification and fraud detection at the front door.",
+      "As Square Financial Services brings origination in-house, automated KYC/KYB from day one ensures FDIC compliance at the scale of $5.7B+ in annual volume without manual review bottlenecks."
+    ],
+    "ask": "Amrita, with FDIC approval expanding Square Financial Services into consumer lending alongside $5.7B in business originations, would it make sense to explore how HyperVerge automates verification across both lending products?"
+  },
+  {
+    "id": 79,
+    "name": "Shopify Capital",
+    "website": "https://www.shopify.com/capital",
+    "linkedinUrl": "https://www.linkedin.com/company/shopify/",
+    "leaders": [
+      {
+        "n": "Harley Finkelstein",
+        "t": "President, Shopify",
+        "bg": "Born in Montreal, Quebec. Founded a T-shirt company at age 17 while at McGill University. Transferred to Concordia University for BA in Economics. University of Ottawa JD/MBA, where he founded the JD/MBA Student Society and Canadian MBA Oath. Became one of the first Shopify merchants in 2009. Appointed President in September 2020. Oversees Shopify's merchant-facing operations including Shopify Capital which has deployed $5.1B+ to merchants.",
+        "li": "https://www.linkedin.com/in/harleyf/",
+        "hooks": ["*JD/MBA from U of Ottawa", "*Founded T-shirt company at 17", "*One of Shopify's first-ever merchants"]
+      },
+      {
+        "n": "Tobi Lutke",
+        "t": "CEO & Co-Founder, Shopify",
+        "bg": "Born in Koblenz, Germany. Dropped out of school after 10th grade to enter a programming apprenticeship at Carl-Benz-School Koblenz, then worked at Siemens at age 17. Moved to Canada in 2002. Co-founded Snowdevil (online snowboard shop) in 2004, which evolved into Shopify in 2006. Self-taught programmer who built Shopify's original platform. Company now powers millions of merchants globally with Shopify Capital deploying $4.2B in MCAs and loans in 2025 alone.",
+        "li": "https://www.linkedin.com/in/tobias-lutke-shopify/",
+        "hooks": ["*German high school dropout turned billionaire CEO", "*Started as snowboard shop, built $200B+ company", "Self-taught programmer"]
+      },
+      {
+        "n": "Jeff Hoffmeister",
+        "t": "Chief Financial Officer, Shopify",
+        "bg": "CFO at Shopify Inc., leading financial strategy, capital allocation, and investor relations. Oversees the financial operations supporting Shopify Capital's rapid growth to $4.2B in annual MCAs and business loans in 2025, with $1.6B held on balance sheet as of mid-2025.",
+        "li": "https://www.linkedin.com/in/jeffhoffmeister/",
+        "hooks": ["Shopify CFO", "$4.2B annual lending portfolio manager"]
+      }
+    ],
+    "news": [
+      {"h": "Shopify Capital Finishes 2025 with $4.2B in MCAs and Business Loans", "s": "deBanked, Feb 2026", "d": "Full-year 2025 originations reached $4.2B in merchant cash advances and business loans, significantly exceeding the estimated $3B from 2024 and cementing Shopify as a major embedded lender.", "p": "2026-02-10"},
+      {"h": "Shopify Capital Expands to Germany and the Netherlands", "s": "Shopify News, 2025", "d": "Launched Shopify Capital services in Germany and the Netherlands, marking the company's first expansion of lending products into European markets.", "p": "2025-06-01"},
+      {"h": "Shopify Capital Reaches $1B in Q2 2025 Originations", "s": "deBanked, May 2025", "d": "Purchased $1B in business loans and MCAs in Q2 2025, bringing first-half total to $1.8B. Held $1.6B on balance sheet as of June 30, 2025.", "p": "2025-05-15"}
+    ],
+    "ice": "With Shopify Capital hitting $4.2B in 2025 originations and expanding into Europe, how are you approaching merchant verification across different regulatory environments?",
+    "icebreakers": [
+      "$4.2B in MCAs and loans in 2025 represents massive growth from $3B in 2024 — what's driving the acceleration in merchant demand for capital?",
+      "Expanding Shopify Capital to Germany and the Netherlands is a bold move — how are you handling KYC/KYB differences across EU regulatory frameworks?",
+      "With $1.6B on balance sheet, managing credit risk at this scale requires robust verification — are you finding the current systems keeping up?",
+      "As Amazon, PayPal, and Square all scale their own embedded lending, how is Shopify thinking about maintaining its unique merchant data advantage for underwriting?"
+    ],
+    "tp": [
+      "With $4.2B originated in 2025 and European expansion underway, automated merchant verification across regulatory jurisdictions can help Shopify Capital scale without proportional compliance headcount — HyperVerge handles this for 450+ lending companies.",
+      "HyperVerge's platform reduces merchant onboarding verification from days to seconds, critical when Shopify Capital's embedded model promises seamless funding within the merchant dashboard.",
+      "As Shopify Capital enters EU markets, having a single automated KYC/KYB layer that handles both US and European compliance requirements prevents fragmented verification workflows."
+    ],
+    "ask": "Harley, with Shopify Capital scaling past $4.2B and entering European markets, would it be worth exploring how HyperVerge automates merchant verification across different regulatory environments?"
+  },
+  {
+    "id": 80,
+    "name": "Amazon Lending",
+    "website": "https://sell.amazon.com/programs/amazon-lending",
+    "linkedinUrl": "https://www.linkedin.com/company/amazon/",
+    "leaders": [
+      {
+        "n": "Tai Koottatep",
+        "t": "Director & GM, WW B2B Payments and Lending",
+        "bg": "Director and General Manager of Amazon's Worldwide B2B Payments and Lending arm. Oversees the Amazon Lending program which connects sellers with capital through both Amazon's on-balance-sheet loans and a growing ecosystem of third-party financing providers including Parafin, Lendistry, SellersFi, Intuit QuickBooks Capital, and Slope. Has expanded the program to offer funds from $500 to $10M with instant approval for eligible sellers.",
+        "li": "https://www.linkedin.com/in/tai-koottatep/",
+        "hooks": ["Amazon WW Lending GM", "Built multi-partner lending ecosystem"]
+      },
+      {
+        "n": "Sahill Poddar",
+        "t": "CEO & Co-Founder, Parafin (Amazon MCA Partner)",
+        "bg": "PhD from University of Heidelberg, where he worked on discovering the Higgs boson particle at CERN using machine learning. All three Parafin co-founders came from Robinhood, where Sahill served as Engineering Head of Machine Learning. Founded Parafin to power embedded capital for platforms. Parafin provides the merchant cash advance program for Amazon sellers, launched in November 2022.",
+        "li": "https://www.linkedin.com/in/sahill-poddar-57302461/",
+        "hooks": ["*PhD from CERN — discovered Higgs boson", "*Ex-Robinhood ML Engineering Head", "*PhD to $100M revenue in 4 years"]
+      }
+    ],
+    "news": [
+      {"h": "Slope Announces Capital Lending Partnership with Amazon, Backed by Sam Altman and JPMorgan", "s": "CNBC, Dec 2025", "d": "AI-native lending platform Slope, backed by Sam Altman and JPMorgan, launched a new partnership with Amazon to provide lines of credit to eligible US sellers. Applications grew 300% week-over-week during the trial period.", "p": "2025-12-16"},
+      {"h": "Amazon Lending Adds Intuit QuickBooks Capital as Third-Party Provider", "s": "Nova Analytics, Oct 2025", "d": "Intuit QuickBooks Capital joined Amazon Lending as a financing provider, announced at Amazon Accelerate conference, expanding the multi-provider lending marketplace.", "p": "2025-10-01"},
+      {"h": "Amazon Expands Lending Ecosystem with SellersFi Credit Lines Up to $10M", "s": "SellersFi, 2025", "d": "SellersFi announced a financing solution with Amazon Lending offering credit lines up to $10M to e-commerce sellers, the largest individual credit facility in the program.", "p": "2025-08-01"}
+    ],
+    "ice": "Amazon Lending's shift to a multi-provider marketplace model is fascinating — with Slope, Parafin, Intuit, SellersFi, and Lendistry all on the platform, how do you ensure consistent merchant verification standards across providers?",
+    "icebreakers": [
+      "The Slope partnership backed by Altman and JPMorgan shows Amazon is serious about scaling seller financing — are the third-party providers bringing their own verification or is Amazon centralizing it?",
+      "With credit lines now reaching $10M through SellersFi, the verification requirements are very different from $500 MCAs — how is the program handling that range?",
+      "Slope seeing 300% week-over-week application growth during trials suggests massive unmet demand — is the verification infrastructure ready to handle that?",
+      "As Amazon builds out the largest embedded lending marketplace, how are you thinking about maintaining seller trust while adding more financing providers?"
+    ],
+    "tp": [
+      "With 5+ lending providers on the Amazon Lending platform and credit facilities ranging from $500 to $10M, a unified automated verification layer can ensure consistent KYC/KYB standards across all partners — HyperVerge handles this for 450+ lending companies.",
+      "HyperVerge's platform can reduce merchant verification time to seconds, critical when Amazon sellers expect the same speed from lending that they get from the rest of the Amazon experience.",
+      "As Amazon Lending adds providers and expands credit limits, automated identity verification and fraud detection become essential to maintaining the program's integrity at marketplace scale."
+    ],
+    "ask": "Tai, with Amazon Lending growing into a multi-provider marketplace handling $500 to $10M in credit, would it be useful to discuss how HyperVerge automates merchant verification for lending platforms at marketplace scale?"
+  },
+  {
+    "id": 81,
+    "name": "Unique Funding Solutions",
+    "website": "https://www.ufsfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/unique-funding-solutions/",
+    "leaders": [
+      {
+        "n": "Management Team",
+        "t": "Leadership",
+        "bg": "Unique Funding Solutions was founded in 2016 in Brooklyn, New York as a direct MCA funder specializing in B and C paper funding with same-day turnaround. The company has 11-50 employees operating from offices at 1672 E 22nd St, Brooklyn and 71 S Central Ave Ste 200, Valley Stream, NY. UFS is known in the industry for fast approvals and commitment to closing deals, serving industries including automotive repair, beauty salons, medical practices, construction, retail, and real estate. Leadership information is not publicly disclosed.",
+        "li": "",
+        "hooks": ["Brooklyn-based direct funder since 2016", "B/C paper specialist with same-day funding"]
+      }
+    ],
+    "news": [
+      {"h": "Unique Funding Solutions Maintains Presence as Direct MCA Funder", "s": "FunderIntel, 2025", "d": "UFS continues to operate as a direct funding source for merchant cash advances, listed on FunderIntel as a direct funder serving small businesses nationwide with fast turnaround.", "p": "2025-06-01"},
+      {"h": "UFS Recognized by Broker Community for Fast Deal Closings", "s": "DailyFunder, 2024", "d": "Praised by ISO/broker community on DailyFunder for handling challenging B and C paper deals with same-day turnaround and experienced team committed to closing.", "p": "2024-06-01"}
+    ],
+    "ice": "UFS has built a strong reputation in the B/C paper space with same-day funding — as deal volume grows, how are you handling merchant verification for those higher-risk applications?",
+    "icebreakers": [
+      "Your reputation for same-day turnaround on B and C paper is impressive — what's your secret to fast decisioning on higher-risk deals?",
+      "As a direct funder since 2016, UFS has weathered several market cycles — how has the competitive landscape changed for B/C paper funders?",
+      "With ISO partners praising your closing rates, are you finding that manual verification is becoming a bottleneck as submissions increase?",
+      "As larger funders move downmarket into B/C paper, how is UFS maintaining its speed advantage against competitors with bigger tech budgets?"
+    ],
+    "tp": [
+      "As a direct funder specializing in B/C paper with same-day turnaround, automated identity verification can eliminate the manual review bottleneck without sacrificing your speed advantage — HyperVerge powers this for 450+ MCA companies.",
+      "HyperVerge's platform catches fraudulent applications at the front door, which is especially critical for B/C paper where risk is inherently higher — reducing losses before funding.",
+      "With same-day funding as your competitive edge, shaving hours off merchant verification directly translates to more deals closed per day."
+    ],
+    "ask": "With UFS's reputation built on same-day B/C paper funding, would it make sense to spend 15 minutes looking at how HyperVerge automates merchant verification to protect your speed advantage?"
+  },
+  {
+    "id": 82,
+    "name": "Kabbage (American Express)",
+    "website": "https://www.americanexpress.com/en-us/business/blueprint/",
+    "linkedinUrl": "https://www.linkedin.com/company/kabbage-american-express/",
+    "leaders": [
+      {
+        "n": "Rob Frohwein",
+        "t": "Co-Founder, Kabbage (now at Keep Financial)",
+        "bg": "Dickinson College BA in Economics (1986-1990), Villanova University JD Magna Cum Laude. Former intellectual property lawyer at Troutman Sanders LLP. Co-authored three books on IP. CEO of LAVA Group (IP investment bank). VP and General Counsel at Security First Network Bank (world's first Internet bank). Co-founded Kabbage in 2009 during the financial crisis, fascinated by cloud data accessibility for lending. After Amex acquisition, founded Keep Financial (vesting cash compensation platform).",
+        "li": "https://www.linkedin.com/in/frohwein/",
+        "hooks": ["*Villanova JD Magna Cum Laude", "*World's first internet bank VP & GC", "*Co-authored 3 IP books", "*Founded Keep Financial post-Kabbage"]
+      },
+      {
+        "n": "Kathryn Petralia",
+        "t": "Co-Founder & Former President, Kabbage",
+        "bg": "Furman University BA in English Literature. Nearly 15 years in fintech and ecommerce startups before co-founding Kabbage in 2008 with Rob Frohwein and Marc Gorlin. Served as Kabbage COO and President. Previously VP of Strategy at Revolution Money (acquired by American Express). Named to Forbes' Most Powerful Women (2017). Helped grow Kabbage to $2.5B+ in funding raised before the 2020 Amex acquisition.",
+        "li": "https://www.linkedin.com/in/kathrynpetralia/",
+        "hooks": ["*Forbes Most Powerful Women 2017", "*Furman English Lit degree — unusual for fintech", "*Revolution Money VP (also acquired by Amex)"]
+      }
+    ],
+    "news": [
+      {"h": "American Express Retires Kabbage Brand, Launches Business Blueprint", "s": "Finovate, Feb 2023", "d": "Amex fully retired the Kabbage brand, launching Business Blueprint as an integrated digital cash flow management hub with lines of credit ($2K-$250K), business checking, and MyInsights cash flow tool.", "p": "2023-02-01"},
+      {"h": "Amex Business Blueprint Expands Digital Tools for Small Businesses", "s": "American Express, 2025", "d": "Business Blueprint platform continues to serve small businesses with digital financial products, payment card management, and cash flow insights, building on Kabbage's technology foundation.", "p": "2025-06-01"},
+      {"h": "Kabbage Co-Founders Launch Keep Financial for Vesting Cash Compensation", "s": "Crunchbase, 2024", "d": "Rob Frohwein and Kathryn Petralia moved on from American Express to co-found Keep Financial, applying their fintech expertise to revolutionize employee compensation through Vesting Cash Plans.", "p": "2024-03-01"}
+    ],
+    "ice": "The Kabbage-to-Blueprint transition is a fascinating case study in enterprise integration — as the platform scales within Amex's ecosystem, how has the lending decisioning evolved from Kabbage's original data-driven approach?",
+    "icebreakers": [
+      "Business Blueprint inheriting Kabbage's technology while gaining Amex's brand trust is a powerful combination — how has the customer acquisition funnel changed post-rebrand?",
+      "With lines of credit from $2K to $250K and integrated cash flow tools, the product suite has expanded significantly from Kabbage's original MCAs — what's driving the most growth?",
+      "Now that Kabbage's founders have moved on to Keep Financial, how is the Blueprint team maintaining the startup agility that made Kabbage successful?",
+      "As other embedded lenders (PayPal, Square) scale their SMB lending, how does Amex Blueprint differentiate with the Kabbage technology at its core?"
+    ],
+    "tp": [
+      "With Business Blueprint serving as Amex's digital SMB lending hub offering $2K-$250K lines of credit, automated identity verification can accelerate the application-to-funding cycle — HyperVerge powers this for 450+ lending companies.",
+      "HyperVerge's platform integrates seamlessly with enterprise-grade systems, important as Business Blueprint operates within American Express's compliance and regulatory framework.",
+      "As Business Blueprint competes with PayPal Working Capital and Square Loans for the embedded SMB lending market, faster and more accurate merchant verification directly drives conversion rates."
+    ],
+    "ask": "As Business Blueprint scales within the Amex ecosystem, would it be worth discussing how HyperVerge automates merchant verification to maintain the speed advantage Kabbage was known for?"
+  },
+  {
+    "id": 83,
+    "name": "Everest Business Funding",
+    "website": "https://everestbusinessfunding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/everest-business-funding/",
+    "leaders": [
+      {
+        "n": "Scott Crockett",
+        "t": "Founder & CEO",
+        "bg": "Tulane University BA. Began career as an investment banker at NationsBanc Montgomery Securities, where he turned down a promotion to start his own consumer finance company. 20+ years of experience in the finance industry. Track record includes raising more than $500M in capital and creating thousands of jobs. Founded, built, and managed several finance companies across consumer and commercial finance sectors before establishing Everest Business Funding in 2013.",
+        "li": "https://www.linkedin.com/in/scottfcrockett/",
+        "hooks": ["*Tulane grad", "*Ex-NationsBanc Montgomery investment banker", "*Turned down Wall Street promotion to start own company"]
+      },
+      {
+        "n": "Tracy Parks",
+        "t": "Chief Operating Officer",
+        "bg": "Based in Fort Lauderdale, Florida. COO at Everest Business Funding since September 2012. Previously President and CEO of Allied Cash Advance (June 2007 - September 2012). Also held COO role at Whetstone Holdings and positions at eTitleLoan. Brings deep operational experience in consumer and commercial lending operations.",
+        "li": "https://www.linkedin.com/in/tracyparks/",
+        "hooks": ["*Former CEO Allied Cash Advance 5 years", "Fort Lauderdale-based", "Consumer-to-commercial lending crossover"]
+      }
+    ],
+    "news": [
+      {"h": "Everest Business Funding Named Best and Brightest Workplace in the Nation 2025", "s": "BusinessWire, Jun 2025", "d": "Earned back-to-back national recognition from the National Association for Business Resources, reflecting commitment to employee growth, collaboration, and workplace culture.", "p": "2025-06-02"},
+      {"h": "Everest Business Funding Sponsors and Speaks at Broker Expo New York", "s": "Funders Forum, Sep 2025", "d": "Participated as both sponsor and featured speaker at the Broker Expo New York on September 17, 2025 in Manhattan, strengthening industry presence and ISO relationships.", "p": "2025-09-17"},
+      {"h": "Everest Business Funding Expands Revenue-Based Financing to $2M Limit", "s": "everestbusinessfunding.com, 2025", "d": "Now offers fast access to working capital up to $2M through revenue-based financing, serving business owners across a wide range of industries with a streamlined application process.", "p": "2025-01-05"}
+    ],
+    "ice": "Congrats on the back-to-back Best and Brightest recognition — as Everest scales revenue-based financing up to $2M, how are you handling the increased verification requirements that come with larger deal sizes?",
+    "icebreakers": [
+      "Back-to-back national workplace awards while growing the lending business is impressive — how does strong company culture translate to better underwriting decisions?",
+      "Expanding to $2M in revenue-based financing puts Everest in a different risk tier — what's changed in your merchant evaluation process?",
+      "With the Broker Expo sponsorship and speaking roles, Everest is clearly investing in ISO relationships — are you seeing a surge in deal submissions that's straining operations?",
+      "As the revenue-based finance market matures with the RBFC coalition advocating for standards, how is Everest positioning on transparency and deal structure?"
+    ],
+    "tp": [
+      "With revenue-based financing now reaching $2M per deal, automated identity and business verification becomes critical for managing the increased fraud risk at larger deal sizes — HyperVerge powers this for 450+ MCA companies.",
+      "HyperVerge's platform reduces manual merchant review from hours to minutes, letting your team focus on the relationship-building and ISO partnerships that earned you Best and Brightest recognition.",
+      "As Everest processes more and larger deals through its ISO partner network, automated KYC/KYB catches fraudulent submissions before funding, protecting your portfolio at scale."
+    ],
+    "ask": "Scott, with Everest expanding to $2M deals and growing ISO submissions from Broker Expo visibility, would it make sense to spend 20 minutes looking at how HyperVerge automates merchant verification for funders at your scale?"
+  }
+]
