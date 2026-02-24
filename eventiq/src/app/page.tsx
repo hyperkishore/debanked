@@ -880,6 +880,7 @@ export default function Home() {
                         onSequenceStep={handleSequenceStep}
                         onAddTag={handleAddTag}
                         onRemoveTag={handleRemoveTag}
+                        onPipelineStageChange={handlePipelineMove}
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
@@ -950,6 +951,7 @@ export default function Home() {
                       onSequenceStep={handleSequenceStep}
                       onAddTag={handleAddTag}
                       onRemoveTag={handleRemoveTag}
+                      onPipelineStageChange={handlePipelineMove}
                     />
                   )}
                 </SheetContent>

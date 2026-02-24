@@ -1,6 +1,6 @@
 "use client";
 
-import { Company, OutreachStatus, getResearchScore, getResearchTier } from "@/lib/types";
+import { Company, CompanyCategory, OutreachStatus, getResearchScore, getResearchTier } from "@/lib/types";
 import { UrgencyTier } from "@/lib/outreach-score";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
@@ -36,17 +36,19 @@ function highlightText(text: string, query: string) {
 }
 
 const tierBadgeColors: Record<string, string> = {
-  complete: "text-green-400",
-  good: "text-blue-400",
-  partial: "text-amber-400",
-  minimal: "text-red-400/60",
+  complete: "text-muted-foreground",
+  good: "text-muted-foreground",
+  partial: "text-muted-foreground/60",
+  minimal: "text-muted-foreground/40",
 };
 
-const typeIndicatorColor: Record<string, string> = {
-  SQO: "bg-[var(--sqo)]",
-  Client: "bg-[var(--client)]",
-  ICP: "bg-[var(--icp)]",
-  TAM: "bg-[var(--tam)]",
+const categoryBadgeMap: Record<CompanyCategory, { label: string; className: string }> = {
+  funder: { label: "Funder", className: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30" },
+  broker: { label: "Broker", className: "bg-orange-500/10 text-orange-400 border-orange-500/30" },
+  bank: { label: "Bank", className: "bg-blue-500/10 text-blue-400 border-blue-500/30" },
+  technology: { label: "Technology", className: "bg-violet-500/10 text-violet-400 border-violet-500/30" },
+  marketplace: { label: "Marketplace", className: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30" },
+  service_provider: { label: "Service", className: "bg-pink-500/10 text-pink-400 border-pink-500/30" },
 };
 
 const typeBadgeMap: Record<string, string> = {
@@ -105,14 +107,6 @@ export function CompanyCard({
       }}
     >
       <div className="flex items-start gap-3">
-        {/* Type color indicator */}
-        <div
-          className={cn(
-            "mt-1.5 w-2 h-2 rounded-full shrink-0",
-            typeIndicatorColor[company.type] || "bg-muted"
-          )}
-        />
-
         {/* Main content */}
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2 flex-wrap">
@@ -125,6 +119,14 @@ export function CompanyCard({
             >
               {company.type}
             </Badge>
+            {company.category && categoryBadgeMap[company.category] && (
+              <Badge
+                variant="outline"
+                className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0", categoryBadgeMap[company.category].className)}
+              >
+                {categoryBadgeMap[company.category].label}
+              </Badge>
+            )}
             {company.clear && (
               <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 font-semibold text-brand border-brand/30">
                 CLEAR

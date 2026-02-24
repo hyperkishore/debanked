@@ -4,7 +4,7 @@ import { Company, CompanyCategory, Leader, RatingData, EngagementEntry, Engageme
 import { isResearched, generateOutreachMessage, generateQuickLinks } from "@/lib/types";
 import { generateMessageVariants, MessageVariant } from "@/lib/message-variants";
 import { generateLinkedInVariants, LinkedInVariant } from "@/lib/linkedin-message";
-import { PipelineRecord } from "@/lib/pipeline-helpers";
+import { PipelineRecord, PipelineStage, PIPELINE_STAGES } from "@/lib/pipeline-helpers";
 import { detectPersona, getPersonaConfig } from "@/lib/persona-helpers";
 import { generateBattlecards, getCategoryStyle } from "@/lib/battlecard-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
@@ -70,6 +70,7 @@ interface CompanyDetailProps {
   onSequenceStep?: (companyId: number, stepId: string, channel: EngagementChannel, action: string) => void;
   onAddTag?: (companyId: number, tag: string) => void;
   onRemoveTag?: (companyId: number, tag: string) => void;
+  onPipelineStageChange?: (companyId: number, stage: PipelineStage) => void;
 }
 
 const TAG_SUGGESTIONS = [
@@ -125,6 +126,7 @@ export function CompanyDetail({
   onSequenceStep,
   onAddTag,
   onRemoveTag,
+  onPipelineStageChange,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [tagInput, setTagInput] = useState("");
@@ -316,22 +318,43 @@ export function CompanyDetail({
           </div>
         )}
 
-        <div className="flex items-center gap-2 mt-2">
-          <Button
-            variant={isMet ? "default" : "outline"}
-            size="sm"
-            className="h-7 text-xs"
-            onClick={() => {
-              onToggleMet(company.id);
-              if (!isMet) onOpenRating(company.id);
-            }}
-          >
-            <Check className="h-3 w-3 mr-1" />
-            {isMet ? "Met" : "Mark Met"}
-          </Button>
+        {/* Pipeline stage selector */}
+        <div className="flex items-center gap-1 mt-2 flex-wrap">
+          {PIPELINE_STAGES.filter(s => s.id !== "lost").map((stage) => {
+            const currentStage = pipelineState[company.id]?.stage || "researched";
+            const currentIdx = PIPELINE_STAGES.findIndex(s => s.id === currentStage);
+            const stageIdx = PIPELINE_STAGES.findIndex(s => s.id === stage.id);
+            const isActive = stage.id === currentStage;
+            const isPast = stageIdx < currentIdx;
+            return (
+              <button
+                key={stage.id}
+                onClick={() => {
+                  if (onPipelineStageChange) {
+                    onPipelineStageChange(company.id, stage.id);
+                  }
+                  if (stage.id === "contacted" && !isMet) {
+                    onToggleMet(company.id);
+                    onOpenRating(company.id);
+                  }
+                }}
+                className={cn(
+                  "text-xs px-2 py-0.5 rounded-full border transition-colors",
+                  isActive
+                    ? "border-brand bg-brand/15 text-brand font-medium"
+                    : isPast
+                    ? "border-brand/30 bg-brand/5 text-brand/60"
+                    : "border-border text-muted-foreground hover:border-brand/30 hover:text-brand/60"
+                )}
+              >
+                {isActive && <Check className="h-2.5 w-2.5 inline mr-0.5 -mt-px" />}
+                {stage.label}
+              </button>
+            );
+          })}
           {isMet && rating && rating.rating && (
             <Badge className={cn(
-              "text-xs",
+              "text-xs ml-1",
               rating.rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
               rating.rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
               rating.rating === "cold" && "bg-brand/20 text-brand",
