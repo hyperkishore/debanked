@@ -155,6 +155,7 @@ export interface Company {
   category?: CompanyCategory;
   subVertical?: SubVertical;
   outreachHistory?: OutreachHistory;
+  hubspotDeals?: HubSpotDeal[];
 }
 
 export function isResearched(c: Company): boolean {
@@ -198,7 +199,7 @@ export function getResearchTier(score: number): ResearchTier {
   return 'minimal';
 }
 
-export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'NeedsEmail' | 'Researched' | 'Unresearched';
+export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'NeedsEmail' | 'Researched' | 'Unresearched' | 'InHubSpot' | 'ActivePipeline';
 export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees' | 'quality' | 'outreach';
 export type ViewType = 'cards' | 'table';
 export type TabType = 'companies' | 'schedule' | 'resources' | 'marketing' | 'dashboard' | 'pipeline' | 'feed' | 'map' | 'dinner';
@@ -264,6 +265,19 @@ export interface ReferralMap {
 export interface ChecklistItem {
   key: string;
   label: string;
+}
+
+// HubSpot deal data synced from CRM
+export interface HubSpotDeal {
+  dealId: string;
+  dealName: string;
+  stage: string;
+  stageLabel: string;
+  amount?: number;
+  closeDate?: string;
+  product?: string;
+  createDate?: string;
+  lastModified?: string;
 }
 
 // Outreach history from email cross-reference

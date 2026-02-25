@@ -414,3 +414,66 @@ This file tracks confirmed and high-confidence bugs/gaps observed in the current
 - Add to immediate high-priority queue:
   - `BUG-016` (missing RICP verification provenance)
   - `BUG-018` (source-of-truth drift)
+
+## BUG-020: No Freshness Timestamp for Contact/Leader Verification
+- Severity: `High`
+- Evidence:
+  - `eventiq/src/lib/types.ts:13`
+  - `eventiq/src/lib/types.ts:21`
+  - `eventiq/scripts/merge-enrichment.js:103`
+- Why this is a bug:
+  - Enriched personas can be appended without required `verified_at`/`last_reviewed_at`, so stale contacts remain indistinguishable from fresh verified records.
+- Impact:
+  - Outreach can target outdated titles/contacts, reducing meeting conversion and creating avoidable bounce/rejection.
+- Reproduction:
+  1. Inspect leader schema and merged output records.
+  2. Observe no mandatory freshness metadata for leaders.
+  3. Attempt stale-record filtering; not possible reliably.
+- Fix options:
+  1. Add mandatory verification timestamps for all new/updated persona records.
+  2. Add stale-data rule (for example >90 days) that triggers re-verification.
+  3. Block sequence launch on stale or unknown freshness state.
+- Recommended fix:
+  - Option 1 + Option 2.
+
+## BUG-021: Role Coverage Counting Can Double-Count One Person Across Title Variants
+- Severity: `Medium`
+- Evidence:
+  - `eventiq/src/components/marketing-ideas-tab.tsx:98`
+  - `eventiq/src/components/marketing-ideas-tab.tsx:100`
+  - `eventiq/docs/live-targeting-snapshot-2026-02-23.json:50`
+- Why this is a bug:
+  - Dedup key uses `name|title`, so one person with title variants can appear as multiple role entries, inflating role counts and confusing coverage diagnostics.
+- Impact:
+  - Coverage analytics become noisy; account readiness may be overestimated in reports.
+- Reproduction:
+  1. Add same person with slight title variant (for example `Director of Underwriting` and `Dir Underwriting`).
+  2. Compute unique RICP contacts.
+  3. Observe duplicate logical person entries in coverage output.
+- Fix options:
+  1. Dedup primarily by normalized name (+ optional LinkedIn URL) and keep title variants as metadata.
+  2. Add canonical title normalization before dedup.
+  3. Track `person_id` to separate identity from role/title strings.
+- Recommended fix:
+  - Option 1 + Option 2.
+
+## BUG-022: Enrichment Merge Accepts New Leaders Without Provenance or Confidence
+- Severity: `High`
+- Evidence:
+  - `eventiq/scripts/merge-enrichment.js:103`
+  - `eventiq/scripts/merge-enrichment.js:104`
+  - `eventiq/scripts/merge-enrichment.js:143`
+- Why this is a bug:
+  - Merge path appends any leader with just `name` and `title`, allowing low-trust records into production datasets.
+- Impact:
+  - Data quality variance increases and sequence-quality gating cannot be enforced.
+- Reproduction:
+  1. Provide enrichment record with minimal leader fields (`n`, `t`) and no source/confidence.
+  2. Run merge script.
+  3. Observe leader is appended to account record.
+- Fix options:
+  1. Enforce schema validation on enrichment payloads before merge.
+  2. Require minimum provenance fields for role-bearing personas.
+  3. Route incomplete records to review queue instead of appending directly.
+- Recommended fix:
+  - Option 1 + Option 3.

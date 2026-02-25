@@ -58,6 +58,12 @@ function filterCompanies(
   else if (filter === "NeedsEmail") filtered = filtered.filter((c) => isResearched(c) && !(c.leaders || []).some(l => l.email));
   else if (filter === "Researched") filtered = filtered.filter((c) => isResearched(c));
   else if (filter === "Unresearched") filtered = filtered.filter((c) => !isResearched(c));
+  else if (filter === "InHubSpot") filtered = filtered.filter((c) => (c.hubspotDeals || []).length > 0);
+  else if (filter === "ActivePipeline") filtered = filtered.filter((c) => {
+    const deals = c.hubspotDeals || [];
+    const closedStages = ["closedwon", "closedlost", "closed won", "closed lost"];
+    return deals.some(d => !closedStages.includes(d.stage.toLowerCase()) && !closedStages.includes(d.stageLabel.toLowerCase()));
+  });
 
   if (searchQuery) {
     const q = searchQuery.toLowerCase();

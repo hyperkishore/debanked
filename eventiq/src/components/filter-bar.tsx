@@ -40,6 +40,8 @@ const filters: { value: FilterType; label: string }[] = [
   { value: "NeedsEmail", label: "Needs Email" },
   { value: "Researched", label: "Researched" },
   { value: "Unresearched", label: "Unresearched" },
+  { value: "InHubSpot", label: "In HubSpot" },
+  { value: "ActivePipeline", label: "Active Pipeline" },
 ];
 
 const sortOptions: { value: SortType; label: string; shortLabel: string }[] = [

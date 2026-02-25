@@ -259,9 +259,19 @@ export function CompanyDetail({
                 </>
               );
             })()}
-            {pipelineState[company.id]?.hubspot_deal_id ? (
+            {(company.hubspotDeals || []).length > 0 ? (
               <a
-                href={`https://app.hubspot.com/contacts/deals/${pipelineState[company.id].hubspot_deal_id}`}
+                href={`https://app.hubspot.com/contacts/3800237/deal/${company.hubspotDeals![0].dealId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-orange-500/10 text-orange-400 border-orange-500/30 cursor-pointer hover:bg-orange-500/20">
+                  <ExternalLink className="h-2.5 w-2.5 mr-0.5" />HubSpot ({company.hubspotDeals!.length})
+                </Badge>
+              </a>
+            ) : pipelineState[company.id]?.hubspot_deal_id ? (
+              <a
+                href={`https://app.hubspot.com/contacts/3800237/deal/${pipelineState[company.id].hubspot_deal_id}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -593,6 +603,69 @@ export function CompanyDetail({
                 {company.desc && <CopyButton text={company.desc} />}
               </div>
             </Section>
+
+            {/* HubSpot Deals */}
+            {(company.hubspotDeals || []).length > 0 && (
+              <Section icon={Building2} title={`HubSpot Deals (${company.hubspotDeals!.length})`}>
+                <div className="space-y-2">
+                  {company.hubspotDeals!.map((deal) => {
+                    const isWon = deal.stageLabel.toLowerCase().includes("closed won");
+                    const isLost = deal.stageLabel.toLowerCase().includes("closed lost");
+                    const isActive = !isWon && !isLost;
+                    return (
+                      <a
+                        key={deal.dealId}
+                        href={`https://app.hubspot.com/contacts/3800237/deal/${deal.dealId}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <Card className={cn(
+                          "p-2.5 shadow-none hover:border-orange-500/30 transition-colors group",
+                          isWon && "border-green-500/20",
+                          isLost && "border-muted-foreground/10 opacity-60",
+                        )}>
+                          <div className="flex items-center justify-between gap-2">
+                            <div className="min-w-0 flex-1">
+                              <div className="flex items-center gap-1.5">
+                                <span className="text-sm font-medium truncate">{deal.dealName}</span>
+                                <ExternalLink className="h-2.5 w-2.5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+                              </div>
+                              <div className="flex items-center gap-2 mt-0.5">
+                                <Badge
+                                  variant="outline"
+                                  className={cn(
+                                    "text-xs px-1.5 py-0 h-4",
+                                    isActive && "bg-orange-500/10 text-orange-400 border-orange-500/30",
+                                    isWon && "bg-green-500/10 text-green-400 border-green-500/30",
+                                    isLost && "bg-muted/50 text-muted-foreground border-border",
+                                  )}
+                                >
+                                  {deal.stageLabel}
+                                </Badge>
+                                {deal.product && (
+                                  <span className="text-xs text-muted-foreground">{deal.product}</span>
+                                )}
+                                {deal.closeDate && (
+                                  <span className="text-xs text-muted-foreground/60">
+                                    Close: {new Date(deal.closeDate).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+                            {deal.amount && deal.amount > 0 && (
+                              <span className="text-sm font-semibold text-muted-foreground tabular-nums shrink-0">
+                                ${deal.amount.toLocaleString()}
+                              </span>
+                            )}
+                          </div>
+                        </Card>
+                      </a>
+                    );
+                  })}
+                </div>
+              </Section>
+            )}
 
             {/* Contacts with Persona Badges + Brief Me */}
             <Section icon={Users} title="Contacts">

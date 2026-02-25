@@ -46,6 +46,7 @@ export async function GET(request: NextRequest) {
     source: row.source || [],
     category: row.category || undefined,
     outreachHistory: row.outreach_history || undefined,
+    hubspotDeals: row.hubspot_deals || [],
   }));
 
   return NextResponse.json(companies);

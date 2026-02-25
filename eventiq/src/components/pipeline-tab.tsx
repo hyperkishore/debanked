@@ -9,6 +9,7 @@ import {
   getDaysSinceContact,
 } from "@/lib/pipeline-helpers";
 import { getLastEngagement } from "@/lib/engagement-helpers";
+import { estimateCompanyValue } from "@/lib/revenue-model";
 import { PipelineCard } from "@/components/pipeline-card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Input } from "@/components/ui/input";
@@ -99,7 +100,8 @@ export function PipelineTab({
       const stage = stageId as PipelineStage;
       for (const c of stageCompanies) {
         const record = pipelineState[c.id];
-        const dv = record?.dealValue;
+        // Use manual value if present, otherwise extrapolate from our 5-method model
+        const dv = record?.dealValue || estimateCompanyValue(c);
         if (dv && dv > 0) {
           totals[stage].raw += dv;
           totals[stage].weighted += dv * STAGE_WEIGHTS[stage];

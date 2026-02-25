@@ -25,30 +25,29 @@ interface CredentialData {
 
 const resources: ResourceItem[] = [
   // GTM Resources
-  { category: "GTM", title: "GTM Strategy & Playbook", link: "https://www.notion.so/hyperverge/GTM-Strategy-Playbook-MCA-1c6fd39b4d2780a48c72c4d1cc13f5cb" },
-  { category: "GTM", title: "Prospect List (Master)", link: "https://docs.google.com/spreadsheets/d/1lQz4rH8y8W7P3a1Zr9zO2bGwZ7RQj1nKQpJqz0fWZvY/edit" },
-  { category: "GTM", title: "Email Templates & Sequences", link: "https://www.notion.so/hyperverge/Email-Templates-Sequences-1c6fd39b4d2780b6b6bfe6aafe93e8e0" },
-  { category: "GTM", title: "Competitive Analysis", link: "https://www.notion.so/hyperverge/Competitive-Landscape-1c6fd39b4d2780b0a9bdf5d7f73b0a31" },
-  { category: "GTM", title: "Pricing & Packaging", link: "https://www.notion.so/hyperverge/Pricing-Packaging-1c6fd39b4d2780a3a6f4d2e5c1b0d9e8" },
-  // Apollo & Lusha credentials are now loaded from /api/credentials (server-side only)
-  { category: "GTM", title: "Conference / Event Calendar", link: "https://www.notion.so/hyperverge/Conference-Calendar-1c6fd39b4d2780b5b9d7e3f4a2c1b0d9" },
-  { category: "GTM", title: "Partnership Tracker", link: "https://docs.google.com/spreadsheets/d/1kR3s5x7y8Z9a0b1c2d3e4f5g6h7i8j9k0l1m2n3o4p5/edit" },
+  { category: "GTM", title: "US Fintech Notion Page", link: "https://www.notion.so/hyperverge/US-Fintech-187b743dbaed4e2b9d38fb612b62e6fb" },
+  { category: "GTM", title: "TAM List", link: "https://docs.google.com/spreadsheets/d/1a-v52TIX6xSwrqtnSl45_7x4hiykCW8r6aiApbonlpo/edit?gid=1800727960" },
+  { category: "GTM", title: "ICP Conversations", link: "https://www.notion.so/hyperverge/ICP-Conversations-1117e7c237cb80f3a75ace79d1e26431" },
+  { category: "GTM", title: "HubSpot US Pipeline", link: "https://app.hubspot.com/contacts/3800237/objects/0-3/views/my/board" },
+  // Apollo & Lusha credentials are loaded from /api/credentials (server-side only)
+  { category: "GTM", title: "Marketing Note: Industry Classification", link: "https://www.notion.so/hyperverge/Industry-Classification-Brief-Marketing-Note-1ba7e7c237cb80b4a336ed27c9a8c2f9" },
+  { category: "GTM", title: "Marketing Note: Clear Analysis", link: "https://www.notion.so/hyperverge/Clear-Brief-Marketing-Note-1b87e7c237cb808cb8e3f437fc1615f0" },
 
   // Product Resources
-  { category: "Product", title: "Product Demo — MCA Underwriting", link: "https://demo.hyperverge.co/mca-underwriting" },
-  { category: "Product", title: "CLEAR Report Analysis Demo", link: "https://drive.google.com/file/d/16sW_NUacuxh-xmTbPpoGDVWH2CW0tewD/view" },
-  { category: "Product", title: "Cashflow Analysis Demo Video", link: "https://drive.google.com/file/d/1pzREwBBB2c3yf8jUTc3Td-esxpZXwtY1/view" },
-  { category: "Product", title: "Industry Classification Demo", link: "https://drive.google.com/file/d/1fPsXDfd3PDNN49kyHRj4GGTF2SJlPPga/view" },
-  { category: "Product", title: "Builder Platform Demo", link: "https://www.youtube.com/watch?v=fLbtk4uty-s" },
-  { category: "Product", title: "Email to CRM — Overview", link: "https://drive.google.com/file/d/1UNxRWYTAIG7YK0ZOdV7i88PeMLkNSW3g/view" },
-  { category: "Product", title: "Email to CRM — Detailed", link: "https://drive.google.com/file/d/1Jdluk9TQlY56k3bES4aCMdFT5TY29Zyl/view" },
-  { category: "Product", title: "Product Roadmap", link: "https://www.notion.so/hyperverge/Product-Roadmap-MCA-1c6fd39b4d2780c4b8e9f0a1b2c3d4e5" },
-  { category: "Product", title: "Technical Documentation", link: "https://docs.hyperverge.co" },
+  { category: "Product", title: "Kapitus Download from KV", detail: "Problem discovery document", link: "https://drive.google.com/file/d/1WsRK8_SDde_nRHhJRUVI0I2M-oGdNZ85/view?usp=drive_link" },
+  { category: "Product", title: "Email to CRM (Demo Video)", link: "https://drive.google.com/file/d/1Jdluk9TQlY56k3bES4aCMdFT5TY29Zyl/view" },
+  { category: "Product", title: "Cashflow Analysis (Demo Video)", link: "https://drive.google.com/file/d/1pzREwBBB2c3yf8jUTc3Td-esxpZXwtY1/view?usp=sharing" },
+  { category: "Product", title: "Cashflow Analysis (Live Demo)", detail: "Login: hv / test", link: "https://mca-lending-space.vercel.app/operations/cash-flow-analysis" },
+  { category: "Product", title: "Clear Analysis (Demo Video)", link: "https://drive.google.com/file/d/1N_uJUvs3pXnvoaBPVNRI_hQrG1ZykLMS/view?usp=sharing" },
+  { category: "Product", title: "Clear Analysis (Live Demo)", detail: "Login: hv / test", link: "https://mca-lending-space.vercel.app/operations/clear-report" },
+  { category: "Product", title: "TLO Analysis (Live Demo)", link: "https://bsa-demo.dev.hyperverge.co/tlo-report/" },
+  { category: "Product", title: "Industry Classification (Demo Video)", link: "https://drive.google.com/file/d/1fPsXDfd3PDNN49kyHRj4GGTF2SJlPPga/view?usp=drive_link" },
+  { category: "Product", title: "Industry Classification (Live Demo)", detail: "Login: vignesh@hyperverge.co / KVhvdashboard321! \u2014 Go to Applications \u2192 ECG \u2192 sic_codes_2 \u2192 Sep 1\u2013Oct 31 \u2192 ID: 1325110", link: "https://usa.dashboard.hyperverge.co/" },
+  { category: "Product", title: "FY26 OKRs", detail: "Company-level goals including US", link: "https://www.notion.so/hyperverge/Company-Goals-FY-26-2ef7e7c237cb81de91b9f66ab764513e" },
+  { category: "Product", title: "Kapitus BRDs", detail: "Initial sections relevant", link: "https://drive.google.com/drive/folders/1iMhcS9BlryPqsUT1ZvWpqPb4g6qmgKfa?usp=drive_link" },
 
   // GTM/Product
-  { category: "GTM/Product", title: "Marketing Collateral Library", link: "https://drive.google.com/drive/folders/1a2b3c4d5e6f7g8h9i0j" },
-  { category: "GTM/Product", title: "Case Studies & Testimonials", link: "https://www.notion.so/hyperverge/Case-Studies-1c6fd39b4d2780d5c9f0a1b2c3d4e5f6" },
-  { category: "GTM/Product", title: "SOC 2 & Compliance Docs", link: "https://www.notion.so/hyperverge/Compliance-Center-1c6fd39b4d2780e6d0a1b2c3d4e5f6g7" },
+  { category: "GTM/Product", title: "Product Demos & Marketing Collaterals", detail: "Consolidated list of all demos and collaterals", link: "https://docs.google.com/spreadsheets/d/1a-v52TIX6xSwrqtnSl45_7x4hiykCW8r6aiApbonlpo/edit?gid=2080114931" },
 ];
 
 function CredentialField({ credential }: { credential: CredentialData }) {

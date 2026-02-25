@@ -477,3 +477,245 @@ This document defines implementation-grade improvements derived from the current
 - Acceptance criteria:
   - False-negative RICP classification rate decreases measurably.
   - Coverage reports are stable despite title variation.
+
+## IMP-030: Company Canonicalization + Duplicate Identity Resolution
+- Priority: `P0`
+- Category: Data Quality, GTM Accuracy
+- Evidence:
+  - `eventiq/src/data/all-companies.json`
+  - `eventiq/scripts/merge-research.js:74`
+  - `eventiq/scripts/merge-enrichment.js:71`
+- Problem:
+  - Name normalization is lightweight and can still allow duplicate or fragmented account identities across local files and live data.
+- Improvement:
+  - Introduce canonical company identity keys and deterministic dedupe rules.
+  - Track alias names and merged-record lineage.
+- Acceptance criteria:
+  - Duplicate account rate drops materially.
+  - Ranking and enrichment queues operate on one canonical record per account.
+
+## IMP-031: Contactability Waterfall with Verification Confidence
+- Priority: `P0`
+- Category: Data Enrichment, Conversion
+- Evidence:
+  - `eventiq/src/lib/types.ts:19`
+  - `eventiq/src/lib/types.ts:20`
+  - `eventiq/src/components/marketing-ideas-tab.tsx`
+- Problem:
+  - Contact records lack structured deliverability confidence and channel preference, causing wasted outreach attempts.
+- Improvement:
+  - Implement channel waterfall (`email -> linkedin -> phone -> event intro`) with confidence scores and last-verified dates.
+  - Mark risky records to prevent low-quality sequence entry.
+- Acceptance criteria:
+  - Top-priority accounts have at least one high-confidence reachable channel.
+  - Bounce/invalid outreach rates trend down.
+
+## IMP-032: Signal Freshness and Persona-Relevance Layer
+- Priority: `P0`
+- Category: Intent Intelligence
+- Evidence:
+  - `eventiq/src/components/marketing-ideas-tab.tsx:107`
+  - `eventiq/src/components/marketing-ideas-tab.tsx:114`
+  - `eventiq/src/components/marketing-ideas-tab.tsx:117`
+- Problem:
+  - Signal scoring uses text heuristics but does not persist freshness buckets and role relevance for downstream campaign/action logic.
+- Improvement:
+  - Add structured signal metadata (`signal_type`, `freshness_bucket`, `persona_relevance`).
+  - Use metadata in ranking and sequence routing.
+- Acceptance criteria:
+  - Every high-priority account has structured signal recency and persona mapping.
+  - Daily queue decisions are explainable by signal metadata.
+
+## IMP-033: Sub-Vertical + Segment Taxonomy for Demand Gen Precision
+- Priority: `P1`
+- Category: Segmentation, Demand Gen
+- Evidence:
+  - `eventiq/src/lib/types.ts:112`
+  - `eventiq/src/components/company-list.tsx:143`
+  - `ROADMAP.md`
+- Problem:
+  - `SQO/Client/ICP/TAM` is useful but insufficient for precise demand-gen campaigns across the 1,000-account universe.
+- Improvement:
+  - Add sub-vertical tags (for example MCA, factoring, equipment finance, embedded lending, CDFI).
+  - Add segment-level messaging and offer mappings.
+- Acceptance criteria:
+  - Marketing can pull campaign-ready segments with persona and signal filters.
+  - Segment-level meeting/SQL performance is measurable.
+
+## IMP-034: Enrichment QA Scorecard + Blocker Rules
+- Priority: `P0`
+- Category: Governance, Data Quality
+- Evidence:
+  - `ROADMAP.md`
+  - `bugs.md`
+  - `eventiq/scripts/merge-enrichment.js:103`
+- Problem:
+  - Enrichment merges can add records with minimal structural checks, which allows low-quality personas into execution flows.
+- Improvement:
+  - Create QA scorecard per account (coverage, confidence, freshness, channel quality).
+  - Add blocker rules that prevent sequence launch when score is below threshold.
+- Acceptance criteria:
+  - Every top-priority account has QA score and state (`blocked`, `ready`, `review`).
+  - Sequence launches honor blocker rules.
+
+## IMP-035: Enrichment Ops Queue with Owner and SLA Tracking
+- Priority: `P1`
+- Category: RevOps, Execution
+- Evidence:
+  - `ROADMAP.md:497`
+  - `ROADMAP.md`
+  - `eventiq/src/components/marketing-ideas-tab.tsx:202`
+- Problem:
+  - Prioritized gap queues exist, but ownership/SLA execution is not consistently captured for operational accountability.
+- Improvement:
+  - Add enrichment task queue with owner, due date, SLA bucket, and completion status.
+  - Track throughput and aging by owner/team.
+- Acceptance criteria:
+  - Every gap account has an assigned owner and SLA status.
+  - Weekly review can identify bottlenecks by queue aging.
+
+## IMP-036: Top-44 Account Enrichment Playbook Artifact
+- Priority: `P0`
+- Category: Execution, GTM Operations
+- Evidence:
+  - `ROADMAP.md:497`
+  - `ROADMAP.md:572`
+  - `bugs.md:313`
+- Problem:
+  - The ranked gap queue exists, but there is no single execution artifact that captures per-account ownership, role gaps, and QA completion state.
+- Improvement:
+  - Create and maintain a structured playbook for all 44 no-RICP accounts with required fields: missing role(s), owner, SLA bucket, source targets, validation state, and unblock date.
+- Acceptance criteria:
+  - 100% of no-RICP accounts appear in playbook with owner + SLA.
+  - Daily standup can track progress directly from one artifact.
+
+## IMP-037: Enrichment Schema Contract + Validation Gate
+- Priority: `P0`
+- Category: Data Governance
+- Evidence:
+  - `eventiq/src/lib/types.ts:13`
+  - `eventiq/scripts/merge-enrichment.js:103`
+  - `bugs.md:460`
+- Problem:
+  - Enrichment records can be appended without strict required-field checks, allowing low-trust or incomplete persona data.
+- Improvement:
+  - Define a schema contract for enriched personas and enforce pre-merge validation.
+  - Reject or quarantine records missing required provenance/freshness fields.
+- Acceptance criteria:
+  - Invalid enrichment payloads cannot enter canonical data.
+  - Validation errors are explicit and reviewable.
+
+## IMP-038: Deterministic Confidence Scoring Model
+- Priority: `P0`
+- Category: Data Quality, Conversion
+- Evidence:
+  - `ROADMAP.md:622`
+  - `bugs.md:330`
+  - `bugs.md:418`
+- Problem:
+  - Confidence is conceptually required but not consistently modeled, making sequence quality controls inconsistent.
+- Improvement:
+  - Define confidence score rubric using source trust, recency, and cross-source match.
+  - Map numeric score to `high`/`medium`/`low` and make routing decisions depend on it.
+- Acceptance criteria:
+  - Every enriched persona has reproducible confidence level.
+  - Sequence gating uses confidence thresholds consistently.
+
+## IMP-039: Freshness Policy and Auto Re-Verification Queue
+- Priority: `P0`
+- Category: Data Hygiene
+- Evidence:
+  - `ROADMAP.md:632`
+  - `bugs.md:418`
+- Problem:
+  - No automatic re-verification cycle exists, so records can decay silently.
+- Improvement:
+  - Define freshness windows by account tier and generate re-verification tasks automatically for stale records.
+- Acceptance criteria:
+  - Stale persona rate declines week-over-week.
+  - Re-verification queue is generated and owned weekly.
+
+## IMP-040: Company and Person Entity Resolution Layer
+- Priority: `P1`
+- Category: Data Integrity
+- Evidence:
+  - `eventiq/scripts/merge-research.js:74`
+  - `eventiq/scripts/merge-enrichment.js:71`
+  - `bugs.md:371`
+- Problem:
+  - Lightweight normalization can leave account aliases and person duplicates unresolved.
+- Improvement:
+  - Introduce canonical IDs, alias tables, and person identity matching rules.
+- Acceptance criteria:
+  - Duplicate entities are reduced and explicitly traceable.
+  - Coverage and ranking outputs stabilize across refreshes.
+
+## IMP-041: Role-Specific Messaging Asset Generator
+- Priority: `P1`
+- Category: BDR/AE Enablement
+- Evidence:
+  - `ROADMAP.md:612`
+  - `eventiq/src/lib/types.ts:23`
+- Problem:
+  - Enriched data is not consistently converted into role-targeted outreach assets.
+- Improvement:
+  - Generate role + signal-aware hooks, CTAs, and objection-safe openers per account.
+- Acceptance criteria:
+  - Each top-priority account has minimum messaging asset set per target role.
+  - First-touch prep time decreases materially.
+
+## IMP-042: Enrichment Ops KPI Dashboard Spec
+- Priority: `P1`
+- Category: RevOps, Observability
+- Evidence:
+  - `ROADMAP.md:676`
+  - `ROADMAP.md:678`
+- Problem:
+  - Enrichment outcomes are not centrally measured with operational and revenue-linked metrics.
+- Improvement:
+  - Define dashboard spec with leading/lagging enrichment KPIs and weekly review cadence.
+- Acceptance criteria:
+  - Dashboard exposes coverage, freshness, reachability, blocked sequences, and conversion splits.
+  - Leadership can evaluate enrichment ROI weekly.
+
+## IMP-043: Enrichment Uplift Measurement Framework
+- Priority: `P0`
+- Category: Analytics, Decision Science
+- Evidence:
+  - `ROADMAP.md:685`
+  - `ROADMAP.md:686`
+- Problem:
+  - Current planning assumes enrichment impact without a rigorous measurement framework.
+- Improvement:
+  - Define enriched vs control cohorts and measure meeting/SQL lift with clear attribution windows.
+- Acceptance criteria:
+  - Uplift is measurable and statistically interpretable.
+  - Budget and prioritization decisions use measured impact, not intuition.
+
+## IMP-044: Claude Handoff Pack for Enrichment Implementation
+- Priority: `P1`
+- Category: Delivery, Collaboration
+- Evidence:
+  - `ROADMAP.md:392`
+  - `ROADMAP.md:572`
+- Problem:
+  - Parallel implementation can drift without a tightly scoped handoff document.
+- Improvement:
+  - Create implementation pack with prioritized tickets, dependency order, data contracts, and test acceptance criteria.
+- Acceptance criteria:
+  - Claude implementation starts with minimal ambiguity.
+  - Delivered work maps directly back to roadmap and bug IDs.
+
+## IMP-045: 30-Day Enrichment Execution Calendar
+- Priority: `P1`
+- Category: Program Management
+- Evidence:
+  - `ROADMAP.md:636`
+  - `ROADMAP.md:638`
+- Problem:
+  - Weekly goals exist but daily execution cadence is not fully operationalized.
+- Improvement:
+  - Build a day-by-day 30-day plan with owners, deliverables, and checkpoint reviews.
+- Acceptance criteria:
+  - Daily execution status is transparent and auditable.
+  - Weekly targets are achieved with predictable throughput.

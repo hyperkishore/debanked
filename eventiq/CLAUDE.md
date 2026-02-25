@@ -17,13 +17,17 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 ---
 
-## Session Start — MANDATORY
+## Session Start — QUICK SCAN
 
-**CRITICAL: At the start of EVERY coding session on this project, read these three files before doing any work:**
+**At the start of each coding session, run a quick scan (not a full read) of these three files:**
 
 1. **`../bugs.md`** — Bug register with severity, evidence, and fix options. Check for Critical/High items that may relate to the current task.
 2. **`../improvements.md`** — Improvement plan with priorities (P0/P1/P2), implementation guidance, and acceptance criteria.
 3. **`../ROADMAP.md`** — Combined product vision + engineering execution plan. Understand what phase we're in and what's prioritized.
+
+**Quick-scan rule to avoid context overload:**
+- Read headings, priority/status sections, and only the entries relevant to the current task.
+- Do not deep-read entire files unless the task explicitly requires it.
 
 **During development:**
 - If you discover a new bug, add it to `../bugs.md` following the existing format (BUG-XXX with severity, evidence, impact, fix options).
@@ -37,6 +41,11 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 ../bugs.md           — Bug register
 ../improvements.md   — Improvement plan
 ../ROADMAP.md        — Product roadmap (vision + engineering execution)
+```
+
+**Conditional reference (only when task involves PhantomBuster):**
+```
+./phantom-buster.md  — PhantomBuster API research and integration guide
 ```
 
 ---
