@@ -5,6 +5,8 @@ import { isResearched, getResearchScore } from "@/lib/types";
 import { getLastEngagement, needsFollowUp } from "@/lib/engagement-helpers";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { computeOutreachScore, getNextBestAction, getUrgencyTier } from "@/lib/outreach-score";
+import { computeReadinessScore, getReadinessLabel } from "@/lib/readiness-score";
+import { buildFeedItems } from "@/lib/feed-helpers";
 import { CompanyCard } from "./company-card";
 import { CompanyTable } from "./company-table";
 import { FilterBar } from "./filter-bar";
@@ -63,7 +65,11 @@ function filterCompanies(
     const deals = c.hubspotDeals || [];
     const closedStages = ["closedwon", "closedlost", "closed won", "closed lost"];
     return deals.some(d => !closedStages.includes(d.stage.toLowerCase()) && !closedStages.includes(d.stageLabel.toLowerCase()));
-  });
+  })
+  else if (filter === "ReadyToSend") {
+    // Will be filtered after readiness scores are computed — mark for post-filter
+    filtered = filtered.filter((c) => isResearched(c));
+  }
 
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
@@ -82,7 +88,8 @@ function filterCompanies(
 function sortCompanies(
   companies: Company[],
   sort: SortType,
-  outreachScores?: Map<number, number>
+  outreachScores?: Map<number, number>,
+  readinessScores?: Map<number, number>
 ): Company[] {
   return [...companies].sort((a, b) => {
     switch (sort) {
@@ -103,6 +110,11 @@ function sortCompanies(
       case "outreach": {
         const scoreA = outreachScores?.get(a.id) ?? 0;
         const scoreB = outreachScores?.get(b.id) ?? 0;
+        return scoreB - scoreA;
+      }
+      case "readiness": {
+        const scoreA = readinessScores?.get(a.id) ?? 0;
+        const scoreB = readinessScores?.get(b.id) ?? 0;
         return scoreB - scoreA;
       }
       default:
@@ -170,6 +182,19 @@ export function CompanyList({
       .map(([tag]) => tag);
   }, [baseFiltered, tagsState]);
 
+  // Compute readiness scores for all filtered companies
+  const feedItems = useMemo(() => buildFeedItems(companies), [companies]);
+  const readinessData = useMemo(() => {
+    const scores = new Map<number, number>();
+    const labels = new Map<number, string>();
+    for (const c of filtered) {
+      const breakdown = computeReadinessScore(c, feedItems, engagements);
+      scores.set(c.id, breakdown.total);
+      labels.set(c.id, getReadinessLabel(breakdown.total));
+    }
+    return { scores, labels };
+  }, [filtered, feedItems, engagements]);
+
   // Compute outreach scores (only when sorting by outreach or always for badge display)
   const outreachData = useMemo(() => {
     const scores = new Map<number, number>();
@@ -184,9 +209,15 @@ export function CompanyList({
     return { scores, actions, tiers };
   }, [filtered, engagements, pipelineState, metState]);
 
+  // Apply ReadyToSend post-filter (needs readiness scores computed first)
+  const postFiltered = useMemo(() => {
+    if (activeFilter !== "ReadyToSend") return filtered;
+    return filtered.filter((c) => (readinessData.scores.get(c.id) ?? 0) >= 7);
+  }, [filtered, activeFilter, readinessData.scores]);
+
   const sorted = useMemo(
-    () => sortCompanies(filtered, activeSort, outreachData.scores),
-    [filtered, activeSort, outreachData.scores]
+    () => sortCompanies(postFiltered, activeSort, outreachData.scores, readinessData.scores),
+    [postFiltered, activeSort, outreachData.scores, readinessData.scores]
   );
 
   const virtualizer = useVirtualizer({
@@ -271,6 +302,8 @@ export function CompanyList({
                     urgencyTier={showOutreachBadges ? (outreachData.tiers.get(company.id) as "critical" | "high" | "medium" | "low") : undefined}
                     nextBestAction={showOutreachBadges ? outreachData.actions.get(company.id) : undefined}
                     tags={tagsState[company.id]}
+                    readinessScore={readinessData.scores.get(company.id)}
+                    readinessLabel={readinessData.labels.get(company.id) as "ready" | "almost" | "needs-work" | "not-ready" | undefined}
                   />
                 </div>
               );

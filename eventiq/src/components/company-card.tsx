@@ -2,6 +2,7 @@
 
 import { Company, CompanyCategory, OutreachStatus, getResearchScore, getResearchTier } from "@/lib/types";
 import { UrgencyTier } from "@/lib/outreach-score";
+import { ReadinessLabel, getReadinessColor, getReadinessBgColor } from "@/lib/readiness-score";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -18,6 +19,8 @@ interface CompanyCardProps {
   urgencyTier?: UrgencyTier;
   nextBestAction?: string;
   tags?: string[];
+  readinessScore?: number;
+  readinessLabel?: ReadinessLabel;
 }
 
 function highlightText(text: string, query: string) {
@@ -81,6 +84,8 @@ export function CompanyCard({
   urgencyTier,
   nextBestAction,
   tags = [],
+  readinessScore,
+  readinessLabel,
 }: CompanyCardProps) {
   const contactNames = company.contacts.map((c) => c.n).join(", ");
   const subtitle = contactNames || company.location || "";
@@ -227,10 +232,21 @@ export function CompanyCard({
           </div>
         </div>
 
-        {/* Research score badge */}
-        <span className={cn("text-xs font-medium tabular-nums shrink-0 pt-0.5", tierBadgeColors[tier])}>
-          {score}%
-        </span>
+        {/* Scores */}
+        <div className="flex flex-col items-end gap-1 shrink-0 pt-0.5">
+          <span className={cn("text-xs font-medium tabular-nums", tierBadgeColors[tier])}>
+            {score}%
+          </span>
+          {readinessLabel && readinessScore !== undefined && (
+            <Badge
+              variant="outline"
+              className={cn("text-xs px-1 py-0 h-4 font-bold tabular-nums", getReadinessBgColor(readinessLabel), getReadinessColor(readinessLabel))}
+              title={`Outreach readiness: ${readinessScore}/10`}
+            >
+              {readinessScore.toFixed(1)}
+            </Badge>
+          )}
+        </div>
       </div>
     </Card>
   );

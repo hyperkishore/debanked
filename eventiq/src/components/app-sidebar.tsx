@@ -75,6 +75,7 @@ const filterOptions: { value: FilterType; label: string }[] = [
   { value: "Met", label: "Met" },
   { value: "CLEAR", label: "CLEAR" },
   { value: "FollowUp", label: "Follow-up" },
+  { value: "ReadyToSend", label: "Ready" },
 ];
 
 export function AppSidebar({
@@ -275,7 +276,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.1.30</span>
+              <span className="opacity-50">v3.1.31</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">

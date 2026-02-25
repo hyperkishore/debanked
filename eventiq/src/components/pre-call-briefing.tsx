@@ -21,6 +21,9 @@ import {
   Newspaper,
   AlertTriangle,
   Copy,
+  Zap,
+  Shield,
+  MessageSquare,
 } from "lucide-react";
 
 interface PreCallBriefingDialogProps {
@@ -138,6 +141,90 @@ export function PreCallBriefingDialog({
               </div>
             </BriefSection>
           )}
+
+          {/* PERSON-SPECIFIC HOOKS */}
+          {briefing.personHooks.length > 0 && (
+            <BriefSection icon={User} title="PERSON-SPECIFIC HOOKS">
+              <div className="space-y-2">
+                {briefing.personHooks.map((hook, i) => (
+                  <div key={i} className="flex items-start gap-2">
+                    <div className="flex-1">
+                      <p className="text-xs font-medium text-foreground">{hook.hook}</p>
+                      <p className="text-xs text-brand/70 italic mt-0.5">{hook.suggestedMention}</p>
+                    </div>
+                    <CopyButton text={hook.suggestedMention} />
+                  </div>
+                ))}
+              </div>
+            </BriefSection>
+          )}
+
+          {/* TRIGGER CONTEXT */}
+          {briefing.triggerContext && (
+            <BriefSection icon={Zap} title={`TRIGGER: ${briefing.triggerContext.urgencyLevel.toUpperCase()}`}>
+              <div className="space-y-1.5">
+                <p className="text-sm font-medium">{briefing.triggerContext.trigger}</p>
+                <div className="flex items-start gap-2">
+                  <p className="text-xs text-foreground/80 bg-brand/5 border border-brand/20 rounded-lg p-2 flex-1 leading-relaxed">
+                    {briefing.triggerContext.hvRelevance}
+                  </p>
+                  <CopyButton text={briefing.triggerContext.hvRelevance} />
+                </div>
+              </div>
+            </BriefSection>
+          )}
+
+          {/* OBJECTION PREEMPTS */}
+          {briefing.objectionPreempts.length > 0 && (
+            <BriefSection icon={Shield} title="OBJECTION PREEMPTS">
+              <div className="space-y-3">
+                {briefing.objectionPreempts.map((obj, i) => (
+                  <div key={i} className="space-y-1">
+                    <p className="text-xs font-medium text-red-400/80">{obj.objection}</p>
+                    <div className="flex items-start gap-2">
+                      <p className="text-xs text-foreground/80 bg-secondary/30 rounded-lg p-2 flex-1 leading-relaxed">
+                        {obj.preempt}
+                      </p>
+                      <CopyButton text={obj.preempt} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </BriefSection>
+          )}
+
+          {/* THE ASKS */}
+          <BriefSection icon={MessageSquare} title="THE ASKS">
+            <div className="space-y-2">
+              <div className="flex items-start gap-2">
+                <div className="flex-1">
+                  <p className="text-xs font-semibold text-muted-foreground mb-0.5">Opening (low commitment)</p>
+                  <p className="text-xs text-foreground/80 bg-brand/5 border border-brand/20 rounded-lg p-2 leading-relaxed">
+                    {briefing.personalizedAsks.openingAsk}
+                  </p>
+                </div>
+                <CopyButton text={briefing.personalizedAsks.openingAsk} />
+              </div>
+              <div className="flex items-start gap-2">
+                <div className="flex-1">
+                  <p className="text-xs font-semibold text-muted-foreground mb-0.5">If going well</p>
+                  <p className="text-xs text-foreground/80 bg-green-500/5 border border-green-500/20 rounded-lg p-2 leading-relaxed">
+                    {briefing.personalizedAsks.closingAsk}
+                  </p>
+                </div>
+                <CopyButton text={briefing.personalizedAsks.closingAsk} />
+              </div>
+              <div className="flex items-start gap-2">
+                <div className="flex-1">
+                  <p className="text-xs font-semibold text-muted-foreground mb-0.5">If not interested</p>
+                  <p className="text-xs text-foreground/80 bg-muted/30 rounded-lg p-2 leading-relaxed">
+                    {briefing.personalizedAsks.fallbackAsk}
+                  </p>
+                </div>
+                <CopyButton text={briefing.personalizedAsks.fallbackAsk} />
+              </div>
+            </div>
+          </BriefSection>
 
           {/* LAND MINES */}
           {briefing.landMines.length > 0 && (

@@ -4,6 +4,12 @@ import { useMemo, useState } from "react";
 import { Company, CompanyMetrics } from "@/lib/types";
 import { computeCompanyMetrics, MetricSortKey } from "@/lib/company-metrics";
 import { TYPE_COLORS } from "@/lib/market-map-helpers";
+import {
+  SignalHeatData,
+  getHeatmapOpacity,
+  getHeatmapRadius,
+  getHeatmapColor,
+} from "@/lib/signal-heatmap-helpers";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface QuadrantProps {
@@ -11,6 +17,7 @@ interface QuadrantProps {
   xAxis: MetricSortKey;
   yAxis: MetricSortKey;
   onSelectCompany: (id: number) => void;
+  signalHeatmap?: Map<number, SignalHeatData>;
 }
 
 const AXIS_LABELS: Record<MetricSortKey, string> = {
@@ -42,6 +49,7 @@ export function MarketMapQuadrant({
   xAxis,
   yAxis,
   onSelectCompany,
+  signalHeatmap,
 }: QuadrantProps) {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
@@ -54,20 +62,33 @@ export function MarketMapQuadrant({
       const x = getMetricValue(metrics, xAxis);
       const y = getMetricValue(metrics, yAxis);
       const employees = c.employees || 1;
-      const radius = Math.max(4, Math.min(16, Math.sqrt(employees) * 0.5));
+      const baseRadius = Math.max(4, Math.min(16, Math.sqrt(employees) * 0.5));
       const outreachStatus = c.outreachHistory?.status;
+
+      const heat = signalHeatmap?.get(c.id);
+      const radius = heat
+        ? getHeatmapRadius(heat.heatIntensity, baseRadius)
+        : baseRadius;
+      const color = heat
+        ? getHeatmapColor(heat.heatIntensity)
+        : TYPE_COLORS[c.type] || "hsl(215, 15%, 50%)";
+      const opacity = heat
+        ? getHeatmapOpacity(heat.heatIntensity)
+        : 0.75;
 
       return {
         company: c,
         x,
         y,
         radius,
-        color: TYPE_COLORS[c.type] || "hsl(215, 15%, 50%)",
+        color,
+        opacity,
         ringColor: outreachStatus ? OUTREACH_RING_COLORS[outreachStatus] : undefined,
         metrics,
+        heat,
       };
     });
-  }, [companies, xAxis, yAxis]);
+  }, [companies, xAxis, yAxis, signalHeatmap]);
 
   // Quadrant labels
   const quadrants = [
@@ -84,6 +105,26 @@ export function MarketMapQuadrant({
         viewBox="0 0 600 400"
         preserveAspectRatio="xMidYMid meet"
       >
+        {/* SVG defs for heatmap glow */}
+        {signalHeatmap && (
+          <defs>
+            <filter id="signal-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <style>{`
+              @keyframes signal-pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.5; }
+              }
+              .signal-pulse { animation: signal-pulse 2s ease-in-out infinite; }
+            `}</style>
+          </defs>
+        )}
+
         {/* Background quadrants */}
         <rect x={PADDING.left} y={PADDING.top} width={(600 - PADDING.left - PADDING.right) / 2} height={(400 - PADDING.top - PADDING.bottom) / 2} fill="hsl(215, 15%, 12%)" opacity={0.3} />
         <rect x={PADDING.left + (600 - PADDING.left - PADDING.right) / 2} y={PADDING.top} width={(600 - PADDING.left - PADDING.right) / 2} height={(400 - PADDING.top - PADDING.bottom) / 2} fill="hsl(142, 30%, 12%)" opacity={0.3} />
@@ -186,15 +227,29 @@ export function MarketMapQuadrant({
                   opacity={isHovered ? 1 : 0.7}
                 />
               )}
+              {/* Glow ring for hot signals */}
+              {pt.heat && pt.heat.heatIntensity >= 0.3 && (
+                <circle
+                  cx={cx}
+                  cy={cy}
+                  r={pt.radius + 2}
+                  fill="none"
+                  stroke={pt.color}
+                  strokeWidth={1.5}
+                  opacity={pt.heat.heatIntensity * 0.4}
+                  filter="url(#signal-glow)"
+                />
+              )}
               {/* Dot */}
               <circle
                 cx={cx}
                 cy={cy}
                 r={isHovered ? pt.radius + 1 : pt.radius}
                 fill={pt.color}
-                opacity={isHovered ? 1 : 0.75}
+                opacity={isHovered ? 1 : pt.opacity}
                 stroke={isHovered ? "white" : "none"}
                 strokeWidth={isHovered ? 1.5 : 0}
+                className={pt.heat?.pulsing ? "signal-pulse" : undefined}
               />
               {/* Label for hovered */}
               {isHovered && (
@@ -258,6 +313,25 @@ export function MarketMapQuadrant({
             {pt.company.outreachHistory && pt.company.outreachHistory.status !== "no_history" && (
               <div className="mt-1 text-muted-foreground">
                 Outreach: {pt.company.outreachHistory.status}
+              </div>
+            )}
+            {pt.heat && (
+              <div className="mt-1 border-t border-border pt-1 space-y-0.5">
+                <div className="flex justify-between">
+                  <span>Signals (180d)</span>
+                  <span className="font-mono">{pt.heat.signalCount}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Recent (30d)</span>
+                  <span className="font-mono">{pt.heat.recentSignalCount}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Velocity</span>
+                  <span className="font-mono">{pt.heat.signalVelocity > 0 ? "+" : ""}{pt.heat.signalVelocity}</span>
+                </div>
+                {pt.heat.pulsing && (
+                  <div className="text-red-400 font-medium">Active this week</div>
+                )}
               </div>
             )}
           </div>

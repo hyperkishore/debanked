@@ -42,6 +42,7 @@ const filters: { value: FilterType; label: string }[] = [
   { value: "Unresearched", label: "Unresearched" },
   { value: "InHubSpot", label: "In HubSpot" },
   { value: "ActivePipeline", label: "Active Pipeline" },
+  { value: "ReadyToSend", label: "Ready to Send" },
 ];
 
 const sortOptions: { value: SortType; label: string; shortLabel: string }[] = [
@@ -52,6 +53,7 @@ const sortOptions: { value: SortType; label: string; shortLabel: string }[] = [
   { value: "employees", label: "Employees (largest first)", shortLabel: "Employees" },
   { value: "quality", label: "Research quality (best first)", shortLabel: "Quality" },
   { value: "outreach", label: "Outreach score (highest first)", shortLabel: "Outreach" },
+  { value: "readiness", label: "Readiness (most ready first)", shortLabel: "Readiness" },
 ];
 
 export function FilterBar({

@@ -20,6 +20,7 @@ import {
   Crosshair,
   LayoutGrid,
   TreePine,
+  Radio,
 } from "lucide-react";
 
 interface MarketMapFiltersBarProps {
@@ -36,6 +37,8 @@ interface MarketMapFiltersBarProps {
   yAxis?: MetricSortKey;
   onXAxisChange?: (key: MetricSortKey) => void;
   onYAxisChange?: (key: MetricSortKey) => void;
+  showSignalHeat?: boolean;
+  onShowSignalHeatChange?: (show: boolean) => void;
 }
 
 const typeLabels: Record<CompanyType, { label: string; color: string }> = {
@@ -73,6 +76,8 @@ export function MarketMapFiltersBar({
   yAxis = "intent",
   onXAxisChange,
   onYAxisChange,
+  showSignalHeat,
+  onShowSignalHeatChange,
 }: MarketMapFiltersBarProps) {
   const toggleType = (type: CompanyType) => {
     const types = filters.types.includes(type)
@@ -197,6 +202,22 @@ export function MarketMapFiltersBar({
             </ToggleGroupItem>
           </ToggleGroup>
         </div>
+      )}
+
+      {/* Signal heatmap toggle */}
+      {onShowSignalHeatChange && (
+        <>
+          <div className="w-px h-5 bg-border" />
+          <Button
+            variant={showSignalHeat ? "default" : "outline"}
+            size="sm"
+            className="h-7 px-2 text-xs gap-1"
+            onClick={() => onShowSignalHeatChange(!showSignalHeat)}
+          >
+            <Radio className="h-3 w-3" />
+            Signals
+          </Button>
+        </>
       )}
 
       {/* Axis selectors — only for quadrant view */}

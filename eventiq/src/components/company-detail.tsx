@@ -7,6 +7,10 @@ import { generateLinkedInVariants, LinkedInVariant } from "@/lib/linkedin-messag
 import { PipelineRecord, PipelineStage, PIPELINE_STAGES } from "@/lib/pipeline-helpers";
 import { detectPersona, getPersonaConfig } from "@/lib/persona-helpers";
 import { generateBattlecards, getCategoryStyle } from "@/lib/battlecard-helpers";
+import { computeReadinessScore, getReadinessLabel, getReadinessColor, getReadinessBgColor } from "@/lib/readiness-score";
+import { generateTriggerCards, TriggerCard } from "@/lib/trigger-card-helpers";
+import { buildFeedItems, FeedItem } from "@/lib/feed-helpers";
+import { detectCompetitors, CompetitiveContext } from "@/lib/competitive-intel-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -21,6 +25,7 @@ import { PreCallBriefingDialog } from "@/components/pre-call-briefing";
 import { SequencePanel } from "@/components/sequence-panel";
 import { AIBriefingCard } from "@/components/ai-briefing-card";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import {
@@ -52,6 +57,11 @@ import {
   FileText,
   Send,
   ClipboardCopy,
+  Zap,
+  Swords,
+  BarChart3,
+  AlertTriangle,
+  Clock,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -150,6 +160,28 @@ export function CompanyDetail({
     [company, pipelineState]
   );
 
+  // Feed items for this company (used by readiness + trigger cards)
+  const feedItems = useMemo(() => buildFeedItems([company]), [company]);
+
+  // Readiness score
+  const readiness = useMemo(
+    () => computeReadinessScore(company, feedItems, engagements),
+    [company, feedItems, engagements]
+  );
+  const readinessLabel = getReadinessLabel(readiness.total);
+
+  // Trigger cards
+  const triggerCards = useMemo(
+    () => generateTriggerCards(company, feedItems),
+    [company, feedItems]
+  );
+
+  // Competitive intel
+  const competitiveContexts = useMemo(
+    () => detectCompetitors(company),
+    [company]
+  );
+
   const handleNotesChange = (value: string) => {
     setLocalNotes(value);
     onSaveNotes(company.id, value);
@@ -192,6 +224,9 @@ export function CompanyDetail({
             )}
           </div>
         </div>
+
+        {/* Readiness Score Breakdown — compact inline */}
+        <ReadinessScoreBadge readiness={readiness} label={readinessLabel} />
 
         {/* Meta info row */}
         {(company.location || company.employees || company.website) && (
@@ -704,6 +739,11 @@ export function CompanyDetail({
             {/* AI Briefing */}
             <AIBriefingCard companyId={company.id} />
 
+            {/* Trigger Cards */}
+            {triggerCards.length > 0 && (
+              <TriggerCardsSection triggerCards={triggerCards} />
+            )}
+
             {/* Icebreakers */}
             <Section icon={Lightbulb} title="Icebreakers">
               <div className="space-y-2">
@@ -848,6 +888,11 @@ export function CompanyDetail({
                   </div>
                 )}
               </div>
+            )}
+
+            {/* Competitive Intel */}
+            {competitiveContexts.length > 0 && (
+              <CompetitiveIntelSection contexts={competitiveContexts} />
             )}
 
             {/* The Ask */}
@@ -1289,6 +1334,405 @@ function Section({
         {action}
       </div>
       {children}
+    </div>
+  );
+}
+
+// --- Readiness Score Badge (compact header widget) ---
+
+const READINESS_SUB_SCORES: { key: "hookScore" | "contactScore" | "painPointScore" | "intelScore"; label: string; abbr: string }[] = [
+  { key: "hookScore", label: "Hook / Trigger", abbr: "Hook" },
+  { key: "contactScore", label: "Contact Reachability", abbr: "Contact" },
+  { key: "painPointScore", label: "Pain Point / Value", abbr: "Pain" },
+  { key: "intelScore", label: "Intel Freshness", abbr: "Intel" },
+];
+
+function ReadinessScoreBadge({
+  readiness,
+  label,
+}: {
+  readiness: { total: number; hookScore: number; contactScore: number; painPointScore: number; intelScore: number; missingPieces: string[] };
+  label: "ready" | "almost" | "needs-work" | "not-ready";
+}) {
+  const [expanded, setExpanded] = useState(false);
+  const colorClass = getReadinessColor(label);
+  const bgClass = getReadinessBgColor(label);
+  const labelText = label === "ready" ? "Ready" : label === "almost" ? "Almost" : label === "needs-work" ? "Needs Work" : "Not Ready";
+
+  return (
+    <div className="mt-1.5">
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="flex items-center gap-2 group"
+      >
+        <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold border", bgClass, colorClass)}>
+          <BarChart3 className="h-2.5 w-2.5 mr-0.5" />
+          {readiness.total.toFixed(1)}/10
+        </Badge>
+        <span className={cn("text-xs font-medium", colorClass)}>{labelText}</span>
+        <div className="flex items-center gap-0.5">
+          {READINESS_SUB_SCORES.map(({ key }) => {
+            const val = readiness[key];
+            const barColor = val >= 7 ? "bg-green-500" : val >= 5 ? "bg-yellow-500" : val >= 3 ? "bg-orange-500" : "bg-red-500";
+            return (
+              <Tooltip key={key}>
+                <TooltipTrigger asChild>
+                  <div className="w-6 h-1.5 rounded-full bg-muted/50 overflow-hidden">
+                    <div className={cn("h-full rounded-full transition-all", barColor)} style={{ width: `${(val / 10) * 100}%` }} />
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent className="text-xs">
+                  {READINESS_SUB_SCORES.find(s => s.key === key)?.label}: {val}/10
+                </TooltipContent>
+              </Tooltip>
+            );
+          })}
+        </div>
+        {expanded ? <ChevronUp className="h-3 w-3 text-muted-foreground" /> : <ChevronDown className="h-3 w-3 text-muted-foreground" />}
+      </button>
+
+      {expanded && (
+        <div className="mt-2 space-y-1.5">
+          {/* Sub-score bars */}
+          <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+            {READINESS_SUB_SCORES.map(({ key, label: scoreLabel, abbr }) => {
+              const val = readiness[key];
+              const barColor = val >= 7 ? "bg-green-500" : val >= 5 ? "bg-yellow-500" : val >= 3 ? "bg-orange-500" : "bg-red-500";
+              return (
+                <div key={key} className="flex items-center gap-2">
+                  <span className="text-xs text-muted-foreground w-12 shrink-0">{abbr}</span>
+                  <div className="flex-1 h-1.5 rounded-full bg-muted/50 overflow-hidden">
+                    <div className={cn("h-full rounded-full transition-all", barColor)} style={{ width: `${(val / 10) * 100}%` }} />
+                  </div>
+                  <span className="text-xs text-muted-foreground tabular-nums w-6 text-right">{val}</span>
+                </div>
+              );
+            })}
+          </div>
+          {/* Missing pieces */}
+          {readiness.missingPieces.length > 0 && (
+            <div className="space-y-0.5 mt-1">
+              {readiness.missingPieces.map((piece, i) => (
+                <div key={i} className="flex items-start gap-1.5 text-xs text-orange-400/80">
+                  <AlertTriangle className="h-3 w-3 shrink-0 mt-0.5" />
+                  <span>{piece}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// --- Trigger Cards Section ---
+
+const TRIGGER_TYPE_LABELS: Record<string, { label: string; color: string; icon: string }> = {
+  funding: { label: "Funding", color: "text-green-400", icon: "$" },
+  leadership_hire: { label: "New Leader", color: "text-yellow-400", icon: "U" },
+  regulatory: { label: "Regulatory", color: "text-red-400", icon: "R" },
+  product_launch: { label: "Product", color: "text-blue-400", icon: "P" },
+  partnership: { label: "Partnership", color: "text-purple-400", icon: "H" },
+  milestone: { label: "Milestone", color: "text-orange-400", icon: "M" },
+};
+
+function TriggerCardsSection({ triggerCards }: { triggerCards: TriggerCard[] }) {
+  return (
+    <Section icon={Zap} title={`Trigger Cards (${triggerCards.length})`}>
+      <div className="space-y-3">
+        {triggerCards.map((card) => (
+          <TriggerCardItem key={card.id} card={card} />
+        ))}
+      </div>
+    </Section>
+  );
+}
+
+function TriggerCardItem({ card }: { card: TriggerCard }) {
+  const [open, setOpen] = useState(false);
+  const config = TRIGGER_TYPE_LABELS[card.triggerType] || { label: card.triggerType, color: "text-muted-foreground", icon: "?" };
+  const daysAgo = Math.round((Date.now() - card.signalDate) / 86400000);
+
+  return (
+    <Card className="bg-secondary/20 p-3 gap-0 shadow-none border-0 space-y-2">
+      {/* Header row */}
+      <div className="flex items-start justify-between gap-2">
+        <div className="flex-1 min-w-0 space-y-1">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 h-5 shrink-0 font-semibold", config.color)}>
+              {config.label}
+            </Badge>
+            <Badge variant="outline" className={cn(
+              "text-xs px-1.5 py-0.5 h-5 shrink-0",
+              card.heat === "hot" ? "bg-red-500/10 text-red-400 border-red-500/30"
+                : card.heat === "warm" ? "bg-yellow-500/10 text-yellow-400 border-yellow-500/30"
+                : "bg-muted/50 text-muted-foreground border-border"
+            )}>
+              {card.heat}
+            </Badge>
+            {card.expiresInDays <= 7 && (
+              <span className="text-xs text-red-400 flex items-center gap-0.5">
+                <Clock className="h-2.5 w-2.5" /> {card.expiresInDays}d left
+              </span>
+            )}
+          </div>
+          <p className="text-xs font-medium text-foreground/90 leading-snug">{card.signalHeadline}</p>
+          <p className="text-xs text-muted-foreground/60">{card.signalSource} &middot; {daysAgo}d ago</p>
+        </div>
+        <div className="flex items-center gap-1 shrink-0">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div className="text-xs font-bold tabular-nums px-1.5 py-0.5 rounded bg-brand/10 text-brand">
+                {card.urgency}/10
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>Urgency score</TooltipContent>
+          </Tooltip>
+        </div>
+      </div>
+
+      {/* Why Now */}
+      <p className="text-xs text-muted-foreground leading-relaxed italic">{card.whyNow}</p>
+
+      {/* Target contact */}
+      {card.targetContact && (
+        <div className="flex items-center gap-2 text-xs">
+          <Users className="h-3 w-3 text-muted-foreground shrink-0" />
+          <span className="font-medium">{card.targetContact.name}</span>
+          <span className="text-muted-foreground">{card.targetContact.title}</span>
+          <span className="text-muted-foreground/50">({card.targetContact.rationale})</span>
+        </div>
+      )}
+
+      {/* Hook line with copy */}
+      <div className="flex items-start gap-2">
+        <p className="text-xs text-brand/80 flex-1 leading-relaxed">{card.hookLine}</p>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="h-5 w-5 p-0 shrink-0 text-muted-foreground hover:text-brand"
+          onClick={() => {
+            navigator.clipboard.writeText(card.hookLine);
+            toast.success("Hook line copied");
+          }}
+        >
+          <Copy className="h-3 w-3" />
+        </Button>
+      </div>
+
+      {/* Expandable outreach package */}
+      <Collapsible open={open} onOpenChange={setOpen}>
+        <CollapsibleTrigger asChild>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="h-6 px-2 text-xs text-muted-foreground gap-1 w-full justify-start"
+          >
+            {open ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
+            Outreach Package
+          </Button>
+        </CollapsibleTrigger>
+        <CollapsibleContent className="space-y-3 pt-2">
+          {/* Email */}
+          <div className="rounded-md border border-blue-500/20 bg-blue-500/5 p-3 space-y-1.5">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-medium text-blue-400 flex items-center gap-1">
+                <Mail className="h-3 w-3" /> Email Draft
+              </span>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-5 px-1.5 text-xs text-muted-foreground hover:text-blue-400 gap-1"
+                onClick={() => {
+                  navigator.clipboard.writeText(`Subject: ${card.outreachPackage.emailSubject}\n\n${card.outreachPackage.emailBody}`);
+                  toast.success("Email copied");
+                }}
+              >
+                <Copy className="h-2.5 w-2.5" /> Copy
+              </Button>
+            </div>
+            <p className="text-xs text-blue-400/60 font-medium">Subject: {card.outreachPackage.emailSubject}</p>
+            <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">{card.outreachPackage.emailBody}</pre>
+          </div>
+
+          {/* LinkedIn */}
+          <div className="rounded-md border border-sky-400/20 bg-sky-400/5 p-3 space-y-1.5">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-medium text-sky-400 flex items-center gap-1">
+                <Linkedin className="h-3 w-3" /> LinkedIn Message
+              </span>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-5 px-1.5 text-xs text-muted-foreground hover:text-sky-400 gap-1"
+                onClick={() => {
+                  navigator.clipboard.writeText(card.outreachPackage.linkedInMessage);
+                  toast.success("LinkedIn message copied");
+                }}
+              >
+                <Copy className="h-2.5 w-2.5" /> Copy
+              </Button>
+            </div>
+            <pre className="text-xs text-foreground/80 whitespace-pre-wrap font-sans leading-relaxed">{card.outreachPackage.linkedInMessage}</pre>
+          </div>
+
+          {/* Talking Points */}
+          <div className="space-y-1">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-medium text-muted-foreground flex items-center gap-1">
+                <MessageSquare className="h-3 w-3" /> Talking Points
+              </span>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-5 px-1.5 text-xs text-muted-foreground hover:text-brand gap-1"
+                onClick={() => {
+                  navigator.clipboard.writeText(card.outreachPackage.talkingPoints.join("\n\n"));
+                  toast.success("Talking points copied");
+                }}
+              >
+                <Copy className="h-2.5 w-2.5" /> Copy
+              </Button>
+            </div>
+            {card.outreachPackage.talkingPoints.map((tp, i) => (
+              <div key={i} className="flex items-start gap-2 text-xs">
+                <span className="text-brand shrink-0 mt-0.5">&bull;</span>
+                <span className="text-muted-foreground leading-relaxed">{tp}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Objection preempt */}
+          <div className="rounded-md bg-yellow-500/5 border border-yellow-500/20 p-2">
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-xs font-medium text-yellow-400 flex items-center gap-1">
+                <Shield className="h-3 w-3" /> Objection Preempt
+              </span>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-5 px-1.5 text-xs text-muted-foreground hover:text-yellow-400 gap-1"
+                onClick={() => {
+                  navigator.clipboard.writeText(card.outreachPackage.objectionPreempt);
+                  toast.success("Objection preempt copied");
+                }}
+              >
+                <Copy className="h-2.5 w-2.5" /> Copy
+              </Button>
+            </div>
+            <p className="text-xs text-muted-foreground leading-relaxed">{card.outreachPackage.objectionPreempt}</p>
+          </div>
+        </CollapsibleContent>
+      </Collapsible>
+    </Card>
+  );
+}
+
+// --- Competitive Intel Section ---
+
+const CONFIDENCE_STYLES: Record<string, { label: string; color: string }> = {
+  confirmed: { label: "Confirmed", color: "bg-green-500/10 text-green-400 border-green-500/30" },
+  likely: { label: "Likely", color: "bg-yellow-500/10 text-yellow-400 border-yellow-500/30" },
+  possible: { label: "Possible", color: "bg-muted/50 text-muted-foreground border-border" },
+};
+
+const SOURCE_LABELS: Record<string, string> = {
+  description: "Company description",
+  news: "News article",
+  leader_background: "Leader bio",
+  leader_hooks: "Leader hooks",
+};
+
+function CompetitiveIntelSection({ contexts }: { contexts: CompetitiveContext[] }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div>
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={() => setExpanded(!expanded)}
+        className="flex items-center gap-2 mb-2 w-full text-left h-auto p-0 hover:bg-transparent"
+      >
+        <Swords className="h-4 w-4 text-muted-foreground" />
+        <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground flex-1">
+          Competitive Intel
+        </h3>
+        <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5">
+          {contexts.length}
+        </Badge>
+        {expanded ? (
+          <ChevronUp className="h-3.5 w-3.5 text-muted-foreground" />
+        ) : (
+          <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
+        )}
+      </Button>
+      {expanded && (
+        <div className="space-y-3">
+          {contexts.map((ctx, i) => {
+            const confStyle = CONFIDENCE_STYLES[ctx.confidence] || CONFIDENCE_STYLES.possible;
+            return (
+              <Card key={i} className="bg-secondary/20 p-3 gap-0 shadow-none border-0 space-y-2">
+                {/* Competitor header */}
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-xs font-semibold text-foreground">{ctx.competitor.name}</span>
+                  <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 h-5", confStyle.color)}>
+                    {confStyle.label}
+                  </Badge>
+                  <span className="text-xs text-muted-foreground/50">
+                    via {SOURCE_LABELS[ctx.mentionSource] || ctx.mentionSource}
+                  </span>
+                </div>
+
+                {/* Mention context */}
+                <p className="text-xs text-muted-foreground/70 italic leading-relaxed">
+                  &ldquo;{ctx.mentionText}&rdquo;
+                </p>
+
+                {/* Battlecard */}
+                <div className="space-y-2 pt-1">
+                  {/* Situation */}
+                  <div>
+                    <span className="text-xs font-medium text-muted-foreground">Situation</span>
+                    <p className="text-xs text-foreground/80 leading-relaxed mt-0.5">{ctx.battlecard.situation}</p>
+                  </div>
+                  {/* Response */}
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-medium text-brand">Response</span>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="h-5 w-5 p-0 text-muted-foreground hover:text-brand"
+                        onClick={() => {
+                          navigator.clipboard.writeText(ctx.battlecard.response);
+                          toast.success("Response copied");
+                        }}
+                      >
+                        <Copy className="h-3 w-3" />
+                      </Button>
+                    </div>
+                    <p className="text-xs text-foreground/80 leading-relaxed mt-0.5">{ctx.battlecard.response}</p>
+                  </div>
+                  {/* Proof Point */}
+                  <div>
+                    <span className="text-xs font-medium text-green-400">Proof Point</span>
+                    <p className="text-xs text-foreground/80 leading-relaxed mt-0.5">{ctx.battlecard.proofPoint}</p>
+                  </div>
+                  {/* Avoid Saying */}
+                  <div className="rounded bg-red-500/5 border border-red-500/15 p-2">
+                    <span className="text-xs font-medium text-red-400 flex items-center gap-1">
+                      <AlertTriangle className="h-3 w-3" /> Avoid Saying
+                    </span>
+                    <p className="text-xs text-red-400/70 leading-relaxed mt-0.5">{ctx.battlecard.avoidSaying}</p>
+                  </div>
+                </div>
+              </Card>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
