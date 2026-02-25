@@ -644,8 +644,8 @@ export function CompanyDetail({
               <Section icon={Building2} title={`HubSpot Deals (${company.hubspotDeals!.length})`}>
                 <div className="space-y-2">
                   {company.hubspotDeals!.map((deal) => {
-                    const isWon = deal.stageLabel.toLowerCase().includes("closed won");
-                    const isLost = deal.stageLabel.toLowerCase().includes("closed lost");
+                    const isWon = (deal.stageLabel || "").toLowerCase().includes("closed won");
+                    const isLost = (deal.stageLabel || "").toLowerCase().includes("closed lost");
                     const isActive = !isWon && !isLost;
                     return (
                       <a

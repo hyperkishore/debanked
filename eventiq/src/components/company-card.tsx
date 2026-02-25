@@ -156,7 +156,7 @@ export function CompanyCard({
             {(company.hubspotDeals || []).length > 0 && (() => {
               const deals = company.hubspotDeals!;
               const activeDeals = deals.filter(d => {
-                const s = d.stageLabel.toLowerCase();
+                const s = (d.stageLabel || "").toLowerCase();
                 return !s.includes("closed won") && !s.includes("closed lost");
               });
               const bestDeal = activeDeals.length > 0 ? activeDeals[0] : deals[0];
@@ -166,7 +166,7 @@ export function CompanyCard({
                   className="text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0 bg-orange-500/10 text-orange-400 border-orange-500/30"
                   title={`HubSpot: ${bestDeal.stageLabel}${bestDeal.amount ? ` · $${bestDeal.amount.toLocaleString()}` : ''}`}
                 >
-                  HS:{bestDeal.stageLabel.split(' ').map(w => w[0]).join('').toUpperCase()}
+                  HS:{(bestDeal.stageLabel || "New").split(' ').map(w => w[0]).join('').toUpperCase()}
                 </Badge>
               );
             })()}

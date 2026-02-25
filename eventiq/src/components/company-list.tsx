@@ -64,7 +64,7 @@ function filterCompanies(
   else if (filter === "ActivePipeline") filtered = filtered.filter((c) => {
     const deals = c.hubspotDeals || [];
     const closedStages = ["closedwon", "closedlost", "closed won", "closed lost"];
-    return deals.some(d => !closedStages.includes(d.stage.toLowerCase()) && !closedStages.includes(d.stageLabel.toLowerCase()));
+    return deals.some(d => !closedStages.includes((d.stage || "").toLowerCase()) && !closedStages.includes((d.stageLabel || "").toLowerCase()));
   })
   else if (filter === "ReadyToSend") {
     // Will be filtered after readiness scores are computed — mark for post-filter
