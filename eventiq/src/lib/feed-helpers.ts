@@ -30,7 +30,7 @@ export interface IndustryTheme {
 }
 
 // Parse date from news item — uses `p` (published_at ISO) if available, falls back to source string
-function parseDateFromNews(news: NewsItem): number {
+export function parseDateFromNews(news: NewsItem): number {
   // Prefer structured published_at field
   if (news.p) {
     const ts = new Date(news.p).getTime();

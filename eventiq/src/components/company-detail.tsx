@@ -9,7 +9,7 @@ import { detectPersona, getPersonaConfig } from "@/lib/persona-helpers";
 import { generateBattlecards, getCategoryStyle } from "@/lib/battlecard-helpers";
 import { computeReadinessScore, getReadinessLabel, getReadinessColor, getReadinessBgColor } from "@/lib/readiness-score";
 import { generateTriggerCards, TriggerCard } from "@/lib/trigger-card-helpers";
-import { buildFeedItems, FeedItem } from "@/lib/feed-helpers";
+import { buildFeedItems, FeedItem, parseDateFromNews } from "@/lib/feed-helpers";
 import { detectCompetitors, CompetitiveContext } from "@/lib/competitive-intel-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
 import { Badge } from "@/components/ui/badge";
@@ -574,7 +574,7 @@ export function CompanyDetail({
                 "",
                 company.ask ? `ASK: ${company.ask}` : "",
                 "",
-                company.news?.[0] ? `RECENT NEWS: ${company.news[0].h} — ${company.news[0].s}` : "",
+                company.news?.length ? (() => { const newest = [...company.news].sort((a, b) => parseDateFromNews(b) - parseDateFromNews(a))[0]; return `RECENT NEWS: ${newest.h} — ${newest.s}`; })() : "",
               ].filter(Boolean).join("\n");
               navigator.clipboard.writeText(brief);
               toast.success("Full outreach brief copied");
@@ -773,7 +773,7 @@ export function CompanyDetail({
             {company.news && company.news.length > 0 && (
               <Section icon={Newspaper} title="Recent News">
                 <div className="space-y-3">
-                  {company.news.map((item, i) => {
+                  {[...company.news].sort((a, b) => parseDateFromNews(b) - parseDateFromNews(a)).map((item, i) => {
                     const newsUrl = item.u || `https://www.google.com/search?q=${encodeURIComponent(item.h + " " + company.name)}`;
                     return (
                       <a
