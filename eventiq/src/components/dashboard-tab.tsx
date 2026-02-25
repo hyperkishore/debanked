@@ -3,9 +3,11 @@
 import { Company, RatingData, EngagementEntry } from "@/lib/types";
 import { isResearched, getResearchScore } from "@/lib/types";
 import { getLastEngagement, getChannelConfig, formatEngagementTime } from "@/lib/engagement-helpers";
+import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { StreakData } from "@/lib/streak-helpers";
 import { detectBreaches, type SLABreach } from "@/lib/sla-helpers";
 import { ActionFeed } from "@/components/action-feed";
+import { RevenueMilestoneTracker } from "@/components/revenue-milestone-tracker";
 import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -29,7 +31,7 @@ interface DashboardTabProps {
   engagements: EngagementEntry[];
   ratingState: Record<string, RatingData>;
   streakData: StreakData;
-  pipelineState: Record<string, { stage: string; movedAt: string }>;
+  pipelineState: Record<string, PipelineRecord>;
   onOpenEngagement: (companyId: number) => void;
 }
 
@@ -456,6 +458,12 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
           <h2 className="text-lg font-bold">Dashboard</h2>
           <p className="text-xs text-muted-foreground mt-0.5">Market intelligence overview</p>
         </div>
+
+        {/* Milestone Revenue & Pipeline Tracker */}
+        <RevenueMilestoneTracker 
+          companies={companies}
+          pipelineState={pipelineState}
+        />
 
         {/* Action Feed */}
         <ActionFeed

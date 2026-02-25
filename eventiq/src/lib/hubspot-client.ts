@@ -70,7 +70,7 @@ export async function pullCompanies(
 }
 
 /**
- * Pull deals from HubSpot.
+ * Pull deals from HubSpot (basic, limited).
  */
 export async function pullDeals(limit = 100): Promise<HubSpotDeal[]> {
   const res = await hubspotFetch(
@@ -92,6 +92,225 @@ export async function pullDeals(limit = 100): Promise<HubSpotDeal[]> {
       companyId: r.associations?.companies?.results?.[0]?.id || "",
     })
   );
+}
+
+// --- Pipeline Deal Sync (US GTM Pipeline) ---
+
+export const US_GTM_PIPELINE_ID = "749665394";
+
+export interface PipelineStageDef {
+  id: string;
+  label: string;
+}
+
+export interface PipelineDealRecord {
+  dealId: string;
+  dealName: string;
+  stage: string;
+  stageLabel: string;
+  amount: number | null;
+  closeDate: string | null;
+  lastModified: string | null;
+  product: string | null;
+}
+
+/**
+ * Fetch all stage definitions for a pipeline.
+ */
+export async function pullPipelineStages(
+  pipelineId: string = US_GTM_PIPELINE_ID
+): Promise<PipelineStageDef[]> {
+  const res = await hubspotFetch(
+    `/crm/v3/pipelines/deals/${pipelineId}/stages`
+  );
+  if (!res.ok) throw new Error(`HubSpot stages error: ${res.status}`);
+  const data = await res.json();
+  return (data.results || []).map(
+    (r: { id: string; label: string }) => ({ id: r.id, label: r.label })
+  );
+}
+
+/**
+ * Fetch ALL deals from a specific pipeline (paginated via search API).
+ */
+export async function pullAllPipelineDeals(
+  pipelineId: string = US_GTM_PIPELINE_ID,
+  stageMap: Map<string, string> = new Map()
+): Promise<PipelineDealRecord[]> {
+  const allDeals: PipelineDealRecord[] = [];
+  let after: string | undefined;
+
+  while (true) {
+    const body: Record<string, unknown> = {
+      filterGroups: [{
+        filters: [{
+          propertyName: "pipeline",
+          operator: "EQ",
+          value: pipelineId,
+        }],
+      }],
+      properties: ["dealname", "dealstage", "amount", "closedate", "hs_lastmodifieddate"],
+      limit: 100,
+    };
+    if (after) body.after = after;
+
+    const res = await hubspotFetch("/crm/v3/objects/deals/search", {
+      method: "POST",
+      body: JSON.stringify(body),
+    });
+
+    if (!res.ok) throw new Error(`HubSpot deal search error: ${res.status}`);
+    const data = await res.json();
+
+    for (const r of data.results || []) {
+      const props = r.properties || {};
+      const dealName = props.dealname || "";
+      const stageId = props.dealstage || "";
+      const stageLabel = stageMap.get(stageId) || stageId;
+
+      // Parse product from deal name (e.g. "Kapitus - Clear" → "Clear")
+      const dashParts = dealName.split(/\s*-\s*/);
+      const product = dashParts.length >= 2 ? dashParts[dashParts.length - 1].trim() : null;
+
+      allDeals.push({
+        dealId: r.id,
+        dealName,
+        stage: stageId,
+        stageLabel,
+        amount: props.amount ? parseFloat(props.amount) : null,
+        closeDate: props.closedate || null,
+        lastModified: props.hs_lastmodifieddate
+          ? props.hs_lastmodifieddate.split("T")[0]
+          : null,
+        product,
+      });
+    }
+
+    if (data.paging?.next?.after) {
+      after = data.paging.next.after;
+    } else {
+      break;
+    }
+  }
+
+  return allDeals;
+}
+
+/**
+ * Fuzzy matching utilities for deal-to-company matching.
+ */
+const STRIP_SUFFIXES = /\b(llc|inc|corp|ltd|co|company|group|capital|funding|financial|holdings|partners|solutions|services|technologies|tech)\b/gi;
+
+export function normalizeCompanyName(name: string): string {
+  if (!name) return "";
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(STRIP_SUFFIXES, "")
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function levenshtein(a: string, b: string): number {
+  const m = a.length, n = b.length;
+  if (m === 0) return n;
+  if (n === 0) return m;
+  const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      dp[i][j] = a[i - 1] === b[j - 1]
+        ? dp[i - 1][j - 1]
+        : 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+    }
+  }
+  return dp[m][n];
+}
+
+export function similarityScore(name1: string, name2: string): number {
+  const norm1 = normalizeCompanyName(name1);
+  const norm2 = normalizeCompanyName(name2);
+  if (!norm1 || !norm2) return 0;
+  if (norm1 === norm2) return 1.0;
+  if (norm1.includes(norm2) || norm2.includes(norm1)) {
+    const shorter = Math.min(norm1.length, norm2.length);
+    const longer = Math.max(norm1.length, norm2.length);
+    return 0.8 + (0.2 * shorter / longer);
+  }
+  const dist = levenshtein(norm1, norm2);
+  const maxLen = Math.max(norm1.length, norm2.length);
+  return Math.max(0, 1 - dist / maxLen);
+}
+
+/** Manual override mappings for known mismatches */
+const MANUAL_OVERRIDES: Record<string, number> = {
+  ecg: 114,   // Expansion Capital Group
+  kcg: 1067,  // Kalamata Capital Group
+};
+
+const NAME_OVERRIDES: Record<string, string> = {
+  "breakout finance": "Breakout Capital Finance",
+  "good funding": "GOOD FUNDING LLC",
+  "newco": "NewCo Capital Group",
+  "prime ft": "Prime Financial Technologies",
+};
+
+/**
+ * Match a deal to a company using overrides + exact + fuzzy matching.
+ */
+export function matchDealToCompany(
+  dealName: string,
+  companiesByNorm: Map<string, { id: number; name: string }>,
+  allCompanies: Array<{ id: number; name: string }>,
+  threshold = 0.85
+): { companyId: number; matchType: string } | null {
+  if (!dealName) return null;
+
+  // Parse base name from deal
+  const dashParts = dealName.split(/\s*-\s*/);
+  const baseName = dashParts.length >= 2
+    ? dashParts.slice(0, -1).join(" - ").trim()
+    : dealName.trim();
+  const lowerBase = baseName.toLowerCase();
+
+  // Check prefix overrides
+  for (const [prefix, companyId] of Object.entries(MANUAL_OVERRIDES)) {
+    if (lowerBase.startsWith(prefix) || dealName.toLowerCase().startsWith(prefix)) {
+      return { companyId, matchType: `override:${prefix}` };
+    }
+  }
+
+  // Check name overrides
+  for (const [trigger, targetName] of Object.entries(NAME_OVERRIDES)) {
+    if (lowerBase === trigger || dealName.toLowerCase().includes(trigger)) {
+      const match = companiesByNorm.get(normalizeCompanyName(targetName));
+      if (match) return { companyId: match.id, matchType: `override:${trigger}` };
+    }
+  }
+
+  // Exact normalized match
+  const normBase = normalizeCompanyName(baseName);
+  if (!normBase) return null;
+  if (companiesByNorm.has(normBase)) {
+    return { companyId: companiesByNorm.get(normBase)!.id, matchType: "exact" };
+  }
+
+  // Fuzzy match
+  let bestScore = 0;
+  let bestCompany: { id: number; name: string } | null = null;
+  for (const c of allCompanies) {
+    const score = similarityScore(baseName, c.name);
+    if (score > bestScore) {
+      bestScore = score;
+      bestCompany = c;
+    }
+  }
+
+  if (bestScore >= threshold && bestCompany) {
+    return { companyId: bestCompany.id, matchType: `fuzzy(${bestScore.toFixed(2)})` };
+  }
+
+  return null;
 }
 
 /**

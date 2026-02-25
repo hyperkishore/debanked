@@ -3,11 +3,16 @@ import { getSupabaseServer } from "@/lib/supabase-server";
 import {
   isHubSpotConfigured,
   pullCompanies,
-  pullDeals,
   pullContacts,
   pushDealStage,
   pushEngagement,
   mapChannelToHubSpot,
+  pullPipelineStages,
+  pullAllPipelineDeals,
+  normalizeCompanyName,
+  matchDealToCompany,
+  US_GTM_PIPELINE_ID,
+  PipelineDealRecord,
 } from "@/lib/hubspot-client";
 
 /**
@@ -118,7 +123,55 @@ export async function GET() {
       }
     }
 
-    results.pulled.deals = (await pullDeals(200)).length;
+    // --- DEAL SYNC (US GTM Pipeline → hubspot_deals JSONB) ---
+    try {
+      const stages = await pullPipelineStages(US_GTM_PIPELINE_ID);
+      const stageMap = new Map(stages.map((s) => [s.id, s.label]));
+      const allDeals = await pullAllPipelineDeals(US_GTM_PIPELINE_ID, stageMap);
+
+      // Build company lookup indices
+      const companiesByNorm = new Map<string, { id: number; name: string }>();
+      const allCompanyList: { id: number; name: string }[] = [];
+      for (const ec of existingCompanies || []) {
+        const norm = normalizeCompanyName(ec.name);
+        if (norm) companiesByNorm.set(norm, { id: ec.id, name: ec.name });
+        allCompanyList.push({ id: ec.id, name: ec.name });
+      }
+
+      // Match deals → group by company → update hubspot_deals
+      const dealsByCompany = new Map<number, PipelineDealRecord[]>();
+      for (const deal of allDeals) {
+        const match = matchDealToCompany(deal.dealName, companiesByNorm, allCompanyList);
+        if (match) {
+          if (!dealsByCompany.has(match.companyId)) {
+            dealsByCompany.set(match.companyId, []);
+          }
+          dealsByCompany.get(match.companyId)!.push(deal);
+        }
+      }
+
+      for (const [companyId, deals] of dealsByCompany) {
+        const hubspotDeals = deals.map((d) => ({
+          dealId: d.dealId,
+          dealName: d.dealName,
+          stage: d.stageLabel,
+          stageId: d.stage,
+          amount: d.amount,
+          closeDate: d.closeDate,
+          lastModified: d.lastModified,
+          product: d.product,
+        }));
+
+        await supabase
+          .from("companies")
+          .update({ hubspot_deals: hubspotDeals, updated_at: new Date().toISOString() })
+          .eq("id", companyId);
+      }
+
+      results.pulled.deals = allDeals.length;
+    } catch (dealErr) {
+      results.errors.push(`Deal sync: ${dealErr instanceof Error ? dealErr.message : String(dealErr)}`);
+    }
 
     // --- PUSH ---
     // Push pipeline stage changes
