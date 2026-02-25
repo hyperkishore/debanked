@@ -13,6 +13,7 @@ import {
   SignalType,
   SIGNAL_TYPE_CONFIG,
 } from "@/lib/feed-helpers";
+import { estimateCompanyValue } from "@/lib/revenue-model";
 import { getSupabase } from "@/lib/supabase";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -42,8 +43,14 @@ function SignalIcon({ type }: { type: SignalType }) {
   );
 }
 
-function FeedCard({ item, onSelect }: { item: FeedItem; onSelect: (id: number) => void }) {
+function FeedCard({ item, onSelect, companies }: { item: FeedItem; onSelect: (id: number) => void; companies: Company[] }) {
   const config = SIGNAL_TYPE_CONFIG[item.signalType];
+
+  const estimatedValue = useMemo(() => {
+    const company = companies.find(c => c.id === item.companyId);
+    if (!company) return 0;
+    return estimateCompanyValue(company);
+  }, [item.companyId, companies]);
 
   return (
     <Button
@@ -63,6 +70,11 @@ function FeedCard({ item, onSelect }: { item: FeedItem; onSelect: (id: number) =
             </Badge>
             {item.heat === "hot" && (
               <span className="text-xs text-[var(--sqo)] font-semibold">HOT</span>
+            )}
+            {estimatedValue > 0 && (
+              <Badge variant="outline" className="text-xs px-1 py-0 h-3.5 border-green-500/30 text-green-400 bg-green-500/5 font-bold ml-auto shrink-0">
+                ${(estimatedValue / 1000).toFixed(0)}K EST
+              </Badge>
             )}
           </div>
           <p className="text-xs text-foreground/90 leading-snug mb-1">{item.headline}</p>
@@ -265,7 +277,7 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
               <span className="text-[var(--sqo)]">&#x25CF;</span> Hottest Signals for BDR/AE Team
             </h3>
             {hotSignals.map((item) => (
-              <FeedCard key={item.id} item={item} onSelect={onSelectCompany} />
+              <FeedCard key={item.id} item={item} onSelect={onSelectCompany} companies={companiesWithLiveNews} />
             ))}
             {hotSignals.length === 0 && (
               <p className="text-xs text-muted-foreground py-8 text-center">No hot signals detected</p>
@@ -280,7 +292,7 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
               <span className="text-green-400">$</span> Funding & Capital Activity
             </h3>
             {fundingActivity.map((item) => (
-              <FeedCard key={item.id} item={item} onSelect={onSelectCompany} />
+              <FeedCard key={item.id} item={item} onSelect={onSelectCompany} companies={companiesWithLiveNews} />
             ))}
             {fundingActivity.length === 0 && (
               <p className="text-xs text-muted-foreground py-8 text-center">No funding activity detected</p>
@@ -295,7 +307,7 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
               <span className="text-blue-400">&#x25CF;</span> Product Launches & Partnerships
             </h3>
             {productLaunches.map((item) => (
-              <FeedCard key={item.id} item={item} onSelect={onSelectCompany} />
+              <FeedCard key={item.id} item={item} onSelect={onSelectCompany} companies={companiesWithLiveNews} />
             ))}
             {productLaunches.length === 0 && (
               <p className="text-xs text-muted-foreground py-8 text-center">No product launches detected</p>
@@ -354,7 +366,7 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
             </div>
 
             {filteredItems.map((item) => (
-              <FeedCard key={item.id} item={item} onSelect={onSelectCompany} />
+              <FeedCard key={item.id} item={item} onSelect={onSelectCompany} companies={companiesWithLiveNews} />
             ))}
             {filteredItems.length === 0 && (
               <p className="text-xs text-muted-foreground py-8 text-center">No intel items match your filter</p>
