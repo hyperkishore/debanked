@@ -57,7 +57,6 @@ const sortOptions: { value: SortType; label: string; shortLabel: string }[] = [
   { value: "type", label: "Type (SQO \u2192 TAM)", shortLabel: "Type" },
   { value: "phase", label: "Phase", shortLabel: "Phase" },
   { value: "employees", label: "Employees (largest first)", shortLabel: "Employees" },
-  { value: "quality", label: "Research quality (best first)", shortLabel: "Quality" },
   { value: "outreach", label: "Outreach score (highest first)", shortLabel: "Outreach" },
   { value: "readiness", label: "Readiness (most ready first)", shortLabel: "Readiness" },
   { value: "revenue", label: "Revenue estimate (highest first)", shortLabel: "Revenue" },

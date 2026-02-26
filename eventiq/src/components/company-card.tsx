@@ -1,6 +1,6 @@
 "use client";
 
-import { Company, CompanyCategory, OutreachStatus, getResearchScore, getResearchTier, inferSubVertical } from "@/lib/types";
+import { Company, CompanyCategory, OutreachStatus, inferSubVertical } from "@/lib/types";
 import { UrgencyTier } from "@/lib/outreach-score";
 import { ReadinessLabel, getReadinessColor, getReadinessBgColor } from "@/lib/readiness-score";
 import { estimateCompanyValue } from "@/lib/revenue-model";
@@ -40,13 +40,6 @@ function highlightText(text: string, query: string) {
     )
   );
 }
-
-const tierBadgeColors: Record<string, string> = {
-  complete: "text-muted-foreground",
-  good: "text-muted-foreground",
-  partial: "text-muted-foreground/60",
-  minimal: "text-muted-foreground/40",
-};
 
 const categoryBadgeMap: Record<CompanyCategory, { label: string; className: string }> = {
   funder: { label: "Funder", className: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30" },
@@ -125,8 +118,6 @@ export function CompanyCard({
 }: CompanyCardProps) {
   const contactNames = company.contacts.map((c) => c.n).join(", ");
   const subtitle = contactNames || company.location || "";
-  const score = getResearchScore(company);
-  const tier = getResearchTier(score);
   const subVertical = inferSubVertical(company);
   const revenue = estimateCompanyValue(company);
   const freshness = getResearchFreshness(company);
@@ -235,14 +226,6 @@ export function CompanyCard({
 
         {/* Bottom: scores row */}
         <div className="flex items-center gap-3 pt-1 border-t border-border/50">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <span className={cn("text-xs font-medium tabular-nums cursor-default", tierBadgeColors[tier])}>
-                {score}%
-              </span>
-            </TooltipTrigger>
-            <TooltipContent>Research completeness</TooltipContent>
-          </Tooltip>
           <Tooltip>
             <TooltipTrigger asChild>
               <span className="text-xs text-muted-foreground/60 tabular-nums cursor-default">

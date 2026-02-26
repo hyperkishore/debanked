@@ -10,12 +10,20 @@ import { detectPersona } from "./persona-helpers";
  * Readiness measures HOW PREPARED we are to reach out WELL.
  *
  * A company can be high urgency but low readiness = "research needed before outreach."
+ *
+ * Dimensions (weighted):
+ *  - Hook (25%): recent trigger/signal to reference
+ *  - Contact (25%): right person with reachability
+ *  - Research (20%): overall data completeness (desc, contacts, leaders, news, etc.)
+ *  - Pain Points (15%): tailored talking points + CTA
+ *  - Intel (15%): freshness of intelligence + engagement context
  */
 
 export interface ReadinessBreakdown {
   total: number;              // 0-10 composite
   hookScore: number;          // 0-10: do we have a trigger/signal to reference?
   contactScore: number;       // 0-10: do we have the right person with reachability?
+  researchScore: number;      // 0-10: overall research completeness
   painPointScore: number;     // 0-10: do we have relevant talking points?
   intelScore: number;         // 0-10: how fresh is our intelligence?
   missingPieces: string[];    // Actionable gaps: "Need verified email", etc.
@@ -177,6 +185,62 @@ function scoreIntel(company: Company, feedItems: FeedItem[], engagements: Engage
   return { score: Math.min(score, 10), gaps };
 }
 
+function scoreResearch(company: Company): { score: number; gaps: string[] } {
+  const gaps: string[] = [];
+  let score = 0;
+  let total = 0;
+
+  // Description (1.5 pts)
+  total += 1.5;
+  if (company.desc && company.desc.length > 100) score += 1.5;
+  else if (company.desc && company.desc.length > 20) score += 0.75;
+  else gaps.push("Missing or thin company description");
+
+  // Contacts (1 pt)
+  total += 1;
+  if (company.contacts.length >= 2) score += 1;
+  else if (company.contacts.length === 1) score += 0.5;
+
+  // Leaders with bios (2 pts)
+  total += 2;
+  const leaders = company.leaders || [];
+  const leadersWithBg = leaders.filter(l => l.bg && l.bg.length > 20);
+  if (leadersWithBg.length >= 2) score += 2;
+  else if (leadersWithBg.length === 1) score += 1;
+  else if (leaders.length === 0) gaps.push("No leader profiles");
+  else gaps.push("Leaders missing background research");
+
+  // News (1.5 pts)
+  total += 1.5;
+  const newsCount = (company.news || []).length;
+  if (newsCount >= 3) score += 1.5;
+  else if (newsCount >= 1) score += 0.75;
+  else gaps.push("No news articles — research recent coverage");
+
+  // Icebreakers (1 pt)
+  total += 1;
+  if ((company.icebreakers || []).length >= 2) score += 1;
+  else if (company.ice && company.ice.length > 10) score += 0.5;
+
+  // Talking points (1 pt)
+  total += 1;
+  if ((company.tp || []).length >= 2) score += 1;
+  else if ((company.tp || []).length === 1) score += 0.5;
+
+  // LinkedIn URL (0.5 pt)
+  total += 0.5;
+  if (company.linkedinUrl) score += 0.5;
+
+  // Location + employees (0.5 pt)
+  total += 0.5;
+  if (company.location) score += 0.25;
+  if (company.employees && company.employees > 0) score += 0.25;
+
+  // Normalize to 0-10 scale
+  const normalized = Math.round((score / total) * 100) / 10;
+  return { score: Math.min(normalized, 10), gaps };
+}
+
 export function computeReadinessScore(
   company: Company,
   feedItems: FeedItem[],
@@ -184,20 +248,22 @@ export function computeReadinessScore(
 ): ReadinessBreakdown {
   const hook = scoreHook(company, feedItems);
   const contact = scoreContact(company);
+  const research = scoreResearch(company);
   const painPoint = scorePainPoint(company);
   const intel = scoreIntel(company, feedItems, engagements);
 
-  // Weighted average: hook and contact matter most
+  // Weighted average: hook 25%, contact 25%, research 20%, pain points 15%, intel 15%
   const total = Math.round(
-    (hook.score * 0.30 + contact.score * 0.30 + painPoint.score * 0.20 + intel.score * 0.20) * 10
+    (hook.score * 0.25 + contact.score * 0.25 + research.score * 0.20 + painPoint.score * 0.15 + intel.score * 0.15) * 10
   ) / 10;
 
-  const missingPieces = [...hook.gaps, ...contact.gaps, ...painPoint.gaps, ...intel.gaps];
+  const missingPieces = [...hook.gaps, ...contact.gaps, ...research.gaps, ...painPoint.gaps, ...intel.gaps];
 
   return {
     total,
     hookScore: hook.score,
     contactScore: contact.score,
+    researchScore: research.score,
     painPointScore: painPoint.score,
     intelScore: intel.score,
     missingPieces,

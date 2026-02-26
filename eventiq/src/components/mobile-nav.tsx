@@ -3,7 +3,7 @@
 import { TabType } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Building2, ListChecks, BarChart3, Rss, Map, Megaphone } from "lucide-react";
+import { Building2, ListChecks, BarChart3, Map, Rocket } from "lucide-react";
 
 interface MobileNavProps {
   activeTab: TabType;
@@ -14,11 +14,10 @@ interface MobileNavProps {
 }
 
 const tabs: { id: TabType; label: string; icon: React.ComponentType<{ className?: string }> }[] = [
+  { id: "mission_control", label: "Mission", icon: Rocket },
   { id: "companies", label: "Companies", icon: Building2 },
+  { id: "pipeline", label: "Pipeline", icon: BarChart3 },
   { id: "map", label: "Map", icon: Map },
-  { id: "feed", label: "Intel", icon: Rss },
-  { id: "marketing", label: "Mktg", icon: Megaphone },
-  { id: "dashboard", label: "Dashboard", icon: BarChart3 },
   { id: "schedule", label: "Today", icon: ListChecks },
 ];
 
@@ -41,8 +40,8 @@ export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streak
             >
               <div className="relative">
                 <Icon className="h-5 w-5" />
-                {/* Streak flame badge on dashboard icon */}
-                {tab.id === "dashboard" && streakCount > 0 && (
+                {/* Streak flame badge on mission control icon */}
+                {tab.id === "mission_control" && streakCount > 0 && (
                   <span className="absolute -top-1.5 -right-2.5 text-xs font-bold bg-[var(--sqo)]/20 text-[var(--sqo)] rounded-full w-4 h-4 flex items-center justify-center streak-flame-mini">
                     {streakCount}
                   </span>

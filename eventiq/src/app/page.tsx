@@ -48,13 +48,12 @@ import { SheetsSettings } from "@/components/sheets-settings";
 import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
 import { ResourcesTab } from "@/components/resources-tab";
-import { MarketingIdeasTab } from "@/components/marketing-ideas-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
 import { TaskQueueTab } from "@/components/task-queue-tab";
 import { TaskQueueState, DEFAULT_TASK_QUEUE_STATE } from "@/lib/task-queue-helpers";
-import { DashboardTab } from "@/components/dashboard-tab";
+import { MissionControlTab } from "@/components/mission-control-tab";
+import { DatabaseHealthTab } from "@/components/database-health-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
-import { FeedTab } from "@/components/feed-tab";
 import { MarketMapTab } from "@/components/market-map-tab";
 import { useSyncedStorage } from "@/hooks/use-synced-storage";
 import { useDeveloperMode } from "@/hooks/use-developer-mode";
@@ -98,7 +97,7 @@ export default function Home() {
   }, [fetchCompanies]);
 
   // State
-  const [activeTab, setActiveTab] = useState<TabType>("companies");
+  const [activeTab, setActiveTab] = useState<TabType>("mission_control");
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
   const [activeSort, setActiveSort] = useState<SortType>("priority");
@@ -680,18 +679,19 @@ export default function Home() {
   // Content rendering based on active tab
   const renderContent = () => {
     switch (activeTab) {
-      case "dashboard":
+      case "mission_control":
         return (
-          <DashboardTab
+          <MissionControlTab
             companies={companies}
-            metState={metState}
+            pipelineState={pipelineState}
             engagements={engagements}
             ratingState={ratingState}
-            streakData={streakData}
-            pipelineState={pipelineState}
+            onSelectCompany={handleSelect}
             onOpenEngagement={handleOpenEngagementForCompany}
           />
         );
+      case "db_health":
+        return <DatabaseHealthTab companies={companies} />;
       case "schedule":
         return (
           <TaskQueueTab
@@ -713,8 +713,6 @@ export default function Home() {
         return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
       case "resources":
         return <ResourcesTab />;
-      case "marketing":
-        return <MarketingIdeasTab companies={companies} />;
       case "pipeline":
         return (
           <PipelineTab
@@ -725,13 +723,6 @@ export default function Home() {
             onPipelineMove={handlePipelineMove}
             onOpenCompany={handleSelect}
             onUpdateDeal={handleUpdateDeal}
-          />
-        );
-      case "feed":
-        return (
-          <FeedTab
-            companies={companies}
-            onSelectCompany={handleSelect}
           />
         );
       case "map":

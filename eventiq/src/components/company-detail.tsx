@@ -1092,9 +1092,10 @@ function Section({
 
 // --- Readiness Score Badge (compact header widget) ---
 
-const READINESS_SUB_SCORES: { key: "hookScore" | "contactScore" | "painPointScore" | "intelScore"; label: string; abbr: string }[] = [
+const READINESS_SUB_SCORES: { key: "hookScore" | "contactScore" | "researchScore" | "painPointScore" | "intelScore"; label: string; abbr: string }[] = [
   { key: "hookScore", label: "Hook / Trigger", abbr: "Hook" },
   { key: "contactScore", label: "Contact Reachability", abbr: "Contact" },
+  { key: "researchScore", label: "Research Completeness", abbr: "Research" },
   { key: "painPointScore", label: "Pain Point / Value", abbr: "Pain" },
   { key: "intelScore", label: "Intel Freshness", abbr: "Intel" },
 ];
@@ -1103,7 +1104,7 @@ function ReadinessScoreBadge({
   readiness,
   label,
 }: {
-  readiness: { total: number; hookScore: number; contactScore: number; painPointScore: number; intelScore: number; missingPieces: string[] };
+  readiness: { total: number; hookScore: number; contactScore: number; researchScore: number; painPointScore: number; intelScore: number; missingPieces: string[] };
   label: "ready" | "almost" | "needs-work" | "not-ready";
 }) {
   const [expanded, setExpanded] = useState(false);
