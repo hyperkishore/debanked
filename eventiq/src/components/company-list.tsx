@@ -1,7 +1,8 @@
 "use client";
 
-import { Company, CompanyCategory, FilterType, SortType, ViewType, RatingData, EngagementEntry } from "@/lib/types";
+import { Company, FilterType, SortType, ViewType, RatingData, EngagementEntry, inferSubVertical } from "@/lib/types";
 import { isResearched, getResearchScore } from "@/lib/types";
+import { estimateCompanyValue } from "@/lib/revenue-model";
 import { getLastEngagement, needsFollowUp } from "@/lib/engagement-helpers";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { computeOutreachScore, getNextBestAction, getUrgencyTier } from "@/lib/outreach-score";
@@ -39,8 +40,8 @@ interface CompanyListProps {
   tagsState?: Record<number, string[]>;
   activeTagFilter?: string | null;
   onTagFilterChange?: (tag: string | null) => void;
-  activeCategoryFilter?: CompanyCategory | null;
-  onCategoryFilterChange?: (category: CompanyCategory | null) => void;
+  activeCategoryFilter?: string | null;
+  onCategoryFilterChange?: (category: string | null) => void;
   activeHubSpotStageFilter?: string | null;
   onHubSpotStageFilterChange?: (stage: string | null) => void;
 }
@@ -121,6 +122,8 @@ function sortCompanies(
         const scoreB = readinessScores?.get(b.id) ?? 0;
         return scoreB - scoreA;
       }
+      case "revenue":
+        return estimateCompanyValue(b) - estimateCompanyValue(a);
       default:
         return 0;
     }
@@ -176,10 +179,10 @@ export function CompanyList({
     });
   }, [baseFiltered, activeTagFilter, tagsState]);
 
-  // Apply category filter
+  // Apply category filter (compares against inferred sub-vertical label)
   const categoryFiltered = useMemo(() => {
     if (!activeCategoryFilter) return tagFiltered;
-    return tagFiltered.filter((c) => c.category === activeCategoryFilter);
+    return tagFiltered.filter((c) => inferSubVertical(c) === activeCategoryFilter);
   }, [tagFiltered, activeCategoryFilter]);
 
   // Apply HubSpot stage filter

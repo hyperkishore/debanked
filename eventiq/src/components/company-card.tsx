@@ -1,13 +1,15 @@
 "use client";
 
-import { Company, CompanyCategory, OutreachStatus, getResearchScore, getResearchTier } from "@/lib/types";
+import { Company, CompanyCategory, OutreachStatus, getResearchScore, getResearchTier, inferSubVertical } from "@/lib/types";
 import { UrgencyTier } from "@/lib/outreach-score";
 import { ReadinessLabel, getReadinessColor, getReadinessBgColor } from "@/lib/readiness-score";
+import { estimateCompanyValue } from "@/lib/revenue-model";
+import { parseDateFromNews } from "@/lib/feed-helpers";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
-import { Tag, Mail, Phone } from "lucide-react";
+import { Tag } from "lucide-react";
 
 interface CompanyCardProps {
   company: Company;
@@ -54,6 +56,52 @@ const categoryBadgeMap: Record<CompanyCategory, { label: string; className: stri
   service_provider: { label: "Service", className: "bg-pink-500/10 text-pink-400 border-pink-500/30" },
 };
 
+const subVerticalBadgeColors: Record<string, string> = {
+  MCA: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+  "Equipment Finance": "bg-amber-500/10 text-amber-400 border-amber-500/30",
+  Factoring: "bg-teal-500/10 text-teal-400 border-teal-500/30",
+  "SBA Lending": "bg-indigo-500/10 text-indigo-400 border-indigo-500/30",
+  "Revenue Based": "bg-lime-500/10 text-lime-400 border-lime-500/30",
+  Funder: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+  Broker: "bg-orange-500/10 text-orange-400 border-orange-500/30",
+  Bank: "bg-blue-500/10 text-blue-400 border-blue-500/30",
+  Technology: "bg-violet-500/10 text-violet-400 border-violet-500/30",
+  Marketplace: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30",
+  "Service Provider": "bg-pink-500/10 text-pink-400 border-pink-500/30",
+};
+
+function formatRevenue(value: number): string {
+  if (value >= 1000) return `$${Math.round(value / 1000)}K`;
+  return `$${value}`;
+}
+
+function getResearchFreshness(company: Company): string | null {
+  if (!company.news || company.news.length === 0) return null;
+  const timestamps = company.news.map((n) => parseDateFromNews(n)).filter((t) => t > 0);
+  if (timestamps.length === 0) return null;
+  const newest = Math.max(...timestamps);
+  const now = Date.now();
+  const diffMs = now - newest;
+  const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  if (days < 1) return "today";
+  if (days < 30) return `${days}d`;
+  if (days < 365) return `${Math.floor(days / 30)}mo`;
+  return "1y+";
+}
+
+function getHubSpotStageShort(company: Company): string | null {
+  const deals = company.hubspotDeals;
+  if (!deals || deals.length === 0) return null;
+  // Use the first active deal's stage label, abbreviate it
+  const deal = deals[0];
+  const label = (deal.stageLabel || deal.stage || "").trim();
+  if (!label) return null;
+  // Create a short form: "HS:" + first letter of each word, max 3 chars
+  const words = label.split(/\s+/);
+  const abbr = words.map((w) => w[0]?.toUpperCase() || "").join("").slice(0, 3);
+  return `HS:${abbr}`;
+}
+
 const typeBadgeMap: Record<string, string> = {
   SQO: "bg-[var(--sqo)]/10 text-[var(--sqo)] hover:bg-[var(--sqo)]/20",
   Client: "bg-[var(--client)]/10 text-[var(--client)] hover:bg-[var(--client)]/20",
@@ -91,6 +139,10 @@ export function CompanyCard({
   const subtitle = contactNames || company.location || "";
   const score = getResearchScore(company);
   const tier = getResearchTier(score);
+  const subVertical = inferSubVertical(company);
+  const revenue = estimateCompanyValue(company);
+  const freshness = getResearchFreshness(company);
+  const hsStage = getHubSpotStageShort(company);
 
   // Build metadata line: location · N employees
   const metaParts: string[] = [];
@@ -114,10 +166,24 @@ export function CompanyCard({
       <div className="flex items-start gap-3">
         {/* Main content */}
         <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-2 flex-wrap">
+          <div className="flex items-center gap-1.5 flex-wrap">
             <h3 className="text-sm font-semibold truncate">
               {highlightText(company.name, query)}
             </h3>
+            <Badge
+              variant="outline"
+              className={cn("text-xs px-1 py-0 h-4 font-medium shrink-0", subVerticalBadgeColors[subVertical] || "bg-muted/50 text-muted-foreground border-border")}
+            >
+              {subVertical}
+            </Badge>
+            {hsStage && (
+              <Badge
+                variant="outline"
+                className="text-xs px-1 py-0 h-4 font-medium shrink-0 bg-orange-500/10 text-orange-400 border-orange-500/30"
+              >
+                {hsStage}
+              </Badge>
+            )}
             {urgencyTier && (
               <Badge
                 variant="outline"
@@ -167,18 +233,8 @@ export function CompanyCard({
             </p>
           )}
 
-          {/* Enrichment status icons + Tags */}
+          {/* Tags */}
           <div className="flex flex-wrap items-center gap-1 mt-1">
-            {(() => {
-              const hasEmail = (company.leaders || []).some(l => l.email);
-              const hasPhone = (company.leaders || []).some(l => l.phone);
-              return (
-                <>
-                  <Mail className={cn("h-3 w-3", hasEmail ? "text-blue-400" : "text-muted-foreground/30")} />
-                  <Phone className={cn("h-3 w-3", hasPhone ? "text-green-400" : "text-muted-foreground/30")} />
-                </>
-              );
-            })()}
             {tags.slice(0, 3).map((tag) => (
               <span
                 key={tag}
@@ -198,9 +254,14 @@ export function CompanyCard({
 
         {/* Scores */}
         <div className="flex flex-col items-end gap-1 shrink-0 pt-0.5">
-          <span className={cn("text-xs font-medium tabular-nums", tierBadgeColors[tier])}>
-            {score}%
-          </span>
+          <div className="flex items-center gap-1.5">
+            <span className={cn("text-xs font-medium tabular-nums", tierBadgeColors[tier])}>
+              {score}%
+            </span>
+            <span className="text-xs text-muted-foreground/60 tabular-nums">
+              {formatRevenue(revenue)}
+            </span>
+          </div>
           {readinessLabel && readinessScore !== undefined && (
             <Badge
               variant="outline"
@@ -209,6 +270,11 @@ export function CompanyCard({
             >
               {readinessScore.toFixed(1)}
             </Badge>
+          )}
+          {freshness && (
+            <span className="text-xs text-muted-foreground/50 tabular-nums" title="Research freshness">
+              {freshness}
+            </span>
           )}
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { FilterType, SortType, ViewType, CompanyCategory } from "@/lib/types";
+import { FilterType, SortType, ViewType } from "@/lib/types";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -27,8 +27,8 @@ interface FilterBarProps {
   availableTags?: string[];
   activeTagFilter?: string | null;
   onTagFilterChange?: (tag: string | null) => void;
-  activeCategoryFilter?: CompanyCategory | null;
-  onCategoryFilterChange?: (category: CompanyCategory | null) => void;
+  activeCategoryFilter?: string | null;
+  onCategoryFilterChange?: (category: string | null) => void;
   activeHubSpotStageFilter?: string | null;
   onHubSpotStageFilterChange?: (stage: string | null) => void;
   availableHubSpotStages?: string[];
@@ -60,15 +60,21 @@ const sortOptions: { value: SortType; label: string; shortLabel: string }[] = [
   { value: "quality", label: "Research quality (best first)", shortLabel: "Quality" },
   { value: "outreach", label: "Outreach score (highest first)", shortLabel: "Outreach" },
   { value: "readiness", label: "Readiness (most ready first)", shortLabel: "Readiness" },
+  { value: "revenue", label: "Revenue estimate (highest first)", shortLabel: "Revenue" },
 ];
 
-const categoryOptions: { value: CompanyCategory; label: string }[] = [
-  { value: "funder", label: "Funder" },
-  { value: "broker", label: "Broker" },
-  { value: "bank", label: "Bank" },
-  { value: "technology", label: "Technology" },
-  { value: "marketplace", label: "Marketplace" },
-  { value: "service_provider", label: "Service Provider" },
+const categoryOptions: { value: string; label: string }[] = [
+  { value: "MCA", label: "MCA" },
+  { value: "Equipment Finance", label: "Equipment Finance" },
+  { value: "Factoring", label: "Factoring" },
+  { value: "SBA Lending", label: "SBA Lending" },
+  { value: "Revenue Based", label: "Revenue Based" },
+  { value: "Funder", label: "Funder (generic)" },
+  { value: "Broker", label: "Broker" },
+  { value: "Bank", label: "Bank" },
+  { value: "Technology", label: "Technology" },
+  { value: "Marketplace", label: "Marketplace" },
+  { value: "Service Provider", label: "Service Provider" },
 ];
 
 export function FilterBar({

@@ -1,10 +1,10 @@
 "use client";
 
-import { Company, CompanyCategory, Leader, RatingData, EngagementEntry, EngagementChannel, OutreachHistory } from "@/lib/types";
+import { Company, CompanyCategory, Leader, RatingData, EngagementEntry, EngagementChannel, OutreachHistory, inferSubVertical } from "@/lib/types";
 import { isResearched, generateOutreachMessage, generateQuickLinks } from "@/lib/types";
 import { generateMessageVariants, MessageVariant } from "@/lib/message-variants";
 import { generateLinkedInVariants, LinkedInVariant } from "@/lib/linkedin-message";
-import { PipelineRecord, PipelineStage, PIPELINE_STAGES } from "@/lib/pipeline-helpers";
+import { PipelineRecord, PipelineStage } from "@/lib/pipeline-helpers";
 import { detectPersona, getPersonaConfig } from "@/lib/persona-helpers";
 import { generateBattlecards, getCategoryStyle } from "@/lib/battlecard-helpers";
 import { computeReadinessScore, getReadinessLabel, getReadinessColor, getReadinessBgColor } from "@/lib/readiness-score";
@@ -52,9 +52,7 @@ import {
   BookOpen,
   Tag,
   X,
-  Plus,
   Phone,
-  FileText,
   Send,
   ClipboardCopy,
   Zap,
@@ -87,12 +85,6 @@ interface CompanyDetailProps {
   onPipelineStageChange?: (companyId: number, stage: PipelineStage) => void;
 }
 
-const TAG_SUGGESTIONS = [
-  "hot-lead", "partnership", "competitor", "decision-maker-met",
-  "needs-followup", "referral-source", "mca", "sba",
-  "equipment-finance", "revenue-based", "high-volume",
-  "early-stage", "enterprise",
-];
 
 const typeBadgeStyles: Record<string, string> = {
   SQO: "bg-[var(--sqo)]/10 text-[var(--sqo)] border-[var(--sqo)]/30",
@@ -108,6 +100,20 @@ const categoryBadgeStyles: Record<CompanyCategory, { label: string; className: s
   technology: { label: "Technology", className: "bg-violet-500/10 text-violet-400 border-violet-500/30" },
   marketplace: { label: "Marketplace", className: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30" },
   service_provider: { label: "Service Provider", className: "bg-pink-500/10 text-pink-400 border-pink-500/30" },
+};
+
+const subVerticalBadgeStyles: Record<string, string> = {
+  MCA: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+  "Equipment Finance": "bg-amber-500/10 text-amber-400 border-amber-500/30",
+  Factoring: "bg-teal-500/10 text-teal-400 border-teal-500/30",
+  "SBA Lending": "bg-indigo-500/10 text-indigo-400 border-indigo-500/30",
+  "Revenue Based": "bg-lime-500/10 text-lime-400 border-lime-500/30",
+  Funder: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+  Broker: "bg-orange-500/10 text-orange-400 border-orange-500/30",
+  Bank: "bg-blue-500/10 text-blue-400 border-blue-500/30",
+  Technology: "bg-violet-500/10 text-violet-400 border-violet-500/30",
+  Marketplace: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30",
+  "Service Provider": "bg-pink-500/10 text-pink-400 border-pink-500/30",
 };
 
 const VARIANT_LABELS: Record<MessageVariant["style"], string> = {
@@ -143,9 +149,6 @@ export function CompanyDetail({
   onPipelineStageChange,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
-  const [tagInput, setTagInput] = useState("");
-  const [showTagInput, setShowTagInput] = useState(false);
-  const [showTagSuggestions, setShowTagSuggestions] = useState(false);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
   const [activeVariant, setActiveVariant] = useState<MessageVariant["style"]>("casual");
   const [activeLinkedInVariant, setActiveLinkedInVariant] = useState<LinkedInVariant["style"]>("connection-request");
@@ -203,15 +206,22 @@ export function CompanyDetail({
             )}
             <h2 className="text-lg font-bold truncate">{company.name}</h2>
           </div>
-          <div className="flex items-center gap-1.5 shrink-0">
+          <div className="flex items-center gap-1.5 shrink-0 flex-wrap">
             <Badge variant="outline" className={cn("text-xs font-semibold", typeBadgeStyles[company.type] || "")}>
               {company.type}
             </Badge>
-            {company.category && (
-              <Badge variant="outline" className={cn("text-xs font-semibold", categoryBadgeStyles[company.category].className)}>
-                {categoryBadgeStyles[company.category].label}
-              </Badge>
-            )}
+            <Badge variant="outline" className={cn("text-xs font-semibold", subVerticalBadgeStyles[inferSubVertical(company)] || "bg-muted/50 text-muted-foreground border-border")}>
+              {inferSubVertical(company)}
+            </Badge>
+            {(company.hubspotDeals || []).length > 0 && (() => {
+              const deal = company.hubspotDeals![0];
+              const stageLabel = deal.stageLabel || deal.stage || "";
+              return stageLabel ? (
+                <Badge variant="outline" className="text-xs font-semibold bg-orange-500/10 text-orange-400 border-orange-500/30">
+                  HS: {stageLabel}
+                </Badge>
+              ) : null;
+            })()}
             {company.clear && (
               <Badge variant="outline" className="text-xs font-semibold text-brand border-brand/30">
                 CLEAR
@@ -318,8 +328,8 @@ export function CompanyDetail({
           </div>
         )}
 
-        {/* Custom tags */}
-        {onAddTag && (
+        {/* Tags (display only) */}
+        {tags.length > 0 && (
           <div className="flex flex-wrap items-center gap-1 mt-1.5">
             {tags.map((tag) => (
               <span
@@ -328,153 +338,27 @@ export function CompanyDetail({
               >
                 <Tag className="h-2.5 w-2.5" />
                 {tag}
-                {onRemoveTag && (
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="h-4 w-4 p-0 hover:text-red-400 transition-colors ml-0.5"
-                    onClick={() => onRemoveTag(company.id, tag)}
-                  >
-                    <X className="h-2.5 w-2.5" />
-                  </Button>
-                )}
               </span>
             ))}
-            {showTagInput ? (
-              <div className="relative inline-flex items-center">
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    const t = tagInput.trim().toLowerCase();
-                    if (t && !tags.includes(t)) {
-                      onAddTag(company.id, t);
-                    }
-                    setTagInput("");
-                    setShowTagInput(false);
-                    setShowTagSuggestions(false);
-                  }}
-                  className="inline-flex items-center"
-                >
-                  <Input
-                    autoFocus
-                    value={tagInput}
-                    onChange={(e) => {
-                      setTagInput(e.target.value);
-                      setShowTagSuggestions(true);
-                    }}
-                    onFocus={() => setShowTagSuggestions(true)}
-                    onBlur={() => {
-                      // Delay to allow click on suggestion
-                      setTimeout(() => {
-                        setShowTagInput(false);
-                        setTagInput("");
-                        setShowTagSuggestions(false);
-                      }, 150);
-                    }}
-                    placeholder="tag..."
-                    className="w-28 h-5 text-xs px-1 py-0.5"
-                  />
-                </form>
-                {showTagSuggestions && (
-                  <div className="absolute top-full left-0 mt-1 z-50 w-48 max-h-40 overflow-auto rounded-md border border-border bg-popover p-1 shadow-md">
-                    {TAG_SUGGESTIONS
-                      .filter((s) => !tags.includes(s) && s.includes(tagInput.toLowerCase()))
-                      .map((suggestion) => (
-                        <button
-                          key={suggestion}
-                          type="button"
-                          className="w-full text-left text-xs px-2 py-1 rounded hover:bg-brand/10 hover:text-brand transition-colors"
-                          onMouseDown={(e) => {
-                            e.preventDefault();
-                            onAddTag(company.id, suggestion);
-                            setTagInput("");
-                            setShowTagInput(false);
-                            setShowTagSuggestions(false);
-                          }}
-                        >
-                          {suggestion}
-                        </button>
-                      ))}
-                  </div>
-                )}
-              </div>
-            ) : (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setShowTagInput(true)}
-                className="inline-flex items-center gap-0.5 text-xs h-5 px-1.5 py-0.5 rounded border-dashed text-muted-foreground hover:text-brand hover:border-brand/30 transition-colors"
-              >
-                <Plus className="h-2.5 w-2.5" /> tag
-              </Button>
-            )}
           </div>
         )}
 
-        {/* Pipeline stage selector */}
-        <div className="flex items-center gap-1 mt-2 flex-wrap">
-          {PIPELINE_STAGES.filter(s => s.id !== "lost").map((stage) => {
-            const currentStage = pipelineState[company.id]?.stage || "researched";
-            const currentIdx = PIPELINE_STAGES.findIndex(s => s.id === currentStage);
-            const stageIdx = PIPELINE_STAGES.findIndex(s => s.id === stage.id);
-            const isActive = stage.id === currentStage;
-            const isPast = stageIdx < currentIdx;
-            return (
-              <button
-                key={stage.id}
-                onClick={() => {
-                  if (onPipelineStageChange) {
-                    onPipelineStageChange(company.id, stage.id);
-                  }
-                  if (stage.id === "contacted" && !isMet) {
-                    onToggleMet(company.id);
-                    onOpenRating(company.id);
-                  }
-                }}
-                className={cn(
-                  "text-xs px-2 py-0.5 rounded-full border transition-colors",
-                  isActive
-                    ? "border-brand bg-brand/15 text-brand font-medium"
-                    : isPast
-                    ? "border-brand/30 bg-brand/5 text-brand/60"
-                    : "border-border text-muted-foreground hover:border-brand/30 hover:text-brand/60"
-                )}
-              >
-                {isActive && <Check className="h-2.5 w-2.5 inline mr-0.5 -mt-px" />}
-                {stage.label}
-              </button>
-            );
-          })}
-          {isMet && rating && rating.rating && (
+        {/* Rating badge */}
+        {isMet && rating && rating.rating && (
+          <div className="flex items-center gap-1 mt-2">
             <Badge className={cn(
-              "text-xs ml-1",
+              "text-xs",
               rating.rating === "hot" && "bg-[var(--sqo)]/20 text-[var(--sqo)]",
               rating.rating === "warm" && "bg-[var(--client)]/20 text-[var(--client)]",
               rating.rating === "cold" && "bg-brand/20 text-brand",
             )}>
               {rating.rating.toUpperCase()}
             </Badge>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* Quick outreach actions */}
         <div className="flex items-center gap-1.5 mt-2 flex-wrap">
-          {company.leaders?.[0]?.li && (
-            <Button
-              variant="outline"
-              size="sm"
-              className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-[#0077b5] hover:border-[#0077b5]/40"
-              onClick={() => {
-                window.open(company.leaders![0].li, "_blank");
-                if (onQuickLog) {
-                  onQuickLog(company.leaders![0].n, "linkedin", "sent_connection");
-                }
-              }}
-            >
-              <Linkedin className="h-3 w-3" />
-              LinkedIn
-            </Button>
-          )}
           {(() => {
             const leaderWithEmail = company.leaders?.find(l => l.email);
             const leader = leaderWithEmail || company.leaders?.[0];
@@ -555,45 +439,6 @@ export function CompanyDetail({
             <Copy className="h-3 w-3" />
             Copy Points
           </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
-            onClick={() => {
-              const leader = company.leaders?.[0];
-              const brief = [
-                `COMPANY: ${company.name} (${company.type})`,
-                leader ? `CONTACT: ${leader.n} — ${leader.t}` : "",
-                leader ? `EMAIL: ${leader.email || "Not on file"}` : "",
-                leader ? `LINKEDIN: ${leader.li || "Not on file"}` : "",
-                leader?.phone ? `PHONE: ${leader.phone}` : "",
-                "",
-                company.ice ? `ICEBREAKER: ${company.ice}` : "",
-                "",
-                company.tp?.length ? `TALKING POINTS:\n${company.tp.map((tp, i) => `${i + 1}. ${tp}`).join("\n")}` : "",
-                "",
-                company.ask ? `ASK: ${company.ask}` : "",
-                "",
-                company.news?.length ? (() => { const newest = [...company.news].sort((a, b) => parseDateFromNews(b) - parseDateFromNews(a))[0]; return `RECENT NEWS: ${newest.h} — ${newest.s}`; })() : "",
-              ].filter(Boolean).join("\n");
-              navigator.clipboard.writeText(brief);
-              toast.success("Full outreach brief copied");
-            }}
-          >
-            <FileText className="h-3 w-3" />
-            Copy Brief
-          </Button>
-          {company.website && (
-            <Button
-              variant="outline"
-              size="sm"
-              className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
-              onClick={() => window.open(company.website!.startsWith("http") ? company.website : `https://${company.website}`, "_blank")}
-            >
-              <Globe className="h-3 w-3" />
-              Website
-            </Button>
-          )}
         </div>
       </div>
 
@@ -744,31 +589,6 @@ export function CompanyDetail({
               <TriggerCardsSection triggerCards={triggerCards} />
             )}
 
-            {/* Icebreakers */}
-            <Section icon={Lightbulb} title="Icebreakers">
-              <div className="space-y-2">
-                {company.icebreakers && company.icebreakers.length > 0 ? (
-                  company.icebreakers.map((ice, i) => (
-                    <div key={i} className="flex items-start gap-2">
-                      <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
-                        {ice}
-                      </div>
-                      <CopyButton text={ice} />
-                    </div>
-                  ))
-                ) : company.ice ? (
-                  <div className="flex items-start gap-2">
-                    <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
-                      {company.ice}
-                    </div>
-                    <CopyButton text={company.ice} />
-                  </div>
-                ) : (
-                  <p className="text-sm text-muted-foreground">No icebreakers available</p>
-                )}
-              </div>
-            </Section>
-
             {/* News */}
             {company.news && company.news.length > 0 && (
               <Section icon={Newspaper} title="Recent News">
@@ -817,6 +637,31 @@ export function CompanyDetail({
                     <ExternalLink className="h-2.5 w-2.5 opacity-50" />
                   </a>
                 ))}
+              </div>
+            </Section>
+
+            {/* Icebreakers */}
+            <Section icon={Lightbulb} title="Icebreakers">
+              <div className="space-y-2">
+                {company.icebreakers && company.icebreakers.length > 0 ? (
+                  company.icebreakers.map((ice, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
+                        {ice}
+                      </div>
+                      <CopyButton text={ice} />
+                    </div>
+                  ))
+                ) : company.ice ? (
+                  <div className="flex items-start gap-2">
+                    <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-secondary/30 rounded-lg p-3">
+                      {company.ice}
+                    </div>
+                    <CopyButton text={company.ice} />
+                  </div>
+                ) : (
+                  <p className="text-sm text-muted-foreground">No icebreakers available</p>
+                )}
               </div>
             </Section>
 

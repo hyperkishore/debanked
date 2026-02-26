@@ -200,7 +200,7 @@ export function getResearchTier(score: number): ResearchTier {
 }
 
 export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'NeedsEmail' | 'Researched' | 'Unresearched' | 'InHubSpot' | 'ActivePipeline' | 'ReadyToSend';
-export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees' | 'quality' | 'outreach' | 'readiness';
+export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees' | 'quality' | 'outreach' | 'readiness' | 'revenue';
 export type ViewType = 'cards' | 'table';
 export type TabType = 'companies' | 'schedule' | 'resources' | 'marketing' | 'dashboard' | 'pipeline' | 'feed' | 'map' | 'dinner';
 
@@ -322,4 +322,35 @@ export interface EngagementEntry {
   notes: string;
   source: EngagementSource;
   metadata?: Record<string, unknown>;
+}
+
+// Infer a more specific sub-vertical label from company description and category
+const SUB_VERTICAL_RULES: { keywords: string[]; label: string }[] = [
+  { keywords: ["mca", "merchant cash", "cash advance"], label: "MCA" },
+  { keywords: ["equipment", "leasing"], label: "Equipment Finance" },
+  { keywords: ["factor", "invoice"], label: "Factoring" },
+  { keywords: ["sba", "small business administration"], label: "SBA Lending" },
+  { keywords: ["revenue based", "revenue-based", "rbf"], label: "Revenue Based" },
+];
+
+const CATEGORY_LABELS: Record<CompanyCategory, string> = {
+  funder: "Funder",
+  broker: "Broker",
+  bank: "Bank",
+  technology: "Technology",
+  marketplace: "Marketplace",
+  service_provider: "Service Provider",
+};
+
+export function inferSubVertical(company: Company): string {
+  const desc = (company.desc || "").toLowerCase();
+  for (const rule of SUB_VERTICAL_RULES) {
+    if (rule.keywords.some((kw) => desc.includes(kw))) {
+      return rule.label;
+    }
+  }
+  if (company.category) {
+    return CATEGORY_LABELS[company.category] || "Funder";
+  }
+  return "Funder";
 }
