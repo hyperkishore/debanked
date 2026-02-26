@@ -4305,28 +4305,79 @@
     "id": 73,
     "name": "Kapitus",
     "type": "ICP",
-    "priority": 4,
+    "priority": 2,
     "phase": 4,
     "booth": false,
     "clear": false,
     "contacts": [
+      { "n": "Andrew Reiser", "t": "Founder, CEO & Chairman" },
+      { "n": "Arun Narayan", "t": "Chief Data & AI Officer" },
+      { "n": "Ben Johnston", "t": "COO" }
+    ],
+    "desc": "Founded in 2006 as Strategic Funding Source, rebranded to Kapitus in 2019. Over $7B funded to 65,000+ businesses across MCA, SBA loans, lines of credit, and equipment financing. 446 employees across NYC, Arlington VA, LA, and Chennai India. $900M+ total financing capacity. Back-to-back Inc. 5000 (2024, 2025). Tech stack: Mambu, Ocrolus (400K+ statements/mo), Northteq Aurora.",
+    "notes": "",
+    "news": [
       {
-        "n": "Andrew Reiser",
-        "t": "Founder & CEO"
+        "h": "Kapitus Equipment Finance Partners with Northteq for Aurora LOS Platform",
+        "s": "Northteq, Jan 2026",
+        "d": "New equipment finance division implements Northteq's Salesforce-native Aurora platform for automated underwriting."
+      },
+      {
+        "h": "Kapitus Closes $250M Securitization, Upsizes Note to $95M",
+        "s": "PR Newswire, Jul 2025",
+        "d": "$250M ABS expandable to $500M. Corporate note upsized to $95M. Total $7B+ funded to 65K+ businesses."
       }
     ],
-    "desc": "Founded in 2006 as Strategic Funding Source, rebranded to Kapitus in 2019. Over $5B funded to 50,000+ businesses. Offers MCA, SBA loans, lines of credit, and equipment financing from NYC.",
-    "notes": "",
-    "news": [],
-    "ice": "Five billion dollars to 50,000+ businesses since 2006 -- the rebrand to Kapitus clearly hasn't slowed you down. What's driving growth now?",
+    "ice": "Seven billion dollars to 65,000 businesses, back-to-back Inc. 5000, and now building out the KapEx marketplace vertical — how are you thinking about the next generation of underwriting intelligence?",
     "icebreakers": [
-      "Five billion dollars to 50,000+ businesses since 2006 -- the rebrand to Kapitus clearly hasn't slowed you down. What's driving growth now?"
+      "Seven billion to 65K businesses and a new equipment finance arm via Ten Oaks — how's the underwriting stack keeping pace with the product expansion?",
+      "Back-to-back Inc. 5000 and Inc. Best Workplaces — with 446 people across four continents, what's the biggest operational scaling challenge?",
+      "Your underwriting team mentioned fraud is a major challenge — with 400K+ statements monthly through Ocrolus, how are you thinking about identity verification as the next layer?",
+      "Andrew mentioned 'the best technologies won't succeed if you don't underwrite properly' — we built HyperVerge with exactly that philosophy."
     ],
     "tp": [
-      "With multiple product lines from MCA to SBA, AI underwriting can route applications to the right product automatically and cut decisioning time across all of them."
+      "With $900M+ in financing capacity across MCA, SBA, equipment, and lines of credit, AI underwriting that routes applications to the right product and detects fraud across all channels saves significant loss exposure.",
+      "Kapitus processes 400K+ bank statements monthly through Ocrolus, but identity verification is the gap — HyperVerge catches synthetic identity fraud, doctored tax returns, and application stacking that document analysis alone misses.",
+      "With the Chennai analytics center, HyperVerge (also India-based) integrates seamlessly — same timezone, familiar tech ecosystem, and our platform drops into Mambu/Salesforce via API in days."
     ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?"
+    "leaders": [
+      {
+        "n": "Andrew Reiser",
+        "t": "Founder, CEO & Chairman",
+        "bg": "Boston University Questrom. Ex-CPA at Coopers & Lybrand/PwC. Founded Kapitus 2006. $7B+ funded, 65K+ businesses. 2x Inc. 5000. Beyond Banks podcast: 'The best technologies won't succeed if you don't underwrite properly.'",
+        "li": "https://www.linkedin.com/in/andrew-reiser-64800415/",
+        "hooks": ["*Boston U, started as CPA", "*$7B+ funded", "*2x Inc. 5000", "Beyond Banks podcast"]
+      },
+      {
+        "n": "Arun Narayan",
+        "t": "Chief Data & AI Officer",
+        "bg": "Michigan Ross MBA. Ex-Discover Financial. Joined 2015 as SVP Risk & Analytics, promoted to CPO, now Chief Data & AI Officer. Owns AI strategy and product development.",
+        "li": "https://www.linkedin.com/in/arun-narayan-0614084/",
+        "hooks": ["*Chief Data & AI Officer title", "*Michigan Ross, ex-Discover", "Natural AI buyer"]
+      },
+      {
+        "n": "Ben Johnston",
+        "t": "COO",
+        "bg": "Michigan Ross MBA, Colby College. Ex-Pine Brook Partners PE. Joined 2014 as CSO, COO since 2017. Prolific writer — Chain Store Age, Construction Executive.",
+        "li": "https://www.linkedin.com/in/ben-johnston-a7313a/",
+        "hooks": ["*Michigan Ross, ex-Pine Brook PE", "Prolific industry writer", "B2B Finance Expo panelist"]
+      },
+      {
+        "n": "Jeff Newman",
+        "t": "Chief Risk Officer",
+        "bg": "Carnegie Mellon Tepper MBA. 25+ years risk at Citibank and GE Capital. Ex-Chief Credit Officer at Citibank US Retail Bank. Joined 2018.",
+        "li": "https://www.linkedin.com/in/jeffreywnewman/",
+        "hooks": ["*Ex-Citibank Chief Credit Officer", "*Carnegie Mellon Tepper", "25yr risk veteran"]
+      },
+      {
+        "n": "Ella Haman",
+        "t": "CTO",
+        "bg": "U of Minnesota. 25+ years tech. 3x CTO: Jama Software, Bynder, BlackLine. Crosslake Technologies consulting. Joined Kapitus 2021.",
+        "li": "https://www.linkedin.com/in/ellahaman/",
+        "hooks": ["*3x CTO — Jama, Bynder, BlackLine", "Owns Mambu + Northteq platform"]
+      }
+    ],
+    "ask": "Arun, with the move to Chief Data & AI Officer and 400K+ statements flowing through monthly, we'd love to show how HyperVerge's identity verification catches what document analysis alone misses. Could we set up a 20-minute demo?"
   },
   {
     "id": 74,

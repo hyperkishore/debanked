@@ -6766,89 +6766,162 @@
     "booth": false,
     "clear": false,
     "contacts": [
-      {
-        "n": "Andrew Reiser",
-        "t": "Founder & CEO"
-      }
+      { "n": "Andrew Reiser", "t": "Founder, CEO & Chairman" },
+      { "n": "Arun Narayan", "t": "Chief Data & AI Officer" },
+      { "n": "Ben Johnston", "t": "COO" },
+      { "n": "Jeff Newman", "t": "Chief Risk Officer" },
+      { "n": "Josh Jones", "t": "Chief Revenue Officer" },
+      { "n": "Ella Haman", "t": "CTO" },
+      { "n": "Anthony Rose", "t": "CFO" }
     ],
-    "desc": "Founded in 2006 as Strategic Funding Source, rebranded to Kapitus in 2019. Over $5B funded to 50,000+ businesses. Offers MCA, SBA loans, lines of credit, and equipment financing from NYC.",
-    "notes": "",
+    "desc": "Founded in 2006 as Strategic Funding Source, rebranded to Kapitus in 2019. Over $7B funded to 65,000+ businesses across MCA, SBA loans, lines of credit, and equipment financing. 446 employees across NYC HQ, Arlington VA, LA, Coeur d'Alene ID, and Chennai India (~100 staff doing credit analysis and data analytics). Acquired Ten Oaks Commercial Capital (Oct 2024) to launch equipment finance arm. $900M+ in total financing capacity: $250M ABS (expandable to $500M), $230M warehouse line, $95M corporate note. Back-to-back Inc. 5000 honoree (2024: #2025, 258% growth; 2025: #1705, 256% growth). Named Inc. Best Workplaces 2025. Tech stack includes Mambu (core LOS), Ocrolus (400K+ bank statements/month), Tax Guard (IRS verification), and Northteq Aurora (equipment finance LOS). Building new 'KapEx' marketplace monetization vertical. Arun Narayan's promotion to Chief Data & AI Officer signals increasing investment in AI-driven underwriting.",
+    "notes": "Chennai India office (7,500 sqft, Aneja Towers, Perungudi) — natural HyperVerge relationship angle. SVP Underwriting Steven Podhorzer has publicly stated fraud is a major challenge ('fairly easy to doctor a tax return'). No visible IDV partner — Ocrolus handles document analysis, Tax Guard handles tax verification, but identity verification/KYC gap exists. KapEx initiative (marketplace monetization) will need partner/merchant verification. Andrew Reiser's philosophy: 'The best of technologies will not succeed if you don't underwrite properly' — aligns with HyperVerge's AI-with-human-review approach. Predicts banks will acquire alt lenders within 3-5 years.",
     "news": [
       {
-        "h": "Kapitus Closes $250 Million Securitization and Upsizes Corporate Note to $95 Million",
+        "h": "Kapitus Equipment Finance Partners with Northteq for Aurora LOS Platform",
+        "s": "Northteq Press Release, Jan 2026",
+        "d": "Kapitus Equipment Finance division implements Northteq's Salesforce-native Aurora platform to automate application intake, scorecard-based credit reviews, and documentation for the new equipment finance vertical.",
+        "p": "2026-01-15"
+      },
+      {
+        "h": "Ben Johnston Publishes 2026 Economic Outlook for Retail & SMB",
+        "s": "Chain Store Age, Jan 2026",
+        "d": "COO Ben Johnston analyzes 2026 economic factors: tariff impacts on retail pricing, immigration crackdowns affecting restaurant margins, rising unemployment (4% to 4.6% in 2025), and e-commerce outpacing brick-and-mortar.",
+        "p": "2026-01-08"
+      },
+      {
+        "h": "Kapitus Diamond & Platinum Sponsor at B2B Finance Expo 2025",
+        "s": "B2B Finance Expo, Oct 2025",
+        "d": "Kapitus was top-tier sponsor at B2B Finance Expo at the Wynn Las Vegas. CFO Anthony Rose spoke; COO Ben Johnston moderated 'Fueling Growth: Capital Strategies for Small Business Lending' panel.",
+        "p": "2025-10-15"
+      },
+      {
+        "h": "Kapitus Ranks #1705 on 2025 Inc. 5000 with 256% Revenue Growth",
+        "s": "Inc. Magazine, Aug 2025",
+        "d": "Second consecutive Inc. 5000 appearance. Also named to Inc. Best Workplaces 2025 (Medium-Large, Northeast, Established Excellence). Estimated revenue ~$112.9M.",
+        "p": "2025-08-12"
+      },
+      {
+        "h": "Kapitus Closes $250M Securitization and Upsizes Corporate Note to $95M",
         "s": "PR Newswire, Jul 2025",
-        "d": "Kapitus closed a $250M ABS with a 3-year revolving period expandable to $500M, rated by KBRA with Truist Securities as sole bookrunner. Also upsized corporate note to $95M.",
+        "d": "Closed $250M ABS Series 2025-1 with 3-year revolving period expandable to $500M, KBRA-rated. Truist Securities sole structuring agent, Brean Capital financial advisor. Corporate note upsized from $45M to $95M. Total $7B+ funded to 65,000+ businesses.",
         "p": "2025-07-22"
       },
       {
-        "h": "Kapitus Secures Position on 2024 Inc. 5000 as One of America's Fastest-Growing Private Companies",
-        "s": "PRWeb, Aug 2024",
-        "d": "Kapitus ranked No. 2025 on the Inc. 5000 list with 258% revenue growth over three years, reinforcing its position as a leading SMB financing provider.",
-        "p": "2024-08-13"
-      },
-      {
-        "h": "Kapitus Raises $45 Million to Expand Small Business Financing Options",
-        "s": "PYMNTS.com, 2024",
-        "d": "Kapitus raised $45M in new funding to expand its small business financing capabilities and product offerings.",
-        "p": "2024-09-15"
-      },
-      {
-        "h": "Kapitus Closes $250M Securitization",
-        "s": "ELFA, Jul 2025",
-        "d": "Also upsized corporate note to $95M. Warehouse line increased to $230M. $675M raised across instruments in 2025."
+        "h": "Kapitus Warehouse Line Increased to $230M; Ten Oaks Acquisition Launches Equipment Finance",
+        "s": "Kapitus Press Releases, Dec 2024 / Oct 2024",
+        "d": "Warehouse line increased from $122M to $230M with Truist Bank and Castlelake. Separately acquired Ten Oaks Commercial Capital to enter equipment financing for construction, manufacturing, hospitality, and healthcare sectors.",
+        "p": "2024-12-01"
       }
     ],
-    "ice": "Five billion dollars to 50,000+ businesses since 2006 -- the rebrand to Kapitus clearly hasn't slowed you down. What's driving growth now?",
+    "ice": "Seven billion dollars to 65,000 businesses, back-to-back Inc. 5000, and now building out the KapEx marketplace vertical — Kapitus is on a tear. With Arun stepping into the Chief Data & AI Officer role, how are you thinking about the next generation of underwriting intelligence?",
     "icebreakers": [
-      "Five billion dollars to 50,000+ businesses since 2006 -- the rebrand to Kapitus clearly hasn't slowed you down. What's driving growth now?"
+      "Seven billion dollars to 65,000 businesses and a new equipment finance arm via Ten Oaks — how's the integration going, and is the underwriting stack keeping pace with the product expansion?",
+      "Congrats on back-to-back Inc. 5000 and Inc. Best Workplaces — that's rare. With 446 people across four continents now, what's the biggest operational scaling challenge?",
+      "Your SVP of Underwriting mentioned fraud is a major challenge — 'fairly easy to doctor a tax return.' With 400K+ bank statements flowing through Ocrolus monthly, how are you thinking about identity verification as the next layer?",
+      "Andrew mentioned on the Beyond Banks podcast that 'the best technologies won't succeed if you don't underwrite properly' — we built HyperVerge with exactly that philosophy. Would love to show you how our AI catches what document analysis alone misses."
     ],
     "tp": [
-      "With multiple product lines from MCA to SBA, AI underwriting can route applications to the right product automatically and cut decisioning time across all of them."
+      "With $900M+ in financing capacity across MCA, SBA, equipment, and lines of credit, AI underwriting that routes applications to the right product and detects fraud across all channels could save significant loss exposure — especially as you scale KapEx and the equipment finance arm.",
+      "Kapitus already processes 400K+ bank statements monthly through Ocrolus, but identity verification is the gap — HyperVerge's AI catches synthetic identity fraud, doctored tax returns, and application stacking that document analysis alone misses. 450+ lending companies use us for exactly this.",
+      "With the Chennai analytics center handling credit analysis and data science, HyperVerge (also India-based) can integrate seamlessly into your existing workflow — same timezone, familiar tech ecosystem, and our platform drops into Mambu/Salesforce via API in days, not months."
     ],
     "leaders": [
       {
         "n": "Andrew Reiser",
         "t": "Founder, CEO & Chairman",
-        "bg": "Boston University Questrom School of Business (BS). Began career as CPA at Coopers & Lybrand and Price Waterhouse. Previously CEO of Arcavista Corporation, Managing Director at Donald & Co. Securities, EVP of Fidelco Capital Group, and President of Windsor Group. Founded Strategic Funding Source (now Kapitus) in January 2006 with 10 employees to serve the underbanked small business community. Under his leadership, Kapitus has connected $7B+ in growth capital to 65,000+ small businesses. Inc. 5000 in 2024 (No. 2025, 258% revenue growth over 3 years). Closed $250M securitization and $95M corporate note in July 2025.",
+        "bg": "Boston University Questrom School of Business (BS). Began career as CPA at Coopers & Lybrand and Price Waterhouse. Previously CEO of Arcavista Corporation (CRM software), Managing Director at Donald & Co. Securities (investment banking), EVP of Fidelco Capital Group, and President of Windsor Group (PE/debt fund). Founded Strategic Funding Source (now Kapitus) in January 2006 with 10 employees. Under his leadership, Kapitus has funded $7B+ to 65,000+ businesses. Back-to-back Inc. 5000 (2024: #2025, 2025: #1705). Closed $250M securitization and $95M corporate note in July 2025. Gave in-depth interview on Beyond Banks/Cobalt Intelligence podcast in 2025 sharing strategic vision — predicts banks will acquire alt lenders within 3-5 years. Philosophy: 'The best of technologies will not succeed if you don't underwrite properly.'",
         "li": "https://www.linkedin.com/in/andrew-reiser-64800415/",
         "hooks": [
           "*Boston U Questrom, started as CPA",
           "*$7B+ funded, 65K+ businesses",
-          "*Inc. 5000 — 258% 3yr growth",
-          "$250M securitization Jul 2025"
+          "*2x Inc. 5000 (2024 + 2025)",
+          "Beyond Banks podcast — 'underwrite properly' philosophy"
         ]
       },
       {
         "n": "Ben Johnston",
         "t": "Chief Operating Officer",
-        "bg": "Colby College BA. University of Michigan Ross School of Business MBA. Joined Kapitus in 2014 as Chief Strategy Officer, became COO in January 2017. Previously Principal at Pine Brook Partners (PE firm focused on specialty finance, banking, insurance), Senior Associate at Lightyear Capital, and Analyst in the Office of the Chairman at PaineWebber. At Pine Brook, sourced and managed investments in small business lending. Responsible for all strategic and organizational objectives at Kapitus.",
+        "bg": "Colby College BA. University of Michigan Ross School of Business MBA. Joined Kapitus in 2014 as Chief Strategy Officer, became COO in January 2017. Previously Principal at Pine Brook Partners (PE firm focused on specialty finance, banking, insurance), Senior Associate at Lightyear Capital, and Analyst in the Office of the Chairman at PaineWebber. Prolific thought leadership writer — published articles in Chain Store Age (Jan 2026 economic outlook), Construction Executive (Jul 2025, Feb 2025), Onco'Zine (May 2025 healthcare growth), and Scotsman Guide. Moderated 'Fueling Growth: Capital Strategies for Small Business Lending' panel at B2B Finance Expo 2025 (Wynn Las Vegas).",
         "li": "https://www.linkedin.com/in/ben-johnston-a7313a/",
         "hooks": [
-          "*Michigan Ross MBA",
-          "*Ex-Pine Brook Partners PE",
-          "PaineWebber Chairman's Office",
-          "Strategy to COO pipeline"
+          "*Michigan Ross MBA, ex-Pine Brook PE",
+          "*Prolific writer — Chain Store Age, Construction Exec",
+          "Moderated B2B Finance Expo 2025 panel",
+          "PaineWebber Chairman's Office alum"
         ]
       },
       {
-        "n": "Jeffrey Weisel",
+        "n": "Arun Narayan",
+        "t": "Chief Data & AI Officer / Chief Product Officer",
+        "bg": "University of Michigan Ross School of Business MBA. Joined Kapitus in 2015 as SVP of Risk & Analytics, promoted to Chief Product Officer, now evolving into Chief Data and AI Officer — signaling Kapitus's increasing investment in AI-driven underwriting. Previously VP and Managing Director at Lighting Science Group, Management Consultant at PRTM, Manager at Discover Financial Services, Marketing Manager at Infosys Technologies. Based in Bethesda, MD. Owns AI strategy, data science, and product development across all lending verticals.",
+        "li": "https://www.linkedin.com/in/arun-narayan-0614084/",
+        "hooks": [
+          "*Chief Data & AI Officer — new title signals AI push",
+          "*Michigan Ross MBA, ex-Discover Financial",
+          "Risk & Analytics to AI strategy pipeline",
+          "Natural AI/ML buyer and champion"
+        ],
+        "email": "anarayan@kapitus.com"
+      },
+      {
+        "n": "Jeff Newman",
         "t": "Chief Risk Officer",
-        "bg": "25+ years of risk management experience at Citibank and GE Capital. Served as Chief Credit Officer at Citibank's US Retail Bank for Consumer and Small Business lending. Joined Kapitus in March 2018. Brings enterprise-scale risk management expertise to Kapitus's growing portfolio.",
-        "li": "",
+        "bg": "Carnegie Mellon Tepper School of Business MBA. Franklin & Marshall College BA. 25+ years in risk management at Citibank and GE Capital (now Synchrony Financial). Served as Chief Credit Officer at Citibank's US Retail Bank for Consumer and Small Business lending. Joined Kapitus in March 2018. Brings enterprise-scale credit risk and fraud detection expertise to Kapitus's growing multi-product portfolio.",
+        "li": "https://www.linkedin.com/in/jeffreywnewman/",
         "hooks": [
           "*Ex-Citibank Chief Credit Officer",
+          "*Carnegie Mellon Tepper MBA",
           "25yr risk vet: Citi + GE Capital",
-          "Enterprise risk at SMB scale"
+          "Enterprise fraud detection expertise"
+        ]
+      },
+      {
+        "n": "Josh Jones",
+        "t": "Chief Revenue Officer",
+        "bg": "Loyola University Maryland BA. BBA from St. Louis University Madrid Campus. 15+ years in FinTech building brands and distributing near-prime credit products. Joined Kapitus in 2015 when his lending facility was acquired. Rose through SVP Sales to CRO. Previously at Tyrian Bull, OnDeck, and Tomoro. NJBIZ Forty Under 40 honoree. Owns all revenue generation, sales strategy, and broker/partner channel relationships.",
+        "li": "https://www.linkedin.com/in/joshua-jones-971b7517/",
+        "hooks": [
+          "*NJBIZ Forty Under 40",
+          "Lending facility acquired by Kapitus",
+          "Ex-OnDeck — knows the competitive landscape",
+          "15yr FinTech sales veteran"
+        ]
+      },
+      {
+        "n": "Ella Haman",
+        "t": "Chief Technology Officer",
+        "bg": "University of Minnesota BA. 25+ years in technology. Previously CTO at Jama Software, Bynder, and BlackLine. Lead Consultant at Crosslake Technologies (healthcare, financial services, retail, utilities). Consultant with Delta Airlines. Joined Kapitus October 2021 (after prior senior consultant engagement). Based in Minneapolis, MN. Spearheads the build-out of next-generation technology platforms including Mambu core LOS and Northteq Aurora for equipment finance.",
+        "li": "https://www.linkedin.com/in/ellahaman/",
+        "hooks": [
+          "*3x CTO — Jama, Bynder, BlackLine",
+          "Crosslake consulting across healthcare + fintech",
+          "Owns Mambu + Northteq platform strategy",
+          "25yr tech veteran"
+        ],
+        "email": "ahaman@kapitus.com"
+      },
+      {
+        "n": "Anthony Rose",
+        "t": "Chief Financial Officer",
+        "bg": "University of Wisconsin BA. Columbia University MBA. CFA charterholder. Joined Kapitus February 2018. Previously Chief Administrative Officer at Dime Community Bancshares, CFO of ISI Group, CFO of Global Equities Investment Bank at Credit Suisse, VP of Capital and Balance Sheet Strategy and FP&A at JPMorgan Chase. Named Industry Era 'Best CFOs of 2021'. Leads 82-person finance department. Speaker at B2B Finance Expo 2025. Quoted in $250M securitization PR — oversees all capital markets activity including $900M+ in total financing capacity.",
+        "li": "https://www.linkedin.com/in/anthonyrose1/",
+        "hooks": [
+          "*Columbia MBA, CFA, ex-Credit Suisse CFO",
+          "*Industry Era Best CFOs 2021",
+          "JPMorgan + Dime Community Bancshares",
+          "Manages $900M+ financing capacity"
         ]
       }
     ],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "ask": "Arun, with the move to Chief Data & AI Officer and 400K+ bank statements flowing through monthly, we'd love to show you how HyperVerge's identity verification layer catches what document analysis alone misses — synthetic IDs, doctored tax returns, application stacking. Could we set up a 20-minute demo?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "refreshed-2026-02"
     ],
     "location": "New York",
-    "employees": 415,
+    "employees": 446,
     "website": "https://kapitus.com",
     "linkedinUrl": "https://www.linkedin.com/company/kapitus/",
     "outreachHistory": {
@@ -6866,22 +6939,22 @@
         },
         {
           "email": "anarayan@kapitus.com",
-          "name": "Ben Johnston",
-          "title": "",
+          "name": "Arun Narayan",
+          "title": "Chief Data & AI Officer",
           "outbound": 0,
           "inbound": 6
         },
         {
           "email": "bjohnston@kapitus.com",
           "name": "Ben Johnston",
-          "title": "Co-founder",
+          "title": "COO",
           "outbound": 0,
           "inbound": 4
         },
         {
           "email": "dmani@kapitus.com",
           "name": "Dinesh Kumar Mani",
-          "title": "Co-founder",
+          "title": "",
           "outbound": 0,
           "inbound": 4
         },
@@ -6894,8 +6967,8 @@
         },
         {
           "email": "ppandurangarao@kapitus.com",
-          "name": "Arun Narayan",
-          "title": "CTO",
+          "name": "Prasanth Pandurangarao",
+          "title": "",
           "outbound": 0,
           "inbound": 3
         },
@@ -6915,15 +6988,15 @@
         },
         {
           "email": "ahaman@kapitus.com",
-          "name": "Brandy Villere",
-          "title": "",
+          "name": "Ella Haman",
+          "title": "CTO",
           "outbound": 0,
           "inbound": 0
         },
         {
           "email": "arun@kapitus.com",
-          "name": "",
-          "title": "",
+          "name": "Arun Narayan",
+          "title": "Chief Data & AI Officer",
           "outbound": 0,
           "inbound": 0
         }
