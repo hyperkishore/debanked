@@ -184,7 +184,6 @@ export function FilterBar({
       <div className="flex items-center justify-between">
         <span className="text-xs text-muted-foreground">
           {filteredCount} of {totalCount}
-          {metCount > 0 && ` \u00b7 ${metCount} met`}
         </span>
         <div className="flex items-center gap-0.5">
           {/* Category filter dropdown */}

@@ -207,9 +207,6 @@ export function CompanyDetail({
             <h2 className="text-lg font-bold truncate">{company.name}</h2>
           </div>
           <div className="flex items-center gap-1.5 shrink-0 flex-wrap">
-            <Badge variant="outline" className={cn("text-xs font-semibold", typeBadgeStyles[company.type] || "")}>
-              {company.type}
-            </Badge>
             <Badge variant="outline" className={cn("text-xs font-semibold", subVerticalBadgeStyles[inferSubVertical(company)] || "bg-muted/50 text-muted-foreground border-border")}>
               {inferSubVertical(company)}
             </Badge>
@@ -229,16 +226,6 @@ export function CompanyDetail({
                 </a>
               ) : null;
             })()}
-            {company.clear && (
-              <Badge variant="outline" className="text-xs font-semibold text-brand border-brand/30">
-                CLEAR
-              </Badge>
-            )}
-            {company.booth && (
-              <Badge variant="outline" className="text-xs text-muted-foreground">
-                BOOTH
-              </Badge>
-            )}
           </div>
         </div>
 
@@ -298,11 +285,7 @@ export function CompanyDetail({
                     <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-yellow-500/10 text-yellow-400 border-yellow-500/30">
                       <Mail className="h-2.5 w-2.5 mr-0.5" />Email unverified
                     </Badge>
-                  ) : (
-                    <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-muted/50 text-muted-foreground border-border">
-                      <Mail className="h-2.5 w-2.5 mr-0.5" />No email
-                    </Badge>
-                  )}
+                  ) : null}
                   {leaderWithPhone && (
                     <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-green-500/10 text-green-400 border-green-500/30">
                       <Phone className="h-2.5 w-2.5 mr-0.5" />Phone
