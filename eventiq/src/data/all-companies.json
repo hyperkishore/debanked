@@ -16240,135 +16240,163 @@
     "contacts": [
       {
         "n": "John Paradisi",
-        "t": "CEO (effective Jan 2026)"
+        "t": "CEO"
       },
       {
-        "n": "Randy Saluck",
-        "t": "Vice Chairman & Board Member"
+        "n": "Michael Thompson",
+        "t": "SMD of Credit, Head of Underwriting"
+      },
+      {
+        "n": "Gary Katcher",
+        "t": "Founder & Executive Chairman"
       },
       {
         "n": "Jia-Mang Ten",
         "t": "Chief Investment Officer"
       },
       {
-        "n": "Gary Katcher",
-        "t": "Founder & Executive Chairman"
+        "n": "James Smith",
+        "t": "Chief Technology Officer"
+      },
+      {
+        "n": "Delson Manzueta",
+        "t": "Director, Credit Risk"
       }
     ],
-    "desc": "Leading fintech based in Greenwich, CT offering revenue-based financing and working capital solutions to SMBs, with new CEO John Paradisi bringing 25+ years of banking experience and a new CIO from Citadel.",
-    "notes": "",
+    "desc": "Leading fintech based in Greenwich, CT offering revenue-based financing ($500K-$10M) and business term loans (up to $2.5M via WebBank partnership) to SMBs. Crossed $5B in total funding in January 2026 — the most recent $1B achieved in under 10 months. Originating ~$100M/month across ~1,800 deals per year with 60%+ repeat client rate. Major leadership transformation in Jan 2026: John Paradisi (ex-CIT Bank, City National Bank of FL) became CEO, Jia-Mang Ten (ex-Citadel) became CIO, and Randy Saluck transitioned to Vice Chairman. SOC 2 Type II certified. ~100 employees with 23% headcount growth last year. Backed by $100M Victory Park Capital credit facility (Oct 2025) and $75M investment-grade corporate notes.",
+    "notes": "SELLING ANGLES: (1) Underwriting speed bottleneck — 1,800+ deals/year with large manual credit team (5+ senior leaders), while competitors like Dragin offer AI pre-underwriting in 30 seconds vs Libertas's 'one business day' credit approval. (2) Document processing at scale — RBF requires bank statements, financials, tax returns, licenses for each deal; HyperVerge automates extraction/classification. (3) No AI in public messaging — website emphasizes 'personal customer service' and 'high-touch' model; no mentions of AI/ML/automation in any public materials; tech messaging is cautious. (4) CTO from trading software (Eze Software/Raytheon) and CIO from bank infrastructure (RBS) — strong infra but possibly limited exposure to modern AI document processing. (5) Growth demands automation — $5B crossed with accelerating trajectory, $100M VPC facility to deploy; need to process more deals faster without proportionally growing underwriting headcount. (6) Paradisi recruited Benjamin Armour (CMO) from City National Bank of FL — he brings people he trusts, which means approaching through his network may work. (7) SOC 2 + new CCO signals compliance maturity — HyperVerge's enterprise security posture will resonate. (8) 10-year anniversary Sept 2026 — good conversation anchor. APPROACH WITH PARADISI: Frame as 'operational efficiency at scale' not 'AI replacing underwriters'. Reference his $18B→$26B growth at CNB. He thinks in M&A/growth strategy language. Board member of Junior Achievement (financial literacy for at-risk youth) — genuine personal interest. Avoid: positioning as replacing their credit team (deep institutional pride) or leading with AI buzzwords.",
     "news": [
-      {
-        "h": "Libertas Secures $100M Credit Facility from Victory Park Capital",
-        "s": "BusinessWire, Oct 2025",
-        "d": "Also closed $75M investment-grade corporate notes. ~$5B funded since inception, originating $100M/month."
-      },
       {
         "h": "Libertas Funding Crosses $5 Billion Milestone",
         "s": "BusinessWire, Jan 2026",
-        "d": "Libertas surpassed $5B in total funding in under ten years, with the most recent billion achieved in under ten months. Secured new credit facility for continued expansion."
+        "d": "Surpassed $5B in total funding in under ten years. Most recent $1B achieved in under 10 months, signaling accelerating growth. Paradisi quoted: 'Our $5B milestone was built one relationship at a time by prioritizing speed, custom capital, and true partnership.'",
+        "p": "2026-01-15"
       },
       {
-        "h": "Libertas Announces Key Leadership Appointments",
-        "s": "Yahoo Finance, Dec 2025",
-        "d": "John Paradisi named CEO, Randy Saluck becomes Vice Chairman, Jia-Mang Ten promoted to CIO, plus new Chief Compliance Officer and Chief Marketing Officer."
-      },
-      {
-        "h": "Libertas Names John Paradisi as President and COO",
-        "s": "Yahoo Finance, May 2025",
-        "d": "Paradisi brought 25+ years of banking experience to Libertas as President and COO, later elevated to CEO."
-      },
-      {
-        "h": "Libertas Funding Announces Key Leadership Appointments",
+        "h": "Libertas Announces Key Leadership Appointments to Propel Next Phase of Growth",
         "s": "BusinessWire, Dec 2025",
-        "d": "New CEO John Paradisi, Vice Chairman Randy Saluck, and CIO Jia-Mang Ten to propel next growth phase."
-      },
-      {
-        "h": "New CIO from Citadel Signals Sophisticated Risk Management",
-        "s": "BusinessWire, Dec 2025",
-        "d": "Jia-Mang Ten brings Citadel portfolio management experience to oversee Libertas's underwriting and credit risk."
-      },
-      {
-        "h": "Libertas Funding Announces Key Leadership Appointments to Propel Next Phase of Growth",
-        "s": "BusinessWire, Dec 2025",
-        "d": "John Paradisi promoted to CEO effective Jan 1, 2026. Randy Saluck transitions to Vice Chairman. Gary Katcher remains Executive Chairman.",
+        "d": "John Paradisi promoted to CEO effective Jan 1, 2026. Randy Saluck transitions to Vice Chairman. Jia-Mang Ten promoted to CIO. Aleem Jackson appointed Chief Compliance Officer. Benjamin Armour named Chief Marketing Officer.",
         "p": "2025-12-23"
       },
       {
-        "h": "Libertas Funding Names John Paradisi as President and Chief Operating Officer",
+        "h": "Libertas Secures $100M Credit Facility from Victory Park Capital",
+        "s": "BusinessWire, Oct 2025",
+        "d": "Credit facility to support growth of SuperB financing program. Combined with $75M investment-grade corporate notes, signals strong institutional backing and capital availability for continued origination growth.",
+        "p": "2025-10-08"
+      },
+      {
+        "h": "Libertas Funding Names John Paradisi as President and COO",
         "s": "Yahoo Finance, May 2025",
-        "d": "Paradisi joins from City National Bank of Florida bringing 26+ years of banking experience to drive Libertas's next growth phase.",
+        "d": "Paradisi joins from City National Bank of Florida where he was EVP & Chief Specialty Banking Officer. Brought 26+ years of banking experience. Gary Katcher said he brings 'an exceptional blend of operational expertise and strategic vision.'",
         "p": "2025-05-21"
       },
       {
-        "h": "Libertas Funding Secures Inaugural $75 Million Investment Grade Corporate Note",
+        "h": "Libertas Funding Secures $75 Million Investment Grade Corporate Note",
         "s": "Newswire, Apr 2025",
-        "d": "Libertas closed $75M investment-grade corporate note financing with Brean Capital as exclusive financial advisor, proceeds used for liquidity and working capital.",
+        "d": "Inaugural investment-grade financing with Brean Capital as exclusive financial advisor. Proceeds used for liquidity and working capital. Signals creditworthiness and institutional-grade capital access.",
         "p": "2025-04-01"
+      },
+      {
+        "h": "Libertas Receives SOC 2 Type II Attestation",
+        "s": "KirkpatrickPrice, 2025",
+        "d": "Completed SOC 2 Type II audit by KirkpatrickPrice, demonstrating enterprise-grade security and compliance controls. Significant milestone for institutional credibility."
       }
     ],
-    "ice": "The new leadership appointments, especially a CIO from Citadel, signal a sophisticated approach to risk management. How are you thinking about AI to complement that world-class risk expertise?",
+    "ice": "John, congratulations on crossing $5B — achieving the last billion in under 10 months is remarkable acceleration. As you scale toward $2B/year in originations, how are you thinking about the technology side of keeping underwriting quality high at that velocity?",
     "icebreakers": [
-      "Appointing a CIO from Citadel shows serious commitment to risk management. How is Libertas approaching AI in underwriting?",
-      "The leadership transition with John Paradisi and Jia-Mang Ten signals a new growth chapter. What technology investments are you prioritizing?",
-      "Having Citadel-caliber talent in your CIO seat is impressive. How does technology factor into your underwriting strategy?",
-      "New CEO, new CIO, new Vice Chairman structure. How is Libertas modernizing its underwriting technology alongside these leadership changes?",
-      "Gary's 30+ years in credit and trading is rare in this space -- how does that institutional risk lens shape your underwriting approach?"
+      "John, the $5B milestone built 'one relationship at a time' is impressive. As origination velocity accelerates, how are you thinking about scaling underwriting without diluting that relationship-first approach?",
+      "Your growth at City National Bank from $18B to $26B was impressive. Now at Libertas with $100M/month in originations, what technology investments are you prioritizing to sustain that growth trajectory?",
+      "With Jia-Mang Ten bringing Citadel-caliber risk management and you bringing CIT Bank's institutional rigor, how is Libertas thinking about AI to complement that depth of expertise?",
+      "Libertas's 10-year anniversary is coming up in September. From founding to $5B is a remarkable story — what does the next chapter look like on the technology and automation side?"
     ],
     "tp": [
-      "With a new CIO from Citadel overseeing underwriting, HyperVerge's AI can complement sophisticated risk models by automating document review in under 5 minutes.",
-      "Libertas's leadership transition is an ideal time to evaluate AI underwriting. HyperVerge serves 450+ lending companies with proven revenue-based financing automation.",
-      "As John Paradisi drives growth, HyperVerge can help scale underwriting without proportionally growing headcount.",
-      "AI underwriting can bring institutional-grade credit analysis to every deal, matching the rigor Gary built into Libertas but at 10x the speed."
+      "At $100M/month and 1,800+ deals per year, Libertas's underwriting team processes enormous volume. HyperVerge automates bank statement analysis, document classification, and financial spreading in under 5 minutes — letting your credit team focus on the complex judgment calls they excel at.",
+      "Competitors like Dragin now offer AI pre-underwriting in 30 seconds. HyperVerge serves 450+ lending companies with proven RBF automation — we can help Libertas maintain its quality advantage while matching the speed competitors are promising.",
+      "With SOC 2 Type II certification and a new CCO, Libertas is clearly investing in institutional-grade compliance. HyperVerge's enterprise security posture (SOC 2 Type II, ISO 27001) and AI-powered KYC/KYB directly complement that commitment."
     ],
     "leaders": [
       {
         "n": "John Paradisi",
         "t": "CEO",
-        "bg": "25+ years of leadership across commercial/consumer banking, specialty lending, and capital markets. Named President and COO at Libertas in May 2025, then promoted to CEO effective January 2026. Previously EVP and Chief Specialty Banking Officer at City National Bank of Florida. Spent 17 years at CIT Bank in consumer banking, commercial banking, corporate strategy, M&A, and business development, rising to Chief Strategy Growth Officer.",
+        "bg": "26+ years across commercial/consumer banking, specialty lending, and capital markets. At CIT Bank for 17 years (2002-2019): rose to Managing Director and Global Head of Corporate Development & M&A, leading 35+ global M&A transactions including valuation, negotiations, and post-closing integration; then became Chief Strategy Growth Officer heading corporate strategy, partnerships, and business development. At City National Bank of Florida (2020-2025): as EVP & Chief Strategy Officer, played a pivotal role growing total assets from $18B to $26B+ in four years; then as EVP & Chief Specialty Banking Officer, led growth across Residential Banking, Capital Markets, Treasury, SBA Lending, Insurance, Equipment Finance, and Marketing across Central/West Coast Florida. Joined Libertas as President & COO in May 2025, promoted to CEO effective January 1, 2026 — just 7 months later. Board member of Junior Achievement of Greater Miami (financial literacy for at-risk youth). Recruited CMO Benjamin Armour from City National Bank — brings people he trusts. His quote on $5B milestone: 'Built one relationship at a time by prioritizing speed, custom capital, and true partnership.'",
         "li": "https://www.linkedin.com/in/john-p-160a534/",
         "hooks": [
-          "*17yr CIT Bank veteran",
-          "Ex-City National Bank FL EVP",
-          "Chief Strategy Growth Officer",
-          "Named CEO Jan 2026",
+          "*Led 35+ global M&A deals at CIT Bank",
           "*Grew City National Bank $18B to $26B",
-          "17 years at CIT Bank",
-          "26yr banking & specialty finance vet"
+          "Board: Junior Achievement of Greater Miami",
+          "CEO in 7 months (May→Jan)",
+          "*17yr CIT Bank, then 5yr City National Bank FL"
         ]
       },
       {
-        "n": "Randy Saluck",
-        "t": "Vice Chairman",
-        "bg": "Instrumental to Libertas's success since 2017. Transitioned from CEO to Vice Chairman in December 2025. Continues on the Board of Directors, serves on the Libertas credit committee, and provides guidance to the underwriting team on complex transactions. Focuses on developing a Key Account Strategy for institutional relationships.",
-        "li": "https://www.linkedin.com/in/randy-saluck-840771152/",
+        "n": "Michael Thompson",
+        "t": "Senior Managing Director of Credit, Head of Underwriting",
+        "bg": "Heads the entire underwriting function at Libertas. Rose through the ranks internally — started as Senior Credit Analyst, progressed through Associate Director of Credit and Managing Director of Credit before being promoted to Senior Managing Director and Head of Underwriting. Education in Applied Financial Mathematics from New York City College of Technology. Facilitates and streamlines specialty financing solutions serving thousands of SMBs. He is the primary day-to-day decision-maker on credit approvals and the key operational champion for any underwriting technology evaluation.",
         "hooks": [
-          "*CEO-to-Vice Chair transition",
-          "Key account strategist",
-          "At Libertas since 2017",
-          "Complex deal underwriter",
-          "*Wharton MBA + UVA Law JD",
-          "*Ex-Salomon Brothers M&A",
-          "Founded Mortar Rock Capital",
-          "$5B funded under his watch"
+          "Rose from analyst to Head of UW",
+          "Applied Financial Mathematics degree",
+          "Key operational champion for tech",
+          "Manages team of 5+ senior credit leaders"
         ]
       },
       {
-        "n": "Jia-Mang Ten",
-        "t": "Chief Investment Officer",
-        "bg": "Over 20 years of investment experience. Previously held positions at Citadel LLC, Tremblant Capital, BlueCrest Capital Management, and YG Partners. Expertise in hedge funds, equities, portfolio management, valuation, and financial modeling. Promoted to CIO at Libertas to oversee financial risk, underwriting, and portfolio management.",
-        "li": "https://www.linkedin.com/in/jia-mang-ten-3b9509/",
+        "n": "Delson Manzueta",
+        "t": "Director, Credit Risk",
+        "bg": "Manages the underwriting team at Libertas. Previously: Deutsche Bank (Credit Analyst handling commercial credit applications and loan portfolio management), Rewards Network (Credit Analyst), BFS Capital (Underwriter), Merchants Capital Access (Senior Underwriter, then Director of Underwriting). Deep MCA/alternative lending underwriting experience across multiple companies before Libertas.",
+        "li": "https://www.linkedin.com/in/delsonmanzueta/",
         "hooks": [
-          "*Ex-Citadel LLC",
-          "Ex-BlueCrest Capital",
-          "Ex-Tremblant Capital",
-          "20yr investment veteran"
+          "Ex-Deutsche Bank credit analyst",
+          "Director of UW at Merchants Capital",
+          "Deep MCA underwriting background",
+          "Manages day-to-day UW team"
+        ]
+      },
+      {
+        "n": "Jeffrey Eller",
+        "t": "Managing Director, Credit Department",
+        "bg": "Progressed from Senior Credit Analyst to Department Director of Credit to Managing Director at Libertas. Previously Senior Underwriter at Bizfi (fintech small business financing) where he created and led a team of underwriters focused on retention and payback optimization.",
+        "li": "https://www.linkedin.com/in/jeffrey-eller-1a67a229/",
+        "hooks": [
+          "Ex-Bizfi Senior Underwriter",
+          "Built UW team for retention optimization",
+          "Internal rise at Libertas"
+        ]
+      },
+      {
+        "n": "Jonathan Levich",
+        "t": "Managing Director, Credit Risk",
+        "bg": "MBA in Investment Management from Pace University Lubin School of Business (2010-2012). Managing Director of Credit Risk at Libertas, responsible for credit risk analysis and portfolio monitoring.",
+        "li": "https://www.linkedin.com/in/jlevich",
+        "hooks": [
+          "MBA Investment Management, Pace",
+          "Credit risk & portfolio monitoring"
+        ]
+      },
+      {
+        "n": "James Smith",
+        "t": "Chief Technology Officer",
+        "bg": "20+ years in product, development, and operations. Co-founded Hakkiri (served as CEO). Spent 16 years at Eze Software Group leading a 250+ person global engineering team building trading and portfolio management software. Started career at Raytheon as a Systems Engineer. Appointed CTO at Libertas in July 2022. Based in Wilmington, MA. His background in trading software infrastructure is strong but may represent a gap in modern AI/ML document processing — a potential opportunity for HyperVerge partnership.",
+        "hooks": [
+          "*16yr Eze Software, 250-person eng team",
+          "Co-founded Hakkiri (CEO)",
+          "Ex-Raytheon Systems Engineer",
+          "Trading software background"
+        ]
+      },
+      {
+        "n": "Denise Jacob",
+        "t": "Chief Information Officer",
+        "bg": "30+ years in financial services IT and cybersecurity. Former Head of Technology Infrastructure & Risk at Royal Bank of Scotland where she led a 450-person global team across 4 sites. Appointed CIO at Libertas in July 2022. Oversees security, compliance, and infrastructure.",
+        "hooks": [
+          "*Led 450-person global IT team at RBS",
+          "30yr financial services IT/cybersecurity",
+          "Security & compliance focused"
         ]
       },
       {
         "n": "Gary Katcher",
         "t": "Founder & Executive Chairman",
-        "bg": "NYU Stern MBA. 30+ year Wall Street career spanning credit, investing, and trading. Started at EF Hutton, then spent most of career at Merrill Lynch as Senior Managing Director heading the High Yield trading desk managing $1B+ in risk capital. Co-headed Leverage Finance at Royal Bank of Canada in 1999. Founded and sold a boutique fixed income broker-dealer to Knight Capital, where he became EVP and Global Head of Institutional Fixed Income. Founded Libertas Funding in September 2016. Dedicated philanthropist supporting blindness research and women entrepreneurs.",
+        "bg": "NYU Stern MBA, BS Business SUNY. 30+ year Wall Street career. Started at EF Hutton, then Merrill Lynch as Senior Managing Director heading the High Yield trading desk managing $1B+ in risk capital. Co-headed Leveraged Finance at Royal Bank of Canada in 1999. Founded and sold a boutique fixed income broker-dealer to Knight Capital, became EVP and Global Head of Institutional Fixed Income. Founded Libertas Funding in September 2016. Dedicated philanthropist supporting blindness research and women entrepreneurs.",
         "li": "https://www.linkedin.com/in/garykatcher/",
         "hooks": [
           "*NYU Stern MBA",
@@ -16376,18 +16404,53 @@
           "*Sold firm to Knight Capital",
           "Philanthropy: blindness research"
         ]
+      },
+      {
+        "n": "Randy Saluck",
+        "t": "Vice Chairman",
+        "bg": "Wharton MBA and UVA Law JD. Ex-Salomon Brothers M&A. Founded Mortar Rock Capital. At Libertas since 2017, served as CEO and General Counsel before transitioning to Vice Chairman in December 2025. Continues on the Board of Directors, serves on the credit committee, and guides the underwriting team on complex transactions. Focuses on Key Account Strategy for institutional relationships.",
+        "li": "https://www.linkedin.com/in/randy-saluck-840771152/",
+        "hooks": [
+          "*Wharton MBA + UVA Law JD",
+          "*Ex-Salomon Brothers M&A",
+          "CEO-to-Vice Chair transition",
+          "$5B funded under his watch"
+        ]
+      },
+      {
+        "n": "Jia-Mang Ten",
+        "t": "Chief Investment Officer",
+        "bg": "University of Oxford. Over 20 years of investment experience at Citadel LLC, Tremblant Capital, BlueCrest Capital Management, and YG Partners. Expertise in hedge funds, equities, portfolio management, valuation, and financial modeling. Promoted from Senior Analytics Officer to CIO at Libertas in January 2026 to oversee financial risk, underwriting, and portfolio management.",
+        "li": "https://www.linkedin.com/in/jia-mang-ten-3b9509/",
+        "hooks": [
+          "*Ex-Citadel LLC",
+          "*University of Oxford",
+          "Ex-BlueCrest Capital",
+          "20yr investment veteran"
+        ]
+      },
+      {
+        "n": "Benjamin Armour",
+        "t": "Chief Marketing Officer",
+        "bg": "20+ years in marketing across fintech, banking, and SaaS. Previously Director of Digital and Growth Marketing at City National Bank of Florida — recruited to Libertas by John Paradisi (they worked together at CNB). Appointed CMO at Libertas in October 2025. His arrival from the same bank as Paradisi suggests a strong working relationship.",
+        "hooks": [
+          "Followed Paradisi from City National Bank",
+          "20yr fintech/banking marketing",
+          "Digital & growth marketing specialist"
+        ]
       }
     ],
-    "ask": "Given Libertas's leadership transformation, would John and Jia-Mang be interested in seeing how HyperVerge's AI underwriting could enhance Libertas's risk management and decisioning speed?",
-    "location": "Connecticut",
-    "employees": 94,
+    "ask": "John, I'd love to show you how HyperVerge helps lending companies like Libertas scale underwriting without growing headcount proportionally. We automate bank statement analysis, document classification, and fraud detection for 450+ lenders. Given your trajectory toward $2B/year, would a 30-minute call make sense to explore how AI can complement Michael Thompson's credit team?",
+    "location": "Greenwich, CT",
+    "employees": 100,
     "website": "https://libertasfunding.com/",
     "linkedinUrl": "https://www.linkedin.com/company/libertas-funding/people/",
     "source": [
       "tam",
       "researched",
       "deep-researched",
-      "eventiq"
+      "eventiq",
+      "refreshed-2026-02"
     ],
     "category": "funder"
   },

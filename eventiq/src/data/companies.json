@@ -4112,32 +4112,77 @@
     "id": 66,
     "name": "Libertas Funding",
     "type": "ICP",
-    "priority": 4,
-    "phase": 4,
+    "priority": 2,
+    "phase": 0,
     "booth": false,
     "clear": false,
     "contacts": [
       {
-        "n": "Randy Saluck",
+        "n": "John Paradisi",
         "t": "CEO"
+      },
+      {
+        "n": "Michael Thompson",
+        "t": "SMD of Credit, Head of Underwriting"
       },
       {
         "n": "Gary Katcher",
         "t": "Founder & Executive Chairman"
       }
     ],
-    "desc": "Greenwich, CT-based provider of short-term revenue-based financing to SMBs. Founded in 2016 by 30-year financial services veteran Gary Katcher. Backed by Patriot Financial Partners.",
+    "desc": "Greenwich, CT-based fintech offering RBF ($500K-$10M) and term loans (up to $2.5M). Crossed $5B total funding Jan 2026. $100M/month originations, ~1,800 deals/year, 60%+ repeat rate. ~100 employees.",
     "notes": "",
-    "news": [],
-    "ice": "Gary's 30+ years in credit and trading is rare in this space -- how does that institutional risk lens shape your underwriting approach?",
+    "news": [
+      {
+        "h": "Libertas Funding Crosses $5 Billion Milestone",
+        "s": "BusinessWire, Jan 2026"
+      },
+      {
+        "h": "Key Leadership Appointments: New CEO, CIO, CCO, CMO",
+        "s": "BusinessWire, Dec 2025"
+      }
+    ],
+    "ice": "John, congratulations on crossing $5B — achieving the last billion in under 10 months is remarkable acceleration. How are you thinking about the technology side of keeping underwriting quality high at that velocity?",
     "icebreakers": [
-      "Gary's 30+ years in credit and trading is rare in this space -- how does that institutional risk lens shape your underwriting approach?"
+      "The $5B milestone built 'one relationship at a time' is impressive. How are you scaling underwriting without diluting that relationship-first approach?",
+      "Your growth at City National Bank from $18B to $26B was impressive. What technology investments are you prioritizing at Libertas?"
     ],
     "tp": [
-      "AI underwriting can bring institutional-grade credit analysis to every deal, matching the rigor Gary built into Libertas but at 10x the speed."
+      "At $100M/month and 1,800+ deals per year, HyperVerge automates bank statement analysis and document classification in under 5 minutes — letting your credit team focus on complex judgment calls.",
+      "HyperVerge serves 450+ lending companies with proven RBF automation — we can help Libertas maintain its quality advantage while matching the speed competitors are promising."
     ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?"
+    "leaders": [
+      {
+        "n": "John Paradisi",
+        "t": "CEO",
+        "bg": "26+ years banking. 17yr CIT Bank (MD, Global Head M&A). 5yr City National Bank FL (grew $18B to $26B). Joined Libertas May 2025, CEO Jan 2026.",
+        "li": "https://www.linkedin.com/in/john-p-160a534/"
+      },
+      {
+        "n": "Michael Thompson",
+        "t": "Head of Underwriting",
+        "bg": "Rose from Senior Credit Analyst to SMD & Head of Underwriting. Applied Financial Mathematics degree."
+      },
+      {
+        "n": "James Smith",
+        "t": "CTO",
+        "bg": "20+ yrs product/dev/ops. 16yr Eze Software (250-person eng team). Co-founded Hakkiri. Ex-Raytheon."
+      },
+      {
+        "n": "Gary Katcher",
+        "t": "Founder & Executive Chairman",
+        "bg": "NYU Stern MBA. Ex-Merrill Lynch Sr. MD ($1B+ book). Sold firm to Knight Capital. Founded Libertas 2016.",
+        "li": "https://www.linkedin.com/in/garykatcher/"
+      },
+      {
+        "n": "Jia-Mang Ten",
+        "t": "CIO",
+        "bg": "Oxford. 20yr investment experience. Ex-Citadel LLC, BlueCrest, Tremblant Capital.",
+        "li": "https://www.linkedin.com/in/jia-mang-ten-3b9509/"
+      }
+    ],
+    "ask": "John, I'd love to show you how HyperVerge helps lending companies scale underwriting without growing headcount. Would a 30-minute call make sense?",
+    "category": "funder"
   },
   {
     "id": 67,
