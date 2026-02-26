@@ -31,7 +31,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Building2, ListChecks, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap } from "lucide-react";
+import { Building2, ListChecks, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Download, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -39,6 +39,7 @@ interface AppSidebarProps {
   onTabChange: (tab: TabType) => void;
   onOpenSearch: () => void;
   onOpenImport: () => void;
+  onOpenExport: () => void;
   onOpenSettings: () => void;
   metCount: number;
   totalCount: number;
@@ -81,6 +82,7 @@ export function AppSidebar({
   onTabChange,
   onOpenSearch,
   onOpenImport,
+  onOpenExport,
   onOpenSettings,
   metCount,
   totalCount,
@@ -225,6 +227,10 @@ export function AppSidebar({
                     <Upload className="h-4 w-4 mr-2" />
                     Import Data
                   </DropdownMenuItem>
+                  <DropdownMenuItem onClick={onOpenExport}>
+                    <Download className="h-4 w-4 mr-2" />
+                    Export Data
+                  </DropdownMenuItem>
                   <DropdownMenuItem onClick={onToggleDevMode}>
                     <Code2 className="h-4 w-4 mr-2" />
                     Developer Mode
@@ -274,7 +280,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.1.41</span>
+              <span className="opacity-50">v3.1.42</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">

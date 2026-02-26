@@ -45,6 +45,7 @@ import {
   getPendingCount,
 } from "@/lib/chat-helpers";
 import { SheetsSettings } from "@/components/sheets-settings";
+import { ExportDialog } from "@/components/export-dialog";
 import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
 import { ResourcesTab } from "@/components/resources-tab";
@@ -129,6 +130,7 @@ export default function Home() {
   const [engagementDialogOpen, setEngagementDialogOpen] = useState(false);
   const [importDialogOpen, setImportDialogOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [exportOpen, setExportOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
 
   // Chat widget state
@@ -635,6 +637,28 @@ export default function Home() {
     [setPipelineState]
   );
 
+  // Research refresh request
+  const handleRequestRefresh = useCallback(
+    async (companyId: number) => {
+      const companyName = companies.find((c) => c.id === companyId)?.name || `ID:${companyId}`;
+      try {
+        const res = await fetch("/api/research-requests", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ companyId }),
+        });
+        if (res.ok) {
+          toast.success(`Research refresh requested for ${companyName}`);
+        } else {
+          toast.error("Failed to submit request");
+        }
+      } catch {
+        toast.error("Failed to submit request");
+      }
+    },
+    [companies]
+  );
+
   // Keyboard navigation
   const sortedCompanyIds = useMemo(() => {
     return [...companies]
@@ -749,6 +773,7 @@ export default function Home() {
           onTabChange={setActiveTab}
           onOpenSearch={() => setSearchOpen(true)}
           onOpenImport={() => setImportDialogOpen(true)}
+          onOpenExport={() => setExportOpen(true)}
           onOpenSettings={() => setSettingsOpen(true)}
           metCount={metCount}
           totalCount={companies.length}
@@ -879,6 +904,7 @@ export default function Home() {
                         onAddTag={handleAddTag}
                         onRemoveTag={handleRemoveTag}
                         onPipelineStageChange={handlePipelineMove}
+                        onRequestRefresh={handleRequestRefresh}
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
@@ -950,6 +976,7 @@ export default function Home() {
                       onAddTag={handleAddTag}
                       onRemoveTag={handleRemoveTag}
                       onPipelineStageChange={handlePipelineMove}
+                      onRequestRefresh={handleRequestRefresh}
                     />
                   )}
                 </SheetContent>
@@ -1027,6 +1054,13 @@ export default function Home() {
       <SheetsSettings
         open={settingsOpen}
         onClose={() => setSettingsOpen(false)}
+      />
+
+      {/* Export dialog */}
+      <ExportDialog
+        open={exportOpen}
+        onClose={() => setExportOpen(false)}
+        companies={companies}
       />
     </SidebarProvider>
   );

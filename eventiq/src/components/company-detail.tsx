@@ -8,6 +8,7 @@ import { PipelineRecord, PipelineStage } from "@/lib/pipeline-helpers";
 import { detectPersona, getPersonaConfig } from "@/lib/persona-helpers";
 import { generateBattlecards, getCategoryStyle } from "@/lib/battlecard-helpers";
 import { computeReadinessScore, getReadinessLabel, getReadinessColor, getReadinessBgColor } from "@/lib/readiness-score";
+import { getCompanyProducts, ProductStatus, getStatusColor, getStatusLabel, getSourceLabel } from "@/lib/product-helpers";
 import { generateTriggerCards, TriggerCard } from "@/lib/trigger-card-helpers";
 import { buildFeedItems, FeedItem, parseDateFromNews } from "@/lib/feed-helpers";
 import { detectCompetitors, CompetitiveContext } from "@/lib/competitive-intel-helpers";
@@ -60,6 +61,9 @@ import {
   BarChart3,
   AlertTriangle,
   Clock,
+  RefreshCw,
+  Package,
+  Crosshair,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -83,6 +87,7 @@ interface CompanyDetailProps {
   onAddTag?: (companyId: number, tag: string) => void;
   onRemoveTag?: (companyId: number, tag: string) => void;
   onPipelineStageChange?: (companyId: number, stage: PipelineStage) => void;
+  onRequestRefresh?: (companyId: number) => void;
 }
 
 
@@ -147,6 +152,7 @@ export function CompanyDetail({
   onAddTag,
   onRemoveTag,
   onPipelineStageChange,
+  onRequestRefresh,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
@@ -177,6 +183,12 @@ export function CompanyDetail({
   const triggerCards = useMemo(
     () => generateTriggerCards(company, feedItems),
     [company, feedItems]
+  );
+
+  // Product modules
+  const productStatuses = useMemo(
+    () => getCompanyProducts(company),
+    [company]
   );
 
   // Competitive intel
@@ -229,8 +241,27 @@ export function CompanyDetail({
           </div>
         </div>
 
-        {/* Readiness Score Breakdown — compact inline */}
-        <ReadinessScoreBadge readiness={readiness} label={readinessLabel} />
+        {/* Readiness Score Breakdown — compact inline + refresh button */}
+        <div className="flex items-center gap-2">
+          <ReadinessScoreBadge readiness={readiness} label={readinessLabel} />
+          <div className="flex-1" />
+          {onRequestRefresh && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-6 px-2 text-xs text-muted-foreground hover:text-brand gap-1"
+                  onClick={() => onRequestRefresh(company.id)}
+                >
+                  <RefreshCw className="h-3 w-3" />
+                  Refresh
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Request updated research for this company</TooltipContent>
+            </Tooltip>
+          )}
+        </div>
 
         {/* Meta info row */}
         {(company.location || company.employees || company.website) && (
@@ -453,6 +484,28 @@ export function CompanyDetail({
               </div>
             </Section>
 
+
+            {/* Selling Angles */}
+            {company.notes && company.notes.length > 20 && (
+              <Section icon={Crosshair} title="Selling Angles">
+                <div className="flex items-start gap-2">
+                  <div className="flex-1 text-sm leading-relaxed text-foreground/90 bg-brand/5 border border-brand/15 rounded-lg p-3">
+                    {company.notes.split(/[.!]\s+/).filter(Boolean).map((sentence, i) => (
+                      <div key={i} className="flex items-start gap-2 text-xs mb-1.5 last:mb-0">
+                        <span className="text-brand shrink-0 mt-0.5">&bull;</span>
+                        <span className="text-muted-foreground leading-relaxed">{sentence.trim().replace(/\.$/, '')}.</span>
+                      </div>
+                    ))}
+                  </div>
+                  <CopyButton text={company.notes} />
+                </div>
+              </Section>
+            )}
+
+            {/* Product Modules */}
+            {productStatuses.length > 0 && (
+              <ProductModulesSection productStatuses={productStatuses} />
+            )}
 
             {/* Contacts with Persona Badges + Brief Me */}
             <Section icon={Users} title="Contacts">
@@ -1484,6 +1537,90 @@ function CompetitiveIntelSection({ contexts }: { contexts: CompetitiveContext[] 
               </Card>
             );
           })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// --- Product Modules Section ---
+
+function ProductModulesSection({ productStatuses }: { productStatuses: ProductStatus[] }) {
+  const [expanded, setExpanded] = useState(false);
+  const activeCount = productStatuses.filter(p => p.status === "active").length;
+  const dealCount = productStatuses.filter(p => p.source === "hubspot").length;
+
+  return (
+    <div>
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={() => setExpanded(!expanded)}
+        className="flex items-center gap-2 mb-2 w-full text-left h-auto p-0 hover:bg-transparent"
+      >
+        <Package className="h-4 w-4 text-muted-foreground" />
+        <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground flex-1">
+          Products
+        </h3>
+        {activeCount > 0 && (
+          <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 bg-emerald-500/10 text-emerald-400 border-emerald-500/30">
+            {activeCount} active
+          </Badge>
+        )}
+        <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5">
+          {productStatuses.length}
+        </Badge>
+        {expanded ? (
+          <ChevronUp className="h-3.5 w-3.5 text-muted-foreground" />
+        ) : (
+          <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
+        )}
+      </Button>
+
+      {/* Compact view (always shown) */}
+      {!expanded && (
+        <div className="flex flex-wrap gap-1.5">
+          {productStatuses.map((ps) => (
+            <Tooltip key={ps.product.id}>
+              <TooltipTrigger asChild>
+                <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 cursor-default", getStatusColor(ps.status))}>
+                  {ps.product.name}
+                </Badge>
+              </TooltipTrigger>
+              <TooltipContent>
+                {ps.product.name}: {getStatusLabel(ps.status)} ({getSourceLabel(ps.source)})
+                {ps.dealInfo && ` — ${ps.dealInfo.stage}`}
+              </TooltipContent>
+            </Tooltip>
+          ))}
+        </div>
+      )}
+
+      {/* Expanded view */}
+      {expanded && (
+        <div className="space-y-2">
+          {productStatuses.map((ps) => (
+            <Card key={ps.product.id} className="bg-secondary/20 p-3 gap-0 shadow-none border-0 space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-medium text-foreground flex-1">{ps.product.name}</span>
+                <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 h-5", getStatusColor(ps.status))}>
+                  {getStatusLabel(ps.status)}
+                </Badge>
+                <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 text-muted-foreground">
+                  {getSourceLabel(ps.source)}
+                </Badge>
+              </div>
+              <p className="text-xs text-muted-foreground">{ps.product.description}</p>
+              {ps.dealInfo && (
+                <div className="flex items-center gap-2 text-xs text-muted-foreground/70 mt-0.5">
+                  <span>Deal: {ps.dealInfo.dealName}</span>
+                  {ps.dealInfo.amount != null && ps.dealInfo.amount > 0 && (
+                    <span>&middot; ${ps.dealInfo.amount.toLocaleString()}</span>
+                  )}
+                </div>
+              )}
+            </Card>
+          ))}
         </div>
       )}
     </div>
