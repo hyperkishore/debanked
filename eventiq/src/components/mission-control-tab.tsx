@@ -1,31 +1,31 @@
 "use client";
 
-import { useMemo, useState, useEffect } from "react";
-import { Company, NewsItem, EngagementEntry, RatingData } from "@/lib/types";
-import { 
-  FeedItem, 
-  buildFeedItems, 
-  getHotSignals, 
-  SIGNAL_TYPE_CONFIG 
-} from "@/lib/feed-helpers";
+import { useMemo } from "react";
+import { Company, EngagementEntry, RatingData, inferSubVertical } from "@/lib/types";
+import { buildFeedItems, parseDateFromNews } from "@/lib/feed-helpers";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
-import { detectBreaches, type SLABreach } from "@/lib/sla-helpers";
-import { getSupabase } from "@/lib/supabase";
 import { estimateCompanyValue } from "@/lib/revenue-model";
-import { RevenueMilestoneTracker } from "@/components/revenue-milestone-tracker";
+import { computeReadinessScore, getReadinessLabel, getReadinessColor } from "@/lib/readiness-score";
+import { getNextBestAction } from "@/lib/outreach-score";
+import { getLastEngagement, getCompanyEngagements } from "@/lib/engagement-helpers";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Separator } from "@/components/ui/separator";
-import { 
-  TrendingUp, 
-  AlertCircle, 
-  Lightbulb, 
-  ArrowRight, 
+import { cn } from "@/lib/utils";
+import {
+  ArrowRight,
+  TrendingUp,
   Zap,
-  Users,
-  Target
+  DollarSign,
+  Building2,
+  ExternalLink,
+  Mail,
+  Linkedin,
+  Clock,
+  AlertTriangle,
+  CheckCircle2,
+  Circle,
 } from "lucide-react";
 
 interface MissionControlTabProps {
@@ -33,265 +33,398 @@ interface MissionControlTabProps {
   pipelineState: Record<string, PipelineRecord>;
   engagements: EngagementEntry[];
   ratingState: Record<string, RatingData>;
+  metState: Record<string, boolean>;
   onSelectCompany: (id: number) => void;
   onOpenEngagement: (companyId: number) => void;
 }
 
-const GTM_PLAYS = [
-  {
-    name: "Trigger-Based Gifting",
-    play: "Send personalized gifts on hard triggers (facility raise, product launch).",
-    icon: <Zap className="w-3.5 h-3.5" />
-  },
-  {
-    name: "Underwriting Roundtable",
-    play: "Invite to invite-only CRO/COO session on fraud benchmarks.",
-    icon: <Users className="w-3.5 h-3.5" />
-  },
-  {
-    name: "Risk Benchmark Teardown",
-    play: "Use approval latency benchmarks as outreach hooks.",
-    icon: <Target className="w-3.5 h-3.5" />
-  }
-];
+function formatCurrency(value: number): string {
+  if (value >= 1000000) return `$${(value / 1000000).toFixed(1)}M`;
+  if (value >= 1000) return `$${Math.round(value / 1000)}K`;
+  return `$${value}`;
+}
 
-export function MissionControlTab({ 
-  companies, 
-  pipelineState, 
-  engagements, 
+function daysAgo(dateStr: string): number {
+  return Math.floor((Date.now() - new Date(dateStr).getTime()) / 86400000);
+}
+
+function formatDaysAgo(days: number): string {
+  if (days === 0) return "today";
+  if (days === 1) return "yesterday";
+  if (days < 7) return `${days}d ago`;
+  if (days < 30) return `${Math.floor(days / 7)}w ago`;
+  return `${Math.floor(days / 30)}mo ago`;
+}
+
+export function MissionControlTab({
+  companies,
+  pipelineState,
+  engagements,
   ratingState,
+  metState,
   onSelectCompany,
-  onOpenEngagement 
+  onOpenEngagement,
 }: MissionControlTabProps) {
-  const [liveNews, setLiveNews] = useState<NewsItem[]>([]);
+  const feedItems = useMemo(() => buildFeedItems(companies), [companies]);
 
-  // 1. Fetch live news (same as FeedTab)
-  useEffect(() => {
-    const supabase = getSupabase();
-    if (!supabase) return;
-    let cancelled = false;
-    (async () => {
-      const { data, error } = await supabase
-        .from("company_news")
-        .select("*")
-        .order("published_at", { ascending: false })
-        .limit(100);
-      if (error || !data || cancelled) return;
-      const items: NewsItem[] = data.map((row: any) => ({
-        h: row.headline || "",
-        s: row.source || "",
-        d: row.description || "",
-        p: row.published_at,
-        _companyId: row.company_id,
-      }));
-      setLiveNews(items);
-    })();
-    return () => { cancelled = true; };
-  }, []);
+  // === Section 1: HubSpot Pipeline Snapshot (real deal data) ===
+  const hubspotSnapshot = useMemo(() => {
+    const activeDeals: Array<{
+      company: Company;
+      deal: NonNullable<Company["hubspotDeals"]>[0];
+      isActive: boolean;
+    }> = [];
+    let totalPipeline = 0;
+    let totalClosed = 0;
+    let activeCount = 0;
 
-  // 2. Merge and build signals
-  const companiesWithNews = useMemo(() => {
-    const newsMap = new Map<number, NewsItem[]>();
-    for (const item of liveNews) {
-      const cid = (item as any)._companyId;
-      if (!cid) continue;
-      const existing = newsMap.get(cid) || [];
-      existing.push(item);
-      newsMap.set(cid, existing);
+    for (const c of companies) {
+      for (const deal of c.hubspotDeals || []) {
+        const stage = (deal.stageLabel || deal.stage || "").toLowerCase();
+        const isWon = stage.includes("closed won");
+        const isLost = stage.includes("closed lost");
+        const isActive = !isWon && !isLost;
+
+        if (isWon) totalClosed += deal.amount || 0;
+        if (isActive) {
+          totalPipeline += deal.amount || 0;
+          activeCount++;
+        }
+
+        activeDeals.push({ company: c, deal, isActive });
+      }
     }
-    return companies.map(c => {
-      const add = newsMap.get(c.id);
-      if (!add) return c;
-      const existing = new Set(c.news.map(n => n.h.toLowerCase().trim()));
-      const newItems = add.filter(n => !existing.has(n.h.toLowerCase().trim()));
-      return { ...c, news: [...newItems, ...c.news] };
+
+    // Sort: active deals first, then by amount desc
+    activeDeals.sort((a, b) => {
+      if (a.isActive !== b.isActive) return a.isActive ? -1 : 1;
+      return (b.deal.amount || 0) - (a.deal.amount || 0);
     });
-  }, [companies, liveNews]);
 
-  const allSignals = useMemo(() => buildFeedItems(companiesWithNews), [companiesWithNews]);
-  const topSignals = useMemo(() => {
-    return allSignals
-      .map(s => {
-        const company = companies.find(c => c.id === s.companyId);
-        const value = company ? estimateCompanyValue(company) : 0;
-        return { ...s, value };
-      })
-      .sort((a, b) => b.value - a.value)
-      .slice(0, 20);
-  }, [allSignals, companies]);
+    return { activeDeals: activeDeals.filter(d => d.isActive), totalPipeline, totalClosed, activeCount };
+  }, [companies]);
 
-  // 3. Detect Breaches
-  const breaches = useMemo(() => {
-    const list = companies.map(c => ({ id: c.id, name: c.name }));
-    return detectBreaches(list, engagements, pipelineState).slice(0, 5);
-  }, [companies, engagements, pipelineState]);
+  // === Section 2: Today's Action List (top 15 by readiness × value) ===
+  const actionList = useMemo(() => {
+    const items: Array<{
+      company: Company;
+      readiness: number;
+      readinessLabel: string;
+      nextAction: string;
+      revenue: number;
+      actionScore: number;
+      lastContactDays: number | null;
+      hasEmail: boolean;
+      hasLinkedIn: boolean;
+      missingPieces: string[];
+    }> = [];
 
-  // 4. Collaborative Leaderboard (Mock - should be driven by Supabase in future)
-  const leaderboard = useMemo(() => [
-    { name: "AE 1", pipe: "$1.2M", count: 12 },
-    { name: "AE 2", pipe: "$0.8M", count: 8 },
-    { name: "AE 3", pipe: "$0.5M", count: 5 },
-  ], []);
+    for (const c of companies) {
+      // Skip companies with no research at all
+      if (!c.desc || c.desc.length < 10) continue;
+
+      const breakdown = computeReadinessScore(c, feedItems, engagements);
+      const label = getReadinessLabel(breakdown.total);
+      const nextAction = getNextBestAction(c, engagements, pipelineState);
+      const revenue = estimateCompanyValue(c);
+      const lastEng = getLastEngagement(engagements, c.id);
+      const lastContactDays = lastEng ? daysAgo(lastEng.timestamp) : null;
+      const hasEmail = (c.leaders || []).some(l => l.email);
+      const hasLinkedIn = (c.leaders || []).some(l => l.li);
+
+      // Action score: prioritize ready companies with high value that haven't been contacted recently
+      const readinessWeight = breakdown.total; // 0-10
+      const revenueWeight = Math.min(revenue / 25000, 4); // 0-4 (caps at $100K+)
+      const staleness = lastContactDays === null ? 3 : lastContactDays > 14 ? 2 : lastContactDays > 7 ? 1 : 0;
+      const typeBoost = c.type === "SQO" ? 3 : c.type === "Client" ? 2 : c.type === "ICP" ? 1 : 0;
+      const actionScore = readinessWeight + revenueWeight + staleness + typeBoost;
+
+      items.push({
+        company: c,
+        readiness: breakdown.total,
+        readinessLabel: label,
+        nextAction,
+        revenue,
+        actionScore,
+        lastContactDays,
+        hasEmail,
+        hasLinkedIn,
+        missingPieces: breakdown.missingPieces,
+      });
+    }
+
+    return items.sort((a, b) => b.actionScore - a.actionScore).slice(0, 15);
+  }, [companies, feedItems, engagements, pipelineState]);
+
+  // === Section 3: Recent Signals (last 30 days, high-value only) ===
+  const recentSignals = useMemo(() => {
+    const thirtyDaysAgo = Date.now() - 30 * 86400000;
+    return feedItems
+      .filter(f => f.dateEstimate > thirtyDaysAgo && f.heat !== "cool")
+      .sort((a, b) => b.dateEstimate - a.dateEstimate)
+      .slice(0, 10);
+  }, [feedItems]);
+
+  // === Section 4: Coverage stats ===
+  const coverage = useMemo(() => {
+    const sqo = companies.filter(c => c.type === "SQO");
+    const clients = companies.filter(c => c.type === "Client");
+    const icp = companies.filter(c => c.type === "ICP");
+
+    const contacted = (list: Company[]) =>
+      list.filter(c => getCompanyEngagements(engagements, c.id).length > 0).length;
+
+    const withHubSpot = companies.filter(c => (c.hubspotDeals || []).length > 0).length;
+    const readyCount = companies.filter(c => {
+      const b = computeReadinessScore(c, feedItems, engagements);
+      return b.total >= 7;
+    }).length;
+
+    return {
+      sqo: { total: sqo.length, contacted: contacted(sqo) },
+      clients: { total: clients.length, contacted: contacted(clients) },
+      icp: { total: icp.length, contacted: contacted(icp) },
+      hubspotDeals: withHubSpot,
+      readyToSend: readyCount,
+      totalCompanies: companies.length,
+    };
+  }, [companies, engagements, feedItems]);
 
   return (
     <div className="h-full flex flex-col bg-background">
-      {/* 1. Global Goal Context (Fixed Top) */}
-      <div className="p-4 border-b bg-card/30">
-        <RevenueMilestoneTracker 
-          companies={companies}
-          pipelineState={pipelineState}
-        />
-      </div>
+      <ScrollArea className="flex-1">
+        <div className="max-w-5xl mx-auto p-6 space-y-8">
 
-      <div className="flex-1 flex min-h-0">
-        {/* 2. Main Signal Stream (Center) */}
-        <ScrollArea className="flex-1 border-r">
-          <div className="p-6 space-y-6 max-w-3xl mx-auto">
-            <div className="flex items-center justify-between">
-              <h2 className="text-sm font-bold uppercase tracking-widest text-muted-foreground flex items-center gap-2">
-                <TrendingUp className="w-4 h-4 text-brand" />
-                Active Mission Intel
+          {/* === Pipeline Snapshot === */}
+          <section>
+            <div className="flex items-center gap-2 mb-4">
+              <DollarSign className="h-4 w-4 text-brand" />
+              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">
+                Pipeline
               </h2>
-              <Badge variant="outline" className="text-[10px] font-bold">
-                {topSignals.length} HIGH-VALUE SIGNALS
+              <Badge variant="outline" className="text-xs ml-auto">
+                {hubspotSnapshot.activeCount} active deals
               </Badge>
             </div>
 
-            <div className="space-y-3">
-              {topSignals.map((signal) => {
-                const config = SIGNAL_TYPE_CONFIG[signal.signalType];
-                return (
-                  <Card key={signal.id} className="p-0 overflow-hidden border-border/50 bg-card/50 hover:bg-card transition-all group">
-                    <div className="flex">
-                      {/* Left color bar based on value */}
-                      <div className={`w-1 ${signal.value > 100000 ? 'bg-brand' : 'bg-muted'}`} />
-                      
-                      <div className="p-4 flex-1">
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-2 mb-1">
-                              <span className="text-xs font-bold text-brand group-hover:underline cursor-pointer" onClick={() => onSelectCompany(signal.companyId)}>
-                                {signal.companyName}
-                              </span>
-                              <Badge variant="outline" className="text-[9px] h-3.5 uppercase font-bold px-1">
-                                {signal.companyType}
-                              </Badge>
-                              {signal.value > 0 && (
-                                <span className="text-[10px] font-black text-green-500 ml-auto">
-                                  ${(signal.value / 1000).toFixed(0)}K POTENTIAL
-                                </span>
-                              )}
-                            </div>
-                            <h3 className="text-sm font-semibold leading-tight mb-1">{signal.headline}</h3>
-                            <p className="text-xs text-muted-foreground line-clamp-2 mb-3">
-                              {signal.description}
-                            </p>
-                            
-                            {/* The "Play" - Dynamic Strategy Integration */}
-                            <div className="flex items-start gap-2 p-2 rounded bg-brand/5 border border-brand/10">
-                              <Lightbulb className="w-3.5 h-3.5 text-brand shrink-0 mt-0.5" />
-                              <div className="space-y-1">
-                                <p className="text-[11px] font-bold text-brand uppercase tracking-wider">Suggested Play</p>
-                                <p className="text-xs text-foreground/90 leading-snug">
-                                  {signal.signalType === 'funding' ? "Send personalized gift to CEO - 'Congrats on the facility! Looking forward to helping you scale faster.'" : 
-                                   signal.signalType === 'hiring' ? "Target the new leader with the 'Underwriting Roundtable' invite." :
-                                   "Use the 'Risk Benchmark Teardown' as a 3-touch sequence hook."}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
+            {/* Summary cards */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+              <Card className="p-3">
+                <p className="text-xs text-muted-foreground">Active Pipeline</p>
+                <p className="text-xl font-bold tabular-nums">{formatCurrency(hubspotSnapshot.totalPipeline)}</p>
+              </Card>
+              <Card className="p-3">
+                <p className="text-xs text-muted-foreground">Closed Won</p>
+                <p className="text-xl font-bold tabular-nums text-green-400">{formatCurrency(hubspotSnapshot.totalClosed)}</p>
+              </Card>
+              <Card className="p-3">
+                <p className="text-xs text-muted-foreground">In HubSpot</p>
+                <p className="text-xl font-bold tabular-nums">{coverage.hubspotDeals}</p>
+              </Card>
+              <Card className="p-3">
+                <p className="text-xs text-muted-foreground">Ready to Send</p>
+                <p className="text-xl font-bold tabular-nums text-brand">{coverage.readyToSend}</p>
+              </Card>
+            </div>
 
-                          <div className="shrink-0 flex flex-col gap-2">
-                             <Button size="sm" className="h-8 px-3 text-xs font-bold gap-1.5" onClick={() => onSelectCompany(signal.companyId)}>
-                               Research <ArrowRight className="w-3 h-3" />
-                             </Button>
-                             <Button size="sm" variant="outline" className="h-8 px-3 text-xs font-bold" onClick={() => onOpenEngagement(signal.companyId)}>
-                               Log Action
-                             </Button>
-                          </div>
-                        </div>
+            {/* Active deals list */}
+            {hubspotSnapshot.activeDeals.length > 0 && (
+              <div className="space-y-1.5">
+                {hubspotSnapshot.activeDeals.slice(0, 8).map(({ company, deal }) => (
+                  <div
+                    key={deal.dealId}
+                    className="flex items-center gap-3 p-2.5 rounded-lg border border-border/50 hover:bg-secondary/50 cursor-pointer transition-colors"
+                    onClick={() => onSelectCompany(company.id)}
+                  >
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm font-semibold truncate">{company.name}</span>
+                        <Badge variant="outline" className="text-xs px-1 py-0 h-4 bg-orange-500/10 text-orange-400 border-orange-500/30 shrink-0">
+                          {deal.stageLabel || deal.stage}
+                        </Badge>
                       </div>
+                      <p className="text-xs text-muted-foreground truncate">{deal.dealName}</p>
                     </div>
+                    {deal.amount && deal.amount > 0 && (
+                      <span className="text-sm font-bold tabular-nums shrink-0">{formatCurrency(deal.amount)}</span>
+                    )}
+                    <a
+                      href={`https://app.hubspot.com/contacts/3800237/deal/${deal.dealId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-muted-foreground hover:text-brand shrink-0"
+                    >
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            )}
+            {hubspotSnapshot.activeDeals.length === 0 && (
+              <p className="text-sm text-muted-foreground py-4 text-center">No active HubSpot deals. Pipeline data comes from synced HubSpot deals on company records.</p>
+            )}
+          </section>
+
+          {/* === Today's Action List === */}
+          <section>
+            <div className="flex items-center gap-2 mb-4">
+              <Zap className="h-4 w-4 text-brand" />
+              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">
+                Top Actions
+              </h2>
+              <span className="text-xs text-muted-foreground ml-auto">
+                Ranked by readiness + value + urgency
+              </span>
+            </div>
+
+            <div className="space-y-1.5">
+              {actionList.map(({ company, readiness, readinessLabel, nextAction, revenue, lastContactDays, hasEmail, hasLinkedIn, missingPieces }) => (
+                <div
+                  key={company.id}
+                  className="flex items-center gap-3 p-3 rounded-lg border border-border/50 hover:bg-secondary/50 cursor-pointer transition-colors group"
+                  onClick={() => onSelectCompany(company.id)}
+                >
+                  {/* Readiness indicator */}
+                  <div className="shrink-0 w-8 text-center">
+                    <span className={cn("text-sm font-bold tabular-nums", getReadinessColor(readinessLabel as any))}>
+                      {readiness.toFixed(1)}
+                    </span>
+                  </div>
+
+                  {/* Company info */}
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-semibold truncate">{company.name}</span>
+                      <Badge variant="outline" className="text-xs px-1 py-0 h-4 shrink-0">
+                        {inferSubVertical(company)}
+                      </Badge>
+                      {company.type === "SQO" && (
+                        <Badge variant="outline" className="text-xs px-1 py-0 h-4 bg-red-500/10 text-red-400 border-red-500/30 shrink-0">SQO</Badge>
+                      )}
+                      {company.type === "Client" && (
+                        <Badge variant="outline" className="text-xs px-1 py-0 h-4 bg-amber-500/10 text-amber-400 border-amber-500/30 shrink-0">Client</Badge>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className="text-xs text-brand/80 font-medium">{nextAction}</span>
+                      {lastContactDays !== null && (
+                        <span className="text-xs text-muted-foreground/60">
+                          <Clock className="h-2.5 w-2.5 inline mr-0.5" />
+                          {formatDaysAgo(lastContactDays)}
+                        </span>
+                      )}
+                      {lastContactDays === null && (
+                        <span className="text-xs text-orange-400/70">No contact yet</span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Channels available */}
+                  <div className="flex items-center gap-1 shrink-0">
+                    {hasEmail && <Mail className="h-3.5 w-3.5 text-muted-foreground/50" />}
+                    {hasLinkedIn && <Linkedin className="h-3.5 w-3.5 text-muted-foreground/50" />}
+                  </div>
+
+                  {/* Revenue */}
+                  <span className="text-xs text-muted-foreground/60 tabular-nums shrink-0 w-12 text-right">
+                    {formatCurrency(revenue)}
+                  </span>
+
+                  {/* Action button */}
+                  <Button
+                    size="sm"
+                    variant="ghost"
+                    className="h-7 px-2 text-xs opacity-0 group-hover:opacity-100 transition-opacity shrink-0"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onOpenEngagement(company.id);
+                    }}
+                  >
+                    Log <ArrowRight className="h-3 w-3 ml-1" />
+                  </Button>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* === Coverage === */}
+          <section>
+            <div className="flex items-center gap-2 mb-4">
+              <Building2 className="h-4 w-4 text-brand" />
+              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">
+                Outreach Coverage
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-3 gap-3">
+              {[
+                { label: "SQO", ...coverage.sqo, color: "text-red-400" },
+                { label: "Client", ...coverage.clients, color: "text-amber-400" },
+                { label: "ICP", ...coverage.icp, color: "text-green-400" },
+              ].map((tier) => {
+                const pct = tier.total > 0 ? Math.round((tier.contacted / tier.total) * 100) : 0;
+                return (
+                  <Card key={tier.label} className="p-3">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className={cn("text-sm font-bold", tier.color)}>{tier.label}</span>
+                      <span className="text-xs text-muted-foreground">{tier.contacted}/{tier.total}</span>
+                    </div>
+                    <div className="h-1.5 rounded-full bg-muted/30 overflow-hidden">
+                      <div
+                        className={cn("h-full rounded-full", pct === 100 ? "bg-green-500" : pct > 50 ? "bg-yellow-500" : "bg-red-500")}
+                        style={{ width: `${pct}%` }}
+                      />
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {pct === 100 ? (
+                        <><CheckCircle2 className="h-3 w-3 inline text-green-400 mr-0.5" />All contacted</>
+                      ) : tier.total - tier.contacted > 0 ? (
+                        <><AlertTriangle className="h-3 w-3 inline text-orange-400 mr-0.5" />{tier.total - tier.contacted} not yet contacted</>
+                      ) : "No companies in tier"}
+                    </p>
                   </Card>
                 );
               })}
             </div>
-          </div>
-        </ScrollArea>
+          </section>
 
-        {/* 3. The Tactical Sidebar (Right) */}
-        <div className="w-80 bg-card/20 flex flex-col shrink-0 overflow-hidden">
-          <ScrollArea className="flex-1">
-            <div className="p-4 space-y-6">
-              {/* Gap Analysis / Breaches */}
-              <div className="space-y-3">
-                <h3 className="text-[10px] font-black text-muted-foreground uppercase tracking-widest flex items-center gap-2">
-                  <AlertCircle className="w-3.5 h-3.5 text-red-500" />
-                  Value at Risk (SLA)
-                </h3>
-                {breaches.length > 0 ? (
-                  <div className="space-y-2">
-                    {breaches.map(b => (
-                      <div key={b.companyId} className="p-2 rounded border border-red-500/20 bg-red-500/5 space-y-1 cursor-pointer hover:bg-red-500/10 transition-colors" onClick={() => onSelectCompany(b.companyId)}>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs font-bold truncate pr-2">{b.companyName}</span>
-                          <span className="text-[10px] text-red-500 font-bold">{b.hoursOverdue}h Overdue</span>
-                        </div>
-                        <p className="text-[10px] text-muted-foreground">Needs touch: {b.slaLabel}</p>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-[10px] text-muted-foreground italic">No active breaches. Great job!</p>
-                )}
+          {/* === Recent Signals === */}
+          {recentSignals.length > 0 && (
+            <section>
+              <div className="flex items-center gap-2 mb-4">
+                <TrendingUp className="h-4 w-4 text-brand" />
+                <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">
+                  Recent Signals
+                </h2>
+                <span className="text-xs text-muted-foreground ml-auto">Last 30 days</span>
               </div>
 
-              <Separator className="opacity-50" />
-
-              {/* Tactical Plays Library */}
-              <div className="space-y-3">
-                <h3 className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">
-                  Live GTM Plays
-                </h3>
-                <div className="space-y-2">
-                  {GTM_PLAYS.map(play => (
-                    <div key={play.name} className="p-3 rounded border bg-card/50 space-y-1.5">
-                      <div className="flex items-center gap-2 text-brand">
-                        {play.icon}
-                        <span className="text-xs font-bold">{play.name}</span>
-                      </div>
-                      <p className="text-[11px] text-muted-foreground leading-tight">{play.play}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <Separator className="opacity-50" />
-
-              {/* Collaborative Leaderboard */}
-              <div className="space-y-3">
-                <h3 className="text-[10px] font-black text-muted-foreground uppercase tracking-widest flex items-center gap-2">
-                  Mission Progress
-                </h3>
-                <div className="space-y-2">
-                  {leaderboard.map((ae, i) => (
-                    <div key={ae.name} className="flex items-center justify-between text-xs p-2 rounded bg-muted/20">
+              <div className="space-y-1.5">
+                {recentSignals.map((signal) => (
+                  <div
+                    key={signal.id}
+                    className="flex items-start gap-3 p-2.5 rounded-lg border border-border/50 hover:bg-secondary/50 cursor-pointer transition-colors"
+                    onClick={() => onSelectCompany(signal.companyId)}
+                  >
+                    <Circle className={cn(
+                      "h-2 w-2 mt-1.5 shrink-0 fill-current",
+                      signal.heat === "hot" ? "text-red-400" : "text-yellow-400"
+                    )} />
+                    <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2">
-                        <span className="font-bold text-muted-foreground">#{i+1}</span>
-                        <span>{ae.name}</span>
+                        <span className="text-xs font-bold text-brand">{signal.companyName}</span>
+                        <span className="text-xs text-muted-foreground/60">{signal.source}</span>
                       </div>
-                      <div className="text-right">
-                        <div className="font-bold">{ae.pipe}</div>
-                        <div className="text-[9px] text-muted-foreground">{ae.count} Active Deals</div>
-                      </div>
+                      <p className="text-sm leading-tight mt-0.5">{signal.headline}</p>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
-            </div>
-          </ScrollArea>
+            </section>
+          )}
         </div>
-      </div>
+      </ScrollArea>
     </div>
   );
 }

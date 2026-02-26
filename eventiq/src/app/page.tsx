@@ -686,6 +686,7 @@ export default function Home() {
             pipelineState={pipelineState}
             engagements={engagements}
             ratingState={ratingState}
+            metState={metState}
             onSelectCompany={handleSelect}
             onOpenEngagement={handleOpenEngagementForCompany}
           />
