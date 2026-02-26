@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Tag } from "lucide-react";
 
 interface CompanyCardProps {
@@ -89,19 +90,6 @@ function getResearchFreshness(company: Company): string | null {
   return "1y+";
 }
 
-function getHubSpotStageShort(company: Company): string | null {
-  const deals = company.hubspotDeals;
-  if (!deals || deals.length === 0) return null;
-  // Use the first active deal's stage label, abbreviate it
-  const deal = deals[0];
-  const label = (deal.stageLabel || deal.stage || "").trim();
-  if (!label) return null;
-  // Create a short form: "HS:" + first letter of each word, max 3 chars
-  const words = label.split(/\s+/);
-  const abbr = words.map((w) => w[0]?.toUpperCase() || "").join("").slice(0, 3);
-  return `HS:${abbr}`;
-}
-
 const typeBadgeMap: Record<string, string> = {
   SQO: "bg-[var(--sqo)]/10 text-[var(--sqo)] hover:bg-[var(--sqo)]/20",
   Client: "bg-[var(--client)]/10 text-[var(--client)] hover:bg-[var(--client)]/20",
@@ -142,7 +130,6 @@ export function CompanyCard({
   const subVertical = inferSubVertical(company);
   const revenue = estimateCompanyValue(company);
   const freshness = getResearchFreshness(company);
-  const hsStage = getHubSpotStageShort(company);
 
   // Build metadata line: location · N employees
   const metaParts: string[] = [];
@@ -163,9 +150,9 @@ export function CompanyCard({
         if (e.key === "Enter") onSelect(company.id);
       }}
     >
-      <div className="flex items-start gap-3">
-        {/* Main content */}
-        <div className="min-w-0 flex-1">
+      <div className="flex flex-col gap-2">
+        {/* Top: name + badges */}
+        <div>
           <div className="flex items-center gap-1.5 flex-wrap">
             <h3 className="text-sm font-semibold truncate">
               {highlightText(company.name, query)}
@@ -176,14 +163,6 @@ export function CompanyCard({
             >
               {subVertical}
             </Badge>
-            {hsStage && (
-              <Badge
-                variant="outline"
-                className="text-xs px-1 py-0 h-4 font-medium shrink-0 bg-orange-500/10 text-orange-400 border-orange-500/30"
-              >
-                {hsStage}
-              </Badge>
-            )}
             {urgencyTier && (
               <Badge
                 variant="outline"
@@ -234,47 +213,63 @@ export function CompanyCard({
           )}
 
           {/* Tags */}
-          <div className="flex flex-wrap items-center gap-1 mt-1">
-            {tags.slice(0, 3).map((tag) => (
-              <span
-                key={tag}
-                className="inline-flex items-center gap-0.5 text-xs px-1 py-0.5 rounded bg-brand/10 text-brand/70"
-              >
-                <Tag className="h-2 w-2" />
-                {tag}
-              </span>
-            ))}
-            {tags.length > 3 && (
-              <span className="text-xs text-muted-foreground/60">
-                +{tags.length - 3}
-              </span>
-            )}
-          </div>
+          {tags.length > 0 && (
+            <div className="flex flex-wrap items-center gap-1 mt-1">
+              {tags.slice(0, 3).map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center gap-0.5 text-xs px-1 py-0.5 rounded bg-brand/10 text-brand/70"
+                >
+                  <Tag className="h-2 w-2" />
+                  {tag}
+                </span>
+              ))}
+              {tags.length > 3 && (
+                <span className="text-xs text-muted-foreground/60">
+                  +{tags.length - 3}
+                </span>
+              )}
+            </div>
+          )}
         </div>
 
-        {/* Scores */}
-        <div className="flex flex-col items-end gap-1 shrink-0 pt-0.5">
-          <div className="flex items-center gap-1.5">
-            <span className={cn("text-xs font-medium tabular-nums", tierBadgeColors[tier])}>
-              {score}%
-            </span>
-            <span className="text-xs text-muted-foreground/60 tabular-nums">
-              {formatRevenue(revenue)}
-            </span>
-          </div>
+        {/* Bottom: scores row */}
+        <div className="flex items-center gap-3 pt-1 border-t border-border/50">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <span className={cn("text-xs font-medium tabular-nums cursor-default", tierBadgeColors[tier])}>
+                {score}%
+              </span>
+            </TooltipTrigger>
+            <TooltipContent>Research completeness</TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <span className="text-xs text-muted-foreground/60 tabular-nums cursor-default">
+                {formatRevenue(revenue)}
+              </span>
+            </TooltipTrigger>
+            <TooltipContent>Estimated annual revenue potential</TooltipContent>
+          </Tooltip>
           {readinessLabel && readinessScore !== undefined && (
-            <Badge
-              variant="outline"
-              className={cn("text-xs px-1 py-0 h-4 font-bold tabular-nums", getReadinessBgColor(readinessLabel), getReadinessColor(readinessLabel))}
-              title={`Outreach readiness: ${readinessScore}/10`}
-            >
-              {readinessScore.toFixed(1)}
-            </Badge>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <span className={cn("text-xs font-bold tabular-nums cursor-default", getReadinessColor(readinessLabel))}>
+                  {readinessScore.toFixed(1)}
+                </span>
+              </TooltipTrigger>
+              <TooltipContent>Outreach readiness ({readinessScore.toFixed(1)}/10)</TooltipContent>
+            </Tooltip>
           )}
           {freshness && (
-            <span className="text-xs text-muted-foreground/50 tabular-nums" title="Research freshness">
-              {freshness}
-            </span>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <span className="text-xs text-muted-foreground/50 tabular-nums cursor-default">
+                  {freshness}
+                </span>
+              </TooltipTrigger>
+              <TooltipContent>Research freshness — last updated {freshness} ago</TooltipContent>
+            </Tooltip>
           )}
         </div>
       </div>
