@@ -61,7 +61,6 @@ import {
   BarChart3,
   AlertTriangle,
   Clock,
-  RefreshCw,
   Package,
   Crosshair,
 } from "lucide-react";
@@ -87,7 +86,6 @@ interface CompanyDetailProps {
   onAddTag?: (companyId: number, tag: string) => void;
   onRemoveTag?: (companyId: number, tag: string) => void;
   onPipelineStageChange?: (companyId: number, stage: PipelineStage) => void;
-  onRequestRefresh?: (companyId: number) => void;
 }
 
 
@@ -132,6 +130,35 @@ const LINKEDIN_LABELS: Record<LinkedInVariant["style"], string> = {
   inmail: "InMail",
 };
 
+/**
+ * Estimate how many days ago this company was last researched.
+ * Checks: (1) "refreshed-YYYY-MM" source tags, (2) most recent news date.
+ */
+function getResearchAge(company: Company): number | null {
+  const now = Date.now();
+
+  // Check source tags for "refreshed-YYYY-MM"
+  for (const tag of (company.source || [])) {
+    const match = tag.match(/^refreshed-(\d{4})-(\d{2})$/);
+    if (match) {
+      const date = new Date(parseInt(match[1]), parseInt(match[2]) - 1, 15);
+      return Math.floor((now - date.getTime()) / 86400000);
+    }
+  }
+
+  // Fall back to most recent news date
+  let latestDate = 0;
+  for (const item of (company.news || [])) {
+    const d = parseDateFromNews(item);
+    if (d > latestDate) latestDate = d;
+  }
+  if (latestDate > 0) {
+    return Math.floor((now - latestDate) / 86400000);
+  }
+
+  return null;
+}
+
 export function CompanyDetail({
   company,
   isMet,
@@ -152,7 +179,6 @@ export function CompanyDetail({
   onAddTag,
   onRemoveTag,
   onPipelineStageChange,
-  onRequestRefresh,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
@@ -245,22 +271,22 @@ export function CompanyDetail({
         <div className="flex items-center gap-2">
           <ReadinessScoreBadge readiness={readiness} label={readinessLabel} />
           <div className="flex-1" />
-          {onRequestRefresh && (
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="h-6 px-2 text-xs text-muted-foreground hover:text-brand gap-1"
-                  onClick={() => onRequestRefresh(company.id)}
-                >
-                  <RefreshCw className="h-3 w-3" />
-                  Refresh
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>Request updated research for this company</TooltipContent>
-            </Tooltip>
-          )}
+          {(() => {
+            const daysAgo = getResearchAge(company);
+            const label = daysAgo === null ? "Not dated" : daysAgo === 0 ? "Updated today" : daysAgo === 1 ? "Updated 1 day ago" : `Updated ${daysAgo}d ago`;
+            const isStale = daysAgo !== null && daysAgo > 90;
+            return (
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <span className={cn("text-xs flex items-center gap-1 cursor-default", isStale ? "text-amber-400" : "text-muted-foreground/60")}>
+                    <Clock className="h-3 w-3" />
+                    {label}
+                  </span>
+                </TooltipTrigger>
+                <TooltipContent>{isStale ? "Research may be outdated — consider refreshing" : "Based on latest news or research date"}</TooltipContent>
+              </Tooltip>
+            );
+          })()}
         </div>
 
         {/* Meta info row */}
@@ -476,9 +502,6 @@ export function CompanyDetail({
               <div className="flex items-start gap-2">
                 <div className="flex-1">
                   <p className="text-sm leading-relaxed text-muted-foreground">{company.desc}</p>
-                  {company.notes && (
-                    <p className="text-xs text-brand/80 mt-2 italic">{company.notes}</p>
-                  )}
                 </div>
                 {company.desc && <CopyButton text={company.desc} />}
               </div>
@@ -548,57 +571,6 @@ export function CompanyDetail({
             {triggerCards.length > 0 && (
               <TriggerCardsSection triggerCards={triggerCards} />
             )}
-
-            {/* News */}
-            {company.news && company.news.length > 0 && (
-              <Section icon={Newspaper} title="Recent News">
-                <div className="space-y-3">
-                  {[...company.news].sort((a, b) => parseDateFromNews(b) - parseDateFromNews(a)).map((item, i) => {
-                    const newsUrl = item.u || `https://www.google.com/search?q=${encodeURIComponent(item.h + " " + company.name)}`;
-                    return (
-                      <a
-                        key={i}
-                        href={newsUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block"
-                      >
-                        <Card className="bg-secondary/30 p-3 gap-2 shadow-none border-0 hover:bg-secondary/50 transition-colors cursor-pointer">
-                          <div className="flex items-start gap-2">
-                            <h4 className="text-sm font-medium leading-snug text-brand hover:underline flex-1">{item.h}</h4>
-                            <ExternalLink className="h-3 w-3 text-muted-foreground shrink-0 mt-0.5" />
-                          </div>
-                          <p className="text-xs text-brand/70 mt-0.5">{item.s}</p>
-                          <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{item.d}</p>
-                        </Card>
-                      </a>
-                    );
-                  })}
-                </div>
-              </Section>
-            )}
-
-            {/* Sources / Quick Links */}
-            <Section icon={Link} title="Sources">
-              <div className="flex flex-wrap gap-1.5">
-                {quickLinks.map((link, i) => (
-                  <a
-                    key={i}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs px-2 py-1 rounded-md bg-secondary/50 text-muted-foreground hover:text-brand hover:bg-brand/10 transition-colors"
-                  >
-                    {link.icon === 'globe' && <Globe className="h-3 w-3" />}
-                    {link.icon === 'linkedin' && <Linkedin className="h-3 w-3" />}
-                    {link.icon === 'search' && <Search className="h-3 w-3" />}
-                    {link.icon === 'news' && <Newspaper className="h-3 w-3" />}
-                    {link.label}
-                    <ExternalLink className="h-2.5 w-2.5 opacity-50" />
-                  </a>
-                ))}
-              </div>
-            </Section>
 
             {/* Icebreakers */}
             <Section icon={Lightbulb} title="Icebreakers">
@@ -695,11 +667,6 @@ export function CompanyDetail({
               </div>
             )}
 
-            {/* Competitive Intel */}
-            {competitiveContexts.length > 0 && (
-              <CompetitiveIntelSection contexts={competitiveContexts} />
-            )}
-
             {/* The Ask */}
             {company.ask && (
               <Section icon={Target} title="The Ask">
@@ -710,6 +677,62 @@ export function CompanyDetail({
                   <CopyButton text={company.ask} />
                 </div>
               </Section>
+            )}
+
+            {/* News */}
+            {company.news && company.news.length > 0 && (
+              <Section icon={Newspaper} title="Recent News">
+                <div className="space-y-3">
+                  {[...company.news].sort((a, b) => parseDateFromNews(b) - parseDateFromNews(a)).map((item, i) => {
+                    const newsUrl = item.u || `https://www.google.com/search?q=${encodeURIComponent(item.h + " " + company.name)}`;
+                    return (
+                      <a
+                        key={i}
+                        href={newsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <Card className="bg-secondary/30 p-3 gap-2 shadow-none border-0 hover:bg-secondary/50 transition-colors cursor-pointer">
+                          <div className="flex items-start gap-2">
+                            <h4 className="text-sm font-medium leading-snug text-brand hover:underline flex-1">{item.h}</h4>
+                            <ExternalLink className="h-3 w-3 text-muted-foreground shrink-0 mt-0.5" />
+                          </div>
+                          <p className="text-xs text-brand/70 mt-0.5">{item.s}</p>
+                          <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{item.d}</p>
+                        </Card>
+                      </a>
+                    );
+                  })}
+                </div>
+              </Section>
+            )}
+
+            {/* Sources / Quick Links */}
+            <Section icon={Link} title="Sources">
+              <div className="flex flex-wrap gap-1.5">
+                {quickLinks.map((link, i) => (
+                  <a
+                    key={i}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-xs px-2 py-1 rounded-md bg-secondary/50 text-muted-foreground hover:text-brand hover:bg-brand/10 transition-colors"
+                  >
+                    {link.icon === 'globe' && <Globe className="h-3 w-3" />}
+                    {link.icon === 'linkedin' && <Linkedin className="h-3 w-3" />}
+                    {link.icon === 'search' && <Search className="h-3 w-3" />}
+                    {link.icon === 'news' && <Newspaper className="h-3 w-3" />}
+                    {link.label}
+                    <ExternalLink className="h-2.5 w-2.5 opacity-50" />
+                  </a>
+                ))}
+              </div>
+            </Section>
+
+            {/* Competitive Intel */}
+            {competitiveContexts.length > 0 && (
+              <CompetitiveIntelSection contexts={competitiveContexts} />
             )}
 
             {/* Sequence Panel */}

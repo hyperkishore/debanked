@@ -637,27 +637,6 @@ export default function Home() {
     [setPipelineState]
   );
 
-  // Research refresh request
-  const handleRequestRefresh = useCallback(
-    async (companyId: number) => {
-      const companyName = companies.find((c) => c.id === companyId)?.name || `ID:${companyId}`;
-      try {
-        const res = await fetch("/api/research-requests", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ companyId }),
-        });
-        if (res.ok) {
-          toast.success(`Research refresh requested for ${companyName}`);
-        } else {
-          toast.error("Failed to submit request");
-        }
-      } catch {
-        toast.error("Failed to submit request");
-      }
-    },
-    [companies]
-  );
 
   // Keyboard navigation
   const sortedCompanyIds = useMemo(() => {
@@ -904,7 +883,7 @@ export default function Home() {
                         onAddTag={handleAddTag}
                         onRemoveTag={handleRemoveTag}
                         onPipelineStageChange={handlePipelineMove}
-                        onRequestRefresh={handleRequestRefresh}
+
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
@@ -976,7 +955,6 @@ export default function Home() {
                       onAddTag={handleAddTag}
                       onRemoveTag={handleRemoveTag}
                       onPipelineStageChange={handlePipelineMove}
-                      onRequestRefresh={handleRequestRefresh}
                     />
                   )}
                 </SheetContent>
