@@ -90,7 +90,7 @@ export function AppSidebar({
   activeFilter,
   onFilterChange,
 }: AppSidebarProps) {
-  const { user, isConfigured, signIn, signOut } = useAuth();
+  const { user, isConfigured, isPasswordAuth, signIn, signOut } = useAuth();
   const { toggleSidebar } = useSidebar();
 
   const navItems = devMode ? [...coreNavItems, ...devNavItems] : coreNavItems;
@@ -204,16 +204,16 @@ export function AppSidebar({
         {/* User dropdown menu */}
         {isConfigured && (
           <div className="mb-3 pb-3 border-b border-border/30">
-            {user ? (
+            {(user || isPasswordAuth) ? (
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center gap-2 w-full rounded-md px-1 py-1 hover:bg-accent transition-colors outline-none">
                   <div className="w-6 h-6 rounded-full bg-brand/20 flex items-center justify-center shrink-0">
                     <span className="text-brand font-bold text-xs">
-                      {(user.user_metadata?.full_name || user.email || "U")[0].toUpperCase()}
+                      {isPasswordAuth ? "G" : (user?.user_metadata?.full_name || user?.email || "U")[0].toUpperCase()}
                     </span>
                   </div>
                   <span className="text-xs text-foreground truncate flex-1 text-left group-data-[collapsible=icon]:hidden">
-                    {user.user_metadata?.full_name || user.email?.split("@")[0]}
+                    {isPasswordAuth ? "Guest" : (user?.user_metadata?.full_name || user?.email?.split("@")[0])}
                   </span>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent side="top" align="start" className="w-48">
@@ -274,7 +274,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.1.39</span>
+              <span className="opacity-50">v3.1.40</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">

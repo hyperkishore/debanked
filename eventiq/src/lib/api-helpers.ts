@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { getSupabaseServer } from "@/lib/supabase-server";
+import { isValidPasswordAuth } from "@/lib/password-auth";
 
 /**
  * Shared API route helpers — DRY auth, validation, error responses.
@@ -57,10 +58,22 @@ async function getAuthUser(request: NextRequest) {
 }
 
 /**
- * Authenticate any logged-in user.
+ * Authenticate any logged-in user (Supabase OAuth or password cookie).
  * Returns { user, supabase } on success, or { error: NextResponse } on failure.
  */
 export async function authenticateRequest(request: NextRequest) {
+  // Check password-based auth first
+  const passwordCookie = request.cookies.get("eventiq_password_auth")?.value;
+  if (isValidPasswordAuth(passwordCookie)) {
+    const supabase = getSupabaseServer();
+    if (!supabase) {
+      return { error: apiError("Database not configured", 503) } as const;
+    }
+    // Return a synthetic user for password-based auth
+    const passwordUser = { id: "password-auth", email: "shared@eventiq.app" } as import("@supabase/supabase-js").User;
+    return { user: passwordUser, supabase } as const;
+  }
+
   const user = await getAuthUser(request);
   if (!user) {
     return { error: apiError("Unauthorized", 401) } as const;

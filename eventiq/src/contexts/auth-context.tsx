@@ -17,6 +17,7 @@ interface AuthContextValue {
   session: Session | null;
   isLoading: boolean;
   isConfigured: boolean;
+  isPasswordAuth: boolean;
   signIn: () => Promise<void>;
   signOut: () => Promise<void>;
 }
@@ -26,6 +27,7 @@ const AuthContext = createContext<AuthContextValue>({
   session: null,
   isLoading: true,
   isConfigured: false,
+  isPasswordAuth: false,
   signIn: async () => {},
   signOut: async () => {},
 });
@@ -34,11 +36,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [isPasswordAuth, setIsPasswordAuth] = useState(false);
   const isConfigured = isSupabaseConfigured();
 
   useEffect(() => {
     const supabase = getSupabase();
+
     if (!supabase) {
+      // No Supabase configured — check if we're password-authed
+      // If we're on a non-login page and loaded, we must be authed
+      if (typeof window !== "undefined" && window.location.pathname !== "/login") {
+        setIsPasswordAuth(true);
+      }
       setIsLoading(false);
       return;
     }
@@ -47,6 +56,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     supabase.auth.getSession().then(({ data: { session: s } }) => {
       setSession(s);
       setUser(s?.user ?? null);
+      // If no Supabase session but we're on a non-login page, password auth is active
+      if (!s?.user && typeof window !== "undefined" && window.location.pathname !== "/login") {
+        setIsPasswordAuth(true);
+      }
       setIsLoading(false);
     });
 
@@ -87,14 +100,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const signOut = useCallback(async () => {
+    // Clear password auth cookie
+    if (isPasswordAuth) {
+      await fetch("/api/auth/password", { method: "DELETE" });
+      setIsPasswordAuth(false);
+      window.location.href = "/login";
+      return;
+    }
+
     const supabase = getSupabase();
     if (!supabase) return;
     await supabase.auth.signOut();
-  }, []);
+  }, [isPasswordAuth]);
 
   return (
     <AuthContext.Provider
-      value={{ user, session, isLoading, isConfigured, signIn, signOut }}
+      value={{ user, session, isLoading, isConfigured: isConfigured || isPasswordAuth, isPasswordAuth, signIn, signOut }}
     >
       {children}
     </AuthContext.Provider>

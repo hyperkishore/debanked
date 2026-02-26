@@ -1,7 +1,24 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
+import { isValidPasswordAuth } from "@/lib/password-auth";
 
 export async function middleware(request: NextRequest) {
+  // Check password-based auth first (simple shared password)
+  const passwordCookie = request.cookies.get("eventiq_password_auth")?.value;
+  const isPasswordAuthed = isValidPasswordAuth(passwordCookie);
+
+  // If password-authed and on login page, redirect to home
+  if (isPasswordAuthed && request.nextUrl.pathname.startsWith("/login")) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/";
+    return NextResponse.redirect(url);
+  }
+
+  // If password-authed, allow through (skip Supabase check)
+  if (isPasswordAuthed) {
+    return NextResponse.next();
+  }
+
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
