@@ -118,25 +118,6 @@ export function CompanyCard({
             <h3 className="text-sm font-semibold truncate">
               {highlightText(company.name, query)}
             </h3>
-            <Badge
-              variant="outline"
-              className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0", typeBadgeMap[company.type] || "")}
-            >
-              {company.type}
-            </Badge>
-            {company.category && categoryBadgeMap[company.category] && (
-              <Badge
-                variant="outline"
-                className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0", categoryBadgeMap[company.category].className)}
-              >
-                {categoryBadgeMap[company.category].label}
-              </Badge>
-            )}
-            {company.clear && (
-              <Badge variant="outline" className="text-xs px-1.5 py-0.5 h-5 font-semibold text-brand border-brand/30">
-                CLEAR
-              </Badge>
-            )}
             {urgencyTier && (
               <Badge
                 variant="outline"
@@ -153,23 +134,6 @@ export function CompanyCard({
                 {outreachBadgeStyles[company.outreachHistory.status].label}
               </Badge>
             )}
-            {(company.hubspotDeals || []).length > 0 && (() => {
-              const deals = company.hubspotDeals!;
-              const activeDeals = deals.filter(d => {
-                const s = (d.stageLabel || "").toLowerCase();
-                return !s.includes("closed won") && !s.includes("closed lost");
-              });
-              const bestDeal = activeDeals.length > 0 ? activeDeals[0] : deals[0];
-              return (
-                <Badge
-                  variant="outline"
-                  className="text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0 bg-orange-500/10 text-orange-400 border-orange-500/30"
-                  title={`HubSpot: ${bestDeal.stageLabel}${bestDeal.amount ? ` · $${bestDeal.amount.toLocaleString()}` : ''}`}
-                >
-                  HS:{(bestDeal.stageLabel || "New").split(' ').map(w => w[0]).join('').toUpperCase()}
-                </Badge>
-              );
-            })()}
             {company.booth && (
               <span className="w-1.5 h-1.5 rounded-full bg-brand/50 shrink-0" title="Has booth" />
             )}

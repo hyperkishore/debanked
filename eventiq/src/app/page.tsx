@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
 import {
   Company,
+  CompanyCategory,
   FilterType,
   SortType,
   ViewType,
@@ -105,6 +106,8 @@ export default function Home() {
   const [activeView, setActiveView] = useState<ViewType>("cards");
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeTagFilter, setActiveTagFilter] = useState<string | null>(null);
+  const [activeCategoryFilter, setActiveCategoryFilter] = useState<CompanyCategory | null>(null);
+  const [activeHubSpotStageFilter, setActiveHubSpotStageFilter] = useState<string | null>(null);
   const [ratingDialogOpen, setRatingDialogOpen] = useState(false);
   const [ratingCompanyId, setRatingCompanyId] = useState<number | null>(null);
   const [mobileDetailOpen, setMobileDetailOpen] = useState(false);
@@ -854,6 +857,10 @@ export default function Home() {
                       tagsState={tagsState}
                       activeTagFilter={activeTagFilter}
                       onTagFilterChange={setActiveTagFilter}
+                      activeCategoryFilter={activeCategoryFilter}
+                      onCategoryFilterChange={setActiveCategoryFilter}
+                      activeHubSpotStageFilter={activeHubSpotStageFilter}
+                      onHubSpotStageFilterChange={setActiveHubSpotStageFilter}
                     />
                   </ResizablePanel>
                   <ResizableHandle withHandle />

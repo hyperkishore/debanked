@@ -1,6 +1,6 @@
 "use client";
 
-import { Company, FilterType, SortType, ViewType, RatingData, EngagementEntry } from "@/lib/types";
+import { Company, CompanyCategory, FilterType, SortType, ViewType, RatingData, EngagementEntry } from "@/lib/types";
 import { isResearched, getResearchScore } from "@/lib/types";
 import { getLastEngagement, needsFollowUp } from "@/lib/engagement-helpers";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
@@ -39,6 +39,10 @@ interface CompanyListProps {
   tagsState?: Record<number, string[]>;
   activeTagFilter?: string | null;
   onTagFilterChange?: (tag: string | null) => void;
+  activeCategoryFilter?: CompanyCategory | null;
+  onCategoryFilterChange?: (category: CompanyCategory | null) => void;
+  activeHubSpotStageFilter?: string | null;
+  onHubSpotStageFilterChange?: (stage: string | null) => void;
 }
 
 function filterCompanies(
@@ -145,6 +149,10 @@ export function CompanyList({
   tagsState = {},
   activeTagFilter,
   onTagFilterChange,
+  activeCategoryFilter,
+  onCategoryFilterChange,
+  activeHubSpotStageFilter,
+  onHubSpotStageFilterChange,
 }: CompanyListProps) {
   const parentRef = useRef<HTMLDivElement>(null);
   const [inlineSearch, setInlineSearch] = useState("");
@@ -160,13 +168,43 @@ export function CompanyList({
   );
 
   // Apply tag filter
-  const filtered = useMemo(() => {
+  const tagFiltered = useMemo(() => {
     if (!activeTagFilter) return baseFiltered;
     return baseFiltered.filter((c) => {
       const companyTags = tagsState[c.id] || [];
       return companyTags.includes(activeTagFilter);
     });
   }, [baseFiltered, activeTagFilter, tagsState]);
+
+  // Apply category filter
+  const categoryFiltered = useMemo(() => {
+    if (!activeCategoryFilter) return tagFiltered;
+    return tagFiltered.filter((c) => c.category === activeCategoryFilter);
+  }, [tagFiltered, activeCategoryFilter]);
+
+  // Apply HubSpot stage filter
+  const filtered = useMemo(() => {
+    if (!activeHubSpotStageFilter) return categoryFiltered;
+    return categoryFiltered.filter((c) =>
+      (c.hubspotDeals || []).some(
+        (d) => (d.stageLabel || d.stage || "") === activeHubSpotStageFilter
+      )
+    );
+  }, [categoryFiltered, activeHubSpotStageFilter]);
+
+  // Compute available HubSpot stages from all companies
+  const availableHubSpotStages = useMemo(() => {
+    const stageCounts = new Map<string, number>();
+    for (const c of companies) {
+      for (const d of c.hubspotDeals || []) {
+        const label = d.stageLabel || d.stage || "";
+        if (label) stageCounts.set(label, (stageCounts.get(label) || 0) + 1);
+      }
+    }
+    return Array.from(stageCounts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([stage]) => stage);
+  }, [companies]);
 
   // Compute available tags from all companies for filter pills
   const availableTags = useMemo(() => {
@@ -266,6 +304,11 @@ export function CompanyList({
         availableTags={availableTags}
         activeTagFilter={activeTagFilter}
         onTagFilterChange={onTagFilterChange}
+        activeCategoryFilter={activeCategoryFilter}
+        onCategoryFilterChange={onCategoryFilterChange}
+        activeHubSpotStageFilter={activeHubSpotStageFilter}
+        onHubSpotStageFilterChange={onHubSpotStageFilterChange}
+        availableHubSpotStages={availableHubSpotStages}
       />
       {activeView === "cards" ? (
         <div ref={parentRef} className="flex-1 overflow-auto">

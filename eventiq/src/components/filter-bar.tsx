@@ -1,6 +1,6 @@
 "use client";
 
-import { FilterType, SortType, ViewType } from "@/lib/types";
+import { FilterType, SortType, ViewType, CompanyCategory } from "@/lib/types";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -8,9 +8,10 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LayoutGrid, Table2, ArrowUpDown, X, Check } from "lucide-react";
+import { LayoutGrid, Table2, ArrowUpDown, X, Check, Filter, Building2 } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface FilterBarProps {
@@ -26,6 +27,11 @@ interface FilterBarProps {
   availableTags?: string[];
   activeTagFilter?: string | null;
   onTagFilterChange?: (tag: string | null) => void;
+  activeCategoryFilter?: CompanyCategory | null;
+  onCategoryFilterChange?: (category: CompanyCategory | null) => void;
+  activeHubSpotStageFilter?: string | null;
+  onHubSpotStageFilterChange?: (stage: string | null) => void;
+  availableHubSpotStages?: string[];
 }
 
 const filters: { value: FilterType; label: string }[] = [
@@ -56,6 +62,15 @@ const sortOptions: { value: SortType; label: string; shortLabel: string }[] = [
   { value: "readiness", label: "Readiness (most ready first)", shortLabel: "Readiness" },
 ];
 
+const categoryOptions: { value: CompanyCategory; label: string }[] = [
+  { value: "funder", label: "Funder" },
+  { value: "broker", label: "Broker" },
+  { value: "bank", label: "Bank" },
+  { value: "technology", label: "Technology" },
+  { value: "marketplace", label: "Marketplace" },
+  { value: "service_provider", label: "Service Provider" },
+];
+
 export function FilterBar({
   activeFilter,
   onFilterChange,
@@ -69,8 +84,15 @@ export function FilterBar({
   availableTags = [],
   activeTagFilter,
   onTagFilterChange,
+  activeCategoryFilter,
+  onCategoryFilterChange,
+  activeHubSpotStageFilter,
+  onHubSpotStageFilterChange,
+  availableHubSpotStages = [],
 }: FilterBarProps) {
   const currentSort = sortOptions.find((s) => s.value === activeSort);
+  const currentCategory = categoryOptions.find((c) => c.value === activeCategoryFilter);
+  const hasActiveFilters = activeCategoryFilter || activeHubSpotStageFilter;
 
   return (
     <div className="flex flex-col gap-1.5 px-3 py-2 border-b border-border">
@@ -96,6 +118,33 @@ export function FilterBar({
           ))}
         </ToggleGroup>
       </div>
+
+      {/* Active dimension filters (category + HS stage) */}
+      {hasActiveFilters && (
+        <div className="flex flex-wrap gap-1">
+          {activeCategoryFilter && onCategoryFilterChange && (
+            <Badge
+              variant="outline"
+              className="text-xs px-1.5 py-0.5 h-5 cursor-pointer bg-emerald-500/15 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/25 transition-colors"
+              onClick={() => onCategoryFilterChange(null)}
+            >
+              {currentCategory?.label || activeCategoryFilter}
+              <X className="h-2.5 w-2.5 ml-0.5" />
+            </Badge>
+          )}
+          {activeHubSpotStageFilter && onHubSpotStageFilterChange && (
+            <Badge
+              variant="outline"
+              className="text-xs px-1.5 py-0.5 h-5 cursor-pointer bg-orange-500/15 text-orange-400 border-orange-500/30 hover:bg-orange-500/25 transition-colors"
+              onClick={() => onHubSpotStageFilterChange(null)}
+            >
+              HS: {activeHubSpotStageFilter}
+              <X className="h-2.5 w-2.5 ml-0.5" />
+            </Badge>
+          )}
+        </div>
+      )}
+
       {/* Tag filter pills */}
       {availableTags.length > 0 && onTagFilterChange && (
         <div className="overflow-x-auto scrollbar-none">
@@ -125,13 +174,84 @@ export function FilterBar({
           </div>
         </div>
       )}
-      {/* Count + sort + view */}
+      {/* Count + filters + sort + view */}
       <div className="flex items-center justify-between">
         <span className="text-xs text-muted-foreground">
           {filteredCount} of {totalCount}
           {metCount > 0 && ` \u00b7 ${metCount} met`}
         </span>
         <div className="flex items-center gap-0.5">
+          {/* Category filter dropdown */}
+          {onCategoryFilterChange && (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className={`h-6 px-1.5 text-xs ${activeCategoryFilter ? "text-emerald-400" : "text-muted-foreground"}`}
+                >
+                  <Building2 className="h-3 w-3 mr-0.5" />
+                  {currentCategory?.label || "Category"}
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-44">
+                <DropdownMenuItem
+                  onClick={() => onCategoryFilterChange(null)}
+                  className="text-xs flex items-center justify-between"
+                >
+                  All Categories
+                  {!activeCategoryFilter && <Check className="h-3 w-3 ml-2 text-brand" />}
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                {categoryOptions.map((opt) => (
+                  <DropdownMenuItem
+                    key={opt.value}
+                    onClick={() => onCategoryFilterChange(opt.value)}
+                    className="text-xs flex items-center justify-between"
+                  >
+                    {opt.label}
+                    {activeCategoryFilter === opt.value && <Check className="h-3 w-3 ml-2 text-brand" />}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          )}
+          {/* HubSpot stage filter dropdown */}
+          {onHubSpotStageFilterChange && availableHubSpotStages.length > 0 && (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className={`h-6 px-1.5 text-xs ${activeHubSpotStageFilter ? "text-orange-400" : "text-muted-foreground"}`}
+                >
+                  <Filter className="h-3 w-3 mr-0.5" />
+                  {activeHubSpotStageFilter || "HS Stage"}
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48">
+                <DropdownMenuItem
+                  onClick={() => onHubSpotStageFilterChange(null)}
+                  className="text-xs flex items-center justify-between"
+                >
+                  All Stages
+                  {!activeHubSpotStageFilter && <Check className="h-3 w-3 ml-2 text-brand" />}
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                {availableHubSpotStages.map((stage) => (
+                  <DropdownMenuItem
+                    key={stage}
+                    onClick={() => onHubSpotStageFilterChange(stage)}
+                    className="text-xs flex items-center justify-between"
+                  >
+                    {stage}
+                    {activeHubSpotStageFilter === stage && <Check className="h-3 w-3 ml-2 text-brand" />}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          )}
+          {/* Sort dropdown */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
