@@ -12158,26 +12158,103 @@
     "contacts": [
       {
         "n": "Michael Massa",
-        "t": "Founder & CEO"
+        "t": "Founder"
+      },
+      {
+        "n": "Brian Scott",
+        "t": "CEO"
+      },
+      {
+        "n": "Eric Kigathi",
+        "t": "CTO"
+      },
+      {
+        "n": "Alexandra Iosif",
+        "t": "Underwriter"
+      },
+      {
+        "n": "Wayne Schneider",
+        "t": "Collection Manager"
       }
     ],
-    "desc": "Florida-based MCA direct funder founded 2012. Over $300M in funding to 4,500+ SMBs across all 50 states. Minimum credit score of 475 -- lowest among MCA companies.",
-    "notes": "",
-    "news": [],
-    "ice": "Michael, Uplyft accepting credit scores as low as 475 while deploying $300M shows you have found a way to underwrite higher-risk merchants profitably. How are you managing that?",
+    "desc": "Florida-based MCA direct funder founded in Aug 2012 by Michael Massa (LinkedIn company page says 2010, Massa's own profile says Aug 2012), headquartered at 17070 Collins Ave, Suite 250, Sunny Isles Beach, FL 33160. Crossed $1 billion in total funding deployed in 2024, serving 20,000+ businesses across all 50 states. 45 employees on LinkedIn (11-50 range) across Finance (38%), Sales (16%), Marketing (11%), IT (9%), BizDev (7%). Average employee tenure 3.7 years. Minimum credit score of 450, funding range $5K-$500K with factor rates of 1.24-1.40. Underwent AI-driven underwriting transformation in 2018 led by CTO Eric Kigathi, shifting from purely human-based to hybrid AI model. Parent holding company is Shiny Milkshake (est. 2021), a digital investment firm also holding Kanopy streetwear brand. Targeting $500M+ annual volume. Same-day approval with 1-2 day funding. 92% 5-star customer reviews. Phone: 786-470-6050. LinkedIn growth: -6% (6mo), -8% (1yr) — headcount declining, may signal cost-cutting or consolidation.",
+    "notes": "SELLING ANGLES: LinkedIn headcount declining (-8% YoY) — they may be cutting manual roles, perfect timing for AI automation pitch. 38% of staff in Finance = heavy manual underwriting burden. Average tenure 3.7yr = stable team, not churning. Eric Kigathi is the #1 outreach target — deepest tech background, most active on LinkedIn (267 connections), understands ML/AI firsthand from cuebill days. Michael Massa's LinkedIn is dormant since Jan 2020 — email/phone outreach preferred. Brian Scott has only 6 LinkedIn connections — extremely thin presence, likely not responsive on LinkedIn. OUTREACH STRATEGY: (1) Eric first — professional/insightful tone, reference his ML fraud detection background at cuebill and how HyperVerge's AI complements his hybrid underwriting vision. (2) Michael via email — inspiring/supportive tone, reference 'funding resilience' mission and how AI helps fund MORE resilient businesses faster. (3) Brian via email — professional tone, reference $1B milestone and scaling challenges. EMPLOYEES DISCOVERED: Alexandra Iosif (Underwriter), Wayne Schneider (Collection Manager), LINNA T. (Accounting Manager), Verushka Rosales (Marketing Specialist), plus funding specialists and software engineers. DATA CORRECTION: William Acuna does NOT work at Uplyft Capital — he works at UpLyft (medical devices, completely different company). Removed from leaders. ALSO FOUNDER OF: KANOPY streetwear (Michael Massa). CONFIRMED: 'We're not brokers, we're direct funders!' — per their own LinkedIn posts. Eric also advises AfroForm Global (business strategy) and encaptiv (presentation tech). All 3 leaders have OpenLink enabled — can InMail without connection.",
+    "news": [
+      {
+        "h": "Uplyft Capital Crosses $1 Billion in Total Funding Deployed",
+        "s": "Company milestone, 2024",
+        "d": "Reached $1B in cumulative funding to 20,000+ small businesses across all 50 states, targeting $500M+ annual volume."
+      },
+      {
+        "h": "Uplyft Capital Launches New Brand Identity with AI-Driven Technology",
+        "s": "deBanked, May 2018",
+        "d": "Rebranded to emphasize hybrid AI-driven underwriting capabilities, moving from human-based to technology-forward model."
+      },
+      {
+        "h": "Shiny Milkshake Merges with Sleepy Sloth Society NFT Project",
+        "s": "Benzinga, Feb 2022",
+        "d": "Uplyft's parent holding company expanded into Web3/blockchain through merger with Ethereum-based NFT project."
+      }
+    ],
+    "ice": "Congrats on crossing the $1B funding milestone — that's a massive achievement for a company that started in 2012. With $500M+ annual volume target, how are you thinking about scaling your AI-driven underwriting to maintain approval speed without increasing risk?",
     "icebreakers": [
-      "Michael, Uplyft accepting credit scores as low as 475 while deploying $300M shows you have found a way to underwrite higher-risk merchants profitably. How are you managing that?"
+      "Congrats on crossing the $1B funding milestone — that's a massive achievement for a company that started in 2012. With $500M+ annual volume target, how are you thinking about scaling your AI-driven underwriting to maintain approval speed without increasing risk?"
     ],
     "tp": [
-      "Funding merchants with sub-500 credit scores requires sophisticated risk assessment beyond FICO -- AI can analyze cash flow patterns, bank statement behavior, and industry data to find creditworthy borrowers traditional models miss."
+      "At $500M+ annual volume with same-day approvals, even a 1% improvement in underwriting accuracy saves $5M+ in losses — HyperVerge's AI document verification catches fraud that manual review misses.",
+      "450+ MCA companies already use HyperVerge for identity verification and document analysis — Uplyft's hybrid AI-driven model is exactly the kind of sophisticated operation that benefits most from our platform.",
+      "Your 92% 5-star rating shows you prioritize merchant experience — HyperVerge's instant verification keeps that experience seamless while adding a critical fraud prevention layer."
     ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "leaders": [
+      {
+        "n": "Michael Massa",
+        "t": "Founder & CEO (de facto)",
+        "bg": "Self-made serial entrepreneur from Hartford, CT. Founded Uplyft Capital in Aug 2012 with the mission of 'funding resilience' — helping business owners who bounced back against the odds. Grew to $1B+ in total funding deployed across 20,000+ businesses. Also founded Kanopy streetwear brand in Sunny Isles (2019, exclusive sneakers and art drops) and co-founded Shiny Milkshake digital investment firm (2021) with Web3/NFT ventures. Italian-German heritage. Featured in CHIC Miami Magazine. No college degree — built everything from scratch. Self-describes as 'dedicated to expanding my businesses and exploring new verticals.' Hosted the Uplyft Capital Podcast (2019-2020) covering small business funding tips, team building, and entrepreneurial mindset. LinkedIn dormant since Jan 2020 — last posts were podcast episodes and brand promotion. 503 connections, OpenLink enabled (can InMail). Interesting tech curiosity — shared a Google Flutter article in 2019.",
+        "hooks": ["*Hartford to $1B — no college degree", "Kanopy streetwear founder (sneakers + art)", "Hosted Uplyft Capital Podcast", "*'We fund resilience' — personal mission"],
+        "li": "https://www.linkedin.com/in/michael-massa-60015013b",
+        "toneOfVoice": "Inspiring and Supportive — emphasizes helping entrepreneurs succeed, particularly those who are resilient"
+      },
+      {
+        "n": "Brian Scott",
+        "t": "CEO",
+        "bg": "CEO of Uplyft Capital, overseeing the company's growth past the $1 billion funding milestone in 2024. BA Finance from University of Salford, Greater Manchester, UK (Nov 2014 - Mar 2018). Prior to Uplyft, ran 'Brian' (Harmonic), a UK-based finance/accountancy recruitment firm. Very thin LinkedIn presence — only 6 connections and 15 subscribers, suggesting he's not active on the platform. His LinkedIn 'About' section still contains copy from his previous recruitment company. OpenLink enabled (can InMail). Based in Miami, FL. Skills listed: Paid Search Strategy, Networking.",
+        "hooks": ["UK-educated (Univ of Salford)", "Former UK recruitment firm founder", "Scaled past $1B deployed"],
+        "li": "https://www.linkedin.com/in/brian-scott-94663a293",
+        "email": "scott@uplyftcapital.com",
+        "toneOfVoice": "Professional yet approachable — values strong relationships and effective communication"
+      },
+      {
+        "n": "Eric Kigathi",
+        "t": "CTO",
+        "bg": "25+ year technology veteran and the most technically sophisticated leader at Uplyft. BS in Computer Science from University of Bridgeport (1998-2002, academic scholarship, Dean's & President's List). Co-founded cuebill in 2005, pioneering ML-based fraud detection for credit card/ACH transactions. Built enterprise EventTech for NFL, ESPN, NBC, BestBuy, TruTV, FUSE, and Telemundo at Pentapedal (2011-2016). Partner/CTO at LendersBox (2016-2017, fintech marketplace that acquired a commercial funder and became a direct funder — 'worked with hundreds of small business owners and brokered millions in commercial financing'). Joined Uplyft Capital as CTO in Jan 2018, leading the hybrid AI-driven underwriting transformation. Also doing Business Strategy at AfroForm Global (since Mar 2024) and Strategic Technical Advisor at encaptiv (presentation/audience engagement tech, since Apr 2018). IT Consultant at Fairfield Data Services (since 2001, verticals: TV, Finance, Insurance, Healthcare, eCommerce, Music Rights). F1 racing fan — attended Austin and Miami GPs. 267 connections, OpenLink enabled. Skills: ML, AI, Data Science, Financial Technology, Payment Gateways, Solution Architecture, Software Systems Engineering, Corporate Strategy, E-commerce, IP.",
+        "hooks": ["*Built tech for NFL, ESPN, NBC", "*ML fraud detection pioneer (2005)", "F1 fan — Austin & Miami GPs", "*LendersBox: marketplace turned direct funder", "AfroForm Global advisor"],
+        "li": "https://www.linkedin.com/in/eric-kigathi",
+        "email": "eric@uplyftcapital.com",
+        "toneOfVoice": "Professional and Insightful — values data-driven, technology-focused discussions"
+      },
+      {
+        "n": "Alexandra Iosif",
+        "t": "Underwriter",
+        "bg": "Underwriter at Uplyft Capital. Part of the 38% Finance department. Key operational role in the company's hybrid AI-human underwriting model — evaluating merchant applications for MCA funding ($5K-$500K range, min credit score 450). Based in Sunny Isles Beach, FL.",
+        "hooks": ["MCA underwriting specialist", "Hybrid AI-human model operator"],
+        "li": ""
+      },
+      {
+        "n": "Wayne Schneider",
+        "t": "Collection Manager",
+        "bg": "Collection Manager at Uplyft Capital. Manages the collections and recovery operations for the company's $1B+ funding portfolio across 20,000+ merchant accounts. Key operational role given the MCA industry's typical default rates. Based in Sunny Isles Beach, FL.",
+        "hooks": ["Manages $1B+ portfolio collections", "MCA collections specialist"],
+        "li": ""
+      }
+    ],
+    "ask": "Brian, with Uplyft targeting $500M+ this year and your AI-driven underwriting already in place, would it make sense to spend 20 minutes looking at how HyperVerge's document AI could plug into your existing stack? Happy to show you what we've done for similar-scale MCA funders.",
+    "phone": "7864706050",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "phantom-enriched-2026-02"
     ],
-    "location": "Florida",
+    "location": "Sunny Isles Beach, FL 33160",
     "employees": 45,
     "website": "https://www.uplyftcapital.com/",
     "linkedinUrl": "https://www.linkedin.com/company/uplyftcapital/",
