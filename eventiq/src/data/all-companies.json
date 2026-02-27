@@ -961,8 +961,8 @@
   {
     "id": 6,
     "name": "FundKite",
-    "type": "Client",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 1,
     "booth": true,
     "contacts": [
@@ -1687,8 +1687,8 @@
   {
     "id": 13,
     "name": "Elevate Funding",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 2,
     "booth": true,
     "contacts": [
@@ -6501,8 +6501,8 @@
   {
     "id": 68,
     "name": "Greenbox Capital",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -6766,13 +6766,34 @@
     "booth": false,
     "clear": false,
     "contacts": [
-      { "n": "Andrew Reiser", "t": "Founder, CEO & Chairman" },
-      { "n": "Arun Narayan", "t": "Chief Data & AI Officer" },
-      { "n": "Ben Johnston", "t": "COO" },
-      { "n": "Jeff Newman", "t": "Chief Risk Officer" },
-      { "n": "Josh Jones", "t": "Chief Revenue Officer" },
-      { "n": "Ella Haman", "t": "CTO" },
-      { "n": "Anthony Rose", "t": "CFO" }
+      {
+        "n": "Andrew Reiser",
+        "t": "Founder, CEO & Chairman"
+      },
+      {
+        "n": "Arun Narayan",
+        "t": "Chief Data & AI Officer"
+      },
+      {
+        "n": "Ben Johnston",
+        "t": "COO"
+      },
+      {
+        "n": "Jeff Newman",
+        "t": "Chief Risk Officer"
+      },
+      {
+        "n": "Josh Jones",
+        "t": "Chief Revenue Officer"
+      },
+      {
+        "n": "Ella Haman",
+        "t": "CTO"
+      },
+      {
+        "n": "Anthony Rose",
+        "t": "CFO"
+      }
     ],
     "desc": "Founded in 2006 as Strategic Funding Source, rebranded to Kapitus in 2019. Over $7B funded to 65,000+ businesses across MCA, SBA loans, lines of credit, and equipment financing. 446 employees across NYC HQ, Arlington VA, LA, Coeur d'Alene ID, and Chennai India (~100 staff doing credit analysis and data analytics). Acquired Ten Oaks Commercial Capital (Oct 2024) to launch equipment finance arm. $900M+ in total financing capacity: $250M ABS (expandable to $500M), $230M warehouse line, $95M corporate note. Back-to-back Inc. 5000 honoree (2024: #2025, 258% growth; 2025: #1705, 256% growth). Named Inc. Best Workplaces 2025. Tech stack includes Mambu (core LOS), Ocrolus (400K+ bank statements/month), Tax Guard (IRS verification), and Northteq Aurora (equipment finance LOS). Building new 'KapEx' marketplace monetization vertical. Arun Narayan's promotion to Chief Data & AI Officer signals increasing investment in AI-driven underwriting.",
     "notes": "Chennai India office (7,500 sqft, Aneja Towers, Perungudi) — natural HyperVerge relationship angle. SVP Underwriting Steven Podhorzer has publicly stated fraud is a major challenge ('fairly easy to doctor a tax return'). No visible IDV partner — Ocrolus handles document analysis, Tax Guard handles tax verification, but identity verification/KYC gap exists. KapEx initiative (marketplace monetization) will need partner/merchant verification. Andrew Reiser's philosophy: 'The best of technologies will not succeed if you don't underwrite properly' — aligns with HyperVerge's AI-with-human-review approach. Predicts banks will acquire alt lenders within 3-5 years.",
@@ -9870,8 +9891,8 @@
   {
     "id": 116,
     "name": "Revenued",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -9907,7 +9928,7 @@
     "id": 117,
     "name": "1st Merchant Funding",
     "type": "ICP",
-    "priority": 4,
+    "priority": 2,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -10221,8 +10242,8 @@
   {
     "id": 131,
     "name": "NewCo Capital Group",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -10467,8 +10488,8 @@
   {
     "id": 138,
     "name": "SellersFi",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -10502,8 +10523,8 @@
   {
     "id": 139,
     "name": "Alternative Funding Group",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -11603,8 +11624,8 @@
   {
     "id": 175,
     "name": "Nav",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -11939,8 +11960,8 @@
   {
     "id": 185,
     "name": "Uplyft Capital",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -12196,8 +12217,8 @@
   {
     "id": 193,
     "name": "Fox Business Funding",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
@@ -13545,8 +13566,8 @@
   {
     "id": 1014,
     "name": "BHG Financial",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -14229,8 +14250,8 @@
   {
     "id": 1020,
     "name": "iBusiness Funding",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -14828,8 +14849,8 @@
   {
     "id": 1027,
     "name": "Marco",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -15508,8 +15529,8 @@
   {
     "id": 1034,
     "name": "Whetstone Holdings",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -16879,8 +16900,8 @@
   {
     "id": 1049,
     "name": "Westwood Funding",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -17084,8 +17105,8 @@
   {
     "id": 1052,
     "name": "Knight Capital Funding",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -17446,8 +17467,8 @@
   {
     "id": 1056,
     "name": "Business Capital LLC",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -18277,8 +18298,8 @@
   {
     "id": 1066,
     "name": "Capital Infusion LLC",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -19438,8 +19459,8 @@
   {
     "id": 1082,
     "name": "Gemini Business Funding",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -19776,8 +19797,8 @@
   {
     "id": 1087,
     "name": "QFS Capital",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -21234,8 +21255,8 @@
   {
     "id": 1105,
     "name": "GoKapital",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -21389,8 +21410,8 @@
   {
     "id": 1107,
     "name": "Lendinero",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -21945,8 +21966,8 @@
   {
     "id": 1114,
     "name": "Regium Funding",
-    "type": "TAM",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -23120,8 +23141,8 @@
   {
     "id": 1157,
     "name": "Capital Express US",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -24062,8 +24083,8 @@
   {
     "id": 1188,
     "name": "Crossroads Financial LLC",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -24480,8 +24501,8 @@
   {
     "id": 1205,
     "name": "Effective Funding",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -24854,8 +24875,8 @@
   {
     "id": 1219,
     "name": "Family Business Funding",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -25555,8 +25576,8 @@
   {
     "id": 1245,
     "name": "Giggle Finance",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -25836,8 +25857,8 @@
   {
     "id": 1255,
     "name": "Harbor Trade",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -25894,8 +25915,8 @@
   {
     "id": 1257,
     "name": "Haversine Funding",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -26611,8 +26632,8 @@
   {
     "id": 1286,
     "name": "Legend Funding",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -27757,8 +27778,8 @@
   {
     "id": 1332,
     "name": "Nexi",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -29393,8 +29414,8 @@
   {
     "id": 1397,
     "name": "Simplified Funding",
-    "type": "TAM",
-    "priority": 4,
+    "type": "ICP",
+    "priority": 2,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -35504,8 +35525,8 @@
   {
     "id": 1569,
     "name": "One Park",
-    "type": "ICP",
-    "priority": 2,
+    "type": "SQO",
+    "priority": 1,
     "phase": 0,
     "booth": false,
     "clear": false,
@@ -43657,5 +43678,106 @@
         ]
       }
     ]
+  },
+  {
+    "id": 1797,
+    "name": "Fusion Funding",
+    "type": "ICP",
+    "priority": 2,
+    "phase": 0,
+    "booth": false,
+    "clear": false,
+    "contacts": [
+      {
+        "n": "Mark Allayev",
+        "t": "Owner & CEO"
+      },
+      {
+        "n": "Ed Shapiro",
+        "t": "President of Sales"
+      },
+      {
+        "n": "Sam Falcone",
+        "t": "ISO Relations Manager"
+      }
+    ],
+    "desc": "Direct funder and non-bank private financial institution specializing in merchant cash advances and alternative business financing. Founded 2013 with offices in New York (88 Pine St) and North Miami Beach, FL. Has funded 150,000+ businesses with $500M+ in total originations. Offers MCA, business lines of credit, asset-based financing, equipment financing, PO financing, and invoice factoring across 15+ industries. Heavily reliant on ISO broker channel with active hiring for ISO Relations Managers. Emphasizes 'human underwriting' over algorithmic approaches with same-day approvals.",
+    "notes": "SELLING ANGLES: (1) Explicitly promotes 'human underwriting' as differentiator — at 150K+ deals funded, this becomes a bottleneck. HyperVerge's AI bank statement analysis can process in seconds vs 20-30 min manually. (2) Heavy ISO broker channel = fraud risk (stacking, fabricated statements, identity fraud). HyperVerge fraud detection screens incoming broker deals at intake. (3) Same-day approval promise requires fast document processing at scale. (4) Owner Mark Allayev also runs Funders App ($500M originations platform) providing white-label underwriting/collections to smaller funders — potential platform-level integration opportunity. (5) Actively hiring ISO Relations Managers in Miami + NY = growth phase = need for scalable infrastructure. (6) DeBanked forum complaints about ISO partner friction — better fraud screening reduces bad deals and commission disputes.",
+    "news": [
+      {
+        "h": "Funders App (Allayev's Platform) Achieves $500M in Originations",
+        "s": "PR Newswire, May 2023",
+        "d": "Mark Allayev's Funders App announced $500M cumulative originations with new AI-powered features for credit checks, background checks, and fintech integrations."
+      },
+      {
+        "h": "Fusion Funding Actively Expanding ISO Broker Network",
+        "s": "Glassdoor/Career.com, 2024-2025",
+        "d": "Hiring ISO Relations Managers in both Miami, FL and New York, NY — indicating active growth in their broker distribution channel."
+      },
+      {
+        "h": "DeBanked Feature: How a Funding Platform Weathered a Crisis and is Flourishing",
+        "s": "DeBanked, Jun 2024",
+        "d": "Profile of Mark Allayev and Funders App's journey through significant challenges and subsequent growth in the alternative lending space."
+      }
+    ],
+    "ice": "Fusion Funding has funded 150,000+ businesses with human underwriting — that's impressive scale. As you continue growing, how are you thinking about augmenting your underwriters with AI to maintain same-day approvals?",
+    "icebreakers": [
+      "150,000+ businesses funded with human underwriting at same-day speed is a remarkable achievement. How are you thinking about technology to maintain that velocity as volume grows?",
+      "With Funders App crossing $500M in originations and Fusion Funding's direct lending operation, you're running significant volume. What's the biggest bottleneck in your underwriting pipeline today?",
+      "I noticed you're actively expanding your ISO broker network in both Miami and New York. As broker deal flow increases, how are you managing fraud risk at intake?",
+      "Your emphasis on human underwriting over algorithms is a strong differentiator. We've seen funders at your scale use AI to handle the data extraction so their human underwriters can focus on the judgment calls — would that approach interest you?"
+    ],
+    "tp": [
+      "At 150,000+ deals funded with human underwriting, Fusion Funding's team processes enormous volume manually. HyperVerge automates bank statement analysis, document classification, and financial spreading in under 5 minutes — letting your underwriters focus on complex judgment calls while maintaining same-day approvals.",
+      "The ISO broker channel is the #1 source of fraud in alternative lending (stacking, fabricated statements, synthetic identity). HyperVerge's fraud detection and identity verification screens incoming broker deals at intake, reducing defaults and protecting margin. We serve 450+ lending companies with proven MCA automation.",
+      "With active ISO hiring in Miami and New York, Fusion Funding is scaling distribution fast. HyperVerge's KYC/KYB automation can reduce merchant onboarding from days to minutes, matching your same-day approval promise without adding underwriting headcount."
+    ],
+    "leaders": [
+      {
+        "n": "Mark Allayev",
+        "t": "Owner & CEO",
+        "bg": "Serial entrepreneur in alternative lending/MCA. MBA from Moscow State Institute of International Relations (MGIMO). Founded and runs Funders App (fintech platform for MCA syndication, underwriting, white-label funding — $500M+ cumulative originations). Previously ran 24 Capital. Now also operates under Symplifi Capital brand. Moved to the U.S. in 2015. Sole Authorized Member of Fusion Funding LLC per Florida state filings. Also built family businesses across USA, Canada, Russia, Ukraine, Germany, Japan.",
+        "li": "https://www.linkedin.com/in/mark-allayev-921b2010b/",
+        "hooks": [
+          "*Funders App: $500M originations platform",
+          "MBA from MGIMO (Moscow)",
+          "Serial entrepreneur across 7+ countries",
+          "Runs Symplifi Capital + Fusion Funding"
+        ]
+      },
+      {
+        "n": "Ed Shapiro",
+        "t": "President of Sales",
+        "bg": "Leads the sales organization at Fusion Funding from their New York headquarters. NYU graduate. Personally involved in customer-facing deal closings. Oversees the sales team and ISO/broker relationships that drive deal flow.",
+        "li": "https://www.linkedin.com/in/ed-shapiro-612156222",
+        "hooks": [
+          "NYU graduate",
+          "Leads sales for 150K+ deal operation",
+          "Hands-on in customer deal closings"
+        ]
+      },
+      {
+        "n": "Sam Falcone",
+        "t": "ISO Relations Manager",
+        "bg": "Manages Fusion Funding's network of Independent Sales Organizations (ISOs) — the broker channel that drives deal flow. Critical role in MCA distribution. Works alongside multiple ISO Relations Managers in both Miami and New York offices.",
+        "li": "https://www.linkedin.com/in/sam-falcone-147435186/",
+        "hooks": [
+          "Manages ISO broker network",
+          "MCA distribution specialist",
+          "Miami + NY broker channels"
+        ]
+      }
+    ],
+    "ask": "Mark, you've built a $500M originations platform with Funders App and funded 150,000+ businesses through Fusion Funding. At HyperVerge, we power AI underwriting and fraud detection for 450+ lending companies — we've seen direct funders at your scale cut underwriting time by 70% while catching 3x more fraudulent ISO submissions. Would 20 minutes make sense to explore how we could help?",
+    "location": "Florida",
+    "employees": 17,
+    "website": "https://fusion-funding.com/",
+    "linkedinUrl": "https://www.linkedin.com/company/fusionfunding/",
+    "source": [
+      "researched",
+      "deep-researched",
+      "refreshed-2026-02"
+    ],
+    "category": "funder"
   }
 ]
