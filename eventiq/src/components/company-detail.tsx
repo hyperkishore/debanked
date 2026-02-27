@@ -63,6 +63,7 @@ import {
   Clock,
   Package,
   Crosshair,
+  RefreshCw,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -86,6 +87,7 @@ interface CompanyDetailProps {
   onAddTag?: (companyId: number, tag: string) => void;
   onRemoveTag?: (companyId: number, tag: string) => void;
   onPipelineStageChange?: (companyId: number, stage: PipelineStage) => void;
+  onRequestRefresh?: (companyId: number) => void;
 }
 
 
@@ -179,6 +181,7 @@ export function CompanyDetail({
   onAddTag,
   onRemoveTag,
   onPipelineStageChange,
+  onRequestRefresh,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
@@ -278,12 +281,20 @@ export function CompanyDetail({
             return (
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <span className={cn("text-xs flex items-center gap-1 cursor-default", isStale ? "text-amber-400" : "text-muted-foreground/60")}>
+                  <button
+                    className={cn(
+                      "text-xs flex items-center gap-1 transition-colors",
+                      onRequestRefresh ? "cursor-pointer hover:text-brand" : "cursor-default",
+                      isStale ? "text-amber-400" : "text-muted-foreground/60"
+                    )}
+                    onClick={() => onRequestRefresh?.(company.id)}
+                  >
                     <Clock className="h-3 w-3" />
                     {label}
-                  </span>
+                    {onRequestRefresh && <RefreshCw className="h-2.5 w-2.5 ml-0.5" />}
+                  </button>
                 </TooltipTrigger>
-                <TooltipContent>{isStale ? "Research may be outdated — consider refreshing" : "Based on latest news or research date"}</TooltipContent>
+                <TooltipContent>{isStale ? "Research may be outdated — click to request refresh" : "Click to request updated research"}</TooltipContent>
               </Tooltip>
             );
           })()}
