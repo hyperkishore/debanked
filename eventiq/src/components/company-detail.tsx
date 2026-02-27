@@ -964,17 +964,16 @@ function LeaderCard({
             </TooltipTrigger>
             <TooltipContent>Draft LinkedIn message</TooltipContent>
           </Tooltip>
-          {leader.li && (
-            <a
-              href={leader.li}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand hover:text-brand/80"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <ExternalLink className="h-3 w-3" />
-            </a>
-          )}
+          <a
+            href={leader.li || `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(leader.n + " " + company.name)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn("hover:text-brand/80", leader.li ? "text-brand" : "text-muted-foreground/50")}
+            title={leader.li ? "View LinkedIn profile" : "Search LinkedIn"}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Linkedin className="h-3 w-3" />
+          </a>
         </div>
       </div>
       {leader.bg && (
