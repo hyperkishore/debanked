@@ -7162,29 +7162,32 @@
   {
     "id": 175,
     "name": "Nav",
-    "type": "ICP",
-    "priority": 5,
+    "type": "SQO",
+    "priority": 1,
     "phase": 4,
     "booth": false,
     "clear": false,
     "contacts": [
-      {
-        "n": "Levi King",
-        "t": "CEO & Co-Founder"
-      }
+      { "n": "Levi King", "t": "CEO & Co-Founder" },
+      { "n": "Gian Perrone", "t": "CTO" },
+      { "n": "Grace Liu", "t": "CFO" }
     ],
-    "desc": "Business financial health platform serving nearly 2M small businesses. Provides business and personal credit data, score improvement tools, and marketplace matching to best financing options. Co-founder also co-founded Lendio.",
+    "desc": "Leading financial health platform for small businesses, serving 2.7M+ businesses with credit monitoring from all major bureaus, a financing marketplace of 160+ products from 70+ lenders, and credit-building tools including the Nav Prime Card. Revenue ~$24.5M. Raised $90.3M from Goldman Sachs, Kleiner Perkins, Experian, Point72. Acquired Nuula and Tillful. Expanding into embedded finance and B2B trade credit.",
     "notes": "",
-    "news": [],
-    "ice": "Levi, Nav serving 2M small businesses with credit data and financing matching is incredible reach. How are you thinking about AI to improve the accuracy of your financing marketplace matching?",
+    "news": [
+      { "h": "Nav Pilots Payment Terms Program for Peer-to-Peer Trade Credit", "s": "PR Newswire, Dec 2025", "d": "Enables small business owners to extend trade credit to peers." },
+      { "h": "2UniFi and Nav Partner; NBHC Invests $5M", "s": "GlobeNewswire, Jul 2025", "d": "National Bank Holdings Corporation makes $5M strategic investment." }
+    ],
+    "ice": "Levi, your October Fintech One-on-One episode about Nav's evolution from credit tracking to embedded lending really resonated. I'd love to share what we're building on the verification side.",
     "icebreakers": [
-      "Levi, Nav serving 2M small businesses with credit data and financing matching is incredible reach. How are you thinking about AI to improve the accuracy of your financing marketplace matching?"
+      "Levi, your October Fintech One-on-One episode about Nav's evolution from credit tracking to embedded lending really resonated. I'd love to share what we're building on the verification side.",
+      "Levi, Nav's Payment Terms Program pilot is fascinating — enabling small businesses to extend trade credit to their peers is a fundamentally different play from credit monitoring."
     ],
     "tp": [
-      "With 2M businesses on the platform, AI can analyze financial health data to make better lender-borrower matches, improving approval rates and reducing wasted applications for both sides."
+      "Nav serves 2.7M+ businesses and matches them with 160+ financing products. HyperVerge's AI-powered verification can reduce friction in the application-to-approval pipeline, increasing funded applications and Nav's referral revenue."
     ],
     "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?"
+    "ask": "Levi, I'd love 20 minutes to show you how HyperVerge's AI-powered verification could plug into Nav's partner ecosystem. Would next Tuesday or Wednesday work?"
   },
   {
     "id": 176,

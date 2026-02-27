@@ -11630,30 +11630,95 @@
     "booth": false,
     "clear": false,
     "contacts": [
-      {
-        "n": "Levi King",
-        "t": "CEO & Co-Founder"
-      }
+      { "n": "Levi King", "t": "CEO & Co-Founder" },
+      { "n": "Gian Perrone", "t": "CTO" },
+      { "n": "Grace Liu", "t": "CFO" },
+      { "n": "Raquel Alexander", "t": "CMO" },
+      { "n": "James Rauen", "t": "SVP Data & Operations" }
     ],
-    "desc": "Business financial health platform serving nearly 2M small businesses. Provides business and personal credit data, score improvement tools, and marketplace matching to best financing options. Co-founder also co-founded Lendio.",
-    "notes": "",
-    "news": [],
-    "ice": "Levi, Nav serving 2M small businesses with credit data and financing matching is incredible reach. How are you thinking about AI to improve the accuracy of your financing marketplace matching?",
+    "desc": "Leading financial health platform for small businesses, serving 2.7M+ businesses with credit monitoring from all major bureaus (Experian, D&B, Equifax, TransUnion), a financing marketplace of 160+ products from 70+ lenders, and credit-building tools including the Nav Prime Card ($49.99/mo, 340K+ users). Founded in 2012 by Levi King and Caton Hanson (originally as Creditera, rebranded 2015). Revenue ~$24.5M (2024). Raised $90.3M from Goldman Sachs, Kleiner Perkins, Experian Ventures, Point72, Tencent, and NBHC. Acquired Nuula (Jan 2023, mobile/cash flow) and Tillful (Jul 2023, cash flow scoring). Expanding into embedded finance (Gusto, 2UniFi partnerships) and B2B trade credit (Payment Terms Program pilot, Dec 2025). Levi King also co-founded Lendio, the SMB lending marketplace.",
+    "notes": "SELLING ANGLES:\n- Enhanced marketplace conversion: Nav matches 2.7M businesses with 160+ products. HyperVerge's AI verification could help lending partners approve more applicants faster, increasing Nav's referral revenue.\n- Payment Terms Program (Dec 2025 pilot): Peer-to-peer trade credit between SMBs requires real-time business verification and fraud prevention — direct fit for HyperVerge KYB.\n- Embedded finance partner enablement: B2B strategy (Gusto, 2UniFi, Fundbox integrations) needs standardized verification layer for each partner.\n- Nav Prime Card risk management: Currently no credit check; AI-powered KYC/KYB could manage fraud risk as it scales past 340K users.\n- Data platform enhancement: James Rauen (ex-Google/Uber) building proprietary scoring across 45+ data points. HyperVerge document verification could add verified data signals.\n\nBOARD: Jade Mandel (Goldman Sachs), Randy Komisar (Kleiner Perkins), Jacob Kong (Experian CBO, joined Mar 2025), Janet Zablock (ex-Visa Global SMB Head), Tim Laney (NBHC CEO, observer Jul 2025).\n\nCOMPETITORS: Fundera (NerdWallet), Lendio, Credit Karma, Brex/Ramp/BILL Divvy, Fundbox/BlueVine/OnDeck.",
+    "news": [
+      { "h": "Nav Pilots Payment Terms Program for Peer-to-Peer Trade Credit", "s": "PR Newswire, Dec 2025", "d": "Major product expansion: enables small business owners to extend trade credit to peers, moving beyond credit monitoring into B2B commerce." },
+      { "h": "2UniFi and Nav Partner; NBHC Invests $5M", "s": "GlobeNewswire, Jul 2025", "d": "National Bank Holdings Corporation makes $5M strategic investment. NBHC CEO Tim Laney joins Nav board as observer. 2UniFi integrated into Nav marketplace." },
+      { "h": "Nav Hires Grace Liu as CFO, Launches Credit Health Experience", "s": "PR Newswire, Jan 2025", "d": "Liu brings 20+ years finance leadership, led successful exit as CFO at Tango. New Credit Health Experience integrates D&B, Equifax, and Experian ratings." },
+      { "h": "Nav Partners with Fundbox for Pre-Approved SMB Credit Lines", "s": "PR Newswire, Mar 2024", "d": "Pre-approved offers for Nav users — lines of credit up to $150K powered by AI underwriting integration between Nav's scoring and Fundbox's platform." },
+      { "h": "Nav and Gusto Join Forces to Tackle Cash Flow Challenges", "s": "PR Newswire, Feb 2024", "d": "Embedded finance partnership: Nav's credit and financing tools integrated directly into Gusto's payroll platform for SMB customers." },
+      { "h": "Nav Acquires Tillful for Cash Flow Scoring Engine", "s": "PR Newswire, Jul 2023", "d": "Acquisition adds proprietary cash flow scoring and data platform capabilities. Founder Ken So joins Nav." }
+    ],
+    "ice": "Levi, your October Fintech One-on-One episode about Nav's evolution from credit tracking to embedded lending really resonated. The intersection of Nav's 45-data-point scoring with partner AI underwriting is exactly the kind of intelligent matching transforming SMB lending. I'd love to share what we're building on the verification side.",
     "icebreakers": [
-      "Levi, Nav serving 2M small businesses with credit data and financing matching is incredible reach. How are you thinking about AI to improve the accuracy of your financing marketplace matching?"
+      "Levi, your October Fintech One-on-One episode about Nav's evolution from credit tracking to embedded lending really resonated. The intersection of Nav's 45-data-point scoring with partner AI underwriting is exactly the kind of intelligent matching transforming SMB lending. I'd love to share what we're building on the verification side.",
+      "Levi, Nav's Payment Terms Program pilot is fascinating — enabling small businesses to extend trade credit to their peers is a fundamentally different play from credit monitoring. As you expand into what is essentially B2B underwriting, I'd be curious how you're thinking about real-time business verification for that program.",
+      "Levi, as someone who started seven businesses and obtained financing 30+ times before building Nav, you've lived both sides of the SMB lending equation. Your Inc. column on credit transparency aligns with what we're working on at HyperVerge — I'd love 15 minutes to share an idea that could help Nav approve more businesses faster.",
+      "Levi, I listened to your FinStrat podcast on authentic leadership and how that 360 review early in your career fundamentally changed your approach. That radical honesty is rare in fintech. As you scale Nav's embedded finance play, I'd love to hear how that philosophy shapes the partnerships you're building."
     ],
     "tp": [
-      "With 2M businesses on the platform, AI can analyze financial health data to make better lender-borrower matches, improving approval rates and reducing wasted applications for both sides."
+      "Nav serves 2.7M+ businesses and matches them with 160+ financing products from 70+ lenders, but the conversion from credit-checking to actually getting funded remains the critical bottleneck. HyperVerge's AI-powered verification can reduce friction in the application-to-approval pipeline for Nav's lending partners, directly increasing funded applications and Nav's referral revenue.",
+      "Nav's December 2025 Payment Terms Program pilot — enabling peer-to-peer trade credit between small businesses — is their most ambitious product expansion yet. This requires real-time business identity verification, fraud prevention, and risk assessment at a scale and speed that manual processes can't support. HyperVerge's KYB verification stack could serve as the trust infrastructure as this scales from pilot to production.",
+      "As Nav expands its B2B embedded finance strategy (Gusto, 2UniFi/NBHC, Fundbox), each new partner integration requires reliable, fast business verification. HyperVerge can provide a standardized verification layer that Nav offers to all embedded finance partners — reducing integration time and improving approval rates across the ecosystem."
     ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "leaders": [
+      {
+        "n": "Levi King",
+        "t": "CEO, Co-Founder & Chairman",
+        "bg": "Serial entrepreneur who grew up on a farm in rural Idaho. Self-taught in business — started seven companies across manufacturing, franchising, hospitality, and retail financing before fintech. Co-founded Lendio in 2006 (SMB lending marketplace), then co-founded Nav in 2012 with Caton Hanson after experiencing firsthand the difficulty of accessing business credit (obtained financing 30+ times). Also co-founded Cake Technologies (mobile browser, raised $5M). Stepped down as CEO in Jan 2020 (Greg Ott from Intuit took over), served as Executive Chairman, then returned as CEO. Raised $90M+ from Kleiner Perkins, Goldman Sachs, Experian, Point72, Tencent. Board member at Flinks (open banking), MX Technologies, Future Family, and Chairman of Kernls (nonprofit med research). Regular columnist for Inc., Entrepreneur, Forbes. BS in Business Administration from Western Governors University. Advocates authentic leadership and mental health for entrepreneurs — his mantra is 'business is personal.' His daily philosophy: 'Do the hardest thing first every day.'",
+        "hooks": ["*7 businesses before fintech — farm kid from Idaho", "*Co-founded both Lendio and Nav", "Board seats: Flinks, MX Technologies, Kernls chairman", "FinStrat podcast on authentic leadership"],
+        "li": "https://www.linkedin.com/in/leviking/"
+      },
+      {
+        "n": "Gian Perrone",
+        "t": "CTO",
+        "bg": "Promoted from VP Engineering (joined Aug 2022). PhD in Computer Science from University of Copenhagen (2010-2013) — research in concurrency, formal methods, and distributed systems. Previously Head of Engineering for Business Banking at Square (Block). Also held engineering leadership at Inscriptive. Skills include JavaScript, Scala, distributed systems. Based in Milwaukee, WI. Oversees Nav's data platform and integration of acquired tech from Nuula and Tillful.",
+        "hooks": ["*PhD Computer Science — University of Copenhagen", "*Former Square Banking engineering leader", "Distributed systems and formal methods researcher", "Overseeing Nuula + Tillful tech integration"],
+        "li": "https://www.linkedin.com/in/gianperrone/"
+      },
+      {
+        "n": "Grace Liu",
+        "t": "CFO",
+        "bg": "Joined January 2025 with 20+ years of finance leadership and investment banking experience. Most recently CFO at Tango where she led the company's financial transformation, improved profitability, and drove a successful exit. At Nav, overseeing financial operations during expansion into Payment Terms Program, 2UniFi partnership, and embedded finance strategy.",
+        "hooks": ["*Led successful exit as CFO at Tango", "Investment banking background", "Fresh hire Jan 2025 — scaling Nav financials", "Overseeing potential future fundraising"],
+        "li": "https://www.linkedin.com/in/grace-liu-00/"
+      },
+      {
+        "n": "Raquel Alexander",
+        "t": "CMO",
+        "bg": "Joined February 2025 with 15+ years marketing experience across major consumer brands. Previous leadership roles at TextNow, eHealth, Shutterfly, and Electronic Arts (EA). Most recently growth advisor at Midi Health (telehealth). At Nav, oversees brand awareness, customer acquisition, communications, and product marketing.",
+        "hooks": ["EA, Shutterfly, TextNow marketing leadership", "eHealth background — compliance-heavy marketing", "Fresh hire Feb 2025 — building Nav's marketing strategy", "Growth advisor at Midi Health (telehealth)"],
+        "li": "https://www.linkedin.com/in/raquel-alexander/"
+      },
+      {
+        "n": "James Rauen",
+        "t": "SVP Data & Operations",
+        "bg": "Joined February 2024 from leadership positions at Bill.com, Uber, and Google. Leads Nav's data capabilities, building proprietary views of businesses, industries, products, and transactions to power the customer experience and financing marketplace matching across 45+ data points.",
+        "hooks": ["*Google → Uber → Bill.com data leadership pedigree", "Building Nav's proprietary 45+ data point scoring", "Key stakeholder for AI/data partnerships", "Joined Feb 2024 during Fundbox/Gusto expansion"],
+        "li": "https://www.linkedin.com/in/rauen/"
+      },
+      {
+        "n": "Caton Hanson",
+        "t": "Co-Founder & SVP General Counsel / Product Strategy",
+        "bg": "Co-founded Nav with Levi King in 2012. Previously owned a legal services law firm helping business owners with business credit, business plans, financial models, and legal entities. His firm partnered with commercial lenders to serve 20,000+ businesses nationally. Valparaiso University School of Law. Based in Greater Salt Lake City area. Note: Doe Gregersen was named General Counsel in Jun 2025, suggesting Hanson may have shifted to advisory/product strategy role.",
+        "hooks": ["Co-founded Nav from legal services background", "Served 20K+ businesses through lending-focused law firm", "Valparaiso University School of Law", "Dual legal + product strategy perspective"],
+        "li": "https://www.linkedin.com/in/catonhanson/"
+      },
+      {
+        "n": "Doe Gregersen",
+        "t": "General Counsel",
+        "bg": "Joined June 2025 with nearly 15 years of in-house legal counsel experience. Previously Head of Compliance and VP of Legal at Above Lending. Prior senior legal roles at Digit (fintech savings app) and Landmark Credit Union. Navigating Nav's expanding product suite including Payment Terms, embedded finance, and B2B trade credit compliance.",
+        "hooks": ["Above Lending compliance + legal leadership", "Digit (fintech) and Landmark Credit Union experience", "Fresh hire Jun 2025 — building compliance for new products", "Deep fintech regulatory expertise"],
+        "li": "https://www.linkedin.com/in/doe-gregersen/"
+      }
+    ],
+    "ask": "Levi, Nav's shift from credit monitoring to embedded lending and B2B trade credit is exactly the inflection point where faster, smarter business verification becomes critical. As you scale the Payment Terms Program and onboard more embedded finance partners, the ability to verify a business in seconds — not days — will determine adoption velocity. I'd love 20 minutes to show you how HyperVerge's AI-powered verification could plug into Nav's partner ecosystem. Would next Tuesday or Wednesday work?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "researched",
+      "refreshed-2026-02"
     ],
-    "location": "Florida",
-    "employees": 176,
-    "website": "http://www.nav.com",
+    "location": "Utah",
+    "employees": 224,
+    "website": "https://www.nav.com",
     "linkedinUrl": "https://www.linkedin.com/company/navsmb/"
   },
   {
