@@ -212,6 +212,14 @@ export function CompanyCard({
             </span>
           )}
           <div className="flex-1" />
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <span className="text-xs text-muted-foreground/60 tabular-nums cursor-default shrink-0">
+                {formatRevenue(revenue)}
+              </span>
+            </TooltipTrigger>
+            <TooltipContent>Estimated annual revenue potential</TooltipContent>
+          </Tooltip>
           {readinessLabel && readinessScore !== undefined && (
             <Tooltip>
               <TooltipTrigger asChild>
