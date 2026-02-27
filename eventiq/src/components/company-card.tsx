@@ -154,14 +154,6 @@ export function CompanyCard({
             >
               {subVertical}
             </Badge>
-            {urgencyTier && (
-              <Badge
-                variant="outline"
-                className={cn("text-xs px-1.5 py-0.5 h-5 font-semibold shrink-0", urgencyBadgeStyles[urgencyTier])}
-              >
-                {outreachScore}
-              </Badge>
-            )}
             {company.outreachHistory && company.outreachHistory.status !== "no_history" && outreachBadgeStyles[company.outreachHistory.status] && (
               <Badge
                 variant="outline"
@@ -179,21 +171,9 @@ export function CompanyCard({
             {highlightText(subtitle, query)}
           </p>
 
-          {metaLine && (
-            <span className="text-xs text-muted-foreground/60">
-              {metaLine}
-            </span>
-          )}
-
-          {company.ice && !nextBestAction && (
+          {company.ice && (
             <p className="text-xs text-muted-foreground/70 mt-1 line-clamp-2">
               {company.ice}
-            </p>
-          )}
-
-          {nextBestAction && (
-            <p className="text-xs text-brand/80 mt-1 font-medium">
-              Next: {nextBestAction}
             </p>
           )}
 
@@ -224,20 +204,18 @@ export function CompanyCard({
           )}
         </div>
 
-        {/* Bottom: scores row */}
+        {/* Bottom: details row */}
         <div className="flex items-center gap-3 pt-1 border-t border-border/50">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <span className="text-xs text-muted-foreground/60 tabular-nums cursor-default">
-                {formatRevenue(revenue)}
-              </span>
-            </TooltipTrigger>
-            <TooltipContent>Estimated annual revenue potential</TooltipContent>
-          </Tooltip>
+          {metaLine && (
+            <span className="text-xs text-muted-foreground/60 truncate">
+              {metaLine}
+            </span>
+          )}
+          <div className="flex-1" />
           {readinessLabel && readinessScore !== undefined && (
             <Tooltip>
               <TooltipTrigger asChild>
-                <span className={cn("text-xs font-bold tabular-nums cursor-default", getReadinessColor(readinessLabel))}>
+                <span className={cn("text-xs font-bold tabular-nums cursor-default shrink-0", getReadinessColor(readinessLabel))}>
                   {readinessScore.toFixed(1)}
                 </span>
               </TooltipTrigger>
@@ -247,7 +225,7 @@ export function CompanyCard({
           {freshness && (
             <Tooltip>
               <TooltipTrigger asChild>
-                <span className="text-xs text-muted-foreground/50 tabular-nums cursor-default">
+                <span className="text-xs text-muted-foreground/50 tabular-nums cursor-default shrink-0">
                   {freshness}
                 </span>
               </TooltipTrigger>
