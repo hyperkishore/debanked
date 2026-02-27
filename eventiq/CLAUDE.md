@@ -53,17 +53,28 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 ## Data Architecture
 
 ### Data Sources
-- **Supabase `companies` table** — Canonical dataset: 1,021 companies, served via `/api/companies` API route
+- **Supabase `companies` table** — Canonical dataset: 959 companies, served via `/api/companies` API route
 - **`src/data/all-companies.json`** — Local backup (gitignored), used for seeding Supabase via `scripts/seed-companies-to-supabase.js`
 
+### Company Category Distribution (as of v3.1.54)
+| Category | Count | Display Tag |
+|----------|-------|-------------|
+| Funder | 824 | Fndr-MCA, Fndr-SBA, Fndr-EqFin, Fndr-Factr, Fndr-RBF, Funder |
+| ISO | 62 | ISO |
+| Bank | 40 | Bank |
+| Marketplace | 15 | Marketplace |
+| Service | 8 | Service |
+| Technology | 6 | Technology |
+| Competitor | 4 | Competitor |
+
 ### Company Priority Tiers
-| Priority | Label | Companies | Leaders | Description |
-|----------|-------|-----------|---------|-------------|
-| 1 | P0 / SQO | 4 | 17 | Strategic accounts: Bitty, BriteCap, PIRS Capital, Wing Lake |
-| 2 | P1 / ICP | 238 | 370 | Ideal customer profile — primary targets |
-| 3 | P2 | 9 | 30 | Secondary targets |
-| 4 | TAM | 575 | 45 | Broader addressable market |
-| 5-6 | Other | 134 | 13 | Lower priority / informational |
+| Priority | Label | Description |
+|----------|-------|-------------|
+| 1 | P0 / SQO | Strategic accounts with active deal flow |
+| 2 | P1 / ICP | Ideal customer profile — primary targets |
+| 3 | P2 | Secondary targets |
+| 4 | TAM | Broader addressable market |
+| 5-7 | Other | Lower priority / informational |
 
 ### Company Data Schema
 ```typescript
@@ -78,7 +89,7 @@ interface Company {
   contacts: Contact[];       // Quick reference: {n, t}
   leaders?: Leader[];        // Deep profiles: {n, t, bg, hooks, li}
   desc: string;              // Company description paragraph
-  notes: string;             // Internal notes
+  notes: string;             // Internal notes (selling angles, board, competitors)
   news: NewsItem[];          // {h: headline, s: source, d: description}
   ice: string;               // Primary icebreaker
   icebreakers?: string[];    // 4 rotation variants
@@ -88,7 +99,8 @@ interface Company {
   employees?: number;
   website?: string;
   linkedinUrl?: string;
-  source: string[];          // Tags: ["researched", "enriched", etc.]
+  source: string[];          // Tags: ["researched", "enriched", "refreshed-YYYY-MM"]
+  category?: CompanyCategory; // funder, iso, marketplace, bank, technology, competitor, service_provider
 }
 ```
 
@@ -112,14 +124,103 @@ interface Leader {
 
 ---
 
+## Company Categories
+
+Every company MUST have a `category` field. No uncategorized companies.
+
+| Category | Tag Display | What it means | How to identify |
+|----------|-------------|---------------|-----------------|
+| `funder` | Fndr-MCA, Fndr-SBA, Fndr-EqFin, Fndr-Factr, Fndr-RBF, Funder | Direct lenders — fund from own balance sheet or institutional credit facilities | Look for: origination volume, balance sheet receivables, credit facilities, loss rates |
+| `iso` | ISO | People-driven sales/broker operations | Look for: small team (1-10 people), commissions, "submit applications to funders", sales-driven |
+| `marketplace` | Marketplace | Tech-driven self-service platforms that algorithmically match borrowers with lenders | Look for: proprietary scoring, self-service platform, 100+ lender integrations, tech team |
+| `bank` | Bank | Chartered banks, credit unions, CDFIs | Look for: banking charter, FDIC, NCUA, CDFI certification |
+| `technology` | Technology | SaaS/software providers for lenders (non-competitors) | Look for: CRM, LOS, servicing platform, white-label — they sell TO lenders, not lend |
+| `competitor` | Competitor | Direct HyperVerge competitors | AI document analysis, identity verification, KYC/KYB, underwriting automation |
+| `service_provider` | Service | Law firms, media, trade associations | Legal services, industry publications, associations |
+
+### Critical Classification Distinctions
+
+**ISO vs. Marketplace** — The #1 classification mistake. Many ISOs call themselves "marketplaces" in marketing.
+- **ISO**: Sales reps prospect businesses, submit apps to funders on their behalf. Revenue from commissions. Scales by hiring reps. Even if they work with 75+ funders, if it's human-driven deal flow → ISO.
+- **Marketplace**: Self-service tech platform. Businesses enter info, get algorithmically matched. Revenue from platform/referral fees. Scales through technology. Think Nav, Lendio, LendingTree.
+- **Employee count is a strong signal**: 1-10 employees claiming "75+ lender marketplace" = almost certainly an ISO.
+
+**Funder vs. Technology** — Does the company provide capital or software?
+- If they say "platform for lenders" or "built for MCA companies" → technology (they sell to lenders)
+- If they say "we fund businesses" or have origination volume → funder
+- Some explicitly state "(not a lender)" in their description → technology
+- Watch for companies with both: Ivy Lender does marketplace + white-label SaaS
+
+**Embedded Lenders** — Tech companies (Shopify, Square, PayPal) that also lend. Classify by what matters:
+- If they fund from own balance sheet (Shopify: $1.6B receivables, Square: $5.7B originated) → `funder`
+- If they stopped lending and now refer to partners (Amazon Lending since Mar 2024) → `marketplace`
+- If they provide lending infrastructure but don't fund (LiftForward, Prime Financial Tech) → `technology`
+- Key research: check financial filings for "receivables", "origination volume", "loss rates" — these prove direct funding
+
+---
+
 ## Research Methodology — MANDATORY STANDARD
 
 **CRITICAL: Every company and person added to the dataset MUST go through deep web research. No shortcuts. No text extraction from existing fields. This is the quality bar.**
 
+### Research Depth — Adapt to Context
+
+The depth of research should match the purpose. The user's context determines what to prioritize:
+
+| Context | Research Focus | Depth |
+|---------|---------------|-------|
+| **Outreach prep** ("I'm meeting their CEO") | Deep personal dossier: podcasts, interviews, board seats, personal philosophy, LinkedIn activity, mutual connections | Maximum — find the unique personal angles |
+| **Company refresh** ("update research on X") | Leaders, recent news, funding rounds, product launches, leadership changes, selling angles | High — refresh everything stale |
+| **Classification audit** ("is this a funder or ISO?") | Business model evidence: balance sheet vs. commissions, employee count, origination volume, funding structure | Focused — find the structural truth |
+| **Batch enrichment** ("refresh P1 companies") | Recent news, leadership changes, funding rounds — efficient breadth over depth | Medium — cover more companies |
+| **Quick data fix** ("add this company") | Basic fields: desc, contacts, category, location, website | Standard — fill required fields |
+
+### The Deep Research Difference
+
+Standard research fills in the schema fields. **Deep research reveals the structural truth about a company** — the kind of insight that changes how you approach them. Patterns discovered:
+
+**1. Follow the money — not the marketing copy**
+- Companies describe themselves aspirationally. "AI-powered lending marketplace" might be 2 people with a Google Form.
+- Search for: origination volume, balance sheet receivables, credit facility announcements, loss rates, funding rounds.
+- Example: Shopify Capital says "embedded lending" but financial filings reveal $1.6B in receivables on their own balance sheet — they're a balance sheet lender using WebBank as regulatory originator.
+
+**2. Check the funding structure**
+- "Funds from own balance sheet" = true funder (Shopify, Square, Lightspeed)
+- "Originated by WebBank, purchased by X" = funder using bank-as-a-service regulatory wrapper (PayPal, Shopify)
+- "Capital from Citi/Goldman/institutional facility" = funder with institutional backing (SellersFi, Liberis)
+- "Connects businesses with 75+ lenders" = ISO or marketplace (never a funder)
+- "Revenue from commissions/points on funded deals" = ISO
+
+**3. Employee count reveals business model**
+- 1-5 employees claiming "marketplace with 75+ lenders" = ISO (broker with a website)
+- 50-200+ employees with engineering team = likely real technology platform
+- 10-50 employees in "sales" roles = ISO scaling through headcount
+
+**4. Track strategic pivots**
+- Amazon Lending stopped direct lending in March 2024 — now just refers to Parafin/SellersFi. The old description was wrong.
+- Greg Ott left Nav as CEO — Levi King returned. Leadership changes affect outreach strategy.
+- Acquisitions change capabilities (Nav acquired Nuula + Tillful for cash flow scoring)
+
+**5. Research the person, not just the title**
+For outreach targets, go beyond the company bio:
+- **Podcast/interview search**: `"Person Name" podcast OR interview OR conference` — reveals their thinking, priorities, communication style
+- **Board seats and advisory roles**: Shows their network and what they care about beyond the day job
+- **Content they've written**: Inc., Forbes, LinkedIn articles — reveals their public positions
+- **Personal philosophy**: Levi King's "business is personal" mantra and 360-review transformation story are more valuable icebreakers than any company metric
+- **Career arc**: 7 businesses before fintech, farm kid from Idaho → serial entrepreneur. The personal journey creates connection.
+
+**6. Verify "Limited public information available" companies**
+~65 companies in the dataset have this boilerplate. Before accepting it:
+- Search `"Company Name" deBanked` — deBanked covers niche MCA players others miss
+- Search `"Company Name" UCC filing` — UCC filings reveal active lending
+- Search `"Company Name" BBB` or `"Company Name" Trustpilot` — reviews reveal if they're active
+- Check state business registrations — confirms if still operating
+- If truly nothing exists, mark as `funder` (default for SMB lending companies) and note "Limited public information"
+
 ### Required Research Per Company
 Every company entry must have ALL of the following populated via real web research:
 
-1. **`desc`** — 1-2 paragraphs with real metrics (AUM, origination volume, funding rounds, customer count, growth %). Source from company website, press releases, LinkedIn About, Crunchbase (free tier), news articles.
+1. **`desc`** — 1-2 paragraphs with real metrics (origination volume, funding rounds, customer count, growth %, balance sheet size, loss rates). Source from company website, press releases, financial filings, LinkedIn About, Crunchbase (free tier), news articles. **Include the business model truth**: how they actually make money, where the capital comes from, what they really are (not just what they claim to be).
 
 2. **`contacts`** — 2-3 key decision-makers with name + title. Source from company website team page, LinkedIn company page.
 
@@ -130,7 +231,7 @@ Every company entry must have ALL of the following populated via real web resear
      - Career history and prior roles (search LinkedIn, company bios)
      - Educational background (university, degree)
      - Key accomplishments and milestones
-     - Personal details if publicly available (hobbies, podcasts, speaking)
+     - Personal details if publicly available (hobbies, podcasts, speaking, board seats)
    - **`li`**: LinkedIn profile URL (search `site:linkedin.com/in/ "Person Name" "Company"`)
    - **`hooks`**: 2-4 conversation starters based on RESEARCHED facts, not generic phrases
 
@@ -157,6 +258,14 @@ Every company entry must have ALL of the following populated via real web resear
 
 8. **`ask`** — Personalized CTA that names the decision-maker by first name, references their specific trigger event, and proposes a concrete next step
 
+9. **`notes`** — Selling angles and strategic context:
+   - `SELLING ANGLES:` — bullet points for how HyperVerge could help this specific company
+   - `BOARD:` — board members and investors (useful for warm introductions)
+   - `COMPETITORS:` — who they compete with (context for positioning)
+   - `KEY INSIGHT:` — the one non-obvious thing that changes the approach
+
+10. **`category`** — Must be set based on business model research (see Company Categories above)
+
 ### Required Research Per Leader (hooks quality standard)
 Hooks must come from ACTUAL web research, not rephrasing existing text:
 
@@ -164,6 +273,7 @@ Hooks must come from ACTUAL web research, not rephrasing existing text:
 - Web search: `"Person Name" "Company Name"` — find news mentions, quotes, interviews
 - Web search: `"Person Name" LinkedIn` — find profile details, career history
 - Web search: `"Person Name" podcast OR conference OR panel OR speaking` — find public appearances
+- Web search: `"Person Name" board OR advisor OR advisory` — find governance roles
 - Company website team/about page — find official bio
 - Industry publications (deBanked, BusinessWire, Yahoo Finance) — find quotes and features
 
@@ -179,10 +289,14 @@ Hooks must come from ACTUAL web research, not rephrasing existing text:
 - Press releases (PR Newswire, BusinessWire, GlobeNewswire)
 - Industry publications (deBanked, Lending Times, Fintech Nexus)
 - General news (Yahoo Finance, Bloomberg, TechCrunch, Forbes)
-- SEC/regulatory filings (for public companies)
+- SEC/regulatory filings (for public companies — 10-K, 10-Q for origination data)
+- Financial filings and earnings calls (for balance sheet / receivables data)
 - Inc. 5000, Deloitte Fast 500, other ranking lists
 - Conference/event speaker lists and agendas
 - Podcast directories (for speaking appearances)
+- State business registrations (for confirming active status)
+- deBanked (covers niche MCA players other publications miss)
+- Crunchbase free tier (funding rounds, investors, employee count)
 
 ### What NOT to Do
 - NEVER generate hooks by reformatting existing `bg` text — that's circular, not research
@@ -190,17 +304,25 @@ Hooks must come from ACTUAL web research, not rephrasing existing text:
 - NEVER scrape LinkedIn programmatically (violates ToS)
 - NEVER fabricate or hallucinate facts — if research finds nothing, say so
 - NEVER use generic filler ("experienced leader", "industry expert")
+- NEVER accept marketing copy at face value — verify the business model with structural evidence
+- NEVER leave a company uncategorized — every company gets a `category` based on research
 
 ### Research Workflow for New Companies
 ```
 1. Web search company name → find website, LinkedIn, recent news
 2. Read company website (about page, team page, press room)
-3. For each leader: web search name + company → LinkedIn, bios, news mentions
-4. Compile desc, contacts, leaders (with bg + hooks + li), news
-5. Craft icebreakers (4 variants) tied to recent findings
-6. Write 3 talking points connecting their challenges to HyperVerge
-7. Write personalized ask naming the key decision-maker
-8. Output as JSON matching the Company schema
+3. CLASSIFY FIRST: determine category (funder/iso/marketplace/etc.)
+   - Search for origination volume, balance sheet data, funding structure
+   - Check employee count vs. claims (5 employees ≠ marketplace)
+   - Look for how they make money (commissions vs. platform fees vs. interest)
+4. For each leader: web search name + company → LinkedIn, bios, news mentions
+   - For outreach targets: also search podcasts, interviews, board seats, articles
+5. Compile desc (with business model truth), contacts, leaders, news
+6. Write notes: selling angles, board members, competitors, key insights
+7. Craft icebreakers (4 variants) tied to recent findings
+8. Write 3 talking points connecting their challenges to HyperVerge
+9. Write personalized ask naming the key decision-maker
+10. Output as JSON matching the Company schema with category set
 ```
 
 ---
