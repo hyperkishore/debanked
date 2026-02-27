@@ -1361,7 +1361,8 @@
     "location": "Georgia",
     "employees": 241,
     "website": "https://cancapital.com",
-    "linkedinUrl": "https://www.linkedin.com/company/can-capital/"
+    "linkedinUrl": "https://www.linkedin.com/company/can-capital/",
+    "category": "funder"
   },
   {
     "id": 9,
@@ -1420,7 +1421,8 @@
     "source": [
       "eventiq",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 10,
@@ -2077,7 +2079,8 @@
     "location": "Maryland",
     "employees": 177,
     "website": "https://www.rapidfinance.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/rapidfinance/"
+    "linkedinUrl": "https://www.linkedin.com/company/rapidfinance/",
+    "category": "funder"
   },
   {
     "id": 16,
@@ -2249,7 +2252,8 @@
           "inbound": 2
         }
       ]
-    }
+    },
+    "category": "funder"
   },
   {
     "id": 17,
@@ -2766,7 +2770,8 @@
     "source": [
       "eventiq",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 21,
@@ -3181,7 +3186,8 @@
     "location": "New York",
     "employees": 5,
     "website": "https://fundmybiz.com",
-    "linkedinUrl": "https://www.linkedin.com/company/fund-my-biz-official"
+    "linkedinUrl": "https://www.linkedin.com/company/fund-my-biz-official",
+    "category": "funder"
   },
   {
     "id": 25,
@@ -4585,7 +4591,8 @@
     "source": [
       "eventiq",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 40,
@@ -4636,7 +4643,8 @@
     "source": [
       "eventiq",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 41,
@@ -7360,7 +7368,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 79,
@@ -7442,7 +7451,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 80,
@@ -7513,7 +7523,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "marketplace"
   },
   {
     "id": 81,
@@ -7639,7 +7650,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 84,
@@ -8072,7 +8084,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 91,
@@ -8150,7 +8163,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 92,
@@ -8290,7 +8304,8 @@
     "location": "Florida",
     "employees": 6,
     "website": "https://sunwisecapital.com",
-    "linkedinUrl": "https://www.linkedin.com/company/sunwisecapital/"
+    "linkedinUrl": "https://www.linkedin.com/company/sunwisecapital/",
+    "category": "funder"
   },
   {
     "id": 94,
@@ -8795,7 +8810,8 @@
     "location": "San Francisco",
     "employees": 187,
     "website": "https://fundbox.com",
-    "linkedinUrl": "https://www.linkedin.com/company/fundbox/posts/?feedView=all"
+    "linkedinUrl": "https://www.linkedin.com/company/fundbox/posts/?feedView=all",
+    "category": "funder"
   },
   {
     "id": 102,
@@ -8975,7 +8991,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 104,
@@ -9127,7 +9144,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 106,
@@ -9204,7 +9222,8 @@
     "location": "Florida",
     "employees": 10,
     "website": "http://www.quikstonecapital.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/quikstone-capital/"
+    "linkedinUrl": "https://www.linkedin.com/company/quikstone-capital/",
+    "category": "funder"
   },
   {
     "id": 107,
@@ -9277,7 +9296,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 108,
@@ -9350,7 +9370,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 109,
@@ -9580,7 +9601,8 @@
     ],
     "location": "Maryland",
     "employees": 1,
-    "website": "https://firstdownfunding.com"
+    "website": "https://firstdownfunding.com",
+    "category": "funder"
   },
   {
     "id": 112,
@@ -9733,7 +9755,8 @@
     "location": "Illinois",
     "employees": 21,
     "website": "https://lendr.online/",
-    "linkedinUrl": "https://www.linkedin.com/company/lendr/"
+    "linkedinUrl": "https://www.linkedin.com/company/lendr/",
+    "category": "funder"
   },
   {
     "id": 114,
@@ -10057,7 +10080,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 122,
@@ -10087,7 +10111,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 123,
@@ -10148,7 +10173,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 125,
@@ -10178,7 +10204,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 127,
@@ -10290,7 +10317,8 @@
           "inbound": 19
         }
       ]
-    }
+    },
+    "category": "funder"
   },
   {
     "id": 132,
@@ -10393,7 +10421,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 135,
@@ -10521,7 +10550,8 @@
     "location": "Florida",
     "employees": 100,
     "website": "https://sellersfi.com",
-    "linkedinUrl": "https://www.linkedin.com/company/sellersfi/"
+    "linkedinUrl": "https://www.linkedin.com/company/sellersfi/",
+    "category": "funder"
   },
   {
     "id": 139,
@@ -10716,7 +10746,8 @@
     "location": "New York",
     "employees": 103,
     "website": "https://sbgfunding.com",
-    "linkedinUrl": "https://www.linkedin.com/company/sbg-funding/"
+    "linkedinUrl": "https://www.linkedin.com/company/sbg-funding/",
+    "category": "funder"
   },
   {
     "id": 146,
@@ -10766,7 +10797,8 @@
           "inbound": 1
         }
       ]
-    }
+    },
+    "category": "funder"
   },
   {
     "id": 147,
@@ -10832,7 +10864,8 @@
     "location": "New York",
     "employees": 3,
     "website": "https://lendingvalley.com",
-    "linkedinUrl": "https://www.linkedin.com/company/lending-valley/"
+    "linkedinUrl": "https://www.linkedin.com/company/lending-valley/",
+    "category": "funder"
   },
   {
     "id": 149,
@@ -10893,7 +10926,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 151,
@@ -10923,7 +10957,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 152,
@@ -10953,7 +10988,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 154,
@@ -11045,7 +11081,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 157,
@@ -11257,7 +11294,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 163,
@@ -11287,7 +11325,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 164,
@@ -11379,7 +11418,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 167,
@@ -11533,7 +11573,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 172,
@@ -11563,7 +11604,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 173,
@@ -11624,7 +11666,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 175,
@@ -11910,7 +11953,8 @@
     ],
     "location": "New York",
     "employees": 210,
-    "website": "https://grameenamerica.org"
+    "website": "https://grameenamerica.org",
+    "category": "funder"
   },
   {
     "id": 179,
@@ -12007,7 +12051,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 182,
@@ -12171,7 +12216,8 @@
     "location": "Texas",
     "employees": 32,
     "website": "https://www.onrampfunds.com",
-    "linkedinUrl": "https://www.linkedin.com/company/onrampfunds/"
+    "linkedinUrl": "https://www.linkedin.com/company/onrampfunds/",
+    "category": "funder"
   },
   {
     "id": 187,
@@ -12201,7 +12247,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 188,
@@ -12231,7 +12278,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 189,
@@ -12327,7 +12375,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "service_provider"
   },
   {
     "id": 192,
@@ -12357,7 +12406,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 193,
@@ -12392,7 +12442,8 @@
     "location": "Florida",
     "employees": 37,
     "website": "https://foxbusinessfunding.com",
-    "linkedinUrl": "https://www.linkedin.com/company/fox-business-funding/about/"
+    "linkedinUrl": "https://www.linkedin.com/company/fox-business-funding/about/",
+    "category": "funder"
   },
   {
     "id": 194,
@@ -12519,7 +12570,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 199,
@@ -12549,7 +12601,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 200,
@@ -12610,7 +12663,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 202,
@@ -12764,7 +12818,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 207,
@@ -12891,7 +12946,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 211,
@@ -12921,7 +12977,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 212,
@@ -12987,7 +13044,8 @@
     "location": "New York",
     "employees": 7,
     "website": "https://www.smbcompass.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/smbcompass/"
+    "linkedinUrl": "https://www.linkedin.com/company/smbcompass/",
+    "category": "funder"
   },
   {
     "id": 214,
@@ -13017,7 +13075,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 215,
@@ -13047,7 +13106,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 216,
@@ -13112,7 +13172,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 218,
@@ -13142,7 +13203,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 219,
@@ -13172,7 +13234,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 220,
@@ -13233,7 +13296,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 222,
@@ -13325,7 +13389,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 225,
@@ -13409,7 +13474,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1002,
@@ -13462,7 +13528,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1005,
@@ -13488,7 +13555,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1006,
@@ -13546,7 +13614,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1008,
@@ -13599,7 +13668,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1010,
@@ -13652,7 +13722,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1012,
@@ -14390,7 +14461,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1020,
@@ -14659,7 +14731,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1023,
@@ -14752,7 +14825,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1024,
@@ -14914,7 +14988,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1026,
@@ -15311,7 +15386,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1030,
@@ -15480,7 +15556,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1032,
@@ -15815,7 +15892,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1036,
@@ -16137,7 +16215,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1039,
@@ -16698,7 +16777,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1044,
@@ -16955,7 +17035,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1048,
@@ -17040,7 +17121,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1049,
@@ -17434,7 +17516,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1054,
@@ -17836,7 +17919,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1059,
@@ -17899,7 +17983,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1060,
@@ -17974,7 +18059,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1061,
@@ -18709,7 +18795,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1070,
@@ -19191,7 +19278,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1075,
@@ -19243,7 +19331,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1076,
@@ -19600,7 +19689,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1082,
@@ -19748,7 +19838,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1084,
@@ -19856,7 +19947,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1086,
@@ -20018,7 +20110,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1088,
@@ -20627,7 +20720,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1095,
@@ -21068,7 +21162,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1101,
@@ -21551,7 +21646,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1107,
@@ -21805,7 +21901,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1110,
@@ -21986,7 +22083,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1112,
@@ -22108,7 +22206,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "technology"
   },
   {
     "id": 1114,
@@ -22281,7 +22380,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "technology"
   },
   {
     "id": 1117,
@@ -22307,7 +22407,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1118,
@@ -22353,7 +22454,8 @@
           "inbound": 2
         }
       ]
-    }
+    },
+    "category": "funder"
   },
   {
     "id": 1119,
@@ -22404,7 +22506,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1121,
@@ -22430,7 +22533,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1122,
@@ -22577,7 +22681,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1127,
@@ -22603,7 +22708,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1129,
@@ -22737,7 +22843,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1134,
@@ -22817,7 +22924,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1138,
@@ -22843,7 +22951,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1139,
@@ -22896,7 +23005,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1142,
@@ -22958,7 +23068,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1144,
@@ -22984,7 +23095,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1145,
@@ -23100,7 +23212,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1150,
@@ -23126,7 +23239,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1151,
@@ -23152,7 +23266,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1152,
@@ -23178,7 +23293,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1153,
@@ -23231,7 +23347,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1155,
@@ -23284,7 +23401,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1157,
@@ -23337,7 +23455,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1159,
@@ -23390,7 +23509,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1161,
@@ -23448,7 +23568,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1163,
@@ -23474,7 +23595,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1164,
@@ -23527,7 +23649,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1166,
@@ -23553,7 +23676,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1167,
@@ -23743,7 +23867,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1171,
@@ -23828,7 +23953,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1174,
@@ -23922,7 +24048,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1177,
@@ -23948,7 +24075,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1178,
@@ -23974,7 +24102,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1179,
@@ -24032,7 +24161,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1181,
@@ -24085,7 +24215,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1183,
@@ -24111,7 +24242,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1184,
@@ -24226,7 +24358,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1188,
@@ -24428,7 +24561,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1195,
@@ -24513,7 +24647,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1198,
@@ -24566,7 +24701,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1200,
@@ -24592,7 +24728,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1201,
@@ -24618,7 +24755,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1204,
@@ -24644,7 +24782,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1205,
@@ -24670,7 +24809,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1206,
@@ -24696,7 +24836,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1207,
@@ -24749,7 +24890,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1209,
@@ -24775,7 +24917,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1210,
@@ -24827,7 +24970,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1212,
@@ -24853,7 +24997,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1213,
@@ -24992,7 +25137,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1218,
@@ -25018,7 +25164,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1219,
@@ -25049,7 +25196,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1220,
@@ -25183,7 +25331,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1226,
@@ -25209,7 +25358,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1227,
@@ -25235,7 +25385,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1228,
@@ -25261,7 +25412,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1229,
@@ -25341,7 +25493,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1231,
@@ -25367,7 +25520,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1232,
@@ -25393,7 +25547,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1233,
@@ -25418,7 +25573,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1234,
@@ -25509,7 +25665,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1236,
@@ -25535,7 +25692,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1237,
@@ -25615,7 +25773,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1240,
@@ -25641,7 +25800,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1242,
@@ -25667,7 +25827,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1243,
@@ -25693,7 +25854,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1244,
@@ -25719,7 +25881,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1245,
@@ -25783,32 +25946,6 @@
       "tam-researched"
     ],
     "category": "funder"
-  },
-  {
-    "id": 1247,
-    "name": "Goizueta Impact Investors",
-    "type": "TAM",
-    "priority": 7,
-    "phase": 0,
-    "booth": false,
-    "clear": false,
-    "contacts": [],
-    "desc": "Impact investment organization based in Georgia, associated with Emory University's Goizueta Business School. May be defunct (0 employees).",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "Georgia",
-    "employees": 0,
-    "website": "https://www.goizuetaimpactinvestors.com/",
-    "linkedinUrl": "https://www.linkedin.com/company/27220538/",
-    "source": [
-      "tam",
-      "tam-researched"
-    ]
   },
   {
     "id": 1248,
@@ -25920,7 +26057,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1252,
@@ -26000,7 +26138,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1255,
@@ -26031,7 +26170,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1256,
@@ -26089,7 +26229,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1258,
@@ -26114,7 +26255,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1259,
@@ -26167,7 +26309,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1261,
@@ -26247,7 +26390,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1266,
@@ -26273,7 +26417,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1267,
@@ -26298,7 +26443,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1268,
@@ -26324,7 +26470,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1269,
@@ -26377,7 +26524,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1271,
@@ -26457,7 +26605,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1274,
@@ -26537,7 +26686,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1277,
@@ -26590,7 +26740,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1279,
@@ -26697,7 +26848,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1283,
@@ -26723,7 +26875,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1284,
@@ -26749,7 +26902,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1285,
@@ -26775,7 +26929,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1286,
@@ -26855,7 +27010,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1289,
@@ -26907,7 +27063,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1291,
@@ -26933,7 +27090,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1292,
@@ -26959,7 +27117,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1293,
@@ -27012,7 +27171,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1296,
@@ -27065,7 +27225,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1298,
@@ -27096,7 +27257,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1300,
@@ -27122,7 +27284,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1301,
@@ -27202,7 +27365,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1305,
@@ -27255,7 +27419,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1307,
@@ -27307,7 +27472,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1309,
@@ -27360,7 +27526,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1311,
@@ -27386,7 +27553,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1312,
@@ -27444,7 +27612,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1314,
@@ -27470,7 +27639,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1315,
@@ -27559,7 +27729,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1319,
@@ -27585,7 +27756,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1320,
@@ -27611,7 +27783,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1321,
@@ -27691,7 +27864,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1324,
@@ -27717,7 +27891,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1325,
@@ -27770,7 +27945,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1327,
@@ -27823,7 +27999,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1329,
@@ -27873,7 +28050,8 @@
           "inbound": 1
         }
       ]
-    }
+    },
+    "category": "funder"
   },
   {
     "id": 1330,
@@ -27898,7 +28076,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1331,
@@ -27923,7 +28102,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1332,
@@ -28030,7 +28210,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1338,
@@ -28083,7 +28264,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1340,
@@ -28136,7 +28318,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1342,
@@ -28189,7 +28372,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1344,
@@ -28215,7 +28399,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1345,
@@ -28241,7 +28426,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1346,
@@ -28272,7 +28458,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1347,
@@ -28325,7 +28512,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1349,
@@ -28351,7 +28539,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1350,
@@ -28377,7 +28566,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1351,
@@ -28403,7 +28593,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1352,
@@ -28483,7 +28674,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1355,
@@ -28536,7 +28728,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1357,
@@ -28562,7 +28755,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1358,
@@ -28588,7 +28782,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1359,
@@ -28614,7 +28809,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1361,
@@ -28672,7 +28868,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1364,
@@ -28698,7 +28895,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1365,
@@ -28724,7 +28922,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1366,
@@ -28750,7 +28949,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1367,
@@ -28866,7 +29066,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1371,
@@ -28919,7 +29120,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1373,
@@ -28945,7 +29147,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1374,
@@ -28971,7 +29174,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1375,
@@ -29006,7 +29210,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1376,
@@ -29032,7 +29237,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1377,
@@ -29090,7 +29296,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1379,
@@ -29116,7 +29323,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1380,
@@ -29142,7 +29350,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1381,
@@ -29168,7 +29377,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1382,
@@ -29194,7 +29404,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1383,
@@ -29274,7 +29485,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1386,
@@ -29300,7 +29512,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1387,
@@ -29325,7 +29538,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1388,
@@ -29351,7 +29565,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1389,
@@ -29377,7 +29592,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1390,
@@ -29403,7 +29619,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1391,
@@ -29429,7 +29646,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1392,
@@ -29455,7 +29673,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1393,
@@ -29481,7 +29700,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1394,
@@ -29507,7 +29727,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1395,
@@ -29533,7 +29754,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1396,
@@ -29559,7 +29781,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1397,
@@ -29585,7 +29808,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1398,
@@ -29611,7 +29835,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1399,
@@ -29745,7 +29970,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1404,
@@ -29830,7 +30056,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1407,
@@ -29883,7 +30110,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1409,
@@ -29909,7 +30137,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1410,
@@ -29935,7 +30164,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1411,
@@ -29993,7 +30223,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1413,
@@ -30046,7 +30277,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1415,
@@ -30230,7 +30462,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1421,
@@ -30265,7 +30498,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1422,
@@ -30317,7 +30551,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1424,
@@ -30343,7 +30578,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1425,
@@ -30368,7 +30604,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1426,
@@ -30394,7 +30631,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1427,
@@ -30420,7 +30658,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1430,
@@ -30446,7 +30685,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1431,
@@ -30472,7 +30712,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1432,
@@ -30498,7 +30739,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1434,
@@ -30578,7 +30820,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1437,
@@ -30658,7 +30901,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1440,
@@ -30684,7 +30928,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1441,
@@ -30710,7 +30955,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1442,
@@ -30762,7 +31008,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1444,
@@ -30788,7 +31035,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1445,
@@ -30841,7 +31089,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1448,
@@ -30867,7 +31116,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1449,
@@ -30892,7 +31142,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1450,
@@ -30945,7 +31196,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1453,
@@ -30971,7 +31223,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1454,
@@ -31107,7 +31360,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1462,
@@ -31185,7 +31439,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1463,
@@ -31272,7 +31527,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1466,
@@ -31395,7 +31651,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1470,
@@ -31761,7 +32018,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1478,
@@ -31786,7 +32044,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1479,
@@ -31811,7 +32070,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1480,
@@ -31845,7 +32105,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1481,
@@ -31870,7 +32131,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1482,
@@ -31919,7 +32181,8 @@
           "inbound": 1
         }
       ]
-    }
+    },
+    "category": "funder"
   },
   {
     "id": 1483,
@@ -31944,7 +32207,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1484,
@@ -31969,7 +32233,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1485,
@@ -31994,7 +32259,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1486,
@@ -32019,7 +32285,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1487,
@@ -32079,7 +32346,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1489,
@@ -32222,7 +32490,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1491,
@@ -32256,7 +32525,8 @@
     "source": [
       "tam",
       "researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1492,
@@ -32405,7 +32675,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1495,
@@ -32489,7 +32760,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1497,
@@ -32514,7 +32786,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1498,
@@ -32565,7 +32838,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1500,
@@ -32590,7 +32864,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1501,
@@ -32957,7 +33232,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1509,
@@ -32987,7 +33263,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1510,
@@ -33012,7 +33289,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1511,
@@ -33291,7 +33569,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1515,
@@ -33321,7 +33600,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1516,
@@ -33476,7 +33756,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1518,
@@ -33627,7 +33908,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1522,
@@ -33721,7 +34003,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1525,
@@ -34049,7 +34332,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1532,
@@ -34135,7 +34419,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1534,
@@ -34160,7 +34445,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1535,
@@ -34543,7 +34829,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1540,
@@ -34632,7 +34919,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1542,
@@ -34657,7 +34945,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1543,
@@ -34922,7 +35211,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1547,
@@ -34952,7 +35242,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1548,
@@ -34977,7 +35268,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1549,
@@ -35002,7 +35294,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1550,
@@ -35157,7 +35450,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1553,
@@ -35182,7 +35476,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1554,
@@ -35393,7 +35688,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1561,
@@ -35563,7 +35859,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1565,
@@ -35671,7 +35968,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1569,
@@ -35876,7 +36174,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1572,
@@ -35953,7 +36252,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1575,
@@ -36026,7 +36326,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1576,
@@ -36051,7 +36352,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1577,
@@ -36189,7 +36491,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1582,
@@ -36214,7 +36517,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1583,
@@ -36358,7 +36662,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1585,
@@ -36460,7 +36765,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1586,
@@ -36658,7 +36964,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1592,
@@ -36771,7 +37078,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1594,
@@ -36958,7 +37266,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1599,
@@ -36983,7 +37292,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1600,
@@ -37009,7 +37319,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1601,
@@ -37069,7 +37380,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1603,
@@ -37120,7 +37432,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1605,
@@ -37257,7 +37570,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1606,
@@ -37282,7 +37596,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1608,
@@ -37307,7 +37622,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1609,
@@ -37384,7 +37700,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1612,
@@ -37435,7 +37752,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1614,
@@ -37652,7 +37970,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1617,
@@ -37880,7 +38199,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1624,
@@ -37905,7 +38225,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1625,
@@ -37930,7 +38251,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1626,
@@ -38053,7 +38375,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1628,
@@ -38078,7 +38401,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1629,
@@ -38103,7 +38427,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1630,
@@ -38142,7 +38467,8 @@
     "source": [
       "tam",
       "researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1631,
@@ -38441,7 +38767,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1635,
@@ -38466,7 +38793,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1636,
@@ -38640,7 +38968,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1639,
@@ -38691,7 +39020,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1641,
@@ -38956,7 +39286,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1646,
@@ -38981,7 +39312,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1647,
@@ -39006,7 +39338,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1648,
@@ -39031,7 +39364,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1649,
@@ -39082,7 +39416,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1652,
@@ -39133,7 +39468,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1654,
@@ -39158,7 +39494,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1655,
@@ -39183,7 +39520,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1656,
@@ -39266,7 +39604,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1660,
@@ -39291,7 +39630,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1661,
@@ -39426,7 +39766,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1662,
@@ -39451,7 +39792,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1663,
@@ -39502,7 +39844,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1665,
@@ -39527,7 +39870,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1666,
@@ -39552,7 +39896,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1667,
@@ -39603,7 +39948,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1669,
@@ -39628,7 +39974,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1670,
@@ -39653,7 +40000,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1671,
@@ -39678,7 +40026,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1672,
@@ -39760,7 +40109,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1676,
@@ -39799,7 +40149,8 @@
     "source": [
       "tam",
       "researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1677,
@@ -39824,7 +40175,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1679,
@@ -39849,7 +40201,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1680,
@@ -39879,7 +40232,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1681,
@@ -39930,7 +40284,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1683,
@@ -39955,7 +40310,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1684,
@@ -39980,7 +40336,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1685,
@@ -40005,7 +40362,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1686,
@@ -40030,7 +40388,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1688,
@@ -40055,7 +40414,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1689,
@@ -40080,7 +40440,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1690,
@@ -40105,7 +40466,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1691,
@@ -40259,7 +40621,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1696,
@@ -40310,7 +40673,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1699,
@@ -40413,7 +40777,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1703,
@@ -40438,7 +40803,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1704,
@@ -40463,7 +40829,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1705,
@@ -40514,7 +40881,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1707,
@@ -40568,7 +40936,8 @@
     "website": "https://www.netfunding.com/",
     "source": [
       "tam"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1709,
@@ -40593,7 +40962,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1710,
@@ -40722,7 +41092,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1713,
@@ -40747,7 +41118,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1714,
@@ -40772,7 +41144,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1715,
@@ -40823,7 +41196,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1717,
@@ -40905,7 +41279,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1720,
@@ -40930,7 +41305,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1721,
@@ -40955,7 +41331,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1722,
@@ -41058,7 +41435,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1726,
@@ -41083,7 +41461,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1727,
@@ -41171,7 +41550,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1729,
@@ -41222,7 +41602,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1731,
@@ -41252,7 +41633,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1732,
@@ -41277,7 +41659,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1733,
@@ -41302,7 +41685,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1734,
@@ -41353,7 +41737,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1736,
@@ -41424,7 +41809,8 @@
     "source": [
       "tam",
       "researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1738,
@@ -41449,7 +41835,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1739,
@@ -41474,7 +41861,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1740,
@@ -41504,7 +41892,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1741,
@@ -41529,7 +41918,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1743,
@@ -41554,7 +41944,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1744,
@@ -41579,7 +41970,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1745,
@@ -41650,7 +42042,8 @@
     "source": [
       "tam",
       "researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1747,
@@ -41675,7 +42068,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1749,
@@ -41700,7 +42094,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1750,
@@ -41725,7 +42120,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1752,
@@ -41750,7 +42146,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1753,
@@ -41775,7 +42172,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1754,
@@ -41800,7 +42198,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1755,
@@ -41851,7 +42250,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1757,
@@ -42031,7 +42431,8 @@
     "source": [
       "tam",
       "researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1760,
@@ -42204,7 +42605,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1764,
@@ -42229,7 +42631,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1765,
@@ -42259,7 +42662,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1766,
@@ -42414,7 +42818,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1769,
@@ -42485,7 +42890,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1772,
@@ -42510,7 +42916,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1773,
@@ -42535,7 +42942,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1774,
@@ -42685,7 +43093,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1777,
@@ -42889,7 +43298,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1781,
@@ -43213,7 +43623,8 @@
       "tam",
       "researched",
       "deep-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1786,
@@ -43238,7 +43649,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1787,
@@ -43367,7 +43779,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1792,
@@ -43392,7 +43805,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1793,
@@ -43496,7 +43910,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1203,
@@ -43642,7 +44057,8 @@
     "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
     "source": [
       "eventiq"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1263,
@@ -43694,7 +44110,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1762,
@@ -43719,7 +44136,8 @@
     "source": [
       "tam",
       "tam-researched"
-    ]
+    ],
+    "category": "funder"
   },
   {
     "id": 1796,
