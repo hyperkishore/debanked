@@ -323,7 +323,7 @@ const INFERENCE_RULES: InferenceRule[] = [
       "clear report", "credit check", "fraud check", "background check",
       "risk assessment", "credit analysis", "lexisnexis", "bureau",
     ],
-    categories: ["funder", "broker"],
+    categories: ["funder", "iso"],
   },
   {
     productId: "application_pdf",
@@ -331,7 +331,7 @@ const INFERENCE_RULES: InferenceRule[] = [
       "application", "intake", "loan application", "pdf", "document processing",
       "iso", "broker submission", "submissions", "deal submission",
     ],
-    categories: ["funder", "broker"],
+    categories: ["funder", "iso"],
   },
   {
     productId: "identity_verification",

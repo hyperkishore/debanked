@@ -100,25 +100,27 @@ const typeBadgeStyles: Record<string, string> = {
 
 const categoryBadgeStyles: Record<CompanyCategory, { label: string; className: string }> = {
   funder: { label: "Funder", className: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30" },
-  broker: { label: "Broker", className: "bg-orange-500/10 text-orange-400 border-orange-500/30" },
+  iso: { label: "ISO", className: "bg-orange-500/10 text-orange-400 border-orange-500/30" },
+  marketplace: { label: "Marketplace", className: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30" },
   bank: { label: "Bank", className: "bg-blue-500/10 text-blue-400 border-blue-500/30" },
   technology: { label: "Technology", className: "bg-violet-500/10 text-violet-400 border-violet-500/30" },
-  marketplace: { label: "Marketplace", className: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30" },
-  service_provider: { label: "Service Provider", className: "bg-pink-500/10 text-pink-400 border-pink-500/30" },
+  competitor: { label: "Competitor", className: "bg-red-500/10 text-red-400 border-red-500/30" },
+  service_provider: { label: "Service", className: "bg-pink-500/10 text-pink-400 border-pink-500/30" },
 };
 
 const subVerticalBadgeStyles: Record<string, string> = {
-  MCA: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
-  "Equipment Finance": "bg-amber-500/10 text-amber-400 border-amber-500/30",
-  Factoring: "bg-teal-500/10 text-teal-400 border-teal-500/30",
-  "SBA Lending": "bg-indigo-500/10 text-indigo-400 border-indigo-500/30",
-  "Revenue Based": "bg-lime-500/10 text-lime-400 border-lime-500/30",
+  "Fndr-MCA": "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+  "Fndr-EqFin": "bg-amber-500/10 text-amber-400 border-amber-500/30",
+  "Fndr-Factr": "bg-teal-500/10 text-teal-400 border-teal-500/30",
+  "Fndr-SBA": "bg-indigo-500/10 text-indigo-400 border-indigo-500/30",
+  "Fndr-RBF": "bg-lime-500/10 text-lime-400 border-lime-500/30",
   Funder: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
-  Broker: "bg-orange-500/10 text-orange-400 border-orange-500/30",
+  ISO: "bg-orange-500/10 text-orange-400 border-orange-500/30",
+  Marketplace: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30",
   Bank: "bg-blue-500/10 text-blue-400 border-blue-500/30",
   Technology: "bg-violet-500/10 text-violet-400 border-violet-500/30",
-  Marketplace: "bg-cyan-500/10 text-cyan-400 border-cyan-500/30",
-  "Service Provider": "bg-pink-500/10 text-pink-400 border-pink-500/30",
+  Competitor: "bg-red-500/10 text-red-400 border-red-500/30",
+  Service: "bg-pink-500/10 text-pink-400 border-pink-500/30",
 };
 
 const VARIANT_LABELS: Record<MessageVariant["style"], string> = {

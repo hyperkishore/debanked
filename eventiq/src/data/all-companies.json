@@ -2863,7 +2863,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker",
+    "category": "iso",
     "location": "New York",
     "employees": 17,
     "website": "https://www.unitedcapitalsource.com/",
@@ -3119,7 +3119,7 @@
       "eventiq",
       "deep-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 24,
@@ -5080,7 +5080,7 @@
     "employees": 56,
     "website": "https://lexingtoncapitalholdings.online",
     "linkedinUrl": "https://www.linkedin.com/company/lexington-capital-holdings/",
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 48,
@@ -5277,7 +5277,7 @@
       "eventiq",
       "deep-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 51,
@@ -5475,7 +5475,7 @@
       "eventiq",
       "deep-researched"
     ],
-    "category": "technology"
+    "category": "competitor"
   },
   {
     "id": 54,
@@ -5546,7 +5546,7 @@
       "eventiq",
       "deep-researched"
     ],
-    "category": "technology"
+    "category": "competitor"
   },
   {
     "id": 55,
@@ -5617,7 +5617,7 @@
       "eventiq",
       "deep-researched"
     ],
-    "category": "technology"
+    "category": "competitor"
   },
   {
     "id": 56,
@@ -7716,7 +7716,7 @@
     "location": "",
     "employees": 14,
     "website": "https://PlatinumRapidFunding.com",
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 85,
@@ -8223,7 +8223,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 93,
@@ -8514,7 +8514,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 98,
@@ -10240,7 +10240,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 131,
@@ -10681,7 +10681,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 145,
@@ -11977,7 +11977,7 @@
     "employees": 45,
     "website": "https://www.torro.com/",
     "linkedinUrl": "https://www.linkedin.com/company/gotorro/",
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 181,
@@ -12293,7 +12293,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 191,
@@ -12672,7 +12672,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 204,
@@ -12857,7 +12857,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 210,
@@ -13078,7 +13078,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 217,
@@ -13264,7 +13264,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 223,
@@ -13356,7 +13356,7 @@
     "source": [
       "eventiq"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1000,
@@ -13520,7 +13520,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1007,
@@ -14989,7 +14989,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1027,
@@ -19938,7 +19938,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1087,
@@ -20306,7 +20306,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1091,
@@ -20836,7 +20836,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1097,
@@ -22206,7 +22206,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1116,
@@ -23658,7 +23658,7 @@
         }
       ]
     },
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1168,
@@ -23717,7 +23717,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1170,
@@ -23864,7 +23864,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1175,
@@ -24201,7 +24201,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1187,
@@ -24402,7 +24402,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1194,
@@ -24540,7 +24540,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "technology"
+    "category": "competitor"
   },
   {
     "id": 1199,
@@ -24934,7 +24934,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1216,
@@ -25130,7 +25130,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1224,
@@ -25562,7 +25562,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1238,
@@ -26671,7 +26671,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1282,
@@ -26829,7 +26829,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1288,
@@ -26882,7 +26882,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1290,
@@ -27039,7 +27039,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1297,
@@ -27413,7 +27413,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1313,
@@ -28646,7 +28646,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1362,
@@ -28777,7 +28777,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1368,
@@ -29692,7 +29692,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1402,
@@ -29719,7 +29719,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1403,
@@ -29967,7 +29967,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1412,
@@ -30632,7 +30632,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1439,
@@ -31498,7 +31498,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1472,
@@ -32197,7 +32197,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1490,
@@ -33602,7 +33602,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1520,
@@ -33696,7 +33696,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1524,
@@ -34834,7 +34834,7 @@
         }
       ]
     },
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1545,
@@ -35028,7 +35028,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1551,
@@ -35368,7 +35368,7 @@
       "tam",
       "researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1559,
@@ -35646,7 +35646,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1568,
@@ -36078,7 +36078,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1578,
@@ -36581,7 +36581,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1589,
@@ -37761,7 +37761,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1621,
@@ -39704,7 +39704,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1674,
@@ -40234,7 +40234,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "marketplace"
+    "category": "iso"
   },
   {
     "id": 1695,
@@ -40285,7 +40285,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1697,
@@ -42120,7 +42120,7 @@
       "researched",
       "deep-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1761,
@@ -43264,7 +43264,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1788,
@@ -43316,7 +43316,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1790,
@@ -43342,7 +43342,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1791,
@@ -43418,7 +43418,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 1794,
@@ -43523,7 +43523,7 @@
       "tam",
       "tam-researched"
     ],
-    "category": "broker"
+    "category": "iso"
   },
   {
     "id": 70,
@@ -43784,7 +43784,7 @@
       "deep-researched",
       "verified-2026-02"
     ],
-    "category": "marketplace",
+    "category": "iso",
     "leaders": [
       {
         "n": "Fitz Blaku",

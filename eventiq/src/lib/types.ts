@@ -27,7 +27,7 @@ export interface Leader {
   lastReviewedAt?: string;
 }
 
-export type CompanyCategory = "funder" | "broker" | "bank" | "technology" | "marketplace" | "service_provider";
+export type CompanyCategory = "funder" | "iso" | "marketplace" | "bank" | "technology" | "competitor" | "service_provider";
 
 export type SubVertical =
   | "mca"
@@ -335,22 +335,35 @@ const SUB_VERTICAL_RULES: { keywords: string[]; label: string }[] = [
 
 const CATEGORY_LABELS: Record<CompanyCategory, string> = {
   funder: "Funder",
-  broker: "Broker",
+  iso: "ISO",
+  marketplace: "Marketplace",
   bank: "Bank",
   technology: "Technology",
-  marketplace: "Marketplace",
-  service_provider: "Service Provider",
+  competitor: "Competitor",
+  service_provider: "Service",
+};
+
+const FUNDER_SUB_LABELS: Record<string, string> = {
+  MCA: "Fndr-MCA",
+  "Equipment Finance": "Fndr-EqFin",
+  Factoring: "Fndr-Factr",
+  "SBA Lending": "Fndr-SBA",
+  "Revenue Based": "Fndr-RBF",
 };
 
 export function inferSubVertical(company: Company): string {
+  // For non-funder categories, return the category label directly
+  if (company.category && company.category !== "funder") {
+    return CATEGORY_LABELS[company.category] || "Funder";
+  }
+
+  // For funders, try to infer a specific sub-vertical
   const desc = (company.desc || "").toLowerCase();
   for (const rule of SUB_VERTICAL_RULES) {
     if (rule.keywords.some((kw) => desc.includes(kw))) {
-      return rule.label;
+      return FUNDER_SUB_LABELS[rule.label] || rule.label;
     }
   }
-  if (company.category) {
-    return CATEGORY_LABELS[company.category] || "Funder";
-  }
+
   return "Funder";
 }
