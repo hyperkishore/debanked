@@ -7312,7 +7312,7 @@
         "t": "Chairman, Block"
       }
     ],
-    "desc": "Block's (formerly Square) embedded lending product offering loans from $500-$100K to Square sellers. Factor rates of 1.1-1.16, among the lowest in MCA. Repayment via daily Square sales deductions.",
+    "desc": "Block's (formerly Square) embedded lending product — the largest online business lender, originating $5.7B in business loans in 2024. Offers loans from $500-$100K to Square sellers with factor rates of 1.1-1.16 (among the lowest in MCA). Repayment via daily Square sales deductions with aggregate loss rates below 3%. Funds from own balance sheet with high capital efficiency. Average loan ~$10K.",
     "notes": "",
     "news": [
       {
@@ -7385,7 +7385,7 @@
         "t": "CEO, Shopify"
       }
     ],
-    "desc": "Shopify's embedded MCA and loan product offering $200-$2M to eligible merchants. Invite-only, based on store performance. Available in US, Canada, UK, and Australia. No credit check required.",
+    "desc": "Shopify's embedded MCA and loan product — balance sheet lender via WebBank, originating ~$3B in 2024 with ~$1.6B in receivables on its own balance sheet as of mid-2025. Offers $200-$2M to eligible merchants. Invite-only, based on store performance. Available in US, Canada, UK, and Australia. No credit check required. Uses WebBank as originating bank (common regulatory structure) then purchases loans onto its own balance sheet.",
     "notes": "",
     "news": [
       {
@@ -7468,7 +7468,7 @@
         "t": "VP, Amazon Seller Services"
       }
     ],
-    "desc": "Amazon's merchant lending program partnered with Parafin, offering MCAs from $500 to $10M. Invite-only for Amazon sellers with 3+ months history. Fixed capital fee, no interest or late fees.",
+    "desc": "Amazon's merchant lending program — stopped direct lending in March 2024 and now operates as a marketplace/referral platform connecting sellers to third-party lenders: Parafin (MCAs), SellersFi (term loans up to $10M), Lendistry, and Intuit QuickBooks Capital. Amazon no longer funds from its own balance sheet. Invite-only for Amazon sellers with 3+ months history.",
     "notes": "",
     "news": [
       {
@@ -10531,7 +10531,7 @@
         "t": "CEO"
       }
     ],
-    "desc": "Global fintech empowering e-commerce merchants with working capital. Partnered with Amazon Lending to offer credit lines up to $10M. Raised $166M. Inc. 5000 honoree.",
+    "desc": "Global fintech providing credit lines up to $10M and term loans to e-commerce sellers, primarily through Amazon Lending partnership (since Jan 2024). Capital sourced from Citi (senior) and Fasanara Capital (mezzanine). Targets larger sellers with $10M+ revenue. Raised $166M. Inc. 5000 honoree. Originates and provides capital directly to businesses.",
     "notes": "",
     "news": [],
     "ice": "The Amazon Lending partnership is a massive distribution channel -- that is a game-changer for SellersFi's growth.",
@@ -11559,7 +11559,7 @@
         "t": "CEO"
       }
     ],
-    "desc": "Global embedded finance platform for small businesses, founded 2007. 20+ strategic partners, reach to 1M+ SMEs. Provided £1B+ in funding across 60K+ transactions in UK, Europe, and US.",
+    "desc": "Global embedded finance platform providing revenue-based financing to SMBs through partners like Barclays, Elavon (US Bank subsidiary), and Nuvei. Founded 2007. Has funded 50,000+ businesses with $3B+ total. Funds advances using institutional debt facilities from HSBC Innovation Banking and BCI Capital. Product is revenue-based financing (purchase of future receivables, not a loan). 20+ strategic partners, reach to 1M+ SMEs.",
     "notes": "",
     "news": [],
     "ice": "Rob, Liberis reaching 1M+ small businesses through 20+ embedded partnerships is powerful distribution. How is AI factoring into your underwriting as you scale across geographies?",
@@ -12233,7 +12233,7 @@
         "t": "CEO, PayPal"
       }
     ],
-    "desc": "PayPal's small business lending arm offering $5K-$500K loans with 17-52 week terms. Originally Swift Capital, acquired by PayPal in 2017. PayPal has surpassed $30B in global small business lending.",
+    "desc": "PayPal's small business lending arm offering two products: Working Capital (MCA repaid as percentage of PayPal sales) and Business Loans ($5K-$500K, 17-52 week terms, formerly LoanBuilder/Swift Financial acquired 2017 for $183M). Both originated by WebBank, with PayPal purchasing and holding receivables on its balance sheet. PayPal has surpassed $30B in global small business lending.",
     "notes": "",
     "news": [],
     "ice": "PayPal's $30B in global small business lending through LoanBuilder and Working Capital shows massive scale. How is the team leveraging PayPal's transaction data for AI-driven underwriting?",
@@ -17056,7 +17056,7 @@
         "t": "CEO, Driven"
       }
     ],
-    "desc": "Canadian financial services holding company led by Som Seif, spanning asset management, wealth management, and small business financing through subsidiaries including Driven Financial and Purpose Investments.",
+    "desc": "Canadian financial services holding company led by Som Seif. Key subsidiary Driven (formerly Thinking Capital, acquired 2018) is Canada's leading fintech small business lender, providing merchant cash advances and business loans ($5K-$300K) to SMBs. Has funded 17,000+ Canadian businesses since 2006. Parent company also includes Purpose Investments (asset management). Allianz took 10% stake for $53.5M in 2021.",
     "notes": "",
     "news": [
       {
@@ -22147,7 +22147,7 @@
         "t": "President & CEO"
       }
     ],
-    "desc": "NYC-based embedded finance platform providing BNPL, split-pay, and subscription financing programs for brands, merchants, and banks across 15+ countries. Raised $405M with partnerships including Microsoft and Apple.",
+    "desc": "NYC-based embedded lending infrastructure company (since 2013) providing white-label financing programs for brands, merchants, and banks. Supports BNPL, split-pay, and subscription financing across 15+ countries. Integrated with MasterCard. Does not fund small businesses directly — provides the technology/infrastructure that enables other parties to offer financing. Raised $405M.",
     "notes": "",
     "news": [
       {
@@ -22321,7 +22321,7 @@
         "t": "Co-Founder & Board Member"
       }
     ],
-    "desc": "NYC-based fintech providing embedded lending platform for community banks and small businesses. Founded in 2022 as Enigma spinoff with $53M from NEA, Third Point, Capital One, and Customers Bank.",
+    "desc": "NYC-based fintech providing embedded lending infrastructure for community banks and software platforms. Partners integrate Prime's lending workflows via API — Prime manages funding, servicing, and compliance. Revenue from per-transaction fees. Founded in 2022 as Enigma spinoff with $53M from NEA, Third Point, Capital One, and Customers Bank. Technology enabler, not a direct funder.",
     "notes": "",
     "news": [
       {
@@ -22666,7 +22666,7 @@
         "t": "Co-Founder"
       }
     ],
-    "desc": "Glendale, CA-based Cash Flow OS with embedded finance for SMBs. Founded in 2022 by Albert Siems and Anthony Samkian. Makes B2B trade easier by providing buyers flexibility on payment timing and sellers on receiving payment.",
+    "desc": "Glendale, CA-based 'Cash Flow OS' offering B2B trade financing — buyers can convert purchases to buy-now-pay-later and extend payment terms with suppliers. Uses ML-driven decision engine. Founded in 2022 by Albert Siems and Anthony Samkian. Provides capital directly to businesses for B2B trade (advance cash, pay suppliers, extend terms).",
     "notes": "",
     "news": [],
     "ice": "",
@@ -32152,7 +32152,7 @@
         "t": "Chief Commercial Officer"
       }
     ],
-    "desc": "Liberis is a global embedded finance platform founded in 2007, providing over $1.5B in funding across 70,000+ transactions to small businesses via 30+ strategic partners. Offers Business Cash Advance and Flexible Financing products through a fully automated API-driven platform in 13+ markets.",
+    "desc": "US arm of Liberis, the global embedded finance platform founded in 2007. Provides revenue-based financing (purchase of future receivables) to small businesses via 30+ strategic partners including Barclays and Elavon. Over $1.5B in funding across 70,000+ transactions. Funded by institutional debt facilities from HSBC Innovation Banking and BCI Capital. Offers Business Cash Advance and Daily Card Receipts products.",
     "notes": "",
     "news": [],
     "ice": "",
@@ -40607,7 +40607,7 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Embedded merchant cash advance program built into Lightspeed POS system, allowing eligible merchants to request cash advances directly from their back office. Expanded internationally to UK, Australia, New Zealand, and Quebec with automatic monthly eligibility reviews.",
+    "desc": "Embedded merchant cash advance program built into Lightspeed POS system. Funds MCAs from its own balance sheet — $105.6M outstanding as of Dec 2025, originated $257M in MCAs in last 9 months of fiscal 2025. Growing rapidly as Lightspeed's largest use of cash. Eligible merchants request advances directly from their back office. Expanded internationally to UK, Australia, and EU.",
     "notes": "",
     "news": [],
     "ice": "",
@@ -41317,7 +41317,7 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "AI-powered financing platform for small businesses founded in 2018, based in Greenwood Village, CO. Offers revolving access to $10K-$1M in funding with flexible repayment options (fixed weekly or revenue percentage). Also provides embedded finance/credit-as-a-service to banks and B2B companies.",
+    "desc": "Australian-origin AI-powered financing platform for small businesses (founded 2018, US launch 2021, based in Greenwood Village, CO). Offers revolving credit lines from $10K-$250K with flexible repayment (fixed weekly or percentage of revenue). Also offers Credit-as-a-Service (CaaS) embedded finance for banks and B2B companies. Direct funder to SMBs.",
     "notes": "",
     "news": [],
     "ice": "",
@@ -44043,7 +44043,7 @@
         "t": "Founder & President"
       }
     ],
-    "desc": "New Orleans-based impact investment firm founded in 1992 that has invested over $3.8 billion in 800+ companies. Focuses on growth equity and lending in underserved communities while generating competitive returns.",
+    "desc": "New Orleans-based impact investment firm founded in 1992. Has deployed $3.8B+ across equity, debt, and tax credit programs in 800+ companies. Directly provides asset-based loans, cash-flow loans, and mezzanine/subordinated loans to small businesses. Major participant in the New Markets Tax Credit (NMTC) program with ~$860M in allocations across 13 of 17 rounds. Helped support 65,000+ jobs in underserved communities.",
     "notes": "",
     "news": [],
     "ice": "$3.8 billion invested across 800 companies since 1992 while driving impact in underserved communities is a remarkable dual mission.",
