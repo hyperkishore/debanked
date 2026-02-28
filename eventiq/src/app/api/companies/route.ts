@@ -40,6 +40,7 @@ export async function GET(request: NextRequest) {
     tp: row.talking_points || [],
     ask: row.ask || "",
     location: row.location,
+    full_address: row.full_address || undefined,
     employees: row.employees,
     website: row.website,
     linkedinUrl: row.linkedin_url,

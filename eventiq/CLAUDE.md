@@ -96,6 +96,7 @@ interface Company {
   tp: string[];              // 3 talking points tied to HyperVerge value prop
   ask: string;               // Personalized CTA
   location?: string;
+  full_address?: string;     // Full street address for delivery/visits (e.g. "90 Broad St, Suite 300, New York, NY 10004")
   employees?: number;
   website?: string;
   linkedinUrl?: string;
@@ -112,6 +113,10 @@ interface Leader {
   bg: string;   // Background paragraph (career, education, achievements)
   hooks?: string[];  // 2-4 short conversation starters (2-5 words each)
   li?: string;       // LinkedIn profile URL
+  email?: string;           // Work email (from Apollo or research)
+  phone?: string;           // Direct phone
+  mailing_address?: string; // For gift/mail delivery (e.g. "90 Broad St, Suite 300, New York, NY 10004")
+  delivery_notes?: string;  // e.g. "Remote worker", "Has EA: Jane Smith", "Use LinkedIn instead"
 }
 ```
 
@@ -266,7 +271,18 @@ Every company entry must have ALL of the following populated via real web resear
 
 10. **`category`** — Must be set based on business model research (see Company Categories above)
 
+11. **`full_address`** — Full street address for in-person visits and gift/mail delivery:
+   - Source from: company website contact/about page, Google Maps, Google Places, BBB listing, state business registration
+   - Format: "123 Main St, Suite 400, City, ST 12345"
+   - Include suite/floor number when available (critical for delivery)
+   - If company has multiple offices, use headquarters
+   - For companies with no identifiable office (1-person shops, virtual offices), note "Virtual/remote" in the field
+
 ### Required Research Per Leader (hooks quality standard)
+**Delivery intelligence** — For P0/P1 leaders, also capture:
+- **`mailing_address`**: If different from company HQ (e.g., leader is remote, or works from a branch office)
+- **`delivery_notes`**: Anything that helps ensure a gift reaches them: "Has EA: Jane Smith", "Works from Miami office not HQ", "Remote — use company address ATTN leader name", "Small office — leader will receive directly"
+- **`email`**: Work email (found via company website, press releases, conference speaker bios)
 Hooks must come from ACTUAL web research, not rephrasing existing text:
 
 **Research sources for each person:**
@@ -317,12 +333,15 @@ Hooks must come from ACTUAL web research, not rephrasing existing text:
    - Look for how they make money (commissions vs. platform fees vs. interest)
 4. For each leader: web search name + company → LinkedIn, bios, news mentions
    - For outreach targets: also search podcasts, interviews, board seats, articles
-5. Compile desc (with business model truth), contacts, leaders, news
-6. Write notes: selling angles, board members, competitors, key insights
-7. Craft icebreakers (4 variants) tied to recent findings
-8. Write 3 talking points connecting their challenges to HyperVerge
-9. Write personalized ask naming the key decision-maker
-10. Output as JSON matching the Company schema with category set
+5. Capture FULL STREET ADDRESS from company website, Google Maps, or BBB
+   - Include suite/floor number — critical for delivery
+   - Format: "123 Main St, Suite 400, City, ST 12345"
+6. Compile desc (with business model truth), contacts, leaders, news
+7. Write notes: selling angles, board members, competitors, key insights
+8. Craft icebreakers (4 variants) tied to recent findings
+9. Write 3 talking points connecting their challenges to HyperVerge
+10. Write personalized ask naming the key decision-maker
+11. Output as JSON matching the Company schema with category and full_address set
 ```
 
 ---

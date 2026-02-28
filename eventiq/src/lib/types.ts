@@ -27,6 +27,9 @@ export interface Leader {
   confidence?: number;
   functionalRole?: string;
   lastReviewedAt?: string;
+  // Delivery / outreach fields
+  mailing_address?: string;        // e.g. "90 Broad St, Suite 300, New York, NY 10004"
+  delivery_notes?: string;         // e.g. "Remote worker — use LinkedIn", "Has EA: Jane Smith"
   // PhantomBuster-enriched fields
   toneOfVoice?: string;           // e.g. "Professional and Insightful"
   linkedinConnections?: number;    // e.g. 267
@@ -169,6 +172,7 @@ export interface Company {
   leaders?: Leader[];
   ask: string;
   location?: string;
+  full_address?: string;           // Full street address for delivery/visits
   employees?: number;
   website?: string;
   linkedinUrl?: string;

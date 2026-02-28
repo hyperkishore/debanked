@@ -60,10 +60,12 @@ function toRow(c) {
     talking_points: c.tp || [],
     ask: c.ask || "",
     location: c.location || null,
+    full_address: c.full_address || null,
     employees: c.employees || null,
     website: c.website || null,
     linkedin_url: c.linkedinUrl || null,
     source: c.source || [],
+    category: c.category || null,
   };
 }
 
