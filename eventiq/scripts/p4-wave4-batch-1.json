@@ -1,0 +1,253 @@
+[
+  {
+    "id": 218,
+    "name": "FundersApp",
+    "leaders": [
+      {
+        "n": "Mark Allayev",
+        "t": "CEO & Founder",
+        "bg": "Serial entrepreneur who built FundersApp (originally 24 Capital) into a $500M origination platform. Holds a Master's degree from Moscow State Institute of International Relations. Weathered a major business crisis in 2021 that required intervention from US Congress members Debbie Wasserman Schultz and Greg Meeks, ultimately emerging stronger.",
+        "hooks": [
+          "Grew FundersApp to $500M in total originations by May 2023",
+          "Pivoted from 24 Capital to build FundersApp as a white-label MCA servicing platform",
+          "Also runs Symplifi Capital as a sister company using FundersApp backend"
+        ],
+        "li": "https://www.linkedin.com/in/mark-allayev-921b2010b/"
+      },
+      {
+        "n": "Paul Vega",
+        "t": "Senior Operations Manager",
+        "bg": "Ambitious operations leader who joined 24 Capital in January 2020 with six years of industry experience. Educated at NYU Stern School of Business. Completely revamped the underwriting process at FundersApp and played a critical role in keeping operations running during the company's 2021 crisis.",
+        "hooks": [
+          "Overhauled underwriting process at FundersApp after joining in 2020",
+          "NYU Stern School of Business educated operations professional",
+          "Maintained business operations during major company crisis in 2021"
+        ],
+        "li": "https://www.linkedin.com/in/paul-vega-8260741a/"
+      }
+    ],
+    "desc": "FundersApp is a fintech servicing platform for ISOs and brokers providing MCA white-label funding and syndication management. Founded by serial entrepreneur Mark Allayev, the platform has achieved over $500 million in originations. FundersApp handles underwriting, accounting, collections, and provides white-label services, enabling funding partners to monitor portfolios daily. The company released an updated app in April 2023 with AI-powered features including automatic credit checks and integrations with major fintech players. Symplifi Capital operates as a sister company using FundersApp infrastructure.",
+    "news": [
+      {
+        "h": "Mark Allayev and Funders App Achieve $500 Million in Originations",
+        "s": "PR Newswire, May 2023",
+        "d": "FundersApp announced reaching $500 million in total originations, attributing success to its focus on back-end services for smaller funders and its commitment to supporting entrepreneurs."
+      },
+      {
+        "h": "Something's Happened — How a Funding Platform Weathered a Shocking Crisis and Is Flourishing",
+        "s": "deBanked, June 2024",
+        "d": "In-depth profile covering FundersApp's journey through a major crisis in 2021 and subsequent recovery, detailing how the platform and its team persevered and continued to grow."
+      },
+      {
+        "h": "FundersApp Launches Updated Platform with AI Features",
+        "s": "Company Announcement, April 2023",
+        "d": "Released new app version featuring advanced AI, automatic credit checks, background checks, and integrations with major fintech platforms."
+      }
+    ],
+    "location": "Aventura, FL",
+    "full_address": "Aventura, FL (exact street address not publicly listed on BBB or website)",
+    "website": "https://fundersapp.com",
+    "employees": 25,
+    "category": "funder"
+  },
+  {
+    "id": 219,
+    "name": "Diamond Capital Finance",
+    "leaders": [
+      {
+        "n": "Krystal Diaz",
+        "t": "President & CEO, Founder",
+        "bg": "Founder of Diamond Capital Finance with a diverse background in banking, business development, and executive management. Holds a Bachelor of Finance from Kaplan University. Also licensed as a realtor in FL, GA, and AL, and serves as an SBA loan specialist. Focused on empowering small businesses through informed financing decisions.",
+        "hooks": [
+          "Founded Diamond Capital Finance in 2016 in Miami",
+          "Dual role as business financing CEO and licensed realtor across three states",
+          "SBA loan specialist with banking and business development background"
+        ],
+        "li": "https://www.linkedin.com/in/krystal-diaz-45bb62b1/"
+      },
+      {
+        "n": "Jennifer K. Diaz",
+        "t": "Managing Member",
+        "bg": "Managing member of Diamond Capital Finance LLC, involved in the operational and legal management of the company since its incorporation in 2016. Works alongside Krystal Diaz in leading the firm's small business financing operations in Miami.",
+        "hooks": [
+          "Managing Member of Diamond Capital Finance LLC since incorporation",
+          "Co-leads operations at a Miami-based small business financing firm"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Diamond Capital Finance is a Miami-based small business financing company incorporated in March 2016. The firm provides flexible financing options including business loans, lines of credit, SBA loans, accounts receivable financing, equipment financing, merchant cash advances, hard money loans, and real estate investment loans (fix-and-flip, rental investment). The company serves clients across hundreds of industries including restaurants, real estate agencies, hotels, sports facilities, and farms, leveraging first-hand small business experience to provide personalized solutions.",
+    "news": [
+      {
+        "h": "Diamond Capital Finance Recognized as Reliable Name in Small Business Financing",
+        "s": "Industry Recognition, 2024",
+        "d": "The company has been recognized by customers and the industry as one of the most reliable and respected names in small business financing, serving businesses throughout multiple stages of growth."
+      }
+    ],
+    "location": "Miami, FL",
+    "full_address": "1830 NW 7th St, Suite 200, Miami, FL 33125",
+    "website": "https://diamondcapitalfinance.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 220,
+    "name": "Liberty Advances",
+    "leaders": [],
+    "desc": "Liberty Advances (libertyadvances.com) is a merchant cash advance provider specializing in same-day funding for small businesses across all 50 states. The company offers quick and reliable MCA financial solutions to help businesses access working capital. Limited public information is available about the company's leadership, founding date, or size. The company operates in the competitive MCA direct funding space.",
+    "news": [],
+    "location": "Unknown",
+    "full_address": "Not publicly available",
+    "website": "https://www.libertyadvances.com",
+    "employees": 0,
+    "category": "funder"
+  },
+  {
+    "id": 221,
+    "name": "Majesty Strong Business Funding",
+    "leaders": [],
+    "desc": "Majesty Strong Business Funding (majestyfunding.com) specializes in merchant cash advance consolidation and MCA relief services. The company employs seasoned professionals with extensive finance industry experience, focused on delivering business solutions by buying out existing MCAs and consolidating them into a single advance with better rates and terms. They emphasize transparency and use true MCA consolidation through term loans rather than encouraging default. The company has helped hundreds of business owners manage MCA debt and operates across Philadelphia, New York, Miami, and Phoenix markets. Note: The Majesty Fund (majestyfund.com), founded in 1996 by Tony Cimmarrusti and Bryce Gray, appears to be a separate hedge fund entity.",
+    "news": [],
+    "location": "Multi-city (Philadelphia, New York, Miami, Phoenix)",
+    "full_address": "Not publicly available",
+    "website": "https://majestyfunding.com",
+    "employees": 0,
+    "category": "funder"
+  },
+  {
+    "id": 222,
+    "name": "Neptune Capital Resources",
+    "leaders": [],
+    "desc": "Neptune Capital Resources is a national commercial and business loan brokerage headquartered in Hamilton Township, New Jersey. For over five years, the company has served businesses in the NJ tri-state area (NJ, NY, PA), connecting them with optimal lending solutions. Neptune Capital offers a wide range of financing products through its lender network including SBA loans, commercial real estate financing, equipment and vehicle financing, machinery financing, and working capital loans. The company operates as a broker, consulting with businesses to understand their needs and leveraging lender relationships to match clients with the best options.",
+    "news": [],
+    "location": "Hamilton Township, NJ",
+    "full_address": "8 Quakerbridge Plaza, Suite H, Hamilton Township, NJ 08619",
+    "website": "https://neptunecr.com",
+    "employees": 5,
+    "category": "iso"
+  },
+  {
+    "id": 223,
+    "name": "Crown Funding Source",
+    "leaders": [
+      {
+        "n": "Anthony D'Angelico",
+        "t": "Director of Funding",
+        "bg": "Director of Funding at Crown Funding Source, based in Brooklyn, New York. Oversees the company's funding operations and deal structuring for small business clients seeking revenue-based financing and merchant cash advances.",
+        "hooks": [
+          "Leads funding operations at Crown Funding Source from Brooklyn",
+          "Manages deal flow for MCA and revenue-based finance products"
+        ],
+        "li": "https://www.linkedin.com/in/anthony-d-angelico-416707273/"
+      },
+      {
+        "n": "Gavi Liebowitz",
+        "t": "Senior Funding Specialist & Director of Sales - NY Division",
+        "bg": "Senior Funding Specialist and Director of Sales for the New York division at Crown Funding Source, based in Valley Stream, New York. Has been with the company since 2020, leading sales efforts and client relationships in the New York market.",
+        "hooks": [
+          "Leads NY division sales at Crown Funding Source since 2020",
+          "Dual role as Senior Funding Specialist and Director of Sales"
+        ],
+        "li": "https://www.linkedin.com/in/gavi-liebowitz-3012ab12b/"
+      }
+    ],
+    "desc": "Crown Funding Source is a lending firm founded in 2018 and headquartered in Hollywood, Florida. The company provides revenue-based financing, merchant cash advances, invoice factoring, asset-based loans, business loans, and business lines of credit to small businesses. With 16 employees, Crown Funding Source focuses on building client relationships and providing the best rates for small business finance with fast and easy approval processes. The company maintains operations in both Florida and New York.",
+    "news": [
+      {
+        "h": "Crown Funding Source Maintains Strong BBB Profile",
+        "s": "BBB, 2024",
+        "d": "Crown Funding Source LLC maintains active BBB business profiles in Hollywood, FL, with positive customer reviews highlighting the company's customer service and trustworthiness as a non-bank lender."
+      }
+    ],
+    "location": "Hollywood, FL",
+    "full_address": "4000 Hollywood Blvd, Suite 520N, Hollywood, FL 33021",
+    "website": "https://crownfundingsource.com",
+    "employees": 16,
+    "category": "funder"
+  },
+  {
+    "id": 224,
+    "name": "Titan Funding Partners",
+    "leaders": [],
+    "desc": "Titan Funding Partners was founded in 2021 with a mission to support small to medium-sized businesses with tailored financial solutions. Headquartered in New York City, the company offers lines of credit, term funding, and merchant cash advances. The company emphasizes fast approval (within 24 hours), a simple 5-minute application process, no credit impact for applying, and customized solutions. Titan Funding Partners has secured investments and aided thousands of businesses in its first two years. Customer reviews on Trustpilot (4.2 rating) mention team members Derek and Jack as responsive advisors. MCAs start at 9.99% rate for the full term.",
+    "news": [
+      {
+        "h": "Titan Funding Partners Receives Mixed Reviews on Trustpilot",
+        "s": "Trustpilot, 2024-2025",
+        "d": "The company maintains a 4.2 Trustpilot rating with mostly positive reviews praising fast funding and personalized service, though some negative reviews cite high interest rates and aggressive collection tactics."
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "1280 Lexington Ave, Frnt 2, New York, NY 10028",
+    "website": "https://www.titanfundingpartners.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 225,
+    "name": "Heritage Commercial Funding",
+    "leaders": [
+      {
+        "n": "Kristy Melton",
+        "t": "Broker & Principal",
+        "bg": "Graduated Magna Cum Laude from Loyola Marymount University with a degree in Communication Studies and minor in Business Administration. Over 25 years of experience working with small businesses. Began in commercial finance in 2000 and has operated as an independent commercial finance broker since 2004, representing a network of nearly 50 alternative lenders and banks.",
+        "hooks": [
+          "25+ years of small business finance experience since 2000",
+          "Independent broker representing nearly 50 alternative lenders",
+          "Loyola Marymount University graduate, Magna Cum Laude",
+          "Licensed Finance Broker with CA Department of Business Oversight"
+        ],
+        "li": "https://www.linkedin.com/in/kristymelton/"
+      }
+    ],
+    "desc": "Heritage Commercial Funding Corp. is an independent commercial finance brokerage based in Thousand Oaks, California with over 18 years in business. The company is not a direct lender — it holds a Finance Broker's license with the California Department of Business Oversight and represents nearly 50 lenders in the alternative lending market. Services include A/R Financing (Factoring), Purchase Order Financing, Asset Based Lending, SBA lending, Revenue Based Lending, Cash Advances, Term Loans, Unsecured Business Finance, and Equipment Financing. The company handles transactions typically between $100,000 and $3 million, with loans available from $10,000 to $10 million. Revenue is approximately $4 million with 4 employees.",
+    "news": [],
+    "location": "Thousand Oaks, CA",
+    "full_address": "365 E. Ave. De Los Arboles, Suite 131, Thousand Oaks, CA 91360",
+    "website": "https://www.heritagecommercialfunding.com",
+    "employees": 4,
+    "category": "iso"
+  },
+  {
+    "id": 1000,
+    "name": "10-4 Financing, LLC",
+    "leaders": [
+      {
+        "n": "Sergey Grushetskiy",
+        "t": "Founder & Managing Partner",
+        "bg": "Founded 10-4 Financing in October 2011 with the mission of becoming the best financing source for truckers and dealers in America. Built special relationships with competitive lenders, hundreds of quality dealers, and thousands of truckers. Expanded the company from semi truck financing into construction equipment, transportation equipment, and unsecured business credit lines.",
+        "hooks": [
+          "Founded 10-4 Financing in 2011 focused on trucker financing",
+          "Built lender network of 20+ financing sources under one roof",
+          "Expanded from truck financing into construction equipment and business credit lines"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "10-4 Financing, LLC is a commercial truck and equipment financing company founded in October 2011 in Tulsa, Oklahoma. The company specializes in semi truck financing and loans for drivers, owner-operators, and fleets — including those with bad credit. 10-4 offers programs from over 20 different lenders under one roof, covering semi truck financing, construction equipment financing, transportation equipment financing, trailer financing, and factoring. The company also provides unsecured business lines of credit from $5,000 to $500,000 for working capital. A key differentiator is their soft credit pull pre-qualification process that does not impact credit scores.",
+    "news": [
+      {
+        "h": "10-4 Financing Featured in Maxim Capital Client Portfolio",
+        "s": "Maxim Capital, 2024",
+        "d": "Sergey Grushetskiy and 10-4 Financing LLC were featured in Maxim Capital's client portfolio, highlighting the company's position in the commercial truck financing industry."
+      }
+    ],
+    "location": "Tulsa, OK",
+    "full_address": "8301 E. 51st St, Suite 225, Tulsa, OK 74145",
+    "website": "https://10-4financing.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1001,
+    "name": "1st Alliance Group LLC",
+    "leaders": [],
+    "desc": "1st Alliance Group LLC is a small business funding company headquartered in Aventura, Florida, specializing in swift funding solutions for small to mid-sized businesses. Founded on a commitment to empower businesses, the company offers Merchant Cash Advances, Bank Only ACH Funding, Bad Credit Business Funding, and Working Capital. The company is known for fast turnaround — issuing approvals within 3 hours and providing same-day funding. Minimum eligibility requires US-based businesses with at least 9 months in operation and $150,000+ in annual revenue. The application process requires only 3-6 months of bank statements and a credit application.",
+    "news": [],
+    "location": "Aventura, FL",
+    "full_address": "2875 NE 191st Street, Suite 905, Aventura, FL 33180",
+    "website": "https://1stalliancegrp.com",
+    "employees": 10,
+    "category": "funder"
+  }
+]

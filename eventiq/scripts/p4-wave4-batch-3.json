@@ -1,0 +1,357 @@
+[
+  {
+    "id": 1136,
+    "name": "BHMAAA Inc.",
+    "leaders": [
+      {
+        "n": "Mark Alfaks",
+        "t": "CEO",
+        "bg": "CEO and founder of BHMAAA Inc., a Plainview, NY-based financial services company established in February 2020. Under his leadership, the company has grown to fund over 15,000 small businesses with products including revenue-based financing, business lines of credit, and working capital solutions up to $500,000. The company maintains an A+ BBB rating.",
+        "hooks": [
+          "Built BHMAAA from startup in 2020 to funding 15,000+ businesses in 5 years",
+          "Secured A+ BBB rating for alternative lending operation on Long Island",
+          "Specializes in revenue-based financing with 24-hour fund disbursement"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Isaac Alfaks",
+        "t": "Operations",
+        "bg": "Associated with BH I and A Inc., which appears connected to the BHMAAA business lending platform. Based in New York with experience across multiple business ventures including real estate and technology.",
+        "hooks": [
+          "Part of the Alfaks family business operation behind BHMAAA",
+          "Multi-industry experience spanning real estate, fashion, and technology"
+        ],
+        "li": "https://www.linkedin.com/in/isaac-alfaks-405932159/"
+      }
+    ],
+    "desc": "BHMAAA Inc. is a Plainview, NY-based financial services company founded in 2020 that helps small businesses secure funding. The company offers revenue-based financing (merchant cash advances), business lines of credit, and working capital solutions up to $500,000 with funds disbursed in as little as 24 hours. BHMAAA has funded over 15,000 businesses and maintains an A+ BBB rating. The company positions itself as a licensed and regulated alternative lender focused on speed and flexibility for small and medium enterprises that may not qualify for traditional bank loans.",
+    "news": [
+      {
+        "h": "BHMAAA Surpasses 15,000 Businesses Funded Milestone",
+        "s": "bhmaaa.com, 2024",
+        "d": "The company announced it has funded over 15,000 businesses since its founding in 2020, demonstrating rapid growth in the alternative lending space."
+      },
+      {
+        "h": "BHMAAA Maintains A+ BBB Rating",
+        "s": "BBB, 2025",
+        "d": "The Better Business Bureau continues to give BHMAAA Inc. an A+ rating, with the company listed as a financial consultant in the metropolitan New York area."
+      }
+    ],
+    "location": "Plainview, NY",
+    "full_address": "329 S Oyster Bay Rd, Plainview, NY 11803",
+    "website": "https://www.bhmaaa.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1152,
+    "name": "Canna Business Resources",
+    "leaders": [],
+    "desc": "Canna Business Resources (CBR) is a privately funded, specialized debt fund exclusively serving the cannabis and CBD industry. Headquartered in New York, the company has extended more than $100 million to borrowers across the U.S. as of 2021, with individual loans ranging from $50,000 for quick working capital up to $15 million for growth capital and bridge financing. CBR distinguishes itself as one of the only cannabis lenders that can lend to all asset classes while also providing fully uncollateralized working capital financing to licensed operators and ancillary companies. The company's leadership team brings over 25 years of banking experience. Products include growth capital, equipment financing, real estate financing, and unsecured working capital facilities.",
+    "news": [
+      {
+        "h": "CBR Passes $100 Million in Cannabis Lending",
+        "s": "cannabusinessresources.com, 2021",
+        "d": "Canna Business Resources announced it had extended more than $100 million to cannabis borrowers in the U.S., establishing itself as one of the largest dedicated cannabis lenders."
+      },
+      {
+        "h": "Cannabis NYC Loan Fund Launches with $2M Initial Deployment",
+        "s": "NYC SBS/NYCEDC, October 2024",
+        "d": "New York City launched the Cannabis NYC Loan Fund administered by Tuatara Capital, reflecting growing institutional interest in cannabis lending that benefits specialized lenders like CBR."
+      },
+      {
+        "h": "Cannabis Industry Sees Growing Demand for Specialized Lending",
+        "s": "Industry Reports, 2024",
+        "d": "As more states legalize cannabis and federal reform discussions continue, demand for specialized cannabis lending products from companies like CBR has increased significantly."
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "New York, NY",
+    "website": "https://cannabusinessresources.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1153,
+    "name": "Cap Fund Now",
+    "leaders": [
+      {
+        "n": "Elliott Levine",
+        "t": "Managing Partner",
+        "bg": "Managing partner of CapFundNow, which he launched in November 2016 as an online marketplace platform connecting ISOs and agents with competing funders. Levine identified the industry pain point of brokers spending hours submitting deals across multiple platforms and built a centralized portal where top funders compete for deals in real time. The platform provides free access for ISOs and agents with commission rates matching direct funder relationships.",
+        "hooks": [
+          "Founded CapFundNow in 2016 as one of the first MCA marketplace platforms for ISO brokers",
+          "Built real-time funder competition portal where ISOs can view multiple offers within minutes",
+          "Featured in deBanked as a pioneer in streamlining the business funding broker workflow"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "CapFundNow is an online marketplace platform launched in November 2016 that connects ISOs (Independent Sales Organizations) and agents with a network of large and boutique business funders. The platform allows brokers to submit a single deal application and receive competing offers from multiple funders within minutes through a real-time funding portal. The service is free for ISOs and agents, with commission rates matching what brokers would earn working directly with any funder. CapFundNow was designed to streamline the funding industry by eliminating the need for brokers to submit deals to individual funders through separate platforms and email addresses.",
+    "news": [
+      {
+        "h": "CapFundNow Launches Funding Platform for ISOs and Agents",
+        "s": "deBanked, November 2016",
+        "d": "CapFundNow.com launched its online platform and portal bringing funders and their offers direct to ISOs and Agents, allowing brokers to submit deals and receive competing offers in real time."
+      },
+      {
+        "h": "CapFundNow Expands Funder Network",
+        "s": "capfundnow.com, 2024",
+        "d": "The marketplace platform continued to grow its network of large and boutique funders, offering ISOs and agents expanded access to specialized funding products."
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "New York, NY",
+    "website": "https://capfundnow.com",
+    "employees": 10,
+    "category": "marketplace"
+  },
+  {
+    "id": 1156,
+    "name": "Capital Domain",
+    "leaders": [],
+    "desc": "Capital Domain Funding is a New Jersey-based business funding company that provides tailored financing solutions for small businesses and entrepreneurs. The company offers a range of products including working capital, term loans, and business lines of credit, emphasizing a client-centric approach with a focus on innovation, transparency, and speed. Capital Domain positions its team of financial experts as an extension of the client's business, providing insights and guidance beyond just the funding process. The company works with businesses across multiple industries and has received positive client testimonials about its professional service and willingness to work with clients on affordable terms for business expansion.",
+    "news": [
+      {
+        "h": "Capital Domain Funding Expands Team with New Hires",
+        "s": "ZoomInfo, 2024",
+        "d": "Capital Domain Funding added new employees as the company expanded its operations and client base in the small business funding space."
+      },
+      {
+        "h": "Capital Domain Receives Positive Client Reviews",
+        "s": "capitaldomain.com, 2024",
+        "d": "The company received multiple positive testimonials from clients praising their professional service, ease of process, and flexible terms for business expansion funding."
+      }
+    ],
+    "location": "New Jersey",
+    "full_address": "New Jersey",
+    "website": "https://capitaldomain.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1162,
+    "name": "CapitalShift",
+    "leaders": [],
+    "desc": "CapitalShift (Capital Shift Group) is a Melville, NY-based merchant cash advance provider that offers unsecured business funding without requiring extensive paperwork, collateral, personal guarantees, financials, or tax returns. The company provides a quick online application process that takes only a few minutes, with approval in less than 24 hours and fund transfers within days. Located at 523 Broadhollow Road Suite 130B in Melville on Long Island, CapitalShift works with businesses to identify the best financing options for their specific needs. The company serves as an alternative to traditional small business loans with a streamlined, fast-approval process.",
+    "news": [
+      {
+        "h": "CapitalShift Offers Streamlined MCA Process on Long Island",
+        "s": "capitalshift.com, 2024",
+        "d": "CapitalShift continued to market its fast-approval merchant cash advance products from its Melville, NY office, emphasizing 24-hour approvals without traditional lending requirements."
+      },
+      {
+        "h": "CapitalShift Receives Positive Customer Testimonials",
+        "s": "capitalshift.com, 2024",
+        "d": "Multiple business owners praised CapitalShift's service and professionalism, with customers highlighting the ease of working with the company's team."
+      }
+    ],
+    "location": "Melville, NY",
+    "full_address": "523 Broadhollow Road Suite 130B, Melville, NY 11747",
+    "website": "https://www.capitalshift.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1165,
+    "name": "Capybara Capital",
+    "leaders": [
+      {
+        "n": "Kevin Brennan",
+        "t": "Co-Founder",
+        "bg": "Co-founder and authorized principal of Capybara Capital LLC, a Boca Raton-based merchant cash advance company established in 2022. Listed as an authorized person in Florida corporate filings at the company's 6501 Congress Avenue address. Under his leadership, the company has grown into one of the largest whale funders in the MCA space with a portfolio focused on deals in the $500,000 to $3 million range.",
+        "hooks": [
+          "Co-founded Capybara Capital in 2022, now one of the top whale MCA funders",
+          "Built portfolio specializing in large deals in the $500K-$3M range",
+          "Manages team that has funded over $100 million in alternative financing"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Marcus Clapman",
+        "t": "Chief Revenue Officer",
+        "bg": "Chief Revenue Officer at Capybara Capital since March 2022, described as one of the founding fathers of MCA/RBF funding. Clapman brings extensive experience in the merchant cash advance industry and has been instrumental in positioning Capybara as a top whale funder. He also has involvement with V2VC Fund and maintains an active presence sharing industry insights on LinkedIn.",
+        "hooks": [
+          "Recognized as one of the founding fathers of the MCA/RBF funding industry",
+          "Positioned Capybara Capital as the go-to whale funder for large MCA deals",
+          "Active industry voice on alternative business financing and broker relations"
+        ],
+        "li": "https://www.linkedin.com/in/marcus-clapman-6087797/"
+      },
+      {
+        "n": "Christina Simone",
+        "t": "Operations",
+        "bg": "Team member at Capybara Capital involved in the company's day-to-day operations at the Boca Raton headquarters. Works alongside the leadership team managing the company's growing merchant cash advance portfolio.",
+        "hooks": [
+          "Part of the core operations team at one of the largest whale MCA funders",
+          "Supports deal processing for Capybara's high-volume MCA business"
+        ],
+        "li": "https://www.linkedin.com/in/christinamsimone"
+      }
+    ],
+    "desc": "Capybara Capital is a Boca Raton, FL-based merchant cash advance company established in 2022 that has rapidly grown into one of the largest 'whale funders' in the alternative business financing industry. The company specializes in large MCA deals in the $500,000 to $3 million range, with funding amounts generally from $25,000 to $2,000,000. Capybara's management team has collectively funded thousands of businesses with over $100 million in alternative financing. The company serves businesses across technology, commercial transportation, healthcare services, restaurants, and construction sectors. An MCA from Capybara involves purchasing a business's future receivables at a discount for an upfront cash payment, which is not structured as a traditional loan.",
+    "news": [
+      {
+        "h": "New York Court Rules Some Capybara Capital Fees Unenforceable",
+        "s": "Justia, June 2024",
+        "d": "The Supreme Court of New York, Monroe County, granted partial summary judgment to Capybara Capital in a breach-of-contract lawsuit but ruled that certain default and stop payment fees were unenforceable penalties."
+      },
+      {
+        "h": "Capybara Capital Recognized as Top Whale Funder",
+        "s": "Funder Intel, 2024",
+        "d": "Capybara Capital was featured as a premier funder for power-MCA/RBF brokers, recognized for one of the largest portfolios of whale-size deals in the $500K-$3M range."
+      },
+      {
+        "h": "New Litigation Filed Against Capybara Capital in Florida",
+        "s": "U.S. District Court, Southern District of Florida, 2025",
+        "d": "A new case was filed against Capybara Capital LLC in the Southern District of Florida federal court, reflecting ongoing legal challenges common among large MCA providers."
+      }
+    ],
+    "location": "Boca Raton, FL",
+    "full_address": "6501 Congress Avenue, Suite 340, Boca Raton, FL 33487",
+    "website": "https://capybarausa.com",
+    "employees": 20,
+    "category": "funder"
+  },
+  {
+    "id": 1170,
+    "name": "CashLab Payments",
+    "leaders": [],
+    "desc": "CashLab Payments is a construction-focused fintech lending platform founded in 2022 that works in partnership with construction management software to provide lending services designed specifically for the construction industry. The platform enables contractors to delay vendor payments and advance subcontractors' checks, addressing the chronic cash flow challenges in construction where payment cycles are often long and irregular. CashLab Payments emphasizes fair and honest terms for borrowing, and all integrated software users and subcontractors automatically have the option to use the platform. The company positions itself with the tagline 'Helping contractors and their subs get paid faster.'",
+    "news": [
+      {
+        "h": "CashLab Payments Launches Construction Lending Platform",
+        "s": "cashlabpayments.com, 2022",
+        "d": "CashLab Payments launched its construction-focused lending platform integrating with construction management software to help contractors and subcontractors manage cash flow challenges."
+      },
+      {
+        "h": "Construction Industry Cash Flow Solutions Gain Traction",
+        "s": "Industry Reports, 2024",
+        "d": "Embedded lending platforms like CashLab Payments gained attention as the construction industry increasingly sought technology-driven solutions for chronic cash flow management problems."
+      }
+    ],
+    "location": "United States",
+    "full_address": "United States",
+    "website": "https://cashlabpayments.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1180,
+    "name": "Clear Diamond Capital",
+    "leaders": [
+      {
+        "n": "Maurice Harris",
+        "t": "Business Consultant",
+        "bg": "Business consultant and key figure at Clear Diamond Capital, a Fort Lauderdale-based business funding marketplace founded in 2021. Harris helps business owners across various industries obtain financing including residential home loans, business lines of credit, and commercial real estate mortgages. He serves as a primary contact for the company and works with clients from diverse industries to secure appropriate funding solutions.",
+        "hooks": [
+          "Leads client engagement at Clear Diamond Capital across 500+ industry groups",
+          "Specializes in matching businesses with appropriate funding products from working capital to commercial real estate",
+          "Helps businesses obtain financing regardless of credit history or high-risk designation"
+        ],
+        "li": "https://www.linkedin.com/in/mauricegharris/"
+      }
+    ],
+    "desc": "Clear Diamond Capital is a Fort Lauderdale, FL-based online marketplace for business funding founded in 2021. The company offers small business loans to existing and startup businesses regardless of credit history, credit limitations, or high-risk designation. Products include cash flow advances, invoice factoring, equipment leasing and loans, business lines of credit, working capital loans, and commercial real estate mortgages. Clear Diamond works with over 500 different industry groups across food service, healthcare, automotive, textiles, manufacturing, construction, technology, and retail. Qualification requirements are minimal: six months in business and monthly sales exceeding $8,500, with approval typically within 48 hours of receiving a full application.",
+    "news": [
+      {
+        "h": "Clear Diamond Capital Launches Online Funding Marketplace",
+        "s": "cleardiamondcapital.com, 2021",
+        "d": "Clear Diamond Capital launched as an online marketplace for working capital loans, term loans, and commercial real estate loans, targeting underserved small businesses in Fort Lauderdale."
+      },
+      {
+        "h": "Clear Diamond Capital Expands Product Offerings",
+        "s": "cleardiamondcapital.com, 2024",
+        "d": "The company broadened its product suite to include invoice factoring, equipment leasing, and commercial real estate mortgages alongside its core working capital products."
+      }
+    ],
+    "location": "Fort Lauderdale, FL",
+    "full_address": "Fort Lauderdale, FL",
+    "website": "https://cleardiamondcapital.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1183,
+    "name": "ContractCredit",
+    "leaders": [
+      {
+        "n": "Raul Esqueda",
+        "t": "Director / Managing Member",
+        "bg": "Founder of 1st Commercial Credit LLC (established 2002) and Director of Contract Credit Inc., both based in Austin, Texas. Esqueda has over 20 years of experience in invoice factoring and asset-based lending, having funded over 3,600 clients with more than $5 billion in invoice financing across his affiliated companies. He transitioned into equipment leasing and invoice factoring brokerage in 1999, later founding 1st Commercial Credit. He also created MyBizPad, a trademarked software platform that streamlines invoice submission for factoring requests.",
+        "hooks": [
+          "Over $5 billion in invoice financing funded across 3,600+ clients over 20+ years",
+          "Founded the 1st Commercial Credit family of factoring companies including Contract Credit Inc.",
+          "Created MyBizPad software to streamline invoice submission for factoring requests",
+          "Member of Texas Independent Producers and Royalty Owners Association"
+        ],
+        "li": "https://www.linkedin.com/in/raul-esqueda-5553b54b/"
+      }
+    ],
+    "desc": "Contract Credit Inc. is an Austin, TX-based factoring company incorporated in 2020 that provides invoice factoring, contract financing, purchase order financing, and supply chain financing services across the United States. The company is part of the 1st Commercial Credit family of affiliated factoring companies managed by Raul Esqueda. Contract Credit specializes in serving produce companies, government contractors, and construction contractors by converting their accounts receivable into immediate cash flow. The company can approve and fund businesses quickly, with initial funding expedited in 3 to 5 days. Contract Credit maintains a BBB profile and operates from the River Place Boulevard office complex in Austin.",
+    "news": [
+      {
+        "h": "1st Commercial Credit Affiliates Secure $170 Million in Credit Protection from Allianz Trade",
+        "s": "1stcommercialcredit.com, 2024",
+        "d": "The affiliated factoring companies under Raul Esqueda's leadership, including Contract Credit Inc., secured significant credit protection through Allianz Trade to support their factoring operations."
+      },
+      {
+        "h": "1st Commercial Credit Joins Texas Independent Producers and Royalty Owners Association",
+        "s": "1stcommercialcredit.com, 2024",
+        "d": "The parent organization expanded into energy sector factoring by joining TIPRO, opening new industry verticals for the Contract Credit family of companies."
+      },
+      {
+        "h": "Surge in MCA-Burdened Businesses Seeking Invoice Factoring",
+        "s": "LinkedIn/1st Commercial Credit, 2024",
+        "d": "1st Commercial Credit and its affiliates including Contract Credit reported a surge of inquiries from clients with multiple MCA loans seeking invoice factoring as a more sustainable financing alternative."
+      }
+    ],
+    "location": "Austin, TX",
+    "full_address": "6500 River Place Blvd, Bldg 7, Ste 250, Austin, TX 78730",
+    "website": "https://www.contractcredit.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1186,
+    "name": "CREDDnet",
+    "leaders": [
+      {
+        "n": "Michael Padova",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO and co-founder of Creddited+ (parent of CREDDnet) with over a decade of experience in finance. Padova's career took him from a young financial advisor on Wall Street to institutional trading and fund manager roles before introducing access to alternative debt markets and founding a credit consultancy. He has raised over $160 million in venture capital and was ranked first place among the top 100 influential individuals in the finance industry by Top 100 Magazine. Founded Creddited+ in 2019 initially as a private hedge fund focused on alternative financing, which has since provided hundreds of millions in credit facilities to thousands of clients.",
+        "hooks": [
+          "Ranked #1 in Top 100 Magazine's list of most influential individuals in finance",
+          "Raised over $160 million in venture capital across his career",
+          "Built Creddited+ from a 2019 private hedge fund into a major alternative lending platform",
+          "Launched the $20 million iCred Capital Fund for CREDDnet platform lenders"
+        ],
+        "li": "https://www.linkedin.com/in/michael-padova-609a741a6/"
+      }
+    ],
+    "desc": "CREDDnet is an all-in-one lending platform and broker network operated by Creddited+, headquartered in New York City. The platform leverages AI-driven underwriting, smart automations, and a comprehensive marketplace to optimize deal flow for lenders, brokers, and financial professionals. Through CREDDnet, sales professionals and loan officers can open their own brokerage with full backend resources including underwriting, credit assessments, and access to a network of contacts and specialists. The platform is backed by the iCred Capital Fund, a $20 million private credit fund providing scalable capital to qualified CREDDnet lenders with an estimated 20-24% IRR for investors. CREDDnet also features Cerebro, a proprietary AI-powered collections technology that automates asset searches, lien processing, and legal documentation to maximize recoveries. Creddited+ has provided hundreds of millions in traditional, revolving credit facilities and asset-based capital to thousands of clients, offering same-day approvals and funding in as little as three days.",
+    "news": [
+      {
+        "h": "Michael Padova Named #1 Most Influential in Finance by Top 100 Magazine",
+        "s": "Top 100 Magazine, 2024",
+        "d": "CREDDnet CEO Michael Padova was recognized in first place among the top 100 influential individuals in the finance industry by Top 100 Magazine."
+      },
+      {
+        "h": "CREDDnet Launches $20 Million iCred Capital Fund",
+        "s": "creddnet.com, 2024",
+        "d": "CREDDnet introduced the iCred Capital Fund, a $20 million private credit fund designed to provide scalable capital to qualified lenders on the platform with estimated 20-24% IRR for investors."
+      },
+      {
+        "h": "Michael Padova Speaks at Independent Sponsors and Capital Providers Meeting",
+        "s": "iGlobal Forum, December 2024",
+        "d": "CREDDnet CEO Michael Padova participated in the Independent Sponsors and Capital Providers Dealmakers Meeting in December 2024, representing the alternative lending space."
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "90 Broad Street, New York, NY 10004",
+    "website": "https://creddnet.com",
+    "employees": 25,
+    "category": "iso"
+  }
+]
