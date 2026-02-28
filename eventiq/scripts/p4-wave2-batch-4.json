@@ -1,0 +1,249 @@
+[
+  {
+    "id": 1166,
+    "name": "Capytal",
+    "leaders": [
+      {
+        "n": "Albert Gahfi",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founder and CEO of both NewCo Capital Group and Capytal.com. Forbes Finance Council appointee. Deployed over $2 billion to 45,000+ businesses globally.",
+        "hooks": ["Forbes Finance Council appointee", "Nominated for US FinTech Awards Innovator of the Year", "Multi-continent operation across 5 countries"],
+        "li": "https://www.linkedin.com/in/albert-m-gahfi-40156665/"
+      },
+      {
+        "n": "Bruce Gurvitsch",
+        "t": "Co-Founder & Chief Revenue Officer",
+        "bg": "Co-founded NewCo Capital Group and Capytal.com. BS Psychology from Touro College.",
+        "hooks": ["Co-founded alongside Gahfi — instrumental in revenue growth to $2B+", "Expanded ISO partner network across US and Canada"],
+        "li": "https://www.linkedin.com/in/bruce-gurvitsch-1b473179/"
+      }
+    ],
+    "desc": "CONFIRMED DUPLICATE — Capytal.com is a division of NewCo Capital Group (existing ID 121). Same CEO, CRO, same address. Deployed over $2 billion to 45,000+ businesses globally. Launched Canadian operations in 2025.",
+    "news": [
+      {"h": "NewCo Capital Group Launches Canadian Expansion", "s": "PR Newswire, April 2025", "d": "Full operations launched in Canada including Quebec."},
+      {"h": "NewCo Showcases Innovation at 2025 Funders Forum", "s": "Yahoo Finance, March 2025", "d": "Unveiled new 'Line of Capital' product."}
+    ],
+    "location": "North Miami, FL",
+    "full_address": "1801 NE 123rd St, Suite 421, North Miami, FL 33181",
+    "website": "https://www.capytal.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1167,
+    "name": "Cardinal Equity",
+    "leaders": [
+      {
+        "n": "Arty Bujan",
+        "t": "CEO & Managing Partner",
+        "bg": "Founded Cardinal Equity in 2015. Previously co-founded Harvard Funding. Former CEO at First Choice Credit LLC. Over $10M under management across 1,500+ investments.",
+        "hooks": ["Built syndication platform supporting 120+ independent offices", "Over $10M under management across 1,500+ investments", "Located at 30 Wall Street"],
+        "li": "https://www.linkedin.com/in/artybujan/"
+      }
+    ],
+    "desc": "Cardinal Equity is a Manhattan-based mid-office brokerage in the MCA sector. Founded 2015. Supports 120+ independent originating offices. Invested in 1,500+ businesses with $10M+ under management.",
+    "news": [],
+    "location": "New York, NY",
+    "full_address": "30 Wall St, Fl 8, New York, NY 10005",
+    "website": "https://www.cardeqgroup.com",
+    "employees": 6,
+    "category": "iso"
+  },
+  {
+    "id": 1168,
+    "name": "CashBloom",
+    "leaders": [
+      {
+        "n": "Nick Shams",
+        "t": "Founder & CEO",
+        "bg": "Founded CashBloom in 2008 (originally Advantage Capital Funds). Developed proprietary BloomScore technology. Expanded into dental practice funding.",
+        "hooks": ["Proprietary BloomScore technology for AI-driven approvals", "17+ years leading same company since 2008", "Expanded into dental practice capital"],
+        "li": "https://www.linkedin.com/in/nick-shams-783016113"
+      },
+      {
+        "n": "Farzin Fazeli",
+        "t": "President",
+        "bg": "President. Doctor of Chiropractic degree from Cleveland Chiropractic College. Former CEO at Merchant Resources International.",
+        "hooks": ["Doctor of Chiropractic turned fintech executive", "Former CEO of Merchant Resources International"],
+        "li": "https://www.linkedin.com/in/farzin-fazeli-617356114"
+      }
+    ],
+    "desc": "CashBloom is a fintech providing MCAs, business loans, and specialized dental practice capital. Founded 2008 in Woodland Hills, CA. Funding $5K-$1M with 3-24 month terms. Proprietary BloomScore technology.",
+    "news": [],
+    "location": "Woodland Hills, CA",
+    "full_address": "21300 Victory Blvd, Suite 755, Woodland Hills, CA 91367",
+    "website": "https://www.cashbloom.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1169,
+    "name": "Cashera",
+    "leaders": [
+      {
+        "n": "Mark Allayev",
+        "t": "Founder & President",
+        "bg": "Serial fintech entrepreneur. MFA from MGIMO. Also owns Funders App ($500M in originations). Multi-country business experience.",
+        "hooks": ["Funders App reached $500M in originations", "Launched Cashera UK in December 2025", "$1B+ in funding across US portfolio"],
+        "li": "https://www.linkedin.com/in/mark-allayev-921b2010b/"
+      }
+    ],
+    "desc": "Cashera is a technology-driven fintech serving gig workers, contractors, and SMBs. Founded 2023 in North Miami Beach, FL. Three product lines: Instant, Select, Private Credit. Claims $1B+ US portfolio. Launched UK operations December 2025.",
+    "news": [
+      {"h": "Cashera Launches UK Operations", "s": "FinTech Magazine, Dec 2025", "d": "Entered UK market with broker-first approach."},
+      {"h": "Mark Allayev's Funders App Reaches $500M Originations", "s": "PR Newswire, 2023", "d": "Demonstrated track record in fintech scaling."}
+    ],
+    "location": "North Miami Beach, FL",
+    "full_address": "3323 NE 163rd St, Suite 401, North Miami Beach, FL 33160",
+    "website": "https://casheracapital.com",
+    "employees": 2,
+    "category": "funder"
+  },
+  {
+    "id": 1170,
+    "name": "CashLab Payments",
+    "leaders": [],
+    "desc": "CashLab Payments is a niche MCA platform focused on the construction industry. Founded 2022. Partners with construction management software. Leadership not publicly disclosed.",
+    "news": [],
+    "location": "United States",
+    "full_address": "Not publicly disclosed",
+    "website": "https://cashlabpayments.com",
+    "employees": 2,
+    "category": "funder"
+  },
+  {
+    "id": 1171,
+    "name": "Catalyst Financial Company",
+    "leaders": [
+      {
+        "n": "Glen Shepard",
+        "t": "President",
+        "bg": "President of Catalyst Financial. Oversees a factoring operation founded in 1994 with 50+ years of combined principal experience.",
+        "hooks": ["Leads a 30-year-old factoring firm", "50+ years combined principal experience", "Specializes in oil and gas factoring"],
+        "li": "https://www.linkedin.com/in/glen-shepard-a675401/"
+      }
+    ],
+    "desc": "Catalyst Financial Company is a Houston-based factoring firm founded 1994. Provides accounts receivable financing across oil and gas, staffing, manufacturing, freight, wholesale distribution. 24-hour financing, no lock-in contracts.",
+    "news": [],
+    "location": "Houston, TX",
+    "full_address": "1136 N Kirkwood, Houston, TX 77043",
+    "website": "https://www.catfinco.com",
+    "employees": 17,
+    "category": "funder"
+  },
+  {
+    "id": 1172,
+    "name": "Cavala Funding",
+    "leaders": [
+      {
+        "n": "Jonathan Ibrahim",
+        "t": "CEO",
+        "bg": "CEO and founder. Delivered over $50M to businesses. Built A+ BBB rating.",
+        "hooks": ["Delivered $50M+ to businesses", "A+ BBB rating", "24-hour approval and next-day funding"],
+        "li": "https://www.linkedin.com/in/jonathan-ibrahim-55854430a"
+      },
+      {
+        "n": "Morris Mason",
+        "t": "Senior Funding Specialist",
+        "bg": "Senior Funding Specialist mentioned positively in customer reviews.",
+        "hooks": ["Client-facing leader in Trustpilot reviews"],
+        "li": "https://www.linkedin.com/in/morris-mason-b2b71627b/"
+      }
+    ],
+    "desc": "Cavala Funding Solutions is a NYC-based alternative lender offering term loans, lines of credit, revenue-based financing. Delivered over $50M. A+ BBB rating. 24-hour approvals, next-day funding.",
+    "news": [],
+    "location": "New York, NY",
+    "full_address": "244 5th Ave, Suite E225, New York, NY 10001",
+    "website": "https://cavalafunding.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1173,
+    "name": "Cedar Advance",
+    "leaders": [
+      {
+        "n": "Peter Ribeiro",
+        "t": "CEO",
+        "bg": "CEO overseeing one of the fastest-growing MCA providers. Funds 2nd-5th position files up to $3M.",
+        "hooks": ["Funds up to 5th position files — aggressive stacking appetite up to $3M", "Based in Miami Beach"],
+        "li": "https://www.linkedin.com/in/peter-ribeiro-b2ab98132/"
+      },
+      {
+        "n": "Levi Sanowicz",
+        "t": "Director of Business Development",
+        "bg": "Director of BD. Primary ISO relationship manager. Brooklyn-based while company HQ in Miami.",
+        "hooks": ["Primary ISO relationship manager", "Brooklyn-based with Miami HQ — bicoastal presence"],
+        "li": "https://www.linkedin.com/in/levi-sanowicz-b22b70191/"
+      }
+    ],
+    "desc": "Cedar Advance LLC is a direct MCA funder based in Miami Beach, FL. One of the fastest-growing providers. Funds 2nd-5th position files up to $3M with daily/weekly payback.",
+    "news": [],
+    "location": "Miami Beach, FL",
+    "full_address": "5401 Collins Ave, CU-9A, Miami Beach, FL 33140",
+    "website": "https://cedaradvance.com",
+    "employees": 1,
+    "category": "funder"
+  },
+  {
+    "id": 1174,
+    "name": "Central Diligence Group",
+    "leaders": [
+      {
+        "n": "Andrew Hernandez",
+        "t": "Co-Founder & Managing Partner",
+        "bg": "Co-founded CDG in 2015. Over a decade in alternative SMB lending. Featured in deBanked 'The Underwriters.' Inc. 5000 honoree four consecutive years.",
+        "hooks": ["Featured in deBanked's 'The Underwriters'", "Inc. 5000 honoree four consecutive years with 188% growth", "Ranked #30 in category on 2025 Inc. 5000"],
+        "li": "https://www.linkedin.com/in/andrew-hernandez-709b974/"
+      },
+      {
+        "n": "Julio Izaguirre",
+        "t": "Co-Founder & Managing Partner",
+        "bg": "Co-founded CDG in 2015. 30+ years combined founding team experience in alternative lending.",
+        "hooks": ["Part of original four-person founding team", "30+ years combined founding team experience"],
+        "li": "https://www.linkedin.com/in/julio-izaguirre-68625658"
+      }
+    ],
+    "desc": "Central Diligence Group is a NYC-based consulting and underwriting firm for alternative SMB lenders. Founded 2015. Inc. 5000 honoree four consecutive years. Provides due diligence, product development, operational consulting.",
+    "news": [
+      {"h": "CDG Named to 2025 Inc. 5000 List", "s": "Inc. Magazine, 2025", "d": "Ranked #2276 with 188% three-year growth."},
+      {"h": "CDG Achieves Consecutive Inc. 5000 Rankings", "s": "Inc. Magazine, 2024", "d": "Ranked #1409."}
+    ],
+    "location": "New York, NY",
+    "full_address": "12 E 49th St, Fl 11, New York, NY 10017",
+    "website": "https://www.centraldiligencegroup.com",
+    "employees": 6,
+    "category": "service_provider"
+  },
+  {
+    "id": 1175,
+    "name": "Chatham Business Capital",
+    "leaders": [
+      {
+        "n": "Ken Farrell",
+        "t": "President & CEO, First Chatham Bank",
+        "bg": "40+ years banking experience. Launched SBA division in 2021, reaching Top 50 SBA 7(a) lender status. Navigated $103.6M Cadence Bank acquisition May 2025.",
+        "hooks": ["Top 50 SBA lender in first fiscal year", "Navigated $103.6M Cadence Bank acquisition", "Now Cadence Bank Division President"],
+        "li": "https://www.linkedin.com/in/ken-farrell-6b40b05/"
+      },
+      {
+        "n": "Wes Gash",
+        "t": "Director of SBA Lending & Senior Credit Officer",
+        "bg": "20+ years banking. Funded 478 SBA loans totaling $187M in FY2023. Manages SBA 7(a) and USDA platforms.",
+        "hooks": ["Funded 478 SBA loans totaling $187M in FY2023", "Manages both SBA 7(a) and USDA platforms up to $10M"],
+        "li": "https://www.linkedin.com/company/chatham-business-capital"
+      }
+    ],
+    "desc": "Chatham Business Capital is the SBA lending division of First Chatham Bank (now Cadence Bank). Launched April 2021, ranked #45 out of 1,738 SBA lenders. Funded $187M in FY2023. Acquired by Cadence Bank for $103.6M May 2025.",
+    "news": [
+      {"h": "Cadence Bank Completes Merger with FCB Financial", "s": "Cadence Bank, May 2025", "d": "$103.6M acquisition completed."},
+      {"h": "Cadence Bank to Acquire FCB Financial for $103.6M", "s": "Stock Titan, January 2025", "d": "Definitive merger agreement announced."},
+      {"h": "SBA Division Funds $187M in FY2023", "s": "First Chatham Bank, 2023", "d": "478 small business loans funded."}
+    ],
+    "location": "Savannah, GA",
+    "full_address": "111 Barnard St, Savannah, GA 31401",
+    "website": "https://chathambusinesscapital.com",
+    "employees": 18,
+    "category": "bank"
+  }
+]

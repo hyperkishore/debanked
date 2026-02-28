@@ -1,0 +1,312 @@
+[
+  {
+    "id": 1140,
+    "name": "Blue Group Capital",
+    "leaders": [
+      {
+        "n": "Sergio Pineda",
+        "t": "Vice President of Lending",
+        "bg": "Born in Colombia and raised in South Florida. Has worked with small and mid-sized businesses since 2015 structuring financing through banks, private lenders, and institutional capital partners.",
+        "hooks": ["Colombian-born, South Florida-raised — Latin American business community connections", "Structuring financing since 2015", "2,000+ satisfied customers with 72-hour funding approvals"],
+        "li": "https://www.linkedin.com/company/bluegroupcapital"
+      }
+    ],
+    "desc": "Blue Group Capital is a technology-powered financial services company founded in 2018 in Boca Raton, Florida. Provides capital solutions to businesses across US and Canada. Offers equipment financing, lines of credit, term loans, SBA loans, short-term funding, and MCAs.",
+    "news": [
+      {"h": "Sergio Pineda Helps Businesses Navigate Financing Challenges", "s": "OpenPR, 2025", "d": "VP of Lending profiled for structuring flexible financing solutions."},
+      {"h": "Blue Group Capital Expands Alternative Lending Portfolio", "s": "Tracxn, 2024", "d": "Company grew to 11-50 employees."}
+    ],
+    "location": "Boca Raton, FL",
+    "full_address": "950 Peninsula Corporate Cir, Ste 2015, Boca Raton, FL 33487",
+    "website": "https://www.bluegroupcapital.com",
+    "employees": 5,
+    "category": "iso"
+  },
+  {
+    "id": 1142,
+    "name": "BoeFly",
+    "leaders": [
+      {
+        "n": "Mike Rozman",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded BoeFly after serving as president of Edgeware Analytics. Former VP at JPMorgan Chase Global Bank division. Has facilitated over $7 billion in transactions across 600+ franchise brands.",
+        "hooks": ["JPMorgan Chase Global Bank VP turned franchise lending pioneer", "Facilitated $7B+ in transactions", "Named Top Franchise Supplier by Entrepreneur magazine"],
+        "li": "https://www.linkedin.com/in/mike-rozman-8a4800/"
+      },
+      {
+        "n": "Brian O'Boyle",
+        "t": "CTO & Co-Founder",
+        "bg": "CTO and Co-Founder providing strategic direction on technology. Built the proprietary data collection and matching system.",
+        "hooks": ["Built proprietary matching tech powering $7B+ in transactions", "Co-founded from Edgeware Analytics platform"],
+        "li": "https://www.linkedin.com/company/boefly-llc"
+      },
+      {
+        "n": "Greg Clower",
+        "t": "SVP, Business Development",
+        "bg": "Responsible for BD. Former President of Yes Lender for 3 years. Joined BoeFly in 2020.",
+        "hooks": ["Former President of Yes Lender", "Joined BoeFly 2020 for SMB and loan broker expansion"],
+        "li": "https://www.linkedin.com/company/boefly-llc"
+      }
+    ],
+    "desc": "BoeFly is the premier online marketplace for franchise growth solutions and small business lending, founded in 2010. Facilitated over $7 billion in transactions across 600+ franchise brands. Does not directly fund loans but matches businesses with lenders. Named Top Franchise Supplier by Entrepreneur magazine.",
+    "news": [
+      {"h": "BoeFly Explores Key Franchise Trends for 2025", "s": "BoeFly Blog, Jan 2025", "d": "CEO forecasts record franchise growth in 2025."},
+      {"h": "BoeFly Named Top Franchise Supplier by Entrepreneur", "s": "Entrepreneur, 2024", "d": "Second consecutive year recognition."},
+      {"h": "BoeFly Advises on Scenthound Franchise Deal", "s": "PitchBook, 2025", "d": "BoeFly acted as general advisor on franchise financing."}
+    ],
+    "location": "New York, NY",
+    "full_address": "50 W 72nd St, Suite C4, New York, NY 10023",
+    "website": "https://boefly.com",
+    "employees": 14,
+    "category": "marketplace"
+  },
+  {
+    "id": 1143,
+    "name": "BondIt Media Capital",
+    "leaders": [
+      {
+        "n": "Matthew Helderman",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded BondIt in 2013. Deployed over $500 million into 500+ entertainment projects. Led majority stake acquisition by MEP Capital Management with $100M credit facility.",
+        "hooks": ["Deployed $500M+ into 500+ entertainment projects since 2013", "Just closed majority stake sale to MEP Capital with $100M facility (Feb 2026)", "Expanding into live entertainment, sports, creator economy, and video games"],
+        "li": "https://www.linkedin.com/in/matthew-helderman-35155058/"
+      },
+      {
+        "n": "Luke Taylor",
+        "t": "COO & Co-Founder",
+        "bg": "Co-founder and COO of both Buffalo 8 and BondIt. USC BS in Music Industry and Business.",
+        "hooks": ["USC Music Industry grad who built entertainment finance powerhouse", "Runs dual operations across BondIt and Buffalo 8"],
+        "li": "https://www.linkedin.com/company/bondit-llc"
+      },
+      {
+        "n": "Donald McGreal",
+        "t": "CFO",
+        "bg": "CFO since 2019. Former finance roles at Hulu and Awesomeness. Investment banking at Wells Fargo Securities. Kelley School of Business, Indiana University.",
+        "hooks": ["Former Hulu and Awesomeness finance executive", "Started in investment banking at Wells Fargo Securities"],
+        "li": "https://www.linkedin.com/company/bondit-llc"
+      }
+    ],
+    "desc": "BondIt Media Capital is a global leader in film, TV, music, and experiential entertainment financing founded in 2013. Completed 500+ transactions deploying over $500 million. In February 2026, MEP Capital Management acquired a majority stake backed by a $100M credit facility.",
+    "news": [
+      {"h": "MEP Capital Takes Majority Stake in BondIt Media", "s": "Variety, Feb 2026", "d": "MEP Capital acquired majority stake with $100M credit facility."},
+      {"h": "BondIt Invests in Elements Music & Arts Festival", "s": "Deadline, Jan 2025", "d": "BondIt took ownership stake in festival."},
+      {"h": "Accord Financial Sells Stake in BondIt for $8.9M", "s": "Investing.com, 2026", "d": "Accord divested as part of MEP acquisition."}
+    ],
+    "location": "Santa Monica, CA",
+    "full_address": "1639 11th St, Suite 160, Santa Monica, CA 90404",
+    "website": "https://bondit.us",
+    "employees": 12,
+    "category": "funder"
+  },
+  {
+    "id": 1144,
+    "name": "Bonside, Inc.",
+    "leaders": [
+      {
+        "n": "Neha Govindraj",
+        "t": "Founder & CEO",
+        "bg": "Founded Bonside in 2021 after co-founding Glowbar facial bar chain. Former Bain & Company consultant. Northwestern University. Raised $7.35M, secured $100M i80 Group facility, equity from Kimco Realty and Nuveen Real Estate.",
+        "hooks": ["Co-founded Glowbar before launching Bonside — lived operator pain firsthand", "Bain & Company alum with Glossier C-suite externship", "$100M i80 Group facility bringing total to $130M+", "Zero defaults across 50 investments"],
+        "li": "https://www.linkedin.com/company/bonside"
+      }
+    ],
+    "desc": "Bonside is a fintech providing growth capital to brick-and-mortar businesses through Repeatable Revenue Agreements (RRAs). 50 investments with zero defaults. Raised $7.35M in venture funding. Secured $100M from i80 Group in November 2025. Portfolio includes Black Seed Bagels, Go Get 'Em Tiger, Y7.",
+    "news": [
+      {"h": "Bonside Secures $100M i80 Group Facility", "s": "Crowdfund Insider, Nov 2025", "d": "$100M capital partnership bringing total to $130M+."},
+      {"h": "Bonside Scorecard Launches with Kimco and Nuveen Partnerships", "s": "The Real Deal, May 2025", "d": "$1,500-per-scorecard underwriting tool for landlords."},
+      {"h": "Bonside Fund Closes at $15M", "s": "GlobeSt, Sep 2024", "d": "Flagship $15M RRA fund closed."}
+    ],
+    "location": "Chicago, IL",
+    "full_address": "530 N Lake Shore Dr, Suite 1703, Chicago, IL 60611",
+    "website": "https://bonside.com",
+    "employees": 8,
+    "category": "funder"
+  },
+  {
+    "id": 1145,
+    "name": "Boundless Financial Corp",
+    "leaders": [
+      {
+        "n": "Mark Jorgenson",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO of Boundless AI, AI-driven lending marketplace connecting businesses with 150+ lenders for $3K to $300M financing. Led partnerships with Clearco, Finaloop, Xendoo, Highbeam, R3i.",
+        "hooks": ["AI-matching platform with 150+ lenders for $3K-$300M", "Partnerships with Clearco, Finaloop, Xendoo, Highbeam", "Toronto-based Canadian fintech"],
+        "li": "https://www.linkedin.com/in/mark-jorgenson-21879749"
+      },
+      {
+        "n": "Kyle Rector",
+        "t": "President & Co-Founder",
+        "bg": "President and Co-Founder. Former Wells Fargo, GE Capital, Clearco, and Outfund (VP Global Sales).",
+        "hooks": ["Wells Fargo + GE Capital + Clearco + Outfund pedigree", "Both traditional bank and alt-lending experience"],
+        "li": "https://www.linkedin.com/company/getboundless"
+      }
+    ],
+    "desc": "Boundless Financial Corp (Boundless AI) is a Toronto-based AI-driven lending marketplace founded in 2017. Connects businesses with 150+ lenders for $3K-$300M across MCAs, lines of credit, term loans, SBA, venture debt, and more.",
+    "news": [
+      {"h": "Clearco and Boundless Launch Integration for Ecommerce", "s": "BusinessWire, Dec 2024", "d": "Technology integration for seamless ecommerce working capital."},
+      {"h": "Finaloop and Boundless AI Partner for E-Commerce", "s": "Finaloop, Feb 2025", "d": "Strategic partnership for financial clarity and capital access."},
+      {"h": "Boundless and R3i Partner for Deeptech Financing", "s": "EIN Presswire, 2025", "d": "Partnership to revolutionize deeptech financing."}
+    ],
+    "location": "Toronto, ON",
+    "full_address": "30 Adelaide St E, Unit 1243, Toronto, ON M5C 3G8, Canada",
+    "website": "https://www.getboundless.ai",
+    "employees": 12,
+    "category": "marketplace"
+  },
+  {
+    "id": 1146,
+    "name": "Bow Apple Capital",
+    "leaders": [
+      {
+        "n": "Karishma Salim",
+        "t": "Chief Operating Officer",
+        "bg": "COO overseeing daily operations of the fintech institution specializing in structured finance solutions.",
+        "hooks": ["Runs operations for a same-day screening MCA shop", "Oversees structured finance including invoice factoring"],
+        "li": "https://www.linkedin.com/company/bow-apple-capital"
+      },
+      {
+        "n": "Moshe C",
+        "t": "Chief Financial Officer",
+        "bg": "CFO with experience from Cobella Realty Group and 24 Capital.",
+        "hooks": ["Previous experience at Cobella Realty Group and 24 Capital"],
+        "li": "https://www.linkedin.com/company/bow-apple-capital"
+      },
+      {
+        "n": "Natasha M.",
+        "t": "ISO Relations Manager",
+        "bg": "Manages ISO relationships as key liaison between the funder and broker network.",
+        "hooks": ["Manages the ISO broker channel — key contact for deal flow"],
+        "li": "https://www.linkedin.com/in/natasha-m-613a672a8/"
+      }
+    ],
+    "desc": "Bow Apple Capital Group is a New York-based fintech founded April 2022, specializing in structured finance solutions. Provides MCAs and receivables financing with same-day screening. Works heavily through ISO broker channels.",
+    "news": [
+      {"h": "Bow Apple Capital Expands Structured Finance Solutions", "s": "LinkedIn, 2024", "d": "Promoting same-day screening and funding capabilities."},
+      {"h": "Bow Apple Capital Registered in New York", "s": "NY Company Registry, Apr 2022", "d": "Registered at 200 Sunrise Hwy, Rockville Centre."}
+    ],
+    "location": "Rockville Centre, NY",
+    "full_address": "200 Sunrise Hwy, 3rd Floor, Rockville Centre, NY 11570",
+    "website": "https://www.linkedin.com/company/bow-apple-capital",
+    "employees": 12,
+    "category": "funder"
+  },
+  {
+    "id": 1147,
+    "name": "Break Bread Lending LLC",
+    "leaders": [
+      {
+        "n": "Ryan Shamim",
+        "t": "Owner, Founder & CEO",
+        "bg": "Founded Break Bread Lending in 2022. Former The Corcoran Group real estate specialist. BetaBlox startup competition judge in Miami. Uses 1,600+ data points for underwriting.",
+        "hooks": ["Family legacy in lending", "Former Corcoran Group real estate specialist turned fintech founder", "BetaBlox startup competition judge"],
+        "li": "https://www.linkedin.com/in/ryanshamim/"
+      },
+      {
+        "n": "Richard Torbett",
+        "t": "Co-Owner",
+        "bg": "Co-owner with multi-industry background. Specializes in identifying company strengths to formulate funding deals.",
+        "hooks": ["Multi-industry background applied to lending", "Specializes in structuring deals based on company strengths"],
+        "li": "https://www.linkedin.com/in/richard-torbett-29730a118/"
+      }
+    ],
+    "desc": "Break Bread Lending LLC is a South Florida-based financial services company founded in 2022. Offers merchant advances up to $10M, 0% credit up to $250K, $350K SBA loans, real estate-based funding, equipment funding, invoice factoring. Uses 1,600+ data points for underwriting.",
+    "news": [
+      {"h": "Break Bread Lending: The Firm That's Breaking the Mold", "s": "NY Weekly, 2023", "d": "Profile of co-founders and their mission to revolutionize financial sector."},
+      {"h": "Break Bread Lending Plans Miami and Global Expansion", "s": "Company Updates, 2024", "d": "Expansion plans announced."}
+    ],
+    "location": "Lexington, KY",
+    "full_address": "271 W Short St, Ste 410, Lexington, KY 40507",
+    "website": "https://breakbreadlending.com",
+    "employees": 3,
+    "category": "iso"
+  },
+  {
+    "id": 1148,
+    "name": "Business Advance Lenders",
+    "leaders": [
+      {
+        "n": "Erwan le Pelletier",
+        "t": "CEO",
+        "bg": "CEO of Business Advance Lenders. Leads a 2-person operation in San Francisco generating $6.2M in annual revenue.",
+        "hooks": ["2-person operation generating $6.2M annual revenue", "Unsecured business loans with no collateral or hard credit checks"],
+        "li": "https://www.linkedin.com/in/erwan-le-pelletier-6ba9151b5/"
+      }
+    ],
+    "desc": "Business Advance Lenders is a San Francisco-based alternative lending company providing unsecured small business loans without collateral or hard credit checks. 2 employees, ~$6.2M annual revenue.",
+    "news": [
+      {"h": "Business Advance Lenders Continues Operations", "s": "ZoomInfo, 2025", "d": "Maintains position as alternative financing provider."}
+    ],
+    "location": "San Francisco, CA",
+    "full_address": "256 Laguna Honda Blvd, Ste B, San Francisco, CA 94116",
+    "website": "https://www.businessadvancelenders.com",
+    "employees": 2,
+    "category": "iso"
+  },
+  {
+    "id": 1150,
+    "name": "Business Capital Providers Inc.",
+    "leaders": [
+      {
+        "n": "Andrew Stern",
+        "t": "President",
+        "bg": "President of BCP. Under his leadership, provided over $200M in direct funding. BBB accredited since 2021.",
+        "hooks": ["Deployed $200M+ in direct funding", "BBB Accredited since 2021", "'Working with the source, not a middleman' messaging"],
+        "li": "https://www.linkedin.com/company/bc-providers"
+      },
+      {
+        "n": "Ellis Kahn",
+        "t": "Vice President",
+        "bg": "VP supporting revenue-based funding operations.",
+        "hooks": ["VP at a direct funder that deployed $200M+"],
+        "li": "https://www.linkedin.com/company/bc-providers"
+      },
+      {
+        "n": "Dave Stewart",
+        "t": "Director of Business Development",
+        "bg": "Leads business development managing relationships and growth initiatives.",
+        "hooks": ["Leads BD — key contact for partnerships"],
+        "li": "https://www.linkedin.com/company/bc-providers"
+      }
+    ],
+    "desc": "Business Capital Providers Inc. is a direct funder of revenue-based capital for small businesses, founded 2017 in Hollywood, Florida. Provided over $200M in funding. BBB Accredited since May 2021. Offers up to $500K in working capital.",
+    "news": [
+      {"h": "BCP Maintains BBB Accreditation", "s": "BBB, 2024", "d": "Continues BBB Accreditation in financial services."},
+      {"h": "Business Capital Providers Grows Team", "s": "Tracxn, Dec 2024", "d": "Expanded to approximately 7 employees."}
+    ],
+    "location": "Hollywood, FL",
+    "full_address": "2501 Hollywood Blvd, Suite 210, Hollywood, FL 33020",
+    "website": "https://bcproviders.com",
+    "employees": 4,
+    "category": "funder"
+  },
+  {
+    "id": 1151,
+    "name": "Cahill Capital Inc",
+    "leaders": [
+      {
+        "n": "Michael Cahill",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-Founder and CEO. Founded the company in 2021 at 40 Wall Street in NYC's Financial District.",
+        "hooks": ["Founded at 40 Wall Street in NYC", "Same-day approvals with immediate fund disbursement", "Actively hiring"],
+        "li": "https://www.linkedin.com/in/michael-cahill-3607a3203/"
+      },
+      {
+        "n": "Kristen Seymour",
+        "t": "Chief of Staff & COO",
+        "bg": "Chief of Staff and COO overseeing operations.",
+        "hooks": ["Dual role as Chief of Staff and COO"],
+        "li": "https://www.linkedin.com/company/cahillcapitalinc"
+      }
+    ],
+    "desc": "Cahill Capital Inc. is a full-service financial firm founded in 2021 at 40 Wall Street, NYC. Online marketplace for business loans offering SBA loans, equipment financing, factoring, bridge loans, business credit lines.",
+    "news": [
+      {"h": "Cahill Capital Inc Urgently Hiring", "s": "LinkedIn, 2025", "d": "Urgent hiring for financial sales and marketing positions."},
+      {"h": "Cahill Capital Expands Business Lending", "s": "Tracxn, 2025", "d": "Growing team and expanding marketplace."}
+    ],
+    "location": "New York, NY",
+    "full_address": "40 Wall St, New York, NY 10005",
+    "website": "https://www.cahillcapitalinc.com",
+    "employees": 7,
+    "category": "marketplace"
+  }
+]

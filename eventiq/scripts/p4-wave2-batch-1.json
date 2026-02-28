@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1127,
+    "name": "Aquina Health",
+    "leaders": [
+      {
+        "n": "Christopher Stenglein",
+        "t": "CEO & Chairman of the Board",
+        "bg": "Seasoned entrepreneur and healthcare innovator with over 25 years of experience in finance and technology. Previously CEO at Curae, positions at Healthcare Summit at Jackson Hole, Portfolio America Asset Management, and ITM Group. Under his leadership, Aquina (formerly Provider Web Capital, founded 2009) secured a minority equity investment from Atlanticus Holdings Corporation (NASDAQ: ATLC) in 2017 and partnered with Payspan in 2020.",
+        "hooks": ["Led the rebrand from Provider Web Capital to Aquina Health in 2017", "Payspan partnership (2020) expanded financing to healthcare providers during COVID", "25+ years bridging finance and healthcare technology"],
+        "li": "https://www.linkedin.com/company/providerweb-capital"
+      },
+      {
+        "n": "Susan Clayton",
+        "t": "Vice President",
+        "bg": "Vice President at Aquina Health based in Smyrna, Georgia. Works in the banking and finance industry supporting Aquina's healthcare financing operations.",
+        "hooks": ["VP at a niche healthcare finance company", "Based in the Smyrna/Atlanta healthcare corridor"],
+        "li": "https://www.linkedin.com/company/providerweb-capital"
+      }
+    ],
+    "desc": "Aquina Health (formerly Provider Web Capital, founded 2009) is a healthcare-focused specialty finance and technology company based in Smyrna, Georgia. Provides three core financial products: Via (automated claims advance), Praxis (working capital up to $250K), and Curae (point-of-sale patient financing). Received minority equity investment from Atlanticus Holdings Corporation (NASDAQ: ATLC) in 2017.",
+    "news": [
+      {"h": "Payspan Partners With Aquina Health to Offer New Financing Options for Healthcare Providers", "s": "Business Wire, June 2020", "d": "Atlanta-based Payspan partnered with Aquina Health to provide short-term working capital loans to healthcare providers facing financial challenges from COVID-19."},
+      {"h": "Provider Web Capital Completes Strategic Equity Investment from Atlanticus Holdings", "s": "PRWeb, June 2017", "d": "Atlanticus Holdings Corporation (NASDAQ: ATLC) completed a minority equity investment in Provider Web Capital (now Aquina Health)."}
+    ],
+    "location": "Smyrna, GA",
+    "full_address": "3300 Highlands Parkway SE, Suite 290, Smyrna, GA 30082",
+    "website": "https://aquinahealth.com",
+    "employees": 16,
+    "category": "funder"
+  },
+  {
+    "id": 1129,
+    "name": "Arsenal Funding",
+    "leaders": [
+      {
+        "n": "Marlen Kruzhkov",
+        "t": "Managing Partner",
+        "bg": "Managing Partner at Arsenal Funding since 2014. Secured $16 million in bank financing (January 2023) through Crown Partners and established strategic forward-flow funding relationships with private credit funds.",
+        "hooks": ["Secured $16M bank financing in 2023 — institutional capital reshaping MCA", "Forward-flow relationship with private credit fund", "Focus on ISO relationships"],
+        "li": "https://www.linkedin.com/in/marlen-kruzhkov-57aa2"
+      }
+    ],
+    "desc": "Arsenal Funding is a merchant cash advance provider founded in 2014, headquartered in Hallandale Beach, Florida. Provides MCA funding up to $550K with terms up to 8 months and funding as quickly as 2 hours. In January 2023, closed on $16 million of bank financing arranged by Crown Partners.",
+    "news": [
+      {"h": "Crown Partners Arranges $16MM Financing for Arsenal Funding", "s": "ABL Advisor, January 2023", "d": "Arsenal Funding closed on $16 million of bank financing to expand its funding portfolio."},
+      {"h": "Crown Partners Advises Arsenal Funding on Recapitalization", "s": "ABF Journal, 2022", "d": "Crown Partners completed a successful recapitalization of Arsenal Funding."}
+    ],
+    "location": "Hallandale Beach, FL",
+    "full_address": "1250 E Hallandale Beach Blvd, Hallandale Beach, FL 33009",
+    "website": "https://arsenalfunding.com",
+    "employees": 13,
+    "category": "funder"
+  },
+  {
+    "id": 1130,
+    "name": "Aspire Funding Platform",
+    "leaders": [
+      {
+        "n": "Daniel Lenefsky",
+        "t": "CEO",
+        "bg": "CEO and Head of Operations. Educated at CUNY-Brooklyn College. Previously associated with All-Star Capital. Active at deBanked Broker Fair 2024 and 2025, and FunderIntel Brokers Expo.",
+        "hooks": ["Previously with All-Star Capital before launching Aspire", "Active at deBanked Broker Fair and FunderIntel Brokers Expo", "Same-day funding with up to 17-point commissions to ISOs"],
+        "li": "https://www.linkedin.com/in/daniel-lenefsky-aa20b0a1/"
+      },
+      {
+        "n": "Ricky Singh",
+        "t": "Manager, Operations & Marketing",
+        "bg": "Manager of Operations and Marketing at Aspire Funding Platform.",
+        "hooks": ["Dual role in ops and marketing at a growing funder"],
+        "li": "https://www.linkedin.com/company/aspire-funding-platform"
+      }
+    ],
+    "desc": "Aspire Funding Platform is a direct funder based in Woodcliff Lake, New Jersey (BBB file opened January 2026). Offers funding within 24 hours, often same day, with commission structures up to 17 points for ISO partners.",
+    "news": [
+      {"h": "Daniel Lenefsky Represents Aspire at deBanked Broker Fair 2024", "s": "deBanked, 2024", "d": "CEO Daniel Lenefsky appeared at deBanked Broker Fair."},
+      {"h": "Aspire Funding Platform Opens BBB File", "s": "BBB, January 2026", "d": "BBB opened a business profile for Aspire Funding Platform."}
+    ],
+    "location": "Woodcliff Lake, NJ",
+    "full_address": "50 Tice Blvd, Woodcliff Lake, NJ 07677",
+    "website": "https://www.aspirefundingplatform.com",
+    "employees": 7,
+    "category": "funder"
+  },
+  {
+    "id": 1131,
+    "name": "Avanza Capital Holdings",
+    "leaders": [
+      {
+        "n": "Frank Scarso",
+        "t": "Founder & CEO",
+        "bg": "Wall Street veteran with nearly 30 years of financial markets experience. Founded Avanza in 2017, deployed over $250 million in MCAs across 48 states. Author of memoir 'The Hard Way Home.' Eight years of sustained sobriety inform Avanza's approach.",
+        "hooks": ["Published memoir 'The Hard Way Home' in January 2026", "$250M+ deployed across 48 states since 2017", "30 years on Wall Street before alternative lending", "Eight years of sobriety informing business ethics"],
+        "li": "https://www.linkedin.com/in/frank-scarso-635ba5169/"
+      },
+      {
+        "n": "Anthony DeBenedictis",
+        "t": "Managing Partner",
+        "bg": "20+ year career on Wall Street. Six years at software companies including Infragistics, Fiscal Technologies, Sageworks. Previously SVP at City Credit Capital managing currency derivative exposure.",
+        "hooks": ["Software-to-finance career path", "Former SVP at City Credit Capital managing FX derivatives", "Leads external capital activities"],
+        "li": "https://www.linkedin.com/in/tonydebenedictis-054a8491/"
+      },
+      {
+        "n": "Christine Scarso",
+        "t": "President, Operations",
+        "bg": "Seasoned Executive Strategist with over 10 years experience. Managed client relations for high-net-worth accounts exceeding $5 billion in AUM.",
+        "hooks": ["$5B+ AUM client relations experience", "Background at The ROC Funding Group"],
+        "li": "https://www.linkedin.com/company/avanza-capital-holdings"
+      },
+      {
+        "n": "Justin R. Feig",
+        "t": "Partner",
+        "bg": "Began career at Microsoft leading a team within the Partner Program. Transitioned into private financial markets.",
+        "hooks": ["Microsoft Partner Program to private credit", "Strategic alliances background"],
+        "li": "https://www.linkedin.com/company/avanza-capital-holdings"
+      }
+    ],
+    "desc": "Avanza Capital Holdings is a New York-based alternative lending platform founded in 2017. Deployed over $250 million in MCAs across 48 states, maintaining on-time returns for eight consecutive years. Also operates as an investment platform for accredited lenders offering 20% annual return model.",
+    "news": [
+      {"h": "Avanza's Frank Scarso Publishes Memoir 'The Hard Way Home'", "s": "GlobeNewsWire, January 2026", "d": "Avanza founder published memoir documenting journey through Wall Street setbacks to building ethical alternative lending business."},
+      {"h": "Avanza Capital Holdings Marks Eight Years of Operations", "s": "Digital Journal, 2025", "d": "Avanza celebrated eighth anniversary with consistent on-time returns."}
+    ],
+    "location": "New York, NY",
+    "full_address": "40 Wall Street, 28th Floor, New York, NY 10005",
+    "website": "https://avanza.nyc",
+    "employees": 7,
+    "category": "funder"
+  },
+  {
+    "id": 1132,
+    "name": "Banco",
+    "leaders": [],
+    "desc": "LIMITED INFORMATION: No specific company called 'Banco' operating in the small business lending space could be identified. The name is extremely generic (means 'bank' in multiple languages). May operate under a DBA or be extremely early-stage.",
+    "news": [],
+    "location": "Unknown",
+    "full_address": "Unknown",
+    "website": "Unknown",
+    "employees": 7,
+    "category": "bank"
+  },
+  {
+    "id": 1133,
+    "name": "BCA Capital Partners",
+    "leaders": [],
+    "desc": "BCA Capital Partners (operating as bca247.com — Business Cash Advance 247) is a woman-owned and operated direct MCA funder based in Nashville, Tennessee. Focuses on hard-to-place industries including dealerships and construction.",
+    "news": [
+      {"h": "BCA Will Fund Your Hard to Place Merchants", "s": "DailyFunder, ongoing", "d": "BCA actively markets on DailyFunder as a direct funder for challenging industries."}
+    ],
+    "location": "Nashville, TN",
+    "full_address": "100 Oceanside Dr, Suite B, Nashville, TN 37204",
+    "website": "https://www.bca247.com",
+    "employees": 7,
+    "category": "funder"
+  },
+  {
+    "id": 1134,
+    "name": "Bentley Funding",
+    "leaders": [],
+    "desc": "Bentley Funding is a New York-based lender offering bridge loans, hard money loans, fix-and-flip financing, construction mortgages, SBA loans, equipment financing. Uses private investor capital. NOTE: bentleyfunding.com redirects to silvercapitalfunding.com, suggesting acquisition or merger.",
+    "news": [
+      {"h": "Bentley Funding Website Redirects to Silver Capital Funding", "s": "Research observation, February 2026", "d": "The bentleyfunding.com domain now redirects to silvercapitalfunding.com."}
+    ],
+    "location": "New York, NY",
+    "full_address": "65 St, New York, NY 10004",
+    "website": "https://www.bentleyfunding.com",
+    "employees": 3,
+    "category": "funder"
+  },
+  {
+    "id": 1136,
+    "name": "BHMAAA Inc.",
+    "leaders": [],
+    "desc": "BHMAAA Inc. is a small alternative funding company specializing in Revenue-Based Financing. Claims A+ BBB Rating, 15,000+ businesses funded, funding up to $500,000. With only 2 employees, transparency is limited. May be an ISO marketing itself as a funder.",
+    "news": [],
+    "location": "Unknown",
+    "full_address": "Unknown",
+    "website": "https://www.bhmaaa.com",
+    "employees": 2,
+    "category": "funder"
+  },
+  {
+    "id": 1138,
+    "name": "BizLendia",
+    "leaders": [
+      {
+        "n": "Hessaum Sadri",
+        "t": "Principal / Founder",
+        "bg": "Principal at BizLendia since 2017. Greater Irvine Chamber of Commerce member. Has IMDB profile suggesting entertainment career alongside finance.",
+        "hooks": ["Dual career in finance and entertainment", "Greater Irvine Chamber member since 2017", "Competing with NYC-centric MCA industry from West Coast"],
+        "li": "https://www.linkedin.com/in/hssmz"
+      }
+    ],
+    "desc": "BizLendia is a privately owned specialty finance and alternative funding platform based in Irvine, California with a New York office. Offers term loans, invoice financing, equipment financing, lines of credit, SBA loans, and MCAs. More accurately classified as an ISO/broker with 2 employees.",
+    "news": [],
+    "location": "Irvine, CA",
+    "full_address": "200 Spectrum Center Dr, Irvine, CA 92618",
+    "website": "https://bizlendia.com",
+    "employees": 2,
+    "category": "iso"
+  },
+  {
+    "id": 1139,
+    "name": "Blú Capital",
+    "leaders": [
+      {
+        "n": "Sergio Ochoa",
+        "t": "CEO",
+        "bg": "CEO of Blú Capital. Educated at Tecnológico de Monterrey. Serial entrepreneur. Built cross-border factoring company serving US and Mexico. Member of AFA and IFA.",
+        "hooks": ["Cross-border factoring serving both US and Mexico", "Tecnológico de Monterrey education", "Serial entrepreneur in border region"],
+        "li": "https://www.linkedin.com/in/sergio-ochoa-2851511a2/"
+      }
+    ],
+    "desc": "Blú Capital is a factoring and specialty finance company headquartered in El Paso, Texas. Provides invoice factoring, short-term lending, lines of credit, hard money loans, equipment financing. Member of AFA and IFA. Serves clients across America and Mexico.",
+    "news": [
+      {"h": "Blú Capital Texas LLC Files Active Status", "s": "Texas Business Records, June 2025", "d": "Blú Capital Texas LLC filed for active status."},
+      {"h": "Mixed Customer Reviews on Trustpilot", "s": "Trustpilot, ongoing", "d": "Mixed customer reviews for El Paso operations."}
+    ],
+    "location": "El Paso, TX",
+    "full_address": "12035 Rojas Dr, Suite F, El Paso, TX 79936",
+    "website": "https://www.blucapital.com",
+    "employees": 6,
+    "category": "funder"
+  }
+]

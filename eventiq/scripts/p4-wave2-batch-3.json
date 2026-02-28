@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1153,
+    "name": "Cap Fund Now",
+    "leaders": [],
+    "desc": "Cap Fund Now is an ISO marketplace platform where funders compete for merchant deals. Provides ISOs with access to large and boutique funders. Free for ISOs with same commission structure as direct funder relationships.",
+    "news": [
+      {"h": "MCA Market Projected to Reach $25.38B by 2029", "s": "Research and Markets, 2025", "d": "Market valued at $19.65B in 2025, projected 6.6% CAGR."}
+    ],
+    "location": "Unknown, US",
+    "full_address": "Unknown",
+    "website": "https://capfundnow.com",
+    "employees": 1,
+    "category": "marketplace"
+  },
+  {
+    "id": 1154,
+    "name": "Capback",
+    "leaders": [
+      {
+        "n": "Shane Anthony",
+        "t": "Managing Partner",
+        "bg": "Managing Partner of Capback Financial. Built reputation for 80% approval rate serving trucking, construction, restaurants, and health clinics.",
+        "hooks": ["80% approval rate for credit-challenged businesses", "Operating from Financial District since 2015", "Serving niche industries like trucking and construction"],
+        "li": "https://www.linkedin.com/in/shane-anthony-777748114"
+      }
+    ],
+    "desc": "Capback Financial is a NYC-based MCA provider founded 2015. Specializes in credit-challenged businesses with 80% approval rate. Unsecured loans $5K-$250K with 48-hour approval and 24-hour funding.",
+    "news": [],
+    "location": "New York, NY",
+    "full_address": "160 Broadway, 14th Floor, New York, NY 10038",
+    "website": "https://capback.com",
+    "employees": 6,
+    "category": "funder"
+  },
+  {
+    "id": 1155,
+    "name": "CapFlow Network Inc.",
+    "leaders": [
+      {
+        "n": "Shaun Tiwari",
+        "t": "CEO & Founder",
+        "bg": "Founded CapFlow in 2021 after $3B+ in M&A/financing transactions over 15+ years. Former MD at Artha Group, positions at Guidehouse, Greenberg Advisors. UPenn graduate.",
+        "hooks": ["$3B+ in transactions across investment banking and PE", "500+ lender network for $1M-$50M deals", "Focused on lower middle market gap"],
+        "li": "https://www.linkedin.com/in/shauntiwari/"
+      }
+    ],
+    "desc": "CapFlow Network Inc. is a fintech platform connecting borrowers seeking $1M-$50M in debt financing with 500+ lenders. Founded 2021, headquartered at 1 Rockefeller Plaza, NYC.",
+    "news": [
+      {"h": "CapFlow Expands to 500+ Lender Network", "s": "CapFlow, 2025", "d": "Grew marketplace to 500+ lenders."}
+    ],
+    "location": "New York, NY",
+    "full_address": "1 Rockefeller Plaza, 11th Floor, New York, NY 10020",
+    "website": "https://www.capflow.net",
+    "employees": 5,
+    "category": "marketplace"
+  },
+  {
+    "id": 1158,
+    "name": "Capital Solutions, Inc.",
+    "leaders": [
+      {
+        "n": "Brian Battaglia",
+        "t": "Founder & CEO",
+        "bg": "CPA who founded Capital Solutions in 2003. Career at Arthur Andersen, Heller Financial, Century Business Credit. BA from Claremont McKenna College.",
+        "hooks": ["CPA with Arthur Andersen and Heller Financial pedigree", "Handles up to $15M monthly in facilities", "20+ years in California alternative finance"],
+        "li": "https://www.linkedin.com/in/brianbattaglia"
+      }
+    ],
+    "desc": "Capital Solutions, Inc. is a California-based commercial finance company founded 2003 specializing in invoice factoring, asset-based loans, PO financing. Serves businesses across Sacramento and Los Angeles with facilities up to $15M monthly.",
+    "news": [],
+    "location": "Encino, CA",
+    "full_address": "16311 Ventura Blvd, Suite 990, Encino, CA 91436",
+    "website": "https://capitalsolutionsinc.com",
+    "employees": 2,
+    "category": "funder"
+  },
+  {
+    "id": 1159,
+    "name": "Capital Source Group, LLC",
+    "leaders": [
+      {
+        "n": "Jeffrey Heyn",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded CSG in 2015. MS Computer Science from DePaul University. Back-to-back Inc. 5000 rankings. Over $360M funded.",
+        "hooks": ["Back-to-back Inc. 5000 honoree", "Computer science master's from DePaul", "$360M+ funded across industries"],
+        "li": "https://www.linkedin.com/in/jeffrey-heyn-a9160960/"
+      },
+      {
+        "n": "David Asseoff",
+        "t": "President",
+        "bg": "Joined as President in January 2024. Former Adperio Mobile CEO for 24 years. Binghamton University.",
+        "hooks": ["Serial entrepreneur — Adperio Mobile CEO for 24 years", "Denver-based expanding CSG's geographic reach"],
+        "li": "https://www.linkedin.com/in/dasseoff/"
+      },
+      {
+        "n": "Selwyn Gordon",
+        "t": "Strategic Partnerships Manager",
+        "bg": "Established CSG initially as a broker. Previously built eBay cell phone business generating $500K+ revenue.",
+        "hooks": ["Built CSG from broker roots across multiple industries", "Prior eBay business with $500K revenue"],
+        "li": "https://www.linkedin.com/in/selgordon/"
+      }
+    ],
+    "desc": "Capital Source Group, LLC is a commercial financing firm founded 2015 in Chicago. $22M annual revenue (2025). Over $360M funded across 450+ transactions. Back-to-back Inc. 5000 honors.",
+    "news": [
+      {"h": "Capital Source Group Ranks #2552 on 2025 Inc. 5000", "s": "Inc. Magazine, Aug 2025", "d": "Second consecutive Inc. 5000 ranking with 165% growth."},
+      {"h": "CEO Attends 31st Annual IFA Conference", "s": "Capital Source Group, Apr 2025", "d": "Delegation sent to International Factoring Association conference."},
+      {"h": "Capital Source Deploys $4.7M in July 2025", "s": "Capital Source Group, Aug 2025", "d": "22 deals totaling $4.7M across 6 sectors."}
+    ],
+    "location": "Chicago, IL",
+    "full_address": "209 W Jackson Blvd, Suite 613, Chicago, IL 60606",
+    "website": "https://capitalsourcegroup.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1160,
+    "name": "CapitalFront",
+    "leaders": [
+      {
+        "n": "Brian Simon",
+        "t": "CEO & Founder",
+        "bg": "20+ years in lending, risk management, capital markets. Former COO at New Penn Financial, CEO of Caliber Funding, COO of Freedom Mortgage. Named one of 100 most influential mortgage banking executives. Fannie Mae and Freddie Mac advisory boards. Wharton executive MBA.",
+        "hooks": ["Former Fannie Mae and Freddie Mac advisory board member", "Named one of 100 most influential mortgage banking executives", "Wharton executive MBA"],
+        "li": "https://www.linkedin.com/in/brian-simon-cmb-5a7249/"
+      },
+      {
+        "n": "Joe Greco",
+        "t": "Chairman",
+        "bg": "Serial entrepreneur. Founded PSC Info Group (twice Inc. 500). Chairman of RevSpring. Founder/Chairman of Thrivest Holdings. Philadelphia Union MLS team owner.",
+        "hooks": ["Founded PSC Info Group — twice Inc. 500", "Philadelphia Union MLS team investor", "Thrivest Holdings chairman in legal funding"],
+        "li": ""
+      }
+    ],
+    "desc": "CapitalFront is a business lender launched November 2015 in Conshohocken, PA. Offers MCAs ($10K-$1M), ACH funding, SBA loans, receivable financing, factoring. Targets businesses with $350K-$20M annual sales. Backed by Experity Ventures.",
+    "news": [
+      {"h": "CapitalFront Partners with Lenders One Cooperative", "s": "PRWeb, 2016", "d": "Partnership with mortgage cooperative for distribution."},
+      {"h": "Philadelphia Inquirer Profiles CapitalFront", "s": "Philadelphia Inquirer, 2016", "d": "Profiled as bank alternative lender."}
+    ],
+    "location": "Conshohocken, PA",
+    "full_address": "161 Washington Street, Suite 240, Conshohocken, PA 19428",
+    "website": "https://capitalfront.com",
+    "employees": 3,
+    "category": "funder"
+  },
+  {
+    "id": 1161,
+    "name": "Capitalize Group",
+    "leaders": [
+      {
+        "n": "Gaurav Sharma",
+        "t": "CEO",
+        "bg": "CEO leading MCA operations since founding in 2021. Partners with Kapitus, BlueVine, Rapid Finance, OnDeck, Credibly.",
+        "hooks": ["Lending marketplace partnering with major funders", "Operating as both direct MCA and marketplace"],
+        "li": ""
+      }
+    ],
+    "desc": "Capitalize Group LLC is a New York-based MCA provider and online marketplace founded 2021. Partners with Kapitus, BlueVine, Rapid Finance, OnDeck, Everest Business Funding, Credibly. Funding within 24 hours.",
+    "news": [],
+    "location": "Lynbrook, NY",
+    "full_address": "15 Atlantic Avenue, Suite 301, Lynbrook, NY 11563",
+    "website": "https://capitalizeloans.com",
+    "employees": 6,
+    "category": "marketplace"
+  },
+  {
+    "id": 1162,
+    "name": "CapitalShift",
+    "leaders": [],
+    "desc": "CapitalShift (Capital Shift Group) is an MCA provider based in Melville, New York. Approves businesses in less than 24 hours. Requires minimum 3 months in business, 500+ credit score, steady monthly revenue.",
+    "news": [],
+    "location": "Melville, NY",
+    "full_address": "523 Broadhollow Road, Suite 130B, Melville, NY 11747",
+    "website": "https://www.capitalshift.com",
+    "employees": 6,
+    "category": "funder"
+  },
+  {
+    "id": 1163,
+    "name": "Capitawize",
+    "leaders": [
+      {
+        "n": "David Rosen",
+        "t": "CEO",
+        "bg": "CEO. Based in NYC metro. Cardozo School of Law at Yeshiva University. Previously at Zugot. Operates as Raritan Financial LLC DBA Capitawize.",
+        "hooks": ["Cardozo School of Law graduate", "Prior experience at Zugot", "Operating as Raritan Financial LLC DBA Capitawize"],
+        "li": "https://www.linkedin.com/in/david-rosen-19a847ab/"
+      }
+    ],
+    "desc": "CapitaWize (Raritan Financial LLC DBA Capitawize) is a small business funder based in Aventura, Florida. Offers fast working capital products — as fast as same day.",
+    "news": [],
+    "location": "Aventura, FL",
+    "full_address": "18117 Biscayne Blvd, #3113, Aventura, FL 33160",
+    "website": "https://www.capitawize.com",
+    "employees": 4,
+    "category": "funder"
+  },
+  {
+    "id": 1164,
+    "name": "CapX Funding Corp.",
+    "leaders": [
+      {
+        "n": "Dan Willis",
+        "t": "President & Owner",
+        "bg": "Founded CapX in 2002. Former VP Sales at ATEL Leasing. Portland State University. ~$3M annual revenue.",
+        "hooks": ["20+ years in equipment financing", "ATEL Leasing VP Sales background", "'We say yes when banks say no' positioning"],
+        "li": "https://www.linkedin.com/in/dan-willis-9642589"
+      }
+    ],
+    "desc": "CapX Funding Corp. is an equipment financing and working capital provider founded 2002 in the SF Bay Area. Loans up to $250K. ~$3M annual revenue. 'We say yes when banks say no.'",
+    "news": [],
+    "location": "Alamo, CA",
+    "full_address": "3000F Danville Blvd, #210, Alamo, CA 94507",
+    "website": "https://www.capxfunding.com",
+    "employees": 2,
+    "category": "funder"
+  }
+]

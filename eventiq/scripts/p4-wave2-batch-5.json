@@ -1,0 +1,297 @@
+[
+  {
+    "id": 1176,
+    "name": "Chisos Capital",
+    "leaders": [
+      {
+        "n": "Will Stringer",
+        "t": "Founder & CEO",
+        "bg": "Dallas/Fort Worth native, UT Austin dual degrees. Former Bank of America Merrill Lynch investment banker, then Cockrell family office analyst. Founded Chisos in 2020. Pioneered CISA instrument.",
+        "hooks": ["Invented the Convertible Income Share Agreement (CISA)", "Raising $10M Fund II after deploying Fund I across 100+ founders", "Expanding into athletes and creators"],
+        "li": "https://www.linkedin.com/in/wdstringer/"
+      },
+      {
+        "n": "Stephen Grinalds",
+        "t": "Co-Founder & CTO",
+        "bg": "Wharton School. Met Will Stringer at Emergent Technology Holdings. Full-stack web development.",
+        "hooks": ["Built the tech infrastructure for a novel financial instrument", "Wharton-trained technologist"],
+        "li": "https://www.linkedin.com/in/stephengrinalds/"
+      }
+    ],
+    "desc": "Chisos Capital is an alternative investment firm investing $25K-$100K in entrepreneurs, athletes, and creators using its proprietary Convertible Income Share Agreement (CISA). Founded 2020. Funded 100+ individuals across 35+ US cities. Raising $10M Fund II.",
+    "news": [
+      {"h": "Chisos Capital Raises $10M Fund II", "s": "Wefunder, 2024", "d": "Fund II raise targeting $10M."},
+      {"h": "Chisos Expands Into Athlete and Creator Funding", "s": "PR Newswire, 2024", "d": "Broadened investment thesis to include athletes and creators."}
+    ],
+    "location": "Santa Monica, CA",
+    "full_address": "938 Lincoln Blvd, Unit 4, Santa Monica, CA 90403",
+    "website": "https://www.chisos.io",
+    "employees": 4,
+    "category": "funder"
+  },
+  {
+    "id": 1177,
+    "name": "Citi Wide Merchant Funding",
+    "leaders": [
+      {
+        "n": "Michael Martin",
+        "t": "COO & Co-Founder",
+        "bg": "Co-founded in 2010. Built from startup to funder serving thousands. Later rebranded to ExpressBusinessLoans.com in 2013.",
+        "hooks": ["Multi-position MCA funder serving 1st through 6th position", "Maintains Citi Wide identity for ISO relationships"],
+        "li": "https://www.linkedin.com/in/citiwidemerchantfunding/"
+      },
+      {
+        "n": "Kris Sands",
+        "t": "Vice President",
+        "bg": "VP responsible for business development and funding operations from Princeton, NJ office.",
+        "hooks": ["Manages ISO and broker relationships", "Based at Carnegie Center Princeton"],
+        "li": "https://www.linkedin.com/in/kris-sands-6bb31647"
+      }
+    ],
+    "desc": "Citi Wide Merchant Funding (also ExpressBusinessLoans.com) is a small business funder established 2010 in Princeton, NJ. MCAs and loans $10K-$500K, up to $1M in working capital. Funds 1st-6th position. Not affiliated with Citigroup.",
+    "news": [],
+    "location": "Princeton, NJ",
+    "full_address": "300 Carnegie Center, Princeton, NJ 08540",
+    "website": "https://www.citiwidemerchantfunding.com",
+    "employees": 7,
+    "category": "funder"
+  },
+  {
+    "id": 1178,
+    "name": "Clarity Advance",
+    "leaders": [
+      {
+        "n": "Agostinho Calcada",
+        "t": "Founder & CEO",
+        "bg": "Miami Beach-based. Construction Economist degree from Saint Lambert. Master's from ESAM. Previously CEO of MCA Rehab. Founded Clarity Advance June 2022.",
+        "hooks": ["Direct MCA lender servicing all funding in-house", "Construction economics background unusual for MCA", "Founded 2022 but established BBB profile already"],
+        "li": "https://www.linkedin.com/in/agostinho-calcada-277780118"
+      },
+      {
+        "n": "Jefferson Roche",
+        "t": "Manager",
+        "bg": "Manager listed as principal on Florida corporate filings alongside Calcada.",
+        "hooks": ["Co-manages direct MCA lender", "Part of leadership expanding into real estate, hospitality, construction"],
+        "li": "https://www.linkedin.com/company/clarity-advance-llc"
+      }
+    ],
+    "desc": "Clarity Advance is a direct MCA lender founded June 2022 in downtown Miami. Services all funding in-house. Multiple verticals: MCA, real estate, hospitality, food industry, construction.",
+    "news": [
+      {"h": "Clarity Advance Files 2025 Annual Report", "s": "Florida Sunbiz, Feb 2025", "d": "Active status confirmed."},
+      {"h": "Clarity Advance Expands Multi-Vertical Offerings", "s": "Alignable, 2024", "d": "Expanded across hospitality, food, construction, real estate."}
+    ],
+    "location": "Miami, FL",
+    "full_address": "150 SE 2nd Ave, #1403, Miami, FL 33131",
+    "website": "https://clarityadvance.com",
+    "employees": 6,
+    "category": "funder"
+  },
+  {
+    "id": 1179,
+    "name": "CLBA",
+    "leaders": [
+      {
+        "n": "Terry Luker",
+        "t": "Co-Founder & Chairman/CEO",
+        "bg": "Decades of industry experience. Founded Alternative Capital Solutions, Commercial Capital BIDCO. Host of Deal Talk podcast. Built CLBA in 2024.",
+        "hooks": ["Built CLBA to fill gap left by declining industry associations", "Runs multiple interconnected companies creating full broker ecosystem", "Host of Deal Talk podcast"],
+        "li": "https://www.linkedin.com/in/terry-luker-8b145954/"
+      },
+      {
+        "n": "Jeff Luker",
+        "t": "Co-Founder & VP/COO",
+        "bg": "Co-founder and VP/COO. Second-generation commercial finance leader. Father-son founding team.",
+        "hooks": ["Second-generation commercial finance leader", "Manages operations across CLBA, BIDCO, and Academy"],
+        "li": "https://www.linkedin.com/in/jeff-luker-00983471/"
+      },
+      {
+        "n": "Jon Cosentino",
+        "t": "Co-Founder",
+        "bg": "Business partner of Fairwinds Commercial Capital. Described as one of the most impactful figures in commercial loan broker industry.",
+        "hooks": ["Described as having 'most profound impact on the industry'", "Fairwinds Commercial Capital connections"],
+        "li": "https://www.linkedin.com/company/clba-commercial-loan-broker-association"
+      }
+    ],
+    "desc": "Commercial Loan Broker Association (CLBA) founded 2024 by Terry Luker, Jeff Luker, and Jon Cosentino. Professional association for commercial loan brokers. Annual conferences, weekly webinars, certification program via Academy.",
+    "news": [
+      {"h": "CLBA Announces 2nd Annual Conference at Renaissance Orlando", "s": "CLBAssociation.com, 2025", "d": "Oct 27-29, 2025 with NFL MVP Joe Theismann keynote."},
+      {"h": "Terry Luker Publishes Open Letter on Future of Associations", "s": "CLBAssociation.com, 2024", "d": "Addressed CLBA's mission to fill the professional void."},
+      {"h": "CLBA Inaugural Conference Draws Strong Attendance", "s": "Scotsman Guide, Oct 2024", "d": "First conference at Hilton Lake Buena Vista."}
+    ],
+    "location": "Franklin, TN",
+    "full_address": "133 Holiday Ct, Ste 207, Franklin, TN 37067",
+    "website": "https://clbassociation.com",
+    "employees": 4,
+    "category": "service_provider"
+  },
+  {
+    "id": 1181,
+    "name": "Clearfund Solutions",
+    "leaders": [
+      {
+        "n": "Shoshana Waronker",
+        "t": "Operations Manager",
+        "bg": "Operations Manager overseeing day-to-day MCA operations at Wall Street office.",
+        "hooks": ["Runs operations for Wall Street-based MCA funder", "Managing lean team of 8"],
+        "li": "https://www.linkedin.com/in/shoshana-waronker-a4a6bb155"
+      },
+      {
+        "n": "Dovi Drebin",
+        "t": "Underwriter",
+        "bg": "Underwriter handling credit and risk assessment across 500+ industry segments.",
+        "hooks": ["Underwrites across 500+ industry segments", "Soft credit inquiry model"],
+        "li": "https://www.linkedin.com/in/dovidrebin"
+      }
+    ],
+    "desc": "ClearFund Solutions is an MCA funder established March 2020 at 99 Wall Street, NYC. Fast capital with 2-minute application, soft credit inquiries. Finances 500+ industry segments including trucking and construction.",
+    "news": [
+      {"h": "Clearfund Solutions Prevails in NY Appellate Court", "s": "Justia, Feb 2024", "d": "Won breach of contract MCA case."}
+    ],
+    "location": "New York, NY",
+    "full_address": "99 Wall Street, Suite 2613, New York, NY 10005",
+    "website": "https://www.clearfund.co",
+    "employees": 8,
+    "category": "funder"
+  },
+  {
+    "id": 1182,
+    "name": "Coastal Kapital",
+    "leaders": [
+      {
+        "n": "Kortney B. Murray",
+        "t": "Founder & CEO",
+        "bg": "Serial entrepreneur with three ventures. 5 years at Innovative Lease Services. 2024 Women of Influence by Sarasota Magazine. Best-selling co-author. Featured on NASDAQ, Bloomberg, Fox Business. Board member of AACFB.",
+        "hooks": ["Named 2024 Women of Influence by Sarasota Magazine", "Mission to raise $100M for diverse businesses", "Woman-owned in male-dominated industry"],
+        "li": "https://www.linkedin.com/in/kortneymurray/"
+      },
+      {
+        "n": "Christopher Murray",
+        "t": "SVP of Sales & Business Development",
+        "bg": "Manages growth strategy and client portfolio. Active in networking and trade shows.",
+        "hooks": ["Leads sales and BD for $100M capital raise target", "Active trade show presence"],
+        "li": "https://coastalkapital.com/about-us/our-team/christopher-murray/"
+      }
+    ],
+    "desc": "Coastal Kapital is a Sarasota, FL-based asset-based lender specializing in commercial equipment financing, working capital, SBA loans. Founded by Kortney Murray. Same-day funding. Seeking $100M from accredited investors.",
+    "news": [
+      {"h": "Kortney Murray Named 2024 Women of Influence", "s": "Sarasota Magazine, Jun 2024", "d": "Recognized for leadership in commercial finance."},
+      {"h": "Coastal Kapital Launches $100M Capital Raise", "s": "Coastal Kapital, Jan 2024", "d": "Seeking $100M to empower diverse businesses."},
+      {"h": "Coastal Kapital Expands to New HQ", "s": "CEOWORLD Magazine, 2023", "d": "Moved to 6012 Clark Center Ave, Sarasota."}
+    ],
+    "location": "Sarasota, FL",
+    "full_address": "6012 Clark Center Ave, Sarasota, FL 34238",
+    "website": "https://coastalkapital.com",
+    "employees": 9,
+    "category": "funder"
+  },
+  {
+    "id": 1184,
+    "name": "Coral Capital Solutions",
+    "leaders": [
+      {
+        "n": "Rishi Kumar",
+        "t": "Founder & Managing Partner",
+        "bg": "MIT triple-degree holder. Former Fixed Income derivatives trader at bulge bracket bank. NY real estate exec. Co-founded Kashable. Over $1B in financing.",
+        "hooks": ["MIT triple-degree holder turned $1B+ factoring firm founder", "Co-founded Kashable (financial wellness fintech)", "Recently closed $42M medical device factoring facility"],
+        "li": "https://www.linkedin.com/in/rishikumar/"
+      },
+      {
+        "n": "Einat Steklov",
+        "t": "Co-Founder & Managing Partner",
+        "bg": "Columbia MBA, Tel Aviv University law. Former factoring company president. Co-founded Kashable.",
+        "hooks": ["Dual entrepreneur: $1B+ factoring firm and Kashable fintech", "Columbia MBA + Tel Aviv law degree", "In-house counsel eliminates external legal dependency"],
+        "li": "https://www.linkedin.com/in/einat-steklov-099650/"
+      },
+      {
+        "n": "Jim Bertie",
+        "t": "Chief Operating Officer",
+        "bg": "25+ years in commercial finance. Joined Coral Capital in 2010. Previously 15 years at Platinum Funding Group.",
+        "hooks": ["25+ years in factoring operations", "Quoted in $42M medical device facility announcement"],
+        "li": "https://www.linkedin.com/in/jimbertie"
+      }
+    ],
+    "desc": "Coral Capital Solutions is a NYC-based commercial finance company founded 2008. Provides factoring, ABL, and PO financing. Over $1B in financing. Recent $42M medical device and $24M custom server facilities.",
+    "news": [
+      {"h": "Coral Capital Extends $42M Factoring Facility to Medical Device Manufacturer", "s": "ABL Advisor, Jan 2025", "d": "$42M facility for medical device company during M&A."},
+      {"h": "Coral Capital Closes $24M for IT Infrastructure Provider", "s": "Coral Capital, 2024", "d": "$24M factoring facility for custom computing infrastructure."}
+    ],
+    "location": "New York, NY",
+    "full_address": "275 Madison Avenue, Suite 2014, New York, NY 10016",
+    "website": "https://coralcapitalsolutions.com",
+    "employees": 9,
+    "category": "funder"
+  },
+  {
+    "id": 1185,
+    "name": "Creator Cash",
+    "leaders": [
+      {
+        "n": "Eugene Lee",
+        "t": "Founder & CEO",
+        "bg": "Serial entrepreneur in creator economy. Co-founded ChannelMeter reaching 1M+ creators. Previously at TubeMogul (2007-2010).",
+        "hooks": ["Built ChannelMeter to 1M+ creators before launching Creator Cash", "Deep creator economy background since 2007", "Platform paid over 1 million creators"],
+        "li": "https://www.linkedin.com/in/eugeneslee/"
+      },
+      {
+        "n": "Nimi Wariboko",
+        "t": "Co-Founder & CTO",
+        "bg": "Carnegie Mellon ECE graduate. CTO at ChannelMeter 2012-2017. Built analytics and creator payment systems.",
+        "hooks": ["Carnegie Mellon ECE graduate — built analytics engine", "Technical architect serving 1M+ creators"],
+        "li": "https://www.linkedin.com/in/nimiwariboko/"
+      }
+    ],
+    "desc": "Creator Cash (by ChannelMeter, Inc.) is a fintech providing banking and cash advance services for content creators. Connects to YouTube channels, calculates earnings, offers instant cash advances on AdSense revenue. $4.15M raised from Artis Ventures, Matter.VC, 500 Startups.",
+    "news": [
+      {"h": "ChannelMeter Hits $1M Revenue and 900K Customers", "s": "GetLatka, 2024", "d": "Reached $1M revenue, 900K customers."},
+      {"h": "ChannelMeter Raises $4M for Creator Banking", "s": "Fintech Futures, 2020", "d": "Seed funding for Creator Cash banking service."}
+    ],
+    "location": "San Francisco, CA",
+    "full_address": "1061 Market Street, Suite 508, San Francisco, CA 94103",
+    "website": "https://creator.cash",
+    "employees": 5,
+    "category": "technology"
+  },
+  {
+    "id": 1189,
+    "name": "Custom Capital Funding",
+    "leaders": [],
+    "desc": "Custom Capital Funding is a Brooklyn-based MCA funder working primarily through ISO/broker channels. Provides $3K-$2M funding. Does not fund law offices or other lenders. Ownership not publicly disclosed.",
+    "news": [],
+    "location": "Brooklyn, NY",
+    "full_address": "464 Avenue U, Floor 2, Brooklyn, NY 11223",
+    "website": "https://customcapitalfunding.com",
+    "employees": 1,
+    "category": "funder"
+  },
+  {
+    "id": 1190,
+    "name": "Data Driven Partners",
+    "leaders": [
+      {
+        "n": "Mallory Van Dover",
+        "t": "Co-Founder & CEO",
+        "bg": "14-year career in philanthropy before founding DDP. Former VP of CARTI Foundation, Executive Director at Arkansas Children's Hospital Foundation.",
+        "hooks": ["Pivoted from 14 years in nonprofit to banking fintech", "Woman and veteran-owned business", "Built Lending Leads from zero to serving banks and credit unions"],
+        "li": "https://www.linkedin.com/in/mallory-van-dover-8a1a687/"
+      },
+      {
+        "n": "Jennifer Carlisle",
+        "t": "Co-Founder & COO",
+        "bg": "Economics/Business BA from Hendrix College, JD from University of Arkansas. Named AMP's 2024 Women in Banking.",
+        "hooks": ["Named AMP's 2024 Women in Banking", "JD + economics/accounting background", "Leads product development for CRA compliance and lending growth"],
+        "li": "https://www.linkedin.com/in/jennifer-b-carlisle-jd-415b26a/"
+      }
+    ],
+    "desc": "Data Driven Partners is a woman and veteran-owned software company founded March 2020 in Little Rock, AR. Flagship product Lending Leads is a cloud-based prospecting tool for banks and credit unions. Also offers BALLIT for bank performance metrics and acquisition targets.",
+    "news": [
+      {"h": "Jennifer Carlisle Named AMP's 2024 Women in Banking", "s": "Arkansas Money & Politics, 2024", "d": "Recognized for contributions to financial services technology."},
+      {"h": "Data Driven Partners Featured in 'Leap of Faith' Profile", "s": "Arkansas Business, 2024", "d": "Profiled the leap from nonprofit and legal careers to banking tech."},
+      {"h": "DDP Presents at Oklahoma Bankers Association Conference", "s": "OBA, 2023", "d": "Showcased Lending Leads at OBA conference."}
+    ],
+    "location": "Little Rock, AR",
+    "full_address": "417 Main St, Ste 1837, Little Rock, AR 72201",
+    "website": "https://www.ddplendingleads.com",
+    "employees": 7,
+    "category": "technology"
+  }
+]
