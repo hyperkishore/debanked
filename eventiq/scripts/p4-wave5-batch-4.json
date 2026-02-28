@@ -1,0 +1,329 @@
+[
+  {
+    "id": 1246,
+    "name": "GillmanBagley",
+    "leaders": [
+      {
+        "n": "Matthew Gillman",
+        "t": "Founding Partner",
+        "bg": "Co-founded GillmanBagley with Michael Bagley. Previously Founder & CEO of SMB Compass, and held roles at InterNex Capital, OnDeck Capital, and Newtek Business Services. Based in White Plains, NY. Attended Indiana University Bloomington.",
+        "hooks": [
+          "Previously built SMB Compass as a business financing marketplace before co-founding GillmanBagley",
+          "Deep alternative lending experience spanning OnDeck Capital and InterNex Capital",
+          "GillmanBagley offers advance rates up to 95% with no minimum usage requirements"
+        ],
+        "li": "https://www.linkedin.com/in/gillmanmatthew/"
+      },
+      {
+        "n": "Michael Bagley",
+        "t": "Co-Founder & Partner",
+        "bg": "Brings over 30 years of experience in financial services. Previously Partner at Provident Commercial Finance and held roles at Action Capital Corporation and Triumph Business Capital. Attended Georgia State University (1993-1995). Grew up in a family of entrepreneurs.",
+        "hooks": [
+          "Three decades of financial services industry experience across multiple lending platforms",
+          "People-first leadership approach shaped by growing up in a family of entrepreneurs",
+          "Expanded GillmanBagley into government contractor funding with specialized programs"
+        ],
+        "li": "https://www.linkedin.com/in/michaelcbagley/"
+      }
+    ],
+    "desc": "GillmanBagley is a leading provider of invoice financing and asset-based lending to small businesses and lower middle market companies based in Chattanooga, TN. Founded by Matthew Gillman and Michael Bagley, the firm offers A/R lines of credit, invoice factoring, payroll funding, fuel card programs, and asset-backed lending. They offer advance rates up to 95% with no minimum usage requirements and can close deals in under a week. They also serve government contractors with specialized capital solutions for contract delivery and expansion.",
+    "news": [
+      {
+        "h": "GillmanBagley expands into government contractor funding",
+        "s": "gillmanbagley.com",
+        "d": "2025"
+      },
+      {
+        "h": "U.S. factoring services market valued at $171.98 billion in 2024, projected to grow at 9.4% CAGR",
+        "s": "newstrail.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Chattanooga, TN",
+    "full_address": "1104 Meroney St, Chattanooga, TN 37405",
+    "website": "https://gillmanbagley.com",
+    "employees": "11-50",
+    "category": "funder"
+  },
+  {
+    "id": 1248,
+    "name": "Gold Coast Capital, LLC",
+    "leaders": [
+      {
+        "n": "Jim Pringle",
+        "t": "President",
+        "bg": "Serves as President and registered agent of Gold Coast Capital, LLC, a Florida-based equipment financing and leasing company. Co-manages the firm with Shirley J. Pringle. Has over 14 years of industry experience in equipment financing and capital solutions for small businesses.",
+        "hooks": [
+          "Over 14 years of experience in equipment financing with thousands of completed transactions",
+          "Offers financing with little or no money down and terms up to 84 months",
+          "Provides SBA loans alongside traditional equipment financing for credit-challenged businesses"
+        ],
+        "li": "https://www.linkedin.com/in/jim-pringle-20928732/"
+      }
+    ],
+    "desc": "Gold Coast Capital, LLC specializes in capital equipment financing and leasing with over 14 years of industry experience. The firm has conducted thousands of transactions helping business owners across the United States. They offer equipment financing and leasing, working capital loans, and SBA loans, including solutions for credit-challenged businesses. Financing features little or no money down with terms up to 84 months, and funding ranges from $10,000 to $1 million.",
+    "news": [
+      {
+        "h": "Gold Coast Capital continues equipment financing operations serving businesses nationwide",
+        "s": "goldcoastcapllc.com",
+        "d": "2025"
+      }
+    ],
+    "location": "Cutler Bay, FL",
+    "full_address": "10343 SW 209th Ln, Cutler Bay, FL 33189",
+    "website": "https://www.goldcoastcapllc.com",
+    "employees": "1-10",
+    "category": "funder"
+  },
+  {
+    "id": 1249,
+    "name": "Golden Capital LLC",
+    "leaders": [],
+    "desc": "Golden Capital LLC operates as an equipment financing solutions provider at golden-cap.com, offering flexible financing for businesses including trucks, trailers, equipment, working capital, and commercial real estate loans. The company focuses on simplifying the financing process with clear answers, quick follow-up, and competitive terms. They review and match customers with flexible terms to help businesses grow through equipment acquisition and capital access.",
+    "news": [
+      {
+        "h": "Golden Capital continues offering equipment and working capital financing solutions",
+        "s": "golden-cap.com",
+        "d": "2025"
+      }
+    ],
+    "location": "United States",
+    "full_address": "",
+    "website": "https://www.golden-cap.com",
+    "employees": "1-10",
+    "category": "funder"
+  },
+  {
+    "id": 1250,
+    "name": "Good Tree Capital",
+    "leaders": [
+      {
+        "n": "Seke Ballard",
+        "t": "Founder & CEO",
+        "bg": "Graduated from University of North Carolina, served two years as a Peace Corps Volunteer in the Republic of Georgia. Earned MBA from Harvard University. Spent years at Procter & Gamble and Amazon before cashing in Amazon stock in 2015 to found Good Tree Capital at Chicago's 1871 tech incubator. Developed proprietary lending algorithm with 98.2% accuracy for cannabis companies.",
+        "hooks": [
+          "Founded the largest Black-owned investment group in the cannabis industry",
+          "Trusted by Illinois to deploy a $30 million social equity fund to cannabis licensees",
+          "Built proprietary lending algorithm analyzing 1.2 million loans achieving 98.2% accuracy",
+          "Harvard MBA who left Amazon to address lending disparities in the cannabis sector"
+        ],
+        "li": "https://www.linkedin.com/in/sekeballard/"
+      }
+    ],
+    "desc": "Good Tree Capital is a Seattle-headquartered fintech platform founded in 2015 that provides term loans, revolving lines of credit, and commercial real estate loans to state-licensed cannabis companies. The platform raises funds from accredited investors and underwrites loans for small, licensed cannabis businesses. Since launching lending in 2017, Good Tree has averaged $75,000 per loan (up to $250,000) across six states. Interest rates range from 12-25% with 6-36 month terms. The firm is trusted by Illinois to deploy a $30 million social equity fund to dispensaries and cultivators.",
+    "news": [
+      {
+        "h": "Good Tree Capital deploys $30M Illinois social equity fund for cannabis licensees",
+        "s": "mjbizdaily.com",
+        "d": "2024"
+      },
+      {
+        "h": "Cannabis lending prospects examined for 2025 amid evolving regulatory landscape",
+        "s": "mjbizdaily.com",
+        "d": "2025"
+      },
+      {
+        "h": "Forbes recognizes Seke Ballard for revolutionizing marijuana investing",
+        "s": "blog.goodtree.capital",
+        "d": "2024"
+      }
+    ],
+    "location": "Seattle, WA",
+    "full_address": "",
+    "website": "https://www.goodtree.capital",
+    "employees": "1-10",
+    "category": "funder"
+  },
+  {
+    "id": 1251,
+    "name": "Green Buck Capital",
+    "leaders": [
+      {
+        "n": "Albert Camuti",
+        "t": "Owner & Founder",
+        "bg": "Founded Green Buck Capital in 2019. Previously involved with Go Cap Advance and worked at Empire from 2017-2018. Based in Rockville Centre, New York. Leads the company's merchant cash advance operations serving small businesses nationwide from their Melville, NY headquarters.",
+        "hooks": [
+          "Built Green Buck Capital into an 11-person MCA operation since 2019",
+          "Prior experience at Empire and Go Cap Advance in the alternative lending space",
+          "Offers same-day merchant cash advances up to $1 million with minimum 550 FICO"
+        ],
+        "li": "https://www.linkedin.com/in/albert-camuti/"
+      }
+    ],
+    "desc": "Green Buck Capital is a direct merchant cash advance lender founded in 2019 and headquartered in Melville, New York. The company helps small businesses access flexible working capital to support growth, manage cash flow, and handle everyday operating needs. Their underwriting guidelines include minimum monthly revenue of $25,000, maximum funding of $1,000,000, buy rates of 1.20-1.42, minimum 1 year in business, minimum FICO of 550, and terms of 4-12 months. They specialize in trucking and construction industries and offer same-day funding.",
+    "news": [
+      {
+        "h": "Green Buck Capital receives positive customer reviews on Trustpilot for business lending services",
+        "s": "trustpilot.com",
+        "d": "2025"
+      }
+    ],
+    "location": "Melville, NY",
+    "full_address": "25 Melville Park Rd, Suite 100, Melville, NY 11747",
+    "website": "https://www.greenbuckcapital.com",
+    "employees": "11-50",
+    "category": "funder"
+  },
+  {
+    "id": 1252,
+    "name": "Green Note Capital",
+    "leaders": [
+      {
+        "n": "Gabe Mann",
+        "t": "Chief Executive Officer",
+        "bg": "Serves as CEO of Green Note Capital Partners Inc., a direct lender established in 2016 in Brooklyn, NY. Leads the company's operations providing financial solutions to small and medium-sized businesses across all 50 states. Also known as Gabriel Mann in corporate filings.",
+        "hooks": [
+          "Built Green Note Capital into a direct lender that has funded over $150 million",
+          "Company serves businesses across all 50 states in over 40 industries",
+          "Issues approvals within minutes and funds most new clients the same business day"
+        ],
+        "li": "https://www.linkedin.com/in/gabe-mann-246932338"
+      },
+      {
+        "n": "Perry Danese",
+        "t": "Chief Financial Officer",
+        "bg": "Serves as CFO of Green Note Capital Partners Inc. in Brooklyn, NY. Manages the company's financial operations for their direct lending business that provides working capital advances, business credit lines, equipment financing, and cash advance consolidation.",
+        "hooks": [
+          "Oversees financial operations for a lender that has funded over $150 million",
+          "Green Note Capital established new SPV entity in May 2024 for expanded operations"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Green Note Capital Partners Inc. is a direct lender established in 2016 in Brooklyn, NY, specializing in financial solutions for small-to-medium-sized businesses across all 50 states. The company has funded over $150 million and serves thousands of businesses in over 40 industries. They offer working capital advances, business credit lines, equipment financing, and cash advance consolidation. Green Note issues approvals within minutes and funds most new clients the same business day, with a non-notification option available. They established a new SPV entity in May 2024.",
+    "news": [
+      {
+        "h": "Green Note Capital Partners establishes new SPV LLC entity in Brooklyn",
+        "s": "bizprofile.net",
+        "d": "2024-05"
+      },
+      {
+        "h": "Green Note Capital surpasses $150 million in total business funding",
+        "s": "greennotecapital.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Brooklyn, NY",
+    "full_address": "1202 Ave U, Suite 1149, Brooklyn, NY 11229",
+    "website": "https://www.greennotecapital.com",
+    "employees": "6-10",
+    "category": "funder"
+  },
+  {
+    "id": 1253,
+    "name": "Growwell Funding",
+    "leaders": [],
+    "desc": "Growwell Funding is a national financing company founded in 2021 and based in Brooklyn, NY, with a network of over 100 lending partners. The company provides small business equipment funding and cash advance solutions built for fast approvals and flexible capital access. Their approval approach prioritizes daily cash performance, so revenue stability matters more than a perfect credit score. They offer equipment financing, business lines of credit, and asset-backed loans through an online marketplace where customers can compare terms and get funded within 24 hours.",
+    "news": [
+      {
+        "h": "Growwell Funding continues operations as Brooklyn-based national financing marketplace",
+        "s": "growwellfund.com",
+        "d": "2025"
+      }
+    ],
+    "location": "Brooklyn, NY",
+    "full_address": "1314 Ave M, Brooklyn, NY 11230",
+    "website": "https://www.growwellfunding.com",
+    "employees": "1-10",
+    "category": "funder"
+  },
+  {
+    "id": 1254,
+    "name": "GRP Funding",
+    "leaders": [
+      {
+        "n": "John D'Amico",
+        "t": "Managing Director",
+        "bg": "Results-oriented FinTech professional with 20+ years of experience in finance, risk, credit, sales, and systems operations. His MCA industry experience predates the Great Recession. Entrepreneurial-minded leader with a history of driving operational efficiencies and improving financial health. Attended Purdue University. Based in Berlin, CT.",
+        "hooks": [
+          "Over 20 years of FinTech experience spanning finance, risk, credit and sales operations",
+          "MCA industry veteran whose experience predates the 2008 Great Recession",
+          "Manages GRP Funding which has supported thousands of small to mid-size businesses since 2007",
+          "Known for driving cross-functional teams delivering seamless customer experiences"
+        ],
+        "li": "https://www.linkedin.com/in/john-damico-3206211b/"
+      }
+    ],
+    "desc": "GRP Funding is a direct financing company founded in 2007 that provides working capital to small businesses nationwide. Headquartered in Berlin, CT with offices in Springfield, MA, the company offers term loans, SBA loans (7a and 504), revenue financing, lines of credit, equipment financing, commercial real estate financing, invoice factoring, and business cash advances. They have supported thousands of small to mid-size private businesses and franchise concepts by filling the gap in traditional lending. Funds are typically deposited as fast as the next business day with no credit impact for applying.",
+    "news": [
+      {
+        "h": "GRP Funding review highlights range of funding options for small businesses in 2025",
+        "s": "unitedcapitalsource.com",
+        "d": "2025"
+      },
+      {
+        "h": "John D'Amico featured in DailyFunder CEO Corner discussing industry leadership",
+        "s": "prnewswire.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Berlin, CT",
+    "full_address": "100 Harding St, PO Box 96, Berlin, CT 06037",
+    "website": "https://www.grpfunding.com",
+    "employees": "25-100",
+    "category": "funder"
+  },
+  {
+    "id": 1256,
+    "name": "Harper Partners",
+    "leaders": [
+      {
+        "n": "Min Fang",
+        "t": "Co-Founder & Partner",
+        "bg": "Co-founded Harper Partners in 2015 in Los Angeles to provide non-dilutive funding to entrepreneurs. Background spans private equity, business consulting, and commercial finance. Has contributed to industry publications including Entrepreneur magazine on how lenders use social media in underwriting. Comes from a family of small business owners.",
+        "hooks": [
+          "Built Harper Partners to serve digital startups and tech companies with invoice factoring up to $5 million",
+          "Pioneer in providing non-dilutive funding alternatives to venture capital for startups",
+          "Offers factoring rates starting at 1% per month with approval within 48 hours"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Harper Partners is a specialty finance company founded in 2015 and headquartered in Los Angeles, California. The firm provides invoice factoring, accounts receivable financing, SaaS lending, and lines of credit to startups and small businesses. They serve digital media, advertising, technology, transportation, oil & gas, staffing, security, and consulting industries. Harper's fees range from 1-3% per month with advance rates of 70-90% of gross invoice amounts and credit lines up to $5 million. Initial funding typically takes 24 hours after signing, with subsequent advances in as little as a few hours.",
+    "news": [
+      {
+        "h": "Harper Partners continues expanding invoice factoring services for digital startups and tech companies",
+        "s": "joinharper.com",
+        "d": "2024-12"
+      },
+      {
+        "h": "Harper Partners adds SaaS lending solutions for recurring revenue businesses",
+        "s": "joinharper.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Los Angeles, CA",
+    "full_address": "500 Molino St, Los Angeles, CA",
+    "website": "https://www.joinharper.com",
+    "employees": "1-10",
+    "category": "funder"
+  },
+  {
+    "id": 1258,
+    "name": "HFH Capital",
+    "leaders": [],
+    "desc": "HFH Capital Funding LLC is a merchant cash advance provider founded in 2017 and based in Brooklyn, New York. The company advances businesses up to $250,000 by purchasing future sales, collecting repayment via ACH debit from business checking accounts or directly from credit card processing transactions. HFH Merchant Services LLC was identified as a Yellowstone Capital-affiliated entity involved in the New York Attorney General's settlement regarding unlawful lending practices disguised as merchant cash advances, resulting in over 1,100 judgments being vacated and debts discharged.",
+    "news": [
+      {
+        "h": "NY Attorney General discharges 1,100 MCA judgments against small businesses in Yellowstone settlement",
+        "s": "ag.ny.gov",
+        "d": "2024"
+      },
+      {
+        "h": "NJ Attorney General announces $27.375M settlement with Yellowstone Capital and related entities",
+        "s": "njoag.gov",
+        "d": "2024"
+      },
+      {
+        "h": "Hundreds of judgments held by predatory lenders vacated by Rockland County Court",
+        "s": "rcbizjournal.com",
+        "d": "2025-04"
+      }
+    ],
+    "location": "Brooklyn, NY",
+    "full_address": "1677 44th Street, Brooklyn, NY 11204",
+    "website": "https://www.hfhcapitalfunding.com",
+    "employees": "1-10",
+    "category": "funder"
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1234,
+    "name": "Fundfi Merchant Funding",
+    "category": "funder",
+    "website": "https://www.fundfimerchantfunding.com",
+    "employees": "11-50",
+    "location": "New York, NY",
+    "full_address": "352 Fulton Avenue, Hempstead, NY 11550",
+    "desc": "Fundfi Merchant Funding is a direct funder founded in 2020 offering merchant cash advances and revenue-based financing to small and medium-sized businesses. The company has a strategic credit facility partnership with Crown Partners LP and expanded its senior credit facility twice in 2025 to increase funding capacity. In December 2025, Fundfi launched two new products including a loan product and credit splits program. The company serves businesses across various industries in North America.",
+    "leaders": [
+      {
+        "n": "Efraim (Brian) G. Kandinov",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-Founder and CEO of Fundfi Merchant Funding since 2020. Previously served as Partner at CSQUARED International Limited and held roles in real estate development and at RBC. Holds a Bachelor's degree in Finance from Indiana University Kelley School of Business.",
+        "li": "https://www.linkedin.com/in/efraim-brian-g-kandinov-261753a/",
+        "hooks": [
+          "Built Fundfi from startup in 2020 to a company that expanded its credit facility twice in a single year (2025)",
+          "Secured strategic credit facility with Crown Partners LP to fuel portfolio growth",
+          "Launched two innovative financial products in December 2025 including credit splits program"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "Fundfi expands senior credit facility for second time in 2025",
+        "s": "deBanked",
+        "d": "2025-09"
+      },
+      {
+        "h": "Fundfi launches two new financial products including loan product and credit splits program",
+        "s": "deBanked",
+        "d": "2025-12"
+      },
+      {
+        "h": "Fundfi Merchant Funding expands senior credit facility to accelerate growth in revenue-based financing",
+        "s": "deBanked",
+        "d": "2025-04"
+      },
+      {
+        "h": "Crown Partners arranges new credit facility for Fundfi Merchant Funding",
+        "s": "ABF Journal",
+        "d": "2023-10"
+      }
+    ]
+  },
+  {
+    "id": 1235,
+    "name": "Funding and Business",
+    "category": "funder",
+    "website": "https://fundingandbusiness.com",
+    "employees": "1-10",
+    "location": "United States",
+    "full_address": "",
+    "desc": "Funding and Business (branded as F$B) is a small business funder providing fast working capital to entrepreneurs including those who cannot obtain traditional business loans. The company offers unsecured cash advances with funding within 24-48 hours, equipment financing with payment terms of 2-10 years, and additional funding options that can be acquired within 2-5 business days once approved. F$B focuses on serving small business owners with bad credit who need quick access to capital.",
+    "leaders": [],
+    "news": []
+  },
+  {
+    "id": 1236,
+    "name": "Fundmates",
+    "category": "funder",
+    "website": "https://www.fundmates.com",
+    "employees": "11-15",
+    "location": "Wilmington, DE",
+    "full_address": "300 Delaware Ave, Suite 210, Wilmington, DE 19801",
+    "desc": "Fundmates is a fintech platform founded in 2022 that provides specialized funding for YouTube content creators. The company offers funding ranging from $30,000 to $1 million based on channel performance and projected growth. Unlike competitors, Fundmates does not license creators' back catalogs or take ownership of channels, instead setting up repayments based on channel earnings. The company has distributed over $50 million in funding to more than 100 YouTube creators and raised a $2M Seed round in February 2024.",
+    "leaders": [
+      {
+        "n": "Ilia Dronov",
+        "t": "CEO & Founder",
+        "bg": "Founded Fundmates in 2022 to empower YouTube creators with financial support. Previously served as Chief People Officer and founding team member at a foodtech startup. Holds a Bachelor's degree from ITMO University. Under his leadership Fundmates has funded over 100 YouTubers with more than $50 million.",
+        "li": "https://www.linkedin.com/in/ilia-dronov/",
+        "hooks": [
+          "Built a YouTube-focused fintech platform that distributed $50M+ to 100+ creators in under 3 years",
+          "Secured $30 million funding tranche for YouTube creator financing in 2024",
+          "Creators using Fundmates see 30-60% growth within 4-6 months according to company data"
+        ]
+      },
+      {
+        "n": "Daniel Galper",
+        "t": "Co-Founder & Strategy Partner",
+        "bg": "Co-Founded Fundmates in 2022 alongside Ilia Dronov. Also Founder and CEO of Growfood, a leader in the Russian meal kits market generating $80M in annual revenue. Brings deep experience in scaling consumer businesses to Fundmates' strategic direction.",
+        "li": "https://www.linkedin.com/in/daniel-galper-9aa09847/",
+        "hooks": [
+          "Scaled Growfood to $80M annual revenue in Russia's meal kit market before co-founding Fundmates",
+          "Brings proven consumer-business scaling experience to the creator economy",
+          "Co-architected Fundmates' creator-first funding model that preserves full content ownership"
+        ]
+      },
+      {
+        "n": "Jake Scherbak",
+        "t": "Co-Founder & Partner",
+        "bg": "Entrepreneur with 11+ years in complex B2B IT sales and 10+ years in top management roles. Also serves as CBDO at L-Charge, an ultra-fast EV supercharger company, and is an advisor for Rask AI. Previously Chief Business Development Officer at 4xxi.",
+        "li": "https://www.linkedin.com/in/jakescherbak/",
+        "hooks": [
+          "Serial entrepreneur balancing leadership roles at Fundmates, L-Charge, and Rask AI advisory",
+          "Brings 11+ years of complex B2B IT sales experience to the creator financing space",
+          "Contributed to scaling multiple startups that secured substantial venture funding"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "Fundmates adds $30 million to the creator economy's financial services empire",
+        "s": "Tubefilter",
+        "d": "2024-10"
+      },
+      {
+        "h": "Fundmates partners with 6 companies plus Nick Nimmin to give creators biz dev blitz",
+        "s": "Tubefilter",
+        "d": "2025-03"
+      },
+      {
+        "h": "Fundmates raises $2M Seed round for YouTube creator financing platform",
+        "s": "Tracxn",
+        "d": "2024-02"
+      }
+    ]
+  },
+  {
+    "id": 1237,
+    "name": "Fundmerica",
+    "category": "iso",
+    "website": "https://www.fundmerica.com",
+    "employees": "16",
+    "location": "Anaheim, CA / Phoenix, AZ",
+    "full_address": "160 S Old Springs Rd, Anaheim, CA 92808",
+    "desc": "Fundmerica is an online business funding marketplace founded in 2017 that connects borrowers with multiple loan operators to find optimal terms. The company operates as a business funding broker (ISO) offering business loans, equipment financing, lines of credit, unsecured funding, and working capital loans. BBB Accredited since 2018, Fundmerica operates from two locations in Anaheim, CA and Phoenix, AZ. The company also runs an ISO submission portal allowing affiliate brokers to submit deals.",
+    "leaders": [
+      {
+        "n": "Marie T. Rubin",
+        "t": "President",
+        "bg": "President of Fundmerica with expertise in cross-functional team leadership, customer service, operations management, and process improvement. Previously held roles at Student Loan Exchange, American Mow LLC, Accurate Background, and Alpine Corp. Based in Huntington Beach, California.",
+        "li": "https://www.linkedin.com/in/marie-t-rubin-58b5903",
+        "hooks": [
+          "Leads a funding marketplace that has maintained BBB accreditation since 2018",
+          "Manages dual-location operations across Anaheim, CA and Phoenix, AZ",
+          "Brings cross-industry experience from student loans, background checks, and business operations"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "Fundmerica maintains BBB A+ rating with 4.18-star average from 33 customer reviews",
+        "s": "BBB",
+        "d": "2025"
+      },
+      {
+        "h": "Fundmerica addresses customer complaints about aggressive telemarketing practices",
+        "s": "BBB Reviews",
+        "d": "2025-05"
+      }
+    ]
+  },
+  {
+    "id": 1238,
+    "name": "Fundr",
+    "category": "funder",
+    "website": "https://www.1fundr.com",
+    "employees": "3-50",
+    "location": "New York, NY",
+    "full_address": "27 W 20th St, Suite 1204, New York, NY 10011",
+    "desc": "Fundr is a direct funder and rapidly expanding alternative financing company specializing in revenue-based financing for small business owners throughout the United States. Headquartered in New York City with an office in Miami, the company offers merchant cash advances, lines of credit, and equipment financing with funding available in as little as 24 hours. Fundr serves as both a direct funder and ISO partner, providing financial products tailored to each client's needs. The company has raised $1.1M in funding.",
+    "leaders": [
+      {
+        "n": "Gerbian King",
+        "t": "CEO",
+        "bg": "CEO of Fundr, leading the company's expansion as a direct funder in the alternative financing space. Also Founder and Managing Principal at Atipana Capital. Spent over a decade in trading, investment analyst, and client advisory roles at institutions in New York City. Holds a BS in Electrical Engineering from Howard University and an MBA from Stanford University.",
+        "li": "https://www.linkedin.com/in/fundr-owner-559062a6",
+        "hooks": [
+          "Stanford MBA and Howard University engineering graduate who transitioned from Wall Street to alternative lending",
+          "Leads Fundr as a direct funder offering 24-hour funding for small businesses",
+          "Also founded Atipana Capital, a private investment firm focused on portfolio management"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "Fundr operates as rapidly expanding alternative financing company with NYC and Miami offices",
+        "s": "ZoomInfo",
+        "d": "2024"
+      },
+      {
+        "h": "Fundr listed as BBB accredited business providing small business loans in New York",
+        "s": "BBB",
+        "d": "2024"
+      }
+    ]
+  },
+  {
+    "id": 1239,
+    "name": "FundStreet",
+    "category": "funder",
+    "website": "https://www.fundstreet.tech",
+    "employees": "51-200",
+    "location": "Coconut Grove, FL",
+    "full_address": "3390 Mary St, Suite 216, Coconut Grove, FL 33133",
+    "desc": "Fund Street Technologies (FundStreet) is the parent company of One Park Financial, the nation's leading technology-driven small business financing platform established in 2010. Over 10+ years the company has facilitated funding for thousands of business owners using proprietary technology platforms (Eagle-FST, Skynet-FST, Apex-FST). Named one of Florida's Best Companies to Work For and certified Great Place to Work for 8 consecutive years. One Park Financial evaluates business performance rather than credit scores, offering faster approvals and flexible options.",
+    "leaders": [
+      {
+        "n": "John Lie-Nielsen",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-Founded Fund Street Technologies and One Park Financial in 2010. Named Most Influential CEO 2023 by CEO-Monthly Magazine in the SME Financing Technology space. Previously held roles at Assurance Management Group, Marlin Interactive, Watersignal, and Aca Financial. Bachelor's degree from Emory University. Will serve on 2026 Miami Host Committee for the College Football Playoff.",
+        "li": "https://www.linkedin.com/in/john-lie-nielsen/",
+        "hooks": [
+          "Named Most Influential CEO 2023 in SME Financing Technology by CEO-Monthly Magazine",
+          "Built One Park Financial into the nation's leading tech-driven small business financing platform over 15 years",
+          "Led company to earn Great Place to Work certification 8 years in a row",
+          "Will serve on the 2026 Miami Host Committee for the College Football Playoff National Championship"
+        ]
+      },
+      {
+        "n": "Ben McCrery",
+        "t": "Chief Credit Officer & Co-Founder",
+        "bg": "Co-Founded Fund Street Technologies and One Park Financial in 2010. Over 25 years of experience in business and consumer finance with expertise in credit and underwriting, collections, analytics, and direct marketing. Previously VP at Allied Cash Advance overseeing Marketing, Credit, Collections, BI, and IT. Bachelor's degree from Emory University.",
+        "li": "https://www.linkedin.com/in/benmccrery/",
+        "hooks": [
+          "25+ years in business and consumer finance spanning credit, underwriting, collections, and analytics",
+          "Co-built One Park Financial from startup to national market leader in small business financing",
+          "Previously led multiple departments as VP at Allied Cash Advance before founding Fund Street"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "One Park Financial earns Great Place to Work certification for 8th consecutive year",
+        "s": "Fund Street Technologies",
+        "d": "2025"
+      },
+      {
+        "h": "One Park Financial strengthens community commitment through Orange Bowl Cares partnership",
+        "s": "Fund Street Technologies",
+        "d": "2025"
+      },
+      {
+        "h": "One Park Financial celebrates sixth year of Spread Joy Toy Drive at Nicklaus Children's Hospital",
+        "s": "Fund Street Technologies",
+        "d": "2024"
+      },
+      {
+        "h": "Fund Street Technologies named one of Florida's Best Companies to Work For for 2nd time",
+        "s": "One Park Financial",
+        "d": "2024"
+      }
+    ]
+  },
+  {
+    "id": 1240,
+    "name": "Fundzio",
+    "category": "funder",
+    "website": "https://fundzio.com",
+    "employees": "1-10",
+    "location": "Fort Lauderdale, FL",
+    "full_address": "6499 N Powerline Rd, Suite 108, Fort Lauderdale, FL 33309",
+    "desc": "Fundzio is a small direct funding company founded in 2013 that provides business cash advances to small businesses that may not qualify for traditional bank or SBA loans. The company charges a one-time flat fee rather than interest, with repayment terms of 3-12 months through an agreed-upon percentage of daily sales. Fundzio determines funding amounts based on monthly bank statements and assesses risk based on business health, performance, and reputation. The company also spawned Bitty Advance for sub-$100K revenue merchants.",
+    "leaders": [
+      {
+        "n": "Eddie Siegel",
+        "t": "Founder & CEO",
+        "bg": "Founded Fundzio in 2013 and later launched Bitty Advance in 2017 after recognizing that 50% of Fundzio's online applications came from merchants doing less than $100K in revenue. Previously held roles at Rapid Capital Funding and Investacard. Currently also CEO of Card Fi. Based in Fort Lauderdale, Florida.",
+        "li": "https://www.linkedin.com/in/edward-siegel-8bb99383/",
+        "hooks": [
+          "Identified underserved micro-merchant segment which led to launching Bitty Advance as a spin-off from Fundzio",
+          "Over a decade of experience in alternative small business funding since founding Fundzio in 2013",
+          "Serial entrepreneur running multiple fintech ventures including Fundzio, Bitty Advance, and Card Fi"
+        ]
+      },
+      {
+        "n": "Lenny Duvdivani",
+        "t": "President",
+        "bg": "President and Managing Member of Fundzio LLC. Oversees day-to-day operations of the direct funding company in Fort Lauderdale, Florida. Manages the company's business cash advance programs for small businesses that do not qualify for traditional bank or SBA loans.",
+        "li": "https://www.linkedin.com/in/lenny-duvdivani-3047b2175",
+        "hooks": [
+          "Manages operations of a direct funder serving businesses that cannot qualify for traditional bank loans",
+          "Co-leads Fundzio alongside founder Eddie Siegel in the competitive South Florida MCA market"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "Bitty Advance (Fundzio spin-off) opens office in NYC to hire sales talent and raise capital",
+        "s": "deBanked",
+        "d": "2019-06"
+      },
+      {
+        "h": "Fundzio named in New York Attorney General lawsuit targeting merchant cash advance practices",
+        "s": "NY Attorney General",
+        "d": "2024"
+      }
+    ]
+  },
+  {
+    "id": 1242,
+    "name": "Fvndit",
+    "category": "funder",
+    "website": "https://fvndit.com",
+    "employees": "11-50",
+    "location": "Irvine, CA / Ho Chi Minh City, Vietnam",
+    "full_address": "Irvine, CA, United States",
+    "desc": "Fvndit is a California- and Vietnam-based fintech company focused on solving working capital problems for SMEs using technology to rebuild core parts of the funding infrastructure. A portfolio company of Vemanti Group (publicly traded), Fvndit operates eLoan JSC, the leading P2P lending marketplace for SME financing in Vietnam. The company has disbursed over $15M in loans to Vietnamese SMEs and secured $30M in debt financing from Accial Capital and Variant Investments. Offers invoice and export financing up to $250K for 90 days.",
+    "leaders": [
+      {
+        "n": "Tan Tran",
+        "t": "Chairman & CEO",
+        "bg": "Chairman and CEO of both Fvndit and parent company Vemanti Group. Extensive technology career spanning Metaswitch Networks, Fronde, VoiceStep Telecom, GENBAND, Veraz Networks, Nokia, Sync Research (IBM OEM), SMC Networks, and Western Digital. Attended California State University. Based in Irvine, California.",
+        "li": "https://www.linkedin.com/in/tan-tran-949238b/",
+        "hooks": [
+          "Transitioned from deep tech career at Nokia, Western Digital, and GENBAND to fintech entrepreneurship",
+          "Leads Fvndit which has disbursed $15M+ in SME loans through eLoan marketplace in Vietnam",
+          "Secured $30M in debt financing from Accial Capital and Variant Investments for P2P lending expansion"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "Fvndit secures $30M in debt financing led by Accial Capital and Variant Investments for eLoan",
+        "s": "GlobeNewsWire / Nasdaq",
+        "d": "2020-09"
+      },
+      {
+        "h": "Vemanti Group portfolio company Fvndit disburses over $15 million in loans to SMEs in Vietnam",
+        "s": "GlobeNewsWire",
+        "d": "2020-07"
+      },
+      {
+        "h": "Fvndit's eLoan JSC reports 338% year-over-year revenue growth for FY2019",
+        "s": "GlobeNewsWire",
+        "d": "2020"
+      }
+    ]
+  },
+  {
+    "id": 1243,
+    "name": "G&G Funding",
+    "category": "funder",
+    "website": "https://www.gandgfunding.com",
+    "employees": "1-10",
+    "location": "New York, NY",
+    "full_address": "79 Madison Ave, Floor 6, New York, NY 10016",
+    "desc": "G&G Funding is a revenue-based financing company providing extensive funding solutions to small businesses nationwide. The company offers same-day funding approvals from $10,000 to $5 million for qualified applicants, with offers typically made within 1-2 hours. G&G Funding's underwriting emphasizes day-to-day cash flow trends over traditional credit metrics. The company also offers reverse consolidation services up to $1.5 million for businesses with up to 5 existing merchant cash advance positions.",
+    "leaders": [
+      {
+        "n": "Joseph Gandolfo",
+        "t": "Managing Partner",
+        "bg": "Managing Partner and co-leader of G&G Funding, a New York-based revenue financing company. Oversees funding operations offering same-day approvals from $10K to $5M for small businesses nationwide. Works alongside Anthony Gandolfo in managing the firm's lending processes and broker relationships.",
+        "li": "https://www.linkedin.com/in/josephrgandolfo/",
+        "hooks": [
+          "Co-leads a revenue-based financing firm offering same-day approvals up to $5 million",
+          "Manages G&G Funding's reverse consolidation program handling up to 5 MCA positions at $1.5M"
+        ]
+      },
+      {
+        "n": "Anthony Gandolfo",
+        "t": "Managing Partner",
+        "bg": "Managing Partner at G&G Funding based in New York City. Co-manages the firm's revenue-based financing operations alongside Joseph Gandolfo. Oversees broker relationships and funding processes for small businesses nationwide with a focus on fast decision-making and expedited funding.",
+        "li": "https://www.linkedin.com/in/anthony-gandolfo-a5aa3564",
+        "hooks": [
+          "Co-manages a funding operation that can deliver offers within 1-2 hours for businesses of all sizes",
+          "Oversees ISO relationships and broker facilitation for G&G Funding's nationwide lending operations"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "G&G Funding offers reverse consolidation services up to $1.5M on up to 5 MCA positions",
+        "s": "Company Website",
+        "d": "2024"
+      }
+    ]
+  },
+  {
+    "id": 1244,
+    "name": "GemCap Solutions",
+    "category": "funder",
+    "website": "https://www.gemcapsolutions.com",
+    "employees": "11-50",
+    "location": "San Antonio, TX",
+    "full_address": "9901 IH 10 W, Suite 800, San Antonio, TX 78230",
+    "desc": "GemCap Solutions is an asset-based lending firm founded in 2008 providing senior-secured commercial loans to low and middle market businesses in the United States and Canada. The company offers loans ranging from $1M to $10M as well as accounts receivable factoring facilities starting at $100K. GemCap specializes in growth capital, start-ups, acquisition financing, bridge loans, and turnarounds. The firm's management team combines operating and lending backgrounds to serve businesses needing non-bank capital.",
+    "leaders": [
+      {
+        "n": "Richard Ellis",
+        "t": "Co-President",
+        "bg": "Co-President of GemCap Solutions since founding in 2008. Background in turn around management, valuation, asset-based lending, start-ups, and bridge loans. Previously held roles at Gemelli Group, Buxbaum Group, and CheckPoint. Attended Texas A&M University (1982-1987). Based in San Antonio, Texas.",
+        "li": "https://www.linkedin.com/in/gemcap1/",
+        "hooks": [
+          "Texas A&M graduate with deep expertise in turnaround management and asset-based lending since 2008",
+          "Positioned GemCap to assist businesses impacted by SVB and Signature Bank collapse in March 2023",
+          "Provided $7M working capital line to Solstice Sunglasses, second largest sunglass retailer in the US"
+        ]
+      },
+      {
+        "n": "David Ellis",
+        "t": "Co-President",
+        "bg": "Co-President of GemCap Solutions. Works alongside Richard Ellis to lead the firm's senior-secured commercial lending operations. Focuses on providing asset-based loans and factoring facilities to low and middle market businesses across the United States and Canada.",
+        "li": "https://www.linkedin.com/in/ellisdavid/",
+        "hooks": [
+          "Co-leads an asset-based lending firm providing $1M-$10M loans to middle market businesses",
+          "Helped GemCap implement FGI T.R.U.S.T. risk mitigation platform for credit insurance compliance in 2024"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "GemCap implements FGI T.R.U.S.T. cloud-based risk mitigation platform for credit insurance policies",
+        "s": "FGI Worldwide",
+        "d": "2024-02"
+      },
+      {
+        "h": "GemCap offers to assist businesses impacted by Silicon Valley Bank and Signature Bank collapse",
+        "s": "PR Newswire",
+        "d": "2023-03"
+      },
+      {
+        "h": "GemCap provides $7 million working capital line of credit to Solstice Sunglasses",
+        "s": "BusinessWire",
+        "d": "2022-12"
+      }
+    ]
+  }
+]

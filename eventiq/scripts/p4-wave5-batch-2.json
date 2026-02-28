@@ -1,0 +1,464 @@
+[
+  {
+    "id": 1224,
+    "name": "Finova Capital",
+    "leaders": [
+      {
+        "n": "Mohit Sahney",
+        "t": "Founder, Managing Director & CEO",
+        "bg": "Founded Finova Capital in 2015 to transform credit delivery to underserved segments. Holds a Civil Engineering degree from MBM Engineering College and an MBA from FMS, MDS University Ajmer. Previously served as Joint General Manager at ICICI Bank. Under his leadership, Finova has grown to 4,600+ employees and 400+ branches across 16 Indian states.",
+        "hooks": [
+          "Built Finova from zero to Rs 3,477 crore AUM and 100,000+ customers in under a decade",
+          "Raised $259M total including a $135M Series E from Avataar, Sofina, and Norwest in Oct 2024",
+          "Pioneered in-house tech to assess borrower cash flows instead of traditional credit scores for MSME lending"
+        ],
+        "li": "https://www.linkedin.com/in/mohit-sahney-98a1232/"
+      },
+      {
+        "n": "Sunita Sahney",
+        "t": "Co-Founder & Executive Director",
+        "bg": "Co-founded Finova Capital in 2015. Holds a degree in Production & Industrial Engineering from MBM Engineering College and an MBA from FMS, MDS University, where she topped the university in Management. Previously held leadership roles at Shyam Telelink and Tata Teleservices before becoming an entrepreneur.",
+        "hooks": [
+          "Topped MDS University Ajmer in Management studies before transitioning from telecom leadership to fintech entrepreneurship",
+          "Co-architected Finova's strategy to serve unorganized and unserved MSME segments across rural India",
+          "Helped scale Finova from startup to 400+ branch network serving 16 Indian states"
+        ],
+        "li": "https://www.linkedin.com/company/finova-capital"
+      },
+      {
+        "n": "Axel Mancini",
+        "t": "Co-CEO",
+        "bg": "Serves as Co-CEO of Finova Capital alongside founder Mohit Sahney. Responsible for co-leading the company's growth strategy as it scales its MSME lending operations across India. Works alongside a board that includes senior leaders from Peak XV Partners, Faering Capital, and veteran central bankers.",
+        "hooks": [
+          "Co-leads a rapidly growing NBFC that achieved 31% year-on-year AUM growth to Rs 3,477 crore in FY25",
+          "Oversees expansion into newer states including Karnataka, Andhra Pradesh, Telangana, and Tamil Nadu"
+        ],
+        "li": "https://www.linkedin.com/company/finova-capital"
+      }
+    ],
+    "desc": "Finova Capital is a Jaipur-headquartered non-banking financial company (NBFC) licensed by the Reserve Bank of India, founded in 2015. The company focuses on lending to micro, small, and medium enterprises (MSMEs) using proprietary technology to assess borrower cash flows rather than traditional credit scores. Finova has grown to 4,653 employees, 400+ branches across 16 Indian states, with AUM of Rs 3,477 crore and annual revenue of Rs 762 crore as of March 2025. The company has raised $259M in total funding from Peak XV Partners (formerly Sequoia Capital India), Norwest Venture Partners, Faering Capital, Avataar Ventures, Sofina, and Madison India Capital. Finova deployed over $300M in capital to more than 100,000 customers across products including working capital loans, machinery loans, and business loans.",
+    "news": [
+      {
+        "h": "Finova Capital raises $135M in Series E funding led by Avataar Venture Partners",
+        "s": "Inc42",
+        "d": "2024-10-29"
+      },
+      {
+        "h": "CARE Ratings expects Finova's AUM to continue upward trajectory with 15-20% growth in FY26",
+        "s": "CARE Ratings",
+        "d": "2025-09-14"
+      },
+      {
+        "h": "Finova launches mobile-first onboarding app for savers and expands into Tamil Nadu",
+        "s": "Tracxn",
+        "d": "2025-02-01"
+      }
+    ],
+    "location": "Jaipur, Rajasthan, India",
+    "full_address": "702, Seventh Floor, Unique Aspire, Plot No. 13-14 Cosmo Colony, Amrapali Marg, Vaishali Nagar, Jaipur, Rajasthan 302021, India",
+    "website": "https://finova.in",
+    "employees": "4653",
+    "category": "Funder"
+  },
+  {
+    "id": 1225,
+    "name": "Finovance",
+    "leaders": [
+      {
+        "n": "Manuel Henriquez",
+        "t": "Co-Founder, Co-CEO & Co-Chairman",
+        "bg": "Best known as co-founder and former Chairman/CEO of Hercules Capital (NYSE: HTGC), a publicly traded BDC specializing in venture lending. Started career at Bank of Boston's venture capital group in 1987 focusing on early-stage tech and biotech. Later founded Ingenuity Capital Partners and Florida Angel Investors LLC. Holds a degree from Northeastern University.",
+        "hooks": [
+          "Built Hercules Capital into a leading publicly traded venture lending BDC before co-founding Finovance",
+          "Over 35 years of venture lending and fintech capital experience spanning Bank of Boston, Hercules Capital, and Finovance",
+          "Founded Florida Angel Investors LLC focused on early-stage fintech and technology seed investments"
+        ],
+        "li": "https://www.linkedin.com/in/mahenriquez/"
+      },
+      {
+        "n": "Craig Schmeizer",
+        "t": "Co-Founder, Co-CEO & Co-Chairman",
+        "bg": "Co-founded Finovance after encountering challenges securing growth capital for a prior e-commerce startup. Brings deep expertise in direct marketing, having led credit card acquisition and enhancement products teams. Co-leads the company alongside Manuel Henriquez from offices spanning New York, London, San Francisco, Dubai, and Orlando.",
+        "hooks": [
+          "Inspired to co-found Finovance after experiencing firsthand the difficulty of securing SMB growth capital",
+          "Leads AI and ML-driven revenue-based financing platform offering $50K to $5M in capital to SMBs",
+          "Built a multi-city fintech operation spanning five global offices"
+        ],
+        "li": "https://www.linkedin.com/in/craigschmeizer/"
+      },
+      {
+        "n": "Gavin Conway",
+        "t": "Co-Founder & Chief Product Officer",
+        "bg": "Co-founded Finovance alongside Craig Schmeizer and Manuel Henriquez. Previously worked as a Growth and Strategy Consultant. Attended the University of Leicester. Oversees product development for Finovance's AI and ML-based revenue financing platform serving SMBs.",
+        "hooks": [
+          "Leads product strategy for AI/ML-powered revenue-based financing platform serving small and medium businesses",
+          "Co-founded Finovance after encountering gaps in traditional SMB financing while running an e-commerce startup"
+        ],
+        "li": "https://uk.linkedin.com/in/gavinspencerconway"
+      }
+    ],
+    "desc": "Finovance is an AI and machine learning-based fintech capital provider founded in 2020 and headquartered in Orlando, Florida. The company provides revenue-based financing (RBF) and payments solutions to small and medium-sized businesses (SMBs), offering capital between $50,000 and $5 million with repayment periods ranging from 3 to 60 months. Finovance uses proprietary technology and integrated APIs to enable near-real-time pre-approvals without relying on external credit data. The company partnered with Grasshopper Bank for banking-as-a-service infrastructure. Finovance raised seed funding in May 2023 and completed an M&A exit and wind-down in late 2024. The company maintained offices in New York, London, San Francisco, Dubai, and Orlando.",
+    "news": [
+      {
+        "h": "Finovance Technologies announces closing of initial seed funding and emergence from stealth development",
+        "s": "Yahoo Finance",
+        "d": "2023-05-19"
+      },
+      {
+        "h": "Finovance partners with Grasshopper Bank for banking-as-a-service infrastructure",
+        "s": "Tracxn",
+        "d": "2023-06-01"
+      },
+      {
+        "h": "Finovance completes M&A exit and wind-down operations",
+        "s": "Tracxn",
+        "d": "2024-12-01"
+      }
+    ],
+    "location": "Orlando, Florida",
+    "full_address": "317 Edgewater Dr, Orlando, FL, USA",
+    "website": "https://www.finovance.co",
+    "employees": "11-50",
+    "category": "Funder"
+  },
+  {
+    "id": 1226,
+    "name": "FinTap",
+    "leaders": [
+      {
+        "n": "Reuven Mirlis",
+        "t": "Founder & CEO",
+        "bg": "Founded RDM Capital Funding in 2015, which rebranded as FinTap in October 2021. Attended Fairleigh Dickinson University. Has grown the company from its founding to deploying over $300 million to more than 5,000 small businesses across 100+ industries. Led the company through its rebrand and multiple credit facility increases from $7.5M to $86.5M.",
+        "hooks": [
+          "Scaled FinTap from a $7.5M initial credit facility in 2018 to an $86.5M facility in 2025",
+          "Deployed over $300M in working capital to 5,000+ small businesses across 100+ industries since 2015",
+          "Led the RDM Capital Funding to FinTap rebrand to reflect the company's tech-forward financing approach"
+        ],
+        "li": "https://www.linkedin.com/in/reuven-mirlis-787a51104/"
+      },
+      {
+        "n": "Elliott Yang",
+        "t": "Vice President of Finance",
+        "bg": "Serves as Vice President of Finance at FinTap, overseeing financial operations for the technology-enabled specialty finance company. Plays a key role in managing the company's credit facilities and corporate financial strategy as FinTap scales its SMB lending operations.",
+        "hooks": [
+          "Manages financial operations for a company that has deployed $300M+ to small businesses",
+          "Oversees finance for FinTap's growing $86.5M credit facility from institutional investors"
+        ],
+        "li": "https://www.linkedin.com/company/fintap"
+      }
+    ],
+    "desc": "FinTap (formerly RDM Capital Funding) is a technology-enabled specialty finance company founded in 2015 and headquartered in Clifton, New Jersey. The company provides working capital solutions of up to $1 million to small businesses through revenue-based financing, looking at multiple qualifying factors beyond just credit scores. FinTap has deployed more than $300 million to over 5,000 small businesses across 100+ industries in the United States. In October 2025, FinTap closed an $82.5M credit facility and a $4M corporate note, a significant increase from its 2021 financing. The company rebranded from RDM Capital Funding in October 2021 alongside securing a $50M credit facility from Arena Investors. FinTap has offices in New Jersey, Florida, and Virginia.",
+    "news": [
+      {
+        "h": "FinTap secures up to $86.5MM credit facility and corporate note to accelerate growth",
+        "s": "PR Newswire / Morningstar",
+        "d": "2025-10-23"
+      },
+      {
+        "h": "RDM Capital Funding rebrands as FinTap and secures $50MM credit facility from Arena Investors",
+        "s": "ABF Journal",
+        "d": "2021-10-13"
+      },
+      {
+        "h": "FinTap becomes BBB Accredited business",
+        "s": "Better Business Bureau",
+        "d": "2024-02-27"
+      }
+    ],
+    "location": "Clifton, New Jersey",
+    "full_address": "777 Passaic Ave, Suite 375, Clifton, NJ 07012, USA",
+    "website": "https://www.fintap.com",
+    "employees": "15",
+    "category": "Funder"
+  },
+  {
+    "id": 1227,
+    "name": "Fintegra",
+    "leaders": [
+      {
+        "n": "Glenn Forman",
+        "t": "Chief Executive Officer",
+        "bg": "Brings nearly four decades of professional experience to Fintegra. Spent 24 years as a Partner with McKinsey & Company, where he built and led the firm's global research, analytics, and knowledge management functions -- a 2,500-person enterprise generating $150M in annual profits. Previously worked alongside Roger W. Ferguson Jr. at McKinsey.",
+        "hooks": [
+          "Former McKinsey Partner who led a 2,500-person global function generating $150M in annual profits",
+          "Recruited former Federal Reserve Vice Chair Roger Ferguson as investor and strategic advisor",
+          "Secured $30M credit facility from Bastion Funding to scale small business lending operations"
+        ],
+        "li": "https://www.linkedin.com/in/glennformanfintegra/"
+      },
+      {
+        "n": "Bret Dunlap",
+        "t": "Founder & President",
+        "bg": "Serial entrepreneur who co-founded multiple technology companies over 30 years. Previously founded Advanced Mobile (acquired by Autobytel in 2013, NASDAQ: AUTO), co-founded one of the largest downloadable ringtone companies (sold in 2006), and co-founded Advanced Telecom Services, AT&T's largest pay-per-call services provider. MBA in finance from George Washington University, BA in economics from James Madison University.",
+        "hooks": [
+          "Serial entrepreneur with three successful exits including Advanced Mobile acquired by Autobytel (NASDAQ: AUTO)",
+          "Founded Yes Lender in 2014 which rebranded to Fintegra to serve underserved small businesses",
+          "Combines 30 years of tech entrepreneurship with mission-driven alternative lending"
+        ],
+        "li": "https://www.linkedin.com/in/bretdunlap/"
+      },
+      {
+        "n": "Roger W. Ferguson Jr.",
+        "t": "Investor & Strategic Advisor",
+        "bg": "Retired President and CEO of TIAA where he more than doubled assets under management to over $1 trillion. Former Vice Chair of the Federal Reserve (1997-2006) who spearheaded the central bank's response to 9/11. Serves on boards of Alphabet (Google), Corning, IFF, Klarna, The Aspen Institute, and Smithsonian Institution. Previously at McKinsey & Company.",
+        "hooks": [
+          "Former Federal Reserve Vice Chair praised by Greenspan as one of the most effective in the Fed's history",
+          "Doubled TIAA's assets to over $1 trillion as CEO before joining Fintegra as investor and advisor",
+          "Sits on boards of Alphabet, Corning, Klarna, and the Smithsonian Institution"
+        ],
+        "li": "https://www.linkedin.com/company/getfintegra"
+      }
+    ],
+    "desc": "Fintegra (formerly Yes Lender) is a fintech direct funder based in King of Prussia, Pennsylvania, providing working capital to small businesses that are underserved by traditional financial institutions. Founded in 2014 and rebranded in November 2021, the company name combines 'fintech' with 'integrity.' Fintegra offers unsecured working capital from $10K to $250K with no collateral required, using proprietary underwriting and predictive analytics based on historical transactional data. The company secured a $30M credit facility from Bastion Funding in March 2022. Notable investor and strategic advisor Roger W. Ferguson Jr., former Federal Reserve Vice Chair and retired TIAA CEO, joined the leadership team. The company employs approximately 12-14 people.",
+    "news": [
+      {
+        "h": "Fintegra secures $30 million credit facility from Bastion Funding",
+        "s": "PR Newswire",
+        "d": "2022-03-02"
+      },
+      {
+        "h": "Yes Lender rebrands as Fintegra and signs Roger W. Ferguson Jr. as investor and advisor",
+        "s": "PR Newswire",
+        "d": "2021-11-15"
+      },
+      {
+        "h": "Fintegra featured as alternative to traditional bank loans for small businesses",
+        "s": "The Fintech Mag",
+        "d": "2023-01-15"
+      }
+    ],
+    "location": "King of Prussia, Pennsylvania",
+    "full_address": "1150 1st Ave, Suite 105, King of Prussia, PA, USA",
+    "website": "https://getfintegra.com",
+    "employees": "12-14",
+    "category": "Funder"
+  },
+  {
+    "id": 1228,
+    "name": "FlieBen Capital",
+    "leaders": [
+      {
+        "n": "R. Montiel",
+        "t": "Principal Contact",
+        "bg": "Serves as the primary contact for FlieBen Capital, a freight factoring company based in Laredo, Texas. Oversees operations for a company that finances both American and Mexican trucking companies and individuals, leveraging bilingual capabilities to serve the US-Mexico cross-border transportation corridor.",
+        "hooks": [
+          "Operates at the US-Mexico border hub of Laredo, a critical freight corridor for North American trade",
+          "Serves both American and Mexican trucking companies with bilingual freight factoring services"
+        ],
+        "li": "https://www.linkedin.com/company/flieben-capital"
+      }
+    ],
+    "desc": "FlieBen Capital is a freight factoring company based in Laredo, Texas, specializing in accounts receivable factoring for the transportation sector. The company finances both American and Mexican individuals and companies, positioning itself at the critical US-Mexico cross-border trade corridor. FlieBen Capital emphasizes three core benefits: cheaper, faster, and easier factoring services. The company uses advanced technology to provide quick and reliable fund transfers to clients, allowing trucking business owners to focus on operations rather than invoice collection. The company operates a bilingual platform with services available in both English and Spanish.",
+    "news": [
+      {
+        "h": "FlieBen Capital expands freight factoring services for US-Mexico transportation corridor",
+        "s": "fliebencapital.com",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Laredo, Texas",
+    "full_address": "Laredo, TX, USA",
+    "website": "https://fliebencapital.com",
+    "employees": "1-10",
+    "category": "Funder"
+  },
+  {
+    "id": 1229,
+    "name": "Founderpath",
+    "leaders": [
+      {
+        "n": "Nathan Latka",
+        "t": "Founder & CEO",
+        "bg": "Started his entrepreneurial journey at Virginia Tech in 2008, building and selling software company Heyo.com. In 2017, launched a daily CEO interview podcast (2,500+ episodes indexed at GetLatka.com). Using insights from interviews, began making debt investments in SaaS companies. Incorporated Founderpath (originally Operation Pie) in 2019. Has over 66,000 LinkedIn followers and has deployed $200M+ to 500+ SaaS founders.",
+        "hooks": [
+          "Built Founderpath from $10M seed to $145M fund, deploying $200M+ to 500+ bootstrapped SaaS founders without dilution",
+          "Hosts one of the largest SaaS podcasts with 2,500+ CEO interviews generating deal flow and market intelligence",
+          "Previously built and sold software company Heyo.com before pivoting to non-dilutive SaaS financing",
+          "Raised $145M ($135M debt + $10M equity) from Coromandel Capital, Forbright Bank, and Singh Capital Partners"
+        ],
+        "li": "https://www.linkedin.com/in/nathanlatka/"
+      }
+    ],
+    "desc": "Founderpath is a fintech platform providing non-dilutive capital solutions specifically designed for bootstrapped B2B SaaS companies, founded by Nathan Latka in 2019 and headquartered in Austin, Texas. The platform offers Revenue Financing (discount rates as low as 7%), Term Loans (interest rates as low as 15%), and Merchant Cash Advances (repayment rates as low as 5% of monthly revenue). Founderpath works with B2B SaaS companies generating at least $500K in annual revenue with healthy retention. The company has deployed over $200M to 500+ founders with 200+ five-star reviews, and 10,000+ companies have connected their data to the platform. In 2022, Founderpath raised $145M ($135M debt, $10M equity) led by Coromandel Capital, Forbright Bank, and Singh Capital Partners. Founders keep 100% equity with no board seats, personal guarantees, or long fundraising cycles.",
+    "news": [
+      {
+        "h": "Founderpath raises $145M in debt and equity to provide non-dilutive financing to bootstrapped SaaS founders",
+        "s": "Founderpath Blog / Fintech Futures",
+        "d": "2022-08-15"
+      },
+      {
+        "h": "Founderpath surpasses $200M deployed to 500+ SaaS founders with 200+ five-star reviews",
+        "s": "Founderpath",
+        "d": "2025-01-01"
+      },
+      {
+        "h": "10,000+ companies connect business data to Founderpath platform tools",
+        "s": "Founderpath",
+        "d": "2025-06-01"
+      }
+    ],
+    "location": "Austin, Texas",
+    "full_address": "Austin, TX, USA",
+    "website": "https://founderpath.com",
+    "employees": "11-50",
+    "category": "Funder"
+  },
+  {
+    "id": 1230,
+    "name": "Fountain Partners",
+    "leaders": [
+      {
+        "n": "Tom Carter",
+        "t": "Founder & Managing Partner",
+        "bg": "Founded Fountain Partners in 2006 to provide equipment leasing for growing businesses. Previously held VP of Operations and CFO roles at Starmine (acquired by Thomson Reuters). Earlier career as an equity research analyst at Piper Jaffray in San Francisco covering e-commerce, internet banking, and payments.",
+        "hooks": [
+          "Built Fountain Partners into a leading equipment lease provider for venture and growth-stage companies since 2006",
+          "Former CFO of Starmine (acquired by Thomson Reuters) and equity research analyst at Piper Jaffray",
+          "Manages private credit funds providing $250K to $25M in non-dilutive equipment lease capital"
+        ],
+        "li": "https://www.linkedin.com/in/tomcarter/"
+      },
+      {
+        "n": "John Van Hooser",
+        "t": "Managing Partner",
+        "bg": "Joined Fountain Partners to co-manage its third fund, Fountain Leasing 2010. Brings over 15 years of venture capital and private equity experience. Most recently served as General Partner at M/C Venture Partners before joining Fountain Partners.",
+        "hooks": [
+          "Former General Partner at M/C Venture Partners with 15+ years of VC and PE experience",
+          "Co-manages Fountain Partners funds focused on equipment leasing for venture and expansion-stage companies"
+        ],
+        "li": "https://www.linkedin.com/company/fountain-partners"
+      },
+      {
+        "n": "Afsheen Sharifi",
+        "t": "Partner",
+        "bg": "Joined Fountain Partners in 2010 focusing on credit analysis and fund operations. Background includes extensive direct operating experience in accounting, financial reporting, and budgeting. Plays a key role in evaluating equipment lease transactions across the firm's portfolio of venture and growth-stage companies.",
+        "hooks": [
+          "Over a decade at Fountain Partners managing credit analysis and fund operations since 2010",
+          "Evaluates equipment lease transactions spanning pre-revenue startups to publicly traded companies"
+        ],
+        "li": "https://www.linkedin.com/company/fountain-partners"
+      }
+    ],
+    "desc": "Fountain Partners is a specialty finance company founded in 2006 and headquartered in San Francisco, California. The firm provides equipment lease capital and manages private credit funds that provide financing in the form of equipment leases to companies ranging from pre-revenue to publicly traded, across multiple sectors and industries. Investment sizes range from $250,000 to $25,000,000. Fountain Partners offers Lease Lines of Credit for ongoing capital expenditure needs, and Sale Leaseback transactions for one-time cash infusions. The firm employs custom-tailored lease structures that are non-restrictive and non-dilutive. Notable portfolio investments include providing $13M in lease lines of credit to DigitalOcean.",
+    "news": [
+      {
+        "h": "Fountain Partners provides $13 million in lease lines of credit to DigitalOcean",
+        "s": "PR Newswire",
+        "d": "2014-06-01"
+      },
+      {
+        "h": "Fountain Partners hires John Van Hooser as Managing Partner to co-manage third fund",
+        "s": "Private Equity Wire",
+        "d": "2013-01-01"
+      }
+    ],
+    "location": "San Francisco, California",
+    "full_address": "50 California St, Suite 3330, San Francisco, CA 94111, USA",
+    "website": "https://www.fountainpartners.com",
+    "employees": "1-10",
+    "category": "Funder"
+  },
+  {
+    "id": 1231,
+    "name": "Fresh Funding",
+    "leaders": [
+      {
+        "n": "Erez Stamler",
+        "t": "CEO, Co-Founder & Managing Director",
+        "bg": "Co-founded Fresh Funding in 2016. Attended the University of Chicago Booth School of Business. Previously co-founded and served as CEO of DivergentCapital, Inc. Leads the company's strategy of using advanced data analytics and technology to provide uncollateralized capital to small businesses faster than traditional banks.",
+        "hooks": [
+          "University of Chicago Booth MBA who co-founded Fresh Funding to democratize small business capital access",
+          "Previously co-founded DivergentCapital before launching Fresh Funding to serve underbanked SMBs",
+          "Deployed $23M+ in capital to small businesses using data-driven underwriting and same-day funding"
+        ],
+        "li": "https://www.linkedin.com/in/erezstamler/"
+      }
+    ],
+    "desc": "Fresh Funding is a New York-based provider of working capital to small and medium-sized businesses across the United States, founded in 2016. The company uses advanced data analytics and cutting-edge technology to provide simple, affordable, uncollateralized capital in a fraction of the time traditional banks require. Fresh Funding offers fast, flexible working capital from $20,000 to $500,000 with quick approvals within 2-4 hours and same-day funding, with rates starting as low as 1.22%. The company has deployed more than $23 million in capital solutions since inception. Fresh Funding provides a revenue-based financing product where advances are repaid as a percentage of future sales. The company partners with Percent for institutional investment opportunities.",
+    "news": [
+      {
+        "h": "Fresh Funding featured in fireside chat on Percent platform about SMB investing opportunities",
+        "s": "Percent",
+        "d": "2023-01-01"
+      },
+      {
+        "h": "Fresh Funding files multiple contract enforcement cases in Connecticut District Court",
+        "s": "PACER / Justia",
+        "d": "2024-07-01"
+      }
+    ],
+    "location": "New York, New York",
+    "full_address": "New York, NY, USA",
+    "website": "https://gofreshfunding.com",
+    "employees": "11-50",
+    "category": "Funder"
+  },
+  {
+    "id": 1232,
+    "name": "Frog Funding",
+    "leaders": [
+      {
+        "n": "Jarret L. Gross",
+        "t": "Managing Member",
+        "bg": "Serves as Managing Member and Registered Agent of Frog Funding LLC, a merchant cash advance provider based in North Miami, Florida. Founded the company in 2015 to provide rapid working capital to businesses through merchant cash advances with funding timelines of 24 to 72 hours.",
+        "hooks": [
+          "Built Frog Funding as a rapid MCA provider delivering business capital within 24-72 hours",
+          "Operates Frog Funding from North Miami serving businesses nationwide with immediate cash advances"
+        ],
+        "li": "https://www.linkedin.com/company/frog-funding-llc"
+      }
+    ],
+    "desc": "Frog Funding LLC is a merchant cash advance (MCA) provider based in North Miami, Florida, founded in 2015. The company specializes in providing immediate merchant cash advances to businesses, enabling clients to access working capital quickly within 24 to 72 hours. Frog Funding also operates the Rebuild America Program aimed at fostering business growth and financial stability. The company works with businesses of various sizes and operates through a network of partnerships. Frog Funding is registered in Florida with Jarret L. Gross as Managing Member.",
+    "news": [
+      {
+        "h": "Frog Funding launches Rebuild America Program for business growth and financial stability",
+        "s": "frogfunding.com",
+        "d": "2023-01-01"
+      }
+    ],
+    "location": "North Miami, Florida",
+    "full_address": "13499 Biscayne Blvd, Suite 106L, North Miami, FL 33181, USA",
+    "website": "https://frogfunding.com",
+    "employees": "1-10",
+    "category": "Funder"
+  },
+  {
+    "id": 1233,
+    "name": "Funds 4 Less",
+    "leaders": [
+      {
+        "n": "Sam Charles",
+        "t": "Owner",
+        "bg": "Co-owner of Funds 4 Less, an all-in-one funding marketplace based in Sheridan, Wyoming. Manages the platform that connects investors with businesses, providing financial solutions across private equity placement, merchant cash advances, and real estate investment opportunities.",
+        "hooks": [
+          "Co-built an all-in-one funding marketplace spanning private equity, MCA, and real estate verticals",
+          "Operates from Sheridan, Wyoming, serving businesses with funding from $5,000 to $2.5 million"
+        ],
+        "li": "https://www.linkedin.com/company/funds-4-less"
+      },
+      {
+        "n": "Ben Randles",
+        "t": "Owner",
+        "bg": "Co-owner of Funds 4 Less based in Sheridan, Wyoming. Works in the finance, venture capital, and private equity industry. Helps manage the funding marketplace platform that provides small business lines of credit, bridge loans, and merchant cash advances.",
+        "hooks": [
+          "Brings venture capital and private equity industry experience to small business funding marketplace",
+          "Co-manages a funding platform offering lines of credit, bridge loans, and MCAs up to $2.5 million"
+        ],
+        "li": "https://www.linkedin.com/company/funds-4-less"
+      }
+    ],
+    "desc": "Funds 4 Less is an all-in-one funding marketplace based in Sheridan, Wyoming, that connects investors with businesses through a range of financial solutions. The company specializes in three core verticals: Private Equity Placement, Merchant Cash Advance, and Real Estate. Funds 4 Less provides small business lines of credit, bridge loans, and MCAs ranging from $5,000 to $2,500,000. The platform is designed to simplify how investors and business owners connect, with investors exploring investment opportunities while businesses find tailored financial solutions. The company holds an A+ rating with the Better Business Bureau.",
+    "news": [
+      {
+        "h": "Funds 4 Less launches all-in-one funding marketplace for investors and businesses",
+        "s": "funds4less.com",
+        "d": "2023-01-01"
+      }
+    ],
+    "location": "Sheridan, Wyoming",
+    "full_address": "30 N Gould St, Suite R, Sheridan, WY 82801, USA",
+    "website": "https://www.funds4less.com",
+    "employees": "1-10",
+    "category": "Funder"
+  }
+]
