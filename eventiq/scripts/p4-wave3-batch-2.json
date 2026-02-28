@@ -1,0 +1,381 @@
+[
+  {
+    "id": 168,
+    "name": "Fleximize",
+    "leaders": [
+      {
+        "n": "Peter Tuvey",
+        "t": "Co-Founder & CEO",
+        "bg": "Seasoned entrepreneur in business and consumer lending. Previously founded Ariste Holding, a consumer lending company, which he sold to EZCORP in 2012. At the end of 2013, Tuvey partnered with Max Chmyshuk and Daniel McPherson to form Alterium, whose primary brand Fleximize launched in 2014 to provide flexible finance to UK SMEs. Under his leadership, Fleximize has grown from a five-person team to over 80 employees.",
+        "hooks": [
+          "Sold his previous company Ariste Holding to EZCORP in 2012 before launching Fleximize",
+          "Secured £136M securitised funding from Goldman Sachs Asset Management and Citi in 2023",
+          "Named Best Business Loan Provider at the Business Moneyfacts Awards"
+        ],
+        "li": "https://uk.linkedin.com/in/peter-tuvey-67232b26"
+      },
+      {
+        "n": "Dan O'Sullivan",
+        "t": "Chief Finance Officer",
+        "bg": "Fleximize's first employee, joining in 2013. Previously worked with CEO Peter Tuvey at Ariste Holdings since 2010. As CFO, he oversees all financial operations and strategic decision-making, having been instrumental in the company's growth from startup to a major UK SME lender with over £136M in securitised funding facilities.",
+        "hooks": [
+          "Was Fleximize's very first employee, joining before the official 2014 launch",
+          "Has worked alongside CEO Peter Tuvey for over a decade across multiple ventures",
+          "Helped secure Goldman Sachs Asset Management and Citi as funding partners"
+        ],
+        "li": "https://uk.linkedin.com/in/daniel-o-sullivan-38824246"
+      }
+    ],
+    "desc": "Fleximize is a multi-award-winning digital business lender dedicated to providing UK SMEs with flexible finance. Founded in 2014 and headquartered in Ipswich, Suffolk, Fleximize has grown from a five-person operation to over 140 employees. The company has supported thousands of businesses across sectors including professional services, hospitality, and retail. In September 2023, Fleximize secured a £136 million securitised funding facility from Goldman Sachs Asset Management and Citi, bringing total funding raised to over $212M. The company was named Best Business Loan Provider at the Business Moneyfacts Awards.",
+    "news": [
+      {"h": "Fleximize Receives £136 Million Financing for SME Lending Solutions", "s": "FF News, September 2023", "d": "Fleximize secured a £136M securitised funding facility from Goldman Sachs Asset Management and Citi to expand lending operations and accelerate growth."},
+      {"h": "Fleximize Named Best Business Loan Provider", "s": "Business Moneyfacts Awards, 2024", "d": "Fleximize won the Best Business Loan Provider award at the Business Moneyfacts Awards, cementing its position as a leading UK SME lender."}
+    ],
+    "location": "Ipswich, United Kingdom",
+    "full_address": "Holbrook House, 51 John Street, Ipswich, Suffolk, IP3 0AH, United Kingdom",
+    "website": "https://fleximize.com",
+    "employees": 143,
+    "category": "funder"
+  },
+  {
+    "id": 169,
+    "name": "365 Business Finance",
+    "leaders": [
+      {
+        "n": "Andrew Raphaely",
+        "t": "Founder & Executive Vice-Chairman",
+        "bg": "Founder of 365 Business Finance, which he established in 2012. After qualifying as a Chartered Accountant, Andrew worked in wealth advisory, asset management, and hedge funds before identifying the opportunity in merchant cash advances for UK small businesses. Recently transitioned from Managing Director to Executive Vice-Chairman as the company scales globally.",
+        "hooks": [
+          "Built 365 Finance from startup in 2012 to a King's Award for Enterprise winner in 2024",
+          "Background spans wealth advisory, asset management, and hedge funds before pivoting to SME finance",
+          "Developed the Rev&U AI-powered underwriting platform that won royal recognition"
+        ],
+        "li": "https://www.linkedin.com/in/andrew-raphaely-694a17b/"
+      },
+      {
+        "n": "Warren Abbey",
+        "t": "Chief Executive Officer",
+        "bg": "Appointed CEO of 365 Finance in 2024, bringing extensive lending experience across competitive markets on multiple continents. Educated at the University of Cape Town. Tasked with driving product innovation, strengthening embedded finance partnerships, and sustainably scaling the business into new markets.",
+        "hooks": [
+          "Appointed CEO in 2024 to lead 365 Finance through its next growth phase",
+          "Brings multi-continent lending experience to a UK-focused fintech",
+          "Focused on embedded finance partnerships and international market expansion"
+        ],
+        "li": "https://www.linkedin.com/in/warren-abbey-9467098a/"
+      }
+    ],
+    "desc": "365 Business Finance (trading as 365 finance) is a UK-based alternative finance provider specializing in merchant cash advances and revenue-based financing for small businesses. Founded in 2012, the company converts future credit and debit card sales into immediate working capital, serving sectors such as retail, hospitality, and services. In 2024, 365 Finance marked a decade in business and received The King's Award for Enterprise for Innovation, recognising its proprietary Rev&U AI-powered underwriting platform that improves both speed and accuracy of funding decisions for UK SMBs.",
+    "news": [
+      {"h": "365 Finance Receives King's Award for Enterprise for Innovation", "s": "Various, 2024", "d": "365 Finance received The King's Award for Enterprise recognizing its Rev&U AI-powered underwriting platform for improving SME funding decisions."},
+      {"h": "365 Finance Appoints New CEO as it Targets Further Growth", "s": "FF News, 2024", "d": "Warren Abbey appointed as CEO to drive product innovation, strengthen embedded finance partnerships, and scale the business internationally."}
+    ],
+    "location": "London, United Kingdom",
+    "full_address": "Manor House, 21 Soho Square, London, W1D 3QP, United Kingdom",
+    "website": "https://www.365finance.co.uk",
+    "employees": 80,
+    "category": "funder"
+  },
+  {
+    "id": 170,
+    "name": "YouLend",
+    "leaders": [
+      {
+        "n": "Mikkel Solvsten Velin",
+        "t": "Founder & Co-CEO",
+        "bg": "Danish-born founder who launched YouLend in 2015. Prior to founding YouLend, Velin spent 7 years as partner and high-yield portfolio manager at a UK-based global asset manager that was sold to Allianz Global Investors. Originally a qualified lawyer working with M&A and finance in Denmark at Bech-Bruun. Under his leadership, YouLend has grown revenue at ~60% annually, reaching $230M in FY24/25.",
+        "hooks": [
+          "Secured a landmark £4 billion private securitisation deal with JP Morgan in 2024",
+          "Grew YouLend revenue at ~60% annually to $230M, reaching profitability at $12M",
+          "Former high-yield portfolio manager whose firm was acquired by Allianz Global Investors"
+        ],
+        "li": "https://www.linkedin.com/in/mikkelvelin/"
+      },
+      {
+        "n": "Anders Christoffersen",
+        "t": "Chief Financial Officer",
+        "bg": "CFO of YouLend overseeing the company's financial strategy during a period of rapid global expansion. Has been instrumental in structuring the company's major financing deals including the £4 billion JP Morgan securitisation and the Castlelake facility for US expansion. Helps manage the financial infrastructure supporting 370,000+ businesses funded worldwide.",
+        "hooks": [
+          "Oversees financial operations for a company that has funded 370,000+ businesses globally",
+          "Key role in structuring the £4B JP Morgan securitisation deal",
+          "Managing finances during YouLend's expansion from UK/EU into US market"
+        ],
+        "li": "https://www.linkedin.com/in/anders-christoffersen/"
+      }
+    ],
+    "desc": "YouLend is the preferred global embedded financing platform for many of the world's leading e-commerce and payments platforms including eBay, Shopify, Amazon, Dojo, Mastercard, Google, and Just Eat Takeaway.com. Founded in 2015 and headquartered in London, YouLend's software platform and APIs enable partners to offer flexible financing products to their merchant base. The company secured a landmark £4 billion private securitisation deal with JP Morgan in early 2024, with Castlelake providing subordinate debt. Since 2022, YouLend has grown revenue at ~60% annually to $230M in FY24/25, reaching profitability at $12M. The company has funded more than 370,000 businesses worldwide and opened a Berlin office in January 2026.",
+    "news": [
+      {"h": "YouLend Secures £4 Billion Securitisation Deal with JP Morgan", "s": "Fintech Futures, February 2024", "d": "YouLend completed a private securitisation with JP Morgan as senior lender and Castlelake providing subordinate debt to extend £4B in additional SME financing."},
+      {"h": "YouLend Reaches 370,000 Businesses Funded", "s": "FF News, 2025", "d": "YouLend hit profitability at $12M while growing revenue to $230M in FY24/25, reaching 370,000 businesses funded globally."},
+      {"h": "YouLend and Upwork Partner for US Freelancer Financing", "s": "Open Banking Expo, 2025", "d": "YouLend partnered with Upwork to expand financial access for US freelancers, funding $1M+ in the first months of the program."},
+      {"h": "YouLend Partners with Castlelake for $1B US SMB Expansion", "s": "Financial IT, 2025", "d": "YouLend secured a new Castlelake facility to potentially extend over $1 billion in revenue-based financings to US SMBs over three years."}
+    ],
+    "location": "London, United Kingdom",
+    "full_address": "90 High Holborn, 5th Floor, London, WC1V 6LJ, United Kingdom",
+    "website": "https://youlend.com",
+    "employees": 300,
+    "category": "funder"
+  },
+  {
+    "id": 171,
+    "name": "Liberis",
+    "leaders": [
+      {
+        "n": "Rob Fairfield",
+        "t": "Chief Executive Officer",
+        "bg": "Appointed CEO of Liberis in August 2025 after serving as COO since 2020. Previously held leadership roles at UK mortgage broker Trussle. As COO, he was instrumental in scaling Liberis's embedded finance platform across 15 markets and building partnerships with over 30 global strategic partners including eBay, Sezzle, and Elavon.",
+        "hooks": [
+          "Promoted from COO to CEO in August 2025 to lead Liberis's next growth phase",
+          "Previously held leadership roles at UK mortgage broker Trussle before joining Liberis",
+          "Oversaw expansion to 15 markets and 30+ global strategic partners as COO"
+        ],
+        "li": "https://uk.linkedin.com/in/rljfairfield"
+      },
+      {
+        "n": "Tom Bason",
+        "t": "Chief Financial Officer",
+        "bg": "Has been with Liberis for over 15 years, making him one of the company's longest-serving executives. Brings extensive experience in audit and financial management, including two years at Bank of New York Mellon in asset management and securities services. Has overseen Liberis's financial growth through multiple funding rounds totaling $571M.",
+        "hooks": [
+          "One of Liberis's longest-serving executives with 15+ years at the company",
+          "Previously worked at Bank of New York Mellon in asset management",
+          "Managed finances through $571M in total funding including HSBC Innovation Banking facility"
+        ],
+        "li": "https://www.linkedin.com/in/tom-bason/"
+      }
+    ],
+    "desc": "Liberis is a leading global embedded finance platform founded in 2007 with a mission to provide small businesses with accessible and responsible finance. The company delivers revenue-based financing co-created with partners and embedded in their ecosystems. With over 30 global strategic partners and direct reach to more than 1 million small businesses, Liberis has provided over $1 billion in funding across 70,000+ transactions in 15 countries, enabling over 100,000 jobs to be created and saved. The company raised $571M total, including $112M from HSBC Innovation Banking and BCI Capital. In 2025, Liberis partnered with Elavon (US Bank subsidiary) to launch Quick Capital for 275,000+ US merchants and unveiled an AI-driven Capital Platform using 118 million data points monthly.",
+    "news": [
+      {"h": "Liberis and Elavon Partner to Unlock Fast Funding for US Small Businesses", "s": "Elavon, 2025", "d": "Liberis partnered with Elavon (US Bank subsidiary) to launch Quick Capital, providing capital access to 275,000+ US merchants."},
+      {"h": "Liberis Announces Rob Fairfield as CEO", "s": "FF News, August 2025", "d": "Rob Fairfield promoted from COO to CEO to lead Liberis through its next phase of global embedded finance growth."},
+      {"h": "Liberis Unveils AI-Powered Capital Platform", "s": "FF News, 2025", "d": "Liberis launched a major AI-driven platform using 118 million data points monthly to shift embedded lending from reactive to predictive intelligence."},
+      {"h": "Liberis Partners with Sezzle for SMB Financing", "s": "Various, August 2024", "d": "Liberis teamed up with BNPL firm Sezzle to help small businesses access financing without sacrificing equity."}
+    ],
+    "location": "London, United Kingdom",
+    "full_address": "Scale Space, 58 Wood Lane, London, W12 7RZ, United Kingdom",
+    "website": "https://www.liberis.com",
+    "employees": 285,
+    "category": "funder"
+  },
+  {
+    "id": 172,
+    "name": "Capify",
+    "leaders": [
+      {
+        "n": "David Goldin",
+        "t": "Founder & CEO",
+        "bg": "Founded Capify in 2002 in the US and expanded operations to the UK in 2008 (as United Kapital) and Australia (as AUSvance). With over 20 years in alternative finance, Goldin has built Capify into a cross-continental SME lender that has funded over £1.2 billion. Based in Boca Raton, Florida, he oversees global operations across the US, UK, and Australia.",
+        "hooks": [
+          "Built Capify from a 2002 US startup to a cross-continental lender in UK and Australia",
+          "Has funded over £1.2 billion to 20,000+ SMEs across three countries",
+          "Secured £100M credit facility from Pollen Street Capital in 2024 replacing Goldman Sachs"
+        ],
+        "li": "https://www.linkedin.com/in/davidgoldin/"
+      },
+      {
+        "n": "John Rozenbroek",
+        "t": "Global COO & CFO",
+        "bg": "Joined Capify UK as COO/CFO in March 2018, bringing over 25 years of experience across consulting, fintech, and financial services. Previously served as Managing Director at Zenbroek Consulting, Group Commercial Director and US CEO at ThinkSmart Ltd, and held roles at Experian and GUS PLC. Educated at the University of Liverpool.",
+        "hooks": [
+          "Brings 25+ years of experience spanning consulting, fintech, and financial services",
+          "Previously served as Group Commercial Director and US CEO at ThinkSmart Ltd",
+          "Overseeing financial and operational integration across UK and Australia markets"
+        ],
+        "li": "https://uk.linkedin.com/in/john-rozenbroek-4769a9341"
+      }
+    ],
+    "desc": "Capify is a UK-headquartered alternative finance company providing merchant cash advances and business loans to small and medium businesses in the UK and Australia. Founded by David Goldin in 2002, the company expanded to the UK in 2008 and Australia shortly after. With over 20 years of experience and more than £1.2 billion funded, Capify has supported over 20,000 businesses. In April 2024, Capify secured a £100 million credit facility from Pollen Street Capital, replacing its previous Goldman Sachs facility. The company offers unsecured business loans, merchant cash advances, and secured business loans, with applications pre-approved within 24 hours.",
+    "news": [
+      {"h": "Capify Secures £100M Credit Facility from Pollen Street Capital", "s": "Fintech Global, April 2024", "d": "Capify raised £100M from Pollen Street Capital to fuel growth plans and serve as working capital for thousands of SMEs across UK and Australia."},
+      {"h": "Capify Appoints Sam Colclough as Head of Technology", "s": "deBanked, September 2024", "d": "Sam Colclough joined Capify as Head of Technology for UK and Australia, bringing 20+ years of IT leadership to accelerate platform development."},
+      {"h": "Capify Appoints Think Business Loans Founder as Director of Strategic Initiatives", "s": "Secured Finance Network, July 2024", "d": "Jamie Stewart, founder and former MD of Think Business Loans, joined Capify as Director of Strategic Initiatives."}
+    ],
+    "location": "Altrincham, United Kingdom",
+    "full_address": "7th Floor, Station House, Stamford New Road, Altrincham, WA14 1EP, United Kingdom",
+    "website": "https://www.capify.co.uk",
+    "employees": 150,
+    "category": "funder"
+  },
+  {
+    "id": 173,
+    "name": "Nucleus Commercial Finance",
+    "leaders": [
+      {
+        "n": "Chirag Shah",
+        "t": "Founder & CEO",
+        "bg": "Founded Nucleus Commercial Finance in 2011 at age 26. Previously served as Portfolio Manager at Acheron Capital Ltd, a London-based asset manager focusing on distressed investments in ABL deals, hedge funds, and life settlements. Earlier career includes an internship at Merrill Lynch focusing on synthetic CDOs. Named CEO of the Year and has built a team drawn from giants such as Merrill Lynch, Wells Fargo, Nomura, and Deutsche Bank.",
+        "hooks": [
+          "Founded Nucleus at just 26 years old and has lent over £2.9 billion to UK businesses",
+          "Company acquired by Indian fintech Pulse in October 2025 for approximately £50M",
+          "Previously managed distressed investment portfolios at Acheron Capital with Merrill Lynch experience"
+        ],
+        "li": "https://uk.linkedin.com/in/cpshah"
+      }
+    ],
+    "desc": "Nucleus Commercial Finance is a UK commercial lender founded in 2011 by Chirag Shah with a mission to provide SMEs with alternative funding options. Headquartered in London's Haymarket, Nucleus has lent over £2.9 billion to businesses across the UK, offering secured and unsecured finance products from £10,000 up to £50 million. The management team has been drawn from financial giants including Merrill Lynch, Wells Fargo, Nomura, and Deutsche Bank. In October 2025, Nucleus was acquired by Indian fintech Pulse for approximately £50M. Post-acquisition, Pulse secured a £100M funding line from Castlelake to scale Nucleus's SME lending operations, and the company is set to launch a new loan product in January 2026 targeting younger, asset-light businesses using AI-based credit assessment.",
+    "news": [
+      {"h": "Indian Fintech Pulse Acquires Nucleus Commercial Finance", "s": "BCR Publishing, October 2025", "d": "Pulse acquired Nucleus Commercial Finance for approximately £50M (₹450-500 crore), reflecting the trend of integrating AI into financial services."},
+      {"h": "Pulse Secures £100M Funding from Castlelake Post-Acquisition", "s": "Business Standard, November 2025", "d": "Following the Nucleus acquisition, Pulse secured £100M from Castlelake to strengthen and scale Nucleus's UK SME lending operations."},
+      {"h": "Nucleus to Launch AI-Driven Loan Product for Asset-Light Businesses", "s": "Various, Late 2025", "d": "Nucleus plans to launch a new loan product in January 2026 focused on younger businesses, leveraging Pulse's AI-based credit assessment systems."}
+    ],
+    "location": "London, United Kingdom",
+    "full_address": "Mezzanine Floor, St Albans House, 57-59 Haymarket, London, SW1Y 4QX, United Kingdom",
+    "website": "https://nucleuscommercialfinance.com",
+    "employees": 88,
+    "category": "funder"
+  },
+  {
+    "id": 174,
+    "name": "C2FO",
+    "leaders": [
+      {
+        "n": "Sandy Kemper",
+        "t": "Founder, Chairman & CEO",
+        "bg": "Founded C2FO (originally Pollenware) in 2008 after serving as CEO of UMB Financial Corporation, a publicly traded financial services company. Under his leadership, C2FO has surpassed $400 billion in lifetime funding and achieved its first $1 billion daily funding milestone in December 2024. Previously led UMB Financial, one of the largest independent banking companies in the Midwest.",
+        "hooks": [
+          "Built C2FO from scratch to $400B+ in lifetime funding, hitting $1B in a single day",
+          "Former CEO of UMB Financial Corporation, a publicly traded banking company",
+          "Raised $30M from World Bank's IFC in April 2025 to expand into emerging markets"
+        ],
+        "li": "https://www.linkedin.com/in/alexander-sandy-kemper-b2366812/"
+      },
+      {
+        "n": "Colin Sharp",
+        "t": "Chief Sales Officer & President, National Working Capital Platform",
+        "bg": "Leads C2FO's global sales business working with customers, partners, and banks. Also serves as President for C2FO's National Working Capital Platform initiative, collaborating with governments and policymakers to ensure SME capital access. Previously spent six years at SAP in EMEA sales leadership roles. Holds a B.Eng in Engineering and an M.S. in Computing.",
+        "hooks": [
+          "Leads the National Working Capital Platform initiative working with governments on SME capital access",
+          "Previously held EMEA sales leadership roles at SAP for six years",
+          "Managing sales across a platform that serves 6 of the Fortune 10 companies"
+        ],
+        "li": "https://www.linkedin.com/in/colin-sharp-a54456/"
+      }
+    ],
+    "desc": "C2FO is the world's largest on-demand working capital platform, headquartered in Kansas City, Missouri. Founded in 2008 by Sandy Kemper (former CEO of UMB Financial Corporation), C2FO allows businesses to access funds tied up in accounts receivable through a dynamic marketplace. The company surpassed $400 billion in lifetime funding in December 2024 and achieved its first $1 billion daily funding milestone. In 2024, C2FO facilitated early payment of 42 million+ invoices for supply chains of over 200 global enterprise clients, including six of the Fortune 10. The company raised $30M from the World Bank's IFC in April 2025 and launched C2treds in India as the first US fintech approved by the RBI for trade receivables discounting.",
+    "news": [
+      {"h": "C2FO Surpasses $400 Billion Funding Milestone", "s": "PR Newswire, December 2024", "d": "C2FO reached $400B in lifetime funding and achieved its first $1 billion daily funding milestone, marking a record-breaking year."},
+      {"h": "C2FO Raises $30 Million with IFC to Enhance Global Platform", "s": "PR Newswire, April 2025", "d": "C2FO completed a $30M funding round with the World Bank's IFC to accelerate platform development and expansion in emerging markets."},
+      {"h": "C2FO Launches C2treds in India", "s": "Various, May 2024", "d": "C2FO became the first US fintech approved by India's RBI to facilitate payments through the Trade Receivables Discounting System for MSMEs."}
+    ],
+    "location": "Kansas City, Missouri, USA",
+    "full_address": "4600 Madison Avenue, Kansas City, MO 64112, USA",
+    "website": "https://c2fo.com",
+    "employees": 580,
+    "category": "marketplace"
+  },
+  {
+    "id": 179,
+    "name": "Kiva",
+    "leaders": [
+      {
+        "n": "Vishal Ghotge",
+        "t": "Chief Executive Officer",
+        "bg": "Joined Kiva as CEO in January 2023 with 20+ years of experience in building technology products for impact. Previously served as EVP for North America at Remitly, a cross-border remittances leader. Before that, served as Chief Product Officer at PayScale (compensation software) and spent over a decade at Microsoft working on Windows and Windows Phone. Also led product teams at Groupon. Holds an M.S. in Computer Science from University of Illinois and B.E. from University of Mumbai.",
+        "hooks": [
+          "Previously EVP for North America at Remitly, building financial products for immigrants",
+          "Spent over a decade at Microsoft working on Windows and Windows Phone products",
+          "Leading Kiva's $188M in loans in 2024, reaching 400,000+ people across 77 countries"
+        ],
+        "li": "https://www.linkedin.com/in/vishalghotge/"
+      },
+      {
+        "n": "Julie Hanna",
+        "t": "Executive Chair of the Board",
+        "bg": "Served as Executive Chair of the Board at Kiva from 2009 to late 2024. Entrepreneur, investor, and advisor working with purpose-driven technology companies. Recognized by the World Economic Forum and appointed by the U.S. Department of Commerce. Has been instrumental in Kiva's expansion from a microfinance platform into a global financial inclusion organization with 2 million+ lenders.",
+        "hooks": [
+          "Served as Kiva's Executive Chair for 15 years, guiding the platform to $1.68B in loans",
+          "Recognized by the World Economic Forum and the U.S. Department of Commerce",
+          "Oversaw Kiva's expansion to 2 million+ lenders across 77 countries"
+        ],
+        "li": "https://www.linkedin.com/in/juliehanna/"
+      }
+    ],
+    "desc": "Kiva is an international nonprofit 501(c)(3) organization founded in 2005 and based in San Francisco, California. Kiva tackles inequality by connecting people through crowdfunded microloans, allowing anyone to lend as little as $25 to entrepreneurs worldwide. Since launch, Kiva has crowd-funded more than 1.6 million loans totaling over $1.68 billion, with a 96.3% repayment rate and over 2 million lenders. In 2024, Kiva provided $188 million in loans reaching 401,744 people, with 79% directed to underbanked women. The US lending program offers 0% interest loans up to $15,000 for financially excluded small businesses, supported by a $3.5M Capital One grant.",
+    "news": [
+      {"h": "Kiva 2024 Annual Impact Report: $188M in Loans", "s": "Kiva.org, 2025", "d": "Kiva provided $188M in loans in 2024, reaching 401,744 people with 79% directed to underbanked women and 10% to refugees."},
+      {"h": "Capital One Awards $3.5M Grant to Kiva", "s": "Kiva.org, 2024", "d": "Capital One provided a $3.5M three-year grant including $2.5M for zero-fee US loans and $1M to improve the borrower experience."},
+      {"h": "Vishal Ghotge Announced as Kiva's New CEO", "s": "Kiva.org, January 2023", "d": "Former Remitly EVP Vishal Ghotge appointed CEO, bringing 20+ years of experience in building consumer marketplaces and fintech solutions."}
+    ],
+    "location": "San Francisco, California, USA",
+    "full_address": "986 Mission Street, 4th Floor, San Francisco, CA 94103, USA",
+    "website": "https://www.kiva.org",
+    "employees": 370,
+    "category": "marketplace"
+  },
+  {
+    "id": 181,
+    "name": "GreenSky",
+    "leaders": [
+      {
+        "n": "David Zalik",
+        "t": "Founder & Board Member",
+        "bg": "Founded GreenSky in 2006 in Atlanta, Georgia. A math prodigy born in Be'er-Sheva, Israel, Zalik bypassed high school and began attending Auburn University at age 14. Founded his first company, MicroTech Information Systems, as a college freshman, assembling and selling computers. Sold MicroTech in 1996, then founded Outweb (web development consulting) and was a director at RockBridge Commercial Bank. Recipient of the 2016 Ernst & Young National Financial Services Entrepreneur of the Year Award.",
+        "hooks": [
+          "Math prodigy who skipped high school and started Auburn University at age 14",
+          "GreenSky is his fourth company — sold his first startup MicroTech at age 20",
+          "Won 2016 Ernst & Young National Financial Services Entrepreneur of the Year Award"
+        ],
+        "li": "https://www.linkedin.com/in/davidzalik/"
+      },
+      {
+        "n": "Tim Kaliban",
+        "t": "CEO (retiring July 2025)",
+        "bg": "Joined GreenSky in 2012 as President and Chief Risk Officer, becoming CEO in 2024 after the Sixth Street acquisition. Career spans nearly 30 years in lending, compliance, servicing, and product development. Previously served as COO and EVP of Risk and Portfolio Management for TCM Bank, a leading consumer and business credit card provider to 600+ banks. Holds a B.A. from Middlebury College and MBA from Tulane University. Announced retirement effective July 2025.",
+        "hooks": [
+          "Led GreenSky through its transition from Goldman Sachs ownership to Sixth Street-led consortium",
+          "Nearly 30-year career spanning lending, compliance, and product development",
+          "Previously served as COO of TCM Bank serving 600+ banks nationwide"
+        ],
+        "li": "https://www.linkedin.com/in/tim-kaliban-8132146/"
+      }
+    ],
+    "desc": "GreenSky is a leading technology company powering commerce at the point of sale for merchants, consumers, banks, and institutional investors. Founded in 2006 by David Zalik in Atlanta, GreenSky operates the largest lending platform for home improvement loan originations by banks in the United States. The company's proprietary and patented technology platform enables merchants to offer frictionless promotional payment options to consumers. Originally acquired by Goldman Sachs in 2022 for $1.7 billion, GreenSky was sold in March 2024 to a consortium led by Sixth Street, with KKR, Bayview Asset Management, and CardWorks. In 2025, GreenSky completed multiple securitisations totaling over $2 billion in home improvement consumer loans.",
+    "news": [
+      {"h": "GreenSky Completes Acquisition by Sixth Street-Led Consortium", "s": "Sixth Street, March 2024", "d": "GreenSky completed its acquisition by Sixth Street, KKR, Bayview Asset Management, and CardWorks from Goldman Sachs."},
+      {"h": "GreenSky Announces CEO Transition", "s": "Business Wire, May 2025", "d": "Tim Kaliban announced retirement as CEO effective July 2025, with successor Ritesh Gupta (President and COO) to take over."},
+      {"h": "GreenSky Home Improvement Issuer Trust 2025-3 Securitisation", "s": "KBRA, November 2025", "d": "GreenSky completed its ninth rated 144A securitisation, issuing $718M in notes collateralized by ~$800M in home improvement consumer loans."}
+    ],
+    "location": "Atlanta, Georgia, USA",
+    "full_address": "5565 Glenridge Connector, Suite 700, Atlanta, GA 30342, USA",
+    "website": "https://www.greensky.com",
+    "employees": 700,
+    "category": "technology"
+  },
+  {
+    "id": 182,
+    "name": "Merchant Growth",
+    "leaders": [
+      {
+        "n": "David Gens",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Merchant Growth (then Merchant Advance Capital) in 2009, growing it from his apartment to offices in Toronto and Vancouver. Previously worked as an analyst at CAI Capital Partners, a New York-based private equity firm, where he gained deep understanding of the financial landscape and recognized the opportunity in short-term, high-yield loans to underserved small businesses. Named in Business in Vancouver's Top 40 Under 40.",
+        "hooks": [
+          "Started Merchant Growth from his apartment in 2009, now having funded $1 billion+ to 10,000+ businesses",
+          "Recognized in Business in Vancouver's Top 40 Under 40 and Canada's Top Growing Companies 2025",
+          "Secured $300M forward flow facility with Fortress for CEBA loan refinancing"
+        ],
+        "li": "https://ca.linkedin.com/in/davidmvgens"
+      },
+      {
+        "n": "Kevin Clark",
+        "t": "Chief Revenue Officer",
+        "bg": "Respected advisor in the fintech and financial services industry. Founder and former Chair of the Canadian Lenders Association. Former Founder and CEO of Lendified, a Canadian online lending platform. Prior to fintech, spent 30 years as an executive with the Bank of Nova Scotia (Scotiabank), one of Canada's Big Five banks.",
+        "hooks": [
+          "Founded and chaired the Canadian Lenders Association, shaping the alternative lending industry",
+          "Previously founded and ran Lendified, another Canadian online lending platform",
+          "Brings 30 years of Scotiabank executive experience to a fintech challenger"
+        ],
+        "li": "https://www.linkedin.com/in/kevinclark/"
+      }
+    ],
+    "desc": "Merchant Growth is a leading Canadian alternative lender providing fast, efficient, and reliable financing solutions to small businesses since 2009. Headquartered in Vancouver with offices in Toronto, the company is proudly Canadian owned and operated. Merchant Growth offers term financing, lines of credit, and e-commerce financing up to $800,000, with funds available in as little as 24 hours. Having worked with over 10,000 businesses and funded over $1 billion, the company is a member of the Canadian Lenders Association and has been recognized as one of Canada's Top Growing Companies 2025 by The Globe and Mail and featured in Growth 500 as one of Canada's Fastest Growing Companies. Merchant Growth secured a $300M forward flow facility with Fortress funds for CEBA loan refinancing.",
+    "news": [
+      {"h": "Merchant Growth Named in Canada's Top Growing Companies 2025", "s": "The Globe and Mail, 2025", "d": "Merchant Growth recognized in Canada's Top Growing Companies 2025, highlighting continued expansion in the small business financing sector."},
+      {"h": "Merchant Growth Secures $300M Fortress Forward Flow Facility", "s": "Fortress, 2024", "d": "Merchant Growth announced a $300M forward flow facility with Fortress funds to finance small businesses paying back their CEBA loans."},
+      {"h": "Interview with Merchant Growth CEO David Gens", "s": "Fortress Media, March 2024", "d": "David Gens discussed Merchant Growth's mission to provide accessible financing solutions for Canada's small businesses and expansion plans."}
+    ],
+    "location": "Vancouver, British Columbia, Canada",
+    "full_address": "1500 West Georgia Street, 20th Floor, Vancouver, BC V6G 2Z6, Canada",
+    "website": "https://www.merchantgrowth.com",
+    "employees": 75,
+    "category": "funder"
+  }
+]
