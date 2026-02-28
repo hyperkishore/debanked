@@ -1,0 +1,509 @@
+[
+  {
+    "id": 1326,
+    "name": "National Legacy Capital Group",
+    "leaders": [
+      {
+        "n": "Russ Swersky",
+        "t": "CEO",
+        "bg": "Leads National Legacy Capital Group from San Diego. Previously served as Senior VP of Sales at Mulligan Funding, VP of Working Capital Division at Alliance Funding Group, Senior Manager of Finance at AXIS Capital (insurance sector), and Equipment Leasing National Accounts Manager at North Star Funding. Started career as Equipment Finance Specialist & Team Leader at Five Point Capital. Holds a degree in Entrepreneurial Management from California Polytechnic State University-San Luis Obispo (2001-2005). Brings 15+ years of experience spanning equipment finance, working capital, and business lending.",
+        "hooks": [
+          "Cal Poly SLO entrepreneurial management grad",
+          "Mulligan Funding Senior VP alumni",
+          "Equipment finance career turned CEO",
+          "Built NLCG with 5-star Trustpilot rating"
+        ],
+        "li": "https://www.linkedin.com/in/russwersky"
+      },
+      {
+        "n": "David Schwartz",
+        "t": "Co-Founder & Growth Marketer",
+        "bg": "Co-founded National Legacy Capital Group alongside Russ Swersky. Handles the growth marketing function for the company, driving lead generation and brand awareness for the equipment financing and business lending platform. Works closely with the CEO to expand NLCG's reach across the United States and Canada.",
+        "hooks": [
+          "Co-founded NLCG growth marketing engine",
+          "Equipment finance marketing specialist"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Sue Loach",
+        "t": "VP, Operations",
+        "bg": "Vice President of Operations at National Legacy Capital Group. Holds an MBA from National University and a Network certification from CompTIA. Manages day-to-day operations including application processing, funder relationships, and client support for the equipment financing and business lending platform based in San Diego.",
+        "hooks": [
+          "National University MBA graduate",
+          "CompTIA certified operations leader",
+          "Equipment finance ops specialist"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "National Legacy Capital Group (NLCG) is a San Diego-based business financing company with over 15 years of experience providing tailored funding solutions for small and mid-sized businesses across the United States and Canada. The company offers equipment financing and leasing, small business loans, small business lines of credit, revolving asset-based lines of credit, vendor programs, and franchise programs. NLCG positions itself as a one-application, no-fee intermediary that connects businesses with multiple funding options within a day. The company emphasizes personalized service with decades of experience finding best-in-class financing. With approximately 3 employees and a 5-star rating on Trustpilot from 77 reviews, NLCG operates as a lean broker/facilitator connecting businesses with capital providers rather than funding directly from its own balance sheet.",
+    "news": [
+      {
+        "h": "National Legacy Capital Group maintains 5-star Trustpilot rating with 77+ customer reviews",
+        "s": "Trustpilot",
+        "d": "2025"
+      },
+      {
+        "h": "NLCG continues expanding equipment financing and business lending services across US and Canada",
+        "s": "nationallegacy.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers revolving asset-based lines of credit alongside traditional equipment financing",
+        "s": "nationallegacy.com",
+        "d": "2024"
+      }
+    ],
+    "location": "San Diego, CA",
+    "full_address": "5405 Morehouse Dr, Suite 315, San Diego, CA 92121",
+    "website": "nationallegacy.com",
+    "employees": 3,
+    "category": "funder"
+  },
+  {
+    "id": 1327,
+    "name": "National Truck Loans",
+    "leaders": [
+      {
+        "n": "Michael A. Alvarez",
+        "t": "Managing Partner",
+        "bg": "Managing Partner and Registered Agent of National Truck Loans, LLC. Leads the company's operations and strategic direction in the commercial vehicle financing space. Part of the founding team that established National Truck Loans as a boutique private lender specializing in truck and equipment financing for owner-operators and small family-owned trucking companies in Florida and nationwide.",
+        "hooks": [
+          "Boutique truck lending pioneer in Florida",
+          "Serves owner-operators nationwide",
+          "Registered agent and managing partner"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Bruce Nager",
+        "t": "Managing Owner",
+        "bg": "Managing Owner of National Truck Loans. Brings over 15 years of experience in the commercial vehicle lending market. Co-leads the company's lending operations alongside fellow managing owners, focusing on providing financing solutions for commercial trucks, equipment, and engine repairs with a client-first approach that evaluates the overall borrower profile rather than relying solely on credit scores.",
+        "hooks": [
+          "15+ years in commercial vehicle lending",
+          "Client-first underwriting philosophy",
+          "Port St. Lucie-based truck finance veteran"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Gerardo M. Gonzalez",
+        "t": "Managing Owner",
+        "bg": "Managing Owner of National Truck Loans. Part of the founding leadership team that established the company as a direct lender (not a broker) in the commercial vehicle space. Works alongside Michael Alvarez and Bruce Nager to manage the company's lending portfolio and client relationships, serving the underserved segment of owner-operators and small trucking businesses who need flexible financing.",
+        "hooks": [
+          "Direct lender in trucking niche",
+          "Serves underserved small trucking companies",
+          "Miami office co-leader"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "National Truck Loans is a Florida-based boutique private lender specializing in commercial vehicle financing from $15,000 to $250,000. Founded with over 15 years of experience in the commercial vehicle industry, the company serves as a direct lender (not a broker) focused on owner-operators, startups with 2+ years of experience, and small family-owned trucking companies nationwide. National Truck Loans differentiates itself by evaluating the overall borrower profile including collateral, experience, payment history, and business plan rather than relying solely on credit scores, and can finance credit scores as low as 600. Services include commercial truck financing, semi truck financing, truck repair financing, engine financing ($15K+ for major repairs), and bad credit truck financing. The company also assists with insurance, 3PL, and driver recommendations. With approximately 5 employees and offices in Port St. Lucie and Miami, FL, National Truck Loans operates in a niche segment of commercial vehicle lending.",
+    "news": [
+      {
+        "h": "National Truck Loans expands engine financing program for major truck repairs above $15,000",
+        "s": "nationaltruckloans.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company maintains BBB accreditation and strong Trustpilot reviews for commercial vehicle lending",
+        "s": "BBB / Trustpilot",
+        "d": "2024"
+      },
+      {
+        "h": "National Truck Loans continues serving bad credit borrowers with scores as low as 600",
+        "s": "nationaltruckloans.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Port St. Lucie, FL",
+    "full_address": "1680 SW Bayshore Blvd, Suite 100, Port Saint Lucie, FL 34984",
+    "website": "nationaltruckloans.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1328,
+    "name": "New Bridge Merchant Capital",
+    "leaders": [
+      {
+        "n": "Joseph Turriciano",
+        "t": "CEO",
+        "bg": "Chief Executive Officer of New Bridge Merchant Capital. Rose through the ranks from COO to CEO, where he previously oversaw the firm's day-to-day operations and strategic planning. Leads a management team with over 20 years of collective financial industry experience. Under his leadership, NBM has grown to serve businesses across multiple industries including medical, dental, restaurant, pharmacy, and gas stations with funding up to $2.5M from offices in NJ, NY, and FL.",
+        "hooks": [
+          "COO-to-CEO internal promotion path",
+          "20+ years collective team experience in finance",
+          "Multi-state operation: NJ, NY, and FL offices",
+          "Serves niche verticals: medical, dental, pharmacy"
+        ],
+        "li": "https://www.linkedin.com/in/joseph-turriciano-49a383101/"
+      },
+      {
+        "n": "Louis Russo",
+        "t": "Co-Founder",
+        "bg": "Co-founded New Bridge Merchant Capital in 2016. Part of the original leadership team that built NBM into a trusted business financing firm in New Jersey, establishing the company's reputation for fast capital access and flexible terms in the merchant cash advance industry.",
+        "hooks": [
+          "NBM co-founder since 2016",
+          "New Jersey MCA market builder"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Matt Petraglia",
+        "t": "Team Lead Manager",
+        "bg": "Team Lead Manager at New Bridge Merchant Capital. Manages the sales and operations team, overseeing client relationships and deal processing. Works closely with brokers and business owners to structure funding solutions across multiple industries including medical, dental, restaurant, and retail.",
+        "hooks": [
+          "Sales team leader at growing MCA firm",
+          "Multi-industry deal structuring experience"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "New Bridge Merchant Capital (NBM CNJ) is a New Jersey-headquartered business financing firm founded in 2016 with a management team bringing over 20 years of collective financial industry experience. The company provides merchant cash advances, lines of credit, and term loans with funding up to $2.5 million, tailoring programs based on industry type, business size, seasonality, and account liquidity. NBM offers same-day approval and 24-hour funding with minimal paperwork, requiring only an application, three months of bank statements, a driver's license, voided check, and proof of business ownership. The firm differentiates by offering early repayment rewards (waiving interest), willingness to pay off competitor balances, and no collateral requirements. With offices in Shrewsbury NJ, Manhattan NY, and Delray Beach FL, NBM employs 11-50 people and serves industries including medical, dental, restaurant, pharmacy, and gas stations.",
+    "news": [
+      {
+        "h": "New Bridge Merchant Capital expands to three-office footprint across NJ, NY, and FL",
+        "s": "nbmcnj.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers up to $2.5M in business funding with same-day approval process",
+        "s": "nbmcnj.com",
+        "d": "2024"
+      },
+      {
+        "h": "NBM CNJ positions early repayment rewards as key differentiator in competitive MCA market",
+        "s": "nbmcnj.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Shrewsbury, NJ",
+    "full_address": "511 Broad Street, Shrewsbury, NJ 07702",
+    "website": "nbmcnj.com",
+    "employees": 25,
+    "category": "funder"
+  },
+  {
+    "id": 1329,
+    "name": "Neptune Financial (NepFin)",
+    "leaders": [
+      {
+        "n": "Albert Periu",
+        "t": "Co-Founder & CEO (now CEO, Zilch USA)",
+        "bg": "Co-founded NepFin in 2016 after serving as Global Co-Head of Capital Markets and President of the broker-dealer affiliate at Funding Circle. Prior to fintech, spent 15+ years in securities industry with roles at FBR & Co., Merrill Lynch, and Deutsche Bank, gaining deep expertise in equities, middle market credit, high-yield bonds, and private investments. Holds a BS in Finance and International Business from Georgetown University. When Zilch acquired NepFin in 2021, transitioned to CEO of Zilch USA to lead the BNPL company's stateside expansion.",
+        "hooks": [
+          "Georgetown finance and international business grad",
+          "*Deutsche Bank and Merrill Lynch alumni",
+          "Funding Circle Global Co-Head of Capital Markets",
+          "*Built NepFin, sold to UK BNPL unicorn Zilch"
+        ],
+        "li": "https://www.linkedin.com/in/albertperiu/"
+      },
+      {
+        "n": "Thomas Meister",
+        "t": "Co-Founder & COO/General Counsel (now COO, Zilch USA)",
+        "bg": "Co-founded NepFin alongside Albert Periu in 2016 after the two worked together as executives at Funding Circle. Brings legal and operational expertise to fintech lending, serving dual roles as COO and General Counsel. After Zilch's acquisition of NepFin in 2021, transitioned to COO & General Counsel of Zilch USA, helping build out the BNPL company's U.S. operations and regulatory framework.",
+        "hooks": [
+          "Dual COO/General Counsel role",
+          "Funding Circle executive alumni",
+          "Helped launch Zilch in the US market"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Neptune Financial (NepFin) was a next-generation fintech commercial lending platform that provided growth capital to mid-sized American businesses with $10M-$100M in revenue, offering loans up to $60M. Founded in 2016 by Albert Periu and Thomas Meister (both former Funding Circle executives), NepFin leveraged machine learning and data science to lower underwriting costs and target underserved segments of the middle market. The company held a California Finance Lenders License and was backed by the same early investors as SoFi, Lending Club, and Upgrade, raising $13M total including a $10M Series A led by Sands Capital Ventures. NepFin expanded to Chicago in 2019 and partnered with HSBC for commercial banking referrals. In August 2021, UK BNPL company Zilch acquired NepFin for an undisclosed sum to fast-track its U.S. market entry, with co-founders Periu and Meister becoming CEO and COO of Zilch USA respectively. NepFin's domain is no longer active and the company has been fully absorbed into Zilch's operations.",
+    "news": [
+      {
+        "h": "Zilch acquires NepFin to launch BNPL services in the US market",
+        "s": "PR Newswire",
+        "d": "2021-08"
+      },
+      {
+        "h": "NepFin co-founders Albert Periu and Thomas Meister join Zilch leadership as CEO and COO of US operations",
+        "s": "Finextra",
+        "d": "2021-08"
+      },
+      {
+        "h": "NepFin expanded operations to Chicago to serve lower middle market companies",
+        "s": "BusinessWire",
+        "d": "2019-02"
+      }
+    ],
+    "location": "San Francisco, CA (acquired by Zilch)",
+    "full_address": "580 California St, Suite 1625, San Francisco, CA 94104",
+    "website": "nepfin.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1330,
+    "name": "NewFunds Capital",
+    "leaders": [],
+    "desc": "NewFunds Capital is a merchant cash advance funder that provides working capital to small business owners nationwide, partnering with ISOs to originate deals. The company offers funding ranging from $10,000 to $150,000 with fast approval, minimal paperwork, no collateral required, and same-day to next-day funding. NewFunds Capital differentiates itself by reporting payment history to Experian and Dun & Bradstreet, helping borrowers build business credit and improve FICO scores through timely repayment. The leadership team claims over nine decades of combined experience in direct MCA funding. The company emphasizes flexible terms, easy payment options, and the ability to refinance high daily payments into lower monthly payments. NewFunds Capital uses analytical software for underwriting and positions itself as a credit-building partner for small businesses.",
+    "news": [
+      {
+        "h": "NewFunds Capital partners with Experian and Dun & Bradstreet to report MCA payment history for credit building",
+        "s": "newfundscapital.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers refinancing solutions to lower daily MCA payments into monthly schedules",
+        "s": "newfundscapital.com",
+        "d": "2024"
+      },
+      {
+        "h": "NewFunds Capital expands ISO partnership program for nationwide MCA origination",
+        "s": "newfundscapital.com",
+        "d": "2024"
+      }
+    ],
+    "location": "United States",
+    "full_address": "United States",
+    "website": "newfundscapital.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1331,
+    "name": "NewRock Lending LLC",
+    "leaders": [
+      {
+        "n": "Lucretia Jones",
+        "t": "Finance Manager",
+        "bg": "Finance Manager at NewRock Lending LLC. Handles client documentation, broker relationships, and application processing for the merchant cash advance firm. Works with the in-house underwriting team to structure deals and manage the funding pipeline for business owners seeking working capital up to $500,000.",
+        "hooks": [
+          "MCA finance management specialist",
+          "Broker relationship coordinator"
+        ],
+        "li": "https://www.linkedin.com/in/lucretia-jones-713143306/"
+      }
+    ],
+    "desc": "NewRock Lending LLC is a Brick, NJ-based merchant cash advance funder that provides fast working capital to business owners with funding up to $500,000 available as quickly as same-day. The company offers merchant cash advances, term loans, and other financing plans with minimal paperwork. NewRock Lending positions itself as a direct funder (not a broker) that can approve applicants within hours and disburse funds within 24 hours, targeting business owners who cannot wait for traditional bank lending timelines. The company has a combined 5 years of lending industry experience on its team, with an in-house underwriter and veteran sales team. NewRock Lending works with brokers and ISOs to process applications and serves as an alternative to traditional bank financing for small businesses across the United States.",
+    "news": [
+      {
+        "h": "NewRock Lending continues offering same-day MCA funding up to $500K from Brick, NJ headquarters",
+        "s": "newrocklending.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company listed in deBanked and FunderIntel directories as active MCA direct funder",
+        "s": "FunderIntel",
+        "d": "2024"
+      }
+    ],
+    "location": "Brick, NJ",
+    "full_address": "Brick, NJ",
+    "website": "newrocklending.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1335,
+    "name": "Novus Capital Funding II",
+    "leaders": [
+      {
+        "n": "Elizabeth Cooper",
+        "t": "President",
+        "bg": "President of Novus Capital Funding with over 25 years of experience as an entrepreneur and executive team leader. Performance-driven sales and management professional with capabilities in client relations. Career spans roles as Business Loans Managing Partner at Novus Capital Funding (since 2015), Director at Legal Shield (since 2000), and positions in mortgage origination, investment banking, and venture capital. Founded Novus Capital Funding in 2015 in St. Petersburg, FL, and grew the company to serve small and mid-size businesses nationwide with funding from $3K to $6M.",
+        "hooks": [
+          "25+ years as entrepreneur and executive",
+          "Founded Novus Capital Funding in 2015",
+          "Legal Shield Director for 20+ years",
+          "Mortgage origination and investment banking background"
+        ],
+        "li": "https://www.linkedin.com/in/elizabethncf/"
+      }
+    ],
+    "desc": "Novus Capital Funding II LLC is a direct MCA funder headquartered in New City, NY, with operations linked to the broader Novus Capital Funding entity based in St. Petersburg, FL (founded 2015). The company provides merchant cash advances, lines of credit, term loans, and invoice factoring from $3,000 to $6 million with terms from 4 to 24 months. Novus is known as a direct funder that is most aggressive in 2nd to 5th position MCA deals, funding all positions with same-day availability. The company serves small and mid-size businesses nationwide with an emphasis on fast funding at competitive rates. Novus Capital Funding II has been involved in multiple New York court cases related to MCA agreements in 2024-2025, reflecting active enforcement of its funding contracts. The company employs an estimated 11-50 people and was recognized on the Inc. list.",
+    "news": [
+      {
+        "h": "Novus Capital Funding II involved in multiple NY court cases enforcing MCA agreements",
+        "s": "Justia / NY Courts",
+        "d": "2024-2025"
+      },
+      {
+        "h": "Company continues aggressive 2nd to 5th position MCA funding strategy with same-day availability",
+        "s": "FunderIntel",
+        "d": "2024"
+      },
+      {
+        "h": "Novus Capital Funding recognized on Inc. list for business growth",
+        "s": "Inc.com",
+        "d": "2024"
+      }
+    ],
+    "location": "New City, NY",
+    "full_address": "7 Elmwood Drive, Suite 301, New City, NY 10956",
+    "website": "novuscapitalfund.com",
+    "employees": 25,
+    "category": "funder"
+  },
+  {
+    "id": 1336,
+    "name": "NPLA Conference",
+    "leaders": [
+      {
+        "n": "Jonathan Hornik",
+        "t": "CEO, NPLA Conference & Executive Director, NPLA",
+        "bg": "Chief Executive Officer of the NPLA Conference and Executive Director of the National Private Lenders Association. Purchased the NPLA and Pitbull Conference in November 2022 from founder Leonard Rosen. Partner and Chair of the Private Lender Group at LaRocca, Hornik, Rosen & Greenberg (LHR&G). Holds a Doctor of Jurisprudence from Brooklyn Law School (1993-1995). Over 25 years as an accomplished transactional attorney advising public and private companies on secured and unsecured loan and equity transactions. Launched PrivateLenderLaw.com providing comprehensive real estate legal services nationwide for private lenders.",
+        "hooks": [
+          "Brooklyn Law School JD graduate",
+          "*Purchased legendary Pitbull Conference in 2022",
+          "25+ years as transactional attorney",
+          "Chair of Private Lender Law practice at LHR&G"
+        ],
+        "li": "https://www.linkedin.com/in/jonathan-l-hornik-esq-6620509a/"
+      },
+      {
+        "n": "Leonard Rosen",
+        "t": "Founder (former)",
+        "bg": "Founded the National Private Lenders Association and the Pitbull Conference, building the largest private lending marketplace in the country over 20+ years. Former nightly news anchor for Financial News Network (FNN), covering business, finance, equities, and real estate. Transitioned from financial journalism to creating a marketplace bringing investors, borrowers, and lenders together. Credited with helping rename the industry from 'hard money' to 'private lending.' Sold the NPLA and Pitbull Conference to Jonathan Hornik's Private Lender Law in November 2022.",
+        "hooks": [
+          "*Former Financial News Network TV anchor",
+          "*Created 20+ year private lending marketplace",
+          "Renamed industry from 'hard money' to 'private lending'",
+          "Now available on Cameo"
+        ],
+        "li": "https://www.linkedin.com/in/leonardrosenpitbull/"
+      },
+      {
+        "n": "Eric Abramovich",
+        "t": "Chairman, NPLA Advisory Council",
+        "bg": "Co-founder and Chief Revenue Officer of Roc360 (parent company of Roc Capital). Selected as Chairman of the NPLA Advisory Council in 2025, succeeding Jeff Tennyson who served three years in the role. Plays a leadership role in shaping the private lending industry's advocacy and policy direction through the NPLA.",
+        "hooks": [
+          "Roc360 co-founder and CRO",
+          "*Named NPLA Advisory Council Chairman 2025",
+          "Succeeded Jeff Tennyson in council leadership"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "The NPLA Conference (National Private Lenders Association Conference) is the largest private lending event in the United States, held three times annually and bringing together real estate lending professionals for education, networking, and industry advancement. Originally founded by Leonard Rosen over 20 years ago as the Pitbull Conference, the event was purchased by Jonathan Hornik's Private Lender Law firm in November 2022 and rebranded to the NPLA Conference in March 2023. The conference unites lenders, brokers, capital providers, investors, and supporting professionals (legal, accounting, insurance, asset management, technology) from across the private lending industry. The NPLA's foundational pillars are industry advancement, building community through education and mentorship, and strengthening the industry's legislative voice. The organization is headquartered in Marlboro, NJ, employs approximately 19 people, and hosts events at major venues across the country. The next conference is scheduled for March 15-17, 2026 at the Loews Miami Beach Hotel, followed by a June 2026 event in Atlantic City.",
+    "news": [
+      {
+        "h": "Eric Abramovich (Roc360 co-founder) named Chairman of NPLA Advisory Council",
+        "s": "ROI-NJ",
+        "d": "2025-10"
+      },
+      {
+        "h": "NPLA Conference scheduled for March 15-17, 2026 at Loews Miami Beach Hotel",
+        "s": "nplaconference.com",
+        "d": "2025"
+      },
+      {
+        "h": "NPLA unveils comprehensive Private Lending Glossary for industry standardization",
+        "s": "Private Lender Law",
+        "d": "2024"
+      }
+    ],
+    "location": "Marlboro, NJ",
+    "full_address": "475 County Rte 520, Marlboro, NJ 07746",
+    "website": "nplaconference.com",
+    "employees": 19,
+    "category": "service_provider"
+  },
+  {
+    "id": 1337,
+    "name": "NyxCarbon",
+    "leaders": [
+      {
+        "n": "Brittany Salas",
+        "t": "Founder & CEO",
+        "bg": "Founded NyxCarbon as a lending platform for SMEs in carbon removal and ecosystem restoration. Active in the climate tech startup ecosystem since 2015, beginning her work at a Smart City consultancy in New York. Member of the Council for Inclusive Capitalism. Speaker at Data Science Festival on topics related to climate finance and AI. Publishes the Carbon Outlook newsletter on Medium covering voluntary carbon market trends, policy changes, and sustainable finance. Leverages AI and Web3 technologies to build innovative risk assessment and loan servicing tools for the climate finance sector.",
+        "hooks": [
+          "Climate tech ecosystem veteran since 2015",
+          "*Council for Inclusive Capitalism member",
+          "Data Science Festival speaker",
+          "Publishes Carbon Outlook newsletter on Medium"
+        ],
+        "li": "https://www.linkedin.com/in/brittanysalas/"
+      }
+    ],
+    "desc": "NyxCarbon is a fintech lending platform founded in 2024 that makes it easy for financial institutions to provide loans to SMEs in carbon removal, ecosystem restoration, and sustainably sourced commodities. The platform provides an end-to-end solution that reduces the cost of underwriting through alternative data sources and innovative AI algorithms, offers targeted market intelligence for new lending opportunities, and automates loan servicing. NyxCarbon is on a mission to unlock over a trillion dollars in sustainable finance commitments by connecting companies with asset managers experienced in private debt markets. The company integrates Web3 technology, having deployed commodity swap smart contracts on the peaq blockchain network to enable sustainability businesses to sell carbon certificates. NyxCarbon develops smart contracts to verify key data points like soil, air, and water quality alongside off-chain carbon credit sales on internationally recognized registries. The company is privately held with an estimated 2-10 employees.",
+    "news": [
+      {
+        "h": "NyxCarbon joins peaq blockchain ecosystem, deploys commodity swap smart contracts for carbon certificates",
+        "s": "peaq.xyz",
+        "d": "2024-05"
+      },
+      {
+        "h": "NyxCarbon aims to unlock $1T+ in sustainable finance through AI and Web3 lending technology",
+        "s": "NyxCarbon / Medium",
+        "d": "2024"
+      },
+      {
+        "h": "Company publishes Carbon Outlook newsletter analyzing voluntary carbon market trends and policy shifts",
+        "s": "Medium",
+        "d": "2024"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "New York, NY",
+    "website": "nyxcarbon.net",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1338,
+    "name": "Oarex Capital Markets",
+    "leaders": [
+      {
+        "n": "Hanna Kassis",
+        "t": "Founder & CEO",
+        "bg": "Founded OAREX Capital Markets in 2012 while still in law school in Chicago. Raised from immigrant Palestinian parents in the Youngstown, Ohio area where his father became an economics professor at Youngstown State University. Secured initial $25K seed funding from Dan Gilbert's Bizdom accelerator, then raised $50M credit facility from a global asset manager and $50M line of credit. Holds a JD, Master's in Financial Economics, and CPA designation. Named to Crain's Cleveland Business 40 Under 40 in 2024. Completed a successful exit in 2022, selling majority equity to retired Goldman Sachs partners while retaining a minority stake. Subsequently launched Babylon Asset Management after the Silicon Valley Bank collapse.",
+        "hooks": [
+          "*Crain's Cleveland 40 Under 40 (2024)",
+          "*Founded OAREX while in law school, backed by Dan Gilbert's Bizdom",
+          "Triple-threat: JD + Master's Financial Economics + CPA",
+          "*Sold to Goldman Sachs partners, launched Babylon Asset Management"
+        ],
+        "li": "https://www.linkedin.com/in/hannakassis"
+      },
+      {
+        "n": "Taylor Haddix",
+        "t": "COO",
+        "bg": "Chief Operating Officer at OAREX Capital Markets since October 2015. Previously served as Head of Operations at Lapel. Studied at Allegheny College. Manages day-to-day operations for the digital advertising revenue exchange, overseeing the capital-as-a-service platform that provides liquidity to publishers, app developers, and ad tech companies.",
+        "hooks": [
+          "Allegheny College graduate",
+          "Former Head of Operations at Lapel",
+          "Decade-long COO tenure at OAREX"
+        ],
+        "li": "https://www.linkedin.com/in/taylorhaddix"
+      },
+      {
+        "n": "Nick Carrabbia",
+        "t": "Executive Vice President",
+        "bg": "Executive Vice President at OAREX Capital Markets in Cleveland, Ohio. Leads business development and client relationships for the digital advertising revenue exchange. Works with publishers, app developers, ad networks, and supply-side platforms to structure factoring and liquidity solutions for their advertising receivables.",
+        "hooks": [
+          "EVP driving OAREX business development",
+          "Digital ad revenue financing specialist"
+        ],
+        "li": "https://www.linkedin.com/in/nickcarrabbia/"
+      }
+    ],
+    "desc": "OAREX (Online Advertising Revenue Exchange) Capital Markets is a Cleveland, Ohio-based capital-as-a-service (CaaS) platform that provides on-demand liquidity solutions for the digital advertising economy. Founded in 2012 by Hanna Kassis, OAREX buys invoices (receivables) directly off the balance sheets of digital publishers, app developers, ad networks, supply-side platforms, media buyers, ad agencies, and content creators. Rather than charging interest, OAREX charges a discount/factor fee (e.g., 2% means the seller receives $0.98 per $1.00 of receivables). Pricing is based on the buyer's credit quality, concentration, and volume rather than the seller's credit. The company secured seed funding from Dan Gilbert's Bizdom, later raised a $50M credit facility, and additional $10M in debt financing led by Arena Investors. Kassis completed a majority equity exit to retired Goldman Sachs partners in 2022. OAREX publishes semi-annual Payments Studies tracking late payment trends in digital advertising. With approximately 7-12 employees, the company operates from Cleveland's Tremont neighborhood.",
+    "news": [
+      {
+        "h": "OAREX releases H2 2024 Payments Study highlighting persistent late payment trends in digital advertising",
+        "s": "oarex.com",
+        "d": "2025-03"
+      },
+      {
+        "h": "Founder Hanna Kassis named to Crain's Cleveland Business 40 Under 40 list",
+        "s": "Crain's Cleveland Business",
+        "d": "2024"
+      },
+      {
+        "h": "OAREX secures $10M in debt financing led by Arena Investors to strengthen digital media presence",
+        "s": "PR Newswire",
+        "d": "2018"
+      }
+    ],
+    "location": "Cleveland, OH",
+    "full_address": "2529 Detroit Ave 135, Cleveland, OH 44113",
+    "website": "oarex.com",
+    "employees": 7,
+    "category": "funder"
+  }
+]

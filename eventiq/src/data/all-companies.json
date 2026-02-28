@@ -38371,30 +38371,82 @@
   },
   {
     "id": 1326,
-    "name": "National Legacy",
+    "name": "National Legacy Capital Group",
     "type": "TAM",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "California-based financing company helping small and mid-sized businesses grow with personalized, fast funding solutions. Operates in the San Diego area.",
+    "desc": "National Legacy Capital Group (NLCG) is a San Diego-based business financing company with over 15 years of experience providing tailored funding solutions for small and mid-sized businesses across the United States and Canada. The company offers equipment financing and leasing, small business loans, small business lines of credit, revolving asset-based lines of credit, vendor programs, and franchise programs. NLCG positions itself as a one-application, no-fee intermediary that connects businesses with multiple funding options within a day. The company emphasizes personalized service with decades of experience finding best-in-class financing. With approximately 3 employees and a 5-star rating on Trustpilot from 77 reviews, NLCG operates as a lean broker/facilitator connecting businesses with capital providers rather than funding directly from its own balance sheet.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "National Legacy Capital Group maintains 5-star Trustpilot rating with 77+ customer reviews",
+        "s": "Trustpilot",
+        "d": "2025"
+      },
+      {
+        "h": "NLCG continues expanding equipment financing and business lending services across US and Canada",
+        "s": "nationallegacy.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers revolving asset-based lines of credit alongside traditional equipment financing",
+        "s": "nationallegacy.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Russ Swersky",
+        "t": "CEO",
+        "bg": "Leads National Legacy Capital Group from San Diego. Previously served as Senior VP of Sales at Mulligan Funding, VP of Working Capital Division at Alliance Funding Group, Senior Manager of Finance at AXIS Capital (insurance sector), and Equipment Leasing National Accounts Manager at North Star Funding. Started career as Equipment Finance Specialist & Team Leader at Five Point Capital. Holds a degree in Entrepreneurial Management from California Polytechnic State University-San Luis Obispo (2001-2005). Brings 15+ years of experience spanning equipment finance, working capital, and business lending.",
+        "hooks": [
+          "Cal Poly SLO entrepreneurial management grad",
+          "Mulligan Funding Senior VP alumni",
+          "Equipment finance career turned CEO",
+          "Built NLCG with 5-star Trustpilot rating"
+        ],
+        "li": "https://www.linkedin.com/in/russwersky"
+      },
+      {
+        "n": "David Schwartz",
+        "t": "Co-Founder & Growth Marketer",
+        "bg": "Co-founded National Legacy Capital Group alongside Russ Swersky. Handles the growth marketing function for the company, driving lead generation and brand awareness for the equipment financing and business lending platform. Works closely with the CEO to expand NLCG's reach across the United States and Canada.",
+        "hooks": [
+          "Co-founded NLCG growth marketing engine",
+          "Equipment finance marketing specialist"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Sue Loach",
+        "t": "VP, Operations",
+        "bg": "Vice President of Operations at National Legacy Capital Group. Holds an MBA from National University and a Network certification from CompTIA. Manages day-to-day operations including application processing, funder relationships, and client support for the equipment financing and business lending platform based in San Diego.",
+        "hooks": [
+          "National University MBA graduate",
+          "CompTIA certified operations leader",
+          "Equipment finance ops specialist"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "California",
+    "location": "San Diego, CA",
     "employees": 3,
-    "website": "https://www.nationallegacy.com/",
+    "website": "nationallegacy.com",
     "linkedinUrl": "https://www.linkedin.com/company/nationallegacy/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "5405 Morehouse Dr, Suite 315, San Diego, CA 92121"
   },
   {
     "id": 1327,
@@ -38405,50 +38457,153 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Boutique private lender based in Port St Lucie, FL specializing in commercial vehicle loans from $15K to $250K. Direct lender using own funds, dedicated to owner-operators and small family-owned trucking companies, financing credit scores as low as 600.",
+    "desc": "National Truck Loans is a Florida-based boutique private lender specializing in commercial vehicle financing from $15,000 to $250,000. Founded with over 15 years of experience in the commercial vehicle industry, the company serves as a direct lender (not a broker) focused on owner-operators, startups with 2+ years of experience, and small family-owned trucking companies nationwide. National Truck Loans differentiates itself by evaluating the overall borrower profile including collateral, experience, payment history, and business plan rather than relying solely on credit scores, and can finance credit scores as low as 600. Services include commercial truck financing, semi truck financing, truck repair financing, engine financing ($15K+ for major repairs), and bad credit truck financing. The company also assists with insurance, 3PL, and driver recommendations. With approximately 5 employees and offices in Port St. Lucie and Miami, FL, National Truck Loans operates in a niche segment of commercial vehicle lending.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "National Truck Loans expands engine financing program for major truck repairs above $15,000",
+        "s": "nationaltruckloans.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company maintains BBB accreditation and strong Trustpilot reviews for commercial vehicle lending",
+        "s": "BBB / Trustpilot",
+        "d": "2024"
+      },
+      {
+        "h": "National Truck Loans continues serving bad credit borrowers with scores as low as 600",
+        "s": "nationaltruckloans.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Michael A. Alvarez",
+        "t": "Managing Partner",
+        "bg": "Managing Partner and Registered Agent of National Truck Loans, LLC. Leads the company's operations and strategic direction in the commercial vehicle financing space. Part of the founding team that established National Truck Loans as a boutique private lender specializing in truck and equipment financing for owner-operators and small family-owned trucking companies in Florida and nationwide.",
+        "hooks": [
+          "Boutique truck lending pioneer in Florida",
+          "Serves owner-operators nationwide",
+          "Registered agent and managing partner"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Bruce Nager",
+        "t": "Managing Owner",
+        "bg": "Managing Owner of National Truck Loans. Brings over 15 years of experience in the commercial vehicle lending market. Co-leads the company's lending operations alongside fellow managing owners, focusing on providing financing solutions for commercial trucks, equipment, and engine repairs with a client-first approach that evaluates the overall borrower profile rather than relying solely on credit scores.",
+        "hooks": [
+          "15+ years in commercial vehicle lending",
+          "Client-first underwriting philosophy",
+          "Port St. Lucie-based truck finance veteran"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Gerardo M. Gonzalez",
+        "t": "Managing Owner",
+        "bg": "Managing Owner of National Truck Loans. Part of the founding leadership team that established the company as a direct lender (not a broker) in the commercial vehicle space. Works alongside Michael Alvarez and Bruce Nager to manage the company's lending portfolio and client relationships, serving the underserved segment of owner-operators and small trucking businesses who need flexible financing.",
+        "hooks": [
+          "Direct lender in trucking niche",
+          "Serves underserved small trucking companies",
+          "Miami office co-leader"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 2,
-    "website": "https://www.nationaltruckloans.com/",
+    "location": "Port St. Lucie, FL",
+    "employees": 5,
+    "website": "nationaltruckloans.com",
     "linkedinUrl": "https://www.linkedin.com/company/national-truck-loans",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "1680 SW Bayshore Blvd, Suite 100, Port Saint Lucie, FL 34984"
   },
   {
     "id": 1328,
-    "name": "NBM CNJ",
+    "name": "New Bridge Merchant Capital",
     "type": "TAM",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "New Bridge Merchant Capital, based in New Jersey. Provides MCA funding up to $2.5M with no collateral required, plus lines of credit and term loans. Management team has 20+ years of financial industry experience. Approval and funding within 24 hours.",
+    "desc": "New Bridge Merchant Capital (NBM CNJ) is a New Jersey-headquartered business financing firm founded in 2016 with a management team bringing over 20 years of collective financial industry experience. The company provides merchant cash advances, lines of credit, and term loans with funding up to $2.5 million, tailoring programs based on industry type, business size, seasonality, and account liquidity. NBM offers same-day approval and 24-hour funding with minimal paperwork, requiring only an application, three months of bank statements, a driver's license, voided check, and proof of business ownership. The firm differentiates by offering early repayment rewards (waiving interest), willingness to pay off competitor balances, and no collateral requirements. With offices in Shrewsbury NJ, Manhattan NY, and Delray Beach FL, NBM employs 11-50 people and serves industries including medical, dental, restaurant, pharmacy, and gas stations.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "New Bridge Merchant Capital expands to three-office footprint across NJ, NY, and FL",
+        "s": "nbmcnj.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers up to $2.5M in business funding with same-day approval process",
+        "s": "nbmcnj.com",
+        "d": "2024"
+      },
+      {
+        "h": "NBM CNJ positions early repayment rewards as key differentiator in competitive MCA market",
+        "s": "nbmcnj.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Joseph Turriciano",
+        "t": "CEO",
+        "bg": "Chief Executive Officer of New Bridge Merchant Capital. Rose through the ranks from COO to CEO, where he previously oversaw the firm's day-to-day operations and strategic planning. Leads a management team with over 20 years of collective financial industry experience. Under his leadership, NBM has grown to serve businesses across multiple industries including medical, dental, restaurant, pharmacy, and gas stations with funding up to $2.5M from offices in NJ, NY, and FL.",
+        "hooks": [
+          "COO-to-CEO internal promotion path",
+          "20+ years collective team experience in finance",
+          "Multi-state operation: NJ, NY, and FL offices",
+          "Serves niche verticals: medical, dental, pharmacy"
+        ],
+        "li": "https://www.linkedin.com/in/joseph-turriciano-49a383101/"
+      },
+      {
+        "n": "Louis Russo",
+        "t": "Co-Founder",
+        "bg": "Co-founded New Bridge Merchant Capital in 2016. Part of the original leadership team that built NBM into a trusted business financing firm in New Jersey, establishing the company's reputation for fast capital access and flexible terms in the merchant cash advance industry.",
+        "hooks": [
+          "NBM co-founder since 2016",
+          "New Jersey MCA market builder"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Matt Petraglia",
+        "t": "Team Lead Manager",
+        "bg": "Team Lead Manager at New Bridge Merchant Capital. Manages the sales and operations team, overseeing client relationships and deal processing. Works closely with brokers and business owners to structure funding solutions across multiple industries including medical, dental, restaurant, and retail.",
+        "hooks": [
+          "Sales team leader at growing MCA firm",
+          "Multi-industry deal structuring experience"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "New Jersey",
-    "employees": 16,
-    "website": "https://nbmcnj.com",
+    "location": "Shrewsbury, NJ",
+    "employees": 25,
+    "website": "nbmcnj.com",
     "linkedinUrl": "https://www.linkedin.com/company/new-bridge-merchant-capital/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "511 Broad Street, Shrewsbury, NJ 07702"
   },
   {
     "id": 1329,
@@ -38468,21 +38623,62 @@
         "t": "Co-Founder"
       }
     ],
-    "desc": "Next-gen fintech founded in 2016 by Albert Periu and Thomas Meister (ex-Funding Circle). Commercial lending platform for mid-market businesses ($10M-$100M revenue) with loans up to $60M. Acquired by Zilch in 2021. Raised $13M total.",
+    "desc": "Neptune Financial (NepFin) was a next-generation fintech commercial lending platform that provided growth capital to mid-sized American businesses with $10M-$100M in revenue, offering loans up to $60M. Founded in 2016 by Albert Periu and Thomas Meister (both former Funding Circle executives), NepFin leveraged machine learning and data science to lower underwriting costs and target underserved segments of the middle market. The company held a California Finance Lenders License and was backed by the same early investors as SoFi, Lending Club, and Upgrade, raising $13M total including a $10M Series A led by Sands Capital Ventures. NepFin expanded to Chicago in 2019 and partnered with HSBC for commercial banking referrals. In August 2021, UK BNPL company Zilch acquired NepFin for an undisclosed sum to fast-track its U.S. market entry, with co-founders Periu and Meister becoming CEO and COO of Zilch USA respectively. NepFin's domain is no longer active and the company has been fully absorbed into Zilch's operations.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Zilch acquires NepFin to launch BNPL services in the US market",
+        "s": "PR Newswire",
+        "d": "2021-08"
+      },
+      {
+        "h": "NepFin co-founders Albert Periu and Thomas Meister join Zilch leadership as CEO and COO of US operations",
+        "s": "Finextra",
+        "d": "2021-08"
+      },
+      {
+        "h": "NepFin expanded operations to Chicago to serve lower middle market companies",
+        "s": "BusinessWire",
+        "d": "2019-02"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Albert Periu",
+        "t": "Co-Founder & CEO (now CEO, Zilch USA)",
+        "bg": "Co-founded NepFin in 2016 after serving as Global Co-Head of Capital Markets and President of the broker-dealer affiliate at Funding Circle. Prior to fintech, spent 15+ years in securities industry with roles at FBR & Co., Merrill Lynch, and Deutsche Bank, gaining deep expertise in equities, middle market credit, high-yield bonds, and private investments. Holds a BS in Finance and International Business from Georgetown University. When Zilch acquired NepFin in 2021, transitioned to CEO of Zilch USA to lead the BNPL company's stateside expansion.",
+        "hooks": [
+          "Georgetown finance and international business grad",
+          "*Deutsche Bank and Merrill Lynch alumni",
+          "Funding Circle Global Co-Head of Capital Markets",
+          "*Built NepFin, sold to UK BNPL unicorn Zilch"
+        ],
+        "li": "https://www.linkedin.com/in/albertperiu/"
+      },
+      {
+        "n": "Thomas Meister",
+        "t": "Co-Founder & COO/General Counsel (now COO, Zilch USA)",
+        "bg": "Co-founded NepFin alongside Albert Periu in 2016 after the two worked together as executives at Funding Circle. Brings legal and operational expertise to fintech lending, serving dual roles as COO and General Counsel. After Zilch's acquisition of NepFin in 2021, transitioned to COO & General Counsel of Zilch USA, helping build out the BNPL company's U.S. operations and regulatory framework.",
+        "hooks": [
+          "Dual COO/General Counsel role",
+          "Funding Circle executive alumni",
+          "Helped launch Zilch in the US market"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 1,
-    "website": "http://nepfin.com",
+    "location": "San Francisco, CA (acquired by Zilch)",
+    "employees": 10,
+    "website": "nepfin.com",
     "linkedinUrl": "https://www.linkedin.com/company/nepfin",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
     "outreachHistory": {
       "status": "responded",
@@ -38499,7 +38695,8 @@
         }
       ]
     },
-    "category": "funder"
+    "category": "funder",
+    "full_address": "580 California St, Suite 1625, San Francisco, CA 94104"
   },
   {
     "id": 1330,
@@ -38510,22 +38707,40 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company. Limited public information available; may be defunct (0 employees, no website).",
+    "desc": "NewFunds Capital is a merchant cash advance funder that provides working capital to small business owners nationwide, partnering with ISOs to originate deals. The company offers funding ranging from $10,000 to $150,000 with fast approval, minimal paperwork, no collateral required, and same-day to next-day funding. NewFunds Capital differentiates itself by reporting payment history to Experian and Dun & Bradstreet, helping borrowers build business credit and improve FICO scores through timely repayment. The leadership team claims over nine decades of combined experience in direct MCA funding. The company emphasizes flexible terms, easy payment options, and the ability to refinance high daily payments into lower monthly payments. NewFunds Capital uses analytical software for underwriting and positions itself as a credit-building partner for small businesses.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "NewFunds Capital partners with Experian and Dun & Bradstreet to report MCA payment history for credit building",
+        "s": "newfundscapital.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers refinancing solutions to lower daily MCA payments into monthly schedules",
+        "s": "newfundscapital.com",
+        "d": "2024"
+      },
+      {
+        "h": "NewFunds Capital expands ISO partnership program for nationwide MCA origination",
+        "s": "newfundscapital.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "",
+    "location": "United States",
+    "employees": 15,
+    "website": "newfundscapital.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "United States"
   },
   {
     "id": 1331,
@@ -38536,22 +38751,46 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business funding company providing fast cash through customized financing and repayment programs, with working capital up to $500K and same-day funding with minimal paperwork.",
+    "desc": "NewRock Lending LLC is a Brick, NJ-based merchant cash advance funder that provides fast working capital to business owners with funding up to $500,000 available as quickly as same-day. The company offers merchant cash advances, term loans, and other financing plans with minimal paperwork. NewRock Lending positions itself as a direct funder (not a broker) that can approve applicants within hours and disburse funds within 24 hours, targeting business owners who cannot wait for traditional bank lending timelines. The company has a combined 5 years of lending industry experience on its team, with an in-house underwriter and veteran sales team. NewRock Lending works with brokers and ISOs to process applications and serves as an alternative to traditional bank financing for small businesses across the United States.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "NewRock Lending continues offering same-day MCA funding up to $500K from Brick, NJ headquarters",
+        "s": "newrocklending.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company listed in deBanked and FunderIntel directories as active MCA direct funder",
+        "s": "FunderIntel",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Lucretia Jones",
+        "t": "Finance Manager",
+        "bg": "Finance Manager at NewRock Lending LLC. Handles client documentation, broker relationships, and application processing for the merchant cash advance firm. Works with the in-house underwriting team to structure deals and manage the funding pipeline for business owners seeking working capital up to $500,000.",
+        "hooks": [
+          "MCA finance management specialist",
+          "Broker relationship coordinator"
+        ],
+        "li": "https://www.linkedin.com/in/lucretia-jones-713143306/"
+      }
+    ],
     "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://www.newrocklending.com/",
+    "location": "Brick, NJ",
+    "employees": 10,
+    "website": "newrocklending.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Brick, NJ"
   },
   {
     "id": 1332,
@@ -38622,23 +38861,54 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Working capital solutions provider based in St. Petersburg, FL, founded in 2015. Offers lines of credit, term loans, and invoice factoring from $3K to $6M with 4-24 month terms. Same-day approvals and no hard credit pull.",
+    "desc": "Novus Capital Funding II LLC is a direct MCA funder headquartered in New City, NY, with operations linked to the broader Novus Capital Funding entity based in St. Petersburg, FL (founded 2015). The company provides merchant cash advances, lines of credit, term loans, and invoice factoring from $3,000 to $6 million with terms from 4 to 24 months. Novus is known as a direct funder that is most aggressive in 2nd to 5th position MCA deals, funding all positions with same-day availability. The company serves small and mid-size businesses nationwide with an emphasis on fast funding at competitive rates. Novus Capital Funding II has been involved in multiple New York court cases related to MCA agreements in 2024-2025, reflecting active enforcement of its funding contracts. The company employs an estimated 11-50 people and was recognized on the Inc. list.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Novus Capital Funding II involved in multiple NY court cases enforcing MCA agreements",
+        "s": "Justia / NY Courts",
+        "d": "2024-2025"
+      },
+      {
+        "h": "Company continues aggressive 2nd to 5th position MCA funding strategy with same-day availability",
+        "s": "FunderIntel",
+        "d": "2024"
+      },
+      {
+        "h": "Novus Capital Funding recognized on Inc. list for business growth",
+        "s": "Inc.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Elizabeth Cooper",
+        "t": "President",
+        "bg": "President of Novus Capital Funding with over 25 years of experience as an entrepreneur and executive team leader. Performance-driven sales and management professional with capabilities in client relations. Career spans roles as Business Loans Managing Partner at Novus Capital Funding (since 2015), Director at Legal Shield (since 2000), and positions in mortgage origination, investment banking, and venture capital. Founded Novus Capital Funding in 2015 in St. Petersburg, FL, and grew the company to serve small and mid-size businesses nationwide with funding from $3K to $6M.",
+        "hooks": [
+          "25+ years as entrepreneur and executive",
+          "Founded Novus Capital Funding in 2015",
+          "Legal Shield Director for 20+ years",
+          "Mortgage origination and investment banking background"
+        ],
+        "li": "https://www.linkedin.com/in/elizabethncf/"
+      }
+    ],
     "ask": "",
-    "location": "Not Available",
-    "employees": 4,
-    "website": "https://www.novuscapitalfund.com/",
+    "location": "New City, NY",
+    "employees": 25,
+    "website": "novuscapitalfund.com",
     "linkedinUrl": "https://www.linkedin.com/company/novus-capital-funding-ii-llc/about/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "7 Elmwood Drive, Suite 301, New City, NY 10956"
   },
   {
     "id": 1336,
@@ -38649,23 +38919,77 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "National Private Lenders Association Conference — the largest nonbank real estate lending conference in the US, serving the industry for 20+ years. Trade organization for private lenders focused on legislation, education, and community building. Not a lending company.",
+    "desc": "The NPLA Conference (National Private Lenders Association Conference) is the largest private lending event in the United States, held three times annually and bringing together real estate lending professionals for education, networking, and industry advancement. Originally founded by Leonard Rosen over 20 years ago as the Pitbull Conference, the event was purchased by Jonathan Hornik's Private Lender Law firm in November 2022 and rebranded to the NPLA Conference in March 2023. The conference unites lenders, brokers, capital providers, investors, and supporting professionals (legal, accounting, insurance, asset management, technology) from across the private lending industry. The NPLA's foundational pillars are industry advancement, building community through education and mentorship, and strengthening the industry's legislative voice. The organization is headquartered in Marlboro, NJ, employs approximately 19 people, and hosts events at major venues across the country. The next conference is scheduled for March 15-17, 2026 at the Loews Miami Beach Hotel, followed by a June 2026 event in Atlantic City.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Eric Abramovich (Roc360 co-founder) named Chairman of NPLA Advisory Council",
+        "s": "ROI-NJ",
+        "d": "2025-10"
+      },
+      {
+        "h": "NPLA Conference scheduled for March 15-17, 2026 at Loews Miami Beach Hotel",
+        "s": "nplaconference.com",
+        "d": "2025"
+      },
+      {
+        "h": "NPLA unveils comprehensive Private Lending Glossary for industry standardization",
+        "s": "Private Lender Law",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jonathan Hornik",
+        "t": "CEO, NPLA Conference & Executive Director, NPLA",
+        "bg": "Chief Executive Officer of the NPLA Conference and Executive Director of the National Private Lenders Association. Purchased the NPLA and Pitbull Conference in November 2022 from founder Leonard Rosen. Partner and Chair of the Private Lender Group at LaRocca, Hornik, Rosen & Greenberg (LHR&G). Holds a Doctor of Jurisprudence from Brooklyn Law School (1993-1995). Over 25 years as an accomplished transactional attorney advising public and private companies on secured and unsecured loan and equity transactions. Launched PrivateLenderLaw.com providing comprehensive real estate legal services nationwide for private lenders.",
+        "hooks": [
+          "Brooklyn Law School JD graduate",
+          "*Purchased legendary Pitbull Conference in 2022",
+          "25+ years as transactional attorney",
+          "Chair of Private Lender Law practice at LHR&G"
+        ],
+        "li": "https://www.linkedin.com/in/jonathan-l-hornik-esq-6620509a/"
+      },
+      {
+        "n": "Leonard Rosen",
+        "t": "Founder (former)",
+        "bg": "Founded the National Private Lenders Association and the Pitbull Conference, building the largest private lending marketplace in the country over 20+ years. Former nightly news anchor for Financial News Network (FNN), covering business, finance, equities, and real estate. Transitioned from financial journalism to creating a marketplace bringing investors, borrowers, and lenders together. Credited with helping rename the industry from 'hard money' to 'private lending.' Sold the NPLA and Pitbull Conference to Jonathan Hornik's Private Lender Law in November 2022.",
+        "hooks": [
+          "*Former Financial News Network TV anchor",
+          "*Created 20+ year private lending marketplace",
+          "Renamed industry from 'hard money' to 'private lending'",
+          "Now available on Cameo"
+        ],
+        "li": "https://www.linkedin.com/in/leonardrosenpitbull/"
+      },
+      {
+        "n": "Eric Abramovich",
+        "t": "Chairman, NPLA Advisory Council",
+        "bg": "Co-founder and Chief Revenue Officer of Roc360 (parent company of Roc Capital). Selected as Chairman of the NPLA Advisory Council in 2025, succeeding Jeff Tennyson who served three years in the role. Plays a leadership role in shaping the private lending industry's advocacy and policy direction through the NPLA.",
+        "hooks": [
+          "Roc360 co-founder and CRO",
+          "*Named NPLA Advisory Council Chairman 2025",
+          "Succeeded Jeff Tennyson in council leadership"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "New Jersey",
-    "employees": 11,
-    "website": "https://nplaconference.com/",
+    "location": "Marlboro, NJ",
+    "employees": 19,
+    "website": "nplaconference.com",
     "linkedinUrl": "https://www.linkedin.com/company/npla-conference/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "bank"
+    "category": "service_provider",
+    "full_address": "475 County Rte 520, Marlboro, NJ 07746"
   },
   {
     "id": 1337,
@@ -38676,50 +39000,133 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "California-based fintech providing a digital lending platform for SMEs in carbon removal, ecosystem restoration, and sustainable commodities. Helps financial institutions assess risk using alternative data and innovative algorithms.",
+    "desc": "NyxCarbon is a fintech lending platform founded in 2024 that makes it easy for financial institutions to provide loans to SMEs in carbon removal, ecosystem restoration, and sustainably sourced commodities. The platform provides an end-to-end solution that reduces the cost of underwriting through alternative data sources and innovative AI algorithms, offers targeted market intelligence for new lending opportunities, and automates loan servicing. NyxCarbon is on a mission to unlock over a trillion dollars in sustainable finance commitments by connecting companies with asset managers experienced in private debt markets. The company integrates Web3 technology, having deployed commodity swap smart contracts on the peaq blockchain network to enable sustainability businesses to sell carbon certificates. NyxCarbon develops smart contracts to verify key data points like soil, air, and water quality alongside off-chain carbon credit sales on internationally recognized registries. The company is privately held with an estimated 2-10 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "NyxCarbon joins peaq blockchain ecosystem, deploys commodity swap smart contracts for carbon certificates",
+        "s": "peaq.xyz",
+        "d": "2024-05"
+      },
+      {
+        "h": "NyxCarbon aims to unlock $1T+ in sustainable finance through AI and Web3 lending technology",
+        "s": "NyxCarbon / Medium",
+        "d": "2024"
+      },
+      {
+        "h": "Company publishes Carbon Outlook newsletter analyzing voluntary carbon market trends and policy shifts",
+        "s": "Medium",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Brittany Salas",
+        "t": "Founder & CEO",
+        "bg": "Founded NyxCarbon as a lending platform for SMEs in carbon removal and ecosystem restoration. Active in the climate tech startup ecosystem since 2015, beginning her work at a Smart City consultancy in New York. Member of the Council for Inclusive Capitalism. Speaker at Data Science Festival on topics related to climate finance and AI. Publishes the Carbon Outlook newsletter on Medium covering voluntary carbon market trends, policy changes, and sustainable finance. Leverages AI and Web3 technologies to build innovative risk assessment and loan servicing tools for the climate finance sector.",
+        "hooks": [
+          "Climate tech ecosystem veteran since 2015",
+          "*Council for Inclusive Capitalism member",
+          "Data Science Festival speaker",
+          "Publishes Carbon Outlook newsletter on Medium"
+        ],
+        "li": "https://www.linkedin.com/in/brittanysalas/"
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 2,
-    "website": "http://nyxcarbon.net",
+    "location": "New York, NY",
+    "employees": 5,
+    "website": "nyxcarbon.net",
     "linkedinUrl": "https://www.linkedin.com/company/nyxcc",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "New York, NY"
   },
   {
     "id": 1338,
-    "name": "Oarex",
+    "name": "Oarex Capital Markets",
     "type": "TAM",
     "priority": 4,
     "phase": 0,
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Cleveland, OH-based invoice factoring company founded in 2013 serving digital media and advertising firms. Buys publisher invoices at 80-90% value upfront, taking collection risk. Serves ad tech companies, agencies, mobile SSPs, ad networks, and podcast networks.",
+    "desc": "OAREX (Online Advertising Revenue Exchange) Capital Markets is a Cleveland, Ohio-based capital-as-a-service (CaaS) platform that provides on-demand liquidity solutions for the digital advertising economy. Founded in 2012 by Hanna Kassis, OAREX buys invoices (receivables) directly off the balance sheets of digital publishers, app developers, ad networks, supply-side platforms, media buyers, ad agencies, and content creators. Rather than charging interest, OAREX charges a discount/factor fee (e.g., 2% means the seller receives $0.98 per $1.00 of receivables). Pricing is based on the buyer's credit quality, concentration, and volume rather than the seller's credit. The company secured seed funding from Dan Gilbert's Bizdom, later raised a $50M credit facility, and additional $10M in debt financing led by Arena Investors. Kassis completed a majority equity exit to retired Goldman Sachs partners in 2022. OAREX publishes semi-annual Payments Studies tracking late payment trends in digital advertising. With approximately 7-12 employees, the company operates from Cleveland's Tremont neighborhood.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "OAREX releases H2 2024 Payments Study highlighting persistent late payment trends in digital advertising",
+        "s": "oarex.com",
+        "d": "2025-03"
+      },
+      {
+        "h": "Founder Hanna Kassis named to Crain's Cleveland Business 40 Under 40 list",
+        "s": "Crain's Cleveland Business",
+        "d": "2024"
+      },
+      {
+        "h": "OAREX secures $10M in debt financing led by Arena Investors to strengthen digital media presence",
+        "s": "PR Newswire",
+        "d": "2018"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Hanna Kassis",
+        "t": "Founder & CEO",
+        "bg": "Founded OAREX Capital Markets in 2012 while still in law school in Chicago. Raised from immigrant Palestinian parents in the Youngstown, Ohio area where his father became an economics professor at Youngstown State University. Secured initial $25K seed funding from Dan Gilbert's Bizdom accelerator, then raised $50M credit facility from a global asset manager and $50M line of credit. Holds a JD, Master's in Financial Economics, and CPA designation. Named to Crain's Cleveland Business 40 Under 40 in 2024. Completed a successful exit in 2022, selling majority equity to retired Goldman Sachs partners while retaining a minority stake. Subsequently launched Babylon Asset Management after the Silicon Valley Bank collapse.",
+        "hooks": [
+          "*Crain's Cleveland 40 Under 40 (2024)",
+          "*Founded OAREX while in law school, backed by Dan Gilbert's Bizdom",
+          "Triple-threat: JD + Master's Financial Economics + CPA",
+          "*Sold to Goldman Sachs partners, launched Babylon Asset Management"
+        ],
+        "li": "https://www.linkedin.com/in/hannakassis"
+      },
+      {
+        "n": "Taylor Haddix",
+        "t": "COO",
+        "bg": "Chief Operating Officer at OAREX Capital Markets since October 2015. Previously served as Head of Operations at Lapel. Studied at Allegheny College. Manages day-to-day operations for the digital advertising revenue exchange, overseeing the capital-as-a-service platform that provides liquidity to publishers, app developers, and ad tech companies.",
+        "hooks": [
+          "Allegheny College graduate",
+          "Former Head of Operations at Lapel",
+          "Decade-long COO tenure at OAREX"
+        ],
+        "li": "https://www.linkedin.com/in/taylorhaddix"
+      },
+      {
+        "n": "Nick Carrabbia",
+        "t": "Executive Vice President",
+        "bg": "Executive Vice President at OAREX Capital Markets in Cleveland, Ohio. Leads business development and client relationships for the digital advertising revenue exchange. Works with publishers, app developers, ad networks, and supply-side platforms to structure factoring and liquidity solutions for their advertising receivables.",
+        "hooks": [
+          "EVP driving OAREX business development",
+          "Digital ad revenue financing specialist"
+        ],
+        "li": "https://www.linkedin.com/in/nickcarrabbia/"
+      }
+    ],
     "ask": "",
-    "location": "Ohio",
-    "employees": 12,
-    "website": "https://oarex.com",
+    "location": "Cleveland, OH",
+    "employees": 7,
+    "website": "oarex.com",
     "linkedinUrl": "https://www.linkedin.com/company/oarex-capital-markets-inc-",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "2529 Detroit Ave 135, Cleveland, OH 44113"
   },
   {
     "id": 1339,
@@ -38730,23 +39137,44 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in Salt Lake City. Limited public information available under this exact name; may be related to Olympus Lending (id 1340).",
+    "desc": "Founded in 2015, Olympus Business Capital is a private lender headquartered in Salt Lake City, UT specializing in providing funding to small businesses including those with bad credit. They evaluate risk based on overall business performance rather than credit scores alone, offering merchant cash advances, term loans, and equipment financing across industries like retail, transportation, hospitality, and construction. They require a minimum of 12 months in business, state registration, and at least $10K/month in revenue.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Douglass Christison",
+        "t": "Chief Executive Officer",
+        "bg": "Previously held roles at Progressive Leasing and DWC Inc. Expertise in sales management, customer service, and process improvement.",
+        "li": "",
+        "hooks": [
+          "CEO of alternative lending firm with background in leasing and sales management; growing Olympus into a direct funder with flexible repayment terms."
+        ]
+      },
+      {
+        "n": "Brandon Robinson",
+        "t": "Chief Technology Officer",
+        "bg": "MBA holder with experience at InfoTrax, American Express, Zions Bank, and JPMorgan Chase. Previously served as Interim CEO at Green Light Auto Solutions.",
+        "li": "https://www.linkedin.com/in/bkrobinson/",
+        "hooks": [
+          "CTO driving technology strategy for alternative lending platform; extensive fintech and banking background spanning American Express and JPMorgan."
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Salt Lake City",
-    "employees": 7,
-    "website": "",
+    "location": "Salt Lake City, UT",
+    "employees": 20,
+    "website": "https://www.olympusbusinesscapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/olympus-smallbiz/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Salt Lake City, UT, United States"
   },
   {
     "id": 1340,
@@ -38757,23 +39185,50 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Business financing company founded in 2013, based in Salt Lake City, UT. Offers term loans, invoice factoring, equipment financing, and MCA products without credit checks. Next business day funding available, minimum $5K monthly revenue required.",
+    "desc": "Olympus Lending is a private lender based in Holladay, Utah that specializes in providing funding solutions for small business owners. They offer financing options including term loans, invoice factoring, and equipment financing without requiring credit checks. They can approve up to $250K by end of day with same-day funding in most situations, running only a soft credit pull. They appear to share leadership and branding with Olympus Business Capital and Olympus Business Funding.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Olympus Lending named in NYC debt defense case alongside WeFund, Prosperum Capital Partners, Lendr.Online, and Funding Depot regarding MCA collection practices.",
+        "s": "Unknown",
+        "d": "2024-05"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Douglass Christison",
+        "t": "Chief Executive Officer",
+        "bg": "Also serves as CEO of Olympus Business Capital. Background in Progressive Leasing and DWC Inc.",
+        "li": "",
+        "hooks": [
+          "Leading Olympus Lending's same-day funding operations; experienced in scaling alternative lending businesses in Utah."
+        ]
+      },
+      {
+        "n": "Dexter Turner",
+        "t": "Business Development Manager",
+        "bg": "Focused on expanding Olympus Lending's partnership and ISO channels.",
+        "li": "https://www.linkedin.com/in/dexter-turner-a22272253/",
+        "hooks": [
+          "Driving business development and ISO relationships for Olympus Lending's small business funding programs."
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Utah",
-    "employees": 7,
-    "website": "https://www.olympuslending.com/",
+    "location": "Holladay, UT",
+    "employees": 15,
+    "website": "https://application.olympuslending.com",
     "linkedinUrl": "https://www.linkedin.com/company/olympus-smallbiz/about/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "2225 East Murray Holladay Road, Holladay, UT, United States"
   },
   {
     "id": 1341,
@@ -38784,23 +39239,35 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in Florida. Limited public information available.",
+    "desc": "Founded in 2021 in Miami, FL (formerly One River Funding LLC), One River Services provides bespoke funding options for select small businesses using proprietary pricing models, automated deal processing, and personalized servicing. They purchase future receivables with fast underwriting and transparent terms, handling eligibility reviews, contract agreements, and disbursements with flexible repayment options without fixed maturity or hidden fees.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Ian Wells",
+        "t": "Founder",
+        "bg": "University of Miami School of Business graduate. Previous experience at One River Partners, GFI Productions, and American Express. Also co-founded HiLo Tickets, recognized for operations and finance expertise.",
+        "li": "https://www.linkedin.com/in/ianmwells/",
+        "hooks": [
+          "Serial entrepreneur with American Express background who built One River's proprietary pricing models and automated deal processing from scratch."
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 9,
-    "website": "",
+    "location": "Miami, FL",
+    "employees": 25,
+    "website": "https://www.oneriverservices.com",
     "linkedinUrl": "https://www.linkedin.com/company/one-river-services/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "252 NW 29th St, Suite 909, Miami, FL 33127, United States"
   },
   {
     "id": 1342,
@@ -38811,23 +39278,50 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Business financing company headquartered in Irvine, CA (despite listed as Arizona). Provides unsecured lines of credit from $25K-$500K, asset-based loans, invoice factoring, and merchant cash advances.",
+    "desc": "Founded in 2019 and headquartered in Irvine, California, OneClick Commercial Funding is a financial services company providing loans and financing solutions for businesses of all sizes. They offer unsecured lines of credit from $25K to $500K, franchise financing, equipment financing, merchant cash advances, and commercial real estate financing. The company experienced a DFPI enforcement action in 2020 related to licensing.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "California DFPI issued an order summarily revoking OneClick Commercial Funding LLC's license, followed by a consent order in May 2020.",
+        "s": "Unknown",
+        "d": "2020-04"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Michael Knapp",
+        "t": "Founder & CEO",
+        "bg": "University of Wyoming graduate in Civil Engineering. Previously served as General Manager at Larry H. Miller Nissan Corona, General Sales Manager at Tuttle-Click Hyundai, and General Sales Manager at Kia of Irvine.",
+        "li": "https://www.linkedin.com/in/michael-knapp-6587a355",
+        "hooks": [
+          "Transitioned from automotive dealership management to founding a commercial funding company; engineering background applied to business lending operations."
+        ]
+      },
+      {
+        "n": "Christopher Knapp",
+        "t": "Key Employee",
+        "bg": "Part of the core team at OneClick Commercial Funding alongside the founder.",
+        "li": "",
+        "hooks": [
+          "Core team member at OneClick Commercial Funding helping grow the Irvine-based lending operation."
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Arizona",
+    "location": "Irvine, CA",
     "employees": 9,
-    "website": "http://1click-funding.com",
+    "website": "https://oneclickcommercialfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/oneclick-commercial-funding",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "14271 Jeffrey Rd, Suite 330, Irvine, CA 92620, United States"
   },
   {
     "id": 1343,
@@ -38838,23 +39332,35 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Income-based funding company based in Delray Beach, FL. Offers industry and income-tailored programs with human-driven 1:1 approval process, fast response times, and hassle-free applications.",
+    "desc": "ONNX Funding (ONNX Financial Solutions) is an income-based funding company headquartered in Delray Beach, Florida. They offer income-tailored MCA programs (A-D paper) designed for flexibility, fast response time, and a hassle-free application process. They use a 1:1 human approval/disapproval process combined with AI-integrated funding schedules, and can allocate up to $1.5MM within 24-48 hours.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Anthony Affatati III",
+        "t": "Manager",
+        "bg": "Registered agent and manager of ONNX Funding LLC. Background in financial services and title services industry.",
+        "li": "",
+        "hooks": [
+          "Leading ONNX Funding's MCA operations with capability to deploy up to $1.5MM in 24-48 hours using AI-integrated underwriting."
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 5,
+    "location": "Delray Beach, FL",
+    "employees": 25,
     "website": "https://onnxfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/onnx-funding/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "5300 W Atlantic Ave, Suite 703, Delray Beach, FL 33484, United States"
   },
   {
     "id": 1344,
@@ -38865,23 +39371,44 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Canadian-based business finance company founded in 2019 in Concord, Ontario. Provides MCA, bridge financing, property loans, and lines of credit to Canadian and American businesses, with funding within 24 hours and daily/weekly/bi-weekly repayment options.",
+    "desc": "Founded in 2019 and headquartered in Vaughan, Ontario, Canada, OnTap Capital provides fast and reliable funding solutions for Canadian and American small businesses. They offer cash advances, bridge loans, secured property loans, and lines of credit, often funding within 24 hours. They serve various industries including healthcare, construction, logistics, and technology, providing growth capital with transparent and safe cash flow solutions.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Valerie Sharon",
+        "t": "Vice President",
+        "bg": "Vice President at OnTap Capital overseeing business operations and growth strategies.",
+        "li": "",
+        "hooks": [
+          "VP driving OnTap Capital's cross-border funding operations serving both Canadian and American small businesses."
+        ]
+      },
+      {
+        "n": "Darel Adani",
+        "t": "Chief Compliance Officer",
+        "bg": "Responsible for compliance oversight at OnTap Capital, ensuring regulatory adherence across Canadian and US markets.",
+        "li": "https://ca.linkedin.com/in/darel-adani-84761b198",
+        "hooks": [
+          "CCO managing regulatory compliance for cross-border lending operations between Canada and the United States."
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Canada",
-    "employees": 10,
-    "website": "https://www.ontapcap.com/",
+    "location": "Vaughan, ON, Canada",
+    "employees": 11,
+    "website": "https://www.ontapcap.com",
     "linkedinUrl": "https://www.linkedin.com/company/ontap-capital-corp/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "8750 Jane St 16, Vaughan, Ontario, L4K 2M9, Canada"
   },
   {
     "id": 1345,
@@ -38892,7 +39419,7 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in New York. Limited public information available; may be defunct (0 employees).",
+    "desc": "Founded in 2015 and registered to Mayava Capital LLC, Original Funding is a consultative brokerage house based in Syosset, New York. Unlike direct lenders, they field a single application from prospective borrowers and shop it to their network of lenders with closely matched criteria. They do not collect fees from applicants and do not make outbound solicitation calls. They offer matching services for merchant cash advances, hard money loans, small business loans, and other financing products.",
     "notes": "",
     "news": [],
     "ice": "",
@@ -38900,15 +39427,17 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "New York",
-    "employees": 0,
+    "location": "Syosset, NY",
+    "employees": 10,
     "website": "https://www.originalfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/original-funding/about/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "iso",
+    "full_address": "575 Underhill Blvd, Suite 216, Syosset, NY 11791, United States"
   },
   {
     "id": 1346,
@@ -38924,23 +39453,53 @@
         "t": "Founder"
       }
     ],
-    "desc": "Commercial financing consultant founded in 2022, based in NYC. Provides structured credit facilities from $250K to $50M+ for working capital, acquisitions, and special situations. Has funded $350M+ across 120+ businesses in the US, Canada, Europe, and Australia.",
+    "desc": "Founded in September 2022 by Joseph Grodko, Oval Ventures is a lending firm headquartered in Manhattan, New York. They provide tailored financial solutions to entrepreneurs and companies with annual revenues between $5M-$100M, offering debt solutions including asset-based and cash-flow-based lending, junior loans, senior secured, and subordinated debt. Since inception, they have funded over $350 million in term loans and lines of credit across 120+ businesses, serving clients in the US, Canada, Europe, and Australia.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Joseph Grodko",
+        "t": "Founder & CEO",
+        "bg": "Born and raised in Brooklyn, NY. Graduated from Baruch College with a BA in Finance and Real Estate Management. Specializes in private structured credit, leveraging a network of bank and non-bank lenders. Active in charitable organizations including Aim Hire, providing employment for individuals over 40.",
+        "li": "https://www.linkedin.com/in/joseph-grodko-3545b8147/",
+        "hooks": [
+          "Founded Oval Ventures in 2022 and already deployed $350M+ across 120+ businesses; Baruch finance grad building a global lending platform spanning US, Canada, Europe, and Australia."
+        ]
+      },
+      {
+        "n": "Shimmy Ruben",
+        "t": "Managing Director",
+        "bg": "Focuses on private credit solutions for B2B SaaS and tech-enabled companies. Previously a Private Banker at J.P. Morgan Chase. Holds a Private Equity Certification from Wharton Online and Accounting degree from Touro College.",
+        "li": "https://www.linkedin.com/in/shimmy-ruben/",
+        "hooks": [
+          "Former J.P. Morgan private banker now structuring debt capital for tech companies; Wharton PE certified with deep SaaS lending expertise."
+        ]
+      },
+      {
+        "n": "Will Dickman",
+        "t": "Principal Advisor",
+        "bg": "Serves as Principal Advisor at Oval Ventures, contributing to deal structuring and client advisory.",
+        "li": "",
+        "hooks": [
+          "Principal Advisor helping structure financing solutions for lower and middle-market companies at Oval Ventures."
+        ]
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 5,
-    "website": "https://www.ovalv.com/",
+    "location": "New York, NY",
+    "employees": 6,
+    "website": "https://ovalv.com",
     "linkedinUrl": "https://www.linkedin.com/company/oval-ventures-llc/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "555 10th Ave, Apt 18B, New York, NY 10018, United States"
   },
   {
     "id": 1347,
@@ -38951,7 +39510,7 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "MCA provider based in New York using data analytics and digital technology to assess small business creditworthiness. Pioneered use of data-driven rapid underwriting for convenient online financing access.",
+    "desc": "Overnight Capital is a direct MCA funder based in Kew Gardens, Queens, New York. They specialize in providing small business funding up to $1,000,000 with same-day funding capability. They offer pre-approvals within 30 minutes of submission and same-day funding if deals are received by 1pm EST. They use data analytics and digital technology to assess creditworthiness rapidly, and pay ISO partners up to 15 points commission within 48 hours of funding.",
     "notes": "",
     "news": [],
     "ice": "",
@@ -38959,15 +39518,17 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "New York",
-    "employees": 7,
+    "location": "Kew Gardens, NY",
+    "employees": 15,
     "website": "https://overnight-capital.com",
     "linkedinUrl": "https://www.linkedin.com/company/overnightcapital/about/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "124-17 Metropolitan Avenue, Kew Gardens, NY 11415, United States"
   },
   {
     "id": 1348,
@@ -38978,7 +39539,7 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "",
+    "desc": "PacShore Solutions builds referral channels and strategic alliances for SMB alternative lenders, connecting them with financial institutions, small business service providers, manufacturers, and fintechs. With over 30 years of experience in finance, they have driven over $1 billion in gross annual revenue for their clients and partners. They work with lenders offering embedded finance, lines of credit, working capital, small equipment loans, and MCA products.",
     "notes": "",
     "news": [],
     "ice": "",
@@ -38986,15 +39547,17 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "",
-    "employees": 1,
-    "website": "",
+    "location": "United States",
+    "employees": 10,
+    "website": "https://pacshoresolutions.com",
     "linkedinUrl": "https://www.linkedin.com/company/pacshore-solutions/?trk=public_profile_experience-item_profile-section-card_subtitle-click",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "United States"
   },
   {
     "id": 1349,
@@ -39005,23 +39568,48 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Florida-based provider of fast business loans offering working capital solutions for small businesses with quick approval and same-day funding.",
+    "desc": "Palm Beach Capital Funding (PBCF) is a small business lending company founded in March 2019 by the Dan Lounsbury Family Office, headquartered in Lake Worth, FL with an additional office in Boca Raton. The company provides small and medium-sized companies with a variety of debt instruments and financial products including working capital loans, with approval in as little as 2-5 business hours and funding in as little as 1 business day. PBCF has an in-house communication center giving Funding Advisors and underwriters instant access to information needed for quick decisions. The company funds businesses across the United States and is operated by a team of seasoned entrepreneurs focused on helping companies grow and expand. Approximately 11-50 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Dan Lounsbury Family Office launches Ultra High Net Worth division in Cayman Islands",
+        "s": "Dan Lounsbury Press",
+        "d": "2024-10-01"
+      },
+      {
+        "h": "Dan Lounsbury presents at IVYFON December 2024 Forum as PBCF Managing Director",
+        "s": "IVYFON",
+        "d": "2024-12-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Dan Lounsbury",
+        "t": "CEO & Founder",
+        "bg": "Founded Palm Beach Capital Funding in March 2019 through his Family Office. Based in Palm Beach, FL. The Dan Lounsbury Family Office announced the launch of PBCF as a new venture dedicated to originating and sourcing loans for small and medium-sized businesses across the United States. Also launched an Ultra High Net Worth (UHNW) division in the Cayman Islands in October 2024. Listed as Managing Director of Palm Beach Capital Funding at IVYFON December 2024 event. Background spans family office investing and financial services across multiple asset classes.",
+        "hooks": [
+          "Launched UHNW division in Cayman Islands in late 2024",
+          "Spoke at IVYFON December 2024 forum as PBCF Managing Director",
+          "Built PBCF from his personal Family Office venture"
+        ],
+        "li": "https://www.linkedin.com/in/danlounsbury/"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 2,
-    "website": "https://www.palmbchcap.com/",
+    "location": "Lake Worth, FL",
+    "employees": 25,
+    "website": "https://www.palmbchcap.com",
     "linkedinUrl": "https://www.linkedin.com/company/palm-beach-capital-funding/mycompany/verification/?viewAsMember=true",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "2431 10th Ave N, Lake Worth, FL 33461"
   },
   {
     "id": 1350,
@@ -39032,23 +39620,58 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "New York-based alternative funding company specializing in merchant cash advances and business financing. Reports $50M+ in funding secured with 1,000+ successful business transformations and offers MCA, business lines of credit, term loans, and mortgage solutions.",
+    "desc": "Pathway Catalyst Partners is a direct funding company based in New York City at 260 West 35th Street, 14th Floor, offering comprehensive financial solutions for small and large businesses. Founded by Thomas Chillemi, the company's mission is to empower business owners to achieve their unique financial goals through tailored financial solutions. They offer SBA Loans, Equipment Financing, Revenue-Based Financing, Lines of Credit, Term Loans, and Residential/Commercial Mortgage purchase and refinancing. With over 15 years of experience in small business funding, they report 1,000+ successful business transformations, a 92% client success rate, and $50M+ in funding secured. The company matches clients with the right lenders and provides ongoing support for long-term success. Approximately 13 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Pathway Catalyst Partners expands SBA loan offerings for small business growth",
+        "s": "LinkedIn / Pathway Catalyst",
+        "d": "2024-07-01"
+      },
+      {
+        "h": "Pathway Catalyst reports $50M+ in cumulative funding secured for small businesses",
+        "s": "Company Website",
+        "d": "2025-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Thomas Chillemi",
+        "t": "Founder & CEO",
+        "bg": "Founded Pathway Catalyst Partners in New York. Brings over 15 years of experience in small business funding and financial strategy. Prior experience includes roles at Harvest Lending Inc, Harvest Processing Inc, Diamond Capital Funding, and HERMAN & CO REAL ESTATE. Has helped over 1,000 entrepreneurs secure fast, flexible capital to grow, recover, and scale their businesses. Reports $50M+ in funding secured with a 92% client success rate.",
+        "hooks": [
+          "$50M+ in funding secured for small businesses",
+          "Over 1,000 successful business transformations",
+          "Background spanning Harvest Lending, Diamond Capital Funding, and real estate"
+        ],
+        "li": "https://www.linkedin.com/in/thomas-chillemi-5ba2b412b/"
+      },
+      {
+        "n": "Andres Varela",
+        "t": "Funding Specialist",
+        "bg": "Serves as Funding Specialist at Pathway Catalyst Partners in New York. Works directly with business owners to assess their financial needs and match them with appropriate funding solutions from the company's diverse product portfolio including SBA loans, equipment financing, and revenue-based financing.",
+        "hooks": [
+          "Hands-on funding specialist working directly with entrepreneurs",
+          "Specializes in matching businesses to optimal capital solutions"
+        ],
+        "li": "https://www.linkedin.com/in/andres-varela-66073a340/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 16,
-    "website": "https://pathwaycatalyst.com/",
+    "location": "New York, NY",
+    "employees": 13,
+    "website": "https://pathwaycatalyst.com",
     "linkedinUrl": "https://www.linkedin.com/company/pathway-catalyst-partners/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "260 West 35th St, 14th Floor, New York, NY 10001"
   },
   {
     "id": 1351,
@@ -39059,23 +39682,68 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "New York-based small business funding company. Limited public information available about specific products and services.",
+    "desc": "Payclass Inc. is a fintech company founded in 2021 and headquartered at 28 Liberty Street in New York, NY. The company accelerates B2B payments by operating a private exchange in collaboration with multiple financial institutions including family offices, wealth funds, hedge funds, and private banks. Payclass was built to reduce the friction of capital flow from banks, hedge funds, and family offices into businesses and projects worldwide. The platform offers business loans (long and short term), real estate financing, letters of credit, equipment leases, asset-based loans, and invoice factoring capabilities. Payclass reports over $15 billion in transaction volume and operates across all continents using middleware technology built on the open-source Apache stack. The company can reduce payment turnaround by 2-3 weeks and sometimes pay within one week. Approximately 5 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Payclass reports $15 billion+ in cumulative B2B transaction volume",
+        "s": "Payclass Website",
+        "d": "2025-01-01"
+      },
+      {
+        "h": "Payclass expands invoice factoring and business lending offerings globally",
+        "s": "Crunchbase",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Henry Sinoimeri",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Payclass Inc. in 2021. Earned a bachelor's degree in Political Science from Syracuse University before entering the construction industry, where he developed expertise in managing, planning, organizing, and budgeting complex projects. Gained firsthand insight into the challenges workers and companies face when payments are delayed, which inspired the creation of Payclass. Brings deep expertise in business process optimization, financial systems, and technology-driven solutions. Has worked with some of the largest companies in the U.S. and around the world, as well as co-founding and scaling startups in supply chain, logistics, and energy efficiency.",
+        "hooks": [
+          "Syracuse University Political Science graduate",
+          "Construction industry background inspired B2B payment platform",
+          "Co-founded startups in supply chain, logistics, and energy efficiency"
+        ],
+        "li": "https://www.linkedin.com/in/henry-sinoimeri/"
+      },
+      {
+        "n": "Jonathan Cherry-Woode",
+        "t": "Co-Founder & President",
+        "bg": "Co-founded Payclass Inc. in 2021 with Henry Sinoimeri. Expertise in B2B flow of payment processes and systems, business process management, technology implementation, and in-depth understanding of customer needs. Combines operational expertise, financial acumen, and passion for people-first leadership to drive Payclass's mission of creating a more transparent, efficient, and reliable funding experience for capital providers and businesses.",
+        "hooks": [
+          "B2B payment process systems expert",
+          "People-first leadership approach to fintech"
+        ],
+        "li": "https://www.linkedin.com/in/jonathan-cherry-woode-441113105/"
+      },
+      {
+        "n": "Jackie Vergne",
+        "t": "Chief Growth Officer",
+        "bg": "Serves as Chief Growth Officer at Payclass. Visionary founder of Vergne Equity with over two decades of transformative leadership in business growth and equity funding. Brings exceptional expertise in scaling companies and driving revenue growth through strategic partnerships and innovative funding mechanisms.",
+        "hooks": [
+          "Founded Vergne Equity — two decades in business growth and equity funding",
+          "Transformative leadership track record across multiple ventures"
+        ],
+        "li": null
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 8,
-    "website": "https://www.payclassinc.com/",
+    "location": "New York, NY",
+    "employees": 5,
+    "website": "https://www.payclassinc.com",
     "linkedinUrl": "https://www.linkedin.com/company/payclass-inc/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "28 Liberty Street, New York, NY 10005"
   },
   {
     "id": 1352,
@@ -39086,23 +39754,59 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "California-based fintech platform specializing in invoice and PO financing, asset-based lending, and term loans for B2B small businesses. Evaluates creditworthiness of customers rather than the borrowing business, with rates as low as 1.2%.",
+    "desc": "Payplant LLC is a financial institution founded in 2013 and headquartered in Palo Alto, California, providing growth financing for entrepreneurs by entrepreneurs. The company's flagship product, Pay Me Now, is an on-demand digital invoice-financing service that provides cash to businesses when their customers pay too slowly. Payplant offers invoice financing, PO financing, asset-based lines of credit, short-term loans, app financing for developers, and customized lending products. The company can fund first invoices in 1-2 business days with no minimums or hidden fees, guaranteeing fast funding within 24 hours at rates starting at 1.2%. Payplant has no long-term lockups or monthly minimums and pays most of the invoice amount upfront. Founded by Neerav Beery and Dr. Ronjon Nag, who previously co-founded and sold Cellmania to BlackBerry. Approximately 4 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Payplant launches Pay Me Now on-demand digital invoice-financing service for SMBs",
+        "s": "Payplant Press",
+        "d": "2018-01-01"
+      },
+      {
+        "h": "Payplant expands asset-based lending and PO financing products for small businesses",
+        "s": "Payplant Blog",
+        "d": "2023-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Neerav Beery",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Payplant in 2013 with Dr. Ronjon Nag. Previously co-founded and sold Cellmania, an App Store platform, to BlackBerry. Based in Palo Alto, CA. Serial entrepreneur with a background in mobile technology and financial ecosystems. Built Payplant's Pay Me Now digital invoice-financing service to address the challenge of slow-paying customers for small businesses.",
+        "hooks": [
+          "*Co-founded Cellmania and sold it to BlackBerry",
+          "Serial entrepreneur turned SMB invoice financing innovator",
+          "Palo Alto-based fintech founder since 2013"
+        ],
+        "li": null
+      },
+      {
+        "n": "Ronjon Nag",
+        "t": "Co-Founder & Co-CEO",
+        "bg": "Co-founded Payplant in 2013 with Neerav Beery. Holds a PhD (Dr. Ronjon Nag). Has co-founded, led, and sold companies to Motorola and BlackBerry. Career includes optimizing financial ecosystems in the mobile space and providing strategic consulting to banks and financial institutions around the world. Extensive background in technology entrepreneurship and financial services.",
+        "hooks": [
+          "*Sold companies to both Motorola and BlackBerry",
+          "PhD holder with deep fintech and mobile technology expertise",
+          "Strategic consultant to global banks and financial institutions"
+        ],
+        "li": null
+      }
+    ],
     "ask": "",
-    "location": "California",
+    "location": "Palo Alto, CA",
     "employees": 4,
-    "website": "https://www.payplant.com/",
+    "website": "https://www.payplant.com",
     "linkedinUrl": "https://www.linkedin.com/company/payplant",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "2625 Middlefield Rd 595, Palo Alto, CA 94306"
   },
   {
     "id": 1353,
@@ -39113,23 +39817,63 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Nevada-based company providing payroll funding and financing solutions for small businesses and staffing agencies, helping bridge cash flow gaps between invoice submission and customer payment through invoice factoring.",
+    "desc": "Payroll Funding Company, now rebranded as Ready to Fund, is an online lending platform founded in 2003 by Will Robins, headquartered in Las Vegas, NV. The company specializes in payroll factoring and funding for staffing agencies, helping businesses meet payroll obligations by purchasing their accounts receivable at a discount. The company provides immediate cash advances typically between 75-95% of invoice value, often within 24 hours, allowing staffing companies to pay workers weekly while waiting 30-90 days for client payments. The rebrand to Ready to Fund reflects the company's expanded commitment to providing solutions beyond payroll funding, including working capital and short-term business financing. The company filed an SEC exempt offering to raise $10 million in new debt financing in 2024. Approximately 15 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Payroll Funding Company rebrands to Ready to Fund to reflect expanded services",
+        "s": "Ready to Fund",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Payroll Funding files SEC exempt offering to raise $10 million in new debt financing",
+        "s": "Intelligence360 / SEC Filing",
+        "d": "2024-01-24"
+      },
+      {
+        "h": "Payroll Funding Company expands partnership development team with new VP appointments",
+        "s": "AccessNewsWire",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Will Robins",
+        "t": "Founder & President",
+        "bg": "Founded Payroll Funding Company in 2003 in Las Vegas, NV. Has led the company for over two decades, building it into a recognized payroll factoring and staffing agency funding provider. The company recently rebranded to 'Ready to Fund' to reflect its expanded services beyond payroll funding. Under his leadership, the company raised $10 million in new debt financing via an SEC-filed exempt offering.",
+        "hooks": [
+          "Built payroll factoring company over 20+ years since 2003",
+          "Led rebrand from Payroll Funding Company to Ready to Fund",
+          "Raised $10M in new debt financing via SEC exempt offering"
+        ],
+        "li": "https://www.linkedin.com/in/will-robins-73096519/"
+      },
+      {
+        "n": "Susannah Albright",
+        "t": "CEO",
+        "bg": "Serves as CEO of Payroll Funding Company (now Ready to Fund). Based in Princeton, NJ. Leads the company's operations and strategic direction as it expands beyond payroll funding into broader business financing solutions. Oversees the company's online lending platform and staffing agency funding operations.",
+        "hooks": [
+          "Princeton, NJ-based CEO leading payroll-to-broader funding transition",
+          "Driving Ready to Fund rebrand and expanded product portfolio"
+        ],
+        "li": null
+      }
+    ],
     "ask": "",
-    "location": "Nevada",
-    "employees": 11,
-    "website": "https://payrollfundingcompany.com",
+    "location": "Las Vegas, NV",
+    "employees": 15,
+    "website": "https://payrollfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/payroll-funding-company/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "900 Las Vegas Blvd S, Unit 802, Las Vegas, NV 89101"
   },
   {
     "id": 1354,
@@ -39140,23 +39884,58 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "California-based provider of unsecured working capital solutions for small to mid-sized businesses. Founded in 2020 by experienced MCA professionals, offers same-day funding decisions and serves businesses nationwide across all industries.",
+    "desc": "Paz Funding Source LLC is a merchant cash advance provider founded in September 2020 by a group of seasoned MCA professionals in Los Angeles, CA. The company offers unsecured working capital solutions for small to mid-sized businesses throughout the United States, with funding decisions in as little as 24 hours. Paz Funding Source is a family-run funding partner that serves entrepreneurs nationwide across industries including entertainment, hospitality, retail, healthcare, and professional services. The company provides strategic growth capital for stable, profitable businesses through alternative business financing with fast approvals and flexible terms. Listed with the BBB in Los Angeles as an asset-based lending company. Approximately 10 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Paz Funding Source expands merchant cash advance offerings nationwide from Los Angeles HQ",
+        "s": "BBB / Company Website",
+        "d": "2023-01-01"
+      },
+      {
+        "h": "Paz Funding Source LLC established in Los Angeles as family-run MCA provider",
+        "s": "Bizapedia / State Filing",
+        "d": "2020-09-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Ariel Hanasabzadeh",
+        "t": "Manager & Co-Founder",
+        "bg": "Co-founded Paz Funding Source LLC in September 2020 in Los Angeles, CA. Serves as Manager and registered agent for the company. Part of the founding team of seasoned MCA professionals who built the company on a foundation of trust, experience, and genuine care. Runs Paz Funding as a family-operated business serving entrepreneurs nationwide with merchant cash advances and working capital solutions.",
+        "hooks": [
+          "Built family-run MCA business from ground up in 2020",
+          "Seasoned MCA professional with deep industry connections",
+          "Los Angeles-based funder serving nationwide entrepreneurs"
+        ],
+        "li": null
+      },
+      {
+        "n": "Elkhanan Hanasabzadeh",
+        "t": "Manager & Co-Founder",
+        "bg": "Co-founded Paz Funding Source LLC in September 2020 alongside Ariel Hanasabzadeh in Los Angeles. Serves as Manager of the company. Brings MCA industry expertise to the family-run funding operation. Focuses on building long-term relationships with business owners seeking alternative financing solutions.",
+        "hooks": [
+          "Co-founder of family-operated MCA business",
+          "MCA veteran focused on relationship-driven funding"
+        ],
+        "li": null
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 2,
-    "website": "https://pazfundingsource.com/",
+    "location": "Los Angeles, CA",
+    "employees": 10,
+    "website": "https://pazfundingsource.com",
     "linkedinUrl": "https://www.linkedin.com/company/paz-fund/about/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "11150 W Olympic Blvd, Suite 950, Los Angeles, CA 90064"
   },
   {
     "id": 1355,
@@ -39167,23 +39946,70 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Multi-national asset finance platform (formerly Marlin Leasing) operating across Europe, UK, and US, offering equipment lease and loan products to manufacturers, distributors, dealers and customers. Over $5.1B in balance sheet lease assets and $2.72B in annual originations across 13 countries. Owned by HPS Investment Partners.",
+    "desc": "PEAC Solutions is a major multi-national asset finance platform owned by funds managed by HPS Investment Partners LLC, operating across 13 countries in Europe, the United Kingdom, and the United States. Headquartered in Mount Laurel, New Jersey, the company specializes in originating and servicing high-volume, small-ticket leases and loans, and provides innovative finance solutions to equipment manufacturers, distributors, dealers, and vendors. PEAC has been recognized by ELFA for 25 years of membership and celebrated unprecedented U.S. growth in 2024. In 2025, the company completed the acquisition of ePlus Finance subsidiaries, expanding its IT finance portfolio and reach into U.S. Federal, State, and Local government sectors. PEAC also acquired IT subscription and rental platform provider topi and ABN AMRO UK's leasing business. In early 2026, PEAC closed a $681 million ABS deal backed by equipment leases and loans. Under CEO Bill Stephenson ('Leasing CEO of the Decade'), the company continues aggressive expansion. Approximately 374 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "PEAC Solutions finalizes first U.S. securitization transaction of 2026 — $681M ABS deal",
+        "s": "Equipment Finance News",
+        "d": "2026-01-01"
+      },
+      {
+        "h": "PEAC Solutions completes acquisition of ePlus Finance subsidiaries",
+        "s": "Leasing Life / ePlus PR",
+        "d": "2025-07-01"
+      },
+      {
+        "h": "PEAC Solutions acquires IT subscription and rental platform provider topi",
+        "s": "PEAC Solutions Press",
+        "d": "2025-01-01"
+      },
+      {
+        "h": "PEAC Solutions appoints Eileen Schoonmaker as President of the Americas",
+        "s": "Yahoo Finance / MHEDA",
+        "d": "2025-06-16"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Bill Stephenson",
+        "t": "Global CEO",
+        "bg": "Serves as Global CEO of PEAC Solutions, focused on expanding and integrating PEAC's global footprint. Over four decades of experience in the leasing industry, including eight years as CEO and Chairman of the Executive Board of DLL. Former Chairman of the Equipment Leasing and Financing Association (ELFA). Named 'Leasing CEO of the Decade (2010-2020)' by MonitorDaily. In November 2023, was the inaugural inductee into the 'Leasing Life Hall of Fame'. Alumnus of Florida State University and graduate of Harvard Business School's Advanced Management Program.",
+        "hooks": [
+          "*Named 'Leasing CEO of the Decade' by MonitorDaily",
+          "*Inaugural inductee into Leasing Life Hall of Fame (2023)",
+          "Harvard Business School Advanced Management Program graduate",
+          "Former CEO of DLL for eight years"
+        ],
+        "li": "https://www.linkedin.com/in/william-f-stephenson-26473422/"
+      },
+      {
+        "n": "Eileen Schoonmaker",
+        "t": "President of the Americas",
+        "bg": "Joined PEAC Solutions in June 2025 as President of the Americas, overseeing all aspects of operations including Risk Management, Sales Support, Customer Care, Collections, Asset Management, Legal, IT, Finance, and Human Resources. Over 35 years of experience in the leasing and financial services industry. Previously served as President and General Manager at DLL, responsible for a national operations hub with more than 700 employees. Recognized as one of the 'Top 50 Women in Finance' by MonitorDaily.",
+        "hooks": [
+          "*Named Top 50 Women in Finance by MonitorDaily",
+          "Managed 700+ employee operations hub at DLL",
+          "35+ years in leasing and financial services"
+        ],
+        "li": "https://www.linkedin.com/in/eileen-schoonmaker-6287448/"
+      }
+    ],
     "ask": "",
-    "location": "New Jersey",
-    "employees": 0,
+    "location": "Mount Laurel, NJ",
+    "employees": 374,
     "website": "https://peacsolutions.com",
     "linkedinUrl": "https://de.linkedin.com/company/peac-solutions?trk=ppro_cprof",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "300 Fellowship Rd, Mount Laurel, NJ 08054"
   },
   {
     "id": 1356,
@@ -39194,23 +40020,74 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Texas-based company. Limited public information available about their role in small business lending.",
+    "desc": "PharmLine is the flagship product of HealthGrowth Capital, LLC (operating as HealthGrowth Pharmacy Solutions), a direct lender to community pharmacies headquartered in Austin, Texas. PharmLine was launched in 2018 in partnership with Lendistry as the first revolving line of credit dedicated to independent community pharmacies, offering up to $500,000 for well-qualified borrowers (up to $1 million in some cases) with closings in 1-3 business days. The company offers a full range of financial products including PharmLine lines of credit, SBA loans, PPP disaster relief loans, asset-backed loans, and equipment finance. HealthGrowth also provides strategic consulting and advisory services through HealthGrowth Advisors, helping pharmacy owners maximize profitability by streamlining operations and improving reimbursements. Co-founded in 2016 by Gregg R. Honigblum and Karl Kipke. Closed a $16.8 million financing in April 2020. Pharmacy Development Services (PDS) has recommended HealthGrowth Capital. Approximately 20 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "HealthGrowth Capital closes $16.8 million financing for pharmacy lending expansion",
+        "s": "PR Newswire",
+        "d": "2020-04-01"
+      },
+      {
+        "h": "Pharmacy Development Services recommends HealthGrowth Capital for community pharmacy funding",
+        "s": "Marketers Media",
+        "d": "2019-01-01"
+      },
+      {
+        "h": "HealthGrowth Capital and Lendistry launch PharmLine — first revolving credit line for community pharmacies",
+        "s": "PR Newswire",
+        "d": "2018-10-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Karl Kipke",
+        "t": "CEO",
+        "bg": "Co-founded HealthGrowth Capital (parent of PharmLine) in 2016 with Gregg R. Honigblum. Serves as CEO of HealthGrowth Pharmacy Solutions, LLC. Based in Austin, TX. Over 40 years of experience in investment banking, asset management, and venture capital. Has played key operating roles in numerous companies across a range of industries. Instrumental in establishing, funding, scaling, and selling successful businesses by leveraging his financial expertise and strategic vision. Led the company's $16.8 million financing in April 2020.",
+        "hooks": [
+          "40+ years in investment banking, asset management, and venture capital",
+          "Led $16.8M financing for HealthGrowth Capital in 2020",
+          "Serial entrepreneur — established, scaled, and sold multiple businesses"
+        ],
+        "li": "https://www.linkedin.com/in/karl-kipke-7545665/"
+      },
+      {
+        "n": "Gregg R. Honigblum",
+        "t": "Co-Founder",
+        "bg": "Co-founded HealthGrowth Capital in 2016 alongside Karl Kipke. Has a background in healthcare financial services. Also serves as Chief Investment Officer at Sintx Technologies Inc. according to LinkedIn. Played a key role in creating the first revolving line of credit dedicated to community pharmacies through the PharmLine product launched in partnership with Lendistry in 2018.",
+        "hooks": [
+          "Created the first revolving line of credit dedicated to community pharmacies",
+          "Chief Investment Officer at Sintx Technologies",
+          "Pioneer in pharmacy-specific financial products"
+        ],
+        "li": "https://www.linkedin.com/in/gregg-honigblum/"
+      },
+      {
+        "n": "Steven Cava",
+        "t": "Vice President of Pharmacy Performance",
+        "bg": "Serves as VP of Pharmacy Performance at HealthGrowth Pharmacy Solutions. Over 20 years of pharmacy experience across nearly every pharmacy role. Pursued a law degree and is licensed to practice in Washington, D.C. Offers a unique perspective on standards of care, contracts, and regulatory forces shaping the pharmacy landscape.",
+        "hooks": [
+          "20+ years in pharmacy with law degree — licensed in D.C.",
+          "Unique dual pharmacist-attorney perspective on healthcare regulations"
+        ],
+        "li": null
+      }
+    ],
     "ask": "",
-    "location": "Texas",
-    "employees": 0,
+    "location": "Austin, TX",
+    "employees": 20,
     "website": "https://pharmline.com",
     "linkedinUrl": "https://www.linkedin.com/company/pharmline-lllc?trk=ppro_cprof",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "925 S Capital of Texas Hwy, Austin, TX 78746"
   },
   {
     "id": 1357,
@@ -39221,23 +40098,36 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Florida-based merchant cash advance provider offering business cash advances that convert future Visa and MasterCard receivables into immediate capital for small business owners.",
+    "desc": "Pinnacle Advances is a financial services company founded in 2010 and headquartered in Miami, Florida, specializing in small business lending and working capital solutions. The company works with businesses ranging from small to medium corporations, prioritizing the success of small businesses with instant decision-making and fair financing options. Pinnacle Advances offers merchant cash advances and business funding with a simple application process, no credit checks required, and approval for up to $5 million in working capital. Funding can be provided in under 24 hours and same-day funding is available for many clients. The company has operations in both Miami and New York, with a physical presence at 7519 147 St in Queens, NY (Pinnacle Business Funding, a related entity). Management team has over 40 years of combined experience. Note: Pinnacle Advances and Pinnacle Business Funding appear to be related entities operating in the MCA space. Approximately 75 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Pinnacle Advances expands small business funding operations with instant approval decisions",
+        "s": "LinkedIn / Company Website",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Pinnacle Business Funding opens Queens, NY location for merchant cash advance services",
+        "s": "Yelp / Local Listings",
+        "d": "2023-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "Florida",
-    "employees": 4,
-    "website": "https://pinnacleadvances.com",
+    "location": "Miami, FL",
+    "employees": 75,
+    "website": "https://www.pbffunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/pinnacle-advances/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Miami, FL 33160"
   },
   {
     "id": 1358,
@@ -39248,23 +40138,36 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Pennsylvania-based pre-settlement legal funding company providing non-recourse cash advances ($500 to $100K+) to plaintiffs with pending litigation claims and attorney funding ($500 to $1M+) within 24 hours of approval. Not a traditional small business lender.",
+    "desc": "Pioneer Legal Funding is a litigation finance company that provides pre-settlement cash advances to plaintiffs with pending litigation claims. The company also provides litigation funding to corporate plaintiffs and attorneys. For individual plaintiffs, Pioneer offers non-recourse cash advances from $500 to $100,000+ within 24 hours of approval, with rates ranging from 17-21% for every 6 months (non-compounding), typically limited to 5-10% of estimated case value. For attorneys and law firms, they provide $500 to $1M+ within 24 hours. For corporate plaintiffs, Pioneer provides non-recourse capital from $10,000 to $1M+ directly to businesses or their outside counsel to finance costs of pending commercial claims. The company's mission is to increase access to justice by providing capital solutions for plaintiffs awaiting settlement. Pioneer has a team of knowledgeable underwriters, paralegals, and attorneys, and has earned a reputation working with hundreds of law firms and thousands of plaintiffs across all types of injury claims. Limited public information on leadership and company size.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Pioneer Legal Funding expands corporate plaintiff funding program up to $1M+",
+        "s": "Company Website",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Pioneer Legal Funding launches enhanced pre-settlement funding application portal",
+        "s": "Pioneer Legal Funding",
+        "d": "2023-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "Pennsylvania",
-    "employees": 0,
-    "website": "https://www.pioneerlegalfunding.com/",
+    "location": "United States",
+    "employees": 15,
+    "website": "https://www.pioneerlegalfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/pioneer-legal-funding",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "United States"
   },
   {
     "id": 1359,
@@ -39275,23 +40178,68 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "California-based international peer-to-peer microlending platform connecting individual lenders with entrepreneurs in underserved countries (primarily Kenya and South Africa). Not a traditional MCA or small business lender in the US market.",
+    "desc": "Positiviti Lending is a peer-to-peer microloan lending platform established in September 2018, headquartered in Clovis, California. The company provides everyday American lenders the opportunity to build wealth (12%-36% APR returns) while supporting the growth of underserved entrepreneurs in developing countries, primarily Kenya. Positiviti facilitates administrative support for the microfinance operations of Open Valley, a local lender in Kenya, connecting individual lenders with entrepreneurs via 30-day microloans ranging from $5 to $500. The platform reports a default rate of less than 1%. Positiviti is a sponsored program within World Workforce International Inc., a 501(c)(5) nonprofit organization's framework. The company is not a bank, is not FDIC insured, and does not guarantee returns. Approximately 11 employees. Note: Positiviti is a microlending platform focused on international lending to Kenya, not a traditional MCA or domestic small business funder.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Positiviti Lending exhibits at MMS Dallas conference to recruit capital providers",
+        "s": "MMS Dallas",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Positiviti reports sub-1% default rate on Kenya microloan portfolio",
+        "s": "Positiviti Partners",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jan E Hale",
+        "t": "Managing Agent, Positiviti Partners",
+        "bg": "Managing Agent for Positiviti Partners at Positiviti Lending. Based in Tarpon Springs, FL. Previously served as CEO at Enercel-Vet (2011-2014) and Co-Owner of DSI Marketing Solutions Group. Also held the role of Executive Producer on the East Coast. Oversees the Positiviti microlending platform's partner operations and agent network.",
+        "hooks": [
+          "Previously CEO at Enercel-Vet biotech venture",
+          "Based in Tarpon Springs, FL managing microlending operations",
+          "Background spanning executive producing and biotech before fintech"
+        ],
+        "li": "https://www.linkedin.com/in/drjanhale/"
+      },
+      {
+        "n": "Rudolfo Beltran Jr.",
+        "t": "VP of Sales, Marketing & CRM",
+        "bg": "Vice President of Sales and Marketing at Positiviti Lending, responsible for marketing outreach, sales strategy, and CRM management. Leads the company's efforts to acquire capital providers and expand the microlending platform's reach to American investors looking for alternative investment opportunities.",
+        "hooks": [
+          "Heads sales and CRM for microlending platform serving Kenya",
+          "VP-level leadership at intersection of fintech and social impact"
+        ],
+        "li": "https://www.linkedin.com/in/rudolfo-beltran-jr-b0736024/"
+      },
+      {
+        "n": "Dan Smith",
+        "t": "Microlending Consultant & Capital Acquisition",
+        "bg": "Capital Acquisition Consultant for Positiviti Lending. Helps underbanked entrepreneurs in developing nations access capital through 30-day microloans while providing up to 24% annual returns for capital providers. Runs DSI Marketing Solutions Group and manages CRM operations for the Positiviti platform. Active LinkedIn content publisher on the platform's social impact mission.",
+        "hooks": [
+          "Runs his own marketing firm DSI Marketing alongside Positiviti work",
+          "Publishes LinkedIn content on social impact investing and microlending returns"
+        ],
+        "li": "https://www.linkedin.com/in/dsimarketing/"
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 12,
-    "website": "https://www.positivitilending.com/",
+    "location": "Clovis, CA",
+    "employees": 11,
+    "website": "https://positivitilending.com",
     "linkedinUrl": "https://www.linkedin.com/company/positiviti-lending/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "2137 Herndon Ave, Suite 104, Clovis, CA 93611"
   },
   {
     "id": 1361,
@@ -39307,23 +40255,48 @@
         "t": "Founder"
       }
     ],
-    "desc": "Florida-based (Fort Myers/SWFL) lending brokerage operating as 239Loans.com, providing access to revenue-based funding, business loans, lines of credit, and equipment financing up to $3MM. Founded in 2020, serves businesses locally in Southwest Florida and nationwide.",
+    "desc": "Presto Prestamo LLC, doing business as 239Loans.com, is a Latino-owned and Spanish-speaking business funding brokerage based in Fort Myers, Southwest Florida. Founded by Steven O. Ruiz, the company specializes in connecting minority business owners with access to business loans including SBA loans, business lines of credit, working capital, factoring, and equipment leasing. The company offers funding from $5,000 to $5,000,000, with pre-approvals in 24 hours and over 70% approval rates. Applicants never pay upfront fees. The company serves business owners incorporated in the United States, Puerto Rico, and Guam, with 10 years of experience in funding businesses and a vast network of lenders, funders, and finance companies. Based in Fort Myers, 239 Loans caters to local SWFL businesses while extending services nationwide. Estimated 2-5 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Presto Prestamo LLC launches 239Loans.com to serve Hispanic/Latino small business community",
+        "s": "239Loans.com",
+        "d": "2024-12-01"
+      },
+      {
+        "h": "239Loans expands business capital programs including SBA, lines of credit, and equipment leasing",
+        "s": "239Loans.com",
+        "d": "2025-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Steven O. Ruiz",
+        "t": "Founder & Owner",
+        "bg": "Founder of Presto Prestamo LLC and owner of 239Loans.com in Fort Myers, FL. Spent 30+ years building $100M+ businesses, including serving as President at Coca-Cola. Previously held roles at One Park Financial, Assurance Management Group, and Great Health Works. Founded Presto Prestamo in December 2024. Brings deep understanding of both corporate operations and small business financing needs, with a focus on serving the Hispanic/Latino business community in Southwest Florida and nationwide.",
+        "hooks": [
+          "*30+ years building $100M+ businesses including President at Coca-Cola",
+          "Founded 239Loans to serve Hispanic/Latino business owners in SWFL",
+          "Transitioned from corporate leadership at Coca-Cola to small business funding"
+        ],
+        "li": "https://www.linkedin.com/in/stevenoruiz/"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 2,
-    "website": "https://www.239loans.com/",
+    "location": "Fort Myers, FL",
+    "employees": 3,
+    "website": "https://www.239loans.com",
     "linkedinUrl": "https://www.linkedin.com/in/stevenoruiz/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "iso"
+    "category": "iso",
+    "full_address": "13550 Reflections Parkway #504, Fort Myers, FL 33907"
   },
   {
     "id": 1362,
@@ -39334,23 +40307,42 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "New Jersey-based small business funding company. Limited public information available about specific MCA or lending products.",
+    "desc": "Prime Plus Capital is a business finance advisory and funding company headquartered in Jersey City, New Jersey. The company was formed to serve business owners by helping them meet and exceed their goals for growth and individual market share. Prime Plus Capital provides access to an expansive capital network as well as strategic consulting, focusing on raising capital, restructuring debt, and charting pathways to substantial expansion. Products include SBA 504/7a loans, lines of credit, and merchant cash advances. The company operates as a boutique advisory connecting small businesses with appropriate funding solutions from its network of lenders and funders. Approximately 2 employees. Business hours Monday to Friday 9AM-6PM EST, Saturday by appointment.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Prime Plus Capital expands SBA loan and merchant cash advance product offerings",
+        "s": "Prime Plus Capital",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "John Henry DaSilva",
+        "t": "Managing Director",
+        "bg": "Managing Director of Prime Plus Capital, headquartered at 111 Town Square Place, Suite 1203, Jersey City, NJ. A sales professional with several years of experience in the business finance sector who has worked under the tutelage of financial industry titans. Leads Prime Plus Capital's strategic partnerships and capital network relationships to serve small business owners seeking growth capital, debt restructuring, and expansion pathways.",
+        "hooks": [
+          "Leads a boutique capital advisory from Jersey City's Town Square Place",
+          "Mentored by financial industry titans in business finance sector"
+        ],
+        "li": "https://www.linkedin.com/in/johnhenrydasilva"
+      }
+    ],
     "ask": "",
-    "location": "New Jersey",
+    "location": "Jersey City, NJ",
     "employees": 2,
     "website": "https://primepluscapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/primepluscapital",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "iso",
+    "full_address": "111 Town Square Place, Suite 1203, Jersey City, NJ 07310"
   },
   {
     "id": 1364,
@@ -39361,23 +40353,73 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "California-based small business funding company. Limited public information available about specific products and services.",
+    "desc": "Probably Funding (legally Probably LLC) is an independent business funding company established in December 2019 as an extension of Regents Capital Corporation, headquartered in Costa Mesa, California. The company provides small business working capital loans and equipment financing solutions ranging from $10,000 to $250,000 with competitive rates and simple qualification requirements. Founded by Donald Hansen and Dennis Odiorne — the same duo behind Regents Capital (which has originated over $1.1 billion in equipment financing) — Probably Funding believes in the power of Main Street USA and the positive impact small businesses play on local, regional, and national economies. The company offers flexible funding options with quick access to funds and employs staff working remotely nationwide. Approximately 16 employees. BBB-accredited business based in Costa Mesa, CA.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Probably Funding parent Regents Capital extends and upsizes corporate notes to $30 million",
+        "s": "Secured Finance Network",
+        "d": "2025-09-01"
+      },
+      {
+        "h": "Regents Capital extends and upsizes bank credit facility to $150 million",
+        "s": "Secured Finance Network",
+        "d": "2025-11-01"
+      },
+      {
+        "h": "Regents Capital marks a decade of success in equipment finance",
+        "s": "National Equipment Finance Association (NEFA)",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Donald Hansen",
+        "t": "Managing Member & Co-Founder",
+        "bg": "Co-Founder and Managing Member of Probably Funding (Probably LLC). Also serves as Co-Founder & CEO of Regents Capital Corporation, a Costa Mesa-based equipment financing company founded in 2013 that has originated over $1.1 billion to more than 2,200 customers nationwide. Under Hansen's leadership, Regents has grown 100% year over year. With three decades of experience in the equipment financing industry, Hansen oversees all aspects of Regents' strategic direction and growth goals. Probably Funding was established in December 2019 as an extension of Regents Capital's operations.",
+        "hooks": [
+          "*Co-founded Regents Capital which originated over $1.1 billion in equipment financing",
+          "Three decades of experience in equipment financing industry",
+          "Grew Regents Capital 100% year over year as CEO"
+        ],
+        "li": "https://www.linkedin.com/in/donhansen"
+      },
+      {
+        "n": "Dennis Odiorne",
+        "t": "Managing Member & Co-Founder",
+        "bg": "Co-Founder and Managing Member of Probably Funding (Probably LLC). Also Co-Founder & President of Regents Capital Corporation, where he oversees operational strategies and lending operations. Co-founded Regents Capital with Don Hansen in 2013. The duo launched Probably Funding in 2019 as a working capital and equipment financing arm extending Regents Capital's reach into small business working capital loans.",
+        "hooks": [
+          "Co-founded both Regents Capital and Probably Funding with Don Hansen",
+          "President of Regents Capital overseeing operational strategies"
+        ],
+        "li": "https://www.linkedin.com/in/dennisodiorne"
+      },
+      {
+        "n": "Hemi Shah",
+        "t": "Director of Operations",
+        "bg": "Director of Operations at Probably Funding, managing day-to-day operational workflows. Previously served as Credit Officer at US Business Funding. Brings lending operations and credit analysis experience to Probably Funding's working capital and equipment financing platform.",
+        "hooks": [
+          "Previously Credit Officer at US Business Funding",
+          "Manages operations for a company born from $1.1B Regents Capital"
+        ],
+        "li": "https://www.linkedin.com/in/hemi-shah"
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 15,
+    "location": "Costa Mesa, CA",
+    "employees": 16,
     "website": "https://probablyfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/probablyfunding/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Costa Mesa, CA"
   },
   {
     "id": 1365,
@@ -39388,23 +40430,72 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "South Africa-based fintech providing innovative funding solutions for SMEs through a profit-sharing model rather than traditional lending. Named one of Top 20 Most Innovative Companies in Africa by Fast Company in 2020. Charges deal management fees instead of interest.",
+    "desc": "ProfitShare Partners (PSP) is a South African fintech company founded in 2017, headquartered in Johannesburg. The company provides innovative short-term capital solutions for small to medium-sized enterprises (SMEs) that are typically excluded from traditional financing channels. PSP developed a unique financing model based on revenue sharing — providing funding to SMEs in exchange for a share of their future revenue per transaction, allowing businesses to access capital without taking on debt or diluting ownership. Services include purchase order funding, contract finance, invoice purchasing, import finance, and production/manufacturing finance. The company has championed the #GetSAWorking campaign in partnership with Hot 91.9FM, providing a R43 million financial boost to South African SMEs. ProfitShare celebrated 8 years of breaking barriers for South African SMEs in 2025. Approximately 15 employees. Note: ProfitShare Partners is a South African company, not Canadian — the revenue-based financing model operates in the South African market.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "ProfitShare Partners celebrates 8 years of breaking barriers for South African SMEs",
+        "s": "BizCommunity",
+        "d": "2025-01-01"
+      },
+      {
+        "h": "ProfitShare Partners and Hot 91.9FM #GetSAWorking campaign provides R43M financial boost to SMEs",
+        "s": "IOL / The Star",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "ProfitShare Partners CEO Andrew Maren discusses financial inclusivity as business imperative",
+        "s": "BizCommunity",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Andrew Maren",
+        "t": "Co-Founder & CEO",
+        "bg": "Serial entrepreneur and ex-banker who founded ProfitShare Partners in 2017 to give access to funding to small businesses excluded from traditional financing channels. Previously served as Group Chairman and Group Managing Director at EmpowerGroup Holdings, overseeing operational strategies and business development initiatives. Earlier career included roles as a Structured Lending Specialist at RMB (Rand Merchant Bank). Based in Johannesburg, South Africa. Advocates for financial inclusivity as a business imperative and has been featured in BizCommunity discussing ProfitShare's model.",
+        "hooks": [
+          "*Ex-banker at RMB turned fintech founder democratizing SME funding in South Africa",
+          "Led EmpowerGroup Holdings as Group Chairman before founding PSP",
+          "Featured in BizCommunity discussing financial inclusivity as business imperative"
+        ],
+        "li": "https://www.linkedin.com/in/andrewmaren"
+      },
+      {
+        "n": "Kagiso Bagwasi",
+        "t": "Co-Founder & COO",
+        "bg": "Co-Founder and Chief Operating Officer of ProfitShare Partners since 2017. Oversees day-to-day operations of the fintech platform including purchase order funding, contract finance, invoice purchasing, import finance, and production/manufacturing finance. Part of the founding team that developed the unique revenue-sharing model that provides funding to SMEs without taking equity or creating debt.",
+        "hooks": [
+          "Co-built a revenue-sharing funding model that avoids equity dilution for SMEs",
+          "Oversees operations spanning purchase order funding to import finance"
+        ],
+        "li": "https://www.linkedin.com/in/kagiso-bagwasi"
+      },
+      {
+        "n": "Sisa Ngebulana",
+        "t": "Co-Founder",
+        "bg": "Co-Founder of ProfitShare Partners. Part of the founding trio alongside Andrew Maren and Kagiso Bagwasi that launched PSP in 2017 to address the funding gap for South African SMEs through an innovative revenue-sharing fintech model.",
+        "hooks": [
+          "Part of founding trio behind South Africa's revenue-based financing pioneer"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 19,
+    "location": "Johannesburg, South Africa",
+    "employees": 15,
     "website": "https://profitsharepartners.com",
     "linkedinUrl": "https://www.linkedin.com/company/profitsharepartners",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Investment Place Office Park, Ground Floor - Block C, 10th Road, Hyde Park, Johannesburg, Gauteng 2196, South Africa"
   },
   {
     "id": 1366,
@@ -39415,23 +40506,42 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Florida-based small business lending or fintech company. Limited public information available.",
+    "desc": "Promofi Inc is a Miami, Florida-based fintech company that specializes in providing financial solutions tailored for small businesses, focusing on financing marketing, trade show, and operating expenses. The company operates as a B2B buy-now-pay-later (BNPL) financing platform, offering businesses the ability to run marketing campaigns and attend trade shows with no upfront costs. Promofi partners with marketing agencies and trade show booth exhibit agencies to offer clients a seamless BNPL solution. The platform leverages automation, technology, and AI to bring ease to the financial aspects of running a business, allowing companies to apply, set up accounts, and choose payment options. Promofi aims to redefine the marketing and trade show industries by making investment in business growth straightforward and accessible. Approximately 10 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Promofi launches B2B BNPL platform for marketing and trade show expenses",
+        "s": "Promofi / LinkedIn",
+        "d": "2023-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Carlos Manuel Alvarez",
+        "t": "Founder",
+        "bg": "Founder of Promofi Inc, a B2B buy-now-pay-later fintech platform based in Miami, FL. Graduate of Boston College (2021) with concentrations in Operations Management. Built Promofi to address the gap between small businesses and their marketing/trade show expenses by offering flexible BNPL payment solutions. Leverages automation, technology, and AI to bring financial accessibility to the marketing and trade show industries.",
+        "hooks": [
+          "Boston College graduate who built a B2B BNPL platform for marketing expenses",
+          "Targeting the niche intersection of fintech and trade show industry"
+        ],
+        "li": "https://www.linkedin.com/in/carlos-m-alvarez/"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 1,
-    "website": "http://promofi.io",
+    "location": "Miami, FL",
+    "employees": 10,
+    "website": "https://promofi.com",
     "linkedinUrl": "https://www.linkedin.com/company/promofi-inc",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Miami, FL"
   },
   {
     "id": 1367,
@@ -39442,23 +40552,31 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Reno, Nevada-based business lending broker founded in 2015, connecting small business owners with funding products including short/long term loans, SBA loans, working capital, invoice factoring, equipment financing, and lines of credit.",
+    "desc": "Prosper Funding Group is a business funding solutions company founded in 2015, based in Reno, Nevada. The company provides individual and small business owners and entrepreneurs access to capital through a network of reputed lenders. Products include merchant cash advances, real estate capital, short-term loans, long-term loans, SBA funds, equipment leasing, lines of credit, invoice factoring, and startup funding. Prosper Funding Group reviews client goals and presents matching programs, typically delivering offers within 24 hours with no fees or obligation to apply. Note: This is NOT the same company as Prosper Marketplace (prosper.com), the peer-to-peer lending platform founded in 2005 in San Francisco. Prosper Funding Group is a separate entity operating as a business loan brokerage out of Reno, NV. Approximately 2-10 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Prosper Funding Group expands product offerings to include real estate financing and startup funding",
+        "s": "Prosper Funding Group",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "Nevada",
-    "employees": 2,
+    "location": "Reno, NV",
+    "employees": 5,
     "website": "https://prosperfundinggroup.com",
     "linkedinUrl": "https://www.linkedin.com/company/prosperfundinggroup/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "iso"
+    "category": "iso",
+    "full_address": "P.O. Box 5786, Reno, NV 89513"
   },
   {
     "id": 1368,
@@ -39469,23 +40587,65 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "New York-based (Westbury, NY) financial services company founded in 2016 offering small business loans, working capital, equipment financing, and merchant cash advances up to $1.5M. Claims 20,000+ businesses helped worldwide with 95% approval rate and 48-hour funding.",
+    "desc": "Proto Financial Corp is a financial services company founded in 2016, headquartered in Westbury, New York. The company provides tailored small business loan solutions including working capital, equipment financing, merchant cash advances, term loans, and business lines of credit — with funding available up to $1.5 million. Proto Financial boasts an 85% approval rate for its merchant cash advance program and can approve applications in as little as 4 hours. Since founding, the company has helped more than 20,000 businesses worldwide. The MCA program offers advances based on future revenue without relying on traditional credit scores, offering a fast and flexible alternative to bank loans. Approximately 10-20 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Proto Financial Corp surpasses 20,000 businesses funded worldwide",
+        "s": "Proto Financial",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Proto Financial launches expanded equipment financing and business line of credit products",
+        "s": "Proto Financial",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Steven Sung",
+        "t": "Founder & CEO",
+        "bg": "Founder and Chief Executive Officer of Proto Financial Corp, established in 2016 in Westbury, New York. Has over a decade of experience in commercial finance, working with a diverse range of clients from small businesses to Fortune 500 companies. Under his leadership, Proto Financial has helped more than 20,000 businesses worldwide access funding up to $1.5 million through working capital, equipment financing, and merchant cash advances.",
+        "hooks": [
+          "*Helped 20,000+ businesses worldwide through Proto Financial since 2016",
+          "Decade-plus of commercial finance experience spanning SMBs to Fortune 500"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Andrew Salvoni",
+        "t": "Team Lead, Sales & Manager",
+        "bg": "Team Lead for Sales and Manager at Proto Financial Corp in the Westbury, NY office. Leads the sales team in originating working capital, equipment financing, and merchant cash advance deals. Works directly with small business owners to match them with appropriate funding solutions.",
+        "hooks": [
+          "Leads sales operations at a firm that has funded 20,000+ businesses"
+        ],
+        "li": ""
+      },
+      {
+        "n": "James Giovanakis",
+        "t": "Senior Funding Manager",
+        "bg": "Senior Funding Manager at Proto Financial Corp. Manages funding operations and client relationships for the company's merchant cash advance and business lending products. Based in the New York area.",
+        "hooks": [
+          "Senior funding manager at a high-volume MCA and lending operation"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 11,
+    "location": "Westbury, NY",
+    "employees": 15,
     "website": "https://protofinancial.com",
     "linkedinUrl": "https://www.linkedin.com/company/proto-financial/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "1025 Old Country Rd, Suite 319, Westbury, NY 11590"
   },
   {
     "id": 1369,
@@ -39505,23 +40665,82 @@
         "t": "Partner"
       }
     ],
-    "desc": "Texas-based (near Austin) invoice factoring, asset-based lending, and cash flow lending company serving small businesses across the US and Canada. Closed a $30M senior lending facility with Texas Capital in 2024 with accordion to $40M. Facilities up to $20M per client.",
+    "desc": "Quasar Capital Partners LLC is a commercial finance company founded in 2020 by finance industry veteran Brian Center, headquartered in Cedar Park, Texas. The company specializes in providing invoice factoring, asset-based lending, and cash flow solutions designed to accelerate small business success across the United States and Canada. Quasar offers customized factoring services with facility sizes up to $20 million, distinguished by a commitment to transparency, integrity, and flexibility. Additional financing products include cash advances and small term loans. The leadership team brings combined decades of factoring and commercial lending experience, including Brian Center's prior roles at Far West Capital and Comresco Capital (sold to Bibby Financial in 2007). The company's leadership includes John Center as President, Karol Guerrero as CFO, and a team of relationship managers, underwriters, and business development officers. Approximately 10-15 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Quasar Capital Partners names Karol Guerrero as CFO and Controller",
+        "s": "ABL Advisor",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Quasar Capital Partners announces John Center as President",
+        "s": "PR Newswire",
+        "d": "2021-07-01"
+      },
+      {
+        "h": "Finance industry veteran Brian Center launches Quasar Capital Partners with focus on small business factoring",
+        "s": "PR Newswire / Quasar Capital",
+        "d": "2020-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Brian Center",
+        "t": "Founder & CEO",
+        "bg": "Finance industry veteran with over three decades of experience providing clients with trusted expertise. Founded Quasar Capital Partners in 2020 in Cedar Park, Texas. Previously served as President and Chief Credit Officer for Far West Capital. Earlier, co-owned and served as president of Comresco Capital LLC, a factoring company founded in 2002 and sold to Bibby Financial in 2007. Received his Bachelor of Business Administration in Economics from Texas Tech University. Built Quasar Capital with a commitment to transparency, integrity, and flexibility in factoring services.",
+        "hooks": [
+          "*Previously sold factoring company Comresco Capital to Bibby Financial in 2007",
+          "Texas Tech BBA in Economics, three decades in commercial finance",
+          "Former President & Chief Credit Officer at Far West Capital"
+        ],
+        "li": "https://www.linkedin.com/in/briancenter"
+      },
+      {
+        "n": "John Center",
+        "t": "President",
+        "bg": "President of Quasar Capital Partners, announced via PR Newswire in 2021. Works alongside founder Brian Center to lead the company's strategic direction and growth in invoice factoring and asset-based lending for small businesses across the US and Canada.",
+        "hooks": [
+          "Named President of Quasar Capital via formal PR Newswire announcement",
+          "Leads strategic growth for factoring facilities up to $20M"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Karol Guerrero",
+        "t": "Chief Financial Officer & Controller",
+        "bg": "Seasoned factoring finance executive with approximately 30 years of expertise in the factoring industry, including operations, underwriting, management, and accounting. Joined Quasar Capital Partners' leadership team as CFO and Controller. Brings a superior track record of delivering results and creating value across factoring finance operations.",
+        "hooks": [
+          "30 years of factoring industry expertise spanning operations to accounting",
+          "Named CFO in ABL Advisor announcement highlighting her track record"
+        ],
+        "li": "https://www.linkedin.com/in/karol-guerrero-79367a43/"
+      },
+      {
+        "n": "Tanya Fontenot",
+        "t": "Vice President, Business Development",
+        "bg": "Vice President of Business Development at Quasar Capital Partners, responsible for growing the company's client base and broker relationships across the US and Canada. Drives new business origination for Quasar's invoice factoring and asset-based lending solutions.",
+        "hooks": [
+          "Leads business development for a factoring firm with $20M facility sizes"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "Texas",
-    "employees": 14,
-    "website": "https://www.quasarcapitalpartners.com/",
+    "location": "Cedar Park, TX",
+    "employees": 12,
+    "website": "https://www.quasarcapitalpartners.com",
     "linkedinUrl": "https://www.linkedin.com/company/quasarcapital/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "1210 Cottonwood Creek Trail, Cedar Park, TX 78613"
   },
   {
     "id": 1370,
@@ -39532,23 +40751,47 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "New York-based small business funding company. Limited public information available about specific MCA or lending products.",
+    "desc": "Quick Fix Capital (legally Funding Metrics LLC dba Quick Fix Capital) is a revenue-based financing provider founded in 2015, headquartered in Bensalem, Pennsylvania. The company was created when its sister portfolio Lendini (established in 2014) identified a growing need in the market for revenue-based financing tailored to specific business needs. Quick Fix Capital provides businesses with capital based on the estimated projection of future receipts, offering a flexible financing model where repayment adjusts with business revenue. The company positions itself as a fast-moving funder and operates through partner channels via Lendini's ISO network. Quick Fix Capital emphasizes speed of funding and works with businesses that may not qualify for traditional bank financing. Approximately 11-50 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Quick Fix Capital expands revenue-based financing offerings through Lendini partner network",
+        "s": "Quick Fix Capital",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Funding Metrics LLC (Quick Fix Capital parent) grows ISO partner program",
+        "s": "Funding Metrics",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Dennis Williams",
+        "t": "Principal",
+        "bg": "Principal at Quick Fix Capital, a revenue-based financing provider founded in 2015 as a sister portfolio to Lendini. Education from the University of Dayton. Based in the Trenton, NJ area. Oversees Quick Fix Capital's operations providing revenue-based financing to small businesses through the Funding Metrics LLC entity.",
+        "hooks": [
+          "University of Dayton graduate running a revenue-based financing operation",
+          "Built Quick Fix Capital as sister portfolio to Lendini since 2015"
+        ],
+        "li": "https://www.linkedin.com/in/dennis-williams-6171308/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 1,
+    "location": "Bensalem, PA",
+    "employees": 25,
     "website": "https://quickfixcapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/quick-fix-capital/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "3220 Tillman Drive, Suite 200, Bensalem, PA 19020"
   },
   {
     "id": 1371,
@@ -39559,23 +40802,71 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Award-winning embedded equipment finance platform leveraging AI for B2B equipment financing. Created by Innovation Finance USA LLC (founded 2018) by former First American executives. Enables instant equipment financing ($5K-$5M) at point of sale, partnering with banks and OEMs. Won 'Best Overall LendTech Company' at 2025 FinTech Breakthrough Awards.",
+    "desc": "QuickFi, created by Innovation Finance USA LLC, is an award-winning AI-powered B2B embedded lending platform for the $1.3 trillion equipment finance industry. Founded in 2018 in Fairport, NY by the former leaders of First American Equipment Finance (now part of Royal Bank of Canada), QuickFi partners with banks and global OEMs to provide SMB borrowers with instant, 100% digital equipment financing at the point of sale. The patented platform incorporates agentic AI, machine learning, and blockchain technology to deliver a 3-minute financing process. QuickFi has won multiple awards including Best Overall LendTech Company (FinTech Breakthrough 2025), two Global BankTech Awards (2025), and the BIG Innovation Award for two consecutive years. Joined the American Fintech Council in January 2026. Approximately 20-26 employees. Great Place to Work certified.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "QuickFi joins American Fintech Council to advance responsible embedded lending in equipment finance",
+        "s": "American Fintech Council",
+        "d": "2026-01-01"
+      },
+      {
+        "h": "QuickFi wins Best Overall LendTech Company at 2025 FinTech Breakthrough Awards for fourth year",
+        "s": "FinTech Breakthrough Awards",
+        "d": "2025-06-01"
+      },
+      {
+        "h": "QuickFi launches Innovation Lab uniting emerging tech and student talent for equipment finance",
+        "s": "Equipment Finance News",
+        "d": "2025-03-01"
+      },
+      {
+        "h": "QuickFi wins second consecutive BIG Innovation Award for embedded lending platform",
+        "s": "Secured Finance Network",
+        "d": "2025-01-15"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Bill Verhelle",
+        "t": "Founder & CEO",
+        "bg": "Founded Innovation Finance USA LLC (QuickFi) in 2018 after co-founding First American Equipment Finance in 1996, which he led as CEO until 2015 and is now part of Royal Bank of Canada. Holds a JD from Cornell Law School (1998), MBA from UCLA Anderson (1992), and a Bachelor's from University of Michigan. Named one of the 10 Best CEOs of 2020 by IndustryEra. Based in Naples, FL. Built QuickFi into the industry's first B2B embedded lending platform powered by agentic AI, serving banks and global OEMs in the $1 trillion equipment finance market.",
+        "hooks": [
+          "*Cornell Law JD + UCLA Anderson MBA",
+          "Sold First American Equipment Finance to Royal Bank of Canada",
+          "*Named Top 10 CEO of 2020 by IndustryEra",
+          "Three consecutive FinTech Breakthrough Awards winner"
+        ],
+        "li": "https://www.linkedin.com/in/verhelle/"
+      },
+      {
+        "n": "Nate Gibbons",
+        "t": "Chief Experience Officer (CXO)",
+        "bg": "Co-founder of QuickFi and CLFP (Certified Lease & Finance Professional). Previously VP of Learning and Development at First American Equipment Finance. Winner of the 2023 Cindy Spurdle Award of Excellence. Appeared on Bloomberg Radio's Black Business Beat to discuss QuickFi's mission of transparency in SMB/SME business lending. Based in Fairport, NY. Active speaker at Finovate conferences and industry events.",
+        "hooks": [
+          "Won 2023 Cindy Spurdle Award of Excellence",
+          "Appeared on Bloomberg Radio Black Business Beat",
+          "CLFP certified lease and finance professional",
+          "First American Equipment Finance veteran"
+        ],
+        "li": "https://www.linkedin.com/in/nathan-gibbons/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 17,
+    "location": "Fairport, NY",
+    "employees": 25,
     "website": "https://quickfi.com",
     "linkedinUrl": "https://www.linkedin.com/company/innovation-finance/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Fairport, NY"
   },
   {
     "id": 1372,
@@ -39586,23 +40877,65 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "California-based small business funding company offering merchant cash advance and working capital solutions. Limited detailed public information available.",
+    "desc": "Quickpay Funding is a top-rated invoice factoring company founded in 2015 and headquartered in San Diego, CA. The company provides fast working capital by turning unpaid invoices into immediate cash, with 24/7 same-day funding, transparent pricing, and no monthly minimums. Quickpay serves diverse industries including transportation, agriculture, oil and gas, fresh produce, marine freight, energy services, staffing, and commercial cleaning. The company offers both recourse and non-recourse factoring, cross-border funding between Mexico and USA, fuel advances, and back-office support. The bilingual (English/Spanish) team spans six states and two countries. Funds over $100 million annually in accounts receivable. Acquired by Culain Capital Management in March 2025 to expand nationwide factoring services. Approximately 20-24 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Culain Capital acquires Quickpay Funding to bolster nationwide factoring with transportation and agricultural expertise",
+        "s": "ABF Journal",
+        "d": "2025-03-01"
+      },
+      {
+        "h": "Quickpay Funding's Veronica Beach recognized as Top Women in Asset-Based Lending",
+        "s": "ABF Journal",
+        "d": "2024-06-01"
+      },
+      {
+        "h": "Quickpay Funding CEO Juan Estrada joins International Factoring Association Advisory Board",
+        "s": "IFA",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Juan G. Estrada",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Quickpay Funding in 2015 and grew the company to fund over $100 million annually in accounts receivable. Serves as President & CEO. Joined the International Factoring Association's Advisory Board. Prior senior-level experience at Heller Financial, UPS Capital, Volvo Financial, DaimlerChrysler Financial Services, Citibank-Banamex USA, and eCapital. Team spans six states and two countries with operations in California, Nevada, Texas, Arizona, Iowa, New York, and Mexico City. Fully bilingual English/Spanish.",
+        "hooks": [
+          "Joined IFA Advisory Board as CEO",
+          "Grew Quickpay to $100M+ annual factoring volume",
+          "Senior roles at UPS Capital, Volvo Financial, Citibank-Banamex",
+          "Bilingual English/Spanish leader in cross-border factoring"
+        ],
+        "li": "https://www.linkedin.com/in/juanestrada1/"
+      },
+      {
+        "n": "Veronica Beach",
+        "t": "Co-Founder, President & COO",
+        "bg": "Co-founded Quickpay Funding in 2015 after spending nearly 25 years in logistics and freight factoring. Promoted to President and COO. Named to ABF Journal's Top Women in Asset-Based Lending. Extensive experience in transportation, factoring, trade finance, and credit services. Fully bilingual English/Spanish management team leader. Recognized for building Quickpay's flexible recourse and non-recourse factoring programs.",
+        "hooks": [
+          "*Named Top Women in Asset-Based Lending by ABF Journal",
+          "25+ years in logistics and freight factoring",
+          "Built cross-border Mexico/USA factoring programs"
+        ],
+        "li": "https://www.linkedin.com/in/veronica-beach-7b6671aa/"
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 10,
+    "location": "San Diego, CA",
+    "employees": 22,
     "website": "https://quickpayfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/quickpay-funding/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "8825 Aero Drive, Suite 120, San Diego, CA 92123"
   },
   {
     "id": 1373,
@@ -39613,23 +40946,49 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "New York-based merchant cash advance company founded in 2007, providing business funding from $10,000-$250,000 with same-day access to capital and competitive rates. Known for fast application with limited documentation.",
+    "desc": "Quicksilver Capital is a privately held alternative business funding company founded in 2007 and headquartered in Valley Stream, New York. The company provides working capital solutions primarily through merchant cash advances to small and mid-sized businesses that may not qualify for traditional bank financing. Funding ranges from $10,000 to $250,000 with same-day access to capital. Since founding, Quicksilver has provided more than $350 million in working capital to over 18,000 businesses. The company secured a $15 million credit facility in 2018 from a New York-based private investment firm to expand capabilities. Quicksilver's team has more than 30 years of combined experience in financing, sales, and merchant services. Approximately 11-50 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Quicksilver Capital secures $15 million credit facility from New York private investment firm",
+        "s": "deBanked",
+        "d": "2018-03-01"
+      },
+      {
+        "h": "Quicksilver Capital surpasses $350 million in total working capital provided to small businesses",
+        "s": "Quicksilver Capital",
+        "d": "2023-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Michael Puderbeutel",
+        "t": "CEO",
+        "bg": "CEO of Quicksilver Capital, a small business financing company founded in 2007 in Valley Stream, NY. Under his leadership, Quicksilver has provided over $350 million in working capital solutions to more than 18,000 businesses. Secured a $15 million credit facility from a New York-based private investment firm in 2018 to expand funding capabilities. Also associated with Parkstone Capital LLC as CEO. Over 30 years of experience in financing, sales, and merchant services.",
+        "hooks": [
+          "Funded $350M+ across 18,000+ businesses",
+          "Secured $15M credit facility in 2018",
+          "30+ years in financing and merchant services",
+          "Also leads Parkstone Capital LLC"
+        ],
+        "li": "https://www.linkedin.com/in/michael-puderbeutel-14210220"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 6,
-    "website": "https://www.quicksilvercap.com/",
+    "location": "Valley Stream, NY",
+    "employees": 30,
+    "website": "https://www.quicksilvercap.com",
     "linkedinUrl": "https://www.linkedin.com/company/quicksilver-capital/?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A11046366%2Cidx%3A2-1-2%2CtarId%3A1487712322396%2Ctas%3AQuicksilver%20Capital",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "181 S Franklin Ave, Suite 300, Valley Stream, NY 11581"
   },
   {
     "id": 1374,
@@ -39640,23 +40999,74 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "California-based fintech that enables companies and marketplaces to manage independent contractor workforces and streamline payments to 200+ countries. Raised $24.4M equity and $200M debt from Jefferies. Advances earned amounts to freelancers ahead of pay cycles. Acquired by LSQ.",
+    "desc": "Qwil (now Qwil Powered by LSQ) is a San Francisco-based fintech founded in 2015 that provides early payment and liquidity solutions for freelancers, contractors, and the contingent staffing market. The company works with on-demand and freelancer marketplaces to enable workers to access payments before invoices are due, charging a flat fee (e.g., 1%) with no interest rates or late fees. Qwil uses alternative data rather than traditional credit scores for underwriting. The platform has advanced more than $150 million in early payments with nearly half of customers becoming repeat users. Raised $24.4 million in equity from investors including PeakSpan Capital and $200 million in debt from Jefferies Financial Group. Acquired by LSQ in May 2022 to serve the contingent staffing market with combined embedded finance and working capital capabilities. Approximately 28 employees. Headquarters at 599 3rd St, Suite 210, San Francisco.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "LSQ acquires AP automation and liquidity solution provider Qwil to better serve contingent staffing market",
+        "s": "PR Newswire",
+        "d": "2022-05-27"
+      },
+      {
+        "h": "Qwil raises $24.4 million in equity and $200 million in debt from Jefferies and PeakSpan Capital",
+        "s": "Yahoo Finance",
+        "d": "2019-10-01"
+      },
+      {
+        "h": "Qwil advances $150 million in early payments through its embedded finance platform",
+        "s": "PYMNTS.com",
+        "d": "2019-10-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Johnny Reinsch",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Qwil in 2015 after nearly defaulting on his mortgage in 2014 while freelancing when a client didn't pay on time. That personal experience drove him to create a platform enabling freelancers and contractors to get paid early. Led Qwil to raise $24.4 million in equity and $200 million in debt from investors including Jefferies Financial Group. Advanced more than $150 million in pay through the platform. Guided the company through acquisition by LSQ in May 2022, continuing the mission under LSQ's working capital finance umbrella.",
+        "hooks": [
+          "Personal mortgage crisis inspired founding Qwil",
+          "Raised $224M total ($24.4M equity + $200M debt)",
+          "Advanced $150M+ in early payments to freelancers",
+          "Led Qwil through LSQ acquisition in 2022"
+        ],
+        "li": "https://www.linkedin.com/in/johnnyreinsch/"
+      },
+      {
+        "n": "Trevor Branon",
+        "t": "Co-Founder & Former President",
+        "bg": "Co-founded Qwil in September 2015 and served as President until April 2021. Graduated from the College of William & Mary with a degree in Finance and Economics. Fintech executive, entrepreneur, and dealmaker with 15+ years of experience. Now operates as an independent fintech advisor through Sansa Advisors.",
+        "hooks": [
+          "College of William & Mary finance graduate",
+          "15+ years fintech executive experience",
+          "Now runs Sansa Advisors independently"
+        ],
+        "li": "https://www.linkedin.com/in/trevorbranon/"
+      },
+      {
+        "n": "Paul Tiplady",
+        "t": "Co-Founder & CTO",
+        "bg": "Co-founded Qwil in 2015 as Chief Technology Officer. Built the platform's embedded finance technology that captures payment data proving completed work and enables same-day payments for a flat fee. Developed the alternative data underwriting system that bypasses traditional credit scores using payment information and transaction data.",
+        "hooks": [
+          "Built Qwil's alternative data underwriting engine",
+          "Architected embedded finance platform for staffing market"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 16,
-    "website": "https://qwil.com",
+    "location": "San Francisco, CA",
+    "employees": 28,
+    "website": "https://www.lsq.com/qwil/",
     "linkedinUrl": "https://www.linkedin.com/company/qwil-inc-",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "599 3rd St, Suite 210, San Francisco, CA 94107"
   },
   {
     "id": 1375,
@@ -39676,23 +41086,49 @@
         "t": "VP of Finance"
       }
     ],
-    "desc": "New York-based MCA company established in 2014 providing working capital to small and medium businesses nationwide. Offers up to $500K in funding approved within three days. Has raised $106M in total funding.",
+    "desc": "Radium2 Capital is a merchant cash advance company founded in 2014 and headquartered in Bay Shore, New York. The company provides working capital to small and medium-sized businesses nationwide, with funding ranging from $5,000 to $1,000,000. Radium2 specializes in industries including fitness studios, construction, cannabis, hospitality, and restaurants. The company has raised $106 million in total funding across 2 rounds. CEO Troy Caruso transitioned from the construction industry to build Radium2 into a prominent alternative lender. The company emphasizes meticulous and thorough service to merchants seeking quick alternative financing. Approximately 30-69 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Radium2 Capital surpasses $106 million in total funding raised for MCA operations",
+        "s": "PitchBook",
+        "d": "2023-01-01"
+      },
+      {
+        "h": "CEO Troy Caruso named 2017 Man of the Year by Cooley's Anemia Foundation",
+        "s": "Cooley's Anemia Foundation",
+        "d": "2017-12-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Troy Caruso",
+        "t": "Founder & CEO",
+        "bg": "Founded Radium2 Capital in 2014 and serves as CEO. Began his professional career in the construction industry before his passion for business and finance led him to venture into alternative lending. Named 2017 Man of the Year by the Cooley's Anemia Foundation for his philanthropic work. Based in Bay Shore, New York. Under his leadership Radium2 has raised $106 million in total funding and provides MCAs ranging from $5,000 to $1,000,000 across industries including fitness, construction, cannabis, hospitality, and restaurants.",
+        "hooks": [
+          "*Named 2017 Man of the Year by Cooley's Anemia Foundation",
+          "Construction industry background before pivoting to MCA",
+          "Raised $106M in total funding for Radium2",
+          "Specializes in cannabis and hospitality verticals"
+        ],
+        "li": "https://www.linkedin.com/in/troy-caruso-98851a95/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 4,
-    "website": "http://www.radium2capital.com",
+    "location": "Bay Shore, NY",
+    "employees": 50,
+    "website": "https://www.radiumtwocapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/radium2capital-inc/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "28 Garfield Ave, Bay Shore, NY 11706"
   },
   {
     "id": 1376,
@@ -39703,23 +41139,42 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "",
+    "desc": "RAIS Financial (operating as RAIS Together) is a peer-to-peer lending marketplace for business loans, founded in 2021 and based in Washington, DC. The platform connects lenders and donors with artisans, entrepreneurs, and smallholder farmers to provide affordable capital, enable financial inclusion, and generate measurable social impact. RAIS Together expands access to wealth-generating solutions for underserved populations through a mobile-accessible interface where impact investors can participate in microloans without extensive financial expertise. The platform facilitates micro wealth-generating products to disadvantaged individuals typically underserved by traditional financial institutions. Unfunded — no institutional or angel investors on record. Small team, fewer than 10 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "RAIS Together launches P2P platform for social impact investing and microfinance",
+        "s": "MindPath Tech / RAIS",
+        "d": "2022-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Donald Ainsworth",
+        "t": "Co-Founder",
+        "bg": "Co-founded RAIS Financial and RAIS Together, a peer-to-peer microfinance platform for social impact and financial empowerment. Based in Washington, DC. RAIS Together bridges the gap between impact investors and underserved communities by providing an accessible, user-friendly, and secure environment for facilitating microloans and other financial products. The platform targets artisans, entrepreneurs, and smallholder farmers worldwide.",
+        "hooks": [
+          "Building P2P microfinance for underserved communities",
+          "Based in Washington DC social impact fintech space",
+          "Connecting impact investors with artisans and smallholder farmers"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://raisfinancial.com",
+    "location": "Washington, DC",
+    "employees": 5,
+    "website": "https://www.raistogether.com",
     "linkedinUrl": "https://www.linkedin.com/company/77014919",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "marketplace",
+    "full_address": "Washington, DC"
   },
   {
     "id": 1377,
@@ -39735,23 +41190,43 @@
         "t": "Founder & CEO"
       }
     ],
-    "desc": "Florida-based (Davie, FL) small business funding company offering equipment financing, working capital, cash advances, start-up financing, lines of credit, SBA loans, factoring, and real estate investment loans from $4K to $2M with quick 2-day processing.",
+    "desc": "Ramay Capital Finance (RCF) is a small business lending company founded in Davie, Florida, providing a diverse array of funding solutions for small businesses across the United States. Products include equipment financing and leasing, working capital and cash advance (bridge funding), startup financing, business loans for renovations, lines of credit, SBA loans, factoring, inventory financing, credit repair solutions, and business loans for real estate investment properties. Funding ranges from $4,000 to $2 million with no application fee, quick 2-day processing, both secured and unsecured options, and flexible collateral requirements. The company operates primarily as a loan broker connecting businesses with its network of national underwriters. Small team of approximately 3-10 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Ramay Capital Finance expands small business funding solutions in South Florida market",
+        "s": "Ramay Capital",
+        "d": "2023-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Juan F. Ramirez Arguello",
+        "t": "Founder & CEO",
+        "bg": "Founded Ramay Capital Finance LLC in Davie, Florida. Serves as CEO leading the company's diverse small business funding solutions including equipment financing, working capital, startup financing, SBA loans, factoring, and real estate investment loans. Offers funding from $4,000 to $2 million with both secured and unsecured options, typically funded within 2 days. Runs a lean team with both English and Spanish-speaking capability serving businesses across the United States.",
+        "hooks": [
+          "Offers startup financing — rare among alternative funders",
+          "Bilingual English/Spanish funding operation",
+          "Covers $4K-$2M range including SBA and equipment finance"
+        ],
+        "li": "https://www.linkedin.com/in/juan-f-ramirez-a-ceo-founder-2729491b4/"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 3,
-    "website": "https://www.ramaycapital.com/",
+    "location": "Davie, FL",
+    "employees": 5,
+    "website": "https://www.ramaycapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/ramay-capital-finance",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "iso",
+    "full_address": "6511 Nova Drive, Davie, FL"
   },
   {
     "id": 1378,
@@ -39762,23 +41237,56 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Delaware-registered company with a Brazilian domain (rapidoo.com.br), likely a Brazil-focused fintech. Limited public information available about US operations.",
+    "desc": "Rapidoo is a Brazilian fintech founded in July 2016 in Sao Paulo that provides an online invoice discounting platform for small and medium enterprises (SMEs). The platform enables companies with revenues up to R$150,000/month to anticipate invoices of up to 90 days, receiving 85% of the value immediately with the remaining 15% retained until full payment. Co-founded by Caspar Gerleve, Pedro de Cicco, Thiago Frigo, and Raphael Monteiro. Raised seed funding from FundersClub and Canary. Acquired by One7 in July 2020 for R$50 million (~US$9.3 million), with One7 injecting additional capital to expand financing operations nationwide across Brazil. The startup continues operating independently under the One7 umbrella. Fewer than 10 employees. Based in Tatui, Sao Paulo state.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "One7 acquires fintech Rapidoo for R$50 million to expand SME financing across Brazil",
+        "s": "PYMNTS.com / Contxto",
+        "d": "2020-07-08"
+      },
+      {
+        "h": "Rapidoo raises seed funding from FundersClub and Canary for Brazilian invoice factoring platform",
+        "s": "Latin America Technology Review",
+        "d": "2018-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Caspar Gerleve",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Rapidoo in July 2016 in Sao Paulo, Brazil to provide fast, transparent invoice factoring to small and medium businesses. Led the company through its seed funding from FundersClub and Canary, and its acquisition by One7 in July 2020 for R$50 million. Built an online invoice discounting platform targeting companies with revenues up to R$150,000/month, advancing 85% of invoice value immediately with the remaining 15% retained until full payment.",
+        "hooks": [
+          "German-Brazilian fintech entrepreneur",
+          "Raised from FundersClub and Canary for Brazilian SME factoring",
+          "Led Rapidoo through R$50M acquisition by One7 in 2020"
+        ]
+      },
+      {
+        "n": "Pedro de Cicco",
+        "t": "Co-Founder & COO",
+        "bg": "Co-founded Rapidoo in 2016. Served as Chief Operating Officer overseeing the operational side of the invoice discounting platform. Helped build the company's fully online process for discounting commercial drafts for micro and small enterprises in Brazil.",
+        "hooks": [
+          "Built operations for online invoice factoring in Brazil",
+          "Rapidoo co-founder focused on MSE market"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Delaware",
-    "employees": 0,
+    "location": "Sao Paulo, Brazil",
+    "employees": 8,
     "website": "https://rapidoo.com.br",
     "linkedinUrl": "https://br.linkedin.com/company/rapidoo-br",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "345 Rua Dr. Prudente De Moraes, Tatui, Sao Paulo, 18270-280, Brazil"
   },
   {
     "id": 1379,
@@ -39789,23 +41297,42 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "New York-based (Hauppauge, Long Island) MCA company helping business owners acquire same-day working capital through merchant cash advances.",
+    "desc": "RBS Funding (RBS Funding Group Inc.) is a merchant cash advance provider headquartered in New York, with offices at 244 5th Ave, New York City. The company specializes in providing fast, same-day working capital to small businesses through merchant cash advance products and flexible loan options. RBS Funding emphasizes hassle-free funding solutions designed to help businesses grow, with a streamlined application and approval process. The company also operates an ISO partnership program. Led by President Eric Gokstein. Small to mid-sized team.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "RBS Funding expands same-day MCA funding operations from New York headquarters",
+        "s": "RBS Funding",
+        "d": "2023-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Eric Gokstein",
+        "t": "President",
+        "bg": "President of RBS Funding, a merchant cash advance and business funding company based in New York. Holds a Bachelor's Degree in Applied Mathematics and Statistics with a focus on Actuarial Science from Stony Brook University (2006-2010). Leads the company's operations providing same-day working capital to small businesses through MCA products and flexible loan options.",
+        "hooks": [
+          "Stony Brook University applied math and actuarial science background",
+          "Leads same-day MCA funding operations in New York"
+        ],
+        "li": "https://www.linkedin.com/in/eric-gokstein-21009459"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 8,
+    "location": "New York, NY",
+    "employees": 15,
     "website": "https://rbsfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/rbs-funding/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "244 5th Ave, New York, NY 10001"
   },
   {
     "id": 1380,
@@ -39816,23 +41343,43 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Florida-based commercial capital provider. Limited public information available about specific lending products.",
+    "desc": "Reagan Commercial Capital is a Florida-based loan brokerage founded in 2019 by Reggie Ficklin, headquartered in Miami. The firm works with businesses serving mid-sized and large markets in Florida and across the country, specializing in helping businesses access commercial capital even when denied elsewhere. Services include bridge loans, equipment financing, working capital loans, commercial real estate financing (acquisition, development, refinancing), SBA loans, flexible lines of credit, commercial fix-and-flip funding, and long-term rental property funding. The company also connects clients with equity investors and venture capital. Reagan Commercial Capital operates as a broker connecting businesses with its network of lenders and investors. Very small operation with approximately 1-2 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Reagan Commercial Capital expands horizons with comprehensive real estate investment funding solutions",
+        "s": "Digital Journal",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Reggie Ficklin",
+        "t": "Founder",
+        "bg": "Founded Reagan Commercial Capital LLC in 2019 in Miami, Florida. Earned his degree in business finance while working as a field inspector for commercial and residential properties. Transitioned into commercial lending after seeing many deals fail at the financing stage, using his property inspection relationships to build a financial network. Now serves as Regional Business Finance, Business Credit, and Real Estate Investment Funding Consultant. Specializes in helping businesses access capital even when denied by traditional lenders.",
+        "hooks": [
+          "Property inspector turned commercial lending founder",
+          "Specializes in funding businesses denied by traditional lenders",
+          "Built lending network from real estate inspection relationships"
+        ],
+        "li": "https://www.linkedin.com/in/reggie-ficklin-3b052a82/"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
+    "location": "Miami, FL",
     "employees": 1,
     "website": "https://reagancommercialcapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/reagan-commercial-capital/?viewAsMember=true",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "iso",
+    "full_address": "66 West Flagler Street, Suite 900, Miami, FL 33130"
   },
   {
     "id": 1381,

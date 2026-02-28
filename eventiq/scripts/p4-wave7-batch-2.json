@@ -1,0 +1,230 @@
+[
+  {
+    "id": 1339,
+    "name": "Olympus Business Capital",
+    "category": "funder",
+    "description": "Founded in 2015, Olympus Business Capital is a private lender headquartered in Salt Lake City, UT specializing in providing funding to small businesses including those with bad credit. They evaluate risk based on overall business performance rather than credit scores alone, offering merchant cash advances, term loans, and equipment financing across industries like retail, transportation, hospitality, and construction. They require a minimum of 12 months in business, state registration, and at least $10K/month in revenue.",
+    "website": "https://www.olympusbusinesscapital.com",
+    "employees": 20,
+    "location": "Salt Lake City, UT",
+    "full_address": "Salt Lake City, UT, United States",
+    "leaders": [
+      {
+        "n": "Douglass Christison",
+        "t": "Chief Executive Officer",
+        "bg": "Previously held roles at Progressive Leasing and DWC Inc. Expertise in sales management, customer service, and process improvement.",
+        "li": "",
+        "hooks": "CEO of alternative lending firm with background in leasing and sales management; growing Olympus into a direct funder with flexible repayment terms."
+      },
+      {
+        "n": "Brandon Robinson",
+        "t": "Chief Technology Officer",
+        "bg": "MBA holder with experience at InfoTrax, American Express, Zions Bank, and JPMorgan Chase. Previously served as Interim CEO at Green Light Auto Solutions.",
+        "li": "https://www.linkedin.com/in/bkrobinson/",
+        "hooks": "CTO driving technology strategy for alternative lending platform; extensive fintech and banking background spanning American Express and JPMorgan."
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1340,
+    "name": "Olympus Lending",
+    "category": "funder",
+    "description": "Olympus Lending is a private lender based in Holladay, Utah that specializes in providing funding solutions for small business owners. They offer financing options including term loans, invoice factoring, and equipment financing without requiring credit checks. They can approve up to $250K by end of day with same-day funding in most situations, running only a soft credit pull. They appear to share leadership and branding with Olympus Business Capital and Olympus Business Funding.",
+    "website": "https://application.olympuslending.com",
+    "employees": 15,
+    "location": "Holladay, UT",
+    "full_address": "2225 East Murray Holladay Road, Holladay, UT, United States",
+    "leaders": [
+      {
+        "n": "Douglass Christison",
+        "t": "Chief Executive Officer",
+        "bg": "Also serves as CEO of Olympus Business Capital. Background in Progressive Leasing and DWC Inc.",
+        "li": "",
+        "hooks": "Leading Olympus Lending's same-day funding operations; experienced in scaling alternative lending businesses in Utah."
+      },
+      {
+        "n": "Dexter Turner",
+        "t": "Business Development Manager",
+        "bg": "Focused on expanding Olympus Lending's partnership and ISO channels.",
+        "li": "https://www.linkedin.com/in/dexter-turner-a22272253/",
+        "hooks": "Driving business development and ISO relationships for Olympus Lending's small business funding programs."
+      }
+    ],
+    "news": [
+      {
+        "date": "2024-05",
+        "headline": "Olympus Lending named in NYC debt defense case alongside WeFund, Prosperum Capital Partners, Lendr.Online, and Funding Depot regarding MCA collection practices."
+      }
+    ]
+  },
+  {
+    "id": 1341,
+    "name": "One River Services",
+    "category": "funder",
+    "description": "Founded in 2021 in Miami, FL (formerly One River Funding LLC), One River Services provides bespoke funding options for select small businesses using proprietary pricing models, automated deal processing, and personalized servicing. They purchase future receivables with fast underwriting and transparent terms, handling eligibility reviews, contract agreements, and disbursements with flexible repayment options without fixed maturity or hidden fees.",
+    "website": "https://www.oneriverservices.com",
+    "employees": 25,
+    "location": "Miami, FL",
+    "full_address": "252 NW 29th St, Suite 909, Miami, FL 33127, United States",
+    "leaders": [
+      {
+        "n": "Ian Wells",
+        "t": "Founder",
+        "bg": "University of Miami School of Business graduate. Previous experience at One River Partners, GFI Productions, and American Express. Also co-founded HiLo Tickets, recognized for operations and finance expertise.",
+        "li": "https://www.linkedin.com/in/ianmwells/",
+        "hooks": "Serial entrepreneur with American Express background who built One River's proprietary pricing models and automated deal processing from scratch."
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1342,
+    "name": "OneClick Commercial Funding",
+    "category": "funder",
+    "description": "Founded in 2019 and headquartered in Irvine, California, OneClick Commercial Funding is a financial services company providing loans and financing solutions for businesses of all sizes. They offer unsecured lines of credit from $25K to $500K, franchise financing, equipment financing, merchant cash advances, and commercial real estate financing. The company experienced a DFPI enforcement action in 2020 related to licensing.",
+    "website": "https://oneclickcommercialfunding.com",
+    "employees": 9,
+    "location": "Irvine, CA",
+    "full_address": "14271 Jeffrey Rd, Suite 330, Irvine, CA 92620, United States",
+    "leaders": [
+      {
+        "n": "Michael Knapp",
+        "t": "Founder & CEO",
+        "bg": "University of Wyoming graduate in Civil Engineering. Previously served as General Manager at Larry H. Miller Nissan Corona, General Sales Manager at Tuttle-Click Hyundai, and General Sales Manager at Kia of Irvine.",
+        "li": "https://www.linkedin.com/in/michael-knapp-6587a355",
+        "hooks": "Transitioned from automotive dealership management to founding a commercial funding company; engineering background applied to business lending operations."
+      },
+      {
+        "n": "Christopher Knapp",
+        "t": "Key Employee",
+        "bg": "Part of the core team at OneClick Commercial Funding alongside the founder.",
+        "li": "",
+        "hooks": "Core team member at OneClick Commercial Funding helping grow the Irvine-based lending operation."
+      }
+    ],
+    "news": [
+      {
+        "date": "2020-04",
+        "headline": "California DFPI issued an order summarily revoking OneClick Commercial Funding LLC's license, followed by a consent order in May 2020."
+      }
+    ]
+  },
+  {
+    "id": 1343,
+    "name": "ONNX Funding",
+    "category": "funder",
+    "description": "ONNX Funding (ONNX Financial Solutions) is an income-based funding company headquartered in Delray Beach, Florida. They offer income-tailored MCA programs (A-D paper) designed for flexibility, fast response time, and a hassle-free application process. They use a 1:1 human approval/disapproval process combined with AI-integrated funding schedules, and can allocate up to $1.5MM within 24-48 hours.",
+    "website": "https://onnxfunding.com",
+    "employees": 25,
+    "location": "Delray Beach, FL",
+    "full_address": "5300 W Atlantic Ave, Suite 703, Delray Beach, FL 33484, United States",
+    "leaders": [
+      {
+        "n": "Anthony Affatati III",
+        "t": "Manager",
+        "bg": "Registered agent and manager of ONNX Funding LLC. Background in financial services and title services industry.",
+        "li": "",
+        "hooks": "Leading ONNX Funding's MCA operations with capability to deploy up to $1.5MM in 24-48 hours using AI-integrated underwriting."
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1344,
+    "name": "OnTap Capital",
+    "category": "funder",
+    "description": "Founded in 2019 and headquartered in Vaughan, Ontario, Canada, OnTap Capital provides fast and reliable funding solutions for Canadian and American small businesses. They offer cash advances, bridge loans, secured property loans, and lines of credit, often funding within 24 hours. They serve various industries including healthcare, construction, logistics, and technology, providing growth capital with transparent and safe cash flow solutions.",
+    "website": "https://www.ontapcap.com",
+    "employees": 11,
+    "location": "Vaughan, ON, Canada",
+    "full_address": "8750 Jane St 16, Vaughan, Ontario, L4K 2M9, Canada",
+    "leaders": [
+      {
+        "n": "Valerie Sharon",
+        "t": "Vice President",
+        "bg": "Vice President at OnTap Capital overseeing business operations and growth strategies.",
+        "li": "",
+        "hooks": "VP driving OnTap Capital's cross-border funding operations serving both Canadian and American small businesses."
+      },
+      {
+        "n": "Darel Adani",
+        "t": "Chief Compliance Officer",
+        "bg": "Responsible for compliance oversight at OnTap Capital, ensuring regulatory adherence across Canadian and US markets.",
+        "li": "https://ca.linkedin.com/in/darel-adani-84761b198",
+        "hooks": "CCO managing regulatory compliance for cross-border lending operations between Canada and the United States."
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1345,
+    "name": "Original Funding",
+    "category": "broker",
+    "description": "Founded in 2015 and registered to Mayava Capital LLC, Original Funding is a consultative brokerage house based in Syosset, New York. Unlike direct lenders, they field a single application from prospective borrowers and shop it to their network of lenders with closely matched criteria. They do not collect fees from applicants and do not make outbound solicitation calls. They offer matching services for merchant cash advances, hard money loans, small business loans, and other financing products.",
+    "website": "https://www.originalfunding.com",
+    "employees": 10,
+    "location": "Syosset, NY",
+    "full_address": "575 Underhill Blvd, Suite 216, Syosset, NY 11791, United States",
+    "leaders": [],
+    "news": []
+  },
+  {
+    "id": 1346,
+    "name": "Oval Ventures LLC",
+    "category": "funder",
+    "description": "Founded in September 2022 by Joseph Grodko, Oval Ventures is a lending firm headquartered in Manhattan, New York. They provide tailored financial solutions to entrepreneurs and companies with annual revenues between $5M-$100M, offering debt solutions including asset-based and cash-flow-based lending, junior loans, senior secured, and subordinated debt. Since inception, they have funded over $350 million in term loans and lines of credit across 120+ businesses, serving clients in the US, Canada, Europe, and Australia.",
+    "website": "https://ovalv.com",
+    "employees": 6,
+    "location": "New York, NY",
+    "full_address": "555 10th Ave, Apt 18B, New York, NY 10018, United States",
+    "leaders": [
+      {
+        "n": "Joseph Grodko",
+        "t": "Founder & CEO",
+        "bg": "Born and raised in Brooklyn, NY. Graduated from Baruch College with a BA in Finance and Real Estate Management. Specializes in private structured credit, leveraging a network of bank and non-bank lenders. Active in charitable organizations including Aim Hire, providing employment for individuals over 40.",
+        "li": "https://www.linkedin.com/in/joseph-grodko-3545b8147/",
+        "hooks": "Founded Oval Ventures in 2022 and already deployed $350M+ across 120+ businesses; Baruch finance grad building a global lending platform spanning US, Canada, Europe, and Australia."
+      },
+      {
+        "n": "Shimmy Ruben",
+        "t": "Managing Director",
+        "bg": "Focuses on private credit solutions for B2B SaaS and tech-enabled companies. Previously a Private Banker at J.P. Morgan Chase. Holds a Private Equity Certification from Wharton Online and Accounting degree from Touro College.",
+        "li": "https://www.linkedin.com/in/shimmy-ruben/",
+        "hooks": "Former J.P. Morgan private banker now structuring debt capital for tech companies; Wharton PE certified with deep SaaS lending expertise."
+      },
+      {
+        "n": "Will Dickman",
+        "t": "Principal Advisor",
+        "bg": "Serves as Principal Advisor at Oval Ventures, contributing to deal structuring and client advisory.",
+        "li": "",
+        "hooks": "Principal Advisor helping structure financing solutions for lower and middle-market companies at Oval Ventures."
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1347,
+    "name": "Overnight Capital LLC",
+    "category": "funder",
+    "description": "Overnight Capital is a direct MCA funder based in Kew Gardens, Queens, New York. They specialize in providing small business funding up to $1,000,000 with same-day funding capability. They offer pre-approvals within 30 minutes of submission and same-day funding if deals are received by 1pm EST. They use data analytics and digital technology to assess creditworthiness rapidly, and pay ISO partners up to 15 points commission within 48 hours of funding.",
+    "website": "https://overnight-capital.com",
+    "employees": 15,
+    "location": "Kew Gardens, NY",
+    "full_address": "124-17 Metropolitan Avenue, Kew Gardens, NY 11415, United States",
+    "leaders": [],
+    "news": []
+  },
+  {
+    "id": 1348,
+    "name": "PacShore Solutions",
+    "category": "funder",
+    "description": "PacShore Solutions builds referral channels and strategic alliances for SMB alternative lenders, connecting them with financial institutions, small business service providers, manufacturers, and fintechs. With over 30 years of experience in finance, they have driven over $1 billion in gross annual revenue for their clients and partners. They work with lenders offering embedded finance, lines of credit, working capital, small equipment loans, and MCA products.",
+    "website": "https://pacshoresolutions.com",
+    "employees": 10,
+    "location": "United States",
+    "full_address": "United States",
+    "leaders": [],
+    "news": []
+  }
+]
