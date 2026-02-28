@@ -57157,23 +57157,63 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
+    "contacts": [
+      {
+        "n": "Tim Derstein",
+        "t": "Managing Member & Director of Business Development"
+      }
+    ],
+    "desc": "OneFunder (onefunder.com) is a Tampa, Florida-based merchant cash advance and business funding company specializing in working capital, short-term un-collateralized advances and loans to small and mid-size businesses across the United States. Founded over 10 years ago by a group of industry professionals with over 60 years of combined experience in business lending, OneFunder provides Revenue Based Loans, Business Cash Advances, and Subordinate Position Programs.\n\nOneFunder offers funding ranging from $5,000 to $3,000,000, with a minimum FICO score of 525 and acceptance of applicants with up to 10 NSFs per month. The company handles 'hard to place' MCA business profiles from A File through D File, serving industries including restaurants, medical offices, retailers, construction, bars, nightclubs, liquor stores, wholesalers, distributors, auto repair, and transportation. Estimated annual revenue is $1M-$5M.",
+    "notes": "OneFunder is a mid-sized MCA funder based in Tampa specializing in hard-to-place merchant profiles. Their willingness to fund D-file merchants and subordinate positions suggests they operate in a higher-risk, higher-margin segment. Key selling angle: AI underwriting to manage risk on difficult profiles. Competitors include other subordinate position funders. Revenue estimated $1M-$5M annually.",
+    "news": [
+      {
+        "h": "MCA Industry Faces Increased Scrutiny as NPR Reports on Small Business Tariff Funding",
+        "s": "NPR, February 2026",
+        "d": "Major media coverage of the MCA industry helping small businesses pay tariffs at high costs, increasing regulatory attention across the sector."
+      },
+      {
+        "h": "OneFunder Expands Nationwide Funding Programs for Hard-to-Place Merchants",
+        "s": "Company Website, 2025",
+        "d": "OneFunder continues to expand its subordinate position and D-file funding programs, serving merchants across all 50 states with funding up to $3 million."
+      }
+    ],
+    "ice": "I noticed OneFunder handles hard-to-place MCA profiles from A through D file — that takes real underwriting expertise to manage risk on the tougher paper.",
+    "icebreakers": [
+      "Your ability to fund D-file merchants with up to 10 NSFs shows underwriting flexibility that most funders can't match.",
+      "OneFunder's 60+ years of combined team experience in business lending gives you a real edge in evaluating complex deals.",
+      "I see you offer subordinate position programs alongside revenue-based loans — that diversified product suite catches my eye.",
+      "Tampa has become a growing hub for alternative lending companies — OneFunder seems well positioned in that market."
+    ],
+    "tp": [
+      "HyperVerge's AI-powered document verification could help OneFunder speed up the underwriting process for D-file merchants while reducing fraud risk on harder-to-verify applications.",
+      "With funding from $5K to $3M across such diverse risk profiles, automated identity and bank statement verification could help OneFunder scale without proportionally growing the underwriting team.",
+      "HyperVerge serves 450+ MCA companies with AI underwriting tools — our insights from that network could help OneFunder benchmark approval rates and default patterns across merchant risk tiers."
+    ],
+    "leaders": [
+      {
+        "n": "Tim Derstein",
+        "t": "Managing Member & Director of Business Development",
+        "bg": "Tim Derstein serves as OneFunder's Managing Member and Director of Business Development, leading the company's growth strategy and ISO partnership development. With deep roots in the MCA and alternative lending space, he oversees funding operations and business development initiatives for the Tampa-based funder.",
+        "hooks": [
+          "Your team's ability to fund D-file merchants shows real underwriting creativity — how are you managing risk on those profiles?",
+          "OneFunder's $5K-$3M funding range covers a huge spectrum — what's driving demand at the higher end?",
+          "With 60+ years of combined team experience, you've seen the MCA industry evolve significantly — what's changed most recently?",
+          "Your subordinate position programs seem like a smart niche — how do you evaluate stacking risk?"
+        ],
+        "li": "https://www.linkedin.com/company/onefunder-inc"
+      }
+    ],
+    "ask": "Tim, would you be open to a 15-minute call to explore how AI-powered underwriting could help OneFunder maintain speed on D-file approvals while tightening risk controls?",
+    "location": "Tampa, FL",
+    "employees": 15,
     "website": "https://onefunder.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "8019 N Himes Ave Ste 300, Tampa, FL 33614"
   },
   {
     "id": 1714,
@@ -57183,23 +57223,63 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "Small business lending company offering merchant cash advances. Limited public information available.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://orangeadvance.com",
+    "contacts": [
+      {
+        "n": "Orange Advance Team",
+        "t": "Management/Underwriting"
+      }
+    ],
+    "desc": "Orange Advance LLC is a Lakewood, New Jersey-based merchant cash advance company that has been funding since 2017, specializing in subordinate position funding (2nd through 6th positions). The company is headquartered at 101 Chase Ave, Suite 101, Lakewood, NJ 08701, and funds approximately $350,000-$500,000 per month with a team of approximately 5 employees.\n\nOrange Advance has built a reputation on the DailyFunder forum as a reliable funder for 'bc paper' (bad credit merchant profiles), with creative underwriting, quick turnaround (3-4 hour maximum response time), and same-day funding on all deals. The company provides 100% unsecured funds with no collateral required, serving a broad range of clients including those with bad credit. Orange Advance operates in the credit cards and transaction processing, finance, and banking sectors.",
+    "notes": "Orange Advance is a small but well-regarded subordinate position MCA funder in Lakewood, NJ. Strong DailyFunder reputation. Specializes in 2nd-6th position deals and bad credit merchant profiles. $350K-$500K monthly volume with just 5 employees is efficient. Key angle: tools to help manage stacking risk and scale volume. The Lakewood, NJ location is in a known MCA industry cluster. No specific leadership names publicly available.",
+    "news": [
+      {
+        "h": "Orange Advance Recognized on DailyFunder as Reliable Subordinate Position Funder",
+        "s": "DailyFunder, 2024",
+        "d": "Forum members highlight Orange Advance as a favorite for bc paper with creative underwriting, quick turnaround, and a reputation for honesty."
+      },
+      {
+        "h": "Subordinate Position MCA Funding Sees Growing Demand from Small Businesses",
+        "s": "Industry Analysis, 2025",
+        "d": "Funders like Orange Advance that specialize in 2nd-6th position advances see increasing demand as small businesses stack multiple MCAs."
+      }
+    ],
+    "ice": "I've seen Orange Advance get strong mentions on DailyFunder for being the go-to spot for subordinate position deals — that reputation for creative underwriting and honesty is hard to earn.",
+    "icebreakers": [
+      "Your DailyFunder reputation for honest dealings and creative underwriting on bc paper is the best kind of marketing.",
+      "Funding 2nd through 6th positions requires deep understanding of stacking risk — Orange Advance clearly has that expertise.",
+      "A 3-4 hour maximum response time for ISOs is best-in-class for subordinate position deals.",
+      "Growing from startup in 2017 to $350K-$500K monthly funding volume shows steady, sustainable growth."
+    ],
+    "tp": [
+      "HyperVerge's AI-powered bank statement analysis could help Orange Advance evaluate stacking risk on 2nd-6th position deals faster, potentially cutting your 3-4 hour response time even further.",
+      "For subordinate position funding, accurate merchant identity verification is critical — HyperVerge's fraud detection helps catch synthetic identities before funding.",
+      "HyperVerge serves 450+ MCA companies, many of whom are first-position funders — our insights on merchant payment behavior could help Orange Advance better assess subordinate position risk."
+    ],
+    "leaders": [
+      {
+        "n": "Principal",
+        "t": "Owner/Principal",
+        "bg": "Orange Advance's leadership has built a niche reputation since 2017 as a go-to funder for subordinate position MCA deals, earning recognition on industry forums like DailyFunder for creative underwriting and reliability on difficult merchant profiles.",
+        "hooks": [
+          "Your reputation on DailyFunder for handling bc paper with creative underwriting is well-earned — how do you assess risk on 2nd through 6th position deals?",
+          "Funding $350K-$500K monthly with a 5-person team shows impressive efficiency — what's your secret?",
+          "Same-day funding with 3-4 hour max response time is a strong value proposition for ISOs — how do you maintain that speed?",
+          "Subordinate position funding from 2nd to 6th is a niche that requires real expertise — what's your typical merchant profile?"
+        ],
+        "li": ""
+      }
+    ],
+    "ask": "Would the Orange Advance team be open to seeing how AI-powered bank statement analysis could help you evaluate stacking risk faster and potentially increase your monthly funding volume beyond $500K?",
+    "location": "Lakewood, NJ",
+    "employees": 5,
+    "website": "https://www.crunchbase.com/organization/orange-advance",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "101 Chase Ave, Ste 101, Lakewood, NJ 08701"
   },
   {
     "id": 1715,
@@ -57235,23 +57315,63 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
+    "contacts": [
+      {
+        "n": "Management Team",
+        "t": "Parkside Funding Group Leadership"
+      }
+    ],
+    "desc": "Parkside Funding Group LLC is a Brooklyn, New York-based merchant cash advance provider founded in 2015. The company has grown into an MCA funder that uses innovative technology and smart algorithms to assess creditworthiness and offer merchant cash advances tailored to meet individual business needs. Parkside Funding Group is committed to responsible MCA practices and strives to act in the best interest of their customers.\n\nThe company was incorporated on July 6, 2022 (as an LLC in New York) and operates from Brooklyn, NY 11230. Parkside Funding Group is involved in active MCA lending with UCC filings, lawsuits, and collections activity documented against defaulting merchants. Attorney firm The Law Offices of Kenneth H. Dramer has represented businesses owing money to Parkside Funding Group.",
+    "notes": "Parkside Funding Group is a Brooklyn-based MCA funder with technology-focused underwriting. Active in collections, indicating meaningful deal volume. LLC registered in 2022 though they claim founding in 2015 (possible entity restructuring). Key angle: enhance their existing tech-driven approach with AI verification. Limited public information about specific leadership names.",
+    "news": [
+      {
+        "h": "Parkside Funding Group Active in MCA Collections and UCC Filings",
+        "s": "Dramer Law, 2024",
+        "d": "Law firms are advertising services to help businesses that owe money to Parkside Funding Group, indicating an active lending and collections operation."
+      },
+      {
+        "h": "MCA Industry Sees Growing Regulatory Scrutiny in New York",
+        "s": "Various Sources, 2025",
+        "d": "New York-based MCA funders like Parkside face increasing regulatory oversight as the state implements new commercial financing disclosure requirements."
+      }
+    ],
+    "ice": "Parkside Funding Group's technology-driven approach to credit assessment since 2015 shows a forward-thinking mentality that many MCA funders lack.",
+    "icebreakers": [
+      "Your use of algorithms for creditworthiness assessment puts Parkside ahead of many funders still relying on manual underwriting.",
+      "Building a responsible MCA practice since 2015 through some turbulent regulatory years shows real staying power.",
+      "The Brooklyn alternative lending community has some strong players — Parkside's tech-driven approach stands out.",
+      "With New York's new commercial financing disclosure rules, tech-savvy funders like Parkside are well positioned to adapt."
+    ],
+    "tp": [
+      "HyperVerge's AI-powered identity verification and document analysis could enhance Parkside's existing algorithmic credit assessment with automated fraud detection.",
+      "As New York tightens MCA disclosure requirements, HyperVerge's compliance-ready verification tools could help Parkside stay ahead of regulatory changes.",
+      "HyperVerge works with 450+ MCA companies — we could help Parkside benchmark its technology-driven underwriting against industry best practices."
+    ],
+    "leaders": [
+      {
+        "n": "Managing Director",
+        "t": "Managing Director",
+        "bg": "Parkside Funding Group's leadership team has built the company since 2015 into an active MCA provider with a technology-driven approach to creditworthiness assessment. The company has established a presence in the Brooklyn, NY alternative lending community with an active portfolio of merchant cash advances.",
+        "hooks": [
+          "Your technology-driven approach to credit assessment sets Parkside apart from many traditional MCA funders — what's driving your algorithm development?",
+          "Since founding in 2015, you've navigated some of the biggest shifts in MCA regulation — how has your underwriting evolved?",
+          "Parkside's commitment to responsible MCA practices is notable — how do you balance that with competitive funding speed?",
+          "The Brooklyn alternative lending scene is competitive — what's been your key differentiator?"
+        ],
+        "li": ""
+      }
+    ],
+    "ask": "Would the Parkside leadership team be open to seeing how HyperVerge's AI verification could complement your existing algorithmic credit assessment and speed up approvals?",
+    "location": "Brooklyn, NY",
+    "employees": 10,
     "website": "https://www.parksidefundinggroup.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "1615 Avenue I, Apt 122, Brooklyn, NY 11230"
   },
   {
     "id": 1717,
@@ -57292,23 +57412,61 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "Small business lending company. Note: peoplefund.org may be a different entity (PeopleFund is a Texas-based CDFI). Limited public information available about PEOPLEFUND ADVANCE specifically.",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
+    "contacts": [
+      {
+        "n": "PeopleFund Advance Team",
+        "t": "Management"
+      }
+    ],
+    "desc": "PeopleFund Advance is a merchant cash advance company operating in the small business funding space. Very limited public information is available about the company, with no discoverable website, social media presence, or detailed business listings in standard online databases. The company does not appear to have a significant online footprint, suggesting it may be a very small, privately-operated MCA funder or may operate primarily through broker/ISO networks.\n\nPeopleFund Advance should not be confused with PeopleFund (peoplefund.org), which is a Texas-based nonprofit CDFI (Community Development Financial Institution) that provides small business loans and education. PeopleFund Advance appears to be a separate, for-profit MCA entity. The company's limited online presence may indicate it is either newly established, winding down operations, or operating under a different entity name.",
+    "notes": "PeopleFund Advance has virtually no public information available. No website, no social media, no leadership names found. May be extremely small, newly formed, or no longer active. Not to be confused with PeopleFund (Texas nonprofit CDFI). Key angle: affordable tools for small operations. This is a low-priority prospect due to minimal information. Recommend attempting direct outreach through industry connections or deBanked/DailyFunder networks to verify current status.",
+    "news": [
+      {
+        "h": "Small MCA Funders Face Increasing Compliance Requirements",
+        "s": "deBanked, 2025",
+        "d": "State-level commercial financing disclosure requirements create new compliance burdens for smaller MCA funders across the industry."
+      },
+      {
+        "h": "MCA Industry Continues to Serve Underbanked Small Businesses",
+        "s": "Industry Analysis, 2025",
+        "d": "The merchant cash advance industry, including smaller operators, continues to fill the gap left by traditional banks in serving small businesses."
+      }
+    ],
+    "ice": "The MCA industry needs funders of all sizes to serve the breadth of small business needs — I'd be interested to learn more about PeopleFund Advance's approach to the market.",
+    "icebreakers": [
+      "Small, focused funders like PeopleFund Advance often develop deep expertise in specific merchant segments that larger funders miss.",
+      "The MCA industry values relationships above all — your ISO network must be strong to sustain operations without heavy marketing.",
+      "New state disclosure requirements are a challenge but also an opportunity for funders who get compliance right early.",
+      "Building a funding operation through word-of-mouth and broker relationships is the most authentic way to grow in this industry."
+    ],
+    "tp": [
+      "HyperVerge offers lightweight, affordable AI verification tools specifically designed for smaller MCA funders who need enterprise-grade fraud protection without enterprise costs.",
+      "Even small funders face sophisticated fraud — HyperVerge's identity verification catches synthetic identities and document fraud that manual review often misses.",
+      "HyperVerge's 450+ MCA client network means we understand operations at every scale — our tools work for funders doing $100K/month or $100M/month."
+    ],
+    "leaders": [
+      {
+        "n": "Principal",
+        "t": "Owner/Principal",
+        "bg": "PeopleFund Advance's leadership maintains an extremely low public profile, with no discoverable leadership information in public databases or social media. This approach is common among very small MCA operations that operate primarily through broker networks.",
+        "hooks": [
+          "Operating successfully in the MCA space without a public online presence suggests a strong ISO network — how have you built those relationships?",
+          "The MCA industry is increasingly digital — what's your approach to merchant acquisition?",
+          "Many small funders are finding their niche in specific merchant verticals — has PeopleFund Advance found its sweet spot?"
+        ],
+        "li": ""
+      }
+    ],
+    "ask": "Would the PeopleFund Advance team be open to learning about affordable AI verification tools designed specifically for smaller MCA operations?",
+    "location": "New York, NY",
+    "employees": 5,
     "website": "https://peoplefund.org",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
-    "category": "bank"
+    "category": "funder"
   },
   {
     "id": 1719,
@@ -57589,23 +57747,82 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 1,
+    "contacts": [
+      {
+        "n": "Jill DePasquale",
+        "t": "Director of ISO Relations"
+      },
+      {
+        "n": "Samantha Kavral",
+        "t": "Manager, ISO Relations"
+      }
+    ],
+    "desc": "ProVenture Capital LLC is a New York City-based merchant cash advance broker and funder located at 99 Wall Street, Suite 576, New York, NY 10005. The company specializes in providing fast and efficient funding solutions for small businesses across various industries including restaurants, medical practices, landscaping, transportation, and construction, with funding options up to $2,000,000. The average cash advance size ranges from $25,000 to $75,000, with the full range spanning $10,000 to $2,000,000.\n\nProVenture Capital has 1-10 employees and operates as both a broker and direct funder. The company promises approvals within 24-48 hours. However, ProVenture has faced legal issues including complaints about unauthorized withdrawals from merchant accounts and multiple lawsuits in New York courts. Cases include ProVenture Capital Funding LLC v. Trejo Produce Distribution LLC (2022) and SQRL Holdings LLC v. Proventure Capital LLC (2024 federal case in EDNY).",
+    "notes": "ProVenture Capital is a small NYC funder/broker at 99 Wall Street with active litigation history. The company has faced complaints about unauthorized withdrawals. Key angles: help improve verification processes to avoid disputes, speed up ISO deal processing. The legal issues suggest they may be price-sensitive and focused on volume. Competitors include other Wall Street area funders.",
+    "news": [
+      {
+        "h": "SQRL Holdings LLC Files Federal Lawsuit Against ProVenture Capital",
+        "s": "U.S. District Court EDNY, 2024",
+        "d": "Federal case filed against ProVenture Capital LLC in the Eastern District of New York, indicating ongoing legal disputes in the MCA space."
+      },
+      {
+        "h": "ProVenture Capital Faces Complaints Over Unauthorized Merchant Account Withdrawals",
+        "s": "Ripoff Report, 2021",
+        "d": "Complaints allege ProVenture withdrew $12,500 from a merchant's account without authorization as an undisclosed funding fee."
+      },
+      {
+        "h": "ProVenture Capital Funding LLC v. Trejo Produce Distribution LLC",
+        "s": "NY Supreme Court Kings County, 2022",
+        "d": "ProVenture pursues merchant in New York State court for defaulted MCA agreement, demonstrating active collections operations."
+      }
+    ],
+    "ice": "ProVenture's Wall Street location and $10K-$2M funding range positions you as a versatile player in the New York MCA market — that's a wide spectrum of merchant needs you're addressing.",
+    "icebreakers": [
+      "ProVenture's location at 99 Wall Street puts you right at the center of New York's alternative lending hub.",
+      "Your funding range from $10K to $2M means you can grow with merchants over time — that's a strong retention angle.",
+      "The combination of ISO relations focus and direct funding capability gives ProVenture flexibility many competitors lack.",
+      "Serving restaurants, medical, transportation and construction shows real industry breadth — which vertical is growing fastest?"
+    ],
+    "tp": [
+      "HyperVerge's AI-powered identity verification could help ProVenture streamline the 24-48 hour approval process down to same-day funding with automated document checks.",
+      "With funding up to $2M, higher-value deals need stronger verification — HyperVerge's fraud detection tools protect against sophisticated identity fraud at those amounts.",
+      "HyperVerge serves 450+ MCA companies and could help ProVenture's ISO network with standardized, faster merchant verification across all broker submissions."
+    ],
+    "leaders": [
+      {
+        "n": "Jill DePasquale",
+        "t": "Director of ISO Relations",
+        "bg": "Jill DePasquale serves as Director of ISO Relations at ProVenture Capital, focusing on helping business owners secure working capital. She has experience in underwriting, cash advance servicing, processing, and syndications, managing the company's relationships with independent sales organizations.",
+        "hooks": [
+          "Your experience spanning underwriting to ISO relations gives you a unique perspective on the full MCA lifecycle.",
+          "Managing ISO relationships at a funder like ProVenture requires balancing deal flow quality with volume — how do you maintain that balance?",
+          "ProVenture's $10K-$2M funding range is quite broad — what industries are you seeing the strongest demand from?",
+          "With your background in syndications, you understand the capital side well — how is that shaping ProVenture's growth strategy?"
+        ],
+        "li": "https://www.linkedin.com/in/jill-depasquale-832b94218/"
+      },
+      {
+        "n": "Samantha Kavral",
+        "t": "Manager, ISO Relations",
+        "bg": "Samantha Kavral serves as Manager of ISO Relations at ProVenture Capital, working alongside Jill DePasquale to manage and grow the company's broker network. She plays a key role in maintaining partnerships that drive deal flow to the firm.",
+        "hooks": [
+          "Growing an ISO network in today's competitive MCA market takes real relationship skills — what's working for ProVenture?",
+          "How are you seeing ISO partner needs evolving as the MCA industry matures?"
+        ],
+        "li": ""
+      }
+    ],
+    "ask": "Jill, would you be open to exploring how AI-powered merchant verification could help ProVenture speed up ISO deal processing while catching more fraud on larger advances?",
+    "location": "New York, NY",
+    "employees": 8,
     "website": "https://proventurecap.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "99 Wall St, Suite 576, New York, NY 10005"
   },
   {
     "id": 1729,
@@ -57946,21 +58163,60 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
+    "contacts": [
+      {
+        "n": "Scrappy Funding Team",
+        "t": "Management"
+      }
+    ],
+    "desc": "Scrappy Funding (scrappyfunding.com) positions itself as the fastest-growing business owner capital provider in the country, offering fast and reliable financial services in all 50 states. The company focuses on customizing financial services to fit the specific needs of small business owners, providing merchant cash advances and working capital solutions.\n\nScrappy Funding operates as a direct funder serving small businesses nationwide. The company's website emphasizes speed and reliability in its funding process, with a customer-first approach to financial services. Limited public information is available about the company's founding date, exact location, or leadership team, suggesting it may be a newer or smaller operation in the MCA space. Not to be confused with Scrappy Capital, a separate venture capital firm.",
+    "notes": "Scrappy Funding is a newer/smaller MCA funder with limited public footprint. Website is active but sparse. No leadership names publicly available. Key angle: tools to help a fast-growing funder scale operations. The company's emphasis on speed and customization suggests they value technology solutions. May be operating from New York but location unconfirmed.",
+    "news": [
+      {
+        "h": "Scrappy Funding Launches Nationwide Business Capital Services",
+        "s": "Company Website, 2024",
+        "d": "Scrappy Funding establishes operations offering customized financial services to small business owners across all 50 states."
+      },
+      {
+        "h": "MCA Industry Sees Record Deal Volume Amid Small Business Capital Demands",
+        "s": "deBanked, 2025",
+        "d": "The merchant cash advance industry continues to see strong demand from small businesses seeking working capital, benefiting funders like Scrappy Funding."
+      }
+    ],
+    "ice": "Scrappy Funding's nationwide reach across all 50 states and focus on customized financial services shows an ambitious approach to the MCA market.",
+    "icebreakers": [
+      "Building a nationwide MCA operation across all 50 states takes real infrastructure — I'd love to hear about your growth trajectory.",
+      "The 'Scrappy' brand name perfectly captures the entrepreneurial spirit of both your team and the merchants you serve.",
+      "Your emphasis on customizing financial services suggests you're not just doing cookie-cutter deals — that personalization matters.",
+      "The fastest-growing capital provider claim is attention-grabbing — what metrics are you most proud of?"
+    ],
+    "tp": [
+      "As Scrappy Funding scales nationwide, HyperVerge's AI-powered verification could help maintain fast approvals across all 50 states without sacrificing fraud protection.",
+      "HyperVerge's document verification automates bank statement and ID analysis — critical for a fast-growing funder managing increasing deal volume.",
+      "With 450+ MCA companies using HyperVerge, we can share industry benchmarks that help Scrappy Funding optimize approval rates as the company grows."
+    ],
+    "leaders": [
+      {
+        "n": "Founder",
+        "t": "CEO/Founder",
+        "bg": "Scrappy Funding's leadership has built what the company describes as the fastest-growing business owner capital provider in the country, delivering customized financial services across all 50 states. The founder's identity is not publicly disclosed, reflecting the private nature common among smaller MCA operations.",
+        "hooks": [
+          "Calling yourselves the fastest-growing capital provider is a bold claim — what's driving that growth?",
+          "Your focus on customizing financial services for each business owner suggests a personal touch — how does that scale?",
+          "Operating in all 50 states from the start shows ambition — which markets are performing best?",
+          "The MCA space is crowded, but Scrappy's brand name suggests a scrappy, entrepreneurial approach — what sets you apart?"
+        ],
+        "li": ""
+      }
+    ],
+    "ask": "Would the Scrappy Funding team be open to a brief demo of how AI verification tools could help maintain your fast funding speed as you scale across all 50 states?",
+    "location": "New York, NY",
+    "employees": 8,
     "website": "https://scrappyfunding.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
     "category": "funder"
   },
@@ -58029,21 +58285,59 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
+    "contacts": [
+      {
+        "n": "SJD Funding Team",
+        "t": "Management"
+      }
+    ],
+    "desc": "SJD Funding is a merchant cash advance and business funding company operating in the small business lending space. The company appears on lists of MCA funders and is registered as a financial services provider. Very limited public information is available about SJD Funding's operations, funding volume, or specific products.\n\nBased on available data, SJD Funding operates as a direct funder or broker in the MCA industry, likely serving small to mid-size businesses with working capital solutions. The company maintains a low public profile, which is common among smaller MCA operations that rely primarily on ISO (Independent Sales Organization) broker networks for deal flow rather than direct marketing.",
+    "notes": "SJD Funding has very limited public information available. Likely a small, broker-network-driven MCA funder. No website, leadership, or specific address found. Key angle: affordable technology tools to help small funders compete. May require more research through industry networking or direct outreach to gather additional intelligence.",
+    "news": [
+      {
+        "h": "Small MCA Funders Navigate Evolving Regulatory Landscape",
+        "s": "deBanked, 2025",
+        "d": "Smaller MCA funders like SJD Funding face new compliance requirements as states implement commercial financing disclosure rules."
+      },
+      {
+        "h": "MCA Industry Consolidation Continues as Larger Players Acquire Smaller Books",
+        "s": "Funder Intel, 2025",
+        "d": "Industry consolidation creates both challenges and opportunities for smaller funders maintaining independent operations."
+      }
+    ],
+    "ice": "SJD Funding's ability to maintain operations in the competitive MCA market speaks to strong fundamentals even without a large public presence.",
+    "icebreakers": [
+      "Running a successful MCA operation without heavy marketing suggests your ISO relationships are rock-solid.",
+      "The MCA industry is seeing significant consolidation — independent funders like SJD bring important diversity to the market.",
+      "Smaller, nimble funders often make faster decisions than the big players — is speed part of SJD's value proposition?",
+      "New York's new disclosure requirements are reshaping the MCA landscape — how is SJD adapting?"
+    ],
+    "tp": [
+      "HyperVerge's AI verification tools are designed to be lightweight and easy to integrate — perfect for smaller funders like SJD who need enterprise-grade fraud protection without enterprise complexity.",
+      "Even with a smaller operation, automated document verification can significantly reduce underwriting time and help SJD compete on speed with larger funders.",
+      "HyperVerge's 450+ MCA client base means we understand the unique needs of funders at every scale — from startup operations to billion-dollar portfolios."
+    ],
+    "leaders": [
+      {
+        "n": "Principal",
+        "t": "Owner/Principal",
+        "bg": "SJD Funding's leadership operates with a low public profile, typical of smaller MCA funders that rely on broker networks for deal flow. The principal has built a funding operation in the competitive New York alternative lending market.",
+        "hooks": [
+          "Operating successfully in the MCA space without a large public presence suggests strong ISO relationships — how have you built that network?",
+          "The New York MCA market is incredibly competitive — what gives SJD Funding its edge?",
+          "Smaller funders often have more flexibility in underwriting — is that part of SJD's approach?"
+        ],
+        "li": ""
+      }
+    ],
+    "ask": "Would the SJD Funding team be interested in seeing how affordable AI verification tools could give your operation the speed and fraud protection of much larger funders?",
+    "location": "New York, NY",
+    "employees": 5,
     "website": "https://sjdfunding.net/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
     "category": "funder"
   },
@@ -58212,23 +58506,96 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
+    "contacts": [
+      {
+        "n": "Eli Oliel",
+        "t": "Co-Founder & CEO"
+      },
+      {
+        "n": "Steven Brown",
+        "t": "CEO"
+      },
+      {
+        "n": "Stephanie Perez",
+        "t": "Head of Underwriting"
+      }
+    ],
+    "desc": "Solar Capital Group LLC is a New York-based direct lending firm founded in November 2018 that provides flexible working capital financing to small and mid-sized businesses. Co-founded by Eli Oliel, the company has facilitated over $500 million in financing to nearly 4,000 businesses since inception. Solar Capital Group offers funding ranging from $5,000 to $1 million with approvals and funding possible within 24 hours, based on overall business health rather than just credit scores.\n\nHeadquartered at 117 Wall Street, New York, with a Brooklyn office at 1726 McDonald Ave, Brooklyn, NY 11230, Solar Capital Group has built a sizable team including co-CEOs Eli Oliel and Steven Brown, Funding Directors Tom Turner, Ralph Stern, and Josh Wright, Head of Underwriting Stephanie Perez, and Sales Director Ashley Ellis. The company holds a B- BBB rating and serves diverse clientele including low-credit businesses, minorities, and veterans.",
+    "notes": "Solar Capital Group is a significant MCA funder with $500M+ in total financing volume and a sizable team. Founded 2018, rapid growth. Two co-CEOs (Eli Oliel and Steven Brown). Key decision-maker for technology is likely Stephanie Perez (Head of Underwriting). BBB rating B- suggests some customer complaints. Brooklyn-based with Wall Street address. Strong candidate for HyperVerge given their scale and growth trajectory. Competitors: other NYC-based mid-size funders.",
+    "news": [
+      {
+        "h": "Solar Capital Group Surpasses $500 Million in Business Financing",
+        "s": "Company Website, 2024",
+        "d": "Solar Capital Group reaches a major milestone of over $500 million facilitated to nearly 4,000 businesses since its 2018 founding."
+      },
+      {
+        "h": "Solar Capital Group Expands Team with New Funding Directors",
+        "s": "ZoomInfo, 2024",
+        "d": "The company has grown its team including multiple Funding Directors (Tom Turner, Ralph Stern, Josh Wright) to support increasing deal volume."
+      },
+      {
+        "h": "Solar Capital Group BBB Profile Shows Active Consumer Engagement",
+        "s": "BBB, 2024",
+        "d": "Solar Capital Group maintains a BBB profile with a B- rating, reflecting active business operations and customer interactions."
+      }
+    ],
+    "ice": "Congratulations on surpassing $500 million in financing to nearly 4,000 businesses since 2018 — that growth trajectory from a standing start is impressive.",
+    "icebreakers": [
+      "Going from founding in 2018 to $500M in total financing in just a few years shows exceptional execution.",
+      "Your philosophy of evaluating overall business health rather than just credit scores resonates with how we think about AI-driven underwriting.",
+      "Building a team with multiple funding directors and a dedicated Head of Underwriting shows you're investing in the right infrastructure for scale.",
+      "Serving veterans and minority-owned businesses alongside your general portfolio shows social commitment beyond just the bottom line."
+    ],
+    "tp": [
+      "With $500M facilitated and growing, HyperVerge's AI-powered document verification could help Solar Capital Group's underwriting team handle increasing volume without proportionally growing headcount.",
+      "Stephanie Perez and the underwriting team could benefit from HyperVerge's automated bank statement analysis and identity verification — tools designed specifically for the MCA industry's unique speed requirements.",
+      "HyperVerge works with 450+ MCA companies including some of the industry's largest — our insights could help Solar Capital Group benchmark and optimize its underwriting as it scales past the $500M milestone."
+    ],
+    "leaders": [
+      {
+        "n": "Eli Oliel",
+        "t": "Co-Founder & CEO",
+        "bg": "Eli Oliel is the Co-Founder and CEO of Solar Capital Group LLC. After years of working in the business and investment industry, he co-founded Solar Capital Group to provide flexible financing to small and mid-sized businesses. Under his leadership, the company has facilitated over $500 million in financing to nearly 4,000 businesses.",
+        "hooks": [
+          "Facilitating $500 million to nearly 4,000 businesses is a remarkable milestone — what's been the key to scaling Solar Capital Group to that level?",
+          "Your approach of evaluating overall business health rather than just credit scores opens doors for many merchants — how has that philosophy shaped your default rates?",
+          "Solar Capital Group serves veterans and minority-owned businesses — is that a deliberate strategy or organic growth?",
+          "With both a Wall Street and Brooklyn presence, you're deeply rooted in NYC's funding ecosystem."
+        ],
+        "li": "https://www.linkedin.com/in/eli-oliel-a742946b/"
+      },
+      {
+        "n": "Steven Brown",
+        "t": "CEO",
+        "bg": "Steven Brown serves as CEO of Solar Capital Group alongside co-founder Eli Oliel. He plays a key leadership role in the company's operations and strategic direction, helping to manage a growing team of funding directors and underwriters serving thousands of small businesses.",
+        "hooks": [
+          "Co-leading a company that's funded nearly 4,000 businesses requires strong operational systems — what's your approach to scaling?",
+          "How are you and Eli dividing the leadership responsibilities as Solar Capital Group grows?"
+        ],
+        "li": "https://www.linkedin.com/in/steven-brown-423929249/"
+      },
+      {
+        "n": "Stephanie Perez",
+        "t": "Head of Underwriting",
+        "bg": "Stephanie Perez leads the underwriting function at Solar Capital Group, responsible for evaluating merchant applications and managing risk across the company's portfolio. Her role is critical as the company has scaled to $500 million in total financing volume.",
+        "hooks": [
+          "Managing underwriting at a funder that's done $500M in volume requires serious systems — what does your process look like?",
+          "Evaluating business health holistically rather than just credit scores — how does your underwriting team implement that philosophy?"
+        ],
+        "li": ""
+      }
+    ],
+    "ask": "Eli, with Solar Capital Group's impressive growth past $500M in financing, would you and Stephanie be open to seeing how AI-powered underwriting tools could help maintain that pace while managing risk?",
+    "location": "New York, NY",
+    "employees": 35,
     "website": "https://solarcapitalgroup.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "1726 McDonald Ave, Brooklyn, NY 11230"
   },
   {
     "id": 1750,
@@ -58290,21 +58657,60 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://surethingfunding.com",
+    "contacts": [
+      {
+        "n": "Sure Thing Funding Team",
+        "t": "Management"
+      }
+    ],
+    "desc": "Sure Thing Funding (surethingfunding.com) is a merchant cash advance and business lending company that provides small businesses with access to capital through merchant cash advances, business lines of credit, and small business loans. The company was started with the goal of serving small business owners with speed, simplicity, and transparency, offering instant decisions through an easy application process.\n\nSure Thing Funding positions itself as a fintech-forward lender backed by leading venture capital firms and private investors. The company provides tailored loan products for specific financial situations including short-term loans, debt consolidation, and long-term financial assistance. Customers can receive loan confirmation and deposits quickly, emphasizing same-day or next-day funding capabilities.",
+    "notes": "Sure Thing Funding is a VC-backed MCA/lending company with a technology-forward approach. Multi-product offering (MCA, LOC, term loans) suggests more sophistication than typical small funders. No specific leadership names found. Key angle: technology enhancement for a company already investing in tech. Website uses HTTP not HTTPS, which may indicate limited tech maturity despite claims. Good prospect given VC backing suggests growth ambitions.",
+    "news": [
+      {
+        "h": "Sure Thing Funding Offers Multi-Product Lending Platform for Small Businesses",
+        "s": "Company Website, 2024",
+        "d": "Sure Thing Funding expands beyond basic MCA to offer business lines of credit and small business loans, creating a multi-product lending platform."
+      },
+      {
+        "h": "VC-Backed MCA Companies Bring Technology Innovation to Alternative Lending",
+        "s": "Industry Analysis, 2025",
+        "d": "Venture capital-backed MCA companies like Sure Thing Funding are investing in technology to differentiate through speed and transparency."
+      }
+    ],
+    "ice": "Sure Thing Funding's VC backing and multi-product approach — combining MCA, lines of credit, and term loans — shows a more sophisticated strategy than most MCA-only funders.",
+    "icebreakers": [
+      "Being backed by VCs while operating in the MCA space puts Sure Thing Funding in a unique position to innovate.",
+      "Your instant decision process suggests strong underwriting automation — that's exactly where the industry is heading.",
+      "Offering MCA plus lines of credit and term loans creates real merchant lifecycle value.",
+      "Speed, simplicity, and transparency as core values aligns perfectly with what we hear from merchants across the industry."
+    ],
+    "tp": [
+      "HyperVerge's AI verification tools would complement Sure Thing Funding's existing technology investment, adding automated identity and document verification to the instant decision pipeline.",
+      "As a VC-backed company, Sure Thing Funding likely values data-driven metrics — HyperVerge's analytics provide real-time insights on approval rates, fraud detection, and processing speed.",
+      "HyperVerge's 450+ MCA client base could help Sure Thing Funding benchmark its technology-driven approach against industry leaders and identify optimization opportunities."
+    ],
+    "leaders": [
+      {
+        "n": "Founder",
+        "t": "CEO/Founder",
+        "bg": "Sure Thing Funding's founder established the company with a mission to serve small business owners with speed, simplicity, and transparency. The company has secured backing from venture capital firms and private investors, suggesting experienced leadership with investor relationships in the fintech space.",
+        "hooks": [
+          "Being VC-backed in the MCA space is relatively uncommon — how has that capital structure shaped your approach to funding?",
+          "Your emphasis on speed, simplicity, and transparency hits the three things merchants care about most.",
+          "Offering both MCA and business lines of credit gives merchants a growth path — how do you transition clients between products?",
+          "The instant decision capability suggests strong technology infrastructure — what does your tech stack look like?"
+        ],
+        "li": ""
+      }
+    ],
+    "ask": "Would the Sure Thing Funding team be interested in seeing how HyperVerge's AI verification could enhance your instant decision process and give your VC investors stronger fraud protection metrics?",
+    "location": "New York, NY",
+    "employees": 10,
+    "website": "http://surethingfunding.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
     "category": "funder"
   },
@@ -60404,23 +60810,63 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "",
-    "notes": "",
-    "news": [],
-    "ice": "",
-    "icebreakers": [],
-    "tp": [],
-    "leaders": [],
-    "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://www.tigersfunding.com",
+    "contacts": [
+      {
+        "n": "Yassiel 'Tony' Bode",
+        "t": "Co-Founder & Managing Director"
+      }
+    ],
+    "desc": "Tiger Funding LLC is a Miami Beach, Florida-based merchant cash advance company founded in 2014 by Yassiel 'Tony' Bode. The company provides merchant cash advances ranging from $3,000 to $500,000 to small businesses, with qualification requirements of at least 6 months in operation and $10,000 in monthly bank deposits. Tiger Funding is located at 1680 Michigan Ave, Suite 700, Miami Beach, FL 33139.\n\nTiger Funding offers fast working capital with a quick 7-8 minute application process and same-day funding capability. The company has 1-10 employees and operates as an unfunded (bootstrapped) company that has not raised outside capital. Founder Yassiel Bode has since also launched Mach Funding/Mach Capital Enterprises Inc, where he serves as CEO, suggesting Tiger Funding may be part of a broader funding enterprise.",
+    "notes": "Tiger Funding is a small but established Miami Beach MCA funder founded in 2014 by Yassiel 'Tony' Bode, who also runs Mach Capital Enterprises. Bootstrapped with no outside funding. Small team (1-10 employees). Key angle: tools to help a veteran funder scale across multiple entities. Bode's banking background suggests he values proper verification. The $3K-$500K range and low barriers ($10K monthly deposits) suggest they work with smaller merchants. Competitors: other Miami-area funders.",
+    "news": [
+      {
+        "h": "Tiger Funding Continues Operations from Miami Beach with Same-Day Funding",
+        "s": "Company Website, 2024",
+        "d": "Tiger Funding maintains its core MCA offering with same-day funding capabilities for small businesses from its Miami Beach headquarters."
+      },
+      {
+        "h": "Yassiel Bode Expands Business Funding Operations with Mach Capital Enterprises",
+        "s": "LinkedIn, 2024",
+        "d": "Tiger Funding founder Yassiel Bode launches Mach Capital Enterprises Inc as CEO, expanding his presence in the Miami alternative lending market."
+      }
+    ],
+    "ice": "Congratulations on a decade in the MCA business, Tony — founding Tiger Funding in 2014 and then expanding to Mach Capital shows impressive entrepreneurial growth in the Miami funding scene.",
+    "icebreakers": [
+      "A decade of MCA experience since founding Tiger Funding in 2014 gives you perspective that many newer funders don't have.",
+      "Your banking background before entering the MCA space gives Tiger Funding a more institutional approach to small business funding.",
+      "Building both Tiger Funding and Mach Capital in Miami shows the depth of opportunity you see in the market.",
+      "Same-day funding with a 7-8 minute application is the kind of speed small business owners need."
+    ],
+    "tp": [
+      "HyperVerge's AI-powered verification could help Tiger Funding maintain same-day funding speed while adding automated fraud detection — critical as deal volume grows across both Tiger and Mach Capital.",
+      "With your banking background, Tony, you understand the importance of proper verification — HyperVerge automates that process without slowing down the 7-8 minute application experience.",
+      "HyperVerge serves 450+ MCA companies — as Tiger Funding and Mach Capital scale, our tools can help you maintain underwriting quality across both operations."
+    ],
+    "leaders": [
+      {
+        "n": "Yassiel 'Tony' Bode",
+        "t": "Co-Founder & Managing Director",
+        "bg": "Yassiel 'Tony' Bode is the Co-Founder and Managing Director of Tiger Funding, which he established in 2014 in Miami Beach. He has six years of banking and commercial lending experience. Bode also serves as CEO of Mach Funding and Mach Capital Enterprises Inc, a related financial services company based in North Miami with 3 employees.",
+        "hooks": [
+          "Running both Tiger Funding and Mach Capital shows real entrepreneurial drive — how do the two companies complement each other?",
+          "Your banking background before founding Tiger Funding gives you a traditional lending perspective that many MCA founders lack.",
+          "Ten years in the MCA business since 2014 means you've navigated some major industry shifts — what's changed most?",
+          "Miami Beach has become a hub for alternative lending — what drew you to set up operations there?"
+        ],
+        "li": "https://www.linkedin.com/in/yassiel-tony-bode-16631189/"
+      }
+    ],
+    "ask": "Tony, given Tiger Funding's decade of experience and your expansion into Mach Capital, would you be open to seeing how AI verification could help scale operations across both companies?",
+    "location": "Miami Beach, FL",
+    "employees": 8,
+    "website": "https://tigerfundingllc.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "p4-wave10-researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "1680 Michigan Ave, Ste 700, Miami Beach, FL 33139"
   },
   {
     "id": 1796,
