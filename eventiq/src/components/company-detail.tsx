@@ -68,7 +68,6 @@ import {
   TrendingUp,
   Activity,
   UserCheck,
-  MessageCircle,
   Signal,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
@@ -996,66 +995,6 @@ function LeaderCard({
               {personaConfig.label}
             </Badge>
           )}
-          {/* LinkedIn intelligence badges */}
-          {(leader.linkedinStatus || leader.toneOfVoice || leader.outreachChannel) && (
-            <div className="flex flex-wrap items-center gap-1 mt-1">
-              {leader.linkedinStatus && leader.linkedinStatus !== 'unknown' && (
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <span className={cn(
-                      "text-xs px-1.5 py-0.5 rounded-full inline-flex items-center gap-0.5",
-                      leader.linkedinStatus === 'active' && "bg-green-500/10 text-green-400",
-                      leader.linkedinStatus === 'dormant' && "bg-red-500/10 text-red-400",
-                      leader.linkedinStatus === 'minimal' && "bg-yellow-500/10 text-yellow-400",
-                    )}>
-                      <Activity className="h-2.5 w-2.5" />
-                      {leader.linkedinStatus === 'active' ? 'LI Active' : leader.linkedinStatus === 'dormant' ? 'LI Dormant' : 'LI Minimal'}
-                    </span>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    {leader.linkedinStatus === 'active' && 'Active on LinkedIn — good for LinkedIn outreach'}
-                    {leader.linkedinStatus === 'dormant' && 'Not active on LinkedIn — prefer email/phone'}
-                    {leader.linkedinStatus === 'minimal' && 'Very thin LinkedIn presence — prefer email'}
-                  </TooltipContent>
-                </Tooltip>
-              )}
-              {leader.linkedinConnections !== undefined && (
-                <span className="text-xs px-1.5 py-0.5 rounded-full bg-muted/50 text-muted-foreground inline-flex items-center gap-0.5">
-                  <Users className="h-2.5 w-2.5" />
-                  {leader.linkedinConnections.toLocaleString()}
-                </span>
-              )}
-              {leader.openLink && (
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <span className="text-xs px-1.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 inline-flex items-center gap-0.5">
-                      <Send className="h-2.5 w-2.5" />
-                      OpenLink
-                    </span>
-                  </TooltipTrigger>
-                  <TooltipContent>Can receive InMail without being connected</TooltipContent>
-                </Tooltip>
-              )}
-              {leader.toneOfVoice && (
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <span className="text-xs px-1.5 py-0.5 rounded-full bg-purple-500/10 text-purple-400 inline-flex items-center gap-0.5">
-                      <MessageCircle className="h-2.5 w-2.5" />
-                      {leader.toneOfVoice}
-                    </span>
-                  </TooltipTrigger>
-                  <TooltipContent>Recommended communication tone based on profile analysis</TooltipContent>
-                </Tooltip>
-              )}
-            </div>
-          )}
-          {/* Outreach recommendation */}
-          {leader.outreachNote && (
-            <div className="flex items-start gap-1.5 mt-1 bg-brand/5 border border-brand/15 rounded-md px-2 py-1.5">
-              <Zap className="h-3 w-3 text-brand shrink-0 mt-0.5" />
-              <span className="text-xs text-brand/80 leading-relaxed">{leader.outreachNote}</span>
-            </div>
-          )}
           {/* Email & phone inline */}
           {(leader.email || leader.phone) && (
             <div className="flex items-center gap-2 mt-0.5">
@@ -1080,25 +1019,6 @@ function LeaderCard({
           )}
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
-          {leader.email && (
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <a
-                  href={`mailto:${leader.email}?subject=${encodeURIComponent(`${company.name} + HyperVerge`)}&body=${encodeURIComponent(currentEmail.body)}`}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (onQuickLog) {
-                      onQuickLog(leader.n, "email", "sent_intro");
-                    }
-                  }}
-                  className="flex items-center gap-1 text-xs h-auto px-2 py-1 rounded-md bg-green-500/10 text-green-400 hover:bg-green-500/20 transition-colors font-medium"
-                >
-                  <Mail className="h-3 w-3" /> Email {leader.n.split(" ")[0]}
-                </a>
-              </TooltipTrigger>
-              <TooltipContent>Open mailto with {leader.email}</TooltipContent>
-            </Tooltip>
-          )}
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
@@ -1157,16 +1077,35 @@ function LeaderCard({
             </TooltipTrigger>
             <TooltipContent>Draft LinkedIn message</TooltipContent>
           </Tooltip>
-          <a
-            href={leader.li || `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(leader.n + " " + company.name)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn("hover:text-brand/80", leader.li ? "text-brand" : "text-muted-foreground/50")}
-            title={leader.li ? "View LinkedIn profile" : "Search LinkedIn"}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <Linkedin className="h-3 w-3" />
-          </a>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <a
+                href={leader.li || `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(leader.n + " " + company.name)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn("relative hover:text-brand/80", leader.li ? "text-brand" : "text-muted-foreground/50")}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Linkedin className="h-3 w-3" />
+                {leader.linkedinStatus && leader.linkedinStatus !== 'unknown' && (
+                  <span className={cn(
+                    "absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full",
+                    leader.linkedinStatus === 'active' && "bg-green-400",
+                    leader.linkedinStatus === 'dormant' && "bg-red-400",
+                    leader.linkedinStatus === 'minimal' && "bg-yellow-400",
+                  )} />
+                )}
+              </a>
+            </TooltipTrigger>
+            <TooltipContent>
+              {leader.li ? "View LinkedIn profile" : "Search LinkedIn"}
+              {leader.linkedinStatus === 'active' && " — Active on LinkedIn"}
+              {leader.linkedinStatus === 'dormant' && " — Dormant (prefer email)"}
+              {leader.linkedinStatus === 'minimal' && " — Minimal presence"}
+              {leader.linkedinConnections !== undefined && ` (${leader.linkedinConnections} connections)`}
+              {leader.openLink && " · OpenLink"}
+            </TooltipContent>
+          </Tooltip>
         </div>
       </div>
       {leader.bg && (
