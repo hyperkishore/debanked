@@ -10039,27 +10039,93 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Solomon Lax",
+        "n": "Sol Lax",
         "t": "CEO"
+      },
+      {
+        "n": "Jake Lerner",
+        "t": "Chief Revenue Officer"
+      },
+      {
+        "n": "Grant Pastor",
+        "t": "Director of Marketing"
       }
     ],
-    "desc": "Fintech company utilizing revenue-based financing to provide working capital by purchasing a portion of future receivables. Founded by pioneers from the alternative small business financing industry.",
-    "notes": "",
-    "news": [],
-    "ice": "Revenued's approach of structuring funding as an investment rather than a loan is a compelling differentiation in the alternative financing market.",
+    "desc": "Jersey City-based fintech (founded 2017) providing revenue-based financing through its Flex Line and Business Card products, offering SMBs up to $500K in working capital tied to actual business revenue rather than credit scores. Revenued's AI model parses bank transactions to determine real revenue vs. pass-through revenue for underwriting. Acquired Sky Bridge Business Funding in 2020 to expand its portfolio. Leadership team has roots in Pearl Capital (acquired by Capital Z Partners in 2015). Partnered with neobank Found in February 2024 to help businesses without dedicated bank accounts qualify for Revenued products, converting ~10% of qualifying traffic within the first month. Publishes quarterly State of Small Business reports with original survey data -- the 2025 report found 78% of SMBs report higher operating costs due to tariffs. Approximately 28 employees.",
+    "notes": "SELLING ANGLES: AI-driven underwriting already in place (parses bank transactions) -- HyperVerge could enhance with document verification and identity checks. Revenue-based model means high volume of bank statement processing -- perfect HyperVerge use case. Found partnership shows willingness to integrate with third-party fintech tools. BOARD: Capital Z Partners connection through Pearl Capital acquisition history. KEY INSIGHT: Revenued's business model is structurally different from traditional MCA -- they purchase future receivables based on AI-parsed bank data, making them a natural fit for HyperVerge's bank statement analysis capabilities.",
+    "news": [
+      {
+        "h": "Revenued Releases 2025 Year in Review SMB Report on Tariffs, AI, and Resiliency",
+        "s": "PR Newswire, Jan 2026",
+        "d": "Published comprehensive report surveying 100+ small business owners on how tariffs and rising costs are squeezing SMBs heading into 2026. Found 78% report higher operating costs due to tariffs."
+      },
+      {
+        "h": "Revenued Forges First Neobank Partnership with Found",
+        "s": "PR Newswire, Feb 2024",
+        "d": "Partnered with neobank Found to help 2,000+ monthly applicants who lacked dedicated business bank accounts qualify for Revenued products. 10% conversion rate within the first month."
+      },
+      {
+        "h": "Revenued Acquires Sky Bridge Business Funding",
+        "s": "PR Newswire, Jul 2020",
+        "d": "Acquired Sky Bridge Business Funding (founded 2017) and rebranded it under the Revenued name to expand small business financing portfolio."
+      }
+    ],
+    "ice": "Sol, the quarterly State of Small Business reports are a smart way to position Revenued as a thought leader -- 78% of SMBs reporting tariff-driven cost increases must be driving demand for your Flex Line products.",
     "icebreakers": [
-      "Revenued's approach of structuring funding as an investment rather than a loan is a compelling differentiation in the alternative financing market."
+      "Sol, the quarterly State of Small Business reports are a smart way to position Revenued as a thought leader -- 78% of SMBs reporting tariff-driven cost increases must be driving demand for your Flex Line products.",
+      "The Found neobank partnership converting 10% of traffic in month one shows real product-market fit -- are you exploring more fintech integrations?",
+      "Jake, the AI model that parses bank transactions to separate real revenue from pass-through is sophisticated -- HyperVerge's bank statement analysis could add another layer of automation.",
+      "From Pearl Capital to building Revenued's revenue-based model -- the team clearly understands how to innovate in alternative financing."
     ],
     "tp": [
-      "AI can enhance Revenued's revenue-based underwriting by predicting future receivable performance with greater accuracy using real-time business data."
+      "Revenued already uses AI to parse bank transactions for underwriting -- HyperVerge adds automated bank statement extraction, identity verification, and document analysis to make that pipeline even faster.",
+      "450+ MCA and alternative lending companies use HyperVerge for automated document processing -- purpose-built for revenue-based financing models like Revenued's Flex Line.",
+      "With 2,000+ monthly applicants needing faster processing, HyperVerge reduces document review from minutes to seconds -- directly improving Revenued's conversion funnel."
     ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "leaders": [
+      {
+        "n": "Sol Lax",
+        "t": "CEO",
+        "bg": "CEO of Revenued since 2015 with 15+ years as a venture capitalist and investment banker. Previously CEO, COO, and President of Pearl Capital, where he led the company's institutional infrastructure development and its acquisition by Capital Z Partners in 2015. Co-founding partner of Cato Capital LLC, where he seeded a healthcare receivable firm and a venture debt fund. Also served as CFO of the largest single-family home property owner in Maryland and was a general partner of CS Capital Partners, an early-stage venture fund.",
+        "hooks": [
+          "*Pearl Capital to Capital Z Partners exit",
+          "Venture capital background",
+          "Cato Capital co-founder",
+          "Healthcare receivables experience"
+        ],
+        "li": "https://www.linkedin.com/in/sol-lax-bb190"
+      },
+      {
+        "n": "Jake Lerner",
+        "t": "Chief Revenue Officer",
+        "bg": "CRO of Revenued since 2020, overseeing all sales channels and the direct-to-consumer initiative. Previously CRO and SVP of Sales at Pearl Capital, Head of Sales at Vantage Capital Source, and Relationship Manager at Fora Financial. Early career included work at Ultimate Sports Agency, contributing to sponsorship deals and contract negotiations for NFL clients. BS in Business Administration and Business Law from Drexel University LeBow College of Business (2010-2014).",
+        "hooks": [
+          "*Former NFL sports agent work",
+          "Drexel Business Law grad",
+          "Pearl Capital sales leader",
+          "DTC growth initiative"
+        ],
+        "li": "https://www.linkedin.com/in/jacobjlerner"
+      },
+      {
+        "n": "Grant Pastor",
+        "t": "Director of Marketing",
+        "bg": "Has led Revenued's marketing and growth strategy since 2015 with over a decade of fintech and business financing experience, including roles at Pearl Capital. Oversees brand development, product marketing, and customer engagement. Spearheads Revenued's State of Small Business quarterly reports, combining original survey data with industry analysis. Media Studies degree from The New School University.",
+        "hooks": [
+          "The New School grad",
+          "SMB research reports author",
+          "Decade in fintech marketing"
+        ],
+        "li": null
+      }
+    ],
+    "ask": "Sol, with Revenued's AI already parsing bank transactions for underwriting -- would a 15-minute demo of how HyperVerge could automate the document side of that pipeline be worth your time?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "researched"
     ],
-    "location": "Florida",
+    "location": "Jersey City, NJ",
     "employees": 28,
     "website": "https://revenued.com",
     "linkedinUrl": "https://www.linkedin.com/company/revenued/",
@@ -10499,23 +10565,109 @@
       {
         "n": "Albert Gahfi",
         "t": "CEO"
+      },
+      {
+        "n": "Zorin Dahari",
+        "t": "Director of Operations"
+      },
+      {
+        "n": "Bruce Gurvitsch",
+        "t": "Chief Revenue Officer"
+      },
+      {
+        "n": "Steve Bergstrom",
+        "t": "Chief Risk Officer"
       }
     ],
-    "desc": "Alternative finance company specializing in MCA Bridge-Capital, recognized by HappyMCA.com as fastest growing MCA company. Forbes Finance Council member.",
-    "notes": "",
-    "news": [],
-    "ice": "Congrats on the HappyMCA awards for fastest growing MCA company -- impressive growth trajectory.",
+    "desc": "Florida-based alternative finance company operating globally through its affiliate Bizcap (Australia/NZ/UK/Singapore). Together they have deployed over $2 billion in financing to 45,000+ businesses across five countries on three continents. Specializes in MCA Bridge-Capital, Line of Capital, and equipment financing. Expanded into Canada in January 2025 with full service including Quebec. Bizcap acquired AI-powered e-commerce funder 8fig ($500M+ deployed) in October 2025, adding AI CFO capabilities. CEO Albert Gahfi appointed to Forbes Finance Council and nominated for U.S. FinTech Awards Innovator of the Year. Operates three brands: NewCo, CAPYTAL, and Line of Capital. Partnered with Tenet's Cubeler Business Hub in April 2025 for Canadian SME distribution. Fourth consecutive year sponsoring Funders Forum + Broker Expo (2025). Approximately 35 employees.",
+    "notes": "SELLING ANGLES: $2B+ deployed globally across 45K+ businesses means massive underwriting volume -- HyperVerge can automate document processing at that scale. Canadian expansion (Jan 2025) and international operations across 5 countries mean diverse document types and regulatory requirements -- HyperVerge handles multi-jurisdiction verification. Bizcap's 8fig acquisition brings AI into their portfolio, showing they value technology-driven lending. Already engaged contact (Zorin Dahari, 22 outbound / 19 inbound). BOARD: Bizcap Global connection through Albert Gahfi (Co-CEO). COMPETITORS: Capytal.com (their own brand), Bizcap (affiliate). KEY INSIGHT: NewCo is rapidly becoming a global MCA platform -- the complexity of underwriting across US, Canada, Australia, UK, NZ, and Singapore creates exactly the kind of multi-market challenge HyperVerge solves.",
+    "news": [
+      {
+        "h": "Bizcap Acquires AI-Powered E-commerce Funder 8fig",
+        "s": "PR Newswire, Oct 2025",
+        "d": "Bizcap (NewCo's affiliate) acquired 8fig, which has deployed $500M+ in funding and developed a pioneering AI CFO tool for online sellers. 8fig retains its brand and leadership under Bizcap's ecosystem."
+      },
+      {
+        "h": "NewCo Capital Group Launches Canadian Expansion",
+        "s": "PR Newswire, Apr 2025",
+        "d": "Expanded into Canada with nationwide service across every province and territory, including full Quebec coverage. Partnered with Tenet's Cubeler Business Hub for SME distribution. Offers up to CAD $2M in advances."
+      },
+      {
+        "h": "Albert Gahfi Nominated for U.S. FinTech Awards Innovator of the Year",
+        "s": "PR Newswire, Nov 2024",
+        "d": "CEO Albert Gahfi nominated for the prestigious Innovator of the Year Award by the U.S. FinTech Awards, recognizing his leadership in global alternative financing expansion."
+      },
+      {
+        "h": "NewCo Showcases Innovation at 2025 Funders Forum + Broker Expo",
+        "s": "PR Newswire, Mar 2025",
+        "d": "Fourth consecutive year as premier sponsor. Showcased all three brands (NewCo, CAPYTAL, Line of Capital) and led discussions on emerging underwriting technologies and compliance."
+      }
+    ],
+    "ice": "Albert, the 8fig acquisition bringing AI CFO capabilities into the Bizcap ecosystem is a smart move -- as you scale across five countries with $2B+ deployed, how are you thinking about automating the underwriting pipeline?",
     "icebreakers": [
-      "Congrats on the HappyMCA awards for fastest growing MCA company -- impressive growth trajectory."
+      "Albert, the 8fig acquisition bringing AI CFO capabilities into the Bizcap ecosystem is a smart move -- as you scale across five countries with $2B+ deployed, how are you thinking about automating the underwriting pipeline?",
+      "Deploying $2 billion across 45,000 businesses in five countries is remarkable growth -- the Forbes Finance Council appointment and Innovator of the Year nomination are well deserved.",
+      "Zorin, with 22 touchpoints already between our teams, would love to connect on how HyperVerge could streamline NewCo's document processing as you expand into Canada and beyond.",
+      "The Canadian expansion with Cubeler and full Quebec coverage shows NewCo is serious about multi-market growth -- HyperVerge handles document verification across jurisdictions."
     ],
     "tp": [
-      "AI-driven underwriting can help scale MCA Bridge-Capital offerings while maintaining risk discipline during rapid growth."
+      "At $2B+ deployed across 45,000 businesses globally, even a small improvement in underwriting speed translates to millions in additional origination -- HyperVerge delivers 80% faster document processing.",
+      "450+ MCA companies use HyperVerge for automated bank statement analysis and identity verification -- purpose-built for the kind of high-volume Bridge-Capital operations NewCo runs.",
+      "Expanding into Canada, Australia, UK, and Singapore means diverse document types and regulatory requirements -- HyperVerge handles multi-jurisdiction verification out of the box."
     ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "leaders": [
+      {
+        "n": "Albert Gahfi",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO of NewCo Capital Group, Capytal.com, and Co-CEO & Co-Founder of Bizcap Global. Previously Co-Founder and Managing Partner of Kings Cash Group, which he oversaw through its merger with an SEC-registered fintech firm. Prior roles include President of ISO Relations at Wall Street Capital (2012-2014) and President of Sales/ISO Relations at Factor Funding LLC (2010-2011). Forbes Finance Council member and U.S. FinTech Awards Innovator of the Year nominee. Has driven expansion across five countries on three continents.",
+        "hooks": [
+          "*Forbes Finance Council member",
+          "*FinTech Innovator of the Year nominee",
+          "Kings Cash Group founder",
+          "5-country global expansion"
+        ],
+        "li": "https://www.linkedin.com/in/albert-m-gahfi-40156665/"
+      },
+      {
+        "n": "Zorin Dahari",
+        "t": "Director of Operations",
+        "bg": "Director of Operations at NewCo Capital Group, managing alternative financing operations and process optimization. Bachelor's degree from The Open University of Israel. Google Professional Certificate holder. Key operational contact -- 22 outbound and 19 inbound touchpoints with HyperVerge team.",
+        "hooks": [
+          "Open University of Israel grad",
+          "Google certified",
+          "Active HyperVerge contact"
+        ],
+        "li": "https://www.linkedin.com/in/zorin-dahari-56549717b/"
+      },
+      {
+        "n": "Bruce Gurvitsch",
+        "t": "Chief Revenue Officer & Co-Founder",
+        "bg": "Co-Founder of NewCo Capital Group, Capytal.com, and NewCo Canada. CRO since April 2020. Previously Director of ISO Development at Benchmark Merchant Solutions and Director of Business Development & Marketing at Kings Cash Group. Experience spans merchant services, ACH processing, and alternative high-risk funding. BS in Psychology from Touro College.",
+        "hooks": [
+          "Touro College Psychology grad",
+          "Kings Cash Group origins",
+          "NewCo Canada co-founder",
+          "ACH processing expert"
+        ],
+        "li": "https://www.linkedin.com/in/bruce-gurvitsch-1b473179/"
+      },
+      {
+        "n": "Steve Bergstrom",
+        "t": "Chief Risk Officer",
+        "bg": "CRO at NewCo Capital Group and Capytal.com, based in Miami Beach. Previously Director of Risk at Kings Cash Group, overseeing final review and risk departments. BS from Northern Illinois University. Extensive experience in risk management and mitigation across MCA and alternative financing.",
+        "hooks": [
+          "Northern Illinois University grad",
+          "Kings Cash Group risk director",
+          "Miami Beach based"
+        ],
+        "li": "https://www.linkedin.com/in/steve-bergstrom-8045b6227/"
+      }
+    ],
+    "ask": "Albert, with $2B+ deployed globally and the 8fig AI acquisition -- would a 15-minute demo of how HyperVerge automates bank statement analysis and identity verification at scale be worth your time?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "researched"
     ],
     "location": "Florida",
     "employees": 35,
@@ -10795,26 +10947,97 @@
     "contacts": [
       {
         "n": "Ricardo Pero",
-        "t": "CEO"
+        "t": "CEO & Co-Founder"
+      },
+      {
+        "n": "Fabio Knijnik",
+        "t": "COO & Co-Founder"
+      },
+      {
+        "n": "Leonardo Felisberto",
+        "t": "Head of Global Business Development"
       }
     ],
-    "desc": "Global fintech providing credit lines up to $10M and term loans to e-commerce sellers, primarily through Amazon Lending partnership (since Jan 2024). Capital sourced from Citi (senior) and Fasanara Capital (mezzanine). Targets larger sellers with $10M+ revenue. Raised $166M. Inc. 5000 honoree. Originates and provides capital directly to businesses.",
-    "notes": "",
-    "news": [],
-    "ice": "The Amazon Lending partnership is a massive distribution channel -- that is a game-changer for SellersFi's growth.",
+    "desc": "Weston, FL-based global e-commerce financing fintech (founded 2017, formerly SellersFunding) that surpassed $1 billion in loans before its 7th birthday. Provides credit lines up to $10M and term loans to e-commerce sellers, primarily through its Amazon Lending partnership (Jan 2024) where SellersFi is one of four approved third-party lending partners alongside Marcus by Goldman Sachs, Parafin, and Lendistry. Capital sourced through a $135M credit facility (expandable to $300M) with Citi as senior lender and Fasanara Capital providing mezzanine, closed December 2023. Equity investors include Citi, Mitsubishi UFJ Financial Group (MUFG), Fasanara Capital, and Northzone. Total equity raised: $65M. Annual revenue ~$15M. Ranked #226 on Deloitte Technology Fast 500 (523% three-year revenue growth), Inc. 5000 #972, and #8 in FinTech Magazine's Top 10 Fintech Startups. Approximately 100 employees. Endeavor Miami portfolio company.",
+    "notes": "SELLING ANGLES: Amazon Lending partnership means massive seller data flow and volume -- HyperVerge can automate the document verification in that pipeline. $1B+ originated with $300M credit facility means they're scaling fast and need efficient underwriting. Citi and MUFG backing gives institutional credibility but also means rigorous compliance requirements where HyperVerge adds value. Deloitte Fast 500 at 523% growth rate means they're processing significantly more applications each quarter. BOARD: Citi, MUFG Innovation Partners, Fasanara Capital, Northzone. COMPETITORS: Parafin, Marcus by Goldman Sachs, Lendistry (Amazon Lending co-partners), Wayflyer, Clearco. KEY INSIGHT: SellersFi is the premium tier of Amazon seller financing -- targeting $2.5M+ revenue sellers with up to $10M credit lines. This large-ticket lending requires sophisticated underwriting that HyperVerge can enhance.",
+    "news": [
+      {
+        "h": "SellersFi Named #226 on Deloitte Technology Fast 500",
+        "s": "Deloitte, Nov 2024",
+        "d": "Ranked #226 fastest-growing company in North America with 523% revenue growth over three years, attributed to customer-focused innovation and sustainable lending practices."
+      },
+      {
+        "h": "SellersFi Surpasses $1 Billion in Loans Before 7th Birthday",
+        "s": "SellersFi, 2024",
+        "d": "Milestone achievement reflecting rapid growth since 2017 founding, driven by Amazon Lending partnership and expansion into international markets."
+      },
+      {
+        "h": "SellersFi Partners with Amazon Lending for $10M Credit Lines",
+        "s": "BusinessWire, Jan 2024",
+        "d": "Became one of four approved Amazon Lending partners, offering eligible sellers credit lines up to $10M with customizable repayment terms and interest-only periods. Also launched MCA product for Canadian Amazon sellers."
+      },
+      {
+        "h": "SellersFi Closes $300M Credit Facility with Citi and Fasanara",
+        "s": "BusinessWire, Dec 2023",
+        "d": "Secured $135M initial facility expandable to $300M, with Citi providing senior capital and Fasanara Capital providing mezzanine. Simultaneous equity raise from Citi and MUFG."
+      }
+    ],
+    "ice": "Ricardo, crossing $1 billion in loans before SellersFi's 7th birthday is a remarkable milestone -- and the 523% growth rate on the Deloitte Fast 500 shows the Amazon Lending partnership is really accelerating things. As you scale credit lines up to $10M per seller, how are you thinking about underwriting infrastructure?",
     "icebreakers": [
-      "The Amazon Lending partnership is a massive distribution channel -- that is a game-changer for SellersFi's growth."
+      "Ricardo, crossing $1 billion in loans before SellersFi's 7th birthday is a remarkable milestone -- and the 523% growth rate on the Deloitte Fast 500 shows the Amazon Lending partnership is really accelerating things.",
+      "Being one of only four approved Amazon Lending partners alongside Goldman Sachs and Parafin puts SellersFi in elite company -- that distribution channel must be driving enormous application volume.",
+      "Fabio, from Six Sigma at Sadia to building SellersFi's operations to $1B+ in loans -- that operational rigor is exactly what makes a great HyperVerge implementation partner.",
+      "The Citi and MUFG backing plus 523% growth rate means SellersFi is processing more applications every quarter -- HyperVerge's automated document verification scales with that volume."
     ],
     "tp": [
-      "AI underwriting can leverage Amazon seller data to create more precise risk profiles and automate credit line decisions."
+      "At $1B+ originated and 523% three-year growth, SellersFi's application volume is surging -- HyperVerge automates bank statement analysis and identity verification to keep underwriting speed ahead of growth.",
+      "450+ lending companies use HyperVerge for automated document processing -- and with Citi and MUFG as capital partners, the compliance-grade verification HyperVerge provides meets institutional standards.",
+      "Being one of four Amazon Lending partners means processing thousands of seller applications -- HyperVerge reduces document review from minutes to seconds, directly improving approval speed and conversion."
     ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "leaders": [
+      {
+        "n": "Ricardo Pero",
+        "t": "CEO & Co-Founder",
+        "bg": "Born in Brazil, came to the US in 2000 to work at Citibank in sales and trading covering FX, rates, and multi-asset classes. MBA in Finance from Columbia Business School (2001-2002). Moved to Merrill Lynch in 2007, then to JP Morgan after the 2008 financial crisis where he spent eight years as Executive Director. Left JP Morgan in 2016 to found SellersFi after recognizing that lenders were underserving the e-commerce seller market. Named an eCommerce FinTech Leader by The Financial Technology Report.",
+        "hooks": [
+          "*Columbia Business School MBA",
+          "*Citibank + JP Morgan + Merrill Lynch career",
+          "Brazilian-born entrepreneur",
+          "eCommerce FinTech Leader"
+        ],
+        "li": "https://www.linkedin.com/in/ricardo-pero-b7659437/"
+      },
+      {
+        "n": "Fabio Knijnik",
+        "t": "COO & Co-Founder",
+        "bg": "Brazilian-born entrepreneur with 15+ years of experience. Started career at Sadia implementing Six Sigma programs and training 300+ professionals. Founded Crunchflow (2016-2019) before co-founding SellersFi in 2017. Endeavor Entrepreneur since 2015 (joined Endeavor Miami with SellersFi as his second company). Previous roles include National Key Account Sales Manager at LBR Lacteos Brasil and Director at Knijnik Engenharia Integrada.",
+        "hooks": [
+          "*Six Sigma at Sadia",
+          "*Endeavor Entrepreneur",
+          "Brazilian serial entrepreneur",
+          "Crunchflow founder"
+        ],
+        "li": "https://www.linkedin.com/in/fabio-davi-k-13895413/"
+      },
+      {
+        "n": "Leonardo Felisberto",
+        "t": "Head of Global Business Development & Partnerships",
+        "bg": "Leads SellersFi's global business development and strategic partnerships from Switzerland. Previously served as UK Country Business Manager and Director of Sales. Instrumental in SellersFi's international expansion beyond the US market into UK, European, and global e-commerce seller markets.",
+        "hooks": [
+          "Switzerland-based",
+          "UK market launcher",
+          "Global partnerships lead"
+        ],
+        "li": "https://www.linkedin.com/in/leonardo-felisberto-24a2847/"
+      }
+    ],
+    "ask": "Ricardo, with $1B+ originated and the Amazon Lending partnership driving growth at 523% -- would a 15-minute demo of how HyperVerge automates seller document verification and bank statement analysis be worth your time?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "researched"
     ],
-    "location": "Florida",
+    "location": "Weston, FL",
     "employees": 100,
     "website": "https://sellersfi.com",
     "linkedinUrl": "https://www.linkedin.com/company/sellersfi/",
@@ -10831,26 +11054,90 @@
     "contacts": [
       {
         "n": "Anthony Marquez",
-        "t": "CEO"
+        "t": "CEO & Co-Founder"
+      },
+      {
+        "n": "Anthony Carbone",
+        "t": "Co-Founder & Managing Partner"
+      },
+      {
+        "n": "Rodny Fernandez",
+        "t": "Senior Fund Manager"
       }
     ],
-    "desc": "Fort Lauderdale-based MCA direct lender founded in 2018. Funded over $500M. First MCA lender to accept cryptocurrency payments through Crypto.com partnership.",
-    "notes": "",
-    "news": [],
-    "ice": "Being the first MCA lender to accept crypto is a bold move -- you are clearly thinking ahead on payments innovation.",
+    "desc": "Fort Lauderdale-based MCA direct lender (incorporated 2020, operating since ~2018) co-founded by Anthony Marquez and Anthony Carbone. Has funded over $500 million in working capital to small and mid-sized businesses across the US through short and long-term products. BBB A+ rated with 4.9-star reviews. Became the first MCA lender to accept cryptocurrency payments in November 2025 through a partnership with Crypto.com Business Solutions, accepting Bitcoin, Ethereum, USDC, and USDT for payments, renewals, and payoffs. Developing a blockchain roadmap including crypto-collateralized loans, blockchain verification for real-time repayment tracking, and hybrid credit lines blending traditional underwriting with blockchain asset validation. Approximately 28 employees.",
+    "notes": "SELLING ANGLES: $500M+ funded shows serious origination volume -- HyperVerge can automate document processing at that scale. Crypto acceptance innovation shows they value technology-forward solutions and are willing to be first movers. Blockchain roadmap for repayment tracking and hybrid credit lines signals interest in next-gen underwriting technology. BBB A+ rating means they care about compliance and reputation -- HyperVerge's fraud detection supports that. CEO quote: 'If you're in fintech and not staying ahead of the curve, you're probably going to get left in the dust' -- perfect opening for HyperVerge pitch. KEY INSIGHT: Alternative Funding Group positions itself as the innovative edge of MCA -- crypto-first, blockchain roadmap, and willing to adopt new technology. This makes them a natural fit for AI-powered underwriting.",
+    "news": [
+      {
+        "h": "AltFunding Becomes First MCA Lender to Accept Crypto via Crypto.com",
+        "s": "AccessWire / Morningstar, Nov 2025",
+        "d": "Partnered with Crypto.com Business Solutions to accept Bitcoin, Ethereum, USDC, and USDT for payments, renewals, and payoffs -- first MCA lender to do so. Announced blockchain roadmap for crypto-collateralized loans."
+      },
+      {
+        "h": "Alternative Funding Group Crosses $500M in Working Capital Deployed",
+        "s": "Company Milestone, 2024",
+        "d": "Reached over $500 million in total working capital funded to small and mid-sized businesses nationwide through short and long-term products."
+      },
+      {
+        "h": "AltFunding Maintains BBB A+ Rating with 4.9-Star Reviews",
+        "s": "BBB, Ongoing",
+        "d": "BBB accredited since April 2021 with A+ rating. Customer reviews highlight simple process, clear communication, and no hidden fees."
+      }
+    ],
+    "ice": "Anthony, being the first MCA lender to accept crypto through Crypto.com is exactly the kind of innovation that sets AltFunding apart -- and your quote about staying ahead of the curve in fintech resonates with what we're building at HyperVerge.",
     "icebreakers": [
-      "Being the first MCA lender to accept crypto is a bold move -- you are clearly thinking ahead on payments innovation."
+      "Anthony, being the first MCA lender to accept crypto through Crypto.com is exactly the kind of innovation that sets AltFunding apart -- and your quote about staying ahead of the curve in fintech resonates with what we're building at HyperVerge.",
+      "$500M+ funded with a 4.9-star BBB rating shows you can scale without sacrificing quality -- HyperVerge's fraud detection helps maintain that trust at higher volumes.",
+      "The blockchain roadmap for crypto-collateralized loans and hybrid credit lines is forward-thinking -- as you blend traditional and digital underwriting, HyperVerge can automate the document verification side.",
+      "Anthony Carbone's vision that fintech is about making money move faster, smarter, and fairer aligns perfectly with what HyperVerge does for underwriting automation."
     ],
     "tp": [
-      "AI underwriting can complement your crypto-forward approach by automating risk scoring across both traditional and digital payment data."
+      "At $500M+ funded, AltFunding's application volume demands efficient document processing -- HyperVerge delivers 80% faster bank statement analysis and identity verification.",
+      "450+ MCA companies use HyperVerge for automated underwriting -- and as AltFunding explores hybrid credit lines blending traditional and blockchain data, HyperVerge provides the AI foundation for document analysis.",
+      "Maintaining a BBB A+ rating at scale requires consistent fraud detection and compliance -- HyperVerge's identity verification and document authenticity checks help protect that reputation."
     ],
-    "leaders": [],
-    "ask": "Would you be open to a quick demo to see how AI could enhance your underwriting?",
+    "leaders": [
+      {
+        "n": "Anthony Marquez",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO and co-founder of Alternative Funding Group, based in Fort Lauderdale. Built the company from inception to $500M+ in working capital deployed. Outspoken advocate for technology and AI adoption in fintech, stating that companies not staying ahead of the curve 'will get left in the dust.' Led the crypto-forward strategy making AltFunding the first MCA lender to accept cryptocurrency payments.",
+        "hooks": [
+          "*First MCA crypto lender CEO",
+          "Fintech innovation advocate",
+          "$500M+ deployed builder"
+        ],
+        "li": "https://www.linkedin.com/in/anthony-marquez-129616150/"
+      },
+      {
+        "n": "Anthony Carbone",
+        "t": "Co-Founder & Managing Partner",
+        "bg": "Co-founder of Alternative Funding Group, based in Fort Walton Beach, FL. Self-described entrepreneur and crypto enthusiast. Articulates the company vision that fintech should make money move faster, smarter, and fairer for business owners. Drives the blockchain roadmap including crypto-collateralized loans and blockchain verification systems.",
+        "hooks": [
+          "*Crypto enthusiast entrepreneur",
+          "Blockchain roadmap architect",
+          "Fort Walton Beach based"
+        ],
+        "li": null
+      },
+      {
+        "n": "Rodny Fernandez",
+        "t": "Senior Fund Manager",
+        "bg": "Senior Fund Manager at Alternative Funding Group with 5+ years in financial services. Previously held finance management roles at HGreg.com and Car Factory Outlet. Earlier career includes Director of Customer Retention & Sales at Williamson Cadillac and small business ownership at Discount Auto Credit where he managed vehicle acquisition, sales, and lending relationships.",
+        "hooks": [
+          "Auto industry background",
+          "Small business owner",
+          "Fund management expertise"
+        ],
+        "li": "https://www.linkedin.com/in/altfunding/"
+      }
+    ],
+    "ask": "Anthony, with $500M+ funded and the crypto-first strategy showing you're ahead of the curve -- would a 15-minute demo of how HyperVerge automates bank statement analysis and identity verification be worth your time?",
     "source": [
       "eventiq",
-      "tam"
+      "tam",
+      "researched"
     ],
-    "location": "Florida",
+    "location": "Fort Lauderdale, FL",
     "employees": 28,
     "website": "https://www.altfunding.com/",
     "linkedinUrl": "https://www.linkedin.com/company/altfunding/?viewAsMember=true",
@@ -18233,27 +18520,26 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Executive Team",
-        "t": "Leadership (specific names not publicly listed)"
+        "n": "José Armando Guzmán González",
+        "t": "Founder & Director General"
+      },
+      {
+        "n": "Nicolas Palacios",
+        "t": "Former CFO"
       }
     ],
-    "desc": "Monterrey-based fintech with 25+ years in credit and payment processing across Mexico, US, and Hong Kong. Operates multiple platforms including Cuallet (digital banking) and Payllix (global payments/transfers).",
+    "desc": "Mexican fintech and non-bank financial institution with 25+ years of experience, specializing in cross-border payments, remittances, personal/business loans, and digital banking. Operates across the US-Mexico corridor with products including Payllix (payments) and Cuallet (digital wallet). First institution worldwide to use Ripple's xRapid (XRP) for cross-border payments. Over 500 employees, operations in Mexico, US, and Hong Kong. Serves the unbanked and underserved consumer market.",
     "notes": "",
     "news": [
       {
-        "h": "Cuallix Pioneered Ripple xRapid for US-Mexico Payments",
-        "s": "Finance Magnates, 2017",
-        "d": "Cuallix became the first institution worldwide to use Ripple's xRapid solution utilizing XRP as a liquidity tool for cross-border payments from US to Mexico."
+        "h": "Cuallix Becomes First Institution to Use Ripple xRapid for US-Mexico Payments",
+        "s": "Finance Magnates",
+        "d": "Cuallix became the first institution to use Ripple's xRapid solution utilizing XRP for cross-border payments from US to Mexico."
       },
       {
-        "h": "Cuallix Expands Payllix Global Payments Platform",
-        "s": "Company Website, 2024",
-        "d": "Payllix provides international bill payments, money transfers, and mobile top-ups across 100+ carriers."
-      },
-      {
-        "h": "Cuallix Integrates Technology into Traditional Financial Services",
-        "s": "CBInsights, 2024",
-        "d": "The company continues to blend technology with credit and savings products for individuals and businesses."
+        "h": "US-Mexico Remittance Corridor Faces Challenges in 2025",
+        "s": "BBVA Research, 2025",
+        "d": "The US-Mexico remittance market hit $64.7B in 2024 but faces headwinds in 2025 with a 16.2% decline in June."
       }
     ],
     "ice": "Cuallix has built an impressive multi-country fintech operation spanning Mexico, the US, and Hong Kong. How are you managing underwriting consistency across such diverse markets?",
@@ -18268,18 +18554,21 @@
       "With 450+ MCA companies already using HyperVerge, we understand the nuances of alternative lending underwriting that Cuallix handles.",
       "Automating document verification and fraud detection would help Cuallix scale its Cuallet and Payllix platforms more efficiently."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "José Armando Guzmán González", "t": "Founder & Director General", "bg": "President and Director of multiple Cuallix entities including Cuallix Consumer Services, Cuallix Homes, and Cuallix Inc. in Texas. Built Cuallix from a Mexican SOFOM into a multi-country fintech operation spanning Mexico, US, and Hong Kong.", "hooks": ["*Built multi-country fintech spanning Mexico, US, Hong Kong*", "*First company globally to use Ripple XRP for cross-border payments*", "Operates in the $65B US-Mexico remittance corridor"], "li": ""},
+      {"n": "Nicolas Palacios", "t": "Former CFO", "bg": "CFO at Cuallix, now CFO at Grupo Gocasa. BA in Economics from Tecnológico de Monterrey, MBA in Finance from Universidad Regiomontana. Previous roles at Financiera Consulting, Toolcraft, and Metrofinanciera. Expertise in corporate finance, structured finance, securitization.", "hooks": ["*Tecnológico de Monterrey economics graduate*", "MBA from Universidad Regiomontana", "Structured finance specialist"], "li": "https://mx.linkedin.com/in/nicolas-palacios-6242549"}
+    ],
     "ask": "Given Cuallix's cross-border operations, I'd love to show you how HyperVerge can standardize and accelerate your underwriting across all three markets. Can we schedule a 20-minute demo?",
-    "location": "Monterrey",
-    "employees": 62,
-    "website": "http://www.cuallix.com",
+    "location": "Monterrey, Mexico / Houston, TX",
+    "employees": 500,
+    "website": "https://www.cuallix.com",
     "linkedinUrl": "https://www.linkedin.com/company/financiera-cuallix/about/",
     "source": [
       "tam",
       "researched",
       "deep-researched"
     ],
-    "category": "bank"
+    "category": "funder"
   },
   {
     "id": 1052,
@@ -19024,22 +19313,35 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Leadership Team",
-        "t": "Charleston, SC Office"
+        "n": "Andrew Gonzales",
+        "t": "President & Co-Founder"
+      },
+      {
+        "n": "Sean Clifford",
+        "t": "Co-Founder"
+      },
+      {
+        "n": "Mack Johnston",
+        "t": "President"
       }
     ],
-    "desc": "Charleston, SC-based online lending marketplace (est. 2020) that matches small business borrowers with lenders for short-term loans, long-term loans, lines of credit, and merchant cash advances.",
+    "desc": "Online lending marketplace founded in 2021 that uses proprietary technology to instantly match businesses with a network of lending partners. Offers loans from $10K to $3M including short-term loans, long-term loans, lines of credit, and merchant cash advances. Ranked #206 on 2025 Inc. 5000 with 1,862% three-year growth rate. Has helped over 50,000 business owners obtain funding. Approximately 18 employees.",
     "notes": "",
     "news": [
       {
-        "h": "BusinessLoans.com Surpasses 100,000 Business Prequalifications",
-        "s": "Company Profile, 2025",
-        "d": "The marketplace has scaled rapidly since 2020, connecting borrowers with lenders nationwide."
+        "h": "BusinessLoans.com Ranked #206 on 2025 Inc. 5000",
+        "s": "Inc. Magazine, Aug 2025",
+        "d": "Earned a spot in the top 5% of the Inc. 5000 with 1,862% three-year revenue growth rate, top 20 in Financial Services."
       },
       {
-        "h": "BusinessLoans.com Offers All 50 State Coverage",
-        "s": "BBB Profile, 2025",
-        "d": "Online services expanded to cover businesses in every US state."
+        "h": "Business Finance Companies Featured on Inc. 5000 List in 2025",
+        "s": "deBanked, Aug 2025",
+        "d": "BusinessLoans.com highlighted on deBanked's coverage of the 2025 Inc. 5000 list."
+      },
+      {
+        "h": "BusinessLoans.com Surpasses 50,000 Business Owners Funded",
+        "s": "BusinessLoans.com Blog, 2025",
+        "d": "Marketplace platform reached the milestone of helping over 50,000 business owners get funding."
       }
     ],
     "ice": "BusinessLoans.com has prequalified over 100,000 businesses in just a few years -- that's incredible growth. How are your lending partners handling the volume of applications?",
@@ -19054,11 +19356,15 @@
       "Recommending HyperVerge to your lending partners could improve approval speed and the overall borrower experience on your marketplace.",
       "Top MCA funders trust HyperVerge, creating a natural fit with BusinessLoans.com's lender network."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Andrew Gonzales", "t": "President & Co-Founder", "bg": "Seton Hall University graduate. Previously Head of Strategic Partnerships at OnDeck (2020-2021), Director of Strategic Partnerships at OnDeck, with earlier roles starting 2014. Prior career at Main Street Hub and Patch.com.", "hooks": ["*Seton Hall University*", "*Former OnDeck head of strategic partnerships*", "Built from 0 to Inc. 5000 #206 in under 4 years"], "li": "https://www.linkedin.com/in/andrewagonzales/"},
+      {"n": "Sean Clifford", "t": "Co-Founder", "bg": "BS in Business Administration, Finance from College of Charleston. Previously Manager, Small Business at LendingTree. Earlier roles at SnapCap and EnviroMix.", "hooks": ["*College of Charleston finance graduate*", "*Former LendingTree small business manager*", "SnapCap alumni"], "li": "https://www.linkedin.com/in/sean-clifford-483b6538"},
+      {"n": "Mack Johnston", "t": "President", "bg": "College of Charleston graduate. Previously VP Finance & Analytics at Sovereign Co., Director of Financial Operations. Former Manager, Revenue Operations at LendingTree. VP Data & Analytics at SnapCap.", "hooks": ["*Former LendingTree revenue operations manager*", "*Former SnapCap VP Data & Analytics*", "Data-driven financial operations specialist"], "li": "https://www.linkedin.com/in/mackenziejohnston/"}
+    ],
     "ask": "Your lending partners' underwriting speed directly impacts your marketplace conversion. Can we discuss how HyperVerge helps MCA funders in your network close deals faster?",
-    "location": "South Carolina",
-    "employees": 51,
-    "website": "http://businessloans.com",
+    "location": "Hunt Valley, MD",
+    "employees": 18,
+    "website": "https://www.businessloans.com",
     "linkedinUrl": "https://www.linkedin.com/company/businessloans/",
     "source": [
       "tam",
@@ -20243,22 +20549,26 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Leadership Team",
-        "t": "Los Angeles Office"
+        "n": "Peter Shayan Yousefi",
+        "t": "Co-Founder & Managing Partner"
+      },
+      {
+        "n": "Justin S. Yousefi",
+        "t": "Co-Founder & Managing Partner"
       }
     ],
-    "desc": "Los Angeles-based family-owned business financing company (est. 2008) providing working capital and merchant financing up to $1M to SMBs across all industries with fast 24-72 hour funding.",
+    "desc": "Family-owned fintech lending company founded in 2008, specializing in working capital and merchant financing for small and medium-sized businesses. Offers funding from $5,000 to $1,000,000 with 4-24 month terms. Has facilitated over $1 billion in total funding with a 90% approval rate. Recognized as #38 on Fortune's Best Small Workplaces 2025 and #32 on Fortune's Best Small & Medium Workplaces in Financial Services 2024. Approximately 60 employees.",
     "notes": "",
     "news": [
       {
-        "h": "TwinFold Capital Continues 15+ Year Run as LA-Based Business Funder",
-        "s": "Company Profile, 2025",
-        "d": "Family-owned company maintains focus on integrity and client-first approach."
+        "h": "TwinFold Capital Ranked #38 on Fortune Best Small Workplaces 2025",
+        "s": "Fortune / Great Place to Work, 2025",
+        "d": "Earned recognition with 100% of employees saying it is a great place to work."
       },
       {
-        "h": "TwinFold Capital Offers Funding with No Hidden Fees and Bad Credit Accepted",
-        "s": "Company Website, 2025",
-        "d": "Differentiated by accepting clients with challenging credit profiles."
+        "h": "TwinFold Capital Surpasses $1 Billion in Total Funding",
+        "s": "TwinFold Capital, 2024",
+        "d": "Crossed the $1B milestone in total funding facilitated to SMBs since 2008, maintaining a 90% approval rate."
       }
     ],
     "ice": "TwinFold Capital's 15+ years as a family-owned funder in LA shows real staying power. How are you managing underwriting for the high volume of diverse applications?",
@@ -20273,18 +20583,21 @@
       "With 450+ MCA companies served, HyperVerge understands the challenges of underwriting clients with challenging credit profiles.",
       "Automating bank statement analysis would help TwinFold scale without compromising the integrity-first approach that defines your brand."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Peter Shayan Yousefi", "t": "Co-Founder & Managing Partner", "bg": "JD from Loyola Law School, Los Angeles. Previous experience at Merchant One Solutions. Co-founded TwinFold Capital with brother Justin in 2008 as a family-owned business.", "hooks": ["*JD from Loyola Law School Los Angeles*", "*Family-owned business with brother Justin*", "Built $1B+ funding volume since 2008"], "li": "https://www.linkedin.com/in/peter-shayan-yousefi-j-d-6bb48570/"},
+      {"n": "Justin S. Yousefi", "t": "Co-Founder & Managing Partner", "bg": "CPA credential holder. Co-founded TwinFold Capital with brother Peter in 2008. Manages the privately-held family-owned business from Los Angeles.", "hooks": ["*CPA credential*", "*Co-founded family business with brother Peter*", "Over $1B in SMB funding facilitated"], "li": "https://www.linkedin.com/in/justin-s-yousefi-cpa-1551a67"}
+    ],
     "ask": "TwinFold's commitment to fast, honest funding deserves efficient technology. Can we show you how HyperVerge supports family-owned funders like you?",
-    "location": "California",
-    "employees": 37,
-    "website": "https://twinfoldcapital.com",
+    "location": "Los Angeles, CA",
+    "employees": 61,
+    "website": "https://www.twinfoldcapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/twinfold-capital/",
     "source": [
       "tam",
       "researched",
       "deep-researched"
     ],
-    "category": "funder"
+    "category": "iso"
   },
   {
     "id": 1076,
@@ -20378,22 +20691,26 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Leadership Team",
-        "t": "New York Office"
+        "n": "Henry Gross",
+        "t": "Managing Partner"
+      },
+      {
+        "n": "John Lapata II",
+        "t": "Co-Founder & Partner"
       }
     ],
-    "desc": "New York-based alternative lender using proprietary AI technology to provide merchant cash advances, term loans, lines of credit, and equipment financing up to $2M with fast approval.",
+    "desc": "New York-based business funding company founded in 2017, offering merchant cash advances, business term loans, lines of credit, equipment financing, commercial real estate lending, AR financing, and SBA loans. Uses proprietary AI technology for underwriting, approving up to $2M in minutes. Funding up to $25 million available. Approximately 28 employees.",
     "notes": "",
     "news": [
       {
-        "h": "Sutton Funding Deploys Proprietary AI for Lending Decisions",
-        "s": "Company Website, 2025",
-        "d": "AI technology evaluates business potential rather than just credit history for approvals up to $2M."
+        "h": "Sutton Funding Recruits Existing MCA Sales Teams",
+        "s": "DailyFunder, 2023",
+        "d": "Actively recruited existing sales teams from MCA shops to scale operations."
       },
       {
-        "h": "Sutton Funding Expands Multi-Product Lending Platform",
-        "s": "Company Profile, 2025",
-        "d": "Offerings include MCAs, term loans, AR financing, equipment financing, and SBA loans."
+        "h": "CFPB Proposes to Remove MCAs from Section 1071 Rule",
+        "s": "deBanked, Nov 2025",
+        "d": "CFPB reversed course and proposed removing MCAs from its small business lending data collection rule."
       }
     ],
     "ice": "Sutton Funding's proprietary AI for lending decisions is forward-thinking. How are you finding the balance between AI-driven approvals and risk management?",
@@ -20408,11 +20725,14 @@
       "Our platform cuts underwriting from 40 minutes to under 5, which could enhance Sutton's already-fast AI-powered approvals.",
       "Leading funders combine their own technology with HyperVerge's specialized underwriting AI for best results."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Henry Gross", "t": "Managing Partner", "bg": "Management and Finance degree from Hofstra University. Previous roles at LogCall MD, Trust Capital, and Brookville Capital Partners. Creates tailored financial solutions for small business owners in US and Canada.", "hooks": ["*Hofstra University management & finance graduate*", "Previous Trust Capital and Brookville Capital Partners", "AI-powered underwriting approving up to $2M in minutes"], "li": "https://www.linkedin.com/in/henry-gross-830a2076/"},
+      {"n": "John Lapata II", "t": "Co-Founder & Partner", "bg": "Bachelor's from Hofstra University. 11+ years in MCA industry. Now also CEO of Streamline Advance. Previous roles as COO/Co-Founder at Lendfi Corp., Senior Account Manager at iAdvance Now. Personal best: $41.8M funded across 191 deals in 2023.", "hooks": ["*$41.8M funded in 191 deals in single year (2023)*", "*Hofstra University graduate*", "11+ years in MCA industry", "Also CEO of Streamline Advance"], "li": "https://www.linkedin.com/in/john-lapata-ii-343535a3/"}
+    ],
     "ask": "Sutton's AI-first approach makes you a natural fit for HyperVerge's specialized underwriting AI. Can we explore how our technology could enhance your platform?",
-    "location": "New York",
-    "employees": 36,
-    "website": "https://suttonfunding.com/",
+    "location": "New York, NY",
+    "employees": 28,
+    "website": "https://www.suttonfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/sutton-funding/",
     "source": [
       "tam",
@@ -20496,31 +20816,26 @@
     "clear": false,
     "contacts": [
       {
-        "n": "TimePayment Leadership",
-        "t": "Post-Acquisition"
+        "n": "Kyle Paterik",
+        "t": "Founder & CEO"
       },
       {
-        "n": "QuickSpark Team",
-        "t": "Strategic Business Unit"
+        "n": "Eric Crown",
+        "t": "Co-Founder & Investor"
       }
     ],
-    "desc": "Arizona-based equipment financing and working capital company (acquired by TimePayment in 2022) serving businesses of all credit profiles with FICO scores as low as 550.",
+    "desc": "Equipment lease-to-own financing provider founded in 2010, specializing in helping equipment vendors and end-users across 50+ industries secure funding. Works with 3,500+ vendors with 500 deep e-commerce integrations. Acquired by TimePayment in September 2022, now operates as a strategic business unit. ~$15M annual revenue, approximately 51 employees.",
     "notes": "",
     "news": [
       {
-        "h": "TimePayment Announces Acquisition of QuickSpark Financial",
-        "s": "TimePayment.com, 2022",
-        "d": "TimePayment acquired QuickSpark, an e-commerce focused equipment financing company, to operate as a strategic business unit serving 50+ industries."
-      },
-      {
         "h": "TimePayment Acquires QuickSpark Financial",
-        "s": "TimePayment Press, Sep 2022",
-        "d": "30+ QuickSpark employees joined TimePayment to operate a dedicated strategic business unit."
+        "s": "PYMNTS / PRWeb, Sep 2022",
+        "d": "TimePayment acquired QuickSpark Financial including all active leases. Over 30 employees were hired and QuickSpark now operates as a strategic business unit."
       },
       {
-        "h": "QuickSpark Maintains BBB A+ Rating Post-Acquisition",
-        "s": "BBB, 2025",
-        "d": "Continued high rating for equipment financing services in Tempe, Arizona."
+        "h": "QuickSpark Financial Reaches $15M Annual Revenue",
+        "s": "Tracxn, Jul 2025",
+        "d": "Annual revenue reached ~$15M operating with 51 employees as a strategic business unit of TimePayment."
       }
     ],
     "ice": "QuickSpark's integration into TimePayment creates interesting scale opportunities. How are you managing underwriting for equipment financing across all credit profiles?",
@@ -20535,10 +20850,13 @@
       "With 450+ lending companies served, HyperVerge has proven technology for the equipment financing risk assessment QuickSpark performs.",
       "Automating document verification for low-FICO applicants would help QuickSpark scale within the TimePayment ecosystem."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Kyle Paterik", "t": "Founder & CEO", "bg": "Prior to QuickSpark, served as Strategic Consultant in Business Transformation Office at UCLA. Previously Investment Advisor at The Elite Financial Network, VP at Dow & Associates, Financial Consultant at Thrivent.", "hooks": ["*Former UCLA Business Transformation Office strategic consultant*", "*Company acquired by TimePayment in 2022*", "Built vendor network of 3,500+ with 500 e-commerce integrations"], "li": "https://www.linkedin.com/in/kyle-paterik-0a82247/"},
+      {"n": "Eric Crown", "t": "Co-Founder & Investor", "bg": "Co-founded Insight Enterprises (Nasdaq: NSIT), a Fortune 500 company, serving as co-CEO. Retired to Chairman Emeritus in 2009. Founded AZ Crown Investments in 2011 as institutional investor in QuickSpark.", "hooks": ["*Co-founded Fortune 500 Insight Enterprises (Nasdaq: NSIT)*", "*Former co-CEO of publicly traded tech company*", "AZ Crown family office portfolio"], "li": "https://www.linkedin.com/in/eric-crown-93a64b4/"}
+    ],
     "ask": "QuickSpark's challenging credit profiles require thorough but fast underwriting. Can we show you how HyperVerge automates that process? Quick demo?",
-    "location": "Arizona",
-    "employees": 34,
+    "location": "Tempe, AZ",
+    "employees": 51,
     "website": "https://quickspark.com",
     "linkedinUrl": "https://www.linkedin.com/company/quickspark-financial/",
     "source": [
@@ -23092,19 +23410,22 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "Irvine-based direct MCA lender and working capital provider for small and medium businesses. Founded in 2014, offering $5K-$200K in merchant cash advances, equipment financing, and business loans with 24-hour funding.",
+    "contacts": [
+      {"n": "Chris Lewis", "t": "Managing Partner"},
+      {"n": "Farid Karimi", "t": "Managing Partner"}
+    ],
+    "desc": "Zip Capital Group is a direct lender and MCA provider based in Irvine, CA, founded in 2013. Provides working capital financing, merchant cash advances, equipment financing, lines of credit (up to $250K), and traditional business loans to SMBs across 33+ industries. Funding ranges from $5,000 to $2,000,000. Estimated ~$6.5M revenue with approximately 24 employees. BBB accredited.",
     "notes": "",
     "news": [
       {
-        "h": "MCA Industry Faces New State Regulations in 2025",
-        "s": "Onyx IQ, 2025",
-        "d": "North Dakota and Texas passed new laws regulating merchant cash advances, impacting MCA providers including Zip Capital Group's market segment."
+        "h": "Zip Capital Group Maintains Steady Growth in SMB Lending",
+        "s": "ZoomInfo/Owler, 2025",
+        "d": "Continues direct lending with ~$6.5M annual revenue, serving SMBs across 33+ industries from Irvine HQ."
       },
       {
-        "h": "Zip Capital Group Continues Growth in Southern California",
-        "s": "Industry Data, 2024",
-        "d": "Zip Capital Group has grown to $6.5M in revenue with 24 employees, serving small businesses nationwide from its Irvine headquarters."
+        "h": "Zip Capital Group Active in Greater Irvine Chamber",
+        "s": "Greater Irvine Chamber of Commerce, 2024",
+        "d": "Maintains active membership in the Greater Irvine Chamber."
       }
     ],
     "ice": "Building a direct lending operation in Irvine's competitive fintech market is impressive -- how are you thinking about technology to differentiate your underwriting speed?",
@@ -23119,10 +23440,13 @@
       "As a direct MCA lender, faster underwriting means more funded deals -- HyperVerge automates the bank statement analysis and document verification process.",
       "HyperVerge serves 450+ MCA companies and can help Zip Capital Group compete with larger funders through enterprise-grade AI technology."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Chris Lewis", "t": "Managing Partner", "bg": "Co-Managing Partner of Zip Capital Group since its founding. Oversees business operations and lending strategy for the Irvine-based direct lender.", "hooks": ["*Co-founded direct lending shop in Orange County*", "Irvine/OC business community ties", "SMB funding across 33+ industries"], "li": ""},
+      {"n": "Farid Karimi", "t": "Managing Partner", "bg": "Co-Managing Partner of Zip Capital Group. Background in accounting and finance with experience in microfinancing organizations and telecommunications industries.", "hooks": ["*Accounting/microfinancing background before pivoting to direct lending*", "Co-leads Orange County MCA operation"], "li": "https://www.linkedin.com/in/farid-karimi-962852241/"}
+    ],
     "ask": "Would a quick demo be worthwhile to see how HyperVerge can help Zip Capital process more MCA deals per day with AI-powered underwriting?",
-    "location": "California",
-    "employees": 22,
+    "location": "Irvine, CA",
+    "employees": 24,
     "website": "https://zipcapitalgroup.com",
     "linkedinUrl": "https://www.linkedin.com/company/zip-capital-group",
     "source": [
@@ -33852,10 +34176,29 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [],
-    "desc": "New Jersey-based merchant cash advance company operating in the alternative business financing space. Provides MCA and working capital solutions to small and mid-sized businesses across the United States.",
+    "contacts": [
+      {"n": "Sol Lax", "t": "CEO (Pearl Capital / Revenued)"},
+      {"n": "John Diamond", "t": "President (Revenued)"}
+    ],
+    "desc": "Pearl Alpha Funding, LLC is one of several legal funding entities under the Pearl Capital Business Funding ecosystem (Alpha, Beta, Gamma, Delta). Incorporated January 2016 in New York. Located at 100 William Street, NYC and 525 Washington Blvd, Jersey City, NJ. Part of the Sol Lax / Pearl Capital / Revenued ecosystem. Pearl Capital was founded in 2012 and acquired by Capital Z Partners in 2015. Has provided 23,000+ MCA financings, processed $1.75B in PPP loans during COVID. ~60 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Pearl Capital Resumes MCA After Processing $1.75B in PPP Loans",
+        "s": "deBanked / PR Newswire, November 2020",
+        "d": "Resumed MCA operations after processing $1.75B in SBA PPP loans."
+      },
+      {
+        "h": "Pearl Beta Funding Court Decision Validates MCA Structure",
+        "s": "deBanked, March 2018",
+        "d": "Appellate court ruled Pearl Beta's MCA was not usurious — landmark decision validating MCA true-up provisions."
+      },
+      {
+        "h": "Pearl Capital Secures $20 Million Financing Deal",
+        "s": "deBanked, June 2016",
+        "d": "Secured $20M facility following Capital Z Partners acquisition."
+      }
+    ],
     "ice": "The MCA space in New Jersey is competitive -- how are you differentiating Pearl Alpha Funding's underwriting and service model?",
     "icebreakers": [
       "The MCA space in New Jersey is competitive -- how are you differentiating Pearl Alpha Funding's underwriting and service model?",
@@ -33868,11 +34211,14 @@
       "With 57 employees, automated document verification and bank statement analysis can significantly reduce manual workload and improve consistency.",
       "HyperVerge serves 450+ MCA companies  -- we understand the unique needs of MCA funders in the Northeast market."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Sol Lax", "t": "CEO (Pearl Capital / Revenued)", "bg": "Solomon Lax served as COO then CEO of Pearl Capital since 2015, led its acquisition by Capital Z Partners. Now CEO of Revenued. 15+ years as venture capitalist and investment banker. Co-founding partner of Cato Capital LLC. Former CFO of the largest single-family home property owner in Maryland.", "hooks": ["*Former CFO of Maryland's largest single-family home property owner*", "*Led Pearl Capital's acquisition by PE firm Capital Z Partners in 2015*", "Processed $1.75B in PPP loans during COVID pivot"], "li": "https://www.linkedin.com/in/sol-lax-bb190"},
+      {"n": "John Diamond", "t": "President (Revenued)", "bg": "Co-Founder and President of Revenued since May 2019. Previously SVP Capital Markets at Pearl Capital. Investment Banking Analyst at FBR Capital Markets. BS in Finance from William & Mary.", "hooks": ["*William & Mary finance grad*", "*Built credit infrastructure at Pearl Capital before co-founding Revenued*", "Specialty finance investment banking background"], "li": "https://www.linkedin.com/in/john-diamond-2a1a9480"}
+    ],
     "ask": "With 57 employees in the MCA space, would a quick demo be worthwhile to see how HyperVerge can help automate your underwriting process?",
-    "location": "New Jersey",
-    "employees": 57,
-    "website": "https://No official operational website for PEARL ALPHA FUNDING, LLC was found.",
+    "location": "New York, NY / Jersey City, NJ",
+    "employees": 60,
+    "website": "https://pearlcapital.com",
     "source": [
       "tam",
       "researched"
@@ -34418,18 +34764,26 @@
     "booth": false,
     "clear": false,
     "contacts": [
-      {
-        "n": "Revenued Leadership",
-        "t": "Parent Company"
-      }
+      {"n": "Sol Lax", "t": "CEO (Revenued)"},
+      {"n": "John Diamond", "t": "President (Revenued)"}
     ],
-    "desc": "Former MCA provider acquired by Revenued in July 2020, now operating as Horizon Business Funding. Originally specialized in merchant cash advances for small businesses with a 5-star service reputation.",
+    "desc": "Sky Bridge Business Funding, LLC was founded in 2017 as a direct funder specializing in alternative lending. Located at 525 Washington Blvd, Jersey City, NJ. Acquired by Revenued (CEO Sol Lax) in July 2020, now operates as Horizon Business Funding. Has served 10,000+ small businesses and originated over $360 million in funding. Funding $5,000-$500,000 with next-day capability. Part of the Pearl Capital / Revenued ecosystem.",
     "notes": "",
     "news": [
       {
-        "h": "Revenued Acquires Sky Bridge Business Funding",
-        "s": "PR Newswire, July 2020",
-        "d": "Fintech company Revenued announced the acquisition of Sky Bridge Business Funding to expand its future business financing solutions."
+        "h": "Revenued Announces Acquisition of Sky Bridge Business Funding",
+        "s": "PR Newswire / AiThority, July 2020",
+        "d": "Revenued acquired Sky Bridge to expand direct financial solutions. Sky Bridge had originated $360M+ to 10,000+ businesses."
+      },
+      {
+        "h": "Sky Bridge Rebrands to Horizon Business Funding",
+        "s": "FundingHero / LendStart, 2023",
+        "d": "Post-acquisition, Sky Bridge now operates as Horizon Business Funding under the Revenued umbrella."
+      },
+      {
+        "h": "Jersey City Fintech Buys N.Y. Financing Company",
+        "s": "ROI-NJ, July 2020",
+        "d": "Jersey City-based Revenued's acquisition highlighted consolidation in alternative lending."
       }
     ],
     "ice": "I understand Sky Bridge was acquired by Revenued back in 2020 and rebranded. How has the integration been going, and are you still scaling the MCA side of the business?",
@@ -34444,11 +34798,14 @@
       "HyperVerge serves 450+ MCA companies and can help maintain the 5-star service reputation by cutting underwriting time from 40 minutes to under 5 minutes.",
       "Leading funders use HyperVerge to handle growing deal volume without proportionally scaling headcount -- ideal for post-acquisition growth."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Sol Lax", "t": "CEO (Revenued — acquirer)", "bg": "CEO of Revenued which acquired Sky Bridge in July 2020. Previously CEO of Pearl Capital. 15+ years as venture capitalist and investment banker. Co-founded Cato Capital LLC.", "hooks": ["*Acquired Sky Bridge through Revenued in 2020*", "*Former CFO of Maryland's largest single-family home property owner*", "Processed $1.75B in PPP loans at Pearl Capital"], "li": "https://www.linkedin.com/in/sol-lax-bb190"},
+      {"n": "John Diamond", "t": "President (Revenued)", "bg": "Co-Founder and President of Revenued. Previously SVP Capital Markets and Chief Credit Officer at Pearl Capital. BS Finance from William & Mary.", "hooks": ["*William & Mary finance grad*", "*Chief Credit Officer at Pearl Capital*", "Manages syndication for $360M+ origination platform"], "li": "https://www.linkedin.com/in/john-diamond-2a1a9480"}
+    ],
     "ask": "Would the team at Horizon/Revenued be interested in exploring how AI underwriting could help scale deal volume while maintaining the service quality Sky Bridge was known for?",
-    "location": "New Jersey",
-    "employees": 36,
-    "website": "https://SKY BRIDGE BUSINESS FUNDING, LLC was acquired by Revenued in 2020. Its services are likely integrated into Revenued's offerings or a rebranded entity such as Horizon Business Funding.",
+    "location": "Jersey City, NJ",
+    "employees": 100,
+    "website": "https://horizonbusinessfunding.com",
     "source": [
       "tam",
       "researched",
@@ -35695,32 +36052,27 @@
     "booth": false,
     "clear": false,
     "contacts": [
-      {
-        "n": "R.R.",
-        "t": "CEO"
-      },
-      {
-        "n": "VP of Sales",
-        "t": "Senior Management"
-      }
+      {"n": "Bo Kelly", "t": "Co-President"},
+      {"n": "Matt Johnson", "t": "Co-President"},
+      {"n": "Chip Wiley", "t": "SVP, US Operations"}
     ],
-    "desc": "California-based factoring company since 1989 headquartered in Palos Verdes, specializing in non-recourse freight bill factoring for trucking and transportation, plus staffing, oilfield, telecom, and general business industries.",
+    "desc": "J D Factors is a non-recourse invoice factoring company headquartered in Palos Verdes, CA with offices across the US (Chicago, Short Hills NJ) and Canada (Calgary, Montreal, Toronto). Founded in 2000 by Steve Johnson with Joyce Danis. Steve Johnson passed away in September 2020; now led by co-presidents Bo Kelly and Matt Johnson (Steve's son). ~102 employees. Provides non-recourse factoring in the $10K-$5M range for transportation, manufacturing, and service industries. In 2024, acquired three factoring portfolios within four months. BBB accredited since 2019.",
     "notes": "",
     "news": [
       {
-        "h": "JD Factors Provides $350K Facility to Ontario Transport Co.",
-        "s": "IFA Commercial Factor, June 2025",
-        "d": "Part of a series of factoring deals including $750K in Alberta, $500K in Missouri, $250K in New Jersey, and facilities across multiple states and Canadian provinces."
+        "h": "J D Factors Acquires Three Factoring Portfolios in Four Months",
+        "s": "IFA Commercial Factor, 2024",
+        "d": "Transformative year — acquired portfolios from a competitor, a factor in CCAA proceedings, and a factor exiting the industry."
       },
       {
-        "h": "JD Factors Provided $8.6M in New Factoring Facilities",
-        "s": "IFA Commercial Factor",
-        "d": "JD Factors announced $8,625,000 in new factoring facilities across multiple business sectors."
+        "h": "J D Factors Provides $18.3M in New Facilities in November",
+        "s": "IFA Commercial Factor, November 2024",
+        "d": "Provided $18.3M in new factoring facilities to 45 new clients, strongest month of the year."
       },
       {
-        "h": "JD Factors Celebrates 30 Years of Factoring in Canada",
-        "s": "Desi Trucking",
-        "d": "The company celebrated three decades of providing factoring services to Canadian trucking businesses."
+        "h": "J D Factors Provides $12.56M in Facilities to 41 Clients",
+        "s": "Secured Finance Network, May 2025",
+        "d": "Continued strong growth with $12.56M in new factoring facilities in April 2025."
       }
     ],
     "ice": "JD Factors' 35+ year track record in transportation factoring is impressive, and I saw the $8.6M in new facilities announcement. How are you managing underwriting as you scale across industries?",
@@ -35735,10 +36087,15 @@
       "With 450+ lending companies using HyperVerge, we understand factoring-specific underwriting and can help JD Factors scale across transportation, staffing, and oilfield sectors.",
       "As JD Factors expands its new factoring facilities, HyperVerge can automate the onboarding and credit review process for new clients across industries."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Bo Kelly", "t": "Co-President", "bg": "Co-President of J D Factors alongside Matt Johnson. Based in Rancho Palos Verdes, CA and Ellijay, GA. Longtime business partner of founder Steve Johnson.", "hooks": ["*Co-leads company after founder Steve Johnson's passing in 2020*", "Continuity leadership through transition"], "li": "https://www.linkedin.com/in/bo-kelly-110a392b"},
+      {"n": "Matt Johnson", "t": "Co-President", "bg": "Co-President of J D Factors. Son of founder Steve Johnson. Rose through the ranks to become co-president alongside Bo Kelly after his father's passing in 2020.", "hooks": ["*Second-generation leader — son of founder Steve Johnson*", "*Promoted to co-president months before father's passing*", "Family legacy spanning three generations (grandfather John Danis founded Riviera Finance)"], "li": "https://www.linkedin.com/in/mj310/"},
+      {"n": "Chip Wiley", "t": "SVP, US Operations", "bg": "SVP of US Operations at J D Factors since 2002. Previously Director of Operations at Riviera Finance (1986-2002). 38+ year career in factoring.", "hooks": ["*38+ year factoring career — started at Riviera Finance in 1986*", "*Recruited by founder Steve Johnson after non-compete expired*"], "li": ""},
+      {"n": "Tina Capobianco", "t": "SVP, Canada Operations", "bg": "SVP of Canada Operations. University of Toronto graduate. Oversees Calgary, Montreal, and Toronto offices.", "hooks": ["*University of Toronto grad*", "Manages three Canadian offices"], "li": "https://www.linkedin.com/in/tina-capobianco-55b8a39/"}
+    ],
     "ask": "Would JD Factors' leadership be open to seeing how AI-powered underwriting could accelerate your credit assessment process across all your industry verticals?",
-    "location": "California",
-    "employees": 108,
+    "location": "Palos Verdes, CA",
+    "employees": 102,
     "website": "https://www.jdfactors.com",
     "source": [
       "tam",
@@ -36932,18 +37289,20 @@
     "booth": false,
     "clear": false,
     "contacts": [
-      {
-        "n": "Ace Partners Team",
-        "t": "Leadership"
-      }
+      {"n": "Hanoch Guttman", "t": "Founder / Manager"}
     ],
-    "desc": "Georgia-based business funding provider operating as Ace Partners, offering merchant cash advances, lines of credit, equipment financing, and invoice factoring. Approves businesses for 100-150% of gross monthly income.",
+    "desc": "ACE Funding Source is a direct MCA lender and business funding company founded in December 2014. Registered in Florida by Hanoch Guttman. Offices in New York (295 Madison Ave, 12th Floor) and Los Angeles (640 S San Vicente Blvd). Claims 150,000+ contracts closed with 95% renewal rate. Offers MCAs, equipment financing, AR financing, working capital, and company acquisition financing. Also operates Fast Business Financial broker shop.",
     "notes": "",
     "news": [
       {
-        "h": "Ace Partners Expands Multi-Position Buyouts with Zero Fees",
-        "s": "DailyFunder",
-        "d": "Ace Partners promoted its multi-position buyout program with zero fees for ISO partners."
+        "h": "RICO Lawsuit Filed Against Ace Funding Source",
+        "s": "Justia, July 2024",
+        "d": "Halajian v. Ace Funding Source filed in US District Court for Western District of NY alleging RICO violations."
+      },
+      {
+        "h": "MCA Industry Court Win Involving Ace Funding Source",
+        "s": "deBanked, May 2018",
+        "d": "Court ruled the MCA agreements were not usurious in Wilkinson Floor Covering v. Cap Call — positive MCA precedent."
       }
     ],
     "ice": "Ace Partners' multi-position buyout program with zero ISO fees is a smart way to grow deal flow. How are you managing the underwriting complexity of stacked positions?",
@@ -36958,11 +37317,13 @@
       "With 450+ MCA companies using HyperVerge (), we understand stacked-position risk assessment and can help Ace scale safely.",
       "As Ace's zero-fee ISO model drives more deal flow, HyperVerge can automate the initial screening and revenue verification process."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Hanoch Guttman", "t": "Founder / Manager", "bg": "Registered agent and manager of ACE Funding Source LLC. Filed the company in Florida in May 2018. Also filed the ACE FUNDING SOURCE trademark with USPTO. Based in Jericho, NY.", "hooks": ["Based in Jericho, NY — Long Island business community", "Dual-coast operation (NYC + LA offices)", "Filed ACE Funding Source trademark with USPTO"], "li": ""}
+    ],
     "ask": "Would Ace Partners' team be open to seeing how AI underwriting could speed up your multi-position buyout evaluations while maintaining risk standards?",
-    "location": "Georgia",
-    "employees": 55,
-    "website": "https://acefundingsource.com, acepartners.net",
+    "location": "New York, NY / Los Angeles, CA",
+    "employees": 30,
+    "website": "https://acefundingllc.com",
     "source": [
       "tam",
       "researched",
@@ -36980,17 +37341,30 @@
     "clear": false,
     "contacts": [
       {
-        "n": "National Capital Team",
-        "t": "Leadership"
+        "n": "Peter Francis",
+        "t": "Managing Partner"
+      },
+      {
+        "n": "Patrick Harman",
+        "t": "Partner"
+      },
+      {
+        "n": "Noah Silverman",
+        "t": "Partner"
       }
     ],
-    "desc": "Business financing marketplace helping SMBs access multiple lending options through a single application with a 90% approval rate. Offers term loans, SBA loans, lines of credit, MCA, equipment financing, and invoice factoring.",
+    "desc": "National Capital LLC is a Philadelphia-based ISO/broker specializing in small business financing. Founded as a partnership with ReadySetFunds in 2019, the firm serves as an intermediary connecting small business owners with capital solutions including merchant cash advances, unsecured business loans, secured loans, and lines of credit. MCA funding available within 24 hours. Operating from 1700 Market Street in Philadelphia.",
     "notes": "",
     "news": [
       {
-        "h": "National Capital Achieves 90% Approval Rate for Business Funding",
-        "s": "Company reports",
-        "d": "National Capital highlights its 90% approval rate for businesses regardless of credit, revenue, or time in business."
+        "h": "MCA Industry Faces Regulatory Scrutiny in 2025",
+        "s": "deBanked, 2025",
+        "d": "Increased regulatory attention as New York disclosure laws and state-level enforcement actions reshape the alternative lending landscape."
+      },
+      {
+        "h": "Small Business Alternative Lending Market Continues Growth",
+        "s": "Industry Reports, 2025",
+        "d": "MCA market reached $19.65 billion in 2025 and projected to grow to $26.87 billion by 2030."
       }
     ],
     "ice": "A 90% approval rate across diverse business profiles is impressive. How is National Capital managing underwriting efficiency across all those lending partners?",
@@ -37005,11 +37379,15 @@
       "With 450+ MCA and lending companies using HyperVerge, we can help National Capital optimize the single-application model with automated risk scoring.",
       "As National Capital's marketplace handles diverse deal types (SBA, MCA, equipment), HyperVerge's AI adapts underwriting intensity based on product and risk profile."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Peter Francis", "t": "Managing Partner", "bg": "Managing Partner at National Capital LLC and ReadySetFunds. Previously Director of Sales at Qualify My Business. Expertise in relationship management, strategic partnerships, and mezzanine financing. BA in Political Science from Rutgers University.", "hooks": ["Mezzanine financing expert", "*Structured finance connector*", "Alt-finance veteran"], "li": "https://www.linkedin.com/in/peter-francis-56495916/"},
+      {"n": "Patrick Harman", "t": "Partner", "bg": "Partner at National Capital LLC since 2019. Over five years of experience in small business lending. Previously worked at a small debt fund in Manhattan focused on small business capital. Has helped thousands of business owners obtain growth capital.", "hooks": ["*Manhattan debt fund alum*", "5+ years SMB lending", "Thousands funded"], "li": ""},
+      {"n": "Noah Silverman", "t": "Partner", "bg": "Partner at National Capital LLC. Also associated with Go Pro Capital and Pro Source Lending. Over a decade in lending. Holds a JD with applied knowledge of regulatory frameworks. Previously Co-Owner at Green Star Capital. Specializes in bridge capital, equipment financing, SBA, MCA, ABL, LBO, and real estate lending.", "hooks": ["*JD with regulatory expertise*", "Decade in lending", "Multi-product specialist"], "li": "https://www.linkedin.com/in/noah-silverman-76059798/"}
+    ],
     "ask": "Would National Capital's team be interested in seeing how AI-powered pre-screening could help achieve even faster approvals across your lending marketplace?",
-    "location": "District of Columbia",
+    "location": "Philadelphia, PA",
     "employees": 82,
-    "website": "https://nationalcapital.com",
+    "website": "https://nationalcapitalllc.com",
     "source": [
       "tam",
       "researched"
@@ -37918,17 +38296,30 @@
     "clear": false,
     "contacts": [
       {
-        "n": "24 Capital Team",
-        "t": "Leadership"
+        "n": "Mark Allayev",
+        "t": "Founder & Former CEO"
+      },
+      {
+        "n": "Nishant M",
+        "t": "CEO"
+      },
+      {
+        "n": "Anna Levy",
+        "t": "Director of ISO Relations & Business Development"
       }
     ],
-    "desc": "Miami-based direct funder in the fintech space providing business loans, SBA loans, equipment financing, lines of credit, and revenue-based financing. Known for 24-hour funding speed and working with businesses regardless of credit history.",
+    "desc": "24 Capital is a Miami-based direct funder in the fintech space, founded in 2015. Provides merchant cash advances, short-term and long-term business financing to small and moderate-sized businesses across retail, restaurant, and services. Funding in as fast as 24 hours. Short-term repayment up to one year, long-term one to five years. No hidden fees. Also listed in Long Island City, New York per Dun & Bradstreet.",
     "notes": "",
     "news": [
       {
-        "h": "24 Capital Evolves as Direct Funder in FinTech Space",
-        "s": "24capital.com",
-        "d": "24 Capital positions itself as a rapidly evolving direct funder providing alternatives to traditional business financing."
+        "h": "Founder Mark Allayev's Funders App Hits $500M in Originations",
+        "s": "PR Newswire, May 2023",
+        "d": "24 Capital founder's subsequent venture achieved $500M in originations, providing services to small funders including underwriting and debt collection."
+      },
+      {
+        "h": "Miami Fintech Ecosystem Draws Record Funding",
+        "s": "eMerge Insights, 2025",
+        "d": "South Florida fintech companies drew $691 million across 38 deals in H1 2025."
       }
     ],
     "ice": "24 Capital's 24-hour funding promise is a strong value proposition. How are you managing underwriting speed to consistently deliver on that timeline?",
@@ -37943,11 +38334,16 @@
       "With 450+ MCA companies using HyperVerge (), we can help 24 Capital serve more businesses faster regardless of credit profile.",
       "As 24 Capital evolves its fintech platform, HyperVerge's AI underwriting API can integrate directly into your existing workflow."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Mark Allayev", "t": "Founder & Former CEO", "bg": "Founded 24 Capital in 2015, served as CEO 2016-2023. Serial entrepreneur. Born in Soviet-era Tajikistan, worked in family businesses across Russia, Ukraine, Germany, Japan, and the US. MBA from Moscow State Institute of International Relations (MGIMO). Now CEO of Funders App, which reached $500M in originations by 2023.", "hooks": ["*Serial fintech entrepreneur*", "$500M originations at Funders App", "MGIMO MBA", "Global business experience"], "li": "https://www.linkedin.com/in/mark-allayev-921b2010b/"},
+      {"n": "Nishant M", "t": "CEO", "bg": "Current CEO of 24 Capital. Previously VP at IndusInd Bank and Branch Manager at HDFC Bank. BSc Honours and MBA from Symbiosis Institute. Transitioned from traditional banking into fintech and alternative lending.", "hooks": ["*Banking-to-fintech transition*", "VP at IndusInd Bank", "Symbiosis MBA"], "li": ""},
+      {"n": "Douglas Sanderson", "t": "Chief Financial Officer", "bg": "CFO at 24 Capital overseeing financial operations, reporting, and capital management for the firm's direct funding and MCA operations.", "hooks": ["CFO oversight", "Fintech finance leader"], "li": ""},
+      {"n": "Anna Levy", "t": "Director of ISO Relations & Business Development", "bg": "Leads ISO partnership development and business growth at 24 Capital. Manages relationships with ISOs that refer merchant deals. Key role in expanding the firm's broker network and deal pipeline.", "hooks": ["*ISO relations leader*", "Broker network builder"], "li": ""}
+    ],
     "ask": "Would 24 Capital's team be open to a demo showing how AI underwriting could guarantee your 24-hour funding speed even as volume scales?",
-    "location": "Florida",
+    "location": "Miami, FL",
     "employees": 28,
-    "website": "https://www.24capital.com/",
+    "website": "https://www.24capital.com",
     "source": [
       "tam",
       "researched",
@@ -39826,15 +40222,21 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [
+    "contacts": [],
+    "desc": "Eagle Capital is a New York-based funder in the merchant cash advance and alternative business financing space. Operates as a direct funder providing working capital solutions to small businesses. Not to be confused with Eagle Capital Management LLC ($30B+ NYC asset manager), Eagle Capital Corporation (Mississippi invoice factoring), or Eagle Funding Group. Approximately 45 employees.",
+    "notes": "",
+    "news": [
       {
-        "n": "Management Team",
-        "t": "Leadership"
+        "h": "New York MCA Industry Faces Annual Reporting Requirements",
+        "s": "deBanked, April 2025",
+        "d": "NY DFS reminded MCA companies annual reports are due under the commercial financing disclosure law."
+      },
+      {
+        "h": "MCA Industry Sees Growing Legal Complexities",
+        "s": "deBanked, January 2025",
+        "d": "Recent court cases reveal increasing legal scrutiny of revenue-based financing structures."
       }
     ],
-    "desc": "MCA and business funding company operating under the Quick Capital Fund brand in New York, providing merchant cash advances and working capital to small businesses.",
-    "notes": "",
-    "news": [],
     "ice": "As an MCA funder in the competitive New York market, how are you differentiating your underwriting and approval process to stay ahead?",
     "icebreakers": [
       "The MCA space in New York is incredibly competitive -- what's your biggest challenge in processing deal flow efficiently?",
@@ -39848,10 +40250,10 @@
       "In a competitive market like New York, faster underwriting means winning more deals from brokers and ISOs who value quick funding turnarounds."
     ],
     "leaders": [],
-    "ask": "Would you be open to a quick demo showing how HyperVerge can help Quick Capital Fund process MCA applications in under 5 minutes instead of 40?",
-    "location": "New York",
+    "ask": "Would you be open to a quick demo showing how HyperVerge can help Eagle Capital process MCA applications in under 5 minutes instead of 40?",
+    "location": "New York, NY",
     "employees": 45,
-    "website": "https://quick-capital.fund",
+    "website": "",
     "source": [
       "tam",
       "researched"
@@ -40613,19 +41015,19 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [
-      {
-        "n": "Management Team",
-        "t": "Leadership"
-      }
-    ],
-    "desc": "Florida-based MCA provider offering merchant cash advances and business funding up to $1 million. Specializes in same-day approvals with no credit requirement, helping merchants across all industries.",
+    "contacts": [],
+    "desc": "Fast Cash Funding is a Miami-based direct funder founded in 2013, specializing in merchant cash advances and business loans. Headquartered at 201 S Biscayne Blvd, 28th Floor (Miami Citigroup Center). Provides funding up to $1 million regardless of industry or credit history. Key products include Cash Flow Credit Program (yearly funding disbursed monthly for payroll/inventory) and traditional MCAs based on future credit card sales. Reports 80% repeat borrower rate.",
     "notes": "",
     "news": [
       {
-        "h": "Fast Cash Funding Offers Same-Day MCA Approvals",
-        "s": "Company Website, 2025",
-        "d": "Fast Cash Funding continues to provide same-day approvals for merchant cash advances up to $1 million with no credit requirements."
+        "h": "NPR Reports on MCA Industry Growth Amid Tariff Pressures",
+        "s": "NPR, February 2026",
+        "d": "NPR reported a lending industry helping small businesses pay tariffs at high cost, highlighting MCA funders in the Florida market."
+      },
+      {
+        "h": "MCA Funders Face Increasing Bankruptcy Exposure",
+        "s": "Bloomberg Law, 2025",
+        "d": "Over 230 bankruptcy filings in 2025 cited MCA debt, raising industry-wide risk awareness."
       }
     ],
     "ice": "Fast Cash Funding's same-day approval process is a strong value proposition -- how is your team managing the underwriting workload while maintaining that speed?",
@@ -40642,9 +41044,9 @@
     ],
     "leaders": [],
     "ask": "Would you be open to seeing how HyperVerge can help Fast Cash Funding maintain same-day approvals while processing significantly more deals?",
-    "location": "Florida",
+    "location": "Miami, FL",
     "employees": 46,
-    "website": "https://fastcashfunding.com",
+    "website": "https://www.fastcashfunding.com",
     "source": [
       "tam",
       "researched"
@@ -41510,13 +41912,37 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Management Team",
-        "t": "Leadership"
+        "n": "Christopher Lee",
+        "t": "Co-Founder & Managing Partner"
+      },
+      {
+        "n": "Bryan Vahlberg",
+        "t": "Co-Founder & Managing Partner"
+      },
+      {
+        "n": "Evan Grace",
+        "t": "Co-Founder & Managing Partner"
       }
     ],
-    "desc": "Technology-driven business lender providing merchant cash advances, small business loans, and cash flow loans. Offers 24-hour funding decisions and positions itself as a leader in the cash advance industry.",
+    "desc": "Infinity Capital Partners is an Oklahoma City-based middle-market investment bank founded in 2016. Provides M&A advisory, capital raising, due diligence, and financial modeling for private companies and financial sponsors across manufacturing, distribution, healthcare, transportation, environmental services, and energy. Surpassed $1.5 billion in total transaction value through 38+ completed deals. Notable: advised on sale of Dippin' Dots to J&J Snack Foods for $222M in 2022. Over $800M of closed transaction capital sourced from out-of-state and invested in Oklahoma businesses, impacting 2,100+ jobs. Expanded in 2025 with Tulsa office and six new hires. Also operates Infinity Private Wealth and Infinity Funds divisions.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Infinity Capital Surpasses $1.5 Billion in Completed Transactions",
+        "s": "Infinity Capital Partners, January 2026",
+        "d": "Oklahoma City-based investment bank surpassed $1.5B in total transaction value since 2016."
+      },
+      {
+        "h": "Firm Opens Second Office in Tulsa, Expands Team",
+        "s": "Infinity Capital Partners, 2025",
+        "d": "Opened second office in Tulsa and hired six new professionals."
+      },
+      {
+        "h": "Infinity Capital Publishes 2026 Market Outlook",
+        "s": "Infinity Capital Partners, January 2026",
+        "d": "Published Infinity Private Wealth 2026 Outlook expressing optimism."
+      }
+    ],
     "ice": "As a technology-driven lender focused on 24-hour decisions, how is Infinity Capital leveraging AI to maintain that speed as deal volume grows?",
     "icebreakers": [
       "Being technology-driven is a great differentiator in the MCA space -- what technology are you currently using for underwriting?",
@@ -41529,16 +41955,20 @@
       "450+ MCA companies already use HyperVerge, making it the industry's leading AI underwriting platform for cash advance providers.",
       "Maintain your 24-hour decision promise even as deal volume scales -- HyperVerge ensures speed without sacrificing underwriting quality."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Christopher Lee", "t": "Co-Founder & Managing Partner", "bg": "Co-founded Infinity Capital Partners in 2016, establishing the first full-service investment bank in Oklahoma City. Previously Partner at Giant Capital. Earlier at OGE Energy Corp in corporate finance and M&A, assisted in the Enable Midstream transaction. JD and MBA from University of Oklahoma, BS from Brigham Young University. Oklahoma Bar member and licensed Real Estate broker. Board of Trustees for Oklahoma College Savings Plan.", "hooks": ["*First OKC investment bank founder*", "JD/MBA from OU", "OGE Energy M&A veteran", "Licensed broker & bar member"], "li": "https://www.linkedin.com/in/christopher-lee-174a467/"},
+      {"n": "Bryan Vahlberg", "t": "Co-Founder & Managing Partner", "bg": "Co-founded Infinity Capital Partners in 2016. Previously Partner at Giant Capital. Earlier at ONEOK Partners and Access Midstream implementing growth projects totaling over $700M across western Oklahoma and southern Texas. BS Economics and MBA in Energy Finance from OU. Michael F. Price Scholar at NYU Summer Session 2010. Former Captain of OU Men's Golf Team (2002-2005). Board member of Oklahoma Council on Economic Education.", "hooks": ["*$700M+ energy project experience*", "NYU Price Scholar", "Energy finance MBA", "Collegiate golf captain"], "li": "https://www.linkedin.com/in/bryanvahlberg/"},
+      {"n": "Evan Grace", "t": "Co-Founder & Managing Partner", "bg": "Co-founded Infinity Capital Partners in 2016. Started in commercial lending at Bank of Oklahoma as Credit Specialist, then Relationship Manager. Partner at Giant Capital. Business Banker at CrossFirst Bank. BS Sociology from Oklahoma Baptist University (4-year basketball letterman), MBA from OU as Price Scholar.", "hooks": ["Commercial lending background", "*OBU basketball letterman*", "OU Price Scholar"], "li": "https://www.linkedin.com/in/evan-grace-92417915/"}
+    ],
     "ask": "As a technology-driven lender, would you be interested in seeing how HyperVerge's AI can further accelerate Infinity Capital's underwriting to maintain your 24-hour decision advantage?",
-    "location": "Oklahoma",
+    "location": "Oklahoma City, OK",
     "employees": 37,
-    "website": "https://infinitythe1.com/",
+    "website": "https://www.infinitycappartners.com",
     "source": [
       "tam",
       "researched"
     ],
-    "category": "funder"
+    "category": "service_provider"
   },
   {
     "id": 1677,
@@ -42312,18 +42742,31 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Business funding company based in Texas. Data unverified \u2014 needs research.",
-    "notes": "Data quality issue: previous entry had unverified 430 employee count and placeholder data. Needs real research.",
-    "news": [],
+    "desc": "NetFunding is a small business lending company delivering capital solutions to small and mid-size business owners. Offers equipment financing up to $2M, working capital loans up to $500K, and lines of credit up to $200K, with funding in 24-48 hours. Serves agriculture, automotive, construction, energy, healthcare, and hospitality. Operates vendor partner, referral partner, and syndication programs. Listed as 2-10 employees with offices in New York and Sacramento.",
+    "notes": "",
+    "news": [
+      {
+        "h": "MCA Industry Faces Heightened Regulatory Scrutiny",
+        "s": "Various, 2025-2026",
+        "d": "Texas and New York enacted new disclosure and consumer protection rules for commercial financing."
+      },
+      {
+        "h": "Small Business Capital Gap Persists Despite Fintech Growth",
+        "s": "Industry Reports, 2025",
+        "d": "81% of small business owners found it difficult to access affordable capital in 2025."
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "Texas",
-    "website": "https://www.netfunding.com/",
+    "location": "New York, NY",
+    "employees": 10,
+    "website": "https://www.netfunding.com",
     "source": [
-      "tam"
+      "tam",
+      "researched"
     ],
     "category": "funder"
   },
@@ -43164,17 +43607,30 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Management Team",
-        "t": "Leadership"
+        "n": "Zach Miller",
+        "t": "CFO"
+      },
+      {
+        "n": "Harry Miller",
+        "t": "Head Underwriter"
+      },
+      {
+        "n": "Raymond Grand",
+        "t": "Chief Financial Officer"
       }
     ],
-    "desc": "New York City-based business funding company at 180 Maiden Lane, providing accelerated funding solutions with 15+ financing options. Has funded over $1 billion with amounts from $5K to $2M in as little as one hour.",
+    "desc": "Royal Funding Group is a New York City-based alternative business funder that has funded over $1 billion to small businesses. Located at 180 Maiden Lane, 13th floor. Employs 42-48 people including over 100 funding specialists. Offers 15+ financing products including term loans (6-24 months, $20K-$1M), MCAs, lines of credit, SBA loans, equipment financing, receivable factoring, asset-based funding, commercial loans, business credit development, and credit repair. One-hour approvals with funding $5K-$2M.",
     "notes": "",
     "news": [
       {
-        "h": "Royal Funding Group Surpasses $1 Billion in Total Funding",
-        "s": "Company Reports, 2025",
-        "d": "Royal Funding Group has funded over $1 billion to small businesses through its 15+ accelerated financing options."
+        "h": "Royal Funding Group Continues New York Expansion",
+        "s": "Indeed/Glassdoor, 2024-2025",
+        "d": "Actively hiring for sales, underwriting, and funding specialist positions, reflecting continued growth."
+      },
+      {
+        "h": "New York MCA Market Sees Regulatory Evolution",
+        "s": "NY AG/Industry, 2025-2026",
+        "d": "New York's FAIR Business Practices Act amended consumer protection laws to cover small businesses."
       }
     ],
     "ice": "Surpassing $1 billion in total funding with 15+ financing options is impressive -- how is Royal Funding maintaining its one-hour approval promise as volume scales?",
@@ -43189,11 +43645,15 @@
       "With 15+ financing products, HyperVerge's customizable AI workflows can handle different underwriting criteria for each product type.",
       "450+ MCA companies  trust HyperVerge -- we're built for high-volume, fast-turnaround operations like Royal Funding."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Zach Miller", "t": "CFO", "bg": "Chief Financial Officer of Royal Funding Group, overseeing financial operations for the company's $1B+ funding portfolio. Based in Brooklyn, New York. Education includes Harvard Business School. Manages financial strategy for 15+ financing products.", "hooks": ["*Harvard Business School*", "CFO of $1B+ funder", "Financial strategy"], "li": "https://www.linkedin.com/in/zach-miller-7511622b6/"},
+      {"n": "Harry Miller", "t": "Head Underwriter", "bg": "Head Underwriter at Royal Funding Group in New York City, evaluating and approving funding applications across 15+ financing products. Key role in the company's one-hour approval process.", "hooks": ["Head underwriter", "Risk assessment lead"], "li": "https://www.linkedin.com/in/harrymiller1/"},
+      {"n": "Raymond Grand", "t": "Chief Financial Officer", "bg": "CFO at Royal Funding Group. Also Founder and CFO of JRG Funding since March 2021. Financial leadership spanning both organizations in alternative business lending.", "hooks": ["Dual CFO role", "*Founder of JRG Funding*", "Alternative lending finance"], "li": "https://www.linkedin.com/in/raymond-grand/"}
+    ],
     "ask": "With $1B+ funded and a one-hour approval target, would Royal Funding be interested in seeing how HyperVerge's AI can help maintain that speed as volume grows?",
-    "location": "New York",
+    "location": "New York, NY",
     "employees": 48,
-    "website": "https://royalfunding.net",
+    "website": "https://royalfundinggroup.com",
     "source": [
       "tam",
       "researched"
@@ -43397,17 +43857,26 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Management Team",
-        "t": "Leadership"
+        "n": "Matt McDevitt",
+        "t": "CEO & Owner"
+      },
+      {
+        "n": "Edward Urrunaga",
+        "t": "Chief Operating Officer"
       }
     ],
-    "desc": "Pennsylvania-based business funding provider in King of Prussia, serving small businesses nationwide for 12+ years. Offers fast approvals within 24 hours and funding up to $500K within 48-72 hours.",
+    "desc": "Small Business Funding (SBF Finance and Technology, LLC) is a Pennsylvania-based alternative business lending company founded in 2013. Serves as the nation's leading matching service connecting small business owners with diverse alternative lenders. Headquartered in Exton, PA with approximately 17-25 employees. Uses proprietary 'Intent Index' scoring model alongside traditional metrics. Offers unsecured funding $2,500-$500,000 including MCAs, working capital loans, and general business funding. Approvals within 24 hours, funding in 48-72 hours. A+ BBB rating. Each client gets a dedicated account representative.",
     "notes": "",
     "news": [
       {
-        "h": "Small Business Funding Marks 12+ Years Serving Businesses Nationwide",
-        "s": "Company Reports, 2025",
-        "d": "Small Business Funding continues to provide fast approvals and funding up to $500K from its King of Prussia headquarters."
+        "h": "Pennsylvania Invests $15M in Small Business Support",
+        "s": "PA DCED, December 2024",
+        "d": "Shapiro Administration launched $15M in micro-grants through the Historically Disadvantaged Business Assistance Program."
+      },
+      {
+        "h": "SBF Maintains A+ BBB Rating Through 12+ Year Track Record",
+        "s": "BBB, 2025",
+        "d": "Maintains A+ BBB accreditation since 2014, serving thousands of small businesses."
       }
     ],
     "ice": "With 12+ years in the business and a focus on fast approvals, how is Small Business Funding thinking about technology to maintain competitiveness in an increasingly AI-driven industry?",
@@ -43422,16 +43891,19 @@
       "With 12+ years of lending data, HyperVerge's AI can be trained on your historical performance to make even better underwriting decisions.",
       "450+ MCA companies  already use HyperVerge -- proven technology for established funders looking to modernize."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Matt McDevitt", "t": "CEO & Owner", "bg": "Led Small Business Funding as CEO and Owner since founding in April 2013, building it into a nationally recognized alternative business lending platform over 12+ years. BA from Villanova University. Previously VP of Acquisitions at Axis Realty Partners. Regional Director at Pacer Financial. Senior Associate at Newmark Knight Frank Smith Mack.", "hooks": ["*12+ year founder-CEO*", "Villanova University", "Real estate background", "Regional Director at Pacer Financial"], "li": "https://www.linkedin.com/in/mattmcdev/"},
+      {"n": "Edward Urrunaga", "t": "Chief Operating Officer", "bg": "COO of Small Business Funding since 2017. MBA from University of Delaware (2017-2024). Rose through ranks internally from Funding Manager to Renewal Manager/Relationship Manager. Earlier sales roles at The Charmer Sunbelt Group and Sales Manager at Spring Mobile.", "hooks": ["*MBA, University of Delaware*", "Promoted internally to COO", "Sales-to-operations career path"], "li": ""}
+    ],
     "ask": "Would Small Business Funding be open to a demo showing how HyperVerge can help cut your approval time from 24 hours to same-hour with AI-powered underwriting?",
-    "location": "Pennsylvania",
+    "location": "Exton, PA",
     "employees": 25,
-    "website": "https://smallbusinessfunding.com",
+    "website": "https://www.smallbusinessfunding.com",
     "source": [
       "tam",
       "researched"
     ],
-    "category": "funder"
+    "category": "iso"
   },
   {
     "id": 1747,
@@ -43786,17 +44258,30 @@
     "clear": false,
     "contacts": [
       {
-        "n": "Management Team",
-        "t": "Leadership"
+        "n": "Chris Abel",
+        "t": "Owner"
+      },
+      {
+        "n": "Chris Vernon",
+        "t": "Founding Member"
+      },
+      {
+        "n": "Ian Wilkinson",
+        "t": "Director of Client Services"
       }
     ],
-    "desc": "Institutional private credit firm based in Utah, providing middle market lending solutions. Focuses on delivering fast, flexible capital solutions to businesses.",
+    "desc": "iThrive Funding is a Utah-based factoring company founded in 2014 by owners of Progressive Reporting Agency (established 1971). Headquartered in Ogden, UT. Focuses on helping trucking fleets manage cash flow by purchasing receivables so they don't wait 30-60+ days. Also serves oilfield services, staffing, and manufacturing. Products: freight factoring, fuel advances, payroll obligation funding, fuel card program, non-recourse programs. Member of International Factoring Association (IFA). Maintains BBB profile and active educational blog.",
     "notes": "",
     "news": [
       {
-        "h": "Thrive Funding Serves Middle Market with Private Credit",
-        "s": "Company Reports, 2025",
-        "d": "Thrive Funding continues to provide institutional private credit solutions for middle market businesses."
+        "h": "iThrive Funding Expands Resources for Trucking Entrepreneurs",
+        "s": "ithrivefunding.com, 2025",
+        "d": "Continues publishing educational content through 'The Breakdown' blog for trucking company owners."
+      },
+      {
+        "h": "Trucking Factoring Industry Sees Growing Demand",
+        "s": "Industry, 2025",
+        "d": "Small fleet trucking companies increasingly turn to factoring as freight payment delays strain cash flow."
       }
     ],
     "ice": "As an institutional private credit firm serving the middle market, how is Thrive Funding approaching the balance between thorough underwriting and fast deal execution?",
@@ -43811,11 +44296,15 @@
       "With 450+ lending companies already using HyperVerge, our platform handles the complexity of middle market underwriting at speed.",
       "Faster underwriting means winning more deals in the competitive private credit space -- HyperVerge gives you a speed advantage."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Chris Abel", "t": "Owner", "bg": "Owner of iThrive Funding in Ogden, Utah. BS in Accounting from Weber State University. Prior roles at TAB Bank and Transfac Capital, LLC. Deep expertise in factoring, asset-based lending, commercial finance, and credit analysis.", "hooks": ["*BS Accounting, Weber State*", "TAB Bank veteran", "Asset-based lending expert", "Transfac Capital background"], "li": "https://www.linkedin.com/in/chris-abel-56185a3"},
+      {"n": "Chris Vernon", "t": "Founding Member", "bg": "Founding member of iThrive Funding and co-owner of Progressive Reporting Agency (established 1971), the parent entity that created iThrive. Owns Motor Carrier HQ and hosts the 'Haulin Assets' podcast about starting trucking companies.", "hooks": ["*Co-owner, Progressive Reporting (est. 1971)*", "'Haulin Assets' podcast host", "Motor Carrier HQ owner", "Trucking industry veteran"], "li": "https://www.linkedin.com/in/chris-vernon-b926218/"},
+      {"n": "Ian Wilkinson", "t": "Director of Client Services", "bg": "Director of Client Services at iThrive Funding since 2022. Previously spent seven years at WEX (2015-2022) as Strategic Partner Relationship Manager and Account Executive/Consultant.", "hooks": ["7 years at WEX", "Fleet payments background", "Client services leader"], "li": "https://www.linkedin.com/in/ian-wilkinson-4ba63725"}
+    ],
     "ask": "Would Thrive Funding be interested in seeing how HyperVerge's AI can accelerate your middle market underwriting while maintaining the thorough analysis your institutional investors expect?",
-    "location": "Utah",
+    "location": "Ogden, UT",
     "employees": 25,
-    "website": "https://www.thrivefunding.com",
+    "website": "https://www.ithrivefunding.com",
     "source": [
       "tam",
       "researched"
@@ -44217,19 +44706,24 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [
-      {
-        "n": "Management Team",
-        "t": "Leadership"
-      }
-    ],
-    "desc": "Privately owned specialty finance and alternative funding platform at 800 Third Ave, New York. Founded by investment banking, commercial banking, and mortgage banking experts. Provides MCAs, business loans, invoice factoring, and equipment financing.",
+    "contacts": [],
+    "desc": "United First is a direct funder of merchant cash advances based in Long Island City, Queens, New York at 27-01 Queens Plaza N, Suite 802. Self-described as a recognized leader in the Alternative Funding Industry. Provides MCAs and business financing. Emphasizes transparency, fairness, and integrity. Uses proprietary CRM technology. Works directly with business owners and through ISO/broker partnerships. Approximately 37 employees. Listed in Rate My MCA Funder and deBanked directories. Shares address with Global Funding Experts (GFE).",
     "notes": "",
     "news": [
       {
-        "h": "United Fundings Expands Alternative Financing Platform",
-        "s": "Company Reports, 2025",
-        "d": "United Fundings continues to grow its specialty finance platform offering MCAs, business loans, factoring, and equipment financing."
+        "h": "MCA Industry Sees Surge in Bankruptcy-Related Cases",
+        "s": "Industry Reports, 2025",
+        "d": "Over 230 bankruptcy filings in 2025 involved MCA debt."
+      },
+      {
+        "h": "NPR Investigates Merchant Cash Advance Industry Growth",
+        "s": "NPR, February 2026",
+        "d": "NPR reported on MCA companies helping small businesses pay tariffs at high cost."
+      },
+      {
+        "h": "New York FAIR Act Extends Business Protections",
+        "s": "NY Legislature, February 2026",
+        "d": "FAIR Business Practices Act now protects small businesses from unfair lending practices."
       }
     ],
     "ice": "With a team of investment banking and commercial banking veterans, United Fundings brings institutional-grade expertise to alternative lending -- how are you leveraging that background to innovate on underwriting?",
@@ -44245,10 +44739,10 @@
       "450+ MCA companies  trust HyperVerge for AI-powered underwriting automation."
     ],
     "leaders": [],
-    "ask": "Would United Fundings be interested in seeing how HyperVerge's AI can help your team of banking veterans process deals faster across all five of your funding products?",
-    "location": "",
+    "ask": "Would United First Funding be interested in seeing how HyperVerge's AI can help process MCA deals faster while maintaining your emphasis on transparency and quality?",
+    "location": "Long Island City, NY",
     "employees": 37,
-    "website": "https://www.unitedfundings.com",
+    "website": "",
     "source": [
       "tam",
       "researched"
@@ -44552,23 +45046,27 @@
     "booth": false,
     "clear": false,
     "contacts": [
-      {
-        "n": "Management Team",
-        "t": "Leadership"
-      }
+      {"n": "Oleg Rud", "t": "Managing Member & Founder"},
+      {"n": "Michael Pennartz", "t": "EVP & Co-Owner"},
+      {"n": "Daniel Eaker", "t": "COO"}
     ],
-    "desc": "New York-based MCA and alternative lending company, now rebranded as Funderial. Established in 2010 with offices near Wall Street. Has funded over $2 billion in business loans nationwide with 30+ years of combined leadership experience.",
+    "desc": "Imperial Advance (now operating as Funderial) is a New York-based business funding company founded in 2010 that operates as both a direct lender for MCAs and a marketplace connecting businesses with 160+ lending partners. Distributed over $2 billion in funding to more than 20,000 business owners across all 50 states. Offers business term loans, MCAs, lines of credit, SBA loans, equipment financing, and MCA consolidation with funding $3,500-$5M and terms 3 months to 10 years. Holds California Lender License and A+ BBB rating since 2014. Rebranded from Imperial Advance to Funderial in early 2024.",
     "notes": "",
     "news": [
       {
-        "h": "Funderial Business Loans 2025 Review",
-        "s": "Bankrate, 2025",
-        "d": "Funderial (formerly Imperial Advance) reviewed as direct lender and marketplace with 40+ partners, focusing on short-term loans for borrowers of all credit types."
+        "h": "Funderial Named 2024 Top 10 Business Loan Services Provider",
+        "s": "PRWeb/Financial Services Review, Aug 2024",
+        "d": "Recognized as Top 10 Business Loan Services Provider, highlighting rapid approvals and $2B+ total funding."
       },
       {
-        "h": "Imperial Advance Rebrands as Funderial",
-        "s": "Company Updates, 2024",
-        "d": "Imperial Advance rebranded to Funderial while maintaining its NYC headquarters and $2B+ track record in business lending."
+        "h": "Imperial Advance Rebrands to Funderial",
+        "s": "LinkedIn/Company Announcement, Q1 2024",
+        "d": "Completed rebrand to Funderial combining legacy brand with new identity."
+      },
+      {
+        "h": "Funderial Business Loans 2025 Review",
+        "s": "Bankrate, Feb 2026",
+        "d": "Bankrate rates Funderial 3.8/5 as a direct lender and 40-partner marketplace."
       }
     ],
     "ice": "The rebrand from Imperial Advance to Funderial signals a new chapter -- with $2B+ funded, how is the leadership team thinking about modernizing the underwriting process as part of this evolution?",
@@ -44583,11 +45081,15 @@
       "With $2B+ funded, HyperVerge can help Funderial process its massive deal volume more efficiently while maintaining underwriting quality.",
       "450+ MCA companies  already use HyperVerge -- we're the industry standard for AI-powered underwriting automation."
     ],
-    "leaders": [],
+    "leaders": [
+      {"n": "Oleg Rud", "t": "Managing Member & Founder", "bg": "Founded Imperial Advance in 2010, now rebranded as Funderial. Bachelor's from Pace University (2000-2004). Expertise in commercial banking, new business development. Under his leadership, funded over $2 billion across 20,000+ businesses with A+ BBB rating.", "hooks": ["*Founded Imperial Advance 2010*", "*$2B+ funded, 20K+ businesses*", "Pace University graduate"], "li": "https://www.linkedin.com/in/oleg-rud-3a4a553/"},
+      {"n": "Michael Pennartz", "t": "Executive Vice President & Co-Owner", "bg": "EVP and co-owner of Funderial since 2012 with nearly 20 years in business lending. Started at GlaxoSmithKline Vaccines, then Sr. Account Executive at LEAF Commercial Capital, Account Manager at OnDeck Capital before joining. Accepted Top 10 Business Loan Services Provider award 2024.", "hooks": ["*20 years in business lending*", "Ex-OnDeck, LEAF Commercial", "Top 10 award recipient 2024"], "li": "https://www.linkedin.com/in/michaelpennartz/"},
+      {"n": "Daniel Eaker", "t": "Chief Operating Officer", "bg": "COO at Funderial overseeing operations. Background in retail management including multiple management roles at Guitar Center. Transitioned into financial services operations.", "hooks": ["*COO, operations leadership*", "Ex-Guitar Center management", "Customer-centric operations"], "li": "https://www.linkedin.com/in/daniel-eaker-b4a8a572"}
+    ],
     "ask": "As Funderial enters a new chapter, would you be interested in seeing how HyperVerge's AI underwriting can be part of the company's modernization strategy?",
-    "location": "New York",
+    "location": "New York, NY",
     "employees": 26,
-    "website": "https://imperialadvance.com",
+    "website": "https://funderial.com",
     "source": [
       "tam",
       "researched",
@@ -44697,13 +45199,8 @@
     "phase": 0,
     "booth": false,
     "clear": false,
-    "contacts": [
-      {
-        "n": "Management Team",
-        "t": "Leadership"
-      }
-    ],
-    "desc": "Florida-based MCA and revenue-based financing company providing merchant cash advances and business funding to small businesses. Operates as a direct funder in the alternative lending space.",
+    "contacts": [],
+    "desc": "Revenue Funding is a Florida-based alternative business funding company specializing in merchant cash advances and revenue-based financing. The company operates as a direct funder providing working capital to small and medium-sized businesses. Maintains an unusually low public digital footprint — its domain (revenuefunding.com) is parked/for sale, no active LinkedIn company page, and no presence in industry directories. Estimated approximately 36 employees.",
     "notes": "",
     "news": [],
     "ice": "As a Florida-based MCA funder in one of the most competitive markets in the country, how is Revenue Funding thinking about technology to improve underwriting speed and accuracy?",
