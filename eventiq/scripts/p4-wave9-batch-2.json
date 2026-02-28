@@ -1,0 +1,525 @@
+[
+  {
+    "id": 1444,
+    "name": "Whitestone Fund Corp.",
+    "desc": "Whitestone Fund Corp. is a merchant cash advance and business lending company founded in 2010, headquartered in Yonkers, NY. The company provides quick, convenient, and flexible business loans ranging from $5,000 to $1,000,000 (with cash advances up to $1,500,000), tailored primarily for small and medium-sized businesses. They boast a 95% acceptance rate and offer durations from 6 to 36 months. To qualify, businesses must be at least 6 months old, generate a minimum of $20,000 per month, and have a minimum credit score of 500.\n\nLed by CEO Adelso Leonaldo, the company has served small business owners for over 14 years and specializes in merchant cash advances, credit card processing, and business sales strategy. The company maintains a BBB Business Profile and has multiple web presences including whitestonefund.com and whitestonecash.com. Pre-qualification notifications are provided within 3 to 5 hours of application.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://whitestonefund.com/",
+    "location": "Yonkers, New York",
+    "full_address": "73 Market St, Suite 376, Yonkers, NY 10710",
+    "leaders": [
+      {
+        "n": "Adelso Leonaldo",
+        "t": "Chief Executive Officer",
+        "bg": "CEO of Whitestone Fund Corp. with extensive experience in merchant cash advance, credit card processing, and business sales strategy. Has led the company since its founding in 2010, growing it into a small business lending operation serving businesses across the US with a 95% acceptance rate.",
+        "hooks": [
+          "Your 95% acceptance rate is impressive — how do you manage risk at that approval volume?",
+          "Having been in the MCA space since 2010, you've seen the full evolution of the industry",
+          "Your flexible loan range of $5K to $1.5M covers a wide spectrum of business needs"
+        ],
+        "li": "https://www.linkedin.com/in/adelso-leonaldo-30629519/"
+      }
+    ],
+    "news": [
+      {
+        "h": "Whitestone Fund Corp. Maintains Active BBB Business Profile",
+        "s": "BBB, 2025",
+        "d": "Whitestone Fund Corp. continues to maintain its Better Business Bureau accreditation as a commercial loans provider based in Yonkers, NY."
+      },
+      {
+        "h": "Whitestone Fund Expands Online Application Process",
+        "s": "Company Website, 2025",
+        "d": "The company has streamlined its application process through apps.whitestonefund.com, offering pre-qualification notifications within 3 to 5 hours."
+      }
+    ],
+    "ice": "Whitestone Fund's 14+ years in the MCA space and 95% acceptance rate show a strong commitment to serving small businesses that traditional banks often overlook.",
+    "icebreakers": [
+      "Your longevity since 2010 in the MCA industry speaks to a sustainable business model — how are you thinking about the next phase of growth?",
+      "With a 95% acceptance rate and loans up to $1.5M, your underwriting approach must be highly refined after 14+ years",
+      "The fast pre-qualification within 3-5 hours is competitive — are you looking at ways to make that even faster with technology?",
+      "Having served small businesses through multiple economic cycles since 2010, you've built deep market understanding"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Whitestone Fund maintain its industry-leading 95% acceptance rate while better managing default risk across its $5K-$1.5M loan portfolio",
+      "With pre-qualification already happening in 3-5 hours, AI-powered document verification could reduce that to minutes, improving the merchant experience",
+      "As a 14-year veteran in the MCA space, Whitestone Fund could leverage AI underwriting to scale funding volume without proportionally scaling headcount"
+    ],
+    "ask": "Adelso, with your 95% acceptance rate and 14 years of MCA experience, I'd love to show you how AI underwriting could help you maintain that approval rate while tightening risk management — would you have 15 minutes this week?",
+    "notes": "Long-established MCA funder since 2010. Multiple web domains (whitestonefund.com, whitestonecash.com, fund.whitestonefund.com). Yelp listing shows 5030 Broadway location as CLOSED, but BBB profile shows Yonkers address as active. Focuses on small-to-mid-size businesses. Key selling angle: help them scale beyond current capacity with AI while maintaining their high acceptance rate.",
+    "contacts": [
+      {"n": "Adelso Leonaldo", "t": "Chief Executive Officer"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1447,
+    "name": "WiseSide Incorporated",
+    "desc": "WiseSide Incorporated is a full-service financial company founded in September 2020, headquartered in New York, NY. Co-founded by Nakel Nikiema, the company provides tailored business financing, comprehensive life insurance solutions, and full-spectrum property and casualty protection. WiseSide offers alternative business lending opportunities for startups and existing businesses, including long-term loans, SBA loans, and equipment financing.\n\nThe company works with many lenders and specializes in helping clients with credit challenges, licensed to serve clients in all 50 US states. WiseSide has a strong focus on the African diaspora community in the United States while maintaining services open to all. Nakel Nikiema, the Co-Founder and Chairman, was recognized as Top Co-Founder and Financial Consultant of the Year by IAOTP, bringing over 20 years of program management expertise to the company.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://www.wisesidefinancial.com/",
+    "location": "New York, New York",
+    "full_address": "New York, NY",
+    "leaders": [
+      {
+        "n": "Nakel Nikiema",
+        "t": "Co-Founder & Chairman",
+        "bg": "Program Management Expert with over 20 years of experience. Co-founded WiseSide Inc. in 2020. Recognized as Top Co-Founder and Financial Consultant of the Year by IAOTP. Focuses on empowering entrepreneurs through access to capital and holistic insurance coverage, with a strong emphasis on serving the African diaspora community.",
+        "hooks": [
+          "Congratulations on being recognized as Top Co-Founder and Financial Consultant by IAOTP — well deserved",
+          "Your dual approach of business financing plus insurance protection is a unique value proposition in the market",
+          "Serving clients with credit challenges across all 50 states requires sophisticated risk assessment",
+          "Your focus on empowering the African diaspora entrepreneur community fills an important market gap"
+        ],
+        "li": "https://www.linkedin.com/in/nakelnikiema/"
+      }
+    ],
+    "news": [
+      {
+        "h": "Nakel Nikiema Selected as Top Co-Founder and Financial Consultant of the Year by IAOTP",
+        "s": "EIN Presswire, 2025",
+        "d": "WiseSide Inc.'s co-founder Nakel Nikiema was recognized by the International Association of Top Professionals for his expertise in consulting services and financial leadership."
+      },
+      {
+        "h": "A Trailblazer's Journey: Interview with Nakel Nikiema",
+        "s": "Magnate View, 2024",
+        "d": "In-depth interview with WiseSide Inc.'s co-founder covering his journey from program management to building an integrated financial services company."
+      },
+      {
+        "h": "Nakel Nikiema Recognized for Expertise in Consulting Services",
+        "s": "24-7 Press Release, 2024",
+        "d": "WiseSide Inc.'s chairman received industry recognition for his consulting expertise and contributions to the financial services sector."
+      }
+    ],
+    "ice": "Congratulations to Nakel Nikiema on the IAOTP recognition — WiseSide's integrated approach of combining business financing with insurance solutions is truly differentiated.",
+    "icebreakers": [
+      "Your IAOTP recognition highlights the quality of financial consulting WiseSide provides — how has that visibility impacted deal flow?",
+      "The combination of business financing and insurance under one roof is a unique model — are you seeing cross-sell opportunities?",
+      "Serving clients with credit challenges across all 50 states requires strong risk assessment — how do you evaluate those applications?",
+      "Your focus on the African diaspora entrepreneur community fills a real gap — what's driving demand in that market segment?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help WiseSide better serve credit-challenged clients by providing more nuanced risk assessment beyond traditional credit scores",
+      "As WiseSide scales its lending operations across all 50 states, AI-powered document verification could streamline the underwriting process while maintaining quality",
+      "With WiseSide's dual focus on business financing and insurance, AI tools could help identify cross-sell opportunities and improve client lifetime value"
+    ],
+    "ask": "Nakel, with WiseSide's unique approach to serving credit-challenged businesses across all 50 states, I'd love to discuss how AI underwriting could help you approve more qualified merchants while managing risk — do you have 15 minutes this week?",
+    "notes": "Full-service financial company combining business lending with insurance. Strong founder story with Nakel Nikiema's 20+ years of experience and IAOTP recognition. Niche focus on African diaspora community but serves all. Sells through broker/lender network. Key angle: AI can help them scale lending while managing the inherently riskier credit-challenged borrower segment.",
+    "contacts": [
+      {"n": "Nakel Nikiema", "t": "Co-Founder & Chairman"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1448,
+    "name": "Working Capital Solution",
+    "desc": "Working Capital Solution is a small business funder operating in the merchant cash advance and alternative lending space. Limited public information is available about this specific entity. The company appears to operate as a direct funder or broker providing working capital solutions to small and medium-sized businesses, consistent with the broader MCA industry where companies offer advances against future business revenues.\n\nThe working capital funding space has seen significant growth, with the small business lending market expected to grow at 13% CAGR through 2032. Companies in this segment typically provide funding from $5,000 to $5 million with rapid approval and disbursement processes, often within 24-48 hours.",
+    "category": "funder",
+    "employees": 10,
+    "website": "",
+    "location": "New York, New York",
+    "full_address": "",
+    "leaders": [],
+    "news": [
+      {
+        "h": "Small Business Lending Market Expected to Reach $7.22 Trillion by 2032",
+        "s": "Industry Reports, 2025",
+        "d": "The global small business lending market is projected to grow at a 13% CAGR, driven by digital lending solutions and alternative financing providers."
+      }
+    ],
+    "ice": "The working capital funding space continues to evolve rapidly — would love to learn more about how Working Capital Solution is positioning itself in this growing market.",
+    "icebreakers": [
+      "The MCA industry's shift toward faster, tech-enabled underwriting is creating opportunities for forward-thinking funders",
+      "Small business lending growth at 13% CAGR shows strong tailwinds for working capital providers",
+      "How is Working Capital Solution differentiating in an increasingly competitive alternative lending market?",
+      "The demand for fast working capital has never been higher — how are you scaling to meet it?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting serves 450+ MCA companies and could help Working Capital Solution accelerate deal processing while reducing default rates",
+      "In a competitive working capital market, AI-powered risk assessment can be a key differentiator in speed and accuracy of approvals",
+      "As the alternative lending market grows to $7.22 trillion, technology-enabled underwriting becomes essential for scaling operations"
+    ],
+    "ask": "I'd love to learn more about Working Capital Solution's approach to underwriting and discuss how AI could help you process more deals faster — would you have time for a brief call?",
+    "notes": "Limited public information available. Company name is very generic, making it difficult to find specific details. May operate under a slightly different business name or be a smaller, newer entrant to the MCA space. Recommend direct outreach to confirm details. Listed as a funder in industry directories.",
+    "contacts": [],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1449,
+    "name": "WOTR Enterprise LLC",
+    "desc": "WOTR Enterprise LLC is an alternative business financing company headquartered in Central Islip, NY, led by CEO Edward Ramirez. The company specializes in providing Merchant Cash Advances (MCAs), Lines of Credit, Equipment Financing, Term Loans, and Consolidation services. WOTR emphasizes credit-friendly financing that welcomes all credit types, with a Quick Yes Approval process designed for fast, hassle-free funding.\n\nIn June 2024, WOTR Enterprise announced a significant expansion of services to meet growing demand for alternative financing options. The company accommodates clients without extra fees and applies discounts as an early repayment incentive. Their team of experienced financial experts provides businesses with tools and strategies to improve their financial health, positioning WOTR as a full-service alternative to traditional banking institutions.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://www.wotrenterprise.com/",
+    "location": "Central Islip, New York",
+    "full_address": "1207 Connetquot Avenue, Central Islip, NY 11722",
+    "leaders": [
+      {
+        "n": "Edward Ramirez",
+        "t": "Chief Executive Officer",
+        "bg": "CEO of WOTR Enterprise LLC, leading the company's expansion into alternative financing. In June 2024, announced a major service expansion to meet growing demand for MCAs, Lines of Credit, Equipment Financing, and Term Loans. Focuses on providing flexible, accessible financing solutions for businesses of all sizes and industries.",
+        "hooks": [
+          "Your June 2024 service expansion shows strong growth — how has demand responded since the announcement?",
+          "The Quick Yes Approval process is a great differentiator — what's your typical approval-to-funding timeline?",
+          "Your no-extra-fees approach with early repayment discounts builds trust with merchants",
+          "Welcoming all credit types requires sophisticated risk assessment — how do you manage that?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "WOTR Enterprise Expands Services to Meet Growing Demand for Alternative Financing Options",
+        "s": "Yahoo Finance / AccessWire, June 2024",
+        "d": "WOTR Enterprise LLC announced a major expansion of their financial services portfolio including MCAs, Lines of Credit, Equipment Financing, Term Loans, and Consolidation to address growing demand from small and medium businesses."
+      },
+      {
+        "h": "WOTR Enterprise Featured in National Financial Media",
+        "s": "News Channel Nebraska / AccessNewswire, 2024",
+        "d": "The company's service expansion received coverage across multiple national media outlets, highlighting the growing demand for alternative financing options."
+      }
+    ],
+    "ice": "Your June 2024 service expansion was well-covered in the financial press — the market clearly needed more flexible financing options like what WOTR provides.",
+    "icebreakers": [
+      "Your service expansion in June 2024 shows you're reading the market well — how has the response been from businesses seeking alternative financing?",
+      "Welcoming all credit types while maintaining profitability is the holy grail of alternative lending — what's your approach?",
+      "The Quick Yes Approval process is a strong value proposition — are you looking at technology to make it even faster?",
+      "Your no-fee, early repayment discount model is merchant-friendly — how does that impact retention?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could power WOTR's Quick Yes Approval process with instant document verification and risk scoring, making approvals even faster",
+      "As WOTR expands its product suite across MCAs, Lines of Credit, and Term Loans, AI can help streamline underwriting across multiple product types simultaneously",
+      "With WOTR welcoming all credit types, AI-powered alternative data analysis could help identify creditworthy borrowers that traditional scoring would miss"
+    ],
+    "ask": "Edward, your service expansion in 2024 shows strong momentum — I'd love to discuss how AI underwriting could supercharge WOTR's Quick Yes Approval process and support your growth. Would you have 15 minutes this week?",
+    "notes": "Growing alternative funder with recent media coverage. Service expansion in June 2024 is a good conversation hook. No-fee structure with early repayment discounts is merchant-friendly. Central Islip, NY base suggests Long Island operations. Priority 7 (higher priority in this batch). Key angle: AI can help them maintain their Quick Yes Approval speed while managing risk as they scale.",
+    "contacts": [
+      {"n": "Edward Ramirez", "t": "CEO"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1465,
+    "name": "Creditfy, LLC d/b/a Creditfy",
+    "desc": "Creditfy, LLC is a New York-based business financing company founded on December 3, 2020. The company is a leading provider of business financing across the US, offering a comprehensive suite of commercial financing solutions including business lines of credit, equipment financing, business term loans, invoice financing, bridge loans, and SBA loans. Creditfy can fund up to $5M with disbursement in as little as 24 hours.\n\nThe company reports an 82% approval rate with competitive terms — interest rates starting at 1.06% monthly and rates as low as 5.6%. Minimum requirements include a 600 personal credit score and $180,000 in annual revenue, though startup equipment loans accept 550+ credit scores with 6 months in business. Creditfy is BBB Accredited and has received consistently positive reviews on Trustpilot and BestCompany. The company has an estimated 11-50 employees and is led by Co-Founder & CEO Lawrence Crawford.",
+    "category": "funder",
+    "employees": 30,
+    "website": "https://creditfy.com/",
+    "location": "New York, New York",
+    "full_address": "New York, NY",
+    "leaders": [
+      {
+        "n": "Lawrence Crawford",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Creditfy in 2020 and has built the company into a leading multi-product business financing provider. Under his leadership, Creditfy has achieved an 82% approval rate and expanded into a full suite of commercial financing products including SBA loans, equipment financing, and business lines of credit.",
+        "hooks": [
+          "Building a multi-product lending platform since 2020 shows impressive execution speed",
+          "Your 82% approval rate suggests strong underwriting — how do you balance approval volume with risk?",
+          "Offering SBA loans alongside MCAs and equipment financing gives you a broad product moat",
+          "Your consistently positive customer reviews on Trustpilot speak to a strong operational culture"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Daniel M.",
+        "t": "Vice President, Sales",
+        "bg": "Leads sales operations at Creditfy, driving growth across the company's diverse product portfolio of business financing solutions. Works to connect small businesses with the right financing products from Creditfy's comprehensive suite.",
+        "hooks": [
+          "How is the sales team managing conversations across such a diverse product lineup?",
+          "With funding up to $5M and SBA loans, your sales team must handle a wide range of deal sizes"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Creditfy Receives Consistently Positive Customer Reviews",
+        "s": "Trustpilot, February 2025",
+        "d": "Recent customer reviews praise Creditfy's service as smooth, efficient, and stress-free, with customers returning for repeat financing."
+      },
+      {
+        "h": "Creditfy Featured on Inc.com Company Profile",
+        "s": "Inc.com, 2024",
+        "d": "Creditfy earned a profile on Inc.com, highlighting its position as a leading provider of business financing across the US."
+      },
+      {
+        "h": "Creditfy Maintains BBB Accreditation with Strong Business Profile",
+        "s": "BBB, 2025",
+        "d": "Creditfy continues its BBB Accredited status as a business loans provider in New York, demonstrating commitment to consumer trust."
+      }
+    ],
+    "ice": "Your Inc.com profile and consistently positive Trustpilot reviews show Creditfy is building a strong brand in business financing since launching in 2020.",
+    "icebreakers": [
+      "From founding in 2020 to Inc.com profile and BBB accreditation — Creditfy's growth trajectory is impressive",
+      "An 82% approval rate with competitive rates starting at 1.06% monthly shows strong underwriting discipline",
+      "Your diverse product suite from SBA loans to equipment financing positions Creditfy as a one-stop shop for business financing",
+      "Repeat customers on Trustpilot show you're building real loyalty — that's rare in business lending"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Creditfy push its 82% approval rate even higher while maintaining default discipline across its diverse product portfolio",
+      "With products ranging from SBA loans to MCAs and equipment financing, AI-powered decisioning could help route applicants to the best-fit product instantly",
+      "As Creditfy scales from its 2020 founding, AI document verification could reduce the operational burden of processing applications for funding up to $5M"
+    ],
+    "ask": "Lawrence, Creditfy's rapid growth from 2020 to a multi-product lending platform is impressive — I'd love to show you how AI underwriting could help push your 82% approval rate while managing risk across your product suite. Would you have 15 minutes?",
+    "notes": "Fast-growing business lender founded 2020. Multi-product platform (SBA, equipment, LOC, term loans, MCA, bridge, invoice). Inc.com profile suggests growth recognition. BBB Accredited. Strong Trustpilot reviews with repeat customers. 11-50 employees per ZoomInfo. Key angle: AI can help them manage complexity of multi-product underwriting while scaling.",
+    "contacts": [
+      {"n": "Lawrence Crawford", "t": "Co-Founder & CEO"},
+      {"n": "Daniel M.", "t": "Vice President, Sales"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1485,
+    "name": "Loanability, Inc.",
+    "desc": "Loanability, Inc. was founded in October 2007 and is headquartered in Jenkintown, Pennsylvania. The company was created to provide a streamlined and responsive alternative to traditional small business financing and has provided funding to thousands of small businesses across all 50 states. Initially focused exclusively on retailers accepting credit cards at the point of sale, Loanability has since expanded to fund nearly every business type, including those that do not accept credit cards.\n\nLed by President Brad Myers, Loanability has become an industry leader in small business financing through its simple funding process and focus on outstanding customer service. The company employs a unique pricing model based on economies of scale, offering the best possible terms on working capital rather than maximizing profit on each individual loan. Their simple process allows them to fund most loans in one day, with flexible underwriting that approves most applications, offering longer terms and competitive rates for every credit grade. The company maintains a BBB Business Profile in Willow Grove, PA.",
+    "category": "funder",
+    "employees": 25,
+    "website": "https://loanability.com/",
+    "location": "Jenkintown, Pennsylvania",
+    "full_address": "610 York Road, Suite 107, Jenkintown, PA 19046",
+    "leaders": [
+      {
+        "n": "Brad Myers",
+        "t": "President",
+        "bg": "President of Loanability since the company's founding in 2007. Has led the company through multiple economic cycles including the 2008 financial crisis and COVID-19, growing it from a credit-card-only MCA provider to a full-spectrum small business funder serving all 50 states with same-day funding capabilities.",
+        "hooks": [
+          "17+ years in small business financing through multiple economic cycles is remarkable staying power",
+          "Your volume-based pricing model is unique in the industry — how has that approach evolved over time?",
+          "Expanding from credit card retailers to all business types shows strong product evolution",
+          "Same-day funding with flexible underwriting across all credit grades is a compelling offer"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Loanability Continues to Expand Small Business Lending Across All 50 States",
+        "s": "Company Website, 2025",
+        "d": "Loanability maintains its national footprint, offering lines of credit, business loans, and receivables funding across healthcare, construction, retail, and other industries."
+      },
+      {
+        "h": "Small Business Lending Industry Sees Strong Growth",
+        "s": "Industry Reports, 2025",
+        "d": "The SBA approved over 70,000 loans totaling $31.1B in 2024, a 22% increase in approvals, benefiting established alternative lenders like Loanability."
+      }
+    ],
+    "ice": "Loanability's 17+ year track record of funding thousands of businesses through every economic cycle since 2007 speaks to the strength of your underwriting model.",
+    "icebreakers": [
+      "Your volume-based pricing philosophy — funding more deals at better rates rather than maximizing per-deal profit — is refreshingly merchant-friendly",
+      "From credit card retailers in 2007 to serving all business types across 50 states today shows impressive evolution",
+      "Same-day funding with flexible underwriting across all credit grades is a competitive advantage worth protecting with better technology",
+      "17 years of small business lending through every economic cycle gives you data and expertise that's hard to replicate"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Loanability maintain its same-day funding promise while processing even higher volumes through automated document verification",
+      "With 17 years of lending data, Loanability's underwriting models could be supercharged with AI to identify patterns across all business types and credit grades",
+      "As Loanability's volume-based pricing model depends on scale, AI-powered underwriting could help process more applications without proportionally increasing headcount"
+    ],
+    "ask": "Brad, Loanability's 17-year track record of same-day funding across all 50 states is impressive — I'd love to discuss how AI underwriting could help you process even more volume while maintaining the quality your merchants expect. Would you have 15 minutes?",
+    "notes": "Well-established funder since 2007. Unique volume-based pricing model. Serves all 50 states across multiple industries. Same-day funding capability. BBB profiled in Willow Grove, PA. Expanded from credit-card-only to all business types. Key angle: AI can help them scale their volume-based model even further while maintaining underwriting quality.",
+    "contacts": [
+      {"n": "Brad Myers", "t": "President"},
+      {"n": "Tracey Bien Aime", "t": "Team Member"},
+      {"n": "Amanda Singer", "t": "Team Member"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1494,
+    "name": "Reliable Capital Advance LLC",
+    "desc": "Reliable Capital Advance LLC is an alternative business funder established on January 22, 2025, and registered as a Foreign Limited Liability Company in New York. Based in Monsey, NY, the company is dedicated to providing fast, flexible, and transparent funding for companies of all sizes. Reliable Capital operates as a direct funder offering personalized, scalable capital without prepayment penalties, hidden fees, or burdensome collateral stipulations.\n\nThe company differentiates itself through its merchant-friendly approach, emphasizing transparency and flexibility in its funding terms. As a newer entrant to the alternative business funding market, Reliable Capital is positioning itself to serve businesses that need quick access to working capital without the constraints of traditional lending. The company maintains profiles on BBB, LinkedIn, and Yelp in New York City.",
+    "category": "funder",
+    "employees": 8,
+    "website": "",
+    "location": "Monsey, New York",
+    "full_address": "25 Robert Pitt Drive, Suite 204, Monsey, NY 10952",
+    "leaders": [],
+    "news": [
+      {
+        "h": "Reliable Capital Advance LLC Registered as Foreign LLC in New York",
+        "s": "NY Department of State, January 2025",
+        "d": "Reliable Capital Advance LLC was officially registered in New York state on January 22, 2025, as a Foreign Limited Liability Company under document number 7516043."
+      },
+      {
+        "h": "Reliable Capital Establishes Presence in New York Business Funding Market",
+        "s": "BBB, 2025",
+        "d": "The company has established its Better Business Bureau profile and online presence as an alternative business funder in New York."
+      }
+    ],
+    "ice": "As a newly registered funder in 2025, Reliable Capital Advance is entering the market at an interesting time — the alternative lending space is growing at 13% CAGR.",
+    "icebreakers": [
+      "Starting a new funding operation in 2025 takes conviction — what opportunity are you seeing in the market?",
+      "Your no-prepayment-penalty, no-hidden-fees approach is a strong differentiator in the MCA space",
+      "As a newer funder, you have the advantage of building tech-first from day one",
+      "The Monsey/NYC corridor has become a hub for alternative lending — are you seeing strong deal flow?"
+    ],
+    "tp": [
+      "As a newly established funder, HyperVerge's AI underwriting could give Reliable Capital Advance a technology edge from day one, reducing the need for large underwriting teams",
+      "HyperVerge's platform, used by 450+ MCA companies, could provide Reliable Capital with industry-proven risk models as they build their portfolio",
+      "Starting with AI-powered underwriting from launch means Reliable Capital can scale faster than competitors who must retrofit legacy processes"
+    ],
+    "ask": "As you're building Reliable Capital Advance from the ground up in 2025, I'd love to discuss how AI underwriting could give you a technology advantage from day one — would you have 15 minutes this week?",
+    "notes": "Very new company — registered January 2025. Monsey, NY base (Rockland County — active MCA community). No-fee, transparent model. Limited public info on leadership. Key angle: as a new funder, they can adopt AI underwriting from inception rather than retrofitting. Foreign LLC registration suggests entity may be established elsewhere.",
+    "contacts": [],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1499,
+    "name": "SECURE CAPITAL SOLUTIONS INC.",
+    "desc": "Secure Capital Solutions Inc. is a small business loans and financing company founded on May 26, 2020, and headquartered in Deal, New Jersey. The company operates as a direct funder offering lines of credit, term loans, and working capital advances, tailored to meet client needs without impacting credit scores. Led by President Jacob Saada (also known as Jay Saada), the company provides same-day financing with a high approval rate through exclusive funding options.\n\nSecure Capital Solutions offers collateral-free working capital advances with less paperwork and quicker processing than traditional bank credit. The company has earned positive Trustpilot reviews (10+ reviews) with customers praising the speed, flexibility, and personal service. The company is BBB profiled and maintains an active presence on LinkedIn, emphasizing their commitment to putting clients over profits.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://www.securecapitalsolutions.com/",
+    "location": "Deal, New Jersey",
+    "full_address": "290 Norwood Ave, Deal, NJ 07723",
+    "leaders": [
+      {
+        "n": "Jay Saada",
+        "t": "Founder & President",
+        "bg": "Founder and President of Secure Capital Solutions Inc., established in May 2020 in Deal, NJ. Has built the company into a direct funder with positive Trustpilot reviews and BBB profile, emphasizing same-day financing and collateral-free working capital advances with a client-first approach.",
+        "hooks": [
+          "Your Trustpilot reviews consistently highlight the personal touch — that's hard to maintain while scaling",
+          "Same-day financing with collateral-free advances is a strong value proposition",
+          "Building from Deal, NJ — the Shore community has become a real hub for alternative lending",
+          "Your no-credit-impact approach to underwriting must resonate well with businesses exploring options"
+        ],
+        "li": "https://br.linkedin.com/in/jay-saada-82a56b1ab"
+      }
+    ],
+    "news": [
+      {
+        "h": "Secure Capital Solutions Earns Positive Trustpilot Reviews",
+        "s": "Trustpilot, 2025",
+        "d": "Customers praise the company for quick and easy processes, helpful guidance, flexible terms, and competitive deals. Multiple reviews highlight Jay Saada's personal involvement."
+      },
+      {
+        "h": "Secure Capital Solutions Maintains BBB Business Profile",
+        "s": "BBB, 2025",
+        "d": "The company continues its Better Business Bureau profile as a business loans provider in Deal, NJ, demonstrating commitment to transparency."
+      }
+    ],
+    "ice": "Your Trustpilot reviews consistently mention Jay's personal involvement in every deal — that's rare and valuable in alternative lending.",
+    "icebreakers": [
+      "Your positive Trustpilot reviews highlighting personal service are a real competitive advantage in the MCA space",
+      "Same-day, collateral-free funding with no credit impact — that's a compelling offer for businesses exploring options",
+      "The Deal, NJ lending community has produced some strong funders — how do you differentiate in that ecosystem?",
+      "Building strong client relationships since 2020 while maintaining fast funding speed shows great operational discipline"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Secure Capital Solutions maintain its same-day funding promise as deal volume grows, without sacrificing the personal touch customers love",
+      "With collateral-free advances, strong underwriting is critical — AI-powered risk assessment could help Secure Capital better evaluate businesses using alternative data",
+      "As Secure Capital Solutions scales from its Deal, NJ base, AI document verification could handle the growing paperwork while Jay and the team focus on client relationships"
+    ],
+    "ask": "Jay, your Trustpilot reviews show how much clients value your personal approach — I'd love to discuss how AI underwriting could help you scale that quality of service across more deals. Would you have 15 minutes?",
+    "notes": "Founded May 2020 in Deal, NJ — strong alternative lending community in Shore area. Founder Jay Saada is personally involved in deals per customer reviews. Same-day, collateral-free funding. Positive Trustpilot reviews. Key angle: AI can help them scale the personal, high-touch model without losing what makes them special. Also known as Jacob Saada (BBB) / Jay Saada (LinkedIn/Trustpilot).",
+    "contacts": [
+      {"n": "Jay Saada", "t": "Founder & President"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1508,
+    "name": "X CAPITAL GROUP CORP.",
+    "desc": "X Capital Group Corp. is a private, family-owned business established in 2024, headquartered in Cedarhurst, NY. The company offers revenue-based financing with customized funding offers ranging from $10,000 to $5 million, with payback terms from 30 days to 2 years. X Capital Group utilizes a team of human underwriters to evaluate applications and prides itself on having one of the fastest fund distribution times in the industry, typically delivering within 12 hours of approval.\n\nThe company operates as a broker-funder hybrid, connecting small business owners with premium funding institutions through their platform while also providing direct funding. Revenue-based financing from X Capital can be used for equipment purchases, inventory restocking, payroll, commercial real estate, business expansion, and working capital needs. As a newer entrant to the market, the company is building its reputation on speed and personalized service.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://xcapitalgrp.com/",
+    "location": "Cedarhurst, New York",
+    "full_address": "Cedarhurst, NY",
+    "leaders": [],
+    "news": [
+      {
+        "h": "X Capital Group Corp Launches Revenue-Based Financing Platform",
+        "s": "Company Website, 2024",
+        "d": "X Capital Group established its revenue-based financing platform in 2024, offering customized funding from $10K to $5M with industry-leading 12-hour disbursement times."
+      },
+      {
+        "h": "Alternative Business Financing Market Continues Rapid Growth",
+        "s": "Industry Reports, 2025",
+        "d": "Revenue-based financing companies like X Capital Group are benefiting from the expanding alternative lending market as businesses seek faster, more flexible funding options."
+      }
+    ],
+    "ice": "Launching in 2024 with 12-hour fund distribution is ambitious — X Capital Group is clearly built for speed in revenue-based financing.",
+    "icebreakers": [
+      "12-hour fund distribution after approval is industry-leading — what's the secret to moving that fast?",
+      "As a family-owned business, you bring a different perspective to revenue-based financing than institutional players",
+      "Funding up to $5M with payback terms from 30 days to 2 years gives you wide market coverage",
+      "The Cedarhurst area has become a hub for alternative financing — how are you positioning X Capital in that ecosystem?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help X Capital Group maintain its 12-hour distribution promise at scale by automating document verification and risk scoring",
+      "As a 2024 launch, X Capital has the advantage of building with AI-first underwriting rather than retrofitting legacy processes used by older funders",
+      "With funding up to $5M and human underwriters, AI could augment the team's decision-making with data-driven insights while preserving the personal touch"
+    ],
+    "ask": "With X Capital Group's impressive 12-hour funding speed and up to $5M in revenue-based financing, I'd love to discuss how AI underwriting could help you scale that speed as deal volume grows. Would you have 15 minutes?",
+    "notes": "New company established 2024. Family-owned. Cedarhurst, NY (Five Towns area — active MCA community). Revenue-based financing focus. 12-hour distribution claim is notable. Uses human underwriters. Up to $5M funding. Key angle: as a new, speed-focused funder, AI underwriting is a natural fit for their growth.",
+    "contacts": [],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1533,
+    "name": "Labo Capital",
+    "desc": "Labo Capital is a small business financing company based in Bradenton, Florida, with over 15 years of experience in the industry. Founded by William Labovic and led by CEO Peter Ribeiro, the company provides fast, flexible funding for small businesses including working capital loans ($50,000 to $5,000,000), equipment financing ($50,000 to $50,000,000), and lines of credit. The company offers same-day approval and funding, with flexible terms ranging from 6 months to 7 years for well-qualified borrowers.\n\nLabo Capital positions itself as a white-glove service provider, with a team of dedicated financial experts who work closely with each client. The company offers creative financing solutions including EFA, $1 Out, FMV, Trac & Split Leases, Floor Plan Lines, and Rental Fleet Facilities. Equipment financing may be eligible for tax deductions under Section 179 of the tax code. The company maintains active profiles on LinkedIn and Alignable.",
+    "category": "funder",
+    "employees": 12,
+    "website": "https://labocapital.com/",
+    "location": "Bradenton, Florida",
+    "full_address": "Bradenton, FL",
+    "leaders": [
+      {
+        "n": "Peter Ribeiro",
+        "t": "Chief Executive Officer",
+        "bg": "CEO of Labo Capital, leading the company's small business financing operations. Oversees the delivery of working capital, equipment financing, and lines of credit to small businesses with a white-glove service approach, leveraging 15+ years of industry experience.",
+        "hooks": [
+          "Your 5-star white glove service approach sets you apart in a commoditized lending space",
+          "Equipment financing up to $50M is a massive range — what industries are driving that demand?",
+          "Same-day approval and funding is table stakes now, but your creative leasing options add real value"
+        ],
+        "li": ""
+      },
+      {
+        "n": "William Labovic",
+        "t": "Founder",
+        "bg": "Founder of Labo Capital, bringing over 15 years of experience in small business financing. Established the company with a focus on personalized, white-glove financial solutions for small business owners including working capital and equipment financing.",
+        "hooks": [
+          "15+ years in small business financing gives you deep market insight",
+          "Your creative financing structures like Trac & Split Leases show sophisticated product thinking",
+          "Building a business from Bradenton, FL serving national clients shows strong operational capabilities"
+        ],
+        "li": "https://www.linkedin.com/in/william-labovic-00312046/"
+      }
+    ],
+    "news": [
+      {
+        "h": "Labo Capital Offers Equipment Financing Up to $50 Million",
+        "s": "Company Website, 2025",
+        "d": "Labo Capital's equipment financing program ranges from $50,000 to $50,000,000 with 36 to 84 month terms, including EFA, FMV, and various lease structures."
+      },
+      {
+        "h": "Labo Capital Maintains Active Presence in Bradenton FL Business Community",
+        "s": "Alignable, 2025",
+        "d": "Labo Capital continues to build its network and client base in the Bradenton, Florida area while serving small businesses nationally."
+      }
+    ],
+    "ice": "Labo Capital's equipment financing range up to $50M is remarkably broad for a boutique lender — that speaks to serious underwriting capabilities.",
+    "icebreakers": [
+      "Equipment financing up to $50M alongside working capital loans shows impressive range — how do you underwrite deals that large?",
+      "Your 5-star white-glove service model is a differentiator, but scaling that requires smart technology adoption",
+      "15+ years of experience and creative leasing structures like Trac & Split Leases show deep product expertise",
+      "Same-day approval on deals up to $5M requires strong, fast underwriting — how is your process structured?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting could help Labo Capital maintain its white-glove service quality while scaling from working capital loans to equipment financing deals up to $50M",
+      "With funding ranging from $50K to $50M, AI-powered risk assessment could help Labo Capital appropriately price and manage risk across a wide spectrum of deal sizes",
+      "As Labo Capital grows its equipment financing portfolio, AI document verification could streamline the heavier documentation requirements for larger transactions"
+    ],
+    "ask": "Peter, Labo Capital's range from working capital to $50M equipment financing is impressive — I'd love to discuss how AI underwriting could help you maintain your white-glove service while scaling across that spectrum. Would you have 15 minutes?",
+    "notes": "Bradenton, FL based boutique lender. Impressive equipment financing range up to $50M. 15+ years experience. White-glove service positioning. Creative leasing structures (EFA, FMV, Trac, Split). Key angle: AI can help them maintain personalized service while handling the complex underwriting needed for their wide deal size range. Founder William Labovic's name is basis for company name (Labo = Labovic).",
+    "contacts": [
+      {"n": "Peter Ribeiro", "t": "CEO"},
+      {"n": "William Labovic", "t": "Founder"}
+    ],
+    "source": ["p4-wave9-researched"]
+  }
+]

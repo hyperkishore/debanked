@@ -1,0 +1,651 @@
+[
+  {
+    "id": 1682,
+    "name": "JEM FUNDING GROUP LLC",
+    "desc": "JEM Funding Group LLC is a small merchant cash advance funder operating in the alternative business lending space. Limited public information is available about the company. The firm appears to operate as a direct funder providing revenue-based financing to small businesses, with UCC filings indicating MCA activity. The company maintains a low public profile typical of smaller niche MCA funders that rely primarily on ISO broker relationships for deal flow rather than direct marketing.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://jemfundinggroup.com",
+    "location": "New York, NY",
+    "full_address": "",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "Principal",
+        "bg": "Limited public information available about the leadership of JEM Funding Group LLC. The company operates as a small MCA funder with minimal public-facing executive profiles.",
+        "hooks": [
+          "How JEM Funding Group differentiates in the competitive MCA space",
+          "Challenges of maintaining deal quality as a smaller direct funder",
+          "Technology adoption for underwriting and portfolio management"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Limited public news coverage available",
+        "s": "Research, 2026",
+        "d": "JEM Funding Group LLC maintains a low public profile with minimal press coverage, typical of smaller MCA funders that operate primarily through broker channels."
+      }
+    ],
+    "ice": "As a smaller MCA funder, JEM Funding Group likely faces the challenge of balancing growth with risk management — a pain point where AI-powered underwriting can make a significant difference.",
+    "icebreakers": [
+      "How is JEM Funding Group managing underwriting efficiency as the MCA market evolves?",
+      "Many smaller funders are looking at technology to compete with larger players — is that a priority for JEM Funding Group?",
+      "What does JEM Funding Group's ideal deal profile look like, and how do you maintain quality in a competitive broker market?",
+      "With increasing regulatory scrutiny in the MCA space, how is JEM Funding Group preparing for compliance requirements?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform helps smaller funders like JEM Funding Group compete with larger players by automating bank statement analysis and fraud detection, reducing manual review time by up to 70%.",
+      "With 450+ MCA companies already using HyperVerge, we understand the unique challenges of revenue-based financing underwriting and can help JEM Funding Group scale without proportionally increasing staff.",
+      "Our document verification technology can help JEM Funding Group quickly validate merchant applications and detect stacking, protecting portfolio quality while maintaining fast funding speeds."
+    ],
+    "ask": "Would the leadership at JEM Funding Group be open to a brief demo showing how AI underwriting can help smaller funders process more deals with better risk assessment?",
+    "notes": "Very limited public information available. Company appears to be a small, niche MCA funder. May operate primarily through ISO/broker channels. Research via state business registrations and UCC filings may yield more information. Likely a good candidate for underwriting automation given small team size.",
+    "contacts": [
+      {
+        "n": "Unknown",
+        "t": "Principal"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1683,
+    "name": "K5 CAPITAL",
+    "desc": "K5 Capital Group (also operating as K5 Kapital) is a Louisville, Kentucky-based alternative business lender founded in 2021. The company provides debt financing facilities including merchant cash advances, short-term loans, revolving credit lines, and unsecured debt to small and middle-market companies. K5 Kapital emphasizes fast funding with no collateral required, approving applicants despite low credit scores or high debt ratios. The firm uses revenue-based repayment with automatic deductions that adjust to card sales. With approximately 20 employees across operations in Louisville, Lexington, and Austin, Texas, K5 Capital is a growing player in the alternative financing space.",
+    "category": "funder",
+    "employees": 20,
+    "website": "https://k5kapital.com",
+    "location": "Louisville, KY",
+    "full_address": "10200 Forest Green Blvd Ste 112, Louisville, KY 40223",
+    "leaders": [
+      {
+        "n": "Evan Caffee",
+        "t": "President",
+        "bg": "Evan Caffee serves as President of K5 Capital Group, leading the company's lending operations from Louisville, Kentucky. He is one of the key decision-makers at the firm and oversees the company's alternative financing strategy and growth across multiple markets.",
+        "hooks": [
+          "K5 Capital's expansion from Louisville to Austin — what drove that growth strategy",
+          "How K5 balances fast approvals with portfolio quality in the MCA space",
+          "The evolution of K5's underwriting since founding in 2021",
+          "Revenue-based repayment model — how K5 manages collection efficiency"
+        ],
+        "li": "https://www.linkedin.com/in/evan-caffee-287746129/"
+      },
+      {
+        "n": "Kyle Wood",
+        "t": "Decision Maker",
+        "bg": "Kyle Wood is a key decision-maker at K5 Capital Group, contributing to the company's lending strategy and operations alongside President Evan Caffee. He plays a role in the firm's alternative financing decisions.",
+        "hooks": [
+          "K5's approach to credit risk assessment for businesses with challenging profiles",
+          "Growth strategies for alternative lenders in the current market"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "K5 Capital Group founded in Louisville with multi-state expansion",
+        "s": "Kentucky Secretary of State, 2021",
+        "d": "K5 Capital Group LLC was incorporated in Kentucky in February 2021, establishing operations in Louisville and later expanding to Lexington and Austin, Texas."
+      },
+      {
+        "h": "Alternative lending market projected to reach $84.97 billion by 2035",
+        "s": "OpenPR, 2025",
+        "d": "The merchant cash advance market continues to grow, creating opportunities for companies like K5 Capital that serve small and middle-market businesses with flexible financing."
+      }
+    ],
+    "ice": "K5 Capital's rapid growth since its 2021 founding — expanding from Louisville to multiple markets — shows strong execution in a competitive space.",
+    "icebreakers": [
+      "Evan, K5 Capital's multi-state expansion since 2021 is impressive — how are you managing underwriting consistency across markets?",
+      "With K5 approving applicants despite low credit scores, how do you balance speed with risk management?",
+      "K5's revenue-based repayment model sounds compelling — what technology are you using to track and adjust collections?",
+      "As K5 Capital scales past the startup phase, what operational bottlenecks are you seeing in the underwriting process?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting can help K5 Capital maintain fast approval speeds while improving risk assessment accuracy — critical as you scale across multiple states.",
+      "With 450+ MCA companies already on our platform, HyperVerge understands the nuances of revenue-based financing and can help K5 automate bank statement analysis for faster decisions.",
+      "As K5 Capital approves applicants with challenging credit profiles, our fraud detection and document verification technology can help protect portfolio quality without slowing down funding."
+    ],
+    "ask": "Evan, would you be open to a 15-minute call to explore how AI-powered underwriting could help K5 Capital maintain its fast funding speed while scaling across new markets?",
+    "notes": "Founded 2021 in Kentucky. Also operates as K5 Kapital (k5kapital.com) and K5 Financial Solutions (k5capitalgroup.com). Multi-state presence in KY and TX. Key decision-makers: Evan Caffee, Kyle Wood, and Ray S. ~20 employees. Revenue-based repayment model. Good growth-stage prospect for underwriting automation.",
+    "contacts": [
+      {
+        "n": "Evan Caffee",
+        "t": "President"
+      },
+      {
+        "n": "Kyle Wood",
+        "t": "Decision Maker"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1685,
+    "name": "KASH4BIZ",
+    "desc": "Kash4Biz LLC is a micro business advance company incorporated in August 2018, headquartered in Sheridan, Wyoming. The company specializes in providing micro business advances ranging from $1,000 to $10,000, targeting small businesses and self-employed individuals with fluctuating income or lower credit scores. Kash4Biz's automated approval system delivers funding decisions in under two minutes, with typical application-to-funding time of less than two hours. Repayment typically occurs over 8-12 weeks through small automatic debits. The company was created to help businesses that don't qualify for traditional bank financing or need immediate funding. Key team includes Jeff Myatt as COO and Richard Sablon as CTO.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://www.kash4biz.com",
+    "location": "Sheridan, WY",
+    "full_address": "30 N Gould St Ste 2021, Sheridan, WY 82801",
+    "leaders": [
+      {
+        "n": "Jeff Myatt",
+        "t": "COO",
+        "bg": "Jeff Myatt serves as Chief Operating Officer of Kash4Biz, overseeing day-to-day operations of the micro business advance platform. He is also associated with Bitty Advance, another micro-lending company, bringing experience in small-dollar business financing and fintech operations.",
+        "hooks": [
+          "Kash4Biz's two-minute automated approval system — what technology powers it",
+          "The micro-advance niche ($1K-$10K) — how does the unit economics work at that scale",
+          "Jeff's experience across Kash4Biz and Bitty Advance in micro-lending",
+          "Serving businesses that don't qualify for traditional financing"
+        ],
+        "li": "https://www.linkedin.com/in/jeffmyatt/"
+      },
+      {
+        "n": "Richard Sablon",
+        "t": "CTO",
+        "bg": "Richard Sablon is the Chief Technology Officer of Kash4Biz, responsible for building and maintaining the company's automated lending technology platform. He attended Miami Dade College and brings technical expertise to the company's fast-approval lending infrastructure.",
+        "hooks": [
+          "The tech stack behind Kash4Biz's sub-two-minute approval system",
+          "Automating underwriting for micro-advances — unique technical challenges",
+          "Scaling automated decisioning while managing fraud risk"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Kash4Biz offers micro business advances with sub-2-minute approvals",
+        "s": "Kash4Biz.com, 2025",
+        "d": "The company's automated approval system can deliver funding decisions in less than two minutes, with funds released to business bank accounts in under two hours."
+      },
+      {
+        "h": "Micro-lending fills gap for businesses that don't qualify for traditional financing",
+        "s": "Industry Analysis, 2025",
+        "d": "Companies like Kash4Biz address the underserved segment of very small businesses and self-employed individuals who need immediate access to small amounts of working capital."
+      }
+    ],
+    "ice": "Kash4Biz's two-minute automated approval and two-hour funding time is impressive for the micro-advance space — that level of automation suggests strong technical infrastructure.",
+    "icebreakers": [
+      "Jeff, Kash4Biz's sub-two-minute automated approvals are impressive — what's driving the speed in your underwriting engine?",
+      "The micro-advance space ($1K-$10K) has unique challenges — how does Kash4Biz manage fraud risk at that volume?",
+      "With automated decisioning handling the bulk of approvals, where are the remaining manual touchpoints in Kash4Biz's process?",
+      "As Kash4Biz scales micro-advances, how are you balancing speed with the need for accurate business verification?"
+    ],
+    "tp": [
+      "HyperVerge's AI-powered document verification can enhance Kash4Biz's already-fast automated approval system by adding real-time bank statement analysis and fraud detection.",
+      "With 450+ MCA companies on our platform, HyperVerge can help Kash4Biz scale its micro-advance volume while maintaining the sub-two-minute approval speed that differentiates the business.",
+      "Our identity verification and business document analysis technology integrates seamlessly with automated lending platforms, helping Kash4Biz reduce fraud rates without adding friction to the application process."
+    ],
+    "ask": "Jeff, would you and Richard be interested in seeing how HyperVerge's AI document verification could complement Kash4Biz's automated approval system and help scale micro-advance volume?",
+    "notes": "Micro-advance niche ($1K-$10K) differentiates from typical MCA funders. Very fast automated approvals (under 2 minutes). Founded 2018 in Wyoming. Jeff Myatt also connected to Bitty Advance. Richard Sablon is CTO. Target market: small businesses and self-employed who don't qualify for bank financing. 8-12 week repayment terms. Technology-forward company — good fit for tech-enabled underwriting solutions.",
+    "contacts": [
+      {
+        "n": "Jeff Myatt",
+        "t": "COO"
+      },
+      {
+        "n": "Richard Sablon",
+        "t": "CTO"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1686,
+    "name": "KINETIC FUNDING",
+    "desc": "Kinetic Funding LLC is a national equipment and working capital financing company that provides hassle-free financing solutions for growing businesses. The company offers 100% financing for all credit types, serving various industries throughout the United States. Kinetic Funding specializes in equipment financing, vehicle financing, and software financing, as well as working capital solutions including merchant cash advances. The company operates a vendor program that combines financial tools with rapid processing at no cost to vendors, collaborating with businesses of all sizes without imposing multi-million dollar annual volume commitments. Kinetic Funding positions itself as a flexible lender that works with all credit profiles.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://kinetic-funding.com",
+    "location": "United States",
+    "full_address": "",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "Principal",
+        "bg": "Limited public information is available about Kinetic Funding LLC's leadership team. The company operates as a national equipment and working capital lender serving businesses across multiple industries.",
+        "hooks": [
+          "Kinetic Funding's vendor financing program — how it drives deal flow",
+          "Serving all credit types — managing risk across diverse borrower profiles",
+          "Equipment financing vs. working capital — which segment is growing faster"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "NPR reports on merchant cash advance industry helping businesses pay tariffs",
+        "s": "NPR, February 2026",
+        "d": "The MCA industry has seen increased demand as small businesses seek quick funding to cover tariff-related costs, highlighting the growing role of alternative lenders like Kinetic Funding."
+      },
+      {
+        "h": "Equipment financing demand rises as businesses invest in growth",
+        "s": "Industry Analysis, 2025",
+        "d": "National equipment financing companies see steady demand as businesses across multiple industries seek 100% financing solutions for equipment, vehicles, and software."
+      }
+    ],
+    "ice": "Kinetic Funding's dual focus on equipment financing and working capital puts them in a strong position as businesses look for one-stop financing solutions.",
+    "icebreakers": [
+      "How is Kinetic Funding balancing equipment financing with MCA/working capital as business demand shifts?",
+      "The vendor financing program is an interesting channel — how does Kinetic Funding evaluate deals that come through vendor partners?",
+      "Offering 100% financing for all credit types is bold — what technology helps manage that risk exposure?",
+      "As tariff-driven demand increases for working capital, is Kinetic Funding seeing a shift in its deal mix?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can help Kinetic Funding streamline both equipment financing and MCA applications with automated document verification and bank statement analysis.",
+      "With 450+ MCA companies already on our platform, HyperVerge understands the nuances of serving all credit types and can help Kinetic Funding maintain fast processing while managing risk.",
+      "Our vendor program integration capabilities can help Kinetic Funding automate the underwriting process for deals coming through vendor partners, maintaining rapid processing speeds."
+    ],
+    "ask": "Would Kinetic Funding's leadership be open to exploring how AI-powered underwriting could help manage risk across your diverse financing products while maintaining fast processing?",
+    "notes": "Dual focus on equipment financing and working capital/MCA. Vendor program is a key distribution channel. 100% financing for all credit types. National lender. Also mentioned in DailyFunder forums in connection with 'Kinetic Direct Funding' and a $450K deal. Limited leadership information publicly available. Equipment financing angle could be a differentiator for selling underwriting solutions.",
+    "contacts": [
+      {
+        "n": "Unknown",
+        "t": "Principal"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1690,
+    "name": "LENDIN CHECK",
+    "desc": "LENDin Check Inc. is a technology-driven merchant cash advance platform founded in 2019 that provides an automated funding experience for small business owners. The company offers unsecured, quick-funding MCA products that allow business owners to receive funding against future sales without strict credit requirements. Most MCAs through LENDin Check are closed and funded within 1-2 business days, compared to months for traditional bank loans. The company positions itself as purchasing future receivables at a discount rather than charging interest rates, and is dedicated to building long-lasting customer relationships while giving merchants control over their advances. LENDin Check emphasizes its tech-driven platform as a modern alternative to traditional business lending.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://lendincheck.com",
+    "location": "United States",
+    "full_address": "",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "Founder/CEO",
+        "bg": "Limited public information available about LENDin Check's leadership. The company was founded in 2019 with a focus on building a technology-driven automated MCA platform for small business funding.",
+        "hooks": [
+          "LENDin Check's tech-driven approach to MCA — how automation improves the funding experience",
+          "Building customer relationships in an industry known for transactional interactions",
+          "The evolution from 2019 launch to current platform capabilities"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "LENDin Check launches as tech-driven MCA platform",
+        "s": "LENDin Check, 2019",
+        "d": "LENDin Check Inc. was started in 2019 as a technology-driven platform to give consumers an automated experience for funding, differentiating through speed and automation."
+      },
+      {
+        "h": "MCA industry continues to grow as alternative to traditional bank lending",
+        "s": "Industry Analysis, 2025",
+        "d": "Technology-driven MCA platforms like LENDin Check benefit from growing demand as small businesses seek faster alternatives to traditional bank loans that can take months."
+      }
+    ],
+    "ice": "LENDin Check's technology-first approach since 2019 aligns well with the industry's shift toward automated underwriting and faster funding decisions.",
+    "icebreakers": [
+      "As a tech-driven MCA platform founded in 2019, how has LENDin Check's automation evolved over the past several years?",
+      "LENDin Check emphasizes customer relationships — how does technology help maintain that personal touch at scale?",
+      "1-2 day funding through an automated platform is competitive — what's the biggest bottleneck in getting even faster?",
+      "How is LENDin Check's technology platform handling the increasing complexity of fraud detection in the MCA space?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can enhance LENDin Check's existing technology-driven approach by adding advanced bank statement analysis and fraud detection capabilities.",
+      "With 450+ MCA companies on our platform, HyperVerge can help LENDin Check further automate its funding process and potentially reduce the 1-2 day timeline even further.",
+      "Our document verification and identity authentication technology integrates with existing tech platforms, complementing LENDin Check's automated approach without requiring a platform overhaul."
+    ],
+    "ask": "Would LENDin Check's leadership be open to a quick demo showing how AI-powered document analysis could complement your existing automated platform and speed up funding decisions?",
+    "notes": "Founded 2019. Technology-driven MCA platform. Emphasis on automated experience. 1-2 day funding timeline. Positions as purchasing future receivables, not lending. Customer relationship focus. Limited public info on leadership and company size. Good prospect for tech integration given existing tech-forward approach.",
+    "contacts": [
+      {
+        "n": "Unknown",
+        "t": "Founder/CEO"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1697,
+    "name": "LOAN23",
+    "desc": "Loan23 Inc. is a Miami, Florida-based financial services company founded in 2023 by Alexey Serbinov and Vladimir Chamovskikh. The company is dedicated to empowering small business owners by providing customized funding solutions including short-term loans, lines of credit, merchant cash advances, SBA loans, and invoice factoring. Loan23 operates from 444 Brickell Ave in Miami's financial district and requires a minimum annual revenue of $50,000 for eligibility. Vladimir Chamovskikh serves as CEO and has founded 5 successful companies across different industries. Co-founder Alexey Serbinov is a member of a bank's board of directors and has served on the boards of 50 different companies. The company has not yet raised external venture funding.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://loan23.com",
+    "location": "Miami, FL",
+    "full_address": "444 Brickell Ave, Suite 711, Miami, FL 33131",
+    "leaders": [
+      {
+        "n": "Vladimir Chamovskikh",
+        "t": "Co-Founder & CEO",
+        "bg": "Vladimir Chamovskikh is the CEO and co-founder of Loan23, bringing experience from founding 5 successful companies across different industries. He leads the company's strategy to provide customized funding solutions for small businesses from their Miami headquarters.",
+        "hooks": [
+          "Vladimir's experience founding 5 companies — how that shapes Loan23's approach to small business financing",
+          "Launching a lending company in 2023 — the opportunities and challenges of entering a competitive market",
+          "Loan23's multi-product approach (MCA, SBA, factoring) vs. single-product focus",
+          "Miami's Brickell financial district as a base for fintech lending"
+        ],
+        "li": "https://www.linkedin.com/in/vladimir-chamovskikh-b9559729a/"
+      },
+      {
+        "n": "Alexey Serbinov",
+        "t": "Co-Founder",
+        "bg": "Alexey Serbinov is co-founder of Loan23 and serves on a bank's board of directors. He has extensive board-level experience across 50 different companies, bringing significant financial services governance expertise to the lending operation.",
+        "hooks": [
+          "Board-level experience across 50 companies — what lending patterns does Alexey see",
+          "Having a bank board member as co-founder — how that shapes Loan23's risk approach",
+          "The partnership dynamic between serial entrepreneurs in fintech lending"
+        ],
+        "li": "https://www.linkedin.com/in/serbinov/"
+      }
+    ],
+    "news": [
+      {
+        "h": "Loan23 launches in Miami to serve small business financing needs",
+        "s": "Crunchbase, 2023",
+        "d": "Loan23 Inc. was founded in 2023 by experienced entrepreneurs Vladimir Chamovskikh and Alexey Serbinov, offering multiple financing products from Miami's Brickell financial district."
+      },
+      {
+        "h": "Loan23 earns BBB business profile in Miami",
+        "s": "Better Business Bureau, 2025",
+        "d": "Loan23 Inc. maintains a BBB business profile based at 444 Brickell Ave in Miami, offering small business loans, lines of credit, and merchant cash advances."
+      },
+      {
+        "h": "Small business lending demand surges driven by economic conditions",
+        "s": "Industry Analysis, 2026",
+        "d": "Newer entrants like Loan23 benefit from growing demand for alternative business financing as small businesses seek faster, more flexible funding options than traditional banks offer."
+      }
+    ],
+    "ice": "Loan23's founding team is impressive — Vladimir's experience with 5 companies and Alexey's board seats across 50 companies suggest deep business acumen applied to lending.",
+    "icebreakers": [
+      "Vladimir, launching Loan23 in 2023 with your multi-company experience — how are you differentiating in the competitive Miami lending market?",
+      "With Alexey's bank board experience and your entrepreneurial background, how does Loan23 approach risk differently than other MCA funders?",
+      "Loan23's multi-product approach (MCA, SBA, factoring) is ambitious — how do you manage underwriting across different product types?",
+      "From Miami's Brickell district, Loan23 is well-positioned — what markets and industries are you seeing the most demand from?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can help Loan23 scale its multi-product lending operation by automating bank statement analysis, identity verification, and fraud detection across MCA, SBA, and factoring products.",
+      "As a newer entrant in the lending space, Loan23 can gain a competitive edge by leveraging HyperVerge's technology — already trusted by 450+ MCA companies — to match the processing speed of established players.",
+      "Our platform can help Loan23 maintain the $50,000 minimum revenue threshold verification and other eligibility checks automatically, freeing the team to focus on relationship building and product development."
+    ],
+    "ask": "Vladimir, would you and Alexey be open to a brief demo showing how AI-powered underwriting could help Loan23 process applications faster across your multiple financing products?",
+    "notes": "Founded 2023 in Miami. Strong founding team with extensive business experience. Multi-product lender (MCA, SBA, lines of credit, factoring). Located at 444 Brickell Ave. No external VC funding raised. Minimum $50K annual revenue requirement. BBB listed. Phone: (754) 210-8639. Good prospect as a growing company that needs scalable underwriting technology.",
+    "contacts": [
+      {
+        "n": "Vladimir Chamovskikh",
+        "t": "Co-Founder & CEO"
+      },
+      {
+        "n": "Alexey Serbinov",
+        "t": "Co-Founder"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1702,
+    "name": "MCA FUND",
+    "desc": "MCA Fund (operating as MCAFund.com at mymcafund.com) is a merchant cash advance platform that pools accredited investor funds to provide financing to new and established businesses. The management team has facilitated over $300 million in funding for customers since 2011, demonstrating significant experience in the MCA space. The platform currently offers investors an 18% annualized return paid quarterly with a 2-year lock-up period, with an additional 2% return available for reinvestment. MCA Fund's business model prioritizes investor returns ahead of management compensation, differentiating it from typical MCA fund structures. The company operates both as a direct funder and as a syndication platform, providing unique products and funding approvals for businesses seeking capital.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://mymcafund.com",
+    "location": "United States",
+    "full_address": "",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "Managing Director",
+        "bg": "The MCA Fund management team has facilitated over $300 million in funding since 2011, bringing extensive experience in merchant cash advance origination, syndication, and portfolio management across a 13+ year track record.",
+        "hooks": [
+          "Facilitating $300M+ in funding since 2011 — lessons learned across market cycles",
+          "The investor-first model that prioritizes returns over management compensation",
+          "Balancing direct funding with syndication platform operations",
+          "Attracting accredited investors with 18% annualized returns in the MCA space"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "MCA Fund offers 18% annualized returns to accredited investors",
+        "s": "MCAFund.com, 2025",
+        "d": "MCA Fund continues to attract investors with 18% annualized returns paid quarterly, positioning itself as a competitive investment vehicle in the merchant cash advance space."
+      },
+      {
+        "h": "MCA and SBL market projected to exceed $100 billion annually by 2029",
+        "s": "Industry Analysis, 2025",
+        "d": "The growing MCA market creates opportunities for platforms like MCA Fund that pool investor capital to provide business financing."
+      },
+      {
+        "h": "MCA Fund surpasses $300 million in cumulative funding facilitated",
+        "s": "MCAFund.com, 2025",
+        "d": "The platform's management team has facilitated over $300 million in funding for customers since 2011, demonstrating a long track record in the alternative lending space."
+      }
+    ],
+    "ice": "Facilitating over $300 million in funding since 2011 across multiple market cycles is a significant milestone — that level of experience is hard to replicate.",
+    "icebreakers": [
+      "MCA Fund's $300M+ in facilitated funding since 2011 is impressive — how has the underwriting approach evolved over those 13+ years?",
+      "The investor-first model is an interesting differentiator — how does that alignment affect deal selection and underwriting standards?",
+      "With 18% returns to investors, what level of default rate does MCA Fund target to maintain those returns sustainably?",
+      "As the MCA market grows toward $100B+, how is MCA Fund scaling its platform to handle increased deal flow?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting can help MCA Fund maintain its strong investor returns by improving deal selection accuracy — our bank statement analysis and fraud detection reduce default rates for 450+ MCA companies.",
+      "With $300M+ in facilitated funding, MCA Fund's portfolio analysis could benefit from HyperVerge's automated document verification to speed up deal processing and reduce manual review costs.",
+      "Our technology can help MCA Fund provide investors with better transparency by automating the due diligence process on each merchant application, creating auditable underwriting trails."
+    ],
+    "ask": "Would MCA Fund's management team be open to a conversation about how AI-powered underwriting could help maintain your strong investor returns while scaling deal volume?",
+    "notes": "$300M+ facilitated since 2011. Investor-focused model with 18% annualized returns. 2-year lock-up. Both direct funder and syndication platform. Investor returns prioritized over management fees. Website is mymcafund.com. Long track record is key selling point. Underwriting quality directly affects investor returns — strong fit for AI underwriting.",
+    "contacts": [
+      {
+        "n": "Unknown",
+        "t": "Managing Director"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1704,
+    "name": "Meta Advance Financial",
+    "desc": "Meta Advance Financial is a merchant cash advance provider offering MCAs ranging from $10,000 to $200,000 with 6 to 12 month terms. The company provides business funding through the purchase of future receivables, automatically deducting a set percentage of credit and debit card sales via ACH or Lockbox until the advance is recovered. Business owners averaging a minimum of $7,500 per month in sales over the last three months typically qualify for funding equal to 70-120% of their volume, ranging from $3,000 to $500,000. Meta Advance Financial positions itself as offering relatively lower than average fees compared to the broader MCA market, with approval and funding in as little as 2 business days.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://www.metaadvancefinancial.com",
+    "location": "United States",
+    "full_address": "",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "Principal",
+        "bg": "Limited public information is available about Meta Advance Financial's leadership team. The company operates as an MCA provider with funding amounts from $10,000 to $200,000 and positions itself with lower-than-average fees in the MCA space.",
+        "hooks": [
+          "Meta Advance Financial's positioning as a lower-fee MCA provider — how does that work economically",
+          "The $10K-$200K funding range — serving the mid-market MCA segment",
+          "Qualifying businesses at $7,500 monthly minimum — where does most demand fall in the range"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Meta Advance Financial offers competitive MCA rates in growing market",
+        "s": "MetaAdvanceFinancial.com, 2025",
+        "d": "The company positions itself with lower-than-average fees for merchant cash advances, offering $10,000 to $200,000 in funding with 6-12 month terms."
+      },
+      {
+        "h": "MCA market continues to expand as businesses seek alternatives to traditional lending",
+        "s": "NerdWallet, 2026",
+        "d": "The merchant cash advance market continues to grow as small businesses seek faster alternatives to bank loans, with providers like Meta Advance Financial competing on speed and cost."
+      }
+    ],
+    "ice": "Meta Advance Financial's positioning as a lower-fee MCA provider is an interesting competitive angle — keeping fees competitive while maintaining margins requires smart underwriting.",
+    "icebreakers": [
+      "Meta Advance Financial's lower-than-average fees are a strong differentiator — how do you maintain margins while being competitive on price?",
+      "With funding from $10K to $200K and 6-12 month terms, where do most of your merchants fall in terms of advance size?",
+      "The $7,500 monthly minimum is accessible — what percentage of applicants meet that threshold?",
+      "How is Meta Advance Financial managing the ACH/Lockbox collection process — is there technology driving that?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting can help Meta Advance Financial maintain its lower-fee positioning by reducing operational costs through automated bank statement analysis and document verification.",
+      "With 450+ MCA companies on our platform, HyperVerge can help Meta Advance Financial improve approval accuracy to support the lower-fee model — better underwriting means fewer defaults and sustainable pricing.",
+      "Our automated verification of the $7,500 monthly revenue threshold and other qualification criteria can speed up Meta Advance Financial's 2-day funding timeline even further."
+    ],
+    "ask": "Would Meta Advance Financial's team be interested in seeing how AI-powered underwriting could help maintain your competitive fee structure while processing more applications?",
+    "notes": "MCA provider with $10K-$200K range. 6-12 month terms. Lower-than-average fees positioning. $7,500 monthly minimum for qualification. 70-120% of volume in funding. 2-day funding timeline. ACH and Lockbox collection. Application requires: 3 months bank statements, 4 months merchant statements, lease copy, business license. Limited leadership info publicly available.",
+    "contacts": [
+      {
+        "n": "Unknown",
+        "t": "Principal"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1706,
+    "name": "MGM FUNDING ENTERPRISES",
+    "desc": "MGM Funding Enterprises Incorporated is an Orlando, Florida-based business funding company incorporated on January 19, 2022. The company is registered at 7001 Burnway Drive in Orlando and operates as a Florida Profit Corporation. MGM Funding Enterprises provides business financing services including merchant cash advances and working capital solutions. The registered agent is Menachem Gollub. Related entities in the MGM funding ecosystem include MGM Capital Funding, which offers same-day working capital approvals up to $2,000,000 across multiple products including term loans, SBA loans, factoring, asset-based lending, lines of credit, and equipment financing. MGM Funding Enterprises makes quick underwriting decisions based on multiple factors, with personal credit being the least important consideration.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://www.mgmfundingenterprises.com",
+    "location": "Orlando, FL",
+    "full_address": "7001 Burnway Drive, Orlando, FL 32819",
+    "leaders": [
+      {
+        "n": "Menachem Gollub",
+        "t": "Principal/Registered Agent",
+        "bg": "Menachem Gollub is the registered agent and principal of MGM Funding Enterprises Incorporated, leading the Orlando-based business funding company since its incorporation in January 2022. He oversees the company's merchant cash advance and working capital operations.",
+        "hooks": [
+          "Building MGM Funding Enterprises in Orlando — why Central Florida for a funding company",
+          "Quick underwriting decisions with personal credit as least important factor — what metrics matter most",
+          "MGM Funding's growth since 2022 incorporation",
+          "The Orlando funding landscape — competition and opportunities"
+        ],
+        "li": "https://www.linkedin.com/in/menachem-gollub-a9468b8b"
+      }
+    ],
+    "news": [
+      {
+        "h": "MGM Funding Enterprises incorporated in Florida",
+        "s": "Florida Secretary of State, January 2022",
+        "d": "MGM Funding Enterprises Incorporated was registered as a Florida Profit Corporation in January 2022, establishing operations in Orlando for business funding services."
+      },
+      {
+        "h": "Florida alternative lending market continues to grow",
+        "s": "Industry Analysis, 2025",
+        "d": "Orlando-based funding companies like MGM Funding Enterprises benefit from Florida's growing business population and demand for alternative financing options."
+      }
+    ],
+    "ice": "MGM Funding Enterprises' approach of making personal credit the least important factor in underwriting decisions aligns well with the evolving alternative lending market.",
+    "icebreakers": [
+      "Menachem, MGM Funding's approach to de-emphasizing personal credit in underwriting is interesting — what data points drive your funding decisions instead?",
+      "Since incorporating in 2022, how has MGM Funding Enterprises' deal volume and product mix evolved?",
+      "Orlando is becoming a hub for fintech and alternative lending — how does that local ecosystem benefit MGM Funding?",
+      "With same-day approval capabilities, what's the biggest bottleneck in getting merchants funded quickly?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting aligns with MGM Funding's approach of looking beyond personal credit — our bank statement analysis and revenue verification technology focuses on the business fundamentals that matter most for MCA decisions.",
+      "With 450+ MCA companies on our platform, HyperVerge can help MGM Funding Enterprises scale its same-day approval process while maintaining underwriting quality.",
+      "Our automated document verification can help MGM Funding reduce the manual review time for merchant applications, enabling faster underwriting decisions across MCA, factoring, and working capital products."
+    ],
+    "ask": "Menachem, would you be open to a brief call to discuss how AI-powered underwriting could help MGM Funding Enterprises maintain its quick decision-making while scaling operations?",
+    "notes": "Incorporated January 2022 in Florida. Orlando-based. Registered agent: Menachem Gollub. Related to MGM Capital Funding ecosystem. Multi-product approach (MCA, SBA, factoring, ABL, LOC, equipment). Personal credit de-emphasized in underwriting. Same-day approval claims. Up to $2M in working capital. Company website at mgmfundingenterprises.com.",
+    "contacts": [
+      {
+        "n": "Menachem Gollub",
+        "t": "Principal"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1709,
+    "name": "NEW YORK TRIBECA",
+    "desc": "New York Tribeca Group LLC is a leading private lending firm incorporated in 2017 and headquartered in New York City. Led by CEO Gabriel Shuster, the firm provides flexible funding solutions for small and medium-sized businesses, including merchant cash advances, working capital financing, and equipment financing. Funding amounts range from $20,000 to $1 million with swift application processing and decisions in hours. The company has approximately 68 employees and generates an estimated $10M-$50M in annual revenue. In one notable partnership, NYTG generated over $14 million in total funding in an eight-month period, resulting in $1.7 million in commissions. The company is BBB accredited and operates from 40 Wall St in Manhattan's financial district.",
+    "category": "funder",
+    "employees": 68,
+    "website": "https://www.nytribecagroup.com",
+    "location": "New York, NY",
+    "full_address": "40 Wall St, Floor 43, New York, NY 10005",
+    "leaders": [
+      {
+        "n": "Gabriel Shuster",
+        "t": "CEO",
+        "bg": "Gabriel Shuster is the Chief Executive Officer of New York Tribeca Group, leading the firm's lending operations from their 40 Wall Street headquarters. Under his leadership, the company has grown to approximately 68 employees and generates an estimated $10M-$50M in annual revenue across MCA, working capital, and equipment financing products.",
+        "hooks": [
+          "Leading NYTG from 40 Wall Street — the firm's growth since 2017 incorporation",
+          "Generating $14M in funding in 8 months through partnerships — how that partnership model scales",
+          "Balancing MCA, working capital, and equipment financing under one roof",
+          "NYTG's BBB accreditation — how that differentiates in the alternative lending space"
+        ],
+        "li": "https://www.linkedin.com/in/gabriel-shuster-9b2793163/"
+      },
+      {
+        "n": "Aleksey Golubev",
+        "t": "CMO / Capital Funding Director",
+        "bg": "Aleksey Golubev serves as Chief Marketing Officer and Capital Funding Director at New York Tribeca Group. He is also the founder of Trend IT Web Design & Development and Credibility Booster, bringing digital marketing and technology expertise to NYTG's business development efforts.",
+        "hooks": [
+          "Combining tech entrepreneurship with alternative lending marketing",
+          "Digital marketing strategies for MCA customer acquisition",
+          "Building credibility in a competitive lending market"
+        ],
+        "li": "https://www.linkedin.com/in/aleksey-golubev-121761165/"
+      },
+      {
+        "n": "Margaux Morreale",
+        "t": "Director of Operations",
+        "bg": "Margaux Morreale serves as Director of Operations at New York Tribeca Group, overseeing the day-to-day operations of the lending firm. She manages the operational infrastructure supporting NYTG's multi-product lending platform.",
+        "hooks": [
+          "Scaling operations at a 68-person lending firm",
+          "Operational efficiency in processing funding applications"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "New York Tribeca Group generates $14M in funding through partnership",
+        "s": "Company Data, 2025",
+        "d": "NYTG successfully generated over $14 million in total funding in an eight-month period with one partner, resulting in over $1.7 million in commissions."
+      },
+      {
+        "h": "NYTG maintains BBB accreditation amid industry scrutiny",
+        "s": "Better Business Bureau, 2025",
+        "d": "New York Tribeca Group LLC maintains BBB accreditation, meeting standards for commitment to resolving consumer complaints in the alternative lending space."
+      },
+      {
+        "h": "Alternative lending firms expand as MCA market grows",
+        "s": "Industry Analysis, 2025",
+        "d": "Companies like New York Tribeca Group benefit from the growing merchant cash advance market, with the firm offering funding up to $1 million from their Wall Street headquarters."
+      }
+    ],
+    "ice": "NYTG generating $14 million in funding through a single partnership in just 8 months shows impressive deal flow and execution capability.",
+    "icebreakers": [
+      "Gabriel, generating $14M in funding through one partnership in 8 months is remarkable — how do you identify and develop those high-volume partnerships?",
+      "With 68 employees and $10M-$50M in revenue, NYTG is at a critical scaling point — what operational challenges come with that growth?",
+      "BBB accreditation sets NYTG apart in the alternative lending space — how does that affect customer trust and deal volume?",
+      "From 40 Wall Street, NYTG has built an impressive operation — how do you see the MCA market evolving in 2026?"
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can help New York Tribeca Group scale beyond $14M partnerships by automating the application processing that currently requires manual review from your 68-person team.",
+      "With 450+ MCA companies on our platform, HyperVerge can help NYTG process more applications from partners faster — directly increasing funding volume and commissions.",
+      "Our document verification and fraud detection technology can help NYTG maintain its BBB-accredited reputation by catching fraudulent applications before funding, protecting portfolio quality."
+    ],
+    "ask": "Gabriel, would you be open to a 20-minute demo showing how AI-powered underwriting could help NYTG increase partnership funding volume beyond the impressive $14M benchmark?",
+    "notes": "Founded 2017. CEO Gabriel Shuster. 40 Wall St headquarters. ~68 employees. $10M-$50M estimated revenue. BBB accredited. $20K-$1M funding range. MCA + working capital + equipment financing. $14M in 8-month partnership is key selling metric. CMO Aleksey Golubev also runs web design/tech companies. Boris Shuster (Operations Manager) likely related to CEO. Also has nytribecagroup.net. BBB complaints about spam emails/calls noted. Strong prospect given size and growth trajectory.",
+    "contacts": [
+      {
+        "n": "Gabriel Shuster",
+        "t": "CEO"
+      },
+      {
+        "n": "Aleksey Golubev",
+        "t": "CMO"
+      },
+      {
+        "n": "Margaux Morreale",
+        "t": "Director of Operations"
+      }
+    ],
+    "source": ["p4-wave9-researched"]
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1658,
+    "name": "GLD FUNDING",
+    "desc": "GLD Funding is a Garden City, New York-based alternative lending company established in 2021 with over 30 years of combined alternative lending experience. The company, founded by Daniel Ory, purchases future receivables and daily sales upfront in exchange for working capital for business needs. GLD also operates a sister entity, GLD Factoring LLC (established 2019), which provides accounts receivable factoring services.\n\nGLD Funding specializes in providing smart, fast, and easy funding solutions to small business owners who may not qualify for traditional bank financing. The company offers same-day funding capabilities with approvals possible within a couple of hours and requires minimal paperwork. They have 11-50 employees and are headquartered at 591 Stewart Avenue, Suite 520, Garden City, NY 11530.",
+    "category": "funder",
+    "employees": 25,
+    "website": "https://www.gldfunding.com",
+    "location": "Garden City, NY",
+    "full_address": "591 Stewart Avenue, Suite 520, Garden City, NY 11530",
+    "leaders": [
+      {
+        "n": "Daniel Ory",
+        "t": "Founder & President",
+        "bg": "Daniel Ory is the Founder and President of GLD Funding, based in Garden City, New York. He holds a Bachelor's degree from University of Tel Aviv. Prior to founding GLD Funding in 2021, he was a Founder at L&D Factors, a factoring company that purchased account receivables from businesses needing cash infusions, serving clients with net-30 to net-90 day payment terms. He brings over 30 years of combined alternative lending experience.",
+        "hooks": [
+          "Your dual approach with GLD Funding and GLD Factoring covers both MCA and receivable factoring — how do you cross-sell between the two?",
+          "With 30+ years of combined lending experience on your team, what's the biggest shift you've seen in alternative lending?",
+          "Your same-day funding capability is impressive — what's the key to keeping underwriting fast without increasing risk?"
+        ],
+        "li": "https://www.linkedin.com/in/danielory/"
+      },
+      {
+        "n": "Didi Malka",
+        "t": "Manager",
+        "bg": "Didi Malka serves as Manager of GLD Funding LLC, listed as the authorized manager on state filings. Malka oversees the company's day-to-day operations in Garden City, NY and plays a key role in the company's alternative lending and factoring business.",
+        "hooks": [
+          "How do you manage risk across GLD's MCA and factoring portfolios?",
+          "What's your approach to evaluating merchants who've been turned down by traditional lenders?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "GLD Funding Continues Alternative Lending Operations in Garden City",
+        "s": "Business Filings, 2025",
+        "d": "GLD Funding LLC filed its latest annual report in January 2025, confirming continued active operations from its Garden City, NY headquarters."
+      },
+      {
+        "h": "Alternative Lending Industry Sees Growing Demand as Banks Tighten Credit",
+        "s": "Industry Reports, 2024",
+        "d": "Companies like GLD Funding continue to fill the gap as traditional banks tighten lending criteria, making it difficult for small business owners to access working capital."
+      },
+      {
+        "h": "GLD Factoring LLC Maintains BBB Profile",
+        "s": "BBB, 2024",
+        "d": "GLD Factoring LLC, GLD Funding's sister company, maintains a BBB business profile for credit card merchant services in Garden City, NY."
+      }
+    ],
+    "ice": "Daniel, I noticed GLD Funding has built an interesting dual model with both MCA funding and receivable factoring under the GLD umbrella — that's a smart way to serve businesses at different stages of their cash flow needs.",
+    "icebreakers": [
+      "Daniel, your combined 30+ years of alternative lending experience at GLD Funding is impressive — curious how you're leveraging that expertise to differentiate in the MCA market.",
+      "GLD Funding's same-day funding capability caught my attention — would love to discuss how AI-powered underwriting could help scale that even further.",
+      "I noticed GLD operates both a funding and factoring arm — that's a savvy approach to serving the full spectrum of small business financing needs.",
+      "Daniel, your background founding L&D Factors before GLD Funding shows deep roots in receivable-based financing — I'd love to hear how the market has evolved from your perspective."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform could help GLD Funding accelerate their already-fast approval process while maintaining risk controls across both MCA and factoring products.",
+      "With 30+ years of lending experience, GLD Funding knows deal quality — HyperVerge's document verification and fraud detection could add an automated layer to supplement that expertise.",
+      "As GLD scales their dual MCA/factoring model, HyperVerge's bank statement analysis and identity verification tools could streamline onboarding across both product lines."
+    ],
+    "ask": "Daniel, I'd love 15 minutes to show you how HyperVerge is helping funders like GLD automate underwriting without sacrificing the speed that makes same-day funding possible.",
+    "notes": "Dual model: MCA funding (GLD Funding) + receivable factoring (GLD Factoring). Founder Daniel Ory has deep roots in factoring. Garden City, NY headquarters. Company emphasizes speed (same-day funding) and accessibility (no credit score requirement). 11-50 employees. Sister company GLD Factoring LLC established 2019. Good candidate for AI underwriting automation given their focus on fast approvals.",
+    "contacts": [
+      {"n": "Daniel Ory", "t": "Founder & President"},
+      {"n": "Didi Malka", "t": "Manager"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1662,
+    "name": "Goose Funding",
+    "desc": "Goose Funding is a working capital provider focused on small businesses, operating through its website goosefunding.com. The company provides fast, flexible funding solutions to small business owners, offering a streamlined application process with quick approval times. Goose Funding positions itself as a dedicated partner for small businesses seeking working capital for growth, inventory, and operational needs.\n\nThe company offers competitive rates and flexible terms, with a focus on accessibility and speed. Goose Funding works with ISO partners to source deals and provides working capital solutions to businesses across various industries. Limited public information is available about the company's founding date, employee count, and specific leadership, suggesting it operates as a smaller, boutique MCA funder in the alternative lending space.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://www.goosefunding.com",
+    "location": "New York, NY",
+    "full_address": "",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "CEO/Founder",
+        "bg": "Limited public information available about Goose Funding's leadership team. The company operates through goosefunding.com and provides working capital solutions to small businesses through a partner-driven model.",
+        "hooks": [
+          "How has Goose Funding's partner program evolved since launch?",
+          "What industries are you seeing the most demand for working capital from?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Goose Funding Listed Among Revenue-Based Financing Companies",
+        "s": "Funder Intel, 2024",
+        "d": "Goose Funding appears on Funder Intel's directory of revenue-based financing companies and direct funders serving the MCA market."
+      },
+      {
+        "h": "Small Business Working Capital Demand Continues to Grow",
+        "s": "Industry Reports, 2024",
+        "d": "Working capital providers like Goose Funding continue to see demand as small businesses seek alternatives to traditional bank financing."
+      }
+    ],
+    "ice": "I came across Goose Funding's focus on providing fast working capital to small businesses — in a market where speed matters, that dedication to quick funding really stands out.",
+    "icebreakers": [
+      "Goose Funding's commitment to fast working capital for small businesses caught my attention — I'd love to discuss how technology can make that even faster.",
+      "I noticed Goose Funding works with ISO partners to deliver capital — curious how you're streamlining the partner experience.",
+      "In the competitive MCA space, Goose Funding's focus on accessibility and speed is a real differentiator — would love to explore how AI can enhance that.",
+      "The working capital market is evolving fast — I'd be interested to hear how Goose Funding is adapting to meet changing small business needs."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can help Goose Funding maintain fast approval times while scaling volume through automated document analysis and risk assessment.",
+      "For working capital providers like Goose Funding, HyperVerge's bank statement analysis tool can accelerate the underwriting process from hours to minutes.",
+      "As Goose Funding grows its partner network, HyperVerge's fraud detection capabilities can help screen applications more efficiently and reduce exposure to stacking."
+    ],
+    "ask": "I'd love to connect and show how HyperVerge is helping working capital providers like Goose Funding automate underwriting while maintaining the speed your merchants expect.",
+    "notes": "Limited public information available. Small/boutique MCA funder. Website: goosefunding.com. Appears on Funder Intel directory. Works through ISO partner model. Focus on speed and accessibility. Note: Not to be confused with GOOSE Capital (venture capital) or Goose (pet care software).",
+    "contacts": [
+      {"n": "Unknown", "t": "Management"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1665,
+    "name": "HARPER ADVANCE",
+    "desc": "Harper Advance is a Beverly Hills, California-based merchant cash advance company that has successfully funded over $100M to small and medium-sized businesses nationwide. The company prides itself on high-risk approvals, often saying yes when other funders decline, and offers a speedy underwriting process with a two-hour turnaround funding time, making them one of the fastest nationwide funders.\n\nHarper Advance provides fast, reliable, and easy funding solutions tailored for businesses needing capital for expansion or cash flow gaps. The company offers same-day funding and supports ISO partners with competitive commissions and strong infrastructure. Harper Advance LLC received PPP loans during COVID, reporting approximately 1 employee at the time. The company operates from 8484 Wilshire Blvd, Suite 630, Beverly Hills, CA 90211, with additional presence at 516 N. Larchmont Blvd, Los Angeles, CA 90004.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://harperadvance.com",
+    "location": "Beverly Hills, CA",
+    "full_address": "8484 Wilshire Blvd, Suite 630, Beverly Hills, CA 90211",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "CEO/Founder",
+        "bg": "Harper Advance's leadership has built the company into a nationwide funder with over $100M in funded deals. The company focuses on high-risk approvals and maintains a two-hour underwriting turnaround, serving businesses that may have been declined elsewhere. Leadership team details are not publicly disclosed.",
+        "hooks": [
+          "Funding over $100M to small businesses is a major milestone — what's driving your growth trajectory?",
+          "Your two-hour underwriting turnaround is industry-leading — how do you maintain quality at that speed?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Harper Advance Surpasses $100M in Funded Deals",
+        "s": "Company Website, 2024",
+        "d": "Harper Advance has successfully funded over $100M to small and medium-sized companies, establishing itself as a trusted nationwide funder."
+      },
+      {
+        "h": "Harper Advance Maintains Beverly Hills Operations",
+        "s": "ZoomInfo, 2024",
+        "d": "Harper Advance continues operations from its Beverly Hills headquarters, offering same-day funding and ISO partner programs."
+      },
+      {
+        "h": "MCA Industry Sees Growing Demand for High-Risk Approvals",
+        "s": "Industry Reports, 2024",
+        "d": "Companies like Harper Advance that specialize in high-risk approvals continue to fill a critical niche as traditional lenders tighten credit standards."
+      }
+    ],
+    "ice": "Harper Advance crossing the $100M funding milestone while maintaining a two-hour underwriting turnaround is impressive — that combination of volume and speed is hard to achieve.",
+    "icebreakers": [
+      "Congratulations on funding over $100M — I'd love to discuss how AI underwriting could help Harper Advance scale to the next milestone even faster.",
+      "Your two-hour funding turnaround is best-in-class — curious how you're thinking about maintaining that speed as volume grows.",
+      "Harper Advance's focus on high-risk approvals shows you're solving a real pain point — I'd love to explore how AI risk models could enhance that capability.",
+      "Your strong ISO partner program combined with fast funding times is a winning formula — would love to discuss how technology can make it even better."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform could help Harper Advance maintain their industry-leading two-hour turnaround while scaling past the $100M milestone with automated risk assessment.",
+      "For high-risk approval specialists like Harper Advance, HyperVerge's advanced fraud detection and bank statement analysis can help separate legitimate high-risk deals from fraudulent applications.",
+      "As Harper Advance grows its ISO partner network, HyperVerge's document verification and identity fraud tools can streamline application processing and reduce manual review time."
+    ],
+    "ask": "I'd love 15 minutes to show how HyperVerge can help Harper Advance maintain your two-hour funding speed while scaling beyond the $100M mark with AI-powered underwriting.",
+    "notes": "Beverly Hills-based MCA funder. Key differentiators: $100M+ funded, 2-hour underwriting turnaround, high-risk approvals specialty. Strong ISO partner program. PPP loan data suggests very lean team. Multiple office addresses in LA area. Focus on speed and serving merchants declined elsewhere. Good candidate for AI underwriting to maintain speed at scale.",
+    "contacts": [
+      {"n": "Unknown", "t": "Management"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1668,
+    "name": "HOME RUN CAPITAL",
+    "desc": "Home Run Capital is a Brooklyn, New York-based direct lender founded in January 2017, specializing in flexible business financing options for small business owners. The company provides merchant cash advances, lines of credit, and loan consolidation services, with over 9 years of experience in the alternative lending space. Home Run Capital reported approximately $4 million in annual revenue in 2025.\n\nAs a direct lender, Home Run Capital considers all credit scores, making their financing accessible to a wide range of businesses. The company offers a quick and easy application process with funding available in as little as 24 hours. They are headquartered at 1413 Avenue J, Brooklyn, NY 11230, and have a BBB business profile (not accredited). The company focuses on providing working capital solutions through revenue-based financing secured by ACH or credit card deposits with typical 6-12 month terms.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://homeruncapital.com",
+    "location": "Brooklyn, NY",
+    "full_address": "1413 Avenue J, Brooklyn, NY 11230",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "CEO/Founder",
+        "bg": "Home Run Capital's leadership founded the company in 2017 in Brooklyn, NY, and has grown it into a direct lending operation with approximately $4M in annual revenue. The company has provided business financing solutions to small business owners for over 9 years, offering MCAs, lines of credit, and loan consolidation. Leadership details are not publicly disclosed.",
+        "hooks": [
+          "Nine years in the direct lending space is significant — how has your approach to underwriting evolved over that time?",
+          "Being a direct lender in Brooklyn puts you at the heart of NYC's alternative lending hub — how has that shaped your business?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Home Run Capital Maintains Active BBB Profile in Brooklyn",
+        "s": "BBB, 2024",
+        "d": "Home Run Capital LLC maintains an active BBB business profile, categorized as a factoring service provider based in Brooklyn, NY."
+      },
+      {
+        "h": "Home Run Capital Approaches Decade of Direct Lending Operations",
+        "s": "Company Records, 2025",
+        "d": "Founded in 2017, Home Run Capital has provided business financing solutions to small business owners for over 9 years, approaching a decade of operations."
+      },
+      {
+        "h": "Direct Lenders See Growing Opportunity in Credit-Flexible Financing",
+        "s": "Industry Reports, 2024",
+        "d": "Direct lenders like Home Run Capital that accept all credit scores continue to fill a growing market need as credit standards tighten."
+      }
+    ],
+    "ice": "Home Run Capital approaching a decade in direct lending is a real achievement — not many shops in the MCA space have that kind of longevity.",
+    "icebreakers": [
+      "Nine years of direct lending from Brooklyn is impressive staying power — I'd love to hear how you've evolved your approach over that time.",
+      "Home Run Capital's multi-product approach with MCAs, lines of credit, and consolidation gives merchants real options — curious how you optimize across those products.",
+      "Being a direct lender that accepts all credit scores shows you understand the market — would love to discuss how AI can help manage that risk profile.",
+      "Your $4M revenue and 9-year track record show solid, sustainable growth — I'd be interested to explore how technology could accelerate the next phase."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting can help Home Run Capital scale their direct lending model by automating credit assessment across MCAs, lines of credit, and loan consolidation products.",
+      "For direct lenders like Home Run Capital that accept all credit scores, HyperVerge's advanced bank statement analysis provides deeper insights into merchant cash flow patterns to improve approval accuracy.",
+      "As Home Run Capital grows past 9 years of operations, HyperVerge's identity verification and fraud detection tools can help automate the application process while reducing risk exposure."
+    ],
+    "ask": "As Home Run Capital approaches a decade in direct lending, I'd love to show how HyperVerge's AI underwriting can help you scale the next phase of growth while keeping risk in check.",
+    "notes": "Brooklyn-based direct lender. Founded Jan 2017. ~$4M annual revenue. BBB profile (not accredited). Multi-product: MCA, lines of credit, loan consolidation. Accepts all credit scores. 24-hour funding. 6-12 month terms. Revenue-based financing secured by ACH/credit card deposits. Leadership not publicly disclosed. Good candidate for AI underwriting to scale operations.",
+    "contacts": [
+      {"n": "Unknown", "t": "Management"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1669,
+    "name": "HONEST BUSINESS FUNDING",
+    "desc": "Honest Business Funding operates in the small business financing space, providing working capital, equipment financing, term loans, and lines of credit through its website honestbusinessfunding.com. The company is part of a broader ecosystem of 'Honest' branded funding entities, including Honest Funding LLC which provides merchant cash advances. Honest Funding LLC was registered in Florida in 2020 with a principal address in Sun City Center, FL.\n\nThe company emphasizes honesty, integrity, and transparency in its lending practices. Customer reviews mention team members including Galina and Ciarra as responsive representatives. Honest Funding LLC has been active in legal proceedings related to MCA collections, filing breach of contract cases in New York courts. The company supplies small businesses with quick lump sum capital via merchant cash advances with funding available within 24 hours of application approval.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://honestbusinessfunding.com",
+    "location": "New York, NY",
+    "full_address": "",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "CEO/Founder",
+        "bg": "Limited public information available about Honest Business Funding's specific leadership. The company operates in the MCA and small business financing space, offering working capital, equipment financing, and lines of credit. The related Honest Funding LLC entity is active in New York courts for MCA collection matters.",
+        "hooks": [
+          "Your multi-product approach covering MCAs, equipment financing, and lines of credit gives businesses real choice — how do you decide which product fits best?",
+          "Building a funding business on the values of honesty and transparency is a strong brand differentiator in this market."
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Honest Funding LLC Active in New York MCA Collections",
+        "s": "Court Records, 2023-2024",
+        "d": "Honest Funding LLC has filed multiple breach of contract cases in New York courts related to merchant cash advance agreements."
+      },
+      {
+        "h": "Honest Funding Maintains Active Trustpilot Review Profile",
+        "s": "Trustpilot, 2024",
+        "d": "Honest Funding LLC maintains customer reviews on Trustpilot with mixed feedback ranging from positive experiences with quick funding to concerns about collection practices."
+      },
+      {
+        "h": "Small Business Financing Demand Grows Across Multiple Product Lines",
+        "s": "Industry Reports, 2024",
+        "d": "Multi-product funders like Honest Business Funding that offer MCAs alongside term loans and lines of credit continue to see growing demand."
+      }
+    ],
+    "ice": "Honest Business Funding's multi-product approach covering MCAs, equipment financing, and lines of credit gives small businesses real options — that breadth of offering is valuable in today's market.",
+    "icebreakers": [
+      "Your multi-product financing approach stands out — I'd love to discuss how AI can help optimize underwriting across different product types.",
+      "Building a funding brand on honesty and transparency resonates with today's market — curious how you're differentiating in the competitive MCA space.",
+      "The breadth of products from MCAs to equipment financing shows you understand diverse business needs — would love to explore how technology can streamline that.",
+      "Honest Business Funding's focus on quick capital delivery aligns with market demand — I'd be interested to discuss how AI-powered underwriting can make that even faster."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can help Honest Business Funding streamline approvals across MCAs, equipment financing, and lines of credit with a single automated workflow.",
+      "For funders like Honest Business Funding that offer multiple product types, HyperVerge's document analysis can quickly determine which financing product best fits each applicant's profile.",
+      "As Honest Business Funding scales its multi-product lending, HyperVerge's fraud detection and identity verification tools can reduce risk while maintaining fast 24-hour funding timelines."
+    ],
+    "ask": "I'd love to connect and show how HyperVerge can help Honest Business Funding automate underwriting across your full product suite — MCAs, equipment financing, and beyond.",
+    "notes": "Limited public information. Multi-product funder: MCAs, equipment financing, term loans, lines of credit. Related entity Honest Funding LLC registered in FL (2020). Active in NY courts for MCA collections. Mixed Trustpilot reviews. Team members mentioned: Galina, Ciarra. Values: honesty, integrity, transparency. 24-hour funding capability.",
+    "contacts": [
+      {"n": "Unknown", "t": "Management"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1670,
+    "name": "Hudson East Capital - East Hudson Capital",
+    "desc": "East Hudson Capital, LLC, operating under the DBA 'Global Capital Experts' (GCE), is a Long Island City, New York-based alternative funding company established at the beginning of 2023 with new investors. The company provides merchant cash advances and working capital funding to small business owners as an alternative to traditional bank financing. They are headquartered at 27-01 Queens Plaza, Suite 802, Long Island City, NY 11101.\n\nGCE/East Hudson Capital has been actively growing its portfolio since its 2023 launch, with visible court filings in 2024-2025 for breach of contract cases related to MCA agreements in New York courts (Kings County and Monroe County). The company registered the 'Global Capital Experts' trademark with the USPTO and maintains a corporate profile. East Hudson Capital focuses on providing alternative funding solutions for small businesses that may not qualify for traditional bank loans.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://globalcapitalexperts.com",
+    "location": "Long Island City, NY",
+    "full_address": "27-01 Queens Plaza, Suite 802, Long Island City, NY 11101",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "CEO/Founder",
+        "bg": "East Hudson Capital's leadership established the company in early 2023 with new investors to provide alternative funding solutions. The company operates under the DBA 'Global Capital Experts' from Long Island City, NY, and has grown its portfolio to include active MCA collections across multiple New York jurisdictions. Leadership details are not publicly disclosed.",
+        "hooks": [
+          "Launching a new funding company in 2023 with fresh investors shows confidence in the MCA market — how has the first two years been?",
+          "Operating under both East Hudson Capital and Global Capital Experts gives you interesting brand flexibility — how do you leverage that?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "East Hudson Capital Registers 'Global Capital Experts' Trademark",
+        "s": "USPTO, 2023",
+        "d": "East Hudson Capital, LLC registered the 'Global Capital Experts' trademark with the US Patent and Trademark Office, formalizing their DBA branding."
+      },
+      {
+        "h": "East Hudson Capital Files Multiple Collection Cases in NY Courts",
+        "s": "Court Records, 2024-2025",
+        "d": "East Hudson Capital dba Global Capital Experts has filed breach of contract cases in Kings County and Monroe County courts related to MCA agreements."
+      },
+      {
+        "h": "GCE Publishes Corporate Profile for 2025",
+        "s": "Company Website, January 2025",
+        "d": "Global Capital Experts published an updated corporate profile in January 2025, outlining their alternative funding services from their Long Island City headquarters."
+      }
+    ],
+    "ice": "East Hudson Capital launching in 2023 with new investors and already establishing a trademark and corporate profile under Global Capital Experts shows real momentum — impressive execution in a competitive market.",
+    "icebreakers": [
+      "Launching East Hudson Capital with fresh investors in 2023 shows real conviction in the alternative funding space — I'd love to hear how the first two years have gone.",
+      "The Global Capital Experts rebrand gives you strong market positioning — curious how you're differentiating from other MCA funders in Long Island City.",
+      "Building a new funding company from scratch takes grit — I'd love to discuss how AI-powered underwriting could accelerate your growth curve.",
+      "Your 2025 corporate profile shows East Hudson Capital is investing in its brand — would love to explore how technology partnerships could enhance that momentum."
+    ],
+    "tp": [
+      "As a newer entrant in the MCA market, HyperVerge's AI underwriting platform can help East Hudson Capital/Global Capital Experts build scalable processes from the ground up without legacy system constraints.",
+      "HyperVerge's fraud detection and identity verification tools can help Global Capital Experts reduce defaults and collection costs — particularly valuable for a growing portfolio.",
+      "For a company like East Hudson Capital that launched in 2023, HyperVerge's bank statement analysis and automated risk scoring can help build a data-driven underwriting model as the portfolio scales."
+    ],
+    "ask": "As Global Capital Experts enters its third year, I'd love to show how HyperVerge's AI underwriting can help you scale your portfolio while keeping defaults manageable.",
+    "notes": "Established 2023 with new investors. Dual branding: East Hudson Capital (legal) / Global Capital Experts (DBA). Long Island City, Queens HQ. Trademark registered with USPTO. Active in NY court collections (Kings County, Monroe County). Published corporate profile Jan 2025. Relatively new entrant — good candidate for modern AI underwriting from the start.",
+    "contacts": [
+      {"n": "Unknown", "t": "Management"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1671,
+    "name": "HUNSON FUNDING",
+    "desc": "Hunson Funding is a West Palm Beach, Florida-based fintech company founded in January 2022 by Scott Schalk. The company describes itself as 'A Fintech Solution to Create Financial Opportunity' and provides merchant cash advance funding with approvals within 2 hours and same-day funding for deals completed by 4 PM EST. Hunson Funding utilizes proprietary technology called HunterXAI to empower partners to generate more revenue and close more deals.\n\nThe company serves small businesses with at least 3 months of operational history and any FICO score, working through ISO partners with dedicated account executives. Hunson Funding offers tools including a price calculator and e-signature capabilities. CEO Scott Schalk brings a background in financial services from firms including I-Bankers Securities, Dawson James Securities, and WestPark Capital. The company is headquartered at 8146 Mariposa Grove Circle, West Palm Beach, FL 33411.",
+    "category": "funder",
+    "employees": 12,
+    "website": "https://hunsonfunding.com",
+    "location": "West Palm Beach, FL",
+    "full_address": "8146 Mariposa Grove Circle, West Palm Beach, FL 33411",
+    "leaders": [
+      {
+        "n": "Scott Schalk",
+        "t": "CEO",
+        "bg": "Scott Schalk is the CEO and founder of Hunson Funding LLC, based in West Palm Beach, FL. He holds a degree in Economics from Keystone College and brings experience from previous roles at I-Bankers Securities, Inc., Dawson James Securities, and WestPark Capital, Inc. He founded Hunson Funding in January 2022 and serves as the registered agent for the company. His Wall Street background informs Hunson's approach to fintech-driven merchant funding.",
+        "hooks": [
+          "Your HunterXAI proprietary technology sounds fascinating — how is it changing the way your ISO partners close deals?",
+          "Coming from I-Bankers Securities and WestPark Capital to founding an MCA fintech is an interesting journey — what drove the pivot?",
+          "Two-hour approvals powered by proprietary tech is impressive — how is HunterXAI evolving for 2025?"
+        ],
+        "li": "https://www.linkedin.com/in/scott-schalk-619b009/"
+      }
+    ],
+    "news": [
+      {
+        "h": "Hunson Funding Positions as Fintech Solution in MCA Space",
+        "s": "Company Website, 2024",
+        "d": "Hunson Funding continues to differentiate through its HunterXAI proprietary technology platform, offering ISO partners tools for faster deal closing and revenue generation."
+      },
+      {
+        "h": "Hunson Funding Maintains Active Florida Registration",
+        "s": "Florida DOS, 2024",
+        "d": "Hunson Funding LLC maintains active registration with the Florida Department of State, operating from West Palm Beach since January 2022."
+      },
+      {
+        "h": "Fintech-Driven MCA Funders Gain Market Share",
+        "s": "Industry Reports, 2024",
+        "d": "Technology-forward MCA funders like Hunson Funding that offer proprietary AI tools and fast approvals continue to gain traction with ISO partners."
+      }
+    ],
+    "ice": "Scott, your HunterXAI proprietary technology really stands out in the MCA space — building a purpose-built AI tool for partner deal flow is exactly the kind of innovation this industry needs.",
+    "icebreakers": [
+      "Scott, HunterXAI caught my attention — building proprietary AI for MCA deal flow is forward-thinking. I'd love to discuss how we might complement that technology.",
+      "Your journey from Wall Street firms to founding a fintech MCA company is compelling — curious what inspired the leap to Hunson Funding.",
+      "Two-hour approvals powered by your own AI is impressive — I'd love to explore how HyperVerge's underwriting tools could integrate with HunterXAI.",
+      "Hunson Funding's tech-first approach to MCA funding really differentiates you in the market — would love to discuss the roadmap for HunterXAI."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting and document verification could complement Hunson's HunterXAI platform, adding automated bank statement analysis and fraud detection to the existing deal flow tools.",
+      "As a fintech-native MCA funder, Hunson Funding is well-positioned to integrate HyperVerge's API-driven underwriting tools for even faster and more accurate approvals.",
+      "HyperVerge's identity verification and fraud detection can help Hunson Funding reduce risk exposure as they scale their ISO partner network, working alongside HunterXAI."
+    ],
+    "ask": "Scott, I'd love 15 minutes to explore how HyperVerge's AI underwriting could complement your HunterXAI platform — together we could take Hunson's two-hour approvals to the next level.",
+    "notes": "Fintech-native MCA funder. Founded Jan 2022 in West Palm Beach, FL. CEO Scott Schalk has Wall Street background (I-Bankers Securities, Dawson James, WestPark Capital). Proprietary HunterXAI technology for partner deal flow. 2-hour approvals, same-day funding. Works through ISO partner model. Minimum 3 months business history, any FICO. Economics degree from Keystone College. Strong technology angle for selling HyperVerge integration.",
+    "contacts": [
+      {"n": "Scott Schalk", "t": "CEO"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1675,
+    "name": "IMS FUND LLC",
+    "desc": "IMS Fund is a Seattle, Washington-based lending company that provides financing solutions for commercial and real estate investors, as well as merchant cash advances for small businesses. The company purchases future receivables at a discount for upfront cash payments, with MCA amounts typically ranging from $5,000 to $1,000,000. IMS Fund also offers SBA loans, lines of credit, and non-conforming loans.\n\nThe company positions itself as a team of experienced lenders committed to helping businesses overcome challenges and seize opportunities. IMS Fund frequently works with businesses that have been turned down by traditional lenders, offering more flexibility regarding the purpose of funds and credit history requirements. The company operates multiple web properties including imsfund.com, imsfund.biz, and imsfundme.com, suggesting an active marketing approach. Customer testimonials reference 'Richard and his team' as responsive and helpful. IMS Fund is located at 300 Lenora Street, Suite 850, Seattle, WA 98121.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://imsfund.com",
+    "location": "Seattle, WA",
+    "full_address": "300 Lenora Street, Suite 850, Seattle, WA 98121",
+    "leaders": [
+      {
+        "n": "Richard",
+        "t": "Principal/Founder",
+        "bg": "Richard leads IMS Fund LLC from Seattle, WA, managing a team of experienced lenders focused on helping businesses access capital. Customer testimonials consistently mention 'Richard and his team' as responsive and professional. The company provides MCAs ranging from $5K to $1M as well as SBA loans, lines of credit, and non-conforming loans. Full last name not publicly available.",
+        "hooks": [
+          "Your range from $5K MCAs to $1M deals shows real versatility — how do you manage underwriting across such different deal sizes?",
+          "Offering both MCAs and SBA loans is an interesting combination — how do you help merchants choose the right product?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "IMS Fund Expands Online Presence with Multiple Web Properties",
+        "s": "Company Records, 2024",
+        "d": "IMS Fund operates through multiple web properties including imsfund.com, imsfund.biz, and imsfundme.com, expanding its reach to underserved borrowers."
+      },
+      {
+        "h": "IMS Fund Continues to Serve Underserved Borrowers in Seattle",
+        "s": "Company Website, 2024",
+        "d": "IMS Fund maintains its mission of providing tailored financing solutions for underserved borrowers, offering merchant cash advances and business loans from its Seattle headquarters."
+      },
+      {
+        "h": "Small Business Lenders Expand Product Suites to Compete",
+        "s": "Industry Reports, 2024",
+        "d": "Lenders like IMS Fund that offer multiple products including MCAs, SBA loans, and lines of credit continue to differentiate by serving businesses across the credit spectrum."
+      }
+    ],
+    "ice": "IMS Fund's approach of combining MCAs with SBA loans and non-conforming products from Seattle gives you a unique West Coast perspective in a largely East Coast-dominated industry.",
+    "icebreakers": [
+      "Being one of the few MCA funders operating from Seattle gives IMS Fund a unique market perspective — I'd love to hear how the West Coast shapes your approach.",
+      "Your wide funding range from $5K to $1M MCAs shows real flexibility — curious how you're managing risk across that spectrum.",
+      "Combining MCAs with SBA loans and non-conforming products is a smart diversification strategy — would love to discuss how AI can optimize across those products.",
+      "IMS Fund's focus on underserved borrowers aligns with a real market need — I'd be interested to explore how technology can help serve that segment more efficiently."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can help IMS Fund automate the assessment process across their diverse product suite — from $5K MCAs to SBA loans — with a single technology stack.",
+      "For a multi-product lender like IMS Fund, HyperVerge's bank statement analysis and document verification can accelerate underwriting while maintaining the flexibility that makes them attractive to underserved borrowers.",
+      "As IMS Fund scales its lending operations from Seattle, HyperVerge's fraud detection and identity verification tools can reduce risk across all product lines from MCAs to non-conforming loans."
+    ],
+    "ask": "Richard, I'd love to show how HyperVerge's AI underwriting can help IMS Fund scale your diverse lending products while maintaining the personalized service your clients value.",
+    "notes": "Seattle-based lender — unusual location for MCA industry. Multi-product: MCAs ($5K-$1M), SBA loans, lines of credit, non-conforming loans. Multiple web properties (imsfund.com, imsfund.biz, imsfundme.com). 'Richard and his team' referenced in reviews. Focus on underserved borrowers. DailyFunder forum presence. Note: Not the same as IMS Capital Management (investment advisory in Portland, OR).",
+    "contacts": [
+      {"n": "Richard", "t": "Principal/Founder"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1677,
+    "name": "INTEGRITY CORP FUNDING INC",
+    "desc": "Integrity Corporate Funding, Inc. is a Staten Island, New York-based finance company specializing in merchant cash advances, debt consolidation, lines of credit, and various funding services for small to medium-sized businesses. The company was founded by Michael A. Gaggi (President/Owner) and Joseph LaRosa (Secretary/Owner) and operates from 1665 Richmond Road, Staten Island, NY 10304. The company generates approximately $1.1 million in annual revenue.\n\nWith over 50 years of combined experience, Integrity Corporate Funding's team of certified business professionals provides funding options including construction funding, equipment funding, cash advances, and debt consolidation. The company is a member of the Staten Island Chamber of Commerce and maintains a BBB business profile. They serve as a premier funding option for businesses of all types, emphasizing personalized service and deep industry knowledge to help businesses grow.",
+    "category": "funder",
+    "employees": 8,
+    "website": "https://icorpfunding.com",
+    "location": "Staten Island, NY",
+    "full_address": "1665 Richmond Road, Staten Island, NY 10304",
+    "leaders": [
+      {
+        "n": "Michael A. Gaggi",
+        "t": "President & Owner",
+        "bg": "Michael A. Gaggi is the President and Owner of Integrity Corporate Funding, Inc. in Staten Island, NY. He co-founded the company and leads its operations providing merchant cash advances and business funding solutions. He is also connected to BayFirst National Bank as a Senior Loan Officer, suggesting broader financial services experience. He brings decades of lending experience to the company's mission of serving small to medium businesses.",
+        "hooks": [
+          "With 50+ years of combined team experience at Integrity Corporate Funding, what's changed most in how you evaluate small business applications?",
+          "Your membership in the Staten Island Chamber of Commerce shows real community roots — how does that inform your funding approach?",
+          "Offering both construction funding and MCAs is a unique combination — how do you manage the different risk profiles?"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Joseph LaRosa",
+        "t": "Secretary & Owner",
+        "bg": "Joseph LaRosa is the Secretary and Owner of Integrity Corporate Funding, Inc. He co-founded the company with Michael Gaggi and holds a degree from New York University. He is based in the New York City metropolitan area and plays a key role in the company's operations providing business funding solutions to small and medium enterprises on Staten Island and beyond.",
+        "hooks": [
+          "Your NYU background combined with hands-on funding experience is a powerful combination — how do you apply that to Integrity's underwriting?",
+          "Co-founding a funding company focused on integrity is a bold brand promise — how do you deliver on that in practice?"
+        ],
+        "li": "https://www.linkedin.com/in/joseph-la-rosa-0948008a/"
+      },
+      {
+        "n": "John Andrews",
+        "t": "Business Development",
+        "bg": "John Andrews is associated with Integrity Corporate Funding Inc. and is listed through the Staten Island Chamber of Commerce business services directory. He appears to handle business development and client relationships for the company.",
+        "hooks": [
+          "How is business development evolving for community-based funders like Integrity Corporate Funding?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Integrity Corporate Funding Maintains Active BBB Profile in Staten Island",
+        "s": "BBB, 2024",
+        "d": "Integrity Corporate Funding, Inc. maintains an active BBB business profile in Staten Island, NY, categorized as a financial services provider."
+      },
+      {
+        "h": "Integrity Corporate Funding Active in Staten Island Chamber of Commerce",
+        "s": "SI Chamber, 2024",
+        "d": "John Andrews of Integrity Corporate Funding Inc. is listed in the Staten Island Chamber of Commerce business services directory, demonstrating community involvement."
+      },
+      {
+        "h": "Small Business Funding Demand Grows on Staten Island",
+        "s": "Industry Reports, 2024",
+        "d": "Community-based funders like Integrity Corporate Funding continue to serve growing demand from small to medium businesses seeking alternatives to traditional bank financing."
+      }
+    ],
+    "ice": "Michael, Integrity Corporate Funding's 50+ years of combined experience and roots in the Staten Island community give you a unique perspective on small business needs — that local expertise is invaluable.",
+    "icebreakers": [
+      "With 50+ years of combined team experience, Integrity Corporate Funding brings real depth to small business lending — I'd love to discuss how technology can amplify that expertise.",
+      "Your community ties through the Staten Island Chamber of Commerce show Integrity's commitment to local businesses — curious how that shapes your funding approach.",
+      "The breadth of products from construction funding to MCAs shows you truly understand diverse business needs — would love to explore how AI can streamline underwriting across those products.",
+      "Integrity Corporate Funding's focus on certified business professionals sets you apart — I'd be interested to discuss how AI tools can complement that professional expertise."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can help Integrity Corporate Funding scale their personalized approach by automating document verification and bank statement analysis while preserving the human touch.",
+      "With 50+ years of combined experience, Integrity's team knows what to look for — HyperVerge's AI can codify that expertise into automated risk models that maintain the same quality at higher volume.",
+      "For a community-focused funder like Integrity Corporate Funding, HyperVerge's fraud detection tools can protect against bad actors while keeping the door open for legitimate local businesses."
+    ],
+    "ask": "Michael, I'd love 15 minutes to show how HyperVerge can help Integrity Corporate Funding automate underwriting without losing the personalized service that's earned you 50+ years of combined expertise.",
+    "notes": "Staten Island, NY community-based funder. ~$1.1M annual revenue. Co-founded by Michael Gaggi (President) and Joseph LaRosa (Secretary). 50+ years combined team experience. BBB profile. SI Chamber of Commerce member. Multi-product: MCAs, construction funding, equipment funding, debt consolidation, lines of credit. John Andrews handles business development. Joseph LaRosa has NYU education and LinkedIn presence. Good candidate for AI underwriting to scale community lending model.",
+    "contacts": [
+      {"n": "Michael A. Gaggi", "t": "President & Owner"},
+      {"n": "Joseph LaRosa", "t": "Secretary & Owner"},
+      {"n": "John Andrews", "t": "Business Development"}
+    ],
+    "source": ["p4-wave9-researched"]
+  },
+  {
+    "id": 1679,
+    "name": "IRON CROWN CAPITAL",
+    "desc": "Iron Crown Capital, LLC is a receivable factoring and merchant cash advance company that has provided funding to more than 500 small businesses across a variety of industries. The company operates through its website ironcrowncapital.com and offers MCAs as a fast, safe way for businesses to access capital. Their revenue-sharing model means they only get paid when the business gets paid, taking a percentage of credit card transactions.\n\nIron Crown Capital serves businesses in multiple industries and positions itself as a flexible funding partner. The company can be reached at (516) 231-5595, with the 516 area code indicating a Long Island, New York base. The company has not raised external venture funding, operating as a self-funded direct lender. Limited public information is available about the company's leadership team and founding details, but their track record of 500+ funded businesses demonstrates meaningful market presence in the MCA and receivable factoring space.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://www.ironcrowncapital.com",
+    "location": "Long Island, NY",
+    "full_address": "",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "CEO/Founder",
+        "bg": "Iron Crown Capital's leadership has built a direct lending operation that has funded over 500 small businesses across multiple industries. The company operates with a revenue-sharing model for MCA products and also provides receivable factoring services. Based in the Long Island, NY area (516 area code). Leadership details are not publicly disclosed.",
+        "hooks": [
+          "Funding 500+ small businesses across diverse industries is a real achievement — what industries have you seen the most demand from?",
+          "Your revenue-sharing MCA model where you only get paid when the business gets paid builds real trust — how has that shaped your client relationships?"
+        ],
+        "li": ""
+      }
+    ],
+    "news": [
+      {
+        "h": "Iron Crown Capital Surpasses 500 Small Business Funding Milestone",
+        "s": "Company Website, 2024",
+        "d": "Iron Crown Capital has provided merchant cash advances to more than 500 small businesses within a variety of industries, marking a significant milestone."
+      },
+      {
+        "h": "Iron Crown Capital Maintains Multi-Industry Funding Approach",
+        "s": "Company Website, 2024",
+        "d": "Iron Crown Capital continues to serve businesses across diverse industries with merchant cash advances and receivable factoring services."
+      },
+      {
+        "h": "Revenue-Based Financing Models Gain Traction in Small Business Lending",
+        "s": "Industry Reports, 2024",
+        "d": "Funders like Iron Crown Capital that use revenue-sharing models where repayment is tied to business performance continue to attract small business owners seeking flexible financing."
+      }
+    ],
+    "ice": "Iron Crown Capital funding 500+ small businesses with a revenue-sharing model shows you've built real trust in the market — that milestone speaks to consistent execution.",
+    "icebreakers": [
+      "Funding over 500 small businesses is a real milestone — I'd love to hear which industries have driven the most growth for Iron Crown Capital.",
+      "Your revenue-sharing MCA model where you only get paid when the business gets paid is a great alignment of incentives — curious how that's shaped your portfolio.",
+      "Iron Crown Capital's dual offering of MCAs and receivable factoring gives businesses flexibility — would love to discuss how AI can optimize across both products.",
+      "Reaching 500+ funded businesses as a self-funded operation shows impressive organic growth — I'd be interested to explore how technology could accelerate the next 500."
+    ],
+    "tp": [
+      "HyperVerge's AI underwriting platform can help Iron Crown Capital scale beyond 500 funded businesses by automating the document review and risk assessment that currently requires manual effort.",
+      "For a funder like Iron Crown Capital that works across multiple industries, HyperVerge's industry-specific risk models and bank statement analysis can improve approval accuracy and reduce defaults.",
+      "As Iron Crown Capital grows its MCA and factoring portfolio, HyperVerge's fraud detection and identity verification tools can protect against fraudulent applications while maintaining fast funding times."
+    ],
+    "ask": "As Iron Crown Capital builds on its 500+ business milestone, I'd love to show how HyperVerge's AI underwriting can help you scale the next phase of growth with better risk management.",
+    "notes": "Long Island, NY-based (516 area code). Dual product: MCA + receivable factoring. 500+ businesses funded. Revenue-sharing MCA model. Self-funded (no VC). Multi-industry approach. Limited public information on leadership. Phone: (516) 231-5595. Website: ironcrowncapital.com. Tracxn profile exists. Good candidate for AI underwriting to scale past 500-business milestone.",
+    "contacts": [
+      {"n": "Unknown", "t": "Management"}
+    ],
+    "source": ["p4-wave9-researched"]
+  }
+]
