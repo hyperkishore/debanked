@@ -1,0 +1,409 @@
+[
+  {
+    "id": 1402,
+    "name": "South End Capital",
+    "leaders": [
+      {
+        "n": "Noah Grayson",
+        "t": "Founder & President",
+        "bg": "Founded South End Capital in 2009 as a nationwide non-conforming commercial lender. Led the company through its acquisition by Stearns Bank N.A. in June 2021, becoming a division of the $3.2 billion financial institution. Now serves as President at Stearns Bank overseeing the South End Capital division. Named to the Forbes Real Estate Council in 2019. Built South End Capital into a tech-enabled loan marketplace with 50% partner fee sharing. Under his leadership, the company launched SBA Express loans up to $50,000 and expedited SBA 7(a) working capital loans delivered in as fast as 2 weeks.",
+        "hooks": [
+          "*Forbes Real Estate Council member",
+          "Built and sold company to $3.2B Stearns Bank",
+          "Pioneered 50% partner fee sharing model",
+          "3-minute business line of credit approvals"
+        ],
+        "li": "https://www.linkedin.com/in/noahgrayson/"
+      },
+      {
+        "n": "Matthew Naughton",
+        "t": "VP of Sales",
+        "bg": "Vice President of Sales at South End Capital, a division of Stearns Bank N.A. Oversees the sales team responsible for originating SBA loans, commercial real estate loans, equipment financing, and business lines of credit across all 50 states. Works within the tech-enabled loan marketplace platform that facilitates placement of loans through a strategic network of lending partners.",
+        "hooks": [
+          "Manages nationwide 50-state lending sales",
+          "SBA and commercial real estate loan origination"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "South End Capital is a nationwide commercial lender founded in 2009 and acquired by Stearns Bank N.A. (a $3.2 billion financial institution) in June 2021, now operating as a specialized division. The company is an approved direct commercial real estate lender, investment residential lender, business lender, SBA lender, USDA lender, and equipment financing lender serving all 50 states plus Washington, DC. South End Capital administers a tech-enabled intermediary loan marketplace that facilitates loan placement through a strategic network of lending partners for deals it cannot fund in-house. Products include SBA 7(a) financing up to $5 million, SBA Express loans up to $50,000, equipment financing, business lines of credit with 3-minute approvals, bridge loans for commercial real estate, and conventional commercial loans. The company offers an industry-leading 50% partner fee sharing program. In 2024, South End Capital streamlined its business loan programs and launched an upgraded website with the mission of providing 'Equal Access to Industry-Leading Financing.' Approximately 201-500 employees (inclusive of Stearns Bank division).",
+    "news": [
+      {
+        "h": "South End Capital unveils enhanced website design and updated mission statement for equal access financing",
+        "s": "EIN Presswire",
+        "d": "2024-06-01"
+      },
+      {
+        "h": "South End Capital streamlines business loan programs and expands access for underserved borrowers in 2024",
+        "s": "EIN Presswire",
+        "d": "2024-01-15"
+      },
+      {
+        "h": "South End Capital continues industry-leading 50% partner fee sharing program into 2024",
+        "s": "KRQE News",
+        "d": "2024-01-15"
+      }
+    ],
+    "location": "Encino, CA",
+    "full_address": "Encino, CA (division of Stearns Bank N.A.)",
+    "website": "https://southendcapital.com",
+    "employees": 300,
+    "category": "funder"
+  },
+  {
+    "id": 1403,
+    "name": "Specialty Capital",
+    "leaders": [
+      {
+        "n": "Boris Kalendarev",
+        "t": "CEO",
+        "bg": "Chief Executive Officer of Specialty Capital since 2021. Holds the CFA designation. Began his finance career in 2008 as a Financial Advisor at Wachovia Securities LLC. Subsequently worked as Associate in U.S. Corporate Structuring and Sales at Santander, then moved to Grupo Santander Brasil. Served as CFO/COO at RDM Capital Funding LLC from 2019 before founding and leading Specialty Capital. Accepted into the Forbes Business Council and invited to join the Forbes Finance Council in 2022 based on his specialty finance industry expertise.",
+        "hooks": [
+          "*CFA charterholder",
+          "*Accepted into Forbes Business Council and Finance Council",
+          "Wachovia Securities and Santander alumnus",
+          "Former CFO/COO at RDM Capital Funding"
+        ],
+        "li": "https://www.linkedin.com/in/boris-kalendarev-cfa-69a5161b/"
+      },
+      {
+        "n": "Natan Hayes",
+        "t": "Chief Risk Officer",
+        "bg": "Appointed Chief Risk Officer of Specialty Capital in 2022. Brings nearly a decade of experience in the alternative finance space. Previously served as Director of Underwriting at Advantage Capital Funding. Oversees risk management for Specialty Capital's revenue-based financing and receivables-based financing portfolios serving small and medium-sized businesses.",
+        "hooks": [
+          "Decade of alternative finance underwriting experience",
+          "Former Director of Underwriting at Advantage Capital Funding",
+          "Appointed CRO alongside $10M credit facility close"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Specialty Capital is a leading U.S. specialty finance company founded in 2020 and headquartered in Queens, New York, serving small- and medium-sized businesses with revenue-based financing and receivables-based financing solutions. The company specializes in offering creative working capital solutions to merchants who need funding quickly and cannot go through rigorous traditional bank underwriting. Specialty Capital can approve businesses with just four months of stable or increasing revenue, regardless of credit score or history, with funding delivered within 24 hours. The company offers industry-specific financing options with competitive rates, prepayment discounts, and multi-draw advances. In March 2022, Specialty Capital closed on a $10 million credit facility from a U.S.-based alternative credit asset manager to expand its funding capabilities. The same year, the company appointed a new Chief Risk Officer and CEO Boris Kalendarev was accepted into the Forbes Business Council. Approximately 18 employees.",
+    "news": [
+      {
+        "h": "Specialty Capital closes $10 million credit facility and appoints Chief Risk Officer Natan Hayes",
+        "s": "PR Newswire",
+        "d": "2022-03-14"
+      },
+      {
+        "h": "CEO Boris Kalendarev accepted into Forbes Business Council for specialty finance expertise",
+        "s": "PR Newswire",
+        "d": "2022-04-01"
+      },
+      {
+        "h": "Specialty Capital publishes analysis on inflation impact and revenue-based finance litigation landscape",
+        "s": "Specialty Capital Blog",
+        "d": "2024-04-01"
+      }
+    ],
+    "location": "Queens, NY",
+    "full_address": "68-60 Austin Street, Suite 603, Queens, NY 11375",
+    "website": "https://www.specialtycapital.com",
+    "employees": 18,
+    "category": "funder"
+  },
+  {
+    "id": 1404,
+    "name": "SPG Advance",
+    "leaders": [
+      {
+        "n": "Lazer Preizler",
+        "t": "CEO",
+        "bg": "Chief Executive Officer and founder of SPG Advance LLC, a merchant cash advance provider based in Brooklyn, New York. Established the company in November 2017 and serves as the DOS process contact for the entity. Previously associated with Cashable Funding. Leads SPG Advance's direct MCA funding operations serving small businesses nationwide from the Brooklyn headquarters.",
+        "hooks": [
+          "Founded SPG Advance in 2017",
+          "Brooklyn-based MCA direct funder",
+          "Previously at Cashable Funding"
+        ],
+        "li": "https://www.linkedin.com/in/lazer-preizler-015ab356/"
+      },
+      {
+        "n": "Ashira Lenefsky",
+        "t": "Director of ISO Relations",
+        "bg": "Director of ISO Relations at SPG Advance, responsible for managing relationships with independent sales organizations (ISOs) that submit merchant cash advance applications to SPG Advance. Oversees the broker channel and partner onboarding for the company's MCA funding programs.",
+        "hooks": [
+          "Manages ISO/broker channel for SPG Advance",
+          "Key contact for MCA broker partnerships"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "SPG Advance LLC is a merchant cash advance provider founded in November 2017 and headquartered in Brooklyn, New York. The company is a direct funder providing small business advances, purchasing future receivables in exchange for upfront capital. SPG Advance serves small businesses nationwide through both direct applications and an ISO/broker channel. The company offers same-day funding with competitive factor rates and works with businesses across multiple industries. SPG Advance maintains a BBB profile and operates from its McDonald Avenue office in Brooklyn. Approximately 11-50 employees.",
+    "news": [
+      {
+        "h": "SPG Advance maintains active BBB business profile as Brooklyn-based small business lender",
+        "s": "BBB",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Brooklyn, NY",
+    "full_address": "1221 McDonald Ave, Brooklyn, NY 11230",
+    "website": "https://www.spgfunding.com",
+    "employees": 25,
+    "category": "funder"
+  },
+  {
+    "id": 1405,
+    "name": "SRS Capital Funds",
+    "leaders": [
+      {
+        "n": "Spencer Silverman",
+        "t": "Founder & President",
+        "bg": "Founder and President of SRS Capital Funds, Inc., a merchant cash advance investment and syndication firm based in Cedarhurst, New York. Built SRS into a working capital provider serving businesses across the United States while also managing syndication for high net-worth individuals interested in B2B investing. Skilled in sales, management, business development, marketing, and startups. Leads the company's risk diversification strategy of spreading investments across hundreds of businesses and cross-capitalizing advances with other funders.",
+        "hooks": [
+          "Built MCA syndication model for HNW investors",
+          "Spreads risk across hundreds of businesses nationwide",
+          "Cross-capitalization strategy with co-funders"
+        ],
+        "li": "https://www.linkedin.com/in/spencer-silverman-51513529/"
+      }
+    ],
+    "desc": "SRS Capital Funds, Inc. is a merchant cash advance funding and syndication company founded in Cedarhurst, New York. The company provides working capital to businesses across the United States through cash advances based on expected monthly revenue, with repayment drawn from business bank accounts. SRS Capital Funds also provides syndication management for high net-worth individuals interested in B2B investing in the MCA space. The company employs a risk diversification strategy, spreading investments across hundreds of businesses throughout the United States and syndicating with other funders to cross-capitalize advances. Annual revenue reported at approximately $6 million in 2024. Approximately 7 employees.",
+    "news": [
+      {
+        "h": "SRS Capital Funds reports approximately $6 million in annual revenue serving nationwide small business market",
+        "s": "RocketReach",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Cedarhurst, NY",
+    "full_address": "445 Central Avenue, Suite 351, Cedarhurst, NY 11516",
+    "website": "http://srscapitalfunds.com",
+    "employees": 7,
+    "category": "funder"
+  },
+  {
+    "id": 1406,
+    "name": "Stafford Business Funding",
+    "leaders": [
+      {
+        "n": "Michael Meyer",
+        "t": "Funding Manager",
+        "bg": "Funding Manager at Stafford Business Funding, based in Point Pleasant Beach, New Jersey. Manages merchant cash advance applications and funding operations. Works directly with merchants to facilitate same-day funding, consolidation programs, and working capital solutions for small businesses averaging at least $7,500 in monthly sales.",
+        "hooks": [
+          "Point Pleasant Beach MCA funding specialist",
+          "Same-day funding operations manager"
+        ],
+        "li": "https://www.linkedin.com/in/michael-meyer-21b17730b/"
+      }
+    ],
+    "desc": "Stafford Business Funding is a merchant cash advance provider based in Point Pleasant Beach, New Jersey. The company specializes in direct lending of merchant cash advances to help small businesses secure working capital quickly. Stafford offers same-day funding, no closing costs, low factor rates, and consolidation programs. The company caters to a wide range of industries including auto shops, healthcare services, restaurants, and more, with solutions accessible to businesses averaging at least $7,500 in monthly sales and operating for over six months. The team works diligently to provide merchants with fast, affordable capital solutions. Small team operation focused on direct MCA funding.",
+    "news": [
+      {
+        "h": "Stafford Business Funding maintains active merchant cash advance operations serving New Jersey small businesses",
+        "s": "Yelp Business Profile",
+        "d": "2025-01-01"
+      }
+    ],
+    "location": "Point Pleasant Beach, NJ",
+    "full_address": "516 Bay Ave, Point Pleasant Beach, NJ 08742",
+    "website": "https://staffordbusinessfunding.com",
+    "employees": 8,
+    "category": "funder"
+  },
+  {
+    "id": 1407,
+    "name": "Starting Gate Financial",
+    "leaders": [
+      {
+        "n": "Syed Raza",
+        "t": "COO & General Manager",
+        "bg": "Chief Operating Officer and General Manager of Starting Gate Financial in Richardson, Texas. Commercial Finance Consultant with experience directing commercial loan activities and enhancing overall business processes. Manages the company's portfolio of commercial finance loans including SBA loans, equipment financing, real estate investment loans, and accounts receivable financing. Oversees operations at the 803 Business Parkway location serving Texas entrepreneurs since 2019.",
+        "hooks": [
+          "Commercial finance consultant directing loan operations",
+          "Runs DFW-based lending operation since 2019",
+          "Manages SBA, equipment, and real estate loan portfolio"
+        ],
+        "li": "https://www.linkedin.com/in/syed-raza-893945196/"
+      }
+    ],
+    "desc": "Starting Gate Financial (SGF) is a commercial finance company established in 2019 and headquartered in Richardson, Texas, serving as a strategic growth partner for entrepreneurs in the Dallas-Fort Worth area and nationwide. The company offers a portfolio of commercial finance loans including SBA loans for startups, franchise financing, equipment financing, real estate investment loans (fix-and-flip, rental properties), contractor financing, business lines of credit, and accounts receivable financing. Interest rates range from 7.9% to 12.6% APR with no upfront fees and funds available in 10-15 business days. Businesses can qualify with as little as 3 months in business, minimum $5,000/month revenue ($60,000 annual gross sales), and no minimum FICO score required. Real estate deals can be approved and funded in as little as 24-72 hours. The company connects entrepreneurs with top lenders through a streamlined platform. Approximately 3-10 employees with revenue of $1-5 million.",
+    "news": [
+      {
+        "h": "Starting Gate Financial expands commercial lending portfolio with healthcare and contractor-specific financing programs",
+        "s": "Starting Gate Financial",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Richardson, TX",
+    "full_address": "803 Business Pkwy, Richardson, TX 75081",
+    "website": "https://startinggatefinancial.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1408,
+    "name": "Strategic Capital",
+    "leaders": [
+      {
+        "n": "Austin Moss",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of Strategic Capital, which he established in 2014 in Overland Park, Kansas to address the demand for capital in the small business community. Receives a 100% approval rating from employees on Glassdoor. Also operates as Founder and CEO of Capital Collaboration. Entrepreneur and investor building companies, media, and capital platforms. Based in the Kansas City metro area. Built Strategic Capital into a 19-person operation offering merchant cash advances, term loans, lines of credit, revenue-based financing, and SBA loans.",
+        "hooks": [
+          "100% CEO approval rating on Glassdoor",
+          "Founded Strategic Capital at age to tackle SMB capital gap",
+          "Also runs Capital Collaboration platform",
+          "Kansas City entrepreneur and investor"
+        ],
+        "li": "https://www.linkedin.com/in/austinearlmoss/"
+      },
+      {
+        "n": "Parker Moss",
+        "t": "Financial Controller",
+        "bg": "Financial Controller at Strategic Capital in Overland Park, Kansas. Manages the company's financial operations, accounting, and reporting. Part of the leadership team overseeing Strategic Capital's small business lending and merchant cash advance operations.",
+        "hooks": [
+          "Financial controller for MCA operations",
+          "Part of Strategic Capital founding team"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Strategic Capital is a small business lending company founded in 2014 and headquartered in Overland Park, Kansas. The company was established to tackle the prevalent demand for capital within the small business community, offering a multitude of funding options including term loans, lines of credit, business cash advances, merchant cash advances, revenue-based financing, invoice financing, asset-based lending, and SBA loans. Strategic Capital serves small business owners across the nation through its network of lenders, committed to transparency, innovation, and expertise. The company believes that obtaining capital should be a fast, simple, and secure process. Led by CEO Austin Moss with a 100% employee approval rating. Approximately 19 employees with revenue between $1-5 million. Note: Yelp listing shows 'CLOSED' as of March 2025 — may have rebranded to Capital Collaboration.",
+    "news": [
+      {
+        "h": "Strategic Capital Yelp listing marked as closed, potential rebrand to Capital Collaboration under CEO Austin Moss",
+        "s": "Yelp",
+        "d": "2025-03-01"
+      },
+      {
+        "h": "Strategic Capital Partners maintains BBB accreditation for small business lending in Kansas",
+        "s": "BBB",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Overland Park, KS",
+    "full_address": "10551 Barkley St, Suite 403, Overland Park, KS 66212",
+    "website": "https://capitalwithstrategy.com",
+    "employees": 19,
+    "category": "funder"
+  },
+  {
+    "id": 1409,
+    "name": "Sunday Foundation",
+    "leaders": [
+      {
+        "n": "Bryan Greenwood",
+        "t": "Founder",
+        "bg": "Founded Sunday Foundation in 2020 after unofficially starting the mission in 2013. Previously worked in commercial banking helping wealthy clients with commercial real estate investments, but felt a void and desire to make a greater difference. Joined nonprofit microfinance organization Kiva and lent a small sum to a mother and small business owner in the Philippines, which inspired the creation of Sunday. Built Sunday into a movement to reinvent microfinance with zero-interest loans, no fees, and no penalties. Serves on the board of directors alongside General Lenny Richoux, Megan Carroll, Kimberly Kam, Kirk Gadberry, and Viren Merchant. Based in Irvine, California.",
+        "hooks": [
+          "*Left banking career to reinvent microfinance",
+          "Inspired by Kiva microloan to Philippines entrepreneur",
+          "Provides zero-interest, zero-fee small business loans",
+          "Board includes General Lenny Richoux"
+        ],
+        "li": "https://www.linkedin.com/in/bryangreenwood"
+      }
+    ],
+    "desc": "Sunday Foundation (operating as Sunday) is a U.S. registered 501(c)(3) public nonprofit organization founded in 2020 and headquartered in Irvine, California. The organization is focused on financial inclusion, economic development, and poverty alleviation through a radically different approach to microfinance. Sunday provides unconventional microloans with NO interest, NO fees, and NO penalties, directly funding entrepreneurs without intermediary costs — wiring funds directly to beneficiaries' bank accounts. The organization's mission is to dismantle poverty, accelerate entrepreneurship, and reinvent microfinance. Sunday also runs an accelerator program helping experienced professionals become founders of independent nonprofit organizations sharing the mission. The organization serves underserved small businesses in low-income communities globally. Led by founder Bryan Greenwood with a board of directors including military, business, and community leaders. Supported by donations, volunteers, and partners.",
+    "news": [
+      {
+        "h": "Sunday Foundation founder Bryan Greenwood shares microfinance vision on LinkedIn reaching small business communities",
+        "s": "LinkedIn",
+        "d": "2024-04-01"
+      },
+      {
+        "h": "Sunday Foundation maintains GuideStar and Charity Navigator profiles as registered 501(c)(3) nonprofit",
+        "s": "GuideStar",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Irvine, CA",
+    "full_address": "3395 Michelson Dr, Unit 5151, Irvine, CA 92612",
+    "website": "https://sundayfunds.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1410,
+    "name": "Super Fast Cap",
+    "leaders": [
+      {
+        "n": "Joseph Vaknen",
+        "t": "Head of Business Development",
+        "bg": "Head of Business Development at SuperFastCap, a merchant cash advance provider. Manages ISO/broker relationships and new business acquisition. Previously associated with CheaperTeam. Responsible for expanding SuperFastCap's funding operations from micro-deals ($2k-$12k) to larger funding amounts with longer terms and lower buy rates. Active on DailyFunder forums promoting SuperFastCap's broker programs and competitive funding terms. Based in the New York area.",
+        "hooks": [
+          "Grew SuperFastCap beyond micro-funding to larger deals",
+          "Active in DailyFunder MCA community",
+          "Previously at CheaperTeam"
+        ],
+        "li": "https://www.linkedin.com/in/joseph-vaknen-3b6189163/"
+      }
+    ],
+    "desc": "Super Fast Cap (operating as SuperFastCap) is a merchant cash advance provider based in the New York area. The company started as a micro-funder specializing in small deals ($2,000-$12,000) with same-day and sometimes within-the-hour funding. SuperFastCap has since expanded to offer bigger deals with longer terms and lower buy rates. The company features one of the highest approval rates in the MCA space, low-document requirements, and same-day funding options. SuperFastCap works with ISO/broker partners and maintains an active presence in the MCA broker community through DailyFunder. The company emphasizes speed and flexibility to match fluctuating business cash flow needs.",
+    "news": [
+      {
+        "h": "SuperFastCap expands beyond micro-funding to bigger deals with longer terms and lower buy rates",
+        "s": "DailyFunder",
+        "d": "2023-01-01"
+      },
+      {
+        "h": "SuperFastCap opens new broker program accepting ISO partners for MCA funding",
+        "s": "DailyFunder",
+        "d": "2022-01-01"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "New York, NY",
+    "website": "https://superfastcap.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1411,
+    "name": "Super G Capital",
+    "leaders": [
+      {
+        "n": "Darrin Ginsberg",
+        "t": "Founder & CEO",
+        "bg": "Founded Super G Capital in 2008 in Newport Beach, California. Successful entrepreneur who built several national Independent Sales Organizations (ISOs) before creating Super G Capital. Under his leadership, the company has funded more than $250 million across 200+ borrowers, primarily ISOs and merchant service providers. Also serves as Chairman of SG Credit Partners, the cash flow lending division that spun out of Super G Capital in 2018. Returned to active leadership at Super G Capital in January 2025. The company participated in RSPA RetailNOW 2025.",
+        "hooks": [
+          "*Built multiple national ISOs before founding Super G",
+          "Funded $250M+ across 200+ borrowers",
+          "Spun out SG Credit Partners in 2018",
+          "Returned to active CEO role in January 2025"
+        ],
+        "li": "https://www.linkedin.com/in/darringinsberg/"
+      },
+      {
+        "n": "Marc Cole",
+        "t": "Co-Founder & CEO, SG Credit Partners (Former CFO, Super G Capital)",
+        "bg": "Joined Super G Capital in 2013 as CFO, relocating his family from Manhattan to Newport Beach. Oversaw the company's diversification into cash flow lending and raised in excess of $100 million of institutional capital. Co-founded SG Credit Partners with Darrin Ginsberg, which spun out of Super G Capital in 2018 as a pure-play lower middle market specialty finance company. Now serves as CEO of SG Credit Partners with offices in Southern California, Atlanta, Boston, Chicago, and Portland, having provided in excess of $250 million to 150+ borrowers. Started the cash-flow lending boutique with Charlie Perer. Recapitalized through $100+ million capital commitment from MidMark Financial Group, The Cynosure Group, and The 4612 Group.",
+        "hooks": [
+          "*Raised $100M+ institutional capital for Super G",
+          "Relocated family from Manhattan to Newport Beach for the role",
+          "Led SG Credit Partners spinoff and recapitalization",
+          "Secured backing from MidMark, Cynosure, and 4612 Group"
+        ],
+        "li": "https://www.linkedin.com/in/marccole/"
+      }
+    ],
+    "desc": "Super G Capital is a notable alternative lender founded in 2008 and headquartered in Newport Beach, California, specializing in residual-based loans and growth capital for Independent Sales Organizations (ISOs) and merchant service providers. The company provides loan amounts ranging from $100,000 to $5,000,000 with flexible terms of 12 to 48 months, offering covenant-light working capital, growth capital, acquisition capital, and special situation financing. Super G Capital has funded more than $250 million across 200+ borrowers, focusing exclusively on residual-based businesses like ISOs, MSPs, VARs, and agents. In 2018, the company spun out its cash flow, technology, and special situations lending division to create SG Credit Partners, a pure-play lower middle market specialty finance company led by Marc Cole, recapitalized with $100+ million from MidMark Financial Group. Founder Darrin Ginsberg returned to active CEO leadership in January 2025. Approximately 12 employees.",
+    "news": [
+      {
+        "h": "Darrin Ginsberg returns to active CEO leadership at Super G Capital in January 2025",
+        "s": "LinkedIn",
+        "d": "2025-01-15"
+      },
+      {
+        "h": "Super G Capital participates in RSPA RetailNOW 2025 showcasing ISO lending solutions",
+        "s": "RSPA",
+        "d": "2025-06-01"
+      },
+      {
+        "h": "SG Credit Partners completes spinoff from Super G Capital as independent lower middle market lender",
+        "s": "ABL Advisor",
+        "d": "2018-09-01"
+      },
+      {
+        "h": "Novus Capital Group merges with Super G Capital expanding ISO lending capabilities",
+        "s": "PR Newswire",
+        "d": "2017-04-01"
+      }
+    ],
+    "location": "Newport Beach, CA",
+    "full_address": "23 Corporate Plaza Dr, Suite 100, Newport Beach, CA 92660",
+    "website": "https://www.supergcapital.com",
+    "employees": 12,
+    "category": "funder"
+  }
+]

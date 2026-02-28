@@ -1,0 +1,496 @@
+[
+  {
+    "id": 1391,
+    "name": "Seawise Capital",
+    "leaders": [
+      {
+        "n": "Kunal Rajvanshi",
+        "t": "CEO & Co-Founder",
+        "bg": "Co-founded Seawise Capital in 2018 to bring trade finance to Indian SME exporters. Led the company through Y Combinator, raising $150K in initial funding. Oversaw the company's acquisition by MODIFI in January 2022, where the trade finance and SaaS business was integrated into MODIFI's global trade finance platform. Prior experience in finance and technology in India's export sector.",
+        "hooks": [
+          "Y Combinator alumnus",
+          "Built trade finance SaaS for Indian exporters",
+          "Led MODIFI acquisition exit in 2022"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Vidur Jain",
+        "t": "Co-Founder & COO",
+        "bg": "Co-founded Seawise Capital alongside Kunal Rajvanshi and Manish Pal. Serves as COO overseeing operations and partnerships. Active in the Indian export and trade finance community, speaking at industry events about making trade finance more accessible to SMEs. Helped build Seawise's platform for collateral-free capital by discounting invoices from large overseas customers.",
+        "hooks": [
+          "Trade finance evangelist for Indian SMEs",
+          "Co-built invoice discounting platform",
+          "Y Combinator startup founder"
+        ],
+        "li": "https://www.linkedin.com/in/vidur-jain-3a693027"
+      },
+      {
+        "n": "Manish Pal",
+        "t": "Co-Founder & CTO",
+        "bg": "Co-founded Seawise Capital as the technical co-founder, building the trade finance and SaaS platform that powers invoice discounting for Indian exporters. Responsible for the technology stack that automates trade finance underwriting and enables SMEs to receive working capital against the strength of their international customers.",
+        "hooks": [
+          "Built trade finance tech platform from scratch",
+          "CTO of Y Combinator fintech startup"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Seawise Capital is a UK-registered, India-based trade finance company founded in 2018 by Kunal Rajvanshi, Vidur Jain, and Manish Pal. A Y Combinator alumnus, the company built a digital platform to make trade finance more accessible to SME exporters in emerging markets, providing collateral-free working capital by discounting invoices from large overseas customers. Seawise combined finance and technology expertise to bring trade finance into the digital age, serving both exporters needing credit terms and importers seeking supply chain financing through an online portal. In January 2022, MODIFI acquired Seawise Capital's trade finance and SaaS business in India, integrating it into their global platform. The company raised $150K from Y Combinator and operated with approximately 3 employees based in New Delhi.",
+    "news": [
+      {
+        "h": "MODIFI acquires Seawise Capital's trade finance and SaaS business in India",
+        "s": "Fintech Futures",
+        "d": "2022-01"
+      },
+      {
+        "h": "Seawise Capital graduated from Y Combinator accelerator program",
+        "s": "Y Combinator",
+        "d": "2019"
+      },
+      {
+        "h": "Seawise Capital launches digital trade finance platform for Indian exporters",
+        "s": "seawisecapital.com",
+        "d": "2019"
+      }
+    ],
+    "location": "New Delhi, India",
+    "full_address": "New Delhi, Delhi, India",
+    "website": "seawisecapital.com",
+    "employees": 3,
+    "category": "funder"
+  },
+  {
+    "id": 1392,
+    "name": "Secure Funding Source",
+    "leaders": [
+      {
+        "n": "Danny Laniado",
+        "t": "Managing Partner",
+        "bg": "Managing Partner of Secure Funding Source, leading the company's business funding operations from Brooklyn, New York. Previously held roles at Jordache and Really NY Real Estate Group before transitioning into the alternative business funding industry. Built Secure Funding Source into a provider that has funded thousands of small businesses across the country through an expansive network of ISOs.",
+        "hooks": [
+          "Jordache and real estate background",
+          "Built ISO network for nationwide funding",
+          "Brooklyn-based finance leader"
+        ],
+        "li": "https://www.linkedin.com/in/danny-laniado-2a370a37"
+      },
+      {
+        "n": "Robert Engemann",
+        "t": "Director, Business Development & Partner Relations",
+        "bg": "Director of Business Development and Partner Relations at Secure Funding Source. Manages the company's ISO partner network and drives growth through strategic partnerships. Responsible for expanding the company's reach and onboarding new broker partners who submit merchant cash advance applications.",
+        "hooks": [
+          "Leads ISO partner development",
+          "Business development for MCA funder"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Secure Funding Source is a New York-based alternative business funding company founded in 2016, specializing in short-term capital advances and commercial lending for small businesses nationwide. The company provides fast business funding within 24 to 48 hours, serving businesses that may not qualify for traditional bank financing. Secure Funding Source operates through an expansive network of ISOs (Independent Sales Organizations) and emphasizes a partnership-oriented approach with clients. The company offers funding for inventory, marketing, product launches, equipment, employee costs, renovations, and general working capital needs. With an A+ BBB rating and approximately 9-50 employees, Secure Funding Source positions itself as a trusted partner for small business owners seeking quick access to capital.",
+    "news": [
+      {
+        "h": "Secure Funding Source continues expansion of ISO partner network for nationwide small business funding",
+        "s": "securefundingsource.com",
+        "d": "2025"
+      },
+      {
+        "h": "Company maintains A+ Better Business Bureau rating for business lending services",
+        "s": "BBB",
+        "d": "2025"
+      },
+      {
+        "h": "Secure Funding Source offers 24-48 hour funding turnaround for small business capital needs",
+        "s": "securefundingsource.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Brooklyn, NY",
+    "full_address": "495 Flatbush Ave, Brooklyn, NY 11225",
+    "website": "securefundingsource.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1393,
+    "name": "Semble",
+    "leaders": [
+      {
+        "n": "Todd Tarbert",
+        "t": "CEO",
+        "bg": "CEO of Semble, an online lending platform facilitating low-cost financing for nonprofit organizations. Leads the company's mission to connect socially responsible investors with nonprofits that need loans. Under his leadership, Semble has developed its Social Investment model that reduces borrowing costs for nonprofits by leveraging their supporter communities as investors. Based in Bellevue, Washington.",
+        "hooks": [
+          "Nonprofit lending innovator",
+          "Social Investment model pioneer",
+          "Bellevue-based fintech CEO"
+        ],
+        "li": "https://www.linkedin.com/in/toddtarbert"
+      },
+      {
+        "n": "Chris Walcott",
+        "t": "President",
+        "bg": "President of Semble, working alongside CEO Todd Tarbert to grow the nonprofit lending platform. Oversees strategic partnerships and operational execution for the Social Investment model that allows socially responsible investors to fund the loan needs of nonprofits they support. Helps manage relationships with both nonprofit borrowers and individual investors on the platform.",
+        "hooks": [
+          "Nonprofit finance executive",
+          "Social investment platform builder"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Semble is an online lending platform founded in 2011 and headquartered in Bellevue, Washington, that facilitates low-cost financing for nonprofit organizations. The company operates a unique Social Investment model that allows socially responsible investors to invest in the loan needs of nonprofits they support, effectively reducing borrowing costs by leveraging community relationships. Semble connects nonprofits seeking capital with individual investors who want to make a social impact while earning a return. The platform has raised $951K in funding and serves as an alternative to traditional lending for the nonprofit sector. While not a traditional MCA or business funder, Semble operates in the alternative lending fintech space with a specialized focus on mission-driven organizations.",
+    "news": [
+      {
+        "h": "Semble continues growing nonprofit lending platform with Social Investment model",
+        "s": "semble.com",
+        "d": "2025"
+      },
+      {
+        "h": "Semble maintains BBB business profile for nonprofit financing services in Bellevue, WA",
+        "s": "BBB",
+        "d": "2024"
+      },
+      {
+        "h": "Semble expands strategic partnerships with nonprofit organizations for low-cost lending",
+        "s": "semble.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Bellevue, WA",
+    "full_address": "14205 SE 36th St, Suite 100, Bellevue, WA 98006",
+    "website": "semble.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1394,
+    "name": "Seneer Capital",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "CEO/Founder",
+        "bg": "Founder and leader of SENEER Capital, an online lending platform based in Sunny Isles Beach, Florida. Founded the company in 2015 to provide quick and effortless small business financing including term loans, lines of credit, SBA loans, and working capital solutions. Built the platform to offer same-day funding with a streamlined digital application process.",
+        "hooks": [
+          "Founded Sunny Isles Beach lending startup",
+          "Same-day business funding pioneer"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "SENEER Capital is an online lending platform founded in 2015 and based in Sunny Isles Beach, Florida, offering quick and effortless small business financing. The company provides multiple funding products including term loans, lines of credit, SBA loans, working capital loans, and same-day business funding. SENEER Capital emphasizes rapid funding with a streamlined application process that takes just minutes to complete, with approval decisions coming quickly and funds available as soon as the same day. The company claims billions of dollars funded and maintains a Better Business Bureau rating. SENEER Capital positions itself as a personalized lending partner with dedicated loan advisors who provide customized funding solutions to fuel business growth. The platform serves small businesses across the United States seeking fast access to capital for expansion, payroll, equipment, commercial real estate, and cash flow needs.",
+    "news": [
+      {
+        "h": "SENEER Capital announces SBA loan products alongside existing business funding options",
+        "s": "PR Web",
+        "d": "2024"
+      },
+      {
+        "h": "SENEER Capital continues same-day business funding services from Sunny Isles Beach headquarters",
+        "s": "seneercapital.com",
+        "d": "2025"
+      },
+      {
+        "h": "Company expands online lending platform with term loans and lines of credit for small businesses",
+        "s": "seneercapital.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Sunny Isles Beach, FL",
+    "full_address": "Sunny Isles Beach, FL",
+    "website": "seneercapital.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1395,
+    "name": "Setscale",
+    "leaders": [
+      {
+        "n": "Daniel Fine",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of Setscale (formerly FLOAT), a fintech startup revolutionizing purchase order financing for SMBs. Wharton School graduate from the University of Pennsylvania. Led the company through a $9.5M seed round and secured up to $70M in debt financing, totaling approximately $80M in equity and debt raised. Brings broad experience scaling businesses in fintech, CPG, retail, and related sectors. Based in Miami, overseeing a fully remote team with offices in both Miami and New York.",
+        "hooks": [
+          "*Wharton School graduate",
+          "Raised $80M equity and debt for PO financing",
+          "Rebranded FLOAT to Setscale",
+          "Miami-based fintech founder"
+        ],
+        "li": "https://www.linkedin.com/in/finedaniel"
+      }
+    ],
+    "desc": "Setscale (formerly FLOAT) is a New York-headquartered fintech startup founded in 2021 that simplifies trade and empowers companies to scale through purchase order (PO) financing. The company provides SMBs with advances that directly pay manufacturers up to 100% of production costs, collecting payment only when the end customer receives goods and pays the invoice. Setscale launched out of stealth in 2023 with approximately $80M in combined equity and debt financing, including a $9.5M seed round and up to $70M in debt facilities. Led by Wharton graduate Daniel Fine, the company targets US-based businesses selling physical products to credit-worthy domestic end buyers across industries including CPG, apparel, health and wellness, medical, and manufacturing. With 11-50 employees working in a fully remote environment with offices in Miami and New York, Setscale has raised a total of $19.3M over 4 rounds from 7 investors.",
+    "news": [
+      {
+        "h": "Setscale launches out of stealth with ~$80M equity and debt raise for purchase order financing",
+        "s": "PR Newswire",
+        "d": "2023-05"
+      },
+      {
+        "h": "Fintech startup Setscale raises $9.5M seed round to revolutionize SMB purchase order financing",
+        "s": "Fintech Global",
+        "d": "2023-05"
+      },
+      {
+        "h": "Setscale continues expanding PO financing platform for CPG, apparel, and manufacturing SMBs",
+        "s": "setscale.com",
+        "d": "2024"
+      }
+    ],
+    "location": "New York, NY / Miami, FL",
+    "full_address": "444 West Rivo Alto Drive, Miami, FL",
+    "website": "setscale.com",
+    "employees": 25,
+    "category": "funder"
+  },
+  {
+    "id": 1396,
+    "name": "SHA Capital",
+    "leaders": [
+      {
+        "n": "Drexell",
+        "t": "CEO",
+        "bg": "CEO of SHA Capital, a business funding company based in North Brunswick, New Jersey. Has extensive knowledge and understanding of financial procedures and business structures. Leads the company's lending operations supporting small businesses across the US and Canada, with a focus on personalized funding solutions. Known for putting client needs first and guiding businesses through the funding process via SHA Capital's ABLE platform.",
+        "hooks": [
+          "Runs ABLE funding platform",
+          "Serves US and Canada small businesses",
+          "North Brunswick NJ finance leader"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "SHA Capital is a business funding company based in North Brunswick, New Jersey, providing funding support for small businesses across the United States and Canada. The company specializes in short-term financing and offers a variety of lending products through its ABLE platform, including invoice factoring, startup funding, short-term loans, term loans, real estate investment financing, and equipment loans. SHA Capital has helped hundreds of businesses secure millions in funding through its team of lending specialists, with funding typically completed within 24-72 hours from receipt of initial documentation. The company is known for working with businesses that have low credit scores or difficulty accessing traditional bank financing. SHA Capital also operates under the Zero Percent Investor brand, helping short-term rental investors access $100K+ in business funding for property purchases, furnishing, repairs, and management costs. The company has approximately 17 employees.",
+    "news": [
+      {
+        "h": "SHA Capital continues expanding ABLE platform for small business funding across US and Canada",
+        "s": "shacapital.org",
+        "d": "2025"
+      },
+      {
+        "h": "Zero Percent Investor brand helps short-term rental investors access business funding",
+        "s": "Trustpilot",
+        "d": "2025"
+      },
+      {
+        "h": "SHA Capital offers invoice factoring, startup funding, and real estate investment financing",
+        "s": "shacapital.org",
+        "d": "2024"
+      }
+    ],
+    "location": "North Brunswick, NJ",
+    "full_address": "1346 How Ln, Suite 207, North Brunswick, NJ 08902",
+    "website": "shacapital.org",
+    "employees": 17,
+    "category": "funder"
+  },
+  {
+    "id": 1398,
+    "name": "Slim Capital",
+    "leaders": [
+      {
+        "n": "Shervin Rashti",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of SLIM Capital, LLC with over 20 years of experience in forming, capitalizing, operating, and exiting startup ventures. Holds the CLFP (Certified Lease & Finance Professional) designation and serves in leadership at NEFA (National Equipment Finance Association). In 2008, co-founded a direct sub-prime specialty finance company, serving as COO until 2017 when he sold his interest to launch SLIM Capital as a direct, independent equipment lease and finance company. Based in Beverly Hills, California. Recently led the acquisition of Capital Finance Solutions, LLC to accelerate vendor and end-user growth channels.",
+        "hooks": [
+          "*CLFP certified finance professional",
+          "NEFA leadership member",
+          "20+ years building and exiting startups",
+          "Cannabis space equipment lender pioneer"
+        ],
+        "li": "https://www.linkedin.com/in/shervinr"
+      },
+      {
+        "n": "Jeff Brannon",
+        "t": "Joint Venture Partner & Head of Business Development",
+        "bg": "Joint Venture Partner and Head of Business Development at SLIM Capital, also serving as Chief Revenue Officer. Started in the equipment finance industry in 1998 as an account manager for a large brokerage. Brings over 25 years of equipment finance experience to SLIM Capital, driving revenue growth and partnerships across the company's nationwide lending operations from Orange County, California.",
+        "hooks": [
+          "25+ years in equipment finance",
+          "Orange County-based biz dev leader",
+          "Chief Revenue Officer dual role"
+        ],
+        "li": "https://www.linkedin.com/in/metcapgroup"
+      },
+      {
+        "n": "Joel Baker",
+        "t": "Chief Financial Officer",
+        "bg": "Chief Financial Officer at SLIM Capital, LLC, overseeing the company's financial operations, reporting, and risk management for the equipment lease and finance portfolio. Manages the financial infrastructure supporting SLIM Capital's credit-based and collateral-based financing programs.",
+        "hooks": [
+          "CFO of equipment finance company",
+          "Manages collateral-based portfolio"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "SLIM Capital, LLC is a Beverly Hills-based nationwide direct finance company founded in 2017 by Shervin Rashti, specializing in equipment lease and finance transactions. The company offers credit-based programs across the full credit spectrum (A through D) and structured, collateral-based transactions. SLIM Capital's traditional term loans range from $25,000 to $3,000,000, with an application-only program up to $300K that can close within a day at rates competitive to bank rates. The company offers collateral-based programs securing hard assets including equipment with strong secondary market value, real estate, and other monetizable collateral, with real estate-backed working capital up to 70% LTV and equipment-backed working capital up to 75% of forced liquidation value. Notably, SLIM Capital is one of the few lenders operating in the cannabis space. In November 2025, the company acquired Capital Finance Solutions, LLC to accelerate vendor and end-user growth channels. With approximately 7 employees, the company celebrated 10 years of innovation in equipment finance in 2027.",
+    "news": [
+      {
+        "h": "SLIM Capital LLC acquires Capital Finance Solutions to accelerate vendor and end-user growth channels",
+        "s": "SFNet Secured Lender",
+        "d": "2025-11"
+      },
+      {
+        "h": "SLIM Capital achieves record-breaking first quarter milestones with significant growth",
+        "s": "ELFA",
+        "d": "2024-04"
+      },
+      {
+        "h": "SLIM Capital celebrates 10 years of innovation, growth, and partnerships in equipment finance",
+        "s": "slimcapital.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Beverly Hills, CA",
+    "full_address": "9301 Wilshire Blvd, Suite 425, Beverly Hills, CA 90210",
+    "website": "slimcapital.com",
+    "employees": 7,
+    "category": "funder"
+  },
+  {
+    "id": 1399,
+    "name": "SLR Digital Finance",
+    "leaders": [
+      {
+        "n": "Randy Mitzman",
+        "t": "SVP, Managing Director",
+        "bg": "Senior Vice President and Managing Director at SLR Digital Finance (formerly focused on FastPay operations at SLR Business Credit). Recognized as a SFNet 40 Under 40 Award recipient for achievements in the secured finance industry. Joined SLR Business Credit in 2021 to lead the digital media and ad tech lending vertical that became SLR Digital Finance. Specializes in asset-based lending for digital media companies, leveraging proprietary debtor scorecards to offer enhanced availability and favorable credit terms. Based in the Los Angeles area.",
+        "hooks": [
+          "*SFNet 40 Under 40 Award recipient",
+          "Digital media lending specialist",
+          "Built FastPay into SLR Digital Finance"
+        ],
+        "li": "https://www.linkedin.com/in/randymitzman"
+      },
+      {
+        "n": "Betty Hernandez",
+        "t": "EVP, Chief Credit Officer",
+        "bg": "Executive Vice President and Chief Credit Officer at SLR Business Credit/SLR Digital Finance. One of the founding members of North Mill Capital. Started her career in asset-based lending over 30 years ago, working at First Fidelity Bank and Business Alliance Capital before joining what is now SLR Business Credit. Oversees credit decisions for the digital media and ad tech lending portfolio.",
+        "hooks": [
+          "30+ years in asset-based lending",
+          "North Mill Capital founding member",
+          "Chief Credit Officer for digital media lending"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Daniel Tortoriello",
+        "t": "EVP, Chief Operating Officer",
+        "bg": "Executive Vice President and Chief Operating Officer at SLR Business Credit/SLR Digital Finance. Previously worked with Betty Hernandez at First Fidelity Bank and Business Alliance Capital before joining the SLR organization. Oversees operational execution for the digital media and ad tech lending platform that provides factoring and asset-based loans up to $250 million.",
+        "hooks": [
+          "First Fidelity Bank alumni",
+          "COO of $250M digital media lender"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Jeff Goldrich",
+        "t": "President & CEO, SLR Business Credit",
+        "bg": "President and CEO of SLR Business Credit, the parent organization of SLR Digital Finance. Oversees the full SLR Business Credit platform including the digital media and ad tech lending vertical (SLR Digital Finance). SLR Business Credit is a wholly owned subsidiary of SLR Investment Corp (NASDAQ: SLRC), providing asset-based lending solutions across multiple industry verticals.",
+        "hooks": [
+          "Leads NASDAQ-listed lending subsidiary",
+          "President of SLR Business Credit platform"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "SLR Digital Finance is the leading asset-based lender serving digital media companies, offering factoring and asset-based loans up to $250 million. A wholly owned subsidiary of SLR Business Credit (which is part of SLR Investment Corp, NASDAQ: SLRC), the company provides specialized working capital financing for the digital media and ad tech landscape with founder-friendly, non-dilutive financing strategies up to $100MM. SLR Digital Finance serves advertising technology companies, publishers, ad networks, creative studios, agencies, and digital platforms. The company uses a proprietary Debtor Scorecard leveraging a massive data set to create unique views of each debtor's purchase volume, days sales outstanding, and short payments, enabling enhanced availability, favorable credit terms, quicker approvals, and higher advance rates. Headquartered in Sherman Oaks, California, the company has completed notable deals including a $45M credit facility for Infillion, a $60M facility for a leading independent media company, and a $10M facility for Bent Pixels LLC.",
+    "news": [
+      {
+        "h": "SLR Digital Finance closes $10 million credit facility for Bent Pixels LLC",
+        "s": "SFNet Secured Lender",
+        "d": "2025-10"
+      },
+      {
+        "h": "SLR Digital Finance provides $60 million senior secured credit facility to leading independent media company",
+        "s": "slrdigitalfinance.com",
+        "d": "2025"
+      },
+      {
+        "h": "SLR Digital Finance provides $45 million credit facility to Infillion",
+        "s": "slrdigitalfinance.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Sherman Oaks, CA",
+    "full_address": "Sherman Oaks, CA",
+    "website": "slrdigitalfinance.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1400,
+    "name": "Smart Business Funding",
+    "leaders": [
+      {
+        "n": "Anthony Collin",
+        "t": "CEO",
+        "bg": "Chief Executive Officer of Smart Business Funding, based in Miami, FL. Previously held roles at Collins Cash Inc, Pearl Capital Rivis Ventures LLC, Second Source Funding, and Business Payment Systems. Holds a Bachelor's degree in Marketing/Marketing Management from Touro College (2004-2007). Under his leadership, Smart Business Funding was ranked No. 1229 on the Inc. 5000 list in 2020 with 227% three-year growth, and No. 1915 in 2025. The company has funded over $200 million in business loan and cash advance transactions since founding in 2014.",
+        "hooks": [
+          "Touro College marketing graduate",
+          "*Inc. 5000 company twice (2020, 2025)",
+          "Pearl Capital and Second Source Funding alumni",
+          "$200M+ funded in MCA transactions"
+        ],
+        "li": "https://www.linkedin.com/in/anthony-collin-510a3647"
+      }
+    ],
+    "desc": "Smart Business Funding is a Miami-based alternative business financing company founded in 2014, providing merchant cash advances, equipment financing, lines of credit, credit card processing, and asset-based financing for small and mid-sized businesses nationwide. The company was ranked on the Inc. 5000 list in both 2020 (No. 1229) and 2025 (No. 1915), with 227% three-year growth. Smart Business Funding has funded over $200 million in business loan and cash advance transactions, offering approval within one business day and same-day funding after approval. The company requires a minimum of 3 months in business, $5,000 monthly sales, and no open bankruptcies. Repayment terms extend between 3 and 24 months with daily or weekly collection. Smart Business Funding maintains an A+ BBB rating and does not report to credit reporting agencies. The company also made a $10,000 donation to Magen David Adom. With its executive team bringing over 8 years of merchant services experience, the company serves businesses nationwide from its Miami headquarters.",
+    "news": [
+      {
+        "h": "Smart Business Funding ranked No. 1915 on Inc. 5000 list with 227% three-year growth",
+        "s": "Inc.",
+        "d": "2025"
+      },
+      {
+        "h": "Smart Business Funding donates $10,000 to Magen David Adom",
+        "s": "smartbusinessfunder.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company publishes Ultimate Guide to Business Funding in 2025 for small business owners",
+        "s": "smartbusinessfunder.com",
+        "d": "2025"
+      }
+    ],
+    "location": "Miami, FL",
+    "full_address": "20515 NE 22nd Ave, Miami, FL 33180",
+    "website": "smartbusinessfunder.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1401,
+    "name": "Solaris Financial",
+    "leaders": [
+      {
+        "n": "Unknown",
+        "t": "CEO/Founder",
+        "bg": "Leads Solaris Financial Services, a revenue-based funding company offering business and personal financial solutions. The company provides funding from $5,000 to $5 million based on business revenue rather than credit scores, with approvals and funding within 24 hours. Also offers credit repair and real estate financing services.",
+        "hooks": [
+          "Revenue-based funding model champion",
+          "No FICO score lending approach"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Solaris Financial is a revenue-based funding company operating through solarisfinancialservices.com, providing working capital and financing solutions for individuals and businesses. The company's products are revenue-based financing (not traditional business loans), offering funding amounts from $5,000 to $5 million depending on average monthly revenue and business tenure. Approval is based on business revenue rather than FICO scores, targeting business owners making at least $10K per month who need capital for cash flow, staffing, inventory, or unexpected expenses. Solaris Financial emphasizes no broker fees, quick turnaround, and a straightforward application process that takes less than 3 minutes with near-instant answers. The company also offers real estate financing for commercial and residential properties, personal loans, and credit repair services. Funding is typically delivered within 24 hours of approval, with businesses keeping 100% ownership and no collateral required.",
+    "news": [
+      {
+        "h": "Solaris Financial continues revenue-based funding services for businesses needing $50K-$500K",
+        "s": "solarisfinancialservices.com",
+        "d": "2025"
+      },
+      {
+        "h": "Company expands funding options including term loans, equipment leasing, and SBA loans",
+        "s": "solarisfinancialservices.com",
+        "d": "2024"
+      },
+      {
+        "h": "Solaris Financial offers real estate financing alongside business funding products",
+        "s": "solarisfinancialservices.com",
+        "d": "2024"
+      }
+    ],
+    "location": "United States",
+    "full_address": "",
+    "website": "solarisfinancialservices.com",
+    "employees": 10,
+    "category": "funder"
+  }
+]

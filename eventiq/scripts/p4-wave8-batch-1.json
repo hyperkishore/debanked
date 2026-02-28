@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1381,
+    "name": "Rebel Capital Partners",
+    "leaders": [
+      {
+        "n": "Shanir",
+        "t": "Principal",
+        "bg": "Principal at Rebel Capital Partners, an alternative lending firm offering merchant cash advances, equipment financing, lines of credit, and term loans to small businesses. Oversees client relationships and deal origination for the company's rapid funding programs. Works directly with business owners to structure commercial financing solutions with same-day approval capabilities.",
+        "hooks": [
+          "Rapid funding specialist for SMBs",
+          "Multi-product commercial lending leader"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Michael Hays",
+        "t": "Business Development Manager",
+        "bg": "Business Development Manager at Rebel Capital Partners, responsible for expanding the company's client base and ISO partnerships. Helps small business owners navigate alternative financing options including merchant cash advances and reverse consolidations. Part of the team driving Rebel Capital Partners' growth in the competitive alternative lending market.",
+        "hooks": [
+          "ISO partnership builder",
+          "Alternative lending BD specialist"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Rebel Capital Partners is an alternative business lending company offering merchant cash advances, reverse consolidations, lines of credit, term loans, and equipment financing to small businesses nationwide. Branded as the home of 'Rapid Funding,' the company emphasizes same-day approval and next-day funding with a low-documentation application process requiring no collateral. Rebel Capital Partners provides financing based on a business's credit card sales and overall revenue rather than traditional credit scores, making capital accessible to businesses that may not qualify for conventional bank loans. The company operates primarily through phone and online channels, serving small business owners who need quick access to working capital for growth, inventory, payroll, or operational needs.",
+    "news": [
+      {
+        "h": "Rebel Capital Partners continues offering rapid same-day approval MCA and equipment financing nationwide",
+        "s": "rebelcapitalpartners.com",
+        "d": "2025"
+      },
+      {
+        "h": "Company expands reverse consolidation products for businesses with existing MCA positions",
+        "s": "rebelcapitalpartners.com",
+        "d": "2024"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "7 Penn Plaza, Suite 904, New York, NY 10001",
+    "website": "rebelcapitalpartners.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1382,
+    "name": "Reliable Funding Source",
+    "leaders": [
+      {
+        "n": "Daniel Leviev",
+        "t": "CEO",
+        "bg": "CEO of Reliable Funding Source LLC, a fast-growing small and medium business funding company based in New York. Leads the company's operations and strategic direction in the alternative business financing space. Previously associated with InstaFunding as a Funding Specialist. Under his leadership, Reliable Funding Source has grown to become one of the faster-expanding SMB funding companies in the market, providing merchant cash advances and business funding solutions with same-day funding capabilities.",
+        "hooks": [
+          "Built fast-growing NYC funding company",
+          "InstaFunding alumni turned CEO",
+          "Same-day SMB funding specialist"
+        ],
+        "li": "https://www.linkedin.com/in/daniel-leviev-8a30a11b3/"
+      },
+      {
+        "n": "Johnathan Rivera",
+        "t": "Marketing Manager",
+        "bg": "Marketing Manager at Reliable Funding Source LLC. Oversees the company's marketing strategy and brand positioning in the competitive alternative business lending market. Responsible for lead generation, digital marketing campaigns, and building awareness for the company's merchant cash advance and business funding products targeting small and medium businesses across the United States.",
+        "hooks": [
+          "MCA marketing strategist",
+          "SMB lending brand builder"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Reliable Funding Source LLC is a New York-based alternative business funding company that provides merchant cash advances and working capital solutions to small and medium-sized businesses. The company positions itself as one of the fastest-growing SMB funding companies in the market, offering quick access to capital with funds available within 24 hours of approval. Reliable Funding Source does not restrict how businesses use their funding and works with a range of credit profiles, making it accessible to businesses that may struggle to obtain traditional bank financing. The company emphasizes a straightforward application process with dedicated funding specialists who guide business owners through every step. Listed with the Better Business Bureau in New York, the company serves businesses across various industries that need flexible working capital solutions.",
+    "news": [
+      {
+        "h": "Reliable Funding Source listed with BBB as financing consultants in New York City",
+        "s": "BBB",
+        "d": "2024"
+      },
+      {
+        "h": "Company continues rapid growth in small-medium business funding market with 24-hour funding capability",
+        "s": "reliablefundingsourcellc.com",
+        "d": "2024"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "New York, NY",
+    "website": "reliablefundingsourcellc.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1383,
+    "name": "Reps Capital LLC",
+    "leaders": [
+      {
+        "n": "Lukas Pratt",
+        "t": "Senior Account Executive",
+        "bg": "Senior Account Executive at Reps Capital, a commercial finance brokerage founded in 2021 and based in Colorado Springs. Works directly with business owners and vendors to structure equipment financing, working capital, and line of credit deals. Part of the founding team helping establish Reps Capital as a growing presence in the Colorado commercial finance market. Handles nationwide deal origination and client relationship management.",
+        "hooks": [
+          "Colorado Springs finance pioneer",
+          "Equipment finance deal specialist",
+          "Early team member at growing brokerage"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Reps Capital LLC is a commercial finance brokerage founded in 2021, headquartered in Greenwood Village, Colorado with offices in Colorado Springs. The company specializes in equipment financing, working capital, business lines of credit, vendor financing, equipment leasing, and commercial financing for businesses across virtually every industry nationwide. Reps Capital positions itself as a client-focused intermediary, emphasizing personalized service with dedicated account representatives who guide business owners through the financing process. The company can arrange funding in as little as 24 hours. With a team of 2-10 employees, Reps Capital operates as a lean brokerage connecting businesses with capital providers, offering ample training and mentorship to its team members as it continues to grow its footprint in the commercial finance space.",
+    "news": [
+      {
+        "h": "Reps Capital actively hiring Account Executives to expand Colorado Springs operations",
+        "s": "LinkedIn",
+        "d": "2024"
+      },
+      {
+        "h": "Company continues nationwide equipment financing and working capital brokerage expansion since 2021 founding",
+        "s": "repscapital.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Colorado Springs, CO",
+    "full_address": "102 South Tejon St, Suite 1100, Colorado Springs, CO 80903",
+    "website": "repscapital.com",
+    "employees": 5,
+    "category": "iso"
+  },
+  {
+    "id": 1384,
+    "name": "Right Choice Capital Inc",
+    "leaders": [
+      {
+        "n": "Billy Brown II",
+        "t": "Independent Funding Agent",
+        "bg": "Independent funding agent at Right Choice Capital Inc in Norcross, Georgia. Works with small business owners to facilitate access to various financing products including revenue-based loans, business term loans, SBA loans, cash advances, and equipment financing. Helps businesses navigate the application process for fast and flexible funding solutions with same-day approval capabilities.",
+        "hooks": [
+          "Norcross GA funding agent",
+          "Multi-product business lending facilitator"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Right Choice Capital Inc is a business financing company based in Norcross, Georgia (Peachtree Corners area) that provides small businesses with access to a suite of financial solutions. The company offers revenue-based loans, business term loans, business lines of credit, invoice factoring, SBA loans, cash advances, and equipment financing. Right Choice Capital Inc emphasizes fast, flexible, and cost-effective financing options with customized solutions designed to fit the individual needs of each business type. The application process takes approximately 5 minutes and can be completed online or by phone, with funds potentially deposited as soon as the same day of approval. The company is committed to helping businesses access the capital they need to grow and thrive, particularly those that may not qualify for traditional bank financing. Note: There is a separate, unrelated Singapore-based company also called Right Choice Capital that operates in Southeast Asian markets.",
+    "news": [
+      {
+        "h": "Right Choice Capital Inc continues offering same-day business financing in the greater Atlanta metro area",
+        "s": "rightchoicecapitalinc.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company expands product suite to include SBA loans, invoice factoring, and equipment financing alongside MCAs",
+        "s": "rightchoicecapitalinc.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Norcross, GA",
+    "full_address": "5051 Peachtree Corners Cir, Suite 200, Norcross, GA 30092",
+    "website": "rightchoicecapitalinc.com",
+    "employees": 5,
+    "category": "iso"
+  },
+  {
+    "id": 1385,
+    "name": "River Advance",
+    "leaders": [
+      {
+        "n": "Matthew Sitro",
+        "t": "ISO Relationship Manager",
+        "bg": "ISO Relationship Manager at River Advance, a direct funder specializing in alternative small business financing based in New York City. Manages relationships with independent sales organizations (ISOs) and brokers who refer merchant cash advance deals to River Advance. Responsible for growing the company's broker network and ensuring smooth deal flow between ISOs and the direct funding operation.",
+        "hooks": [
+          "NYC-based ISO relationship builder",
+          "Direct funder broker channel specialist"
+        ],
+        "li": "https://www.linkedin.com/in/matthew-sitro-2a131b150/"
+      }
+    ],
+    "desc": "River Advance is a New York City-based direct funder specializing in alternative financing for small businesses, particularly businesses that may not qualify for traditional bank loans due to bad credit or other issues. The company can approve funding from $5,000 to $1,000,000 in as little as 24 hours, with a simple application process requiring only a few bank statements rather than extensive financial documentation. River Advance does not require personal guarantees or collateral, meaning business owners are never at risk of losing their property. All business is conducted over the phone and through email with no in-person visits required. The company serves businesses in any industry provided they have been operating for at least 2-3 months with a minimum monthly cash flow of $15,000. River Advance has experienced exponential growth by promoting core values of professionalism, efficiency, and work ethic, and continues expanding its reach to aid small business owners across the United States.",
+    "news": [
+      {
+        "h": "River Advance continues exponential growth as direct funder for small businesses nationwide",
+        "s": "riveradvance.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers unsecured business financing up to $1M with no collateral or personal guarantee requirements",
+        "s": "riveradvance.com",
+        "d": "2024"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "New York, NY",
+    "website": "riveradvance.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1386,
+    "name": "Rosewood Capital Group",
+    "leaders": [
+      {
+        "n": "Gabriel Yaron",
+        "t": "President & Owner",
+        "bg": "President and Owner of Rosewood Capital Group, a Brooklyn-based small business lending company founded in 2016. Also registered as Gabriel Yaron Inc. in Brooklyn. Leads all aspects of the company's operations including underwriting, client relationships, and business development. Built Rosewood Capital Group from the ground up to serve small and medium businesses that may be turned away by traditional banks, offering funding solutions with same-day deposit capabilities. The company is listed with the BBB and operates from Rockaway Parkway in Brooklyn.",
+        "hooks": [
+          "Brooklyn small business lending founder",
+          "Built MCA company from scratch since 2016",
+          "BBB-listed funder serving underbanked SMBs"
+        ],
+        "li": "https://www.linkedin.com/in/gabriel-yaron-071716176/"
+      }
+    ],
+    "desc": "Rosewood Capital Group is a Brooklyn, New York-based small business lending company founded in 2016 that provides funding solutions for small and medium-sized businesses needing capital to grow and expand. The company offers term loans, lines of credit, SBA loans, A/R factoring, and merchant cash advances with same-day deposit capabilities. Rosewood Capital Group differentiates itself by focusing on the overall health and performance of a business rather than placing high emphasis on credit scores, making financing accessible to businesses that traditional banks may refuse. Their fixed cost structure ranges from $0.10 to $0.40 for every $1.00 advanced, with repayment via fixed daily ACH withdrawals Monday through Friday. Eligible businesses must have been incorporated for at least four months with monthly deposits of $5,000 or more. The company operates without requiring a business plan or collateral and serves businesses across various industries from its Brooklyn headquarters.",
+    "news": [
+      {
+        "h": "Rosewood Capital Group maintains BBB listing for small business loans in Brooklyn, NY",
+        "s": "BBB",
+        "d": "2025"
+      },
+      {
+        "h": "Company continues serving underbanked small businesses with same-day funding and flexible credit requirements",
+        "s": "rosewoodcapitalgroup.com",
+        "d": "2024"
+      },
+      {
+        "h": "Rosewood Capital Investment Group receives customer reviews on Yelp for business financing services",
+        "s": "Yelp",
+        "d": "2025"
+      }
+    ],
+    "location": "Brooklyn, NY",
+    "full_address": "149 Rockaway Pkwy, Brooklyn, NY 11212",
+    "website": "rosewoodcapitalgroup.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1387,
+    "name": "Rowan Advance",
+    "leaders": [
+      {
+        "n": "Zalman Arnow",
+        "t": "Owner & Founder",
+        "bg": "Owner and Founder of Rowan Advance Group LLC, an Edison, NJ-based merchant cash advance funder with approximately 200 employees. Previously served as Partner at Capital Express, another alternative business lender. Attended Yeshiva University. Built Rowan Advance into a significant MCA operation delivering over $10 million in funding monthly and $250 million funded in over two years. Located in the New York City metropolitan area, manages the company's ISO broker partnerships and direct funding operations.",
+        "hooks": [
+          "Yeshiva University graduate",
+          "Capital Express partner turned founder",
+          "$250M+ funded in two years",
+          "*Built 200-person MCA operation"
+        ],
+        "li": "https://www.linkedin.com/in/zalman-arnow-42241867/"
+      },
+      {
+        "n": "Eden Melloul",
+        "t": "Chief Operating Officer",
+        "bg": "Chief Operating Officer at Rowan Advance, responsible for day-to-day operations of the 200-employee merchant cash advance funding company based in Edison, New Jersey. Oversees underwriting, funding operations, ISO relationship management, and operational efficiency as the company scales its monthly funding volume beyond $10 million. Works closely with founder Zalman Arnow to execute on growth strategy and maintain service quality for ISO broker partners.",
+        "hooks": [
+          "COO scaling 200-person MCA funder",
+          "Operations leader at $250M+ funder"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Oscar Azatchi",
+        "t": "Senior Team Member",
+        "bg": "Senior team member at Rowan Advance, part of the core leadership group alongside owner Zalman Arnow and COO Eden Melloul. Contributes to the company's rapid growth and operations in the merchant cash advance funding space from the Edison, New Jersey headquarters.",
+        "hooks": [
+          "Core leadership at fast-growing MCA funder"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Rowan Advance (Rowan Advance Group LLC) is a merchant cash advance funder based in Edison, New Jersey, founded by Zalman Arnow. The company serves as a direct funding partner for ISO brokers, providing fast, flexible, and high-commission financing solutions for small businesses. Rowan Advance funds deals from $10,000 to $5 million depending on a merchant's financial profile, revenue, and funding history, with competitive factor rates starting at 1.28 and commissions up to 12 points for brokers. The company has delivered over $10 million in funding monthly, with $250 million funded in over two years and more than 300 five-star reviews. With approximately 200 employees, Rowan Advance specializes in revenue-based financing across various industries, emphasizing speed with same-day commissions, minimal stipulations, and early prepay discounts. The company considers factors beyond credit scores when evaluating merchants, making capital accessible to businesses that may not qualify for traditional lending.",
+    "news": [
+      {
+        "h": "Rowan Advance surpasses $250 million in total merchant cash advance funding with 300+ five-star reviews",
+        "s": "rowanadvance.co",
+        "d": "2025"
+      },
+      {
+        "h": "Company publishes thought leadership on future of MCA industry trends for ISO brokers in 2026",
+        "s": "rowanadvance.co",
+        "d": "2025"
+      },
+      {
+        "h": "Rowan Advance delivers over $10 million monthly in merchant funding with 200-person operation",
+        "s": "rowanadvance.co",
+        "d": "2024"
+      }
+    ],
+    "location": "Edison, NJ",
+    "full_address": "Edison, NJ",
+    "website": "rowanadvance.co",
+    "employees": 200,
+    "category": "funder"
+  },
+  {
+    "id": 1388,
+    "name": "Salaryo",
+    "leaders": [
+      {
+        "n": "Yair Levy",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO and Co-Founder of Salaryo, a fintech lending platform providing flexible financing for US small businesses. Previously worked at Brand & Better as Director of Business Development and Co-Founder. Attended the London School of Economics and Political Science (LSE). Co-founded Salaryo in 2017 alongside Omri Avisar and Asaf Zagury. Led the company through multiple funding rounds totaling $12.1 million, acquisition by Meitav Investment House (MTAV) in December 2021, and subsequent acquisition by Variant Investments in March 2023. Originally launched as a coworking security deposit financing platform before pivoting to broader SMB lending.",
+        "hooks": [
+          "*London School of Economics graduate",
+          "Israeli fintech entrepreneur in NYC",
+          "Pivoted from coworking finance to SMB lending",
+          "Navigated two acquisitions as CEO"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Omri Avisar",
+        "t": "Co-Founder & CPO",
+        "bg": "Co-Founder and Chief People Officer at Salaryo. Brings diverse entrepreneurial experience including co-founding Creatives (graphic design and UX/UI) and Radical Studio (brand development in telecommunications). Previously served as Manager of Marketing at iDigital, an Apple Premium Reseller, and worked on the marketing team at Walla! Communications. Co-founded Salaryo in 2017 with Yair Levy and Asaf Zagury to provide flexible financing for small businesses in the United States.",
+        "hooks": [
+          "Serial entrepreneur turned fintech co-founder",
+          "Apple reseller marketing background",
+          "Creative industry roots in UX/UI design"
+        ],
+        "li": "https://www.linkedin.com/in/omri-avisar-b497a016/"
+      },
+      {
+        "n": "Asaf Zagury",
+        "t": "Co-Founder",
+        "bg": "Co-Founder of Salaryo alongside Yair Levy and Omri Avisar. Part of the Israeli founding team that established Salaryo in 2017 as a fintech lending platform initially focused on coworking security deposit financing before expanding to broader small business lending. Contributed to the company's growth through $12.1 million in total funding and two subsequent acquisitions.",
+        "hooks": [
+          "Israeli fintech co-founder",
+          "Built SMB lending from coworking niche"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Salaryo Inc. is a New York-based fintech lending platform founded in 2017 by Israeli entrepreneurs Yair Levy, Omri Avisar, and Asaf Zagury. Originally launched to provide security deposit financing for coworking space memberships, the company pivoted to become a broader small business lending platform offering fully digital business term loans and lines of credit for US small businesses. Salaryo raised $12.1 million in total funding including a $5.5 million round in 2019 and a $5.8 million round in 2020 (backed by Dubai-based KEN Investments, Variant Investments, Techstars Ventures, and Michael Ullmann's investment group). The company was acquired in December 2021 by Meitav Investment House (MTAV), a leading Israeli publicly traded institutional asset manager on the Tel Aviv Stock Exchange, and subsequently acquired by Variant Investments, a US-based alternative credit investment fund, in March 2023. Despite its name suggesting salary/wage access, Salaryo operates as a fintech small business lender rather than an earned wage access platform.",
+    "news": [
+      {
+        "h": "Salaryo acquired by Variant Investments after previous ownership by Israeli asset manager Meitav",
+        "s": "Crunchbase / Startup Nation Finder",
+        "d": "2023"
+      },
+      {
+        "h": "Salaryo raised $5.8 million to provide COVID-19 financing relief for small and medium enterprises",
+        "s": "PR Newswire",
+        "d": "2020"
+      },
+      {
+        "h": "Fintech startup Salaryo raised $5.5 million to provide security deposit financing for coworking members",
+        "s": "TechStartups / AlleyWatch",
+        "d": "2019"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "43 W 23rd St, New York, NY 10010",
+    "website": "salaryo.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1389,
+    "name": "SBL Funding",
+    "leaders": [],
+    "desc": "SBL Funding is an alternative business funding company operating in the small business lending space. The company appears in deBanked's funder/lender directory and Virginia's Bureau of Financial Institutions regulated entities list, indicating it is an active participant in the merchant cash advance and small business financing market. Limited public information is available about the company's specific products, leadership, or operational details. Based on its presence in industry directories and regulatory filings, SBL Funding likely offers merchant cash advances and/or revenue-based financing products to small businesses, consistent with the typical profile of companies listed in alternative lending directories.",
+    "news": [
+      {
+        "h": "SBL Funding listed in deBanked funder/lender directory for small business financing",
+        "s": "deBanked",
+        "d": "2024"
+      },
+      {
+        "h": "Company appears in Virginia Bureau of Financial Institutions regulated sales finance entities list",
+        "s": "Virginia SCC",
+        "d": "2024"
+      }
+    ],
+    "location": "",
+    "full_address": "",
+    "website": "",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1390,
+    "name": "Scale Capital",
+    "leaders": [],
+    "desc": "Scale Capital (operating as Scale Capital Business Loans at scalecapitalbusinessloans.com) is a small business lending company that offers term loans, business lines of credit, and merchant cash advances (MCAs) to US small businesses. The company emphasizes immediate loan approval upon completing their online application with funds credited within one business day. Scale Capital targets small business owners who need fast access to working capital and may not qualify for traditional bank financing. The company operates in the competitive alternative lending space alongside numerous other MCA funders and online lenders. Note: This is a distinct entity from Scale Capital ApS, a Nordic venture capital fund based in Copenhagen that invests in early-stage B2B technology companies. Limited public information is available about the business lending entity's leadership, employee count, or detailed operational metrics.",
+    "news": [
+      {
+        "h": "Scale Capital Business Loans offers online term loans, lines of credit, and MCAs with same-day approval",
+        "s": "scalecapitalbusinessloans.com",
+        "d": "2025"
+      },
+      {
+        "h": "Company listed among alternative small business lending providers in funder directories",
+        "s": "Industry directories",
+        "d": "2024"
+      }
+    ],
+    "location": "",
+    "full_address": "",
+    "website": "scalecapitalbusinessloans.com",
+    "employees": 5,
+    "category": "funder"
+  }
+]
