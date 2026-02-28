@@ -64,6 +64,12 @@ import {
   Package,
   Crosshair,
   RefreshCw,
+  TrendingDown,
+  TrendingUp,
+  Activity,
+  UserCheck,
+  MessageCircle,
+  Signal,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -520,6 +526,120 @@ export function CompanyDetail({
               </div>
             </Section>
 
+            {/* Company Intelligence (PhantomBuster-enriched) */}
+            {company.intel && (
+              <Section icon={Activity} title="Company Intelligence">
+                <div className="space-y-3">
+                  {/* Growth + Key Metrics Row */}
+                  <div className="flex flex-wrap gap-2">
+                    {company.intel.foundedYear && (
+                      <div className="flex items-center gap-1.5 text-xs bg-muted/30 rounded-md px-2.5 py-1.5">
+                        <Clock className="h-3 w-3 text-muted-foreground" />
+                        <span className="text-muted-foreground">Founded</span>
+                        <span className="font-medium text-foreground">{company.intel.foundedYear}</span>
+                      </div>
+                    )}
+                    {company.intel.avgTenure && (
+                      <div className="flex items-center gap-1.5 text-xs bg-muted/30 rounded-md px-2.5 py-1.5">
+                        <UserCheck className="h-3 w-3 text-muted-foreground" />
+                        <span className="text-muted-foreground">Avg tenure</span>
+                        <span className="font-medium text-foreground">{company.intel.avgTenure}yr</span>
+                      </div>
+                    )}
+                    {company.intel.linkedinFollowers !== undefined && (
+                      <div className="flex items-center gap-1.5 text-xs bg-muted/30 rounded-md px-2.5 py-1.5">
+                        <Linkedin className="h-3 w-3 text-muted-foreground" />
+                        <span className="text-muted-foreground">Followers</span>
+                        <span className="font-medium text-foreground">{company.intel.linkedinFollowers.toLocaleString()}</span>
+                      </div>
+                    )}
+                    {company.intel.phone && (
+                      <a href={`tel:${company.intel.phone}`} className="flex items-center gap-1.5 text-xs bg-green-500/10 rounded-md px-2.5 py-1.5 hover:bg-green-500/20 transition-colors">
+                        <Phone className="h-3 w-3 text-green-400" />
+                        <span className="text-green-400 font-medium">{company.intel.phone.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')}</span>
+                      </a>
+                    )}
+                  </div>
+
+                  {/* Growth Trends */}
+                  {(company.intel.growth6mo !== undefined || company.intel.growth1yr !== undefined) && (
+                    <div className="bg-muted/20 rounded-lg p-3 border border-border/30">
+                      <div className="flex items-center gap-1.5 mb-2">
+                        {(company.intel.growth1yr ?? company.intel.growth6mo ?? 0) < 0 ? (
+                          <TrendingDown className="h-3.5 w-3.5 text-red-400" />
+                        ) : (
+                          <TrendingUp className="h-3.5 w-3.5 text-green-400" />
+                        )}
+                        <span className="text-xs font-medium text-foreground">LinkedIn Headcount Growth</span>
+                      </div>
+                      <div className="flex gap-4">
+                        {company.intel.growth6mo !== undefined && (
+                          <div className="text-xs">
+                            <span className="text-muted-foreground">6mo: </span>
+                            <span className={cn("font-medium", company.intel.growth6mo < 0 ? "text-red-400" : company.intel.growth6mo > 0 ? "text-green-400" : "text-muted-foreground")}>
+                              {company.intel.growth6mo > 0 ? "+" : ""}{company.intel.growth6mo}%
+                            </span>
+                          </div>
+                        )}
+                        {company.intel.growth1yr !== undefined && (
+                          <div className="text-xs">
+                            <span className="text-muted-foreground">1yr: </span>
+                            <span className={cn("font-medium", company.intel.growth1yr < 0 ? "text-red-400" : company.intel.growth1yr > 0 ? "text-green-400" : "text-muted-foreground")}>
+                              {company.intel.growth1yr > 0 ? "+" : ""}{company.intel.growth1yr}%
+                            </span>
+                          </div>
+                        )}
+                        {company.intel.growth2yr !== undefined && (
+                          <div className="text-xs">
+                            <span className="text-muted-foreground">2yr: </span>
+                            <span className={cn("font-medium", company.intel.growth2yr < 0 ? "text-red-400" : company.intel.growth2yr > 0 ? "text-green-400" : "text-muted-foreground")}>
+                              {company.intel.growth2yr > 0 ? "+" : ""}{company.intel.growth2yr}%
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                      {(company.intel.growth1yr ?? 0) < -5 && (
+                        <p className="text-xs text-red-400/80 mt-1.5 flex items-center gap-1">
+                          <Signal className="h-3 w-3" />
+                          Headcount declining — may signal cost-cutting or consolidation
+                        </p>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Department Distribution */}
+                  {company.intel.deptDistribution && Object.keys(company.intel.deptDistribution).length > 0 && (
+                    <div className="bg-muted/20 rounded-lg p-3 border border-border/30">
+                      <span className="text-xs font-medium text-foreground mb-2 block">Department Distribution</span>
+                      <div className="space-y-1.5">
+                        {Object.entries(company.intel.deptDistribution)
+                          .sort(([, a], [, b]) => b - a)
+                          .map(([dept, pct]) => (
+                            <div key={dept} className="flex items-center gap-2 text-xs">
+                              <span className="w-16 text-muted-foreground truncate">{dept}</span>
+                              <div className="flex-1 bg-muted/30 rounded-full h-1.5">
+                                <div
+                                  className="h-1.5 rounded-full bg-brand/50 transition-all"
+                                  style={{ width: `${pct}%` }}
+                                />
+                              </div>
+                              <span className="w-8 text-right font-medium text-foreground">{pct}%</span>
+                            </div>
+                          ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Address */}
+                  {company.intel.address && (
+                    <div className="flex items-start gap-1.5 text-xs text-muted-foreground">
+                      <MapPin className="h-3 w-3 shrink-0 mt-0.5" />
+                      <span>{company.intel.address}</span>
+                    </div>
+                  )}
+                </div>
+              </Section>
+            )}
 
             {/* Selling Angles */}
             {company.notes && company.notes.length > 20 && (
@@ -875,6 +995,66 @@ function LeaderCard({
             <Badge variant="outline" className={cn("text-xs px-1 py-0.5 h-5 ml-1.5", personaConfig.colorClass)}>
               {personaConfig.label}
             </Badge>
+          )}
+          {/* LinkedIn intelligence badges */}
+          {(leader.linkedinStatus || leader.toneOfVoice || leader.outreachChannel) && (
+            <div className="flex flex-wrap items-center gap-1 mt-1">
+              {leader.linkedinStatus && leader.linkedinStatus !== 'unknown' && (
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <span className={cn(
+                      "text-xs px-1.5 py-0.5 rounded-full inline-flex items-center gap-0.5",
+                      leader.linkedinStatus === 'active' && "bg-green-500/10 text-green-400",
+                      leader.linkedinStatus === 'dormant' && "bg-red-500/10 text-red-400",
+                      leader.linkedinStatus === 'minimal' && "bg-yellow-500/10 text-yellow-400",
+                    )}>
+                      <Activity className="h-2.5 w-2.5" />
+                      {leader.linkedinStatus === 'active' ? 'LI Active' : leader.linkedinStatus === 'dormant' ? 'LI Dormant' : 'LI Minimal'}
+                    </span>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    {leader.linkedinStatus === 'active' && 'Active on LinkedIn — good for LinkedIn outreach'}
+                    {leader.linkedinStatus === 'dormant' && 'Not active on LinkedIn — prefer email/phone'}
+                    {leader.linkedinStatus === 'minimal' && 'Very thin LinkedIn presence — prefer email'}
+                  </TooltipContent>
+                </Tooltip>
+              )}
+              {leader.linkedinConnections !== undefined && (
+                <span className="text-xs px-1.5 py-0.5 rounded-full bg-muted/50 text-muted-foreground inline-flex items-center gap-0.5">
+                  <Users className="h-2.5 w-2.5" />
+                  {leader.linkedinConnections.toLocaleString()}
+                </span>
+              )}
+              {leader.openLink && (
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <span className="text-xs px-1.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 inline-flex items-center gap-0.5">
+                      <Send className="h-2.5 w-2.5" />
+                      OpenLink
+                    </span>
+                  </TooltipTrigger>
+                  <TooltipContent>Can receive InMail without being connected</TooltipContent>
+                </Tooltip>
+              )}
+              {leader.toneOfVoice && (
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <span className="text-xs px-1.5 py-0.5 rounded-full bg-purple-500/10 text-purple-400 inline-flex items-center gap-0.5">
+                      <MessageCircle className="h-2.5 w-2.5" />
+                      {leader.toneOfVoice}
+                    </span>
+                  </TooltipTrigger>
+                  <TooltipContent>Recommended communication tone based on profile analysis</TooltipContent>
+                </Tooltip>
+              )}
+            </div>
+          )}
+          {/* Outreach recommendation */}
+          {leader.outreachNote && (
+            <div className="flex items-start gap-1.5 mt-1 bg-brand/5 border border-brand/15 rounded-md px-2 py-1.5">
+              <Zap className="h-3 w-3 text-brand shrink-0 mt-0.5" />
+              <span className="text-xs text-brand/80 leading-relaxed">{leader.outreachNote}</span>
+            </div>
           )}
           {/* Email & phone inline */}
           {(leader.email || leader.phone) && (

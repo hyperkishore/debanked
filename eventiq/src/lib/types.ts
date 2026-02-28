@@ -12,6 +12,8 @@ export interface NewsItem {
   u?: string; // URL to the source article
 }
 
+export type LinkedInStatus = 'active' | 'dormant' | 'minimal' | 'unknown';
+
 export interface Leader {
   n: string;
   t: string;
@@ -25,6 +27,13 @@ export interface Leader {
   confidence?: number;
   functionalRole?: string;
   lastReviewedAt?: string;
+  // PhantomBuster-enriched fields
+  toneOfVoice?: string;           // e.g. "Professional and Insightful"
+  linkedinConnections?: number;    // e.g. 267
+  linkedinStatus?: LinkedInStatus; // active/dormant/minimal
+  openLink?: boolean;              // can receive InMail without connection
+  outreachChannel?: string;        // recommended channel: "email", "linkedin", "phone"
+  outreachNote?: string;           // why this channel is recommended
 }
 
 export type CompanyCategory = "funder" | "iso" | "marketplace" | "bank" | "technology" | "competitor" | "service_provider";
@@ -130,6 +139,18 @@ export function generateQuickLinks(company: Company): { label: string; url: stri
 
 export type CompanyType = 'SQO' | 'Client' | 'ICP' | 'TAM';
 
+export interface CompanyIntel {
+  phone?: string;
+  foundedYear?: number;
+  address?: string;
+  growth6mo?: number;         // e.g. -6 for -6%
+  growth1yr?: number;         // e.g. -8 for -8%
+  growth2yr?: number;
+  avgTenure?: number;         // years, e.g. 3.7
+  linkedinFollowers?: number;
+  deptDistribution?: Record<string, number>;  // e.g. { "Finance": 38, "Sales": 16 }
+}
+
 export interface Company {
   id: number;
   name: string;
@@ -156,6 +177,8 @@ export interface Company {
   subVertical?: SubVertical;
   outreachHistory?: OutreachHistory;
   hubspotDeals?: HubSpotDeal[];
+  // PhantomBuster-enriched structured intel
+  intel?: CompanyIntel;
 }
 
 export function isResearched(c: Company): boolean {
