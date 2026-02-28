@@ -32380,7 +32380,7 @@
     ],
     "ask": "",
     "location": "Southfield, MI",
-    "employees": "2-10",
+    "employees": 2,
     "website": "myessentialfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/essential-funding-group/",
     "source": [
@@ -32432,7 +32432,7 @@
     ],
     "ask": "",
     "location": "Hewlett, NY",
-    "employees": "2-10",
+    "employees": 2,
     "website": "evgfund.com",
     "linkedinUrl": "https://www.linkedin.com/company/evgfunding",
     "source": [
@@ -32484,7 +32484,7 @@
     ],
     "ask": "",
     "location": "New York, NY",
-    "employees": "11-50",
+    "employees": 11,
     "website": "ezcapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/ez-capital-group-inc/",
     "source": [
@@ -32553,7 +32553,7 @@
     ],
     "ask": "",
     "location": "Charlotte, NC",
-    "employees": "12-16",
+    "employees": 12,
     "website": "faastrak.com",
     "linkedinUrl": "https://www.linkedin.com/company/faastrak",
     "source": [
@@ -32593,7 +32593,7 @@
     "leaders": [],
     "ask": "",
     "location": "Boca Raton, FL",
-    "employees": "2-10",
+    "employees": 2,
     "website": "facsolutions.biz",
     "linkedinUrl": "https://www.linkedin.com/company/fac-solutions-biz/about/",
     "source": [
@@ -32650,7 +32650,7 @@
     ],
     "ask": "",
     "location": "Plano, TX",
-    "employees": "2-10",
+    "employees": 2,
     "website": "fairbrookfunding.com",
     "linkedinUrl": "http://linkedin.com/company/fairbrookfunding/",
     "source": [
@@ -32679,7 +32679,7 @@
     "leaders": [],
     "ask": "",
     "location": "Unknown",
-    "employees": "Unknown",
+    "employees": null,
     "website": "Unknown",
     "linkedinUrl": "https://www.linkedin.com/company/amcredit",
     "source": [
@@ -32787,7 +32787,7 @@
     ],
     "ask": "",
     "location": "Sherman Oaks, CA (now part of Republic Business Credit, New Orleans, LA)",
-    "employees": "11-50 (as part of Republic Business Credit)",
+    "employees": 11,
     "website": "fastarfunding.com",
     "linkedinUrl": "http://www.linkedin.com/company/2138452",
     "source": [
@@ -32872,7 +32872,7 @@
     ],
     "ask": "",
     "location": "Atlanta, GA",
-    "employees": "10-12",
+    "employees": 10,
     "website": "filmhedge.com",
     "linkedinUrl": "https://www.linkedin.com/company/filmhedge/",
     "source": [
@@ -32942,7 +32942,7 @@
     ],
     "ask": "",
     "location": "Towson, MD",
-    "employees": "11",
+    "employees": 11,
     "website": "financefactory.com",
     "linkedinUrl": "https://www.linkedin.com/company/financefactory/",
     "source": [
@@ -33020,7 +33020,7 @@
     ],
     "ask": "",
     "location": "Jaipur, Rajasthan, India",
-    "employees": "4653",
+    "employees": 4653,
     "website": "https://finova.in",
     "linkedinUrl": "https://www.linkedin.com/company/finova-capital-llc/",
     "source": [
@@ -33098,7 +33098,7 @@
     ],
     "ask": "",
     "location": "Orlando, Florida",
-    "employees": "11-50",
+    "employees": 11,
     "website": "https://www.finovance.co",
     "linkedinUrl": "https://www.linkedin.com/company/finovance",
     "source": [
@@ -33165,7 +33165,7 @@
     ],
     "ask": "",
     "location": "Clifton, New Jersey",
-    "employees": "15",
+    "employees": 15,
     "website": "https://www.fintap.com",
     "linkedinUrl": "https://www.linkedin.com/company/rdm-capital-funding/about/",
     "source": [
@@ -33244,7 +33244,7 @@
     ],
     "ask": "",
     "location": "King of Prussia, Pennsylvania",
-    "employees": "12-14",
+    "employees": 12,
     "website": "https://getfintegra.com",
     "linkedinUrl": "https://www.linkedin.com/company/getfintegra/about/",
     "source": [
@@ -33290,7 +33290,7 @@
     ],
     "ask": "",
     "location": "Laredo, Texas",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://fliebencapital.com",
     "linkedinUrl": "https://mx.linkedin.com/company/flieben-capital-llc?trk=public_profile_topcard-current-company",
     "source": [
@@ -33353,7 +33353,7 @@
     ],
     "ask": "",
     "location": "Austin, Texas",
-    "employees": "11-50",
+    "employees": 11,
     "website": "https://founderpath.com",
     "linkedinUrl": "https://www.linkedin.com/company/founderpath/",
     "source": [
@@ -33447,7 +33447,7 @@
     ],
     "ask": "",
     "location": "San Francisco, California",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.fountainpartners.com",
     "linkedinUrl": "https://www.linkedin.com/company/fountain-partners/",
     "source": [
@@ -33499,7 +33499,7 @@
     ],
     "ask": "",
     "location": "New York, New York",
-    "employees": "11-50",
+    "employees": 11,
     "website": "https://gofreshfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/fresh-funding/about/",
     "source": [
@@ -33545,7 +33545,7 @@
     ],
     "ask": "",
     "location": "North Miami, Florida",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://frogfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/10671692?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10671692%2Cidx%3A3-1-3%2CtarId%3A1468432153128%2Ctas%3Afrog%20fundi",
     "source": [
@@ -33601,7 +33601,7 @@
     ],
     "ask": "",
     "location": "Sheridan, Wyoming",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.funds4less.com",
     "source": [
       "tam",
@@ -33671,7 +33671,7 @@
     ],
     "ask": "",
     "location": "New York, NY",
-    "employees": "11-50",
+    "employees": 11,
     "website": "https://www.fundfimerchantfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/fundfi-merchant-funding/",
     "source": [
@@ -33729,7 +33729,7 @@
     "leaders": [],
     "ask": "",
     "location": "United States",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://fundingandbusiness.com",
     "linkedinUrl": "https://www.linkedin.com/company/funding-and-business/",
     "source": [
@@ -33808,7 +33808,7 @@
     ],
     "ask": "",
     "location": "Wilmington, DE",
-    "employees": "11-15",
+    "employees": 11,
     "website": "https://www.fundmates.com",
     "linkedinUrl": "https://www.linkedin.com/company/81542414",
     "source": [
@@ -33860,7 +33860,7 @@
     ],
     "ask": "",
     "location": "Anaheim, CA / Phoenix, AZ",
-    "employees": "16",
+    "employees": 16,
     "website": "https://www.fundmerica.com",
     "linkedinUrl": "https://www.linkedin.com/company/fundmerica",
     "source": [
@@ -33912,7 +33912,7 @@
     ],
     "ask": "",
     "location": "New York, NY",
-    "employees": "3-50",
+    "employees": 3,
     "website": "https://www.1fundr.com",
     "linkedinUrl": "https://www.linkedin.com/company/1fundr/",
     "source": [
@@ -33986,7 +33986,7 @@
     ],
     "ask": "",
     "location": "Coconut Grove, FL",
-    "employees": "51-200",
+    "employees": 51,
     "website": "https://www.fundstreet.tech",
     "linkedinUrl": "https://www.linkedin.com/company/fund-street-technologies/",
     "source": [
@@ -34048,7 +34048,7 @@
     ],
     "ask": "",
     "location": "Fort Lauderdale, FL",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://fundzio.com",
     "linkedinUrl": "https://www.linkedin.com/company/fundzio-llc/about/",
     "source": [
@@ -34105,7 +34105,7 @@
     ],
     "ask": "",
     "location": "Irvine, CA / Ho Chi Minh City, Vietnam",
-    "employees": "11-50",
+    "employees": 11,
     "website": "https://fvndit.com",
     "linkedinUrl": "https://www.linkedin.com/company/fvndit",
     "source": [
@@ -34161,7 +34161,7 @@
     ],
     "ask": "",
     "location": "New York, NY",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.gandgfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/g-g-financial-llc/",
     "source": [
@@ -34228,7 +34228,7 @@
     ],
     "ask": "",
     "location": "San Antonio, TX",
-    "employees": "11-50",
+    "employees": 11,
     "website": "https://www.gemcapsolutions.com",
     "linkedinUrl": "https://www.linkedin.com/company/gemcap/about/",
     "source": [
@@ -34351,7 +34351,7 @@
     ],
     "ask": "",
     "location": "Chattanooga, TN",
-    "employees": "11-50",
+    "employees": 11,
     "website": "https://gillmanbagley.com",
     "linkedinUrl": "https://www.linkedin.com/company/gillmanbagley/",
     "source": [
@@ -34398,7 +34398,7 @@
     ],
     "ask": "",
     "location": "Cutler Bay, FL",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.goldcoastcapllc.com",
     "linkedinUrl": "https://www.linkedin.com/company/gold-coast-angel-investors",
     "source": [
@@ -34433,7 +34433,7 @@
     "leaders": [],
     "ask": "",
     "location": "United States",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.golden-cap.com",
     "linkedinUrl": "https://www.linkedin.com/company/golden-capital-llc/",
     "source": [
@@ -34496,7 +34496,7 @@
     ],
     "ask": "",
     "location": "Seattle, WA",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.goodtree.capital",
     "linkedinUrl": "https://www.linkedin.com/company/goodtreecapital/",
     "source": [
@@ -34543,7 +34543,7 @@
     ],
     "ask": "",
     "location": "Melville, NY",
-    "employees": "11-50",
+    "employees": 11,
     "website": "https://www.greenbuckcapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/green-buck-capital/",
     "source": [
@@ -34605,7 +34605,7 @@
     ],
     "ask": "",
     "location": "Brooklyn, NY",
-    "employees": "6-10",
+    "employees": 6,
     "website": "https://www.greennotecapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/green-note-capital/",
     "source": [
@@ -34640,7 +34640,7 @@
     "leaders": [],
     "ask": "",
     "location": "Brooklyn, NY",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.growwellfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/growwellfunding",
     "source": [
@@ -34693,7 +34693,7 @@
     ],
     "ask": "",
     "location": "Berlin, CT",
-    "employees": "25-100",
+    "employees": 25,
     "website": "https://www.grpfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/grp-funding-llc-/",
     "source": [
@@ -34820,7 +34820,7 @@
     ],
     "ask": "",
     "location": "Los Angeles, CA",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.joinharper.com",
     "linkedinUrl": "https://www.linkedin.com/company/harper-inc.",
     "source": [
@@ -34941,7 +34941,7 @@
     "leaders": [],
     "ask": "",
     "location": "Brooklyn, NY",
-    "employees": "1-10",
+    "employees": 1,
     "website": "https://www.hfhcapitalfunding.com",
     "source": [
       "tam",
