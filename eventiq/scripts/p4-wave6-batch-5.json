@@ -1,0 +1,385 @@
+[
+  {
+    "id": 1315,
+    "name": "MoneFi",
+    "leaders": [
+      {
+        "n": "Frank Estrada",
+        "t": "Founder & CEO",
+        "bg": "Founded MoneFi with a mission to bring transformative financial change for underserved communities and minority-owned businesses. Based in Austin, TX. Grew up in a minority community and experienced financial exclusion firsthand, which drove his commitment to democratizing financial services. Previously listed as Frankie E. in some profiles. Active speaker at events including Google Cloud Next '24. Appeared on Founders Live Conversations podcast discussing fintech, money lending, and startups.",
+        "hooks": [
+          "Spoke at Google Cloud Next '24 representing MoneFi's AI-powered lending platform",
+          "Personal journey from financial exclusion to founding a fintech championing minority entrepreneurs",
+          "Featured on Founders Live Conversations podcast discussing fintech and startup journey"
+        ],
+        "li": "https://www.linkedin.com/in/frankestrada"
+      }
+    ],
+    "desc": "MoneFi is an Austin, TX-based fintech platform founded to revolutionize SMB lending with AI and alternative data. The company connects businesses to lenders for well-informed funding decisions, with a special emphasis on underserved entrepreneurs and minority-owned businesses. MoneFi bridges businesses with committed lenders by adopting alternative credit assessments and utilizing advanced software for more transparent and secure funding decisions. The platform also champions Community Impact Payments, integrating philanthropy with mobile and in-store POS systems where each transaction contributes to community programs. MoneFi provides financial education resources and a tailored business partnership directory. Approximately 8 employees.",
+    "news": [
+      {
+        "h": "MoneFi founder Frank Estrada featured on Founders Live Conversations podcast",
+        "s": "Founders Live",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "MoneFi attends Google Cloud Next '24 to showcase AI-powered lending platform",
+        "s": "Instagram / MoneFi",
+        "d": "2024-04-01"
+      }
+    ],
+    "location": "Austin, TX",
+    "full_address": "Austin, TX",
+    "website": "https://monefi.co",
+    "employees": 8,
+    "category": "marketplace"
+  },
+  {
+    "id": 1316,
+    "name": "Monera Capital Group",
+    "leaders": [
+      {
+        "n": "Zain Razvi",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Monera Capital Group in August 2019. Holds an MBA from the University of Miami Business School (3.85 GPA) and a Bachelor's in Economics from Florida State University. Prior to founding MCG, served as Senior Business Analyst at Bayview Asset Management, LLC. Also held roles at NextWave Funding LLC, BFS Capital, and NextWave Funding. Based in the Miami-Fort Lauderdale area. Led the company to its $10 million funding benchmark within 18 months of operation.",
+        "hooks": [
+          "Grew Monera Capital to $10 million funded within first 18 months of operation",
+          "MBA from University of Miami Business School with 3.85 GPA",
+          "Background spanning Bayview Asset Management, NextWave Funding, and BFS Capital before founding MCG"
+        ],
+        "li": "https://www.linkedin.com/in/zainrazvi/"
+      }
+    ],
+    "desc": "Monera Capital Group LLC is a private equity merchant cash advance firm co-founded in August 2019, headquartered in Fort Lauderdale, FL. The company provides customized funding solutions for small businesses including Merchant Cash Advances, Business Term Loans, and Working Capital Loans. MCG specializes in assisting clients with challenging credit histories, including previous bankruptcies and tax liens, offering fast approvals and access to funds within 24 hours. By January 2021, the firm had funded $10 million in deals in its first 18 months. The company requires only three months of recent bank statements and a simple application. Approximately 5-20 employees. Not a bank — MCG is a private equity MCA funder.",
+    "news": [
+      {
+        "h": "Monera Capital Group reaches $10 million funding benchmark in first 18 months",
+        "s": "AccessNewsWire / Yahoo Finance",
+        "d": "2021-01-01"
+      },
+      {
+        "h": "Monera Capital Group launches streamlined MCA application requiring only 3 months of bank statements",
+        "s": "Monera Capital",
+        "d": "2020-01-01"
+      }
+    ],
+    "location": "Fort Lauderdale, FL",
+    "full_address": "10171 NW 53rd Street, Fort Lauderdale, FL 33351",
+    "website": "https://moneracapital.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1317,
+    "name": "Money Store Funding",
+    "leaders": [
+      {
+        "n": "Morton Dear",
+        "t": "Founder & Chairman",
+        "bg": "Former CFO of the original The Money Store, a legacy U.S. residential mortgage lending brand. Founded the new Money Store Funding incarnation focused on working capital and small business lending. Based in the New York area. A veteran of the consumer finance and mortgage lending industry with decades of experience at the original Money Store.",
+        "hooks": [
+          "Former CFO of the original The Money Store — reinvented the brand for small business working capital",
+          "Veteran of the consumer finance industry pivoting legacy mortgage brand into MCA/business lending"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Money Store Funding (moneystorefunding.com) is a small business lending company located at 7 Kermit Ave, New York, NY 10305, operating under the tagline 'When the banks say NO, the Money Store says YES.' The company was founded by Morton Dear, who was CFO of the original The Money Store mortgage lending company. Money Store Funding specializes in lending to businesses that may have fallen on hard times or those that have yet to build the extensive history required by traditional financial institutions. The firm provides an expansive variety of loan solutions including working capital and merchant funding. Note: This is distinct from The Money Store (themoneystore.com), which is the residential mortgage brand owned by MLD Mortgage Inc. based in Florham Park, NJ.",
+    "news": [
+      {
+        "h": "Money Store Funding listed among alternative business lenders offering working capital solutions",
+        "s": "Money Store Funding",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Staten Island, NY",
+    "full_address": "7 Kermit Ave, New York, NY 10305",
+    "website": "http://moneystorefunding.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1319,
+    "name": "MoneyWell GRP LLC",
+    "leaders": [
+      {
+        "n": "Matthew Washington",
+        "t": "Founder & CEO",
+        "bg": "Founded MoneyWell GRP in 2022 after 15+ years in the commercial finance space since 2009. Previously served as Chief Revenue Officer at PIRS Capital LLC for eight years, where he helped build the company. Also held roles at Fora Financial and Alliance Funding Group. Based in Miami Beach, FL. Attended California State University-Chico. Has been at the center of over $800 million in business funding issued to small business owners across all 50 states. Featured in Funder Intel interview discussing his approach to merchant cash advance lending.",
+        "hooks": [
+          "Facilitated over $800 million in business funding across all 50 states over 15-year career",
+          "Built PIRS Capital LLC as Chief Revenue Officer for eight years before founding MoneyWell GRP",
+          "Featured in Funder Intel interview — wholesale-only model with no direct sales team"
+        ],
+        "li": "https://www.linkedin.com/in/matthew-washington-a0463b37/"
+      }
+    ],
+    "desc": "MoneyWell GRP LLC is a direct lender in the working capital space founded in 2022 by Matthew Washington and based in Miami, FL. The company provides working capital to small and mid-size business owners nationwide, offering a wide range of funding products including weekly payback options and traditional daily merchant cash advances, with funding up to $3 million per business entity. MoneyWell GRP operates as a wholesale lender with no direct sales team — 100% of its business comes from its ISO network and partner program. The company treats every broker the same regardless of company size. Applications can be approved in as little as 24 hours with minimal paperwork and repayment terms up to 18 months. Approximately 2-5 employees.",
+    "news": [
+      {
+        "h": "Matthew Washington featured in Funder Intel conversation about MoneyWell GRP's wholesale lending model",
+        "s": "Funder Intel",
+        "d": "2022-08-01"
+      },
+      {
+        "h": "MoneyWell GRP launches as wholesale-only direct lender in merchant cash advance space",
+        "s": "Funder Intel",
+        "d": "2022-01-01"
+      }
+    ],
+    "location": "Miami, FL",
+    "full_address": "333 NE 24th St, Miami, FL 33137",
+    "website": "https://www.moneywellgrp.com",
+    "employees": 3,
+    "category": "funder"
+  },
+  {
+    "id": 1320,
+    "name": "Moni Africa",
+    "leaders": [
+      {
+        "n": "Femi Iromini",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Moni (now Rank) in 2021. Previously worked with The World Bank Group where he developed a framework to finance education and sustainability in West Africa. Earlier career included investment banking and founding Lead360, an edtech company. Was on the founding team of Mintyn, one of Nigeria's early digital banks. Studied economics at Obafemi Awolowo University in Nigeria where he met co-founder Adedapo Sobayo. Part of Y Combinator W22 batch.",
+        "hooks": [
+          "Y Combinator W22 — grew Moni to $22 million disbursed with 99% repayment rate",
+          "Former World Bank Group — developed framework to finance education in West Africa",
+          "Founded edtech company Lead360 and was on founding team of Mintyn digital bank before Moni"
+        ],
+        "li": "https://www.linkedin.com/in/femi-iromini/"
+      },
+      {
+        "n": "Adedapo Sobayo",
+        "t": "Co-Founder & CTO",
+        "bg": "Co-founded Moni (now Rank) in 2021 alongside Femi Iromini. Passionate about Digital Product, Technology, Blockchain, and Financial Inclusion. Previously co-built businesses including Zedvance and SEL Capital, specializing in transforming legacy systems to digital. Studied physics at Obafemi Awolowo University. Met co-founder Femi Iromini during undergrad where they collaborated on publishing two magazines including one called JEANS.",
+        "hooks": [
+          "Built Moni's risk engine combining financial data with social intelligence for African SME credit decisioning",
+          "Background transforming legacy systems to digital at Zedvance and SEL Capital",
+          "Met co-founder at university where they published magazines together before building fintech"
+        ],
+        "li": "https://www.linkedin.com/in/adedapo-sobayo/"
+      }
+    ],
+    "desc": "Moni Africa (now rebranded as Rank as of November 2025) is a Y Combinator-backed (W22) Nigerian fintech that provides group financing for small businesses across Africa. Founded in 2021 by Femi Iromini and Adedapo Sobayo in Lagos, Nigeria, the company leverages social trust and collective responsibility as collateral for loans. The startup built a risk engine combining financial data and business performance with social intelligence for effective credit decisioning. In 2022, Moni disbursed more than $22 million in loans to over 11,000 SMEs with a 99% repayment rate. The company has acquired AjoMoney (digital group-savings) and Zazzau Microfinance Bank (licensed MFB) as part of its rebrand to Rank. Backed by Y Combinator, Magic Fund, Ventures Platform, and Voltron Capital. Approximately 20 employees in Lagos.",
+    "news": [
+      {
+        "h": "Moni rebrands as Rank, acquires AjoMoney and Zazzau Microfinance Bank",
+        "s": "Disrupt Africa / TechCabal",
+        "d": "2025-11-12"
+      },
+      {
+        "h": "Moni disbursed $22 million in loans to 11,000+ SMEs with 99% repayment rate in 2022",
+        "s": "Disrupt Africa",
+        "d": "2023-04-05"
+      },
+      {
+        "h": "Moni launches community-powered digital loans for African SMEs",
+        "s": "Africa Business Communities",
+        "d": "2023-04-01"
+      },
+      {
+        "h": "Moni Africa leverages social trust to finance mobile money agents across Nigeria",
+        "s": "TechCabal",
+        "d": "2022-01-19"
+      }
+    ],
+    "location": "Lagos, Nigeria",
+    "full_address": "Lagos, Nigeria",
+    "website": "https://www.moni.africa",
+    "employees": 20,
+    "category": "funder"
+  },
+  {
+    "id": 1321,
+    "name": "Montage Business Financial",
+    "leaders": [
+      {
+        "n": "Ari Hanas",
+        "t": "CEO & Owner",
+        "bg": "CEO and Owner of Montage Business Financial, a debt financing firm based in Beverly Hills, CA. Founded the company in 2020 to provide quick and reliable funding solutions for small and medium-sized businesses. Leads a team that has funded over 3,000 businesses with more than $1.2 billion deployed. Licensed California Finance Lender (CFL #60DBO-128093).",
+        "hooks": [
+          "Built Montage Business Financial to $1.2 billion deployed and 3,000+ businesses funded since 2020",
+          "Licensed California Finance Lender offering rates starting at 3.2%",
+          "Operates from Beverly Hills providing funding up to $5 million with 24-hour turnaround"
+        ],
+        "li": "https://www.linkedin.com/in/montage-business-financial-2102891b6/"
+      },
+      {
+        "n": "David Lee",
+        "t": "Chief Operating Officer",
+        "bg": "Serves as COO of Montage Business Financial, overseeing daily operations of the debt financing firm. Works alongside CEO Ari Hanas to manage the company's lending operations including business lines of credit, working capital, equipment financing, and SBA loans.",
+        "hooks": [
+          "COO overseeing operations at firm that has deployed $1.2 billion to small businesses",
+          "Manages lending operations spanning business lines of credit, equipment financing, and SBA loans"
+        ],
+        "li": ""
+      },
+      {
+        "n": "CJ Moebius",
+        "t": "Chief Financial Officer",
+        "bg": "Chief Financial Officer at Montage Business Financial based in Beverly Hills, CA. Manages the financial operations of the debt financing firm that provides loans and revolving credit lines to small and medium-sized companies.",
+        "hooks": [
+          "CFO managing financial operations of firm with $1.2 billion in deployed capital",
+          "Oversees financial strategy for licensed California Finance Lender"
+        ],
+        "li": ""
+      }
+    ],
+    "desc": "Montage Business Financial LLC is a debt financing firm founded in 2020 and headquartered in Beverly Hills, CA. The company provides quick and reliable funding solutions for businesses including business lines of credit (up to $750,000), working capital (up to $10 million), equipment financing, and SBA Express loans. Funding amounts range from $5,000 to $5,000,000 with rates starting at 3.2%. The company has funded over 3,000 businesses with more than $1.2 billion deployed, typically funding within 24 hours of approval. Montage is a licensed California Finance Lender (CFL #60DBO-128093) and is BBB Accredited since June 2021. Approximately 5-10 employees.",
+    "news": [
+      {
+        "h": "Montage Business Financial surpasses $1.2 billion deployed across 3,000+ businesses",
+        "s": "Montage Business Financial",
+        "d": "2025-01-01"
+      },
+      {
+        "h": "Montage Business Financial receives BBB accreditation for business financing services",
+        "s": "Better Business Bureau",
+        "d": "2021-06-25"
+      }
+    ],
+    "location": "Beverly Hills, CA",
+    "full_address": "8840 Wilshire Blvd, Suite 273, Beverly Hills, CA 90211",
+    "website": "https://montagebusinessfinancial.com",
+    "employees": 8,
+    "category": "funder"
+  },
+  {
+    "id": 1322,
+    "name": "Montecito Boca INC",
+    "leaders": [],
+    "desc": "Montecito Boca INC is a business funding company that provides a wide range of financial products including business term loans, property refinance loans, same-day working capital, SBA loans, equipment loans, retail and restaurant loans, factoring, merchant cash advances, short-term loans, and asset-based lending. The company funds businesses in both the U.S. and Canada. Montecito Boca positions itself as a leading provider of Business Funding Solutions, PR, and marketing services to corporations, with close partnerships with hedge funds to ensure cutting-edge funding strategies. Contact phone is (424) 274-6484. Limited public information available about company leadership and team structure.",
+    "news": [
+      {
+        "h": "Montecito Boca INC listed as business funding provider serving U.S. and Canada",
+        "s": "Montecito Boca",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Boca Raton, FL",
+    "full_address": "21346 St. Andrews Blvd, Boca Raton, FL",
+    "website": "https://www.montecitoboca.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1323,
+    "name": "MP Business Loan",
+    "leaders": [
+      {
+        "n": "Bret Martin",
+        "t": "CEO & Founder",
+        "bg": "CEO and Founder of Mom & Pop Business Funding (which powers MP Business Loan). Entered the merchant cash advance industry in 2007 and personally closed over 25,000 merchant cash advances by September 2009, becoming the #1 Producer of all time in the MCA and small business loan alternative industry. Previously built several companies including The ISO Recruiting Company, Subprime Business Funding, West Coast Business Funding, East Coast Business Funding, and The Merchant Cash Advance Company. Over 168,000 people have joined the Mom & Pop Business Funding platform and gone through his training. Based in Medford, Oregon.",
+        "hooks": [
+          "*Personally closed over 25,000 MCAs — #1 Producer of all time in the MCA industry",
+          "Over 168,000 people trained through Mom & Pop Business Funding platform",
+          "Expanded Mom & Pop Business Funding internationally to Australia, Japan, and China — exceeding $3 billion in loan alternatives"
+        ],
+        "li": "https://www.linkedin.com/company/mom-and-pop-business-funding"
+      }
+    ],
+    "desc": "MP Business Loan (mpbusinessloan.com) is a small business lending brand powered by Mom & Pop Business Funding (Mom & Pop Merchant Solutions LLC), an alternative business lending company founded in 2014 by Bret Martin and headquartered in Medford, Oregon. The website is operated and promoted by Dormedia Inc, a Canadian online marketing agency, while the actual funding services come from Mom & Pop Business Funding. The company provides unsecured loans up to $1,000,000 to small businesses, typically funded within 1 to 3 days with minimal documentation. Mom & Pop Business Funding has expanded internationally to Australia, Japan, and China and has exceeded $3 billion in small business loan alternatives. Over 168,000 people have joined their platform. Approximately 11-50 employees.",
+    "news": [
+      {
+        "h": "Mom & Pop Business Funding exceeds $3 billion in small business loan alternatives with international expansion",
+        "s": "Mom & Pop Business Funding",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Mom & Pop Merchant Solutions maintains BBB business profile in Portland, Oregon",
+        "s": "Better Business Bureau",
+        "d": "2024-01-01"
+      }
+    ],
+    "location": "Medford, OR",
+    "full_address": "1004 S Central Ave, Medford, OR 97504",
+    "website": "https://mpbusinessloan.com",
+    "employees": 25,
+    "category": "funder"
+  },
+  {
+    "id": 1324,
+    "name": "MStreetX",
+    "leaders": [
+      {
+        "n": "David Rixter",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO and Co-Founder of MStreetX, founded in 2020. Based in Washington, DC. Previously held roles at the U.S. Department of the Treasury, Fannie Mae, and Raytheon. Also founded One United Globe. Featured on The Brand Called You podcast discussing leadership, innovation, and social impact. Active media partner with AIForGood initiatives. Brings deep experience in government, housing finance, and defense contracting to his inclusive fintech venture.",
+        "hooks": [
+          "Former U.S. Department of the Treasury — bringing government finance perspective to inclusive fintech",
+          "Background spanning Fannie Mae and Raytheon before co-founding place-based lending platform",
+          "Featured on The Brand Called You podcast discussing leadership, innovation, and social impact"
+        ],
+        "li": "https://www.linkedin.com/in/david-rixter/"
+      },
+      {
+        "n": "Walt Postlewait",
+        "t": "Chief Credit Officer",
+        "bg": "Chief Credit Officer at MStreetX based in Nacogdoches, TX. Previously held roles at NorthPost Development / NorthPost Properties, National Community Investment Fund, Craft3, and Bank of Astoria. Brings deep community development finance and credit analysis expertise to MStreetX's inclusive lending platform.",
+        "hooks": [
+          "Background at National Community Investment Fund and Craft3 — deep CDFI and community lending expertise",
+          "Transitioned from traditional banking (Bank of Astoria) to inclusive fintech credit leadership"
+        ],
+        "li": "https://www.linkedin.com/in/walt-postlewait-0082ab31b/"
+      }
+    ],
+    "desc": "MStreetX is a place-based inclusive fintech platform founded in 2020 by David Rixter and designed to foster small business growth and inclusive entrepreneurship. The platform leverages artificial intelligence (AI) to match a small business's risk profile with flexible capital sources. MStreetX facilitates place-based economic development and supports small businesses in urban and rural areas, bridging the gap between capital access and lender connections using technology. The company works with state-level small business credit initiatives and has partnered with AIForGood. Based in the Washington, DC area. The platform raised capital through TruCrowd equity crowdfunding.",
+    "news": [
+      {
+        "h": "MStreetX announces media partnership with AIForGood initiative",
+        "s": "LinkedIn / MStreetX",
+        "d": "2023-07-01"
+      },
+      {
+        "h": "MStreetX launches equity crowdfunding campaign on TruCrowd",
+        "s": "TruCrowd / Kingscrowd",
+        "d": "2022-01-01"
+      }
+    ],
+    "location": "Washington, DC",
+    "full_address": "Washington, DC",
+    "website": "https://www.mstreetx.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1325,
+    "name": "Nana Fund",
+    "leaders": [
+      {
+        "n": "Yaryna Hotlib",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of Nana Fund, a digital lending platform connecting veteran-owned SMBs with community banks and credit unions. Based in San Diego, CA. Passionate about empowering veteran-owned businesses by connecting them with tailored funding opportunities. Nana Fund was formerly known as GetGrant. Partnered with the National Veteran Business Development Council (NVBDC) MVO Task Force. Featured on Business RadioX's High Velocity Radio podcast. Active speaker on veteran entrepreneurship and SMB funding topics. Member of Fintech Sandbox program.",
+        "hooks": [
+          "Partnered with NVBDC MVO Task Force to transform veteran and military spouse business funding",
+          "Part of Fintech Sandbox program — building AI-powered matching for veteran SMBs and community lenders",
+          "Featured on Business RadioX discussing veteran business funding and Nana Fund's mission"
+        ],
+        "li": "https://www.linkedin.com/in/yaryna-hotlib-nanafund/"
+      }
+    ],
+    "desc": "Nana Fund is a digital lending platform founded by Yaryna Hotlib that connects small and medium-sized businesses, particularly veteran-owned enterprises, with community banks and credit unions. Formerly known as GetGrant, the platform provides personalized recommendations for grants, support programs, investments, loans, and venture capital, streamlining the application process and enhancing chances of securing funding. Nana Fund partnered with the NVBDC MVO Task Force to transform veteran and military spouse business funding. The company is part of the Fintech Sandbox program. Based in San Diego, CA with approximately 2 employees. Note: The platform operates as a marketplace connecting SMBs with institutional lenders rather than funding directly — marketplace classification is appropriate.",
+    "news": [
+      {
+        "h": "Nana Fund partners with NVBDC MVO Task Force to transform veteran and military spouse business funding",
+        "s": "NVBDC",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Nana Fund (formerly GetGrant) joins Fintech Sandbox program for veteran SMB lending platform",
+        "s": "Fintech Sandbox",
+        "d": "2023-01-01"
+      },
+      {
+        "h": "Yaryna Hotlib featured on Business RadioX discussing Nana Fund's veteran business funding mission",
+        "s": "Business RadioX",
+        "d": "2023-01-01"
+      }
+    ],
+    "location": "San Diego, CA",
+    "full_address": "San Diego, CA",
+    "website": "https://nana.fund",
+    "employees": 2,
+    "category": "marketplace"
+  }
+]

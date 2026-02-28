@@ -1,0 +1,455 @@
+[
+  {
+    "id": 1271,
+    "name": "Ivy Lender",
+    "leaders": [
+      {
+        "n": "Christina Camacho",
+        "t": "Founder & CEO",
+        "bg": "Founded Ivy Lender in 2016 after heading up treasury management at JPMorgan Chase and Fifth Third Bank. Served as Vice President and Treasury Management Officer at JPMorgan Chase (2013-2017) and Commercial Merchant Account Executive & AVP at Fifth Third Bank (2008-2013). Holds a BS in Economics/Business from Florida Atlantic University. Named one of 50 FT Founders by The Harrington Star for inspiring leadership in financial services technology. Also affiliated with Inv Fintech, Holt Accelerator, and Current Payment Solutions.",
+        "hooks": [
+          "Former JPMorgan VP turned fintech founder",
+          "*Named one of 50 FT Founders by Harrington Star",
+          "Florida Atlantic University economics grad",
+          "Built AI lending marketplace connecting 100+ lenders"
+        ],
+        "li": "https://www.linkedin.com/in/christina-camacho/"
+      }
+    ],
+    "desc": "Ivy Lender is a fully automated AI-powered online marketplace that connects lending institutions to the underserved small business market. Founded in 2016 and headquartered in Plantation, Florida, the platform uses AI to gather credit data from bureaus, anti-fraud systems, AML databases, and social media sources, then scores applicants and matches them against lender guidelines across a network of 100+ lenders in North America. The company offers both a white-label E-Lender platform for lenders and an E-Broker platform for brokers, making it both a marketplace and SaaS provider. Ivy Lender targets underbanked businesses that may have blemished credit, irregular sales, or past-due taxes, offering traditional funding and merchant cash advances. Backed by Project W (US) and Holt Xchange, the company has raised $125K and has approximately 11 employees across North America and Europe.",
+    "news": [
+      {
+        "h": "Ivy Lender calls out banks and fintechs for exploiting PPP loan program",
+        "s": "FinTech Futures",
+        "d": "2020"
+      },
+      {
+        "h": "Company operates dual platform model with E-Lender and E-Broker white-label solutions",
+        "s": "ivylender.com",
+        "d": "2024"
+      },
+      {
+        "h": "Ivy Lender featured in Holt Xchange portfolio as AI-driven small business lending marketplace",
+        "s": "Holt Xchange",
+        "d": "2024"
+      }
+    ],
+    "location": "Plantation, FL",
+    "full_address": "150 S Pine Island Rd #370, Plantation, FL 33324",
+    "website": "ivylender.com",
+    "employees": 11,
+    "category": "marketplace"
+  },
+  {
+    "id": 1272,
+    "name": "Jaffe Capital",
+    "leaders": [
+      {
+        "n": "Mike Jaffe",
+        "t": "President",
+        "bg": "Leads Jaffe Capital as President since founding the company. Brings experience from previous roles at Jaffe & Son Inc, Benchmark Merchant Solutions, and Wall Street Funding, giving him decades of hands-on experience in entrepreneurship and alternative lending. Holds a Bachelor's degree in Political Science and Government from ULY. Has built Jaffe Capital into a company that has supported thousands of business owners nationwide since 2009 with working capital ranging from $10K to $5M.",
+        "hooks": [
+          "Multi-generational business background via Jaffe & Son Inc",
+          "Wall Street Funding and Benchmark Merchant Solutions veteran",
+          "Political science grad turned alternative lending entrepreneur",
+          "Built merchant cash advance firm serving thousands since 2009"
+        ],
+        "li": "https://www.linkedin.com/in/mike-jaffe-2a23b313"
+      }
+    ],
+    "desc": "Jaffe Capital is a New York City-based alternative business funding company that has supported thousands of business owners nationwide since 2009. The firm provides fast access to working capital by offering advances against a business's future receivables, with funding ranging from $10,000 to $5 million based on revenue and repayment history. Approvals are typically completed in under 24 hours with repayment plans of 4 to 18 months. Jaffe Capital positions itself as a bank loan alternative accessible to business owners with poor credit scores or outstanding business loans. The leadership team brings together decades of experience in entrepreneurship and alternative lending, emphasizing speed, trust, and flexibility as core values.",
+    "news": [
+      {
+        "h": "Jaffe Capital continues to expand nationwide business funding operations from NYC headquarters",
+        "s": "jaffecapital.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers business funding up to $5M with same-day approval turnaround",
+        "s": "jaffecapital.com",
+        "d": "2024"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "New York, NY",
+    "website": "jaffecapital.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1273,
+    "name": "Jett Capital",
+    "leaders": [
+      {
+        "n": "Joseph Riggio",
+        "t": "CEO & Founding Partner",
+        "bg": "Founding Partner of Jett Capital Advisors, currently serving as Managing Partner of the firm's Investment Banking Committee. Prior to founding Jett Capital in 2013, was a Managing Director at Casimir Capital where under his leadership the firm's Capital Markets Division became the leading US advisor to global natural resources and energy companies. Graduate of the Wharton School at the University of Pennsylvania. Over two decades of experience structuring sophisticated transactions and investment strategies for corporations and institutional investors.",
+        "hooks": [
+          "*Wharton School graduate",
+          "Former Managing Director at Casimir Capital",
+          "Two decades structuring natural resources transactions",
+          "Built leading US advisor to global energy companies"
+        ],
+        "li": "https://www.linkedin.com/in/joseph-riggio-9805782"
+      },
+      {
+        "n": "Quentin Anlian",
+        "t": "Vice President, Investment Banking",
+        "bg": "Vice President in the Investment Banking Division at Jett Capital and director of the firm's Metals & Mining practice. One of the rare investment bankers to have worked as an exploration and underground geologist on Nevada's prolific Carlin Trend. Came to Jett Capital in 2020 from Barrick Gold Corporation where he served as project geologist, having previously held similar positions at Kinross and Newmont. Studied Geology at University of Arizona and received MS in Structural Geology and Geomechanics from University of Georgia.",
+        "hooks": [
+          "*Former Barrick Gold geologist turned investment banker",
+          "Worked underground on Nevada's Carlin Trend gold deposits",
+          "University of Georgia MS in Structural Geology",
+          "Rare banker with hands-on mining exploration experience"
+        ],
+        "li": "https://www.linkedin.com/company/jett-capital-advisors"
+      }
+    ],
+    "desc": "Jett Capital Advisors is an independent boutique investment banking and capital markets advisory firm established in 2013, headquartered at 712 Fifth Avenue in New York City. The firm specializes in serving middle market and emerging natural resources and technology companies, with deep focus on energy, mining, and clean technology industries. Jett Capital provides a full range of services including mergers, acquisitions, joint ventures, IPOs, private equity, debt, divestitures, venture capital, recapitalization, and corporate restructuring. The firm employs approximately 10 professionals and is registered with FINRA (CRD# 169127). For over two decades, Jett Capital's partners have served as key advisors to leaders in energy and natural resource markets, building specialized teams with real operating and leadership experience in the sectors they serve.",
+    "news": [
+      {
+        "h": "Jett Capital continues advisory services for natural resources and energy sector transactions",
+        "s": "jettcapital.com",
+        "d": "2024"
+      },
+      {
+        "h": "Firm registered with FINRA as broker-dealer focused on capital markets advisory",
+        "s": "FINRA BrokerCheck",
+        "d": "2024"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "712 Fifth Avenue, 11th Floor, New York, NY 10019",
+    "website": "jettcapital.com",
+    "employees": 10,
+    "category": "service_provider"
+  },
+  {
+    "id": 1274,
+    "name": "JRG Funding",
+    "leaders": [
+      {
+        "n": "Raymond Grand",
+        "t": "Founder & CFO",
+        "bg": "Founded JRG Funding in March 2021 and serves as CFO, overseeing the firm's strategic financial planning and investment portfolio management from the company's New York City headquarters at 80 Maiden Lane. Responsible for building JRG Funding's ISO partnership program and developing the company's same-day funding capabilities. Leads a team that provides merchant cash advance funding with approval for up to $750,000 in as little as 2 hours.",
+        "hooks": [
+          "Founded direct MCA funder in NYC's Financial District",
+          "Oversees strategic financial planning and portfolio management",
+          "Built same-day funding operation at 80 Maiden Lane",
+          "Manages ISO partnership compensation program"
+        ],
+        "li": "https://www.linkedin.com/in/raymond-grand/"
+      },
+      {
+        "n": "Ronald Williams",
+        "t": "Senior Account Representative",
+        "bg": "Serves as Senior Account Representative at JRG Funding, managing relationships with ISO partners and overseeing account management for the company's merchant cash advance portfolio. Works from the New York City office handling deal flow and ISO communications.",
+        "hooks": [
+          "Manages ISO partner relationships at JRG Funding",
+          "Senior account management role in MCA operations"
+        ],
+        "li": "https://www.linkedin.com/company/jrg-funding"
+      }
+    ],
+    "desc": "JRG Funding is a direct merchant cash advance funder headquartered at 80 Maiden Lane in New York City, founded in March 2021. The company provides same-day funding services to small business owners through ISO broker partnerships, with applications completed in under 5 minutes and approvals for up to $750,000 in just 2 hours. JRG Funding operates a competitive ISO compensation program to incentivize broker referrals and aims to provide small business owners with tools to maintain operations and expand. The company has an active presence on DailyFunder's ISO community forums and maintains a BBB profile. The team includes underwriters and account representatives handling deal flow from the Financial District office.",
+    "news": [
+      {
+        "h": "JRG Funding actively recruiting ISO partners on DailyFunder community forums",
+        "s": "DailyFunder",
+        "d": "2023"
+      },
+      {
+        "h": "Company offers up to $750K MCA funding with 2-hour approval turnaround",
+        "s": "jrgfunding.com",
+        "d": "2024"
+      },
+      {
+        "h": "JRG Funding maintains BBB business profile as New York financial consultants",
+        "s": "BBB",
+        "d": "2024"
+      }
+    ],
+    "location": "New York, NY",
+    "full_address": "80 Maiden Ln, Rm 1506, New York, NY 10038",
+    "website": "jrgfunding.com",
+    "employees": 15,
+    "category": "funder"
+  },
+  {
+    "id": 1275,
+    "name": "Kage Capital LLC",
+    "leaders": [
+      {
+        "n": "Naftali Kark",
+        "t": "Managing Director",
+        "bg": "Serves as Managing Director of Kage Capital LLC, leading the company's alternative lending operations from the Chicago-area headquarters. Also connected to KNG Equities LLC, a commercial real estate investment company. Based in the Greater Chicago Area with an extensive professional network. Oversees Kage Capital's product suite spanning merchant cash advances, term loans, lines of credit, equipment financing, and SBA loans.",
+        "hooks": [
+          "Also involved with KNG Equities commercial real estate",
+          "Greater Chicago Area business leader",
+          "Manages multi-product alternative lending operation",
+          "Oversees funding operations spanning MCA to SBA loans"
+        ],
+        "li": "https://www.linkedin.com/in/naftali-kark/"
+      }
+    ],
+    "desc": "Kage Capital LLC is an alternative lending company headquartered in Lincolnwood, Illinois (Chicago metro area), specializing in providing small and medium-sized businesses with quick-access working capital. The company offers a broad range of funding products including merchant cash advances, term loans, business lines of credit, equipment financing, invoice factoring, MCA consolidation, and SBA loans — all without requiring personal credit checks. Kage Capital emphasizes speed, providing funding in as little as one business day with no submission fees and funds typically disbursed within 24-48 hours of approval. The company works directly with clients to personalize funding options that meet short-term needs while supporting long-term growth goals. Kage Capital maintains a BBB profile and operates from offices at 6160 N Cicero Ave in the Chicago area.",
+    "news": [
+      {
+        "h": "Kage Capital maintains BBB business profile as alternative lending provider in Lincolnwood, IL",
+        "s": "BBB",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers broad suite of funding products from MCA to SBA loans without personal credit checks",
+        "s": "kagecap.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Lincolnwood, IL",
+    "full_address": "6160 N Cicero Ave, Suite 305, Chicago, IL 60646",
+    "website": "kagecap.com",
+    "employees": 10,
+    "category": "funder"
+  },
+  {
+    "id": 1276,
+    "name": "Katapulte",
+    "leaders": [
+      {
+        "n": "Ambar Mehrotra",
+        "t": "Co-Founder",
+        "bg": "Co-founded Katapulte in 2023 along with Paul Syng and Michelle D. Part of the Techstars Build in Tulsa Fall 2023 cohort. Building a working capital and receivables financing platform focused on emerging CPG businesses that need upfront capital to fulfill purchase orders from major retailers like Walmart despite lengthy payment terms.",
+        "hooks": [
+          "Techstars Build in Tulsa 2023 cohort member",
+          "Building receivables financing for CPG brands",
+          "Solving big-box retailer payment term cash crunch"
+        ],
+        "li": "https://www.linkedin.com/company/katapulte"
+      },
+      {
+        "n": "Paul Syng",
+        "t": "Co-Founder",
+        "bg": "Co-founded Katapulte in 2023, bringing entrepreneurial experience to the CPG lending space. Part of the founding team that went through Techstars Build in Tulsa program. Focused on building receivables financing solutions to help emerging consumer packaged goods brands bridge the gap between retailer purchase orders and payment.",
+        "hooks": [
+          "Techstars-backed CPG fintech co-founder",
+          "Building bridge financing for retail purchase orders"
+        ],
+        "li": "https://ca.linkedin.com/in/paulsyng"
+      }
+    ],
+    "desc": "Katapulte is a Boston-based fintech startup founded in 2023 that provides working capital and receivables financing for emerging consumer packaged goods (CPG) businesses. The company targets CPG brands that have secured interest or purchase orders from major big-box retailers like Walmart but lack the upfront capital to fulfill those orders due to lengthy payment terms. Katapulte also operates a membership community connecting CPG founders for support and collaboration, providing access to an online community, in-person events, and expert guidance. The company went through the Techstars Build in Tulsa Fall 2023 accelerator and has raised approximately $320K in total funding from investors including Techstars, MassMutual Impact Investing, Visible Hands, and Black Ambition. Founded by Ambar Mehrotra, Paul Syng, and Michelle D.",
+    "news": [
+      {
+        "h": "Katapulte selected for Techstars Build in Tulsa Fall 2023 accelerator cohort",
+        "s": "Techstars",
+        "d": "2023"
+      },
+      {
+        "h": "Company raises $85K pre-seed from Techstars for CPG receivables financing platform",
+        "s": "Crunchbase",
+        "d": "2023"
+      },
+      {
+        "h": "Katapulte secures funding from Black Ambition to support emerging CPG brand lending",
+        "s": "Crunchbase",
+        "d": "2024"
+      }
+    ],
+    "location": "Boston, MA",
+    "full_address": "Boston, MA",
+    "website": "katapulte.com",
+    "employees": 5,
+    "category": "funder"
+  },
+  {
+    "id": 1277,
+    "name": "Key Capital Group",
+    "leaders": [
+      {
+        "n": "Neil Setti",
+        "t": "CEO",
+        "bg": "CEO of Key Capital Group with over 15 years of experience in sales and marketing. Founded the company in 2014 and has built it into a recognized provider of merchant cash advances and small business funding from Staten Island, New York. Brings experience from previous roles at AT&T before transitioning to alternative lending. Recognized by Forbes as one of their Best-In-State Wealth Advisors for 2024. Manages operations across two office locations in Staten Island and Manhattan.",
+        "hooks": [
+          "*Forbes Best-In-State Wealth Advisors 2024",
+          "Former AT&T sales veteran turned MCA entrepreneur",
+          "15+ years of sales and marketing experience",
+          "Built high-risk specialty funding operation from Staten Island"
+        ],
+        "li": "https://www.linkedin.com/in/neil-setti-a28b16257/"
+      }
+    ],
+    "desc": "Key Capital Group is a direct merchant cash advance funder founded in 2014 and headquartered in Staten Island, New York, with an additional office at 11 Broadway in Manhattan. The company specializes in providing tailored financing options including merchant cash advances and unsecured loans to businesses of all sizes across the United States, with a particular focus on high-risk and hard-to-fund businesses. Key Capital Group funds businesses that don't qualify for traditional bank loans due to bad credit, limited credit history, high-risk industry designation, prior defaults, or tax liens. The company does not require business plans or personal guarantees for MCA products. Applications take less than five minutes, funding decisions are typically made in 2-3 hours, and funds can be disbursed in as little as 24 hours. The company maintains an active ISO partnership program for deal flow.",
+    "news": [
+      {
+        "h": "Key Capital Group maintains dual office presence in Staten Island and Manhattan for business funding operations",
+        "s": "BBB",
+        "d": "2024"
+      },
+      {
+        "h": "Company specializes in funding high-risk businesses rejected by traditional lenders",
+        "s": "keycapitalfunding.com",
+        "d": "2024"
+      }
+    ],
+    "location": "Staten Island, NY",
+    "full_address": "3936 Amboy Rd, Staten Island, NY 10308",
+    "website": "keycapitalfunding.com",
+    "employees": 25,
+    "category": "funder"
+  },
+  {
+    "id": 1278,
+    "name": "Key Health Medical Solutions",
+    "leaders": [
+      {
+        "n": "Jeffrey Trigilio",
+        "t": "Founder, CEO & President",
+        "bg": "Founded Key Health Medical Solutions in 1996 and has led the company as CEO and President for nearly three decades. Holds a Bachelor of Science in Nuclear Medicine Technology from Rochester Institute of Technology (1975-1979). Previous experience at LINC Medical Imaging before founding Key Health. Also serves as Advisor and Director of Libra Solutions and Founder of JST Services, LLC. Under his leadership, Key Health was named to the Inc. 5000 list of fastest-growing private companies.",
+        "hooks": [
+          "*Nuclear medicine technologist turned healthcare finance founder",
+          "Rochester Institute of Technology graduate",
+          "Inc. 5000 fastest-growing private companies honoree",
+          "Nearly 30 years leading medical lien funding industry"
+        ],
+        "li": "https://www.linkedin.com/in/jeffrey-trigilio-2459aa7/"
+      },
+      {
+        "n": "Eric Schuller",
+        "t": "Principal",
+        "bg": "Serves as Principal at Key Health Medical Solutions, contributing to the company's operations as a national leader in medical lien funding. Part of the executive team that brings diverse experience spanning healthcare, insurance, legal, and financial services industries. Works from the company's Westlake Village, California headquarters overseeing strategic initiatives.",
+        "hooks": [
+          "Cross-industry background in healthcare and financial services",
+          "Principal at PE-backed medical lien funding leader"
+        ],
+        "li": "https://www.linkedin.com/company/key-health"
+      }
+    ],
+    "desc": "Key Health Medical Solutions is the national leader in personal injury medical lien funding, headquartered in Westlake Village, California since its founding in 1996. The company funds thousands of medical accounts receivable each month from providers who deliver services to injured victims on a lien or letter of protection basis as part of personal injury claims. Key Health's proprietary MedLien platform supports funding for surgery, orthopedics, neurology, radiology, pain management, and physical therapy. The company also provides lien solutions, billing and medical legal software, and pharmacy cards to eliminate patient out-of-pocket costs. Key Health is backed by institutional investors including Bregal Sagemount, EW Healthcare Partners, Blackford Capital, and Convergent Capital Partners. The company was named to the Inc. 5000 list of fastest-growing private companies and employs approximately 51 people across its nationwide operations.",
+    "news": [
+      {
+        "h": "Key Health Medical Solutions acquired by consortium including Bregal Sagemount and EW Healthcare Partners",
+        "s": "Mergr",
+        "d": "2011"
+      },
+      {
+        "h": "Key Health named to Inc. 5000 fastest-growing private companies list",
+        "s": "Inc. Magazine",
+        "d": "2018"
+      },
+      {
+        "h": "Company continues as national leader in MedLien funding with PE backing from Bregal Sagemount",
+        "s": "Bregal Sagemount",
+        "d": "2024"
+      }
+    ],
+    "location": "Westlake Village, CA",
+    "full_address": "30699 Russell Ranch Rd, Suite 175, Westlake Village, CA 91362",
+    "website": "keyhealth.net",
+    "employees": 51,
+    "category": "funder"
+  },
+  {
+    "id": 1279,
+    "name": "Kickpay",
+    "leaders": [
+      {
+        "n": "Andrew McCalister",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Kickpay in 2014, taking it through Y Combinator's W15 batch. Originally from Scotland, previously served as Director of Business Development at Heyzap (YC W09), enabling advertisers to boost discoverability and publishers to grow monetization. Holds a Masters in Engineering and Management from the University of Cambridge (UK) and a double major in Mechanical Engineering and Industrial Design for his Bachelor's degree. Identified the invoice payment pain point while working at Heyzap.",
+        "hooks": [
+          "*Cambridge University Masters in Engineering",
+          "Y Combinator W15 and W09 (Heyzap) alumnus",
+          "Scottish entrepreneur in Silicon Valley fintech",
+          "Mechanical engineering and industrial design double major"
+        ],
+        "li": "https://www.linkedin.com/company/kickpay"
+      },
+      {
+        "n": "Stefano Bernardi",
+        "t": "Co-Founder",
+        "bg": "Co-founded Kickpay and took it through Y Combinator W15. Previously first employee at Betable, where he helped scale the company to 40 people with $30M in funding. Background in venture capital at dPixel in Italy, shadowed Dave McClure at 500 Startups, and wrote for TechCrunch Europe. Founded Italian Startup Scene community. Currently GP of Unruly Capital after Kickpay.",
+        "hooks": [
+          "First employee at Betable ($30M raised, scaled to 40 people)",
+          "*Shadowed Dave McClure at 500 Startups",
+          "Former TechCrunch Europe contributor",
+          "Founded Italian Startup Scene community"
+        ],
+        "li": "https://www.linkedin.com/company/kickpay"
+      }
+    ],
+    "desc": "Kickpay is a San Francisco-based fintech startup that operates a marketplace for buying and selling invoices, enabling SMEs and startups to get paid quickly by selling their accounts receivable to accredited investors. Founded in 2014 and backed by Y Combinator (W15 batch), the platform integrates with QuickBooks and banking software to allow businesses to easily push invoices onto an auction-style marketplace where buyers bid for them. Sellers receive most of their capital upfront, avoiding painful waits for payment, while investors can earn returns on their purchases. The company later pivoted to become a platform to finance inventory for e-commerce companies. Kickpay raised seed funding from multiple investors in 2014-2015 and is headquartered at 424 Clay St in San Francisco. The company currently has a small team of approximately 3-6 employees.",
+    "news": [
+      {
+        "h": "Kickpay featured as invoice marketplace helping SMEs get paid quickly",
+        "s": "TechCrunch",
+        "d": "2015"
+      },
+      {
+        "h": "Supply chain financer Kickpay emerges from beta stage with QuickBooks integration",
+        "s": "PYMNTS.com",
+        "d": "2015"
+      },
+      {
+        "h": "Kickpay pivots from invoice marketplace to e-commerce inventory financing platform",
+        "s": "Y Combinator",
+        "d": "2023"
+      }
+    ],
+    "location": "San Francisco, CA",
+    "full_address": "424 Clay St, San Francisco, CA 94111",
+    "website": "kickpay.com",
+    "employees": 5,
+    "category": "marketplace"
+  },
+  {
+    "id": 1280,
+    "name": "King of Kings Funding",
+    "leaders": [
+      {
+        "n": "Steven Barsolona",
+        "t": "CEO & Founder",
+        "bg": "Founded King of Kings Funding and serves as CEO, building the company from Miami into a nationwide business funding operation covering all 50 states and Puerto Rico. Educated at Fordham University's Gabelli School of Business. Has built a team of credit specialists that has aided over 29,000 clients in personal credit repair. The company operates as Pizan Consulting LLC D.B.A King of Kings Funding, a Florida LLC, and claims a 90% success rate on all deals.",
+        "hooks": [
+          "Fordham Gabelli School of Business graduate",
+          "Built credit repair operation serving 29,000+ clients",
+          "90% deal success rate across 50 states and Puerto Rico",
+          "Miami-based founder in SBA and equipment financing"
+        ],
+        "li": "https://www.linkedin.com/in/steven-barsolona-5700b8214/"
+      },
+      {
+        "n": "Paul Moon",
+        "t": "CFO & Co-Founder",
+        "bg": "Co-founded King of Kings Funding alongside Steven Barsolona and serves as Chief Financial Officer. Oversees the company's financial operations, managing the lending portfolio across SBA loans, lines of credit, and equipment financing products. Works from the company's Miami Brickell Key headquarters managing financial planning for a company that funds millions monthly.",
+        "hooks": [
+          "CFO managing multi-million monthly funding operations",
+          "Co-founded Miami business lending operation"
+        ],
+        "li": "https://www.linkedin.com/company/king-of-kings-funding"
+      }
+    ],
+    "desc": "King of Kings Funding is a Miami-based business financing company operating as Pizan Consulting LLC, providing SBA loans, lines of credit, equipment financing, and unsecured business financing across all 50 states and Puerto Rico. The company offers SBA 7(a), 504, SBA Bolt, and SBA Express loans with amounts up to $5M, and equipment financing from $50K to $100M at rates as low as 5.5%. King of Kings Funding also operates a credit repair division, with specialists having successfully aided over 29,000 clients in repairing personal credit within 90-120 days. The company claims a 90% success rate on all deals and maintains one of the largest networks of lenders in the country. Founded by Steven Barsolona (CEO) and co-founded by Paul Moon (CFO), the company is headquartered at 601 Brickell Key Drive in Miami's financial district.",
+    "news": [
+      {
+        "h": "King of Kings Funding expands nationwide lending network across all 50 states and Puerto Rico",
+        "s": "kingofkingsfunding.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company credit repair division surpasses 29,000 clients served with 90-120 day average timeframe",
+        "s": "kingofkingsfunding.com",
+        "d": "2024"
+      },
+      {
+        "h": "SBA introduces stricter underwriting standards effective June 2025 impacting SBA lenders nationwide",
+        "s": "SBA",
+        "d": "2025"
+      }
+    ],
+    "location": "Miami, FL",
+    "full_address": "601 Brickell Key Dr, Suite 700, Miami, FL 33131",
+    "website": "kingofkingsfunding.com",
+    "employees": 15,
+    "category": "funder"
+  }
+]

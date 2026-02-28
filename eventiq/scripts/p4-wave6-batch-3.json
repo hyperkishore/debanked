@@ -1,0 +1,331 @@
+[
+  {
+    "id": 1292,
+    "name": "LenPick",
+    "category": "funder",
+    "website": "https://lenpick.com",
+    "employees": 5,
+    "location": "Selden, NY",
+    "full_address": "Selden, NY 11784",
+    "desc": "LenPick is an SBA loan brokerage founded in 2020 that specializes in helping new franchise owners secure SBA startup loans. The company is not a direct SBA lender but acts as a loan broker working with a network of 25+ SBA lenders, some of which are preferred SBA lenders. LenPick offers qualification within 24 hours and facilitates loans ranging from $50,000 to $5 million to cover franchise fees, equipment, marketing, staffing, and other startup costs. The company is headquartered in Selden, New York and has approximately 5 employees.",
+    "leaders": [
+      {
+        "n": "Porsha Brooks",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of LenPick since 2020. Previously served as Executive Director of Finance at Shore Funding Solutions. Also serves as Chairwoman of the Greater Gordon Heights Chamber of Commerce, where she is dedicated to helping community members become franchise owners. Based in Selden, New York.",
+        "li": "https://www.linkedin.com/in/porsha-b/",
+        "hooks": [
+          "Chairwoman of Greater Gordon Heights Chamber of Commerce",
+          "Previously Executive Director of Finance at Shore Funding Solutions",
+          "Built network of 25+ SBA lenders for franchise startups"
+        ]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1293,
+    "name": "Lexio Capital",
+    "category": "funder",
+    "website": "https://lexiocapital.com",
+    "employees": 25,
+    "location": "Hollywood, FL",
+    "full_address": "2750 N 29th Ave, Suite 124, Hollywood, FL 33020",
+    "desc": "Lexio Capital is a direct funder based in Hollywood, Florida that provides revenue-based financing to small businesses. The company purchases future receivables at a discounted price, offering an alternative to conventional debt financing without fixed interest rates or set monthly payments. Approval is based more on sales consistency than credit history. Lexio Capital serves a diverse range of industries and emphasizes speed and ease of qualification. The company has 11-50 employees and focuses heavily on supporting ISO partners with competitive offers and fast processing.",
+    "leaders": [
+      {
+        "n": "Nikolaus Benigni",
+        "t": "Chief Operating Officer",
+        "bg": "COO of Lexio Capital based in Hollywood, Florida. Previously founded NWB Ventures. Holds a Diploma from Secondary School for Hospitality and Tourism MODUL and a Bachelor of Arts from FHW Fachhochschul-Studiengänge in Vienna, Austria. Background spans venture capital, private equity, and finance.",
+        "li": "https://www.linkedin.com/in/nikolaus-b-011a4b81/",
+        "hooks": [
+          "Previously founded NWB Ventures",
+          "Austrian-educated — studied hospitality and tourism before finance",
+          "Venture capital and private equity background"
+        ]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1294,
+    "name": "Lifetime Funding",
+    "category": "funder",
+    "website": "https://lifetimefundingllc.com",
+    "employees": 16,
+    "location": "Garden City, NY",
+    "full_address": "585 Stewart Ave, Suite L90, Garden City, NY 11530",
+    "desc": "Lifetime Funding LLC is a business financing company based in Garden City, New York that provides unsecured, customized short-term and term loans to small businesses across various industries. The company offers a wide range of funding solutions including startup funding, lines of credit, invoice financing, equipment loans, and merchant cash advances. Lifetime Funding has approximately 16 employees and also provides credit card and transaction processing solutions. The company focuses on connecting businesses with working capital and emphasizes personalized service with competitive rates.",
+    "leaders": [
+      {
+        "n": "Michael Kand",
+        "t": "Managing Partner & CEO",
+        "bg": "Managing Partner and CEO of Lifetime Funding with over 15 years of experience in the financial industry. Has played a key role in driving the company's growth and innovation in credit card processing and business financing. Based in Garden City, New York.",
+        "li": "https://www.linkedin.com/in/michael-kand-6735b1143",
+        "hooks": [
+          "15+ years in financial industry",
+          "Dual focus on payments processing and business lending"
+        ]
+      },
+      {
+        "n": "Nathan Kand",
+        "t": "Business Development Executive",
+        "bg": "Business Development Executive at Lifetime Funding LLC, responsible for growing the company's client base and partnership network. Part of the Kand family leadership team at the company.",
+        "li": "",
+        "hooks": [
+          "Family business leadership team at Lifetime Funding"
+        ]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1296,
+    "name": "Line of Credit Depot",
+    "category": "iso",
+    "website": "https://www.lineofcreditdepot.com",
+    "employees": 10,
+    "location": "New York, NY",
+    "full_address": "New York, NY",
+    "desc": "Line of Credit Depot is a business lending brokerage based in New York that connects small businesses with revolving business lines of credit from a network of over 60 banks and lenders. The company operates as an ISO, offering a streamlined 10-minute application process with no credit check required. Line of Credit Depot facilitates a variety of business capital products including working capital, merchant cash advances, purchase order financing, SBA 7(a) loans, equipment financing, senior debt, asset-based lending, and invoice factoring. Typical funding timeline ranges from 24 hours to one week. Co-founded by Wharton MBA Matthew Elling and digital strategist Alexi Philippoussis.",
+    "leaders": [
+      {
+        "n": "Matthew Elling",
+        "t": "Co-Founder & Consultant",
+        "bg": "Co-Founder and Consultant at Line of Credit Depot. Holds an MBA in Accounting and Finance from the University of Pennsylvania's Wharton School (2013-2014). Also works as a small business lender at American Capital Group. Known for thought leadership on filling the void of bank lending to small businesses.",
+        "li": "https://www.linkedin.com/in/mattelling/",
+        "hooks": [
+          "Wharton MBA in Accounting and Finance",
+          "Also works at American Capital Group as small business lender",
+          "Published thought leadership on bank lending gaps for SMBs"
+        ]
+      },
+      {
+        "n": "Alexi Philippoussis",
+        "t": "Co-Founder, Digital Architect & Marketing Strategist",
+        "bg": "Co-Founder of Line of Credit Depot serving as Digital Architect and Marketing Strategist. Responsible for the company's digital presence and marketing strategy.",
+        "li": "",
+        "hooks": [
+          "Digital architecture and marketing strategy background"
+        ]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1297,
+    "name": "Liquidibee",
+    "category": "funder",
+    "website": "https://www.liquidibee.com",
+    "employees": 30,
+    "location": "New York, NY",
+    "full_address": "295 Madison Ave, New York, NY 10017",
+    "desc": "Liquidibee is a fintech company founded in 2020 that directly provides non-dilutive working capital to small and medium-sized businesses nationwide. The company is a privately held, ISO-centric specialty finance provider that directly funds merchant cash advance (MCA) products. In May 2022, Liquidibee secured a multi-draw credit facility with borrowing capacity up to $50 million to expand operations and strengthen its ability to provide immediate funding. The company has heavily invested in fintech infrastructure, banking integrations, syndication capabilities, full white-labeling, underwriting staff, and customer support to empower its ISO partners and provide merchants with same-day approvals and funding.",
+    "leaders": [
+      {
+        "n": "Dylan J. Howell",
+        "t": "Chief Executive Officer",
+        "bg": "CEO of Liquidibee based in New York City. Leads the company's strategic direction and operations including the buildout of fintech infrastructure, ISO partnerships, and direct MCA funding capabilities. Under his leadership, Liquidibee secured a $50 million credit facility in 2022.",
+        "li": "https://www.linkedin.com/in/dylan-j-howell-05a3b123a/",
+        "hooks": [
+          "Secured $50M credit facility in 2022 to scale MCA funding",
+          "Built ISO-centric fintech platform with same-day funding",
+          "Member of Revenue Based Finance Coalition"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "Liquidibee secures up to $50 million credit facility to expand business operations",
+        "s": "PR Newswire",
+        "d": "2022-05"
+      }
+    ]
+  },
+  {
+    "id": 1298,
+    "name": "LK Secured Lending & Investments",
+    "category": "funder",
+    "website": "https://lksecuredlending.com",
+    "employees": 25,
+    "location": "Thousand Oaks, CA",
+    "full_address": "555 Marin St, Suite 140, Thousand Oaks, CA 91360",
+    "desc": "LK Secured Lending & Investments is a private lending and investment firm founded in 2019 in Thousand Oaks, California. The company provides asset-backed lending opportunities focusing on commercial real estate loans including bridge loans, fix-and-flip loans, and construction financing. For investors, LK offers a debt-only fund structure that places investors in a senior position for capital protection and consistent returns, positioning itself as a safer alternative to real estate funds and REITs. The fund was organized to make, purchase, originate, fund, acquire, and sell loans secured by interests in real or personal property throughout the United States. Co-founded by banking expert Barry Levenson, investor Paul Kessler, and Harvard Law graduate Diana Derycz-Kessler.",
+    "leaders": [
+      {
+        "n": "Barry Levenson",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO and Co-Founder of LK Secured Lending based in Thousand Oaks, California. A visionary leader and strategist with over 30 years of hands-on experience in banking, real estate, and financial services. Deep expertise in achieving high-growth objectives in fast-growth organizations. The company idea began with his vision for a safer approach to real estate-backed investing.",
+        "li": "https://www.linkedin.com/in/barry-levenson-228527/",
+        "hooks": [
+          "30+ years in banking and real estate",
+          "Built debt-only fund structure as safer REIT alternative",
+          "Based in Thousand Oaks — deep LA area real estate expertise"
+        ]
+      },
+      {
+        "n": "Paul Kessler",
+        "t": "Founding Principal",
+        "bg": "Founding Principal of LK Secured Lending & Investments. After decades of navigating market volatility and living through major recessions, Paul sought a safer, more predictable approach to investing. His experience through economic cycles informed the company's conservative, asset-backed lending model.",
+        "li": "",
+        "hooks": [
+          "Decades navigating market volatility and recessions",
+          "Sought safer investing approach — led to founding LK"
+        ]
+      },
+      {
+        "n": "Diana Derycz-Kessler",
+        "t": "Founder & Director",
+        "bg": "Founder and Director of LK Secured Lending. Earned her J.D. from Harvard Law School, a master's degree from Stanford University, and a Bachelor of Arts from UCLA. Background in law and investing across multiple sectors, she recognized real estate lending as the most stable and predictable investment option.",
+        "li": "",
+        "hooks": [
+          "*Harvard Law School J.D., Stanford master's, UCLA BA",
+          "Legal background across multiple investment sectors",
+          "Identified real estate lending as most stable investment class"
+        ]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1300,
+    "name": "Loot Financial Services Corp",
+    "category": "funder",
+    "website": "https://www.getloot.com",
+    "employees": 8,
+    "location": "Boston, MA",
+    "full_address": "100 Summer St, Suite 1600, Boston, MA 02110",
+    "desc": "Loot Financial Services Corp is a seed-stage fintech company founded in 2021 in Boston that provides a fully automated online lending platform for small businesses. The company offers quick, flexible credit solutions including business lines of credit and bill pay services, with applications completed in five minutes, approval in hours, and near-instant funding. Loot features a 50% discount on outstanding fees for early payoff. The company raised $250K in a Seed round in October 2023. Co-founded by John Cain (a serial entrepreneur and former COO of Forward Financing) and Luke Peake, both of whom also serve on LoanPro's strategic advisory board.",
+    "leaders": [
+      {
+        "n": "John Cain",
+        "t": "Co-Founder & CEO",
+        "bg": "Serial entrepreneur and Co-Founder/CEO of Loot Financial Services. Previously Co-Founder and COO of Forward Financing (2012-2018), where he specialized in making capital accessible to underserved small businesses. Earlier career as Senior Financial Analyst at Burger King Corporation and Investment Banking Analyst at Rothschild. Also co-founded Payout and owned Lamberts Cove Inn, a boutique resort on Martha's Vineyard. Holds a BBA from Babson College.",
+        "li": "https://www.linkedin.com/in/johnmichaelcain/",
+        "hooks": [
+          "*Co-Founded Forward Financing — scaled MCA lending 2012-2018",
+          "Babson College BBA — serial entrepreneur (3x fintech founder)",
+          "Owned boutique resort on Martha's Vineyard",
+          "Investment banking start at Rothschild"
+        ]
+      },
+      {
+        "n": "Luke Peake",
+        "t": "Co-Founder",
+        "bg": "Co-Founder of Loot Financial Services Corp. Part of the founding team alongside John Cain. Both co-founders serve on LoanPro's strategic advisory board. Based in Boston, Massachusetts.",
+        "li": "",
+        "hooks": [
+          "LoanPro strategic advisory board member",
+          "Co-built automated lending platform from seed stage"
+        ]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1301,
+    "name": "LQD Business Finance",
+    "category": "funder",
+    "website": "https://lqdfinance.com",
+    "employees": 25,
+    "location": "Chicago, IL",
+    "full_address": "329 W 18th St, Suite 912, Chicago, IL 60616",
+    "desc": "LQD Business Finance is a Chicago-based fintech lender founded in 2014 that provides structured, flexible, and transparent financing to small and medium-sized businesses. The company was built to address the gap in the micro-middle market where traditional banks and existing alternative lenders fall short. LQD can underwrite and fund loans of up to $10 million in under 30 days through its proprietary risk management platform, LQD Matrix. Products include asset-based loans, fully amortizing term loans, bridge loans, interest-only loans, lines of credit, and structured financing. LQD has raised $44 million from investors including Route 66 Ventures and FinTech Ventures Fund. In 2021, LQD launched development of a Bitcoin business lending platform. The company has approximately 25 employees.",
+    "leaders": [
+      {
+        "n": "George Souri",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of LQD Business Finance with over 20 years of entrepreneurial experience. A self-taught mathematician and serial entrepreneur who started his first business (a string of dance clubs) at 18 years old before founding his own investment bank. Also Founder and CEO of AIO Logic and The Atria Group. Featured at LendIt USA 2017, Techweek Chicago 2017, and the Tech in Chicago podcast. Background in private equity, M&A, fast growth, exit positioning, and complex financial situations.",
+        "li": "https://www.linkedin.com/in/george-souri-lqd/",
+        "hooks": [
+          "*Started first business (dance clubs) at age 18",
+          "Self-taught mathematician turned fintech CEO",
+          "Built proprietary LQD Matrix risk management platform",
+          "Also founded AIO Logic and The Atria Group"
+        ]
+      },
+      {
+        "n": "Ray Ojel",
+        "t": "Director, Product Development",
+        "bg": "Director of Product Development at LQD Business Finance, responsible for the company's product strategy and development of lending solutions for the micro-middle market.",
+        "li": "",
+        "hooks": [
+          "Leads product development for $10M loan underwriting platform"
+        ]
+      },
+      {
+        "n": "Kimberly Stanley",
+        "t": "Chief Administrative Officer",
+        "bg": "Chief Administrative Officer at LQD Business Finance, overseeing administrative operations and organizational management for the Chicago-based fintech lender.",
+        "li": "",
+        "hooks": [
+          "CAO of tech-enabled lending platform in Chicago"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "h": "LQD Business Finance launches development of Bitcoin business lending platform",
+        "s": "PR Newswire",
+        "d": "2021-01"
+      },
+      {
+        "h": "LQD Business Finance secures $30 million credit facility with Route 66 Ventures",
+        "s": "LQD Finance",
+        "d": "2019"
+      },
+      {
+        "h": "LQD Business Finance announces breakout business results in 2016",
+        "s": "PR Newswire",
+        "d": "2017-01"
+      }
+    ]
+  },
+  {
+    "id": 1303,
+    "name": "Main Street Finance Group",
+    "category": "funder",
+    "website": "https://businesscashadvance.co",
+    "employees": 250,
+    "location": "Fort Lauderdale, FL",
+    "full_address": "3201 Griffin Rd, Suite 102, Fort Lauderdale, FL 33312",
+    "desc": "Main Street Finance Group is a business financing company established in 2014 in Fort Lauderdale, Florida. The company offers alternative funding solutions for small and mid-sized businesses including business cash advances, lines of credit, unsecured long-term loans, and collateral loans such as SBA 7(a) loans. Main Street Finance Group provides funding ranging from $3,000 to $500,000 across all industries in the United States, Puerto Rico, and Canada, with funding available in as little as one business day. The company has grown to 201-500 employees and operates from offices in Fort Lauderdale and Davie, Florida. Main Street Finance Group is one of the top business loan companies focused on helping business owners who may not qualify for conventional commercial loans.",
+    "leaders": [
+      {
+        "n": "Joe Alkobi",
+        "t": "CEO",
+        "bg": "CEO of Main Street Finance Group based in Fort Lauderdale, Florida. Leads the company's operations across alternative business funding including cash advances, lines of credit, and SBA lending. Under his leadership the company has grown to over 200 employees serving businesses across the US, Puerto Rico, and Canada.",
+        "li": "https://www.linkedin.com/in/joe-alkobi-638323b5",
+        "hooks": [
+          "Scaled company to 200+ employees in alternative lending",
+          "Serves US, Puerto Rico, and Canada from Fort Lauderdale"
+        ]
+      }
+    ],
+    "news": []
+  },
+  {
+    "id": 1304,
+    "name": "Manpower Funding",
+    "category": "funder",
+    "website": "https://www.manpowerfunding.com",
+    "employees": 5,
+    "location": "Irvine, CA",
+    "full_address": "17595 Harvard Ave, Suite C, Irvine, CA 92614",
+    "desc": "Manpower Funding is a small business lending company founded in 2019 and based in Irvine, California. The company specializes in providing working capital loans to small blue-collar businesses, with a focus on construction, trades, and equipment-heavy industries. Manpower Funding offers a 97% approval rate with no hard personal credit pulls and no collateral required, with typical loan funding within 24 hours. Products include short-term working capital loans for payroll, inventory, and hiring, as well as equipment financing for vehicles and construction tools. The company also provides SBA loans, term loans, business lines of credit, and invoice factoring. The company is also known as Touchpoint Marketing LLC and is BBB Accredited since June 2022.",
+    "leaders": [
+      {
+        "n": "Jesse Marcks",
+        "t": "Member & Business Loan Specialist",
+        "bg": "Member and principal of Manpower Funding based in Orange County, California. Serves as the primary customer contact and business loan specialist. Responsible for business management and client relationships. Specializes in working capital, business lines of credit, SBA loans, term loans, equipment finance, and invoice factoring for small businesses.",
+        "li": "https://www.linkedin.com/in/jesse-marcks-occalifornia/",
+        "hooks": [
+          "Orange County-based small business lending specialist",
+          "Focus on blue-collar and construction business funding",
+          "BBB Accredited since 2022"
+        ]
+      }
+    ],
+    "news": []
+  }
+]

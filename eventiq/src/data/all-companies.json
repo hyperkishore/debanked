@@ -35490,23 +35490,54 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "AI-powered online lending marketplace founded in 2016, based in Plantation, FL. Offers MCA, line of credit, equipment financing, and invoice factoring. Also provides white-label SaaS lending platforms (E-Lender, E-Broker) for financial institutions and brokers.",
+    "desc": "Ivy Lender is a fully automated AI-powered online marketplace that connects lending institutions to the underserved small business market. Founded in 2016 and headquartered in Plantation, Florida, the platform uses AI to gather credit data from bureaus, anti-fraud systems, AML databases, and social media sources, then scores applicants and matches them against lender guidelines across a network of 100+ lenders in North America. The company offers both a white-label E-Lender platform for lenders and an E-Broker platform for brokers, making it both a marketplace and SaaS provider. Ivy Lender targets underbanked businesses that may have blemished credit, irregular sales, or past-due taxes, offering traditional funding and merchant cash advances. Backed by Project W (US) and Holt Xchange, the company has raised $125K and has approximately 11 employees across North America and Europe.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Ivy Lender calls out banks and fintechs for exploiting PPP loan program",
+        "s": "FinTech Futures",
+        "d": "2020"
+      },
+      {
+        "h": "Company operates dual platform model with E-Lender and E-Broker white-label solutions",
+        "s": "ivylender.com",
+        "d": "2024"
+      },
+      {
+        "h": "Ivy Lender featured in Holt Xchange portfolio as AI-driven small business lending marketplace",
+        "s": "Holt Xchange",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Christina Camacho",
+        "t": "Founder & CEO",
+        "bg": "Founded Ivy Lender in 2016 after heading up treasury management at JPMorgan Chase and Fifth Third Bank. Served as Vice President and Treasury Management Officer at JPMorgan Chase (2013-2017) and Commercial Merchant Account Executive & AVP at Fifth Third Bank (2008-2013). Holds a BS in Economics/Business from Florida Atlantic University. Named one of 50 FT Founders by The Harrington Star for inspiring leadership in financial services technology. Also affiliated with Inv Fintech, Holt Accelerator, and Current Payment Solutions.",
+        "hooks": [
+          "Former JPMorgan VP turned fintech founder",
+          "*Named one of 50 FT Founders by Harrington Star",
+          "Florida Atlantic University economics grad",
+          "Built AI lending marketplace connecting 100+ lenders"
+        ],
+        "li": "https://www.linkedin.com/in/christina-camacho/"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 5,
-    "website": "https://www.ivylender.com/",
+    "location": "Plantation, FL",
+    "employees": 11,
+    "website": "ivylender.com",
     "linkedinUrl": "https://www.linkedin.com/company/16260050",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "marketplace"
+    "category": "marketplace",
+    "full_address": "150 S Pine Island Rd #370, Plantation, FL 33324"
   },
   {
     "id": 1272,
@@ -35517,23 +35548,49 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "NYC-based working capital provider operating since 2009. Offers advances against future business receivables from $10K to $5M with 4-18 month repayment terms. Simple one-page application with 3 months of bank statements, no collateral required.",
+    "desc": "Jaffe Capital is a New York City-based alternative business funding company that has supported thousands of business owners nationwide since 2009. The firm provides fast access to working capital by offering advances against a business's future receivables, with funding ranging from $10,000 to $5 million based on revenue and repayment history. Approvals are typically completed in under 24 hours with repayment plans of 4 to 18 months. Jaffe Capital positions itself as a bank loan alternative accessible to business owners with poor credit scores or outstanding business loans. The leadership team brings together decades of experience in entrepreneurship and alternative lending, emphasizing speed, trust, and flexibility as core values.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Jaffe Capital continues to expand nationwide business funding operations from NYC headquarters",
+        "s": "jaffecapital.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers business funding up to $5M with same-day approval turnaround",
+        "s": "jaffecapital.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Mike Jaffe",
+        "t": "President",
+        "bg": "Leads Jaffe Capital as President since founding the company. Brings experience from previous roles at Jaffe & Son Inc, Benchmark Merchant Solutions, and Wall Street Funding, giving him decades of hands-on experience in entrepreneurship and alternative lending. Holds a Bachelor's degree in Political Science and Government from ULY. Has built Jaffe Capital into a company that has supported thousands of business owners nationwide since 2009 with working capital ranging from $10K to $5M.",
+        "hooks": [
+          "Multi-generational business background via Jaffe & Son Inc",
+          "Wall Street Funding and Benchmark Merchant Solutions veteran",
+          "Political science grad turned alternative lending entrepreneur",
+          "Built merchant cash advance firm serving thousands since 2009"
+        ],
+        "li": "https://www.linkedin.com/in/mike-jaffe-2a23b313"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 6,
-    "website": "https://www.jaffecapital.com/",
+    "location": "New York, NY",
+    "employees": 15,
+    "website": "jaffecapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/jaffe-capital/people/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "bank"
+    "category": "funder",
+    "full_address": "New York, NY"
   },
   {
     "id": 1273,
@@ -35544,23 +35601,61 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business funding company based in New York providing merchant cash advances and various funding programs. Limited public information available; may be defunct (0 employees).",
+    "desc": "Jett Capital Advisors is an independent boutique investment banking and capital markets advisory firm established in 2013, headquartered at 712 Fifth Avenue in New York City. The firm specializes in serving middle market and emerging natural resources and technology companies, with deep focus on energy, mining, and clean technology industries. Jett Capital provides a full range of services including mergers, acquisitions, joint ventures, IPOs, private equity, debt, divestitures, venture capital, recapitalization, and corporate restructuring. The firm employs approximately 10 professionals and is registered with FINRA (CRD# 169127). For over two decades, Jett Capital's partners have served as key advisors to leaders in energy and natural resource markets, building specialized teams with real operating and leadership experience in the sectors they serve.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Jett Capital continues advisory services for natural resources and energy sector transactions",
+        "s": "jettcapital.com",
+        "d": "2024"
+      },
+      {
+        "h": "Firm registered with FINRA as broker-dealer focused on capital markets advisory",
+        "s": "FINRA BrokerCheck",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Joseph Riggio",
+        "t": "CEO & Founding Partner",
+        "bg": "Founding Partner of Jett Capital Advisors, currently serving as Managing Partner of the firm's Investment Banking Committee. Prior to founding Jett Capital in 2013, was a Managing Director at Casimir Capital where under his leadership the firm's Capital Markets Division became the leading US advisor to global natural resources and energy companies. Graduate of the Wharton School at the University of Pennsylvania. Over two decades of experience structuring sophisticated transactions and investment strategies for corporations and institutional investors.",
+        "hooks": [
+          "*Wharton School graduate",
+          "Former Managing Director at Casimir Capital",
+          "Two decades structuring natural resources transactions",
+          "Built leading US advisor to global energy companies"
+        ],
+        "li": "https://www.linkedin.com/in/joseph-riggio-9805782"
+      },
+      {
+        "n": "Quentin Anlian",
+        "t": "Vice President, Investment Banking",
+        "bg": "Vice President in the Investment Banking Division at Jett Capital and director of the firm's Metals & Mining practice. One of the rare investment bankers to have worked as an exploration and underground geologist on Nevada's prolific Carlin Trend. Came to Jett Capital in 2020 from Barrick Gold Corporation where he served as project geologist, having previously held similar positions at Kinross and Newmont. Studied Geology at University of Arizona and received MS in Structural Geology and Geomechanics from University of Georgia.",
+        "hooks": [
+          "*Former Barrick Gold geologist turned investment banker",
+          "Worked underground on Nevada's Carlin Trend gold deposits",
+          "University of Georgia MS in Structural Geology",
+          "Rare banker with hands-on mining exploration experience"
+        ],
+        "li": "https://www.linkedin.com/company/jett-capital-advisors"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 0,
-    "website": "https://jettcapfunding.com/",
+    "location": "New York, NY",
+    "employees": 10,
+    "website": "jettcapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/jett-capital/about/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "service_provider",
+    "full_address": "712 Fifth Avenue, 11th Floor, New York, NY 10019"
   },
   {
     "id": 1274,
@@ -35571,23 +35666,64 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Direct in-house MCA funder based in New York. Provides financing up to $750K with approval within 2 hours and same-day funding for small businesses nationwide.",
+    "desc": "JRG Funding is a direct merchant cash advance funder headquartered at 80 Maiden Lane in New York City, founded in March 2021. The company provides same-day funding services to small business owners through ISO broker partnerships, with applications completed in under 5 minutes and approvals for up to $750,000 in just 2 hours. JRG Funding operates a competitive ISO compensation program to incentivize broker referrals and aims to provide small business owners with tools to maintain operations and expand. The company has an active presence on DailyFunder's ISO community forums and maintains a BBB profile. The team includes underwriters and account representatives handling deal flow from the Financial District office.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "JRG Funding actively recruiting ISO partners on DailyFunder community forums",
+        "s": "DailyFunder",
+        "d": "2023"
+      },
+      {
+        "h": "Company offers up to $750K MCA funding with 2-hour approval turnaround",
+        "s": "jrgfunding.com",
+        "d": "2024"
+      },
+      {
+        "h": "JRG Funding maintains BBB business profile as New York financial consultants",
+        "s": "BBB",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Raymond Grand",
+        "t": "Founder & CFO",
+        "bg": "Founded JRG Funding in March 2021 and serves as CFO, overseeing the firm's strategic financial planning and investment portfolio management from the company's New York City headquarters at 80 Maiden Lane. Responsible for building JRG Funding's ISO partnership program and developing the company's same-day funding capabilities. Leads a team that provides merchant cash advance funding with approval for up to $750,000 in as little as 2 hours.",
+        "hooks": [
+          "Founded direct MCA funder in NYC's Financial District",
+          "Oversees strategic financial planning and portfolio management",
+          "Built same-day funding operation at 80 Maiden Lane",
+          "Manages ISO partnership compensation program"
+        ],
+        "li": "https://www.linkedin.com/in/raymond-grand/"
+      },
+      {
+        "n": "Ronald Williams",
+        "t": "Senior Account Representative",
+        "bg": "Serves as Senior Account Representative at JRG Funding, managing relationships with ISO partners and overseeing account management for the company's merchant cash advance portfolio. Works from the New York City office handling deal flow and ISO communications.",
+        "hooks": [
+          "Manages ISO partner relationships at JRG Funding",
+          "Senior account management role in MCA operations"
+        ],
+        "li": "https://www.linkedin.com/company/jrg-funding"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 13,
-    "website": "https://jrgfunding.com",
+    "location": "New York, NY",
+    "employees": 15,
+    "website": "jrgfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/jrg-funding/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "80 Maiden Ln, Rm 1506, New York, NY 10038"
   },
   {
     "id": 1275,
@@ -35598,23 +35734,49 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Alternative lending company founded in 2020, based in Chicago, IL. Offers MCA, term loans, lines of credit, equipment financing, invoice factoring, SBA loans, and consolidation services for small and mid-sized businesses.",
+    "desc": "Kage Capital LLC is an alternative lending company headquartered in Lincolnwood, Illinois (Chicago metro area), specializing in providing small and medium-sized businesses with quick-access working capital. The company offers a broad range of funding products including merchant cash advances, term loans, business lines of credit, equipment financing, invoice factoring, MCA consolidation, and SBA loans — all without requiring personal credit checks. Kage Capital emphasizes speed, providing funding in as little as one business day with no submission fees and funds typically disbursed within 24-48 hours of approval. The company works directly with clients to personalize funding options that meet short-term needs while supporting long-term growth goals. Kage Capital maintains a BBB profile and operates from offices at 6160 N Cicero Ave in the Chicago area.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Kage Capital maintains BBB business profile as alternative lending provider in Lincolnwood, IL",
+        "s": "BBB",
+        "d": "2024"
+      },
+      {
+        "h": "Company offers broad suite of funding products from MCA to SBA loans without personal credit checks",
+        "s": "kagecap.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Naftali Kark",
+        "t": "Managing Director",
+        "bg": "Serves as Managing Director of Kage Capital LLC, leading the company's alternative lending operations from the Chicago-area headquarters. Also connected to KNG Equities LLC, a commercial real estate investment company. Based in the Greater Chicago Area with an extensive professional network. Oversees Kage Capital's product suite spanning merchant cash advances, term loans, lines of credit, equipment financing, and SBA loans.",
+        "hooks": [
+          "Also involved with KNG Equities commercial real estate",
+          "Greater Chicago Area business leader",
+          "Manages multi-product alternative lending operation",
+          "Oversees funding operations spanning MCA to SBA loans"
+        ],
+        "li": "https://www.linkedin.com/in/naftali-kark/"
+      }
+    ],
     "ask": "",
-    "location": "Illinois",
-    "employees": 4,
-    "website": "https://kagecap.com",
+    "location": "Lincolnwood, IL",
+    "employees": 10,
+    "website": "kagecap.com",
     "linkedinUrl": "https://www.linkedin.com/company/kage-capital-llc/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "6160 N Cicero Ave, Suite 305, Chicago, IL 60646"
   },
   {
     "id": 1276,
@@ -35625,23 +35787,63 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Financial services company based in Massachusetts providing loans, funds, and financial advice to small businesses.",
+    "desc": "Katapulte is a Boston-based fintech startup founded in 2023 that provides working capital and receivables financing for emerging consumer packaged goods (CPG) businesses. The company targets CPG brands that have secured interest or purchase orders from major big-box retailers like Walmart but lack the upfront capital to fulfill those orders due to lengthy payment terms. Katapulte also operates a membership community connecting CPG founders for support and collaboration, providing access to an online community, in-person events, and expert guidance. The company went through the Techstars Build in Tulsa Fall 2023 accelerator and has raised approximately $320K in total funding from investors including Techstars, MassMutual Impact Investing, Visible Hands, and Black Ambition. Founded by Ambar Mehrotra, Paul Syng, and Michelle D.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Katapulte selected for Techstars Build in Tulsa Fall 2023 accelerator cohort",
+        "s": "Techstars",
+        "d": "2023"
+      },
+      {
+        "h": "Company raises $85K pre-seed from Techstars for CPG receivables financing platform",
+        "s": "Crunchbase",
+        "d": "2023"
+      },
+      {
+        "h": "Katapulte secures funding from Black Ambition to support emerging CPG brand lending",
+        "s": "Crunchbase",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Ambar Mehrotra",
+        "t": "Co-Founder",
+        "bg": "Co-founded Katapulte in 2023 along with Paul Syng and Michelle D. Part of the Techstars Build in Tulsa Fall 2023 cohort. Building a working capital and receivables financing platform focused on emerging CPG businesses that need upfront capital to fulfill purchase orders from major retailers like Walmart despite lengthy payment terms.",
+        "hooks": [
+          "Techstars Build in Tulsa 2023 cohort member",
+          "Building receivables financing for CPG brands",
+          "Solving big-box retailer payment term cash crunch"
+        ],
+        "li": "https://www.linkedin.com/company/katapulte"
+      },
+      {
+        "n": "Paul Syng",
+        "t": "Co-Founder",
+        "bg": "Co-founded Katapulte in 2023, bringing entrepreneurial experience to the CPG lending space. Part of the founding team that went through Techstars Build in Tulsa program. Focused on building receivables financing solutions to help emerging consumer packaged goods brands bridge the gap between retailer purchase orders and payment.",
+        "hooks": [
+          "Techstars-backed CPG fintech co-founder",
+          "Building bridge financing for retail purchase orders"
+        ],
+        "li": "https://ca.linkedin.com/in/paulsyng"
+      }
+    ],
     "ask": "",
-    "location": "Massachusetts",
-    "employees": 8,
-    "website": "https://katapulte.io",
+    "location": "Boston, MA",
+    "employees": 5,
+    "website": "katapulte.com",
     "linkedinUrl": "https://www.linkedin.com/company/katapulte/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Boston, MA"
   },
   {
     "id": 1277,
@@ -35652,23 +35854,49 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "MCA company founded in 2014, headquartered in NYC. Provides working capital through merchant cash advances and unsecured loans for small businesses, including those with bad credit, with 24-hour approvals across hundreds of industries.",
+    "desc": "Key Capital Group is a direct merchant cash advance funder founded in 2014 and headquartered in Staten Island, New York, with an additional office at 11 Broadway in Manhattan. The company specializes in providing tailored financing options including merchant cash advances and unsecured loans to businesses of all sizes across the United States, with a particular focus on high-risk and hard-to-fund businesses. Key Capital Group funds businesses that don't qualify for traditional bank loans due to bad credit, limited credit history, high-risk industry designation, prior defaults, or tax liens. The company does not require business plans or personal guarantees for MCA products. Applications take less than five minutes, funding decisions are typically made in 2-3 hours, and funds can be disbursed in as little as 24 hours. The company maintains an active ISO partnership program for deal flow.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Key Capital Group maintains dual office presence in Staten Island and Manhattan for business funding operations",
+        "s": "BBB",
+        "d": "2024"
+      },
+      {
+        "h": "Company specializes in funding high-risk businesses rejected by traditional lenders",
+        "s": "keycapitalfunding.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Neil Setti",
+        "t": "CEO",
+        "bg": "CEO of Key Capital Group with over 15 years of experience in sales and marketing. Founded the company in 2014 and has built it into a recognized provider of merchant cash advances and small business funding from Staten Island, New York. Brings experience from previous roles at AT&T before transitioning to alternative lending. Recognized by Forbes as one of their Best-In-State Wealth Advisors for 2024. Manages operations across two office locations in Staten Island and Manhattan.",
+        "hooks": [
+          "*Forbes Best-In-State Wealth Advisors 2024",
+          "Former AT&T sales veteran turned MCA entrepreneur",
+          "15+ years of sales and marketing experience",
+          "Built high-risk specialty funding operation from Staten Island"
+        ],
+        "li": "https://www.linkedin.com/in/neil-setti-a28b16257/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 13,
-    "website": "https://keycapitalfunding.com",
+    "location": "Staten Island, NY",
+    "employees": 25,
+    "website": "keycapitalfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/key-capital-group",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "3936 Amboy Rd, Staten Island, NY 10308"
   },
   {
     "id": 1278,
@@ -35679,23 +35907,64 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Medical lien funding company founded in 1996, based in Westlake Village, CA. National leader providing medical funding for personal injury patients and providers, working with 14,000+ attorneys and 10,000+ physicians. Backed by Parthenon Capital Partners.",
+    "desc": "Key Health Medical Solutions is the national leader in personal injury medical lien funding, headquartered in Westlake Village, California since its founding in 1996. The company funds thousands of medical accounts receivable each month from providers who deliver services to injured victims on a lien or letter of protection basis as part of personal injury claims. Key Health's proprietary MedLien platform supports funding for surgery, orthopedics, neurology, radiology, pain management, and physical therapy. The company also provides lien solutions, billing and medical legal software, and pharmacy cards to eliminate patient out-of-pocket costs. Key Health is backed by institutional investors including Bregal Sagemount, EW Healthcare Partners, Blackford Capital, and Convergent Capital Partners. The company was named to the Inc. 5000 list of fastest-growing private companies and employs approximately 51 people across its nationwide operations.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Key Health Medical Solutions acquired by consortium including Bregal Sagemount and EW Healthcare Partners",
+        "s": "Mergr",
+        "d": "2011"
+      },
+      {
+        "h": "Key Health named to Inc. 5000 fastest-growing private companies list",
+        "s": "Inc. Magazine",
+        "d": "2018"
+      },
+      {
+        "h": "Company continues as national leader in MedLien funding with PE backing from Bregal Sagemount",
+        "s": "Bregal Sagemount",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jeffrey Trigilio",
+        "t": "Founder, CEO & President",
+        "bg": "Founded Key Health Medical Solutions in 1996 and has led the company as CEO and President for nearly three decades. Holds a Bachelor of Science in Nuclear Medicine Technology from Rochester Institute of Technology (1975-1979). Previous experience at LINC Medical Imaging before founding Key Health. Also serves as Advisor and Director of Libra Solutions and Founder of JST Services, LLC. Under his leadership, Key Health was named to the Inc. 5000 list of fastest-growing private companies.",
+        "hooks": [
+          "*Nuclear medicine technologist turned healthcare finance founder",
+          "Rochester Institute of Technology graduate",
+          "Inc. 5000 fastest-growing private companies honoree",
+          "Nearly 30 years leading medical lien funding industry"
+        ],
+        "li": "https://www.linkedin.com/in/jeffrey-trigilio-2459aa7/"
+      },
+      {
+        "n": "Eric Schuller",
+        "t": "Principal",
+        "bg": "Serves as Principal at Key Health Medical Solutions, contributing to the company's operations as a national leader in medical lien funding. Part of the executive team that brings diverse experience spanning healthcare, insurance, legal, and financial services industries. Works from the company's Westlake Village, California headquarters overseeing strategic initiatives.",
+        "hooks": [
+          "Cross-industry background in healthcare and financial services",
+          "Principal at PE-backed medical lien funding leader"
+        ],
+        "li": "https://www.linkedin.com/company/key-health"
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 0,
-    "website": "https://www.keyhealth.net/",
+    "location": "Westlake Village, CA",
+    "employees": 51,
+    "website": "keyhealth.net",
     "linkedinUrl": "https://au.linkedin.com/company/keyhealth",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "30699 Russell Ranch Rd, Suite 175, Westlake Village, CA 91362"
   },
   {
     "id": 1279,
@@ -35706,23 +35975,66 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Invoice factoring marketplace for SMEs, launched in 2015 in California. Connects companies with investors to buy invoices for quick cash. May be defunct (0 employees).",
+    "desc": "Kickpay is a San Francisco-based fintech startup that operates a marketplace for buying and selling invoices, enabling SMEs and startups to get paid quickly by selling their accounts receivable to accredited investors. Founded in 2014 and backed by Y Combinator (W15 batch), the platform integrates with QuickBooks and banking software to allow businesses to easily push invoices onto an auction-style marketplace where buyers bid for them. Sellers receive most of their capital upfront, avoiding painful waits for payment, while investors can earn returns on their purchases. The company later pivoted to become a platform to finance inventory for e-commerce companies. Kickpay raised seed funding from multiple investors in 2014-2015 and is headquartered at 424 Clay St in San Francisco. The company currently has a small team of approximately 3-6 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Kickpay featured as invoice marketplace helping SMEs get paid quickly",
+        "s": "TechCrunch",
+        "d": "2015"
+      },
+      {
+        "h": "Supply chain financer Kickpay emerges from beta stage with QuickBooks integration",
+        "s": "PYMNTS.com",
+        "d": "2015"
+      },
+      {
+        "h": "Kickpay pivots from invoice marketplace to e-commerce inventory financing platform",
+        "s": "Y Combinator",
+        "d": "2023"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Andrew McCalister",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Kickpay in 2014, taking it through Y Combinator's W15 batch. Originally from Scotland, previously served as Director of Business Development at Heyzap (YC W09), enabling advertisers to boost discoverability and publishers to grow monetization. Holds a Masters in Engineering and Management from the University of Cambridge (UK) and a double major in Mechanical Engineering and Industrial Design for his Bachelor's degree. Identified the invoice payment pain point while working at Heyzap.",
+        "hooks": [
+          "*Cambridge University Masters in Engineering",
+          "Y Combinator W15 and W09 (Heyzap) alumnus",
+          "Scottish entrepreneur in Silicon Valley fintech",
+          "Mechanical engineering and industrial design double major"
+        ],
+        "li": "https://www.linkedin.com/company/kickpay"
+      },
+      {
+        "n": "Stefano Bernardi",
+        "t": "Co-Founder",
+        "bg": "Co-founded Kickpay and took it through Y Combinator W15. Previously first employee at Betable, where he helped scale the company to 40 people with $30M in funding. Background in venture capital at dPixel in Italy, shadowed Dave McClure at 500 Startups, and wrote for TechCrunch Europe. Founded Italian Startup Scene community. Currently GP of Unruly Capital after Kickpay.",
+        "hooks": [
+          "First employee at Betable ($30M raised, scaled to 40 people)",
+          "*Shadowed Dave McClure at 500 Startups",
+          "Former TechCrunch Europe contributor",
+          "Founded Italian Startup Scene community"
+        ],
+        "li": "https://www.linkedin.com/company/kickpay"
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 0,
-    "website": "http://kickpay.com",
+    "location": "San Francisco, CA",
+    "employees": 5,
+    "website": "kickpay.com",
     "linkedinUrl": "https://www.linkedin.com/company/kickpay",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "marketplace"
+    "category": "marketplace",
+    "full_address": "424 Clay St, San Francisco, CA 94111"
   },
   {
     "id": 1280,
@@ -35733,23 +36045,64 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Florida-based business funding company (Pizan Consulting LLC) in Miami, offering SBA term loans, lines of credit, equipment financing, and unsecured business financing across all 50 states and Puerto Rico. Reports 90% deal success rate.",
+    "desc": "King of Kings Funding is a Miami-based business financing company operating as Pizan Consulting LLC, providing SBA loans, lines of credit, equipment financing, and unsecured business financing across all 50 states and Puerto Rico. The company offers SBA 7(a), 504, SBA Bolt, and SBA Express loans with amounts up to $5M, and equipment financing from $50K to $100M at rates as low as 5.5%. King of Kings Funding also operates a credit repair division, with specialists having successfully aided over 29,000 clients in repairing personal credit within 90-120 days. The company claims a 90% success rate on all deals and maintains one of the largest networks of lenders in the country. Founded by Steven Barsolona (CEO) and co-founded by Paul Moon (CFO), the company is headquartered at 601 Brickell Key Drive in Miami's financial district.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "King of Kings Funding expands nationwide lending network across all 50 states and Puerto Rico",
+        "s": "kingofkingsfunding.com",
+        "d": "2024"
+      },
+      {
+        "h": "Company credit repair division surpasses 29,000 clients served with 90-120 day average timeframe",
+        "s": "kingofkingsfunding.com",
+        "d": "2024"
+      },
+      {
+        "h": "SBA introduces stricter underwriting standards effective June 2025 impacting SBA lenders nationwide",
+        "s": "SBA",
+        "d": "2025"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Steven Barsolona",
+        "t": "CEO & Founder",
+        "bg": "Founded King of Kings Funding and serves as CEO, building the company from Miami into a nationwide business funding operation covering all 50 states and Puerto Rico. Educated at Fordham University's Gabelli School of Business. Has built a team of credit specialists that has aided over 29,000 clients in personal credit repair. The company operates as Pizan Consulting LLC D.B.A King of Kings Funding, a Florida LLC, and claims a 90% success rate on all deals.",
+        "hooks": [
+          "Fordham Gabelli School of Business graduate",
+          "Built credit repair operation serving 29,000+ clients",
+          "90% deal success rate across 50 states and Puerto Rico",
+          "Miami-based founder in SBA and equipment financing"
+        ],
+        "li": "https://www.linkedin.com/in/steven-barsolona-5700b8214/"
+      },
+      {
+        "n": "Paul Moon",
+        "t": "CFO & Co-Founder",
+        "bg": "Co-founded King of Kings Funding alongside Steven Barsolona and serves as Chief Financial Officer. Oversees the company's financial operations, managing the lending portfolio across SBA loans, lines of credit, and equipment financing products. Works from the company's Miami Brickell Key headquarters managing financial planning for a company that funds millions monthly.",
+        "hooks": [
+          "CFO managing multi-million monthly funding operations",
+          "Co-founded Miami business lending operation"
+        ],
+        "li": "https://www.linkedin.com/company/king-of-kings-funding"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 5,
-    "website": "https://kingofkingsfunding.com",
+    "location": "Miami, FL",
+    "employees": 15,
+    "website": "kingofkingsfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/king-of-kings-funding/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "601 Brickell Key Dr, Suite 700, Miami, FL 33131"
   },
   {
     "id": 1281,
@@ -35760,23 +36113,43 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "MCA marketplace founded in 2018 in NYC, specializing in micro-advances from $1.5K to $50K+. Offers approval in minutes with same-day funding, 12-point broker commissions, and 7-day customer support.",
+    "desc": "Kodiak Funding is a privately held merchant cash advance direct lender headquartered in Melville, New York, founded in 2018. The company specializes in micro-advances ranging from $1,500 to $10,000, serving small-to-medium sized business owners who need working capital. Kodiak also offers receivables financing. The company operates an ISO partner program offering 12 points commission on all deals with bonus incentives based on volume and full commission payout on renewals. Kodiak is a small operation with 2-10 employees focused on the micro-advance niche of the MCA market.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Kodiak Funding continues to operate as a micro-advance MCA direct lender in the New York market",
+        "s": "Company Website",
+        "d": "2025-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Lud Papp",
+        "t": "Owner & CEO",
+        "bg": "Founded Kodiak Funding in 2018 as a merchant cash advance direct lender specializing in micro-advances. Holds a Bachelor of Science in Hospitality Management from Penn State University (2006-2010). Skills include merchant cash advance underwriting, data analysis, risk analysis, data modeling, and credit analysis. Transitioned from hospitality to financial services entrepreneurship, building Kodiak into a focused micro-advance provider serving small-to-medium businesses.",
+        "hooks": [
+          "Penn State Hospitality Management graduate turned MCA entrepreneur",
+          "Built a niche micro-advance model funding $1,500-$10,000 deals",
+          "Pays ISOs 12 points commission plus full renewal payouts"
+        ],
+        "li": "https://www.linkedin.com/in/ludpapp/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 1,
-    "website": "https://kodiakfunding.com",
+    "location": "Melville, New York",
+    "employees": 5,
+    "website": "https://www.kodiakfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/kodiak-funding",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "iso"
+    "category": "funder",
+    "full_address": "Melville, NY 11747"
   },
   {
     "id": 1282,
@@ -35787,7 +36160,7 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in Georgia. Limited public information available; may be defunct (0 employees).",
+    "desc": "Kreative Capital Global is a business funding company operating in the merchant cash advance and alternative lending space. The company appears to be a smaller or newer entrant in the MCA market. Very limited public information is available — the company does not appear in major industry directories such as FunderIntel or deBanked, and no LinkedIn company profile or ZoomInfo listing could be found. No leadership team, funding details, or operational metrics are publicly available.",
     "notes": "",
     "news": [],
     "ice": "",
@@ -35795,15 +36168,17 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "Georgia",
-    "employees": 0,
-    "website": "https://kreativecapitialglobal.com",
+    "location": "United States",
+    "employees": 5,
+    "website": "",
     "linkedinUrl": "https://www.linkedin.com/company/kreative-capital-global/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": ""
   },
   {
     "id": 1283,
@@ -35814,23 +36189,43 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in New York. Limited public information available; may be defunct (0 employees).",
+    "desc": "Krown Capital Group Inc. is a BBB-accredited small business funding company headquartered in Hauppauge, New York, incorporated on October 21, 2019. The company operates as both a direct funder and strategic partner, specializing in merchant cash advances that allow clients to secure working capital in 24 hours or less. Krown Capital simplifies the funding process with a one-page application and quick approvals, primarily serving businesses with at least six months of operation. The company maintains top-rated scores on Trustpilot and emphasizes transparent, straightforward lending without hidden terms. Founded in 2018 per some sources, with formal incorporation in 2019.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Krown Capital Group maintains BBB accreditation and top-rated Trustpilot reviews",
+        "s": "BBB / Trustpilot",
+        "d": "2025-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Eric Gokstein",
+        "t": "President",
+        "bg": "Serves as President of Krown Capital Group Inc., which he helped establish in 2019 in Hauppauge, New York. Previously associated with RBS Funding. Under his leadership, Krown Capital has achieved BBB accreditation and top-rated scores on Trustpilot. Focuses on providing merchant cash advance funding to small businesses with same-day working capital solutions.",
+        "hooks": [
+          "Previously at RBS Funding before founding Krown Capital",
+          "BBB accredited with top Trustpilot ratings",
+          "Built same-day funding operation serving SMBs since 2019"
+        ],
+        "li": "https://www.linkedin.com/in/eric-gokstein-21009459"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 0,
+    "location": "Hauppauge, New York",
+    "employees": 15,
     "website": "https://krowncapital.com",
     "linkedinUrl": "https://www.linkedin.com/in/krown-capital-group/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "527 Townline Rd, Hauppauge, NY 11788"
   },
   {
     "id": 1284,
@@ -35841,23 +36236,61 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in New York. Limited public information available; may be defunct (0 employees).",
+    "desc": "Lanafi is a merchant cash advance platform operated by App Funding Beta LLC, headquartered in New York City. The company provides tailored financing solutions for small businesses, offering merchant cash advances ranging from $10,000 to $5 million. Lanafi operates a six-step funding process (Application, Assessment, Approval, Agreement, Funding, Repayment) and maintains an ISO Partner Program to drive deal flow. App Funding Beta LLC is registered with the BBB in New York as a factoring service. The company positions itself as a fintech-forward MCA provider with a streamlined digital application process, differentiating from traditional MCA funders through its technology-enabled approach.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "App Funding Beta LLC (Lanafi) operates as MCA funder with ISO partner program in New York",
+        "s": "BBB / Company Website",
+        "d": "2025-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Ben Sanders",
+        "t": "CEO",
+        "bg": "Serves as CEO of App Funding Beta LLC, which operates the Lanafi merchant cash advance platform. Based in New York. Leads a company focused on providing tailored financing solutions including merchant cash advances ranging from $10,000 to $5 million. Oversees both the direct funding operations and the ISO Partner Program.",
+        "hooks": [
+          "Runs dual-brand operation: App Funding Beta and Lanafi",
+          "Offers MCA funding up to $5 million through fintech-style platform",
+          "Built ISO Partner Program for collaborative deal flow"
+        ],
+        "li": "https://www.linkedin.com/company/app-funding-beta-llc"
+      },
+      {
+        "n": "Yosef Zavulunov",
+        "t": "Director",
+        "bg": "Serves as a director at App Funding Beta LLC, the parent entity behind the Lanafi platform. Based in New York. Involved in the company's merchant cash advance operations and business development.",
+        "hooks": [
+          "New York-based director at the App Funding Beta / Lanafi operation"
+        ],
+        "li": "https://www.linkedin.com/in/yosef-zavulunov-8a98305b/"
+      },
+      {
+        "n": "David Levin",
+        "t": "ISO Representative",
+        "bg": "Seasoned ISO representative working with App Funding Beta LLC. Based in New York. Focuses on business development and partner relationships for the Lanafi MCA platform.",
+        "hooks": [
+          "Experienced ISO rep building deal flow for the Lanafi/App Funding Beta platform"
+        ],
+        "li": "https://www.linkedin.com/in/david-levin-b1a0aa28a/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 0,
+    "location": "New York, New York",
+    "employees": 15,
     "website": "https://lanafi.com",
     "linkedinUrl": "http://linkedin.com/company/lanafi",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "29 West 36th St, New York, NY 10018"
   },
   {
     "id": 1285,
@@ -35868,23 +36301,42 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "DSCR loan provider based in New York, specializing in financing solutions for real estate investors and small business owners. Offers non-qualified mortgage lending with extensive DSCR product suite.",
+    "desc": "Launch Financial Group is a mortgage lending company headquartered in Ballston Lake, New York, specializing in financing for real estate investors and small business owners. The company offers DSCR loans, bridge loans, hard money loans, bank statement mortgages, commercial real estate loans, fix-and-flip loans, renovation loans, mixed-use property loans, and Airbnb financing. With over 70 years of combined experience, the team focuses on serving independent real estate investors, self-employed entrepreneurs, and small business owners who often do not qualify for traditional bank loans. Note: Launch Financial Group is primarily a real estate/mortgage lender rather than a merchant cash advance funder. Its classification as a funder in the MCA space may need verification — it appears to be a real estate financing company.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Launch Financial Group expands access to flexible real estate financing for investors and small business owners",
+        "s": "OpenPR",
+        "d": "2025-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Christian Dickinson",
+        "t": "Mortgage Investment Banker",
+        "bg": "Serves as a Mortgage Investment Banker at Launch Financial Group in Ballston Lake, New York. Works with real estate investors and small business owners to secure DSCR loans, bridge loans, hard money loans, and other non-traditional financing products. Part of a team with over 70 years of combined mortgage lending experience.",
+        "hooks": [
+          "Specializes in DSCR and hard money loans for real estate investors",
+          "Part of team with 70+ years of combined mortgage lending experience"
+        ],
+        "li": "https://www.linkedin.com/company/launch-financial-group"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 12,
-    "website": "https://www.launchfg.com/",
+    "location": "Ballston Lake, New York",
+    "employees": 10,
+    "website": "https://www.launchfg.com",
     "linkedinUrl": "https://www.linkedin.com/company/launch-financial-group/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "331 Ushers Rd, Suite 106, Ballston Lake, NY 12019"
   },
   {
     "id": 1286,
@@ -35967,23 +36419,66 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Commercial funding solutions provider based in New York. Offers various business funding products including MCA, hiring ISO and telemarketer sales reps.",
+    "desc": "LendBug is a privately run direct lender based in New York City, founded in February 2021 and incorporated as Lend Bug LLC. The company provides merchant cash advances to small businesses across industries including retail, healthcare, construction, and technology. LendBug accepts B, C, and D paper (not credit-score dependent), with funding amounts from $10,000 to $500,000 and terms up to 140 days. The company positions itself with the tagline 'When Your Bank Says No, LendBug Says Yes!' and differentiates through fast response times (as low as 60 minutes) and its willingness to fund lower-credit borrowers. LendBug has 11-50 employees per LinkedIn and is registered with the BBB as a financial consultants and factoring services firm.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "LendBug opens ISO partner program for new independent sales organizations",
+        "s": "DailyFunder",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "LendBug launches new asset funding program expanding beyond traditional MCA",
+        "s": "DailyFunder",
+        "d": "2024-06-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Michael Rafailov",
+        "t": "Director, ISO Relations",
+        "bg": "Serves as Director of ISO Relations at LendBug, managing partnerships with independent sales organizations. Based in New York. Plays a key role in the company's deal flow by managing ISO partnerships and serving as a primary point of contact for broker relationships. Previously associated with the company's growth from startup in 2021.",
+        "hooks": [
+          "Manages ISO partner relationships for LendBug's direct lending operation",
+          "Key contact for brokers seeking $10K-$500K MCA deals"
+        ],
+        "li": "https://www.linkedin.com/company/lendbug"
+      },
+      {
+        "n": "Michael Ross",
+        "t": "ISO Manager",
+        "bg": "Serves as an ISO Manager at LendBug in New York. Manages ISO partner relationships and deal submissions. Contact point for ISOs seeking to partner with LendBug for merchant cash advance funding.",
+        "hooks": [
+          "ISO contact for LendBug's B/C/D paper acceptance program",
+          "Manages deals with 60-minute response time for ISOs"
+        ],
+        "li": "https://www.linkedin.com/company/lendbug"
+      },
+      {
+        "n": "Kevin Woodley",
+        "t": "Senior ISO Manager",
+        "bg": "Serves as Senior ISO Manager at LendBug. Focuses on building and managing ISO partnerships for the company's merchant cash advance business. Part of the leadership team driving LendBug's growth in the direct lending space.",
+        "hooks": [
+          "Senior ISO relationship manager at LendBug direct lending operation"
+        ],
+        "li": "https://www.linkedin.com/in/kevin-woodley-728049202"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 16,
+    "location": "New York, New York",
+    "employees": 17,
     "website": "https://lendbug.com",
     "linkedinUrl": "https://www.linkedin.com/company/lendbug/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "iso"
+    "category": "iso",
+    "full_address": "New York, NY 10018"
   },
   {
     "id": 1288,
@@ -35994,23 +36489,59 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in New York. Limited public information available.",
+    "desc": "Lendefied Inc. is a fee-free business lending marketplace headquartered in Melville, New York, founded in 2024. The company operates a unique two-arm business model combining financial technology with fractional executive services — every funded loan includes three months of complimentary executive support (CFOs, CEOs, CMOs). Lendefied is certified through the American Bankers Association and offers a range of products including SBA loans, term loans, business lines of credit, equipment financing, business cash advances, accounts receivable financing, and B2B revolving credit facilities. The company differentiates through its no-fee model and post-funding support, working closely with clients throughout the lending process. Lendefied employs approximately 8 people and has been operating since 2024.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Lendefied launches as fee-free business lending marketplace with bundled fractional executive services",
+        "s": "Company Website",
+        "d": "2024-06-01"
+      },
+      {
+        "h": "Lendefied CEO Devin Gambino featured in The Top 100 Magazine",
+        "s": "The Top 100 Magazine",
+        "d": "2025-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Devin Gambino",
+        "t": "Founder & CEO",
+        "bg": "Founded Lendefied in 2024 as a fee-free business lending marketplace. Pioneered a two-arm business model combining financial technology with fractional executive services — every funded loan includes three months of complimentary executive support (CFO, CEO, CMO). Previously worked in business finance before launching Lendefied. Named to The Top 100 Magazine. Based in the New York City metropolitan area.",
+        "hooks": [
+          "Named to The Top 100 Magazine as emerging business leader",
+          "Invented unique model: MCA loans bundled with 3 months free fractional executive services",
+          "Built fee-free lending marketplace with ABA certification"
+        ],
+        "li": "https://www.linkedin.com/in/devingambino/"
+      },
+      {
+        "n": "Shawn Horning",
+        "t": "Co-Founder & President",
+        "bg": "Co-founded Lendefied with Devin Gambino. Has six years of experience in the business finance space, having successfully assisted over 600 businesses in growing and thriving by providing access to capital. Previously founded a mobility scooter company serving the elderly and disabled before pivoting to fintech. Attended William Floyd High School. Based in the New York City metropolitan area. Enjoys golf, hiking in the Catskills, and spending time with his dog Marvin.",
+        "hooks": [
+          "Helped 600+ businesses access capital in six years before co-founding Lendefied",
+          "Previously founded a mobility scooter company before pivoting to fintech",
+          "Avid golfer and Catskills hiker based in the NYC metro area"
+        ],
+        "li": "https://www.linkedin.com/in/shawn-horning-50050b1a1/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 11,
-    "website": "https://lendefied.com/",
+    "location": "Melville, New York",
+    "employees": 8,
+    "website": "https://www.lendefied.com",
     "linkedinUrl": "https://www.linkedin.com/company/lendefied/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "200 Broadhollow Rd, Suite 207, Melville, NY 11747"
   },
   {
     "id": 1289,
@@ -36021,23 +36552,52 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Swiss crowdlending platform founded in 2016, based in Nyon, Switzerland. Connects borrowers and investors for personal loans, with 1,500+ investors and CHF 5M+ financed. Not a US small business lender.",
+    "desc": "Lendora Capital LLC is a merchant cash advance provider headquartered in Beverly Hills, California, founded in 2019. The company offers MCAs ranging from $5,000 to $500,000 with fixed fees (no interest rate or variable APR), repayment terms of 6 to 18 months, and same-day funding for applications completed before 4:15 PM EST. Lendora positions itself as a streamlined alternative to traditional bank loans, with funds direct-deposited as a lump sum into the business bank account. The company maintains an expert team of underwriters and ISO relationship managers focused on fast approvals. Lendora has 1-5 employees per corporate records, though LinkedIn indicates 11-50. The company operates from a Beverly Hills office at 8484 Wilshire Blvd.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Lendora Capital continues MCA operations from Beverly Hills serving small businesses nationwide",
+        "s": "Company Website",
+        "d": "2025-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Audrey Koenig",
+        "t": "Director of Business Development",
+        "bg": "Serves as Director of Business Development at Lendora Capital LLC in Beverly Hills, California. Responsible for ISO partnership development and business growth. Key contact for ISO partners seeking to submit merchant cash advance deals through Lendora's platform.",
+        "hooks": [
+          "Leads business development from Beverly Hills office for Lendora's MCA operations",
+          "Primary contact for ISO partnership inquiries"
+        ],
+        "li": "https://www.linkedin.com/company/lendora-capital"
+      },
+      {
+        "n": "Benjamin Amar",
+        "t": "Director of Business Development",
+        "bg": "Serves as Director of Business Development at Lendora Capital LLC. Focuses on building ISO relationships and expanding Lendora's merchant cash advance deal flow. Based in the Los Angeles area and reachable directly at ben@lendora.com.",
+        "hooks": [
+          "Drives ISO deal flow for Lendora's Beverly Hills-based MCA operation",
+          "Directly accessible business development leader for partner outreach"
+        ],
+        "li": "https://www.linkedin.com/company/lendora-capital"
+      }
+    ],
     "ask": "",
-    "location": "Nyon, Vaud",
-    "employees": 4,
+    "location": "Beverly Hills, California",
+    "employees": 10,
     "website": "https://lendora.com",
     "linkedinUrl": "https://www.linkedin.com/company/lendora/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "iso"
+    "category": "iso",
+    "full_address": "8484 Wilshire Blvd, Beverly Hills, CA 90211"
   },
   {
     "id": 1290,
@@ -36048,7 +36608,7 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company. Limited public information available; may be defunct (0 employees).",
+    "desc": "LendOut is a business funding company that provides working capital options for small businesses. Operating at lend-out.com, the company offers funding up to $20 million with quick approvals and funds available in as little as 24 hours. LendOut positions itself as a streamlined working capital provider focused on simplifying the funding process with minimal documentation requirements and customized financial support. Very limited public information is available about the company's leadership, founding team, or operational details. No LinkedIn company profile, ZoomInfo listing, or industry directory presence could be identified. The company appears to be a smaller or newer entrant in the merchant cash advance and working capital space.",
     "notes": "",
     "news": [],
     "ice": "",
@@ -36056,14 +36616,16 @@
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://lend-out.com/",
+    "location": "United States",
+    "employees": 5,
+    "website": "https://lend-out.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": ""
   },
   {
     "id": 1291,
@@ -36074,23 +36636,63 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Fixed-rate small business loan provider founded in 2021, based in Glendale, AZ. Provides fixed rate loans and financial solutions to SMBs with quick approvals and flexible terms. Expanding internationally to India.",
+    "desc": "LendThrive is a fintech lending platform founded in 2021 and operated as part of the AVANA Companies family, headquartered in Glendale, Arizona. The company provides fixed-rate small business term loans up to $150,000 designed for short-term working capital and equipment needs. LendThrive offers clear pricing with no prepayment penalties, positioning itself as a transparent alternative to merchant cash advances and variable-rate products. AVANA Companies was founded in 2002 by brothers Sundip and Sanat Patel and has grown into a diversified ESG lending family that includes AVANA Capital (commercial real estate and SBA loans), AVANA CUSO (credit union lending services), LendThrive (small business term loans), and EqualSeat (investment platform). AVANA Companies has been recognized for its cannabis industry lending partnership with Safe Harbor Financial and Partner Colorado Credit Union. Note: LendThrive is a product of AVANA Companies; its connection to Accion Opportunity Fund mentioned in the user brief could not be verified through web research — they appear to be separate organizations operating independently in the small business lending space.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "AVANA Companies celebrates 20 years of supporting small business owners across lending platforms",
+        "s": "AVANA Capital",
+        "d": "2024-06-01"
+      },
+      {
+        "h": "AVANA Companies recognized as finalist for Best FinTech Partnership for Cannabis Lending with Safe Harbor Financial",
+        "s": "AVANA Capital",
+        "d": "2024-03-01"
+      },
+      {
+        "h": "AVANA Companies CEO Sundip Patel recognized as Most Admired Leader by Phoenix Business Journal",
+        "s": "Phoenix Business Journal",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Sundip Patel",
+        "t": "CEO & Co-Founder, AVANA Companies",
+        "bg": "Co-founded AVANA Companies in 2002 with his brother Sanat Patel. Has grown AVANA into a family of ESG lending and investment platforms including AVANA Capital, LendThrive, AVANA CUSO, and EqualSeat. Recognized as a Most Admired Leader by the Phoenix Business Journal. Oversees LendThrive's fixed-rate small business lending operations alongside AVANA Capital's commercial real estate and SBA lending platforms. Based in Glendale, Arizona.",
+        "hooks": [
+          "*Recognized as Most Admired Leader by Phoenix Business Journal",
+          "Co-founded AVANA Companies with brother Sanat Patel in 2002 — now 20+ years in business",
+          "Built ESG-focused lending family spanning real estate, small business, and credit union markets"
+        ],
+        "li": "https://www.linkedin.com/in/sundippatel/"
+      },
+      {
+        "n": "Sanat Patel",
+        "t": "Co-Founder, AVANA Companies",
+        "bg": "Co-founded AVANA Companies in 2002 alongside his brother Sundip Patel. Serves in a leadership capacity across AVANA's family of lending and investment platforms. Part of the founding team that has grown AVANA into a diversified ESG lending organization over two decades.",
+        "hooks": [
+          "Brother-duo co-founder of AVANA Companies alongside Sundip Patel",
+          "Part of team that built 20+ year ESG lending and investment platform"
+        ],
+        "li": "https://www.linkedin.com/company/avana-companies"
+      }
+    ],
     "ask": "",
-    "location": "Arizona",
-    "employees": 0,
+    "location": "Glendale, Arizona",
+    "employees": 75,
     "website": "https://lendthrive.com",
     "linkedinUrl": "https://www.linkedin.com/company/lendthrive/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "17235 N 75th Ave, Suite E-145, Glendale, AZ 85308"
   },
   {
     "id": 1292,
@@ -36101,23 +36703,37 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "SBA franchise lending specialist based in New York. Helps franchisees with SBA loan applications, pre-qualification in 24 hours, business plans, and financial projections.",
+    "desc": "LenPick is an SBA loan brokerage founded in 2020 that specializes in helping new franchise owners secure SBA startup loans. The company is not a direct SBA lender but acts as a loan broker working with a network of 25+ SBA lenders, some of which are preferred SBA lenders. LenPick offers qualification within 24 hours and facilitates loans ranging from $50,000 to $5 million to cover franchise fees, equipment, marketing, staffing, and other startup costs. The company is headquartered in Selden, New York and has approximately 5 employees.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Porsha Brooks",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of LenPick since 2020. Previously served as Executive Director of Finance at Shore Funding Solutions. Also serves as Chairwoman of the Greater Gordon Heights Chamber of Commerce, where she is dedicated to helping community members become franchise owners. Based in Selden, New York.",
+        "li": "https://www.linkedin.com/in/porsha-b/",
+        "hooks": [
+          "Chairwoman of Greater Gordon Heights Chamber of Commerce",
+          "Previously Executive Director of Finance at Shore Funding Solutions",
+          "Built network of 25+ SBA lenders for franchise startups"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "New York",
+    "location": "Selden, NY",
     "employees": 5,
     "website": "https://lenpick.com",
     "linkedinUrl": "https://www.linkedin.com/company/lenpick",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Selden, NY 11784"
   },
   {
     "id": 1293,
@@ -36128,23 +36744,37 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Revenue-based financing company based in Hollywood, FL, serving businesses across the US. Offers quick business finance through purchasing future receivables, evaluating sales performance and bank activity rather than credit history. Rated 4.9/5 on Google.",
+    "desc": "Lexio Capital is a direct funder based in Hollywood, Florida that provides revenue-based financing to small businesses. The company purchases future receivables at a discounted price, offering an alternative to conventional debt financing without fixed interest rates or set monthly payments. Approval is based more on sales consistency than credit history. Lexio Capital serves a diverse range of industries and emphasizes speed and ease of qualification. The company has 11-50 employees and focuses heavily on supporting ISO partners with competitive offers and fast processing.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Nikolaus Benigni",
+        "t": "Chief Operating Officer",
+        "bg": "COO of Lexio Capital based in Hollywood, Florida. Previously founded NWB Ventures. Holds a Diploma from Secondary School for Hospitality and Tourism MODUL and a Bachelor of Arts from FHW Fachhochschul-Studiengänge in Vienna, Austria. Background spans venture capital, private equity, and finance.",
+        "li": "https://www.linkedin.com/in/nikolaus-b-011a4b81/",
+        "hooks": [
+          "Previously founded NWB Ventures",
+          "Austrian-educated — studied hospitality and tourism before finance",
+          "Venture capital and private equity background"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 6,
+    "location": "Hollywood, FL",
+    "employees": 25,
     "website": "https://lexiocapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/lexiocapital/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "2750 N 29th Ave, Suite 124, Hollywood, FL 33020"
   },
   {
     "id": 1294,
@@ -36155,23 +36785,45 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Direct MCA lender based in Garden City, NY, operating since approximately 2019. Provides business funding including startup funding, lines of credit, invoice financing, equipment loans, and merchant cash advances.",
+    "desc": "Lifetime Funding LLC is a business financing company based in Garden City, New York that provides unsecured, customized short-term and term loans to small businesses across various industries. The company offers a wide range of funding solutions including startup funding, lines of credit, invoice financing, equipment loans, and merchant cash advances. Lifetime Funding has approximately 16 employees and also provides credit card and transaction processing solutions. The company focuses on connecting businesses with working capital and emphasizes personalized service with competitive rates.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Michael Kand",
+        "t": "Managing Partner & CEO",
+        "bg": "Managing Partner and CEO of Lifetime Funding with over 15 years of experience in the financial industry. Has played a key role in driving the company's growth and innovation in credit card processing and business financing. Based in Garden City, New York.",
+        "li": "https://www.linkedin.com/in/michael-kand-6735b1143",
+        "hooks": [
+          "15+ years in financial industry",
+          "Dual focus on payments processing and business lending"
+        ]
+      },
+      {
+        "n": "Nathan Kand",
+        "t": "Business Development Executive",
+        "bg": "Business Development Executive at Lifetime Funding LLC, responsible for growing the company's client base and partnership network. Part of the Kand family leadership team at the company.",
+        "li": "",
+        "hooks": [
+          "Family business leadership team at Lifetime Funding"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "New York",
+    "location": "Garden City, NY",
     "employees": 16,
-    "website": "https://lifetimefundingllc.com/",
+    "website": "https://lifetimefundingllc.com",
     "linkedinUrl": "https://www.linkedin.com/company/lifetime-funding-llc/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "585 Stewart Ave, Suite L90, Garden City, NY 11530"
   },
   {
     "id": 1296,
@@ -36182,23 +36834,46 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Business line of credit marketplace connecting small businesses with 60+ small-business-friendly banks. Streamlines the application process to a single 10-minute form for revolving business lines of credit.",
+    "desc": "Line of Credit Depot is a business lending brokerage based in New York that connects small businesses with revolving business lines of credit from a network of over 60 banks and lenders. The company operates as an ISO, offering a streamlined 10-minute application process with no credit check required. Line of Credit Depot facilitates a variety of business capital products including working capital, merchant cash advances, purchase order financing, SBA 7(a) loans, equipment financing, senior debt, asset-based lending, and invoice factoring. Typical funding timeline ranges from 24 hours to one week. Co-founded by Wharton MBA Matthew Elling and digital strategist Alexi Philippoussis.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Matthew Elling",
+        "t": "Co-Founder & Consultant",
+        "bg": "Co-Founder and Consultant at Line of Credit Depot. Holds an MBA in Accounting and Finance from the University of Pennsylvania's Wharton School (2013-2014). Also works as a small business lender at American Capital Group. Known for thought leadership on filling the void of bank lending to small businesses.",
+        "li": "https://www.linkedin.com/in/mattelling/",
+        "hooks": [
+          "Wharton MBA in Accounting and Finance",
+          "Also works at American Capital Group as small business lender",
+          "Published thought leadership on bank lending gaps for SMBs"
+        ]
+      },
+      {
+        "n": "Alexi Philippoussis",
+        "t": "Co-Founder, Digital Architect & Marketing Strategist",
+        "bg": "Co-Founder of Line of Credit Depot serving as Digital Architect and Marketing Strategist. Responsible for the company's digital presence and marketing strategy.",
+        "li": "",
+        "hooks": [
+          "Digital architecture and marketing strategy background"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "#N/A",
-    "employees": 6,
-    "website": "https://www.lineofcreditdepot.com/",
+    "location": "New York, NY",
+    "employees": 10,
+    "website": "https://www.lineofcreditdepot.com",
     "linkedinUrl": "https://www.linkedin.com/company/line-of-credit-depot/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "iso"
+    "category": "iso",
+    "full_address": "New York, NY"
   },
   {
     "id": 1297,
@@ -36209,23 +36884,43 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in Florida. Limited public information available; may be defunct (0 employees).",
+    "desc": "Liquidibee is a fintech company founded in 2020 that directly provides non-dilutive working capital to small and medium-sized businesses nationwide. The company is a privately held, ISO-centric specialty finance provider that directly funds merchant cash advance (MCA) products. In May 2022, Liquidibee secured a multi-draw credit facility with borrowing capacity up to $50 million to expand operations and strengthen its ability to provide immediate funding. The company has heavily invested in fintech infrastructure, banking integrations, syndication capabilities, full white-labeling, underwriting staff, and customer support to empower its ISO partners and provide merchants with same-day approvals and funding.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Liquidibee secures up to $50 million credit facility to expand business operations",
+        "s": "PR Newswire",
+        "d": "2022-05"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Dylan J. Howell",
+        "t": "Chief Executive Officer",
+        "bg": "CEO of Liquidibee based in New York City. Leads the company's strategic direction and operations including the buildout of fintech infrastructure, ISO partnerships, and direct MCA funding capabilities. Under his leadership, Liquidibee secured a $50 million credit facility in 2022.",
+        "li": "https://www.linkedin.com/in/dylan-j-howell-05a3b123a/",
+        "hooks": [
+          "Secured $50M credit facility in 2022 to scale MCA funding",
+          "Built ISO-centric fintech platform with same-day funding",
+          "Member of Revenue Based Finance Coalition"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 0,
-    "website": "https://liquidibee.com",
+    "location": "New York, NY",
+    "employees": 30,
+    "website": "https://www.liquidibee.com",
     "linkedinUrl": "https://www.linkedin.com/in/liquidibee-l-58045b217/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "295 Madison Ave, New York, NY 10017"
   },
   {
     "id": 1298,
@@ -36241,23 +36936,58 @@
         "t": "Principal"
       }
     ],
-    "desc": "Private lending and investment firm based in Los Angeles, CA. Provides short-term asset-backed real estate loans (1st and 2nd deed) secured by income properties. Operates in AZ, CA, NV, OR, UT, and WA.",
+    "desc": "LK Secured Lending & Investments is a private lending and investment firm founded in 2019 in Thousand Oaks, California. The company provides asset-backed lending opportunities focusing on commercial real estate loans including bridge loans, fix-and-flip loans, and construction financing. For investors, LK offers a debt-only fund structure that places investors in a senior position for capital protection and consistent returns, positioning itself as a safer alternative to real estate funds and REITs. The fund was organized to make, purchase, originate, fund, acquire, and sell loans secured by interests in real or personal property throughout the United States. Co-founded by banking expert Barry Levenson, investor Paul Kessler, and Harvard Law graduate Diana Derycz-Kessler.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Barry Levenson",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO and Co-Founder of LK Secured Lending based in Thousand Oaks, California. A visionary leader and strategist with over 30 years of hands-on experience in banking, real estate, and financial services. Deep expertise in achieving high-growth objectives in fast-growth organizations. The company idea began with his vision for a safer approach to real estate-backed investing.",
+        "li": "https://www.linkedin.com/in/barry-levenson-228527/",
+        "hooks": [
+          "30+ years in banking and real estate",
+          "Built debt-only fund structure as safer REIT alternative",
+          "Based in Thousand Oaks — deep LA area real estate expertise"
+        ]
+      },
+      {
+        "n": "Paul Kessler",
+        "t": "Founding Principal",
+        "bg": "Founding Principal of LK Secured Lending & Investments. After decades of navigating market volatility and living through major recessions, Paul sought a safer, more predictable approach to investing. His experience through economic cycles informed the company's conservative, asset-backed lending model.",
+        "li": "",
+        "hooks": [
+          "Decades navigating market volatility and recessions",
+          "Sought safer investing approach — led to founding LK"
+        ]
+      },
+      {
+        "n": "Diana Derycz-Kessler",
+        "t": "Founder & Director",
+        "bg": "Founder and Director of LK Secured Lending. Earned her J.D. from Harvard Law School, a master's degree from Stanford University, and a Bachelor of Arts from UCLA. Background in law and investing across multiple sectors, she recognized real estate lending as the most stable and predictable investment option.",
+        "li": "",
+        "hooks": [
+          "*Harvard Law School J.D., Stanford master's, UCLA BA",
+          "Legal background across multiple investment sectors",
+          "Identified real estate lending as most stable investment class"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 5,
+    "location": "Thousand Oaks, CA",
+    "employees": 25,
     "website": "https://lksecuredlending.com",
     "linkedinUrl": "https://www.linkedin.com/company/lksecuredlending/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "555 Marin St, Suite 140, Thousand Oaks, CA 91360"
   },
   {
     "id": 1300,
@@ -36268,23 +36998,48 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Fintech company based in Massachusetts offering flexible lines of credit and bill pay services for small businesses. Fast online application with same-day approval and funding, soft credit pull only, no minimum FICO required. Also offers MCA syndication for investors.",
+    "desc": "Loot Financial Services Corp is a seed-stage fintech company founded in 2021 in Boston that provides a fully automated online lending platform for small businesses. The company offers quick, flexible credit solutions including business lines of credit and bill pay services, with applications completed in five minutes, approval in hours, and near-instant funding. Loot features a 50% discount on outstanding fees for early payoff. The company raised $250K in a Seed round in October 2023. Co-founded by John Cain (a serial entrepreneur and former COO of Forward Financing) and Luke Peake, both of whom also serve on LoanPro's strategic advisory board.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "John Cain",
+        "t": "Co-Founder & CEO",
+        "bg": "Serial entrepreneur and Co-Founder/CEO of Loot Financial Services. Previously Co-Founder and COO of Forward Financing (2012-2018), where he specialized in making capital accessible to underserved small businesses. Earlier career as Senior Financial Analyst at Burger King Corporation and Investment Banking Analyst at Rothschild. Also co-founded Payout and owned Lamberts Cove Inn, a boutique resort on Martha's Vineyard. Holds a BBA from Babson College.",
+        "li": "https://www.linkedin.com/in/johnmichaelcain/",
+        "hooks": [
+          "*Co-Founded Forward Financing — scaled MCA lending 2012-2018",
+          "Babson College BBA — serial entrepreneur (3x fintech founder)",
+          "Owned boutique resort on Martha's Vineyard",
+          "Investment banking start at Rothschild"
+        ]
+      },
+      {
+        "n": "Luke Peake",
+        "t": "Co-Founder",
+        "bg": "Co-Founder of Loot Financial Services Corp. Part of the founding team alongside John Cain. Both co-founders serve on LoanPro's strategic advisory board. Based in Boston, Massachusetts.",
+        "li": "",
+        "hooks": [
+          "LoanPro strategic advisory board member",
+          "Co-built automated lending platform from seed stage"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Massachusetts",
-    "employees": 17,
+    "location": "Boston, MA",
+    "employees": 8,
     "website": "https://www.getloot.com",
     "linkedinUrl": "https://www.linkedin.com/company/getloot",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "100 Summer St, Suite 1600, Boston, MA 02110"
   },
   {
     "id": 1301,
@@ -36295,23 +37050,72 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Chicago-based technology-enabled lender founded in 2014 providing structured loans up to $10M to SMBs in under 30 days. Uses proprietary LQD Matrix risk management software. Offers working capital, acquisition financing, AR financing, and equipment financing.",
+    "desc": "LQD Business Finance is a Chicago-based fintech lender founded in 2014 that provides structured, flexible, and transparent financing to small and medium-sized businesses. The company was built to address the gap in the micro-middle market where traditional banks and existing alternative lenders fall short. LQD can underwrite and fund loans of up to $10 million in under 30 days through its proprietary risk management platform, LQD Matrix. Products include asset-based loans, fully amortizing term loans, bridge loans, interest-only loans, lines of credit, and structured financing. LQD has raised $44 million from investors including Route 66 Ventures and FinTech Ventures Fund. In 2021, LQD launched development of a Bitcoin business lending platform. The company has approximately 25 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "LQD Business Finance launches development of Bitcoin business lending platform",
+        "s": "PR Newswire",
+        "d": "2021-01"
+      },
+      {
+        "h": "LQD Business Finance secures $30 million credit facility with Route 66 Ventures",
+        "s": "LQD Finance",
+        "d": "2019"
+      },
+      {
+        "h": "LQD Business Finance announces breakout business results in 2016",
+        "s": "PR Newswire",
+        "d": "2017-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "George Souri",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of LQD Business Finance with over 20 years of entrepreneurial experience. A self-taught mathematician and serial entrepreneur who started his first business (a string of dance clubs) at 18 years old before founding his own investment bank. Also Founder and CEO of AIO Logic and The Atria Group. Featured at LendIt USA 2017, Techweek Chicago 2017, and the Tech in Chicago podcast. Background in private equity, M&A, fast growth, exit positioning, and complex financial situations.",
+        "li": "https://www.linkedin.com/in/george-souri-lqd/",
+        "hooks": [
+          "*Started first business (dance clubs) at age 18",
+          "Self-taught mathematician turned fintech CEO",
+          "Built proprietary LQD Matrix risk management platform",
+          "Also founded AIO Logic and The Atria Group"
+        ]
+      },
+      {
+        "n": "Ray Ojel",
+        "t": "Director, Product Development",
+        "bg": "Director of Product Development at LQD Business Finance, responsible for the company's product strategy and development of lending solutions for the micro-middle market.",
+        "li": "",
+        "hooks": [
+          "Leads product development for $10M loan underwriting platform"
+        ]
+      },
+      {
+        "n": "Kimberly Stanley",
+        "t": "Chief Administrative Officer",
+        "bg": "Chief Administrative Officer at LQD Business Finance, overseeing administrative operations and organizational management for the Chicago-based fintech lender.",
+        "li": "",
+        "hooks": [
+          "CAO of tech-enabled lending platform in Chicago"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Illinois",
-    "employees": 7,
+    "location": "Chicago, IL",
+    "employees": 25,
     "website": "https://lqdfinance.com",
     "linkedinUrl": "https://www.linkedin.com/company/lqd-business-finance",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "329 W 18th St, Suite 912, Chicago, IL 60616"
   },
   {
     "id": 1303,
@@ -36322,23 +37126,36 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Alternative business funding company established in 2014, based in Davie, FL. Provides MCA, lines of credit, invoice factoring, and working capital loans from $3K to $500K to businesses across the US, Puerto Rico, and Canada.",
+    "desc": "Main Street Finance Group is a business financing company established in 2014 in Fort Lauderdale, Florida. The company offers alternative funding solutions for small and mid-sized businesses including business cash advances, lines of credit, unsecured long-term loans, and collateral loans such as SBA 7(a) loans. Main Street Finance Group provides funding ranging from $3,000 to $500,000 across all industries in the United States, Puerto Rico, and Canada, with funding available in as little as one business day. The company has grown to 201-500 employees and operates from offices in Fort Lauderdale and Davie, Florida. Main Street Finance Group is one of the top business loan companies focused on helping business owners who may not qualify for conventional commercial loans.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Joe Alkobi",
+        "t": "CEO",
+        "bg": "CEO of Main Street Finance Group based in Fort Lauderdale, Florida. Leads the company's operations across alternative business funding including cash advances, lines of credit, and SBA lending. Under his leadership the company has grown to over 200 employees serving businesses across the US, Puerto Rico, and Canada.",
+        "li": "https://www.linkedin.com/in/joe-alkobi-638323b5",
+        "hooks": [
+          "Scaled company to 200+ employees in alternative lending",
+          "Serves US, Puerto Rico, and Canada from Fort Lauderdale"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 6,
-    "website": "https://msfg.finance/",
+    "location": "Fort Lauderdale, FL",
+    "employees": 250,
+    "website": "https://businesscashadvance.co",
     "linkedinUrl": "https://www.linkedin.com/company/main-street-finance-group/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "3201 Griffin Rd, Suite 102, Fort Lauderdale, FL 33312"
   },
   {
     "id": 1304,
@@ -36349,23 +37166,37 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in California. Limited public information available.",
+    "desc": "Manpower Funding is a small business lending company founded in 2019 and based in Irvine, California. The company specializes in providing working capital loans to small blue-collar businesses, with a focus on construction, trades, and equipment-heavy industries. Manpower Funding offers a 97% approval rate with no hard personal credit pulls and no collateral required, with typical loan funding within 24 hours. Products include short-term working capital loans for payroll, inventory, and hiring, as well as equipment financing for vehicles and construction tools. The company also provides SBA loans, term loans, business lines of credit, and invoice factoring. The company is also known as Touchpoint Marketing LLC and is BBB Accredited since June 2022.",
     "notes": "",
     "news": [],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jesse Marcks",
+        "t": "Member & Business Loan Specialist",
+        "bg": "Member and principal of Manpower Funding based in Orange County, California. Serves as the primary customer contact and business loan specialist. Responsible for business management and client relationships. Specializes in working capital, business lines of credit, SBA loans, term loans, equipment finance, and invoice factoring for small businesses.",
+        "li": "https://www.linkedin.com/in/jesse-marcks-occalifornia/",
+        "hooks": [
+          "Orange County-based small business lending specialist",
+          "Focus on blue-collar and construction business funding",
+          "BBB Accredited since 2022"
+        ]
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 3,
+    "location": "Irvine, CA",
+    "employees": 5,
     "website": "https://www.manpowerfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/manpower-funding/about/?viewAsMember=true",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "17595 Harvard Ave, Suite C, Irvine, CA 92614"
   },
   {
     "id": 1305,
@@ -36376,23 +37207,58 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "MCA funding platform based in Brooklyn, NY, founded in 2021. Provides merchant cash advances for quick capital access, requiring only 3 months of bank statements and a simple application.",
+    "desc": "Masada Funding is a merchant cash advance funder founded in 2021, headquartered in Wilmington, Delaware. The company provides working capital to small businesses without requiring a minimum credit score or broker fees. Their streamlined process requires only 3 months of business bank statements and a completed application, with funds wired in as little as one business day. Since its founding, Masada Funding has assisted thousands of businesses in procuring working capital. The company operates as a direct funder in the MCA space, serving businesses that may not qualify for traditional bank financing.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Masada Funding continues expanding MCA operations from Wilmington, DE headquarters",
+        "s": "masadafunding.com",
+        "d": "2025"
+      },
+      {
+        "h": "Masada Funding listed among revenue-based financing companies on Funder Intel",
+        "s": "funderintel.com",
+        "d": "2025"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Mendy Raskin",
+        "t": "Head of Operations",
+        "bg": "Serves as Head of Operations at Masada Management, which oversees Masada Funding. Also Co-Founder & COO of Bivid, a separate venture. Previously associated with Raskin Risers LLC. Active in the New York-area business community with experience across operations management and business development in financial services.",
+        "hooks": [
+          "Co-founded Bivid as a separate venture alongside Masada operations",
+          "Manages operations for an MCA funder that requires no minimum credit score or broker fees",
+          "Masada Funding has assisted thousands of businesses since launching in 2021"
+        ],
+        "li": "https://www.linkedin.com/in/mendy-raskin-8aa17b53/"
+      },
+      {
+        "n": "Dolly Piddock",
+        "t": "Team Member",
+        "bg": "Associated with Masada Funding LLC based on LinkedIn profile. Part of the team at the Wilmington, Delaware-based MCA funding platform that provides quick access to capital for small businesses without requiring minimum credit scores.",
+        "hooks": [
+          "Part of a growing MCA platform that launched in 2021 and scaled rapidly",
+          "Works with a funder that can wire funds in as little as one business day"
+        ],
+        "li": "https://www.linkedin.com/in/dolly-piddock-870925220/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 2,
-    "website": "https://masadafunding.com",
+    "location": "Wilmington, DE",
+    "employees": 25,
+    "website": "https://www.masadafunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/masada-funding-llc/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "1811 Silverside Road, Wilmington, DE 19810"
   },
   {
     "id": 1306,
@@ -36403,23 +37269,58 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Merchant cash advance provider based in New York. Offers business cash advances to small businesses seeking fast working capital.",
+    "desc": "Max Advance LLC is a privately held merchant cash advance funder founded in 2007, headquartered in Brooklyn, New York. The company offers a full line of small business financing services including merchant cash advance, small business financing, and business working capital. The management team brings 30+ years of combined industry expertise across financing, sales, payment processing, and credit card marketing. Max Advance generates approximately $3.8 million in revenue and serves small businesses that may not qualify for traditional bank lending.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Max Advance continues Brooklyn-based MCA operations serving small businesses nationwide",
+        "s": "maxadvance.com",
+        "d": "2025"
+      },
+      {
+        "h": "Max Advance maintains BBB business profile as factoring service provider",
+        "s": "bbb.org",
+        "d": "2025"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Michael Puderbeutel",
+        "t": "CEO",
+        "bg": "CEO of Max Advance LLC since founding in 2007. Also serves as CEO of Parkstone Capital LLC, a commercial real estate firm. Brings extensive experience in specialty finance including factoring, asset-based lending, and small business lending. Based in the New York metropolitan area.",
+        "hooks": [
+          "Built Max Advance from startup in 2007 to an established MCA funder over 18+ years",
+          "Runs dual ventures spanning MCA funding and commercial real estate via Parkstone Capital",
+          "Management team boasts 30+ years of combined payment industry expertise"
+        ],
+        "li": "https://www.linkedin.com/in/michael-puderbeutel/"
+      },
+      {
+        "n": "Ivan Quezada",
+        "t": "VP of Business Development",
+        "bg": "Serves as Vice President of Business Development at Max Advance LLC in Brooklyn, NY. Responsible for growing the company's ISO and broker relationships and expanding the funding portfolio for small businesses.",
+        "hooks": [
+          "Leads business development for a Brooklyn-based MCA funder with 18+ years of operations",
+          "Drives ISO relationship growth at Max Advance's Brooklyn headquarters"
+        ],
+        "li": "https://www.linkedin.com/in/ivan-quezada-2a485233/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 9,
-    "website": "https://maxadvance.com",
+    "location": "Brooklyn, NY",
+    "employees": 12,
+    "website": "https://www.maxadvance.com",
     "linkedinUrl": "https://www.linkedin.com/company/max-advance-llc/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "4208 18th Ave, Brooklyn, NY 11218"
   },
   {
     "id": 1307,
@@ -36430,23 +37331,63 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "MCA funder based in Suffern, NY, operating since 2021. Known for funding B-C paper deals and aggressive D paper terms, up to $5M per file. Funds almost all industries (except used auto) in all states except Puerto Rico.",
+    "desc": "Meged Funding Group Corp is a merchant cash advance funder incorporated in January 2021, headquartered in Suffern, New York. The company has rapidly become a major player in the MCA industry, known for offering competitive rates, extended terms up to 35 weeks, and funding amounts of up to $5 million per file. Meged specializes in B-C paper deals with aggressive terms for D paper as well. They fund nearly all industries and all US states with a 98% approval rate. The company differentiates itself by never backdooring or remarketing ISO deals, and offers lower fees and longer terms to help ISOs close more deals.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Meged Funding Group named among top MCA funders for competitive B-C paper terms",
+        "s": "funderintel.com",
+        "d": "2025"
+      },
+      {
+        "h": "Meged Funding Group files H-1B LCA for financial analyst position",
+        "s": "h1bgrader.com",
+        "d": "2024"
+      },
+      {
+        "h": "Meged Funding active in court filings related to MCA agreement enforcement",
+        "s": "trellis.law",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Moshe Lud",
+        "t": "Co-Founder & Manager",
+        "bg": "Co-founded Meged Funding Group in 2021 in Suffern, New York. Serves as Manager handling operations and authorized representative in legal matters. Part of a founding team of passionate financing experts who built Meged into a major MCA player known for competitive rates, extended terms, and funding amounts up to $5 million per file.",
+        "hooks": [
+          "Co-founded Meged Funding which grew to fund up to $5 million per deal since 2021",
+          "Built an MCA funder with a 98% approval rate across industries",
+          "Operates with a no-backdoor policy — never remarkets ISO deals to competitors"
+        ],
+        "li": "https://www.linkedin.com/in/moshe-lud-0b5110236/"
+      },
+      {
+        "n": "Abe Siegel",
+        "t": "ISO Relations Representative",
+        "bg": "Works with Meged Funding Group handling ISO (Independent Sales Organization) relationships and deal flow. Active on industry platforms like Funder Intel promoting Meged's competitive offerings to brokers and ISOs in the merchant cash advance space.",
+        "hooks": [
+          "Active voice for Meged Funding across industry forums and communities",
+          "Promotes Meged's aggressive terms: max $5M funding, 35-week terms, all US states"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 6,
-    "website": "https://megedfunding.com",
+    "location": "Suffern, NY",
+    "employees": 20,
+    "website": "https://www.megedfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/meged-funding-group/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "12 Zeck Ct, Suffern, NY 10901"
   },
   {
     "id": 1308,
@@ -36457,22 +37398,35 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Merchant cash advance company. Limited public information available; may be defunct (0 employees).",
+    "desc": "Merchant Cash HQ is a family-owned alternative funding company that has been providing capital solutions to small businesses for over a decade. The company serves as the preferred provider of alternative funding solutions, having provided service to thousands of small business partners throughout the United States. They work with businesses in all industries including restaurants, automotive, manufacturers, florists, wholesalers, HVAC services, and franchises. Most deals are funded in 48 hours or less, with businesses qualifying for up to $250,000 in 24 hours. Repayment terms range from 4 to 18 months with no prepayment penalties. The company does not shy away from harder deals including low credit scores, bankruptcies, or liens.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Merchant Cash HQ continues decade-long operations as family-owned alternative funder",
+        "s": "merchantcashhq.com",
+        "d": "2025"
+      },
+      {
+        "h": "Merchant Cash HQ offers same-day qualifications up to $250K for small businesses",
+        "s": "merchantcashhq.com",
+        "d": "2025"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "https://merchantcashhq.com/",
+    "location": "United States",
+    "employees": 10,
+    "website": "https://merchantcashhq.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": ""
   },
   {
     "id": 1309,
@@ -36483,23 +37437,74 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Technology-driven platform based in Stamford, CT connecting businesses, brokers, ISOs, and investors with alternative funding. Offers MCA, lines of credit, equipment financing, and credit-builder programs. Also provides syndication and investment opportunities.",
+    "desc": "The Merchant Marketplace is a fintech-driven peer-to-peer funding platform headquartered in Uniondale, New York, that modernizes investing in merchant cash advance deals. Co-founded by Adam Schwartz (CEO) and Kevin Harrington (Original Shark from Shark Tank), the platform launched in May 2023 and serves three stakeholders: small businesses seeking capital, ISO brokers connecting deals, and accredited investors deploying capital for high-yield returns. The platform combines automation, real-time data, and AI underwriting to give investors control and transparency. Investors can start with as little as $10,000 and begin receiving returns within 5 business days of deployment. The platform has fueled the growth of over 2,000 businesses.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Kevin Harrington's Merchant Marketplace launches first true fintech P2P funding platform in MCA space",
+        "s": "Yahoo Finance",
+        "d": "2023"
+      },
+      {
+        "h": "The Merchant Marketplace announces new launch with industry powerhouse executive",
+        "s": "deBanked",
+        "d": "2022-09"
+      },
+      {
+        "h": "Merchant Marketplace positions as revolutionary force in small business funding transformation",
+        "s": "CEO Weekly",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Adam Schwartz",
+        "t": "CEO",
+        "bg": "CEO and co-creator of The Merchant Marketplace with over seven years of experience building fintech platforms. Self-funded over $10 million of his own capital over 7 years in technology. Previously served as both CEO and CTO of Velocity Group USA, which funded over $200 million to business owners across the USA in a four-year span. Built CRMs, underwriting models, investor portals, syndication platforms, phone systems, and mobile apps for both Google and Apple.",
+        "hooks": [
+          "Previously funded over $200M as CEO/CTO of Velocity Group USA in just four years",
+          "Self-funded $10M+ into building fintech infrastructure before launching Merchant Marketplace",
+          "Partnered with Shark Tank's Kevin Harrington to launch the first true fintech P2P MCA platform"
+        ],
+        "li": "https://www.linkedin.com/in/adamsschwartz/"
+      },
+      {
+        "n": "Kevin Harrington",
+        "t": "Co-Founder & Strategic Partner",
+        "bg": "Original Shark from the hit TV show Shark Tank. Pioneer of the infomercial and As Seen on TV industry. Prolific investor and entrepreneur with decades of experience in building consumer and business brands. Joined The Merchant Marketplace as a strategic partner to bring credibility and visibility to the MCA investment platform.",
+        "hooks": [
+          "*Original Shark from Shark Tank — brings massive brand recognition to MCA marketplace",
+          "Pioneer of the infomercial industry now backing fintech MCA investment platform",
+          "Lends his brand to attract accredited investors starting with just $10K minimum"
+        ],
+        "li": "https://www.linkedin.com/in/kevinharrington/"
+      },
+      {
+        "n": "Paul Boxer",
+        "t": "COO & CRO",
+        "bg": "Serves as Chief Operating Officer and Chief Revenue Officer of The Merchant Marketplace. Brings operational and revenue leadership experience to the fintech P2P funding platform. Works alongside CEO Adam Schwartz to manage platform operations, investor relations, and business development.",
+        "hooks": [
+          "Dual COO/CRO role overseeing both operations and revenue for the MCA marketplace",
+          "Helps manage a platform fueling growth of over 2,000 businesses"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "Connecticut",
-    "employees": 5,
-    "website": "https://www.merchantmarketplace.com/",
+    "location": "Uniondale, NY",
+    "employees": 8,
+    "website": "https://merchantmarketplace.com",
     "linkedinUrl": "https://www.linkedin.com/company/merchantmarketplace/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "marketplace"
+    "category": "marketplace",
+    "full_address": "360 RXR Plaza, Uniondale, NY 11556"
   },
   {
     "id": 1310,
@@ -36510,23 +37515,54 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in New York. Limited public information available; may be defunct (0 employees).",
+    "desc": "Merchant Solutions Group (MSG) is one of the nation's leading providers of merchant cash advances to small and mid-sized businesses, founded in 2007 by Billy Morrissey. Headquartered at 11 Broadway in Lower Manhattan with an additional office in Chicago, MSG has grown to over 60 employees including junior brokers, brokers, and administrative staff. Since inception, the company has provided more than 5,000 businesses in all 50 states with nearly $200 million in working capital. Morrissey also launched Liberty Merchant Group to expand the MCA business. MSG can provide funding in as little as 3 days with a simple process and dedicated customer service.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Merchant Solutions Group CEO Billy Morrissey launches Liberty Merchant Group to grow MCA business",
+        "s": "PR Newswire",
+        "d": "2014"
+      },
+      {
+        "h": "Founder of Merchant Solutions Group joins World Business Lenders",
+        "s": "PR Newswire",
+        "d": "2015"
+      },
+      {
+        "h": "Merchant Solutions Group expands New York City offices at 11 Broadway",
+        "s": "merchantsolutionsgroup.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Billy Morrissey",
+        "t": "President & CEO, Founder",
+        "bg": "Founded Merchant Solutions Group in 2007 after a career spanning two decades in real estate and as a stockbroker. Built MSG into one of the nation's leading providers of merchant cash advances, growing to over 60 employees with offices in Lower Manhattan and Chicago. Also launched Liberty Merchant Group as a separate venture to expand MCA business. Under his leadership, MSG has provided more than 5,000 businesses in all 50 states with nearly $200 million in working capital.",
+        "hooks": [
+          "Pivoted from a 20-year real estate and stockbroker career to found a leading MCA company",
+          "Grew MSG from startup to $200M+ funded across 5,000+ businesses in all 50 states",
+          "Expanded with two offices (Lower Manhattan and Chicago) and 60+ employees",
+          "Also launched Liberty Merchant Group as a parallel MCA growth vehicle"
+        ],
+        "li": "https://www.linkedin.com/in/billy-morrissey-merchant-solutions/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 0,
-    "website": "https://merchantsolutionsgroup.com",
+    "location": "New York, NY",
+    "employees": 35,
+    "website": "https://www.merchantsolutionsgroup.com",
     "linkedinUrl": "http://www.linkedin.com/company/merchant-solutions-group",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "11 Broadway, Suite 1004, New York, NY 10004"
   },
   {
     "id": 1311,
@@ -36537,23 +37573,59 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Revenue advance company based in Exton, PA. Purchases future business sales at a discount in exchange for immediate capital, with daily or weekly repayment tied to actual sales. No personal asset encumbrance required. Bank-owned so exempt from certain regulations.",
+    "desc": "Merit Business Funding is a revenue advance company founded in 2022, located in Miramar, Florida. The company provides working capital to small and medium-sized businesses on a short-term basis (3-12 months) to fuel growth and success. Founded by William Bromley, who brings over 40 years of institutional banking experience, Merit differentiates itself through its TurboFund Revenue Advance product tailored to fast-growing companies. Revenue advances are structured with daily remittances designed not to stress customer cash flow. Companies may receive funds within one business day, with no personal guarantees and no prepayment penalties. Merit operates under bank ownership, which exempts it from certain MCA disclosure regulations.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Merit Business Funding's Dave Shollock featured in Onyx IQ Executive Interview Series",
+        "s": "onyxiq.com",
+        "d": "2024"
+      },
+      {
+        "h": "Merit Business Funding expands team and ISO partnerships from Miramar, FL headquarters",
+        "s": "linkedin.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "William Bromley",
+        "t": "Founder",
+        "bg": "Founded Merit Business Funding with over 40 years of experience in institutional banking, having done everything from starting and operating to acquiring and merging banks. The idea for Merit came from his deep understanding of banking gaps in the revenue advance space. Partnered with Dave Shollock to launch the company, funding their first deal on November 22, 2022.",
+        "hooks": [
+          "40+ years in institutional banking — started, operated, acquired, and merged banks",
+          "Founded Merit to bridge the gap between traditional banking and revenue-based financing",
+          "Merit operates under bank ownership, exempt from September 1 MCA disclosure regulations"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Dave Shollock",
+        "t": "Director of Business Development",
+        "bg": "Served as Director of Business Development at Merit Business Funding from June 2022 to May 2025. Based in Philadelphia, PA. Previously held the Director of Business Development role at Samson Funding and returned to Samson after his tenure at Merit. Brought sales and ISO relationship expertise to help build Merit from its first funded deal in November 2022.",
+        "hooks": [
+          "Helped build Merit Business Funding from first deal to established revenue advance company",
+          "Philadelphia-based BD leader with deep ISO relationship network",
+          "Featured in Onyx IQ's Executive Interview Series discussing Merit's growth strategy"
+        ],
+        "li": "https://www.linkedin.com/in/daveshollock/"
+      }
+    ],
     "ask": "",
-    "location": "Pennsylvania",
-    "employees": 9,
-    "website": "https://meritbusinessfunding.com",
+    "location": "Miramar, FL",
+    "employees": 15,
+    "website": "https://www.meritbusinessfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/merit-business-funding/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Miramar, FL"
   },
   {
     "id": 1312,
@@ -36564,23 +37636,57 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Business financing company based in New York offering business loans and real estate financing solutions nationwide with A+ BBB rating. Also operates broker referral program.",
+    "desc": "Mint Funding Inc. is a direct merchant cash advance funder incorporated in December 2021, headquartered in Monroe, New York. The company provides ISO shops with full access to their range of funding services, handling the funding process while ISOs manage the sales pipeline. Mint Funding offers short-term working capital (3-12 months) to businesses across all industries that have been in operation for at least 1 year and generate at least $25,000 in monthly revenue. The application process requires only identification documents, recent bank statements, and cash flow information, with a 5-stage process: Application, Analysis, Funding, Repayment, and Renewal.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Mint Funding continues direct MCA funding operations from Monroe, NY headquarters",
+        "s": "mintfunding.com",
+        "d": "2025"
+      },
+      {
+        "h": "Mint Funding listed among revenue-based financing companies on industry directories",
+        "s": "funderintel.com",
+        "d": "2025"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Zalmen Preizler",
+        "t": "CEO",
+        "bg": "Chief Executive Officer and founder of Mint Funding Inc., based in Monroe, New York. Incorporated the company in December 2021 to operate as a direct funder in the merchant cash advance space. Leads the company's funding operations and ISO relationship management from the Monroe, NY headquarters.",
+        "hooks": [
+          "Founded Mint Funding as a direct funder providing full access to ISO shops",
+          "Runs a Monroe, NY-based MCA funder serving businesses with $25K+ monthly revenue"
+        ],
+        "li": ""
+      },
+      {
+        "n": "Max P",
+        "t": "Funding Specialist",
+        "bg": "Works at Mint Funding handling direct funding and merchant cash advance operations. Based in the New York City metropolitan area. Contact point for the company (Max@mintfunding.com). Active in processing MCA applications and managing funder-ISO relationships.",
+        "hooks": [
+          "Key contact for Mint Funding's direct funder operations",
+          "Based in NYC metro area managing MCA deal flow for Monroe, NY-based funder"
+        ],
+        "li": "https://www.linkedin.com/in/max-p-0253a519a/"
+      }
+    ],
     "ask": "",
-    "location": "New York",
-    "employees": 8,
-    "website": "https://mintfunding.com/",
+    "location": "Monroe, NY",
+    "employees": 10,
+    "website": "https://mintfunding.com",
     "linkedinUrl": "https://www.linkedin.com/company/moment-funding/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "iso"
+    "category": "funder",
+    "full_address": "105 Bakertown Rd, Monroe, NY 10950"
   },
   {
     "id": 1313,
@@ -36596,23 +37702,48 @@
         "t": "Managing Director"
       }
     ],
-    "desc": "Working capital provider based in Miami, FL, with 30+ years combined management experience. Has helped over 15,000 businesses with funding for equipment, marketing, and inventory needs, with 24-hour turnaround.",
+    "desc": "MNR Capital Group is a merchant cash advance funder headquartered in St. Petersburg, Florida (with Miami operations), providing working capital to small and medium-sized businesses for over 10 years. The company's seasoned management team brings a combined 30 years of experience in business financing. MNR Capital funds deals across nearly every industry with personalized support and streamlined, efficient funding processes. The company is known in the ISO community for aggressive commission structures, offering up to 18 points when brokers fund 3 deals in a month. MNR Capital employs approximately 7 people and focuses on fast, simple funding for both business owners and ISOs.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "MNR Capital Group offers 18-point commission structure for high-volume ISO partners",
+        "s": "dailyfunder.com",
+        "d": "2024"
+      },
+      {
+        "h": "MNR Capital Group described as honest and aggressive B/C paper funder by industry peers",
+        "s": "dailyfunder.com",
+        "d": "2024"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Jamie Azoulay",
+        "t": "Managing Director",
+        "bg": "Managing Director at MNR Capital Group with experience in MCA funding and business financing. Previously held a role at Red Sea Funding before joining MNR Capital Group. Based in the United States, leads business development and manages ISO relationships for the company. Active on LinkedIn promoting MNR's funding capabilities and broker programs.",
+        "hooks": [
+          "Leads a funder with 30 years of combined management team experience in business financing",
+          "Pivoted from Red Sea Funding to build MNR Capital Group's deal flow",
+          "Offers ISOs up to 18 points when 3 deals fund in a month"
+        ],
+        "li": "https://www.linkedin.com/in/jamie-azoulay-a0b30379/"
+      }
+    ],
     "ask": "",
-    "location": "Miami",
-    "employees": 5,
-    "website": "https://mnrcapitalgroup.com",
+    "location": "St. Petersburg, FL",
+    "employees": 7,
+    "website": "https://www.mnrcapitalgroup.com",
     "linkedinUrl": "https://www.linkedin.com/company/mnr-capital-group/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "7901 4th St N, #7491, St. Petersburg, FL 33702"
   },
   {
     "id": 1314,
@@ -36623,23 +37754,58 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in Florida. Limited public information available.",
+    "desc": "Momentum Business Capital is a full-service working capital provider founded in 2008, headquartered in Miami Beach, Florida. The company has funded thousands of businesses with millions of dollars across equipment financing, purchase orders, bridge loans, merchant cash advances, and more. Led by CEO Sam Greenwald, who has been in the payments space since 1999, the company serves businesses of all sizes in all 50 states and every time zone. Momentum offers quick cash up to $150,000 for any use in under 7 days with approvals in 48 hours, requiring no financials, tax returns, or personal guarantees. The company has achieved a 97% approval rating on all submitted applications and can fund amounts from $5,000 to $500,000.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Momentum Business Capital maintains BBB accreditation in Miami Beach",
+        "s": "bbb.org",
+        "d": "2025"
+      },
+      {
+        "h": "Momentum Business Capital continues nationwide working capital operations from Miami Beach HQ",
+        "s": "momentumbusinesscapital.com",
+        "d": "2025"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Sam Greenwald",
+        "t": "President & CEO",
+        "bg": "President and CEO of Momentum Business Capital, based in Miami Beach, Florida. Has been in the payments space since 1999 and founded the company in 2008. Over the past decade-plus, has led the funding of thousands of businesses with millions of dollars across equipment financing, purchase orders, bridge loans, and merchant cash advances. Built the company into a full-service working capital provider serving businesses in all 50 states.",
+        "hooks": [
+          "In the payments space since 1999 — over 25 years of industry experience",
+          "Founded Momentum Business Capital in 2008 and grew it to serve all 50 states",
+          "Achieved a 97% approval rating across all submitted applications"
+        ],
+        "li": "https://www.linkedin.com/in/momentumbusinesscapital/"
+      },
+      {
+        "n": "Yossi Miller",
+        "t": "Chief Operating Officer",
+        "bg": "Serves as COO at Momentum Business Capital in Miami Beach, Florida. Manages day-to-day operations of the working capital firm including underwriting, funding processes, and customer service. Works alongside CEO Sam Greenwald to maintain the company's high approval rating and fast funding timelines.",
+        "hooks": [
+          "COO at a firm with 97% approval rating on submitted applications",
+          "Oversees operations for a Miami Beach-based funder covering all 50 states"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 6,
-    "website": "",
+    "location": "Miami Beach, FL",
+    "employees": 8,
+    "website": "https://momentumbusinesscapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/momentum-business-capital/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "4014 Chase Ave, Suite 212, Miami Beach, FL 33140"
   },
   {
     "id": 1315,
@@ -36655,23 +37821,48 @@
         "t": "Founder"
       }
     ],
-    "desc": "AI-powered SMB lending platform based in Austin, TX, founded by Frank Estrada. Connects underserved entrepreneurs and minority-owned businesses with lenders using alternative data, focusing on financial inclusion, fraud reduction, and cross-border payments.",
+    "desc": "MoneFi is an Austin, TX-based fintech platform founded to revolutionize SMB lending with AI and alternative data. The company connects businesses to lenders for well-informed funding decisions, with a special emphasis on underserved entrepreneurs and minority-owned businesses. MoneFi bridges businesses with committed lenders by adopting alternative credit assessments and utilizing advanced software for more transparent and secure funding decisions. The platform also champions Community Impact Payments, integrating philanthropy with mobile and in-store POS systems where each transaction contributes to community programs. MoneFi provides financial education resources and a tailored business partnership directory. Approximately 8 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "MoneFi founder Frank Estrada featured on Founders Live Conversations podcast",
+        "s": "Founders Live",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "MoneFi attends Google Cloud Next '24 to showcase AI-powered lending platform",
+        "s": "Instagram / MoneFi",
+        "d": "2024-04-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Frank Estrada",
+        "t": "Founder & CEO",
+        "bg": "Founded MoneFi with a mission to bring transformative financial change for underserved communities and minority-owned businesses. Based in Austin, TX. Grew up in a minority community and experienced financial exclusion firsthand, which drove his commitment to democratizing financial services. Previously listed as Frankie E. in some profiles. Active speaker at events including Google Cloud Next '24. Appeared on Founders Live Conversations podcast discussing fintech, money lending, and startups.",
+        "hooks": [
+          "Spoke at Google Cloud Next '24 representing MoneFi's AI-powered lending platform",
+          "Personal journey from financial exclusion to founding a fintech championing minority entrepreneurs",
+          "Featured on Founders Live Conversations podcast discussing fintech and startup journey"
+        ],
+        "li": "https://www.linkedin.com/in/frankestrada"
+      }
+    ],
     "ask": "",
-    "location": "Texas",
+    "location": "Austin, TX",
     "employees": 8,
     "website": "https://monefi.co",
     "linkedinUrl": "https://www.linkedin.com/company/monefi-financial-inclusion/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "marketplace"
+    "category": "marketplace",
+    "full_address": "Austin, TX"
   },
   {
     "id": 1316,
@@ -36687,23 +37878,48 @@
         "t": "Co-Founder"
       }
     ],
-    "desc": "Private equity MCA firm co-founded in 2019 by Zain Razvi, based in Miami, FL. Funded $10M in deals in first 18 months. Offers merchant cash advances up to $1M with 18-month terms, requiring only 3 months of bank statements.",
+    "desc": "Monera Capital Group LLC is a private equity merchant cash advance firm co-founded in August 2019, headquartered in Fort Lauderdale, FL. The company provides customized funding solutions for small businesses including Merchant Cash Advances, Business Term Loans, and Working Capital Loans. MCG specializes in assisting clients with challenging credit histories, including previous bankruptcies and tax liens, offering fast approvals and access to funds within 24 hours. By January 2021, the firm had funded $10 million in deals in its first 18 months. The company requires only three months of recent bank statements and a simple application. Approximately 5-20 employees. Not a bank — MCG is a private equity MCA funder.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Monera Capital Group reaches $10 million funding benchmark in first 18 months",
+        "s": "AccessNewsWire / Yahoo Finance",
+        "d": "2021-01-01"
+      },
+      {
+        "h": "Monera Capital Group launches streamlined MCA application requiring only 3 months of bank statements",
+        "s": "Monera Capital",
+        "d": "2020-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Zain Razvi",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Monera Capital Group in August 2019. Holds an MBA from the University of Miami Business School (3.85 GPA) and a Bachelor's in Economics from Florida State University. Prior to founding MCG, served as Senior Business Analyst at Bayview Asset Management, LLC. Also held roles at NextWave Funding LLC, BFS Capital, and NextWave Funding. Based in the Miami-Fort Lauderdale area. Led the company to its $10 million funding benchmark within 18 months of operation.",
+        "hooks": [
+          "Grew Monera Capital to $10 million funded within first 18 months of operation",
+          "MBA from University of Miami Business School with 3.85 GPA",
+          "Background spanning Bayview Asset Management, NextWave Funding, and BFS Capital before founding MCG"
+        ],
+        "li": "https://www.linkedin.com/in/zainrazvi/"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 5,
-    "website": "https://www.moneracapital.com/",
+    "location": "Fort Lauderdale, FL",
+    "employees": 10,
+    "website": "https://moneracapital.com",
     "linkedinUrl": "https://www.linkedin.com/company/moneracapitalgroup/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "bank"
+    "category": "funder",
+    "full_address": "10171 NW 53rd Street, Fort Lauderdale, FL 33351"
   },
   {
     "id": 1317,
@@ -36714,22 +37930,41 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company. Limited public information available; may be defunct (0 employees).",
+    "desc": "Money Store Funding (moneystorefunding.com) is a small business lending company located at 7 Kermit Ave, New York, NY 10305, operating under the tagline 'When the banks say NO, the Money Store says YES.' The company was founded by Morton Dear, who was CFO of the original The Money Store mortgage lending company. Money Store Funding specializes in lending to businesses that may have fallen on hard times or those that have yet to build the extensive history required by traditional financial institutions. The firm provides an expansive variety of loan solutions including working capital and merchant funding. Note: This is distinct from The Money Store (themoneystore.com), which is the residential mortgage brand owned by MLD Mortgage Inc. based in Florham Park, NJ.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Money Store Funding listed among alternative business lenders offering working capital solutions",
+        "s": "Money Store Funding",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Morton Dear",
+        "t": "Founder & Chairman",
+        "bg": "Former CFO of the original The Money Store, a legacy U.S. residential mortgage lending brand. Founded the new Money Store Funding incarnation focused on working capital and small business lending. Based in the New York area. A veteran of the consumer finance and mortgage lending industry with decades of experience at the original Money Store.",
+        "hooks": [
+          "Former CFO of the original The Money Store — reinvented the brand for small business working capital",
+          "Veteran of the consumer finance industry pivoting legacy mortgage brand into MCA/business lending"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "",
-    "employees": 0,
-    "website": "http://moneystorefunding.com/",
+    "location": "Staten Island, NY",
+    "employees": 5,
+    "website": "http://moneystorefunding.com",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "7 Kermit Ave, New York, NY 10305"
   },
   {
     "id": 1319,
@@ -36740,23 +37975,48 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Likely a duplicate of Moneywell GRP (id 1318). Small business lending company based in Florida.",
+    "desc": "MoneyWell GRP LLC is a direct lender in the working capital space founded in 2022 by Matthew Washington and based in Miami, FL. The company provides working capital to small and mid-size business owners nationwide, offering a wide range of funding products including weekly payback options and traditional daily merchant cash advances, with funding up to $3 million per business entity. MoneyWell GRP operates as a wholesale lender with no direct sales team — 100% of its business comes from its ISO network and partner program. The company treats every broker the same regardless of company size. Applications can be approved in as little as 24 hours with minimal paperwork and repayment terms up to 18 months. Approximately 2-5 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Matthew Washington featured in Funder Intel conversation about MoneyWell GRP's wholesale lending model",
+        "s": "Funder Intel",
+        "d": "2022-08-01"
+      },
+      {
+        "h": "MoneyWell GRP launches as wholesale-only direct lender in merchant cash advance space",
+        "s": "Funder Intel",
+        "d": "2022-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Matthew Washington",
+        "t": "Founder & CEO",
+        "bg": "Founded MoneyWell GRP in 2022 after 15+ years in the commercial finance space since 2009. Previously served as Chief Revenue Officer at PIRS Capital LLC for eight years, where he helped build the company. Also held roles at Fora Financial and Alliance Funding Group. Based in Miami Beach, FL. Attended California State University-Chico. Has been at the center of over $800 million in business funding issued to small business owners across all 50 states. Featured in Funder Intel interview discussing his approach to merchant cash advance lending.",
+        "hooks": [
+          "Facilitated over $800 million in business funding across all 50 states over 15-year career",
+          "Built PIRS Capital LLC as Chief Revenue Officer for eight years before founding MoneyWell GRP",
+          "Featured in Funder Intel interview — wholesale-only model with no direct sales team"
+        ],
+        "li": "https://www.linkedin.com/in/matthew-washington-a0463b37/"
+      }
+    ],
     "ask": "",
-    "location": "Florida",
-    "employees": 2,
-    "website": "https://www.moneywellgrp.com/",
+    "location": "Miami, FL",
+    "employees": 3,
+    "website": "https://www.moneywellgrp.com",
     "linkedinUrl": "https://www.linkedin.com/company/moneywell-grp/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "333 NE 24th St, Miami, FL 33137"
   },
   {
     "id": 1320,
@@ -36767,23 +38027,69 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Africa-focused fintech company based in California. Limited public information available for US small business lending; may be defunct (0 employees).",
+    "desc": "Moni Africa (now rebranded as Rank as of November 2025) is a Y Combinator-backed (W22) Nigerian fintech that provides group financing for small businesses across Africa. Founded in 2021 by Femi Iromini and Adedapo Sobayo in Lagos, Nigeria, the company leverages social trust and collective responsibility as collateral for loans. The startup built a risk engine combining financial data and business performance with social intelligence for effective credit decisioning. In 2022, Moni disbursed more than $22 million in loans to over 11,000 SMEs with a 99% repayment rate. The company has acquired AjoMoney (digital group-savings) and Zazzau Microfinance Bank (licensed MFB) as part of its rebrand to Rank. Backed by Y Combinator, Magic Fund, Ventures Platform, and Voltron Capital. Approximately 20 employees in Lagos.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Moni rebrands as Rank, acquires AjoMoney and Zazzau Microfinance Bank",
+        "s": "Disrupt Africa / TechCabal",
+        "d": "2025-11-12"
+      },
+      {
+        "h": "Moni disbursed $22 million in loans to 11,000+ SMEs with 99% repayment rate in 2022",
+        "s": "Disrupt Africa",
+        "d": "2023-04-05"
+      },
+      {
+        "h": "Moni launches community-powered digital loans for African SMEs",
+        "s": "Africa Business Communities",
+        "d": "2023-04-01"
+      },
+      {
+        "h": "Moni Africa leverages social trust to finance mobile money agents across Nigeria",
+        "s": "TechCabal",
+        "d": "2022-01-19"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Femi Iromini",
+        "t": "Co-Founder & CEO",
+        "bg": "Co-founded Moni (now Rank) in 2021. Previously worked with The World Bank Group where he developed a framework to finance education and sustainability in West Africa. Earlier career included investment banking and founding Lead360, an edtech company. Was on the founding team of Mintyn, one of Nigeria's early digital banks. Studied economics at Obafemi Awolowo University in Nigeria where he met co-founder Adedapo Sobayo. Part of Y Combinator W22 batch.",
+        "hooks": [
+          "Y Combinator W22 — grew Moni to $22 million disbursed with 99% repayment rate",
+          "Former World Bank Group — developed framework to finance education in West Africa",
+          "Founded edtech company Lead360 and was on founding team of Mintyn digital bank before Moni"
+        ],
+        "li": "https://www.linkedin.com/in/femi-iromini/"
+      },
+      {
+        "n": "Adedapo Sobayo",
+        "t": "Co-Founder & CTO",
+        "bg": "Co-founded Moni (now Rank) in 2021 alongside Femi Iromini. Passionate about Digital Product, Technology, Blockchain, and Financial Inclusion. Previously co-built businesses including Zedvance and SEL Capital, specializing in transforming legacy systems to digital. Studied physics at Obafemi Awolowo University. Met co-founder Femi Iromini during undergrad where they collaborated on publishing two magazines including one called JEANS.",
+        "hooks": [
+          "Built Moni's risk engine combining financial data with social intelligence for African SME credit decisioning",
+          "Background transforming legacy systems to digital at Zedvance and SEL Capital",
+          "Met co-founder at university where they published magazines together before building fintech"
+        ],
+        "li": "https://www.linkedin.com/in/adedapo-sobayo/"
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 0,
-    "website": "https://www.moni.africa/",
+    "location": "Lagos, Nigeria",
+    "employees": 20,
+    "website": "https://www.moni.africa",
     "linkedinUrl": "https://www.linkedin.com/company/findmoni",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Lagos, Nigeria"
   },
   {
     "id": 1321,
@@ -36794,23 +38100,68 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business financing company based in California. Provides merchant cash advances and business financing solutions.",
+    "desc": "Montage Business Financial LLC is a debt financing firm founded in 2020 and headquartered in Beverly Hills, CA. The company provides quick and reliable funding solutions for businesses including business lines of credit (up to $750,000), working capital (up to $10 million), equipment financing, and SBA Express loans. Funding amounts range from $5,000 to $5,000,000 with rates starting at 3.2%. The company has funded over 3,000 businesses with more than $1.2 billion deployed, typically funding within 24 hours of approval. Montage is a licensed California Finance Lender (CFL #60DBO-128093) and is BBB Accredited since June 2021. Approximately 5-10 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Montage Business Financial surpasses $1.2 billion deployed across 3,000+ businesses",
+        "s": "Montage Business Financial",
+        "d": "2025-01-01"
+      },
+      {
+        "h": "Montage Business Financial receives BBB accreditation for business financing services",
+        "s": "Better Business Bureau",
+        "d": "2021-06-25"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Ari Hanas",
+        "t": "CEO & Owner",
+        "bg": "CEO and Owner of Montage Business Financial, a debt financing firm based in Beverly Hills, CA. Founded the company in 2020 to provide quick and reliable funding solutions for small and medium-sized businesses. Leads a team that has funded over 3,000 businesses with more than $1.2 billion deployed. Licensed California Finance Lender (CFL #60DBO-128093).",
+        "hooks": [
+          "Built Montage Business Financial to $1.2 billion deployed and 3,000+ businesses funded since 2020",
+          "Licensed California Finance Lender offering rates starting at 3.2%",
+          "Operates from Beverly Hills providing funding up to $5 million with 24-hour turnaround"
+        ],
+        "li": "https://www.linkedin.com/in/montage-business-financial-2102891b6/"
+      },
+      {
+        "n": "David Lee",
+        "t": "Chief Operating Officer",
+        "bg": "Serves as COO of Montage Business Financial, overseeing daily operations of the debt financing firm. Works alongside CEO Ari Hanas to manage the company's lending operations including business lines of credit, working capital, equipment financing, and SBA loans.",
+        "hooks": [
+          "COO overseeing operations at firm that has deployed $1.2 billion to small businesses",
+          "Manages lending operations spanning business lines of credit, equipment financing, and SBA loans"
+        ],
+        "li": ""
+      },
+      {
+        "n": "CJ Moebius",
+        "t": "Chief Financial Officer",
+        "bg": "Chief Financial Officer at Montage Business Financial based in Beverly Hills, CA. Manages the financial operations of the debt financing firm that provides loans and revolving credit lines to small and medium-sized companies.",
+        "hooks": [
+          "CFO managing financial operations of firm with $1.2 billion in deployed capital",
+          "Oversees financial strategy for licensed California Finance Lender"
+        ],
+        "li": ""
+      }
+    ],
     "ask": "",
-    "location": "California",
-    "employees": 10,
+    "location": "Beverly Hills, CA",
+    "employees": 8,
     "website": "https://montagebusinessfinancial.com",
     "linkedinUrl": "https://www.linkedin.com/company/montage-business-financial/about/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "8840 Wilshire Blvd, Suite 273, Beverly Hills, CA 90211"
   },
   {
     "id": 1322,
@@ -36821,23 +38172,31 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Business funding and PR/marketing services company based in Boca Raton, FL. Offers business term loans, property refinance, same-day working capital, SBA loans, equipment loans, MCA, and factoring for US and Canadian businesses.",
+    "desc": "Montecito Boca INC is a business funding company that provides a wide range of financial products including business term loans, property refinance loans, same-day working capital, SBA loans, equipment loans, retail and restaurant loans, factoring, merchant cash advances, short-term loans, and asset-based lending. The company funds businesses in both the U.S. and Canada. Montecito Boca positions itself as a leading provider of Business Funding Solutions, PR, and marketing services to corporations, with close partnerships with hedge funds to ensure cutting-edge funding strategies. Contact phone is (424) 274-6484. Limited public information available about company leadership and team structure.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Montecito Boca INC listed as business funding provider serving U.S. and Canada",
+        "s": "Montecito Boca",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
     "leaders": [],
     "ask": "",
-    "location": "Florida",
-    "employees": 1,
-    "website": "https://www.montecitoboca.com/",
+    "location": "Boca Raton, FL",
+    "employees": 5,
+    "website": "https://www.montecitoboca.com",
     "linkedinUrl": "https://www.linkedin.com/company/montecito-boca-inc/about/",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "21346 St. Andrews Blvd, Boca Raton, FL"
   },
   {
     "id": 1323,
@@ -36848,23 +38207,48 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business loan company based in Oregon. Limited public information available; may be defunct (0 employees).",
+    "desc": "MP Business Loan (mpbusinessloan.com) is a small business lending brand powered by Mom & Pop Business Funding (Mom & Pop Merchant Solutions LLC), an alternative business lending company founded in 2014 by Bret Martin and headquartered in Medford, Oregon. The website is operated and promoted by Dormedia Inc, a Canadian online marketing agency, while the actual funding services come from Mom & Pop Business Funding. The company provides unsecured loans up to $1,000,000 to small businesses, typically funded within 1 to 3 days with minimal documentation. Mom & Pop Business Funding has expanded internationally to Australia, Japan, and China and has exceeded $3 billion in small business loan alternatives. Over 168,000 people have joined their platform. Approximately 11-50 employees.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Mom & Pop Business Funding exceeds $3 billion in small business loan alternatives with international expansion",
+        "s": "Mom & Pop Business Funding",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Mom & Pop Merchant Solutions maintains BBB business profile in Portland, Oregon",
+        "s": "Better Business Bureau",
+        "d": "2024-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Bret Martin",
+        "t": "CEO & Founder",
+        "bg": "CEO and Founder of Mom & Pop Business Funding (which powers MP Business Loan). Entered the merchant cash advance industry in 2007 and personally closed over 25,000 merchant cash advances by September 2009, becoming the #1 Producer of all time in the MCA and small business loan alternative industry. Previously built several companies including The ISO Recruiting Company, Subprime Business Funding, West Coast Business Funding, East Coast Business Funding, and The Merchant Cash Advance Company. Over 168,000 people have joined the Mom & Pop Business Funding platform and gone through his training. Based in Medford, Oregon.",
+        "hooks": [
+          "*Personally closed over 25,000 MCAs — #1 Producer of all time in the MCA industry",
+          "Over 168,000 people trained through Mom & Pop Business Funding platform",
+          "Expanded Mom & Pop Business Funding internationally to Australia, Japan, and China — exceeding $3 billion in loan alternatives"
+        ],
+        "li": "https://www.linkedin.com/company/mom-and-pop-business-funding"
+      }
+    ],
     "ask": "",
-    "location": "Oregon",
-    "employees": 0,
+    "location": "Medford, OR",
+    "employees": 25,
     "website": "https://mpbusinessloan.com",
     "linkedinUrl": "https://uk.linkedin.com/company/mp-corporate-finance-gmbh",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "1004 S Central Ave, Medford, OR 97504"
   },
   {
     "id": 1324,
@@ -36875,23 +38259,58 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Small business lending company based in Virginia. Limited public information available.",
+    "desc": "MStreetX is a place-based inclusive fintech platform founded in 2020 by David Rixter and designed to foster small business growth and inclusive entrepreneurship. The platform leverages artificial intelligence (AI) to match a small business's risk profile with flexible capital sources. MStreetX facilitates place-based economic development and supports small businesses in urban and rural areas, bridging the gap between capital access and lender connections using technology. The company works with state-level small business credit initiatives and has partnered with AIForGood. Based in the Washington, DC area. The platform raised capital through TruCrowd equity crowdfunding.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "MStreetX announces media partnership with AIForGood initiative",
+        "s": "LinkedIn / MStreetX",
+        "d": "2023-07-01"
+      },
+      {
+        "h": "MStreetX launches equity crowdfunding campaign on TruCrowd",
+        "s": "TruCrowd / Kingscrowd",
+        "d": "2022-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "David Rixter",
+        "t": "CEO & Co-Founder",
+        "bg": "CEO and Co-Founder of MStreetX, founded in 2020. Based in Washington, DC. Previously held roles at the U.S. Department of the Treasury, Fannie Mae, and Raytheon. Also founded One United Globe. Featured on The Brand Called You podcast discussing leadership, innovation, and social impact. Active media partner with AIForGood initiatives. Brings deep experience in government, housing finance, and defense contracting to his inclusive fintech venture.",
+        "hooks": [
+          "Former U.S. Department of the Treasury — bringing government finance perspective to inclusive fintech",
+          "Background spanning Fannie Mae and Raytheon before co-founding place-based lending platform",
+          "Featured on The Brand Called You podcast discussing leadership, innovation, and social impact"
+        ],
+        "li": "https://www.linkedin.com/in/david-rixter/"
+      },
+      {
+        "n": "Walt Postlewait",
+        "t": "Chief Credit Officer",
+        "bg": "Chief Credit Officer at MStreetX based in Nacogdoches, TX. Previously held roles at NorthPost Development / NorthPost Properties, National Community Investment Fund, Craft3, and Bank of Astoria. Brings deep community development finance and credit analysis expertise to MStreetX's inclusive lending platform.",
+        "hooks": [
+          "Background at National Community Investment Fund and Craft3 — deep CDFI and community lending expertise",
+          "Transitioned from traditional banking (Bank of Astoria) to inclusive fintech credit leadership"
+        ],
+        "li": "https://www.linkedin.com/in/walt-postlewait-0082ab31b/"
+      }
+    ],
     "ask": "",
-    "location": "Virginia",
-    "employees": 3,
-    "website": "https://www.mstreetx.com/",
+    "location": "Washington, DC",
+    "employees": 5,
+    "website": "https://www.mstreetx.com",
     "linkedinUrl": "https://www.linkedin.com/company/mstreetx",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "funder"
+    "category": "funder",
+    "full_address": "Washington, DC"
   },
   {
     "id": 1325,
@@ -36902,23 +38321,53 @@
     "booth": false,
     "clear": false,
     "contacts": [],
-    "desc": "Digital lending platform based in California connecting veteran-owned and minority-owned SMBs with community banks and credit unions. Uses AI-powered application assistance for grants, loans, and investor funding.",
+    "desc": "Nana Fund is a digital lending platform founded by Yaryna Hotlib that connects small and medium-sized businesses, particularly veteran-owned enterprises, with community banks and credit unions. Formerly known as GetGrant, the platform provides personalized recommendations for grants, support programs, investments, loans, and venture capital, streamlining the application process and enhancing chances of securing funding. Nana Fund partnered with the NVBDC MVO Task Force to transform veteran and military spouse business funding. The company is part of the Fintech Sandbox program. Based in San Diego, CA with approximately 2 employees. Note: The platform operates as a marketplace connecting SMBs with institutional lenders rather than funding directly — marketplace classification is appropriate.",
     "notes": "",
-    "news": [],
+    "news": [
+      {
+        "h": "Nana Fund partners with NVBDC MVO Task Force to transform veteran and military spouse business funding",
+        "s": "NVBDC",
+        "d": "2024-01-01"
+      },
+      {
+        "h": "Nana Fund (formerly GetGrant) joins Fintech Sandbox program for veteran SMB lending platform",
+        "s": "Fintech Sandbox",
+        "d": "2023-01-01"
+      },
+      {
+        "h": "Yaryna Hotlib featured on Business RadioX discussing Nana Fund's veteran business funding mission",
+        "s": "Business RadioX",
+        "d": "2023-01-01"
+      }
+    ],
     "ice": "",
     "icebreakers": [],
     "tp": [],
-    "leaders": [],
+    "leaders": [
+      {
+        "n": "Yaryna Hotlib",
+        "t": "Founder & CEO",
+        "bg": "Founder and CEO of Nana Fund, a digital lending platform connecting veteran-owned SMBs with community banks and credit unions. Based in San Diego, CA. Passionate about empowering veteran-owned businesses by connecting them with tailored funding opportunities. Nana Fund was formerly known as GetGrant. Partnered with the National Veteran Business Development Council (NVBDC) MVO Task Force. Featured on Business RadioX's High Velocity Radio podcast. Active speaker on veteran entrepreneurship and SMB funding topics. Member of Fintech Sandbox program.",
+        "hooks": [
+          "Partnered with NVBDC MVO Task Force to transform veteran and military spouse business funding",
+          "Part of Fintech Sandbox program — building AI-powered matching for veteran SMBs and community lenders",
+          "Featured on Business RadioX discussing veteran business funding and Nana Fund's mission"
+        ],
+        "li": "https://www.linkedin.com/in/yaryna-hotlib-nanafund/"
+      }
+    ],
     "ask": "",
-    "location": "California",
+    "location": "San Diego, CA",
     "employees": 2,
     "website": "https://nana.fund",
     "linkedinUrl": "https://www.linkedin.com/company/nana-fund",
     "source": [
       "tam",
-      "tam-researched"
+      "tam-researched",
+      "researched"
     ],
-    "category": "marketplace"
+    "category": "marketplace",
+    "full_address": "San Diego, CA"
   },
   {
     "id": 1326,
