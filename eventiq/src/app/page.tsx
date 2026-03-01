@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
 import {
@@ -138,6 +138,8 @@ export default function Home() {
   const [kiketOpen, setKiketOpen] = useState(false);
   const [kiketPrompt, setKiketPrompt] = useState<string | undefined>(undefined);
   const [mobileKiketOpen, setMobileKiketOpen] = useState(false);
+  const [kiketWidth, setKiketWidth] = useState(380);
+  const kiketDragRef = useRef<{ startX: number; startWidth: number } | null>(null);
 
   // Chat widget state
   const [chatMessages, setChatMessages] = useSyncedStorage<ChatMessage[]>(
@@ -644,6 +646,32 @@ export default function Home() {
   );
 
 
+  // Kiket chat panel resize handlers
+  const handleKiketResizeStart = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    kiketDragRef.current = { startX: e.clientX, startWidth: kiketWidth };
+    document.body.style.cursor = "col-resize";
+    document.body.style.userSelect = "none";
+
+    const handleMouseMove = (ev: MouseEvent) => {
+      if (!kiketDragRef.current) return;
+      const delta = kiketDragRef.current.startX - ev.clientX;
+      const newWidth = Math.min(Math.max(kiketDragRef.current.startWidth + delta, 300), 700);
+      setKiketWidth(newWidth);
+    };
+
+    const handleMouseUp = () => {
+      kiketDragRef.current = null;
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+  }, [kiketWidth]);
+
   // Kiket chat panel handlers
   const toggleKiketPanel = useCallback(() => {
     if (isMobile) {
@@ -947,16 +975,23 @@ export default function Home() {
                   </ResizablePanelGroup>
                 </div>
 
-                {/* Kiket Chat Panel (desktop) */}
+                {/* Kiket Chat Panel (desktop) — resizable */}
                 {kiketOpen ? (
-                  <div className="w-[380px] shrink-0 border-l border-border h-full">
-                    <KiketChatPanel
-                      onClose={() => {
-                        setKiketOpen(false);
-                        setKiketPrompt(undefined);
-                      }}
-                      initialPrompt={kiketPrompt}
+                  <div className="shrink-0 h-full flex" style={{ width: kiketWidth }}>
+                    {/* Drag handle */}
+                    <div
+                      className="w-1 h-full cursor-col-resize hover:bg-brand/30 active:bg-brand/50 transition-colors border-l border-border"
+                      onMouseDown={handleKiketResizeStart}
                     />
+                    <div className="flex-1 min-w-0 h-full">
+                      <KiketChatPanel
+                        onClose={() => {
+                          setKiketOpen(false);
+                          setKiketPrompt(undefined);
+                        }}
+                        initialPrompt={kiketPrompt}
+                      />
+                    </div>
                   </div>
                 ) : (
                   <KiketCollapsedStrip onClick={() => setKiketOpen(true)} />
