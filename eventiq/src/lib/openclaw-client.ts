@@ -1,18 +1,14 @@
 "use client";
 
 /**
- * OpenClaw WebSocket client for the MissionIQ chat widget.
+ * OpenClaw Gateway WebSocket client for the MissionIQ chat widget.
  *
- * Connects to the OpenClaw gateway via WebSocket (Tailscale Funnel).
- * Handles authentication, message exchange, reconnection, and typing indicators.
- *
- * Protocol (OpenClaw Gateway WebSocket):
- *   Connect: wss://host/ws?token=<gateway-token>&agent=missioniq
- *   Send:    { type: "message", content: string, conversationId?: string, userId?: string }
- *   Receive: { type: "message", content: string, done: boolean }
- *            { type: "typing", isTyping: boolean }
- *            { type: "error", message: string }
- *            { type: "connected", agent: string }
+ * Protocol: OpenClaw Gateway v3 (custom frame-based, NOT JSON-RPC)
+ *   Frame types: req, res, event
+ *   Connect: ws://host:port (root path, no /ws)
+ *   Auth: inside first `connect` request frame
+ *   Chat: `chat.send` method with sessionKey
+ *   Responses: `chat` events with state: delta/final
  */
 
 export type ConnectionState = "disconnected" | "connecting" | "connected" | "error";
@@ -36,14 +32,40 @@ export interface OpenClawClientOptions {
   onStreamChunk?: (chunk: string, messageId: string) => void;
 }
 
+// OpenClaw frame types
+interface OcReq {
+  type: "req";
+  id: string;
+  method: string;
+  params?: Record<string, unknown>;
+}
+
+interface OcRes {
+  type: "res";
+  id: string;
+  ok: boolean;
+  payload?: Record<string, unknown>;
+  error?: { code?: string; message?: string };
+}
+
+interface OcEvent {
+  type: "event";
+  event: string;
+  payload?: Record<string, unknown>;
+}
+
+type OcFrame = OcReq | OcRes | OcEvent;
+
 export class OpenClawClient {
   private ws: WebSocket | null = null;
   private options: OpenClawClientOptions;
   private reconnectTimer: ReturnType<typeof setTimeout> | null = null;
   private reconnectAttempts = 0;
   private maxReconnectAttempts = 5;
-  private currentStreamId: string | null = null;
-  private currentStreamContent = "";
+  private reqCounter = 0;
+  private sessionKey: string | null = null;
+  private currentRunId: string | null = null;
+  private streamContent = "";
 
   constructor(options: OpenClawClientOptions) {
     this.options = options;
@@ -54,17 +76,15 @@ export class OpenClawClient {
 
     this.options.onStateChange("connecting");
 
-    const url = new URL(this.options.wsUrl);
-    url.searchParams.set("token", this.options.token);
-    if (this.options.agent) {
-      url.searchParams.set("agent", this.options.agent);
-    }
-    if (this.options.userId) {
-      url.searchParams.set("userId", this.options.userId);
+    // OpenClaw gateway: connect to root path (no /ws suffix)
+    // Remove trailing /ws if present
+    let wsUrl = this.options.wsUrl;
+    if (wsUrl.endsWith("/ws")) {
+      wsUrl = wsUrl.slice(0, -3);
     }
 
     try {
-      this.ws = new WebSocket(url.toString());
+      this.ws = new WebSocket(wsUrl);
     } catch {
       this.options.onStateChange("error");
       this.options.onError("Failed to create WebSocket connection");
@@ -73,27 +93,35 @@ export class OpenClawClient {
     }
 
     this.ws.onopen = () => {
-      this.reconnectAttempts = 0;
-      this.options.onStateChange("connected");
+      // Send connect request (mandatory first frame)
+      this.sendReq("connect", {
+        minProtocol: 3,
+        maxProtocol: 3,
+        client: {
+          id: "webchat",
+          displayName: "EventIQ MissionIQ",
+          version: "1.0.0",
+          platform: "browser",
+          mode: "webchat",
+        },
+        role: "operator",
+        scopes: ["operator.read", "operator.write"],
+        auth: { token: this.options.token },
+      });
     };
 
     this.ws.onmessage = (event) => {
       try {
-        const data = JSON.parse(event.data);
-        this.handleMessage(data);
+        const frame = JSON.parse(event.data) as OcFrame;
+        this.handleFrame(frame);
       } catch {
-        // Non-JSON message — treat as plain text response
-        this.options.onMessage({
-          id: crypto.randomUUID(),
-          role: "assistant",
-          content: event.data,
-          timestamp: new Date(),
-        });
+        // Non-JSON — ignore
       }
     };
 
     this.ws.onclose = (event) => {
       this.options.onStateChange("disconnected");
+      this.sessionKey = null;
       if (!event.wasClean) {
         this.scheduleReconnect();
       }
@@ -105,70 +133,133 @@ export class OpenClawClient {
     };
   }
 
-  private handleMessage(data: {
-    type: string;
-    content?: string;
-    message?: string;
-    isTyping?: boolean;
-    done?: boolean;
-    messageId?: string;
-    agent?: string;
-  }) {
-    switch (data.type) {
-      case "message":
-        if (data.done === false && data.content) {
-          // Streaming chunk
-          if (!this.currentStreamId) {
-            this.currentStreamId = data.messageId || crypto.randomUUID();
-            this.currentStreamContent = "";
-          }
-          this.currentStreamContent += data.content;
-          this.options.onStreamChunk?.(this.currentStreamContent, this.currentStreamId);
-        } else {
-          // Complete message or single response
-          const content = data.content || this.currentStreamContent;
-          const id = data.messageId || this.currentStreamId || crypto.randomUUID();
-          this.options.onMessage({
-            id,
-            role: "assistant",
-            content,
-            timestamp: new Date(),
-          });
-          this.currentStreamId = null;
-          this.currentStreamContent = "";
-          this.options.onTyping(false);
-        }
-        break;
+  private nextId(): string {
+    return `r${++this.reqCounter}`;
+  }
 
-      case "typing":
-        this.options.onTyping(data.isTyping ?? true);
-        break;
+  private sendReq(method: string, params?: Record<string, unknown>): string {
+    const id = this.nextId();
+    const frame: OcReq = { type: "req", id, method };
+    if (params) frame.params = params;
+    this.ws?.send(JSON.stringify(frame));
+    return id;
+  }
 
-      case "error":
-        this.options.onError(data.message || "Unknown error from agent");
-        this.options.onTyping(false);
+  private handleFrame(frame: OcFrame) {
+    switch (frame.type) {
+      case "res":
+        this.handleResponse(frame as OcRes);
         break;
-
-      case "connected":
-        // Agent confirmed connection
+      case "event":
+        this.handleEvent(frame as OcEvent);
         break;
     }
   }
 
-  sendMessage(content: string, conversationId?: string) {
-    if (!this.ws || this.ws.readyState !== WebSocket.OPEN) {
+  private handleResponse(res: OcRes) {
+    if (!res.ok) {
+      const errMsg = res.error?.message || "Request failed";
+      this.options.onError(errMsg);
+      return;
+    }
+
+    const payload = res.payload as Record<string, unknown> | undefined;
+
+    // hello-ok response from connect
+    if (payload?.type === "hello-ok") {
+      this.reconnectAttempts = 0;
+      this.options.onStateChange("connected");
+
+      // Extract session key for the target agent
+      const snapshot = payload.snapshot as Record<string, unknown> | undefined;
+      const defaults = snapshot?.sessionDefaults as Record<string, unknown> | undefined;
+
+      // For a specific agent, construct the session key
+      const agentId = this.options.agent || (defaults?.defaultAgentId as string) || "main";
+      const mainKey = (defaults?.mainKey as string) || "main";
+      this.sessionKey = `agent:${agentId}:${mainKey}`;
+    }
+
+    // chat.send accepted
+    if (payload?.status === "accepted" && payload?.runId) {
+      this.currentRunId = payload.runId as string;
+      this.streamContent = "";
+      this.options.onTyping(true);
+    }
+  }
+
+  private handleEvent(ev: OcEvent) {
+    switch (ev.event) {
+      case "chat":
+        this.handleChatEvent(ev.payload || {});
+        break;
+      case "tick":
+        // Heartbeat — ignore
+        break;
+      case "shutdown":
+        this.options.onError("Gateway is shutting down");
+        break;
+    }
+  }
+
+  private handleChatEvent(payload: Record<string, unknown>) {
+    const state = payload.state as string;
+    const runId = payload.runId as string;
+
+    if (state === "delta") {
+      // Streaming chunk
+      const message = payload.message as Record<string, unknown> | undefined;
+      const content = (message?.content as string) || (message?.text as string) || "";
+      if (content) {
+        this.streamContent += content;
+        this.options.onStreamChunk?.(this.streamContent, runId || "stream");
+      }
+    } else if (state === "final") {
+      // Complete response
+      const message = payload.message as Record<string, unknown> | undefined;
+      const finalContent = (message?.content as string) || (message?.text as string) || this.streamContent;
+      this.options.onMessage({
+        id: runId || crypto.randomUUID(),
+        role: "assistant",
+        content: finalContent,
+        timestamp: new Date(),
+      });
+      this.options.onTyping(false);
+      this.currentRunId = null;
+      this.streamContent = "";
+    } else if (state === "error") {
+      const errorMsg = (payload.errorMessage as string) || "Agent error";
+      this.options.onError(errorMsg);
+      this.options.onTyping(false);
+      this.currentRunId = null;
+      this.streamContent = "";
+    } else if (state === "aborted") {
+      // Partial output may exist
+      if (this.streamContent) {
+        this.options.onMessage({
+          id: runId || crypto.randomUUID(),
+          role: "assistant",
+          content: this.streamContent,
+          timestamp: new Date(),
+        });
+      }
+      this.options.onTyping(false);
+      this.currentRunId = null;
+      this.streamContent = "";
+    }
+  }
+
+  sendMessage(content: string, _conversationId?: string) {
+    if (!this.ws || this.ws.readyState !== WebSocket.OPEN || !this.sessionKey) {
       this.options.onError("Not connected to agent");
       return false;
     }
 
-    this.ws.send(
-      JSON.stringify({
-        type: "message",
-        content,
-        conversationId,
-        userId: this.options.userId,
-      })
-    );
+    this.sendReq("chat.send", {
+      sessionKey: this.sessionKey,
+      message: content,
+      idempotencyKey: crypto.randomUUID(),
+    });
 
     this.options.onTyping(true);
     return true;
@@ -197,6 +288,7 @@ export class OpenClawClient {
       this.ws.close(1000, "Client disconnected");
       this.ws = null;
     }
+    this.sessionKey = null;
     this.options.onStateChange("disconnected");
   }
 
@@ -206,7 +298,7 @@ export class OpenClawClient {
       case WebSocket.CONNECTING:
         return "connecting";
       case WebSocket.OPEN:
-        return "connected";
+        return this.sessionKey ? "connected" : "connecting";
       default:
         return "disconnected";
     }

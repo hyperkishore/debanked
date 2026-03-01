@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import Link from "next/link";
 
-const OPENCLAW_WS_URL = process.env.NEXT_PUBLIC_OPENCLAW_WS_URL || "wss://ketea.tail38a898.ts.net/ws";
+// OpenClaw gateway: connect to root path (no /ws suffix)
+const OPENCLAW_WS_URL = (process.env.NEXT_PUBLIC_OPENCLAW_WS_URL || "wss://ketea.tail38a898.ts.net").replace(/\/ws$/, "");
 const OPENCLAW_TOKEN = process.env.NEXT_PUBLIC_OPENCLAW_TOKEN || "";
 
 export default function ChatPage() {
