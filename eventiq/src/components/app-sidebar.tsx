@@ -32,7 +32,6 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { Building2, ListChecks, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Download, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap, MessageCircle } from "lucide-react";
-import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -49,6 +48,8 @@ interface AppSidebarProps {
   onToggleDevMode: () => void;
   activeFilter: FilterType;
   onFilterChange: (filter: FilterType) => void;
+  onToggleChat?: () => void;
+  isChatOpen?: boolean;
 }
 
 type NavItem = { id: TabType; label: string; icon: React.ComponentType<{ className?: string }>; shortcut: string };
@@ -92,6 +93,8 @@ export function AppSidebar({
   onToggleDevMode,
   activeFilter,
   onFilterChange,
+  onToggleChat,
+  isChatOpen,
 }: AppSidebarProps) {
   const { user, isConfigured, isPasswordAuth, signIn, signOut } = useAuth();
   const { toggleSidebar } = useSidebar();
@@ -161,17 +164,19 @@ export function AppSidebar({
           </SidebarGroupContent>
         </SidebarGroup>
 
-        {/* MissionIQ Chat link — separate route */}
+        {/* Kiket Chat — opens right panel */}
         <SidebarGroup>
           <SidebarGroupLabel>AI Assistant</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
-                <SidebarMenuButton asChild tooltip="MissionIQ Chat">
-                  <Link href="/chat">
-                    <MessageCircle className="h-4 w-4" />
-                    <span>Chat</span>
-                  </Link>
+                <SidebarMenuButton
+                  isActive={isChatOpen}
+                  onClick={onToggleChat}
+                  tooltip="Kiket Chat"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  <span>Kiket</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>
@@ -298,7 +303,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.1.75</span>
+              <span className="opacity-50">v3.1.76</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">

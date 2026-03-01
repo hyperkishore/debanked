@@ -48,6 +48,7 @@ import { SheetsSettings } from "@/components/sheets-settings";
 import { ExportDialog } from "@/components/export-dialog";
 import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
+import { KiketChatPanel, KiketCollapsedStrip } from "@/components/kiket-chat-panel";
 import { ResourcesTab } from "@/components/resources-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
 import { TaskQueueTab } from "@/components/task-queue-tab";
@@ -132,6 +133,11 @@ export default function Home() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
+
+  // Kiket chat panel state
+  const [kiketOpen, setKiketOpen] = useState(false);
+  const [kiketPrompt, setKiketPrompt] = useState<string | undefined>(undefined);
+  const [mobileKiketOpen, setMobileKiketOpen] = useState(false);
 
   // Chat widget state
   const [chatMessages, setChatMessages] = useSyncedStorage<ChatMessage[]>(
@@ -638,6 +644,27 @@ export default function Home() {
   );
 
 
+  // Kiket chat panel handlers
+  const toggleKiketPanel = useCallback(() => {
+    if (isMobile) {
+      setMobileKiketOpen((prev) => !prev);
+    } else {
+      setKiketOpen((prev) => !prev);
+    }
+  }, [isMobile]);
+
+  const handleAskKiket = useCallback(
+    (companyName: string) => {
+      setKiketPrompt(`Tell me about ${companyName}`);
+      if (isMobile) {
+        setMobileKiketOpen(true);
+      } else {
+        setKiketOpen(true);
+      }
+    },
+    [isMobile]
+  );
+
   // Research refresh request
   const handleRequestRefresh = useCallback(
     async (companyId: number) => {
@@ -783,6 +810,8 @@ export default function Home() {
           onToggleDevMode={toggleDevMode}
           activeFilter={activeFilter}
           onFilterChange={setActiveFilter}
+          onToggleChat={toggleKiketPanel}
+          isChatOpen={kiketOpen}
         />
       </div>
 
@@ -842,78 +871,96 @@ export default function Home() {
             </div>
           ) : activeTab === "companies" ? (
             <>
-              {/* Desktop: Resizable panels */}
-              <div className="hidden md:block h-full">
-                <ResizablePanelGroup
-                  orientation="horizontal"
-                  className="h-full"
-                >
-                  <ResizablePanel
-                    defaultSize={40}
-                    minSize={25}
+              {/* Desktop: Resizable panels with Kiket chat */}
+              <div className="hidden md:flex h-full">
+                <div className="flex-1 min-w-0 h-full">
+                  <ResizablePanelGroup
+                    orientation="horizontal"
+                    className="h-full"
                   >
-                    <CompanyList
-                      companies={companies}
-                      selectedId={selectedId}
-                      metState={metState}
-                      ratingState={ratingState}
-                      engagements={engagements}
-                      pipelineState={pipelineState}
-                      activeFilter={activeFilter}
-                      activeSort={activeSort}
-                      activeView={activeView}
-                      onSelect={handleSelect}
-                      onToggleMet={handleToggleMet}
-                      onFilterChange={setActiveFilter}
-                      onSortChange={setActiveSort}
-                      onViewChange={setActiveView}
-                      followUps={followUps}
-                      onSnooze={handleSnooze}
-                      onCompleteFollowUp={handleCompleteFollowUp}
-                      onQuickLog={handleOpenEngagementForCompany}
-                      tagsState={tagsState}
-                      activeTagFilter={activeTagFilter}
-                      onTagFilterChange={setActiveTagFilter}
-                      activeCategoryFilter={activeCategoryFilter}
-                      onCategoryFilterChange={setActiveCategoryFilter}
-                      activeHubSpotStageFilter={activeHubSpotStageFilter}
-                      onHubSpotStageFilterChange={setActiveHubSpotStageFilter}
-                    />
-                  </ResizablePanel>
-                  <ResizableHandle withHandle />
-                  <ResizablePanel defaultSize={60} minSize={30}>
-                    {selectedCompany ? (
-                      <CompanyDetail
-                        company={selectedCompany}
-                        isMet={!!metState[selectedCompany.id]}
-                        rating={ratingState[selectedCompany.id] || null}
-                        notes={notesState[selectedCompany.id] || ""}
-                        engagements={selectedCompanyEngagements}
+                    <ResizablePanel
+                      defaultSize={40}
+                      minSize={25}
+                    >
+                      <CompanyList
+                        companies={companies}
+                        selectedId={selectedId}
+                        metState={metState}
+                        ratingState={ratingState}
+                        engagements={engagements}
                         pipelineState={pipelineState}
-                        sequenceProgress={sequences[selectedCompany.id]}
-                        tags={tagsState[selectedCompany.id] || []}
+                        activeFilter={activeFilter}
+                        activeSort={activeSort}
+                        activeView={activeView}
+                        onSelect={handleSelect}
                         onToggleMet={handleToggleMet}
-                        onSaveNotes={handleSaveNotes}
-                        onOpenRating={(id) => {
-                          setRatingCompanyId(id);
-                          setRatingDialogOpen(true);
-                        }}
-                        onAddEngagement={() => setEngagementDialogOpen(true)}
-                        onDeleteEngagement={handleDeleteEngagement}
-                        onQuickLog={handleQuickLog}
-                        onSequenceStep={handleSequenceStep}
-                        onAddTag={handleAddTag}
-                        onRemoveTag={handleRemoveTag}
-                        onPipelineStageChange={handlePipelineMove}
-                        onRequestRefresh={handleRequestRefresh}
+                        onFilterChange={setActiveFilter}
+                        onSortChange={setActiveSort}
+                        onViewChange={setActiveView}
+                        followUps={followUps}
+                        onSnooze={handleSnooze}
+                        onCompleteFollowUp={handleCompleteFollowUp}
+                        onQuickLog={handleOpenEngagementForCompany}
+                        tagsState={tagsState}
+                        activeTagFilter={activeTagFilter}
+                        onTagFilterChange={setActiveTagFilter}
+                        activeCategoryFilter={activeCategoryFilter}
+                        onCategoryFilterChange={setActiveCategoryFilter}
+                        activeHubSpotStageFilter={activeHubSpotStageFilter}
+                        onHubSpotStageFilterChange={setActiveHubSpotStageFilter}
                       />
-                    ) : (
-                      <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
-                        Select a company to view details
-                      </div>
-                    )}
-                  </ResizablePanel>
-                </ResizablePanelGroup>
+                    </ResizablePanel>
+                    <ResizableHandle withHandle />
+                    <ResizablePanel defaultSize={60} minSize={30}>
+                      {selectedCompany ? (
+                        <CompanyDetail
+                          company={selectedCompany}
+                          isMet={!!metState[selectedCompany.id]}
+                          rating={ratingState[selectedCompany.id] || null}
+                          notes={notesState[selectedCompany.id] || ""}
+                          engagements={selectedCompanyEngagements}
+                          pipelineState={pipelineState}
+                          sequenceProgress={sequences[selectedCompany.id]}
+                          tags={tagsState[selectedCompany.id] || []}
+                          onToggleMet={handleToggleMet}
+                          onSaveNotes={handleSaveNotes}
+                          onOpenRating={(id) => {
+                            setRatingCompanyId(id);
+                            setRatingDialogOpen(true);
+                          }}
+                          onAddEngagement={() => setEngagementDialogOpen(true)}
+                          onDeleteEngagement={handleDeleteEngagement}
+                          onQuickLog={handleQuickLog}
+                          onSequenceStep={handleSequenceStep}
+                          onAddTag={handleAddTag}
+                          onRemoveTag={handleRemoveTag}
+                          onPipelineStageChange={handlePipelineMove}
+                          onRequestRefresh={handleRequestRefresh}
+                          onAskKiket={handleAskKiket}
+                        />
+                      ) : (
+                        <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
+                          Select a company to view details
+                        </div>
+                      )}
+                    </ResizablePanel>
+                  </ResizablePanelGroup>
+                </div>
+
+                {/* Kiket Chat Panel (desktop) */}
+                {kiketOpen ? (
+                  <div className="w-[380px] shrink-0 border-l border-border h-full">
+                    <KiketChatPanel
+                      onClose={() => {
+                        setKiketOpen(false);
+                        setKiketPrompt(undefined);
+                      }}
+                      initialPrompt={kiketPrompt}
+                    />
+                  </div>
+                ) : (
+                  <KiketCollapsedStrip onClick={() => setKiketOpen(true)} />
+                )}
               </div>
 
               {/* Mobile: Single column */}
@@ -978,8 +1025,26 @@ export default function Home() {
                       onRemoveTag={handleRemoveTag}
                       onPipelineStageChange={handlePipelineMove}
                       onRequestRefresh={handleRequestRefresh}
+                      onAskKiket={handleAskKiket}
                     />
                   )}
+                </SheetContent>
+              </Sheet>
+
+              {/* Mobile: Kiket Chat Sheet */}
+              <Sheet open={mobileKiketOpen} onOpenChange={setMobileKiketOpen}>
+                <SheetContent side="bottom" className="h-[85vh] p-0">
+                  <SheetTitle className="sr-only">Kiket Chat</SheetTitle>
+                  <SheetDescription className="sr-only">
+                    Chat with Kiket AI assistant about companies and market intelligence.
+                  </SheetDescription>
+                  <KiketChatPanel
+                    onClose={() => {
+                      setMobileKiketOpen(false);
+                      setKiketPrompt(undefined);
+                    }}
+                    initialPrompt={kiketPrompt}
+                  />
                 </SheetContent>
               </Sheet>
             </>
@@ -996,6 +1061,8 @@ export default function Home() {
           metCount={metCount}
           totalCount={companies.length}
           streakCount={streakData.currentStreak}
+          onToggleChat={toggleKiketPanel}
+          isChatOpen={mobileKiketOpen}
         />
       </SidebarInset>
 

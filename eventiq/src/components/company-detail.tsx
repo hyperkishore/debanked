@@ -94,6 +94,7 @@ interface CompanyDetailProps {
   onRemoveTag?: (companyId: number, tag: string) => void;
   onPipelineStageChange?: (companyId: number, stage: PipelineStage) => void;
   onRequestRefresh?: (companyId: number) => void;
+  onAskKiket?: (companyName: string) => void;
 }
 
 
@@ -190,6 +191,7 @@ export function CompanyDetail({
   onRemoveTag,
   onPipelineStageChange,
   onRequestRefresh,
+  onAskKiket,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
@@ -491,14 +493,18 @@ export function CompanyDetail({
                 size="sm"
                 className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
                 onClick={() => {
-                  window.location.href = `/chat?company=${encodeURIComponent(company.name)}`;
+                  if (onAskKiket) {
+                    onAskKiket(company.name);
+                  } else {
+                    window.location.href = `/chat?company=${encodeURIComponent(company.name)}`;
+                  }
                 }}
               >
                 <MessageCircle className="h-3 w-3" />
-                Ask MissionIQ
+                Ask Kiket
               </Button>
             </TooltipTrigger>
-            <TooltipContent>Ask MissionIQ about {company.name}</TooltipContent>
+            <TooltipContent>Ask Kiket about {company.name}</TooltipContent>
           </Tooltip>
         </div>
       </div>

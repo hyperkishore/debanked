@@ -33,9 +33,9 @@ function ChatPageInner() {
     return (
       <div className="h-dvh flex flex-col items-center justify-center gap-4">
         <div className="w-16 h-16 rounded-2xl bg-brand/10 flex items-center justify-center">
-          <span className="text-brand font-bold text-2xl">MQ</span>
+          <span className="text-brand font-bold text-2xl">K</span>
         </div>
-        <h1 className="text-xl font-bold">MissionIQ Chat</h1>
+        <h1 className="text-xl font-bold">Kiket Chat</h1>
         <p className="text-sm text-muted-foreground">
           Sign in with your @hyperverge.co account to access the chat.
         </p>

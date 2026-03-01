@@ -7,7 +7,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { ChatMessage } from "@/components/chat-message";
 import { OpenClawClient, type ConnectionState, type ChatMessage as ChatMsg } from "@/lib/openclaw-client";
-import { Send, Plus, Wifi, WifiOff, Loader2 } from "lucide-react";
+import { Send, Plus, Wifi, WifiOff, Loader2, X } from "lucide-react";
 
 interface MissionIQChatProps {
   wsUrl: string;
@@ -15,9 +15,11 @@ interface MissionIQChatProps {
   userId: string;
   userName: string;
   initialPrompt?: string;
+  compact?: boolean;
+  onClose?: () => void;
 }
 
-export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt }: MissionIQChatProps) {
+export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, compact, onClose }: MissionIQChatProps) {
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -134,21 +136,25 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt }:
   return (
     <div className="flex flex-col h-full">
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-border">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center">
-            <span className="text-brand font-bold text-sm">MQ</span>
-          </div>
+      <div className={`flex items-center justify-between border-b border-border ${compact ? "px-3 py-2" : "px-4 py-3"}`}>
+        <div className="flex items-center gap-2">
+          {!compact && (
+            <div className="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center">
+              <span className="text-brand font-bold text-sm">K</span>
+            </div>
+          )}
           <div>
-            <h2 className="text-sm font-semibold">MissionIQ</h2>
             <div className="flex items-center gap-1.5">
+              <h2 className="text-sm font-semibold">Kiket</h2>
               {isConnected ? (
-                <Wifi className="h-3 w-3 text-green-500" />
+                <span className="w-2 h-2 rounded-full bg-green-500" />
               ) : connectionState === "connecting" ? (
                 <Loader2 className="h-3 w-3 text-yellow-500 animate-spin" />
               ) : (
-                <WifiOff className="h-3 w-3 text-red-500" />
+                <span className="w-2 h-2 rounded-full bg-red-500" />
               )}
+            </div>
+            {!compact && (
               <span className="text-xs text-muted-foreground">
                 {connectionState === "connected"
                   ? "Online"
@@ -156,21 +162,35 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt }:
                   ? "Connecting..."
                   : "Offline"}
               </span>
-            </div>
+            )}
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <Badge variant="outline" className="text-xs max-w-[120px] truncate">
-            {userName}
-          </Badge>
+        <div className="flex items-center gap-1">
+          {!compact && (
+            <Badge variant="outline" className="text-xs max-w-[120px] truncate">
+              {userName}
+            </Badge>
+          )}
           <Button
             variant="ghost"
             size="sm"
             onClick={handleNewConversation}
             title="New conversation"
+            className="h-7 w-7 p-0"
           >
-            <Plus className="h-4 w-4" />
+            <Plus className="h-3.5 w-3.5" />
           </Button>
+          {onClose && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={onClose}
+              title="Close chat"
+              className="h-7 w-7 p-0"
+            >
+              <X className="h-3.5 w-3.5" />
+            </Button>
+          )}
         </div>
       </div>
 
@@ -185,22 +205,23 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt }:
       <ScrollArea className="flex-1 px-4" ref={scrollRef}>
         <div className="py-4 space-y-4">
           {messages.length === 0 && !streamingMessage && (
-            <div className="flex flex-col items-center justify-center py-16 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-brand/10 flex items-center justify-center mb-4">
-                <span className="text-brand font-bold text-2xl">MQ</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2">MissionIQ</h3>
-              <p className="text-sm text-muted-foreground max-w-sm mb-6">
-                Your GTM intelligence assistant. Ask about companies, leaders,
-                outreach briefs, or market stats.
+            <div className={`flex flex-col items-center justify-center text-center ${compact ? "py-8" : "py-16"}`}>
+              {!compact && (
+                <div className="w-16 h-16 rounded-2xl bg-brand/10 flex items-center justify-center mb-4">
+                  <span className="text-brand font-bold text-2xl">K</span>
+                </div>
+              )}
+              <h3 className={`font-semibold mb-2 ${compact ? "text-sm" : "text-lg"}`}>Kiket</h3>
+              <p className={`text-muted-foreground max-w-sm mb-4 ${compact ? "text-xs" : "text-sm mb-6"}`}>
+                {compact
+                  ? "Ask about companies, leaders, or market intel."
+                  : "Your GTM intelligence assistant. Ask about companies, leaders, outreach briefs, or market stats."}
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-lg">
-                {[
-                  "Tell me about Fortun Advance",
-                  "Top funders in New York",
-                  "Outreach brief for NY Tribeca",
-                  "Market stats by category",
-                ].map((suggestion) => (
+              <div className={`grid gap-2 ${compact ? "grid-cols-1 max-w-xs" : "grid-cols-1 sm:grid-cols-2 max-w-lg"}`}>
+                {(compact
+                  ? ["Top funders in New York", "Market stats by category"]
+                  : ["Tell me about Fortun Advance", "Top funders in New York", "Outreach brief for NY Tribeca", "Market stats by category"]
+                ).map((suggestion) => (
                   <Button
                     key={suggestion}
                     variant="outline"
@@ -244,37 +265,39 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt }:
                 <span className="w-2 h-2 bg-muted-foreground/40 rounded-full animate-bounce [animation-delay:150ms]" />
                 <span className="w-2 h-2 bg-muted-foreground/40 rounded-full animate-bounce [animation-delay:300ms]" />
               </div>
-              <span className="text-xs">MissionIQ is thinking...</span>
+              <span className="text-xs">Kiket is thinking...</span>
             </div>
           )}
         </div>
       </ScrollArea>
 
       {/* Input area */}
-      <div className="px-4 py-3 border-t border-border pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+      <div className={`border-t border-border ${compact ? "px-3 py-2" : "px-4 py-3"} pb-[max(0.75rem,env(safe-area-inset-bottom))]`}>
         <div className="flex gap-2">
           <Textarea
             ref={inputRef}
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={isConnected ? "Ask about companies, leaders, or market intel..." : "Connecting to agent..."}
+            placeholder={isConnected ? (compact ? "Ask Kiket..." : "Ask about companies, leaders, or market intel...") : "Connecting..."}
             disabled={!isConnected}
-            className="min-h-[44px] max-h-[120px] resize-none text-sm"
+            className={`min-h-[40px] max-h-[120px] resize-none text-sm ${compact ? "min-h-[36px]" : ""}`}
             rows={1}
           />
           <Button
             onClick={handleSend}
             disabled={!input.trim() || !isConnected}
             size="sm"
-            className="h-[44px] px-3"
+            className={compact ? "h-[36px] px-2.5" : "h-[44px] px-3"}
           >
             <Send className="h-4 w-4" />
           </Button>
         </div>
-        <p className="text-xs text-muted-foreground mt-1.5 text-center">
-          Shift+Enter for new line. Powered by OpenClaw + Claude.
-        </p>
+        {!compact && (
+          <p className="text-xs text-muted-foreground mt-1.5 text-center">
+            Shift+Enter for new line. Powered by OpenClaw + Claude.
+          </p>
+        )}
       </div>
     </div>
   );

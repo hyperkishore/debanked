@@ -4,7 +4,6 @@ import { TabType } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Building2, ListChecks, BarChart3, Map, Rocket, MessageCircle } from "lucide-react";
-import Link from "next/link";
 
 interface MobileNavProps {
   activeTab: TabType;
@@ -12,6 +11,8 @@ interface MobileNavProps {
   metCount: number;
   totalCount: number;
   streakCount: number;
+  onToggleChat?: () => void;
+  isChatOpen?: boolean;
 }
 
 const tabs: { id: TabType; label: string; icon: React.ComponentType<{ className?: string }> }[] = [
@@ -22,7 +23,7 @@ const tabs: { id: TabType; label: string; icon: React.ComponentType<{ className?
   { id: "schedule", label: "Today", icon: ListChecks },
 ];
 
-export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streakCount }: MobileNavProps) {
+export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streakCount, onToggleChat, isChatOpen }: MobileNavProps) {
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden border-t border-border bg-card pb-[env(safe-area-inset-bottom)]">
       <div className="flex h-14">
@@ -54,16 +55,17 @@ export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streak
             </Button>
           );
         })}
-        {/* MissionIQ Chat — separate route */}
+        {/* Kiket Chat — opens right panel */}
         <Button
           variant="ghost"
-          className="flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors relative h-auto rounded-none p-0 text-muted-foreground"
-          asChild
+          className={cn(
+            "flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors relative h-auto rounded-none p-0",
+            isChatOpen ? "text-primary" : "text-muted-foreground"
+          )}
+          onClick={onToggleChat}
         >
-          <Link href="/chat">
-            <MessageCircle className="h-5 w-5" />
-            <span className="text-xs font-semibold tracking-wide">Chat</span>
-          </Link>
+          <MessageCircle className="h-5 w-5" />
+          <span className="text-xs font-semibold tracking-wide">Kiket</span>
         </Button>
       </div>
     </nav>
