@@ -102,7 +102,7 @@ export class OpenClawClient {
         minProtocol: 3,
         maxProtocol: 3,
         client: {
-          id: "eventiq-kiket-chat",
+          id: this.options.agent || "missioniq",
           displayName: "EventIQ Kiket",
           version: "1.0.0",
           platform: "browser",
@@ -111,7 +111,6 @@ export class OpenClawClient {
         role: "operator",
         scopes: ["operator.read", "operator.write"],
         auth: { token: this.options.token },
-        agentId: this.options.agent || "missioniq",
       });
     };
 
