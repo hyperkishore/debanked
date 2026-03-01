@@ -36,6 +36,10 @@ yarn-error.log*
 # Company data — now served from Supabase, should not be in the repo
 src/data/*.json
 
+# OpenClaw secrets (real keys stored locally, template committed)
+server-backup/.env
+server-backup/gateway/openclaw.json
+
 # vercel
 .vercel
 

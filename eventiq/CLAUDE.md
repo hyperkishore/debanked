@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 3.1.71
+**Version:** 3.1.79
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → `.next/` (SSR, no static export)
 **Deploy target:** Vercel (auto-deploy from Git)
@@ -62,17 +62,37 @@ MissionIQ env vars are set for both Production and Preview (missioniq branch):
 
 Manage via: `npx vercel env ls --scope hv-one`
 
-### MissionIQ Infrastructure
+### Kiket (formerly MissionIQ) Infrastructure
 
 | Component | Location |
 |-----------|----------|
+| Chat panel (integrated) | `src/components/kiket-chat-panel.tsx` → `src/components/missioniq-chat.tsx` |
+| Chat page (standalone) | `src/app/chat/page.tsx` |
+| OpenClaw WebSocket client | `src/lib/openclaw-client.ts` (sessionKey filtering for agent isolation) |
+| Chat message renderer | `src/components/chat-message.tsx` (markdown with code blocks, tables, lists) |
 | Tool API endpoints | `src/app/api/tools/` (8 routes: search, company, leader, brief, stats, news, similar, team-notes) |
 | Tool auth middleware | `src/lib/tool-auth.ts` (X-Tool-Key header validation) |
-| Chat page | `src/app/chat/page.tsx` → `src/components/missioniq-chat.tsx` |
-| OpenClaw WebSocket client | `src/lib/openclaw-client.ts` |
 | Supabase tables | `miq_` prefix: conversations, messages, notes, engagements, reminders, user_config |
-| OpenClaw agent config | Remote server `keti@ketea:/Users/keti/.openclaw/agents/missioniq/` |
-| OpenClaw gateway | `wss://ketea.tail38a898.ts.net/ws` (Tailscale Funnel) |
+| OpenClaw agent config | Remote server `keti@ketea:/Users/keti/.openclaw/agents/missioniq/agent/` |
+| OpenClaw agent memory | Remote server `keti@ketea:/Users/keti/.openclaw/agents/missioniq/agent/memory/` |
+| OpenClaw gateway | `wss://ketea.tail38a898.ts.net` (Tailscale Funnel, port 18789) |
+
+#### OpenClaw Multi-Agent Architecture
+
+The gateway hosts multiple agents on a single process. Kiket (work) is isolated from kkbot (personal):
+
+```
+Gateway (keti@ketea:18789)
+├── main (kkbot)     — Personal assistant, WhatsApp groups only
+├── missioniq (Kiket) — GTM intelligence, webchat + EventIQ tools
+├── fitty            — Fitness agent, WhatsApp group
+├── clawd            — Purva agent, WhatsApp group
+└── walassistant     — Walmart agent, WhatsApp group
+
+Isolation: Separate AGENT.md, memory, workspace per agent
+Shared: API key, gateway port, event bus, Tailscale funnel
+Client fix: sessionKey filtering in openclaw-client.ts prevents cross-agent event bleed
+```
 
 ---
 
@@ -512,6 +532,21 @@ Each agent receives a batch of companies and should:
 ---
 
 ## Decisions Log
+
+### v3.1.79 (2026-03-01) — Kiket Agent Isolation (Shared Gateway, Separate Identity)
+- **Decision**: Keep Kiket (work) and kkbot (personal) on the same OpenClaw gateway. No process separation needed.
+- **Architecture**: Single gateway process on Keti's Mac Mini (port 18789) hosts multiple agents. Each agent has isolated AGENT.md, memory directory, workspace, and conversation history. They share: API key, WebSocket port, event bus, Tailscale funnel.
+- **Bug found**: Operator WebSocket delivers events from ALL agents. When kkbot replied on WhatsApp, the "Hey Keti!" response bled into EventIQ's Kiket webchat panel.
+- **Fix**: Client-side `sessionKey` filtering in `openclaw-client.ts` — drops events not matching the `missioniq` session. Also passes `agentId` in connect handshake for server-side scoping.
+- **Why not full separation**: Two gateway processes means double memory, dual configs, second Tailscale funnel. The client-side filter achieves functional isolation with zero infrastructure overhead.
+- **Revisit if**: Fault isolation becomes needed (one agent crashing shouldn't affect the other), or billing separation is required.
+
+### v3.1.77 (2026-03-01) — Kiket Chat Panel Integration + Memory Architecture
+- **Decision**: Kiket (renamed from MissionIQ) is an integrated right panel in the main dashboard, not a separate `/chat` route.
+- **Layout**: `[Sidebar] [Company List] [Company Detail] [Kiket Panel (resizable 300-700px)]`. Sidebar collapses when chat opens.
+- **Memory architecture**: 14 domain-separated memory files on server (`memory/sales/`, `memory/marketing/`, `memory/product/`, `memory/solutions/`, `memory/decisions/`, `memory/people/`) with master index `memory/MEMORY.md`.
+- **Scroll fix**: Replaced Radix `ScrollArea` with native `overflow-y-auto` div — Radix creates nested viewport that breaks `ref`-based scroll control.
+- **Files**: `kiket-chat-panel.tsx` (new), `missioniq-chat.tsx`, `openclaw-client.ts`, `chat-message.tsx`, `app-sidebar.tsx`, `mobile-nav.tsx`, `company-detail.tsx`, `page.tsx`
 
 ### v2.3.02 (2026-02-15) — Full-Text Search, Data Quality, Engagement Analytics
 - **Full-text search**: Cmd+K now searches across ALL company fields (name, contacts, leaders, bios, location, desc, news, icebreakers, talking points, notes, website) with contextual snippets showing where the match was found

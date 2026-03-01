@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.26",
+    "note": "Template — replace all <PLACEHOLDER> values before use"
+  },
+  "env": {
+    "ANTHROPIC_API_KEY": "<ANTHROPIC_API_KEY>",
+    "SUPABASE_URL": "<SUPABASE_URL>",
+    "SUPABASE_SERVICE_KEY": "<SUPABASE_SERVICE_KEY>",
+    "EVENTIQ_API_URL": "https://us2.hyperverge.space",
+    "EVENTIQ_API_KEY": "<EVENTIQ_TOOL_API_KEY>"
+  },
+  "auth": {
+    "profiles": {
+      "anthropic:claude-cli": {
+        "provider": "anthropic",
+        "mode": "oauth"
+      },
+      "anthropic:manual": {
+        "provider": "anthropic",
+        "mode": "token"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "anthropic/claude-sonnet-4-20250514"
+      },
+      "models": {
+        "anthropic/claude-opus-4-5": {
+          "alias": "opus"
+        }
+      },
+      "workspace": "<HOME>/clawd-missioniq",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "sandbox": {
+        "mode": "off"
+      }
+    },
+    "list": [
+      {
+        "id": "missioniq",
+        "name": "missioniq",
+        "workspace": "<HOME>/clawd-missioniq",
+        "agentDir": "<HOME>/.openclaw/agents/missioniq/agent",
+        "identity": {
+          "name": "Kiket",
+          "emoji": "\ud83e\udde0"
+        }
+      }
+    ]
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "gemini",
+        "gemini": {
+          "apiKey": "<GEMINI_API_KEY>",
+          "model": "gemini-2.5-flash"
+        }
+      },
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "missioniq",
+      "match": {
+        "channel": "webchat"
+      }
+    }
+  ],
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "allowedOrigins": [
+        "https://us2.hyperverge.space",
+        "https://us.hyperverge.space",
+        "http://localhost:3000"
+      ],
+      "allowInsecureAuth": true,
+      "dangerouslyDisableDeviceAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "<GATEWAY_AUTH_TOKEN>"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "terminal": { "enabled": true },
+      "browser": { "enabled": true },
+      "filesystem": { "enabled": true },
+      "web-search": { "enabled": true },
+      "clipboard": { "enabled": true },
+      "notifications": { "enabled": true },
+      "cron": { "enabled": true },
+      "eventiq": {
+        "enabled": true,
+        "env": {
+          "EVENTIQ_API_URL": "https://us2.hyperverge.space",
+          "EVENTIQ_API_KEY": "<EVENTIQ_TOOL_API_KEY>"
+        }
+      }
+    }
+  }
+}
