@@ -98,7 +98,7 @@ export class OpenClawClient {
         minProtocol: 3,
         maxProtocol: 3,
         client: {
-          id: "webchat",
+          id: "openclaw-control-ui",
           displayName: "EventIQ MissionIQ",
           version: "1.0.0",
           platform: "browser",
@@ -202,22 +202,34 @@ export class OpenClawClient {
     }
   }
 
+  /** Extract text from message content (may be string or array of {type,text} blocks) */
+  private extractText(content: unknown): string {
+    if (typeof content === "string") return content;
+    if (Array.isArray(content)) {
+      return content
+        .filter((b: Record<string, unknown>) => b.type === "text" && typeof b.text === "string")
+        .map((b: Record<string, unknown>) => b.text as string)
+        .join("");
+    }
+    return "";
+  }
+
   private handleChatEvent(payload: Record<string, unknown>) {
     const state = payload.state as string;
     const runId = payload.runId as string;
 
     if (state === "delta") {
-      // Streaming chunk
+      // Streaming chunk — content is the full accumulated text so far
       const message = payload.message as Record<string, unknown> | undefined;
-      const content = (message?.content as string) || (message?.text as string) || "";
+      const content = this.extractText(message?.content) || (message?.text as string) || "";
       if (content) {
-        this.streamContent += content;
+        this.streamContent = content;
         this.options.onStreamChunk?.(this.streamContent, runId || "stream");
       }
     } else if (state === "final") {
       // Complete response
       const message = payload.message as Record<string, unknown> | undefined;
-      const finalContent = (message?.content as string) || (message?.text as string) || this.streamContent;
+      const finalContent = this.extractText(message?.content) || (message?.text as string) || this.streamContent;
       this.options.onMessage({
         id: runId || crypto.randomUUID(),
         role: "assistant",
