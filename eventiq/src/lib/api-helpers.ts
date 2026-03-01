@@ -64,7 +64,7 @@ async function getAuthUser(request: NextRequest) {
 export async function authenticateRequest(request: NextRequest) {
   // Check password-based auth first
   const passwordCookie = request.cookies.get("eventiq_password_auth")?.value;
-  if (isValidPasswordAuth(passwordCookie)) {
+  if (await isValidPasswordAuth(passwordCookie)) {
     const supabase = getSupabaseServer();
     if (!supabase) {
       return { error: apiError("Database not configured", 503) } as const;

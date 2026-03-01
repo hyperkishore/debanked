@@ -5,7 +5,7 @@ import { isValidPasswordAuth } from "@/lib/password-auth";
 export async function middleware(request: NextRequest) {
   // Check password-based auth first (simple shared password)
   const passwordCookie = request.cookies.get("eventiq_password_auth")?.value;
-  const isPasswordAuthed = isValidPasswordAuth(passwordCookie);
+  const isPasswordAuthed = await isValidPasswordAuth(passwordCookie);
 
   // If password-authed and on login page, redirect to home
   if (isPasswordAuthed && request.nextUrl.pathname.startsWith("/login")) {

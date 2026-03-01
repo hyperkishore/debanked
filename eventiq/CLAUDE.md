@@ -10,10 +10,69 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 3.1.02
+**Version:** 3.1.71
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → `.next/` (SSR, no static export)
 **Deploy target:** Vercel (auto-deploy from Git)
+
+---
+
+## Deployment
+
+### Branches & Domains
+
+| Branch | Domain | Environment |
+|--------|--------|-------------|
+| `main` | `us.hyperverge.space` | Production (auto-deploy via GitHub) |
+| `missioniq` | `us2.hyperverge.space` | Preview (aliased from Vercel preview deploy) |
+
+### Deploying `missioniq` branch to `us2.hyperverge.space`
+
+The `missioniq` branch deploys as a Vercel **preview** (not production). After pushing, you must re-alias the domain:
+
+```bash
+# 1. Push changes
+git push origin missioniq
+
+# 2. Wait ~60s for Vercel preview build to complete, then check:
+npx vercel ls --scope hv-one 2>&1 | head -6
+
+# 3. Find the latest "Ready" preview deployment URL, then alias it:
+npx vercel alias <preview-url> us2.hyperverge.space --scope hv-one
+```
+
+**Example:**
+```bash
+npx vercel alias https://eventiq-1je8h6709-hv-one.vercel.app us2.hyperverge.space --scope hv-one
+```
+
+### Why not `vercel --prod`?
+
+CLI production deploys (`vercel --prod`) fail with a Turbopack edge runtime module resolution error (`Can't resolve '@supabase/ssr'` in middleware). Root cause: the repo has two `.vercel/project.json` files — one in `debanked/` (parent) and one in `debanked/eventiq/` — causing CLI root directory confusion. GitHub auto-deploys work fine because the Vercel GitHub app correctly resolves the project root.
+
+**Workaround:** Use the preview alias approach above. To fix permanently, delete `/debanked/.vercel/project.json` (the parent one).
+
+### Environment Variables
+
+MissionIQ env vars are set for both Production and Preview (missioniq branch):
+- `TOOL_API_KEY` — Machine-to-machine auth for tool API endpoints
+- `NEXT_PUBLIC_OPENCLAW_WS_URL` — OpenClaw WebSocket gateway URL
+- `NEXT_PUBLIC_OPENCLAW_TOKEN` — OpenClaw auth token (client-visible, acceptable behind OAuth)
+- `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_KEY` — Supabase
+
+Manage via: `npx vercel env ls --scope hv-one`
+
+### MissionIQ Infrastructure
+
+| Component | Location |
+|-----------|----------|
+| Tool API endpoints | `src/app/api/tools/` (8 routes: search, company, leader, brief, stats, news, similar, team-notes) |
+| Tool auth middleware | `src/lib/tool-auth.ts` (X-Tool-Key header validation) |
+| Chat page | `src/app/chat/page.tsx` → `src/components/missioniq-chat.tsx` |
+| OpenClaw WebSocket client | `src/lib/openclaw-client.ts` |
+| Supabase tables | `miq_` prefix: conversations, messages, notes, engagements, reminders, user_config |
+| OpenClaw agent config | Remote server `keti@ketea:/Users/keti/.openclaw/agents/missioniq/` |
+| OpenClaw gateway | `wss://ketea.tail38a898.ts.net/ws` (Tailscale Funnel) |
 
 ---
 
