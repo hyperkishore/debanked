@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 3.1.79
+**Version:** 3.1.80
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → `.next/` (SSR, no static export)
 **Deploy target:** Vercel (auto-deploy from Git)
@@ -75,7 +75,10 @@ Manage via: `npx vercel env ls --scope hv-one`
 | Supabase tables | `miq_` prefix: conversations, messages, notes, engagements, reminders, user_config |
 | OpenClaw agent config | Remote server `keti@ketea:/Users/keti/.openclaw/agents/missioniq/agent/` |
 | OpenClaw agent memory | Remote server `keti@ketea:/Users/keti/.openclaw/agents/missioniq/agent/memory/` |
-| OpenClaw gateway | `wss://ketea.tail38a898.ts.net` (Tailscale Funnel, port 18789) |
+| OpenClaw gateway (Mac Mini) | `wss://ketea.tail38a898.ts.net` (Tailscale Funnel, port 18789) |
+| OpenClaw gateway (Vercel Sandbox) | `wss://sb-*.vercel.run/ws` (ephemeral, 45min max on Hobby plan) |
+| Sandbox snapshot | `snap_mAlWAiLElakgzmW4bg7TCNh3EF0A` (full OpenClaw + Kiket config) |
+| Sandbox launcher | `scripts/kiket-sandbox.sh` (start/stop/status) |
 
 #### OpenClaw Multi-Agent Architecture
 
@@ -92,6 +95,34 @@ Gateway (keti@ketea:18789)
 Isolation: Separate AGENT.md, memory, workspace per agent
 Shared: API key, gateway port, event bus, Tailscale funnel
 Client fix: sessionKey filtering in openclaw-client.ts prevents cross-agent event bleed
+```
+
+#### Kiket on Vercel Sandbox (Ephemeral)
+
+Kiket can run on Vercel Sandbox when the Mac Mini is offline. The setup is preserved as a snapshot.
+
+```bash
+# Start Kiket sandbox (restores from snapshot, starts gateway)
+./scripts/kiket-sandbox.sh start
+
+# Check status
+./scripts/kiket-sandbox.sh status
+
+# Stop
+./scripts/kiket-sandbox.sh stop
+```
+
+**Limitations:**
+- Max 45 minutes on Hobby plan (5 hours on Pro at $20/mo)
+- URL changes on every restart (need to update Vercel env var + redeploy)
+- No WhatsApp (can't scan QR in sandbox) — webchat only
+- Snapshot ID: `snap_mAlWAiLElakgzmW4bg7TCNh3EF0A`
+
+**After starting a sandbox**, update the EventIQ env var and redeploy:
+```bash
+# 1. Update env var (URL from sandbox start output)
+printf "wss://sb-XXXXX.vercel.run/ws" | npx vercel env add NEXT_PUBLIC_OPENCLAW_WS_URL preview missioniq --scope hv-one
+# 2. Redeploy: use Vercel API or push to missioniq branch
 ```
 
 #### Kiket Server Migration
@@ -559,6 +590,15 @@ Each agent receives a batch of companies and should:
 ---
 
 ## Decisions Log
+
+### v3.1.80 (2026-03-01) — Kiket Vercel Sandbox Deployment
+- **Decision**: Deploy Kiket-only OpenClaw gateway to Vercel Sandbox as a fallback when Mac Mini is offline.
+- **Setup**: Sandbox with Node 22, OpenClaw v2026.2.26, port 18789 published. Config stripped to missioniq agent only (no WhatsApp, no personal agents).
+- **Snapshot**: `snap_mAlWAiLElakgzmW4bg7TCNh3EF0A` preserves full filesystem. Restore takes ~0.4s vs ~16s cold start.
+- **Launcher**: `scripts/kiket-sandbox.sh` (start/stop/status) automates sandbox lifecycle.
+- **Limitations**: 45-minute max on Hobby plan (5h on Pro). URL changes per sandbox — need env var update + redeploy.
+- **Files**: `scripts/kiket-sandbox.sh` (new), `CLAUDE.md` (updated infrastructure table, sandbox docs).
+- **Why not always-on**: Vercel Sandbox is ephemeral by design. For true 24/7: need Mac Mini or a VPS ($5-7/mo on Railway/Fly.io).
 
 ### v3.1.79 (2026-03-01) — Kiket Agent Isolation (Shared Gateway, Separate Identity)
 - **Decision**: Keep Kiket (work) and kkbot (personal) on the same OpenClaw gateway. No process separation needed.
