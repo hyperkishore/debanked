@@ -3,11 +3,10 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { ChatMessage } from "@/components/chat-message";
 import { OpenClawClient, type ConnectionState, type ChatMessage as ChatMsg } from "@/lib/openclaw-client";
-import { Send, Plus, Wifi, WifiOff, Loader2, X } from "lucide-react";
+import { Send, Plus, Loader2, X } from "lucide-react";
 
 interface MissionIQChatProps {
   wsUrl: string;
@@ -30,14 +29,14 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
   const initialPromptSentRef = useRef(false);
 
   const clientRef = useRef<OpenClawClient | null>(null);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollBottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const [sendTimestamp, setSendTimestamp] = useState<number | null>(null);
+  const [timing, setTiming] = useState<{ ttfc: number | null; ttfr: number | null }>({ ttfc: null, ttfr: null });
 
   // Auto-scroll to bottom on new messages
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-    }
+    scrollBottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, streamingMessage, isTyping]);
 
   // Initialize WebSocket client
@@ -49,8 +48,15 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
       userId,
       onMessage: (msg) => {
         setStreamingMessage(null);
+        setSendTimestamp((ts) => {
+          if (ts) {
+            const ttfr = Date.now() - ts;
+            setTiming((prev) => ({ ...prev, ttfr }));
+            console.log(`[Kiket] Total response: ${(ttfr / 1000).toFixed(1)}s`);
+          }
+          return null;
+        });
         setMessages((prev) => {
-          // Replace streaming message if it exists, otherwise append
           const existing = prev.findIndex((m) => m.id === msg.id);
           if (existing >= 0) {
             const updated = [...prev];
@@ -61,12 +67,31 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
         });
       },
       onTyping: setIsTyping,
-      onStateChange: setConnectionState,
+      onStateChange: (state) => {
+        setConnectionState(state);
+        if (state === "connected") {
+          console.log(`[Kiket] Connected to gateway`);
+        }
+      },
       onError: (err) => {
         setError(err);
+        console.warn(`[Kiket] Error: ${err}`);
         setTimeout(() => setError(null), 5000);
       },
       onStreamChunk: (content, messageId) => {
+        setSendTimestamp((ts) => {
+          if (ts) {
+            setTiming((prev) => {
+              if (prev.ttfc === null) {
+                const ttfc = Date.now() - ts;
+                console.log(`[Kiket] First chunk: ${(ttfc / 1000).toFixed(1)}s`);
+                return { ...prev, ttfc };
+              }
+              return prev;
+            });
+          }
+          return ts;
+        });
         setStreamingMessage({ id: messageId, content });
       },
     });
@@ -98,7 +123,6 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
     const text = input.trim();
     if (!text || !clientRef.current) return;
 
-    // Add user message locally
     const userMsg: ChatMsg = {
       id: crypto.randomUUID(),
       role: "user",
@@ -108,10 +132,11 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
 
-    // Send to OpenClaw
-    clientRef.current.sendMessage(text, conversationId);
+    // Track timing
+    setSendTimestamp(Date.now());
+    setTiming({ ttfc: null, ttfr: null });
 
-    // Refocus input
+    clientRef.current.sendMessage(text, conversationId);
     inputRef.current?.focus();
   }, [input, conversationId]);
 
@@ -202,7 +227,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
       )}
 
       {/* Messages area */}
-      <ScrollArea className="flex-1 px-4" ref={scrollRef}>
+      <div className="flex-1 min-h-0 overflow-y-auto px-4">
         <div className="py-4 space-y-4">
           {messages.length === 0 && !streamingMessage && (
             <div className={`flex flex-col items-center justify-center text-center ${compact ? "py-8" : "py-16"}`}>
@@ -257,7 +282,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
             />
           )}
 
-          {/* Typing indicator */}
+          {/* Typing indicator with timing */}
           {isTyping && !streamingMessage && (
             <div className="flex items-center gap-2 text-muted-foreground">
               <div className="flex gap-1">
@@ -268,8 +293,22 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
               <span className="text-xs">Kiket is thinking...</span>
             </div>
           )}
+
+          {/* Timing display */}
+          {timing.ttfr !== null && messages.length > 0 && (
+            <div className="flex justify-center">
+              <span className="text-xs text-muted-foreground/50">
+                {timing.ttfc !== null && `First token: ${(timing.ttfc / 1000).toFixed(1)}s`}
+                {timing.ttfc !== null && timing.ttfr !== null && " · "}
+                {timing.ttfr !== null && `Total: ${(timing.ttfr / 1000).toFixed(1)}s`}
+              </span>
+            </div>
+          )}
+
+          {/* Scroll anchor */}
+          <div ref={scrollBottomRef} />
         </div>
-      </ScrollArea>
+      </div>
 
       {/* Input area */}
       <div className={`border-t border-border ${compact ? "px-3 py-2" : "px-4 py-3"} pb-[max(0.75rem,env(safe-area-inset-bottom))]`}>

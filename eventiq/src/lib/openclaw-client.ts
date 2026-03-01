@@ -66,6 +66,8 @@ export class OpenClawClient {
   private sessionKey: string | null = null;
   private currentRunId: string | null = null;
   private streamContent = "";
+  private connectStartedAt = 0;
+  private chatSentAt = 0;
 
   constructor(options: OpenClawClientOptions) {
     this.options = options;
@@ -82,6 +84,8 @@ export class OpenClawClient {
     if (wsUrl.endsWith("/ws")) {
       wsUrl = wsUrl.slice(0, -3);
     }
+
+    this.connectStartedAt = Date.now();
 
     try {
       this.ws = new WebSocket(wsUrl);
@@ -168,6 +172,8 @@ export class OpenClawClient {
     // hello-ok response from connect
     if (payload?.type === "hello-ok") {
       this.reconnectAttempts = 0;
+      const connectMs = Date.now() - this.connectStartedAt;
+      console.log(`[OpenClaw] Connected in ${connectMs}ms`);
       this.options.onStateChange("connected");
 
       // Extract session key for the target agent
@@ -184,6 +190,8 @@ export class OpenClawClient {
     if (payload?.status === "accepted" && payload?.runId) {
       this.currentRunId = payload.runId as string;
       this.streamContent = "";
+      const acceptMs = Date.now() - this.chatSentAt;
+      console.log(`[OpenClaw] Chat accepted in ${acceptMs}ms (runId: ${this.currentRunId})`);
       this.options.onTyping(true);
     }
   }
@@ -267,6 +275,7 @@ export class OpenClawClient {
       return false;
     }
 
+    this.chatSentAt = Date.now();
     this.sendReq("chat.send", {
       sessionKey: this.sessionKey,
       message: content,
