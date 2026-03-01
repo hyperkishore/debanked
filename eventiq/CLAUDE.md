@@ -94,6 +94,33 @@ Shared: API key, gateway port, event bus, Tailscale funnel
 Client fix: sessionKey filtering in openclaw-client.ts prevents cross-agent event bleed
 ```
 
+#### Kiket Server Migration
+
+Full backup lives in `server-backup/` with a migration README. When migrating to a new machine:
+
+```bash
+# 1. Install OpenClaw on new machine
+npm install -g openclaw && openclaw init
+
+# 2. Copy agent files
+cp -r server-backup/agent/ ~/.openclaw/agents/missioniq/agent/
+
+# 3. Create config from template, fill in secrets from server-backup/.env (local only, gitignored)
+cp server-backup/gateway/openclaw.template.json ~/.openclaw/openclaw.json
+# Replace all <PLACEHOLDER> values with real keys from .env
+
+# 4. Create workspace and start
+mkdir -p ~/clawd-missioniq
+tailscale funnel 18789
+openclaw gateway install
+
+# 5. Update Vercel env vars with new funnel URL + gateway token
+# NEXT_PUBLIC_OPENCLAW_WS_URL → new Tailscale funnel URL
+# NEXT_PUBLIC_OPENCLAW_TOKEN → new GATEWAY_AUTH_TOKEN
+```
+
+See `server-backup/README.md` for full details. Secrets are in `server-backup/.env` (gitignored, local only).
+
 ---
 
 ## Session Start — QUICK SCAN
