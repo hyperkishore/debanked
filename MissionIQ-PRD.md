@@ -403,15 +403,33 @@ CREATE TABLE chat_user_config (
 
 ## 8. OpenClaw Configuration (Remote Server)
 
+### 8.0 Current Server State (Discovered)
+
+| Property | Value |
+|----------|-------|
+| **Host** | `keti@ketea` (SSH alias) |
+| **OS** | macOS (Apple Silicon / Homebrew) |
+| **OpenClaw version** | 2026.2.21-2 |
+| **Binary** | `/opt/homebrew/bin/openclaw` |
+| **Config** | `~/.openclaw/openclaw.json` |
+| **Gateway** | launchd service `ai.openclaw.gateway`, port 18789, loopback-only |
+| **Gateway token** | Configured in plist (env var `OPENCLAW_GATEWAY_TOKEN`) |
+| **LLM** | Anthropic API key (claude-sonnet-4) + OAuth auth profile |
+| **Agents** | 4 existing: `main` (kkbot), `fitty`, `clawd`, `walassistant` |
+| **Channels** | WhatsApp (configured, 6 groups + 1 DM) |
+| **Skills (ready)** | coding-agent, gh-issues, github, healthcheck, skill-creator, tmux, weather |
+| **Bot configs repo** | `~/Documents/keti-claude-experiments/clawdbot-bots/` → github.com/Keerthanaa-keti/clawdbot-bots |
+| **Agent workspaces** | main=`~/clawd`, fitty=`~/clawd-fitty`, clawd=`~/clawd-purva` |
+
 ### 8.1 What Needs to Change
 
-The remote server already runs OpenClaw. Only 3 things need to be added:
-
-| Change | What | Effort |
-|--------|------|--------|
-| 1. EventIQ Skill | `SKILL.md` file defining tools that call Vercel `/api/tools/*` | New file |
-| 2. Supabase env vars | `SUPABASE_URL` and `SUPABASE_SERVICE_KEY` for chat table writes | Env config |
-| 3. WebChat channel config | Enable WebChat channel, configure auth token validation | Config edit |
+| # | Change | How | Effort |
+|---|--------|-----|--------|
+| 1 | **New agent: `missioniq`** | `openclaw agents add missioniq` — new agent with its own workspace, identity, and AGENT.md | CLI command + files |
+| 2 | **EventIQ skill** | Create custom skill in agent workspace with SKILL.md defining HTTP tool calls to Vercel | New directory + files |
+| 3 | **WebChat channel** | Add `webchat` to plugins/channels in `openclaw.json` + bind to missioniq agent | Config edit |
+| 4 | **Gateway bind** | Change from `loopback` to `0.0.0.0` (or use Tailscale) so browser can reach WebChat | Config edit |
+| 5 | **Env vars** | Add `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, `EVENTIQ_API_URL`, `EVENTIQ_API_KEY` | Config edit |
 
 ### 8.2 EventIQ Skill (SKILL.md)
 
@@ -593,46 +611,53 @@ Run migration SQL from Section 7.2 above.
 
 ---
 
-## 10. Remote Server Access
+## 10. Remote Server Setup (Exact Commands)
 
-### What Needs to Happen on the Remote Server
+### Access
+SSH from Kishore's Mac: `ssh keti@ketea`
+OpenClaw CLI: `PATH=/opt/homebrew/bin:$PATH; openclaw ...`
 
-Only 4 things:
+### Step-by-Step
 
-```
-1. Create skill file:     ~/.openclaw/skills/eventiq/SKILL.md
-2. Add env vars:          SUPABASE_URL, SUPABASE_SERVICE_KEY, EVENTIQ_API_URL, EVENTIQ_API_KEY
-3. Enable WebChat:        Configure WebChat channel in OpenClaw config
-4. Restart OpenClaw:      Apply changes
-```
-
-### How to Apply Changes
-
-**Option A: SSH from this Mac (preferred)**
-If Kishore can SSH to the remote server from this machine, Claude Code can run SSH commands directly:
+#### 1. Create MissionIQ agent
 ```bash
-ssh user@remote-server-ip "mkdir -p ~/.openclaw/skills/eventiq"
-scp skill-files/* user@remote-server-ip:~/.openclaw/skills/eventiq/
-ssh user@remote-server-ip "openclaw restart"
+ssh keti@ketea "PATH=/opt/homebrew/bin:\$PATH; openclaw agents add missioniq \
+  --workspace ~/clawd-missioniq \
+  --name 'MissionIQ' \
+  --emoji '🎯'"
 ```
 
-**Option B: Generate files locally, user deploys**
-Claude Code generates all config files in `eventiq/scripts/openclaw-setup/`. User manually copies to server:
+#### 2. Create agent workspace files
 ```bash
-# On local machine:
-ls eventiq/scripts/openclaw-setup/
-  SKILL.md
-  .env.openclaw
-  webchat-config.yaml
-  setup.sh
-
-# User runs on remote server:
-scp -r eventiq/scripts/openclaw-setup/ user@remote-server:~/
-ssh user@remote-server "cd openclaw-setup && bash setup.sh"
+ssh keti@ketea "mkdir -p ~/clawd-missioniq"
+# Then SCP the AGENT.md, IDENTITY.md, SOUL.md, TOOLS.md files
 ```
 
-**Option C: User runs commands Claude provides**
-Claude provides step-by-step SSH commands. User runs them manually.
+#### 3. Create EventIQ skill
+```bash
+ssh keti@ketea "mkdir -p ~/Documents/keti-claude-experiments/clawdbot-bots/missioniq/skills/eventiq"
+# SCP the SKILL.md and any helper scripts
+```
+
+#### 4. Update openclaw.json — add WebChat channel + missioniq agent binding
+```bash
+# Edit ~/.openclaw/openclaw.json via SSH to:
+# - Add missioniq to agents.list
+# - Add webchat channel config
+# - Add binding for webchat → missioniq agent
+# - Change gateway.bind from "loopback" to "0.0.0.0" (or configure Tailscale)
+```
+
+#### 5. Restart gateway
+```bash
+ssh keti@ketea "launchctl kickstart -k gui/\$(id -u)/ai.openclaw.gateway"
+```
+
+#### 6. Verify
+```bash
+ssh keti@ketea "PATH=/opt/homebrew/bin:\$PATH; openclaw agents list"
+ssh keti@ketea "curl -s http://localhost:18789/health"
+```
 
 ---
 
