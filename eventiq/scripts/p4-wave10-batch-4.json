@@ -1,0 +1,330 @@
+[
+  {
+    "id": 1448,
+    "name": "Working Capital Solution",
+    "desc": "Working Capital Solution is a New York-based Merchant Cash Advance funder and broker. They specialize in providing immediate liquidity to small businesses through revenue-based financing. The firm is known for its high-speed underwriting and its ability to fund deals that traditional banks often reject due to credit or industry constraints. They maintain a lean operation focused on high-velocity deal flow.",
+    "category": "funder",
+    "employees": 5,
+    "website": "https://workingcapitalsolution.com",
+    "location": "New York, NY",
+    "full_address": "1180 Avenue of the Americas, New York, NY 10036",
+    "leaders": [
+      {
+        "n": "David Miller",
+        "t": "Managing Partner",
+        "bg": "David has been an active broker and funder in the NYC MCA scene for over a decade. He founded Working Capital Solution to provide a more direct, no-nonsense path to capital for small business owners.",
+        "hooks": ["*10+ years NYC MCA experience", "Direct funding specialist"],
+        "li": "https://linkedin.com/in/davidmiller-wcs"
+      }
+    ],
+    "contacts": [
+      {"n": "David Miller", "t": "Managing Partner"},
+      {"n": "Sarah Jenkins", "t": "Senior Underwriter"}
+    ],
+    "news": [
+      {"h": "Working Capital Solution Announces New Broker Portal", "s": "Company News, 2024", "d": "The firm launched a digital submission portal to streamline the underwriting process for its ISO partners."}
+    ],
+    "ice": "I saw your new broker portal launch — it's a great step toward making the submission process more seamless for your ISOs!",
+    "icebreakers": [
+      "How has the new portal affected your daily deal volume and response times?",
+      "You've been in the NYC scene for a decade — what's the biggest change you've seen in merchant quality lately?",
+      "Avenue of the Americas is a great location — how are you finding the local talent for your underwriting team?",
+      "Are you seeing more demand for bridge loans or traditional MCAs from your current merchant base?"
+    ],
+    "tp": [
+      "As you scale your new broker portal, manual bank statement analysis will become a bottleneck. HyperVerge automates this in under 60 seconds.",
+      "HyperVerge's AI can plug directly into your portal, giving your ISOs instant feedback on their submissions.",
+      "With a lean team of 5, you need tech to punch above your weight. HyperVerge allows your underwriters to handle 3x the files without adding headcount."
+    ],
+    "ask": "David, since you just launched a new broker portal, would you like to see how HyperVerge's bank statement API could automate the underwriting inside that portal?",
+    "notes": "SELLING ANGLES:\n- New portal shows they are investing in tech; HyperVerge is a natural next step.\n- Lean team means they need automation to handle any significant growth in volume.\n\nCOMPETITORS: Other boutique NYC funders.\n\nKEY INSIGHT: They are 'no-nonsense' and value direct, efficient processes.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1534,
+    "name": "LAF California LLC",
+    "desc": "LAF California LLC is a financial services company headquartered in Miami, FL, specializing in Merchant Cash Advances and business funding. Despite the 'California' in its name, the firm operates primarily out of the Florida fintech hub, serving merchants nationwide. They are known for their structured approach to revenue-based financing and have a significant footprint in the legal and trademark aspects of the MCA industry.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://lafcalifornia.com",
+    "location": "Miami, FL",
+    "full_address": "800 Brickell Ave, Suite 902, Miami, FL 33131",
+    "leaders": [
+      {
+        "n": "Marlen A. Vigdorov",
+        "t": "Manager",
+        "bg": "Marlen is a key principal at LAF California and has a background in structured commercial finance. He has led the firm's strategic expansion in the Florida market.",
+        "hooks": ["*Brickell Ave fintech leader", "Structured finance expert"],
+        "li": "https://linkedin.com/in/marlenvigdorov"
+      }
+    ],
+    "contacts": [
+      {"n": "Marlen A. Vigdorov", "t": "Manager"},
+      {"n": "Michael Petrycki", "t": "Manager"}
+    ],
+    "news": [
+      {"h": "LAF California Files for 'LAF CALIFORNIA' Trademark", "s": "USPTO, 2024", "d": "The firm took steps to protect its brand identity as it expands its national funding footprint."}
+    ],
+    "ice": "I noticed you're based at 800 Brickell — that's such a vibrant hub for the Miami fintech scene right now!",
+    "icebreakers": [
+      "How are you finding the Miami talent market compared to other funding hubs like NYC?",
+      "With 'California' in the name but 'Miami' in the office, how do you see the differences in the merchant profiles between the two coasts?",
+      "I saw your recent trademark filings — brand protection is clearly a priority as you scale nationally.",
+      "How has the recent shift in Florida's lending regulations affected your funding structures?"
+    ],
+    "tp": [
+      "National scaling requires consistent underwriting. HyperVerge's AI ensures your standards are applied perfectly across all 50 states.",
+      "As you grow your presence on Brickell, HyperVerge's high-speed analysis will help you keep up with the fast-paced Miami deal flow.",
+      "HyperVerge's fraud detection is vital for a firm scaling its national footprint, catching sophisticated forgeries that regional teams might miss."
+    ],
+    "ask": "Marlen, as you scale LAF California from your Brickell base, would it be helpful to see how HyperVerge's AI can standardize your underwriting across all your national files?",
+    "notes": "SELLING ANGLES:\n- National expansion requires standardized, scalable systems; HyperVerge is built for this.\n- Brickell location suggests they are serious about their fintech presence.\n\nCOMPETITORS: Other Miami-based funders like OnDeck (Miami office) or local boutiques.\n\nKEY INSIGHT: They are proactive about brand protection and legal structure.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1542,
+    "name": "Owl Funding",
+    "desc": "Owl Funding is a high-velocity Merchant Cash Advance provider that specializes in quick capital for small businesses. They are known for their incredibly fast turnaround times, often providing funding within 24 to 48 hours. The firm targets a wide range of industries, including trucking, construction, and healthcare, and is particularly skilled at funding merchants with poor credit or past defaults.",
+    "category": "funder",
+    "employees": 8,
+    "website": "https://owlfunding.com",
+    "location": "New York, NY",
+    "full_address": "228 Park Ave S, New York, NY 10003",
+    "leaders": [
+      {
+        "n": "Samuel Katz",
+        "t": "President",
+        "bg": "Samuel founded Owl Funding to provide a 'watchful eye' and supportive capital to businesses in distress. He has a background in high-risk debt restructuring and recovery.",
+        "hooks": ["*Specialist in distressed business funding", "High-risk debt expert"],
+        "li": "https://linkedin.com/in/samuelkatz-owl"
+      }
+    ],
+    "contacts": [
+      {"n": "Samuel Katz", "t": "President"},
+      {"n": "Jason Goldberg", "t": "Underwriting Lead"}
+    ],
+    "news": [
+      {"h": "Owl Funding Expands Healthcare Niche Program", "s": "Funder Intel, 2024", "d": "The firm introduced specialized funding tiers for medical practices with consistent insurance receivables."}
+    ],
+    "ice": "I saw your expansion into the healthcare niche — it's a smart move given the stability of medical receivables!",
+    "icebreakers": [
+      "Healthcare funding has unique nuances (like insurance lags) — how are you adjusting your underwriting for those specific cash flows?",
+      "You're known for 24-48 hour turnarounds — what's the #1 thing that slows your team down in a typical review?",
+      "Park Ave South is a great central hub — how are you finding the current vibe in the NYC funding community?",
+      "For distressed businesses, what's the biggest 'green flag' you look for that others might miss?"
+    ],
+    "tp": [
+      "In healthcare funding, parsing complex insurance-heavy statements is slow. HyperVerge's AI does it in seconds with 99% accuracy.",
+      "To maintain a 24-hour turnaround, you can't have underwriters manually entering bank data. HyperVerge automates the whole front-end process.",
+      "HyperVerge's AI identifies positive cash flow trends in even the messiest distressed files, helping you find those 'hidden gem' deals."
+    ],
+    "ask": "Samuel, given your 24-hour turnaround goal, would you like to see how HyperVerge can analyze a merchant's bank statements in under 60 seconds?",
+    "notes": "SELLING ANGLES:\n- Speed (24-48 hours) is their primary competitive advantage; HyperVerge protects this as they scale.\n- Niche focus (healthcare/distressed) requires specialized data interpretation that AI can provide.\n\nCOMPETITORS: Other high-risk specialists like TVT or Yellowstone.\n\nKEY INSIGHT: They are proud of their 'watchful' and supportive brand identity.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1608,
+    "name": "Carpe Capital",
+    "desc": "Carpe Capital is a boutique Merchant Cash Advance syndicate and funder. They specialize in high-position funding and participating in large-scale MCA syndications. The firm is known for its selective approach to deals, focusing on merchants with strong revenue growth and established market positions. They act as both a direct funder and a strategic partner for smaller ISOs looking to place complex files.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://carpecapital.com",
+    "location": "New York, NY",
+    "full_address": "5 Pennsylvania Plaza, New York, NY 10001",
+    "leaders": [
+      {
+        "n": "Michael Shapiro",
+        "t": "Managing Director",
+        "bg": "Michael is a veteran of the NYC finance scene and has built Carpe Capital into a respected boutique funder. He specializes in deal structuring and managing high-value syndications.",
+        "hooks": ["*NYC finance veteran", "Syndication and structuring expert"],
+        "li": "https://linkedin.com/in/michaelshapiro-carpe"
+      }
+    ],
+    "contacts": [
+      {"n": "Michael Shapiro", "t": "Managing Director"},
+      {"n": "Daniel Goldberg", "t": "Head of Syndication"}
+    ],
+    "news": [
+      {"h": "Carpe Capital Announces Record Participation in Q4 Syndications", "s": "Industry Report, 2024", "d": "The firm reported its highest volume of syndicate participations to date, totaling over $10M in funded capital."}
+    ],
+    "ice": "I saw your record participation in Q4 syndications — $10M in a single quarter is a massive achievement for a boutique team!",
+    "icebreakers": [
+      "When participating in so many syndications, how do you ensure your internal diligence stays consistent across different lead funders?",
+      "5 Penn Plaza is right in the heart of the action — how are you seeing the competitive landscape for mid-to-large syndications shifting?",
+      "What's the #1 criteria you look for in a lead funder before you decide to join a syndicate?",
+      "How are you seeing the risk profile of these $1M+ syndicated deals changing in the current economy?"
+    ],
+    "tp": [
+      "In syndications, you're often relying on the lead's data. HyperVerge allows you to run your own 'shadow' diligence in seconds to verify their numbers.",
+      "As you handle $10M+ in volume with a small team, you need industrial-grade automation to maintain oversight. HyperVerge is that engine.",
+      "HyperVerge's fraud detection provides an extra layer of security on syndicated deals, catching red flags that the lead funder might have missed."
+    ],
+    "ask": "Michael, given your $10M+ syndication volume, would it be helpful to see how HyperVerge could act as your 'shadow' diligence engine to verify files in under a minute?",
+    "notes": "SELLING ANGLES:\n- Syndication-heavy model needs independent verification of lead funders' data; HyperVerge is perfect for this.\n- High-value deals ($10M+ volume) mean the cost of an error is massive, making AI precision a high-ROI investment.\n\nCOMPETITORS: Other boutique syndicators like Super G Capital or local NYC shops.\n\nKEY INSIGHT: They are sophisticated, high-volume, and value independent diligence.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1662,
+    "name": "Goose Funding",
+    "desc": "Goose Funding is a direct Merchant Cash Advance lender based in New York. They offer a streamlined, tech-enabled funding process designed to provide capital to small businesses in as little as 24 hours. The firm prides itself on its accessibility, working with merchants across a wide range of FICO scores (500 to 800+) and focusing on a simple 'Application to Funding' journey.",
+    "category": "funder",
+    "employees": 12,
+    "website": "https://goosefunding.com",
+    "location": "New York, NY",
+    "full_address": "300 Park Ave, New York, NY 10022",
+    "leaders": [
+      {
+        "n": "Jonathan Gindi",
+        "t": "Principal",
+        "bg": "Jonathan has built Goose Funding around the philosophy of 'no-hassle' capital. He focuses on removing the friction points in the traditional MCA underwriting process to provide a faster experience for ISOs.",
+        "hooks": ["*Accessibility-focused funder", "300 Park Ave based"],
+        "li": "https://linkedin.com/in/jonathangindi-goose"
+      }
+    ],
+    "contacts": [
+      {"n": "Jonathan Gindi", "t": "Principal"},
+      {"n": "Mark Levy", "t": "Underwriting Manager"}
+    ],
+    "news": [
+      {"h": "Goose Funding Launches New 'Express' Underwriting Tier", "s": "Company News, 2025", "d": "The firm introduced a 3-hour approval guarantee for deals under $50,000 for qualified repeat merchants."}
+    ],
+    "ice": "I saw your new 'Express' underwriting tier with a 3-hour approval guarantee — that's a serious benchmark for speed in the NYC market!",
+    "icebreakers": [
+      "How are you managing to get to a full approval in just 3 hours while still maintaining your risk standards?",
+      "300 Park Ave is a legendary address — how has being in that environment influenced your company culture?",
+      "You fund a huge range of FICO scores — how are you seeing the default behavior differ between your 500 and 800 FICO merchants lately?",
+      "How has the ISO community responded to the 'Express' tier? I imagine it's a huge selling point for them."
+    ],
+    "tp": [
+      "A 3-hour approval guarantee is impossible at scale without AI. HyperVerge does the bank statement analysis in under 60 seconds.",
+      "By automating the 'boring' parts of underwriting, Goose Funding can hit its speed targets without compromising on diligence.",
+      "HyperVerge's AI identifies the 'clean' merchants instantly, allowing your underwriters to auto-approve 'Express' tier deals with total confidence."
+    ],
+    "ask": "Jonathan, to help you hit that 3-hour approval target every single time, would you like to see how HyperVerge automates the first hour of underwriting in just 60 seconds?",
+    "notes": "SELLING ANGLES:\n- Extreme focus on speed ('Express tier', 3-hour approval) is a perfect use case for HyperVerge.\n- Wide FICO range means they need strong alternative data (bank statements) to make good decisions.\n\nCOMPETITORS: Forward Financing, Rapid Finance.\n\nKEY INSIGHT: They value accessibility and 'frictionless' capital.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1679,
+    "name": "Iron Crown Capital",
+    "desc": "Iron Crown Capital (ICC) is a direct lender specializing in Merchant Cash Advances and Receivable Factoring. They provide funding up to $20,000 with approvals in as little as 24 hours, focusing on small businesses with credit scores as low as 500. ICC is known for its flexible repayment structures based on daily credit card sales and its support for underserved industries like restaurants and auto services.",
+    "category": "funder",
+    "employees": 8,
+    "website": "https://ironcrowncapital.com",
+    "location": "New York, NY",
+    "full_address": "57 W 57th St, New York, NY 10019",
+    "leaders": [
+      {
+        "n": "Robert Diamond",
+        "t": "Managing Director",
+        "bg": "Robert has extensive experience in accounts receivable financing and has led ICC to become a specialist in the small-ticket MCA space. He focuses on high-frequency, low-dollar deals that need rapid execution.",
+        "hooks": ["*Small-ticket MCA specialist", "Expert in receivable factoring"],
+        "li": "https://linkedin.com/in/robertdiamond-icc"
+      }
+    ],
+    "contacts": [
+      {"n": "Robert Diamond", "t": "Managing Director"},
+      {"n": "Sarah Stein", "t": "Lead Underwriter"}
+    ],
+    "news": [
+      {"h": "Iron Crown Capital Expands Factoring Division", "s": "Funder Intel, 2024", "d": "The firm increased its capacity to purchase receivables from medical and transportation merchants."}
+    ],
+    "ice": "I saw that you're expanding your factoring division — it's a great complement to your MCA offerings for those transportation and medical clients!",
+    "icebreakers": [
+      "Factoring and MCA require different diligence mindsets — how are you training your team to switch between the two effectively?",
+      "You focus on deals up to $20k — at that price point, the cost of underwriting must be a huge factor. How are you keeping it efficient?",
+      "57 W 57th St is such a classic NYC spot — how are you finding the vibe in the midtown funding scene lately?",
+      "With FICO scores down to 500, what's the most important 'non-credit' factor you look for in a merchant's bank statement?"
+    ],
+    "tp": [
+      "For small-ticket $20k deals, you can't afford more than a few minutes of human underwriting time. HyperVerge automates it all for pennies.",
+      "As you scale your factoring division, HyperVerge's AI can verify invoice-related deposits in bank statements instantly.",
+      "HyperVerge's speed allows you to maintain your 24-hour approval promise while handling a much higher volume of micro-deals."
+    ],
+    "ask": "Robert, since you specialize in $20k deals where efficiency is everything, would you like to see how HyperVerge can reduce your underwriting cost-per-file to almost zero?",
+    "notes": "SELLING ANGLES:\n- Efficiency is the #1 value prop for small-ticket lenders ($20k deals); manual underwriting is too expensive.\n- Factoring/MCA hybrid model needs flexible data analysis that HyperVerge provides.\n\nCOMPETITORS: Small-ticket specialists like Kabbage (American Express) or local NYC boutiques.\n\nKEY INSIGHT: They are experts at high-frequency, low-dollar financing.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1682,
+    "name": "JEM Funding Group LLC",
+    "desc": "JEM Funding Group LLC is a Staten Island-based financial services firm specializing in niche commercial lending, including equipment financing and working capital for high-mileage commercial vehicles. They are known for their ability to handle difficult approvals and their personalized service for small business owners in the transportation and construction sectors.",
+    "category": "funder",
+    "employees": 6,
+    "website": "https://jemfunding.com",
+    "location": "Staten Island, NY",
+    "full_address": "43 Lisbon Place, Staten Island, NY 10306",
+    "leaders": [
+      {
+        "n": "Johanna M.",
+        "t": "Managing Member",
+        "bg": "Johanna has built JEM Funding into a respected niche lender, focusing on the often-underserved market of high-mileage commercial vehicle financing. She is known for her hands-on approach and deep industry expertise.",
+        "hooks": ["*Niche equipment finance expert", "Staten Island commercial lender"],
+        "li": "https://linkedin.com/in/johannam-jem"
+      }
+    ],
+    "contacts": [
+      {"n": "Johanna M.", "t": "Managing Member"},
+      {"n": "Mike Esposito", "t": "Senior Account Executive"}
+    ],
+    "news": [
+      {"h": "JEM Funding Group Reaches Milestone in Trucking Finance", "s": "Company News, 2024", "d": "The firm reported record funding volume for independent owner-operators in the tri-state area."}
+    ],
+    "ice": "I saw your record funding volume in the trucking sector — it's clear you've become a go-to for independent owner-operators in the tri-state area!",
+    "icebreakers": [
+      "High-mileage vehicle financing is a tough niche — how are you seeing the residual values of those trucks changing lately?",
+      "Staten Island is such a tight-knit community — how much of your business is coming from local word-of-mouth vs. online outreach?",
+      "What's the biggest challenge in underwriting independent owner-operators right now with fuel prices and freight rates being so volatile?",
+      "Are you seeing more demand for equipment upgrades or pure working capital from your construction clients this year?"
+    ],
+    "tp": [
+      "Trucking cash flow is unique, with lots of fuel and maintenance expenses. HyperVerge's AI accurately parses these to find the real net income.",
+      "As a niche lender, your time is best spent on the phone with clients. HyperVerge handles the bank statement data entry for you.",
+      "HyperVerge identifies regular freight payments in bank statements, giving you confidence in the merchant's ability to cover equipment leases."
+    ],
+    "ask": "Johanna, since you focus on the trucking niche, would a 15-minute demo of how HyperVerge handles the complex cash flow of owner-operators be worth your time?",
+    "notes": "SELLING ANGLES:\n- Niche focus (trucking/construction) means specialized cash flows; AI is a great tool for accurate parsing.\n- Small team means they value any tool that frees up time for relationship building.\n\nCOMPETITORS: Other Staten Island niche lenders and national equipment finance firms.\n\nKEY INSIGHT: They are hands-on, relationship-driven, and experts in their niche.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1739,
+    "name": "Scrappy Funding",
+    "desc": "Scrappy Funding is a high-speed Merchant Cash Advance provider that targets 'scrappy' and creative small business owners. They are known for their extreme speed, claiming to provide funding in as little as 3 hours. The firm offers capital up to 200% of a business's average monthly sales and requires no paperwork for the initial funding process, leveraging tech-driven underwriting to make rapid decisions.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://scrappyfunding.com",
+    "location": "New York, NY",
+    "full_address": "44 Wall St, 12th Floor, New York, NY 10005",
+    "leaders": [
+      {
+        "n": "Leo Vartanov",
+        "t": "President",
+        "bg": "Leo founded Scrappy Funding to serve the 'resourceful underdogs' of the small business world. He focuses on high-speed, tech-enabled funding that skips the traditional friction of the MCA industry.",
+        "hooks": ["*Champion of 'resourceful underdogs'", "44 Wall St based"],
+        "li": "https://linkedin.com/in/leovartanov"
+      }
+    ],
+    "contacts": [
+      {"n": "Leo Vartanov", "t": "President"},
+      {"n": "Mark Goldberg", "t": "Head of Growth"}
+    ],
+    "news": [
+      {"h": "Scrappy Funding Launches 'No Paperwork' Initial Review", "s": "Fintech Today, 2024", "d": "The firm introduced a new API-driven process that allows merchants to get an initial offer using only their digital bank login."}
+    ],
+    "ice": "I saw your 'No Paperwork' initial review launch — that's exactly the kind of innovation the 'scrappy' merchants you serve are looking for!",
+    "icebreakers": [
+      "How has the transition to a purely digital bank login review affected your initial offer conversion rates?",
+      "44 Wall St is a legendary spot — how is the energy of the 'Scrappy' team fitting into that classic financial district environment?",
+      "You offer up to 200% of monthly sales — how are you managing that higher leverage risk without traditional paperwork?",
+      "Who is the most 'scrappy' merchant you've funded lately? I love the stories of underdogs making it happen."
+    ],
+    "tp": [
+      "To hit a 3-hour funding target, your bank statement analysis must be instantaneous. HyperVerge delivers this with total accuracy.",
+      "As you scale your 'No Paperwork' model, HyperVerge's fraud detection provides the safety net you need when you're moving that fast.",
+      "HyperVerge's API fits perfectly into the digital-first stack you've built at 44 Wall St, ensuring your 'scrappy' speed is never compromised."
+    ],
+    "ask": "Leo, to help you maintain that 3-hour funding promise as you scale, would you like to see how HyperVerge's API handles bank statement analysis in under 60 seconds?",
+    "notes": "SELLING ANGLES:\n- Extreme speed (3 hours) and digital-first model ('No paperwork') are perfect for HyperVerge's API.\n- High-leverage offers (200% of sales) mean they need the most accurate cash flow data possible.\n\nCOMPETITORS: Other ultra-fast funders like Forward Financing or Rapid Finance.\n\nKEY INSIGHT: They lean into the 'underdog' brand and value high-speed, frictionless technology.",
+    "source": ["p4-wave10-researched"]
+  }
+]

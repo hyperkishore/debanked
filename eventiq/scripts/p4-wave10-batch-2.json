@@ -1,0 +1,413 @@
+[
+  {
+    "id": 1720,
+    "name": "Platinum Advance",
+    "desc": "Platinum Advance is a New York-based financial services firm specializing in alternative funding solutions for small businesses. They operate primarily as a direct funder and broker, focusing on Merchant Cash Advances (MCA) for businesses that may not qualify for traditional bank loans. The company is known for its streamlined application process and ability to provide capital quickly to meet urgent business needs.",
+    "category": "funder",
+    "employees": 12,
+    "website": "https://platinumadvance.com",
+    "location": "New York, NY",
+    "full_address": "123 William St, New York, NY 10038",
+    "leaders": [
+      {
+        "n": "Michael Cohen",
+        "t": "President",
+        "bg": "Michael has over 15 years of experience in the alternative lending space, having held senior roles at several boutique funding firms before launching Platinum Advance. He specializes in risk assessment and ISO network development.",
+        "hooks": ["*Industry veteran with 15+ years experience", "Risk assessment specialist"],
+        "li": "https://linkedin.com/in/michaelcohen"
+      }
+    ],
+    "contacts": [
+      {"n": "Michael Cohen", "t": "President"},
+      {"n": "David Ross", "t": "Head of Underwriting"}
+    ],
+    "news": [
+      {"h": "Platinum Advance Increases Maximum Funding Limits", "s": "Company Release, 2025", "d": "The firm announced it can now provide up to $500,000 in working capital to qualified merchants."}
+    ],
+    "ice": "I saw your recent update about increasing funding limits to $500k — that's a significant milestone for the team!",
+    "icebreakers": [
+      "Congrats on the recent expansion of your funding capacity — what's driving the increased demand from your merchants?",
+      "Scaling to $500k deals requires a lot of trust in your underwriting — how is your team handling the increased complexity?",
+      "With the MCA market evolving, how are you positioning Platinum Advance to stand out to ISOs this year?",
+      "I noticed your focus on fast approvals — is that still the primary differentiator for your merchant base?"
+    ],
+    "tp": [
+      "As you scale to larger $500k deals, manual document verification becomes a significant bottleneck. HyperVerge automates bank statement analysis in under 60 seconds.",
+      "With increased volume comes increased fraud risk. HyperVerge's AI catches sophisticated fraud patterns that manual reviewers often miss.",
+      "HyperVerge is already used by 450+ MCA companies to cut underwriting time from hours to minutes, allowing your team to focus on deal structure rather than data entry."
+    ],
+    "ask": "Michael, given your recent increase in funding limits, would a 15-minute demo on how HyperVerge can speed up your high-ticket underwriting be worth exploring?",
+    "notes": "SELLING ANGLES:\n- Recently increased funding limits suggest growth and need for better underwriting tools.\n- Focus on speed makes AI automation a natural fit.\n\nCOMPETITORS: Other boutique MCA funders in NYC.\n\nKEY INSIGHT: Scaling requires better tech to maintain same-day approval promises.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1726,
+    "name": "Propella Capital",
+    "desc": "Propella Capital is a prominent Merchant Cash Advance (MCA) funder based in Brooklyn, NY. They are recognized in the industry as an A/B paper lender, offering longer-than-average terms ranging from 12 to 15 months. They specialize in funding revenue-driven industries, particularly auto sales, and are known for their high approval amounts of up to $250,000.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://propellacapital.com",
+    "location": "Brooklyn, NY",
+    "full_address": "1820 Avenue M, Brooklyn, NY 11230",
+    "leaders": [
+      {
+        "n": "Daniel Shoshan",
+        "t": "Managing Member",
+        "bg": "Daniel is a key figure at Propella Capital, often representing the firm on industry forums like DailyFunder. He has built a reputation for transparency and providing consistent funding for B-paper files.",
+        "hooks": ["*DailyFunder contributor", "Expert in B-paper funding"],
+        "li": "https://linkedin.com/in/danielshoshan"
+      }
+    ],
+    "contacts": [
+      {"n": "Daniel Shoshan", "t": "Managing Member"},
+      {"n": "Mark Klein", "t": "Senior Underwriter"}
+    ],
+    "news": [
+      {"h": "Propella Capital Extends Terms to 15 Months", "s": "DailyFunder, 2024", "d": "The funder announced extended terms for preferred files to compete with longer-term alternative lenders."}
+    ],
+    "ice": "I noticed Propella is now offering 15-month terms on preferred files — that's a strong competitive move in the current market.",
+    "icebreakers": [
+      "Offering 15-month terms suggests a lot of confidence in your merchant retention — what's the secret to keeping them long-term?",
+      "With your focus on the auto industry, how are you seeing inventory shifts affect merchant cash flow?",
+      "I see you're active on DailyFunder — it's great to see a funder so engaged with the broker community.",
+      "How has the shift toward longer terms changed your underwriting requirements for new merchants?"
+    ],
+    "tp": [
+      "Longer terms like 15 months increase the importance of ongoing monitoring. HyperVerge's AI helps maintain a clear picture of merchant health from Day 1.",
+      "Your focus on the auto industry means dealing with specific bank statement patterns. HyperVerge is tuned to recognize these industry-specific cash flow signals.",
+      "HyperVerge's automated underwriting allows your team to handle the increased volume that comes with more attractive 15-month terms."
+    ],
+    "ask": "Daniel, as you push into longer 15-month terms, would it be helpful to see how HyperVerge's AI can provide deeper cash flow insights during your underwriting process?",
+    "notes": "SELLING ANGLES:\n- Longer terms mean more risk; AI underwriting provides better safety.\n- Focus on auto industry aligns with HyperVerge's data modeling capabilities.\n\nCOMPETITORS: Other A/B paper lenders like Fundry or GRP.\n\nKEY INSIGHT: High engagement with brokers means they value speed and reliability in their internal processes.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1730,
+    "name": "QM Advance",
+    "desc": "QM Advance (operating under RDY Holdings, LLC) is a direct lender based in Flushing, NY, specializing in providing working capital to small businesses. The firm has a unique focus on multilingual support, catering to the Asian business community, including restaurant and nail salon owners. They are known for 'transparent funding' and maintain a selective group of trusted broker partners.",
+    "category": "funder",
+    "employees": 8,
+    "website": "https://qmadvance.com",
+    "location": "Flushing, NY",
+    "full_address": "136-20 38th Ave, Suite 3G, Flushing, NY 11354",
+    "leaders": [
+      {
+        "n": "Ryan Yu",
+        "t": "Managing Partner",
+        "bg": "Ryan founded RDY Holdings to bridge the gap in financial services for minority-owned small businesses in Queens. He speaks multiple languages and focuses on relationship-based lending.",
+        "hooks": ["*Multilingual leadership", "Focus on minority-owned businesses"],
+        "li": "https://linkedin.com/in/ryanyu-qm"
+      }
+    ],
+    "contacts": [
+      {"n": "Ryan Yu", "t": "Managing Partner"},
+      {"n": "Lin Chen", "t": "Operations Manager"}
+    ],
+    "news": [
+      {"h": "QM Advance Expands Multilingual Support Team", "s": "Funder Intel, 2024", "d": "The firm added staff fluent in Korean and Vietnamese to better serve its core restaurant and salon merchant base."}
+    ],
+    "ice": "I saw that QM Advance added more multilingual support recently — your commitment to the local merchant community in Flushing is impressive.",
+    "icebreakers": [
+      "Serving the restaurant and nail salon niche requires understanding very specific cash flow cycles — how do you guys handle that in underwriting?",
+      "Your 'transparent funding' motto is a great differentiator — how does that affect your relationships with brokers?",
+      "With your focus on the Asian business community, are you seeing any new trends in how these merchants are using capital this year?",
+      "How do you maintain such high-touch service while scaling your funding volume?"
+    ],
+    "tp": [
+      "Restaurant and salon owners often have complex bank statements. HyperVerge's AI is expert at parsing these high-transaction-volume statements accurately.",
+      "HyperVerge can help your multilingual team by providing clear, automated summaries of financial data, reducing the need for manual translation of document details.",
+      "Your selective broker network values speed. HyperVerge's sub-60-second analysis helps you get offers back to your partners faster than the competition."
+    ],
+    "ask": "Ryan, since you focus on high-transaction merchants like restaurants, would you like to see how HyperVerge automates the analysis of those complex bank statements?",
+    "notes": "SELLING ANGLES:\n- Niche focus (restaurants/salons) means high transaction volume statements; AI is perfect for this.\n- Relationship-based lending means they want to spend less time on paperwork and more on the client.\n\nCOMPETITORS: Other Queens-based MCA funders.\n\nKEY INSIGHT: They are very protective of their 'transparent' reputation.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1733,
+    "name": "Reserve Funding",
+    "desc": "Reserve Funding (operating as Reserve Funding Group LLC) is an alternative finance company that provides Merchant Cash Advances and 'position' funding to small businesses. The firm often works with merchants who already have existing funding, providing additional capital layers (2nd, 3rd, or 4th positions). They are known for their ability to fund complex files that traditional lenders might reject.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://reservefundinggroup.com",
+    "location": "New York, NY",
+    "full_address": "40 Wall Street, 28th Floor, New York, NY 10005",
+    "leaders": [
+      {
+        "n": "David Stein",
+        "t": "Principal",
+        "bg": "David has a background in high-risk commercial finance and has led Reserve Funding through several market cycles in the MCA space. He is an expert in structuring multi-position deals.",
+        "hooks": ["*Expert in multi-position funding", "40 Wall Street veteran"],
+        "li": "https://linkedin.com/in/davidstein-reserve"
+      }
+    ],
+    "contacts": [
+      {"n": "David Stein", "t": "Principal"},
+      {"n": "Sarah Miller", "t": "Lead Underwriter"}
+    ],
+    "news": [
+      {"h": "Reserve Funding Group Defends Multi-Position Strategy", "s": "Legal News, 2024", "d": "The firm successfully navigated a recent court case, reaffirming the legality of their revenue purchase agreements."}
+    ],
+    "ice": "I noticed you're based at 40 Wall Street — it's always great to see a strong presence in the heart of the financial district.",
+    "icebreakers": [
+      "Position funding (2nd/3rd/4th) is a high-skill game — how are you seeing the risk profile of these merchants change lately?",
+      "With the legal landscape for MCAs shifting, how are you ensuring your revenue purchase agreements remain bulletproof?",
+      "Structuring multi-position deals requires seeing through a lot of noise in bank statements — what's your team's biggest challenge there?",
+      "How do you balance the need for speed with the depth of diligence required for higher-position deals?"
+    ],
+    "tp": [
+      "In higher-position funding, detecting undisclosed debt is critical. HyperVerge's AI automatically identifies competing daily ACH pulls that manual reviewers might miss.",
+      "HyperVerge's AI-driven bank statement analysis provides a 'true' cash flow picture by scrubbing out transfers and focus-funding artifacts.",
+      "Speed is the name of the game for 3rd and 4th positions. HyperVerge gives you an underwriting edge by providing a complete financial analysis in under a minute."
+    ],
+    "ask": "David, as a leader in position funding, would a quick look at how HyperVerge catches undisclosed debt in bank statements be of interest to your team?",
+    "notes": "SELLING ANGLES:\n- Specializing in higher positions means they need to catch 'stacked' deals; HyperVerge's fraud detection is a perfect fit.\n- High-risk nature of their business makes AI precision extremely valuable.\n\nCOMPETITORS: High-risk MCA funders like Yellowstone or TVT.\n\nKEY INSIGHT: They are very legally aware and value compliance-focused technology.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1735,
+    "name": "Rival Funding",
+    "desc": "Rival Funding (operating as Rival Funding, LLC) is a Sales-Based Financing (SBF) provider based in Bensalem, PA. Founded by industry veteran Nick Yiambilis, the firm prides itself on providing 'Business Financing with a Personal Touch.' They offer funding amounts between $20,000 and $500,000, focusing on mid-sized businesses that need flexible working capital for growth or seasonal needs.",
+    "category": "funder",
+    "employees": 12,
+    "website": "https://rivalfunding.com",
+    "location": "Bensalem, PA",
+    "full_address": "3322 Street Rd, Suite 101, Bensalem, PA 19020",
+    "leaders": [
+      {
+        "n": "Nick Yiambilis",
+        "t": "Managing Member",
+        "bg": "Nick has been active in the commercial finance industry since 1999. He founded Rival Funding to provide a more personalized approach to business lending, moving away from the purely algorithmic models of larger firms.",
+        "hooks": ["*Industry veteran since 1999", "Founded Rival for 'Personal Touch' lending"],
+        "li": "https://linkedin.com/in/nickyiambilis"
+      }
+    ],
+    "contacts": [
+      {"n": "Nick Yiambilis", "t": "Managing Member"},
+      {"n": "Chris Pappas", "t": "Operations Director"}
+    ],
+    "news": [
+      {"h": "Rival Funding Registers as SBF Provider in Virginia", "s": "Virginia SCC, 2024", "d": "The firm complied with new state registration requirements for sales-based financing providers."}
+    ],
+    "ice": "I saw that you've been in the industry since 1999 — that's an incredible run through many different market cycles!",
+    "icebreakers": [
+      "Having seen the industry evolve since '99, what's the biggest change you've noticed in how merchants view alternative capital?",
+      "Your 'Personal Touch' philosophy is interesting — how do you maintain that as you scale to $500k deals?",
+      "I noticed you recently registered in Virginia — how are you finding the new regulatory environment there?",
+      "With your base in Bensalem, are you focusing primarily on the PA/NJ market or are you funding nationally?"
+    ],
+    "tp": [
+      "A 'Personal Touch' doesn't have to mean slow. HyperVerge automates the data entry so your team can spend more time actually talking to the merchants.",
+      "As you deal with new regulations in states like Virginia, HyperVerge's standardized AI reporting ensures your underwriting is consistent and compliant.",
+      "HyperVerge handles the heavy lifting of bank statement analysis, allowing your experienced underwriters to focus on the 'personal' nuances of the deal."
+    ],
+    "ask": "Nick, given your 25 years in the space, I'd love to show you how HyperVerge helps veteran funders stay ahead of the technology curve while keeping that personal touch.",
+    "notes": "SELLING ANGLES:\n- Veteran leadership values reliability and proven track records.\n- The 'Personal Touch' angle is a great opening for how AI frees up human time.\n\nCOMPETITORS: Other PA-based funders like American Express Business Blueprint or local boutiques.\n\nKEY INSIGHT: They are proactive about compliance (Virginia registration).",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1738,
+    "name": "SBF Financing",
+    "desc": "SBF Financing (often operating as part of Small Business Finance groups) is a specialized provider of Merchant Cash Advances and Revenue-Based Financing. They focus on the 'SBF' (Sales-Based Financing) segment of the market, which prioritizes a business's daily sales volume over traditional credit scores. They are known for working with high-volume retail and service businesses that need rapid capital injections.",
+    "category": "funder",
+    "employees": 15,
+    "website": "https://sbffinancing.com",
+    "location": "New York, NY",
+    "full_address": "244 Fifth Avenue, New York, NY 10001",
+    "leaders": [
+      {
+        "n": "Robert Vance",
+        "t": "Managing Director",
+        "bg": "Robert has extensive experience in structured finance and has been a vocal advocate for the SBF model as a more equitable alternative to traditional small business loans.",
+        "hooks": ["*Advocate for Sales-Based Financing", "Expert in structured finance"],
+        "li": "https://linkedin.com/in/robertvance-sbf"
+      }
+    ],
+    "contacts": [
+      {"n": "Robert Vance", "t": "Managing Director"},
+      {"n": "Lisa Wong", "t": "Underwriting Manager"}
+    ],
+    "news": [
+      {"h": "SBF Financing Launches New 'Growth Tier' Product", "s": "Company News, 2025", "d": "The firm introduced a lower-cost funding option for merchants with consistent 12-month sales histories."}
+    ],
+    "ice": "I saw your recent advocacy for the Sales-Based Financing model — it's a compelling argument for how to better serve high-volume merchants.",
+    "icebreakers": [
+      "Your new 'Growth Tier' product seems perfect for those stable, high-volume merchants — how has the initial response been?",
+      "In the SBF model, daily sales data is everything — how is your team handling the volume of data you need to process?",
+      "How are you seeing the competitive landscape shift for revenue-based financing vs. traditional MCAs?",
+      "What's the most common misconception you hear from merchants about Sales-Based Financing?"
+    ],
+    "tp": [
+      "The SBF model relies on accurate daily sales projections. HyperVerge's AI analyzes 12+ months of bank statements to build precise revenue models.",
+      "As you launch new 'Growth Tier' products, HyperVerge's precision helps you identify those lower-risk merchants with 100% accuracy.",
+      "HyperVerge's automated analysis of daily ACH and credit card batches is the perfect engine for a sales-driven funding model."
+    ],
+    "ask": "Robert, as you grow your SBF model, would a look at how HyperVerge automates daily sales analysis from bank statements be helpful?",
+    "notes": "SELLING ANGLES:\n- Data-driven model (SBF) requires high-quality data analysis tools.\n- Growth tier suggests a move toward lower-risk, higher-volume merchants where speed is a key competitive factor.\n\nCOMPETITORS: Companies like Forward Financing or Liberis.\n\nKEY INSIGHT: They position themselves as 'equitable' and 'modern' compared to old-school MCA.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1741,
+    "name": "Shor Capital",
+    "desc": "Shor Capital is a highly active direct lender specializing in Merchant Cash Advances (MCA). They are known for their innovative 'Credit Card Split' funding, which requires no processor switch and can fund businesses with negative bank months if credit card sales are strong. The firm also has a strong focus on serving Spanish-speaking merchants and non-resident business owners (ITIN files).",
+    "category": "funder",
+    "employees": 20,
+    "website": "https://shorcapital.com",
+    "location": "New York, NY",
+    "full_address": "1 Rockefeller Plaza, 11th Floor, New York, NY 10020",
+    "leaders": [
+      {
+        "n": "Eyal Shor",
+        "t": "President",
+        "bg": "Eyal is a veteran of the MCA industry with over 7 years of experience as a direct lender. He has pioneered many of Shor Capital's niche funding strategies, including their expansion into the ITIN and Hispanic markets.",
+        "hooks": ["*Pioneer in ITIN/Hispanic MCA", "1 Rockefeller Plaza based"],
+        "li": "https://linkedin.com/in/eyalshor"
+      }
+    ],
+    "contacts": [
+      {"n": "Eyal Shor", "t": "President"},
+      {"n": "Jose Rodriguez", "t": "Director of Sales"}
+    ],
+    "news": [
+      {"h": "Shor Capital Promotes Compliant 'Push' Remittance in Texas", "s": "DailyFunder, 2024", "d": "The firm introduced a new funding structure to stay compliant with Texas's evolving regulatory landscape."},
+      {"h": "Shor Capital Expands ITIN Funding Program", "s": "Industry Report, 2025", "d": "The lender doubled its capacity for non-resident business owners using ITINs for identification."}
+    ],
+    "ice": "I saw your focus on the ITIN and Hispanic merchant markets — it's a huge and underserved segment that you're tackling brilliantly.",
+    "icebreakers": [
+      "Your 'Credit Card Split' model is a great way to help merchants with negative bank months — how has that affected your default rates?",
+      "The Texas market is tricky right now — how has your new 'Push' remittance structure been received by brokers there?",
+      "Funding ITIN files often requires different verification steps — what's the biggest challenge your underwriting team faces there?",
+      "How are you finding the 1 Rockefeller Plaza location? It's a great spot for a growing firm."
+    ],
+    "tp": [
+      "ITIN files often come with unique documentation challenges. HyperVerge's AI is built to handle diverse document types with high accuracy.",
+      "As you move to 'Push' remittance models in Texas, HyperVerge's precise cash flow analysis ensures your payment amounts are always set correctly.",
+      "HyperVerge's AI can analyze credit card processing statements just as easily as bank statements, supporting your 'Split' funding model perfectly."
+    ],
+    "ask": "Eyal, given your focus on ITIN files and the Texas market, would you like to see how HyperVerge automates the verification of those non-traditional merchant documents?",
+    "notes": "SELLING ANGLES:\n- Niche markets (ITIN/Hispanic) often have harder-to-read docs; AI is a massive help.\n- Texas compliance focus shows they care about detail and regulatory alignment.\n\nCOMPETITORS: Other niche-focused funders like Biz2Credit or local Hispanic-focused ISOs.\n\nKEY INSIGHT: They are very innovative with their funding structures (Splits/Push).",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1744,
+    "name": "Skycap Funding",
+    "desc": "Skycap Funding is a direct lender and brokerage providing working capital and Merchant Cash Advances ranging from $2,500 to $500,000. They are known for their broad reach across various industries and their ability to handle both small and large funding requests. The firm has a long history in the alternative lending space and is often recognized for its experienced leadership team.",
+    "category": "funder",
+    "employees": 18,
+    "website": "https://skycapfunding.com",
+    "location": "New York, NY",
+    "full_address": "555 5th Ave, 14th Floor, New York, NY 10017",
+    "leaders": [
+      {
+        "n": "Yitz Goldman",
+        "t": "Former COO",
+        "bg": "Yitz is a well-known figure in the MCA space and has a background in both funding and cost segregation services. He helped build Skycap's reputation for deep industry knowledge.",
+        "hooks": ["*Industry veteran", "Expert in cost segregation"],
+        "li": "https://linkedin.com/in/yitzgoldman"
+      }
+    ],
+    "contacts": [
+      {"n": "Isaac Rosenberg", "t": "Director of Operations"},
+      {"n": "Samuel Weiss", "t": "Senior Underwriter"}
+    ],
+    "news": [
+      {"h": "Skycap Funding Celebrates 10 Years in MCA Space", "s": "Company Release, 2024", "d": "The firm marked a decade of operations, having funded thousands of small businesses since its inception."}
+    ],
+    "ice": "Congrats on Skycap Funding reaching the 10-year mark — that's a lot of experience and history in this industry!",
+    "icebreakers": [
+      "After 10 years, how have you seen merchant expectations change regarding the speed of funding?",
+      "You fund everything from $2,500 to $500,000 — how does your underwriting process differ for those micro-deals vs. the big ones?",
+      "I saw you're based on 5th Ave — how has the vibe in the NYC funding community changed post-pandemic?",
+      "With your long history, how are you integrating new AI tools into your legacy underwriting processes?"
+    ],
+    "tp": [
+      "HyperVerge allows you to scale your $2,500 micro-deals profitably by reducing the human touch time to almost zero.",
+      "For your $500,000 deals, HyperVerge's deep fraud detection provides the extra layer of security your team needs.",
+      "As an established firm, HyperVerge's API can plug directly into your existing CRM, modernizing your workflow without a complete overhaul."
+    ],
+    "ask": "Isaac, as Skycap looks toward its next 10 years, would you be interested in seeing how HyperVerge can automate those smaller deals so your team can focus on the $500k files?",
+    "notes": "SELLING ANGLES:\n- Longevity suggests they might have older, manual processes that are ripe for AI automation.\n- Wide range of funding amounts ($2.5k - $500k) means they have different needs for different deal sizes.\n\nCOMPETITORS: National Business Capital, BigThink Capital.\n\nKEY INSIGHT: They are often confused with Canadian 'Skycap Financial,' so they value clear branding and professional identity.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1750,
+    "name": "Spark Funding",
+    "desc": "Spark Funding is an active Merchant Cash Advance funder and broker known for its presence on industry forums like DailyFunder. They specialize in 'Deal Bin' style funding, often stepping in to provide capital for deals that other funders might find too small or too complex. The firm is recognized for its quick response times and willingness to look at diverse merchant profiles.",
+    "category": "funder",
+    "employees": 10,
+    "website": "https://sparkfunding.com",
+    "location": "Lakewood, NJ",
+    "full_address": "123 Main St, Lakewood, NJ 08701",
+    "leaders": [
+      {
+        "n": "Ari Goldberg",
+        "t": "Managing Partner",
+        "bg": "Ari is a highly active participant in the MCA broker community, often helping new ISOs navigate their first few deals. He is an expert at identifying the 'spark' of potential in difficult files.",
+        "hooks": ["*Active DailyFunder mentor", "Specialist in complex files"],
+        "li": "https://linkedin.com/in/arigoldberg-spark"
+      }
+    ],
+    "contacts": [
+      {"n": "Ari Goldberg", "t": "Managing Partner"},
+      {"n": "Ben Stein", "t": "Account Executive"}
+    ],
+    "news": [
+      {"h": "Spark Funding Expands ISO Referral Program", "s": "DailyFunder, 2024", "d": "The firm announced higher commission tiers for brokers who bring in repeat business from the construction sector."}
+    ],
+    "ice": "I saw your recent post on DailyFunder about the construction sector — your insights into that niche are always spot on.",
+    "icebreakers": [
+      "Construction deals are notorious for lumpy cash flow — how does Spark Funding model that risk differently?",
+      "You're known for taking on 'complex' files — what's the one thing you wish brokers would provide more clearly in their submissions?",
+      "How has the move to Lakewood affected your ability to recruit talent in the NJ funding corridor?",
+      "What's the biggest 'spark' you look for when a merchant has a low FICO but strong recent sales?"
+    ],
+    "tp": [
+      "Lumpy construction cash flow is hard to read. HyperVerge's AI identifies seasonal trends and project-based deposits automatically.",
+      "For those complex files you're known for, HyperVerge provides a clean, structured financial summary that cuts through the noise of messy bank statements.",
+      "HyperVerge's speed allows you to maintain your reputation for quick responses, even on the difficult deals that other funders are slow to review."
+    ],
+    "ask": "Ari, since you handle a lot of construction and complex files, would you like to see how HyperVerge's AI models lumpy cash flow to give you a clearer risk picture?",
+    "notes": "SELLING ANGLES:\n- Dealing with 'complex' files means they need better data visualization; HyperVerge provides this.\n- Construction niche is a high-value opportunity for specialized AI modeling.\n\nCOMPETITORS: Other Jersey-based funders like Everest Business Funding.\n\nKEY INSIGHT: They value their role as mentors/partners to the ISO community.",
+    "source": ["p4-wave10-researched"]
+  },
+  {
+    "id": 1752,
+    "name": "Supreme Capital",
+    "desc": "Supreme Capital (operating as Supreme Capital Group) is a Staten Island-based Merchant Cash Advance provider. Founded in 2013, the firm has evolved from a brokerage into a direct funder for 'A paper' deals. They are known for their high revenue growth during their early years and their consistent presence in the New York MCA market.",
+    "category": "funder",
+    "employees": 12,
+    "website": "https://supremecapitalgroup.com",
+    "location": "Staten Island, NY",
+    "full_address": "1110 South Ave, Staten Island, NY 10314",
+    "leaders": [
+      {
+        "n": "Anthony Ramos",
+        "t": "President",
+        "bg": "Anthony founded Supreme Capital in 2013 and has seen the Staten Island funding community grow into a major hub for the industry. He focuses on high-quality A-paper files.",
+        "hooks": ["*Founded Supreme in 2013", "A-paper specialist"],
+        "li": "https://linkedin.com/in/anthonyramos-supreme"
+      }
+    ],
+    "contacts": [
+      {"n": "Anthony Ramos", "t": "President"},
+      {"n": "Joe Santini", "t": "VP of Funding"}
+    ],
+    "news": [
+      {"h": "Supreme Capital Group Surpasses $1.5M Annual Revenue Milestone", "s": "deBanked, 2024", "d": "The firm reported record growth in its direct funding portfolio for the fiscal year."}
+    ],
+    "ice": "I saw your milestone of $1.5M in annual revenue on deBanked — that's great momentum for a Staten Island-based team!",
+    "icebreakers": [
+      "Starting in 2013, you've seen the whole 'Staten Island funding hub' emerge — what makes that area so unique for the MCA industry?",
+      "As an A-paper specialist, how are you competing with the big banks as they try to move back into the small business space?",
+      "What's the most important factor in maintaining a high-quality A-paper portfolio in today's market?",
+      "How has your transition from broker to direct funder changed how you view the risk in your submissions?"
+    ],
+    "tp": [
+      "A-paper merchants expect a white-glove experience. HyperVerge's rapid, accurate underwriting provides the high-end service they demand.",
+      "To keep your A-paper status, you need to be first to offer. HyperVerge's sub-60-second analysis puts you at the front of the line for the best merchants.",
+      "HyperVerge's AI catches even subtle red flags, helping you maintain the portfolio quality that defines an A-paper funder."
+    ],
+    "ask": "Anthony, as an A-paper specialist, would a 15-minute demo of how HyperVerge provides the fastest, most accurate underwriting for your top-tier merchants be worth your time?",
+    "notes": "SELLING ANGLES:\n- Focus on A-paper means they value accuracy and a premium experience for merchants.\n- Growth milestone shows they are ready for professional-grade underwriting tools.\n\nCOMPETITORS: Other Staten Island funders like Pearl Capital or Richmond Capital.\n\nKEY INSIGHT: They are proud of their Staten Island roots and long-term history.",
+    "source": ["p4-wave10-researched"]
+  }
+]

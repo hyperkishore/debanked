@@ -11,7 +11,7 @@ const all = JSON.parse(fs.readFileSync(allPath, 'utf8'));
 
 // Load available batch files
 const batches = [];
-for (let i = 1; i <= 3; i++) {
+for (let i = 1; i <= 4; i++) {
   const batchPath = path.join(__dirname, `p4-wave10-batch-${i}.json`);
   if (fs.existsSync(batchPath)) {
     const batch = JSON.parse(fs.readFileSync(batchPath, 'utf8'));
