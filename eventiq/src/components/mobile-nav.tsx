@@ -3,7 +3,8 @@
 import { TabType } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Building2, ListChecks, BarChart3, Map, Rocket } from "lucide-react";
+import { Building2, ListChecks, BarChart3, Map, Rocket, MessageCircle } from "lucide-react";
+import Link from "next/link";
 
 interface MobileNavProps {
   activeTab: TabType;
@@ -53,6 +54,17 @@ export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streak
             </Button>
           );
         })}
+        {/* MissionIQ Chat — separate route */}
+        <Button
+          variant="ghost"
+          className="flex-1 flex flex-col items-center justify-center gap-0.5 transition-colors relative h-auto rounded-none p-0 text-muted-foreground"
+          asChild
+        >
+          <Link href="/chat">
+            <MessageCircle className="h-5 w-5" />
+            <span className="text-xs font-semibold tracking-wide">Chat</span>
+          </Link>
+        </Button>
       </div>
     </nav>
   );

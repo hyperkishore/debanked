@@ -93,7 +93,7 @@ export const ChatMessage = memo(function ChatMessage({
       )}
 
       <div
-        className={`max-w-[80%] rounded-lg px-4 py-3 ${
+        className={`max-w-[85%] sm:max-w-[80%] rounded-lg px-4 py-3 break-words ${
           role === "user"
             ? "bg-brand/20 text-foreground"
             : "bg-muted text-foreground"
@@ -122,7 +122,7 @@ export const ChatMessage = memo(function ChatMessage({
             <Button
               variant="ghost"
               size="sm"
-              className="h-6 px-2 text-xs text-muted-foreground hover:text-foreground"
+              className="h-8 px-2 text-xs text-muted-foreground hover:text-foreground"
               onClick={handleCopy}
             >
               {copied ? (

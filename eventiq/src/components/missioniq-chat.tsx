@@ -14,9 +14,10 @@ interface MissionIQChatProps {
   token: string;
   userId: string;
   userName: string;
+  initialPrompt?: string;
 }
 
-export function MissionIQChat({ wsUrl, token, userId, userName }: MissionIQChatProps) {
+export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt }: MissionIQChatProps) {
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -24,6 +25,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName }: MissionIQChatP
   const [error, setError] = useState<string | null>(null);
   const [streamingMessage, setStreamingMessage] = useState<{ id: string; content: string } | null>(null);
   const [conversationId] = useState(() => crypto.randomUUID());
+  const initialPromptSentRef = useRef(false);
 
   const clientRef = useRef<OpenClawClient | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -74,6 +76,21 @@ export function MissionIQChat({ wsUrl, token, userId, userName }: MissionIQChatP
       client.disconnect();
     };
   }, [wsUrl, token, userId]);
+
+  // Auto-send initial prompt (from ?company= query param) once connected
+  useEffect(() => {
+    if (initialPrompt && connectionState === "connected" && !initialPromptSentRef.current && clientRef.current) {
+      initialPromptSentRef.current = true;
+      const userMsg: ChatMsg = {
+        id: crypto.randomUUID(),
+        role: "user",
+        content: initialPrompt,
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, userMsg]);
+      clientRef.current.sendMessage(initialPrompt, conversationId);
+    }
+  }, [initialPrompt, connectionState, conversationId]);
 
   const handleSend = useCallback(() => {
     const text = input.trim();
@@ -143,7 +160,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName }: MissionIQChatP
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <Badge variant="outline" className="text-xs">
+          <Badge variant="outline" className="text-xs max-w-[120px] truncate">
             {userName}
           </Badge>
           <Button
@@ -234,7 +251,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName }: MissionIQChatP
       </ScrollArea>
 
       {/* Input area */}
-      <div className="px-4 py-3 border-t border-border">
+      <div className="px-4 py-3 border-t border-border pb-[max(0.75rem,env(safe-area-inset-bottom))]">
         <div className="flex gap-2">
           <Textarea
             ref={inputRef}

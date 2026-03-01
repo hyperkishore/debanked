@@ -34,6 +34,7 @@ import {
   Linkedin,
   Newspaper,
   MessageSquare,
+  MessageCircle,
   Target,
   Users,
   Lightbulb,
@@ -483,6 +484,22 @@ export function CompanyDetail({
             <Copy className="h-3 w-3" />
             Copy Points
           </Button>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
+                onClick={() => {
+                  window.location.href = `/chat?company=${encodeURIComponent(company.name)}`;
+                }}
+              >
+                <MessageCircle className="h-3 w-3" />
+                Ask MissionIQ
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>Ask MissionIQ about {company.name}</TooltipContent>
+          </Tooltip>
         </div>
       </div>
 
