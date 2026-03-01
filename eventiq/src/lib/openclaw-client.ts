@@ -102,8 +102,8 @@ export class OpenClawClient {
         minProtocol: 3,
         maxProtocol: 3,
         client: {
-          id: "openclaw-control-ui",
-          displayName: "EventIQ MissionIQ",
+          id: "eventiq-kiket-chat",
+          displayName: "EventIQ Kiket",
           version: "1.0.0",
           platform: "browser",
           mode: "webchat",
@@ -111,6 +111,7 @@ export class OpenClawClient {
         role: "operator",
         scopes: ["operator.read", "operator.write"],
         auth: { token: this.options.token },
+        agentId: this.options.agent || "missioniq",
       });
     };
 
@@ -223,6 +224,13 @@ export class OpenClawClient {
   }
 
   private handleChatEvent(payload: Record<string, unknown>) {
+    // Only process events for our agent session — prevents cross-agent bleed
+    // (e.g. WhatsApp agent responses showing up in webchat)
+    const eventSession = payload.sessionKey as string | undefined;
+    if (eventSession && this.sessionKey && eventSession !== this.sessionKey) {
+      return;
+    }
+
     const state = payload.state as string;
     const runId = payload.runId as string;
 
