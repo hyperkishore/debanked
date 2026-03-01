@@ -31,7 +31,8 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Building2, ListChecks, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Download, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap } from "lucide-react";
+import { Building2, ListChecks, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Download, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap, MessageCircle } from "lucide-react";
+import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -160,6 +161,23 @@ export function AppSidebar({
           </SidebarGroupContent>
         </SidebarGroup>
 
+        {/* MissionIQ Chat link — separate route */}
+        <SidebarGroup>
+          <SidebarGroupLabel>AI Assistant</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild tooltip="MissionIQ Chat">
+                  <Link href="/chat">
+                    <MessageCircle className="h-4 w-4" />
+                    <span>Chat</span>
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
       </SidebarContent>
 
       <SidebarFooter className="p-4">
@@ -280,7 +298,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.1.70</span>
+              <span className="opacity-50">v3.1.71</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
