@@ -1,0 +1,36 @@
+name: Auto-alias missioniq to us2.hyperverge.space
+
+on:
+  push:
+    branches: ["missioniq"]
+
+jobs:
+  alias:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Vercel preview build
+        run: sleep 90
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Get latest preview deployment URL
+        id: get-url
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          # List deployments and find the latest Ready preview for missioniq
+          DEPLOY_URL=$(vercel ls eventiq --scope hv-one --token "$VERCEL_TOKEN" 2>&1 | grep "Ready" | head -1 | awk '{print $3}')
+          echo "url=$DEPLOY_URL" >> "$GITHUB_OUTPUT"
+          echo "Found deployment: $DEPLOY_URL"
+
+      - name: Alias to us2.hyperverge.space
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ -z "${{ steps.get-url.outputs.url }}" ]; then
+            echo "No deployment URL found, skipping alias"
+            exit 0
+          fi
+          vercel alias "${{ steps.get-url.outputs.url }}" us2.hyperverge.space --scope hv-one --token "$VERCEL_TOKEN"
+          echo "Aliased us2.hyperverge.space -> ${{ steps.get-url.outputs.url }}"
