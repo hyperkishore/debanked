@@ -37,12 +37,12 @@ const resources: ResourceItem[] = [
   { category: "Product", title: "Kapitus Download from KV", detail: "Problem discovery document", link: "https://drive.google.com/file/d/1WsRK8_SDde_nRHhJRUVI0I2M-oGdNZ85/view?usp=drive_link" },
   { category: "Product", title: "Email to CRM (Demo Video)", link: "https://drive.google.com/file/d/1Jdluk9TQlY56k3bES4aCMdFT5TY29Zyl/view" },
   { category: "Product", title: "Cashflow Analysis (Demo Video)", link: "https://drive.google.com/file/d/1pzREwBBB2c3yf8jUTc3Td-esxpZXwtY1/view?usp=sharing" },
-  { category: "Product", title: "Cashflow Analysis (Live Demo)", detail: "Login: hv / test", link: "https://mca-lending-space.vercel.app/operations/cash-flow-analysis" },
+  { category: "Product", title: "Cashflow Analysis (Live Demo)", link: "https://mca-lending-space.vercel.app/operations/cash-flow-analysis" },
   { category: "Product", title: "Clear Analysis (Demo Video)", link: "https://drive.google.com/file/d/1N_uJUvs3pXnvoaBPVNRI_hQrG1ZykLMS/view?usp=sharing" },
-  { category: "Product", title: "Clear Analysis (Live Demo)", detail: "Login: hv / test", link: "https://mca-lending-space.vercel.app/operations/clear-report" },
+  { category: "Product", title: "Clear Analysis (Live Demo)", link: "https://mca-lending-space.vercel.app/operations/clear-report" },
   { category: "Product", title: "TLO Analysis (Live Demo)", link: "https://bsa-demo.dev.hyperverge.co/tlo-report/" },
   { category: "Product", title: "Industry Classification (Demo Video)", link: "https://drive.google.com/file/d/1fPsXDfd3PDNN49kyHRj4GGTF2SJlPPga/view?usp=drive_link" },
-  { category: "Product", title: "Industry Classification (Live Demo)", detail: "Login: vignesh@hyperverge.co / KVhvdashboard321! \u2014 Go to Applications \u2192 ECG \u2192 sic_codes_2 \u2192 Sep 1\u2013Oct 31 \u2192 ID: 1325110", link: "https://usa.dashboard.hyperverge.co/" },
+  { category: "Product", title: "Industry Classification (Live Demo)", detail: "Go to Applications \u2192 ECG \u2192 sic_codes_2 \u2192 Sep 1\u2013Oct 31 \u2192 ID: 1325110", link: "https://usa.dashboard.hyperverge.co/" },
   { category: "Product", title: "FY26 OKRs", detail: "Company-level goals including US", link: "https://www.notion.so/hyperverge/Company-Goals-FY-26-2ef7e7c237cb81de91b9f66ab764513e" },
   { category: "Product", title: "Kapitus BRDs", detail: "Initial sections relevant", link: "https://drive.google.com/drive/folders/1iMhcS9BlryPqsUT1ZvWpqPb4g6qmgKfa?usp=drive_link" },
 
@@ -167,6 +167,9 @@ export function ResourcesTab() {
   const productItems = resources.filter((r) => r.category === "Product");
   const crossItems = resources.filter((r) => r.category === "GTM/Product");
 
+  const gtmCredentials = credentials.filter((c) => c.id === "apollo" || c.id === "lusha");
+  const productCredentials = credentials.filter((c) => c.id === "cashflow" || c.id === "clear" || c.id === "industry");
+
   return (
     <ScrollArea className="h-full">
       <div className="p-4 space-y-6 max-w-2xl mx-auto">
@@ -180,10 +183,15 @@ export function ResourcesTab() {
         <CategorySection
           category="GTM"
           items={gtmItems}
-          credentials={credentials}
+          credentials={gtmCredentials}
           credentialsLoading={credentialsLoading}
         />
-        <CategorySection category="Product" items={productItems} />
+        <CategorySection
+          category="Product"
+          items={productItems}
+          credentials={productCredentials}
+          credentialsLoading={credentialsLoading}
+        />
         <CategorySection category="GTM / Product" items={crossItems} />
       </div>
     </ScrollArea>

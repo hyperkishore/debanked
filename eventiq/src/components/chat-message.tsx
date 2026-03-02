@@ -2,7 +2,7 @@
 
 import { memo } from "react";
 import { Button } from "@/components/ui/button";
-import { Copy, Check, User, Bot, ChevronRight } from "lucide-react";
+import { Copy, Check, User, ChevronRight } from "lucide-react";
 import { useState, useCallback } from "react";
 
 interface ChatMessageProps {
@@ -209,9 +209,11 @@ export const ChatMessage = memo(function ChatMessage({
       }`}
     >
       {role === "assistant" && (
-        <div className="w-7 h-7 rounded-full bg-brand/20 flex items-center justify-center shrink-0 mt-1">
-          <Bot className="h-4 w-4 text-brand" />
-        </div>
+        <img
+          src="/kiket-avatar.jpg"
+          alt="Kiket"
+          className="w-7 h-7 rounded-full object-cover shrink-0 mt-1"
+        />
       )}
 
       <div

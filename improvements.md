@@ -239,6 +239,7 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-016: Remove Frontend-Embedded Credentials and Secrets
 - Priority: `P0`
+- Status: `done` (v3.1.86)
 - Category: Security
 - Evidence:
   - `eventiq/src/components/resources-tab.tsx:26`
@@ -249,6 +250,11 @@ This document defines implementation-grade improvements derived from the current
   - Move all sensitive credentials into secure secret storage.
   - Replace in-app plaintext credentials with secure references and access workflow.
   - Rotate exposed credentials immediately.
+- Resolution:
+  - Removed 3 hardcoded credential strings from `resources-tab.tsx` detail fields (Cashflow, Clear, Industry Classification logins).
+  - Added 3 new credential entries to `/api/credentials` route sourced from env vars (`CASHFLOW_LOGIN/PASSWORD`, `CLEAR_LOGIN/PASSWORD`, `INDUSTRY_LOGIN/PASSWORD`).
+  - Credentials now shown in Product section via existing `CredentialField` toggle-visibility component.
+  - Env vars need to be set in Vercel for credentials to appear (empty credentials are filtered out).
 - Acceptance criteria:
   - No plaintext secrets in client bundle.
   - Credential rotation completed and logged.
@@ -741,23 +747,23 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-047: Auto-Collapse Sidebar When Kiket Chat Opens
 - Priority: `P1`
-- Status: `not started`
+- Status: `done` (v3.1.86)
 - Category: Kiket, Layout, UX
 - Evidence:
   - `eventiq/src/app/page.tsx` (chat panel state management)
   - `eventiq/src/components/app-sidebar.tsx`
 - Problem:
   - With sidebar + company list + detail + Kiket panel, only 3 panels fit comfortably. When Kiket opens, the sidebar should auto-collapse to icon mode.
-- Improvement:
-  - When `isChatOpen` becomes true, call `sidebar.setOpen(false)` to collapse to icon mode.
-  - When Kiket closes, optionally restore sidebar to previous state.
+- Resolution:
+  - Added `SidebarAutoCollapse` component that calls `useSidebar().setOpen(false)` when `kiketOpen` becomes true.
+  - Component placed inside `SidebarProvider` to access sidebar context. Only collapses on open; user can manually re-expand.
 - Acceptance criteria:
   - Opening Kiket automatically collapses sidebar to icon mode.
   - All 4 panels fit without horizontal overflow.
 
 ## IMP-048: Kiket Avatar Image
 - Priority: `P1`
-- Status: `not started`
+- Status: `done` (v3.1.86)
 - Category: Kiket, Branding
 - Evidence:
   - `/Users/kishore/Downloads/kiket.jpg` (1024x1024 red panda character)
@@ -766,9 +772,11 @@ This document defines implementation-grade improvements derived from the current
   - `eventiq/src/components/chat-message.tsx` (message avatar)
 - Problem:
   - Kiket currently uses a plain "K" text avatar. The user has a designed red panda mascot image that should be used instead.
-- Improvement:
-  - Copy `kiket.jpg` to `public/kiket-avatar.jpg` (optimized/resized for web).
-  - Replace all "K" text avatars with the image: sidebar button, chat header, chat messages, empty state.
+- Resolution:
+  - Replaced Bot icon in `chat-message.tsx` with `<img src="/kiket-avatar.jpg">` (28px circle).
+  - Replaced "K" header avatar in `missioniq-chat.tsx` with image (32px rounded-lg).
+  - Replaced "K" empty state avatar in `missioniq-chat.tsx` with image (64px rounded-2xl).
+  - Sidebar/strip kept as icons (too small for images).
 - Acceptance criteria:
   - Kiket's red panda avatar appears in sidebar, chat header, assistant messages, and empty state.
   - Image is optimized for web (compressed, appropriate size).
@@ -828,16 +836,17 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-052: Persistent Kiket Across All Tabs
 - Priority: `P1`
-- Status: `not started`
+- Status: `done` (v3.1.86)
 - Category: Kiket, Layout, Architecture
 - Evidence:
   - `eventiq/src/app/page.tsx` (Kiket panel lives inside main page conditional rendering)
 - Problem:
   - Kiket chat panel is currently only visible when on the Companies tab. It should be accessible from any tab (Pipeline, Map, Resources, etc.).
-- Improvement:
-  - Move Kiket panel rendering to the top-level layout, outside of tab-specific content.
-  - Maintain WebSocket connection across tab switches.
-  - Chat state (messages, conversation) persists when switching tabs.
+- Resolution:
+  - Restructured `page.tsx` layout so desktop Kiket panel sits outside the tab-specific conditional.
+  - Layout: `flex → [tab content (flex-1)] + [kiket panel (shrink-0)]` on desktop.
+  - Mobile Kiket Sheet also moved outside tab conditional.
+  - WebSocket connection and chat state preserved across all tab switches.
 - Acceptance criteria:
   - Kiket panel stays open when switching between any tabs.
   - WebSocket connection is not interrupted by tab changes.

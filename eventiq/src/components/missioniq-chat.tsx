@@ -170,9 +170,11 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
       <div className={`flex items-center justify-between border-b border-border ${compact ? "px-3 py-2" : "px-4 py-3"}`}>
         <div className="flex items-center gap-2">
           {!compact && (
-            <div className="w-8 h-8 rounded-lg bg-brand/20 flex items-center justify-center">
-              <span className="text-brand font-bold text-sm">K</span>
-            </div>
+            <img
+              src="/kiket-avatar.jpg"
+              alt="Kiket"
+              className="w-8 h-8 rounded-lg object-cover"
+            />
           )}
           <div>
             <div className="flex items-center gap-1.5">
@@ -238,9 +240,11 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
           {messages.length === 0 && !streamingMessage && (
             <div className={`flex flex-col items-center justify-center text-center ${compact ? "py-8" : "py-16"}`}>
               {!compact && (
-                <div className="w-16 h-16 rounded-2xl bg-brand/10 flex items-center justify-center mb-4">
-                  <span className="text-brand font-bold text-2xl">K</span>
-                </div>
+                <img
+                  src="/kiket-avatar.jpg"
+                  alt="Kiket"
+                  className="w-16 h-16 rounded-2xl object-cover mb-4"
+                />
               )}
               <h3 className={`font-semibold mb-2 ${compact ? "text-sm" : "text-lg"}`}>Kiket</h3>
               <p className={`text-muted-foreground max-w-sm mb-4 ${compact ? "text-xs" : "text-sm mb-6"}`}>
