@@ -295,16 +295,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
             </div>
           )}
 
-          {/* Timing display */}
-          {timing.ttfr !== null && messages.length > 0 && (
-            <div className="flex justify-center">
-              <span className="text-xs text-muted-foreground/50">
-                {timing.ttfc !== null && `First token: ${(timing.ttfc / 1000).toFixed(1)}s`}
-                {timing.ttfc !== null && timing.ttfr !== null && " · "}
-                {timing.ttfr !== null && `Total: ${(timing.ttfr / 1000).toFixed(1)}s`}
-              </span>
-            </div>
-          )}
+          {/* Timing logged to console only (see [Kiket] log entries) */}
 
           {/* Scroll anchor */}
           <div ref={scrollBottomRef} />

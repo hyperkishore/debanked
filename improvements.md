@@ -719,3 +719,144 @@ This document defines implementation-grade improvements derived from the current
 - Acceptance criteria:
   - Daily execution status is transparent and auditable.
   - Weekly targets are achieved with predictable throughput.
+
+---
+
+## Kiket UX Improvements (v3.1.83+)
+
+## IMP-046: Kiket User Attribution in Memory
+- Priority: `P0`
+- Status: `not started`
+- Category: Kiket, Memory, Multi-User
+- Problem:
+  - Kiket does not track WHO shared specific information. When 5 team members chat with Kiket, it should know "Kishore told me X" and "Sanjay told me Y" so users can ask "who shared this info?"
+- Improvement:
+  - Extend Kiket's memory protocol to tag every stored insight with the user who provided it.
+  - When users ask "who told you about X?", Kiket should cite the source user and conversation.
+  - Memory files should include attribution metadata: `{user, timestamp, sessionKey}`.
+- Acceptance criteria:
+  - Kiket can answer "who told you about company X?" with the correct user name.
+  - Memory entries include user attribution tags.
+  - Works across all 5 team members' sessions.
+
+## IMP-047: Auto-Collapse Sidebar When Kiket Chat Opens
+- Priority: `P1`
+- Status: `not started`
+- Category: Kiket, Layout, UX
+- Evidence:
+  - `eventiq/src/app/page.tsx` (chat panel state management)
+  - `eventiq/src/components/app-sidebar.tsx`
+- Problem:
+  - With sidebar + company list + detail + Kiket panel, only 3 panels fit comfortably. When Kiket opens, the sidebar should auto-collapse to icon mode.
+- Improvement:
+  - When `isChatOpen` becomes true, call `sidebar.setOpen(false)` to collapse to icon mode.
+  - When Kiket closes, optionally restore sidebar to previous state.
+- Acceptance criteria:
+  - Opening Kiket automatically collapses sidebar to icon mode.
+  - All 4 panels fit without horizontal overflow.
+
+## IMP-048: Kiket Avatar Image
+- Priority: `P1`
+- Status: `not started`
+- Category: Kiket, Branding
+- Evidence:
+  - `/Users/kishore/Downloads/kiket.jpg` (1024x1024 red panda character)
+  - `eventiq/src/components/missioniq-chat.tsx:168` (current "K" text avatar)
+  - `eventiq/src/components/app-sidebar.tsx:178` (sidebar Kiket button)
+  - `eventiq/src/components/chat-message.tsx` (message avatar)
+- Problem:
+  - Kiket currently uses a plain "K" text avatar. The user has a designed red panda mascot image that should be used instead.
+- Improvement:
+  - Copy `kiket.jpg` to `public/kiket-avatar.jpg` (optimized/resized for web).
+  - Replace all "K" text avatars with the image: sidebar button, chat header, chat messages, empty state.
+- Acceptance criteria:
+  - Kiket's red panda avatar appears in sidebar, chat header, assistant messages, and empty state.
+  - Image is optimized for web (compressed, appropriate size).
+
+## IMP-049: Deal Value Field in Company Detail
+- Priority: `P1`
+- Status: `not started`
+- Category: Pipeline, Data Model
+- Evidence:
+  - `eventiq/src/components/company-detail.tsx`
+  - `eventiq/src/lib/types.ts`
+- Problem:
+  - Companies in pipeline have no deal value field. Users need to track expected revenue per deal.
+- Improvement:
+  - Add `dealValue?: number` to Company type or pipeline record.
+  - Add editable deal value field in company detail panel (pipeline section).
+  - Display deal value in pipeline board cards.
+  - Persist via localStorage + Supabase sync.
+- Acceptance criteria:
+  - Users can set/edit deal value per company.
+  - Deal value displays on pipeline board.
+  - Values persist across sessions.
+
+## IMP-050: Make Companies the Default Tab
+- Priority: `P1`
+- Status: `not started`
+- Category: Navigation, UX
+- Evidence:
+  - `eventiq/src/components/app-sidebar.tsx:58` (Mission Control is first nav item)
+  - `eventiq/src/app/page.tsx` (initial tab state)
+- Problem:
+  - Mission Control is the default first tab, but Companies is the most frequently used view and should be the default.
+- Improvement:
+  - Reorder `coreNavItems` to put Companies first (shortcut "1").
+  - Change default `activeTab` state to `"companies"`.
+- Acceptance criteria:
+  - App opens to Companies tab by default.
+  - Companies has keyboard shortcut "1".
+
+## IMP-051: Combine Mission Control and Today into Single Page
+- Priority: `P2`
+- Status: `not started`
+- Category: Navigation, UX, Architecture
+- Evidence:
+  - `eventiq/src/components/app-sidebar.tsx:58-62` (separate Mission Control and Today tabs)
+  - `eventiq/src/components/mission-control-tab.tsx`
+  - `eventiq/src/components/schedule-tab.tsx`
+- Problem:
+  - Mission Control and Today (schedule/checklist) are separate tabs but conceptually related. Combining them reduces navigation friction and creates a more useful daily command center.
+- Improvement:
+  - Design a unified "Command Center" view that integrates morning briefing, today's schedule, and active tasks.
+  - Remove redundant navigation entry.
+- Acceptance criteria:
+  - Single unified page replaces two separate tabs.
+  - All functionality from both views is preserved.
+  - Navigation is simplified.
+
+## IMP-052: Persistent Kiket Across All Tabs
+- Priority: `P1`
+- Status: `not started`
+- Category: Kiket, Layout, Architecture
+- Evidence:
+  - `eventiq/src/app/page.tsx` (Kiket panel lives inside main page conditional rendering)
+- Problem:
+  - Kiket chat panel is currently only visible when on the Companies tab. It should be accessible from any tab (Pipeline, Map, Resources, etc.).
+- Improvement:
+  - Move Kiket panel rendering to the top-level layout, outside of tab-specific content.
+  - Maintain WebSocket connection across tab switches.
+  - Chat state (messages, conversation) persists when switching tabs.
+- Acceptance criteria:
+  - Kiket panel stays open when switching between any tabs.
+  - WebSocket connection is not interrupted by tab changes.
+  - Chat history is preserved across navigation.
+
+## IMP-053: Deep-Linking from Kiket Responses
+- Priority: `P2`
+- Status: `not started`
+- Category: Kiket, Navigation, UX
+- Evidence:
+  - `eventiq/src/components/chat-message.tsx` (markdown renderer)
+  - `eventiq/src/app/page.tsx` (tab/company selection state)
+- Problem:
+  - When Kiket mentions a company or leader (e.g., "The leaders at Fortun Advance are..."), users should be able to click to navigate directly to that company's detail view.
+- Improvement:
+  - Kiket should emit structured entity references in responses (company names, leader names).
+  - Chat message renderer should detect company/leader mentions and make them clickable.
+  - Clicking navigates to the Companies tab with that company selected and detail panel open.
+- Acceptance criteria:
+  - Company names in Kiket responses are clickable links.
+  - Clicking navigates to company detail view.
+  - Works for both company names and leader names (navigates to parent company).
