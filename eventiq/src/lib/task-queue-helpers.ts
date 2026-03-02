@@ -4,8 +4,11 @@ import { FollowUpReminder } from "./follow-up-helpers";
 import { SequenceProgress, generateSequence, autoSelectSequence } from "./sequence-helpers";
 import { getLastEngagement, getCompanyEngagements } from "./engagement-helpers";
 import { computeOutreachScore, getUrgencyTier } from "./outreach-score";
+import { computeWhyNow } from "./why-now-engine";
+import { computeAttentionScore } from "./attention-score";
+import { buildFeedItems } from "./feed-helpers";
 
-export type TaskType = "follow-up" | "stale-deal" | "sequence-step" | "news-trigger" | "quick-win";
+export type TaskType = "follow-up" | "stale-deal" | "sequence-step" | "news-trigger" | "quick-win" | "signal-trigger";
 export type TaskPriority = "critical" | "high" | "medium";
 
 export interface TaskQueueItem {
@@ -247,6 +250,36 @@ export function buildTaskQueue(
       companyType: company.type,
       title: `High-score prospect (${breakdown.total})`,
       subtitle: `${company.type} — never contacted`,
+    });
+  }
+
+  // 6. Signal triggers — hot Why-Now signals auto-generate tasks
+  const feedItems = buildFeedItems(companies);
+  const companiesWithTasks = new Set(tasks.map((t) => t.companyId));
+
+  for (const company of companies) {
+    // Deduplicate: skip if company already has an active task
+    if (companiesWithTasks.has(company.id)) continue;
+
+    const whyNow = computeWhyNow(company, feedItems, pipelineState);
+    if (whyNow.score < 7) continue;
+
+    const taskId = `signal-${company.id}`;
+    if (isHidden(taskId)) continue;
+
+    const attention = computeAttentionScore(company, whyNow, pipelineState, engagements);
+    const priority: TaskPriority = attention.score >= 75 ? "critical" : attention.score >= 50 ? "high" : "medium";
+
+    tasks.push({
+      id: taskId,
+      type: "signal-trigger",
+      priority,
+      companyId: company.id,
+      companyName: company.name,
+      companyType: company.type,
+      title: whyNow.topAngle,
+      subtitle: `Why-Now ${whyNow.score}/10 — ${whyNow.category} signal`,
+      contactName: company.leaders?.[0]?.n,
     });
   }
 

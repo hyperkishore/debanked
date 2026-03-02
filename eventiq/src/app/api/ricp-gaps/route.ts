@@ -31,6 +31,8 @@ export async function GET(request: NextRequest) {
     hasRicp: boolean;
     ricpContacts: string[];
     missingRoles: string[];
+    enrichedCount: number;
+    lastEnrichmentDate: string | null;
   }
 
   const gaps: GapEntry[] = [];
@@ -74,6 +76,18 @@ export async function GET(request: NextRequest) {
       tier.covered++;
     }
 
+    // Track enrichment stats
+    const leaders = (company.leaders as Array<{ n: string; t: string; verifiedAt?: string; bg?: string }>) || [];
+    const enrichedLeaders = leaders.filter(
+      (l) => l.bg?.startsWith("Enriched via Apollo") || l.verifiedAt
+    );
+    const enrichedCount = enrichedLeaders.length;
+    const lastEnrichmentDate = enrichedLeaders
+      .map((l) => l.verifiedAt)
+      .filter(Boolean)
+      .sort()
+      .pop() || null;
+
     if (!hasRicp || missingRoles.length > 0) {
       gaps.push({
         companyId: company.id,
@@ -83,6 +97,8 @@ export async function GET(request: NextRequest) {
         hasRicp,
         ricpContacts,
         missingRoles,
+        enrichedCount,
+        lastEnrichmentDate: lastEnrichmentDate || null,
       });
     }
 

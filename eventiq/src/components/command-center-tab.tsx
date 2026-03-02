@@ -7,6 +7,9 @@ import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { estimateCompanyValue } from "@/lib/revenue-model";
 import { computeReadinessScore, getReadinessLabel, getReadinessColor, type ReadinessLabel } from "@/lib/readiness-score";
 import { getNextBestAction } from "@/lib/outreach-score";
+import { computeWhyNow } from "@/lib/why-now-engine";
+import { computeAttentionScore, getAttentionColor, getAttentionBgColor, getAttentionEmoji, getRicpRolesFilled, type AttentionLabel } from "@/lib/attention-score";
+import type { FunctionalRole } from "@/lib/ricp-taxonomy";
 import { getLastEngagement, getCompanyEngagements } from "@/lib/engagement-helpers";
 import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
@@ -90,6 +93,7 @@ const typeTaskIcon: Record<string, React.ComponentType<{ className?: string }>> 
   "sequence-step": Zap,
   "news-trigger": Newspaper,
   "quick-win": Target,
+  "signal-trigger": TrendingUp,
 };
 
 const priorityStyles: Record<TaskPriority, { label: string; colorClass: string; bgClass: string }> = {
@@ -171,12 +175,13 @@ export function CommandCenterTab({
     return { activeDeals: activeDeals.filter(d => d.isActive), totalPipeline, totalClosed, activeCount };
   }, [companies]);
 
-  // === Top Actions ===
+  // === Top Actions (ranked by Attention Score) ===
   const actionList = useMemo(() => {
     const items: Array<{
       company: Company; readiness: number; readinessLabel: ReadinessLabel; nextAction: string;
       revenue: number; actionScore: number; lastContactDays: number | null;
       hasEmail: boolean; hasLinkedIn: boolean;
+      attentionScore: number; attentionLabel: AttentionLabel; whyNowAngle: string | null;
     }> = [];
 
     for (const c of companies) {
@@ -190,20 +195,45 @@ export function CommandCenterTab({
       const hasEmail = (c.leaders || []).some(l => l.email);
       const hasLinkedIn = (c.leaders || []).some(l => l.li);
 
-      const readinessWeight = breakdown.total;
-      const revenueWeight = Math.min(revenue / 25000, 4);
-      const staleness = lastContactDays === null ? 3 : lastContactDays > 14 ? 2 : lastContactDays > 7 ? 1 : 0;
-      const typeBoost = c.type === "SQO" ? 3 : c.type === "Client" ? 2 : c.type === "ICP" ? 1 : 0;
+      // Attention Score (replaces readiness-based ranking)
+      const whyNow = computeWhyNow(c, feedItems, pipelineState);
+      const attention = computeAttentionScore(c, whyNow, pipelineState, engagements);
 
       items.push({
         company: c, readiness: breakdown.total, readinessLabel: label, nextAction,
-        revenue, actionScore: readinessWeight + revenueWeight + staleness + typeBoost,
+        revenue, actionScore: attention.score,
         lastContactDays, hasEmail, hasLinkedIn,
+        attentionScore: attention.score, attentionLabel: attention.label,
+        whyNowAngle: whyNow.score > 0 ? whyNow.topAngle : null,
       });
     }
 
-    return items.sort((a, b) => b.actionScore - a.actionScore).slice(0, 15);
+    return items.sort((a, b) => b.attentionScore - a.attentionScore).slice(0, 15);
   }, [companies, feedItems, engagements, pipelineState]);
+
+  // === RICP Coverage ===
+  const ricpCoverage = useMemo(() => {
+    const RICP: FunctionalRole[] = ["operations", "risk", "underwriting", "finance"];
+    const p0p1 = companies.filter(c => c.priority === 1 || c.priority === 2);
+    const roleCounts: Record<FunctionalRole, number> = { operations: 0, risk: 0, underwriting: 0, finance: 0, sales: 0, technology: 0, general: 0 };
+    for (const c of p0p1) {
+      const filled = getRicpRolesFilled(c.leaders || []);
+      for (const role of filled) roleCounts[role]++;
+    }
+    const total = p0p1.length || 1;
+    return {
+      total: p0p1.length,
+      roles: RICP.map(r => ({ role: r, count: roleCounts[r], pct: Math.round((roleCounts[r] / total) * 100) })),
+      gapsToFill: RICP.reduce((sum, r) => sum + (total - roleCounts[r]), 0),
+    };
+  }, [companies]);
+
+  // === Attention Score Distribution ===
+  const attentionDist = useMemo(() => {
+    const dist = { fire: 0, hot: 0, warm: 0, monitor: 0 };
+    for (const item of actionList) dist[item.attentionLabel]++;
+    return dist;
+  }, [actionList]);
 
   // === Recent Signals ===
   const recentSignals = useMemo(() => {
@@ -255,7 +285,7 @@ export function CommandCenterTab({
     onUpdateQueueState({ ...queueState, dismissedTasks: [...queueState.dismissedTasks, taskId] });
   }, [queueState, onUpdateQueueState]);
 
-  const canDismiss = (task: TaskQueueItem) => task.type === "news-trigger" || task.type === "quick-win";
+  const canDismiss = (task: TaskQueueItem) => task.type === "news-trigger" || task.type === "quick-win" || task.type === "signal-trigger";
 
   return (
     <div className="h-full flex flex-col bg-background">
@@ -414,22 +444,33 @@ export function CommandCenterTab({
             )}
           </section>
 
-          {/* === 3. Top Actions === */}
+          {/* === 3. Top Actions (by Attention Score) === */}
           <section>
             <div className="flex items-center gap-2 mb-4">
               <Zap className="h-4 w-4 text-brand" />
               <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Top Actions</h2>
-              <span className="text-xs text-muted-foreground ml-auto">Ranked by readiness + value + urgency</span>
+              <span className="text-xs text-muted-foreground ml-auto">Ranked by Attention Score</span>
             </div>
+
+            {/* Attention Score Distribution mini-bar */}
+            <div className="flex items-center gap-2 mb-3 text-xs">
+              {(["fire", "hot", "warm", "monitor"] as const).map((label) => (
+                <span key={label} className={cn("flex items-center gap-0.5", getAttentionColor(label))}>
+                  {getAttentionEmoji(label)} {attentionDist[label]}
+                </span>
+              ))}
+            </div>
+
             <div className="space-y-1.5">
-              {actionList.map(({ company, readiness, readinessLabel, nextAction, revenue, lastContactDays, hasEmail, hasLinkedIn }) => (
+              {actionList.map(({ company, attentionScore, attentionLabel, whyNowAngle, nextAction, revenue, lastContactDays, hasEmail, hasLinkedIn }) => (
                 <div
                   key={company.id}
                   className="flex items-center gap-3 p-3 rounded-lg border border-border/50 hover:bg-secondary/50 cursor-pointer transition-colors group"
                   onClick={() => onSelectCompany(company.id)}
                 >
                   <div className="shrink-0 w-8 text-center">
-                    <span className={cn("text-sm font-bold tabular-nums", getReadinessColor(readinessLabel))}>{readiness.toFixed(1)}</span>
+                    <span className="text-xs">{getAttentionEmoji(attentionLabel)}</span>
+                    <span className={cn("text-xs font-bold tabular-nums block", getAttentionColor(attentionLabel))}>{attentionScore}</span>
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-2">
@@ -438,6 +479,9 @@ export function CommandCenterTab({
                       {company.type === "SQO" && <Badge variant="outline" className="text-xs px-1 py-0 h-4 bg-red-500/10 text-red-400 border-red-500/30 shrink-0">SQO</Badge>}
                       {company.type === "Client" && <Badge variant="outline" className="text-xs px-1 py-0 h-4 bg-amber-500/10 text-amber-400 border-amber-500/30 shrink-0">Client</Badge>}
                     </div>
+                    {whyNowAngle && (
+                      <p className="text-xs text-orange-400/80 truncate mt-0.5">{whyNowAngle}</p>
+                    )}
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="text-xs text-brand/80 font-medium">{nextAction}</span>
                       {lastContactDays !== null ? (
@@ -499,7 +543,37 @@ export function CommandCenterTab({
             </div>
           </section>
 
-          {/* === 5. Recent Signals === */}
+          {/* === 5. RICP Coverage === */}
+          <section>
+            <div className="flex items-center gap-2 mb-4">
+              <Target className="h-4 w-4 text-brand" />
+              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">RICP Coverage</h2>
+              <span className="text-xs text-muted-foreground ml-auto">{ricpCoverage.total} P0+P1 companies</span>
+            </div>
+            <div className="grid grid-cols-4 gap-3 mb-3">
+              {ricpCoverage.roles.map(({ role, count, pct }) => (
+                <Card key={role} className="p-3">
+                  <p className="text-xs text-muted-foreground capitalize">{role}</p>
+                  <p className="text-lg font-bold tabular-nums">{pct}%</p>
+                  <div className="h-1.5 rounded-full bg-muted/30 overflow-hidden mt-1">
+                    <div
+                      className={cn("h-full rounded-full", pct >= 80 ? "bg-green-500" : pct >= 50 ? "bg-yellow-500" : "bg-red-500")}
+                      style={{ width: `${pct}%` }}
+                    />
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">{count}/{ricpCoverage.total}</p>
+                </Card>
+              ))}
+            </div>
+            {ricpCoverage.gapsToFill > 0 && (
+              <p className="text-xs text-muted-foreground">
+                <AlertTriangle className="h-3 w-3 inline text-orange-400 mr-0.5" />
+                {ricpCoverage.gapsToFill} role gaps to fill across P0+P1 companies
+              </p>
+            )}
+          </section>
+
+          {/* === 6. Recent Signals === */}
           {recentSignals.length > 0 && (
             <section>
               <div className="flex items-center gap-2 mb-4">

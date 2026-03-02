@@ -1,5 +1,7 @@
 import "server-only";
 
+import type { AttentionLabel } from "./attention-score";
+
 interface BriefingCompany {
   companyId: number;
   companyName: string;
@@ -9,6 +11,11 @@ interface BriefingCompany {
   nextAction: string;
   leader?: { name: string; title: string; linkedin?: string };
   latestNews?: { headline: string; source: string };
+  // New fields
+  attentionScore?: number;
+  attentionLabel?: AttentionLabel;
+  whyNowAngle?: string | null;
+  ricpCoverage?: string;
 }
 
 interface StaleWarning {
@@ -35,9 +42,29 @@ const TYPE_COLORS: Record<string, string> = {
   TAM: "#6b7280",
 };
 
+const ATTENTION_COLORS: Record<AttentionLabel, string> = {
+  fire: "#ef4444",
+  hot: "#f97316",
+  warm: "#eab308",
+  monitor: "#6b7280",
+};
+
+const ATTENTION_EMOJI: Record<AttentionLabel, string> = {
+  fire: "🔥",
+  hot: "🟠",
+  warm: "🟡",
+  monitor: "⚪",
+};
+
 function badge(type: string): string {
   const color = TYPE_COLORS[type] || "#6b7280";
   return `<span style="display:inline-block;background:${color}20;color:${color};font-size:11px;font-weight:600;padding:2px 8px;border-radius:12px;border:1px solid ${color}40">${type}</span>`;
+}
+
+function attentionBadge(label: AttentionLabel, score: number): string {
+  const color = ATTENTION_COLORS[label];
+  const emoji = ATTENTION_EMOJI[label];
+  return `<span style="display:inline-block;background:${color}20;color:${color};font-size:11px;font-weight:600;padding:2px 8px;border-radius:12px;border:1px solid ${color}40">${emoji} ${label.toUpperCase()} ${score}</span>`;
 }
 
 function companyRow(c: BriefingCompany, appUrl: string): string {
@@ -49,15 +76,30 @@ function companyRow(c: BriefingCompany, appUrl: string): string {
     ? `<div style="font-size:12px;color:#d1d5db;margin-top:4px;padding:4px 8px;background:#1a1a2e;border-radius:4px">📰 ${c.latestNews.headline} <span style="color:#6b7280">&mdash; ${c.latestNews.source}</span></div>`
     : "";
 
+  const whyNowLine = c.whyNowAngle
+    ? `<div style="font-size:12px;color:#f59e0b;margin-top:4px;padding:4px 8px;background:#422006;border-radius:4px">⚡ ${c.whyNowAngle}</div>`
+    : "";
+
+  const ricpLine = c.ricpCoverage
+    ? `<div style="font-size:11px;color:#6b7280;margin-top:2px">RICP: ${c.ricpCoverage}</div>`
+    : "";
+
+  const attentionLine = c.attentionLabel
+    ? attentionBadge(c.attentionLabel, c.attentionScore || 0)
+    : "";
+
   return `
     <tr>
       <td style="padding:12px 16px;border-bottom:1px solid #1e1e3a">
         <div style="display:flex;align-items:center;gap:8px">
           <a href="${appUrl}?company=${c.companyId}" style="color:#e2e8f0;font-weight:600;font-size:14px;text-decoration:none">${c.companyName}</a>
           ${badge(c.type)}
+          ${attentionLine}
         </div>
         ${leaderLine}
+        ${whyNowLine}
         ${newsLine}
+        ${ricpLine}
         <div style="margin-top:6px;font-size:13px;color:#5b8def;font-weight:500">→ ${c.nextAction}</div>
       </td>
     </tr>`;
@@ -77,7 +119,7 @@ export function renderBriefingEmail(data: BriefingData): string {
   const topSection = data.topCompanies.length > 0
     ? `
       <div style="margin-bottom:24px">
-        <h2 style="color:#e2e8f0;font-size:16px;margin:0 0 12px 0;font-weight:600">🎯 Top Companies to Work Today</h2>
+        <h2 style="color:#e2e8f0;font-size:16px;margin:0 0 12px 0;font-weight:600">🎯 Today's Focus (by Attention Score)</h2>
         <table style="width:100%;border-collapse:collapse;background:#12122a;border-radius:8px;overflow:hidden">
           ${data.topCompanies.map((c) => companyRow(c, data.appUrl)).join("")}
         </table>

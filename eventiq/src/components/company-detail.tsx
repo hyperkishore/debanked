@@ -11,6 +11,9 @@ import { computeReadinessScore, getReadinessLabel, getReadinessColor, getReadine
 import { getCompanyProducts, ProductStatus, getStatusColor, getStatusLabel, getSourceLabel } from "@/lib/product-helpers";
 import { generateTriggerCards, TriggerCard } from "@/lib/trigger-card-helpers";
 import { buildFeedItems, FeedItem, parseDateFromNews } from "@/lib/feed-helpers";
+import { computeWhyNow, WhyNowResult } from "@/lib/why-now-engine";
+import { computeAttentionScore, getAttentionEmoji, getAttentionColor, getAttentionBgColor } from "@/lib/attention-score";
+import { briefingToText, generateBriefing } from "@/lib/briefing-helpers";
 import { detectCompetitors, CompetitiveContext } from "@/lib/competitive-intel-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
 import { DealEditPopover } from "@/components/deal-edit-popover";
@@ -228,6 +231,18 @@ export function CompanyDetail({
   const triggerCards = useMemo(
     () => generateTriggerCards(company, feedItems),
     [company, feedItems]
+  );
+
+  // Why-Now engine
+  const whyNow = useMemo(
+    () => computeWhyNow(company, feedItems, pipelineState),
+    [company, feedItems, pipelineState]
+  );
+
+  // Attention score
+  const attention = useMemo(
+    () => computeAttentionScore(company, whyNow, pipelineState, engagements),
+    [company, whyNow, pipelineState, engagements]
   );
 
   // Product modules
@@ -539,6 +554,34 @@ export function CompanyDetail({
                 size="sm"
                 className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
                 onClick={() => {
+                  const leader = company.leaders?.find(l => l.email) || company.leaders?.[0];
+                  const briefing = leader
+                    ? generateBriefing(company, leader, engagements, pipelineState)
+                    : null;
+                  const whyNowSection = whyNow.score > 0
+                    ? `\n\nWHY NOW (${whyNow.score}/10):\n${whyNow.topAngle}\n${whyNow.angles.slice(0, 3).map(a => `- ${a.headline} (${a.type}, ${a.age_days}d ago)`).join("\n")}`
+                    : "";
+                  const attentionSection = `\nATTENTION SCORE: ${attention.score}/100 (${attention.label})`;
+                  const briefText = briefing
+                    ? briefingToText(briefing, company.name)
+                    : `${company.name}\n${company.desc}`;
+                  navigator.clipboard.writeText(briefText + whyNowSection + attentionSection);
+                  toast.success("Full pre-call brief copied");
+                }}
+              >
+                <ClipboardCopy className="h-3 w-3" />
+                Full Brief
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>Copy pre-call briefing + Why-Now + Attention Score</TooltipContent>
+          </Tooltip>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
+                onClick={() => {
                   if (onAskKiket) {
                     onAskKiket(company.name);
                   } else {
@@ -764,6 +807,33 @@ export function CompanyDetail({
                   ))}
               </div>
             </Section>
+
+            {/* Why-Now + Attention Score */}
+            {whyNow.score > 0 && (
+              <div className={cn("rounded-lg border p-3", getAttentionBgColor(attention.label))}>
+                <div className="flex items-center justify-between mb-1.5">
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-sm">{getAttentionEmoji(attention.label)}</span>
+                    <span className={cn("text-xs font-semibold uppercase", getAttentionColor(attention.label))}>
+                      {attention.label} — {attention.score}/100
+                    </span>
+                  </div>
+                  <Badge variant="outline" className="text-[10px] h-5">
+                    Why-Now: {whyNow.score}/10
+                  </Badge>
+                </div>
+                <p className="text-xs text-foreground/80 leading-relaxed">{whyNow.topAngle}</p>
+                {whyNow.angles.length > 1 && (
+                  <div className="mt-1.5 flex flex-wrap gap-1">
+                    {whyNow.angles.slice(1, 3).map((a, i) => (
+                      <Badge key={i} variant="secondary" className="text-[10px] h-5 font-normal">
+                        {a.type.replace("_", " ")} ({a.age_days}d ago)
+                      </Badge>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* AI Briefing */}
             <AIBriefingCard companyId={company.id} />

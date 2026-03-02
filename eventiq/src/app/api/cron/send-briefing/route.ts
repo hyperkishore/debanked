@@ -3,8 +3,32 @@ import { getSupabaseServer } from "@/lib/supabase-server";
 import { sendEmail, isEmailConfigured } from "@/lib/email";
 import { renderBriefingEmail } from "@/lib/briefing-email-template";
 import { computeOutreachScore, getNextBestAction, getUrgencyTier } from "@/lib/outreach-score";
+import { computeWhyNow } from "@/lib/why-now-engine";
+import { computeAttentionScore } from "@/lib/attention-score";
+import { buildFeedItems } from "@/lib/feed-helpers";
+import { classifyTitle, type FunctionalRole } from "@/lib/ricp-taxonomy";
 import type { Company, CompanyType, EngagementEntry } from "@/lib/types";
 import type { PipelineRecord } from "@/lib/pipeline-helpers";
+
+const RICP_ROLES = new Set<FunctionalRole>(["operations", "risk", "underwriting", "finance"]);
+const RICP_LABELS: Record<string, string> = {
+  operations: "Ops", risk: "Risk", underwriting: "UW", finance: "Fin",
+};
+
+function getRicpSummary(company: Company): string {
+  const leaders = company.leaders || [];
+  const filled = new Set<string>();
+  for (const leader of leaders) {
+    const { role, weight } = classifyTitle(leader.t);
+    if (RICP_ROLES.has(role) && weight >= 4) filled.add(role);
+  }
+  if (filled.size === 4) return "4/4 RICP roles filled";
+  const missing = Array.from(RICP_ROLES)
+    .filter((r) => !filled.has(r))
+    .map((r) => RICP_LABELS[r] || r)
+    .join(", ");
+  return `${filled.size}/4 roles — missing ${missing}`;
+}
 
 /**
  * GET /api/cron/send-briefing
@@ -131,14 +155,27 @@ export async function GET(request: NextRequest) {
         }
       }
 
-      // Score all companies
+      // Score all companies with Attention Score + Why-Now
+      const feedItems = buildFeedItems(companies);
       const scored = companies.map((c) => {
         const breakdown = computeOutreachScore(c, engagements, pipelineState, metState);
         const nextAction = getNextBestAction(c, engagements, pipelineState);
-        return { company: c, score: breakdown.total, nextAction, urgency: getUrgencyTier(breakdown.total) };
+        const whyNow = computeWhyNow(c, feedItems, pipelineState);
+        const attention = computeAttentionScore(c, whyNow, pipelineState, engagements);
+        return {
+          company: c,
+          score: breakdown.total,
+          nextAction,
+          urgency: getUrgencyTier(breakdown.total),
+          attentionScore: attention.score,
+          attentionLabel: attention.label,
+          whyNowAngle: whyNow.score > 0 ? whyNow.topAngle : null,
+          ricpCoverage: getRicpSummary(c),
+        };
       });
 
-      scored.sort((a, b) => b.score - a.score);
+      // Sort by attention score (primary ranking)
+      scored.sort((a, b) => b.attentionScore - a.attentionScore);
 
       // Top 5 companies
       const topCompanies = scored.slice(0, 5).map((s) => ({
@@ -156,6 +193,10 @@ export async function GET(request: NextRequest) {
             }
           : undefined,
         latestNews: newsMap.get(s.company.id),
+        attentionScore: s.attentionScore,
+        attentionLabel: s.attentionLabel,
+        whyNowAngle: s.whyNowAngle,
+        ricpCoverage: s.ricpCoverage,
       }));
 
       // Stale warnings: active pipeline, 5+ days no engagement
