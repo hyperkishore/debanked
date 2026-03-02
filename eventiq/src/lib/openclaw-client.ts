@@ -25,6 +25,7 @@ export interface OpenClawClientOptions {
   token: string;
   agent?: string;
   userId?: string;
+  userName?: string;
   onMessage: (message: ChatMessage) => void;
   onTyping: (isTyping: boolean) => void;
   onStateChange: (state: ConnectionState) => void;
@@ -68,6 +69,7 @@ export class OpenClawClient {
   private streamContent = "";
   private connectStartedAt = 0;
   private chatSentAt = 0;
+  private hasSentMessage = false;
 
   constructor(options: OpenClawClientOptions) {
     this.options = options;
@@ -180,10 +182,13 @@ export class OpenClawClient {
       const snapshot = payload.snapshot as Record<string, unknown> | undefined;
       const defaults = snapshot?.sessionDefaults as Record<string, unknown> | undefined;
 
-      // For a specific agent, construct the session key
+      // Per-user session key: each user gets their own conversation thread
+      // but Kiket's memory files are shared across all sessions
       const agentId = this.options.agent || (defaults?.defaultAgentId as string) || "main";
-      const mainKey = (defaults?.mainKey as string) || "main";
-      this.sessionKey = `agent:${agentId}:${mainKey}`;
+      const userLabel = this.options.userId
+        ? this.options.userId.replace(/[^a-zA-Z0-9._-]/g, "_").substring(0, 60)
+        : (defaults?.mainKey as string) || "main";
+      this.sessionKey = `agent:${agentId}:${userLabel}`;
     }
 
     // chat.send accepted
@@ -283,9 +288,16 @@ export class OpenClawClient {
     }
 
     this.chatSentAt = Date.now();
+    // Prefix first message with user identity so Kiket knows who's talking
+    const userName = this.options.userName;
+    const isFirstMessage = !this.hasSentMessage;
+    const prefixedContent = isFirstMessage && userName
+      ? `[${userName}]: ${content}`
+      : content;
+    this.hasSentMessage = true;
     this.sendReq("chat.send", {
       sessionKey: this.sessionKey,
-      message: content,
+      message: prefixedContent,
       idempotencyKey: crypto.randomUUID(),
     });
 

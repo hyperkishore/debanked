@@ -46,6 +46,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
       token,
       agent: "missioniq",
       userId,
+      userName,
       onMessage: (msg) => {
         setStreamingMessage(null);
         setSendTimestamp((ts) => {
