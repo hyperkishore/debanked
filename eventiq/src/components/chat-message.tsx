@@ -11,6 +11,7 @@ interface ChatMessageProps {
   thinking?: string;
   timestamp?: Date;
   isStreaming?: boolean;
+  onSelectCompany?: (id: number) => void;
 }
 
 /** Markdown-to-HTML renderer for chat messages with proper list/table/blockquote support. */
@@ -38,6 +39,9 @@ function renderMarkdown(text: string): string {
 
   // Italic
   processed = processed.replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, "<em>$1</em>");
+
+  // Company deep-links: [Company Name](#company:ID)
+  processed = processed.replace(/\[([^\]]+)\]\(#company:(\d+)\)/g, '<a href="#" data-company-id="$2" class="text-brand underline underline-offset-2 hover:text-brand/80 cursor-pointer">$1</a>');
 
   // Links
   processed = processed.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-brand underline underline-offset-2 hover:text-brand/80">$1</a>');
@@ -192,6 +196,7 @@ export const ChatMessage = memo(function ChatMessage({
   thinking,
   timestamp,
   isStreaming,
+  onSelectCompany,
 }: ChatMessageProps) {
   const [copied, setCopied] = useState(false);
   const [showThinking, setShowThinking] = useState(false);
@@ -201,6 +206,16 @@ export const ChatMessage = memo(function ChatMessage({
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }, [content]);
+
+  const handleContentClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement;
+    const companyLink = target.closest("[data-company-id]") as HTMLElement | null;
+    if (companyLink && onSelectCompany) {
+      e.preventDefault();
+      const id = parseInt(companyLink.dataset.companyId || "", 10);
+      if (!isNaN(id)) onSelectCompany(id);
+    }
+  }, [onSelectCompany]);
 
   return (
     <div
@@ -246,6 +261,7 @@ export const ChatMessage = memo(function ChatMessage({
           <div
             className="text-sm leading-relaxed [&_pre]:my-2 [&_strong]:font-semibold [&_strong]:text-foreground"
             dangerouslySetInnerHTML={{ __html: renderMarkdown(content) }}
+            onClick={handleContentClick}
           />
         ) : (
           <p className="text-sm whitespace-pre-wrap">{content}</p>

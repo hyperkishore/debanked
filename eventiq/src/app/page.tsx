@@ -51,9 +51,8 @@ import { MobileNav } from "@/components/mobile-nav";
 import { KiketChatPanel, KiketCollapsedStrip } from "@/components/kiket-chat-panel";
 import { ResourcesTab } from "@/components/resources-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
-import { TaskQueueTab } from "@/components/task-queue-tab";
 import { TaskQueueState, DEFAULT_TASK_QUEUE_STATE } from "@/lib/task-queue-helpers";
-import { MissionControlTab } from "@/components/mission-control-tab";
+import { CommandCenterTab } from "@/components/command-center-tab";
 import { DatabaseHealthTab } from "@/components/database-health-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
 import { MarketMapTab } from "@/components/market-map-tab";
@@ -770,35 +769,24 @@ export default function Home() {
     switch (activeTab) {
       case "mission_control":
         return (
-          <MissionControlTab
+          <CommandCenterTab
             companies={companies}
             pipelineState={pipelineState}
             engagements={engagements}
             ratingState={ratingState}
             metState={metState}
-            onSelectCompany={handleSelect}
-            onOpenEngagement={handleOpenEngagementForCompany}
-          />
-        );
-      case "db_health":
-        return <DatabaseHealthTab companies={companies} />;
-      case "schedule":
-        return (
-          <TaskQueueTab
-            companies={companies}
-            engagements={engagements}
-            pipelineState={pipelineState}
-            metState={metState}
             followUps={followUps}
             sequences={sequences}
             queueState={taskQueueState}
             onUpdateQueueState={setTaskQueueState}
-            onOpenCompany={handleSelect}
+            onSelectCompany={handleSelect}
+            onOpenEngagement={handleOpenEngagementForCompany}
             onCompleteFollowUp={handleCompleteFollowUp}
             onSequenceStep={handleSequenceStep}
-            onOpenEngagement={handleOpenEngagementForCompany}
           />
         );
+      case "db_health":
+        return <DatabaseHealthTab companies={companies} />;
       case "dinner":
         return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
       case "resources":
@@ -974,6 +962,7 @@ export default function Home() {
                         onPipelineStageChange={handlePipelineMove}
                         onRequestRefresh={handleRequestRefresh}
                         onAskKiket={handleAskKiket}
+                        onUpdateDeal={handleUpdateDeal}
                       />
                     ) : (
                       <div className="flex items-center justify-center h-full text-muted-foreground text-sm">
@@ -1002,6 +991,7 @@ export default function Home() {
                       setKiketPrompt(undefined);
                     }}
                     initialPrompt={kiketPrompt}
+                    onSelectCompany={handleSelect}
                   />
                 </div>
               </div>
@@ -1095,6 +1085,7 @@ export default function Home() {
                   onPipelineStageChange={handlePipelineMove}
                   onRequestRefresh={handleRequestRefresh}
                   onAskKiket={handleAskKiket}
+                  onUpdateDeal={handleUpdateDeal}
                 />
               )}
             </SheetContent>
@@ -1113,6 +1104,7 @@ export default function Home() {
                   setKiketPrompt(undefined);
                 }}
                 initialPrompt={kiketPrompt}
+                onSelectCompany={handleSelect}
               />
             </SheetContent>
           </Sheet>

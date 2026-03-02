@@ -331,6 +331,81 @@ export function isHubSpotConfigured(): boolean {
   return !!getApiKey();
 }
 
+/**
+ * Get detailed deal info by ID, including associated contacts and companies.
+ */
+export async function getDealDetail(dealId: string): Promise<{
+  id: string;
+  dealName: string;
+  stage: string;
+  amount: number | null;
+  closeDate: string | null;
+  pipeline: string;
+  contacts: Array<{ id: string; name: string; email: string; title: string }>;
+  companies: Array<{ id: string; name: string }>;
+} | null> {
+  const res = await hubspotFetch(
+    `/crm/v3/objects/deals/${dealId}?properties=dealname,dealstage,amount,closedate,pipeline&associations=contacts,companies`
+  );
+  if (!res.ok) return null;
+  const data = await res.json();
+  const props = data.properties || {};
+
+  const contactIds: string[] = (data.associations?.contacts?.results || []).map((r: { id: string }) => r.id);
+  const companyIds: string[] = (data.associations?.companies?.results || []).map((r: { id: string }) => r.id);
+
+  // Fetch associated contacts
+  let contacts: Array<{ id: string; name: string; email: string; title: string }> = [];
+  if (contactIds.length > 0) {
+    const contactRes = await hubspotFetch(`/crm/v3/objects/contacts/batch/read`, {
+      method: "POST",
+      body: JSON.stringify({
+        inputs: contactIds.map((id) => ({ id })),
+        properties: ["email", "firstname", "lastname", "jobtitle"],
+      }),
+    });
+    if (contactRes.ok) {
+      const contactData = await contactRes.json();
+      contacts = (contactData.results || []).map((r: { id: string; properties: Record<string, string> }) => ({
+        id: r.id,
+        name: [r.properties.firstname, r.properties.lastname].filter(Boolean).join(" "),
+        email: r.properties.email || "",
+        title: r.properties.jobtitle || "",
+      }));
+    }
+  }
+
+  // Fetch associated companies
+  let companies: Array<{ id: string; name: string }> = [];
+  if (companyIds.length > 0) {
+    const companyRes = await hubspotFetch(`/crm/v3/objects/companies/batch/read`, {
+      method: "POST",
+      body: JSON.stringify({
+        inputs: companyIds.map((id) => ({ id })),
+        properties: ["name"],
+      }),
+    });
+    if (companyRes.ok) {
+      const companyData = await companyRes.json();
+      companies = (companyData.results || []).map((r: { id: string; properties: Record<string, string> }) => ({
+        id: r.id,
+        name: r.properties.name || "",
+      }));
+    }
+  }
+
+  return {
+    id: data.id,
+    dealName: props.dealname || "",
+    stage: props.dealstage || "",
+    amount: props.amount ? parseFloat(props.amount) : null,
+    closeDate: props.closedate || null,
+    pipeline: props.pipeline || "",
+    contacts,
+    companies,
+  };
+}
+
 // --- Contact Management ---
 
 export interface HubSpotContact {

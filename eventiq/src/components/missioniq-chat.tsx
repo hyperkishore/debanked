@@ -16,9 +16,10 @@ interface MissionIQChatProps {
   initialPrompt?: string;
   compact?: boolean;
   onClose?: () => void;
+  onSelectCompany?: (id: number) => void;
 }
 
-export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, compact, onClose }: MissionIQChatProps) {
+export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, compact, onClose, onSelectCompany }: MissionIQChatProps) {
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -281,6 +282,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
               content={msg.content}
               thinking={msg.thinking}
               timestamp={msg.timestamp}
+              onSelectCompany={onSelectCompany}
             />
           ))}
 
@@ -290,6 +292,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
               role="assistant"
               content={streamingMessage.content}
               isStreaming
+              onSelectCompany={onSelectCompany}
             />
           )}
 

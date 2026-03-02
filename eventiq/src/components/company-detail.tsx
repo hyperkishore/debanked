@@ -13,6 +13,7 @@ import { generateTriggerCards, TriggerCard } from "@/lib/trigger-card-helpers";
 import { buildFeedItems, FeedItem, parseDateFromNews } from "@/lib/feed-helpers";
 import { detectCompetitors, CompetitiveContext } from "@/lib/competitive-intel-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
+import { DealEditPopover } from "@/components/deal-edit-popover";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -70,6 +71,9 @@ import {
   Activity,
   UserCheck,
   Signal,
+  DollarSign,
+  Pencil,
+  Calendar,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -95,6 +99,7 @@ interface CompanyDetailProps {
   onPipelineStageChange?: (companyId: number, stage: PipelineStage) => void;
   onRequestRefresh?: (companyId: number) => void;
   onAskKiket?: (companyName: string) => void;
+  onUpdateDeal?: (companyId: number, dealValue: number | undefined, closeDate: string | undefined) => void;
 }
 
 
@@ -192,6 +197,7 @@ export function CompanyDetail({
   onPipelineStageChange,
   onRequestRefresh,
   onAskKiket,
+  onUpdateDeal,
 }: CompanyDetailProps) {
   const [localNotes, setLocalNotes] = useState(notes);
   const [expandedLeader, setExpandedLeader] = useState<{ name: string; panel: "email" | "linkedin" } | null>(null);
@@ -279,6 +285,46 @@ export function CompanyDetail({
             })()}
           </div>
         </div>
+
+        {/* Deal Value Section */}
+        {(() => {
+          const deal = (company.hubspotDeals || [])[0];
+          const pipelineRec = pipelineState[company.id];
+          const dealValue = pipelineRec?.dealValue ?? deal?.amount;
+          const closeDate = pipelineRec?.closeDate ?? deal?.closeDate;
+          if (!deal && !pipelineRec?.dealValue) return null;
+
+          const formatDealValue = (v: number) => {
+            if (v >= 1000000) return `$${(v / 1000000).toFixed(1)}M`;
+            if (v >= 1000) return `$${Math.round(v / 1000)}K`;
+            return `$${v}`;
+          };
+
+          return (
+            <div className="flex items-center gap-2 text-xs">
+              <DollarSign className="h-3.5 w-3.5 text-green-400 shrink-0" />
+              {dealValue && dealValue > 0 ? (
+                <span className="font-semibold text-green-400">{formatDealValue(dealValue)}</span>
+              ) : (
+                <span className="text-muted-foreground">No deal value</span>
+              )}
+              {closeDate && (
+                <>
+                  <span className="text-muted-foreground">·</span>
+                  <Calendar className="h-3 w-3 text-muted-foreground" />
+                  <span className="text-muted-foreground">Close: {closeDate}</span>
+                </>
+              )}
+              {onUpdateDeal && (
+                <DealEditPopover
+                  dealValue={dealValue ?? undefined}
+                  closeDate={closeDate ?? undefined}
+                  onSave={(v, d) => onUpdateDeal(company.id, v, d)}
+                />
+              )}
+            </div>
+          );
+        })()}
 
         {/* Readiness Score Breakdown — compact inline + refresh button */}
         <div className="flex items-center gap-2">

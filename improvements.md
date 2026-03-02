@@ -732,7 +732,7 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-046: Kiket User Attribution in Memory
 - Priority: `P0`
-- Status: `not started`
+- Status: `completed` (v3.1.88)
 - Category: Kiket, Memory, Multi-User
 - Problem:
   - Kiket does not track WHO shared specific information. When 5 team members chat with Kiket, it should know "Kishore told me X" and "Sanjay told me Y" so users can ask "who shared this info?"
@@ -783,7 +783,7 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-049: Deal Value Field in Company Detail
 - Priority: `P1`
-- Status: `not started`
+- Status: `completed` (v3.1.88)
 - Category: Pipeline, Data Model
 - Evidence:
   - `eventiq/src/components/company-detail.tsx`
@@ -818,7 +818,7 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-051: Combine Mission Control and Today into Single Page
 - Priority: `P2`
-- Status: `not started`
+- Status: `completed` (v3.1.88)
 - Category: Navigation, UX, Architecture
 - Evidence:
   - `eventiq/src/components/app-sidebar.tsx:58-62` (separate Mission Control and Today tabs)
@@ -854,7 +854,7 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-054: Expose HubSpot APIs to Kiket
 - Priority: `P1`
-- Status: `not started`
+- Status: `completed` (v3.1.88)
 - Category: Kiket, Integrations, CRM
 - Problem:
   - Kiket cannot access HubSpot CRM data (deals, contacts, activities, pipeline). Team members need to switch between EventIQ and HubSpot for a complete picture.
@@ -869,7 +869,7 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-053: Deep-Linking from Kiket Responses
 - Priority: `P2`
-- Status: `not started`
+- Status: `completed` (v3.1.88)
 - Category: Kiket, Navigation, UX
 - Evidence:
   - `eventiq/src/components/chat-message.tsx` (markdown renderer)

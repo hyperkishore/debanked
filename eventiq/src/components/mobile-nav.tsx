@@ -3,7 +3,7 @@
 import { TabType } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Building2, ListChecks, BarChart3, Map, Rocket, MessageCircle } from "lucide-react";
+import { Building2, BarChart3, Map, Rocket, MessageCircle } from "lucide-react";
 
 interface MobileNavProps {
   activeTab: TabType;
@@ -16,11 +16,10 @@ interface MobileNavProps {
 }
 
 const tabs: { id: TabType; label: string; icon: React.ComponentType<{ className?: string }> }[] = [
-  { id: "mission_control", label: "Mission", icon: Rocket },
+  { id: "mission_control", label: "Command", icon: Rocket },
   { id: "companies", label: "Companies", icon: Building2 },
   { id: "pipeline", label: "Pipeline", icon: BarChart3 },
   { id: "map", label: "Map", icon: Map },
-  { id: "schedule", label: "Today", icon: ListChecks },
 ];
 
 export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streakCount, onToggleChat, isChatOpen }: MobileNavProps) {

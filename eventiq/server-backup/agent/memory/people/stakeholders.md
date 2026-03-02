@@ -1,10 +1,13 @@
 # External Stakeholders
 
-## Format
-Name — Company — Role — Preferences — Last interaction — Notes
+## Key Relationships
+(Record external contacts, their preferences, and relationship context)
 
-## Key Contacts
-(Record stakeholder preferences and relationship context here)
-
-## Relationship Notes
-(Record communication preferences, meeting cadence, decision-making style)
+### Template:
+- **Name**: [full name]
+- **Company**: [company]
+- **Role**: [title]
+- **Prefers**: [email/call/LinkedIn/WhatsApp]
+- **Notes**: [personal details, conversation style, what they care about]
+- **Last Contact**: [date]
+- **Source**: [who provided this info, e.g. "Kishore, 2026-03-02"]

@@ -11,9 +11,10 @@ const OPENCLAW_TOKEN = process.env.NEXT_PUBLIC_OPENCLAW_TOKEN || "";
 interface KiketChatPanelProps {
   onClose: () => void;
   initialPrompt?: string;
+  onSelectCompany?: (id: number) => void;
 }
 
-export function KiketChatPanel({ onClose, initialPrompt }: KiketChatPanelProps) {
+export function KiketChatPanel({ onClose, initialPrompt, onSelectCompany }: KiketChatPanelProps) {
   const { user, isPasswordAuth } = useAuth();
 
   if (!user && !isPasswordAuth) {
@@ -38,6 +39,7 @@ export function KiketChatPanel({ onClose, initialPrompt }: KiketChatPanelProps) 
         initialPrompt={initialPrompt}
         compact
         onClose={onClose}
+        onSelectCompany={onSelectCompany}
       />
     </div>
   );
