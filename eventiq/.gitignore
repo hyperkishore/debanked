@@ -40,9 +40,13 @@ src/data/*.json
 server-backup/.env
 server-backup/gateway/openclaw.json
 
+# Research docs (prebuild copy from parent dir)
+.research-docs/
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env*.local

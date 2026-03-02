@@ -45,15 +45,24 @@ const DOCS: Record<string, { title: string; description: string; file: string }>
   },
 };
 
-/** Resolve document path safely — files live in the parent directory of eventiq/ */
+/**
+ * Resolve document path — tries .research-docs/ first (prebuild copy, works on Vercel),
+ * falls back to parent directory (works in local dev without running prebuild).
+ */
 function resolveDocPath(filename: string): string {
-  const baseDir = path.resolve(process.cwd(), "..");
-  const resolved = path.resolve(baseDir, filename);
-  // Validate the resolved path stays under the allowed base
-  if (!resolved.startsWith(baseDir)) {
-    throw new Error("Path traversal blocked");
-  }
-  return resolved;
+  const cwd = process.cwd();
+  // Primary: prebuild-copied files (works on Vercel and local)
+  const bundledPath = path.resolve(cwd, ".research-docs", filename);
+  // Fallback: parent directory (local dev convenience)
+  const parentPath = path.resolve(cwd, "..", filename);
+
+  // Check bundled first — this is what Vercel will use
+  try {
+    const fs = require("fs");
+    if (fs.existsSync(bundledPath)) return bundledPath;
+  } catch { /* ignore */ }
+
+  return parentPath;
 }
 
 /**
