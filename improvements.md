@@ -794,7 +794,7 @@ This document defines implementation-grade improvements derived from the current
 
 ## IMP-050: Make Companies the Default Tab
 - Priority: `P1`
-- Status: `not started`
+- Status: `done` (v3.1.84)
 - Category: Navigation, UX
 - Evidence:
   - `eventiq/src/components/app-sidebar.tsx:58` (Mission Control is first nav item)

@@ -99,7 +99,7 @@ export default function Home() {
   }, [fetchCompanies]);
 
   // State
-  const [activeTab, setActiveTab] = useState<TabType>("mission_control");
+  const [activeTab, setActiveTab] = useState<TabType>("companies");
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
   const [activeSort, setActiveSort] = useState<SortType>("priority");

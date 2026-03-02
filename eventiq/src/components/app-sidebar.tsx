@@ -55,8 +55,8 @@ interface AppSidebarProps {
 type NavItem = { id: TabType; label: string; icon: React.ComponentType<{ className?: string }>; shortcut: string };
 
 const coreNavItems: NavItem[] = [
-  { id: "mission_control", label: "Mission Control", icon: Zap, shortcut: "1" },
-  { id: "companies", label: "Companies", icon: Building2, shortcut: "2" },
+  { id: "companies", label: "Companies", icon: Building2, shortcut: "1" },
+  { id: "mission_control", label: "Mission Control", icon: Zap, shortcut: "2" },
   { id: "pipeline", label: "Pipeline", icon: Kanban, shortcut: "3" },
   { id: "map", label: "Market Map", icon: Map, shortcut: "4" },
   { id: "schedule", label: "Today", icon: ListChecks, shortcut: "5" },
@@ -303,7 +303,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.1.83</span>
+              <span className="opacity-50">v3.1.84</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">
