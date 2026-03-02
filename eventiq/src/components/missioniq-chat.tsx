@@ -60,8 +60,13 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
         setMessages((prev) => {
           const existing = prev.findIndex((m) => m.id === msg.id);
           if (existing >= 0) {
+            // Same runId — merge thinking from previous intermediate turns
             const updated = [...prev];
-            updated[existing] = msg;
+            const prevMsg = updated[existing];
+            updated[existing] = {
+              ...msg,
+              thinking: msg.thinking || prevMsg.thinking,
+            };
             return updated;
           }
           return [...prev, msg];
@@ -270,6 +275,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
               key={msg.id}
               role={msg.role}
               content={msg.content}
+              thinking={msg.thinking}
               timestamp={msg.timestamp}
             />
           ))}

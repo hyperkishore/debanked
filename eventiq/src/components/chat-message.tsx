@@ -2,12 +2,13 @@
 
 import { memo } from "react";
 import { Button } from "@/components/ui/button";
-import { Copy, Check, User, Bot } from "lucide-react";
+import { Copy, Check, User, Bot, ChevronRight } from "lucide-react";
 import { useState, useCallback } from "react";
 
 interface ChatMessageProps {
   role: "user" | "assistant";
   content: string;
+  thinking?: string;
   timestamp?: Date;
   isStreaming?: boolean;
 }
@@ -188,10 +189,12 @@ function renderMarkdown(text: string): string {
 export const ChatMessage = memo(function ChatMessage({
   role,
   content,
+  thinking,
   timestamp,
   isStreaming,
 }: ChatMessageProps) {
   const [copied, setCopied] = useState(false);
+  const [showThinking, setShowThinking] = useState(false);
 
   const handleCopy = useCallback(() => {
     navigator.clipboard.writeText(content);
@@ -218,6 +221,25 @@ export const ChatMessage = memo(function ChatMessage({
             : "bg-muted text-foreground"
         }`}
       >
+        {/* Collapsible thinking section */}
+        {role === "assistant" && thinking && (
+          <button
+            onClick={() => setShowThinking(!showThinking)}
+            className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground mb-2 transition-colors"
+          >
+            <ChevronRight className={`h-3 w-3 transition-transform ${showThinking ? "rotate-90" : ""}`} />
+            <span>Thinking</span>
+          </button>
+        )}
+        {showThinking && thinking && (
+          <div className="mb-3 px-3 py-2 rounded-md bg-background/50 border border-border/30">
+            <div
+              className="text-xs text-muted-foreground leading-relaxed [&_strong]:font-semibold"
+              dangerouslySetInnerHTML={{ __html: renderMarkdown(thinking) }}
+            />
+          </div>
+        )}
+
         {role === "assistant" ? (
           <div
             className="text-sm leading-relaxed [&_pre]:my-2 [&_strong]:font-semibold [&_strong]:text-foreground"

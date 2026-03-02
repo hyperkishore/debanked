@@ -17,6 +17,7 @@ export interface ChatMessage {
   id: string;
   role: "user" | "assistant";
   content: string;
+  thinking?: string;
   timestamp: Date;
 }
 
@@ -67,6 +68,7 @@ export class OpenClawClient {
   private sessionKey: string | null = null;
   private currentRunId: string | null = null;
   private streamContent = "";
+  private thinkingContent = "";
   private connectStartedAt = 0;
   private chatSentAt = 0;
   private hasSentMessage = false;
@@ -227,6 +229,15 @@ export class OpenClawClient {
     return "";
   }
 
+  /** Extract thinking/reasoning from content array (type: "thinking") */
+  private extractThinking(content: unknown): string {
+    if (!Array.isArray(content)) return "";
+    return content
+      .filter((b: Record<string, unknown>) => b.type === "thinking" && typeof b.thinking === "string")
+      .map((b: Record<string, unknown>) => b.thinking as string)
+      .join("\n");
+  }
+
   private handleChatEvent(payload: Record<string, unknown>) {
     // Only process events for our agent session — prevents cross-agent bleed
     // (e.g. WhatsApp agent responses showing up in webchat)
@@ -242,29 +253,47 @@ export class OpenClawClient {
       // Streaming chunk — content is the full accumulated text so far
       const message = payload.message as Record<string, unknown> | undefined;
       const content = this.extractText(message?.content) || (message?.text as string) || "";
+      const thinking = this.extractThinking(message?.content);
+      if (thinking) {
+        this.thinkingContent = thinking;
+      }
       if (content) {
         this.streamContent = content;
         this.options.onStreamChunk?.(this.streamContent, runId || "stream");
       }
     } else if (state === "final") {
-      // Complete response
+      // Complete response — may arrive multiple times per run (tool calls create intermediate finals)
       const message = payload.message as Record<string, unknown> | undefined;
       const finalContent = this.extractText(message?.content) || (message?.text as string) || this.streamContent;
-      this.options.onMessage({
-        id: runId || crypto.randomUUID(),
-        role: "assistant",
-        content: finalContent,
-        timestamp: new Date(),
-      });
-      this.options.onTyping(false);
-      this.currentRunId = null;
-      this.streamContent = "";
+      const finalThinking = this.extractThinking(message?.content) || this.thinkingContent;
+      const isContinuation = payload.continuation === true || payload.toolUse === true;
+
+      if (isContinuation && finalContent) {
+        // Intermediate turn (agent used a tool) — accumulate as thinking
+        this.thinkingContent = (this.thinkingContent ? this.thinkingContent + "\n\n" : "") + finalContent;
+        // Keep typing indicator active — more content is coming
+        this.streamContent = "";
+      } else {
+        // Final response — combine any thinking from prior turns
+        this.options.onMessage({
+          id: runId || crypto.randomUUID(),
+          role: "assistant",
+          content: finalContent,
+          thinking: finalThinking || undefined,
+          timestamp: new Date(),
+        });
+        this.options.onTyping(false);
+        this.currentRunId = null;
+        this.streamContent = "";
+        this.thinkingContent = "";
+      }
     } else if (state === "error") {
       const errorMsg = (payload.errorMessage as string) || "Agent error";
       this.options.onError(errorMsg);
       this.options.onTyping(false);
       this.currentRunId = null;
       this.streamContent = "";
+      this.thinkingContent = "";
     } else if (state === "aborted") {
       // Partial output may exist
       if (this.streamContent) {
@@ -272,12 +301,14 @@ export class OpenClawClient {
           id: runId || crypto.randomUUID(),
           role: "assistant",
           content: this.streamContent,
+          thinking: this.thinkingContent || undefined,
           timestamp: new Date(),
         });
       }
       this.options.onTyping(false);
       this.currentRunId = null;
       this.streamContent = "";
+      this.thinkingContent = "";
     }
   }
 

@@ -843,6 +843,21 @@ This document defines implementation-grade improvements derived from the current
   - WebSocket connection is not interrupted by tab changes.
   - Chat history is preserved across navigation.
 
+## IMP-054: Expose HubSpot APIs to Kiket
+- Priority: `P1`
+- Status: `not started`
+- Category: Kiket, Integrations, CRM
+- Problem:
+  - Kiket cannot access HubSpot CRM data (deals, contacts, activities, pipeline). Team members need to switch between EventIQ and HubSpot for a complete picture.
+- Improvement:
+  - Add HubSpot API tool endpoints (search contacts, get deals, list activities, update deal stage).
+  - Register HubSpot tools in OpenClaw's skill config so Kiket can query CRM data.
+  - Enable queries like "what's the deal status with X?" or "show me recent HubSpot activity for Y."
+- Acceptance criteria:
+  - Kiket can search HubSpot contacts and companies.
+  - Kiket can read deal pipeline and stage information.
+  - Kiket can report on recent CRM activities for an account.
+
 ## IMP-053: Deep-Linking from Kiket Responses
 - Priority: `P2`
 - Status: `not started`
