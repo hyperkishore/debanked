@@ -892,3 +892,578 @@ Start with Starter tier. Graduate to Growth when outbound volume exceeds 100 tou
 - **2026-02-22**: Combined ROADMAP.md and ROADMAP_V2.md into single document. Added engineering phases referencing bugs.md and improvements.md.
 - **2026-02-23**: Added Part 6 top-of-funnel acceleration program with BDR/AE/marketing/demand-gen pillars, external benchmark anchors, 90-day waves, and Claude handoff protocol.
 - **2026-02-23**: Added Part 9 — $3M pipeline execution plan with prioritized build order, API stack recommendations, automated daily operations architecture, and success metrics.
+
+## Part 10: Attention Capture System (Top-of-Funnel Execution Layer)
+
+### Why This Exists
+
+The highest-leverage gap is no longer raw research volume. EventIQ already has meaningful coverage in RICP classification, enrichment QA, task generation, sequence progression, HubSpot sync, and pipeline weighting. The next constraint is attention: getting the right target to notice, respond, and book.
+
+This section focuses on the execution primitives that move a priority account from "researched" to "engaged":
+
+`right account + right person + right reason + right channel + right moment`
+
+The initiatives below are limited to the top-of-funnel attention system. They do not replace existing pipeline math; they sit on top of it and convert research into first meetings.
+
+### Current Product Baseline (Already Present in Code)
+
+The following capabilities already exist and should be treated as foundation, not new work:
+
+- **RICP role detection and gap finding** via `eventiq/src/lib/ricp-taxonomy.ts` and `eventiq/src/app/api/ricp-gaps/route.ts`
+- **Enrichment readiness states** (`blocked`, `review`, `ready`) via `eventiq/src/lib/enrichment-qa.ts`
+- **Marketing prioritization / RICP research queue** via `eventiq/src/components/marketing-ideas-tab.tsx`
+- **Daily task queue and per-account next-step surfacing** via `eventiq/src/components/task-queue-tab.tsx` and `eventiq/src/lib/task-queue-helpers.ts`
+- **Sequence logic** via `eventiq/src/lib/sequence-helpers.ts`
+- **HubSpot sync layer** via `eventiq/src/app/api/hubspot/sync/route.ts`
+
+The new work below should reuse these surfaces rather than creating parallel systems.
+
+### North Star Outcome
+
+Increase attention and response on priority accounts so EventIQ consistently drives more:
+
+- first replies
+- positive replies
+- meetings booked
+- meetings held
+- SQLs created
+
+This is the correct upstream system for the 12-month pipeline target. If attention quality improves, pipeline volume follows.
+
+### Selected Initiatives (Priority Scope)
+
+#### Initiative 1: Why-Now Engine
+
+**Goal:** Turn raw account signals into a usable reason to contact a company today.
+
+**What it should produce per company:**
+- `why_now`
+- `signal_summary`
+- `suggested_angle`
+- `urgency_score`
+- `signal_expiry_window`
+
+**Examples of source triggers:**
+- funding events
+- executive hires or departures
+- product launches
+- underwriting/risk hiring
+- compliance or regulatory developments
+- new partnerships
+- expansion into new markets
+
+**Why it matters:** Data without a time-sensitive reason creates generic outbound. This system converts research into a concrete opening angle.
+
+#### Initiative 2: Persona-Specific Hook Generator
+
+**Goal:** Translate the same company signal into role-specific copy for `COO`, `CRO`, `Underwriting`, and adjacent buyers.
+
+**What it should produce per target persona:**
+- `pain_hypothesis`
+- `opening_line`
+- `proof_angle`
+- `cta`
+- `message_variant_by_channel`
+
+**Design principle:** The app should not stop at "here is the person." It should answer "what should I say to this specific person, given this signal?"
+
+#### Initiative 3: Reachability + Contactability Score
+
+**Goal:** Rank who is practically reachable right now, not just who is relevant.
+
+**What it should score:**
+- work email presence and verification quality
+- phone/direct dial presence
+- LinkedIn presence
+- recency of verification
+- source confidence
+- number of usable channels
+
+**Primary use:** Help BDRs avoid wasting time on theoretically good accounts with no viable path to contact.
+
+#### Initiative 4: Account Briefing Card
+
+**Goal:** Give a rep a one-screen, execution-ready brief before first outreach.
+
+**What it should include:**
+- company summary
+- current why-now trigger
+- recommended target people
+- recommended hook by persona
+- recommended first channel
+- prior engagement summary
+- objections or sensitivity notes
+
+**Why it matters:** This removes the gap between "I have research" and "I am ready to send the first touch."
+
+#### Initiative 5: Channel Recommendation Layer
+
+**Goal:** Decide the best first-touch channel for each account/person combination.
+
+**Candidate channels:**
+- email
+- LinkedIn
+- call
+- gifting
+- event invite
+
+**Decision inputs:**
+- persona seniority
+- contactability score
+- signal strength and recency
+- prior non-response history
+- account tier
+- campaign context
+
+**Output:** `recommended_channel`, `backup_channel`, and a short reason for the recommendation.
+
+#### Initiative 6: Campaign Playbooks For Attention
+
+**Goal:** Standardize the proven top-of-funnel plays so teams can repeat what works.
+
+**Initial playbook set:**
+- executive gifting play
+- conference / event follow-up play
+- trigger-based outbound play
+- dormant-account reactivation play
+- competitor-displacement play
+- new-risk-leader play
+
+**Each playbook should define:**
+- target account type
+- target persona(s)
+- required trigger(s)
+- sequence steps
+- channel mix
+- message framework
+- expected meeting-rate benchmark
+
+**Why it matters:** This converts ad hoc rep intuition into a reusable operating system for attention.
+
+#### Initiative 8: Engagement Memory
+
+**Goal:** Preserve outreach context so the next touch is informed, not repetitive.
+
+**What it should remember:**
+- prior messages
+- prior replies / no replies
+- opens or engagement signals (if available)
+- prior meetings booked / no-show outcomes
+- gifts sent
+- events attended
+- cooling-off windows / suppression flags
+
+**Why it matters:** Reps need continuity. Attention quality degrades when the system forgets what has already happened.
+
+#### Initiative 9: Attention Score
+
+**Goal:** Create a single operational score that ranks which accounts deserve attention now.
+
+**Core score inputs:**
+- ICP fit
+- RICP completeness
+- why-now urgency
+- contactability
+- engagement memory
+- channel readiness
+
+**Primary use cases:**
+- daily rep prioritization
+- marketing air-cover prioritization
+- manager review of where effort should go this week
+
+**Important distinction:** This is not a late-stage pipeline EV metric. It is an upstream ranking metric for top-of-funnel execution.
+
+### System Design Principles
+
+1. **Reuse current foundations**
+- Build on existing RICP, QA, task queue, and sequence logic.
+- Avoid introducing a second prioritization system that conflicts with current task generation.
+
+2. **Keep outputs operational**
+- Every new feature should end in a usable rep action:
+- who to contact
+- why now
+- what to say
+- which channel to use
+
+3. **Prefer explicit data fields over hidden prompts**
+- Store reusable structured outputs (`why_now`, `recommended_channel`, `attention_score`) so they can be audited, ranked, and improved.
+
+4. **Optimize for response, not just activity**
+- Success metrics should reward attention captured, not volume of touches.
+
+### Suggested Rollout Order (Execution Sequence)
+
+#### Phase 1: Signal and Reachability Foundation
+- Why-Now Engine
+- Reachability + Contactability Score
+- Engagement Memory data model
+
+#### Phase 2: Rep Execution Layer
+- Persona-Specific Hook Generator
+- Account Briefing Card
+- Channel Recommendation Layer
+
+#### Phase 3: Team-Scale Operating System
+- Campaign Playbooks For Attention
+- Attention Score
+- Task queue ranking updates based on attention score
+
+### Top-of-Funnel Success Metrics
+
+Track these before pipeline:
+
+- reply rate
+- positive reply rate
+- meeting-booked rate
+- meeting-held rate
+- average time from new signal to first touch
+- % of priority accounts with a valid why-now reason
+- % of priority contacts with at least one high-confidence reachable channel
+- % of rep tasks backed by a channel recommendation
+
+### 90-Day Outcome Target
+
+Within 90 days of shipping this layer:
+
+- every top-tier account should have a current why-now reason or be explicitly marked stale
+- every outreach-ready target should have a contactability score and recommended first channel
+- reps should be able to open one account brief and send a first touch without leaving the recommended workflow
+- gifting and event-driven plays should become first-class, trackable operating motions
+
+### Implementation Note
+
+This section is intentionally scoped to product direction and operating requirements. The detailed build plan, data contracts, UI changes, and sequencing are specified in `TOP_OF_FUNNEL_ATTENTION_IMPLEMENTATION.md`.
+
+## Part 11: Revenue Certainty Plan — $1M Baseline / $3M Stretch (Research-Backed)
+
+> Added 2026-03-02. Based on 3 rounds of competitive intelligence and GTM research. Full research documents: `AI-CRM-SALES-PLATFORMS-RESEARCH.md`, `PIPELINE-REVENUE-RESEARCH.md`, `GTM-ROUND2-RESEARCH.md`.
+
+---
+
+### What We Learned: Competitive Landscape
+
+#### AI CRM / Sales Platform Findings (12+ Platforms Analyzed)
+
+| Platform | Strength | Weakness | Relevance to Us |
+|----------|----------|----------|-----------------|
+| **Attio** ($116M raised) | AI-native CRM, flexible data model, $0-$119/user | Ceiling at 50 employees, no marketing features | Proves AI-native CRM wins startups; we have deeper vertical intelligence |
+| **Salesforce Agentforce** | Massive distribution, 22K deals | 4 conflicting pricing models, 67% struggle with agent autonomy | Enterprise-only; validates agentic AI but proves it's hard to get right |
+| **Artisan AI (Ava)** | AI SDR, 300M contacts, 80% task automation | 15% meeting-to-opp rate (vs 25% human), surface personalization | AI SDRs augment, don't replace. Our deep research = deeper personalization |
+| **11x.ai (Alice)** | 24/7 operation, 100+ languages | $50K+/yr, many users report zero results, buggy | Cautionary tale: volume without quality fails |
+| **Clay** | 150+ data sources, 80% match rates, waterfall enrichment | Requires technical skill, credit costs add up | We already have Apollo + enrichment pipeline; Clay is overkill at our scale |
+| **Gong** | Gold standard conversation intelligence, 300+ signals | $1,298-$3K/user/yr + $5-50K platform fee | Too expensive for us; validates that capturing interactions = moat |
+| **Apollo.io** | 210M contacts, $49-$119/user, best value ratio | Data accuracy issues, confusing credits | Already in our stack; keep as primary enrichment source |
+
+#### The Big Insight: EventIQ's Unfilled Whitespace
+
+**None of these platforms address:**
+- Event/conference attendee intelligence and prep
+- Deep private-company research for niche verticals
+- Signal-based selling combined with in-person meeting prep
+- Offline mobile access for event-day execution
+- Multi-threading via event attendee data (multiple people from same company at a conference)
+
+**What this means:** EventIQ isn't competing with Attio or Gong — it's creating a new category: **Vertical Intelligence + Signal-Based Execution for defined-TAM markets.** The closest comparison is Clay + 6sense + Sendoso combined, but purpose-built for a single vertical.
+
+#### AI Sales Benchmarks That Matter
+
+| Benchmark | Number | Source |
+|-----------|--------|--------|
+| AI-augmented reps: revenue per rep | $1.75M vs $1.24M (+41%) | Optifai, N=938 |
+| AI teams quota attainment | 3.7x more likely | Cirrus Insight |
+| Hybrid (AI + human) win rates | +43% higher | Industry composite |
+| Signal-based reply rates | 10-18% (vs 3.4% cold) | Autobound, Demandbase |
+| Signal-based conversion improvement | +47% better conversion, +43% larger deals | Aggregate B2B data |
+| Multi-threading win rate boost | +130% for deals >$50K | Gong, 1.8M opportunities |
+| Gifting meeting rate boost | 3.08x | Sendoso |
+| Event follow-up (within 48h) | 60% more likely to convert | Industry composite |
+| First responder advantage | 5x more likely to win | Speed-to-lead research |
+
+---
+
+### The Pipeline Math: Absolute Certainty Model
+
+#### Our Specific Numbers
+
+| Parameter | Value | Basis |
+|-----------|-------|-------|
+| Total target accounts | 1,000 | Supabase companies table |
+| Contacts per account | ~3 (leaders + contacts) | Current dataset: ~1,437 leaders + contacts |
+| Total reachable contacts | ~3,000 | Dataset reality |
+| Priority accounts (SQO/Client/ICP) | 68 | P0-P3 in current data |
+| Companies with deep research | 959 | Current research coverage |
+
+#### Revenue Model: $1M Baseline (Moderate Assumptions)
+
+```
+Target: $1M revenue
+Average deal size: $30K ACV
+Deals needed: 34
+Win rate (qualified): 25%
+Qualified opps needed: 136 ($4M pipeline)
+Meeting-to-opp rate: 55%
+Meetings needed: 247
+Reply-to-meeting rate: 25%
+Replies needed: 988
+Reply rate (signal-based): 12%
+Total contacts to reach: 8,233 outreach touches
+→ ~3,000 contacts × ~3 touches each over 12 months
+```
+
+**Verdict: ACHIEVABLE.** Each contact gets ~3 multi-channel touches per year. This is within best-practice cadence (12 touches/22 days per sequence, multiple sequences per year).
+
+#### Revenue Model: $3M Stretch (Balanced Scaling)
+
+You don't 3x by tripling any single lever. You combine modest gains across all levers:
+
+```
+$3M = 1.4x more pipeline × 1.3x higher conversion × 1.6x bigger deals
+
+Target: $3M revenue
+Average deal size: $48K ACV (push into mid-market lenders)
+Deals needed: 63
+Win rate (qualified): 32% (improved via multi-threading + gifting)
+Qualified opps needed: 197 ($9.5M pipeline)
+Meeting-to-opp rate: 60%
+Meetings needed: 328
+Reply-to-meeting rate: 28%
+Replies needed: 1,171
+Reply rate (signal-based): 15% (improved via Why-Now Engine + event context)
+Total contacts to reach: 7,807 outreach touches
+→ ~3,000 contacts × ~2.6 touches each
+```
+
+**Verdict: ACHIEVABLE but requires:**
+1. Team scaled to 6-8 people (2-3 AEs, 2 SDRs, CS, RevOps)
+2. Average deal size pushed from $30K to $48K (add larger lenders to pipeline)
+3. Gifting + event plays systematically executed
+4. 18-24 months timeline from standing start
+
+---
+
+### What v3.1.89 Already Delivers (Revenue Engine — Just Shipped)
+
+| Capability | Status | Impact |
+|------------|--------|--------|
+| **Why-Now Engine** | SHIPPED | Per-company signal scoring (0-10) with recency decay + outreach angle generation |
+| **Attention Score** | SHIPPED | 6-dimension composite (ICP Fit, RICP, Why-Now, Contactability, Engagement, Channel) |
+| **10 Campaign Playbooks** | SHIPPED | cold, warm, re-engage, post-demo + 6 new (event-follow-up, referral-intro, case-study, pain-trigger, executive-briefing, renewal-upsell) |
+| **RICP Auto-Enrichment** | SHIPPED | Daily cron fills missing RICP roles via Apollo API |
+| **Signal→Task Pipeline** | SHIPPED | Hot signals (Why-Now ≥7) auto-generate prioritized tasks |
+| **Smart Morning Briefing** | SHIPPED | Email ranked by Attention Score with Why-Now angles + RICP coverage |
+| **Enhanced Outreach** | SHIPPED | Why-Now callout, Full Brief copy, mailto links |
+| **Outplay Integration** | SHIPPED | UI to add prospects to Outplay sequences from company detail |
+| **Command Center** | SHIPPED | Attention score ranking, RICP coverage, attention distribution |
+
+#### What's Still Missing (Gaps Between Built and $1M)
+
+| Gap | Impact | Priority | Effort |
+|-----|--------|----------|--------|
+| **Verified contact emails** for top 68 accounts | Can't send outreach without emails | P0 | 2 weeks |
+| **HubSpot bidirectional sync** | Pipeline invisible to leadership | P1 | 2 weeks |
+| **Event follow-up automation** (48h post-event sequences) | Events generate 33% of new business | P1 | 1 week |
+| **Gifting integration** (Sendoso API) | 3.08x meeting rate, 15x ROI | P1 | 2 weeks |
+| **LinkedIn Chrome extension** | Meet reps where they work | P2 | 4 weeks |
+| **Multi-threading view** (show all contacts per account) | 130% win rate boost for >$50K deals | P1 | 1 week |
+| **MCA industry podcast** | Authority building, warm introductions | P2 | Ongoing |
+| **Quarterly industry report** | Lead generation, brand positioning | P2 | 2 weeks/quarter |
+| **SOC 2 Type I** | Unblocks mid-market deals | P2 | 2-3 months |
+
+---
+
+### 12-Month Execution Calendar
+
+#### Q1 (Months 1-3): Foundation + First Revenue
+
+**Product:**
+- [ ] Verify emails for top 68 accounts (Apollo + Hunter)
+- [ ] HubSpot bidirectional sync (pipeline visibility)
+- [ ] Multi-threading view (all contacts per account with roles)
+- [ ] Event follow-up 48h auto-sequences
+- [ ] Gifting integration (Sendoso/Postal API)
+
+**Sales:**
+- [ ] Founder sells first 10 deals personally
+- [ ] Tier 1 (top 50 accounts) → 1:1 strategic ABM
+- [ ] First SDR hire at month 2-3 ($80K OTE)
+- [ ] Target: 15-20 meetings, 5-8 qualified opps, $150-240K pipeline
+
+**Marketing:**
+- [ ] Launch MCA industry podcast (guests = prospects)
+- [ ] Publish first "State of MCA Intelligence" report using EventIQ data
+- [ ] deBanked Connect follow-up (anyone we met → 48h sequence)
+
+**Revenue target: $0-100K ARR (first 3-5 deals closing)**
+
+#### Q2 (Months 4-6): Scale Outreach
+
+**Product:**
+- [ ] LinkedIn Chrome extension (sidebar showing EventIQ research)
+- [ ] A/B message variant testing in sequences
+- [ ] Campaign attribution tracking
+- [ ] Begin SOC 2 Type I process (Vanta/Sprinto)
+
+**Sales:**
+- [ ] First AE hire ($160K OTE) if founder pipeline exceeds capacity
+- [ ] Expand to Tier 2 (200-300 accounts) with semi-personalized sequences
+- [ ] Gifting play for top 50 accounts ($5K budget → $75K+ pipeline at 15x ROI)
+- [ ] Target: 30-40 meetings/quarter, 15-20 new qualified opps, $600-900K cumulative pipeline
+
+**Marketing:**
+- [ ] Podcast → 12 episodes, each creates LinkedIn content + email snippets
+- [ ] Event presence at Broker Fair / Funders Forum (if timing aligns)
+- [ ] Case study from first 3-5 customers
+
+**Revenue target: $200-400K ARR (8-15 cumulative deals)**
+
+#### Q3 (Months 7-9): First Deals Closing + Expansion
+
+**Product:**
+- [ ] SOC 2 Type I complete (unblocks mid-market deals)
+- [ ] Revenue analytics dashboard (rep activity, pipeline velocity, win/loss)
+- [ ] Engagement memory (prevent repetitive outreach)
+- [ ] Calendar integration (auto-push briefs 30 min before meetings)
+
+**Sales:**
+- [ ] Second SDR if first is hitting quota (12+ meetings/month)
+- [ ] Full coverage of Tier 1+2 (350+ accounts actively worked)
+- [ ] Multi-threading execution: 3+ contacts per Tier 1 account
+- [ ] Target: $1M-$1.5M active pipeline, 5-10 deals closed ($150-300K revenue)
+
+**Revenue target: $500-700K ARR (15-25 cumulative deals)**
+
+#### Q4 (Months 10-12): Acceleration + NRR
+
+**Product:**
+- [ ] Begin SOC 2 Type II observation period
+- [ ] API for research-as-a-service
+- [ ] Demand gen control tower (segment builder, campaign ops)
+- [ ] Weekly "what changed" digest for GTM leadership
+
+**Sales:**
+- [ ] Customer success hire to protect existing revenue (NRR >100%)
+- [ ] RevOps part-time to optimize funnel
+- [ ] Push deal sizes up: target mid-market lenders ($50K+ ACV)
+- [ ] Target: $2M-$3M cumulative pipeline, 25-35 total deals
+
+**Revenue target: $800K-$1.2M ARR**
+
+---
+
+### Hiring Plan: $1M Path
+
+| Role | When | OTE | Expected Output |
+|------|------|-----|-----------------|
+| **Founder** (0.5 FTE selling) | Now | $0 incremental | $300-500K ARR, prove playbook |
+| **SDR #1** | Month 2-3 | $80K | 12-15 qualified meetings/month |
+| **AE #1** | Month 4-6 (when founder pipeline > capacity) | $160-180K | $500-800K ARR annually |
+| **CS/AM** | Month 8-10 | $90-100K | Protect NRR, drive expansion |
+| **Total Year 1 sales cost** | | **$330-360K** | **$800K-$1.3M ARR capacity** |
+
+### Hiring Plan: $3M Path (Months 13-24)
+
+| Role | When | OTE | Expected Output |
+|------|------|-----|-----------------|
+| **SDR #2** | Month 10-12 | $80K | +12 meetings/month |
+| **AE #2** | Month 12-15 | $170K | +$500K ARR |
+| **RevOps (part-time → full)** | Month 12 | $100K | Funnel optimization, +10-15% conversion |
+| **VP Sales** | Month 18-24 (at $1M-$2M ARR) | $200-250K | Scale to $5M+ |
+| **Total Year 2 sales cost** | | **$550-680K** | **$2-3M ARR capacity** |
+
+---
+
+### Tool Stack: Cost vs. Impact
+
+#### Current (Already Deployed)
+
+| Tool | Monthly Cost | Status |
+|------|-------------|--------|
+| Apollo.io (Pro) | $79 | Active — primary enrichment |
+| Resend | $0 (free tier) | Active — morning briefings |
+| Supabase | $25 | Active — database |
+| Vercel | $20 | Active — hosting |
+| **Total** | **$124/mo** | |
+
+#### Q1 Additions (Unlock $1M path)
+
+| Tool | Monthly Cost | Why |
+|------|-------------|-----|
+| Hunter.io (Starter) | $49 | Email verification (<1% bounce) |
+| Sendoso (Starter) | ~$1,000 + gift costs | 15x ROI, 3.08x meeting rate boost |
+| LinkedIn Sales Navigator | $80 | Required for Chrome extension + InMail |
+| Vanta (SOC 2) | ~$500 | Start Type I process in parallel |
+| **Q1 Total** | **~$1,753/mo** | |
+
+#### Q2+ Additions (Scale to $3M path)
+
+| Tool | Monthly Cost | Why |
+|------|-------------|-----|
+| Gong (or Fireflies) | $100-250/user | Conversation intelligence for deal coaching |
+| Outplay (Growth) | $99/user | Sales engagement + sequencing |
+| Tavily + GNews | $80 | Deep research + news monitoring |
+| **Growth Total** | **~$2,200/mo** | |
+
+---
+
+### Risk Mitigation: What Could Prevent $1M
+
+| Risk | Probability | Impact | Mitigation |
+|------|------------|--------|------------|
+| Long sales cycles (90-180 days in fintech) | HIGH | H1 pipeline doesn't close until H2 | Start pipeline generation immediately; expect 2-quarter lag |
+| Compliance/security review adds 2-5 months | MEDIUM | Deals stall in legal/procurement | Pre-build security questionnaire + pen test report; start SOC 2 Type I early |
+| Small TAM = can't burn accounts | HIGH | Bad outreach poisons future opportunities | Every touch must be high quality; signal-based only, no generic blasts |
+| Only 27% of reps hit quota | MEDIUM | First AE hire may underperform | Founder continues selling alongside AE; don't fully delegate until playbook is proven |
+| MCA companies used to paying less for software | MEDIUM | Pushback on $30K+ ACV | Start with $18-24K ACV entry point; upsell to $36K+ as value proven |
+| Key person dependency (small company) | HIGH | Single champion leaves → deal dies | Multi-thread every deal: 3+ contacts per account (Gong: +130% win rate) |
+
+---
+
+### Success Metrics: How We Know We're On Track
+
+| Metric | Month 3 | Month 6 | Month 9 | Month 12 |
+|--------|---------|---------|---------|----------|
+| **Qualified pipeline** | $250K | $900K | $2M | $3M+ |
+| **Closed ARR** | $0-50K | $200K | $500K | $1M |
+| **Meetings booked/month** | 8-10 | 15-20 | 20-25 | 25-30 |
+| **RICP coverage (top 68)** | 85% | 95% | 95% | 98% |
+| **Email coverage (top 68)** | 80% | 95% | 95% | 98% |
+| **Account coverage (all tiers)** | 20% | 50% | 80% | 100% |
+| **Average deal size** | $24K | $28K | $32K | $35K |
+| **Win rate (qualified)** | 20% | 23% | 25% | 28% |
+| **Signal-to-first-touch (hours)** | <24h | <12h | <4h | <1h |
+| **Multi-thread score (contacts/opp)** | 2 | 3 | 4 | 5+ |
+| **Morning briefing open rate** | 50% | 65% | 70% | 75% |
+| **NRR** | N/A | N/A | 100% | 110%+ |
+
+---
+
+### The Certainty Framework: What Makes $1M Inevitable
+
+Based on all research, $1M revenue is **not a hope — it's a math problem**:
+
+1. **The math works.** 34 deals at $30K ACV with 25% win rate requires 247 meetings from ~3,000 contacts touched ~3x. Signal-based outreach at 12% reply rate produces this volume.
+
+2. **We have the data moat.** 959 deeply researched companies with leadership profiles, hooks, talking points, and icebreakers. No competitor has this for the MCA vertical.
+
+3. **Signal-based selling is proven.** 47% better conversion, 43% larger deals, 38% more closed deals. EventIQ IS a signal-based selling platform — the Why-Now Engine + Attention Score + Signal→Task Pipeline (shipped in v3.1.89) operationalize this.
+
+4. **Multi-threading is a force multiplier.** Gong data: +130% win rate with multi-threading on >$50K deals. EventIQ's event intelligence uniquely enables this by showing multiple attendees from the same company.
+
+5. **Events are undervalued.** Events generate 33% of new business. 50% of buyers choose the first responder. EventIQ was literally built for this — the 48h follow-up automation is the highest-ROI feature we can ship.
+
+6. **Gifting is a cheat code.** 15x ROI, 3.08x meeting rate. A $50K gift budget targeted at top 50 accounts generates $750K+ in closed-won revenue.
+
+7. **The team is affordable.** Founder + 1 AE ($160K) + 1 SDR ($80K) = $240K total sales cost for $800K-$1.3M ARR capacity. Positive unit economics from day 1.
+
+**What could prevent $1M:** Not execution risk — it's **speed** risk. The fintech sales cycle is 90-180 days. If pipeline generation doesn't start in Q1, revenue won't materialize until Q4 or spills into Year 2. The antidote is: **start yesterday, move fast, don't wait for perfect.**
+
+---
+
+## Changelog
+- **2026-02-22**: Combined ROADMAP.md and ROADMAP_V2.md into single document. Added engineering phases referencing bugs.md and improvements.md.
+- **2026-02-23**: Added Part 6 top-of-funnel acceleration program with BDR/AE/marketing/demand-gen pillars, external benchmark anchors, 90-day waves, and Claude handoff protocol.
+- **2026-02-23**: Added Part 9 — $3M pipeline execution plan with prioritized build order, API stack recommendations, automated daily operations architecture, and success metrics.
+- **2026-02-27**: Added Part 10 — Attention Capture System covering Why-Now Engine, persona hooks, contactability scoring, account briefing, channel recommendation, campaign playbooks, engagement memory, and attention scoring.
+- **2026-03-02**: Added Part 11 — Revenue Certainty Plan based on 3 rounds of research: competitive intelligence (12+ AI platforms), pipeline math modeling, signal-based selling ROI, multi-threading data, gifting ROI, event follow-up timing, vertical SaaS pricing, and sales compensation benchmarks. Full research in `AI-CRM-SALES-PLATFORMS-RESEARCH.md`, `PIPELINE-REVENUE-RESEARCH.md`, `GTM-ROUND2-RESEARCH.md`.
