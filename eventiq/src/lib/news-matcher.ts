@@ -38,12 +38,11 @@ const COMMON_PHRASES = new Set([
 ]);
 
 /**
- * Full original company names (lowercased) that are too ambiguous for substring matching.
- * These names appear as substrings in unrelated proper nouns or common phrases.
- * e.g. "can capital" matches "Can Capital One Stock", "one park" matches "One Park Tower"
- *
- * For these names, we require an EXACT word-boundary match where the match is NOT
- * followed by additional words that form a different entity name.
+ * Full original company names (lowercased) that are ambiguous — they match
+ * unrelated entities or common phrases in article text.
+ * For these, we require the article to ALSO contain a lending/fintech industry
+ * keyword, proving the article is about the financial industry, not just
+ * mentioning "one park" (real estate) or "capital one" (different company).
  */
 const AMBIGUOUS_FULL_NAMES = new Set([
   "can capital", "one park", "24 capital",
@@ -55,6 +54,12 @@ const AMBIGUOUS_FULL_NAMES = new Set([
   "launch financial group", "creative capital solutions",
   "expansion capital group", "capital solutions, inc",
 ]);
+
+/**
+ * Industry keywords that indicate an article is about lending/fintech.
+ * Used as a secondary filter for ambiguous company names.
+ */
+const INDUSTRY_KEYWORDS = /\b(lend|loan|fintech|mca|merchant cash|underwriting|origination|credit facilit|securitiz|funding round|advance|financing|funder|borrower|small business loan|sba\b|factoring|receivable|broker|iso\b|revenue.based)\b/i;
 
 /** Check if a company name appears in article text with word boundary awareness. */
 function nameAppearsInText(companyName: string, text: string): boolean {
@@ -77,13 +82,16 @@ function nameAppearsInText(companyName: string, text: string): boolean {
   const lowerName = companyName.toLowerCase().trim();
   const lowerText = text.toLowerCase();
 
-  // Skip ambiguous full names that frequently appear as substrings of other entities
-  if (AMBIGUOUS_FULL_NAMES.has(lowerName)) return false;
-
   if (lowerName.length >= 5) {
     const escapedOrig = lowerName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const origRegex = new RegExp(`(?:^|\\s|[^a-z])${escapedOrig}(?:\\s|[^a-z]|$)`);
-    if (origRegex.test(` ${lowerText} `)) return true;
+    if (origRegex.test(` ${lowerText} `)) {
+      // For ambiguous names, require an industry keyword somewhere in the text
+      if (AMBIGUOUS_FULL_NAMES.has(lowerName)) {
+        return INDUSTRY_KEYWORDS.test(text);
+      }
+      return true;
+    }
   }
 
   return false;
