@@ -907,6 +907,59 @@ Feedback loops:
 
 ---
 
+## Part 7: v3.2 — Intelligence & Automation Sprint
+
+> Planned items from the v3.1.97 session (March 2026).
+
+### 7.1 Google Alerts Keyword Documentation & Multi-Feed Support
+**Status:** In Progress
+- Document all 3 news ingestion pipelines (ingest-signals, news-ingest, research-refresh)
+- Document the 6 hardcoded batch keywords in `signal-ingest.ts`
+- Write Google Alerts setup guide (creating alerts, getting RSS URLs, recommended keywords)
+- Code fix: support multiple `GOOGLE_ALERT_RSS_URL` feeds (currently single URL only)
+- Add missing env vars to `.env.example`
+
+### 7.2 Product Documentation Page + API
+**Status:** Planned
+- Extract all product content from resources tab (Notion pages, Drive videos, collateral)
+- Build structured data file (`product-docs.ts`) with full knowledge + raw context preserved
+- API: `GET /api/tools/products` (list all) + `GET /api/tools/product/{id}` (single product deep-dive)
+- Kiket can call these APIs to get product features, use cases, demos, talking points, objection handling
+- New "Products" sidebar tab with 8 product pages, embedded demo videos
+- Cross-link: product fit badges in company detail → product page
+
+### 7.3 ROK Financial Deep Research
+**Status:** Planned
+- Category correction: `funder` → `iso` (ROK is a broker, not a lender)
+- Employee count correction: 354 → ~60
+- Add missing executives (Shannon Treadwell COO, Megan Capobianco CMO, Rob Percoco CTO, Greg Amendola SVP Sales)
+- Full deep research JSON with 12 web sources
+- Recalibrate HyperVerge value prop for ISO model
+
+### 7.4 Market Map ↔ Companies Correlation
+**Status:** Planned
+- "Show on Map" button in company detail → highlights company on market map
+- "Market Position" mini-card in company detail (quadrant, peer rank, nearby competitors)
+- Bidirectional navigation: company ↔ market map
+- United First Funding (id:1769) data quality fix
+
+### 7.5 Kiket → AWS Claude Research Pipeline
+**Status:** Planned
+- New Supabase tables: `research_jobs` + `research_results`
+- Research worker on AWS EC2 (PM2 process, Anthropic API with web search)
+- 4 new API routes: `/api/tools/research/{trigger,status,results,stale}`
+- New Kiket skill (`research.md`) for research orchestration
+- Auto-merge results into companies table
+
+### 7.6 Revenue Computation Per Product
+**Status:** Planned
+- Per-product revenue breakdown using product fit scores × product pricing tiers
+- 8 products with base ACVs ($6K–$36K)
+- `RevenueExplanation` popover UI showing breakdown tree
+- Integration in company card, company detail, pipeline tab
+
+---
+
 ## Changelog
 
 - **2026-02-22**: Created ROADMAP.md — combined product vision, phases, architecture, and engineering execution.

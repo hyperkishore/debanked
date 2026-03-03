@@ -242,7 +242,7 @@ export function getResearchTier(score: number): ResearchTier {
 export type FilterType = 'all' | 'SQO' | 'Client' | 'ICP' | 'TAM' | 'Met' | 'CLEAR' | 'FollowUp' | 'NeedsEmail' | 'Researched' | 'Unresearched' | 'InHubSpot' | 'ActivePipeline' | 'ReadyToSend';
 export type SortType = 'name' | 'type' | 'priority' | 'phase' | 'employees' | 'quality' | 'outreach' | 'readiness' | 'revenue';
 export type ViewType = 'cards' | 'table';
-export type TabType = 'companies' | 'mission_control' | 'db_health' | 'pipeline' | 'resources' | 'research' | 'map' | 'dinner' | 'marketing';
+export type TabType = 'companies' | 'mission_control' | 'db_health' | 'pipeline' | 'resources' | 'products' | 'research' | 'map' | 'dinner' | 'marketing';
 
 export type Rating = 'hot' | 'warm' | 'cold' | '';
 export type FollowUp = 'demo' | 'email' | 'intro' | 'none';

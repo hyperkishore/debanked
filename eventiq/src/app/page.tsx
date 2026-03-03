@@ -50,6 +50,7 @@ import { syncToSheets } from "@/lib/sheets-sync";
 import { MobileNav } from "@/components/mobile-nav";
 import { KiketChatPanel, KiketCollapsedStrip } from "@/components/kiket-chat-panel";
 import { ResourcesTab } from "@/components/resources-tab";
+import { ProductsTab } from "@/components/products-tab";
 import { ResearchTab } from "@/components/research-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
 import { TaskQueueState, DEFAULT_TASK_QUEUE_STATE } from "@/lib/task-queue-helpers";
@@ -793,6 +794,8 @@ export default function Home() {
         return <ScheduleTab onJumpToCompany={handleJumpToCompany} />;
       case "resources":
         return <ResourcesTab />;
+      case "products":
+        return <ProductsTab />;
       case "research":
         return <ResearchTab />;
       case "pipeline":

@@ -7,17 +7,24 @@ import { matchCompanies } from "@/lib/news-matcher";
  * GET /api/cron/news-ingest
  *
  * Vercel Cron job — runs daily at 9 AM UTC.
- * Ingests news from Google Alerts RSS feed (single industry-level alert)
- * and deBanked RSS. Fuzzy-matches articles to companies in our dataset.
+ * Ingests news from one or more Google Alerts RSS feeds (comma-separated
+ * GOOGLE_ALERT_RSS_URLS env var) and deBanked RSS.
+ * Fuzzy-matches articles to companies in our dataset.
  *
  * Auth: Vercel cron sends Authorization: Bearer <CRON_SECRET>
+ * See: docs/GOOGLE_ALERTS_SETUP.md for full setup guide
  */
 
 const parser = new Parser();
 
-// Google Alert RSS feed URL — set in Vercel env vars
-// User creates a single Google Alert for the industry and provides the feed URL
-const GOOGLE_ALERT_FEED_URL = process.env.GOOGLE_ALERT_RSS_URL || "";
+// Google Alert RSS feed URLs — set in Vercel env vars
+// Support both old (singular) and new (plural) env var names for backward compatibility
+const GOOGLE_ALERT_FEED_URLS = (
+  process.env.GOOGLE_ALERT_RSS_URLS || process.env.GOOGLE_ALERT_RSS_URL || ""
+)
+  .split(",")
+  .map((u) => u.trim())
+  .filter(Boolean);
 const DEBANKED_FEED_URL = "https://debanked.com/feed/";
 
 interface FeedArticle {
@@ -28,25 +35,35 @@ interface FeedArticle {
   source: string;
 }
 
-async function fetchGoogleAlertFeed(): Promise<FeedArticle[]> {
-  if (!GOOGLE_ALERT_FEED_URL) {
-    console.log("[NewsIngest] No GOOGLE_ALERT_RSS_URL configured, skipping");
+async function fetchGoogleAlertFeeds(): Promise<FeedArticle[]> {
+  if (GOOGLE_ALERT_FEED_URLS.length === 0) {
+    console.log("[NewsIngest] No GOOGLE_ALERT_RSS_URLS configured, skipping");
     return [];
   }
 
-  try {
-    const feed = await parser.parseURL(GOOGLE_ALERT_FEED_URL);
-    return (feed.items || []).slice(0, 50).map((item) => ({
-      title: item.title || "",
-      description: item.contentSnippet || item.content || "",
-      link: item.link || "",
-      publishedAt: item.isoDate || item.pubDate || null,
-      source: "google_alert",
-    }));
-  } catch (err) {
-    console.error("[NewsIngest] Google Alert RSS fetch failed:", err);
-    return [];
-  }
+  console.log(`[NewsIngest] Fetching ${GOOGLE_ALERT_FEED_URLS.length} Google Alert feed(s)`);
+
+  const results = await Promise.allSettled(
+    GOOGLE_ALERT_FEED_URLS.map(async (url) => {
+      try {
+        const feed = await parser.parseURL(url);
+        return (feed.items || []).slice(0, 50).map((item) => ({
+          title: item.title || "",
+          description: item.contentSnippet || item.content || "",
+          link: item.link || "",
+          publishedAt: item.isoDate || item.pubDate || null,
+          source: "google_alert",
+        }));
+      } catch (err) {
+        console.error(`[NewsIngest] Google Alert RSS fetch failed for ${url}:`, err);
+        return [];
+      }
+    })
+  );
+
+  return results.flatMap((r) =>
+    r.status === "fulfilled" ? r.value : []
+  );
 }
 
 async function fetchDeBankedFeed(): Promise<FeedArticle[]> {
@@ -112,7 +129,7 @@ export async function GET(request: NextRequest) {
 
     // Fetch both feeds in parallel
     const [googleArticles, debankedArticles] = await Promise.all([
-      fetchGoogleAlertFeed(),
+      fetchGoogleAlertFeeds(),
       fetchDeBankedFeed(),
     ]);
 
@@ -175,6 +192,7 @@ export async function GET(request: NextRequest) {
     const summary = {
       timestamp: new Date().toISOString(),
       articlesProcessed: allArticles.length,
+      googleAlertFeeds: GOOGLE_ALERT_FEED_URLS.length,
       googleAlertArticles: googleArticles.length,
       debankedArticles: debankedArticles.length,
       totalMatched,
