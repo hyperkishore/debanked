@@ -92,7 +92,7 @@ export async function runSignalIngestion(
     priorityCompanies.map((c) => () => {
       const name = c.name;
       // Short names (< 8 chars) or common/ambiguous words need disambiguating context
-      const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American|Arc|Bitty|Aspiria|Swift Capital|Eastern Funding|Pearl Capital|Shield Funding|ACE Funding|Libertas|Capital Crossing|Thrive Funding|Mission Capital|24 Capital)$/i.test(name);
+      const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American|Arc|Bitty|Aspiria|Swift Capital|Eastern Funding|Pearl Capital|Shield Funding|ACE Funding|Libertas|Capital Crossing|Thrive Funding|Mission Capital|24 Capital|Gibraltar|Become|CAN Capital|Merchant Cash Group|Launch Financial Group|Revenue Funding|National Funding|TRUST CAPITAL|Business Capital|Creative Capital|Expansion Capital|SMALL BUSINESS FUNDING|ADVANCE SERVICE|CapitaLand Group)$/i.test(name);
       const query = needsContext
         ? `"${name}" (lending OR fintech OR "merchant cash" OR financing OR "small business")`
         : `"${name}"`;
@@ -114,7 +114,7 @@ export async function runSignalIngestion(
     const bingSignals: RawSignal[] = await runBounded(
       priorityCompanies.map((c) => {
         const name = c.name;
-        const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American|Arc|Bitty|Aspiria|Swift Capital|Eastern Funding|Pearl Capital|Shield Funding|ACE Funding|Libertas|Capital Crossing|Thrive Funding|Mission Capital|24 Capital)$/i.test(name);
+        const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American|Arc|Bitty|Aspiria|Swift Capital|Eastern Funding|Pearl Capital|Shield Funding|ACE Funding|Libertas|Capital Crossing|Thrive Funding|Mission Capital|24 Capital|Gibraltar|Become|CAN Capital|Merchant Cash Group|Launch Financial Group|Revenue Funding|National Funding|TRUST CAPITAL|Business Capital|Creative Capital|Expansion Capital|SMALL BUSINESS FUNDING|ADVANCE SERVICE|CapitaLand Group)$/i.test(name);
         const query = needsContext
           ? `"${name}" (lending OR fintech OR financing)`
           : `"${name}"`;

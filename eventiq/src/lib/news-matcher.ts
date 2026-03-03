@@ -14,7 +14,7 @@ interface CompanyRef {
 function normalize(name: string): string {
   return name
     .toLowerCase()
-    .replace(/\b(inc|llc|corp|ltd|co|group|holdings|capital|financial|services|lending)\b\.?/g, "")
+    .replace(/\b(inc|llc|corp|ltd|co|group|holdings|capital|financial|services|lending|funding|solutions)\b\.?/g, "")
     .replace(/[.,'"!?()]/g, "")
     .replace(/\s+/g, " ")
     .trim();
@@ -32,6 +32,28 @@ const COMMON_PHRASES = new Set([
   "invoice", "revenue", "sba", "first", "national",
   "american", "united", "premier", "direct", "advance",
   "rapid", "fast", "express", "elite", "prime",
+  "can", "launch", "trust", "creative", "gibraltar",
+  "become", "shield", "ace", "thrive", "pearl",
+  "eastern", "swift", "mission", "ark",
+]);
+
+/**
+ * Full original company names (lowercased) that are too ambiguous for substring matching.
+ * These names appear as substrings in unrelated proper nouns or common phrases.
+ * e.g. "can capital" matches "Can Capital One Stock", "one park" matches "One Park Tower"
+ *
+ * For these names, we require an EXACT word-boundary match where the match is NOT
+ * followed by additional words that form a different entity name.
+ */
+const AMBIGUOUS_FULL_NAMES = new Set([
+  "can capital", "one park", "24 capital",
+  "advance service", "small business funding",
+  "national funding", "national capital", "revenue funding",
+  "business capital llc", "trust capital",
+  "capital crossing", "capitaland group",
+  "gibraltar", "become", "merchant cash group",
+  "launch financial group", "creative capital solutions",
+  "expansion capital group", "capital solutions, inc",
 ]);
 
 /** Check if a company name appears in article text with word boundary awareness. */
@@ -54,6 +76,9 @@ function nameAppearsInText(companyName: string, text: string): boolean {
   // and for companies whose normalized name is a common phrase
   const lowerName = companyName.toLowerCase().trim();
   const lowerText = text.toLowerCase();
+
+  // Skip ambiguous full names that frequently appear as substrings of other entities
+  if (AMBIGUOUS_FULL_NAMES.has(lowerName)) return false;
 
   if (lowerName.length >= 5) {
     const escapedOrig = lowerName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
