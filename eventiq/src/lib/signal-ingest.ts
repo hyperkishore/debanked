@@ -91,8 +91,8 @@ export async function runSignalIngestion(
   const googleSignals: RawSignal[] = await runBounded(
     priorityCompanies.map((c) => () => {
       const name = c.name;
-      // Short names (< 8 chars) or common words need disambiguating context
-      const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American)$/i.test(name);
+      // Short names (< 8 chars) or common/ambiguous words need disambiguating context
+      const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American|Arc|Bitty|Aspiria|Swift Capital|Eastern Funding|Pearl Capital|Shield Funding|ACE Funding|Libertas|Capital Crossing|Thrive Funding|Mission Capital|24 Capital)$/i.test(name);
       const query = needsContext
         ? `"${name}" (lending OR fintech OR "merchant cash" OR financing OR "small business")`
         : `"${name}"`;
@@ -114,7 +114,7 @@ export async function runSignalIngestion(
     const bingSignals: RawSignal[] = await runBounded(
       priorityCompanies.map((c) => {
         const name = c.name;
-        const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American)$/i.test(name);
+        const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American|Arc|Bitty|Aspiria|Swift Capital|Eastern Funding|Pearl Capital|Shield Funding|ACE Funding|Libertas|Capital Crossing|Thrive Funding|Mission Capital|24 Capital)$/i.test(name);
         const query = needsContext
           ? `"${name}" (lending OR fintech OR financing)`
           : `"${name}"`;
