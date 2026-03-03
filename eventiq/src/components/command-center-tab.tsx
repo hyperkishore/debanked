@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useCallback, useState } from "react";
+import { useMemo } from "react";
 import { Company, EngagementEntry, RatingData, EngagementChannel, inferSubVertical } from "@/lib/types";
 import { buildFeedItems } from "@/lib/feed-helpers";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
@@ -13,13 +13,7 @@ import type { FunctionalRole } from "@/lib/ricp-taxonomy";
 import { getLastEngagement, getCompanyEngagements } from "@/lib/engagement-helpers";
 import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
-import {
-  TaskQueueItem,
-  TaskQueueState,
-  TaskPriority,
-  buildTaskQueue,
-  maybeResetDaily,
-} from "@/lib/task-queue-helpers";
+import type { TaskQueueState } from "@/lib/task-queue-helpers";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -39,12 +33,7 @@ import {
   AlertTriangle,
   CheckCircle2,
   Circle,
-  Check,
-  X,
-  Bell,
-  Newspaper,
   Target,
-  ListChecks,
   Rss,
   Activity,
 } from "lucide-react";
@@ -87,27 +76,6 @@ function formatDaysAgo(days: number): string {
   return `${Math.floor(days / 30)}mo ago`;
 }
 
-function addDays(days: number): string {
-  const d = new Date();
-  d.setDate(d.getDate() + days);
-  return d.toISOString().slice(0, 10);
-}
-
-const typeTaskIcon: Record<string, React.ComponentType<{ className?: string }>> = {
-  "follow-up": Bell,
-  "stale-deal": AlertTriangle,
-  "sequence-step": Zap,
-  "news-trigger": Newspaper,
-  "quick-win": Target,
-  "signal-trigger": TrendingUp,
-};
-
-const priorityStyles: Record<TaskPriority, { label: string; colorClass: string; bgClass: string }> = {
-  critical: { label: "Critical", colorClass: "text-red-400", bgClass: "bg-red-500/10 border-red-500/20" },
-  high: { label: "High", colorClass: "text-amber-400", bgClass: "bg-amber-500/10 border-amber-500/20" },
-  medium: { label: "Medium", colorClass: "text-blue-400", bgClass: "bg-blue-500/10 border-blue-500/20" },
-};
-
 const typeBadgeColors: Record<string, string> = {
   SQO: "bg-[var(--sqo)]/15 text-[var(--sqo)]",
   Client: "bg-[var(--client)]/15 text-[var(--client)]",
@@ -130,29 +98,7 @@ export function CommandCenterTab({
   onCompleteFollowUp,
   onSequenceStep,
 }: CommandCenterTabProps) {
-  const [snoozeTaskId, setSnoozeTaskId] = useState<string | null>(null);
-
   const feedItems = useMemo(() => buildFeedItems(companies), [companies]);
-
-  // === Task Queue (from TaskQueueTab) ===
-  const queueState = useMemo(() => {
-    const reset = maybeResetDaily(rawQueueState);
-    if (reset !== rawQueueState) {
-      onUpdateQueueState(reset);
-    }
-    return reset;
-  }, [rawQueueState]);
-
-  const tasks = useMemo(
-    () => buildTaskQueue(companies, engagements, pipelineState, metState, followUps, sequences, queueState),
-    [companies, engagements, pipelineState, metState, followUps, sequences, queueState]
-  );
-
-  const grouped = useMemo(() => {
-    const groups: Record<TaskPriority, TaskQueueItem[]> = { critical: [], high: [], medium: [] };
-    for (const task of tasks) groups[task.priority].push(task);
-    return groups;
-  }, [tasks]);
 
   // === Pipeline Snapshot (from MissionControlTab) ===
   const hubspotSnapshot = useMemo(() => {
@@ -267,31 +213,6 @@ export function CommandCenterTab({
       readyToSend: readyCount,
     };
   }, [companies, engagements, feedItems]);
-
-  // === Task actions ===
-  const handleComplete = useCallback((task: TaskQueueItem) => {
-    const newState = { ...queueState, completedTasks: [...queueState.completedTasks, task.id] };
-    onUpdateQueueState(newState);
-    if (task.type === "follow-up" && task.followUpId) {
-      onCompleteFollowUp(task.followUpId);
-    } else if (task.type === "sequence-step" && task.stepId && task.channel && task.engagementAction && onSequenceStep) {
-      onSequenceStep(task.companyId, task.stepId, task.channel as EngagementChannel, task.engagementAction);
-    } else {
-      onOpenEngagement(task.companyId);
-    }
-  }, [queueState, onUpdateQueueState, onCompleteFollowUp, onSequenceStep, onOpenEngagement]);
-
-  const handleSnooze = useCallback((taskId: string, days: number) => {
-    const snoozeDate = addDays(days);
-    onUpdateQueueState({ ...queueState, snoozedTasks: { ...queueState.snoozedTasks, [taskId]: snoozeDate } });
-    setSnoozeTaskId(null);
-  }, [queueState, onUpdateQueueState]);
-
-  const handleDismiss = useCallback((taskId: string) => {
-    onUpdateQueueState({ ...queueState, dismissedTasks: [...queueState.dismissedTasks, taskId] });
-  }, [queueState, onUpdateQueueState]);
-
-  const canDismiss = (task: TaskQueueItem) => task.type === "news-trigger" || task.type === "quick-win" || task.type === "signal-trigger";
 
   return (
     <div className="h-full flex flex-col bg-background">
@@ -416,94 +337,7 @@ export function CommandCenterTab({
             )}
           </section>
 
-          {/* === 2. Today's Tasks === */}
-          <section>
-            <div className="flex items-center gap-2 mb-4">
-              <ListChecks className="h-4 w-4 text-brand" />
-              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Today&apos;s Tasks</h2>
-              <span className="text-xs text-muted-foreground ml-auto">
-                {tasks.length === 0 ? "All caught up!" : `${tasks.length} task${tasks.length === 1 ? "" : "s"}`}
-              </span>
-            </div>
-
-            {tasks.length === 0 ? (
-              <Card className="p-6 text-center shadow-none border-dashed">
-                <Check className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <p className="text-sm font-medium">All caught up!</p>
-                <p className="text-xs text-muted-foreground mt-0.5">No follow-ups due, no stale deals, no pending steps.</p>
-              </Card>
-            ) : (
-              <div className="space-y-4">
-                {(["critical", "high", "medium"] as TaskPriority[]).map((priority) => {
-                  const group = grouped[priority];
-                  if (group.length === 0) return null;
-                  const style = priorityStyles[priority];
-
-                  return (
-                    <div key={priority}>
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className={cn("text-xs font-semibold uppercase tracking-wider", style.colorClass)}>{style.label}</span>
-                        <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 h-5", style.colorClass)}>{group.length}</Badge>
-                      </div>
-                      <div className="space-y-1.5">
-                        {group.map((task) => {
-                          const Icon = typeTaskIcon[task.type] || Bell;
-                          const isSnoozing = snoozeTaskId === task.id;
-
-                          return (
-                            <Card key={task.id} className={cn("p-3 shadow-none border transition-colors", style.bgClass)}>
-                              <div className="flex items-start gap-3">
-                                <Icon className={cn("h-4 w-4 mt-0.5 shrink-0", style.colorClass)} />
-                                <div className="flex-1 min-w-0 cursor-pointer" onClick={() => onSelectCompany(task.companyId)}>
-                                  <div className="flex items-center gap-1.5 flex-wrap">
-                                    <span className="text-sm font-medium">{task.companyName}</span>
-                                    <Badge variant="outline" className={cn("text-xs px-1 py-0.5 h-4 font-semibold", typeBadgeColors[task.companyType])}>
-                                      {task.companyType}
-                                    </Badge>
-                                  </div>
-                                  <p className="text-xs font-medium text-foreground/90 mt-0.5">{task.title}</p>
-                                  <p className="text-xs text-muted-foreground mt-0.5 truncate">{task.subtitle}</p>
-                                </div>
-                                <div className="flex items-center gap-1 shrink-0">
-                                  <Button variant="ghost" size="icon" className="h-7 w-7 text-green-400 hover:bg-green-500/10" onClick={() => handleComplete(task)} title="Complete">
-                                    <Check className="h-3.5 w-3.5" />
-                                  </Button>
-                                  <Button variant="ghost" size="icon" className="h-7 w-7 text-muted-foreground hover:bg-secondary/50" onClick={() => setSnoozeTaskId(isSnoozing ? null : task.id)} title="Snooze">
-                                    <Clock className="h-3.5 w-3.5" />
-                                  </Button>
-                                  {canDismiss(task) && (
-                                    <Button variant="ghost" size="icon" className="h-7 w-7 text-muted-foreground hover:bg-secondary/50" onClick={() => handleDismiss(task.id)} title="Dismiss">
-                                      <X className="h-3.5 w-3.5" />
-                                    </Button>
-                                  )}
-                                </div>
-                              </div>
-                              {isSnoozing && (
-                                <div className="flex items-center gap-1.5 mt-2 pl-7">
-                                  <span className="text-xs text-muted-foreground">Snooze:</span>
-                                  {[{ label: "Tomorrow", days: 1 }, { label: "3 days", days: 3 }, { label: "1 week", days: 7 }].map((preset) => (
-                                    <Button key={preset.label} variant="outline" size="sm" className="h-6 text-xs px-2" onClick={() => handleSnooze(task.id, preset.days)}>
-                                      {preset.label}
-                                    </Button>
-                                  ))}
-                                </div>
-                              )}
-                            </Card>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-
-            {queueState.completedTasks.length > 0 && (
-              <p className="text-xs text-muted-foreground mt-3">{queueState.completedTasks.length} completed today</p>
-            )}
-          </section>
-
-          {/* === 3. Top Actions (by Attention Score) === */}
+          {/* === 2. Top Actions (by Attention Score) === */}
           <section>
             <div className="flex items-center gap-2 mb-4">
               <Zap className="h-4 w-4 text-brand" />
