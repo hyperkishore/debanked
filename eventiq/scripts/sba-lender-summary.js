@@ -21,7 +21,7 @@ import { pipeline } from "stream/promises";
 import { Readable } from "stream";
 
 const SBA_CSV_URL =
-  "https://data.sba.gov/dataset/0ff8e8e9-b36b-42f0-8b5b-57b6b4f0bf5f/resource/4ef53f02-ea09-48a1-91e0-914dca3e1eef/download/foia-7afy2020-present-asof-250101.csv";
+  "https://data.sba.gov/dataset/0ff8e8e9-b967-4f4e-987c-6ac78c575087/resource/d67d3ccb-2002-4134-a288-481b51cd3479/download/foia-7a-fy2020-present-as-of-251231.csv";
 
 const OUTPUT_PATH = join(
   import.meta.dirname,

@@ -35,6 +35,8 @@ yarn-error.log*
 
 # Company data — now served from Supabase, should not be in the repo
 src/data/*.json
+# Exception: SBA lender summary is small (340KB) and needed at deploy time
+!src/data/sba-lenders.json
 
 # OpenClaw secrets (real keys stored locally, template committed)
 server-backup/.env
