@@ -1,32 +1,13 @@
 # EventIQ Improvement Plan
 
-This document defines implementation-grade improvements derived from the current codebase. Each item includes evidence paths, rationale, implementation guidance, and acceptance criteria.
+This document defines implementation-grade improvements for the EventIQ project. Each item includes evidence paths, rationale, implementation guidance, and acceptance criteria. Covers code, process, and operational improvements.
 
 ## Priority Legend
 - `P0`: urgent risk/security or user-visible failure.
 - `P1`: high-value structural improvement.
 - `P2`: medium-term optimization.
 
-## IMP-001: Centralize API Auth + Supabase Client Initialization
-- Priority: `P1`
-- Category: Architecture, Security, DX
-- Evidence:
-  - `eventiq/src/app/api/companies/route.ts:12`
-  - `eventiq/src/app/api/documents/route.ts:18`
-  - `eventiq/src/app/api/enrich/route.ts:12`
-  - `eventiq/src/app/api/briefing/daily/route.ts:19`
-  - `eventiq/src/app/api/briefing/company/[id]/route.ts:30`
-  - `eventiq/src/app/api/hubspot/sync/route.ts:27`
-  - `eventiq/src/app/api/signals/ingest/route.ts:28`
-- Problem:
-  - Auth/session/client bootstrap is duplicated in almost every route, increasing inconsistency and maintenance cost.
-- Improvement:
-  - Design a shared helper that returns `{ user, supabaseAuth, supabaseAdmin }` with consistent error mapping.
-  - Standardize unauthorized, misconfigured, and internal failure responses.
-- Acceptance criteria:
-  - API route duplication reduced materially.
-  - Route handlers become focused on business logic.
-  - Error shape and status behavior is consistent across endpoints.
+---
 
 ## IMP-002: Introduce Strict Input Validation Layer for APIs
 - Priority: `P0`
@@ -118,22 +99,6 @@ This document defines implementation-grade improvements derived from the current
   - Queue sent/failed counts accurately reflect DB writes.
   - Status transitions are consistent and test-verified.
 
-## IMP-008: Hardening for Third-Party Sync Semantics (`sheets-sync`)
-- Priority: `P1`
-- Category: Reliability, Integrations
-- Evidence:
-  - `eventiq/src/lib/sheets-sync.ts:46`
-  - `eventiq/src/lib/sheets-sync.ts:52`
-  - `eventiq/src/lib/sheets-sync.ts:115`
-- Problem:
-  - `no-cors` mode means transport success is treated as delivery success; failures remain invisible.
-- Improvement:
-  - Use a verifiable endpoint/proxy or response-signaling strategy.
-  - Add retry policy, dead-letter handling, and operator visibility.
-- Acceptance criteria:
-  - Delivery status is measurable (not inferred from non-throwing fetch).
-  - Retries are bounded and observable.
-
 ## IMP-009: Make Enrichment API Error Semantics Explicit
 - Priority: `P1`
 - Category: Reliability, UX
@@ -144,7 +109,7 @@ This document defines implementation-grade improvements derived from the current
 - Problem:
   - Enrichment failures collapse into `enriched: false` with HTTP 200, obscuring operational issues (missing key/quota/network).
 - Improvement:
-  - Differentiate “no data found” from “integration failure”.
+  - Differentiate "no data found" from "integration failure".
   - Return partial success with explicit per-company error reasons and top-level status.
 - Acceptance criteria:
   - Client can distinguish transient errors vs true no-enrichment outcomes.
@@ -210,19 +175,6 @@ This document defines implementation-grade improvements derived from the current
 - Acceptance criteria:
   - Daily briefing can rank active pipeline companies with no recent news.
 
-## IMP-014: Portable Tooling Paths for Data Integration Scripts
-- Priority: `P1`
-- Category: Developer Experience
-- Evidence:
-  - `integrate_research.py:14`
-- Problem:
-  - Script depends on a machine-specific absolute path, preventing portability and CI usage.
-- Improvement:
-  - Switch to CLI argument with default repo-relative path.
-  - Document invocation in project docs.
-- Acceptance criteria:
-  - Script runs on any machine with repository checkout.
-
 ## IMP-015: Build a Test + CI Baseline
 - Priority: `P1`
 - Category: Quality, Release Safety
@@ -236,28 +188,6 @@ This document defines implementation-grade improvements derived from the current
 - Acceptance criteria:
   - Pull requests are gated by automated checks.
   - Critical modules have baseline coverage.
-
-## IMP-016: Remove Frontend-Embedded Credentials and Secrets
-- Priority: `P0`
-- Status: `done` (v3.1.86)
-- Category: Security
-- Evidence:
-  - `eventiq/src/components/resources-tab.tsx:26`
-  - `eventiq/src/components/resources-tab.tsx:27`
-- Problem:
-  - Credentials are embedded in a client component, so secrets are distributed to every browser and can be harvested.
-- Improvement:
-  - Move all sensitive credentials into secure secret storage.
-  - Replace in-app plaintext credentials with secure references and access workflow.
-  - Rotate exposed credentials immediately.
-- Resolution:
-  - Removed 3 hardcoded credential strings from `resources-tab.tsx` detail fields (Cashflow, Clear, Industry Classification logins).
-  - Added 3 new credential entries to `/api/credentials` route sourced from env vars (`CASHFLOW_LOGIN/PASSWORD`, `CLEAR_LOGIN/PASSWORD`, `INDUSTRY_LOGIN/PASSWORD`).
-  - Credentials now shown in Product section via existing `CredentialField` toggle-visibility component.
-  - Env vars need to be set in Vercel for credentials to appear (empty credentials are filtered out).
-- Acceptance criteria:
-  - No plaintext secrets in client bundle.
-  - Credential rotation completed and logged.
 
 ## IMP-017: Build Contact Waterfall + Deliverability Confidence
 - Priority: `P0`
@@ -389,13 +319,16 @@ This document defines implementation-grade improvements derived from the current
   - GTM leadership can monitor SLA adherence and funnel health daily.
   - Alerts fire on lead response delay, stale opportunities, and sync failures.
 
+---
+
+## RICP & Enrichment Program (IMP-025 to IMP-045)
+
 ## IMP-025: RICP Coverage Enrichment Loop (COO/CRO/Underwriting)
 - Priority: `P0`
 - Category: Data Enrichment, Top of Funnel
 - Evidence:
   - `eventiq/src/components/marketing-ideas-tab.tsx`
   - `eventiq/src/lib/types.ts:13`
-  - `eventiq/src/data/all-companies.json`
 - Problem:
   - High-priority accounts still lack named COO/CRO/underwriting contacts, blocking high-quality personalization and slowing meeting conversion.
 - Improvement:
@@ -405,21 +338,6 @@ This document defines implementation-grade improvements derived from the current
 - Acceptance criteria:
   - >=85% RICP coverage for SQO/Client/ICP accounts.
   - Every top-priority account has at least one validated RICP with source metadata.
-
-## Recommended Execution Order
-1. `P0` security/reliability core: IMP-002, IMP-003, IMP-005, IMP-006, IMP-011, IMP-016
-2. `P0` top-of-funnel data foundation: IMP-017, IMP-018, IMP-025
-3. `P1` reliability/UX + growth execution: IMP-004, IMP-007, IMP-008, IMP-009, IMP-010, IMP-012, IMP-019, IMP-020
-4. `P1` optimization and scale: IMP-021, IMP-022, IMP-023, IMP-024, IMP-014, IMP-015
-5. `P2` logic quality: IMP-013
-
-## Tracking Template (for each improvement)
-- Status: `not started` | `in progress` | `blocked` | `done`
-- Owner:
-- Target sprint:
-- Linked bug IDs:
-- Validation artifact:
-- Rollback plan:
 
 ## IMP-026: Add RICP Verification Schema to Leader Records
 - Priority: `P0`
@@ -442,7 +360,6 @@ This document defines implementation-grade improvements derived from the current
 - Category: GTM Operations, Reliability
 - Evidence:
   - `eventiq/docs/live-targeting-snapshot-2026-02-23.json:3`
-  - `eventiq/src/data/all-companies.json`
   - `eventiq/scripts/merge-enrichment.js:143`
 - Problem:
   - GTM prioritization currently relies on mixed snapshots and local files, causing drift in who gets worked first.
@@ -458,7 +375,6 @@ This document defines implementation-grade improvements derived from the current
 - Category: Process, Conversion
 - Evidence:
   - `eventiq/src/components/marketing-ideas-tab.tsx:202`
-  - `eventiq/src/components/marketing-ideas-tab.tsx:307`
   - `ROADMAP.md`
 - Problem:
   - High-signal accounts can move into sequences without required RICP depth, weakening personalization and lowering meeting/SQL conversion.
@@ -488,7 +404,6 @@ This document defines implementation-grade improvements derived from the current
 - Priority: `P0`
 - Category: Data Quality, GTM Accuracy
 - Evidence:
-  - `eventiq/src/data/all-companies.json`
   - `eventiq/scripts/merge-research.js:74`
   - `eventiq/scripts/merge-enrichment.js:71`
 - Problem:
@@ -505,7 +420,6 @@ This document defines implementation-grade improvements derived from the current
 - Category: Data Enrichment, Conversion
 - Evidence:
   - `eventiq/src/lib/types.ts:19`
-  - `eventiq/src/lib/types.ts:20`
   - `eventiq/src/components/marketing-ideas-tab.tsx`
 - Problem:
   - Contact records lack structured deliverability confidence and channel preference, causing wasted outreach attempts.
@@ -522,7 +436,6 @@ This document defines implementation-grade improvements derived from the current
 - Evidence:
   - `eventiq/src/components/marketing-ideas-tab.tsx:107`
   - `eventiq/src/components/marketing-ideas-tab.tsx:114`
-  - `eventiq/src/components/marketing-ideas-tab.tsx:117`
 - Problem:
   - Signal scoring uses text heuristics but does not persist freshness buckets and role relevance for downstream campaign/action logic.
 - Improvement:
@@ -538,7 +451,6 @@ This document defines implementation-grade improvements derived from the current
 - Evidence:
   - `eventiq/src/lib/types.ts:112`
   - `eventiq/src/components/company-list.tsx:143`
-  - `ROADMAP.md`
 - Problem:
   - `SQO/Client/ICP/TAM` is useful but insufficient for precise demand-gen campaigns across the 1,000-account universe.
 - Improvement:
@@ -552,8 +464,6 @@ This document defines implementation-grade improvements derived from the current
 - Priority: `P0`
 - Category: Governance, Data Quality
 - Evidence:
-  - `ROADMAP.md`
-  - `bugs.md`
   - `eventiq/scripts/merge-enrichment.js:103`
 - Problem:
   - Enrichment merges can add records with minimal structural checks, which allows low-quality personas into execution flows.
@@ -568,8 +478,6 @@ This document defines implementation-grade improvements derived from the current
 - Priority: `P1`
 - Category: RevOps, Execution
 - Evidence:
-  - `ROADMAP.md:497`
-  - `ROADMAP.md`
   - `eventiq/src/components/marketing-ideas-tab.tsx:202`
 - Problem:
   - Prioritized gap queues exist, but ownership/SLA execution is not consistently captured for operational accountability.
@@ -583,10 +491,6 @@ This document defines implementation-grade improvements derived from the current
 ## IMP-036: Top-44 Account Enrichment Playbook Artifact
 - Priority: `P0`
 - Category: Execution, GTM Operations
-- Evidence:
-  - `ROADMAP.md:497`
-  - `ROADMAP.md:572`
-  - `bugs.md:313`
 - Problem:
   - The ranked gap queue exists, but there is no single execution artifact that captures per-account ownership, role gaps, and QA completion state.
 - Improvement:
@@ -601,7 +505,6 @@ This document defines implementation-grade improvements derived from the current
 - Evidence:
   - `eventiq/src/lib/types.ts:13`
   - `eventiq/scripts/merge-enrichment.js:103`
-  - `bugs.md:460`
 - Problem:
   - Enrichment records can be appended without strict required-field checks, allowing low-trust or incomplete persona data.
 - Improvement:
@@ -614,10 +517,6 @@ This document defines implementation-grade improvements derived from the current
 ## IMP-038: Deterministic Confidence Scoring Model
 - Priority: `P0`
 - Category: Data Quality, Conversion
-- Evidence:
-  - `ROADMAP.md:622`
-  - `bugs.md:330`
-  - `bugs.md:418`
 - Problem:
   - Confidence is conceptually required but not consistently modeled, making sequence quality controls inconsistent.
 - Improvement:
@@ -628,11 +527,9 @@ This document defines implementation-grade improvements derived from the current
   - Sequence gating uses confidence thresholds consistently.
 
 ## IMP-039: Freshness Policy and Auto Re-Verification Queue
-- Priority: `P0`
+- Priority: `P2`
 - Category: Data Hygiene
-- Evidence:
-  - `ROADMAP.md:632`
-  - `bugs.md:418`
+- Depends on: IMP-026, IMP-038
 - Problem:
   - No automatic re-verification cycle exists, so records can decay silently.
 - Improvement:
@@ -647,7 +544,6 @@ This document defines implementation-grade improvements derived from the current
 - Evidence:
   - `eventiq/scripts/merge-research.js:74`
   - `eventiq/scripts/merge-enrichment.js:71`
-  - `bugs.md:371`
 - Problem:
   - Lightweight normalization can leave account aliases and person duplicates unresolved.
 - Improvement:
@@ -660,7 +556,6 @@ This document defines implementation-grade improvements derived from the current
 - Priority: `P1`
 - Category: BDR/AE Enablement
 - Evidence:
-  - `ROADMAP.md:612`
   - `eventiq/src/lib/types.ts:23`
 - Problem:
   - Enriched data is not consistently converted into role-targeted outreach assets.
@@ -671,11 +566,9 @@ This document defines implementation-grade improvements derived from the current
   - First-touch prep time decreases materially.
 
 ## IMP-042: Enrichment Ops KPI Dashboard Spec
-- Priority: `P1`
+- Priority: `P2`
 - Category: RevOps, Observability
-- Evidence:
-  - `ROADMAP.md:676`
-  - `ROADMAP.md:678`
+- Depends on: IMP-025, IMP-034, IMP-035
 - Problem:
   - Enrichment outcomes are not centrally measured with operational and revenue-linked metrics.
 - Improvement:
@@ -685,11 +578,9 @@ This document defines implementation-grade improvements derived from the current
   - Leadership can evaluate enrichment ROI weekly.
 
 ## IMP-043: Enrichment Uplift Measurement Framework
-- Priority: `P0`
+- Priority: `P2`
 - Category: Analytics, Decision Science
-- Evidence:
-  - `ROADMAP.md:685`
-  - `ROADMAP.md:686`
+- Depends on: Sufficient outbound volume for statistical significance
 - Problem:
   - Current planning assumes enrichment impact without a rigorous measurement framework.
 - Improvement:
@@ -699,11 +590,8 @@ This document defines implementation-grade improvements derived from the current
   - Budget and prioritization decisions use measured impact, not intuition.
 
 ## IMP-044: Claude Handoff Pack for Enrichment Implementation
-- Priority: `P1`
+- Priority: `P2`
 - Category: Delivery, Collaboration
-- Evidence:
-  - `ROADMAP.md:392`
-  - `ROADMAP.md:572`
 - Problem:
   - Parallel implementation can drift without a tightly scoped handoff document.
 - Improvement:
@@ -713,11 +601,9 @@ This document defines implementation-grade improvements derived from the current
   - Delivered work maps directly back to roadmap and bug IDs.
 
 ## IMP-045: 30-Day Enrichment Execution Calendar
-- Priority: `P1`
+- Priority: `P2`
 - Category: Program Management
-- Evidence:
-  - `ROADMAP.md:636`
-  - `ROADMAP.md:638`
+- Depends on: IMP-036, IMP-035
 - Problem:
   - Weekly goals exist but daily execution cadence is not fully operationalized.
 - Improvement:
@@ -728,159 +614,40 @@ This document defines implementation-grade improvements derived from the current
 
 ---
 
-## Kiket UX Improvements (v3.1.83+)
+## Recommended Execution Order
 
-## IMP-046: Kiket User Attribution in Memory
-- Priority: `P0`
-- Status: `completed` (v3.1.88)
-- Category: Kiket, Memory, Multi-User
-- Problem:
-  - Kiket does not track WHO shared specific information. When 5 team members chat with Kiket, it should know "Kishore told me X" and "Sanjay told me Y" so users can ask "who shared this info?"
-- Improvement:
-  - Extend Kiket's memory protocol to tag every stored insight with the user who provided it.
-  - When users ask "who told you about X?", Kiket should cite the source user and conversation.
-  - Memory files should include attribution metadata: `{user, timestamp, sessionKey}`.
-- Acceptance criteria:
-  - Kiket can answer "who told you about company X?" with the correct user name.
-  - Memory entries include user attribution tags.
-  - Works across all 5 team members' sessions.
+1. **P0 security/reliability core:** IMP-002, IMP-003, IMP-005, IMP-006, IMP-011
+2. **P0 top-of-funnel data foundation:** IMP-017, IMP-018, IMP-025, IMP-026, IMP-030, IMP-031, IMP-032
+3. **P0 enrichment governance:** IMP-027, IMP-028, IMP-034, IMP-036, IMP-037, IMP-038
+4. **P1 reliability/UX + growth execution:** IMP-004, IMP-007, IMP-009, IMP-010, IMP-012, IMP-015, IMP-019, IMP-020
+5. **P1 optimization and scale:** IMP-021, IMP-022, IMP-023, IMP-024, IMP-029, IMP-033, IMP-035, IMP-040, IMP-041
+6. **P2 medium-term:** IMP-013, IMP-039, IMP-042, IMP-043, IMP-044, IMP-045
 
-## IMP-047: Auto-Collapse Sidebar When Kiket Chat Opens
-- Priority: `P1`
-- Status: `done` (v3.1.86)
-- Category: Kiket, Layout, UX
-- Evidence:
-  - `eventiq/src/app/page.tsx` (chat panel state management)
-  - `eventiq/src/components/app-sidebar.tsx`
-- Problem:
-  - With sidebar + company list + detail + Kiket panel, only 3 panels fit comfortably. When Kiket opens, the sidebar should auto-collapse to icon mode.
-- Resolution:
-  - Added `SidebarAutoCollapse` component that calls `useSidebar().setOpen(false)` when `kiketOpen` becomes true.
-  - Component placed inside `SidebarProvider` to access sidebar context. Only collapses on open; user can manually re-expand.
-- Acceptance criteria:
-  - Opening Kiket automatically collapses sidebar to icon mode.
-  - All 4 panels fit without horizontal overflow.
+## Tracking Template (for each improvement)
+- Status: `not started` | `in progress` | `blocked` | `done`
+- Owner:
+- Target sprint:
+- Linked bug IDs:
+- Validation artifact:
+- Rollback plan:
 
-## IMP-048: Kiket Avatar Image
-- Priority: `P1`
-- Status: `done` (v3.1.86)
-- Category: Kiket, Branding
-- Evidence:
-  - `/Users/kishore/Downloads/kiket.jpg` (1024x1024 red panda character)
-  - `eventiq/src/components/missioniq-chat.tsx:168` (current "K" text avatar)
-  - `eventiq/src/components/app-sidebar.tsx:178` (sidebar Kiket button)
-  - `eventiq/src/components/chat-message.tsx` (message avatar)
-- Problem:
-  - Kiket currently uses a plain "K" text avatar. The user has a designed red panda mascot image that should be used instead.
-- Resolution:
-  - Replaced Bot icon in `chat-message.tsx` with `<img src="/kiket-avatar.jpg">` (28px circle).
-  - Replaced "K" header avatar in `missioniq-chat.tsx` with image (32px rounded-lg).
-  - Replaced "K" empty state avatar in `missioniq-chat.tsx` with image (64px rounded-2xl).
-  - Sidebar/strip kept as icons (too small for images).
-- Acceptance criteria:
-  - Kiket's red panda avatar appears in sidebar, chat header, assistant messages, and empty state.
-  - Image is optimized for web (compressed, appropriate size).
+---
 
-## IMP-049: Deal Value Field in Company Detail
-- Priority: `P1`
-- Status: `completed` (v3.1.88)
-- Category: Pipeline, Data Model
-- Evidence:
-  - `eventiq/src/components/company-detail.tsx`
-  - `eventiq/src/lib/types.ts`
-- Problem:
-  - Companies in pipeline have no deal value field. Users need to track expected revenue per deal.
-- Improvement:
-  - Add `dealValue?: number` to Company type or pipeline record.
-  - Add editable deal value field in company detail panel (pipeline section).
-  - Display deal value in pipeline board cards.
-  - Persist via localStorage + Supabase sync.
-- Acceptance criteria:
-  - Users can set/edit deal value per company.
-  - Deal value displays on pipeline board.
-  - Values persist across sessions.
+## Completed & Removed Items (Changelog)
 
-## IMP-050: Make Companies the Default Tab
-- Priority: `P1`
-- Status: `done` (v3.1.84)
-- Category: Navigation, UX
-- Evidence:
-  - `eventiq/src/components/app-sidebar.tsx:58` (Mission Control is first nav item)
-  - `eventiq/src/app/page.tsx` (initial tab state)
-- Problem:
-  - Mission Control is the default first tab, but Companies is the most frequently used view and should be the default.
-- Improvement:
-  - Reorder `coreNavItems` to put Companies first (shortcut "1").
-  - Change default `activeTab` state to `"companies"`.
-- Acceptance criteria:
-  - App opens to Companies tab by default.
-  - Companies has keyboard shortcut "1".
+**Completed (removed v3.1.94):**
+- IMP-016: Remove Frontend-Embedded Credentials — done v3.1.86
+- IMP-046: Kiket User Attribution in Memory — done v3.1.88
+- IMP-047: Auto-Collapse Sidebar When Chat Opens — done v3.1.86
+- IMP-048: Kiket Avatar Image — done v3.1.86
+- IMP-049: Deal Value Field in Company Detail — done v3.1.88
+- IMP-050: Make Companies Default Tab — done v3.1.84
+- IMP-051: Combine Mission Control + Today — done v3.1.88
+- IMP-052: Persistent Kiket Across All Tabs — done v3.1.86
+- IMP-053: Deep-Linking from Kiket Responses — done v3.1.88
+- IMP-054: Expose HubSpot APIs to Kiket — done v3.1.88
 
-## IMP-051: Combine Mission Control and Today into Single Page
-- Priority: `P2`
-- Status: `completed` (v3.1.88)
-- Category: Navigation, UX, Architecture
-- Evidence:
-  - `eventiq/src/components/app-sidebar.tsx:58-62` (separate Mission Control and Today tabs)
-  - `eventiq/src/components/mission-control-tab.tsx`
-  - `eventiq/src/components/schedule-tab.tsx`
-- Problem:
-  - Mission Control and Today (schedule/checklist) are separate tabs but conceptually related. Combining them reduces navigation friction and creates a more useful daily command center.
-- Improvement:
-  - Design a unified "Command Center" view that integrates morning briefing, today's schedule, and active tasks.
-  - Remove redundant navigation entry.
-- Acceptance criteria:
-  - Single unified page replaces two separate tabs.
-  - All functionality from both views is preserved.
-  - Navigation is simplified.
-
-## IMP-052: Persistent Kiket Across All Tabs
-- Priority: `P1`
-- Status: `done` (v3.1.86)
-- Category: Kiket, Layout, Architecture
-- Evidence:
-  - `eventiq/src/app/page.tsx` (Kiket panel lives inside main page conditional rendering)
-- Problem:
-  - Kiket chat panel is currently only visible when on the Companies tab. It should be accessible from any tab (Pipeline, Map, Resources, etc.).
-- Resolution:
-  - Restructured `page.tsx` layout so desktop Kiket panel sits outside the tab-specific conditional.
-  - Layout: `flex → [tab content (flex-1)] + [kiket panel (shrink-0)]` on desktop.
-  - Mobile Kiket Sheet also moved outside tab conditional.
-  - WebSocket connection and chat state preserved across all tab switches.
-- Acceptance criteria:
-  - Kiket panel stays open when switching between any tabs.
-  - WebSocket connection is not interrupted by tab changes.
-  - Chat history is preserved across navigation.
-
-## IMP-054: Expose HubSpot APIs to Kiket
-- Priority: `P1`
-- Status: `completed` (v3.1.88)
-- Category: Kiket, Integrations, CRM
-- Problem:
-  - Kiket cannot access HubSpot CRM data (deals, contacts, activities, pipeline). Team members need to switch between EventIQ and HubSpot for a complete picture.
-- Improvement:
-  - Add HubSpot API tool endpoints (search contacts, get deals, list activities, update deal stage).
-  - Register HubSpot tools in OpenClaw's skill config so Kiket can query CRM data.
-  - Enable queries like "what's the deal status with X?" or "show me recent HubSpot activity for Y."
-- Acceptance criteria:
-  - Kiket can search HubSpot contacts and companies.
-  - Kiket can read deal pipeline and stage information.
-  - Kiket can report on recent CRM activities for an account.
-
-## IMP-053: Deep-Linking from Kiket Responses
-- Priority: `P2`
-- Status: `completed` (v3.1.88)
-- Category: Kiket, Navigation, UX
-- Evidence:
-  - `eventiq/src/components/chat-message.tsx` (markdown renderer)
-  - `eventiq/src/app/page.tsx` (tab/company selection state)
-- Problem:
-  - When Kiket mentions a company or leader (e.g., "The leaders at Fortun Advance are..."), users should be able to click to navigate directly to that company's detail view.
-- Improvement:
-  - Kiket should emit structured entity references in responses (company names, leader names).
-  - Chat message renderer should detect company/leader mentions and make them clickable.
-  - Clicking navigates to the Companies tab with that company selected and detail panel open.
-- Acceptance criteria:
-  - Company names in Kiket responses are clickable links.
-  - Clicking navigates to company detail view.
-  - Works for both company names and leader names (navigates to parent company).
+**Removed as stale (v3.1.94):**
+- IMP-001: Centralize API Auth — already implemented in `tool-auth.ts` + `api-helpers.ts`
+- IMP-008: Sheets Sync Hardening — sheets sync deprecated, data now in Supabase
+- IMP-014: Portable Tooling Paths — referenced `integrate_research.py` which no longer exists
