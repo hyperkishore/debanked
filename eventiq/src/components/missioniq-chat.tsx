@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { ChatMessage } from "@/components/chat-message";
 import { OpenClawClient, type ConnectionState, type ChatMessage as ChatMsg } from "@/lib/openclaw-client";
 import { Send, Plus, Loader2, X } from "lucide-react";
+import { generateDynamicPrompts } from "@/lib/dynamic-prompts";
 
 interface MissionIQChatProps {
   wsUrl: string;
@@ -254,10 +255,7 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
                   : "Your GTM intelligence assistant. Ask about companies, leaders, outreach briefs, or market stats."}
               </p>
               <div className={`grid gap-2 ${compact ? "grid-cols-1 max-w-xs" : "grid-cols-1 sm:grid-cols-2 max-w-lg"}`}>
-                {(compact
-                  ? ["Top funders in New York", "Market stats by category"]
-                  : ["Tell me about Fortun Advance", "Top funders in New York", "Outreach brief for NY Tribeca", "Market stats by category"]
-                ).map((suggestion) => (
+                {generateDynamicPrompts({ compact: compact ?? false }).map((suggestion) => (
                   <Button
                     key={suggestion}
                     variant="outline"

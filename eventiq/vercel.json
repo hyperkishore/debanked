@@ -19,6 +19,14 @@
     {
       "path": "/api/cron/enrich-contacts",
       "schedule": "0 10 * * *"
+    },
+    {
+      "path": "/api/cron/news-ingest",
+      "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/cron/linkedin-activity",
+      "schedule": "0 6 * * 1"
     }
   ]
 }

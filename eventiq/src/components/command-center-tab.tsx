@@ -45,7 +45,13 @@ import {
   Newspaper,
   Target,
   ListChecks,
+  Rss,
+  Activity,
 } from "lucide-react";
+import { NewsFeed } from "@/components/command-center/news-feed";
+import { ActivityFeed } from "@/components/command-center/activity-feed";
+import { DailyActions } from "@/components/command-center/daily-actions";
+import { PipelineSnapshot } from "@/components/command-center/pipeline-snapshot";
 
 interface CommandCenterTabProps {
   companies: Company[];
@@ -291,6 +297,59 @@ export function CommandCenterTab({
     <div className="h-full flex flex-col bg-background">
       <ScrollArea className="flex-1">
         <div className="max-w-5xl mx-auto p-6 space-y-8">
+
+          {/* === Intelligence 2-Panel: Feed | Actions === */}
+          <section>
+            <div className="flex items-center gap-2 mb-4">
+              <Activity className="h-4 w-4 text-brand" />
+              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Intelligence Hub</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              {/* Left Panel: Feed */}
+              <Card className="p-4 shadow-none space-y-4">
+                <div className="flex items-center gap-2">
+                  <Rss className="h-3.5 w-3.5 text-muted-foreground" />
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Signal Feed</h3>
+                </div>
+                <div className="space-y-4">
+                  <NewsFeed limit={8} />
+                  <Separator />
+                  <div className="flex items-center gap-2 mb-2">
+                    <Linkedin className="h-3.5 w-3.5 text-muted-foreground" />
+                    <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">LinkedIn Activity</h4>
+                  </div>
+                  <ActivityFeed limit={5} />
+                </div>
+              </Card>
+
+              {/* Right Panel: Actions */}
+              <Card className="p-4 shadow-none space-y-4">
+                <div className="flex items-center gap-2">
+                  <Target className="h-3.5 w-3.5 text-muted-foreground" />
+                  <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Today&apos;s Actions</h3>
+                </div>
+                <DailyActions
+                  companies={companies}
+                  engagements={engagements}
+                  pipelineState={pipelineState}
+                  followUps={followUps}
+                  onSelectCompany={onSelectCompany}
+                  onOpenEngagement={onOpenEngagement}
+                  onCompleteFollowUp={onCompleteFollowUp}
+                />
+                <Separator />
+                <div className="flex items-center gap-2 mb-2">
+                  <DollarSign className="h-3.5 w-3.5 text-muted-foreground" />
+                  <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Pipeline Health</h4>
+                </div>
+                <PipelineSnapshot
+                  companies={companies}
+                  pipelineState={pipelineState}
+                  onSelectCompany={onSelectCompany}
+                />
+              </Card>
+            </div>
+          </section>
 
           {/* === 1. Pipeline Snapshot === */}
           <section>

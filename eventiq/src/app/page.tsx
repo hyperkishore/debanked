@@ -54,6 +54,7 @@ import { ResearchTab } from "@/components/research-tab";
 import { ScheduleTab } from "@/components/schedule-tab";
 import { TaskQueueState, DEFAULT_TASK_QUEUE_STATE } from "@/lib/task-queue-helpers";
 import { CommandCenterTab } from "@/components/command-center-tab";
+import { MarketingTab } from "@/components/marketing-tab";
 import { DatabaseHealthTab } from "@/components/database-health-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
 import { MarketMapTab } from "@/components/market-map-tab";
@@ -813,6 +814,8 @@ export default function Home() {
             onSelectCompany={handleSelect}
           />
         );
+      case "marketing":
+        return <MarketingTab />;
       default:
         return null;
     }

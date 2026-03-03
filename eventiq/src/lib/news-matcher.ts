@@ -1,0 +1,88 @@
+/**
+ * Fuzzy company name matching for news articles.
+ * Used by the Google Alert RSS cron to match article text against our company dataset.
+ */
+
+interface CompanyRef {
+  id: number;
+  name: string;
+  type: string;
+  priority: number;
+}
+
+/** Normalize a company name for matching: lowercase, strip common suffixes, trim. */
+function normalize(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/\b(inc|llc|corp|ltd|co|group|holdings|capital|financial|services|lending)\b\.?/g, "")
+    .replace(/[.,'"!?()]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** Check if a company name appears in article text with word boundary awareness. */
+function nameAppearsInText(companyName: string, text: string): boolean {
+  const normalized = normalize(companyName);
+  const normalizedText = normalize(text);
+
+  // Skip very short names (too many false positives)
+  if (normalized.length < 4) return false;
+
+  // Exact normalized match
+  if (normalizedText.includes(normalized)) return true;
+
+  // Try original name (case-insensitive) for proper nouns like "Kapitus"
+  const lowerName = companyName.toLowerCase().trim();
+  const lowerText = text.toLowerCase();
+
+  if (lowerName.length >= 5 && lowerText.includes(lowerName)) return true;
+
+  return false;
+}
+
+export interface NewsMatchResult {
+  companyId: number;
+  companyName: string;
+  companyType: string;
+  companyPriority: number;
+}
+
+/**
+ * Match article text against a list of companies.
+ * Returns all companies whose name appears in the text.
+ * Prioritizes higher-priority matches (lower priority number = more important).
+ */
+export function matchCompanies(
+  articleText: string,
+  companies: CompanyRef[]
+): NewsMatchResult[] {
+  const matches: NewsMatchResult[] = [];
+
+  for (const company of companies) {
+    if (nameAppearsInText(company.name, articleText)) {
+      matches.push({
+        companyId: company.id,
+        companyName: company.name,
+        companyType: company.type,
+        companyPriority: company.priority,
+      });
+    }
+  }
+
+  // Sort by priority (lower = more important)
+  matches.sort((a, b) => a.companyPriority - b.companyPriority);
+
+  return matches;
+}
+
+/**
+ * Match a single article against companies and return the best match.
+ * Prefers higher-priority companies.
+ */
+export function bestMatch(
+  articleText: string,
+  companies: CompanyRef[]
+): NewsMatchResult | null {
+  const matches = matchCompanies(articleText, companies);
+  return matches[0] || null;
+}
