@@ -119,15 +119,30 @@ Google Alerts provides free, automated monitoring for specific keywords. Each al
 | `"fintech lending" OR "alternative lending"` | Industry trends |
 | `"underwriting automation" OR "lending technology"` | Competitive landscape |
 
+### Active alert feeds (created 2026-03-03)
+
+| Alert Keyword | RSS Feed URL |
+|---|---|
+| `"merchant cash advance"` | `https://www.google.com/alerts/feeds/07960793123871404360/11759270683551369202` |
+| `"small business lending" OR "SMB lending"` | `https://www.google.com/alerts/feeds/07960793123871404360/14532032581012843189` |
+| `"equipment finance" OR "equipment leasing"` | `https://www.google.com/alerts/feeds/07960793123871404360/3545388359371575218` |
+| `"SBA loan" OR "SBA lender"` | `https://www.google.com/alerts/feeds/07960793123871404360/14500420346563430784` |
+| `"invoice factoring"` | `https://www.google.com/alerts/feeds/07960793123871404360/2906406993250186369` |
+| `"revenue based financing"` | `https://www.google.com/alerts/feeds/07960793123871404360/5793897245785832553` |
+| `"fintech lending" OR "alternative lending"` | `https://www.google.com/alerts/feeds/07960793123871404360/17868821739284079329` |
+| `"underwriting automation" OR "lending technology"` | `https://www.google.com/alerts/feeds/07960793123871404360/17822744728826604951` |
+
+All alerts configured with: RSS feed delivery, As-it-happens frequency, English, Any Region, Only the best results.
+
 ### Setting the environment variable
 
-```bash
-# Single feed
-npx vercel env add GOOGLE_ALERT_RSS_URLS production --scope hv-one
-# Paste the feed URL when prompted
+The `GOOGLE_ALERT_RSS_URLS` env var is already set on Vercel production with all 8 feeds above (comma-separated).
 
-# Multiple feeds (comma-separated, no spaces around commas)
-# https://www.google.com/alerts/feeds/abc123,https://www.google.com/alerts/feeds/def456
+```bash
+# To update or add new feeds:
+npx vercel env rm GOOGLE_ALERT_RSS_URLS production --scope hv-one
+npx vercel env add GOOGLE_ALERT_RSS_URLS production --scope hv-one
+# Paste comma-separated feed URLs when prompted (no spaces around commas)
 ```
 
 The `news-ingest` pipeline reads all configured feeds in parallel, merges the articles, and matches them against your company dataset.
