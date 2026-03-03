@@ -24,6 +24,7 @@ import {
   Zap,
   Shield,
   MessageSquare,
+  Crosshair,
 } from "lucide-react";
 
 interface PreCallBriefingDialogProps {
@@ -225,6 +226,37 @@ export function PreCallBriefingDialog({
               </div>
             </div>
           </BriefSection>
+
+          {/* PRODUCT FIT */}
+          {briefing.productFit && (
+            <BriefSection icon={Crosshair} title="RECOMMENDED PRODUCTS">
+              <div className="space-y-2">
+                <div className="flex flex-wrap gap-1.5">
+                  {briefing.productFit.recommendedProducts.map((name, i) => (
+                    <Badge key={i} variant="outline" className="text-xs px-1.5 py-0.5 bg-purple-500/15 text-purple-400 border-purple-500/30">
+                      {name}
+                    </Badge>
+                  ))}
+                </div>
+                {briefing.productFit.topTalkingPoint && (
+                  <div className="flex items-start gap-2">
+                    <p className="text-xs text-foreground/80 bg-purple-500/5 border border-purple-500/20 rounded-lg p-2 flex-1 leading-relaxed">
+                      {briefing.productFit.topTalkingPoint}
+                    </p>
+                    <CopyButton text={briefing.productFit.topTalkingPoint} />
+                  </div>
+                )}
+                {briefing.productFit.topObjectionPreempt && (
+                  <div className="space-y-1">
+                    <p className="text-xs font-semibold text-muted-foreground">Objection prep:</p>
+                    <p className="text-xs text-foreground/70 bg-secondary/30 rounded-lg p-2 leading-relaxed">
+                      {briefing.productFit.topObjectionPreempt}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </BriefSection>
+          )}
 
           {/* LAND MINES */}
           {briefing.landMines.length > 0 && (

@@ -1,8 +1,9 @@
-import { Company, Leader, EngagementEntry } from "./types";
+import { Company, Leader, EngagementEntry, ProductFitSignal } from "./types";
 import { getCompanyEngagements, formatEngagementTime, formatActionLabel } from "./engagement-helpers";
 import { PipelineRecord } from "./pipeline-helpers";
 import { detectPersona, getPersonaConfig } from "./persona-helpers";
 import { detectCompetitors } from "./competitive-intel-helpers";
+import { computeProductFit, generateProductTalkingPoints } from "./product-fit";
 
 export interface PersonHook {
   hook: string;
@@ -25,6 +26,12 @@ export interface PersonalizedAsks {
   openingAsk: string;
   closingAsk: string;
   fallbackAsk: string;
+}
+
+export interface ProductFitBriefing {
+  recommendedProducts: string[];          // product names (display)
+  topTalkingPoint: string;                // best product-specific talking point
+  topObjectionPreempt: string;            // product-specific objection to prepare for
 }
 
 export interface PreCallBriefing {
@@ -55,6 +62,7 @@ export interface PreCallBriefing {
   triggerContext: TriggerContext | null;
   objectionPreempts: ObjectionPreempt[];
   personalizedAsks: PersonalizedAsks;
+  productFit: ProductFitBriefing | null;
 }
 
 function detectLandMines(company: Company, pipelineState: Record<string, PipelineRecord>, engagements: EngagementEntry[]): string[] {
@@ -325,6 +333,24 @@ export function generateBriefing(
   const objectionPreempts = buildObjectionPreempts(company, pipelineState);
   const personalizedAsks = buildPersonalizedAsks(leader, company, triggerContext);
 
+  // Product fit briefing
+  const fitResult = computeProductFit(company);
+  let productFitBriefing: ProductFitBriefing | null = null;
+  if (fitResult.recommendedProducts.length > 0) {
+    const talkingPoints = generateProductTalkingPoints(company, fitResult.signals);
+    const topProduct = fitResult.signals[0];
+    const topObjection = topProduct
+      ? `If they say "we handle ${topProduct.productName} internally" — position as augmentation, not replacement. HyperVerge complements existing workflows via API.`
+      : "";
+    productFitBriefing = {
+      recommendedProducts: fitResult.signals
+        .filter(s => fitResult.recommendedProducts.includes(s.productId))
+        .map(s => s.productName),
+      topTalkingPoint: talkingPoints[0] || "",
+      topObjectionPreempt: topObjection,
+    };
+  }
+
   return {
     who: {
       leader,
@@ -340,6 +366,7 @@ export function generateBriefing(
     triggerContext,
     objectionPreempts,
     personalizedAsks,
+    productFit: productFitBriefing,
   };
 }
 
@@ -413,6 +440,19 @@ export function briefingToText(briefing: PreCallBriefing, companyName: string): 
   lines.push(`  If going well: ${briefing.personalizedAsks.closingAsk}`);
   lines.push(`  If not interested: ${briefing.personalizedAsks.fallbackAsk}`);
   lines.push('');
+
+  // PRODUCT FIT
+  if (briefing.productFit) {
+    lines.push('RECOMMENDED PRODUCTS:');
+    lines.push(`  ${briefing.productFit.recommendedProducts.join(', ')}`);
+    if (briefing.productFit.topTalkingPoint) {
+      lines.push(`  Talking point: ${briefing.productFit.topTalkingPoint}`);
+    }
+    if (briefing.productFit.topObjectionPreempt) {
+      lines.push(`  Objection prep: ${briefing.productFit.topObjectionPreempt}`);
+    }
+    lines.push('');
+  }
 
   // LAND MINES
   if (briefing.landMines.length > 0) {

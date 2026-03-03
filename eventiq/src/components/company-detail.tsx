@@ -9,6 +9,7 @@ import { detectPersona, getPersonaConfig } from "@/lib/persona-helpers";
 import { generateBattlecards, getCategoryStyle } from "@/lib/battlecard-helpers";
 import { computeReadinessScore, getReadinessLabel, getReadinessColor, getReadinessBgColor } from "@/lib/readiness-score";
 import { getCompanyProducts, ProductStatus, getStatusColor, getStatusLabel, getSourceLabel } from "@/lib/product-helpers";
+import { computeProductFit, ProductFitResult, getProductFitBadgeColor, getProductFitLabel } from "@/lib/product-fit";
 import { generateTriggerCards, TriggerCard } from "@/lib/trigger-card-helpers";
 import { buildFeedItems, FeedItem, parseDateFromNews } from "@/lib/feed-helpers";
 import { computeWhyNow, WhyNowResult } from "@/lib/why-now-engine";
@@ -211,12 +212,6 @@ export function CompanyDetail({
   const researched = isResearched(company);
   const quickLinks = generateQuickLinks(company);
 
-  // Battlecards
-  const battlecards = useMemo(
-    () => generateBattlecards(company, pipelineState),
-    [company, pipelineState]
-  );
-
   // Feed items for this company (used by readiness + trigger cards)
   const feedItems = useMemo(() => buildFeedItems([company]), [company]);
 
@@ -249,6 +244,25 @@ export function CompanyDetail({
   const productStatuses = useMemo(
     () => getCompanyProducts(company),
     [company]
+  );
+
+  // Product fit engine
+  const productFit = useMemo(
+    () => computeProductFit(company),
+    [company]
+  );
+
+  // Enrich company with computed product fit (for battlecards/briefing)
+  const enrichedCompany = useMemo(() => ({
+    ...company,
+    productFit: productFit.signals,
+    recommendedProducts: productFit.recommendedProducts,
+  }), [company, productFit]);
+
+  // Battlecards (uses enrichedCompany for product-specific cards)
+  const battlecards = useMemo(
+    () => generateBattlecards(enrichedCompany, pipelineState),
+    [enrichedCompany, pipelineState]
   );
 
   // Competitive intel
@@ -436,6 +450,45 @@ export function CompanyDetail({
           </div>
         )}
 
+        {/* Product Fit Badges */}
+        {productFit.recommendedProducts.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
+            <span className="text-xs text-muted-foreground/60 mr-0.5">Fit:</span>
+            {productFit.signals
+              .filter(s => productFit.recommendedProducts.includes(s.productId))
+              .map((signal) => (
+                <Tooltip key={signal.productId}>
+                  <TooltipTrigger asChild>
+                    <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 h-5 cursor-default", getProductFitBadgeColor(signal))}>
+                      <Crosshair className="h-2.5 w-2.5 mr-0.5" />
+                      {signal.productName}
+                    </Badge>
+                  </TooltipTrigger>
+                  <TooltipContent side="bottom" className="max-w-xs">
+                    <div className="space-y-1">
+                      <div className="font-semibold text-xs">{signal.productName} — {getProductFitLabel(signal)}</div>
+                      <div className="text-xs text-muted-foreground">
+                        Applicability: {signal.applicability}/100 | Urgency: {signal.urgency}/100
+                      </div>
+                      {signal.painPoints.length > 0 && (
+                        <div className="text-xs">
+                          {signal.painPoints.map((pp, i) => (
+                            <div key={i} className="text-muted-foreground">- {pp}</div>
+                          ))}
+                        </div>
+                      )}
+                      {signal.competitorProducts && signal.competitorProducts.length > 0 && (
+                        <div className="text-xs text-amber-400">
+                          Current: {signal.competitorProducts.join(', ')}
+                        </div>
+                      )}
+                    </div>
+                  </TooltipContent>
+                </Tooltip>
+              ))}
+          </div>
+        )}
+
         {/* Tags (display only) */}
         {tags.length > 0 && (
           <div className="flex flex-wrap items-center gap-1 mt-1.5">
@@ -554,9 +607,9 @@ export function CompanyDetail({
                 size="sm"
                 className="h-6 text-xs px-2 gap-1 text-muted-foreground hover:text-brand hover:border-brand/40"
                 onClick={() => {
-                  const leader = company.leaders?.find(l => l.email) || company.leaders?.[0];
+                  const leader = enrichedCompany.leaders?.find(l => l.email) || enrichedCompany.leaders?.[0];
                   const briefing = leader
-                    ? generateBriefing(company, leader, engagements, pipelineState)
+                    ? generateBriefing(enrichedCompany, leader, engagements, pipelineState)
                     : null;
                   const whyNowSection = whyNow.score > 0
                     ? `\n\nWHY NOW (${whyNow.score}/10):\n${whyNow.topAngle}\n${whyNow.angles.slice(0, 3).map(a => `- ${a.headline} (${a.type}, ${a.age_days}d ago)`).join("\n")}`
@@ -1047,7 +1100,7 @@ export function CompanyDetail({
         <PreCallBriefingDialog
           open={!!briefingLeader}
           onClose={() => setBriefingLeader(null)}
-          company={company}
+          company={enrichedCompany}
           leader={briefingLeader}
           engagements={engagements}
           pipelineState={pipelineState}

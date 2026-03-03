@@ -39,6 +39,16 @@ export interface Leader {
   outreachNote?: string;           // why this channel is recommended
 }
 
+export interface ProductFitSignal {
+  productId: string;           // matches PRODUCT_CATALOG id
+  productName: string;         // display name
+  applicability: number;       // 0-100: does company need this?
+  urgency: number;             // 0-100: how soon?
+  painPoints: string[];        // specific pain evidence from desc/notes
+  competitorProducts?: string[]; // what they use now
+  talkingPoint: string;        // product-specific value proposition
+}
+
 export type CompanyCategory = "funder" | "iso" | "marketplace" | "bank" | "technology" | "competitor" | "service_provider";
 
 export type SubVertical =
@@ -183,6 +193,9 @@ export interface Company {
   hubspotDeals?: HubSpotDeal[];
   // PhantomBuster-enriched structured intel
   intel?: CompanyIntel;
+  // Product fit engine — computed at runtime
+  productFit?: ProductFitSignal[];
+  recommendedProducts?: string[];  // top 2-3 product IDs, ordered by combined score
 }
 
 export function isResearched(c: Company): boolean {

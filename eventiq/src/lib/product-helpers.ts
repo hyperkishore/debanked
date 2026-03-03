@@ -301,13 +301,13 @@ export function detectProductsFromDeals(deals: HubSpotDeal[]): ProductStatus[] {
  * a product could be relevant, include it as a "prospect" with source "inferred".
  * Skips products already detected from deals.
  */
-interface InferenceRule {
+export interface InferenceRule {
   productId: string;
   keywords: string[];
   categories?: CompanyCategory[];
 }
 
-const INFERENCE_RULES: InferenceRule[] = [
+export const INFERENCE_RULES: InferenceRule[] = [
   {
     productId: "bsa",
     keywords: [
