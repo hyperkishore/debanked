@@ -35,6 +35,32 @@ interface FeedArticle {
   source: string;
 }
 
+/**
+ * Extract the real publication name from a Google Alert headline.
+ * Google Alerts format: "Article Title - Publication Name"
+ * Also used by Google News: "Title - Source"
+ */
+function extractSource(headline: string, fallback: string): string {
+  const dashMatch = headline.match(/\s-\s([^-]+)$/);
+  if (dashMatch) return dashMatch[1].trim();
+  return fallback;
+}
+
+/**
+ * Extract the direct article URL from a Google redirect URL.
+ * Google Alerts links are: https://www.google.com/url?...&url=REAL_URL&...
+ */
+function extractDirectUrl(googleUrl: string): string {
+  try {
+    const url = new URL(googleUrl);
+    const directUrl = url.searchParams.get("url");
+    if (directUrl) return directUrl;
+  } catch {
+    // Not a valid URL or not a Google redirect
+  }
+  return googleUrl;
+}
+
 async function fetchGoogleAlertFeeds(): Promise<FeedArticle[]> {
   if (GOOGLE_ALERT_FEED_URLS.length === 0) {
     console.log("[NewsIngest] No GOOGLE_ALERT_RSS_URLS configured, skipping");
@@ -159,18 +185,28 @@ export async function GET(request: NextRequest) {
         const signalType = classifySignalType(article.title, article.description);
         const heat = classifyHeat(match.companyType, match.companyPriority, article.publishedAt);
 
+        // Extract real publication name and direct URL for Google Alert articles
+        const publicationName = article.source === "google_alert"
+          ? extractSource(article.title, "Google Alert")
+          : article.source === "debanked_rss"
+            ? extractSource(article.title, "deBanked")
+            : article.source;
+        const directUrl = article.source === "google_alert"
+          ? extractDirectUrl(article.link)
+          : article.link;
+
         rows.push({
           company_id: match.companyId,
           company_name: match.companyName,
           headline: article.title.slice(0, 500),
-          source: article.source.slice(0, 200),
+          source: publicationName.slice(0, 200),
           description: article.description.slice(0, 1000),
           published_at: article.publishedAt
             ? new Date(article.publishedAt).toISOString().slice(0, 10)
             : null,
           signal_type: signalType,
           heat,
-          source_url: article.link.slice(0, 500),
+          source_url: directUrl.slice(0, 500),
         });
       }
     }

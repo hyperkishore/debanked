@@ -112,6 +112,9 @@ export function NewsFeed({ limit = 15 }: NewsFeedProps) {
                 )}
               </div>
               <p className="text-sm font-medium line-clamp-2">{item.headline}</p>
+              {item.description && (
+                <p className="text-xs text-muted-foreground line-clamp-2 mt-0.5">{item.description}</p>
+              )}
               <div className="flex items-center gap-1.5 mt-1">
                 <span className="text-xs text-brand font-medium">{item.company_name}</span>
                 <span className="text-xs text-muted-foreground/40">via {item.source}</span>

@@ -28,14 +28,21 @@ function nameAppearsInText(companyName: string, text: string): boolean {
   // Skip very short names (too many false positives)
   if (normalized.length < 4) return false;
 
-  // Exact normalized match
-  if (normalizedText.includes(normalized)) return true;
+  // Use word-boundary regex to prevent partial matches
+  // e.g. "merchant cash" should NOT match "merchant cash advance"
+  const escaped = normalized.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const boundaryRegex = new RegExp(`(?:^|\\s|[^a-z])${escaped}(?:\\s|[^a-z]|$)`);
+  if (boundaryRegex.test(` ${normalizedText} `)) return true;
 
   // Try original name (case-insensitive) for proper nouns like "Kapitus"
   const lowerName = companyName.toLowerCase().trim();
   const lowerText = text.toLowerCase();
 
-  if (lowerName.length >= 5 && lowerText.includes(lowerName)) return true;
+  if (lowerName.length >= 5) {
+    const escapedOrig = lowerName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const origRegex = new RegExp(`(?:^|\\s|[^a-z])${escapedOrig}(?:\\s|[^a-z]|$)`);
+    if (origRegex.test(` ${lowerText} `)) return true;
+  }
 
   return false;
 }
