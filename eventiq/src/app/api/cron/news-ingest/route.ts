@@ -110,12 +110,12 @@ async function fetchDeBankedFeed(): Promise<FeedArticle[]> {
 
 function classifySignalType(headline: string, description: string): string {
   const text = `${headline} ${description}`.toLowerCase();
-  if (/securitiz|abs|credit facilit|funding round|raise|series [a-f]|warehouse|capital|million|billion|\$\d/.test(text)) return "funding";
-  if (/partner|integrat|collaborat|alliance|joined|embedded|api/.test(text)) return "partnership";
+  if (/securitiz|abs\b|credit facilit|funding round|raise[ds]?\s|series [a-f]|warehouse line|venture capital|million|billion|\$\d/.test(text)) return "funding";
+  if (/partner|integrat|collaborat|alliance|joined|embedded|api\b/.test(text)) return "partnership";
   if (/launch|new product|new feature|platform|tool|service|division/.test(text)) return "product";
   if (/hire|appoint|ceo|cro|ciso|cmo|chief|new leadership|new head/.test(text)) return "hiring";
-  if (/regulat|compliance|law|bill|act|fda|fcc|fdic|sba|ftc|settlement/.test(text)) return "regulatory";
-  if (/milestone|surpass|\d+b|\d+m|record|award|ranked|best|fastest/.test(text)) return "milestone";
+  if (/regulat|compliance|law\b|bill\b|act\b|fda|fcc|fdic|sba\b|ftc|settlement/.test(text)) return "regulatory";
+  if (/milestone|surpass|\d+b\b|\d+m\b|record|award|ranked|best|fastest/.test(text)) return "milestone";
   return "general";
 }
 

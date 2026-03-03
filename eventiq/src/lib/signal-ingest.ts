@@ -9,12 +9,12 @@ type SignalHeat = "hot" | "warm" | "cool";
 
 function classifySignalType(headline: string, description: string): SignalType {
   const text = `${headline} ${description}`.toLowerCase();
-  if (/securitiz|abs|credit facilit|funding round|raise|series [a-f]|warehouse|capital|million|billion|\$\d/.test(text)) return "funding";
-  if (/partner|integrat|collaborat|alliance|joined|embedded|api/.test(text)) return "partnership";
+  if (/securitiz|abs\b|credit facilit|funding round|raise[ds]?\s|series [a-f]|warehouse line|venture capital|million|billion|\$\d/.test(text)) return "funding";
+  if (/partner|integrat|collaborat|alliance|joined|embedded|api\b/.test(text)) return "partnership";
   if (/launch|new product|new feature|platform|tool|service|division/.test(text)) return "product";
   if (/hire|appoint|ceo|cro|ciso|cmo|chief|new leadership|new head/.test(text)) return "hiring";
-  if (/regulat|compliance|law|bill|act|fda|fcc|fdic|sba|ftc|settlement/.test(text)) return "regulatory";
-  if (/milestone|surpass|\d+b|\d+m|record|award|ranked|best|fastest/.test(text)) return "milestone";
+  if (/regulat|compliance|law\b|bill\b|act\b|fda|fcc|fdic|sba\b|ftc|settlement/.test(text)) return "regulatory";
+  if (/milestone|surpass|\d+b\b|\d+m\b|record|award|ranked|best|fastest/.test(text)) return "milestone";
   return "general";
 }
 
@@ -85,9 +85,19 @@ export async function runSignalIngestion(
   const tamCompanies = companies.filter((c) => c.priority > 2);
 
   // --- Google News: P0/P1 individual searches (bounded concurrency) ---
+  // For short/ambiguous names, add industry context to the search query
+  // to avoid irrelevant results (e.g. "Marco" → "Marco lending OR fintech")
   const googleStart = Date.now();
   const googleSignals: RawSignal[] = await runBounded(
-    priorityCompanies.map((c) => () => fetchGoogleNews(c.name)),
+    priorityCompanies.map((c) => () => {
+      const name = c.name;
+      // Short names (< 8 chars) or common words need disambiguating context
+      const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American)$/i.test(name);
+      const query = needsContext
+        ? `"${name}" (lending OR fintech OR "merchant cash" OR financing OR "small business")`
+        : `"${name}"`;
+      return fetchGoogleNews(query, name);
+    }),
     5,
     100
   );
@@ -102,7 +112,14 @@ export async function runSignalIngestion(
   if (process.env.BING_NEWS_API_KEY) {
     const bingStart = Date.now();
     const bingSignals: RawSignal[] = await runBounded(
-      priorityCompanies.map((c) => () => fetchBingNews(c.name)),
+      priorityCompanies.map((c) => {
+        const name = c.name;
+        const needsContext = name.length < 8 || /^(Nav|Marco|Cardiff|One Park|Direct|Express|Premier|Elite|First|Rapid|Fast|Prime|National|United|American)$/i.test(name);
+        const query = needsContext
+          ? `"${name}" (lending OR fintech OR financing)`
+          : `"${name}"`;
+        return () => fetchBingNews(query, name);
+      }),
       5,
       100
     );

@@ -7,7 +7,7 @@ const BING_API_ENDPOINT = "https://api.bing.microsoft.com/v7.0/news/search";
  * Requires BING_NEWS_API_KEY env var.
  * Free tier: 1,000 queries/month.
  */
-export async function fetchBingNews(query: string): Promise<RawSignal[]> {
+export async function fetchBingNews(query: string, companyName?: string): Promise<RawSignal[]> {
   const apiKey = process.env.BING_NEWS_API_KEY;
   if (!apiKey) return [];
 
@@ -30,7 +30,7 @@ export async function fetchBingNews(query: string): Promise<RawSignal[]> {
     }
 
     const data = await res.json();
-    return (data.value || []).slice(0, 10).map(
+    const items = (data.value || []).slice(0, 10).map(
       (item: {
         name: string;
         description: string;
@@ -43,9 +43,20 @@ export async function fetchBingNews(query: string): Promise<RawSignal[]> {
         source: item.provider?.[0]?.name || "Bing News",
         sourceUrl: item.url || "",
         publishedAt: item.datePublished || null,
-        matchedCompanyName: query,
+        matchedCompanyName: companyName || query,
       })
     );
+
+    // If searching for a specific company, validate relevance
+    if (companyName) {
+      const nameLower = companyName.toLowerCase();
+      return items.filter((i: RawSignal) => {
+        const text = `${i.headline} ${i.description}`.toLowerCase();
+        return text.includes(nameLower);
+      });
+    }
+
+    return items;
   } catch (err) {
     console.error(`[BingNews] Failed for "${query}":`, err);
     return [];
