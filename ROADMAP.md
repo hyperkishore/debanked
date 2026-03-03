@@ -709,6 +709,44 @@ Lagging metrics:
 10. Add **30-Day Execution Calendar**:
    - day-level ownership, output targets, and weekly checkpoint reviews.
 
+### API-Driven Financial Enrichment Pipeline
+
+Automated financial data enrichment via government and commercial APIs, integrated as Kiket tool endpoints.
+
+#### Phase 1: Free Government APIs (Shipped — v3.1.92)
+
+| Source | Endpoint | Data | Cost |
+|--------|----------|------|------|
+| FDIC BankFind | `/api/tools/fdic?name=<bank>` | Assets, deposits, loans, net income, ROA/ROE, efficiency ratio | Free |
+| SEC EDGAR | `/api/tools/sec?name=<company>` | Revenue, net income, total assets, liabilities, equity (10-K annual) | Free |
+| SBA 7(a) Data | `/api/tools/sba?name=<lender>` | Loan count, total volume, avg loan size, fiscal year | Free |
+
+**Usage**: Kiket auto-queries these when asked about bank size, company financials, or SBA lending. Results supplement EventIQ company profiles.
+
+#### Phase 2: Low-Cost Commercial APIs ($0-100/mo)
+
+| Source | Data | Cost | Priority |
+|--------|------|------|----------|
+| People Data Labs | Revenue ranges, founding year, tech stack | 100 free/mo, then $0.10/record | High — fills revenue gaps |
+| Apollo.io | Contact emails, direct phones, firmographics | 100 free credits/mo | High — improves reachability |
+| Financial Modeling Prep | Public company financials (cleaner than raw XBRL) | $19/mo | Medium — if SEC EDGAR parsing insufficient |
+
+#### Phase 3: Mid-Tier APIs ($100-500/mo)
+
+| Source | Data | Cost | Priority |
+|--------|------|------|----------|
+| Diffbot Enhance | Live web extraction, structured company data | ~$300/mo | Medium — real-time enrichment |
+| BuiltWith | Tech stack detection (CRM, LOS, servicing platforms) | One-time batch ~$200 | Medium — identifies tech competitors |
+
+#### Phase 4: Strategic APIs (>$500/mo, revenue-justified)
+
+| Source | Data | Cost | Priority |
+|--------|------|------|----------|
+| PredictLeads | Hiring signals, job postings, growth indicators | ~$6K/yr | Low — when signal pipeline is mature |
+| Middesk UCC API | UCC lien filings, active lending proof | Custom pricing | Low — when funder verification needed at scale |
+| OpenCorporates | Founding year, registered agent, subsidiary mapping | ~$2.8K/yr | Low — when entity resolution needed |
+| ZoomInfo | Full contact + firmographic database | $15K+/yr | Very low — only when revenue justifies |
+
 ---
 
 ## Part 9: $3M Pipeline Execution Plan
