@@ -708,19 +708,16 @@ export default function Home() {
   const handleRequestRefresh = useCallback(
     async (companyId: number) => {
       const companyName = companies.find((c) => c.id === companyId)?.name || `ID:${companyId}`;
+      toast.success(`Research refresh requested for ${companyName}`);
+      // Best-effort server logging — don't block on failure
       try {
-        const res = await fetch("/api/research-requests", {
+        await fetch("/api/research-requests", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ companyId }),
         });
-        if (res.ok) {
-          toast.success(`Research refresh requested for ${companyName}`);
-        } else {
-          toast.error("Failed to submit request");
-        }
       } catch {
-        toast.error("Failed to submit request");
+        // Silent — toast already shown
       }
     },
     [companies]

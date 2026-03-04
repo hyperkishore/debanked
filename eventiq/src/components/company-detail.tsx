@@ -315,46 +315,6 @@ export function CompanyDetail({
           </div>
         </div>
 
-        {/* Deal Value Section */}
-        {(() => {
-          const deal = (company.hubspotDeals || [])[0];
-          const pipelineRec = pipelineState[company.id];
-          const dealValue = pipelineRec?.dealValue ?? deal?.amount;
-          const closeDate = pipelineRec?.closeDate ?? deal?.closeDate;
-          if (!deal && !pipelineRec?.dealValue) return null;
-
-          const formatDealValue = (v: number) => {
-            if (v >= 1000000) return `$${(v / 1000000).toFixed(1)}M`;
-            if (v >= 1000) return `$${Math.round(v / 1000)}K`;
-            return `$${v}`;
-          };
-
-          return (
-            <div className="flex items-center gap-2 text-xs">
-              <DollarSign className="h-3.5 w-3.5 text-green-400 shrink-0" />
-              {dealValue && dealValue > 0 ? (
-                <span className="font-semibold text-green-400">{formatDealValue(dealValue)}</span>
-              ) : (
-                <span className="text-muted-foreground">No deal value</span>
-              )}
-              {closeDate && (
-                <>
-                  <span className="text-muted-foreground">·</span>
-                  <Calendar className="h-3 w-3 text-muted-foreground" />
-                  <span className="text-muted-foreground">Close: {closeDate}</span>
-                </>
-              )}
-              {onUpdateDeal && (
-                <DealEditPopover
-                  dealValue={dealValue ?? undefined}
-                  closeDate={closeDate ?? undefined}
-                  onSave={(v, d) => onUpdateDeal(company.id, v, d)}
-                />
-              )}
-            </div>
-          );
-        })()}
-
         {/* Readiness Score Breakdown — compact inline + refresh button */}
         <div className="flex items-center gap-2">
           <ReadinessScoreBadge readiness={readiness} label={readinessLabel} />
@@ -385,41 +345,76 @@ export function CompanyDetail({
           })()}
         </div>
 
-        {/* Meta info row */}
-        {(company.location || company.employees || company.website) && (
-          <div className="flex flex-wrap items-center gap-3 mt-1.5 text-xs text-muted-foreground">
-            {company.location && (
-              <span className="flex items-center gap-1">
-                <MapPin className="h-3 w-3" /> {company.location}
-              </span>
-            )}
-            {company.employees !== undefined && company.employees > 0 && (
-              <span className="flex items-center gap-1">
-                <Building2 className="h-3 w-3" /> {company.employees} employees
-              </span>
-            )}
-            {company.website && (
-              <a
-                href={company.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-brand hover:underline"
-              >
-                <Globe className="h-3 w-3" /> Website
-              </a>
-            )}
-            {company.linkedinUrl && (
-              <a
-                href={company.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-brand hover:underline"
-              >
-                <Linkedin className="h-3 w-3" /> LinkedIn
-              </a>
-            )}
-          </div>
-        )}
+        {/* Meta info row — location, employees, website, deal value, close date */}
+        <div className="flex flex-wrap items-center gap-3 mt-1.5 text-xs text-muted-foreground">
+          {company.location && (
+            <span className="flex items-center gap-1">
+              <MapPin className="h-3 w-3" /> {company.location}
+            </span>
+          )}
+          {company.employees !== undefined && company.employees > 0 && (
+            <span className="flex items-center gap-1">
+              <Building2 className="h-3 w-3" /> {company.employees} employees
+            </span>
+          )}
+          {company.website && (
+            <a
+              href={company.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-brand hover:underline"
+            >
+              <Globe className="h-3 w-3" /> Website
+            </a>
+          )}
+          {company.linkedinUrl && (
+            <a
+              href={company.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-brand hover:underline"
+            >
+              <Linkedin className="h-3 w-3" /> LinkedIn
+            </a>
+          )}
+          {(() => {
+            const deal = (company.hubspotDeals || [])[0];
+            const pipelineRec = pipelineState[company.id];
+            const dealValue = pipelineRec?.dealValue ?? deal?.amount;
+            const closeDate = pipelineRec?.closeDate ?? deal?.closeDate;
+            if (!deal && !pipelineRec?.dealValue) return null;
+            const formatDealValue = (v: number) => {
+              if (v >= 1000000) return `$${(v / 1000000).toFixed(1)}M`;
+              if (v >= 1000) return `$${Math.round(v / 1000)}K`;
+              return `$${v}`;
+            };
+            const formatCloseDate = (d: string) => {
+              try { return new Date(d).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }); }
+              catch { return d; }
+            };
+            return (
+              <>
+                {dealValue && dealValue > 0 && (
+                  <span className="flex items-center gap-1 font-semibold text-green-400">
+                    <DollarSign className="h-3 w-3" /> {formatDealValue(dealValue)}
+                  </span>
+                )}
+                {closeDate && (
+                  <span className="flex items-center gap-1">
+                    <Calendar className="h-3 w-3" /> Close: {formatCloseDate(closeDate)}
+                  </span>
+                )}
+                {onUpdateDeal && (
+                  <DealEditPopover
+                    dealValue={dealValue ?? undefined}
+                    closeDate={closeDate ?? undefined}
+                    onSave={(v, d) => onUpdateDeal(company.id, v, d)}
+                  />
+                )}
+              </>
+            );
+          })()}
+        </div>
 
         {/* Enrichment status badges */}
         {company.leaders && company.leaders.length > 0 && (
@@ -447,45 +442,6 @@ export function CompanyDetail({
                 </>
               );
             })()}
-          </div>
-        )}
-
-        {/* Product Fit Badges */}
-        {productFit.recommendedProducts.length > 0 && (
-          <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
-            <span className="text-xs text-muted-foreground/60 mr-0.5">Fit:</span>
-            {productFit.signals
-              .filter(s => productFit.recommendedProducts.includes(s.productId))
-              .map((signal) => (
-                <Tooltip key={signal.productId}>
-                  <TooltipTrigger asChild>
-                    <Badge variant="outline" className={cn("text-xs px-1.5 py-0.5 h-5 cursor-default", getProductFitBadgeColor(signal))}>
-                      <Crosshair className="h-2.5 w-2.5 mr-0.5" />
-                      {signal.productName}
-                    </Badge>
-                  </TooltipTrigger>
-                  <TooltipContent side="bottom" className="max-w-xs">
-                    <div className="space-y-1">
-                      <div className="font-semibold text-xs">{signal.productName} — {getProductFitLabel(signal)}</div>
-                      <div className="text-xs text-muted-foreground">
-                        Applicability: {signal.applicability}/100 | Urgency: {signal.urgency}/100
-                      </div>
-                      {signal.painPoints.length > 0 && (
-                        <div className="text-xs">
-                          {signal.painPoints.map((pp, i) => (
-                            <div key={i} className="text-muted-foreground">- {pp}</div>
-                          ))}
-                        </div>
-                      )}
-                      {signal.competitorProducts && signal.competitorProducts.length > 0 && (
-                        <div className="text-xs text-amber-400">
-                          Current: {signal.competitorProducts.join(', ')}
-                        </div>
-                      )}
-                    </div>
-                  </TooltipContent>
-                </Tooltip>
-              ))}
           </div>
         )}
 

@@ -32,7 +32,7 @@ export async function fetchGoogleNews(
       headline: item.title || "",
       description: item.contentSnippet || item.content || "",
       source: extractSource(item.title || ""),
-      sourceUrl: item.link || "",
+      sourceUrl: extractDirectUrl(item.link || ""),
       publishedAt: item.isoDate || item.pubDate || null,
       matchedCompanyName: companyName || query,
     }));
@@ -51,6 +51,18 @@ export async function fetchGoogleNews(
     console.error(`[GoogleNews] Failed for "${query}":`, err);
     return [];
   }
+}
+
+/** Extract real URL from Google redirect (https://www.google.com/url?url=REAL_URL&...) */
+function extractDirectUrl(googleUrl: string): string {
+  try {
+    const parsed = new URL(googleUrl);
+    const direct = parsed.searchParams.get("url");
+    if (direct) return direct;
+  } catch {
+    // Not a valid URL
+  }
+  return googleUrl;
 }
 
 /**
