@@ -4,8 +4,13 @@ import { fetchWebsiteText } from "./web-fetcher.js";
 import { fetchHubSpotContext } from "./hubspot.js";
 import { synthesizeResearch } from "./synthesizer.js";
 
-const TOOL_API_URL = process.env.TOOL_API_URL || "https://us.hyperverge.space";
-const TOOL_API_KEY = process.env.TOOL_API_KEY;
+// Read env lazily — .env is loaded in worker.js after module imports
+function getToolConfig() {
+  return {
+    url: process.env.TOOL_API_URL || "https://us.hyperverge.space",
+    key: process.env.TOOL_API_KEY,
+  };
+}
 
 /**
  * Full research pipeline for a single company.
@@ -125,6 +130,7 @@ export async function researchCompany(companyId, companyName) {
 }
 
 async function writeCompanyUpdate(companyId, updates) {
+  const { url: TOOL_API_URL, key: TOOL_API_KEY } = getToolConfig();
   if (!TOOL_API_KEY) throw new Error("TOOL_API_KEY is required");
 
   const res = await fetch(`${TOOL_API_URL}/api/tools/company-update`, {
@@ -149,6 +155,7 @@ async function writeCompanyUpdate(companyId, updates) {
 }
 
 async function writeAccountMemory(companyId, content) {
+  const { url: TOOL_API_URL, key: TOOL_API_KEY } = getToolConfig();
   if (!TOOL_API_KEY) return;
 
   try {
