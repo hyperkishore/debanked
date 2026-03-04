@@ -6,6 +6,8 @@ import { getLastEngagement, getChannelConfig, formatEngagementTime } from "@/lib
 import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { StreakData } from "@/lib/streak-helpers";
 import { detectBreaches, type SLABreach } from "@/lib/sla-helpers";
+import { getRicpRolesFilled } from "@/lib/attention-score";
+import type { FunctionalRole } from "@/lib/ricp-taxonomy";
 import { ActionFeed } from "@/components/action-feed";
 import { RevenueMilestoneTracker } from "@/components/revenue-milestone-tracker";
 import { Progress } from "@/components/ui/progress";
@@ -23,6 +25,8 @@ import {
   AlertCircle,
   Clock,
   CheckCircle2,
+  Target,
+  AlertTriangle,
 } from "lucide-react";
 
 interface DashboardTabProps {
@@ -178,6 +182,23 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
       engaged: engaged.length,
       contacted: contacted.length,
       responded: responded.length,
+    };
+  }, [companies]);
+
+  // RICP Coverage (moved from Command Center)
+  const ricpCoverage = useMemo(() => {
+    const RICP: FunctionalRole[] = ["operations", "risk", "underwriting", "finance"];
+    const p0p1 = companies.filter(c => c.priority === 1 || c.priority === 2);
+    const roleCounts: Record<FunctionalRole, number> = { operations: 0, risk: 0, underwriting: 0, finance: 0, sales: 0, technology: 0, general: 0 };
+    for (const c of p0p1) {
+      const filled = getRicpRolesFilled(c.leaders || []);
+      for (const role of filled) roleCounts[role]++;
+    }
+    const total = p0p1.length || 1;
+    return {
+      total: p0p1.length,
+      roles: RICP.map(r => ({ role: r, count: roleCounts[r], pct: Math.round((roleCounts[r] / total) * 100) })),
+      gapsToFill: RICP.reduce((sum, r) => sum + (total - roleCounts[r]), 0),
     };
   }, [companies]);
 
@@ -559,6 +580,37 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
         <Card className="p-4 gap-3 shadow-none space-y-3">
           <SectionHeader title="Priority Breakdown" />
           <StackedBar segments={stats.prioritySegments} />
+        </Card>
+
+        {/* RICP Coverage */}
+        <Card className="p-4 gap-3 shadow-none space-y-3">
+          <div className="flex items-center justify-between">
+            <SectionHeader title="RICP Coverage" description="Role coverage across P0+P1 companies" />
+            <Badge variant="outline" className="text-xs">{ricpCoverage.total} companies</Badge>
+          </div>
+          <div className="grid grid-cols-4 gap-3">
+            {ricpCoverage.roles.map(({ role, count, pct }) => (
+              <div key={role} className="space-y-1">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground capitalize">{role}</span>
+                  <span className="font-medium tabular-nums">{pct}%</span>
+                </div>
+                <div className="w-full bg-muted/30 rounded-full h-2">
+                  <div
+                    className={cn("h-2 rounded-full transition-all", pct >= 80 ? "bg-green-500" : pct >= 50 ? "bg-yellow-500" : "bg-red-500")}
+                    style={{ width: `${pct}%` }}
+                  />
+                </div>
+                <p className="text-xs text-muted-foreground tabular-nums">{count}/{ricpCoverage.total}</p>
+              </div>
+            ))}
+          </div>
+          {ricpCoverage.gapsToFill > 0 && (
+            <p className="text-xs text-muted-foreground">
+              <AlertTriangle className="h-3 w-3 inline text-orange-400 mr-0.5" />
+              {ricpCoverage.gapsToFill} role gaps to fill across P0+P1 companies
+            </p>
+          )}
         </Card>
 
         {/* Data Quality + Research Progress */}

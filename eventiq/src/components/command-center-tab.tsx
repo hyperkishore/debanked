@@ -1,46 +1,16 @@
 "use client";
 
 import { useMemo } from "react";
-import { Company, EngagementEntry, RatingData, EngagementChannel, inferSubVertical } from "@/lib/types";
+import { Company, EngagementEntry, RatingData } from "@/lib/types";
 import { buildFeedItems } from "@/lib/feed-helpers";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
-import { estimateCompanyValue } from "@/lib/revenue-model";
-import { computeReadinessScore, getReadinessLabel, getReadinessColor, type ReadinessLabel } from "@/lib/readiness-score";
-import { getNextBestAction } from "@/lib/outreach-score";
-import { computeWhyNow } from "@/lib/why-now-engine";
-import { computeAttentionScore, getAttentionColor, getAttentionBgColor, getAttentionEmoji, getRicpRolesFilled, type AttentionLabel } from "@/lib/attention-score";
-import type { FunctionalRole } from "@/lib/ricp-taxonomy";
-import { getLastEngagement, getCompanyEngagements } from "@/lib/engagement-helpers";
 import { FollowUpReminder } from "@/lib/follow-up-helpers";
-import { SequenceProgress } from "@/lib/sequence-helpers";
-import type { TaskQueueState } from "@/lib/task-queue-helpers";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
-import {
-  ArrowRight,
-  TrendingUp,
-  Zap,
-  DollarSign,
-  Building2,
-  ExternalLink,
-  Mail,
-  Linkedin,
-  Clock,
-  AlertTriangle,
-  CheckCircle2,
-  Circle,
-  Target,
-  Rss,
-  Activity,
-} from "lucide-react";
-import { NewsFeed } from "@/components/command-center/news-feed";
-import { ActivityFeed } from "@/components/command-center/activity-feed";
-import { DailyActions } from "@/components/command-center/daily-actions";
-import { PipelineSnapshot } from "@/components/command-center/pipeline-snapshot";
+import { Activity, Rss, Target } from "lucide-react";
+import { GoalHeader } from "@/components/command-center/goal-header";
+import { UnifiedFeed } from "@/components/command-center/unified-feed";
+import { TodaysActions } from "@/components/command-center/todays-actions";
+import { PipelineDeals } from "@/components/command-center/pipeline-deals";
 
 interface CommandCenterTabProps {
   companies: Company[];
@@ -49,39 +19,10 @@ interface CommandCenterTabProps {
   ratingState: Record<string, RatingData>;
   metState: Record<string, boolean>;
   followUps: FollowUpReminder[];
-  sequences: Record<number, SequenceProgress>;
-  queueState: TaskQueueState;
-  onUpdateQueueState: (state: TaskQueueState) => void;
   onSelectCompany: (id: number) => void;
   onOpenEngagement: (companyId: number) => void;
   onCompleteFollowUp: (followUpId: string) => void;
-  onSequenceStep?: (companyId: number, stepId: string, channel: EngagementChannel, action: string) => void;
 }
-
-function formatCurrency(value: number): string {
-  if (value >= 1000000) return `$${(value / 1000000).toFixed(1)}M`;
-  if (value >= 1000) return `$${Math.round(value / 1000)}K`;
-  return `$${value}`;
-}
-
-function daysAgo(dateStr: string): number {
-  return Math.floor((Date.now() - new Date(dateStr).getTime()) / 86400000);
-}
-
-function formatDaysAgo(days: number): string {
-  if (days === 0) return "today";
-  if (days === 1) return "yesterday";
-  if (days < 7) return `${days}d ago`;
-  if (days < 30) return `${Math.floor(days / 7)}w ago`;
-  return `${Math.floor(days / 30)}mo ago`;
-}
-
-const typeBadgeColors: Record<string, string> = {
-  SQO: "bg-[var(--sqo)]/15 text-[var(--sqo)]",
-  Client: "bg-[var(--client)]/15 text-[var(--client)]",
-  ICP: "bg-[var(--icp)]/15 text-[var(--icp)]",
-  TAM: "bg-[var(--tam)]/15 text-[var(--tam)]",
-};
 
 export function CommandCenterTab({
   companies,
@@ -90,410 +31,72 @@ export function CommandCenterTab({
   ratingState,
   metState,
   followUps,
-  sequences,
-  queueState: rawQueueState,
-  onUpdateQueueState,
   onSelectCompany,
   onOpenEngagement,
   onCompleteFollowUp,
-  onSequenceStep,
 }: CommandCenterTabProps) {
   const feedItems = useMemo(() => buildFeedItems(companies), [companies]);
-
-  // === Pipeline Snapshot (from MissionControlTab) ===
-  const hubspotSnapshot = useMemo(() => {
-    const activeDeals: Array<{ company: Company; deal: NonNullable<Company["hubspotDeals"]>[0]; isActive: boolean }> = [];
-    let totalPipeline = 0;
-    let totalClosed = 0;
-    let activeCount = 0;
-
-    for (const c of companies) {
-      for (const deal of c.hubspotDeals || []) {
-        const stage = (deal.stageLabel || deal.stage || "").toLowerCase();
-        const isWon = stage.includes("closed won");
-        const isLost = stage.includes("closed lost");
-        const isActive = !isWon && !isLost;
-        if (isWon) totalClosed += deal.amount || 0;
-        if (isActive) { totalPipeline += deal.amount || 0; activeCount++; }
-        activeDeals.push({ company: c, deal, isActive });
-      }
-    }
-
-    activeDeals.sort((a, b) => {
-      if (a.isActive !== b.isActive) return a.isActive ? -1 : 1;
-      return (b.deal.amount || 0) - (a.deal.amount || 0);
-    });
-
-    return { activeDeals: activeDeals.filter(d => d.isActive), totalPipeline, totalClosed, activeCount };
-  }, [companies]);
-
-  // === Top Actions (ranked by Attention Score) ===
-  const actionList = useMemo(() => {
-    const items: Array<{
-      company: Company; readiness: number; readinessLabel: ReadinessLabel; nextAction: string;
-      revenue: number; actionScore: number; lastContactDays: number | null;
-      hasEmail: boolean; hasLinkedIn: boolean;
-      attentionScore: number; attentionLabel: AttentionLabel; whyNowAngle: string | null;
-    }> = [];
-
-    for (const c of companies) {
-      if (!c.desc || c.desc.length < 10) continue;
-      const breakdown = computeReadinessScore(c, feedItems, engagements);
-      const label = getReadinessLabel(breakdown.total);
-      const nextAction = getNextBestAction(c, engagements, pipelineState);
-      const revenue = estimateCompanyValue(c);
-      const lastEng = getLastEngagement(engagements, c.id);
-      const lastContactDays = lastEng ? daysAgo(lastEng.timestamp) : null;
-      const hasEmail = (c.leaders || []).some(l => l.email);
-      const hasLinkedIn = (c.leaders || []).some(l => l.li);
-
-      // Attention Score (replaces readiness-based ranking)
-      const whyNow = computeWhyNow(c, feedItems, pipelineState);
-      const attention = computeAttentionScore(c, whyNow, pipelineState, engagements);
-
-      items.push({
-        company: c, readiness: breakdown.total, readinessLabel: label, nextAction,
-        revenue, actionScore: attention.score,
-        lastContactDays, hasEmail, hasLinkedIn,
-        attentionScore: attention.score, attentionLabel: attention.label,
-        whyNowAngle: whyNow.score > 0 ? whyNow.topAngle : null,
-      });
-    }
-
-    return items.sort((a, b) => b.attentionScore - a.attentionScore).slice(0, 15);
-  }, [companies, feedItems, engagements, pipelineState]);
-
-  // === RICP Coverage ===
-  const ricpCoverage = useMemo(() => {
-    const RICP: FunctionalRole[] = ["operations", "risk", "underwriting", "finance"];
-    const p0p1 = companies.filter(c => c.priority === 1 || c.priority === 2);
-    const roleCounts: Record<FunctionalRole, number> = { operations: 0, risk: 0, underwriting: 0, finance: 0, sales: 0, technology: 0, general: 0 };
-    for (const c of p0p1) {
-      const filled = getRicpRolesFilled(c.leaders || []);
-      for (const role of filled) roleCounts[role]++;
-    }
-    const total = p0p1.length || 1;
-    return {
-      total: p0p1.length,
-      roles: RICP.map(r => ({ role: r, count: roleCounts[r], pct: Math.round((roleCounts[r] / total) * 100) })),
-      gapsToFill: RICP.reduce((sum, r) => sum + (total - roleCounts[r]), 0),
-    };
-  }, [companies]);
-
-  // === Attention Score Distribution ===
-  const attentionDist = useMemo(() => {
-    const dist = { fire: 0, hot: 0, warm: 0, monitor: 0 };
-    for (const item of actionList) dist[item.attentionLabel]++;
-    return dist;
-  }, [actionList]);
-
-  // === Recent Signals ===
-  const recentSignals = useMemo(() => {
-    const thirtyDaysAgo = Date.now() - 30 * 86400000;
-    return feedItems
-      .filter(f => f.dateEstimate > thirtyDaysAgo && f.heat !== "cool")
-      .sort((a, b) => b.dateEstimate - a.dateEstimate)
-      .slice(0, 10);
-  }, [feedItems]);
-
-  // === Coverage ===
-  const coverage = useMemo(() => {
-    const sqo = companies.filter(c => c.type === "SQO");
-    const clients = companies.filter(c => c.type === "Client");
-    const icp = companies.filter(c => c.type === "ICP");
-    const contacted = (list: Company[]) => list.filter(c => getCompanyEngagements(engagements, c.id).length > 0).length;
-    const withHubSpot = companies.filter(c => (c.hubspotDeals || []).length > 0).length;
-    const readyCount = companies.filter(c => computeReadinessScore(c, feedItems, engagements).total >= 7).length;
-
-    return {
-      sqo: { total: sqo.length, contacted: contacted(sqo) },
-      clients: { total: clients.length, contacted: contacted(clients) },
-      icp: { total: icp.length, contacted: contacted(icp) },
-      hubspotDeals: withHubSpot,
-      readyToSend: readyCount,
-    };
-  }, [companies, engagements, feedItems]);
 
   return (
     <div className="h-full flex flex-col bg-background">
       <ScrollArea className="flex-1">
-        <div className="max-w-5xl mx-auto p-6 space-y-8">
+        <div className="max-w-5xl mx-auto p-6 space-y-6">
 
-          {/* === Intelligence 2-Panel: Feed | Actions === */}
+          {/* === SECTION 1: Goal Header === */}
+          <GoalHeader
+            companies={companies}
+            pipelineState={pipelineState}
+            followUps={followUps}
+            feedItems={feedItems}
+          />
+
+          {/* === SECTION 2: Two-Panel Intelligence === */}
           <section>
             <div className="flex items-center gap-2 mb-4">
               <Activity className="h-4 w-4 text-brand" />
               <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Intelligence Hub</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
-              {/* Left Panel: Feed */}
-              <Card className="p-4 shadow-none space-y-4">
+              {/* Left Panel: Unified Signal Feed */}
+              <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <Rss className="h-3.5 w-3.5 text-muted-foreground" />
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Signal Feed</h3>
                 </div>
-                <div className="space-y-4">
-                  <NewsFeed limit={8} />
-                  <Separator />
-                  <div className="flex items-center gap-2 mb-2">
-                    <Linkedin className="h-3.5 w-3.5 text-muted-foreground" />
-                    <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">LinkedIn Activity</h4>
-                  </div>
-                  <ActivityFeed limit={5} />
-                </div>
-              </Card>
+                <UnifiedFeed
+                  companies={companies}
+                  onSelectCompany={onSelectCompany}
+                  limit={12}
+                />
+              </div>
 
-              {/* Right Panel: Actions */}
-              <Card className="p-4 shadow-none space-y-4">
+              {/* Right Panel: Today's Actions */}
+              <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <Target className="h-3.5 w-3.5 text-muted-foreground" />
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Today&apos;s Actions</h3>
                 </div>
-                <DailyActions
+                <TodaysActions
                   companies={companies}
                   engagements={engagements}
                   pipelineState={pipelineState}
+                  metState={metState}
                   followUps={followUps}
                   onSelectCompany={onSelectCompany}
                   onOpenEngagement={onOpenEngagement}
                   onCompleteFollowUp={onCompleteFollowUp}
                 />
-                <Separator />
-                <div className="flex items-center gap-2 mb-2">
-                  <DollarSign className="h-3.5 w-3.5 text-muted-foreground" />
-                  <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Pipeline Health</h4>
-                </div>
-                <PipelineSnapshot
-                  companies={companies}
-                  pipelineState={pipelineState}
-                  onSelectCompany={onSelectCompany}
-                />
-              </Card>
-            </div>
-          </section>
-
-          {/* === 1. Pipeline Snapshot === */}
-          <section>
-            <div className="flex items-center gap-2 mb-4">
-              <DollarSign className="h-4 w-4 text-brand" />
-              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Pipeline</h2>
-              <Badge variant="outline" className="text-xs ml-auto">{hubspotSnapshot.activeCount} active deals</Badge>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-              <Card className="p-3">
-                <p className="text-xs text-muted-foreground">Active Pipeline</p>
-                <p className="text-xl font-bold tabular-nums">{formatCurrency(hubspotSnapshot.totalPipeline)}</p>
-              </Card>
-              <Card className="p-3">
-                <p className="text-xs text-muted-foreground">Closed Won</p>
-                <p className="text-xl font-bold tabular-nums text-green-400">{formatCurrency(hubspotSnapshot.totalClosed)}</p>
-              </Card>
-              <Card className="p-3">
-                <p className="text-xs text-muted-foreground">In HubSpot</p>
-                <p className="text-xl font-bold tabular-nums">{coverage.hubspotDeals}</p>
-              </Card>
-              <Card className="p-3">
-                <p className="text-xs text-muted-foreground">Ready to Send</p>
-                <p className="text-xl font-bold tabular-nums text-brand">{coverage.readyToSend}</p>
-              </Card>
-            </div>
-
-            {hubspotSnapshot.activeDeals.length > 0 && (
-              <div className="space-y-1.5">
-                {hubspotSnapshot.activeDeals.slice(0, 8).map(({ company, deal }) => (
-                  <div
-                    key={deal.dealId}
-                    className="flex items-center gap-3 p-2.5 rounded-lg border border-border/50 hover:bg-secondary/50 cursor-pointer transition-colors"
-                    onClick={() => onSelectCompany(company.id)}
-                  >
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-semibold truncate">{company.name}</span>
-                        <Badge variant="outline" className="text-xs px-1 py-0 h-4 bg-orange-500/10 text-orange-400 border-orange-500/30 shrink-0">
-                          {deal.stageLabel || deal.stage}
-                        </Badge>
-                      </div>
-                      <p className="text-xs text-muted-foreground truncate">{deal.dealName}</p>
-                    </div>
-                    {deal.amount && deal.amount > 0 && (
-                      <span className="text-sm font-bold tabular-nums shrink-0">{formatCurrency(deal.amount)}</span>
-                    )}
-                    <a
-                      href={`https://app.hubspot.com/contacts/3800237/deal/${deal.dealId}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="text-muted-foreground hover:text-brand shrink-0"
-                    >
-                      <ExternalLink className="h-3.5 w-3.5" />
-                    </a>
-                  </div>
-                ))}
               </div>
-            )}
-            {hubspotSnapshot.activeDeals.length === 0 && (
-              <p className="text-sm text-muted-foreground py-4 text-center">No active HubSpot deals.</p>
-            )}
-          </section>
-
-          {/* === 2. Top Actions (by Attention Score) === */}
-          <section>
-            <div className="flex items-center gap-2 mb-4">
-              <Zap className="h-4 w-4 text-brand" />
-              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Top Actions</h2>
-              <span className="text-xs text-muted-foreground ml-auto">Ranked by Attention Score</span>
-            </div>
-
-            {/* Attention Score Distribution mini-bar */}
-            <div className="flex items-center gap-2 mb-3 text-xs">
-              {(["fire", "hot", "warm", "monitor"] as const).map((label) => (
-                <span key={label} className={cn("flex items-center gap-0.5", getAttentionColor(label))}>
-                  {getAttentionEmoji(label)} {attentionDist[label]}
-                </span>
-              ))}
-            </div>
-
-            <div className="space-y-1.5">
-              {actionList.map(({ company, attentionScore, attentionLabel, whyNowAngle, nextAction, revenue, lastContactDays, hasEmail, hasLinkedIn }) => (
-                <div
-                  key={company.id}
-                  className="flex items-center gap-3 p-3 rounded-lg border border-border/50 hover:bg-secondary/50 cursor-pointer transition-colors group"
-                  onClick={() => onSelectCompany(company.id)}
-                >
-                  <div className="shrink-0 w-8 text-center">
-                    <span className="text-xs">{getAttentionEmoji(attentionLabel)}</span>
-                    <span className={cn("text-xs font-bold tabular-nums block", getAttentionColor(attentionLabel))}>{attentionScore}</span>
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold truncate">{company.name}</span>
-                      <Badge variant="outline" className="text-xs px-1 py-0 h-4 shrink-0">{inferSubVertical(company)}</Badge>
-                      {company.type === "SQO" && <Badge variant="outline" className="text-xs px-1 py-0 h-4 bg-red-500/10 text-red-400 border-red-500/30 shrink-0">SQO</Badge>}
-                      {company.type === "Client" && <Badge variant="outline" className="text-xs px-1 py-0 h-4 bg-amber-500/10 text-amber-400 border-amber-500/30 shrink-0">Client</Badge>}
-                    </div>
-                    {whyNowAngle && (
-                      <p className="text-xs text-orange-400/80 truncate mt-0.5">{whyNowAngle}</p>
-                    )}
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-xs text-brand/80 font-medium">{nextAction}</span>
-                      {lastContactDays !== null ? (
-                        <span className="text-xs text-muted-foreground/60"><Clock className="h-2.5 w-2.5 inline mr-0.5" />{formatDaysAgo(lastContactDays)}</span>
-                      ) : (
-                        <span className="text-xs text-orange-400/70">No contact yet</span>
-                      )}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-1 shrink-0">
-                    {hasEmail && <Mail className="h-3.5 w-3.5 text-muted-foreground/50" />}
-                    {hasLinkedIn && <Linkedin className="h-3.5 w-3.5 text-muted-foreground/50" />}
-                  </div>
-                  <span className="text-xs text-muted-foreground/60 tabular-nums shrink-0 w-12 text-right">{formatCurrency(revenue)}</span>
-                  <Button
-                    size="sm" variant="ghost"
-                    className="h-7 px-2 text-xs opacity-0 group-hover:opacity-100 transition-opacity shrink-0"
-                    onClick={(e) => { e.stopPropagation(); onOpenEngagement(company.id); }}
-                  >
-                    Log <ArrowRight className="h-3 w-3 ml-1" />
-                  </Button>
-                </div>
-              ))}
             </div>
           </section>
 
-          {/* === 4. Outreach Coverage === */}
-          <section>
-            <div className="flex items-center gap-2 mb-4">
-              <Building2 className="h-4 w-4 text-brand" />
-              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Outreach Coverage</h2>
-            </div>
-            <div className="grid grid-cols-3 gap-3">
-              {[
-                { label: "SQO", ...coverage.sqo, color: "text-red-400" },
-                { label: "Client", ...coverage.clients, color: "text-amber-400" },
-                { label: "ICP", ...coverage.icp, color: "text-green-400" },
-              ].map((tier) => {
-                const pct = tier.total > 0 ? Math.round((tier.contacted / tier.total) * 100) : 0;
-                return (
-                  <Card key={tier.label} className="p-3">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className={cn("text-sm font-bold", tier.color)}>{tier.label}</span>
-                      <span className="text-xs text-muted-foreground">{tier.contacted}/{tier.total}</span>
-                    </div>
-                    <div className="h-1.5 rounded-full bg-muted/30 overflow-hidden">
-                      <div className={cn("h-full rounded-full", pct === 100 ? "bg-green-500" : pct > 50 ? "bg-yellow-500" : "bg-red-500")} style={{ width: `${pct}%` }} />
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      {pct === 100 ? (
-                        <><CheckCircle2 className="h-3 w-3 inline text-green-400 mr-0.5" />All contacted</>
-                      ) : tier.total - tier.contacted > 0 ? (
-                        <><AlertTriangle className="h-3 w-3 inline text-orange-400 mr-0.5" />{tier.total - tier.contacted} not yet contacted</>
-                      ) : "No companies in tier"}
-                    </p>
-                  </Card>
-                );
-              })}
-            </div>
-          </section>
+          {/* === SECTION 3: Active Deals (collapsible) === */}
+          <PipelineDeals
+            companies={companies}
+            pipelineState={pipelineState}
+            onSelectCompany={onSelectCompany}
+          />
 
-          {/* === 5. RICP Coverage === */}
-          <section>
-            <div className="flex items-center gap-2 mb-4">
-              <Target className="h-4 w-4 text-brand" />
-              <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">RICP Coverage</h2>
-              <span className="text-xs text-muted-foreground ml-auto">{ricpCoverage.total} P0+P1 companies</span>
-            </div>
-            <div className="grid grid-cols-4 gap-3 mb-3">
-              {ricpCoverage.roles.map(({ role, count, pct }) => (
-                <Card key={role} className="p-3">
-                  <p className="text-xs text-muted-foreground capitalize">{role}</p>
-                  <p className="text-lg font-bold tabular-nums">{pct}%</p>
-                  <div className="h-1.5 rounded-full bg-muted/30 overflow-hidden mt-1">
-                    <div
-                      className={cn("h-full rounded-full", pct >= 80 ? "bg-green-500" : pct >= 50 ? "bg-yellow-500" : "bg-red-500")}
-                      style={{ width: `${pct}%` }}
-                    />
-                  </div>
-                  <p className="text-xs text-muted-foreground mt-1">{count}/{ricpCoverage.total}</p>
-                </Card>
-              ))}
-            </div>
-            {ricpCoverage.gapsToFill > 0 && (
-              <p className="text-xs text-muted-foreground">
-                <AlertTriangle className="h-3 w-3 inline text-orange-400 mr-0.5" />
-                {ricpCoverage.gapsToFill} role gaps to fill across P0+P1 companies
-              </p>
-            )}
-          </section>
-
-          {/* === 6. Recent Signals === */}
-          {recentSignals.length > 0 && (
-            <section>
-              <div className="flex items-center gap-2 mb-4">
-                <TrendingUp className="h-4 w-4 text-brand" />
-                <h2 className="text-sm font-bold uppercase tracking-wide text-muted-foreground">Recent Signals</h2>
-                <span className="text-xs text-muted-foreground ml-auto">Last 30 days</span>
-              </div>
-              <div className="space-y-1.5">
-                {recentSignals.map((signal) => (
-                  <div
-                    key={signal.id}
-                    className="flex items-start gap-3 p-2.5 rounded-lg border border-border/50 hover:bg-secondary/50 cursor-pointer transition-colors"
-                    onClick={() => onSelectCompany(signal.companyId)}
-                  >
-                    <Circle className={cn("h-2 w-2 mt-1.5 shrink-0 fill-current", signal.heat === "hot" ? "text-red-400" : "text-yellow-400")} />
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-bold text-brand">{signal.companyName}</span>
-                        <span className="text-xs text-muted-foreground/60">{signal.source}</span>
-                      </div>
-                      <p className="text-sm leading-tight mt-0.5">{signal.headline}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
         </div>
       </ScrollArea>
     </div>

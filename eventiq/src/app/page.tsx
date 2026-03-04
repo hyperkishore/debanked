@@ -779,13 +779,9 @@ export default function Home() {
             ratingState={ratingState}
             metState={metState}
             followUps={followUps}
-            sequences={sequences}
-            queueState={taskQueueState}
-            onUpdateQueueState={setTaskQueueState}
             onSelectCompany={handleSelect}
             onOpenEngagement={handleOpenEngagementForCompany}
             onCompleteFollowUp={handleCompleteFollowUp}
-            onSequenceStep={handleSequenceStep}
           />
         );
       case "db_health":

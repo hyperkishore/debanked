@@ -1106,6 +1106,21 @@ export function CompanyDetail({
           pipelineState={pipelineState}
         />
       )}
+
+      {/* Mobile FAB for Ask MissionIQ */}
+      <div className="md:hidden fixed bottom-20 right-4 z-50">
+        <Button
+          className="h-12 w-12 rounded-full shadow-lg bg-primary text-primary-foreground hover:bg-primary/90 flex items-center justify-center p-0"
+          onClick={() => {
+            if (onAskKiket) {
+              onAskKiket(company.name);
+            }
+          }}
+        >
+          <MessageCircle className="h-6 w-6" />
+          <span className="sr-only">Ask MissionIQ</span>
+        </Button>
+      </div>
     </ScrollArea>
     </div>
     </div>

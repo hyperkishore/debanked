@@ -61,7 +61,7 @@ function recencyMultiplier(ageDays: number): number {
 }
 
 // --- Map FeedItem signal type to WhyNow signal type ---
-function mapSignalType(feedType: FeedSignalType, headline: string): WhyNowSignalType {
+export function mapSignalType(feedType: FeedSignalType, headline: string): WhyNowSignalType {
   switch (feedType) {
     case "funding":
       return "funding";
@@ -89,7 +89,7 @@ function mapSignalType(feedType: FeedSignalType, headline: string): WhyNowSignal
 }
 
 // --- Angle templates per signal type ---
-function generateAngle(type: WhyNowSignalType, headline: string, companyName: string): string {
+export function generateAngle(type: WhyNowSignalType, headline: string, companyName: string): string {
   switch (type) {
     case "funding":
       return `Just raised capital — scaling underwriting is the next bottleneck for ${companyName}`;
