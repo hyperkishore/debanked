@@ -14,6 +14,7 @@ export interface FeedItem {
   signalType: SignalType;
   heat: SignalHeat;
   dateEstimate: number; // timestamp for sorting
+  sourceUrl?: string;
 }
 
 export interface MarketStat {
@@ -124,6 +125,7 @@ export function buildFeedItems(companies: Company[]): FeedItem[] {
         signalType,
         heat,
         dateEstimate,
+        sourceUrl: news.u,
       });
     }
   }

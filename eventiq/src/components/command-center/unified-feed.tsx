@@ -16,6 +16,7 @@ import {
   Share2,
   Heart,
   Rss,
+  Calendar,
 } from "lucide-react";
 
 interface UnifiedFeedProps {
@@ -86,7 +87,12 @@ function formatRelativeTime(timestamp: number): string {
   return `${Math.floor(diffDays / 30)}mo ago`;
 }
 
-export function UnifiedFeed({ companies, onSelectCompany, limit = 15 }: UnifiedFeedProps) {
+function formatDate(timestamp: number): string {
+  const d = new Date(timestamp);
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+
+export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedFeedProps) {
   const [newsItems, setNewsItems] = useState<NewsApiItem[]>([]);
   const [linkedinItems, setLinkedinItems] = useState<LinkedInItem[]>([]);
   const [loading, setLoading] = useState(true);
@@ -210,7 +216,7 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 15 }: UnifiedF
         const signalType = isApi ? item.data.signal_type : item.data.signalType;
         const source = isApi ? item.data.source : item.data.source;
         const description = isApi ? item.data.description : item.data.description;
-        const sourceUrl = isApi ? item.data.source_url : undefined;
+        const sourceUrl = isApi ? item.data.source_url : item.data.sourceUrl;
 
         // Generate "why it matters" angle
         const whyNowType = mapSignalType(
@@ -241,14 +247,32 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 15 }: UnifiedF
                     {formatRelativeTime(item.timestamp)}
                   </span>
                 </div>
-                <p className="text-sm font-medium line-clamp-2">{headline}</p>
+                {sourceUrl ? (
+                  <a
+                    href={sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium line-clamp-2 hover:underline"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {headline}
+                  </a>
+                ) : (
+                  <p className="text-sm font-medium line-clamp-2">{headline}</p>
+                )}
                 {description && (
                   <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">{description}</p>
                 )}
                 <p className="text-xs text-orange-400/80 line-clamp-1 mt-1">{angle}</p>
                 <div className="flex items-center gap-1.5 mt-1">
                   <span className="text-xs text-brand font-medium">{companyName}</span>
-                  <span className="text-xs text-muted-foreground/40">via {source}</span>
+                  <Badge variant="outline" className="text-xs px-1.5 py-0 h-5 text-muted-foreground/60">
+                    {source.replace(/,\s*\w+\s+\d{4}$/, "")}
+                  </Badge>
+                  <span className="text-xs text-muted-foreground/40 flex items-center gap-1">
+                    <Calendar className="h-2.5 w-2.5" />
+                    {formatDate(item.timestamp)}
+                  </span>
                 </div>
               </div>
               {sourceUrl && (

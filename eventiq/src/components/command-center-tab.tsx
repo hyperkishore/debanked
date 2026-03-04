@@ -66,7 +66,7 @@ export function CommandCenterTab({
                 <UnifiedFeed
                   companies={companies}
                   onSelectCompany={onSelectCompany}
-                  limit={12}
+                  limit={30}
                 />
               </div>
 
