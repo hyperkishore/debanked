@@ -1,0 +1,16 @@
+{
+  "name": "research-worker",
+  "version": "1.0.0",
+  "description": "Background research worker for EventIQ — polls research_requests, gathers data, synthesizes via Claude, writes updates",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "node worker.js",
+    "dev": "node --watch worker.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.0",
+    "rss-parser": "^3.13.0",
+    "node-cron": "^3.0.3"
+  }
+}

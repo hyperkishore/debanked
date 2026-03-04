@@ -1,80 +1,159 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { authenticateRequest, apiError } from "@/lib/api-helpers";
+import { validateToolKey } from "@/lib/tool-auth";
+import { getSupabaseServer } from "@/lib/supabase-server";
 
 /**
  * POST /api/research-requests
  * Log a research refresh request for a company.
- * Stores: companyId, userId, timestamp in Supabase.
+ * Accepts user auth (UI clicks) or tool-key auth (signal-driven triggers).
  */
 export async function POST(request: NextRequest) {
-  const auth = await authenticateRequest(request);
-  if ("error" in auth) return auth.error;
-  const { user, supabase } = auth;
+  let supabase;
+  let userEmail = "system";
+
+  // Try tool-key auth first (for worker/signal-driven requests)
+  if (validateToolKey(request)) {
+    supabase = getSupabaseServer();
+    if (!supabase) return apiError("Database not configured", 503);
+  } else {
+    // Fall back to user auth
+    const auth = await authenticateRequest(request);
+    if ("error" in auth) return auth.error;
+    supabase = auth.supabase;
+    userEmail = auth.user.email || "unknown";
+  }
 
   const body = await request.json();
-  const companyId = body.companyId;
+  const { companyId, triggerType, triggerDetail, priority: reqPriority } = body;
 
   if (!companyId) {
     return apiError("companyId is required", 400);
   }
 
-  const { error } = await supabase.from("research_requests").insert({
-    company_id: companyId,
-    user_id: user.id,
-    user_email: user.email || "unknown",
-    status: "pending",
-    requested_at: new Date().toISOString(),
-  });
+  // Look up company name for logging
+  let companyName = body.companyName;
+  if (!companyName) {
+    const { data: co } = await supabase
+      .from("companies")
+      .select("name")
+      .eq("id", companyId)
+      .single();
+    companyName = co?.name || `ID:${companyId}`;
+  }
+
+  const { data, error } = await supabase
+    .from("research_requests")
+    .upsert(
+      {
+        company_id: companyId,
+        company_name: companyName,
+        trigger_type: triggerType || "manual",
+        trigger_detail: triggerDetail || null,
+        status: "pending",
+        priority: reqPriority ?? 5,
+        user_email: userEmail,
+        requested_at: new Date().toISOString(),
+      },
+      {
+        onConflict: "company_id",
+        ignoreDuplicates: true,
+      }
+    )
+    .select("id")
+    .single();
 
   if (error) {
-    // If table doesn't exist, store in signal_ingestion_log as fallback
-    if (error.code === "42P01") {
-      await supabase.from("signal_ingestion_log").insert({
-        source: "research_refresh",
-        status: "pending",
-        details: {
-          company_id: companyId,
-          user_id: user.id,
-          user_email: user.email,
-          requested_at: new Date().toISOString(),
-        },
-      });
-      return NextResponse.json({ success: true, fallback: true });
+    // Duplicate pending request — not an error, just return success
+    if (error.code === "23505") {
+      return NextResponse.json({ success: true, duplicate: true });
     }
     return apiError("Failed to save request: " + error.message, 500);
   }
 
-  return NextResponse.json({ success: true });
+  return NextResponse.json({ success: true, id: data?.id });
 }
 
 /**
  * GET /api/research-requests
- * List all pending research refresh requests.
+ * List research requests with optional filters.
+ * Query params: status, companyId, limit
  */
 export async function GET(request: NextRequest) {
-  const auth = await authenticateRequest(request);
-  if ("error" in auth) return auth.error;
-  const { supabase } = auth;
+  let supabase;
 
-  const { data, error } = await supabase
+  // Accept both user auth and tool-key auth
+  if (validateToolKey(request)) {
+    supabase = getSupabaseServer();
+    if (!supabase) return apiError("Database not configured", 503);
+  } else {
+    const auth = await authenticateRequest(request);
+    if ("error" in auth) return auth.error;
+    supabase = auth.supabase;
+  }
+
+  const { searchParams } = new URL(request.url);
+  const status = searchParams.get("status");
+  const companyId = searchParams.get("companyId");
+  const limit = parseInt(searchParams.get("limit") || "50", 10);
+
+  let query = supabase
     .from("research_requests")
     .select("*")
-    .eq("status", "pending")
-    .order("requested_at", { ascending: false });
+    .order("priority", { ascending: true })
+    .order("requested_at", { ascending: true })
+    .limit(Math.min(limit, 100));
+
+  if (status) {
+    query = query.eq("status", status);
+  }
+  if (companyId) {
+    query = query.eq("company_id", parseInt(companyId, 10));
+  }
+
+  const { data, error } = await query;
 
   if (error) {
-    // Fallback: read from signal_ingestion_log
-    if (error.code === "42P01") {
-      const { data: logs } = await supabase
-        .from("signal_ingestion_log")
-        .select("*")
-        .eq("source", "research_refresh")
-        .eq("status", "pending")
-        .order("created_at", { ascending: false });
-      return NextResponse.json(logs || []);
-    }
-    return apiError("Failed to fetch requests", 500);
+    return apiError("Failed to fetch requests: " + error.message, 500);
   }
 
   return NextResponse.json(data || []);
+}
+
+/**
+ * PATCH /api/research-requests
+ * Update request status (used by EC2 worker).
+ * Body: { id, status, result?, error?, started_at?, completed_at? }
+ */
+export async function PATCH(request: NextRequest) {
+  // Worker-only: tool-key auth required
+  if (!validateToolKey(request)) {
+    return apiError("Invalid or missing API key", 401);
+  }
+
+  const supabase = getSupabaseServer();
+  if (!supabase) return apiError("Database not configured", 503);
+
+  const body = await request.json();
+  const { id, status, result, error: errorMsg, started_at, completed_at } = body;
+
+  if (!id) return apiError("id is required", 400);
+  if (!status) return apiError("status is required", 400);
+
+  const updates: Record<string, unknown> = { status };
+  if (result !== undefined) updates.result = result;
+  if (errorMsg !== undefined) updates.error = errorMsg;
+  if (started_at) updates.started_at = started_at;
+  if (completed_at) updates.completed_at = completed_at;
+
+  const { error } = await supabase
+    .from("research_requests")
+    .update(updates)
+    .eq("id", id);
+
+  if (error) {
+    return apiError("Failed to update request: " + error.message, 500);
+  }
+
+  return NextResponse.json({ success: true });
 }

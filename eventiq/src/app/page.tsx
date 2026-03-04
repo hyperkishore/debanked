@@ -704,23 +704,97 @@ export default function Home() {
     [isMobile]
   );
 
-  // Research refresh request
+  // Research refresh: track which companies are currently refreshing
+  const [refreshingCompanies, setRefreshingCompanies] = useState<Set<number>>(new Set());
+
   const handleRequestRefresh = useCallback(
     async (companyId: number) => {
       const companyName = companies.find((c) => c.id === companyId)?.name || `ID:${companyId}`;
+
+      // Prevent duplicate requests
+      if (refreshingCompanies.has(companyId)) {
+        toast.info(`Research refresh already in progress for ${companyName}`);
+        return;
+      }
+
       toast.success(`Research refresh requested for ${companyName}`);
-      // Best-effort server logging — don't block on failure
+      setRefreshingCompanies((prev) => new Set(prev).add(companyId));
+
       try {
-        await fetch("/api/research-requests", {
+        const res = await fetch("/api/research-requests", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ companyId }),
         });
+
+        if (!res.ok) throw new Error("Request failed");
+        const data = await res.json();
+
+        if (data.duplicate) {
+          toast.info(`Research refresh already queued for ${companyName}`);
+        }
+
+        // Poll for completion (every 10s, up to 3 minutes)
+        let attempts = 0;
+        const maxAttempts = 18;
+        const pollInterval = setInterval(async () => {
+          attempts++;
+          try {
+            const pollRes = await fetch(`/api/research-requests?companyId=${companyId}&status=completed&limit=1`);
+            const pollData = await pollRes.json();
+
+            if (Array.isArray(pollData) && pollData.length > 0) {
+              const latest = pollData[0];
+              if (latest.status === "completed") {
+                clearInterval(pollInterval);
+                setRefreshingCompanies((prev) => {
+                  const next = new Set(prev);
+                  next.delete(companyId);
+                  return next;
+                });
+                const summary = latest.result?.summary || "Research updated";
+                toast.success(`${companyName}: ${summary}`);
+                fetchCompanies(); // Refetch company data
+                return;
+              }
+            }
+
+            // Also check for failed status
+            const failRes = await fetch(`/api/research-requests?companyId=${companyId}&status=failed&limit=1`);
+            const failData = await failRes.json();
+            if (Array.isArray(failData) && failData.length > 0) {
+              clearInterval(pollInterval);
+              setRefreshingCompanies((prev) => {
+                const next = new Set(prev);
+                next.delete(companyId);
+                return next;
+              });
+              toast.error(`Research refresh failed for ${companyName}`);
+              return;
+            }
+          } catch {
+            // Silent polling failure
+          }
+
+          if (attempts >= maxAttempts) {
+            clearInterval(pollInterval);
+            setRefreshingCompanies((prev) => {
+              const next = new Set(prev);
+              next.delete(companyId);
+              return next;
+            });
+            toast.info(`Research refresh for ${companyName} is still processing in the background`);
+          }
+        }, 10000);
       } catch {
-        // Silent — toast already shown
+        setRefreshingCompanies((prev) => {
+          const next = new Set(prev);
+          next.delete(companyId);
+          return next;
+        });
       }
     },
-    [companies]
+    [companies, refreshingCompanies, fetchCompanies]
   );
 
   // Keyboard navigation
@@ -963,6 +1037,7 @@ export default function Home() {
                         onRemoveTag={handleRemoveTag}
                         onPipelineStageChange={handlePipelineMove}
                         onRequestRefresh={handleRequestRefresh}
+                        isRefreshing={refreshingCompanies.has(selectedCompany.id)}
                         onAskKiket={handleAskKiket}
                         onUpdateDeal={handleUpdateDeal}
                       />
@@ -1086,6 +1161,7 @@ export default function Home() {
                   onRemoveTag={handleRemoveTag}
                   onPipelineStageChange={handlePipelineMove}
                   onRequestRefresh={handleRequestRefresh}
+                  isRefreshing={refreshingCompanies.has(selectedCompany.id)}
                   onAskKiket={handleAskKiket}
                   onUpdateDeal={handleUpdateDeal}
                 />

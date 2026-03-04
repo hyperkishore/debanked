@@ -102,6 +102,7 @@ interface CompanyDetailProps {
   onRemoveTag?: (companyId: number, tag: string) => void;
   onPipelineStageChange?: (companyId: number, stage: PipelineStage) => void;
   onRequestRefresh?: (companyId: number) => void;
+  isRefreshing?: boolean;
   onAskKiket?: (companyName: string) => void;
   onUpdateDeal?: (companyId: number, dealValue: number | undefined, closeDate: string | undefined) => void;
 }
@@ -200,6 +201,7 @@ export function CompanyDetail({
   onRemoveTag,
   onPipelineStageChange,
   onRequestRefresh,
+  isRefreshing,
   onAskKiket,
   onUpdateDeal,
 }: CompanyDetailProps) {
@@ -321,7 +323,7 @@ export function CompanyDetail({
           <div className="flex-1" />
           {(() => {
             const daysAgo = getResearchAge(company);
-            const label = daysAgo === null ? "Not dated" : daysAgo === 0 ? "Updated today" : daysAgo === 1 ? "Updated 1 day ago" : `Updated ${daysAgo}d ago`;
+            const label = isRefreshing ? "Refreshing..." : daysAgo === null ? "Not dated" : daysAgo === 0 ? "Updated today" : daysAgo === 1 ? "Updated 1 day ago" : `Updated ${daysAgo}d ago`;
             const isStale = daysAgo !== null && daysAgo > 90;
             return (
               <Tooltip>
@@ -329,17 +331,18 @@ export function CompanyDetail({
                   <button
                     className={cn(
                       "text-xs flex items-center gap-1 transition-colors",
-                      onRequestRefresh ? "cursor-pointer hover:text-brand" : "cursor-default",
-                      isStale ? "text-amber-400" : "text-muted-foreground/60"
+                      isRefreshing ? "text-brand cursor-wait" : onRequestRefresh ? "cursor-pointer hover:text-brand" : "cursor-default",
+                      !isRefreshing && isStale ? "text-amber-400" : !isRefreshing ? "text-muted-foreground/60" : ""
                     )}
-                    onClick={() => onRequestRefresh?.(company.id)}
+                    onClick={() => !isRefreshing && onRequestRefresh?.(company.id)}
+                    disabled={isRefreshing}
                   >
                     <Clock className="h-3 w-3" />
                     {label}
-                    {onRequestRefresh && <RefreshCw className="h-2.5 w-2.5 ml-0.5" />}
+                    {onRequestRefresh && <RefreshCw className={cn("h-2.5 w-2.5 ml-0.5", isRefreshing && "animate-spin")} />}
                   </button>
                 </TooltipTrigger>
-                <TooltipContent>{isStale ? "Research may be outdated — click to request refresh" : "Click to request updated research"}</TooltipContent>
+                <TooltipContent>{isRefreshing ? "Research refresh in progress..." : isStale ? "Research may be outdated — click to request refresh" : "Click to request updated research"}</TooltipContent>
               </Tooltip>
             );
           })()}
