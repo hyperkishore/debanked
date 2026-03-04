@@ -44,27 +44,21 @@ export async function POST(request: NextRequest) {
 
   const { data, error } = await supabase
     .from("research_requests")
-    .upsert(
-      {
-        company_id: companyId,
-        company_name: companyName,
-        trigger_type: triggerType || "manual",
-        trigger_detail: triggerDetail || null,
-        status: "pending",
-        priority: reqPriority ?? 5,
-        user_email: userEmail,
-        requested_at: new Date().toISOString(),
-      },
-      {
-        onConflict: "company_id",
-        ignoreDuplicates: true,
-      }
-    )
+    .insert({
+      company_id: companyId,
+      company_name: companyName,
+      trigger_type: triggerType || "manual",
+      trigger_detail: triggerDetail || null,
+      status: "pending",
+      priority: reqPriority ?? 5,
+      user_email: userEmail,
+      requested_at: new Date().toISOString(),
+    })
     .select("id")
     .single();
 
   if (error) {
-    // Duplicate pending request — not an error, just return success
+    // Duplicate pending request (partial unique index) — not an error
     if (error.code === "23505") {
       return NextResponse.json({ success: true, duplicate: true });
     }

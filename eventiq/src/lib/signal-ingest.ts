@@ -238,17 +238,14 @@ async function storeSignals(
         const key = `${company.id}`;
         if (!hotP0P1.has(key)) {
           hotP0P1.add(key);
-          await supabase.from("research_requests").upsert(
-            {
+          await supabase.from("research_requests").insert({
               company_id: company.id,
               company_name: company.name,
               trigger_type: "signal",
               trigger_detail: { signal_type: row.signal_type, headline: row.headline },
               status: "pending",
               priority: 1,
-            },
-            { onConflict: "company_id", ignoreDuplicates: true }
-          ).then(({ error: rrErr }) => {
+          }).then(({ error: rrErr }) => {
             if (rrErr && rrErr.code !== "23505") {
               console.error(`[Ingest] Research request error for ${company.name}:`, rrErr.message);
             }

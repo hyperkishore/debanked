@@ -186,15 +186,13 @@ cron.schedule("0 6 * * 1", async () => {
       // Queue research request
       const { error: insertErr } = await supabase
         .from("research_requests")
-        .upsert(
-          {
+        .insert({
             company_id: company.id,
             company_name: company.name,
             trigger_type: "scheduled",
             priority: company.priority,
             status: "pending",
-          },
-          { onConflict: "company_id", ignoreDuplicates: true }
+        }
         );
 
       if (!insertErr) queued++;
