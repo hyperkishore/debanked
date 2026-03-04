@@ -216,14 +216,16 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
         const signalType = isApi ? item.data.signal_type : item.data.signalType;
         const source = isApi ? item.data.source : item.data.source;
         const description = isApi ? item.data.description : item.data.description;
-        const sourceUrl = isApi ? item.data.source_url : item.data.sourceUrl;
+        const cleanHeadline = headline.replace(/<[^>]+>/g, "");
+        const directUrl = (isApi ? item.data.source_url : item.data.sourceUrl)?.trim();
+        const sourceUrl = directUrl || `https://www.google.com/search?q=${encodeURIComponent(cleanHeadline)}`;
 
         // Generate "why it matters" angle
         const whyNowType = mapSignalType(
           signalType as "funding" | "product" | "partnership" | "hiring" | "regulatory" | "milestone" | "general",
-          headline
+          cleanHeadline
         );
-        const angle = generateAngle(whyNowType, headline, companyName);
+        const angle = generateAngle(whyNowType, cleanHeadline, companyName);
 
         return (
           <Card
@@ -247,19 +249,15 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
                     {formatRelativeTime(item.timestamp)}
                   </span>
                 </div>
-                {sourceUrl ? (
-                  <a
-                    href={sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-medium line-clamp-2 hover:underline"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {headline}
-                  </a>
-                ) : (
-                  <p className="text-sm font-medium line-clamp-2">{headline}</p>
-                )}
+                <a
+                  href={sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium line-clamp-2 hover:underline"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {cleanHeadline}
+                </a>
                 {description && (
                   <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">{description}</p>
                 )}
@@ -275,17 +273,15 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
                   </span>
                 </div>
               </div>
-              {sourceUrl && (
-                <a
-                  href={sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shrink-0 text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <ExternalLink className="h-3.5 w-3.5" />
-                </a>
-              )}
+              <a
+                href={sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 text-muted-foreground hover:text-foreground transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
             </div>
           </Card>
         );
