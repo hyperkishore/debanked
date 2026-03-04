@@ -77,6 +77,7 @@ const ACTIVITY_ICONS: Record<string, React.ComponentType<{ className?: string }>
 
 function formatRelativeTime(timestamp: number): string {
   const diffMs = Date.now() - timestamp;
+  if (diffMs < 0) return "recent"; // future dates (imprecise date parsing)
   const diffDays = Math.floor(diffMs / 86400000);
   if (diffDays === 0) return "today";
   if (diffDays === 1) return "yesterday";
@@ -128,11 +129,14 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 15 }: UnifiedF
     }
 
     // 2. Static feed items (from company.news[])
+    const now = Date.now();
     for (const item of staticFeedItems) {
       const key = normalize(item.headline);
       if (seenHeadlines.has(key)) continue;
       seenHeadlines.add(key);
-      items.push({ kind: "news_static", data: item, timestamp: item.dateEstimate });
+      // Cap at now — date parsing from "Source, 2026" defaults to mid-year (future)
+      const ts = Math.min(item.dateEstimate, now);
+      items.push({ kind: "news_static", data: item, timestamp: ts });
     }
 
     // 3. LinkedIn activity
