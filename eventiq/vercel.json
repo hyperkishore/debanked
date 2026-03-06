@@ -23,16 +23,6 @@
     {
       "path": "/api/cron/news-ingest",
       "schedule": "0 9 * * *"
-    },
-    {
-      "path": "/api/cron/linkedin-activity",
-      "schedule": "0 6 * * 1",
-      "_deprecated": "Moved to EC2 research-worker (daily, no timeout constraint)"
-    },
-    {
-      "path": "/api/cron/phantom-enrich",
-      "schedule": "0 6 * * 3",
-      "_deprecated": "Moved to EC2 research-worker (daily, no timeout constraint)"
     }
   ]
 }
