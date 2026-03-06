@@ -8,6 +8,7 @@ import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Activity, Rss, Target } from "lucide-react";
 import { GoalHeader } from "@/components/command-center/goal-header";
+import { DailyBriefWidget } from "@/components/command-center/daily-brief-widget";
 import { UnifiedFeed } from "@/components/command-center/unified-feed";
 import { TodaysActions } from "@/components/command-center/todays-actions";
 import { PipelineDeals } from "@/components/command-center/pipeline-deals";
@@ -48,6 +49,12 @@ export function CommandCenterTab({
             pipelineState={pipelineState}
             followUps={followUps}
             feedItems={feedItems}
+          />
+
+          {/* === SECTION 1.5: Daily Intelligence Brief === */}
+          <DailyBriefWidget
+            companies={companies}
+            onSelectCompany={onSelectCompany}
           />
 
           {/* === SECTION 2: Two-Panel Intelligence === */}

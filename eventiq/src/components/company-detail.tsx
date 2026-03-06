@@ -30,6 +30,7 @@ import { CopyButton } from "@/components/copy-button";
 import { PreCallBriefingDialog } from "@/components/pre-call-briefing";
 import { SequencePanel } from "@/components/sequence-panel";
 import { AIBriefingCard } from "@/components/ai-briefing-card";
+import { EnrichmentStatus } from "@/components/enrichment-status";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
@@ -818,6 +819,11 @@ export function CompanyDetail({
                     </div>
                   ))}
               </div>
+            </Section>
+
+            {/* Enrichment Status — LinkedIn activity + hook updates for this company */}
+            <Section icon={Activity} title="Enrichment">
+              <EnrichmentStatus companyId={company.id} />
             </Section>
 
             {/* Why-Now + Attention Score */}
