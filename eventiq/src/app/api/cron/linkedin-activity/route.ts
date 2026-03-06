@@ -4,8 +4,10 @@ import { getSupabaseServer } from "@/lib/supabase-server";
 /**
  * GET /api/cron/linkedin-activity
  *
- * Vercel Cron job — runs weekly on Monday at 6 AM UTC.
- * Extracts LinkedIn activity for top leaders using PhantomBuster.
+ * @deprecated Moved to EC2 research-worker (research-worker/lib/linkedin-activity.js).
+ * EC2 worker runs daily at 6 AM UTC with no timeout constraint.
+ * This Vercel cron version was limited by the 60-second Pro timeout.
+ * Kept for manual trigger compatibility but should not be relied upon.
  *
  * Auth: Vercel cron sends Authorization: Bearer <CRON_SECRET>
  */

@@ -25,7 +25,18 @@ interface FeedTabProps {
   onSelectCompany: (id: number) => void;
 }
 
-type FeedSection = "all" | "hot" | "funding" | "products" | "themes";
+type FeedSection = "all" | "hot" | "funding" | "products" | "themes" | "enrichment";
+
+interface EnrichmentEvent {
+  id: string;
+  companyId: number;
+  companyName: string;
+  leaderName: string | null;
+  type: string;
+  summary: string;
+  data: Record<string, unknown>;
+  createdAt: string;
+}
 
 const TYPE_COLORS: Record<string, string> = {
   SQO: "bg-[var(--sqo)]/15 text-[var(--sqo)]",
@@ -143,6 +154,7 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
   const [activeSection, setActiveSection] = useState<FeedSection>("all");
   const [signalFilter, setSignalFilter] = useState<SignalType | "all">("all");
   const [liveNews, setLiveNews] = useState<NewsItem[]>([]);
+  const [enrichmentEvents, setEnrichmentEvents] = useState<EnrichmentEvent[]>([]);
 
   // Fetch live news from Supabase company_news table (supplements baked-in data)
   useEffect(() => {
@@ -171,6 +183,20 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
       setLiveNews(items);
     })();
 
+    return () => { cancelled = true; };
+  }, []);
+
+  // Fetch enrichment events
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch("/api/enrichment-feed?limit=50");
+        if (!res.ok || cancelled) return;
+        const data = await res.json();
+        setEnrichmentEvents(data.items || []);
+      } catch { /* enrichment table may not exist yet */ }
+    })();
     return () => { cancelled = true; };
   }, []);
 
@@ -230,6 +256,7 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
     { id: "hot", label: `Hot Signals (${hotSignals.length})` },
     { id: "funding", label: "Funding" },
     { id: "products", label: "Products" },
+    { id: "enrichment", label: `Enrichment${enrichmentEvents.length > 0 ? ` (${enrichmentEvents.length})` : ""}` },
     { id: "themes", label: "Themes" },
   ];
 
@@ -311,6 +338,66 @@ export function FeedTab({ companies, onSelectCompany }: FeedTabProps) {
             ))}
             {productLaunches.length === 0 && (
               <p className="text-xs text-muted-foreground py-8 text-center">No product launches detected</p>
+            )}
+          </div>
+        )}
+
+        {/* Enrichment Section */}
+        {activeSection === "enrichment" && (
+          <div className="space-y-2">
+            <h3 className="text-xs font-semibold text-foreground flex items-center gap-1.5">
+              <span className="text-purple-400">&#x25CF;</span> Enrichment Activity
+            </h3>
+            {enrichmentEvents.length > 0 ? (
+              enrichmentEvents.map((event) => {
+                const typeLabels: Record<string, string> = {
+                  linkedin_activity: "LinkedIn Activity",
+                  profile_hooks: "Hooks Updated",
+                  company_intel: "Company Intel",
+                  email_found: "Email Found",
+                };
+                const typeColors: Record<string, string> = {
+                  linkedin_activity: "text-blue-400",
+                  profile_hooks: "text-purple-400",
+                  company_intel: "text-emerald-400",
+                  email_found: "text-cyan-400",
+                };
+                return (
+                  <Button
+                    key={event.id}
+                    variant="ghost"
+                    onClick={() => event.companyId && onSelectCompany(event.companyId)}
+                    className="w-full h-auto p-3 justify-start rounded-lg border border-purple-500/20 bg-card/50 hover:bg-card hover:border-purple-500/40 transition-all group"
+                  >
+                    <div className="flex items-start gap-2.5 w-full text-left">
+                      <span className={`inline-flex items-center justify-center w-5 h-5 rounded text-xs font-bold ${typeColors[event.type] || "text-muted-foreground"} bg-current/10`}>
+                        E
+                      </span>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-1.5 mb-0.5">
+                          {event.companyName && (
+                            <span className="text-xs font-semibold text-foreground group-hover:text-brand transition-colors truncate">
+                              {event.companyName}
+                            </span>
+                          )}
+                          <Badge variant="outline" className={`text-xs px-1 py-0 h-3.5 ${typeColors[event.type] || ""}`}>
+                            {typeLabels[event.type] || event.type}
+                          </Badge>
+                        </div>
+                        {event.leaderName && (
+                          <p className="text-xs font-medium text-foreground/90">{event.leaderName}</p>
+                        )}
+                        <p className="text-xs text-muted-foreground leading-snug line-clamp-2">{event.summary}</p>
+                        <span className="text-xs text-muted-foreground/50 mt-1">
+                          {new Date(event.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}
+                        </span>
+                      </div>
+                    </div>
+                  </Button>
+                );
+              })
+            ) : (
+              <p className="text-xs text-muted-foreground py-8 text-center">No enrichment events yet. Pipeline runs daily at 6 AM UTC.</p>
             )}
           </div>
         )}

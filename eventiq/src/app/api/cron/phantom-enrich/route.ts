@@ -8,6 +8,11 @@ import {
 /**
  * GET /api/cron/phantom-enrich
  *
+ * @deprecated Moved to EC2 research-worker (research-worker/lib/profile-enrichment.js).
+ * EC2 worker runs daily with no timeout constraint and includes Claude hook synthesis.
+ * This Vercel cron version was limited by the 60-second Pro timeout.
+ * Kept for manual trigger compatibility but should not be relied upon.
+ *
  * Vercel Cron job — runs weekly (Wednesday 6 AM UTC).
  * Enriches P0/P1 company leaders using PhantomBuster:
  *   1. Find leaders missing emails (but have LinkedIn URLs)
