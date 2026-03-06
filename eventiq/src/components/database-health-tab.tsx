@@ -1,9 +1,10 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { Company, RatingData, EngagementEntry } from "@/lib/types";
 import { isResearched, getResearchScore } from "@/lib/types";
 import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 
@@ -98,6 +99,117 @@ function HorizontalBar({ items, total }: { items: { label: string; value: number
   );
 }
 
+interface EnrichmentHealth {
+  status: string;
+  alerts: string[];
+  today: { enrichmentEvents: number };
+  last48h: { enrichmentEvents: number; byType: Record<string, number> };
+  lastRuns: { enrichment: string | null; dailyBrief: string | null; linkedinActivity: string | null };
+}
+
+function EnrichmentPipelineCard() {
+  const [health, setHealth] = useState<EnrichmentHealth | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        const res = await fetch("/api/enrichment-health");
+        if (res.ok && mounted) setHealth(await res.json());
+      } catch { /* table may not exist */ }
+    })();
+    return () => { mounted = false; };
+  }, []);
+
+  if (!health) return null;
+
+  const formatTime = (ts: string | null) => {
+    if (!ts) return "Never";
+    const d = new Date(ts);
+    const now = Date.now();
+    const hours = Math.floor((now - d.getTime()) / 3600000);
+    if (hours < 1) return "< 1 hour ago";
+    if (hours < 24) return `${hours}h ago`;
+    const days = Math.floor(hours / 24);
+    return `${days}d ago`;
+  };
+
+  const typeLabels: Record<string, string> = {
+    linkedin_activity: "LinkedIn",
+    profile_hooks: "Hooks",
+    company_intel: "Company",
+    email_found: "Email",
+  };
+
+  return (
+    <Card className="p-4 space-y-4">
+      <div className="flex items-center justify-between">
+        <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Enrichment Pipeline</h3>
+        <Badge
+          variant="outline"
+          className={`text-xs ${health.status === "healthy" ? "text-emerald-400 border-emerald-400/30" : "text-yellow-400 border-yellow-400/30"}`}
+        >
+          {health.status}
+        </Badge>
+      </div>
+
+      {/* Alerts */}
+      {health.alerts.length > 0 && (
+        <div className="space-y-1">
+          {health.alerts.map((a, i) => (
+            <p key={i} className="text-xs text-yellow-400 flex items-start gap-1.5">
+              <span className="shrink-0">!</span> {a}
+            </p>
+          ))}
+        </div>
+      )}
+
+      {/* Stats grid */}
+      <div className="grid grid-cols-3 gap-3">
+        <div className="text-center">
+          <p className="text-lg font-bold">{health.today.enrichmentEvents}</p>
+          <p className="text-[10px] text-muted-foreground uppercase">Today</p>
+        </div>
+        <div className="text-center">
+          <p className="text-lg font-bold">{health.last48h.enrichmentEvents}</p>
+          <p className="text-[10px] text-muted-foreground uppercase">Last 48h</p>
+        </div>
+        <div className="text-center">
+          <p className="text-lg font-bold">{Object.keys(health.last48h.byType).length}</p>
+          <p className="text-[10px] text-muted-foreground uppercase">Types Active</p>
+        </div>
+      </div>
+
+      {/* Type breakdown */}
+      {Object.keys(health.last48h.byType).length > 0 && (
+        <div className="flex flex-wrap gap-1.5">
+          {Object.entries(health.last48h.byType).map(([type, count]) => (
+            <Badge key={type} variant="outline" className="text-xs text-muted-foreground">
+              {typeLabels[type] || type}: {count}
+            </Badge>
+          ))}
+        </div>
+      )}
+
+      {/* Last run times */}
+      <div className="space-y-1 text-xs">
+        <div className="flex justify-between text-muted-foreground">
+          <span>Last enrichment</span>
+          <span className="tabular-nums">{formatTime(health.lastRuns.enrichment)}</span>
+        </div>
+        <div className="flex justify-between text-muted-foreground">
+          <span>Last daily brief</span>
+          <span className="tabular-nums">{formatTime(health.lastRuns.dailyBrief)}</span>
+        </div>
+        <div className="flex justify-between text-muted-foreground">
+          <span>Last LinkedIn extraction</span>
+          <span className="tabular-nums">{formatTime(health.lastRuns.linkedinActivity)}</span>
+        </div>
+      </div>
+    </Card>
+  );
+}
+
 export function DatabaseHealthTab({ companies }: DatabaseHealthTabProps) {
   const stats = useMemo(() => {
     const total = companies.length;
@@ -176,6 +288,8 @@ export function DatabaseHealthTab({ companies }: DatabaseHealthTabProps) {
           <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Regional Market Coverage</h3>
           <HorizontalBar items={stats.topLocations} total={stats.locTotal} />
         </Card>
+
+        <EnrichmentPipelineCard />
 
         <Card className="p-4 space-y-6">
           <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Segment Completion</h3>
