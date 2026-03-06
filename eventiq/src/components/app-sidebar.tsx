@@ -31,7 +31,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Building2, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Download, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap, MessageCircle, FileText, Megaphone, Package } from "lucide-react";
+import { Building2, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Download, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap, MessageCircle, FileText, Megaphone, Package, Wrench } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -64,7 +64,8 @@ const coreNavItems: NavItem[] = [
   { id: "products", label: "Products", icon: Package, shortcut: "7" },
   { id: "research", label: "Research", icon: FileText, shortcut: "8" },
   { id: "marketing", label: "Marketing", icon: Megaphone, shortcut: "9" },
-  { id: "dinner", label: "Dinner", icon: UtensilsCrossed, shortcut: "0" },
+  { id: "skills", label: "Skills", icon: Wrench, shortcut: "0" },
+  { id: "dinner", label: "Dinner", icon: UtensilsCrossed, shortcut: "" },
 ];
 
 const devNavItems: NavItem[] = [];
@@ -305,7 +306,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.2.06</span>
+              <span className="opacity-50">v3.2.07</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">

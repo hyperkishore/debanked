@@ -59,6 +59,7 @@ import { MarketingTab } from "@/components/marketing-tab";
 import { DatabaseHealthTab } from "@/components/database-health-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
 import { MarketMapTab } from "@/components/market-map-tab";
+import { SkillsTab } from "@/components/skills-tab";
 import { useSyncedStorage } from "@/hooks/use-synced-storage";
 import { useDeveloperMode } from "@/hooks/use-developer-mode";
 import { useKeyboard } from "@/hooks/use-keyboard";
@@ -565,6 +566,7 @@ export default function Home() {
         feed: "Feed",
         map: "Market Map",
         dinner: "Dinner",
+        skills: "Skills",
       };
       const feedbackType = category === "bug" ? "bug" : "suggestion";
       const section = TAB_SECTION[ctx.tab] || "General / Other";
@@ -886,6 +888,8 @@ export default function Home() {
         );
       case "marketing":
         return <MarketingTab />;
+      case "skills":
+        return <SkillsTab />;
       default:
         return null;
     }
