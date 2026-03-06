@@ -48,10 +48,22 @@ interface LinkedInItem {
   extracted_at: string;
 }
 
+interface EnrichmentItem {
+  id: string;
+  companyId: number;
+  companyName: string;
+  leaderName: string | null;
+  type: string; // linkedin_activity, profile_hooks, company_intel, email_found
+  summary: string;
+  data: Record<string, unknown>;
+  createdAt: string;
+}
+
 type UnifiedItem =
   | { kind: "news_api"; data: NewsApiItem; timestamp: number }
   | { kind: "news_static"; data: FeedItem; timestamp: number }
-  | { kind: "linkedin"; data: LinkedInItem; timestamp: number };
+  | { kind: "linkedin"; data: LinkedInItem; timestamp: number }
+  | { kind: "enrichment"; data: EnrichmentItem; timestamp: number };
 
 const HEAT_COLORS: Record<string, string> = {
   hot: "text-[var(--sqo)] border-[var(--sqo)]/30",
@@ -95,19 +107,22 @@ function formatDate(timestamp: number): string {
 export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedFeedProps) {
   const [newsItems, setNewsItems] = useState<NewsApiItem[]>([]);
   const [linkedinItems, setLinkedinItems] = useState<LinkedInItem[]>([]);
+  const [enrichmentItems, setEnrichmentItems] = useState<EnrichmentItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Fetch API data
   useEffect(() => {
     let mounted = true;
     async function fetchAll() {
-      const [newsRes, linkedinRes] = await Promise.allSettled([
+      const [newsRes, linkedinRes, enrichRes] = await Promise.allSettled([
         fetch(`/api/news-feed?limit=${limit * 2}`).then(r => r.ok ? r.json() : { items: [] }),
         fetch(`/api/linkedin-feed?limit=${limit}`).then(r => r.ok ? r.json() : { items: [] }),
+        fetch(`/api/enrichment-feed?limit=${limit}`).then(r => r.ok ? r.json() : { items: [] }),
       ]);
       if (!mounted) return;
       if (newsRes.status === "fulfilled") setNewsItems(newsRes.value.items || []);
       if (linkedinRes.status === "fulfilled") setLinkedinItems(linkedinRes.value.items || []);
+      if (enrichRes.status === "fulfilled") setEnrichmentItems(enrichRes.value.items || []);
       setLoading(false);
     }
     fetchAll();
@@ -151,10 +166,16 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
       items.push({ kind: "linkedin", data: item, timestamp: ts });
     }
 
+    // 4. Enrichment events (profile hooks, company intel, etc.)
+    for (const item of enrichmentItems) {
+      const ts = new Date(item.createdAt).getTime();
+      items.push({ kind: "enrichment", data: item, timestamp: ts });
+    }
+
     // Sort by timestamp descending
     items.sort((a, b) => b.timestamp - a.timestamp);
     return items.slice(0, limit);
-  }, [newsItems, linkedinItems, staticFeedItems, limit]);
+  }, [newsItems, linkedinItems, enrichmentItems, staticFeedItems, limit]);
 
   if (loading) {
     return (
@@ -176,6 +197,50 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
   return (
     <div className="space-y-2">
       {unifiedItems.map((item) => {
+        if (item.kind === "enrichment") {
+          const e = item.data;
+          const typeLabel: Record<string, string> = {
+            linkedin_activity: "Activity",
+            profile_hooks: "Hooks Updated",
+            company_intel: "Company Intel",
+            email_found: "Email Found",
+          };
+          const typeColor: Record<string, string> = {
+            linkedin_activity: "text-[var(--tam)] border-[var(--tam)]/30",
+            profile_hooks: "text-purple-400 border-purple-400/30",
+            company_intel: "text-emerald-400 border-emerald-400/30",
+            email_found: "text-blue-400 border-blue-400/30",
+          };
+          return (
+            <Card
+              key={`enrich-${e.id}`}
+              className="p-3 gap-2 shadow-none hover:bg-muted/20 transition-colors cursor-pointer border-l-2 border-l-purple-500/30"
+              onClick={() => e.companyId && onSelectCompany(e.companyId)}
+            >
+              <div className="flex items-start gap-2">
+                <Rss className="h-4 w-4 text-purple-400 shrink-0 mt-0.5" />
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-1.5 mb-0.5">
+                    <Badge variant="outline" className={cn("text-xs px-1.5 py-0 h-5", typeColor[e.type] || "text-muted-foreground")}>
+                      {typeLabel[e.type] || e.type}
+                    </Badge>
+                    {e.companyName && (
+                      <span className="text-xs text-brand font-medium">{e.companyName}</span>
+                    )}
+                    <span className="text-xs text-muted-foreground/60 ml-auto shrink-0">
+                      {formatRelativeTime(item.timestamp)}
+                    </span>
+                  </div>
+                  {e.leaderName && (
+                    <p className="text-sm font-medium">{e.leaderName}</p>
+                  )}
+                  <p className="text-xs text-muted-foreground line-clamp-2 mt-0.5">{e.summary}</p>
+                </div>
+              </div>
+            </Card>
+          );
+        }
+
         if (item.kind === "linkedin") {
           const li = item.data;
           const Icon = ACTIVITY_ICONS[li.activity_type] || MessageSquare;

@@ -4,6 +4,10 @@ import { fileURLToPath } from "node:url";
 import cron from "node-cron";
 import { getSupabase } from "./lib/supabase.js";
 import { researchCompany } from "./lib/researcher.js";
+import { extractLinkedInActivity } from "./lib/linkedin-activity.js";
+import { enrichProfiles } from "./lib/profile-enrichment.js";
+import { scrapeCompanyIntel } from "./lib/company-intelligence.js";
+import { generateDailyDigest } from "./lib/daily-digest.js";
 
 // Load .env file (no external dependency needed)
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -206,4 +210,44 @@ cron.schedule("0 6 * * 1", async () => {
   }
 });
 
-console.log("[Worker] Ready. Polling every 30s. Weekly cron: Monday 6AM UTC.");
+// --- Daily: LinkedIn Activity → Profile Hooks (chained) ---
+// Runs at 6 AM UTC daily
+cron.schedule("0 6 * * *", async () => {
+  console.log("[Cron] Daily LinkedIn activity extraction starting...");
+  try {
+    const activity = await extractLinkedInActivity();
+    console.log(`[Cron] LinkedIn activity done: ${activity.activitiesStored || 0} stored`);
+
+    // Chain profile enrichment (only runs if new activity found)
+    const hooks = await enrichProfiles(activity);
+    console.log(`[Cron] Profile enrichment done: ${hooks.leadersEnriched || 0} leaders, ${hooks.hooksGenerated || 0} hooks`);
+  } catch (err) {
+    console.error("[Cron] LinkedIn activity pipeline error:", err.message);
+  }
+});
+
+// --- Daily: Intelligence Digest ---
+// Runs at 8 AM UTC daily (after all enrichment + news-ingest completes)
+cron.schedule("0 8 * * *", async () => {
+  console.log("[Cron] Daily intelligence digest starting...");
+  try {
+    const digest = await generateDailyDigest();
+    console.log(`[Cron] Daily digest done: ${digest.highlights?.length || 0} highlights`);
+  } catch (err) {
+    console.error("[Cron] Daily digest error:", err.message);
+  }
+});
+
+// --- Weekly: Company Intelligence Scraping ---
+// Runs Sunday 2 AM UTC
+cron.schedule("0 2 * * 0", async () => {
+  console.log("[Cron] Weekly company intelligence scraping starting...");
+  try {
+    const intel = await scrapeCompanyIntel();
+    console.log(`[Cron] Company intel done: ${intel.companiesScraped} scraped, ${intel.updatesFound} updates`);
+  } catch (err) {
+    console.error("[Cron] Company intelligence error:", err.message);
+  }
+});
+
+console.log("[Worker] Ready. Polling every 30s. Crons: Mon 6AM (research), Daily 6AM (LinkedIn), Daily 8AM (digest), Sun 2AM (company intel).");
