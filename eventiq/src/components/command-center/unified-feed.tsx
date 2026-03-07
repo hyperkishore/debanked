@@ -17,6 +17,7 @@ import {
   Heart,
   Rss,
   Calendar,
+  Building2,
 } from "lucide-react";
 
 interface UnifiedFeedProps {
@@ -141,13 +142,23 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
     const items: UnifiedItem[] = [];
     const seenHeadlines = new Set<string>();
 
-    // Helper to normalize for dedup
-    const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 60);
+    // Helper to normalize for dedup — strip HTML, punctuation, common words
+    const normalize = (s: string) => s.replace(/<[^>]+>/g, "").toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 60);
+    // Check if a headline is too similar to any already seen (catches rephrased dupes)
+    const isSimilar = (key: string) => {
+      for (const seen of seenHeadlines) {
+        // If one is a substring of the other (> 30 chars), treat as dupe
+        if (key.length > 30 && seen.length > 30) {
+          if (key.includes(seen.slice(0, 40)) || seen.includes(key.slice(0, 40))) return true;
+        }
+      }
+      return false;
+    };
 
     // 1. News API items (highest priority — freshest from Supabase)
     for (const item of newsItems) {
       const key = normalize(item.headline);
-      if (seenHeadlines.has(key)) continue;
+      if (seenHeadlines.has(key) || isSimilar(key)) continue;
       seenHeadlines.add(key);
       const ts = item.published_at ? new Date(item.published_at).getTime() : Date.now() - 86400000;
       items.push({ kind: "news_api", data: item, timestamp: ts });
@@ -158,7 +169,7 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
     const thirtyDaysAgo = now - 30 * 86400000;
     for (const item of staticFeedItems) {
       const key = normalize(item.headline);
-      if (seenHeadlines.has(key)) continue;
+      if (seenHeadlines.has(key) || isSimilar(key)) continue;
       seenHeadlines.add(key);
       // Vague dates ("Source, 2026") resolve to mid-year (future) — cap to 30d ago
       // so they don't appear as "today" in the feed. Only items with precise dates
@@ -174,7 +185,9 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
     }
 
     // 4. Enrichment events (profile hooks, company intel, etc.)
+    // Filter out error entries (e.g. "Launch failed: ...")
     for (const item of enrichmentItems) {
+      if (item.summary?.toLowerCase().includes("failed") || item.summary?.toLowerCase().includes("error")) continue;
       const ts = new Date(item.createdAt).getTime();
       items.push({ kind: "enrichment", data: item, timestamp: ts });
     }
@@ -300,62 +313,61 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
         const angle = generateAngle(whyNowType, cleanHeadline, companyName);
 
         return (
-          <Card
+          <a
             key={isApi ? `api-${item.data.id}` : `static-${item.data.id}`}
-            className="p-3 gap-2 shadow-none hover:bg-muted/20 transition-colors cursor-pointer"
-            onClick={() => onSelectCompany(companyId)}
+            href={sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
           >
-            <div className="flex items-start gap-2">
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-1.5 mb-1">
-                  <Badge
-                    variant="outline"
-                    className={cn("text-xs px-1.5 py-0 h-5", HEAT_COLORS[heat] || HEAT_COLORS.cool)}
-                  >
-                    {heat}
-                  </Badge>
-                  <Badge variant="outline" className="text-xs px-1.5 py-0 h-5 text-muted-foreground">
-                    {TYPE_LABELS[signalType] || "News"}
-                  </Badge>
-                  <span className="text-xs text-muted-foreground/60 ml-auto shrink-0">
-                    {formatRelativeTime(item.timestamp)}
-                  </span>
+            <Card
+              className="p-3 gap-2 shadow-none hover:bg-muted/20 transition-colors cursor-pointer"
+            >
+              <div className="flex items-start gap-2">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-1.5 mb-1">
+                    <Badge
+                      variant="outline"
+                      className={cn("text-xs px-1.5 py-0 h-5", HEAT_COLORS[heat] || HEAT_COLORS.cool)}
+                    >
+                      {heat}
+                    </Badge>
+                    <Badge variant="outline" className="text-xs px-1.5 py-0 h-5 text-muted-foreground">
+                      {TYPE_LABELS[signalType] || "News"}
+                    </Badge>
+                    <span className="text-xs text-muted-foreground/60 ml-auto shrink-0">
+                      {formatRelativeTime(item.timestamp)}
+                    </span>
+                  </div>
+                  <p className="text-sm font-medium line-clamp-2">
+                    {cleanHeadline}
+                  </p>
+                  {description && (
+                    <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">{description}</p>
+                  )}
+                  <p className="text-xs text-orange-400/80 line-clamp-1 mt-1">{angle}</p>
+                  <div className="flex items-center gap-1.5 mt-1">
+                    <button
+                      type="button"
+                      onClick={(e) => { e.preventDefault(); e.stopPropagation(); onSelectCompany(companyId); }}
+                      className="text-xs text-brand font-medium hover:underline flex items-center gap-1"
+                    >
+                      <Building2 className="h-2.5 w-2.5" />
+                      {companyName}
+                    </button>
+                    <Badge variant="outline" className="text-xs px-1.5 py-0 h-5 text-muted-foreground/60">
+                      {source.replace(/,\s*\w+\s+\d{4}$/, "")}
+                    </Badge>
+                    <span className="text-xs text-muted-foreground/40 flex items-center gap-1">
+                      <Calendar className="h-2.5 w-2.5" />
+                      {formatDate(item.timestamp)}
+                    </span>
+                  </div>
                 </div>
-                <a
-                  href={sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium line-clamp-2 hover:underline"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {cleanHeadline}
-                </a>
-                {description && (
-                  <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">{description}</p>
-                )}
-                <p className="text-xs text-orange-400/80 line-clamp-1 mt-1">{angle}</p>
-                <div className="flex items-center gap-1.5 mt-1">
-                  <span className="text-xs text-brand font-medium">{companyName}</span>
-                  <Badge variant="outline" className="text-xs px-1.5 py-0 h-5 text-muted-foreground/60">
-                    {source.replace(/,\s*\w+\s+\d{4}$/, "")}
-                  </Badge>
-                  <span className="text-xs text-muted-foreground/40 flex items-center gap-1">
-                    <Calendar className="h-2.5 w-2.5" />
-                    {formatDate(item.timestamp)}
-                  </span>
-                </div>
+                <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted-foreground mt-1" />
               </div>
-              <a
-                href={sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0 text-muted-foreground hover:text-foreground transition-colors"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <ExternalLink className="h-3.5 w-3.5" />
-              </a>
-            </div>
-          </Card>
+            </Card>
+          </a>
         );
       })}
     </div>
