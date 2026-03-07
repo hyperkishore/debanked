@@ -43,8 +43,8 @@ function getSupabase() {
 async function braveSearch(query) {
   const apiKey = process.env.BRAVE_SEARCH_API_KEY;
   if (!apiKey) {
-    console.warn("[personal-research] BRAVE_SEARCH_API_KEY not set, skipping search");
-    return [];
+    // Fall back to Google scrape
+    return googleSearchFallback(query);
   }
 
   const url = new URL(BRAVE_SEARCH_URL);
@@ -63,7 +63,7 @@ async function braveSearch(query) {
     if (!res.ok) {
       const text = await res.text().catch(() => "");
       console.warn(`[personal-research] Brave search failed (${res.status}): ${text.slice(0, 200)}`);
-      return [];
+      return googleSearchFallback(query);
     }
 
     const data = await res.json();
@@ -75,6 +75,55 @@ async function braveSearch(query) {
     return results;
   } catch (err) {
     console.warn(`[personal-research] Brave search error: ${err.message}`);
+    return googleSearchFallback(query);
+  }
+}
+
+/**
+ * Fallback: scrape Google search result snippets (no API key needed).
+ * Extracts titles and descriptions from the HTML response.
+ */
+async function googleSearchFallback(query) {
+  try {
+    const url = `https://www.google.com/search?q=${encodeURIComponent(query)}&num=5`;
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept-Language": "en-US,en;q=0.9",
+      },
+    });
+    if (!res.ok) return [];
+    const html = await res.text();
+
+    // Extract text between <h3> tags (titles) and nearby snippet divs
+    const results = [];
+    // Match result blocks: title in <h3> and snippet in nearby spans/divs
+    const titleRegex = /<h3[^>]*>(.*?)<\/h3>/gi;
+    const snippetRegex = /<span[^>]*class="[^"]*"[^>]*>((?:(?!<span).)*?)<\/span>/gi;
+
+    let match;
+    const titles = [];
+    while ((match = titleRegex.exec(html)) !== null) {
+      titles.push(match[1].replace(/<[^>]+>/g, "").trim());
+    }
+
+    // Get longer text spans as potential snippets
+    const spans = [];
+    while ((match = snippetRegex.exec(html)) !== null) {
+      const text = match[1].replace(/<[^>]+>/g, "").trim();
+      if (text.length > 50 && text.length < 500) spans.push(text);
+    }
+
+    for (let i = 0; i < Math.min(titles.length, 5); i++) {
+      results.push({
+        title: titles[i] || "",
+        description: spans[i] || "",
+        url: "",
+      });
+    }
+    return results;
+  } catch (err) {
+    console.warn(`[personal-research] Google fallback error: ${err.message}`);
     return [];
   }
 }
