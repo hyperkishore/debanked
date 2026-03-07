@@ -89,9 +89,13 @@ const ACTIVITY_ICONS: Record<string, React.ComponentType<{ className?: string }>
 };
 
 function formatRelativeTime(timestamp: number): string {
-  const diffMs = Date.now() - timestamp;
-  if (diffMs < 0) return "recent"; // future dates (imprecise date parsing)
-  const diffDays = Math.floor(diffMs / 86400000);
+  if (timestamp > Date.now()) return "recent";
+  // Use calendar dates (local timezone) instead of 24-hour windows
+  const now = new Date();
+  const then = new Date(timestamp);
+  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+  const thenStart = new Date(then.getFullYear(), then.getMonth(), then.getDate()).getTime();
+  const diffDays = Math.round((todayStart - thenStart) / 86400000);
   if (diffDays === 0) return "today";
   if (diffDays === 1) return "yesterday";
   if (diffDays < 7) return `${diffDays}d ago`;
@@ -151,12 +155,15 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
 
     // 2. Static feed items (from company.news[])
     const now = Date.now();
+    const thirtyDaysAgo = now - 30 * 86400000;
     for (const item of staticFeedItems) {
       const key = normalize(item.headline);
       if (seenHeadlines.has(key)) continue;
       seenHeadlines.add(key);
-      // Cap at now — date parsing from "Source, 2026" defaults to mid-year (future)
-      const ts = Math.min(item.dateEstimate, now);
+      // Vague dates ("Source, 2026") resolve to mid-year (future) — cap to 30d ago
+      // so they don't appear as "today" in the feed. Only items with precise dates
+      // (from news.p / published_at) should show as recent.
+      const ts = item.dateEstimate > now ? thirtyDaysAgo : item.dateEstimate;
       items.push({ kind: "news_static", data: item, timestamp: ts });
     }
 
