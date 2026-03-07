@@ -78,6 +78,9 @@ export function PreCallBriefingDialog({
                 {briefing.who.persona.label}: {briefing.who.persona.strategy}
               </Badge>
               <p className="text-xs text-muted-foreground leading-relaxed">{briefing.who.oneLiner}</p>
+              {briefing.who.personalNote && (
+                <p className="text-xs text-orange-400/80 leading-relaxed italic">{briefing.who.personalNote}</p>
+              )}
               {briefing.who.topHooks.length > 0 && (
                 <div className="flex flex-wrap gap-1">
                   {briefing.who.topHooks.map((hook, i) => (

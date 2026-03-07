@@ -19,6 +19,7 @@ export interface Leader {
   t: string;
   bg: string;
   hooks?: string[];
+  personal?: string;  // Personal story/interests — origin, hobbies, passions, what makes them human
   li?: string;
   email?: string;
   phone?: string;

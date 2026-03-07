@@ -38,6 +38,7 @@ export interface PreCallBriefing {
   who: {
     leader: Leader;
     oneLiner: string;
+    personalNote: string | null;
     topHooks: string[];
     persona: ReturnType<typeof getPersonaConfig>;
   };
@@ -355,6 +356,7 @@ export function generateBriefing(
     who: {
       leader,
       oneLiner: bgSentence,
+      personalNote: leader.personal || null,
       topHooks,
       persona: personaConfig,
     },
@@ -380,6 +382,9 @@ export function briefingToText(briefing: PreCallBriefing, companyName: string): 
   lines.push(`WHO: ${briefing.who.leader.n} — ${briefing.who.leader.t}`);
   lines.push(`Persona: ${briefing.who.persona.label} (${briefing.who.persona.strategy})`);
   lines.push(briefing.who.oneLiner);
+  if (briefing.who.personalNote) {
+    lines.push(`Personal: ${briefing.who.personalNote}`);
+  }
   if (briefing.who.topHooks.length > 0) {
     lines.push(`Hooks: ${briefing.who.topHooks.join(' | ')}`);
   }

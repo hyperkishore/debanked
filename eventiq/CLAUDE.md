@@ -10,7 +10,7 @@ Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui application for HyperVerge
 
 **Not just events.** While the tool originated for DeBanked CONNECT 2026, it now serves as the persistent GTM intelligence layer for all go-to-market activities across the small business lending vertical.
 
-**Version:** 3.2.13
+**Version:** 3.2.14
 **Version sync:** `./scripts/sync-version.sh <version>` — updates VERSION, package.json, sidebar UI, and this file. **Run this before every commit.**
 **Dev server:** `npm run dev` → http://localhost:3000
 **Build:** `npm run build` → `.next/` (SSR, no static export)
@@ -248,8 +248,11 @@ interface Company {
 interface Leader {
   n: string;    // Full name
   t: string;    // Title
-  bg: string;   // Background paragraph (career, education, achievements)
-  hooks?: string[];  // 2-4 short conversation starters (2-5 words each)
+  bg: string;   // Background paragraph (career, education, achievements, personal journey)
+  hooks?: string[];  // 3-5 conversation starters: personal hooks first, then professional
+  personal?: string; // Personal story/interests paragraph — origin story, hobbies, passions,
+                     // side projects, family context, what drives them outside work.
+                     // This is the "human connection" field that makes cold outreach warm.
   li?: string;       // LinkedIn profile URL
   email?: string;           // Work email (from Apollo or research)
   phone?: string;           // Direct phone
@@ -370,13 +373,20 @@ Every company entry must have ALL of the following populated via real web resear
 3. **`leaders`** — Deep profiles for 2-4 key executives. Each leader MUST have:
    - **`n`**: Full name
    - **`t`**: Title (with context if useful, e.g. "CEO, Co-Founder")
-   - **`bg`**: 30-100 word background paragraph from web research covering:
+   - **`bg`**: 50-150 word background paragraph from web research covering:
      - Career history and prior roles (search LinkedIn, company bios)
      - Educational background (university, degree)
      - Key accomplishments and milestones
-     - Personal details if publicly available (hobbies, podcasts, speaking, board seats)
+     - **Personal journey** — origin story, pivots, failures, what shaped them (e.g. "grew up on a dairy farm in Wisconsin, started first business at 19, went bankrupt at 25, rebuilt")
+     - **Interests & passions outside work** — hobbies, sports, causes, side projects (e.g. "runs ultramarathons", "youth baseball coach", "amateur winemaker", "volunteers at food bank")
+     - **Communication style clues** — are they data-driven? storytelling? provocative? humble? (gleaned from interviews, LinkedIn posts, podcast appearances)
+     - **Public opinions & thought leadership** — what they've written about, spoken about, or are known for in the industry
+     - Board seats, advisory roles, angel investments
    - **`li`**: LinkedIn profile URL (search `site:linkedin.com/in/ "Person Name" "Company"`)
-   - **`hooks`**: 2-4 conversation starters based on RESEARCHED facts, not generic phrases
+   - **`hooks`**: 3-5 conversation starters based on RESEARCHED facts, not generic phrases. **Prioritize personal hooks over professional ones** — a shared hobby or personal story creates 10x stronger connection than "congratulations on the funding round". Include at minimum:
+     - 1-2 personal/human hooks (interests, journey, personal story)
+     - 1-2 professional hooks (recent achievement, role, company milestone)
+     - 1 opinion/thought-leadership hook (something they've publicly said or believe)
 
 4. **`news`** — 3-4 most recent headlines with:
    - **`h`**: Headline text
@@ -423,19 +433,28 @@ Every company entry must have ALL of the following populated via real web resear
 - **`email`**: Work email (found via company website, press releases, conference speaker bios)
 Hooks must come from ACTUAL web research, not rephrasing existing text:
 
-**Research sources for each person:**
+**Research sources for each person (work through ALL of these for P0/P1 leaders):**
 - Web search: `"Person Name" "Company Name"` — find news mentions, quotes, interviews
 - Web search: `"Person Name" LinkedIn` — find profile details, career history
-- Web search: `"Person Name" podcast OR conference OR panel OR speaking` — find public appearances
-- Web search: `"Person Name" board OR advisor OR advisory` — find governance roles
+- Web search: `"Person Name" podcast OR interview OR "sat down with"` — find long-form conversations where they reveal personal stories, motivations, and thinking style
+- Web search: `"Person Name" conference OR panel OR keynote OR speaking` — find public appearances and what they chose to talk about
+- Web search: `"Person Name" board OR advisor OR advisory OR angel` — find governance roles and investments (reveals what they care about beyond the day job)
+- Web search: `"Person Name" hobby OR passion OR volunteer OR coach OR marathon OR charity` — find personal interests
+- Web search: `"Person Name" grew up OR hometown OR childhood OR family` — find origin story
+- Web search: `"Person Name" "I learned" OR "I believe" OR "my philosophy" OR "what I've learned"` — find their worldview in their own words
 - Company website team/about page — find official bio
 - Industry publications (deBanked, BusinessWire, Yahoo Finance) — find quotes and features
+- LinkedIn posts (if profile is public) — check what they share and write about; their posts reveal current interests and opinions more than any bio
+
+**The personal research rule:** If you can't find at least ONE personal/human detail about a P0/P1 leader (hobby, origin story, personal interest, side project), you haven't researched deep enough. Try different search queries. Check their LinkedIn "Featured" section. Look for podcast guest appearances (people reveal the most personal details in conversational formats). If truly nothing exists, note "No personal details found in public sources" so it's clear the search was done.
 
 **Quality standard for hooks:**
-- GOOD: `"*Former Navy SEAL"`, `"UC Berkeley"`, `"*Sold company to Microsoft"`, `"Runs food blog"`, `"*D-1 lacrosse All-American"`
-- BAD: `"MCA expert"`, `"Industry veteran"`, `"Sales leader"`, `"Finance professional"`
+- BEST (personal/human): `"*Former Navy SEAL"`, `"Runs food blog"`, `"*D-1 lacrosse All-American"`, `"Coaches son's baseball team"`, `"*Grew up on dairy farm"`, `"Ultramarathon runner"`, `"Amateur pilot"`, `"*Started first business at 16"`
+- GOOD (professional but specific): `"UC Berkeley"`, `"*Sold company to Microsoft"`, `"Board member at SBFA"`, `"*Keynote at Money20/20"`
+- BAD (generic/useless): `"MCA expert"`, `"Industry veteran"`, `"Sales leader"`, `"Finance professional"`, `"Experienced CEO"`, `"Passionate about fintech"`
 - Use `*` prefix for truly standout/memorable items
 - Each hook must be traceable to a specific fact found via research
+- **Personal hooks come first** — they create authentic connection. Professional hooks are secondary.
 
 ### Web Research Sources (free, public)
 - LinkedIn public profiles and company pages

@@ -1303,6 +1303,11 @@ function LeaderCard({
           )}
         </div>
       )}
+      {leader.personal && bioExpanded && (
+        <p className="text-xs text-orange-400/80 mt-1.5 leading-relaxed italic">
+          {leader.personal}
+        </p>
+      )}
       {hooks.length > 0 && (
         <div className="flex flex-wrap items-center gap-1 mt-1.5">
           {visibleHooks.map((hook, j) => (
