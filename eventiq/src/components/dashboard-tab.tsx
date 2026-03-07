@@ -6,6 +6,7 @@ import { getLastEngagement, getChannelConfig, formatEngagementTime } from "@/lib
 import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { StreakData } from "@/lib/streak-helpers";
 import { detectBreaches, type SLABreach } from "@/lib/sla-helpers";
+import { getAllThreadingHealth, getStageLabel, RISK_STYLES, type ThreadingHealth } from "@/lib/threading-health";
 import { getRicpRolesFilled } from "@/lib/attention-score";
 import type { FunctionalRole } from "@/lib/ricp-taxonomy";
 import { ActionFeed } from "@/components/action-feed";
@@ -206,6 +207,12 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
   const slaBreaches = useMemo(() => {
     const companyList = companies.map((c) => ({ id: c.id, name: c.name }));
     return detectBreaches(companyList, engagements, pipelineState);
+  }, [companies, engagements, pipelineState]);
+
+  // Threading health — under-threaded pipeline accounts
+  const underThreaded = useMemo(() => {
+    const all = getAllThreadingHealth(companies, engagements, pipelineState);
+    return all.filter((h) => h.risk === "critical" || h.risk === "warning");
   }, [companies, engagements, pipelineState]);
 
   const stats = useMemo(() => {
@@ -536,6 +543,54 @@ export function DashboardTab({ companies, metState, engagements, ratingState, st
               {slaBreaches.length > 6 && (
                 <p className="text-xs text-muted-foreground text-center">
                   +{slaBreaches.length - 6} more
+                </p>
+              )}
+            </div>
+          </Card>
+        )}
+
+        {/* Under-Threaded Accounts */}
+        {underThreaded.length > 0 && (
+          <Card className="p-4 gap-3 shadow-none border-yellow-500/20 space-y-3">
+            <SectionHeader
+              title="Under-Threaded Accounts"
+              description={`${underThreaded.length} pipeline deal${underThreaded.length !== 1 ? "s" : ""} with single point of failure`}
+            />
+            <div className="space-y-2">
+              {underThreaded.slice(0, 8).map((h) => {
+                const riskStyle = RISK_STYLES[h.risk];
+                return (
+                  <div
+                    key={h.companyId}
+                    className="flex items-center justify-between text-xs p-2 rounded-md bg-muted/20 cursor-pointer hover:bg-muted/40 transition-colors"
+                    onClick={() => onOpenEngagement(h.companyId)}
+                  >
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className={cn("w-2 h-2 rounded-full shrink-0", riskStyle.dotColor)} />
+                      <span className="truncate font-medium">{h.companyName}</span>
+                      <Badge
+                        variant="outline"
+                        className="text-xs px-1.5 py-0 h-5 shrink-0"
+                      >
+                        {getStageLabel(h.pipelineStage)}
+                      </Badge>
+                    </div>
+                    <div className="flex items-center gap-2 shrink-0 ml-2">
+                      <span className={cn("tabular-nums font-medium", riskStyle.textColor)}>
+                        {h.engagedContacts}/{h.totalContacts} threads
+                      </span>
+                      {h.suggestions.length > 0 && (
+                        <span className="text-muted-foreground/60 truncate max-w-[120px]">
+                          Try {h.suggestions[0].split(" ")[0]}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+              {underThreaded.length > 8 && (
+                <p className="text-xs text-muted-foreground text-center">
+                  +{underThreaded.length - 8} more
                 </p>
               )}
             </div>

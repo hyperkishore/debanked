@@ -1,12 +1,13 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState, useCallback } from "react";
 import { Company, EngagementEntry, RatingData } from "@/lib/types";
 import { buildFeedItems } from "@/lib/feed-helpers";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Activity, Rss, Target } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Activity, Rss, Target, Zap } from "lucide-react";
 import { GoalHeader } from "@/components/command-center/goal-header";
 import { DailyBriefWidget } from "@/components/command-center/daily-brief-widget";
 import { TodaysMeetings } from "@/components/command-center/todays-meetings";
@@ -24,6 +25,7 @@ interface CommandCenterTabProps {
   onSelectCompany: (id: number) => void;
   onOpenEngagement: (companyId: number) => void;
   onCompleteFollowUp: (followUpId: string) => void;
+  onAutoFollowUp?: (followUp: FollowUpReminder) => void;
 }
 
 export function CommandCenterTab({
@@ -36,8 +38,14 @@ export function CommandCenterTab({
   onSelectCompany,
   onOpenEngagement,
   onCompleteFollowUp,
+  onAutoFollowUp,
 }: CommandCenterTabProps) {
   const feedItems = useMemo(() => buildFeedItems(companies), [companies]);
+  const [signalTriggerCount, setSignalTriggerCount] = useState(0);
+
+  const handleAutoTriggerCount = useCallback((count: number) => {
+    setSignalTriggerCount(count);
+  }, []);
 
   return (
     <div className="h-full flex flex-col bg-background">
@@ -73,11 +81,21 @@ export function CommandCenterTab({
                 <div className="flex items-center gap-2">
                   <Rss className="h-3.5 w-3.5 text-muted-foreground" />
                   <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Signal Feed</h3>
+                  {signalTriggerCount > 0 && (
+                    <Badge variant="outline" className="text-xs px-1.5 py-0 h-5 text-orange-400 border-orange-400/30 gap-1 animate-in fade-in">
+                      <Zap className="h-2.5 w-2.5" />
+                      {signalTriggerCount} trigger{signalTriggerCount !== 1 ? "s" : ""}
+                    </Badge>
+                  )}
                 </div>
                 <UnifiedFeed
                   companies={companies}
                   onSelectCompany={onSelectCompany}
                   limit={30}
+                  pipelineState={pipelineState}
+                  followUps={followUps}
+                  onAutoFollowUp={onAutoFollowUp}
+                  onAutoTriggerCount={handleAutoTriggerCount}
                 />
               </div>
 

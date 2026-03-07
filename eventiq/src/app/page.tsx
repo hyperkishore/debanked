@@ -32,6 +32,7 @@ import { CompanyDetail } from "@/components/company-detail";
 import { SearchCommand } from "@/components/search-command";
 import { RatingDialog } from "@/components/rating-dialog";
 import { EngagementLog } from "@/components/engagement-log";
+import { PostMeetingDialog } from "@/components/post-meeting-dialog";
 import { getCompanyEngagements, deduplicateEngagements } from "@/lib/engagement-helpers";
 import { ImportDialog } from "@/components/import-dialog";
 import { ChatWidget, ChatFab } from "@/components/chat-widget";
@@ -142,6 +143,7 @@ export default function Home() {
     []
   );
   const [engagementDialogOpen, setEngagementDialogOpen] = useState(false);
+  const [postMeetingDialogOpen, setPostMeetingDialogOpen] = useState(false);
   const [importDialogOpen, setImportDialogOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
@@ -507,6 +509,17 @@ export default function Home() {
     [setFollowUps]
   );
 
+  const handleAutoFollowUp = useCallback(
+    (followUp: FollowUpReminder) => {
+      setFollowUps((prev) => {
+        // Avoid duplicates
+        if (prev.some((f) => f.id === followUp.id)) return prev;
+        return [...prev, followUp];
+      });
+    },
+    [setFollowUps]
+  );
+
   const handleOpenEngagementForCompany = useCallback(
     (companyId: number) => {
       setSelectedId(companyId);
@@ -857,6 +870,7 @@ export default function Home() {
             onSelectCompany={handleSelect}
             onOpenEngagement={handleOpenEngagementForCompany}
             onCompleteFollowUp={handleCompleteFollowUp}
+            onAutoFollowUp={handleAutoFollowUp}
           />
         );
       case "db_health":
@@ -1043,6 +1057,7 @@ export default function Home() {
                         }}
                         onAddEngagement={() => setEngagementDialogOpen(true)}
                         onDeleteEngagement={handleDeleteEngagement}
+                        onPostMeetingNotes={() => setPostMeetingDialogOpen(true)}
                         onQuickLog={handleQuickLog}
                         onSequenceStep={handleSequenceStep}
                         onAddTag={handleAddTag}
@@ -1168,6 +1183,7 @@ export default function Home() {
                   }}
                   onAddEngagement={() => setEngagementDialogOpen(true)}
                   onDeleteEngagement={handleDeleteEngagement}
+                  onPostMeetingNotes={() => setPostMeetingDialogOpen(true)}
                   onQuickLog={handleQuickLog}
                   onSequenceStep={handleSequenceStep}
                   onAddTag={handleAddTag}
@@ -1237,6 +1253,32 @@ export default function Home() {
           company={selectedCompany}
           onClose={() => setEngagementDialogOpen(false)}
           onSave={handleAddEngagement}
+        />
+      )}
+
+      {selectedCompany && (
+        <PostMeetingDialog
+          open={postMeetingDialogOpen}
+          company={selectedCompany}
+          pipelineState={pipelineState}
+          onClose={() => setPostMeetingDialogOpen(false)}
+          onSave={(entry, followUp, sentimentData, additionalFollowUps) => {
+            handleAddEngagement(entry, followUp, sentimentData);
+            // Create additional follow-up reminders
+            if (additionalFollowUps) {
+              for (const fu of additionalFollowUps) {
+                const reminder: FollowUpReminder = {
+                  id: crypto.randomUUID(),
+                  companyId: entry.companyId,
+                  contactName: fu.contactName,
+                  dueDate: fu.dueDate,
+                  notes: fu.notes,
+                  createdAt: new Date().toISOString(),
+                };
+                setFollowUps((prev) => [...prev, reminder]);
+              }
+            }
+          }}
         />
       )}
 

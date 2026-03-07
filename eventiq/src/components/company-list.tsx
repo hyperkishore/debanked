@@ -7,6 +7,7 @@ import { getLastEngagement, needsFollowUp } from "@/lib/engagement-helpers";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
 import { computeOutreachScore, getNextBestAction, getUrgencyTier } from "@/lib/outreach-score";
 import { computeReadinessScore, getReadinessLabel } from "@/lib/readiness-score";
+import { getThreadingHealth, ThreadingRisk } from "@/lib/threading-health";
 import { buildFeedItems } from "@/lib/feed-helpers";
 import { CompanyCard } from "./company-card";
 import { CompanyTable } from "./company-table";
@@ -262,6 +263,18 @@ export function CompanyList({
     return { scores, actions, tiers };
   }, [filtered, engagements, pipelineState, metState]);
 
+  // Compute threading risk for pipeline companies
+  const threadingRiskMap = useMemo(() => {
+    const risks = new Map<number, ThreadingRisk>();
+    for (const c of filtered) {
+      const record = pipelineState[c.id];
+      if (!record) continue;
+      const health = getThreadingHealth(c, engagements, record.stage);
+      risks.set(c.id, health.risk);
+    }
+    return risks;
+  }, [filtered, engagements, pipelineState]);
+
   // Apply ReadyToSend post-filter (needs readiness scores computed first)
   const postFiltered = useMemo(() => {
     if (activeFilter !== "ReadyToSend") return filtered;
@@ -386,6 +399,7 @@ export function CompanyList({
                     tags={tagsState[company.id]}
                     readinessScore={readinessData.scores.get(company.id)}
                     readinessLabel={readinessData.labels.get(company.id) as "ready" | "almost" | "needs-work" | "not-ready" | undefined}
+                    threadingRisk={threadingRiskMap.get(company.id)}
                   />
                 </div>
               );

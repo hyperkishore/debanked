@@ -23,6 +23,10 @@
     {
       "path": "/api/cron/news-ingest",
       "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/cron/weekly-review",
+      "schedule": "0 7 * * 1"
     }
   ]
 }

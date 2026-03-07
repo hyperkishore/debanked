@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, useRef, useCallback } from "react";
 import { Company } from "@/lib/types";
+import { PipelineRecord } from "@/lib/pipeline-helpers";
+import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { buildFeedItems, FeedItem, SIGNAL_TYPE_CONFIG } from "@/lib/feed-helpers";
 import { generateAngle, mapSignalType } from "@/lib/why-now-engine";
 import { Card } from "@/components/ui/card";
@@ -26,6 +28,10 @@ interface UnifiedFeedProps {
   companies: Company[];
   onSelectCompany: (id: number) => void;
   limit?: number;
+  pipelineState?: Record<string, PipelineRecord>;
+  followUps?: FollowUpReminder[];
+  onAutoFollowUp?: (followUp: FollowUpReminder) => void;
+  onAutoTriggerCount?: (count: number) => void;
 }
 
 interface NewsApiItem {
@@ -118,7 +124,7 @@ interface OutreachTarget {
   companyName: string;
 }
 
-export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedFeedProps) {
+export function UnifiedFeed({ companies, onSelectCompany, limit = 30, pipelineState, followUps, onAutoFollowUp, onAutoTriggerCount }: UnifiedFeedProps) {
   const [newsItems, setNewsItems] = useState<NewsApiItem[]>([]);
   const [linkedinItems, setLinkedinItems] = useState<LinkedInItem[]>([]);
   const [enrichmentItems, setEnrichmentItems] = useState<EnrichmentItem[]>([]);
@@ -143,6 +149,74 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
     fetchAll();
     return () => { mounted = false; };
   }, [limit]);
+
+  // Signal-based follow-up trigger: auto-create follow-ups for pipeline companies with new signals
+  const triggeredSignalsRef = useRef(new Set<string>());
+  const [autoTriggerCount, setAutoTriggerCount] = useState(0);
+
+  const checkSignalTriggers = useCallback(() => {
+    if (!pipelineState || !followUps || !onAutoFollowUp || newsItems.length === 0) return;
+
+    const companyMap = new Map(companies.map((c) => [c.id, c]));
+    // Active pipeline stages (not just researched or lost)
+    const activePipelineStages = new Set(["contacted", "engaged", "demo", "proposal"]);
+    // Existing follow-up signal IDs to avoid duplicates
+    const existingFollowUpNotes = new Set(
+      followUps.filter((f) => !f.completed).map((f) => f.notes)
+    );
+
+    let newCount = 0;
+
+    for (const newsItem of newsItems) {
+      const companyId = newsItem.company_id;
+      const record = pipelineState[companyId];
+      if (!record || !activePipelineStages.has(record.stage)) continue;
+
+      const company = companyMap.get(companyId);
+      if (!company) continue;
+
+      const signalKey = `signal-${companyId}-${newsItem.id}`;
+      if (triggeredSignalsRef.current.has(signalKey)) continue;
+
+      const suggestedAction = `Follow up about: ${newsItem.headline.replace(/<[^>]+>/g, "").slice(0, 120)}`;
+      if (existingFollowUpNotes.has(suggestedAction)) {
+        triggeredSignalsRef.current.add(signalKey);
+        continue;
+      }
+
+      // Create the follow-up
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const dueDate = tomorrow.toISOString().slice(0, 10);
+
+      const followUp: FollowUpReminder = {
+        id: signalKey,
+        companyId,
+        contactName: company.contacts?.[0]?.n || company.name,
+        dueDate,
+        notes: suggestedAction,
+        createdAt: new Date().toISOString(),
+      };
+
+      triggeredSignalsRef.current.add(signalKey);
+      onAutoFollowUp(followUp);
+      newCount++;
+    }
+
+    if (newCount > 0) {
+      setAutoTriggerCount((prev) => {
+        const updated = prev + newCount;
+        onAutoTriggerCount?.(updated);
+        return updated;
+      });
+    }
+  }, [newsItems, pipelineState, followUps, onAutoFollowUp, companies]);
+
+  useEffect(() => {
+    if (!loading) {
+      checkSignalTriggers();
+    }
+  }, [loading, checkSignalTriggers]);
 
   // Build client-side feed items
   const staticFeedItems = useMemo(() => buildFeedItems(companies), [companies]);

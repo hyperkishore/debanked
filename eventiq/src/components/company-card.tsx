@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { formatEngagementTime } from "@/lib/engagement-helpers";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { ThreadingRisk, RISK_STYLES } from "@/lib/threading-health";
 import { Tag } from "lucide-react";
 
 interface CompanyCardProps {
@@ -24,6 +25,7 @@ interface CompanyCardProps {
   tags?: string[];
   readinessScore?: number;
   readinessLabel?: ReadinessLabel;
+  threadingRisk?: ThreadingRisk;
 }
 
 function highlightText(text: string, query: string) {
@@ -117,6 +119,7 @@ export function CompanyCard({
   tags = [],
   readinessScore,
   readinessLabel,
+  threadingRisk,
 }: CompanyCardProps) {
   const contactNames = company.contacts.map((c) => c.n).join(", ");
   const subtitle = contactNames || company.location || "";
@@ -166,6 +169,14 @@ export function CompanyCard({
             )}
             {company.booth && (
               <span className="w-1.5 h-1.5 rounded-full bg-brand/50 shrink-0" title="Has booth" />
+            )}
+            {threadingRisk && (
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <span className={cn("w-1.5 h-1.5 rounded-full shrink-0", RISK_STYLES[threadingRisk].dotColor)} />
+                </TooltipTrigger>
+                <TooltipContent>{RISK_STYLES[threadingRisk].label}</TooltipContent>
+              </Tooltip>
             )}
           </div>
 

@@ -17,6 +17,7 @@ import { computeAttentionScore, getAttentionEmoji, getAttentionColor, getAttenti
 import { briefingToText, generateBriefing } from "@/lib/briefing-helpers";
 import { detectCompetitors, CompetitiveContext } from "@/lib/competitive-intel-helpers";
 import { SequenceProgress } from "@/lib/sequence-helpers";
+import { getThreadingHealth, RISK_STYLES, ThreadingRisk } from "@/lib/threading-health";
 import { DealEditPopover } from "@/components/deal-edit-popover";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -31,6 +32,7 @@ import { PreCallBriefingDialog } from "@/components/pre-call-briefing";
 import { SequencePanel } from "@/components/sequence-panel";
 import { AIBriefingCard } from "@/components/ai-briefing-card";
 import { EnrichmentStatus } from "@/components/enrichment-status";
+import { LinkedInRequestPopover } from "@/components/linkedin-request-popover";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
@@ -79,6 +81,7 @@ import {
   DollarSign,
   Pencil,
   Calendar,
+  Notebook,
 } from "lucide-react";
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 
@@ -97,6 +100,7 @@ interface CompanyDetailProps {
   onOpenRating: (id: number) => void;
   onAddEngagement: () => void;
   onDeleteEngagement: (id: string) => void;
+  onPostMeetingNotes?: () => void;
   onQuickLog?: (contactName: string, channel: EngagementChannel, action: string) => void;
   onSequenceStep?: (companyId: number, stepId: string, channel: EngagementChannel, action: string) => void;
   onAddTag?: (companyId: number, tag: string) => void;
@@ -196,6 +200,7 @@ export function CompanyDetail({
   onOpenRating,
   onAddEngagement,
   onDeleteEngagement,
+  onPostMeetingNotes,
   onQuickLog,
   onSequenceStep,
   onAddTag,
@@ -821,6 +826,64 @@ export function CompanyDetail({
               </div>
             </Section>
 
+            {/* Threading Health — multi-contact engagement coverage */}
+            {pipelineState[company.id] && (company.leaders?.length || 0) > 0 && (() => {
+              const health = getThreadingHealth(company, engagements, pipelineState[company.id].stage);
+              const riskStyle = RISK_STYLES[health.risk];
+              const pctWidth = Math.round(health.threadingScore * 100);
+              return (
+                <Section icon={Signal} title="Threading">
+                  <div className="space-y-3">
+                    {/* Score bar */}
+                    <div className="flex items-center gap-3">
+                      <div className="flex-1">
+                        <div className="w-full bg-muted/30 rounded-full h-2">
+                          <div
+                            className={cn("h-2 rounded-full transition-all", riskStyle.dotColor)}
+                            style={{ width: `${pctWidth}%` }}
+                          />
+                        </div>
+                      </div>
+                      <Badge variant="outline" className={cn("text-xs px-1.5 py-0 h-5 shrink-0", riskStyle.textColor)}>
+                        {health.engagedContacts}/{Math.min(health.totalContacts, 3)} threads
+                      </Badge>
+                    </div>
+
+                    {/* Per-leader engagement status */}
+                    <div className="space-y-1.5">
+                      {(company.leaders || []).map((leader) => {
+                        const isEngaged = !health.suggestions.includes(leader.n);
+                        return (
+                          <div key={leader.n} className="flex items-center justify-between text-xs">
+                            <div className="flex items-center gap-1.5 min-w-0">
+                              <span className={cn("w-1.5 h-1.5 rounded-full shrink-0", isEngaged ? "bg-green-500" : "bg-muted-foreground/30")} />
+                              <span className={cn("truncate", isEngaged ? "text-foreground" : "text-muted-foreground")}>
+                                {leader.n}
+                              </span>
+                              <span className="text-muted-foreground/50 truncate">{leader.t}</span>
+                            </div>
+                            {!isEngaged && (
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                className="h-5 text-xs px-1.5 text-brand hover:text-brand shrink-0"
+                                onClick={() => onAddEngagement()}
+                              >
+                                Start thread
+                              </Button>
+                            )}
+                            {isEngaged && (
+                              <span className="text-xs text-green-400 shrink-0">Engaged</span>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </Section>
+              );
+            })()}
+
             {/* Enrichment Status — LinkedIn activity + hook updates for this company */}
             <Section icon={Activity} title="Enrichment">
               <EnrichmentStatus companyId={company.id} />
@@ -1035,7 +1098,20 @@ export function CompanyDetail({
               />
             )}
 
-            {/* Engagement Timeline */}
+            {/* Post-Meeting Notes + Engagement Timeline */}
+            {onPostMeetingNotes && (
+              <div className="flex justify-end mb-1">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-7 px-2.5 text-xs font-medium text-purple-400 bg-purple-500/10 border-purple-500/30 hover:bg-purple-500/20"
+                  onClick={onPostMeetingNotes}
+                >
+                  <Notebook className="h-3.5 w-3.5 mr-1.5" />
+                  Post-Meeting Notes
+                </Button>
+              </div>
+            )}
             <EngagementTimeline
               engagements={engagements}
               onAdd={onAddEngagement}
@@ -1249,6 +1325,7 @@ function LeaderCard({
             </TooltipTrigger>
             <TooltipContent>Draft LinkedIn message</TooltipContent>
           </Tooltip>
+          <LinkedInRequestPopover leader={leader} company={company} />
           <Tooltip>
             <TooltipTrigger asChild>
               <a
