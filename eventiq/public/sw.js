@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eventiq-v3.0.00';
+const CACHE_NAME = 'eventiq-v3.2.10';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

@@ -58,14 +58,15 @@ This document defines implementation-grade improvements for the EventIQ project.
 ## IMP-005: Stop Returning Success-like Responses on Misconfiguration
 - Priority: `P0`
 - Category: Reliability, Operability
+- Status: `done` (2026-03-03)
 - Evidence:
-  - `eventiq/src/app/api/companies/route.ts:31`
-  - `eventiq/src/app/api/companies/route.ts:32`
+  - `eventiq/src/app/api/companies/route.ts:7`
+  - `eventiq/src/app/api/companies/route.ts:21`
 - Problem:
-  - DB misconfiguration currently returns `200` with empty array, masking infrastructure issues.
+  - This route previously returned success-like empty data on backend misconfiguration, masking operational issues.
 - Improvement:
-  - Return explicit service-unavailable status and diagnostic message.
-  - Align behavior with other routes that already use `503`.
+  - Keep the explicit failure behavior in place: the route should continue returning a non-200 API error instead of empty business data.
+  - Add regression coverage when route-handler tests are expanded so this does not regress.
 - Acceptance criteria:
   - Misconfigured backend never appears as valid empty business data.
 
@@ -118,18 +119,20 @@ This document defines implementation-grade improvements for the EventIQ project.
 ## IMP-010: Ingestion Throughput and Reliability Improvements
 - Priority: `P1`
 - Category: Performance, Reliability
+- Status: `in progress` (bounded concurrency shipped; retry/backoff still missing)
 - Evidence:
   - `eventiq/src/lib/signal-ingest.ts:90`
   - `eventiq/src/lib/signal-ingest.ts:94`
   - `eventiq/src/lib/signal-ingest.ts:107`
   - `eventiq/src/lib/signal-ingest.ts:110`
 - Problem:
-  - Ingestion is strictly sequential with fixed sleeps, creating avoidable latency and brittle throughput scaling.
+  - The pipeline is no longer strictly sequential, but it still lacks per-source retry/backoff and deeper failure isolation.
 - Improvement:
-  - Introduce bounded concurrency and per-source retry/backoff.
+  - Preserve the existing bounded concurrency implementation.
+  - Add per-source retry/backoff.
   - Track source-level runtime and error counts.
 - Acceptance criteria:
-  - Total ingestion runtime drops materially.
+  - Total ingestion runtime stays materially below the old sequential baseline.
   - Source failures are isolated and observable.
 
 ## IMP-011: Restrict Ingestion Trigger Permissions
@@ -178,13 +181,15 @@ This document defines implementation-grade improvements for the EventIQ project.
 ## IMP-015: Build a Test + CI Baseline
 - Priority: `P1`
 - Category: Quality, Release Safety
+- Status: `done` (2026-03-03)
 - Evidence:
-  - `eventiq/package.json:5`
-  - `eventiq/package.json:9`
+  - `eventiq/package.json:11`
+  - `.github/workflows/eventiq-tests.yml`
 - Problem:
-  - No test script exists; regressions in sync, ingest, and API behavior are unguarded.
+  - Local Vitest coverage exists, but there was no CI workflow to run it automatically on pushes and pull requests.
 - Improvement:
-  - Add unit/integration test harness and CI workflow for lint + tests.
+  - Keep the existing test harness.
+  - Run `npm test` in GitHub Actions for `eventiq` changes.
 - Acceptance criteria:
   - Pull requests are gated by automated checks.
   - Critical modules have baseline coverage.
@@ -616,10 +621,10 @@ This document defines implementation-grade improvements for the EventIQ project.
 
 ## Recommended Execution Order
 
-1. **P0 security/reliability core:** IMP-002, IMP-003, IMP-005, IMP-006, IMP-011
+1. **P0 security/reliability core:** IMP-002, IMP-003, IMP-006, IMP-011
 2. **P0 top-of-funnel data foundation:** IMP-017, IMP-018, IMP-025, IMP-026, IMP-030, IMP-031, IMP-032
 3. **P0 enrichment governance:** IMP-027, IMP-028, IMP-034, IMP-036, IMP-037, IMP-038
-4. **P1 reliability/UX + growth execution:** IMP-004, IMP-007, IMP-009, IMP-010, IMP-012, IMP-015, IMP-019, IMP-020
+4. **P1 reliability/UX + growth execution:** IMP-004, IMP-007, IMP-009, IMP-010, IMP-012, IMP-019, IMP-020
 5. **P1 optimization and scale:** IMP-021, IMP-022, IMP-023, IMP-024, IMP-029, IMP-033, IMP-035, IMP-040, IMP-041
 6. **P2 medium-term:** IMP-013, IMP-039, IMP-042, IMP-043, IMP-044, IMP-045
 

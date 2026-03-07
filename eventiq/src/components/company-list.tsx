@@ -16,6 +16,9 @@ import { FollowUpReminder } from "@/lib/follow-up-helpers";
 import { Search } from "lucide-react";
 import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
+import { usePullToRefresh } from "@/hooks/use-pull-to-refresh";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Loader2, ArrowDown } from "lucide-react";
 import { toast } from "sonner";
 
 interface CompanyListProps {
@@ -44,6 +47,7 @@ interface CompanyListProps {
   onCategoryFilterChange?: (category: string | null) => void;
   activeHubSpotStageFilter?: string | null;
   onHubSpotStageFilterChange?: (stage: string | null) => void;
+  onRefresh?: () => Promise<void> | void;
 }
 
 function filterCompanies(
@@ -156,9 +160,17 @@ export function CompanyList({
   onCategoryFilterChange,
   activeHubSpotStageFilter,
   onHubSpotStageFilterChange,
+  onRefresh,
 }: CompanyListProps) {
   const parentRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
   const [inlineSearch, setInlineSearch] = useState("");
+
+  // Pull-to-refresh (mobile only)
+  const { containerRef: pullRef, pullDistance, isRefreshing: isPullRefreshing, isReady: pullReady } = usePullToRefresh({
+    onRefresh: onRefresh || (() => {}),
+    threshold: 80,
+  });
 
   const metCount = useMemo(
     () => Object.values(metState).filter(Boolean).length,
@@ -314,7 +326,31 @@ export function CompanyList({
         availableHubSpotStages={availableHubSpotStages}
       />
       {activeView === "cards" ? (
-        <div ref={parentRef} className="flex-1 overflow-auto">
+        <div
+          ref={(el) => {
+            // Share ref between virtualizer and pull-to-refresh
+            (parentRef as React.MutableRefObject<HTMLDivElement | null>).current = el;
+            if (isMobile && onRefresh) {
+              (pullRef as React.MutableRefObject<HTMLDivElement | null>).current = el;
+            }
+          }}
+          className="flex-1 overflow-auto"
+        >
+          {/* Pull-to-refresh indicator (mobile) */}
+          {isMobile && onRefresh && pullDistance > 0 && (
+            <div
+              className="flex items-center justify-center transition-opacity"
+              style={{ height: pullDistance, opacity: Math.min(pullDistance / 60, 1) }}
+            >
+              {isPullRefreshing ? (
+                <Loader2 className="h-5 w-5 text-brand animate-spin" />
+              ) : (
+                <ArrowDown
+                  className={`h-5 w-5 text-muted-foreground transition-transform ${pullReady ? "rotate-180 text-brand" : ""}`}
+                />
+              )}
+            </div>
+          )}
           <div
             style={{
               height: `${virtualizer.getTotalSize()}px`,

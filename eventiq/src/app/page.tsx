@@ -88,7 +88,7 @@ export default function Home() {
   const fetchCompanies = useCallback(() => {
     setCompaniesLoading(true);
     setCompaniesError(null);
-    fetch("/api/companies")
+    return fetch("/api/companies")
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
@@ -926,11 +926,16 @@ export default function Home() {
 
       <SidebarInset className="h-screen flex flex-col">
         {/* Mobile header */}
-        <div className="flex items-center justify-between px-4 h-12 border-b border-border md:hidden">
-          <h1 className="text-sm font-bold">EventIQ</h1>
+        <div className="flex items-center justify-between px-4 h-12 border-b border-border md:hidden pt-[env(safe-area-inset-top)]">
           <div className="flex items-center gap-2">
+            <div className="w-7 h-7 rounded-lg bg-brand/20 flex items-center justify-center">
+              <span className="text-brand font-bold text-xs">EQ</span>
+            </div>
+            <h1 className="text-sm font-bold">EventIQ</h1>
+          </div>
+          <div className="flex items-center gap-1.5">
             <span className="text-xs text-muted-foreground">
-              {metCount}/{companies.length} met
+              {metCount}/{companies.length}
             </span>
             <Button
               variant="ghost"
@@ -1126,6 +1131,7 @@ export default function Home() {
                   tagsState={tagsState}
                   activeTagFilter={activeTagFilter}
                   onTagFilterChange={setActiveTagFilter}
+                  onRefresh={fetchCompanies}
                 />
               </div>
             ) : (

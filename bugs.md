@@ -7,45 +7,25 @@ This file tracks confirmed and high-confidence bugs/gaps observed in the current
 - `High`: significant reliability or correctness issue.
 - `Medium`: degraded behavior or maintainability risk.
 - `Low`: minor issue.
+- `Resolved`: retained for audit, not part of the immediate attention set.
 
 ---
 
-## BUG-001: `companyId` in documents GET is not strictly validated
-- Severity: `High`
+## BUG-001: `companyId` in documents GET was not strictly validated
+- Severity: `Resolved`
 - Evidence:
-  - `eventiq/src/app/api/documents/route.ts:48`
-- Why this is a bug:
-  - `parseInt(companyId)` is used without strict numeric validation. Invalid values can produce unintended query input.
-- Impact:
-  - Inconsistent results for malformed requests and unclear client error behavior.
-- Reproduction:
-  1. Call `GET /api/documents?companyId=abc`.
-  2. Observe non-deterministic behavior instead of clean `400`.
-- Fix options:
-  1. Strict-parse and reject non-integer values before query execution.
-  2. Add route schema validation for query params.
-  3. Add shared helper for numeric param parsing across API routes.
-- Recommended fix:
-  - Option 2 with reusable validator and explicit error code.
+  - `eventiq/src/app/api/documents/route.ts:25`
+  - `eventiq/src/app/api/documents/route.ts:26`
+- Current status:
+  - Fixed. The route now validates `companyId` through `requireInt(...)` and returns early on malformed input.
 
-## BUG-002: `docId` delete path can accept malformed IDs
-- Severity: `High`
+## BUG-002: `docId` delete path could accept malformed IDs
+- Severity: `Resolved`
 - Evidence:
-  - `eventiq/src/app/api/documents/route.ts:143`
-  - `eventiq/src/app/api/documents/route.ts:144`
-- Why this is a bug:
-  - Delete uses `parseInt(docId)` without strict validation, which can accept malformed strings and create ambiguous behavior.
-- Impact:
-  - Deletion attempts may silently fail or target unexpected parsed values.
-- Reproduction:
-  1. Call `DELETE /api/documents?id=12abc`.
-  2. Observe request proceeds to query instead of immediate `400`.
-- Fix options:
-  1. Require `/^\d+$/` before parsing.
-  2. Convert to typed route validation with coercion + bounds checks.
-  3. Use UUID/opaque IDs to avoid permissive integer parsing.
-- Recommended fix:
-  - Option 2 for consistency with other route validations.
+  - `eventiq/src/app/api/documents/route.ts:83`
+  - `eventiq/src/app/api/documents/route.ts:84`
+- Current status:
+  - Fixed. The delete path now validates `id` with `requireInt(...)` before the query executes.
 
 ## BUG-003: Document access scope is not explicitly enforced
 - Severity: `Critical`
@@ -70,25 +50,13 @@ This file tracks confirmed and high-confidence bugs/gaps observed in the current
 - Note:
   - If documents are intentionally global-per-company, convert this into a documented policy and explicit allow-list decision.
 
-## BUG-004: Companies API masks backend misconfiguration as successful empty data
-- Severity: `High`
+## BUG-004: Companies API masked backend misconfiguration as successful empty data
+- Severity: `Resolved`
 - Evidence:
-  - `eventiq/src/app/api/companies/route.ts:31`
-  - `eventiq/src/app/api/companies/route.ts:32`
-- Why this is a bug:
-  - Missing Supabase server client returns `200 []`, hiding infrastructure issues as valid business result.
-- Impact:
-  - Silent outage and debugging confusion.
-- Reproduction:
-  1. Remove/invalid `SUPABASE_SERVICE_KEY`.
-  2. Call `/api/companies`.
-  3. Observe empty array instead of operational error.
-- Fix options:
-  1. Return `503` with explicit error payload.
-  2. Add health indicator payload and degrade UI gracefully.
-  3. Emit structured error log with environment diagnostics.
-- Recommended fix:
-  - Option 1 + Option 3.
+  - `eventiq/src/app/api/companies/route.ts:7`
+  - `eventiq/src/app/api/companies/route.ts:21`
+- Current status:
+  - Fixed. The route now documents and returns an explicit non-200 API error instead of presenting misconfiguration as valid empty business data.
 
 ## BUG-005: Home page hides company-load failures behind console warning
 - Severity: `High`
@@ -320,7 +288,7 @@ This file tracks confirmed and high-confidence bugs/gaps observed in the current
 
 ## Immediate Attention Set
 - `Critical`: BUG-003, BUG-006, BUG-014
-- `High`: BUG-001, BUG-002, BUG-004, BUG-005, BUG-008, BUG-010, BUG-011, BUG-015
+- `High`: BUG-005, BUG-008, BUG-010, BUG-011, BUG-015
 
 ## Suggested Triage Sequence
 1. Security boundaries and data loss risks.

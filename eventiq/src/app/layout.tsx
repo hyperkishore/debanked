@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
     title: "EventIQ",
   },
+  icons: {
+    apple: "/icon-192.png",
+  },
 };
 
 export const viewport: Viewport = {
