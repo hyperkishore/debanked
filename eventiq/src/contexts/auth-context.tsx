@@ -95,6 +95,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       options: {
         queryParams: { hd: "hyperverge.co" }, // restrict to @hyperverge.co
         redirectTo: window.location.origin + "/auth/callback",
+        scopes: "https://www.googleapis.com/auth/calendar.readonly",
       },
     });
   }, []);

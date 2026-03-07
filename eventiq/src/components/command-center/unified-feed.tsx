@@ -18,7 +18,9 @@ import {
   Rss,
   Calendar,
   Building2,
+  PenLine,
 } from "lucide-react";
+import { OutreachDraftDialog } from "@/components/outreach-draft-dialog";
 
 interface UnifiedFeedProps {
   companies: Company[];
@@ -109,11 +111,19 @@ function formatDate(timestamp: number): string {
   return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
+interface OutreachTarget {
+  signalType: string;
+  headline: string;
+  companyId: number;
+  companyName: string;
+}
+
 export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedFeedProps) {
   const [newsItems, setNewsItems] = useState<NewsApiItem[]>([]);
   const [linkedinItems, setLinkedinItems] = useState<LinkedInItem[]>([]);
   const [enrichmentItems, setEnrichmentItems] = useState<EnrichmentItem[]>([]);
   const [loading, setLoading] = useState(true);
+  const [outreachTarget, setOutreachTarget] = useState<OutreachTarget | null>(null);
 
   // Fetch API data
   useEffect(() => {
@@ -215,6 +225,7 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
   }
 
   return (
+    <>
     <div className="space-y-2">
       {unifiedItems.map((item) => {
         if (item.kind === "enrichment") {
@@ -364,12 +375,42 @@ export function UnifiedFeed({ companies, onSelectCompany, limit = 30 }: UnifiedF
                     </span>
                   </div>
                 </div>
-                <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted-foreground mt-1" />
+                <div className="flex flex-col items-center gap-1.5 shrink-0 mt-1">
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      setOutreachTarget({
+                        signalType: signalType || "general",
+                        headline: cleanHeadline,
+                        companyId,
+                        companyName,
+                      });
+                    }}
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    title="Draft outreach"
+                  >
+                    <PenLine className="h-3.5 w-3.5" />
+                  </button>
+                  <ExternalLink className="h-3.5 w-3.5 text-muted-foreground" />
+                </div>
               </div>
             </Card>
           </a>
         );
       })}
     </div>
+    {outreachTarget && (
+      <OutreachDraftDialog
+        open={!!outreachTarget}
+        onOpenChange={(open) => { if (!open) setOutreachTarget(null); }}
+        signalType={outreachTarget.signalType}
+        headline={outreachTarget.headline}
+        companyId={outreachTarget.companyId}
+        companyName={outreachTarget.companyName}
+      />
+    )}
+    </>
   );
 }

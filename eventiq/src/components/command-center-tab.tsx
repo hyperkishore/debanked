@@ -9,6 +9,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Activity, Rss, Target } from "lucide-react";
 import { GoalHeader } from "@/components/command-center/goal-header";
 import { DailyBriefWidget } from "@/components/command-center/daily-brief-widget";
+import { TodaysMeetings } from "@/components/command-center/todays-meetings";
 import { UnifiedFeed } from "@/components/command-center/unified-feed";
 import { TodaysActions } from "@/components/command-center/todays-actions";
 import { PipelineDeals } from "@/components/command-center/pipeline-deals";
@@ -51,7 +52,10 @@ export function CommandCenterTab({
             feedItems={feedItems}
           />
 
-          {/* === SECTION 1.5: Daily Intelligence Brief === */}
+          {/* === SECTION 1.5: Today's Meetings (Google Calendar) === */}
+          <TodaysMeetings onSelectCompany={onSelectCompany} />
+
+          {/* === SECTION 1.6: Daily Intelligence Brief === */}
           <DailyBriefWidget
             companies={companies}
             onSelectCompany={onSelectCompany}

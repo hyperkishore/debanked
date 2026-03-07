@@ -34,6 +34,7 @@ function LoginContent() {
       options: {
         queryParams: { hd: "hyperverge.co" },
         redirectTo: `${window.location.origin}/auth/callback`,
+        scopes: "https://www.googleapis.com/auth/calendar.readonly",
       },
     });
 
