@@ -150,7 +150,7 @@ export function MobileNav({ activeTab, onTabChange, metCount, totalCount, streak
           </div>
           <div className="mt-4 pt-3 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
             <span>{metCount}/{totalCount} met</span>
-            <span className="opacity-50">EventIQ v3.2.10</span>
+            <span className="opacity-50">EventIQ v3.2.11</span>
           </div>
         </SheetContent>
       </Sheet>

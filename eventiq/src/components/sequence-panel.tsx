@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useCallback } from "react";
 import { Company, EngagementEntry, EngagementChannel } from "@/lib/types";
 import { PipelineRecord } from "@/lib/pipeline-helpers";
 import {
@@ -12,7 +12,7 @@ import {
 } from "@/lib/sequence-helpers";
 import { CopyButton } from "@/components/copy-button";
 import { Badge } from "@/components/ui/badge";
-import { ClipboardList } from "lucide-react";
+import { ClipboardList, Send, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -50,6 +50,43 @@ export function SequencePanel({
 }: SequencePanelProps) {
   const [collapsed, setCollapsed] = useState(false);
   const [expandedStep, setExpandedStep] = useState<string | null>(null);
+  const [sendingStep, setSendingStep] = useState<string | null>(null);
+
+  const handleSendEmail = useCallback(async (stepId: string, subject: string, body: string) => {
+    const leader = company.leaders?.[0];
+    const email = leader?.email;
+    if (!email) {
+      toast.error("No email address found for this leader");
+      return;
+    }
+
+    setSendingStep(stepId);
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: email,
+          subject,
+          body,
+          companyId: company.id,
+          contactName: leader.n,
+        }),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        toast.success(`Email sent to ${leader.n}`);
+        onStepComplete(company.id, stepId, "email", `Sent: ${subject}`);
+      } else {
+        toast.error(data.error || "Failed to send email");
+      }
+    } catch {
+      toast.error("Failed to send email");
+    } finally {
+      setSendingStep(null);
+    }
+  }, [company, onStepComplete]);
 
   const sequenceType = useMemo(
     () => sequenceProgress?.sequenceType || autoSelectSequence(company, engagements, pipelineState),
@@ -173,6 +210,37 @@ export function SequencePanel({
                         </pre>
                         <CopyButton text={step.preWrittenContent} />
                       </div>
+                      {step.channel === "email" && company.leaders?.[0]?.email && !isDone && (
+                        <div className="mt-2 flex items-center gap-2">
+                          <span className="text-xs text-muted-foreground">
+                            To: {company.leaders[0].email}
+                          </span>
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="h-7 text-xs gap-1.5"
+                            disabled={sendingStep === step.id}
+                            onClick={() => {
+                              // Extract subject from first line if it looks like "Subject: ..."
+                              const lines = step.preWrittenContent.split("\n");
+                              const subjectLine = lines[0]?.startsWith("Subject:")
+                                ? lines[0].replace("Subject:", "").trim()
+                                : step.description;
+                              const body = lines[0]?.startsWith("Subject:")
+                                ? lines.slice(1).join("\n").trim()
+                                : step.preWrittenContent;
+                              handleSendEmail(step.id, subjectLine, body);
+                            }}
+                          >
+                            {sendingStep === step.id ? (
+                              <Loader2 className="h-3 w-3 animate-spin" />
+                            ) : (
+                              <Send className="h-3 w-3" />
+                            )}
+                            Send Email
+                          </Button>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
