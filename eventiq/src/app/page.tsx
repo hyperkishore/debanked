@@ -60,6 +60,7 @@ import { DatabaseHealthTab } from "@/components/database-health-tab";
 import { PipelineTab } from "@/components/pipeline-tab";
 import { MarketMapTab } from "@/components/market-map-tab";
 import { SkillsTab } from "@/components/skills-tab";
+import { CompanyCompare } from "@/components/company-compare";
 import { useSyncedStorage } from "@/hooks/use-synced-storage";
 import { useDeveloperMode } from "@/hooks/use-developer-mode";
 import { useKeyboard } from "@/hooks/use-keyboard";
@@ -145,6 +146,7 @@ export default function Home() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
+  const [compareOpen, setCompareOpen] = useState(false);
 
   // Kiket chat panel state
   const [kiketOpen, setKiketOpen] = useState(false);
@@ -918,6 +920,7 @@ export default function Home() {
           onFilterChange={setActiveFilter}
           onToggleChat={toggleKiketPanel}
           isChatOpen={kiketOpen}
+          onOpenCompare={() => setCompareOpen(true)}
         />
       </div>
 
@@ -1260,6 +1263,14 @@ export default function Home() {
       <SheetsSettings
         open={settingsOpen}
         onClose={() => setSettingsOpen(false)}
+      />
+
+      {/* Compare dialog */}
+      <CompanyCompare
+        open={compareOpen}
+        onClose={() => setCompareOpen(false)}
+        companies={companies}
+        initialCompanyIds={selectedId ? [selectedId] : []}
       />
 
       {/* Export dialog */}

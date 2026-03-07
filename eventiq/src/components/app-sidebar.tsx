@@ -31,7 +31,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { Building2, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Download, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap, MessageCircle, FileText, Megaphone, Package, Wrench } from "lucide-react";
+import { Building2, BarChart3, Kanban, Map, UtensilsCrossed, Upload, Download, Settings2, LogOut, Cloud, Code2, ChevronRight, BookOpen, Zap, MessageCircle, FileText, Megaphone, Package, Wrench, GitCompareArrows } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 interface AppSidebarProps {
@@ -50,6 +50,7 @@ interface AppSidebarProps {
   onFilterChange: (filter: FilterType) => void;
   onToggleChat?: () => void;
   isChatOpen?: boolean;
+  onOpenCompare?: () => void;
 }
 
 type NavItem = { id: TabType; label: string; icon: React.ComponentType<{ className?: string }>; shortcut: string };
@@ -98,6 +99,7 @@ export function AppSidebar({
   onFilterChange,
   onToggleChat,
   isChatOpen,
+  onOpenCompare,
 }: AppSidebarProps) {
   const { user, isConfigured, isPasswordAuth, signIn, signOut } = useAuth();
   const { toggleSidebar } = useSidebar();
@@ -257,6 +259,12 @@ export function AppSidebar({
                     <Download className="h-4 w-4 mr-2" />
                     Export Data
                   </DropdownMenuItem>
+                  {onOpenCompare && (
+                    <DropdownMenuItem onClick={onOpenCompare}>
+                      <GitCompareArrows className="h-4 w-4 mr-2" />
+                      Compare Companies
+                    </DropdownMenuItem>
+                  )}
                   <DropdownMenuItem onClick={onToggleDevMode}>
                     <Code2 className="h-4 w-4 mr-2" />
                     Developer Mode
@@ -306,7 +314,7 @@ export function AppSidebar({
             </span>
             <div className="flex items-center gap-1">
               <ThemeToggle />
-              <span className="opacity-50">v3.2.08</span>
+              <span className="opacity-50">v3.2.09</span>
             </div>
           </div>
           <div className="w-full bg-muted/30 rounded-full h-1.5 mt-1">

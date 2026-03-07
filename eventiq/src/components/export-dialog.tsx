@@ -12,8 +12,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Download, Check } from "lucide-react";
+import { Download, Check, FileText } from "lucide-react";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { toast } from "sonner";
+
+type ExportFormat = "csv" | "markdown";
 
 const FIELD_GROUPS = [
   {
@@ -215,10 +218,8 @@ function generateCSV(companies: Company[], selected: Set<FieldGroupId>): string 
   return lines.join("\n");
 }
 
-function downloadCSV(csvContent: string) {
-  const today = new Date().toISOString().slice(0, 10);
-  const filename = `eventiq-export-${today}.csv`;
-  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+function downloadFile(content: string, filename: string, type: string) {
+  const blob = new Blob([content], { type });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
@@ -229,6 +230,95 @@ function downloadCSV(csvContent: string) {
   URL.revokeObjectURL(url);
 }
 
+function generateMarkdownBriefing(companies: Company[]): string {
+  const today = new Date().toISOString().slice(0, 10);
+  const lines: string[] = [
+    `# EventIQ Company Briefing`,
+    `> Generated ${today} | ${companies.length} companies`,
+    "",
+    "---",
+    "",
+  ];
+
+  for (const c of companies) {
+    const subV = inferSubVertical(c);
+    lines.push(`## ${c.name}`);
+    lines.push("");
+
+    // Meta line
+    const meta: string[] = [`**${c.type}**`, `P${c.priority - 1}`, subV];
+    if (c.location) meta.push(c.location);
+    if (c.employees) meta.push(`${c.employees.toLocaleString()} employees`);
+    lines.push(meta.join(" | "));
+    lines.push("");
+
+    if (c.website) lines.push(`Website: ${c.website}`);
+    if (c.linkedinUrl) lines.push(`LinkedIn: ${c.linkedinUrl}`);
+    if (c.website || c.linkedinUrl) lines.push("");
+
+    // Description
+    if (c.desc) {
+      lines.push("### About");
+      lines.push(c.desc);
+      lines.push("");
+    }
+
+    // Leaders
+    const leaders = c.leaders || [];
+    if (leaders.length > 0) {
+      lines.push("### Key People");
+      for (const l of leaders) {
+        lines.push(`- **${l.n}** — ${l.t}`);
+        if (l.bg) lines.push(`  ${l.bg}`);
+        if (l.hooks && l.hooks.length > 0) lines.push(`  Hooks: ${l.hooks.join(", ")}`);
+        if (l.email) lines.push(`  Email: ${l.email}`);
+        if (l.li) lines.push(`  LinkedIn: ${l.li}`);
+      }
+      lines.push("");
+    }
+
+    // News
+    if (c.news.length > 0) {
+      lines.push("### Recent News");
+      for (const n of c.news.slice(0, 4)) {
+        lines.push(`- **${n.h}** (${n.s})`);
+        if (n.d) lines.push(`  ${n.d}`);
+      }
+      lines.push("");
+    }
+
+    // Icebreaker & Talking Points
+    if (c.ice) {
+      lines.push("### Icebreaker");
+      lines.push(c.ice);
+      lines.push("");
+    }
+
+    if (c.tp && c.tp.length > 0) {
+      lines.push("### Talking Points");
+      for (const tp of c.tp) lines.push(`- ${tp}`);
+      lines.push("");
+    }
+
+    if (c.ask) {
+      lines.push("### The Ask");
+      lines.push(c.ask);
+      lines.push("");
+    }
+
+    if (c.notes) {
+      lines.push("### Notes");
+      lines.push(c.notes);
+      lines.push("");
+    }
+
+    lines.push("---");
+    lines.push("");
+  }
+
+  return lines.join("\n");
+}
+
 interface ExportDialogProps {
   open: boolean;
   onClose: () => void;
@@ -237,6 +327,7 @@ interface ExportDialogProps {
 
 export function ExportDialog({ open, onClose, companies }: ExportDialogProps) {
   const [selected, setSelected] = useState<Set<FieldGroupId>>(new Set(ALL_GROUP_IDS));
+  const [format, setFormat] = useState<ExportFormat>("csv");
 
   const allSelected = selected.size === FIELD_GROUPS.length;
 
@@ -261,13 +352,20 @@ export function ExportDialog({ open, onClose, companies }: ExportDialogProps) {
   }
 
   function handleExport() {
-    if (selected.size === 0) {
-      toast.error("Select at least one field group to export");
-      return;
+    const today = new Date().toISOString().slice(0, 10);
+    if (format === "markdown") {
+      const md = generateMarkdownBriefing(companies);
+      downloadFile(md, `eventiq-briefing-${today}.md`, "text/markdown;charset=utf-8;");
+      toast.success(`Exported ${companies.length} companies as Markdown briefing`);
+    } else {
+      if (selected.size === 0) {
+        toast.error("Select at least one field group to export");
+        return;
+      }
+      const csv = generateCSV(companies, selected);
+      downloadFile(csv, `eventiq-export-${today}.csv`, "text/csv;charset=utf-8;");
+      toast.success(`Exported ${companies.length} companies to CSV`);
     }
-    const csv = generateCSV(companies, selected);
-    downloadCSV(csv);
-    toast.success(`Exported ${companies.length} companies to CSV`);
   }
 
   return (
@@ -276,55 +374,85 @@ export function ExportDialog({ open, onClose, companies }: ExportDialogProps) {
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Download className="h-4 w-4" />
-            Export to CSV
+            Export Companies
           </DialogTitle>
         </DialogHeader>
 
-        <div className="flex items-center justify-between">
-          <p className="text-sm text-muted-foreground">
-            {companies.length} companies &middot; {selected.size} of {FIELD_GROUPS.length} field groups
-          </p>
-          <Button variant="ghost" size="sm" onClick={toggleAll}>
-            {allSelected ? "Deselect All" : "Select All"}
-          </Button>
-        </div>
+        {/* Format toggle */}
+        <ToggleGroup
+          type="single"
+          value={format}
+          onValueChange={(v) => v && setFormat(v as ExportFormat)}
+          className="justify-start"
+        >
+          <ToggleGroupItem value="csv" className="text-xs gap-1.5">
+            <Download className="h-3.5 w-3.5" /> CSV
+          </ToggleGroupItem>
+          <ToggleGroupItem value="markdown" className="text-xs gap-1.5">
+            <FileText className="h-3.5 w-3.5" /> Briefing (Markdown)
+          </ToggleGroupItem>
+        </ToggleGroup>
 
-        <ScrollArea className="max-h-[320px] pr-3">
-          <div className="flex flex-col gap-3 py-1">
-            {FIELD_GROUPS.map((group) => (
-              <label
-                key={group.id}
-                className="flex items-start gap-3 cursor-pointer group"
-              >
-                <Checkbox
-                  checked={selected.has(group.id)}
-                  onCheckedChange={() => toggleGroup(group.id)}
-                  className="mt-0.5"
-                />
-                <div className="flex-1 min-w-0">
-                  <span className="text-sm font-medium group-hover:text-foreground transition-colors">
-                    {group.label}
-                  </span>
-                  <div className="flex flex-wrap gap-1 mt-1">
-                    {group.fields.map((f) => (
-                      <Badge key={f} variant="secondary" className="text-xs font-normal">
-                        {f}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </label>
-            ))}
+        {format === "csv" ? (
+          <>
+            <div className="flex items-center justify-between">
+              <p className="text-sm text-muted-foreground">
+                {companies.length} companies &middot; {selected.size} of {FIELD_GROUPS.length} field groups
+              </p>
+              <Button variant="ghost" size="sm" onClick={toggleAll}>
+                {allSelected ? "Deselect All" : "Select All"}
+              </Button>
+            </div>
+
+            <ScrollArea className="max-h-[320px] pr-3">
+              <div className="flex flex-col gap-3 py-1">
+                {FIELD_GROUPS.map((group) => (
+                  <label
+                    key={group.id}
+                    className="flex items-start gap-3 cursor-pointer group"
+                  >
+                    <Checkbox
+                      checked={selected.has(group.id)}
+                      onCheckedChange={() => toggleGroup(group.id)}
+                      className="mt-0.5"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <span className="text-sm font-medium group-hover:text-foreground transition-colors">
+                        {group.label}
+                      </span>
+                      <div className="flex flex-wrap gap-1 mt-1">
+                        {group.fields.map((f) => (
+                          <Badge key={f} variant="secondary" className="text-xs font-normal">
+                            {f}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </label>
+                ))}
+              </div>
+            </ScrollArea>
+          </>
+        ) : (
+          <div className="py-4 text-center space-y-2">
+            <FileText className="h-8 w-8 mx-auto text-muted-foreground" />
+            <p className="text-sm text-muted-foreground">
+              Generates a formatted Markdown briefing with all company details,
+              leaders, news, talking points, and icebreakers.
+            </p>
+            <p className="text-xs text-muted-foreground">
+              {companies.length} companies &middot; Open in any Markdown viewer or print to PDF
+            </p>
           </div>
-        </ScrollArea>
+        )}
 
         <div className="flex justify-end gap-2 pt-2">
           <Button variant="outline" onClick={onClose}>
             Cancel
           </Button>
-          <Button onClick={handleExport} disabled={selected.size === 0}>
+          <Button onClick={handleExport} disabled={format === "csv" && selected.size === 0}>
             <Download className="h-4 w-4 mr-2" />
-            Download CSV
+            {format === "csv" ? "Download CSV" : "Download Briefing"}
           </Button>
         </div>
       </DialogContent>

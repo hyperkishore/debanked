@@ -28,6 +28,8 @@ import {
   Building2,
   Newspaper,
   Target,
+  Play,
+  Loader2,
   Calendar,
   Package,
   Landmark,
@@ -533,6 +535,10 @@ function buildCurl(tool: ToolDef): string {
 function ToolCard({ tool }: { tool: ToolDef }) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [tryItOpen, setTryItOpen] = useState(false);
+  const [paramValues, setParamValues] = useState<Record<string, string>>({});
+  const [tryResult, setTryResult] = useState<string | null>(null);
+  const [tryLoading, setTryLoading] = useState(false);
   const Icon = tool.icon;
   const cat = CATEGORIES.find(c => c.id === tool.category)!;
 
@@ -540,6 +546,44 @@ function ToolCard({ tool }: { tool: ToolDef }) {
     navigator.clipboard.writeText(buildCurl(tool));
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleTryIt = async () => {
+    setTryLoading(true);
+    setTryResult(null);
+    try {
+      const base = "";
+      let url = base + tool.path.replace(/\{(\w+)\}/g, (_, k) => paramValues[k] || "");
+
+      if (tool.method === "GET") {
+        const qp = (tool.params || [])
+          .filter(p => !tool.path.includes(`{${p.name}}`) && paramValues[p.name])
+          .map(p => `${p.name}=${encodeURIComponent(paramValues[p.name])}`)
+          .join("&");
+        if (qp) url += `?${qp}`;
+        const res = await fetch(url);
+        const data = await res.json();
+        setTryResult(JSON.stringify(data, null, 2));
+      } else {
+        const body: Record<string, unknown> = {};
+        for (const p of tool.params || []) {
+          if (paramValues[p.name]) {
+            body[p.name] = p.type === "number" ? Number(paramValues[p.name]) : paramValues[p.name];
+          }
+        }
+        const res = await fetch(url, {
+          method: tool.method,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        const data = await res.json();
+        setTryResult(JSON.stringify(data, null, 2));
+      }
+    } catch (err) {
+      setTryResult(`Error: ${err instanceof Error ? err.message : String(err)}`);
+    } finally {
+      setTryLoading(false);
+    }
   };
 
   return (
@@ -632,6 +676,51 @@ function ToolCard({ tool }: { tool: ToolDef }) {
                 {buildCurl(tool)}
               </pre>
             </div>
+
+            {/* Try It */}
+            {tool.auth !== "tool-key" && (
+              <div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-7 text-xs gap-1.5"
+                  onClick={() => setTryItOpen(!tryItOpen)}
+                >
+                  <Play className="h-3 w-3" />
+                  Try It
+                </Button>
+
+                {tryItOpen && (
+                  <div className="mt-2 p-3 bg-muted/30 rounded-lg space-y-2">
+                    {(tool.params || []).map(p => (
+                      <div key={p.name} className="flex items-center gap-2">
+                        <label className="text-xs font-mono w-28 shrink-0 text-muted-foreground">{p.name}</label>
+                        <Input
+                          className="h-7 text-xs font-mono"
+                          placeholder={p.description}
+                          value={paramValues[p.name] || ""}
+                          onChange={(e) => setParamValues({ ...paramValues, [p.name]: e.target.value })}
+                        />
+                      </div>
+                    ))}
+                    <Button
+                      size="sm"
+                      className="h-7 text-xs gap-1.5"
+                      onClick={handleTryIt}
+                      disabled={tryLoading}
+                    >
+                      {tryLoading ? <Loader2 className="h-3 w-3 animate-spin" /> : <Play className="h-3 w-3" />}
+                      Execute
+                    </Button>
+                    {tryResult && (
+                      <pre className="text-xs bg-background p-2 rounded overflow-auto max-h-48 font-mono border border-border">
+                        {tryResult}
+                      </pre>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </CollapsibleContent>
       </Collapsible>
