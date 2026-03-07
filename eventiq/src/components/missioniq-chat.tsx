@@ -6,8 +6,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { ChatMessage } from "@/components/chat-message";
 import { OpenClawClient, type ConnectionState, type ChatMessage as ChatMsg } from "@/lib/openclaw-client";
-import { Send, Plus, Loader2, X } from "lucide-react";
+import { Send, Plus, Loader2, X, History } from "lucide-react";
 import { generateDynamicPrompts } from "@/lib/dynamic-prompts";
+import { useKiketChat } from "@/hooks/use-kiket-chat";
 
 interface MissionIQChatProps {
   wsUrl: string;
@@ -27,8 +28,18 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
   const [connectionState, setConnectionState] = useState<ConnectionState>("disconnected");
   const [error, setError] = useState<string | null>(null);
   const [streamingMessage, setStreamingMessage] = useState<{ id: string; content: string } | null>(null);
-  const [conversationId] = useState(() => crypto.randomUUID());
+  const [conversationId, setConversationId] = useState<string>(() => crypto.randomUUID());
+  const [showHistory, setShowHistory] = useState(false);
   const initialPromptSentRef = useRef(false);
+
+  const {
+    conversations,
+    activeConversationId,
+    createConversation,
+    selectConversation,
+    saveMessage,
+    isLoadingHistory,
+  } = useKiketChat();
 
   const clientRef = useRef<OpenClawClient | null>(null);
   const scrollBottomRef = useRef<HTMLDivElement>(null);
@@ -62,7 +73,6 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
         setMessages((prev) => {
           const existing = prev.findIndex((m) => m.id === msg.id);
           if (existing >= 0) {
-            // Same runId — merge thinking from previous intermediate turns
             const updated = [...prev];
             const prevMsg = updated[existing];
             updated[existing] = {
@@ -73,6 +83,8 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
           }
           return [...prev, msg];
         });
+        // Persist assistant message
+        saveMessage(msg);
       },
       onTyping: setIsTyping,
       onStateChange: (state) => {
@@ -127,9 +139,14 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
     }
   }, [initialPrompt, connectionState, conversationId]);
 
-  const handleSend = useCallback(() => {
+  const handleSend = useCallback(async () => {
     const text = input.trim();
     if (!text || !clientRef.current) return;
+
+    // Auto-create conversation on first message if none active
+    if (!activeConversationId) {
+      await createConversation();
+    }
 
     const userMsg: ChatMsg = {
       id: crypto.randomUUID(),
@@ -140,13 +157,16 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
 
+    // Persist user message
+    saveMessage(userMsg);
+
     // Track timing
     setSendTimestamp(Date.now());
     setTiming({ ttfc: null, ttfr: null });
 
     clientRef.current.sendMessage(text, conversationId);
     inputRef.current?.focus();
-  }, [input, conversationId]);
+  }, [input, conversationId, activeConversationId, createConversation, saveMessage]);
 
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -158,11 +178,22 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
     [handleSend]
   );
 
-  const handleNewConversation = useCallback(() => {
+  const handleNewConversation = useCallback(async () => {
     setMessages([]);
     setStreamingMessage(null);
+    setShowHistory(false);
+    setConversationId(crypto.randomUUID());
+    await createConversation();
     inputRef.current?.focus();
-  }, []);
+  }, [createConversation]);
+
+  const handleLoadConversation = useCallback(async (convId: string) => {
+    const history = await selectConversation(convId);
+    setMessages(history);
+    setStreamingMessage(null);
+    setShowHistory(false);
+    setConversationId(convId);
+  }, [selectConversation]);
 
   const isConnected = connectionState === "connected";
 
@@ -209,6 +240,15 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
           <Button
             variant="ghost"
             size="sm"
+            onClick={() => setShowHistory(!showHistory)}
+            title="Chat history"
+            className="h-7 w-7 p-0"
+          >
+            <History className="h-3.5 w-3.5" />
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={handleNewConversation}
             title="New conversation"
             className="h-7 w-7 p-0"
@@ -236,10 +276,45 @@ export function MissionIQChat({ wsUrl, token, userId, userName, initialPrompt, c
         </div>
       )}
 
+      {/* Conversation history panel */}
+      {showHistory && (
+        <div className="border-b border-border bg-card/50 max-h-[50%] overflow-y-auto">
+          <div className="px-3 py-2 space-y-1">
+            <p className="text-xs font-medium text-muted-foreground mb-2">Recent conversations</p>
+            {conversations.length === 0 ? (
+              <p className="text-xs text-muted-foreground py-2">No previous conversations</p>
+            ) : (
+              conversations.map((conv) => (
+                <button
+                  key={conv.id}
+                  onClick={() => handleLoadConversation(conv.id)}
+                  className={`w-full text-left px-2 py-1.5 rounded-md text-xs hover:bg-accent transition-colors ${
+                    activeConversationId === conv.id ? "bg-accent" : ""
+                  }`}
+                >
+                  <div className="font-medium truncate">{conv.title}</div>
+                  <div className="text-muted-foreground text-[10px]">
+                    {new Date(conv.updated_at).toLocaleDateString()}
+                  </div>
+                </button>
+              ))
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Loading history indicator */}
+      {isLoadingHistory && (
+        <div className="flex items-center justify-center py-4 gap-2 text-muted-foreground">
+          <Loader2 className="h-4 w-4 animate-spin" />
+          <span className="text-xs">Loading conversation...</span>
+        </div>
+      )}
+
       {/* Messages area */}
       <div className="flex-1 min-h-0 overflow-y-auto px-4">
         <div className="py-4 space-y-4">
-          {messages.length === 0 && !streamingMessage && (
+          {messages.length === 0 && !streamingMessage && !isLoadingHistory && (
             <div className={`flex flex-col items-center justify-center text-center ${compact ? "py-8" : "py-16"}`}>
               {!compact && (
                 <img

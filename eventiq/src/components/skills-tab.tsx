@@ -38,6 +38,7 @@ import {
   GitBranch,
   MessageSquare,
   Sparkles,
+  MessageCircle,
 } from "lucide-react";
 
 // ---------------------------------------------------------------------------
@@ -459,6 +460,35 @@ const TOOLS: ToolDef[] = [
       { name: "priority", type: "number", description: "1-5 (lower = higher priority)" },
     ],
     kiketTriggers: ["refresh research for", "update data on", "re-research"],
+  },
+  {
+    id: "chat-history",
+    name: "Chat History",
+    description: "Read recent Kiket chat history for a user. Returns conversations with summaries and recent messages.",
+    category: "read",
+    method: "GET",
+    path: "/api/tools/chat-history",
+    auth: "tool-key",
+    icon: MessageCircle,
+    params: [
+      { name: "user_email", type: "string", required: true, description: "User email address" },
+      { name: "limit", type: "number", description: "Max conversations (default 10)" },
+    ],
+    kiketTriggers: ["what did we talk about", "our last conversation", "chat history"],
+  },
+  {
+    id: "chat-summarize",
+    name: "Summarize Chat",
+    description: "Trigger summarization of unsummarized messages in a conversation. Returns existing summary + unsummarized messages for Kiket to process.",
+    category: "write",
+    method: "POST",
+    path: "/api/tools/chat-history",
+    auth: "tool-key",
+    icon: MessageCircle,
+    params: [
+      { name: "conversation_id", type: "string", required: true, description: "Conversation UUID" },
+    ],
+    kiketTriggers: ["summarize our chat", "recap conversation"],
   },
 ];
 
