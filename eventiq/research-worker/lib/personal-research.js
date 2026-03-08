@@ -4,22 +4,21 @@
  * Finds personal information (hobbies, origin stories, passions, side projects)
  * for P0/P1/P2 leaders who don't have a `personal` field yet.
  *
- * Uses Brave Search API for web search and Claude Haiku for synthesis.
- * Updates Supabase directly and logs to enrichment_log.
+ * Uses multi-provider web search (Serper, Tavily, Brave, Google CSE)
+ * and Claude Haiku for synthesis. Updates Supabase directly and logs to enrichment_log.
  *
  * Schedule: Daily at 5:30 AM UTC (cron: '30 5 * * *')
  */
 
 import { createClient } from "@supabase/supabase-js";
+import { multiSearch, getSearchProviderStatus } from "./search-providers.js";
 
 // ---------------------------------------------------------------------------
 // Config
 // ---------------------------------------------------------------------------
 
 const BATCH_SIZE = 8; // leaders per run (5-10 range)
-const BRAVE_SEARCH_URL = "https://api.search.brave.com/res/v1/web/search";
-const ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages";
-const HAIKU_MODEL = "claude-haiku-4-20250414";
+const HAIKU_MODEL = "claude-haiku-4-5-20251001";
 
 // ---------------------------------------------------------------------------
 // Supabase client (same pattern as other worker libs)
@@ -37,99 +36,7 @@ function getSupabase() {
 }
 
 // ---------------------------------------------------------------------------
-// Brave Search
-// ---------------------------------------------------------------------------
-
-async function braveSearch(query) {
-  const apiKey = process.env.BRAVE_SEARCH_API_KEY;
-  if (!apiKey) {
-    // Fall back to Google scrape
-    return googleSearchFallback(query);
-  }
-
-  const url = new URL(BRAVE_SEARCH_URL);
-  url.searchParams.set("q", query);
-  url.searchParams.set("count", "5");
-
-  try {
-    const res = await fetch(url.toString(), {
-      headers: {
-        Accept: "application/json",
-        "Accept-Encoding": "gzip",
-        "X-Subscription-Token": apiKey,
-      },
-    });
-
-    if (!res.ok) {
-      const text = await res.text().catch(() => "");
-      console.warn(`[personal-research] Brave search failed (${res.status}): ${text.slice(0, 200)}`);
-      return googleSearchFallback(query);
-    }
-
-    const data = await res.json();
-    const results = (data.web?.results || []).map((r) => ({
-      title: r.title || "",
-      description: r.description || "",
-      url: r.url || "",
-    }));
-    return results;
-  } catch (err) {
-    console.warn(`[personal-research] Brave search error: ${err.message}`);
-    return googleSearchFallback(query);
-  }
-}
-
-/**
- * Fallback: scrape Google search result snippets (no API key needed).
- * Extracts titles and descriptions from the HTML response.
- */
-async function googleSearchFallback(query) {
-  try {
-    const url = `https://www.google.com/search?q=${encodeURIComponent(query)}&num=5`;
-    const res = await fetch(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "en-US,en;q=0.9",
-      },
-    });
-    if (!res.ok) return [];
-    const html = await res.text();
-
-    // Extract text between <h3> tags (titles) and nearby snippet divs
-    const results = [];
-    // Match result blocks: title in <h3> and snippet in nearby spans/divs
-    const titleRegex = /<h3[^>]*>(.*?)<\/h3>/gi;
-    const snippetRegex = /<span[^>]*class="[^"]*"[^>]*>((?:(?!<span).)*?)<\/span>/gi;
-
-    let match;
-    const titles = [];
-    while ((match = titleRegex.exec(html)) !== null) {
-      titles.push(match[1].replace(/<[^>]+>/g, "").trim());
-    }
-
-    // Get longer text spans as potential snippets
-    const spans = [];
-    while ((match = snippetRegex.exec(html)) !== null) {
-      const text = match[1].replace(/<[^>]+>/g, "").trim();
-      if (text.length > 50 && text.length < 500) spans.push(text);
-    }
-
-    for (let i = 0; i < Math.min(titles.length, 5); i++) {
-      results.push({
-        title: titles[i] || "",
-        description: spans[i] || "",
-        url: "",
-      });
-    }
-    return results;
-  } catch (err) {
-    console.warn(`[personal-research] Google fallback error: ${err.message}`);
-    return [];
-  }
-}
-
-// ---------------------------------------------------------------------------
-// Search for personal info about a leader
+// Search for personal info about a leader (via multi-provider search)
 // ---------------------------------------------------------------------------
 
 async function searchLeaderPersonalInfo(leaderName, companyName) {
@@ -142,15 +49,15 @@ async function searchLeaderPersonalInfo(leaderName, companyName) {
   const allSnippets = [];
 
   for (const q of queries) {
-    const results = await braveSearch(q);
+    const results = await multiSearch(q);
     for (const r of results) {
       const snippet = `[${r.title}] ${r.description}`;
       if (snippet.length > 20) {
         allSnippets.push(snippet);
       }
     }
-    // Rate limit: 1 request per second for Brave free tier
-    await sleep(1200);
+    // Rate limit between queries
+    await sleep(1000);
   }
 
   return allSnippets;
@@ -161,9 +68,15 @@ async function searchLeaderPersonalInfo(leaderName, companyName) {
 // ---------------------------------------------------------------------------
 
 async function synthesizePersonalInfo(leaderName, companyName, existingBg, snippets) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.warn("[personal-research] ANTHROPIC_API_KEY not set, skipping synthesis");
+  // Support two LLM backends:
+  // 1. OpenClaw gateway (EC2): OPENCLAW_GATEWAY_TOKEN + localhost port
+  // 2. Direct Anthropic API: ANTHROPIC_API_KEY
+  const gatewayToken = process.env.OPENCLAW_GATEWAY_TOKEN;
+  const gatewayPort = process.env.OPENCLAW_GATEWAY_PORT || "18789";
+  const anthropicKey = process.env.ANTHROPIC_API_KEY;
+
+  if (!gatewayToken && !anthropicKey) {
+    console.warn("[personal-research] No LLM access — set OPENCLAW_GATEWAY_TOKEN or ANTHROPIC_API_KEY");
     return null;
   }
 
@@ -192,28 +105,56 @@ IMPORTANT:
 - Return ONLY the JSON object, no other text`;
 
   try {
-    const res = await fetch(ANTHROPIC_API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify({
-        model: HAIKU_MODEL,
-        max_tokens: 500,
-        messages: [{ role: "user", content: prompt }],
-      }),
-    });
+    let content;
 
-    if (!res.ok) {
-      const text = await res.text().catch(() => "");
-      console.warn(`[personal-research] Claude API failed (${res.status}): ${text.slice(0, 200)}`);
-      return null;
+    if (gatewayToken) {
+      // OpenClaw gateway (OpenAI-compatible endpoint)
+      const res = await fetch(`http://localhost:${gatewayPort}/v1/chat/completions`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${gatewayToken}`,
+        },
+        body: JSON.stringify({
+          model: HAIKU_MODEL,
+          max_tokens: 500,
+          messages: [{ role: "user", content: prompt }],
+        }),
+      });
+
+      if (!res.ok) {
+        const text = await res.text().catch(() => "");
+        console.warn(`[personal-research] OpenClaw API failed (${res.status}): ${text.slice(0, 200)}`);
+        return null;
+      }
+
+      const data = await res.json();
+      content = data.choices?.[0]?.message?.content || "";
+    } else {
+      // Direct Anthropic API fallback
+      const res = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": anthropicKey,
+          "anthropic-version": "2023-06-01",
+        },
+        body: JSON.stringify({
+          model: HAIKU_MODEL,
+          max_tokens: 500,
+          messages: [{ role: "user", content: prompt }],
+        }),
+      });
+
+      if (!res.ok) {
+        const text = await res.text().catch(() => "");
+        console.warn(`[personal-research] Anthropic API failed (${res.status}): ${text.slice(0, 200)}`);
+        return null;
+      }
+
+      const data = await res.json();
+      content = data.content?.[0]?.text || "";
     }
-
-    const data = await res.json();
-    const content = data.content?.[0]?.text || "";
 
     // Parse JSON from response (handle markdown code blocks)
     const jsonMatch = content.match(/\{[\s\S]*\}/);
@@ -351,14 +292,23 @@ export async function runPersonalResearch() {
 
   const supabase = getSupabase();
 
-  // Check required API keys
-  if (!process.env.BRAVE_SEARCH_API_KEY) {
-    console.error("[personal-research] BRAVE_SEARCH_API_KEY not set — aborting");
+  // Check search providers
+  const searchStatus = getSearchProviderStatus();
+  if (searchStatus.count === 0) {
+    console.error("[personal-research] No search APIs configured — set SERPER_API_KEY, TAVILY_API_KEY, BRAVE_SEARCH_API_KEY, or GOOGLE_CSE_API_KEY+GOOGLE_CSE_ID — aborting");
     return { researched: 0, updated: 0, skipped: 0, errors: 0 };
   }
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error("[personal-research] ANTHROPIC_API_KEY not set — aborting");
+  console.log(`[personal-research] Search providers: ${searchStatus.providers.join(", ")}`);
+
+  // Check LLM access
+  if (!process.env.OPENCLAW_GATEWAY_TOKEN && !process.env.ANTHROPIC_API_KEY) {
+    console.error("[personal-research] No LLM access — set OPENCLAW_GATEWAY_TOKEN or ANTHROPIC_API_KEY — aborting");
     return { researched: 0, updated: 0, skipped: 0, errors: 0 };
+  }
+  if (process.env.OPENCLAW_GATEWAY_TOKEN) {
+    console.log("[personal-research] Using OpenClaw gateway for LLM synthesis");
+  } else {
+    console.log("[personal-research] Using direct Anthropic API for LLM synthesis");
   }
 
   // Find leaders needing personal research
